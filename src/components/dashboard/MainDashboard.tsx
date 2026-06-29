@@ -4,7 +4,9 @@ import { CityStatsPanel } from './CityStatsPanel';
 import { StabilityGraph } from './StabilityGraph';
 import { DirectivePanel } from './DirectivePanel';
 import { DailyReportPanel } from './DailyReportPanel';
-import { Play, Terminal, HelpCircle, ShieldAlert } from 'lucide-react';
+import { CCTVFeed } from '../city/CCTVFeed';
+import { Play, Terminal, HelpCircle, ShieldAlert, Radio } from 'lucide-react';
+
 
 export const MainDashboard: React.FC = () => {
   const { stats, day, history, nextDay, cityNumber } = useGameStore();
@@ -59,26 +61,40 @@ export const MainDashboard: React.FC = () => {
       {/* Reports panel */}
       <DailyReportPanel />
 
-      {/* History Log Console */}
-      <div className="border border-slate-800 bg-slate-950 rounded p-4 font-mono text-xs flex flex-col gap-2.5">
-        <h4 className="text-[10px] text-slate-500 uppercase tracking-wider border-b border-slate-900 pb-2 flex items-center gap-2">
-          <Terminal className="w-4 h-4 text-cyan-400" />
-          Console du Journal Système
-        </h4>
-        <div className="h-44 overflow-y-auto space-y-1 bg-[#05070a] border border-slate-900 rounded p-2.5 max-h-[180px] scrollbar-thin">
-          {history.length === 0 ? (
-            <p className="text-slate-700 italic text-[10px] text-center py-10">Console système vierge.</p>
-          ) : (
-            history.map((log, index) => (
-              <div key={index} className="flex gap-2 text-[10px] leading-normal pb-1 border-b border-slate-950">
-                <span className="text-slate-600 shrink-0 font-semibold">[J-{String(log.day).padStart(2, '0')}]</span>
-                <span className={`${getLogColorClass(log.type)} flex-1`}>
-                  {log.message}
-                </span>
-              </div>
-            ))
-          )}
-          <div ref={consoleEndRef} />
+      {/* Console & CCTV Monitor Row */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* History Log Console */}
+        <div className="md:col-span-2 border border-slate-800 bg-slate-950 rounded p-4 font-mono text-xs flex flex-col gap-2.5">
+          <h4 className="text-[10px] text-slate-500 uppercase tracking-wider border-b border-slate-900 pb-2 flex items-center gap-2">
+            <Terminal className="w-4 h-4 text-cyan-400" />
+            Console du Journal Système
+          </h4>
+          <div className="h-44 overflow-y-auto space-y-1 bg-[#05070a] border border-slate-900 rounded p-2.5 max-h-[180px] scrollbar-thin">
+            {history.length === 0 ? (
+              <p className="text-slate-700 italic text-[10px] text-center py-10">Console système vierge.</p>
+            ) : (
+              history.map((log, index) => (
+                <div key={index} className="flex gap-2 text-[10px] leading-normal pb-1 border-b border-slate-950">
+                  <span className="text-slate-600 shrink-0 font-semibold">[J-{String(log.day).padStart(2, '0')}]</span>
+                  <span className={`${getLogColorClass(log.type)} flex-1`}>
+                    {log.message}
+                  </span>
+                </div>
+              ))
+            )}
+            <div ref={consoleEndRef} />
+          </div>
+        </div>
+
+        {/* Mini CCTV Citadel Monitor */}
+        <div className="border border-slate-800 bg-slate-950 rounded p-4 font-mono text-xs flex flex-col gap-2.5 justify-between">
+          <h4 className="text-[10px] text-slate-500 uppercase tracking-wider border-b border-slate-900 pb-2 flex items-center gap-2">
+            <Radio className="w-4 h-4 text-cyan-400 animate-pulse" />
+            Moniteur Vidéo Citadel
+          </h4>
+          <div className="flex-1 flex items-center justify-center">
+            <CCTVFeed sectorId="citadel_approach" />
+          </div>
         </div>
       </div>
 

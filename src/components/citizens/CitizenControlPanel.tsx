@@ -123,21 +123,27 @@ export const CitizenControlPanel: React.FC = () => {
 
             {/* CRT TV Screen mock */}
             <div className="bg-[#05080c] border border-cyan-500/20 rounded p-4 flex flex-col items-center justify-center gap-4 min-h-[220px] relative overflow-hidden text-center">
+              {/* Breen background image */}
+              <img
+                src="/wallace_breen_cctv.png"
+                alt="Dr. Wallace Breen"
+                className="absolute inset-0 w-full h-full object-cover opacity-25 mix-blend-lighten pointer-events-none z-0"
+              />
               {/* Scanlines overlay locally */}
-              <div className="absolute inset-0 bg-linear-to-b from-transparent via-cyan-950/10 to-transparent bg-[size:100%_8px] pointer-events-none opacity-40"></div>
+              <div className="absolute inset-0 bg-linear-to-b from-transparent via-cyan-950/10 to-transparent bg-[size:100%_8px] pointer-events-none opacity-40 z-10"></div>
               
               {/* Dr Wallace Breen title */}
-              <div className="z-10 bg-cyan-950/40 border border-cyan-500/25 px-3 py-1 rounded text-cyan-400 font-bold uppercase tracking-widest text-[9px]">
+              <div className="z-20 bg-cyan-950/60 border border-cyan-500/25 px-3 py-1 rounded text-cyan-400 font-bold uppercase tracking-widest text-[9px]">
                 DR. WALLACE BREEN // ADMINISTRATEUR DE LA TERRE
               </div>
 
               {/* Message text */}
-              <p className={`z-10 font-serif italic text-sm text-cyan-100 max-w-md leading-relaxed px-4 transition-all duration-300 ${isGenerating ? 'opacity-30 blur-xs' : 'opacity-100'}`}>
+              <p className={`z-20 font-serif italic text-sm text-cyan-100 max-w-md leading-relaxed px-4 bg-slate-950/60 border border-slate-900/40 rounded p-2.5 transition-all duration-300 ${isGenerating ? 'opacity-30 blur-xs' : 'opacity-100'}`}>
                 &ldquo; {breenMessage} &rdquo;
               </p>
               
-              <span className="z-10 text-[8px] text-cyan-500/60 font-mono tracking-widest">
-                DIFFUSION PROTOCOLE DE L'UNION UNIVERSELLE
+              <span className="z-20 text-[8px] text-cyan-500/60 font-mono tracking-widest">
+                DIFFUSION PROTOCOLE DE L\'UNION UNIVERSELLE
               </span>
             </div>
           </div>

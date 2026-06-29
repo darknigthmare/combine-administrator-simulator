@@ -156,10 +156,20 @@ function App() {
     return (
       <div className={`h-screen w-screen bg-[#070b0e] text-slate-100 flex flex-col justify-center items-center p-6 font-mono text-xs overflow-y-auto ${settings.scanlinesEnabled ? 'scanlines' : ''}`}>
         <div className="w-full max-w-3xl border border-slate-800 bg-[#0d141b]/60 rounded p-6 md:p-8 space-y-6 shadow-[0_0_45px_rgba(0,0,0,0.8)] relative overflow-hidden crt-flicker">
-          <div className="absolute inset-0 bg-linear-to-b from-transparent via-cyan-950/5 to-transparent pointer-events-none"></div>
+          {/* Banner image background at the top */}
+          <div className="h-32 -mx-6 -mt-6 md:-mx-8 md:-mt-8 mb-6 relative overflow-hidden border-b border-cyan-500/20">
+            <img
+              src="/combine_terminal_banner.png"
+              alt="Combine Terminal Banner"
+              className="w-full h-full object-cover opacity-60"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0d141b] via-[#0d141b]/40 to-transparent"></div>
+          </div>
+
+          <div className="absolute inset-0 bg-linear-to-b from-transparent via-cyan-950/5 to-transparent pointer-events-none z-10"></div>
 
           {/* Title */}
-          <div className="text-center space-y-2">
+          <div className="text-center space-y-2 z-20 relative">
             <div className="inline-flex p-3 rounded-full border border-cyan-500/20 bg-cyan-950/20 text-cyan-400 animate-pulse mb-1">
               <Cpu className="w-8 h-8" />
             </div>
