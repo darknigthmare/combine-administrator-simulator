@@ -1,0 +1,16 @@
+node_modules
+dist
+dist-ssr
+.git
+.agents
+.codex
+.vercel
+.env*
+
+src-tauri
+
+*.exe
+*.msi
+*.zip
+*.pdb
+*.dll
