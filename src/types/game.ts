@@ -3,7 +3,7 @@ export type TimelineId = 'seven_hour_aftermath' | 'early_occupation' | 'alyx_era
 export type ProfileId = 'loyalist' | 'technocrat' | 'tyrant' | 'collaborator' | 'sympathizer' | 'quarantine';
 export type RationPolicyId = 'standard' | 'loyalty_priority' | 'industrial_priority' | 'punitive' | 'black_market_tolerance' | 'humanitarian_mask' | 'cp_informant_bounty';
 export type RationOperationId = 'redistribute' | 'worker_bonus' | 'punitive_cut' | 'informant_bonus' | 'market_sweep' | 'hidden_relief' | 'nova_requisition';
-export type TabId = 'new_game' | 'onboarding' | 'dashboard' | 'campaigns' | 'major_events' | 'finale' | 'chronicle' | 'timeline' | 'sectors' | 'population' | 'citizens' | 'informants' | 'civil_protection' | 'overwatch' | 'citadel' | 'technology' | 'combine' | 'resistance' | 'vortigaunts' | 'xen' | 'xen_research' | 'xen_catastrophes' | 'rationing' | 'nova' | 'propaganda' | 'reports' | 'archives' | 'video_archives' | 'save_system' | 'decision_history' | 'difficulty' | 'gameplay_balance' | 'atmosphere' | 'tauri_packaging' | 'codex' | 'system_audit' | 'ux_polish';
+export type TabId = 'new_game' | 'onboarding' | 'dashboard' | 'command_deck_v2' | 'campaigns' | 'major_events' | 'finale' | 'chronicle' | 'timeline' | 'sectors' | 'population' | 'citizens' | 'informants' | 'civil_protection' | 'overwatch' | 'citadel' | 'technology' | 'combine' | 'resistance' | 'vortigaunts' | 'xen' | 'xen_research' | 'xen_catastrophes' | 'rationing' | 'nova' | 'propaganda' | 'reports' | 'archives' | 'video_archives' | 'save_system' | 'decision_history' | 'difficulty' | 'gameplay_balance' | 'atmosphere' | 'tauri_packaging' | 'codex' | 'system_audit' | 'ux_polish';
 export type NovaInterfaceMode = 'city' | 'nova';
 
 

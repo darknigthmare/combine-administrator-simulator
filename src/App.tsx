@@ -24,6 +24,7 @@ import { OnboardingScreen } from './components/OnboardingScreen';
 import { NewGameIntakeScreen } from './components/NewGameIntakeScreen';
 import { UxPolishScreen } from './components/UxPolishScreen';
 import { TauriPackagingScreen } from './components/TauriPackagingScreen';
+import { UiuxV2CommandDeck } from './components/UiuxV2CommandDeck';
 import { defaultAtmosphereSettings, getAtmosphereProfile, mergeAtmosphereSettings } from './systems/atmosphereSystem';
 import { changeRationPolicy, createInitialRationEconomy, migrateRationEconomy, resolveRationOperation, simulateRationDay } from './systems/rationEconomy';
 import { createInitialPopulationState, migratePopulationState, simulatePopulationDay } from './systems/populationSimulation';
@@ -1249,7 +1250,7 @@ function App() {
     });
   }
 
-  const fullNav: Array<[TabId, string]> = [['new_game', 'Nouvelle Partie'], ['onboarding', 'Tutoriel COAN'], ['dashboard', 'Terminal COAN'], ['campaigns', 'Campagnes'], ['major_events', 'Événements majeurs'], ['finale', 'Verdict final'], ['chronicle', 'Chronique finale'], ['timeline', 'Timeline'], ['sectors', 'Carte de City'], ['population', 'Population'], ['citizens', 'Registre Civil'], ['informants', 'Informateurs'], ['civil_protection', 'Civil Protection'], ['overwatch', 'Overwatch Command'], ['citadel', 'Citadel Directives'], ['technology', 'Technologies Combine'], ['combine', 'Forces Combine'], ['resistance', 'Résistance'], ['vortigaunts', 'Vortigaunts / Biotics'], ['xen', 'Quarantaine Xen'], ['xen_research', 'Recherche Xen'], ['xen_catastrophes', 'Catastrophes Xen'], ['rationing', 'Rationnement'], ['nova', 'Nova Prospekt'], ['propaganda', 'BreenCast'], ['reports', 'Rapports falsifiés'], ['archives', 'Archives'], ['video_archives', 'Archives vidéo'], ['save_system', 'Sauvegardes'], ['decision_history', 'Historique décisions'], ['difficulty', 'Difficulté'], ['gameplay_balance', 'Équilibrage'], ['atmosphere', 'Atmosphère'], ['tauri_packaging', 'Packaging EXE'], ['ux_polish', 'Polish UX'], ['codex', 'Codex Lore'], ['system_audit', 'Audit final']];
+  const fullNav: Array<[TabId, string]> = [['new_game', 'Nouvelle Partie'], ['onboarding', 'Tutoriel COAN'], ['dashboard', 'Terminal COAN'], ['command_deck_v2', 'Command Deck V2'], ['campaigns', 'Campagnes'], ['major_events', 'Événements majeurs'], ['finale', 'Verdict final'], ['chronicle', 'Chronique finale'], ['timeline', 'Timeline'], ['sectors', 'Carte de City'], ['population', 'Population'], ['citizens', 'Registre Civil'], ['informants', 'Informateurs'], ['civil_protection', 'Civil Protection'], ['overwatch', 'Overwatch Command'], ['citadel', 'Citadel Directives'], ['technology', 'Technologies Combine'], ['combine', 'Forces Combine'], ['resistance', 'Résistance'], ['vortigaunts', 'Vortigaunts / Biotics'], ['xen', 'Quarantaine Xen'], ['xen_research', 'Recherche Xen'], ['xen_catastrophes', 'Catastrophes Xen'], ['rationing', 'Rationnement'], ['nova', 'Nova Prospekt'], ['propaganda', 'BreenCast'], ['reports', 'Rapports falsifiés'], ['archives', 'Archives'], ['video_archives', 'Archives vidéo'], ['save_system', 'Sauvegardes'], ['decision_history', 'Historique décisions'], ['difficulty', 'Difficulté'], ['gameplay_balance', 'Équilibrage'], ['atmosphere', 'Atmosphère'], ['tauri_packaging', 'Packaging EXE'], ['ux_polish', 'Polish UX'], ['codex', 'Codex Lore'], ['system_audit', 'Audit final']];
   const nav = getTerminalNavTabs(activeTerminal.id, fullNav);
   const uxPolish = useMemo(() => buildUxPolishReport(game, nav), [game, nav]);
   const navHintMap = useMemo(() => new Map(uxPolish.navHints.map((hint) => [hint.tab, `${hint.tooltip} — ${hint.loreHint}`])), [uxPolish]);
@@ -1399,6 +1400,7 @@ function App() {
         />}
         {game.tab === 'onboarding' && <OnboardingScreen game={game} startGuidedGame={startGuidedOnboarding} selectTrack={chooseOnboardingTrack} completeChapter={completeOnboardingChapter} resetOnboarding={resetOnboardingStatus} runFirstDayScript={runOnboardingFirstDayScript} setTab={(tab) => setGame({ ...game, tab })} />}
         {game.tab === 'dashboard' && <Dashboard game={game} dynamicBreencast={dynamicBreencast} timelinePreset={timelinePreset} atmosphereProfile={atmosphereProfile} globalAction={globalAction} eventSummary={eventSummary} setTab={(tab) => setGame({ ...game, tab })} />}
+        {game.tab === 'command_deck_v2' && <UiuxV2CommandDeck game={game} setTab={(tab) => setGame({ ...game, tab })} />}
         {game.tab === 'campaigns' && <CampaignScreen game={game} startCampaign={startCampaign} />}
         {game.tab === 'major_events' && <MajorStoryEventsScreen game={game} operations={majorStoryOperations} changePolicy={changeMajorStoryPolicy} applyOperation={applyMajorStoryOperation} />}
         {game.tab === 'finale' && <FinalVerdictScreen game={game} />}

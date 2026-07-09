@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-label="BREENCAST ARCHIVE TERMINAL">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#02060a"/>
+      <stop offset="0.45" stop-color="#1f1a0c"/>
+      <stop offset="1" stop-color="#030912"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="38%" r="55%">
+      <stop offset="0" stop-color="#fbbf24" stop-opacity="0.45"/>
+      <stop offset="0.42" stop-color="#fbbf24" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#fbbf24" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="8"/></filter>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" fill="none" stroke="#8bdcf0" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1400" height="820" fill="url(#bg)"/>
+  <rect width="1400" height="820" fill="url(#grid)"/>
+  <rect width="1400" height="820" fill="url(#glow)"/>
+  <g opacity="0.92">
+      <rect x="260" y="150" width="880" height="480" rx="34" fill="#10151d" stroke="#fbbf24" stroke-opacity="0.28" stroke-width="4"/>
+      <rect x="310" y="205" width="520" height="350" rx="20" fill="#18202b" stroke="#fbbf24" stroke-opacity="0.16"/>
+      <rect x="860" y="205" width="230" height="350" rx="20" fill="#141b23" stroke="#fbbf24" stroke-opacity="0.16"/>
+      <circle cx="975" cy="312" r="76" fill="#fbbf24" opacity="0.13" filter="url(#soft)"/>
+      <circle cx="975" cy="312" r="54" fill="#fbbf24" opacity="0.13"/>
+      <g fill="#fbbf24" opacity="0.26"><rect x="350" y="254" width="420" height="12" rx="6"/><rect x="350" y="300" width="310" height="12" rx="6"/><rect x="350" y="346" width="386" height="12" rx="6"/><rect x="350" y="438" width="250" height="12" rx="6"/><rect x="350" y="484" width="360" height="12" rx="6"/></g>
+      <g stroke="#fbbf24" stroke-opacity="0.18"><path d="M330 610h740"/><path d="M420 650h560"/></g>
+    </g>
+  <g opacity="0.42" stroke="#fbbf24" stroke-width="2" fill="none">
+    <path d="M110 96H420M980 96h310M110 724h300M1000 724h290"/>
+    <path d="M110 96v88M1290 96v88M110 724v-88M1290 724v-88"/>
+  </g>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#d8f6ff">
+    <text x="96" y="72" font-size="24" font-weight="700" letter-spacing="4">COAN VISUAL ARCHIVE</text>
+    <text x="96" y="760" font-size="18" fill="#fbbf24" letter-spacing="3">BREENCAST ARCHIVE TERMINAL</text>
+    <text x="1030" y="760" font-size="16" fill="#8aa4b4" letter-spacing="2">GENERATED VECTOR ASSET</text>
+  </g>
+</svg>
