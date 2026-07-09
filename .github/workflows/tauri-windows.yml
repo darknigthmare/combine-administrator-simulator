@@ -1,0 +1,40 @@
+name: Build Tauri Windows Installer
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Apply COAN package patch
+        run: node scripts/apply-tauri-package-patch.mjs
+      - name: Install dependencies
+        run: npm install
+      - name: COAN module and packaging audit
+        run: |
+          npm run check:modules
+          npm run audit:coan
+          npm run audit:tauri
+          npm run release:notes
+      - name: Build Tauri Windows bundles
+        run: npm run tauri:build
+      - name: Upload Tauri bundles
+        uses: actions/upload-artifact@v4
+        with:
+          name: combine-administrator-simulator-windows
+          path: |
+            src-tauri/target/release/combine-administrator-simulator.exe
+            src-tauri/target/release/bundle/nsis/*
+            src-tauri/target/release/bundle/msi/*
+            RELEASE_NOTES_COAN_DESKTOP.md
+            COAN_FINAL_AUDIT_REPORT.md

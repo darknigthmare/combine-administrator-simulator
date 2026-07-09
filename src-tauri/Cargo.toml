@@ -1,0 +1,18 @@
+[package]
+name = "combine-administrator-simulator"
+version = "0.45.0"
+description = "Combine Administrator Simulator — private Half-Life lore administration terminal"
+authors = ["darknigthmare"]
+edition = "2021"
+
+[lib]
+name = "combine_administrator_simulator_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
