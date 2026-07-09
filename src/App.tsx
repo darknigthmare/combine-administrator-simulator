@@ -124,7 +124,7 @@ function createInitialGame(city: string, scenario: ScenarioId, timeline: Timelin
     difficultySettings,
     onboarding: createInitialOnboardingState({ scenario, timeline, profile, campaignId, difficultyPresetId }),
     campaignMission: createInitialCampaignMissionState({ campaignId, stats, sectors, game: { day: 1, campaign, stats, sectors, novaProspekt, population, citizenRegistry, informantNetwork, vortigaunts, xenEcosystem, xenMutation, quarantineZones, xenResearch, xenCatastrophes, majorStoryEvents } as Partial<GameState> }),
-    tab: 'dashboard',
+    tab: 'command_deck_v2',
     stats,
     sectors,
     units: applyTimelineToUnits(unitTemplates.map((u) => ({ ...u })), timeline),
@@ -181,7 +181,7 @@ function hydrateSavedGame(raw: unknown): GameState {
   const uiuxProgression = migrateUiuxProgressionState(merged);
   return {
     ...merged,
-    tab: isUiuxTabUnlocked(uiuxProgression, merged.tab) ? merged.tab : 'command_deck_v2',
+    tab: merged.tab !== 'dashboard' && isUiuxTabUnlocked(uiuxProgression, merged.tab) ? merged.tab : 'command_deck_v2',
     uiuxProgression,
     reportPolicy: merged.reportPolicy ?? 'truthful',
     auditHeat: merged.auditHeat ?? 0,
@@ -291,7 +291,7 @@ function App() {
     const next = createInitialGame(selectedCity, selectedScenario, selectedTimeline, selectedProfile, campaignInput, difficultyInput);
     setGame({
       ...next,
-      tab: 'dashboard',
+      tab: 'command_deck_v2',
       onboarding: selectOnboardingTrack(next.onboarding, onboardingTrackInput),
       log: [
         `JOUR 001 — Intake Nouvelle Partie : ${newGameIntakeDoctrines[newGameDoctrineInput]?.title ?? 'Configuration COAN'}.`,
@@ -319,7 +319,7 @@ function App() {
     const hydrated = hydrateSavedGame(savedGame);
     setGame({
       ...hydrated,
-      tab: 'dashboard',
+      tab: 'command_deck_v2',
       log: [`JOUR ${String(hydrated.day).padStart(3, '0')} — Sauvegarde chargée : ${source}.`, ...hydrated.log].slice(0, 100),
     });
     setSelectedSector(hydrated.sectors[0]?.id ?? 'admin');
@@ -418,11 +418,12 @@ function App() {
   }
 
   function navigateToTab(tab: TabId) {
-    if (!isUiuxTabUnlocked(game.uiuxProgression, tab)) {
+    const target = tab === 'dashboard' ? 'command_deck_v2' : tab;
+    if (!isUiuxTabUnlocked(game.uiuxProgression, target)) {
       setGame({ ...game, tab: 'progression', log: [`JOUR ${String(game.day).padStart(3, '0')} - Dossier ${tab} verrouille : autorisation requise.`, ...game.log].slice(0, 100) });
       return;
     }
-    setGame({ ...game, tab });
+    setGame({ ...game, tab: target });
   }
 
   function nextDay() {
@@ -1296,7 +1297,7 @@ function App() {
     });
   }
 
-  const fullNav: Array<[TabId, string]> = [['onboarding', 'Tutoriel COAN'], ['dashboard', 'Terminal COAN'], ['command_deck_v2', 'Command Deck V4'], ['progression', 'Requisitions'], ['campaigns', 'Campagnes'], ['major_events', 'Événements majeurs'], ['finale', 'Verdict final'], ['chronicle', 'Chronique finale'], ['timeline', 'Timeline'], ['sectors', 'Carte de City'], ['population', 'Population'], ['citizens', 'Registre Civil'], ['informants', 'Informateurs'], ['civil_protection', 'Civil Protection'], ['overwatch', 'Overwatch Command'], ['citadel', 'Citadel Directives'], ['technology', 'Technologies Combine'], ['combine', 'Forces Combine'], ['resistance', 'Résistance'], ['vortigaunts', 'Vortigaunts / Biotics'], ['xen', 'Quarantaine Xen'], ['xen_research', 'Recherche Xen'], ['xen_catastrophes', 'Catastrophes Xen'], ['rationing', 'Rationnement'], ['nova', 'Nova Prospekt'], ['propaganda', 'BreenCast'], ['reports', 'Rapports falsifiés'], ['archives', 'Archives'], ['video_archives', 'Archives vidéo'], ['save_system', 'Sauvegardes'], ['decision_history', 'Historique décisions'], ['difficulty', 'Difficulté'], ['gameplay_balance', 'Équilibrage'], ['atmosphere', 'Atmosphère'], ['tauri_packaging', 'Packaging EXE'], ['ux_polish', 'Polish UX'], ['codex', 'Codex Lore'], ['system_audit', 'Audit final']];
+  const fullNav: Array<[TabId, string]> = [['onboarding', 'Tutoriel COAN'], ['command_deck_v2', 'Command Deck V4'], ['progression', 'Requisitions'], ['campaigns', 'Campagnes'], ['major_events', 'Événements majeurs'], ['finale', 'Verdict final'], ['chronicle', 'Chronique finale'], ['timeline', 'Timeline'], ['sectors', 'Carte de City'], ['population', 'Population'], ['citizens', 'Registre Civil'], ['informants', 'Informateurs'], ['civil_protection', 'Civil Protection'], ['overwatch', 'Overwatch Command'], ['citadel', 'Citadel Directives'], ['technology', 'Technologies Combine'], ['combine', 'Forces Combine'], ['resistance', 'Résistance'], ['vortigaunts', 'Vortigaunts / Biotics'], ['xen', 'Quarantaine Xen'], ['xen_research', 'Recherche Xen'], ['xen_catastrophes', 'Catastrophes Xen'], ['rationing', 'Rationnement'], ['nova', 'Nova Prospekt'], ['propaganda', 'BreenCast'], ['reports', 'Rapports falsifiés'], ['archives', 'Archives'], ['video_archives', 'Archives vidéo'], ['save_system', 'Sauvegardes'], ['decision_history', 'Historique décisions'], ['difficulty', 'Difficulté'], ['gameplay_balance', 'Équilibrage'], ['atmosphere', 'Atmosphère'], ['tauri_packaging', 'Packaging EXE'], ['ux_polish', 'Polish UX'], ['codex', 'Codex Lore'], ['system_audit', 'Audit final']];
   const nav = getTerminalNavTabs(activeTerminal.id, fullNav);
   const uxPolish = useMemo(() => buildUxPolishReport(game, nav), [game, nav]);
   const navHintMap = useMemo(() => new Map(uxPolish.navHints.map((hint) => [hint.tab, `${hint.tooltip} — ${hint.loreHint}`])), [uxPolish]);
