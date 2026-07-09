@@ -3,6 +3,7 @@ import type { MouseEvent as ReactMouseEvent } from 'react';
 import type { FloatingWindowContent, FloatingWindowPresetId, FloatingWindowRuntime, GameState, TabId } from '../types/game';
 import { defaultFloatingWindowLoadout } from '../data';
 import { buildFloatingWindowContent, buildFloatingWindowLauncher, getFloatingWindowPreset } from '../systems/floatingWindowSystem';
+import { isUiuxTabUnlocked } from '../systems/uiuxProgressionSystem';
 
 const startPositions = [
   { x: 356, y: 104 },
@@ -14,9 +15,12 @@ const startPositions = [
 
 export function FloatingWindowLayer({ game, selectedSectorId, setTab }: { game: GameState; selectedSectorId: string; setTab: (tab: TabId) => void }) {
   const [windows, setWindows] = useState<FloatingWindowRuntime[]>([]);
-  const [dockOpen, setDockOpen] = useState(true);
+  const [dockOpen, setDockOpen] = useState(false);
   const [zTop, setZTop] = useState(40);
-  const launcher = useMemo(() => buildFloatingWindowLauncher(game, selectedSectorId), [game, selectedSectorId]);
+  const launcher = useMemo(
+    () => buildFloatingWindowLauncher(game, selectedSectorId).filter((content) => isUiuxTabUnlocked(game.uiuxProgression, content.relatedTab)),
+    [game, selectedSectorId],
+  );
 
   function openWindow(presetId: FloatingWindowPresetId) {
     const already = windows.find((window) => window.presetId === presetId && !window.minimized);
@@ -42,7 +46,7 @@ export function FloatingWindowLayer({ game, selectedSectorId, setTab }: { game: 
   }
 
   function openDefaultDeck() {
-    defaultFloatingWindowLoadout.forEach((presetId, index) => {
+    defaultFloatingWindowLoadout.filter((presetId) => isUiuxTabUnlocked(game.uiuxProgression, getFloatingWindowPreset(presetId).defaultTab)).forEach((presetId, index) => {
       window.setTimeout(() => openWindow(presetId), index * 35);
     });
   }

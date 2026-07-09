@@ -3,7 +3,7 @@ export type TimelineId = 'seven_hour_aftermath' | 'early_occupation' | 'alyx_era
 export type ProfileId = 'loyalist' | 'technocrat' | 'tyrant' | 'collaborator' | 'sympathizer' | 'quarantine';
 export type RationPolicyId = 'standard' | 'loyalty_priority' | 'industrial_priority' | 'punitive' | 'black_market_tolerance' | 'humanitarian_mask' | 'cp_informant_bounty';
 export type RationOperationId = 'redistribute' | 'worker_bonus' | 'punitive_cut' | 'informant_bonus' | 'market_sweep' | 'hidden_relief' | 'nova_requisition';
-export type TabId = 'new_game' | 'onboarding' | 'dashboard' | 'command_deck_v2' | 'campaigns' | 'major_events' | 'finale' | 'chronicle' | 'timeline' | 'sectors' | 'population' | 'citizens' | 'informants' | 'civil_protection' | 'overwatch' | 'citadel' | 'technology' | 'combine' | 'resistance' | 'vortigaunts' | 'xen' | 'xen_research' | 'xen_catastrophes' | 'rationing' | 'nova' | 'propaganda' | 'reports' | 'archives' | 'video_archives' | 'save_system' | 'decision_history' | 'difficulty' | 'gameplay_balance' | 'atmosphere' | 'tauri_packaging' | 'codex' | 'system_audit' | 'ux_polish';
+export type TabId = 'new_game' | 'onboarding' | 'dashboard' | 'command_deck_v2' | 'progression' | 'campaigns' | 'major_events' | 'finale' | 'chronicle' | 'timeline' | 'sectors' | 'population' | 'citizens' | 'informants' | 'civil_protection' | 'overwatch' | 'citadel' | 'technology' | 'combine' | 'resistance' | 'vortigaunts' | 'xen' | 'xen_research' | 'xen_catastrophes' | 'rationing' | 'nova' | 'propaganda' | 'reports' | 'archives' | 'video_archives' | 'save_system' | 'decision_history' | 'difficulty' | 'gameplay_balance' | 'atmosphere' | 'tauri_packaging' | 'codex' | 'system_audit' | 'ux_polish';
 export type NovaInterfaceMode = 'city' | 'nova';
 
 
@@ -156,6 +156,26 @@ export type CampaignState = {
   currentBriefing: string;
   currentMandate: string;
   log: string[];
+};
+
+export type UiuxUnlockId = 'citizen_intake' | 'ota_command' | 'xen_bioscan' | 'nova_prospekt_link' | 'advisor_channel' | 'rail_network' | 'ravenholm_blacklist' | 'synth_requisition';
+export type UiuxCampaignPhase = 'occupation' | 'pacification' | 'containment' | 'uprising' | 'citadel_review';
+
+export type UiuxProgressionResources = {
+  requisition: number;
+  data: number;
+  compliance: number;
+};
+
+export type UiuxProgressionState = {
+  resources: UiuxProgressionResources;
+  unlocked: Record<UiuxUnlockId, boolean>;
+  phase: UiuxCampaignPhase;
+  heat: number;
+  bureaucraticLoad: number;
+  consecutiveCriticalDays: number;
+  longTermScore: number;
+  lastAudit: string;
 };
 
 
@@ -2600,6 +2620,7 @@ export type GameState = {
   timeline: TimelineId;
   profile: ProfileId;
   campaign: CampaignState;
+  uiuxProgression: UiuxProgressionState;
   campaignMission: CampaignMissionState;
   difficultySettings: DifficultySettingsState;
   onboarding: OnboardingState;

@@ -181,6 +181,18 @@
   transform: translateY(-1px);
 }
 
+.uiux-v2-card:disabled,
+.uiux-v2-card.locked {
+  cursor: not-allowed;
+  filter: grayscale(0.8);
+  opacity: 0.56;
+}
+
+.uiux-v2-card:disabled:hover {
+  transform: none;
+  border-color: rgba(148, 163, 184, 0.14);
+}
+
 .uiux-v2-card img {
   display: block;
   width: 100%;

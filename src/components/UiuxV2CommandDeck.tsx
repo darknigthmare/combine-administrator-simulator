@@ -1,4 +1,4 @@
-import { AlertTriangle, Archive, Biohazard, Factory, FileText, Gauge, Map, Radio, Shield, Users } from 'lucide-react';
+import { AlertTriangle, Archive, BadgeDollarSign, Biohazard, Factory, FileText, Gauge, Lock, Map, Radio, Shield, ShieldCheck, Users } from 'lucide-react';
 import type { GameState, TabId } from '../types/game';
 import './UiuxV2CommandDeck.css';
 
@@ -11,9 +11,11 @@ type ModuleCard = {
   image: string;
   tab: TabId;
   tone: 'city' | 'overwatch' | 'lambda' | 'xen' | 'civil' | 'archive';
+  locked?: boolean;
 };
 
-export function UiuxV2CommandDeck({ game, setTab }: { game: GameState; setTab: (tab: TabId) => void }) {
+export function UiuxV2CommandDeck({ game, setTab, runAudit }: { game: GameState; setTab: (tab: TabId) => void; runAudit: () => void }) {
+  const progression = game.uiuxProgression;
   const hottestSectors = [...game.sectors]
     .sort((a, b) => (b.rebel + b.xen + (100 - b.infrastructure)) - (a.rebel + a.xen + (100 - a.infrastructure)))
     .slice(0, 4);
@@ -53,6 +55,7 @@ export function UiuxV2CommandDeck({ game, setTab }: { game: GameState; setTab: (
       image: '/openai-visuals/xen-quarantine-biome.svg',
       tab: 'xen',
       tone: 'xen',
+      locked: !progression.unlocked.xen_bioscan,
     },
     {
       icon: Users,
@@ -70,22 +73,30 @@ export function UiuxV2CommandDeck({ game, setTab }: { game: GameState; setTab: (
       tab: 'reports',
       tone: 'archive',
     },
+    {
+      icon: BadgeDollarSign,
+      title: 'Requisitions Citadel',
+      text: 'Autorisations OTA, Xen, Nova, Advisor, Razor Train et Synths.',
+      image: '/openai-visuals/citadel-command-deck.svg',
+      tab: 'progression',
+      tone: 'archive',
+    },
   ];
 
   return <section className="uiux-v2-deck">
     <header className="uiux-v2-hero">
       <div className="uiux-v2-hero-copy">
-        <span className="uiux-v2-kicker"><Gauge size={15} /> UI/UX V2 / Command Deck</span>
-        <h2>COAN Command Deck</h2>
+        <span className="uiux-v2-kicker"><Gauge size={15} /> UI/UX V4 / Command Deck</span>
+        <h2>COAN Command Deck V4</h2>
         <p>
-          Vue compartimentee pour City {game.city}. Les informations critiques restent visibles, les dossiers lourds
-          sont routes vers leurs vrais modules afin de reduire l'empilement dans le dashboard principal.
+          Vue compartimentee pour City {game.city}. Phase {progression.phase.replace('_', ' ')}, autorisations lore,
+          entretien quotidien et audit de viabilite sont relies a la vraie campagne.
         </p>
         <div className="uiux-v2-metrics">
           <Metric label="Stabilite" value={game.stats.stability} />
           <Metric label="Lambda" value={game.stats.rebel} danger />
-          <Metric label="Xen" value={game.stats.xen} danger />
-          <Metric label="Audit" value={game.auditHeat} danger />
+          <Metric label={progression.unlocked.xen_bioscan ? 'Xen' : 'Bio-signal'} value={progression.unlocked.xen_bioscan ? game.stats.xen : 0} danger />
+          <Metric label="Score long terme" value={progression.longTermScore} danger={progression.longTermScore < 45} />
         </div>
       </div>
       <div className="uiux-v2-hero-image">
@@ -103,10 +114,10 @@ export function UiuxV2CommandDeck({ game, setTab }: { game: GameState; setTab: (
           <span className={`uiux-v2-chip ${riskScore > 65 ? 'bad' : riskScore > 45 ? 'warn' : 'good'}`}>Risque {riskScore}%</span>
         </div>
         <div className="uiux-v2-module-grid">
-          {modules.map((module) => <button key={module.title} className={`uiux-v2-card tone-${module.tone}`} onClick={() => setTab(module.tab)}>
+          {modules.map((module) => <button key={module.title} disabled={module.locked} className={`uiux-v2-card tone-${module.tone} ${module.locked ? 'locked' : ''}`} onClick={() => setTab(module.tab)}>
             <img src={module.image} alt="" aria-hidden="true" />
-            <span><module.icon size={16} /> {module.title}</span>
-            <p>{module.text}</p>
+            <span>{module.locked ? <Lock size={16} /> : <module.icon size={16} />} {module.title}</span>
+            <p>{module.locked ? 'Dossier masque. Acheter le Paquet Bioscan dans Requisitions.' : module.text}</p>
           </button>)}
         </div>
       </article>
@@ -121,7 +132,7 @@ export function UiuxV2CommandDeck({ game, setTab }: { game: GameState; setTab: (
         <div className="uiux-v2-row-list">
           {hottestSectors.map((sector) => <button key={sector.id} className="uiux-v2-row" onClick={() => setTab('sectors')}>
             <strong>{sector.name}</strong>
-            <span>{sector.status} / L {sector.rebel}% / X {sector.xen}%</span>
+            <span>{sector.status} / L {sector.rebel}% / {progression.unlocked.xen_bioscan ? `X ${sector.xen}%` : 'bio-signal masque'}</span>
           </button>)}
         </div>
       </article>
@@ -148,13 +159,12 @@ export function UiuxV2CommandDeck({ game, setTab }: { game: GameState; setTab: (
       </article>
 
       <article className="uiux-v2-panel uiux-v2-span-4">
-        <span className="uiux-v2-kicker"><Biohazard size={14} /> Crises</span>
-        <h3>{game.crisis?.title ?? 'Aucune crise active'}</h3>
+        <span className="uiux-v2-kicker"><ShieldCheck size={14} /> Audit V4</span>
+        <h3>{progression.phase.replace('_', ' ')} / heat {progression.heat}%</h3>
         <p className="uiux-v2-muted">
-          Nova {game.novaProspekt.instability}% / Xen catastrophe {game.xenCatastrophes.totalCatastropheRisk}% /
-          Advisor heat {game.majorStoryEvents.citywideHeat}%.
+          {progression.lastAudit} Charge modules {progression.bureaucraticLoad}% / jours critiques {progression.consecutiveCriticalDays}.
         </p>
-        <button className="uiux-v2-action warn" onClick={() => setTab(game.crisis ? 'major_events' : 'dashboard')}>Ouvrir situation</button>
+        <button className="uiux-v2-action warn" onClick={runAudit}>Lancer audit</button>
       </article>
     </div>
   </section>;

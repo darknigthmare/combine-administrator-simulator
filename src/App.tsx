@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useState } from 'react';
 import './index.css';
 
-import type { AtmosphereSettings, SyntheticAudioDirectorSnapshot, CampaignId, DifficultyPresetId, DifficultyScalarKey, OnboardingChapterId, OnboardingTrackId, NewGameIntakeDoctrineId, CitizenAction, CitadelDirectiveNode, CombineTechnologyNode, Crisis, EventChoice, GameState, NovaOperation, NovaProspektState, ProfileId, InformantDoctrineId, InformantOperation, CivilProtectionDoctrineId, CivilProtectionOperation, RationOperation, RationPolicyId, ResistanceOperation, ResistanceNetworkState, ResistanceFactionDoctrineId, ResistanceFactionOperation, VortigauntDoctrineId, VortigauntOperation, XenEcosystemOperation, XenEcosystemPolicyId, XenMutationOperation, XenMutationPolicyId, QuarantineOperation, QuarantinePolicyId, XenResearchOperation, XenResearchPolicyId, XenCatastropheOperation, XenCatastrophePolicyId, MajorStoryOperation, MajorStoryPolicyId, VideoArchiveOperation, VideoArchivePolicyId, DecisionHistoryFilterId, Report, ReportPolicy, ScenarioId, TimelineId, Sector, SectorStatus, Stats, TabId, Unit, XenEntity } from './types/game';
-import { baseSectors, baseStats, breencastStrategies, campaignOrder, campaignPresets, citizenActions, crises, difficultyPresetOrder, difficultyPresets, directives, endings, civilProtectionOperations, informantOperations, novaOperations, profileEffects, rationOperations, resistanceOperations, resistanceFactionOperations, vortigauntOperations, xenEcosystemOperations, xenMutationOperations, quarantineOperations, xenResearchOperations, xenCatastropheOperations, majorStoryOperations, videoArchiveOperations, syntheticAudioCues, syntheticAudioCueOrder, scenarioEffects, timelineOrder, timelinePresets, unitTemplates, xenCodex, newGameIntakeDoctrines } from './data';
+import type { AtmosphereSettings, SyntheticAudioDirectorSnapshot, CampaignId, DifficultyPresetId, DifficultyScalarKey, OnboardingChapterId, OnboardingTrackId, NewGameIntakeDoctrineId, CitizenAction, CitadelDirectiveNode, CombineTechnologyNode, Crisis, EventChoice, GameState, NovaOperation, NovaProspektState, ProfileId, InformantDoctrineId, InformantOperation, CivilProtectionDoctrineId, CivilProtectionOperation, RationOperation, RationPolicyId, ResistanceOperation, ResistanceNetworkState, ResistanceFactionDoctrineId, ResistanceFactionOperation, VortigauntDoctrineId, VortigauntOperation, XenEcosystemOperation, XenEcosystemPolicyId, XenMutationOperation, XenMutationPolicyId, QuarantineOperation, QuarantinePolicyId, XenResearchOperation, XenResearchPolicyId, XenCatastropheOperation, XenCatastrophePolicyId, MajorStoryOperation, MajorStoryPolicyId, VideoArchiveOperation, VideoArchivePolicyId, DecisionHistoryFilterId, Report, ReportPolicy, ScenarioId, TimelineId, Sector, SectorStatus, Stats, TabId, UiuxUnlockId, Unit, XenEntity } from './types/game';
+import { baseSectors, baseStats, breencastStrategies, campaignOrder, citizenActions, crises, difficultyPresetOrder, difficultyPresets, directives, endings, civilProtectionOperations, informantOperations, novaOperations, profileEffects, rationOperations, resistanceOperations, resistanceFactionOperations, vortigauntOperations, xenEcosystemOperations, xenMutationOperations, quarantineOperations, xenResearchOperations, xenCatastropheOperations, majorStoryOperations, videoArchiveOperations, syntheticAudioCues, syntheticAudioCueOrder, scenarioEffects, timelineOrder, timelinePresets, unitTemplates, xenCodex, newGameIntakeDoctrines } from './data';
 import { AUTOSAVE_STORAGE_KEY } from './data/saveSlots';
 import { getConnectedSectors, getNetworkLinks, getSectorPressure } from './systems/sectorNetwork';
 import { simulateConnectedPropagation } from './systems/propagationSimulation';
@@ -25,6 +25,7 @@ import { NewGameIntakeScreen } from './components/NewGameIntakeScreen';
 import { UxPolishScreen } from './components/UxPolishScreen';
 import { TauriPackagingScreen } from './components/TauriPackagingScreen';
 import { UiuxV2CommandDeck } from './components/UiuxV2CommandDeck';
+import { UiuxProgressionPanel } from './components/UiuxProgressionPanel';
 import { defaultAtmosphereSettings, getAtmosphereProfile, mergeAtmosphereSettings } from './systems/atmosphereSystem';
 import { changeRationPolicy, createInitialRationEconomy, migrateRationEconomy, resolveRationOperation, simulateRationDay } from './systems/rationEconomy';
 import { createInitialPopulationState, migratePopulationState, simulatePopulationDay } from './systems/populationSimulation';
@@ -56,6 +57,7 @@ import { applyDifficultySectorEffects, applyDifficultyStartingEffects, createIni
 import { buildGuidedStartConfig, completeOnboardingChapter as completeOnboardingChapterState, createInitialOnboardingState, migrateOnboardingState, resetOnboardingFlow, resolveOnboardingFirstDay, selectOnboardingTrack } from './systems/onboardingSystem';
 import { doctrineToConfig } from './systems/newGameIntakeSystem';
 import { buildUxPolishReport } from './systems/uxPolishSystem';
+import { createInitialUiuxProgressionState, isUiuxTabUnlocked, isUiuxUnitUnlocked, migrateUiuxProgressionState, purchaseUiuxUnlock, runUiuxAudit, simulateUiuxProgressionDay } from './systems/uiuxProgressionSystem';
 
 const clamp = (value: number, min = 0, max = 100) => Math.max(min, Math.min(max, Math.round(value)));
 const addStat = (base: Stats, effects: Partial<Stats>): Stats => ({
@@ -118,6 +120,7 @@ function createInitialGame(city: string, scenario: ScenarioId, timeline: Timelin
     timeline,
     profile,
     campaign,
+    uiuxProgression: createInitialUiuxProgressionState(),
     difficultySettings,
     onboarding: createInitialOnboardingState({ scenario, timeline, profile, campaignId, difficultyPresetId }),
     campaignMission: createInitialCampaignMissionState({ campaignId, stats, sectors, game: { day: 1, campaign, stats, sectors, novaProspekt, population, citizenRegistry, informantNetwork, vortigaunts, xenEcosystem, xenMutation, quarantineZones, xenResearch, xenCatastrophes, majorStoryEvents } as Partial<GameState> }),
@@ -175,8 +178,11 @@ function hydrateSavedGame(raw: unknown): GameState {
   const campaignId = parsed.campaign?.activeCampaignId ?? 'custom_city_administration';
   const base = createInitialGame(parsed.city ?? '17', scenario, timeline, profile, campaignId);
   const merged = { ...base, ...parsed } as GameState;
+  const uiuxProgression = migrateUiuxProgressionState(merged);
   return {
     ...merged,
+    tab: isUiuxTabUnlocked(uiuxProgression, merged.tab) ? merged.tab : 'command_deck_v2',
+    uiuxProgression,
     reportPolicy: merged.reportPolicy ?? 'truthful',
     auditHeat: merged.auditHeat ?? 0,
     timeline: merged.timeline ?? 'pre_hl2',
@@ -363,6 +369,10 @@ function App() {
   }
 
   function globalAction(action: 'breencast' | 'ration_plus' | 'ration_cut' | 'advisor' | 'shadow_help') {
+    if (action === 'advisor' && !game.uiuxProgression.unlocked.advisor_channel) {
+      setGame({ ...game, log: [`JOUR ${String(game.day).padStart(3, '0')} - Inspection Advisor refusee : canal direct non autorise.`, ...game.log].slice(0, 80) });
+      return;
+    }
     const map = {
       breencast: { effects: dynamicBreencast.recommended.effects, log: `BreenCast dynamique [${dynamicBreencast.recommended.title}] : « ${randomPropaganda} »` },
       ration_plus: { effects: { rations: -260, loyalty: 10, fatigue: -8, rebel: -3 }, log: 'Rations supplémentaires distribuées aux blocs productifs.' },
@@ -375,6 +385,10 @@ function App() {
 
   function deploy(unit: Unit) {
     if (unit.reserve <= 0) return;
+    if (!isUiuxUnitUnlocked(game.uiuxProgression, unit.id)) {
+      setGame({ ...game, log: [`JOUR ${String(game.day).padStart(3, '0')} - Deploiement refuse : autorisation requise pour ${unit.name}.`, ...game.log].slice(0, 80) });
+      return;
+    }
     const weight = unit.category === 'Synth' ? 18 : unit.category === 'Overwatch' ? 10 : unit.category === 'Biocontrol' ? 8 : unit.category === 'Airwatch' ? 12 : 5;
     setGame({
       ...game,
@@ -383,6 +397,32 @@ function App() {
       stats: addStat(game.stats, { combine: 2, fear: unit.category === 'Synth' ? 6 : 2, citadel: unit.category === 'Airwatch' ? -2 : 0, suspicion: unit.id === 'advisor' ? 12 : 0 }),
       log: [`JOUR ${String(game.day).padStart(3, '0')} — ${unit.name} déployé vers ${sector.name}.`, ...game.log].slice(0, 80),
     });
+  }
+
+  function buyUiuxUnlock(id: UiuxUnlockId) {
+    const result = purchaseUiuxUnlock(game.uiuxProgression, id, game.day);
+    setGame({
+      ...game,
+      uiuxProgression: result.state,
+      log: [`JOUR ${String(game.day).padStart(3, '0')} - ${result.message}`, ...game.log].slice(0, 100),
+    });
+  }
+
+  function auditUiuxProgression() {
+    const uiuxProgression = runUiuxAudit(game.uiuxProgression, game.stats, game.day);
+    setGame({
+      ...game,
+      uiuxProgression,
+      log: [`JOUR ${String(game.day).padStart(3, '0')} - ${uiuxProgression.lastAudit}`, ...game.log].slice(0, 100),
+    });
+  }
+
+  function navigateToTab(tab: TabId) {
+    if (!isUiuxTabUnlocked(game.uiuxProgression, tab)) {
+      setGame({ ...game, tab: 'progression', log: [`JOUR ${String(game.day).padStart(3, '0')} - Dossier ${tab} verrouille : autorisation requise.`, ...game.log].slice(0, 100) });
+      return;
+    }
+    setGame({ ...game, tab });
   }
 
   function nextDay() {
@@ -588,6 +628,10 @@ function App() {
     stats = addStat(stats, videoArchiveDaily.statsDelta);
     lines.push(...videoArchiveDaily.lines);
 
+    const uiuxProgressionDaily = simulateUiuxProgressionDay(game.uiuxProgression, stats, game.day);
+    stats = addStat(stats, uiuxProgressionDaily.statsDelta);
+    lines.push(...uiuxProgressionDaily.lines);
+
     if (directiveDays <= 0) {
       const current = stats[directive.stat];
       const ok = directive.mode === 'above' ? current >= directive.target : current <= directive.target;
@@ -627,6 +671,7 @@ function App() {
       stats,
       sectors,
       auditHeat,
+      uiuxProgression: uiuxProgressionDaily.state,
       novaProspekt: novaDaily.nova,
       rationEconomy: rationDaily.rationEconomy,
       population: populationDaily.population,
@@ -689,6 +734,7 @@ function App() {
       finalVerdict,
       finalChronicle,
       auditHeat,
+      uiuxProgression: uiuxProgressionDaily.state,
       novaProspekt: novaDaily.nova,
       rationEconomy: rationDaily.rationEconomy,
       population: populationDaily.population,
@@ -1250,7 +1296,7 @@ function App() {
     });
   }
 
-  const fullNav: Array<[TabId, string]> = [['new_game', 'Nouvelle Partie'], ['onboarding', 'Tutoriel COAN'], ['dashboard', 'Terminal COAN'], ['command_deck_v2', 'Command Deck V2'], ['campaigns', 'Campagnes'], ['major_events', 'Événements majeurs'], ['finale', 'Verdict final'], ['chronicle', 'Chronique finale'], ['timeline', 'Timeline'], ['sectors', 'Carte de City'], ['population', 'Population'], ['citizens', 'Registre Civil'], ['informants', 'Informateurs'], ['civil_protection', 'Civil Protection'], ['overwatch', 'Overwatch Command'], ['citadel', 'Citadel Directives'], ['technology', 'Technologies Combine'], ['combine', 'Forces Combine'], ['resistance', 'Résistance'], ['vortigaunts', 'Vortigaunts / Biotics'], ['xen', 'Quarantaine Xen'], ['xen_research', 'Recherche Xen'], ['xen_catastrophes', 'Catastrophes Xen'], ['rationing', 'Rationnement'], ['nova', 'Nova Prospekt'], ['propaganda', 'BreenCast'], ['reports', 'Rapports falsifiés'], ['archives', 'Archives'], ['video_archives', 'Archives vidéo'], ['save_system', 'Sauvegardes'], ['decision_history', 'Historique décisions'], ['difficulty', 'Difficulté'], ['gameplay_balance', 'Équilibrage'], ['atmosphere', 'Atmosphère'], ['tauri_packaging', 'Packaging EXE'], ['ux_polish', 'Polish UX'], ['codex', 'Codex Lore'], ['system_audit', 'Audit final']];
+  const fullNav: Array<[TabId, string]> = [['onboarding', 'Tutoriel COAN'], ['dashboard', 'Terminal COAN'], ['command_deck_v2', 'Command Deck V4'], ['progression', 'Requisitions'], ['campaigns', 'Campagnes'], ['major_events', 'Événements majeurs'], ['finale', 'Verdict final'], ['chronicle', 'Chronique finale'], ['timeline', 'Timeline'], ['sectors', 'Carte de City'], ['population', 'Population'], ['citizens', 'Registre Civil'], ['informants', 'Informateurs'], ['civil_protection', 'Civil Protection'], ['overwatch', 'Overwatch Command'], ['citadel', 'Citadel Directives'], ['technology', 'Technologies Combine'], ['combine', 'Forces Combine'], ['resistance', 'Résistance'], ['vortigaunts', 'Vortigaunts / Biotics'], ['xen', 'Quarantaine Xen'], ['xen_research', 'Recherche Xen'], ['xen_catastrophes', 'Catastrophes Xen'], ['rationing', 'Rationnement'], ['nova', 'Nova Prospekt'], ['propaganda', 'BreenCast'], ['reports', 'Rapports falsifiés'], ['archives', 'Archives'], ['video_archives', 'Archives vidéo'], ['save_system', 'Sauvegardes'], ['decision_history', 'Historique décisions'], ['difficulty', 'Difficulté'], ['gameplay_balance', 'Équilibrage'], ['atmosphere', 'Atmosphère'], ['tauri_packaging', 'Packaging EXE'], ['ux_polish', 'Polish UX'], ['codex', 'Codex Lore'], ['system_audit', 'Audit final']];
   const nav = getTerminalNavTabs(activeTerminal.id, fullNav);
   const uxPolish = useMemo(() => buildUxPolishReport(game, nav), [game, nav]);
   const navHintMap = useMemo(() => new Map(uxPolish.navHints.map((hint) => [hint.tab, `${hint.tooltip} — ${hint.loreHint}`])), [uxPolish]);
@@ -1258,7 +1304,7 @@ function App() {
   return (
     <div className={`app-shell ux-density-${uxPolish.density} ${atmosphereProfile.bodyClass} alert-${atmosphereProfile.alertLevel}`}>
       <AtmosphereLayer profile={atmosphereProfile} settings={game.atmosphereSettings} cueKey={atmosphereCueKey} audioDirector={audioDirector} />
-      <FloatingWindowLayer game={game} selectedSectorId={selectedSector} setTab={(tab) => setGame({ ...game, tab })} />
+      <FloatingWindowLayer game={game} selectedSectorId={selectedSector} setTab={navigateToTab} />
       <aside className="sidebar">
         <div className="brand">
           <span className="brand-kicker">COMBINE CIVIL AUTHORITY</span>
@@ -1269,27 +1315,32 @@ function App() {
           {terminalInterfaceOrder.map((id) => {
             const terminal = terminalInterfaces[id];
             const status = buildTerminalInterfaceStatus(game, id);
-            return <button key={id} className={`terminal-switch tone-${terminal.tone} ${activeTerminal.id === id ? 'active' : ''}`} onClick={() => setGame({ ...game, tab: getTerminalSwitchTarget(id) })}>
+            const target = getTerminalSwitchTarget(id);
+            const locked = !isUiuxTabUnlocked(game.uiuxProgression, target);
+            return <button key={id} disabled={locked} title={locked ? 'Autorisation requise dans Requisitions' : terminal.label} className={`terminal-switch tone-${terminal.tone} ${activeTerminal.id === id ? 'active' : ''}`} onClick={() => navigateToTab(target)}>
               <strong>{terminal.shortLabel}</strong>
-              <span>{status.integrity}% / risque {status.risk}%</span>
+              <span>{locked ? 'LOCK / requisition' : `${status.integrity}% / risque ${status.risk}%`}</span>
             </button>;
           })}
         </div>
         <nav>
-          {nav.map(([id, label]) => <button key={id} title={navHintMap.get(id) ?? label} className={game.tab === id ? 'active' : ''} onClick={() => setGame({ ...game, tab: id })}>{label}</button>)}
+          {nav.map(([id, label]) => {
+            const locked = !isUiuxTabUnlocked(game.uiuxProgression, id);
+            return <button key={id} disabled={locked} title={locked ? 'Autorisation requise dans Requisitions' : (navHintMap.get(id) ?? label)} className={`${game.tab === id ? 'active' : ''} ${locked ? 'locked' : ''}`} onClick={() => navigateToTab(id)}>{locked ? `${label} / LOCK` : label}</button>;
+          })}
         </nav>
         <div className="start-card intake-sidebar-card">
-          <span className="brand-kicker">NEW INTAKE</span>
-          <strong>{newGameIntakeDoctrines[newGameDoctrineInput]?.title ?? 'Configuration COAN'}</strong>
-          <small>City {cityInput || newGameIntakeDoctrines[newGameDoctrineInput]?.citySuggestion || '17'} · {campaignPresets[campaignInput].name}</small>
-          <button className="primary" onClick={() => setGame({ ...game, tab: 'new_game' })}>Ouvrir Nouvelle Partie</button>
-          <button onClick={startGame}>Démarrage rapide</button>
+          <span className="brand-kicker">SESSION V4</span>
+          <strong>Phase {game.uiuxProgression.phase.replace('_', ' ')}</strong>
+          <small>Viabilite {game.uiuxProgression.longTermScore}% / charge {game.uiuxProgression.bureaucraticLoad}%</small>
+          <button className="primary" onClick={() => navigateToTab('progression')}>Ouvrir Requisitions</button>
+          <button onClick={() => navigateToTab('save_system')}>Sauvegardes</button>
         </div>
       </aside>
 
       <main className={`main terminal-${activeTerminal.id} terminal-tone-${activeTerminal.tone} ${game.atmosphereSettings.scanlines ? 'scanlines' : ''} ${game.tab === 'nova' || activeTerminal.id === 'nova' ? 'nova-interface' : ''} ${atmosphereProfile.bodyClass}`}>
         <header className="topbar terminal-topbar">
-          <div><strong>{activeTerminal.commandHeader}</strong><span>JOUR {String(game.day).padStart(3, '0')}</span><span>Campagne : {getCampaignPreset(game.campaign.activeCampaignId).name}</span><span>Difficulté : {difficultyPresets[game.difficultySettings.activePresetId].name}</span><span>Directive : {game.directive.title} / {game.directiveDays} j</span><span className="atmosphere-status">{atmosphereProfile.label} — alerte {atmosphereProfile.alertLevel}/5</span></div>
+          <div><strong>{activeTerminal.commandHeader}</strong><span>JOUR {String(game.day).padStart(3, '0')}</span><span>Campagne : {getCampaignPreset(game.campaign.activeCampaignId).name}</span><span>Phase : {game.uiuxProgression.phase.replace('_', ' ')}</span><span>HEAT {game.uiuxProgression.heat}% / REQ {game.uiuxProgression.resources.requisition}</span><span>Difficulté : {difficultyPresets[game.difficultySettings.activePresetId].name}</span><span>Directive : {game.directive.title} / {game.directiveDays} j</span><span className="atmosphere-status">{atmosphereProfile.label} — alerte {atmosphereProfile.alertLevel}/5</span></div>
           <button className="end-day" onClick={nextDay} disabled={!!game.ending || !!game.crisis}>Clôturer la journée</button>
         </header>
 
@@ -1316,7 +1367,7 @@ function App() {
             <strong>{uxPolish.headline}</strong>
           </div>
           <div className="ux-command-routes">
-            {uxPolish.quickRoutes.slice(0, 5).map((route) => <button key={route.id} title={route.reason} className={`tone-${route.tone} ${route.active ? 'active' : ''}`} onClick={() => setGame({ ...game, tab: route.targetTab })}>
+            {uxPolish.quickRoutes.slice(0, 5).map((route) => <button key={route.id} disabled={!isUiuxTabUnlocked(game.uiuxProgression, route.targetTab)} title={route.reason} className={`tone-${route.tone} ${route.active ? 'active' : ''}`} onClick={() => navigateToTab(route.targetTab)}>
               <b>{route.shortLabel}</b>
               <span>{route.priority}</span>
             </button>)}
@@ -1329,7 +1380,7 @@ function App() {
           <Stat label="Loyauté" value={game.stats.loyalty} />
           <Stat label="Peur" value={game.stats.fear} dangerHigh />
           <Stat label="Rébellion" value={game.stats.rebel} dangerHigh />
-          <Stat label="Xen" value={game.stats.xen} dangerHigh xen />
+          <Stat label={game.uiuxProgression.unlocked.xen_bioscan ? 'Xen' : 'Bio-signal masque'} value={game.uiuxProgression.unlocked.xen_bioscan ? game.stats.xen : 0} dangerHigh xen />
           <Stat label="Combine" value={game.stats.combine} />
           <Stat label="Production" value={game.stats.production} />
           <Stat label="Citadelle" value={game.stats.citadel} />
@@ -1349,10 +1400,10 @@ function App() {
           <Stat label="Sympathie Λ" value={game.population.lambdaSupportIndex} dangerHigh />
           <Stat label="Vortessence" value={game.vortigaunts.vortessenceCoherence} dangerHigh />
           <Stat label="Biotics" value={game.vortigaunts.bioticPressure} dangerHigh />
-          <Stat label="Exposition bio" value={game.population.xenExposureIndex} dangerHigh xen />
-          <Stat label="Mutations" value={game.xenMutation.outbreakRisk} dangerHigh xen />
-          <Stat label="Conversion" value={game.xenMutation.hostConversionIndex} dangerHigh xen />
-          <Stat label="R&D Xen" value={game.xenResearch.labIncidentRisk} dangerHigh xen />
+          {game.uiuxProgression.unlocked.xen_bioscan && <Stat label="Exposition bio" value={game.population.xenExposureIndex} dangerHigh xen />}
+          {game.uiuxProgression.unlocked.xen_bioscan && <Stat label="Mutations" value={game.xenMutation.outbreakRisk} dangerHigh xen />}
+          {game.uiuxProgression.unlocked.xen_bioscan && <Stat label="Conversion" value={game.xenMutation.hostConversionIndex} dangerHigh xen />}
+          {game.uiuxProgression.unlocked.xen_bioscan && <Stat label="R&D Xen" value={game.xenResearch.labIncidentRisk} dangerHigh xen />}
           <Stat label="Tech" value={game.combineTechnology.scanEfficiency} />
           <Stat label="Dette tech" value={game.combineTechnology.maintenanceDebt} dangerHigh />
         </section>
@@ -1400,7 +1451,8 @@ function App() {
         />}
         {game.tab === 'onboarding' && <OnboardingScreen game={game} startGuidedGame={startGuidedOnboarding} selectTrack={chooseOnboardingTrack} completeChapter={completeOnboardingChapter} resetOnboarding={resetOnboardingStatus} runFirstDayScript={runOnboardingFirstDayScript} setTab={(tab) => setGame({ ...game, tab })} />}
         {game.tab === 'dashboard' && <Dashboard game={game} dynamicBreencast={dynamicBreencast} timelinePreset={timelinePreset} atmosphereProfile={atmosphereProfile} globalAction={globalAction} eventSummary={eventSummary} setTab={(tab) => setGame({ ...game, tab })} />}
-        {game.tab === 'command_deck_v2' && <UiuxV2CommandDeck game={game} setTab={(tab) => setGame({ ...game, tab })} />}
+        {game.tab === 'command_deck_v2' && <UiuxV2CommandDeck game={game} setTab={navigateToTab} runAudit={auditUiuxProgression} />}
+        {game.tab === 'progression' && <UiuxProgressionPanel game={game} purchaseUnlock={buyUiuxUnlock} runAudit={auditUiuxProgression} />}
         {game.tab === 'campaigns' && <CampaignScreen game={game} startCampaign={startCampaign} />}
         {game.tab === 'major_events' && <MajorStoryEventsScreen game={game} operations={majorStoryOperations} changePolicy={changeMajorStoryPolicy} applyOperation={applyMajorStoryOperation} />}
         {game.tab === 'finale' && <FinalVerdictScreen game={game} />}
@@ -1411,10 +1463,10 @@ function App() {
         {game.tab === 'citizens' && <CitizenRegistryScreen game={game} actions={citizenActions} applyAction={applyCitizenAction} />}
         {game.tab === 'informants' && <InformantNetworkScreen game={game} operations={informantOperations} changeDoctrine={changeInformantDoctrine} applyOperation={applyInformantOperation} />}
         {game.tab === 'civil_protection' && <CivilProtectionScreen game={game} sector={sector} sectorAction={sectorAction} deploy={deploy} operations={civilProtectionOperations} changeDoctrine={changeCivilProtectionDoctrine} applyOperation={applyCivilProtectionOperation} />}
-        {game.tab === 'overwatch' && <OverwatchCommandScreen game={game} sector={sector} deploy={deploy} globalAction={globalAction} />}
+        {game.tab === 'overwatch' && <OverwatchCommandScreen game={{ ...game, units: game.units.filter((unit) => isUiuxUnitUnlocked(game.uiuxProgression, unit.id)) }} sector={sector} deploy={deploy} globalAction={globalAction} />}
         {game.tab === 'citadel' && <CitadelDirectivesScreen game={game} globalAction={globalAction} activateProtocol={activateCitadelDirectiveProtocol} />}
         {game.tab === 'technology' && <CombineTechnologyScreen game={game} researchTechnology={researchCombineTechnology} />}
-        {game.tab === 'combine' && <Combine units={game.units} sector={sector} deploy={deploy} />}
+        {game.tab === 'combine' && <Combine units={game.units.filter((unit) => isUiuxUnitUnlocked(game.uiuxProgression, unit.id))} sector={sector} deploy={deploy} />}
         {game.tab === 'resistance' && <ResistanceOperationsScreen game={game} operations={resistanceOperations} applyOperation={applyResistanceOperation} changeDoctrine={changeResistanceDoctrine} factionOperations={resistanceFactionOperations} applyFactionOperation={applyResistanceFactionOperation} changeFactionDoctrine={changeResistanceFactionDoctrine} />}
         {game.tab === 'vortigaunts' && <VortigauntBioticsScreen game={game} operations={vortigauntOperations} changeDoctrine={changeVortigauntDoctrine} applyOperation={applyVortigauntOperation} />}
         {game.tab === 'xen' && <XenQuarantineScreen game={game} sector={sector} sectorAction={sectorAction} operations={xenEcosystemOperations} changePolicy={changeXenEcosystemPolicy} applyOperation={applyXenEcosystemOperation} mutationOperations={xenMutationOperations} changeMutationPolicy={changeXenMutationPolicy} applyMutationOperation={applyXenMutationOperation} quarantineOperations={quarantineOperations} changeQuarantinePolicy={changeQuarantinePolicy} applyQuarantineOperation={applyQuarantineOperation} />}
