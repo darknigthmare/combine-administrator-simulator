@@ -13,16 +13,39 @@ export type UiuxUnlockDefinition = {
   image: string;
 };
 
+const uiuxPhaseLabels: Record<UiuxCampaignPhase, string> = {
+  occupation: 'Occupation',
+  pacification: 'Pacification',
+  containment: 'Confinement',
+  uprising: 'Soulèvement',
+  citadel_review: 'Revue Citadel',
+};
+
+export function formatUiuxPhase(phase: UiuxCampaignPhase) {
+  return uiuxPhaseLabels[phase];
+}
+
 export const uiuxUnlockCatalog: UiuxUnlockDefinition[] = [
-  { id: 'citizen_intake', title: 'Registre Civil Intake', faction: 'Civil Authority', description: 'Autorise le traitement administratif des nouveaux citoyens hors du flux operationnel.', cost: { requisition: 80, data: 20, compliance: 8 }, requiresDay: 1, unlocks: 'Autorisation civile et dossiers Intake.', upkeep: '14 REQ / 4 DATA par jour', image: '/openai-visuals/breencast-archive-terminal.svg' },
-  { id: 'ota_command', title: 'Liaison Overwatch Transhuman Arm', faction: 'Overwatch', description: 'Ouvre les reserves OTA et Airwatch lourdes apres validation Citadel.', cost: { requisition: 170, data: 60, compliance: 18 }, requiresDay: 2, unlocks: 'Soldats Overwatch, Ordinal, Suppressor et Airwatch.', upkeep: '32 REQ / 4 DATA par jour', image: '/openai-visuals/overwatch-unit-dossier.svg' },
-  { id: 'xen_bioscan', title: 'Paquet Bioscan Xen', faction: 'Xen', description: 'Declassifie les bio-signaux et ouvre les dossiers de biosphere Xen.', cost: { requisition: 120, data: 120, compliance: 10 }, requiresDay: 3, unlocks: 'Quarantaine, recherche et catastrophes Xen.', upkeep: '14 REQ / 16 DATA par jour', image: '/openai-visuals/xen-quarantine-biome.svg' },
-  { id: 'nova_prospekt_link', title: 'Canal Nova Prospekt', faction: 'Nova Prospekt', description: 'Ouvre le reseau de transfert penitentiaire externe apres liaison OTA.', cost: { requisition: 210, data: 100, compliance: 24 }, requiresDay: 4, requires: ['ota_command'], unlocks: 'Terminal Nova Prospekt et dossiers de detention.', upkeep: '14 REQ / 14 DATA par jour', image: '/openai-visuals/nova-prospekt-panopticon.svg' },
-  { id: 'advisor_channel', title: 'Canal direct Advisor', faction: 'Citadel', description: 'Autorise une inspection Advisor, au prix d une surveillance administrative accrue.', cost: { requisition: 130, data: 80, compliance: 32 }, requiresDay: 5, unlocks: 'Validation Advisor et protocoles superieurs.', upkeep: '14 REQ / 4 DATA / 4 CONF par jour', image: '/openai-visuals/citadel-command-deck.svg' },
-  { id: 'rail_network', title: 'Canal ferroviaire Razor Train', faction: 'Overwatch', description: 'Reactive les priorites logistiques longue distance de la Combine.', cost: { requisition: 150, data: 80, compliance: 16 }, requiresDay: 3, unlocks: 'Bonus durable de production, rations et transferts.', upkeep: '14 REQ / 4 DATA par jour', image: '/openai-visuals/city17-sector-grid.svg' },
+  { id: 'citizen_intake', title: 'Registre Civil Intake', faction: 'Civil Authority', description: 'Autorise le traitement administratif des nouveaux citoyens hors du flux opérationnel.', cost: { requisition: 80, data: 20, compliance: 8 }, requiresDay: 1, unlocks: 'Autorisation civile et dossiers Intake.', upkeep: '14 REQ / 4 DATA par jour', image: '/openai-visuals/breencast-archive-terminal.svg' },
+  { id: 'ota_command', title: 'Liaison Overwatch Transhuman Arm', faction: 'Overwatch', description: 'Ouvre les réserves OTA et Airwatch lourdes après validation Citadel.', cost: { requisition: 170, data: 60, compliance: 18 }, requiresDay: 2, unlocks: 'Soldats Overwatch, Ordinal, Suppressor et Airwatch.', upkeep: '32 REQ / 4 DATA par jour', image: '/openai-visuals/overwatch-unit-dossier.svg' },
+  { id: 'xen_bioscan', title: 'Paquet Bioscan Xen', faction: 'Xen', description: 'Déclassifie les bio-signaux et ouvre les dossiers de biosphère Xen.', cost: { requisition: 120, data: 120, compliance: 10 }, requiresDay: 3, unlocks: 'Quarantaine, recherche et catastrophes Xen.', upkeep: '14 REQ / 16 DATA par jour', image: '/openai-visuals/xen-quarantine-biome.svg' },
+  { id: 'nova_prospekt_link', title: 'Canal Nova Prospekt', faction: 'Nova Prospekt', description: 'Ouvre le réseau de transfert pénitentiaire externe après liaison OTA.', cost: { requisition: 210, data: 100, compliance: 24 }, requiresDay: 4, requires: ['ota_command'], unlocks: 'Terminal Nova Prospekt et dossiers de détention.', upkeep: '14 REQ / 14 DATA par jour', image: '/openai-visuals/nova-prospekt-panopticon.svg' },
+  { id: 'advisor_channel', title: 'Canal direct Advisor', faction: 'Citadel', description: 'Autorise une inspection Advisor, au prix d’une surveillance administrative accrue.', cost: { requisition: 130, data: 80, compliance: 32 }, requiresDay: 5, unlocks: 'Validation Advisor et protocoles supérieurs.', upkeep: '14 REQ / 4 DATA / 4 CONF par jour', image: '/openai-visuals/citadel-command-deck.svg' },
+  { id: 'rail_network', title: 'Canal ferroviaire Razor Train', faction: 'Overwatch', description: 'Réactive les priorités logistiques longue distance de la Combine.', cost: { requisition: 150, data: 80, compliance: 16 }, requiresDay: 3, unlocks: 'Bonus durable de production, rations et transferts.', upkeep: '14 REQ / 4 DATA par jour', image: '/openai-visuals/city17-sector-grid.svg' },
   { id: 'ravenholm_blacklist', title: 'Blacklist Ravenholm', faction: 'Civil Authority', description: 'Classe Ravenholm comme archive interdite hors carte et protocole de non-intervention.', cost: { requisition: 90, data: 140, compliance: 20 }, requiresDay: 4, requires: ['xen_bioscan'], unlocks: 'Archive Ravenholm blacklist et doctrine de confinement.', upkeep: '14 REQ / 4 DATA par jour', image: '/openai-visuals/xen-quarantine-biome.svg' },
-  { id: 'synth_requisition', title: 'Requisition Synth lourde', faction: 'Overwatch', description: 'Autorise Hunter et Strider pour les phases de guerre ouverte.', cost: { requisition: 360, data: 180, compliance: 42 }, requiresDay: 8, requires: ['ota_command', 'advisor_channel'], unlocks: 'Hunter, Strider et protocole de rupture.', upkeep: '54 REQ / 4 DATA par jour', image: '/openai-visuals/overwatch-unit-dossier.svg' },
+  { id: 'synth_requisition', title: 'Réquisition Synth lourde', faction: 'Overwatch', description: 'Autorise Hunter et Strider pour les phases de guerre ouverte.', cost: { requisition: 360, data: 180, compliance: 42 }, requiresDay: 8, requires: ['ota_command', 'advisor_channel'], unlocks: 'Hunter, Strider et protocole de rupture.', upkeep: '54 REQ / 4 DATA par jour', image: '/openai-visuals/overwatch-unit-dossier.svg' },
 ];
+
+const unlockStatEffects: Record<UiuxUnlockId, Partial<Stats>> = {
+  citizen_intake: { info: 3, fatigue: 1 },
+  ota_command: { combine: 5, fear: 3, suspicion: 2 },
+  xen_bioscan: { info: 5, citadel: -1, suspicion: 2 },
+  nova_prospekt_link: { info: 4, fear: 2, suspicion: 4 },
+  advisor_channel: { citadel: 6, fear: 3, suspicion: 7 },
+  rail_network: { production: 4, rations: 160, suspicion: 1 },
+  ravenholm_blacklist: { stability: 2, info: 3, loyalty: -1 },
+  synth_requisition: { combine: 8, fear: 6, loyalty: -4, suspicion: 6 },
+};
 
 const emptyUnlocks = (): Record<UiuxUnlockId, boolean> => ({
   citizen_intake: false,
@@ -46,7 +69,7 @@ export function createInitialUiuxProgressionState(): UiuxProgressionState {
     bureaucraticLoad: 12,
     consecutiveCriticalDays: 0,
     longTermScore: 50,
-    lastAudit: 'Audit V4 pret : aucun module sensible expose au demarrage.',
+    lastAudit: 'Audit V4 prêt : aucun module sensible exposé au démarrage.',
   };
 }
 
@@ -72,16 +95,17 @@ export function canPurchaseUiuxUnlock(state: UiuxProgressionState, item: UiuxUnl
     && resources.compliance >= item.cost.compliance;
 }
 
-export function purchaseUiuxUnlock(state: UiuxProgressionState, id: UiuxUnlockId, day: number): { state: UiuxProgressionState; message: string; ok: boolean } {
+export function purchaseUiuxUnlock(state: UiuxProgressionState, id: UiuxUnlockId, day: number): { state: UiuxProgressionState; message: string; ok: boolean; statsDelta: Partial<Stats> } {
   const item = uiuxUnlockCatalog.find((entry) => entry.id === id);
   if (!item || !canPurchaseUiuxUnlock(state, item, day)) {
-    return { state, message: 'Autorisation refusee : prerequis, jour minimal ou ressources insuffisantes.', ok: false };
+    return { state, message: 'Autorisation refusée : prérequis, jour minimal ou ressources insuffisantes.', ok: false, statsDelta: {} };
   }
   const unlocked = { ...state.unlocked, [id]: true };
   const bureaucraticLoad = calculateUiuxUpkeep(unlocked).load;
   return {
     ok: true,
-    message: `${item.title} autorise. ${item.unlocks}`,
+    message: `${item.title} autorisé. ${item.unlocks}`,
+    statsDelta: unlockStatEffects[id],
     state: {
       ...state,
       unlocked,
@@ -92,7 +116,7 @@ export function purchaseUiuxUnlock(state: UiuxProgressionState, id: UiuxUnlockId
       },
       heat: clamp(state.heat + 4 + (id === 'advisor_channel' ? 8 : id === 'synth_requisition' ? 10 : 0)),
       bureaucraticLoad,
-      lastAudit: `Autorisation ${item.title} enregistree. Upkeep recalcule a ${bureaucraticLoad}%.`,
+      lastAudit: `Autorisation ${item.title} enregistrée. Entretien recalculé à ${bureaucraticLoad}%.`,
     },
   };
 }
@@ -145,12 +169,18 @@ export function simulateUiuxProgressionDay(state: UiuxProgressionState, stats: S
     consecutiveCriticalDays,
     longTermScore,
     lastAudit: critical
-      ? `Audit V4 : upkeep critique au jour ${day}. Reduire la charge ou restaurer les ressources.`
-      : `Audit V4 : phase ${phase}, viabilite ${longTermScore}%, upkeep couvert au jour ${day}.`,
+      ? `Audit V4 : entretien critique au jour ${day}. Réduire la charge ou restaurer les ressources.`
+      : `Audit V4 : phase ${formatUiuxPhase(phase)}, viabilité ${longTermScore}%, entretien couvert au jour ${day}.`,
+  };
+  const statsDelta: Partial<Stats> = {
+    production: (state.unlocked.rail_network ? 1 : 0) + (critical ? -3 : 0),
+    rations: state.unlocked.rail_network ? 45 : 0,
+    citadel: critical ? -2 : 0,
+    suspicion: critical ? 4 : 0,
   };
   return {
     state: nextState,
-    statsDelta: critical ? { production: -3, citadel: -2, suspicion: 4 } satisfies Partial<Stats> : {},
+    statsDelta,
     lines: [
       `UIUX V4 : upkeep ${upkeep.requisition} REQ / ${upkeep.data} DATA / ${upkeep.compliance} CONF, revenus ${income.requisition}/${income.data}/${income.compliance}.`,
       nextState.lastAudit,
@@ -169,7 +199,7 @@ export function runUiuxAudit(state: UiuxProgressionState, stats: Stats, day: num
     ...state,
     lastAudit: issues.length
       ? `Audit V4 jour ${day} : ${issues.join(', ')}.`
-      : `Audit V4 jour ${day} : progression, gameplay et verrous lore coherents.`,
+      : `Audit V4 jour ${day} : progression, gameplay et verrous lore cohérents.`,
   };
 }
 

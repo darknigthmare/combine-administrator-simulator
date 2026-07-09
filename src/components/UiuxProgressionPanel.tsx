@@ -1,6 +1,6 @@
 import { BadgeDollarSign, CheckCircle2, Lock, Scale, ShieldCheck } from 'lucide-react';
 import type { GameState, UiuxUnlockId } from '../types/game';
-import { canPurchaseUiuxUnlock, uiuxUnlockCatalog } from '../systems/uiuxProgressionSystem';
+import { canPurchaseUiuxUnlock, formatUiuxPhase, uiuxUnlockCatalog } from '../systems/uiuxProgressionSystem';
 import './UiuxProgressionPanel.css';
 
 export function UiuxProgressionPanel({
@@ -19,13 +19,13 @@ export function UiuxProgressionPanel({
     <header className="uiux-progression-hero">
       <div>
         <span className="uiux-v2-kicker"><BadgeDollarSign size={14} /> UI/UX V4 / progression</span>
-        <h2>Requisitions Citadel</h2>
-        <p>Les dossiers sensibles sont des autorisations de campagne. Chaque canal ouvert augmente aussi l upkeep quotidien et la charge de supervision.</p>
+        <h2>Réquisitions Citadel</h2>
+        <p>Les dossiers sensibles sont des autorisations de campagne. Chaque canal ouvert augmente aussi le coût d’entretien quotidien et la charge de supervision.</p>
       </div>
       <div className="uiux-progression-metrics">
-        <Metric label="Requisition" value={state.resources.requisition} />
-        <Metric label="Donnees" value={state.resources.data} />
-        <Metric label="Conformite" value={state.resources.compliance} />
+        <Metric label="Réquisition" value={state.resources.requisition} />
+        <Metric label="Données" value={state.resources.data} />
+        <Metric label="Conformité" value={state.resources.compliance} />
         <Metric label="Autorisations" value={`${acquired}/${uiuxUnlockCatalog.length}`} />
         <Metric label="Charge" value={`${state.bureaucraticLoad}%`} danger={state.bureaucraticLoad > 70} />
         <Metric label="Heat" value={`${state.heat}%`} danger={state.heat > 70} />
@@ -40,15 +40,15 @@ export function UiuxProgressionPanel({
           return <article className={`uiux-unlock-card ${bought ? 'unlocked' : ''}`} key={item.id}>
             <img src={item.image} alt="" aria-hidden="true" />
             <div className="uiux-unlock-body">
-              <span className={`uiux-v2-chip ${bought ? 'good' : available ? 'warn' : 'bad'}`}>{bought ? 'AUTORISE' : available ? 'DISPONIBLE' : 'VERROUILLE'}</span>
+              <span className={`uiux-v2-chip ${bought ? 'good' : available ? 'warn' : 'bad'}`}>{bought ? 'AUTORISÉ' : available ? 'DISPONIBLE' : 'VERROUILLÉ'}</span>
               <small>{item.faction}</small>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
               <dl>
-                <div><dt>Cout</dt><dd>{item.cost.requisition} REQ / {item.cost.data} DATA / {item.cost.compliance} CONF</dd></div>
+                <div><dt>Coût</dt><dd>{item.cost.requisition} REQ / {item.cost.data} DATA / {item.cost.compliance} CONF</dd></div>
                 <div><dt>Jour minimal</dt><dd>J{item.requiresDay}</dd></div>
                 <div><dt>Entretien</dt><dd>{item.upkeep}</dd></div>
-                <div><dt>Debloque</dt><dd>{item.unlocks}</dd></div>
+                <div><dt>Débloque</dt><dd>{item.unlocks}</dd></div>
               </dl>
               <button className="uiux-v2-action" disabled={bought || !available} onClick={() => purchaseUnlock(item.id)}>
                 {bought ? <CheckCircle2 size={14} /> : <Lock size={14} />} {bought ? 'Autorisation active' : 'Acheter autorisation'}
@@ -60,17 +60,17 @@ export function UiuxProgressionPanel({
 
       <aside className="uiux-progression-audit">
         <span className="uiux-v2-kicker"><ShieldCheck size={14} /> audit stabilisation</span>
-        <h3>Phase {state.phase.replace('_', ' ')}</h3>
+        <h3>Phase {formatUiuxPhase(state.phase)}</h3>
         <p>{state.lastAudit}</p>
         <div className="uiux-progression-score">
           <Scale size={18} />
-          <span>Viabilite long terme</span>
+          <span>Viabilité long terme</span>
           <b>{state.longTermScore}%</b>
         </div>
         <button className="uiux-v2-action" onClick={runAudit}>Lancer audit V4</button>
         <div className="uiux-progression-rules">
-          <p><strong>Xen</strong><span>Bio-signal masque avant Bioscan.</span></p>
-          <p><strong>Nova Prospekt</strong><span>Liaison OTA puis canal penitentiaire.</span></p>
+          <p><strong>Xen</strong><span>Bio-signal masqué avant Bioscan.</span></p>
+          <p><strong>Nova Prospekt</strong><span>Liaison OTA puis canal pénitentiaire.</span></p>
           <p><strong>Advisor</strong><span>Canal direct obligatoire.</span></p>
           <p><strong>Synths</strong><span>OTA et Advisor requis.</span></p>
           <p><strong>Ravenholm</strong><span>Archive blacklist, jamais secteur ordinaire.</span></p>

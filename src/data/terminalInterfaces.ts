@@ -31,7 +31,7 @@ export const terminalInterfaces: Record<TerminalInterfaceId, TerminalInterfaceDe
     classification: 'CIVIL-STABILIZATION / COAN',
     tone: 'civil',
     defaultTab: 'command_deck_v2',
-    tabs: ['onboarding', 'command_deck_v2', 'progression', 'campaigns', 'timeline', 'sectors', 'population', 'citizens', 'informants', 'civil_protection', 'rationing', 'propaganda', 'reports', 'decision_history', 'archives', 'video_archives', 'save_system', 'difficulty', 'gameplay_balance', 'atmosphere', 'tauri_packaging', 'ux_polish', 'codex', 'system_audit'],
+    tabs: ['onboarding', 'command_deck_v2', 'progression', 'campaigns', 'timeline', 'sectors', 'population', 'citizens', 'informants', 'civil_protection', 'resistance', 'rationing', 'propaganda', 'reports', 'decision_history', 'archives', 'video_archives', 'save_system', 'difficulty', 'gameplay_balance', 'atmosphere', 'tauri_packaging', 'ux_polish', 'codex', 'system_audit'],
     primaryTabs: ['onboarding', 'command_deck_v2', 'progression', 'sectors', 'population', 'civil_protection', 'rationing', 'gameplay_balance', 'tauri_packaging', 'ux_polish'],
     statusVocabulary: ['citoyen', 'ration', 'bloc', 'conformité', 'stabilisation', 'surveillance locale'],
     visualDirectives: ['bleu froid', 'ambre administratif', 'grille de secteurs', 'alertes CP', 'scanlines faibles'],

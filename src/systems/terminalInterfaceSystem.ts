@@ -102,7 +102,7 @@ export function buildTerminalInterfaceStatus(game: GameState, terminalId?: Termi
     focusLine: `Secteur prioritaire : ${hottestSector?.name ?? 'aucun'} · statut ${hottestSector?.status ?? 'stable'}.`,
     secondaryLine: `Rations ${game.rationEconomy.reserves} · marché noir ${game.rationEconomy.blackMarketIndex}% · conformité ${game.population.complianceIndex}%.`,
     warningLine: latestReport?.auditDiscovered ? 'Rapport précédent compromis : la façade City ne suffit plus à masquer les contradictions.' : 'City Terminal priorise la stabilité visible et la continuité de production.',
-    recommendedTab: risk > 70 ? 'civil_protection' : 'dashboard',
+    recommendedTab: risk > 70 ? 'civil_protection' : 'command_deck_v2',
     metrics: [
       { label: 'Stabilité', value: game.stats.stability, danger: game.stats.stability < 35 },
       { label: 'Lambda', value: game.stats.rebel, danger: game.stats.rebel > 65 },

@@ -27,6 +27,17 @@ type Props = {
   setTab: (tab: TabId) => void;
 };
 
+const intakeTabLabels: Partial<Record<TabId, string>> = {
+  command_deck_v2: 'Command Deck',
+  dashboard: 'Command Deck',
+  resistance: 'Résistance',
+  rationing: 'Rationnement',
+  reports: 'Rapports',
+  sectors: 'Carte de City',
+  xen: 'Quarantaine Xen',
+  nova: 'Nova Prospekt',
+};
+
 function Gauge({ label, value, band }: { label: string; value: number; band: keyof typeof newGameIntakeThreatLabels }) {
   return <div className={`intake-gauge band-${band}`}>
     <div><span>{label}</span><b>{value}%</b></div>
@@ -167,7 +178,7 @@ export function NewGameIntakeScreen(props: Props) {
         </div>
         <h4>Modules recommandés après lancement</h4>
         <div className="tag-row">
-          {preview.recommendedFirstTabs.map((tab) => <button className="link-chip" key={tab} onClick={() => props.setTab(tab)}>{tab}</button>)}
+          {preview.recommendedFirstTabs.map((tab) => <button className="link-chip" key={tab} onClick={() => props.setTab(tab)}>{intakeTabLabels[tab] ?? tab}</button>)}
         </div>
       </div>
     </section>

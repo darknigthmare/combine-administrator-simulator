@@ -53,9 +53,9 @@ function pickEndingId(game: GameState, stats: Stats, sectors: Sector[], forcedEn
   };
   if (forcedEndingId) return legacyMap[forcedEndingId] ?? forcedEndingId;
 
-  const hardFailures = ['lambda_liberation', 'total_quarantine', 'ravenholm_memory', 'advisor_replacement', 'industrial_collapse', 'nova_exposure'];
-  const immediate = unlocked.find((id) => hardFailures.includes(id));
-  if (immediate) return immediate;
+  // A warning threshold unlocks a possible ending, but must not end a fresh campaign.
+  if (game.day >= 8 && game.quarantineZones.ravenholmLikeCount >= 2 && game.xenCatastrophes.citywideRisk > 85) return 'ravenholm_memory';
+  if (game.day >= 8 && game.novaProspekt.instability > 90 && game.novaProspekt.escaped > 25) return 'nova_exposure';
 
   if (game.day >= 30 && unlocked.includes('hidden_humanity')) return 'hidden_humanity';
   if (game.day >= 35 && unlocked.includes('model_city')) return 'model_city';

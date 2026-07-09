@@ -1,4 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
+import { Archive, ChevronDown, Database, Gauge, LayoutDashboard, LockKeyhole, Map as MapIcon, Menu, Radio, Save, Settings, Shield, Target, X } from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
 import './index.css';
 
 import type { AtmosphereSettings, SyntheticAudioDirectorSnapshot, CampaignId, DifficultyPresetId, DifficultyScalarKey, OnboardingChapterId, OnboardingTrackId, NewGameIntakeDoctrineId, CitizenAction, CitadelDirectiveNode, CombineTechnologyNode, Crisis, EventChoice, GameState, NovaOperation, NovaProspektState, ProfileId, InformantDoctrineId, InformantOperation, CivilProtectionDoctrineId, CivilProtectionOperation, RationOperation, RationPolicyId, ResistanceOperation, ResistanceNetworkState, ResistanceFactionDoctrineId, ResistanceFactionOperation, VortigauntDoctrineId, VortigauntOperation, XenEcosystemOperation, XenEcosystemPolicyId, XenMutationOperation, XenMutationPolicyId, QuarantineOperation, QuarantinePolicyId, XenResearchOperation, XenResearchPolicyId, XenCatastropheOperation, XenCatastrophePolicyId, MajorStoryOperation, MajorStoryPolicyId, VideoArchiveOperation, VideoArchivePolicyId, DecisionHistoryFilterId, Report, ReportPolicy, ScenarioId, TimelineId, Sector, SectorStatus, Stats, TabId, UiuxUnlockId, Unit, XenEntity } from './types/game';
@@ -57,7 +59,7 @@ import { applyDifficultySectorEffects, applyDifficultyStartingEffects, createIni
 import { buildGuidedStartConfig, completeOnboardingChapter as completeOnboardingChapterState, createInitialOnboardingState, migrateOnboardingState, resetOnboardingFlow, resolveOnboardingFirstDay, selectOnboardingTrack } from './systems/onboardingSystem';
 import { doctrineToConfig } from './systems/newGameIntakeSystem';
 import { buildUxPolishReport } from './systems/uxPolishSystem';
-import { createInitialUiuxProgressionState, isUiuxTabUnlocked, isUiuxUnitUnlocked, migrateUiuxProgressionState, purchaseUiuxUnlock, runUiuxAudit, simulateUiuxProgressionDay } from './systems/uiuxProgressionSystem';
+import { createInitialUiuxProgressionState, formatUiuxPhase, isUiuxTabUnlocked, isUiuxUnitUnlocked, migrateUiuxProgressionState, purchaseUiuxUnlock, runUiuxAudit, simulateUiuxProgressionDay } from './systems/uiuxProgressionSystem';
 
 const clamp = (value: number, min = 0, max = 100) => Math.max(min, Math.min(max, Math.round(value)));
 const addStat = (base: Stats, effects: Partial<Stats>): Stats => ({
@@ -223,6 +225,24 @@ function statusClass(status: SectorStatus) {
   return 'stable';
 }
 
+const sidebarPrimaryTabs: TabId[] = ['command_deck_v2', 'progression', 'sectors', 'reports', 'save_system'];
+
+const sidebarNavGroups: Array<{ id: string; label: string; icon: LucideIcon; tabs: TabId[] }> = [
+  { id: 'campaign', label: 'Campagne', icon: Target, tabs: ['onboarding', 'campaigns', 'major_events', 'finale', 'chronicle', 'timeline'] },
+  { id: 'civil', label: 'Administration civile', icon: Database, tabs: ['population', 'citizens', 'informants', 'civil_protection', 'rationing', 'propaganda'] },
+  { id: 'forces', label: 'Forces et menaces', icon: Shield, tabs: ['overwatch', 'citadel', 'technology', 'combine', 'resistance', 'vortigaunts', 'xen', 'xen_research', 'xen_catastrophes', 'nova'] },
+  { id: 'archives', label: 'Archives', icon: Archive, tabs: ['archives', 'video_archives', 'decision_history'] },
+  { id: 'system', label: 'Système', icon: Settings, tabs: ['difficulty', 'gameplay_balance', 'atmosphere', 'tauri_packaging', 'ux_polish', 'codex', 'system_audit'] },
+];
+
+const primaryNavIcons: Partial<Record<TabId, LucideIcon>> = {
+  command_deck_v2: LayoutDashboard,
+  progression: Target,
+  sectors: MapIcon,
+  reports: Archive,
+  save_system: Save,
+};
+
 function App() {
   const [game, setGame] = useState<GameState>(() => {
     const saved = localStorage.getItem(AUTOSAVE_STORAGE_KEY);
@@ -243,6 +263,8 @@ function App() {
   const [onboardingTrackInput, setOnboardingTrackInput] = useState<OnboardingTrackId>('standard_command');
   const [useCampaignRecommendations, setUseCampaignRecommendations] = useState(true);
   const [selectedSector, setSelectedSector] = useState<string>('admin');
+  const [telemetryOpen, setTelemetryOpen] = useState(false);
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   useEffect(() => {
     localStorage.setItem(AUTOSAVE_STORAGE_KEY, JSON.stringify(game));
@@ -403,6 +425,7 @@ function App() {
     const result = purchaseUiuxUnlock(game.uiuxProgression, id, game.day);
     setGame({
       ...game,
+      stats: addStat(game.stats, result.statsDelta),
       uiuxProgression: result.state,
       log: [`JOUR ${String(game.day).padStart(3, '0')} - ${result.message}`, ...game.log].slice(0, 100),
     });
@@ -419,6 +442,7 @@ function App() {
 
   function navigateToTab(tab: TabId) {
     const target = tab === 'dashboard' ? 'command_deck_v2' : tab;
+    setMobileNavOpen(false);
     if (!isUiuxTabUnlocked(game.uiuxProgression, target)) {
       setGame({ ...game, tab: 'progression', log: [`JOUR ${String(game.day).padStart(3, '0')} - Dossier ${tab} verrouille : autorisation requise.`, ...game.log].slice(0, 100) });
       return;
@@ -878,6 +902,10 @@ function App() {
 
 
   function activateCitadelDirectiveProtocol(node: CitadelDirectiveNode) {
+    if (node.branchId === 'advisor' && !game.uiuxProgression.unlocked.advisor_channel) {
+      setGame({ ...game, tab: 'progression', log: [`JOUR ${String(game.day).padStart(3, '0')} - Protocole Advisor refuse : canal direct requis.`, ...game.log].slice(0, 80) });
+      return;
+    }
     const result = resolveDirectiveNode({ state: game.citadelDirectiveTree, stats: game.stats, nodeId: node.id, day: game.day });
     setGame({
       ...game,
@@ -889,6 +917,17 @@ function App() {
 
 
   function researchCombineTechnology(node: CombineTechnologyNode) {
+    const requiredUnlock = node.branchId === 'overwatch' || node.branchId === 'airwatch'
+      ? 'ota_command'
+      : node.branchId === 'biocontrol'
+        ? 'xen_bioscan'
+        : node.branchId === 'nova'
+          ? 'nova_prospekt_link'
+          : null;
+    if (requiredUnlock && !game.uiuxProgression.unlocked[requiredUnlock]) {
+      setGame({ ...game, tab: 'progression', log: [`JOUR ${String(game.day).padStart(3, '0')} - Recherche ${node.title} refusee : autorisation ${requiredUnlock} requise.`, ...game.log].slice(0, 80) });
+      return;
+    }
     const result = researchTechnologyNode({ state: game.combineTechnology, stats: game.stats, units: game.units, sectors: game.sectors, nodeId: node.id, day: game.day });
     setGame({
       ...game,
@@ -1298,18 +1337,31 @@ function App() {
   }
 
   const fullNav: Array<[TabId, string]> = [['onboarding', 'Tutoriel COAN'], ['command_deck_v2', 'Command Deck V4'], ['progression', 'Requisitions'], ['campaigns', 'Campagnes'], ['major_events', 'Événements majeurs'], ['finale', 'Verdict final'], ['chronicle', 'Chronique finale'], ['timeline', 'Timeline'], ['sectors', 'Carte de City'], ['population', 'Population'], ['citizens', 'Registre Civil'], ['informants', 'Informateurs'], ['civil_protection', 'Civil Protection'], ['overwatch', 'Overwatch Command'], ['citadel', 'Citadel Directives'], ['technology', 'Technologies Combine'], ['combine', 'Forces Combine'], ['resistance', 'Résistance'], ['vortigaunts', 'Vortigaunts / Biotics'], ['xen', 'Quarantaine Xen'], ['xen_research', 'Recherche Xen'], ['xen_catastrophes', 'Catastrophes Xen'], ['rationing', 'Rationnement'], ['nova', 'Nova Prospekt'], ['propaganda', 'BreenCast'], ['reports', 'Rapports falsifiés'], ['archives', 'Archives'], ['video_archives', 'Archives vidéo'], ['save_system', 'Sauvegardes'], ['decision_history', 'Historique décisions'], ['difficulty', 'Difficulté'], ['gameplay_balance', 'Équilibrage'], ['atmosphere', 'Atmosphère'], ['tauri_packaging', 'Packaging EXE'], ['ux_polish', 'Polish UX'], ['codex', 'Codex Lore'], ['system_audit', 'Audit final']];
-  const nav = getTerminalNavTabs(activeTerminal.id, fullNav);
+  const nav = getTerminalNavTabs(activeTerminal.id, fullNav).map(([id, label]) => [
+    id,
+    id === 'progression' ? 'Réquisitions' : label,
+  ] as [TabId, string]);
   const uxPolish = useMemo(() => buildUxPolishReport(game, nav), [game, nav]);
   const navHintMap = useMemo(() => new Map(uxPolish.navHints.map((hint) => [hint.tab, `${hint.tooltip} — ${hint.loreHint}`])), [uxPolish]);
+  const navMap = new Map(nav);
+  const primaryNav = sidebarPrimaryTabs.flatMap((id) => navMap.has(id) ? [[id, navMap.get(id)!] as [TabId, string]] : []);
+  const groupedNav = sidebarNavGroups.map((group) => ({
+    ...group,
+    items: group.tabs.flatMap((id) => navMap.has(id) ? [[id, navMap.get(id)!] as [TabId, string]] : []),
+  })).filter((group) => group.items.length > 0);
 
   return (
     <div className={`app-shell ux-density-${uxPolish.density} ${atmosphereProfile.bodyClass} alert-${atmosphereProfile.alertLevel}`}>
       <AtmosphereLayer profile={atmosphereProfile} settings={game.atmosphereSettings} cueKey={atmosphereCueKey} audioDirector={audioDirector} />
       <FloatingWindowLayer game={game} selectedSectorId={selectedSector} setTab={navigateToTab} />
-      <aside className="sidebar">
+      <aside className={`sidebar ${mobileNavOpen ? 'nav-open' : 'nav-closed'}`}>
         <div className="brand">
-          <span className="brand-kicker">COMBINE CIVIL AUTHORITY</span>
-          <h1>City {game.city}</h1>
+          <div className="brand-row">
+            <div><span className="brand-kicker">COMBINE CIVIL AUTHORITY</span><h1>City {game.city}</h1></div>
+            <button className="sidebar-menu-toggle" aria-label={mobileNavOpen ? 'Fermer le menu' : 'Ouvrir le menu'} aria-expanded={mobileNavOpen} onClick={() => setMobileNavOpen((open) => !open)}>
+              {mobileNavOpen ? <X size={20} /> : <Menu size={20} />}
+            </button>
+          </div>
           <p>{activeTerminal.label} — {activeTerminal.subtitle}</p>
         </div>
         <div className="terminal-switcher">
@@ -1324,27 +1376,59 @@ function App() {
             </button>;
           })}
         </div>
-        <nav>
-          {nav.map(([id, label]) => {
+        <nav className="sidebar-nav" aria-label="Navigation principale">
+          <div className="sidebar-primary-nav">
+          {primaryNav.map(([id, label]) => {
             const locked = !isUiuxTabUnlocked(game.uiuxProgression, id);
-            return <button key={id} disabled={locked} title={locked ? 'Autorisation requise dans Requisitions' : (navHintMap.get(id) ?? label)} className={`${game.tab === id ? 'active' : ''} ${locked ? 'locked' : ''}`} onClick={() => navigateToTab(id)}>{locked ? `${label} / LOCK` : label}</button>;
+            const Icon = primaryNavIcons[id] ?? Gauge;
+            return <button key={id} disabled={locked} title={locked ? 'Autorisation requise dans Requisitions' : (navHintMap.get(id) ?? label)} className={`sidebar-primary-link ${game.tab === id ? 'active' : ''} ${locked ? 'locked' : ''}`} onClick={() => navigateToTab(id)}>
+              <Icon size={17} /><span>{label}</span>{locked && <LockKeyhole size={13} />}
+            </button>;
           })}
+          </div>
+          <div className="sidebar-nav-groups">
+            {groupedNav.map((group) => {
+              const GroupIcon = group.icon;
+              const containsActive = group.items.some(([id]) => id === game.tab);
+              return <details key={group.id} className="sidebar-nav-group" open={containsActive || undefined}>
+                <summary><GroupIcon size={15} /><span>{group.label}</span><b>{group.items.length}</b><ChevronDown size={14} /></summary>
+                <div>
+                  {group.items.map(([id, label]) => {
+                    const locked = !isUiuxTabUnlocked(game.uiuxProgression, id);
+                    return <button key={id} disabled={locked} title={locked ? 'Autorisation requise dans Requisitions' : (navHintMap.get(id) ?? label)} className={`${game.tab === id ? 'active' : ''} ${locked ? 'locked' : ''}`} onClick={() => navigateToTab(id)}>
+                      <span>{label}</span>{locked && <LockKeyhole size={12} />}
+                    </button>;
+                  })}
+                </div>
+              </details>;
+            })}
+          </div>
         </nav>
-        <div className="start-card intake-sidebar-card">
-          <span className="brand-kicker">SESSION V4</span>
-          <strong>Phase {game.uiuxProgression.phase.replace('_', ' ')}</strong>
-          <small>Viabilite {game.uiuxProgression.longTermScore}% / charge {game.uiuxProgression.bureaucraticLoad}%</small>
-          <button className="primary" onClick={() => navigateToTab('progression')}>Ouvrir Requisitions</button>
-          <button onClick={() => navigateToTab('save_system')}>Sauvegardes</button>
+        <div className="sidebar-session-status">
+          <span>Phase {formatUiuxPhase(game.uiuxProgression.phase)}</span>
+          <b>{game.uiuxProgression.longTermScore}% viable</b>
+          <small>Charge {game.uiuxProgression.bureaucraticLoad}%</small>
         </div>
       </aside>
 
       <main className={`main terminal-${activeTerminal.id} terminal-tone-${activeTerminal.tone} ${game.atmosphereSettings.scanlines ? 'scanlines' : ''} ${game.tab === 'nova' || activeTerminal.id === 'nova' ? 'nova-interface' : ''} ${atmosphereProfile.bodyClass}`}>
         <header className="topbar terminal-topbar">
-          <div><strong>{activeTerminal.commandHeader}</strong><span>JOUR {String(game.day).padStart(3, '0')}</span><span>Campagne : {getCampaignPreset(game.campaign.activeCampaignId).name}</span><span>Phase : {game.uiuxProgression.phase.replace('_', ' ')}</span><span>HEAT {game.uiuxProgression.heat}% / REQ {game.uiuxProgression.resources.requisition}</span><span>Difficulté : {difficultyPresets[game.difficultySettings.activePresetId].name}</span><span>Directive : {game.directive.title} / {game.directiveDays} j</span><span className="atmosphere-status">{atmosphereProfile.label} — alerte {atmosphereProfile.alertLevel}/5</span></div>
-          <button className="end-day" onClick={nextDay} disabled={!!game.ending || !!game.crisis}>Clôturer la journée</button>
+          <div className="topbar-command" title={`${getCampaignPreset(game.campaign.activeCampaignId).name} / ${difficultyPresets[game.difficultySettings.activePresetId].name}`}>
+            <span className="brand-kicker">{activeTerminal.shortLabel} / CITY {game.city}</span>
+            <strong>{activeTerminal.commandHeader}</strong>
+          </div>
+          <div className="topbar-status">
+            <span>J{String(game.day).padStart(3, '0')}</span>
+            <span>{formatUiuxPhase(game.uiuxProgression.phase)}</span>
+            <span className={game.uiuxProgression.heat > 65 ? 'danger' : ''}>HEAT {game.uiuxProgression.heat}%</span>
+            <span>REQ {game.uiuxProgression.resources.requisition}</span>
+            <span className={game.stats.rebel > 65 ? 'danger' : ''}><Radio size={13} /> Λ {game.stats.rebel}%</span>
+            <button className="telemetry-toggle" aria-expanded={telemetryOpen} onClick={() => setTelemetryOpen((open) => !open)}><Gauge size={15} /> {telemetryOpen ? 'Masquer' : 'Télémétrie'}</button>
+            <button className="end-day" onClick={nextDay} disabled={!!game.ending || !!game.crisis}>Clôturer la journée</button>
+          </div>
         </header>
 
+        {telemetryOpen && <div className="telemetry-drawer">
         <section className={`terminal-interface-banner tone-${activeTerminal.tone}`}>
           <div>
             <span className="brand-kicker">{activeTerminal.classification}</span>
@@ -1354,7 +1438,7 @@ function App() {
           <div className="terminal-status-grid">
             <span>Intégrité <b>{terminalStatus.integrity}%</b></span>
             <span>Risque <b>{terminalStatus.risk}%</b></span>
-            <span>Focus <b>{terminalStatus.recommendedTab}</b></span>
+            <span>Focus <b>{navMap.get(terminalStatus.recommendedTab) ?? terminalStatus.recommendedTab}</b></span>
           </div>
           <div className="terminal-lexicon">
             {activeTerminal.statusVocabulary.map((item) => <em key={item}>{item}</em>)}
@@ -1408,8 +1492,9 @@ function App() {
           <Stat label="Tech" value={game.combineTechnology.scanEfficiency} />
           <Stat label="Dette tech" value={game.combineTechnology.maintenanceDebt} dangerHigh />
         </section>
+        </div>}
 
-        {game.ending && <div className="ending"><h2>PROTOCOLE DE FIN ACTIVÉ</h2><p>{game.finalVerdict ? `${game.finalVerdict.title} — ${game.finalVerdict.subtitle}` : (endings[game.ending] ?? endings.replaced).replaceAll('{city}', game.city)}</p></div>}
+        {game.ending && game.tab !== 'new_game' && <div className="ending"><h2>PROTOCOLE DE FIN ACTIVÉ</h2><p>{game.finalVerdict ? `${game.finalVerdict.title} — ${game.finalVerdict.subtitle}` : (endings[game.ending] ?? endings.replaced).replaceAll('{city}', game.city)}</p></div>}
 
         {game.crisis && (
           <div className="crisis-modal">
@@ -1479,7 +1564,7 @@ function App() {
         {game.tab === 'reports' && <Reports reports={game.reports} log={game.log} policy={game.reportPolicy} setPolicy={setReportPolicy} />}
         {game.tab === 'archives' && <ArchivesScreen game={game} eventSummary={eventSummary} />}
         {game.tab === 'video_archives' && <VideoArchivesScreen game={game} operations={videoArchiveOperations} changePolicy={changeVideoArchivePolicy} applyOperation={applyVideoArchiveOperation} />}
-        {game.tab === 'save_system' && <SaveManagerScreen game={game} loadGame={loadGameFromSave} />}
+        {game.tab === 'save_system' && <SaveManagerScreen game={game} loadGame={loadGameFromSave} openNewGame={() => navigateToTab('new_game')} />}
         {game.tab === 'decision_history' && <DecisionHistoryScreen game={game} setFilter={setDecisionHistoryView} />}
         {game.tab === 'difficulty' && <DifficultySettingsScreen game={game} applyPreset={applyDifficultyPreset} updateScalar={setDifficultyScalarValue} resetCustom={resetDifficultySettings} />}
         {game.tab === 'gameplay_balance' && <GameplayBalanceScreen game={game} />}

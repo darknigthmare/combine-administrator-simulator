@@ -103,6 +103,15 @@
   border-radius: 8px;
 }
 
+.uiux-v2-panel .uiux-v2-row {
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
+.uiux-v2-panel .uiux-v2-row span {
+  line-height: 1.45;
+}
+
 .uiux-v2-metric {
   padding: 12px;
   min-width: 0;

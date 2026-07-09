@@ -1,5 +1,6 @@
 import { AlertTriangle, Archive, BadgeDollarSign, Biohazard, Factory, FileText, Gauge, Lock, Map, Radio, Shield, ShieldCheck, Users } from 'lucide-react';
 import type { GameState, TabId } from '../types/game';
+import { formatUiuxPhase } from '../systems/uiuxProgressionSystem';
 import './UiuxV2CommandDeck.css';
 
 const pct = (value: number) => `${Math.max(0, Math.min(100, Math.round(value)))}%`;
@@ -89,8 +90,8 @@ export function UiuxV2CommandDeck({ game, setTab, runAudit }: { game: GameState;
         <span className="uiux-v2-kicker"><Gauge size={15} /> UI/UX V4 / Command Deck</span>
         <h2>COAN Command Deck V4</h2>
         <p>
-          Vue compartimentee pour City {game.city}. Phase {progression.phase.replace('_', ' ')}, autorisations lore,
-          entretien quotidien et audit de viabilite sont relies a la vraie campagne.
+          Vue compartimentée pour City {game.city}. Phase {formatUiuxPhase(progression.phase)}, autorisations lore,
+          entretien quotidien et audit de viabilité sont reliés à la vraie campagne.
         </p>
         <div className="uiux-v2-metrics">
           <Metric label="Stabilite" value={game.stats.stability} />
@@ -160,7 +161,7 @@ export function UiuxV2CommandDeck({ game, setTab, runAudit }: { game: GameState;
 
       <article className="uiux-v2-panel uiux-v2-span-4">
         <span className="uiux-v2-kicker"><ShieldCheck size={14} /> Audit V4</span>
-        <h3>{progression.phase.replace('_', ' ')} / heat {progression.heat}%</h3>
+        <h3>{formatUiuxPhase(progression.phase)} / HEAT {progression.heat}%</h3>
         <p className="uiux-v2-muted">
           {progression.lastAudit} Charge modules {progression.bureaucraticLoad}% / jours critiques {progression.consecutiveCriticalDays}.
         </p>
