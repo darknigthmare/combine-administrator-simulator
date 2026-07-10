@@ -17,6 +17,9 @@
   grid-template-columns: minmax(0, 1fr) minmax(360px, 0.8fr);
   gap: 24px;
   padding: 22px;
+  background:
+    linear-gradient(90deg, rgba(5, 10, 15, .96), rgba(5, 10, 15, .78) 58%, rgba(5, 10, 15, .42)),
+    url('/openai-visuals/banners/citadel-requisitions.png') center/cover;
 }
 
 .uiux-progression-hero h2,

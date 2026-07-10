@@ -37,7 +37,7 @@ export function UiuxV2CommandDeck({ game, setTab, runAudit }: { game: GameState;
       icon: Shield,
       title: 'Commandement Overwatch',
       text: 'Unites CP, OTA, Airwatch, Synths et escalation militaire.',
-      image: '/openai-visuals/overwatch-unit-dossier.svg',
+      image: '/openai-visuals/unlocks/ota-command.png',
       tab: 'overwatch',
       tone: 'overwatch',
     },
@@ -53,7 +53,7 @@ export function UiuxV2CommandDeck({ game, setTab, runAudit }: { game: GameState;
       icon: Biohazard,
       title: 'Biosphere Xen',
       text: 'Quarantaines, mutations, recherche et catastrophes organiques.',
-      image: '/openai-visuals/xen-quarantine-biome.svg',
+      image: '/openai-visuals/unlocks/xen-bioscan.png',
       tab: 'xen',
       tone: 'xen',
       locked: !progression.unlocked.xen_bioscan,
@@ -70,7 +70,7 @@ export function UiuxV2CommandDeck({ game, setTab, runAudit }: { game: GameState;
       icon: FileText,
       title: 'Archives & directives',
       text: 'Rapports, BreenCast, directives Citadel et audit Advisor.',
-      image: '/openai-visuals/nova-prospekt-panopticon.svg',
+      image: '/openai-visuals/unlocks/nova-channel.png',
       tab: 'reports',
       tone: 'archive',
     },
@@ -78,7 +78,7 @@ export function UiuxV2CommandDeck({ game, setTab, runAudit }: { game: GameState;
       icon: BadgeDollarSign,
       title: 'Requisitions Citadel',
       text: 'Autorisations OTA, Xen, Nova, Advisor, Razor Train et Synths.',
-      image: '/openai-visuals/citadel-command-deck.svg',
+      image: '/openai-visuals/banners/citadel-requisitions.png',
       tab: 'progression',
       tone: 'archive',
     },
@@ -101,7 +101,7 @@ export function UiuxV2CommandDeck({ game, setTab, runAudit }: { game: GameState;
         </div>
       </div>
       <div className="uiux-v2-hero-image">
-        <img src="/openai-visuals/citadel-command-deck.svg" alt="Citadel command deck" />
+        <img src="/openai-visuals/banners/command-deck.png" alt="Salle de commandement de la Citadelle surplombant City 17" />
       </div>
     </header>
 
