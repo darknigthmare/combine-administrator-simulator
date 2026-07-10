@@ -2,6 +2,8 @@ import { useEffect, useMemo, useState } from 'react';
 import { Archive, ChevronDown, Database, Gauge, LayoutDashboard, LockKeyhole, Map as MapIcon, Menu, Radio, Save, Settings, Shield, Target, X } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import './index.css';
+import type { AdministratorAvatarId } from './types/game';
+import { defaultAdministratorAvatar, getUnitVisual } from './data/visualAssets';
 
 import type { AtmosphereSettings, SyntheticAudioDirectorSnapshot, CampaignId, DifficultyPresetId, DifficultyScalarKey, OnboardingChapterId, OnboardingTrackId, NewGameIntakeDoctrineId, CitizenAction, CitadelDirectiveNode, CombineTechnologyNode, Crisis, EventChoice, GameState, NovaOperation, NovaProspektState, ProfileId, InformantDoctrineId, InformantOperation, CivilProtectionDoctrineId, CivilProtectionOperation, RationOperation, RationPolicyId, ResistanceOperation, ResistanceNetworkState, ResistanceFactionDoctrineId, ResistanceFactionOperation, VortigauntDoctrineId, VortigauntOperation, XenEcosystemOperation, XenEcosystemPolicyId, XenMutationOperation, XenMutationPolicyId, QuarantineOperation, QuarantinePolicyId, XenResearchOperation, XenResearchPolicyId, XenCatastropheOperation, XenCatastrophePolicyId, MajorStoryOperation, MajorStoryPolicyId, VideoArchiveOperation, VideoArchivePolicyId, DecisionHistoryFilterId, Report, ReportPolicy, ScenarioId, TimelineId, Sector, SectorStatus, Stats, TabId, UiuxUnlockId, Unit, XenEntity } from './types/game';
 import { baseSectors, baseStats, breencastStrategies, campaignOrder, citizenActions, crises, difficultyPresetOrder, difficultyPresets, directives, endings, civilProtectionOperations, informantOperations, novaOperations, profileEffects, rationOperations, resistanceOperations, resistanceFactionOperations, vortigauntOperations, xenEcosystemOperations, xenMutationOperations, quarantineOperations, xenResearchOperations, xenCatastropheOperations, majorStoryOperations, videoArchiveOperations, syntheticAudioCues, syntheticAudioCueOrder, scenarioEffects, timelineOrder, timelinePresets, unitTemplates, xenCodex, newGameIntakeDoctrines } from './data';
@@ -121,6 +123,7 @@ function createInitialGame(city: string, scenario: ScenarioId, timeline: Timelin
     scenario,
     timeline,
     profile,
+    administratorAvatar: defaultAdministratorAvatar(profile),
     campaign,
     uiuxProgression: createInitialUiuxProgressionState(),
     difficultySettings,
@@ -183,6 +186,7 @@ function hydrateSavedGame(raw: unknown): GameState {
   const uiuxProgression = migrateUiuxProgressionState(merged);
   return {
     ...merged,
+    administratorAvatar: merged.administratorAvatar ?? defaultAdministratorAvatar(profile),
     tab: merged.tab !== 'dashboard' && isUiuxTabUnlocked(uiuxProgression, merged.tab) ? merged.tab : 'command_deck_v2',
     uiuxProgression,
     reportPolicy: merged.reportPolicy ?? 'truthful',
@@ -259,6 +263,7 @@ function App() {
   const [campaignInput, setCampaignInput] = useState<CampaignId>('custom_city_administration');
   const [difficultyInput, setDifficultyInput] = useState<DifficultyPresetId>('standard_occupation');
   const [profileInput, setProfileInput] = useState<ProfileId>('loyalist');
+  const [administratorAvatarInput, setAdministratorAvatarInput] = useState<AdministratorAvatarId>('civil_director');
   const [newGameDoctrineInput, setNewGameDoctrineInput] = useState<NewGameIntakeDoctrineId>('canonical_city17');
   const [onboardingTrackInput, setOnboardingTrackInput] = useState<OnboardingTrackId>('standard_command');
   const [useCampaignRecommendations, setUseCampaignRecommendations] = useState(true);
@@ -297,6 +302,7 @@ function App() {
     setScenarioInput(config.scenario);
     setTimelineInput(config.timeline);
     setProfileInput(config.profile);
+    setAdministratorAvatarInput(defaultAdministratorAvatar(config.profile));
     setDifficultyInput(config.difficultyPresetId);
     setOnboardingTrackInput(config.onboardingTrackId);
     setUseCampaignRecommendations(config.useCampaignRecommendations);
@@ -313,6 +319,7 @@ function App() {
     const next = createInitialGame(selectedCity, selectedScenario, selectedTimeline, selectedProfile, campaignInput, difficultyInput);
     setGame({
       ...next,
+      administratorAvatar: administratorAvatarInput,
       tab: 'command_deck_v2',
       onboarding: selectOnboardingTrack(next.onboarding, onboardingTrackInput),
       log: [
@@ -1287,11 +1294,13 @@ function App() {
     setScenarioInput(config.scenario);
     setTimelineInput(config.timeline);
     setProfileInput(config.profile);
+    setAdministratorAvatarInput(defaultAdministratorAvatar(config.profile));
     setDifficultyInput(config.difficultyPresetId);
     setCityInput(config.city);
     const next = createInitialGame(config.city, config.scenario, config.timeline, config.profile, config.campaignId, config.difficultyPresetId);
     setGame({
       ...next,
+      administratorAvatar: administratorAvatarInput,
       tab: 'onboarding',
       onboarding: selectOnboardingTrack(next.onboarding, trackId),
       log: [...config.lines.map((line) => `JOUR 001 — ${line}`), ...next.log].slice(0, 100),
@@ -1524,6 +1533,8 @@ function App() {
           setDifficultyInput={setDifficultyInput}
           profileInput={profileInput}
           setProfileInput={setProfileInput}
+          administratorAvatarInput={administratorAvatarInput}
+          setAdministratorAvatarInput={setAdministratorAvatarInput}
           doctrineInput={newGameDoctrineInput}
           setDoctrineInput={setNewGameDoctrineInput}
           onboardingTrackInput={onboardingTrackInput}
@@ -1829,7 +1840,7 @@ function Sectors({ game, selectedSector, setSelectedSector, sector, sectorAction
 }
 
 function Combine({ units, sector, deploy }: { units: Unit[]; sector: Sector; deploy: (u: Unit) => void }) {
-  return <section className="cards">{units.map((u) => <article className="panel card" key={u.id}><span className="brand-kicker">{u.category}</span><h2>{u.name}</h2><p>{u.description}</p><p><b>Force :</b> {u.strength}</p><p><b>Limite :</b> {u.weakness}</p><p className="lore-note">{u.lore}</p><button disabled={u.reserve <= 0} onClick={() => deploy(u)}>Déployer vers {sector.name} — Réserve {u.reserve}</button></article>)}</section>;
+  return <section className="cards unit-visual-grid">{units.map((u) => <article className="panel card unit-visual-card" key={u.id}><img src={getUnitVisual(u.id)} alt="" aria-hidden="true" /><span className="brand-kicker">{u.category}</span><h2>{u.name}</h2><p>{u.description}</p><p><b>Force :</b> {u.strength}</p><p><b>Limite :</b> {u.weakness}</p><p className="lore-note">{u.lore}</p><button disabled={u.reserve <= 0} onClick={() => deploy(u)}>Déployer vers {sector.name} — Réserve {u.reserve}</button></article>)}</section>;
 }
 
 function Resistance({ sectors }: { sectors: Sector[] }) {

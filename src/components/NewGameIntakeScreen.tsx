@@ -1,5 +1,6 @@
-import type { CampaignId, DifficultyPresetId, NewGameIntakeDoctrineId, OnboardingTrackId, ProfileId, ScenarioId, TabId, TimelineId } from '../types/game';
+import type { AdministratorAvatarId, CampaignId, DifficultyPresetId, NewGameIntakeDoctrineId, OnboardingTrackId, ProfileId, ScenarioId, TabId, TimelineId } from '../types/game';
 import { campaignOrder, campaignPresets, difficultyPresetOrder, difficultyPresets, newGameIntakeDoctrineOrder, newGameIntakeDoctrines, newGameIntakePhases, newGameIntakeProfileLabels, newGameIntakeRecommendedCombos, newGameIntakeScenarioLabels, newGameIntakeThreatLabels, onboardingTrackOrder, onboardingTracks, timelineOrder, timelinePresets } from '../data';
+import { administratorAvatarOrder, administratorAvatars, defaultAdministratorAvatar } from '../data/visualAssets';
 import { buildNewGameIntakePreview, doctrineToConfig } from '../systems/newGameIntakeSystem';
 
 type Props = {
@@ -15,6 +16,8 @@ type Props = {
   setDifficultyInput: (value: DifficultyPresetId) => void;
   profileInput: ProfileId;
   setProfileInput: (value: ProfileId) => void;
+  administratorAvatarInput: AdministratorAvatarId;
+  setAdministratorAvatarInput: (value: AdministratorAvatarId) => void;
   doctrineInput: NewGameIntakeDoctrineId;
   setDoctrineInput: (value: NewGameIntakeDoctrineId) => void;
   onboardingTrackInput: OnboardingTrackId;
@@ -129,9 +132,24 @@ export function NewGameIntakeScreen(props: Props) {
         </select>
 
         <label>Profil de gouvernance</label>
-        <select value={lockManual ? resolved.profile : props.profileInput} disabled={lockManual} onChange={(event) => props.setProfileInput(event.target.value as ProfileId)}>
+        <select value={lockManual ? resolved.profile : props.profileInput} disabled={lockManual} onChange={(event) => {
+          const profile = event.target.value as ProfileId;
+          props.setProfileInput(profile);
+          props.setAdministratorAvatarInput(defaultAdministratorAvatar(profile));
+        }}>
           {Object.entries(newGameIntakeProfileLabels).map(([id, label]) => <option key={id} value={id}>{label}</option>)}
         </select>
+
+        <label>Portrait administrateur</label>
+        <div className="administrator-avatar-grid">
+          {administratorAvatarOrder.map((id) => {
+            const avatar = administratorAvatars[id];
+            return <button type="button" key={id} aria-pressed={props.administratorAvatarInput === id} className={`administrator-avatar-option ${props.administratorAvatarInput === id ? 'active' : ''}`} onClick={() => props.setAdministratorAvatarInput(id)}>
+              <img src={avatar.image} alt="" aria-hidden="true" />
+              <span><strong>{avatar.title}</strong><small>{avatar.subtitle}</small></span>
+            </button>;
+          })}
+        </div>
 
         <label>Difficulté avancée</label>
         <select value={props.difficultyInput} onChange={(event) => props.setDifficultyInput(event.target.value as DifficultyPresetId)}>
@@ -208,6 +226,7 @@ export function NewGameIntakeScreen(props: Props) {
           props.setScenarioInput(resolvedConfig.scenario);
           props.setTimelineInput(resolvedConfig.timeline);
           props.setProfileInput(resolvedConfig.profile);
+          props.setAdministratorAvatarInput(defaultAdministratorAvatar(resolvedConfig.profile));
           props.setOnboardingTrackInput(resolvedConfig.onboardingTrackId);
         }}>
           <strong>{combo.label}</strong>

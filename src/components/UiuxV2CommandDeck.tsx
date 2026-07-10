@@ -1,6 +1,7 @@
 import { AlertTriangle, Archive, BadgeDollarSign, Biohazard, Factory, FileText, Gauge, Lock, Map, Radio, Shield, ShieldCheck, Users } from 'lucide-react';
 import type { GameState, TabId } from '../types/game';
 import { formatUiuxPhase } from '../systems/uiuxProgressionSystem';
+import { administratorAvatars } from '../data/visualAssets';
 import './UiuxV2CommandDeck.css';
 
 const pct = (value: number) => `${Math.max(0, Math.min(100, Math.round(value)))}%`;
@@ -21,6 +22,7 @@ export function UiuxV2CommandDeck({ game, setTab, runAudit }: { game: GameState;
     .sort((a, b) => (b.rebel + b.xen + (100 - b.infrastructure)) - (a.rebel + a.xen + (100 - a.infrastructure)))
     .slice(0, 4);
   const latestReport = game.reports[0];
+  const administrator = administratorAvatars[game.administratorAvatar];
   const latestReportLine = latestReport?.transmittedLines?.[0] ?? latestReport?.lines?.[0];
   const riskScore = Math.round((game.stats.rebel + game.stats.xen + game.auditHeat + game.majorStoryEvents.citywideHeat) / 4);
 
@@ -93,6 +95,10 @@ export function UiuxV2CommandDeck({ game, setTab, runAudit }: { game: GameState;
           Vue compartimentée pour City {game.city}. Phase {formatUiuxPhase(progression.phase)}, autorisations lore,
           entretien quotidien et audit de viabilité sont reliés à la vraie campagne.
         </p>
+        <div className="uiux-v2-administrator">
+          <img src={administrator.image} alt="" aria-hidden="true" />
+          <span><small>Administrateur en fonction</small><strong>{administrator.title}</strong><em>{administrator.subtitle}</em></span>
+        </div>
         <div className="uiux-v2-metrics">
           <Metric label="Stabilite" value={game.stats.stability} />
           <Metric label="Lambda" value={game.stats.rebel} danger />

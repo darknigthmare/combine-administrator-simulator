@@ -67,6 +67,24 @@
   line-height: 1.6;
 }
 
+.uiux-v2-administrator {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr);
+  gap: 11px;
+  align-items: center;
+  max-width: 430px;
+  margin-top: 14px;
+  padding: 8px;
+  border: 1px solid rgba(103, 232, 249, .18);
+  background: rgba(3, 7, 12, .56);
+  border-radius: 8px;
+}
+.uiux-v2-administrator img { width: 64px; height: 64px; object-fit: cover; border-radius: 4px; }
+.uiux-v2-administrator span { display: grid; gap: 2px; min-width: 0; }
+.uiux-v2-administrator small { color: var(--v2-cyan); text-transform: uppercase; font-size: 9px; font-weight: 900; }
+.uiux-v2-administrator strong { color: var(--v2-text); }
+.uiux-v2-administrator em { color: var(--v2-muted); font-size: 11px; font-style: normal; }
+
 .uiux-v2-hero-image {
   min-height: 320px;
   position: relative;

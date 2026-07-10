@@ -23,6 +23,7 @@ import { getPopulationRisk } from '../systems/populationSimulation';
 import { getConnectedSectors, getSectorPressure } from '../systems/sectorNetwork';
 import { reportPolicyLabels } from '../systems/reportFalsification';
 import { getMajorStoryStageLabel, getMajorStoryStageRank } from '../systems/majorStoryEventSystem';
+import { getUnitVisual } from '../data/visualAssets';
 
 type GlobalAction = (action: 'breencast' | 'ration_plus' | 'ration_cut' | 'advisor' | 'shadow_help') => void;
 type SectorAction = (action: 'curfew' | 'raid' | 'quarantine' | 'seal' | 'purge' | 'propaganda') => void;
@@ -37,6 +38,7 @@ function MiniStat({ label, value, dangerHigh = false }: { label: string; value: 
 
 function UnitButton({ unit, sector, deploy }: { unit: Unit; sector: Sector; deploy: Deploy }) {
   return <button className="module-unit-button" disabled={unit.reserve <= 0} onClick={() => deploy(unit)}>
+    <img src={getUnitVisual(unit.id)} alt="" aria-hidden="true" />
     <strong>{unit.name}</strong>
     <span>{unit.category} — réserve {unit.reserve}</span>
     <em>Déployer vers {sector.name}</em>

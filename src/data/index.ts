@@ -1,6 +1,7 @@
 /** Central data barrel. Import game data from this file in UI/systems. */
 export { baseStats, baseSectors } from './citySectors';
 export { unitTemplates } from './combineUnits';
+export { administratorAvatarOrder, administratorAvatars, defaultAdministratorAvatar, getUnitVisual } from './visualAssets';
 export { xenCodex } from './xenEntities';
 export { directives } from './directives';
 export { propagandaMessages } from './propagandaMessages';

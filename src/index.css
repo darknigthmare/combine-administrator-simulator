@@ -4724,6 +4724,56 @@ body[data-audio-cue='nova_intake'] .app-shell {
   color: rgba(216, 232, 242, 0.66);
 }
 
+.administrator-avatar-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin: 4px 0 12px;
+}
+.administrator-avatar-option {
+  display: grid;
+  grid-template-columns: 68px minmax(0, 1fr);
+  align-items: center;
+  gap: 9px;
+  min-height: 76px;
+  padding: 4px;
+  text-align: left;
+  border: 1px solid rgba(116, 214, 255, .14);
+  background: rgba(5, 12, 18, .78);
+}
+.administrator-avatar-option.active { border-color: rgba(116, 214, 255, .72); box-shadow: inset 0 0 18px rgba(69, 160, 255, .1); }
+.administrator-avatar-option img { width: 68px; height: 68px; object-fit: cover; border-radius: 4px; }
+.administrator-avatar-option span { display: grid; gap: 4px; min-width: 0; }
+.administrator-avatar-option strong { color: #eaf7ff; font-size: .78rem; }
+.administrator-avatar-option small { color: #8299a5; font-size: .66rem; line-height: 1.35; }
+
+.unit-visual-card { overflow: hidden; }
+.unit-visual-card > img {
+  width: calc(100% + 24px);
+  height: 160px;
+  margin: -12px -12px 4px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(116, 214, 255, .16);
+}
+.module-unit-button {
+  display: grid;
+  grid-template-columns: 74px minmax(0, 1fr);
+  grid-template-rows: auto auto auto;
+  column-gap: 10px;
+  align-items: center;
+  overflow: hidden;
+}
+.module-unit-button img {
+  grid-row: 1 / 4;
+  width: 74px;
+  height: 74px;
+  margin: -8px 0 -8px -8px;
+  object-fit: cover;
+}
+.module-unit-button strong,
+.module-unit-button span,
+.module-unit-button em { grid-column: 2; }
+
 .intake-sidebar-card {
   display: grid;
   gap: 8px;
@@ -4746,6 +4796,8 @@ body[data-audio-cue='nova_intake'] .app-shell {
   .intake-danger-card {
     min-width: 0;
   }
+
+  .administrator-avatar-grid { grid-template-columns: 1fr; }
 }
 
 /* STEP 44 — UX premium polish / Tauri desktop readability */

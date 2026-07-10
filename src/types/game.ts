@@ -1,6 +1,7 @@
 export type ScenarioId = 'pre_hl2' | 'standard' | 'dormant' | 'quarantine' | 'post_nova' | 'uprising';
 export type TimelineId = 'seven_hour_aftermath' | 'early_occupation' | 'alyx_era' | 'pre_hl2' | 'hl2_arrival' | 'post_nova_prospekt' | 'uprising' | 'citadel_collapse';
 export type ProfileId = 'loyalist' | 'technocrat' | 'tyrant' | 'collaborator' | 'sympathizer' | 'quarantine';
+export type AdministratorAvatarId = 'civil_director' | 'field_prefect' | 'combine_technocrat' | 'quarantine_director';
 export type RationPolicyId = 'standard' | 'loyalty_priority' | 'industrial_priority' | 'punitive' | 'black_market_tolerance' | 'humanitarian_mask' | 'cp_informant_bounty';
 export type RationOperationId = 'redistribute' | 'worker_bonus' | 'punitive_cut' | 'informant_bonus' | 'market_sweep' | 'hidden_relief' | 'nova_requisition';
 export type TabId = 'new_game' | 'onboarding' | 'dashboard' | 'command_deck_v2' | 'progression' | 'campaigns' | 'major_events' | 'finale' | 'chronicle' | 'timeline' | 'sectors' | 'population' | 'citizens' | 'informants' | 'civil_protection' | 'overwatch' | 'citadel' | 'technology' | 'combine' | 'resistance' | 'vortigaunts' | 'xen' | 'xen_research' | 'xen_catastrophes' | 'rationing' | 'nova' | 'propaganda' | 'reports' | 'archives' | 'video_archives' | 'save_system' | 'decision_history' | 'difficulty' | 'gameplay_balance' | 'atmosphere' | 'tauri_packaging' | 'codex' | 'system_audit' | 'ux_polish';
@@ -2619,6 +2620,7 @@ export type GameState = {
   scenario: ScenarioId;
   timeline: TimelineId;
   profile: ProfileId;
+  administratorAvatar: AdministratorAvatarId;
   campaign: CampaignState;
   uiuxProgression: UiuxProgressionState;
   campaignMission: CampaignMissionState;
