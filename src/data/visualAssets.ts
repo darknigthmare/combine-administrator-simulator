@@ -53,18 +53,18 @@ export function defaultAdministratorAvatar(profile: ProfileId): AdministratorAva
 const unitVisuals: Record<string, string> = {
   cp: '/openai-visuals/units/civil-protection.png',
   scanner: '/openai-visuals/units/city-scanner.png',
-  manhack: '/openai-visuals/units/city-scanner.png',
+  manhack: '/openai-visuals/units/manhack.png',
   grunt: '/openai-visuals/units/overwatch-soldier.png',
   soldier: '/openai-visuals/units/overwatch-soldier.png',
   ordinal: '/openai-visuals/units/overwatch-soldier.png',
   suppressor: '/openai-visuals/units/overwatch-soldier.png',
-  elite: '/openai-visuals/units/overwatch-soldier.png',
+  elite: '/openai-visuals/units/combine-elite.png',
   hunter: '/openai-visuals/units/hunter.png',
-  strider: '/openai-visuals/units/hunter.png',
+  strider: '/openai-visuals/units/strider.png',
   dropship: '/openai-visuals/unlocks/ota-command.png',
-  gunship: '/openai-visuals/unlocks/ota-command.png',
-  bioquarantine: '/openai-visuals/unlocks/xen-bioscan.png',
-  advisor: '/openai-visuals/unlocks/advisor-link.png',
+  gunship: '/openai-visuals/units/gunship.png',
+  bioquarantine: '/openai-visuals/units/bioquarantine-team.png',
+  advisor: '/openai-visuals/units/advisor.png',
 };
 
 export function getUnitVisual(unitId: string) {

@@ -29,6 +29,12 @@ Generated with the built-in OpenAI image tool for the UI/UX progression pass.
 - `units/city-scanner.png`: City Scanner surveillance patrol.
 - `units/overwatch-soldier.png`: Overwatch Soldier deployment corridor.
 - `units/hunter.png`: Hunter synth on an exterior Razor corridor.
+- `units/manhack.png`: Manhack patrol inside a residential block.
+- `units/combine-elite.png`: Combine Elite in a secure Citadel passage.
+- `units/strider.png`: Strider patrol on a City 17 avenue.
+- `units/gunship.png`: biomechanical Gunship above an industrial canal.
+- `units/bioquarantine-team.png`: Combine biosecurity team at a Xen containment barrier.
+- `units/advisor.png`: Advisor inspection chamber inside the Citadel.
 
 All prompts requested realistic, oppressive Half-Life 2 Combine production art with no readable generated text, logos, watermarks, Aperture references, or generic spaceship styling. Administrator portraits use the same centered chest-up dossier composition and administrative wall. Unit dossiers use the same landscape tactical-card composition with the subject on the right and dark UI space on the left.
 
