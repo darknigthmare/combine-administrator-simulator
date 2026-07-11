@@ -47,6 +47,13 @@ Generated with the built-in OpenAI image tool for the UI/UX progression pass.
 - `dossiers/nova-detainee.png`: Nova Prospekt resistance detainee at intake.
 - `dossiers/vortigaunt-biotic.png`: captive Vortigaunt Biotic assigned to containment work.
 
+## Crisis events
+
+- `events/civilian-riot.png`: ration riot at a Civil Protection checkpoint.
+- `events/lambda-sabotage.png`: Lambda sabotage inside an industrial facility.
+- `events/xen-breach.png`: hospital quarantine barrier under Xen pressure.
+- `events/overwatch-pacification.png`: Overwatch escalation on a barricaded avenue.
+
 All prompts requested realistic, oppressive Half-Life 2 Combine production art with no readable generated text, logos, watermarks, Aperture references, or generic spaceship styling. Administrator portraits use the same centered chest-up dossier composition and administrative wall. Unit dossiers use the same landscape tactical-card composition with the subject on the right and dark UI space on the left.
 
 Files are consumed by `src/components/NewGameIntakeScreen.tsx`, `src/components/UiuxV2CommandDeck.tsx`, `src/components/DedicatedScreens.tsx`, `src/components/UiuxProgressionPanel.css`, `src/systems/uiuxProgressionSystem.ts`, and `src/App.tsx`.

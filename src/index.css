@@ -69,6 +69,8 @@ blockquote { margin: 0 0 10px; padding: 12px; color: #c9f3ff; border-left: 3px s
 .dangerline i { display: block; height: 100%; background: linear-gradient(90deg, #9dff6a, #ff9b42, #ff4f4f); }
 .crisis-modal { position: fixed; inset: 0; z-index: 80; display: grid; place-items: center; background: rgba(0,0,0,.78); padding: 20px; }
 .crisis-box { max-width: 920px; width: 100%; border: 1px solid rgba(255, 156, 66, .7); background: linear-gradient(180deg, #101820, #05090d); padding: 22px; border-radius: 14px; box-shadow: 0 0 80px rgba(255, 119, 0, .12); }
+.crisis-event-visual { display: block; width: calc(100% + 44px); height: clamp(180px, 30vh, 300px); margin: -22px -22px 18px; object-fit: cover; border-bottom: 1px solid rgba(255, 156, 66, .35); }
+.crisis-box:has(> .crisis-event-visual) { max-height: calc(100vh - 40px); overflow: auto; }
 .choice-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 14px; }
 .choice-grid button strong { display: block; color: #f4fbff; margin-bottom: 6px; }
 .choice-grid button span { display: block; color: #93a6af; font-size: 12px; line-height: 1.45; }

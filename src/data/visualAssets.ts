@@ -1,4 +1,4 @@
-import type { AdministratorAvatarId, ProfileId } from '../types/game';
+import type { AdministratorAvatarId, CrisisType, ProfileId } from '../types/game';
 
 export type AdministratorAvatarDefinition = {
   id: AdministratorAvatarId;
@@ -82,4 +82,19 @@ const dossierVisuals: Record<DossierVisualId, string> = {
 
 export function getDossierVisual(dossierId: DossierVisualId) {
   return dossierVisuals[dossierId];
+}
+
+const crisisVisuals: Record<CrisisType, string> = {
+  REBELLION: '/openai-visuals/events/lambda-sabotage.png',
+  XEN: '/openai-visuals/events/xen-breach.png',
+  CITADEL: '/openai-visuals/events/overwatch-pacification.png',
+  CIVIL: '/openai-visuals/events/civilian-riot.png',
+  MORAL: '/openai-visuals/events/civilian-riot.png',
+  COMBINE: '/openai-visuals/events/overwatch-pacification.png',
+  PROPAGANDA: '/openai-visuals/events/civilian-riot.png',
+  INFRASTRUCTURE: '/openai-visuals/events/lambda-sabotage.png',
+};
+
+export function getCrisisVisual(crisisType: CrisisType) {
+  return crisisVisuals[crisisType];
 }
