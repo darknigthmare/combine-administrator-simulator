@@ -23,7 +23,7 @@ import { getPopulationRisk } from '../systems/populationSimulation';
 import { getConnectedSectors, getSectorPressure } from '../systems/sectorNetwork';
 import { reportPolicyLabels } from '../systems/reportFalsification';
 import { getMajorStoryStageLabel, getMajorStoryStageRank } from '../systems/majorStoryEventSystem';
-import { getUnitVisual } from '../data/visualAssets';
+import { getDossierVisual, getUnitVisual } from '../data/visualAssets';
 
 type GlobalAction = (action: 'breencast' | 'ration_plus' | 'ration_cut' | 'advisor' | 'shadow_help') => void;
 type SectorAction = (action: 'curfew' | 'raid' | 'quarantine' | 'seal' | 'purge' | 'propaganda') => void;
@@ -985,6 +985,7 @@ export function ResistanceOperationsScreen({ game, operations, applyOperation, c
   };
   return <section className="panel-grid dedicated-screen resistance-screen advanced-resistance-screen">
     <div className="panel module-command resistance-command">
+      <img className="dossier-header-visual" src={getDossierVisual('lambda_courier')} alt="" aria-hidden="true" />
       <span className="brand-kicker">Anti-Citizen Network / Lambda Grid</span>
       <h2>Résistance Lambda avancée</h2>
       <p>Le réseau n’est plus une jauge unique : cellules nommées, chefs, safehouses, routes d’exfiltration, radios pirates, caches d’armes, labos clandestins et support Vortigaunt évoluent chaque journée.</p>
@@ -1130,6 +1131,7 @@ export function VortigauntBioticsScreen({ game, operations, changeDoctrine, appl
 
   return <section className="panel-grid dedicated-screen vortigaunt-screen biotics-screen">
     <div className="panel module-command vort-command-panel">
+      <img className="dossier-header-visual" src={getDossierVisual('vortigaunt_biotic')} alt="" aria-hidden="true" />
       <span className="brand-kicker">VORTIGAUNT / BIOTIC CONTROL OFFICE</span>
       <h2>Vortigaunts, Biotics et Vortessence</h2>
       <p>Ce module sépare les Vortigaunts du simple réseau Lambda : les Biotics captifs servent de main-d’œuvre, d’outil de quarantaine et de sujet Nova Prospekt, tandis que les cercles libres soignent, cachent et relient la Résistance via la Vortessence.</p>
@@ -1583,6 +1585,7 @@ export function CitizenRegistryScreen({ game, actions, applyAction }: { game: Ga
 
   return <section className="panel-grid dedicated-screen citizen-registry-screen">
     <div className="panel module-command citizen-registry-command">
+      <img className="dossier-header-visual" src={getDossierVisual('suspected_citizen')} alt="" aria-hidden="true" />
       <span className="brand-kicker">Civil Registry / Individual Dossiers</span>
       <h2>Registre civil individuel</h2>
       <p>Le registre ne remplace pas la population globale : il extrait des dossiers représentatifs que la Civil Authority peut manipuler, interroger, récompenser, falsifier ou transférer vers Nova Prospekt.</p>

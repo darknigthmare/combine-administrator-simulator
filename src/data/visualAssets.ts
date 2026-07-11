@@ -70,3 +70,16 @@ const unitVisuals: Record<string, string> = {
 export function getUnitVisual(unitId: string) {
   return unitVisuals[unitId] ?? '/openai-visuals/unlocks/ota-command.png';
 }
+
+export type DossierVisualId = 'lambda_courier' | 'suspected_citizen' | 'nova_detainee' | 'vortigaunt_biotic';
+
+const dossierVisuals: Record<DossierVisualId, string> = {
+  lambda_courier: '/openai-visuals/dossiers/lambda-courier.png',
+  suspected_citizen: '/openai-visuals/dossiers/suspected-citizen.png',
+  nova_detainee: '/openai-visuals/dossiers/nova-detainee.png',
+  vortigaunt_biotic: '/openai-visuals/dossiers/vortigaunt-biotic.png',
+};
+
+export function getDossierVisual(dossierId: DossierVisualId) {
+  return dossierVisuals[dossierId];
+}

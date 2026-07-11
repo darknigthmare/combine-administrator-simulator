@@ -40,6 +40,13 @@ Generated with the built-in OpenAI image tool for the UI/UX progression pass.
 - `units/combine-suppressor.png`: heavy urban suppression specialist.
 - `units/dropship.png`: biomechanical aerial transport carrying a deployment pod.
 
+## Classified person dossiers
+
+- `dossiers/lambda-courier.png`: Lambda courier inside a canal safehouse.
+- `dossiers/suspected-citizen.png`: suspected anti-citizen under checkpoint surveillance.
+- `dossiers/nova-detainee.png`: Nova Prospekt resistance detainee at intake.
+- `dossiers/vortigaunt-biotic.png`: captive Vortigaunt Biotic assigned to containment work.
+
 All prompts requested realistic, oppressive Half-Life 2 Combine production art with no readable generated text, logos, watermarks, Aperture references, or generic spaceship styling. Administrator portraits use the same centered chest-up dossier composition and administrative wall. Unit dossiers use the same landscape tactical-card composition with the subject on the right and dark UI space on the left.
 
 Files are consumed by `src/components/NewGameIntakeScreen.tsx`, `src/components/UiuxV2CommandDeck.tsx`, `src/components/DedicatedScreens.tsx`, `src/components/UiuxProgressionPanel.css`, `src/systems/uiuxProgressionSystem.ts`, and `src/App.tsx`.

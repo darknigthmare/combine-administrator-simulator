@@ -3,7 +3,7 @@ import { Archive, ChevronDown, Database, Gauge, LayoutDashboard, LockKeyhole, Ma
 import type { LucideIcon } from 'lucide-react';
 import './index.css';
 import type { AdministratorAvatarId } from './types/game';
-import { defaultAdministratorAvatar, getUnitVisual } from './data/visualAssets';
+import { defaultAdministratorAvatar, getDossierVisual, getUnitVisual } from './data/visualAssets';
 
 import type { AtmosphereSettings, SyntheticAudioDirectorSnapshot, CampaignId, DifficultyPresetId, DifficultyScalarKey, OnboardingChapterId, OnboardingTrackId, NewGameIntakeDoctrineId, CitizenAction, CitadelDirectiveNode, CombineTechnologyNode, Crisis, EventChoice, GameState, NovaOperation, NovaProspektState, ProfileId, InformantDoctrineId, InformantOperation, CivilProtectionDoctrineId, CivilProtectionOperation, RationOperation, RationPolicyId, ResistanceOperation, ResistanceNetworkState, ResistanceFactionDoctrineId, ResistanceFactionOperation, VortigauntDoctrineId, VortigauntOperation, XenEcosystemOperation, XenEcosystemPolicyId, XenMutationOperation, XenMutationPolicyId, QuarantineOperation, QuarantinePolicyId, XenResearchOperation, XenResearchPolicyId, XenCatastropheOperation, XenCatastrophePolicyId, MajorStoryOperation, MajorStoryPolicyId, VideoArchiveOperation, VideoArchivePolicyId, DecisionHistoryFilterId, Report, ReportPolicy, ScenarioId, TimelineId, Sector, SectorStatus, Stats, TabId, UiuxUnlockId, Unit, XenEntity } from './types/game';
 import { baseSectors, baseStats, breencastStrategies, campaignOrder, citizenActions, crises, difficultyPresetOrder, difficultyPresets, directives, endings, civilProtectionOperations, informantOperations, novaOperations, profileEffects, rationOperations, resistanceOperations, resistanceFactionOperations, vortigauntOperations, xenEcosystemOperations, xenMutationOperations, quarantineOperations, xenResearchOperations, xenCatastropheOperations, majorStoryOperations, videoArchiveOperations, syntheticAudioCues, syntheticAudioCueOrder, scenarioEffects, timelineOrder, timelinePresets, unitTemplates, xenCodex, newGameIntakeDoctrines } from './data';
@@ -1860,6 +1860,7 @@ function NovaProspektPanel({ nova, operations, applyOperation, changePolicy }: {
 
   return <section className="nova-layout">
     <div className="nova-hero panel">
+      <img className="dossier-header-visual" src={getDossierVisual('nova_detainee')} alt="" aria-hidden="true" />
       <div>
         <span className="brand-kicker">REMOTE FACILITY UPLINK</span>
         <h2>NOVA PROSPEKT</h2>

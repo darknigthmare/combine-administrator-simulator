@@ -4748,6 +4748,17 @@ body[data-audio-cue='nova_intake'] .app-shell {
 .administrator-avatar-option small { color: #8299a5; font-size: .66rem; line-height: 1.35; }
 
 .unit-visual-card { overflow: hidden; }
+.dossier-header-visual {
+  width: calc(100% + 24px);
+  height: clamp(130px, 18vw, 210px);
+  margin: -12px -12px 12px;
+  object-fit: cover;
+  object-position: center;
+  border-bottom: 1px solid rgba(116, 214, 255, .16);
+}
+.module-command:has(> .dossier-header-visual),
+.nova-hero:has(> .dossier-header-visual) { overflow: hidden; }
+.nova-hero > .dossier-header-visual { grid-column: 1 / -1; }
 .unit-visual-card > img {
   width: calc(100% + 24px);
   height: 160px;
