@@ -35,6 +35,10 @@ Generated with the built-in OpenAI image tool for the UI/UX progression pass.
 - `units/gunship.png`: biomechanical Gunship above an industrial canal.
 - `units/bioquarantine-team.png`: Combine biosecurity team at a Xen containment barrier.
 - `units/advisor.png`: Advisor inspection chamber inside the Citadel.
+- `units/combine-grunt.png`: early-occupation quarantine infantry.
+- `units/combine-ordinal.png`: Ordinal field commander using a tactical projection.
+- `units/combine-suppressor.png`: heavy urban suppression specialist.
+- `units/dropship.png`: biomechanical aerial transport carrying a deployment pod.
 
 All prompts requested realistic, oppressive Half-Life 2 Combine production art with no readable generated text, logos, watermarks, Aperture references, or generic spaceship styling. Administrator portraits use the same centered chest-up dossier composition and administrative wall. Unit dossiers use the same landscape tactical-card composition with the subject on the right and dark UI space on the left.
 
