@@ -374,7 +374,7 @@ export function MajorStoryEventsScreen({ game, operations, changePolicy, applyOp
 }
 
 
-export function CampaignScreen({ game, startCampaign }: { game: GameState; startCampaign: (campaignId: CampaignId) => void }) {
+export function CampaignScreen({ game }: { game: GameState }) {
   const active = campaignPresets[game.campaign.activeCampaignId];
   const upcomingMilestone = active.milestones.find((milestone, index) => index >= game.campaign.milestoneIndex);
   const completed = game.campaign.objectives.filter((objective) => objective.achieved).length;
@@ -408,16 +408,16 @@ export function CampaignScreen({ game, startCampaign }: { game: GameState; start
 
     <div className="panel campaign-selector-panel">
       <span className="brand-kicker">Campagnes disponibles</span>
-      <h2>Changer d’arc narratif</h2>
-      <p>Changer de campagne démarre une nouvelle administration avec la timeline, le scénario et le profil recommandés par le dossier.</p>
+      <h2>Archives des arcs narratifs</h2>
+      <p>Le mandat actif est verrouillé. Les autres campagnes sont consultables ici, mais ne peuvent être choisies qu’avant l’intake d’une nouvelle administration.</p>
       <div className="campaign-card-list">
         {campaignOrder.map((id) => {
           const preset = campaignPresets[id];
-          return <button key={id} className={id === game.campaign.activeCampaignId ? 'active campaign-preset-card' : 'campaign-preset-card'} onClick={() => startCampaign(id)}>
+          return <article key={id} className={id === game.campaign.activeCampaignId ? 'active campaign-preset-card' : 'campaign-preset-card'}>
             <strong>{preset.name}</strong>
             <span>{preset.subtitle}</span>
             <em>City {preset.recommendedCity} — {preset.durationDays} jours — {preset.recommendedTimeline}</em>
-          </button>;
+          </article>;
         })}
       </div>
     </div>

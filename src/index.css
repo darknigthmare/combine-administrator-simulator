@@ -71,6 +71,20 @@ blockquote { margin: 0 0 10px; padding: 12px; color: #c9f3ff; border-left: 3px s
 .crisis-box { max-width: 920px; width: 100%; border: 1px solid rgba(255, 156, 66, .7); background: linear-gradient(180deg, #101820, #05090d); padding: 22px; border-radius: 14px; box-shadow: 0 0 80px rgba(255, 119, 0, .12); }
 .crisis-event-visual { display: block; width: calc(100% + 44px); height: clamp(180px, 30vh, 300px); margin: -22px -22px 18px; object-fit: cover; border-bottom: 1px solid rgba(255, 156, 66, .35); }
 .crisis-box:has(> .crisis-event-visual) { max-height: calc(100vh - 40px); overflow: auto; }
+.pre-session-shell { grid-template-columns: 1fr; }
+.pre-session-shell > .sidebar,
+.pre-session-shell .terminal-topbar,
+.pre-session-shell .telemetry-drawer { display: none; }
+.pre-session-shell > .main { grid-column: 1; min-width: 0; }
+.campaign-prologue-screen { display: grid; gap: 14px; max-width: 1180px; margin: 0 auto; }
+.prologue-visual { min-height: min(52vh, 520px); display: flex; align-items: end; background-size: cover; background-position: center; border: 1px solid rgba(116, 214, 255, .22); overflow: hidden; }
+.prologue-copy { width: 100%; padding: clamp(24px, 5vw, 64px); background: linear-gradient(0deg, rgba(2, 7, 10, .96), rgba(2, 7, 10, .08)); }
+.prologue-copy h1 { margin: 6px 0 12px; font-size: clamp(2.2rem, 8vw, 5.5rem); letter-spacing: 0; }
+.prologue-copy p { max-width: 760px; font-size: 1rem; line-height: 1.65; }
+.prologue-dossier { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 18px; align-items: center; }
+.prologue-dossier > img { width: 150px; aspect-ratio: 1; object-fit: cover; }
+.prologue-order { display: grid; justify-items: start; }
+@media (max-width: 640px) { .prologue-dossier { grid-template-columns: 84px minmax(0, 1fr); } .prologue-dossier > img { width: 84px; } }
 .choice-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 14px; }
 .choice-grid button strong { display: block; color: #f4fbff; margin-bottom: 6px; }
 .choice-grid button span { display: block; color: #93a6af; font-size: 12px; line-height: 1.45; }

@@ -1,13 +1,10 @@
-import type { GameState, OnboardingChapterId, OnboardingTrackId, TabId } from '../types/game';
-import { onboardingQuickLinks, onboardingTrackOrder, onboardingTracks } from '../data/onboarding';
+import type { GameState, OnboardingChapterId, TabId } from '../types/game';
+import { onboardingQuickLinks } from '../data/onboarding';
 import { buildOnboardingView } from '../systems/onboardingSystem';
 
-export function OnboardingScreen({ game, startGuidedGame, selectTrack, completeChapter, resetOnboarding, runFirstDayScript, setTab }: {
+export function OnboardingScreen({ game, completeChapter, runFirstDayScript, setTab }: {
   game: GameState;
-  startGuidedGame: (trackId: OnboardingTrackId) => void;
-  selectTrack: (trackId: OnboardingTrackId) => void;
   completeChapter: (chapterId: OnboardingChapterId) => void;
-  resetOnboarding: () => void;
   runFirstDayScript: () => void;
   setTab: (tab: TabId) => void;
 }) {
@@ -48,10 +45,7 @@ export function OnboardingScreen({ game, startGuidedGame, selectTrack, completeC
           <ul>
             {view.activeTrack.briefingLines.map((line) => <li key={line}>{line}</li>)}
           </ul>
-          <div className="action-row">
-            <button onClick={() => startGuidedGame(view.activeTrackId)}>Nouvelle partie guidée</button>
-            <button className="secondary" onClick={resetOnboarding}>Réinitialiser intake</button>
-          </div>
+          <p className="lore-note">La piste a été choisie lors de la création du mandat et reste verrouillée pour cette campagne.</p>
         </article>
 
         <article className="panel onboarding-first-day">
@@ -66,32 +60,6 @@ export function OnboardingScreen({ game, startGuidedGame, selectTrack, completeC
           <button disabled={!view.readyForFirstDay || game.onboarding.firstDayScriptCompleted} onClick={runFirstDayScript}>Exécuter journée guidée</button>
         </article>
       </div>
-
-      <section className="panel">
-        <div className="section-heading compact">
-          <div><span className="brand-kicker">PISTES GUIDÉES</span><h3>Choix rapide de doctrine</h3></div>
-        </div>
-        <div className="track-grid">
-          {onboardingTrackOrder.map((trackId) => {
-            const track = onboardingTracks[trackId];
-            const active = trackId === view.activeTrackId;
-            return (
-              <article key={track.id} className={`track-card ${active ? 'active' : ''}`}>
-                <span>{track.recommendedCity ? `City ${track.recommendedCity}` : 'City custom'}</span>
-                <h4>{track.title}</h4>
-                <p>{track.subtitle}</p>
-                <div className="track-meta">
-                  <b>{track.timeline}</b><b>{track.scenario}</b><b>{track.profile}</b>
-                </div>
-                <div className="action-row">
-                  <button onClick={() => selectTrack(track.id)}>{active ? 'Piste active' : 'Sélectionner'}</button>
-                  <button className="secondary" onClick={() => startGuidedGame(track.id)}>Démarrer</button>
-                </div>
-              </article>
-            );
-          })}
-        </div>
-      </section>
 
       <section className="panel">
         <div className="section-heading compact">

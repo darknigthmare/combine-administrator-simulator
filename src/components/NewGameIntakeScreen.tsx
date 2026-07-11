@@ -26,8 +26,6 @@ type Props = {
   setUseCampaignRecommendations: (value: boolean) => void;
   applyDoctrine: (value: NewGameIntakeDoctrineId) => void;
   startGame: () => void;
-  startGuidedGame: (trackId: OnboardingTrackId) => void;
-  setTab: (tab: TabId) => void;
 };
 
 const intakeTabLabels: Partial<Record<TabId, string>> = {
@@ -196,7 +194,7 @@ export function NewGameIntakeScreen(props: Props) {
         </div>
         <h4>Modules recommandés après lancement</h4>
         <div className="tag-row">
-          {preview.recommendedFirstTabs.map((tab) => <button className="link-chip" key={tab} onClick={() => props.setTab(tab)}>{intakeTabLabels[tab] ?? tab}</button>)}
+          {preview.recommendedFirstTabs.map((tab) => <span className="link-chip" key={tab}>{intakeTabLabels[tab] ?? tab}</span>)}
         </div>
       </div>
     </section>
@@ -204,11 +202,10 @@ export function NewGameIntakeScreen(props: Props) {
     <section className="panel intake-launch-panel">
       <div>
         <h3>Initialisation</h3>
-        <p>Le lancement standard démarre avec les paramètres ci-dessus. Le lancement guidé applique la piste tutoriel sélectionnée et ouvre directement le Tutoriel COAN.</p>
+        <p>La validation crée définitivement le mandat, ouvre le prologue Citadel, puis conduit au tutoriel COAN sélectionné.</p>
       </div>
       <div className="intake-launch-actions">
-        <button className="primary" onClick={props.startGame}>Initialiser administration standard</button>
-        <button onClick={() => props.startGuidedGame(props.onboardingTrackInput)}>Lancer avec tutoriel COAN</button>
+        <button className="primary" onClick={props.startGame}>Valider le mandat et ouvrir le prologue</button>
       </div>
     </section>
 

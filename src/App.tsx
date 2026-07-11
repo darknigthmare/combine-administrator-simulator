@@ -26,6 +26,7 @@ import { SystemAuditScreen } from './components/SystemAuditScreen';
 import { GameplayBalanceScreen } from './components/GameplayBalanceScreen';
 import { OnboardingScreen } from './components/OnboardingScreen';
 import { NewGameIntakeScreen } from './components/NewGameIntakeScreen';
+import { CampaignPrologueScreen } from './components/CampaignPrologueScreen';
 import { UxPolishScreen } from './components/UxPolishScreen';
 import { TauriPackagingScreen } from './components/TauriPackagingScreen';
 import { UiuxV2CommandDeck } from './components/UiuxV2CommandDeck';
@@ -58,7 +59,7 @@ import { buildSyntheticAudioDirector, playSyntheticAudioCue } from './systems/sy
 import { createInitialVideoArchiveState, migrateVideoArchiveState, resolveVideoArchiveOperation, setVideoArchivePolicy, simulateVideoArchiveDay } from './systems/videoArchiveSystem';
 import { createInitialDecisionHistoryState, migrateDecisionHistoryState, reconcileDecisionHistory, setDecisionHistoryFilter } from './systems/decisionHistorySystem';
 import { applyDifficultySectorEffects, applyDifficultyStartingEffects, createInitialDifficultySettings, migrateDifficultySettings, resetCustomDifficulty, setDifficultyPreset, simulateDifficultyDay, updateDifficultyScalar } from './systems/difficultySettingsSystem';
-import { buildGuidedStartConfig, completeOnboardingChapter as completeOnboardingChapterState, createInitialOnboardingState, migrateOnboardingState, resetOnboardingFlow, resolveOnboardingFirstDay, selectOnboardingTrack } from './systems/onboardingSystem';
+import { completeOnboardingChapter as completeOnboardingChapterState, createInitialOnboardingState, migrateOnboardingState, resolveOnboardingFirstDay, selectOnboardingTrack } from './systems/onboardingSystem';
 import { doctrineToConfig } from './systems/newGameIntakeSystem';
 import { buildUxPolishReport } from './systems/uxPolishSystem';
 import { createInitialUiuxProgressionState, formatUiuxPhase, isUiuxTabUnlocked, isUiuxUnitUnlocked, migrateUiuxProgressionState, purchaseUiuxUnlock, runUiuxAudit, simulateUiuxProgressionDay } from './systems/uiuxProgressionSystem';
@@ -250,11 +251,11 @@ const primaryNavIcons: Partial<Record<TabId, LucideIcon>> = {
 function App() {
   const [game, setGame] = useState<GameState>(() => {
     const saved = localStorage.getItem(AUTOSAVE_STORAGE_KEY);
-    if (!saved) return createInitialGame('17', 'standard', 'pre_hl2', 'loyalist');
+    if (!saved) return { ...createInitialGame('17', 'standard', 'pre_hl2', 'loyalist'), tab: 'new_game' };
     try {
       return hydrateSavedGame(JSON.parse(saved));
     } catch {
-      return createInitialGame('17', 'standard', 'pre_hl2', 'loyalist');
+      return { ...createInitialGame('17', 'standard', 'pre_hl2', 'loyalist'), tab: 'new_game' };
     }
   });
   const [cityInput, setCityInput] = useState('17');
@@ -320,7 +321,7 @@ function App() {
     setGame({
       ...next,
       administratorAvatar: administratorAvatarInput,
-      tab: 'command_deck_v2',
+      tab: 'prologue',
       onboarding: selectOnboardingTrack(next.onboarding, onboardingTrackInput),
       log: [
         `JOUR 001 — Intake Nouvelle Partie : ${newGameIntakeDoctrines[newGameDoctrineInput]?.title ?? 'Configuration COAN'}.`,
@@ -330,19 +331,6 @@ function App() {
     });
     setSelectedSector('admin');
   }
-
-  function startCampaign(campaignId: CampaignId) {
-    const campaign = getCampaignPreset(campaignId);
-    setCampaignInput(campaignId);
-    setUseCampaignRecommendations(campaignId !== 'custom_city_administration');
-    setScenarioInput(campaign.recommendedScenario);
-    setTimelineInput(campaign.recommendedTimeline);
-    setProfileInput(campaign.recommendedProfile);
-    setCityInput(campaign.recommendedCity);
-    setGame(createInitialGame(campaign.recommendedCity, campaign.recommendedScenario, campaign.recommendedTimeline, campaign.recommendedProfile, campaignId, difficultyInput));
-    setSelectedSector('admin');
-  }
-
 
   function loadGameFromSave(savedGame: GameState, source: string) {
     const hydrated = hydrateSavedGame(savedGame);
@@ -1284,53 +1272,12 @@ function App() {
     });
   }
 
-  function startGuidedOnboarding(trackId: OnboardingTrackId) {
-    const config = buildGuidedStartConfig(trackId, cityInput, difficultyInput);
-    setCampaignInput(config.campaignId);
-    setUseCampaignRecommendations(config.campaignId !== 'custom_city_administration');
-    const doctrineId = Object.values(newGameIntakeDoctrines).find((entry) => entry.onboardingTrackId === trackId)?.id ?? 'manual';
-    setNewGameDoctrineInput(doctrineId);
-    setOnboardingTrackInput(trackId);
-    setScenarioInput(config.scenario);
-    setTimelineInput(config.timeline);
-    setProfileInput(config.profile);
-    setAdministratorAvatarInput(defaultAdministratorAvatar(config.profile));
-    setDifficultyInput(config.difficultyPresetId);
-    setCityInput(config.city);
-    const next = createInitialGame(config.city, config.scenario, config.timeline, config.profile, config.campaignId, config.difficultyPresetId);
-    setGame({
-      ...next,
-      administratorAvatar: administratorAvatarInput,
-      tab: 'onboarding',
-      onboarding: selectOnboardingTrack(next.onboarding, trackId),
-      log: [...config.lines.map((line) => `JOUR 001 — ${line}`), ...next.log].slice(0, 100),
-    });
-    setSelectedSector('admin');
-  }
-
-  function chooseOnboardingTrack(trackId: OnboardingTrackId) {
-    const nextOnboarding = selectOnboardingTrack(game.onboarding, trackId);
-    setGame({
-      ...game,
-      onboarding: nextOnboarding,
-      log: [`JOUR ${String(game.day).padStart(3, '0')} — Tutoriel COAN : piste ${trackId} sélectionnée.`, ...game.log].slice(0, 80),
-    });
-  }
-
   function completeOnboardingChapter(chapterId: OnboardingChapterId) {
     const nextOnboarding = completeOnboardingChapterState(game.onboarding, chapterId);
     setGame({
       ...game,
       onboarding: nextOnboarding,
       log: [`JOUR ${String(game.day).padStart(3, '0')} — Tutoriel COAN : chapitre ${chapterId} validé.`, ...game.log].slice(0, 80),
-    });
-  }
-
-  function resetOnboardingStatus() {
-    setGame({
-      ...game,
-      onboarding: resetOnboardingFlow(game),
-      log: [`JOUR ${String(game.day).padStart(3, '0')} — Tutoriel COAN réinitialisé.`, ...game.log].slice(0, 80),
     });
   }
 
@@ -1360,7 +1307,7 @@ function App() {
   })).filter((group) => group.items.length > 0);
 
   return (
-    <div className={`app-shell ux-density-${uxPolish.density} ${atmosphereProfile.bodyClass} alert-${atmosphereProfile.alertLevel}`}>
+    <div className={`app-shell ${game.tab === 'new_game' || game.tab === 'prologue' ? 'pre-session-shell' : ''} ux-density-${uxPolish.density} ${atmosphereProfile.bodyClass} alert-${atmosphereProfile.alertLevel}`}>
       <AtmosphereLayer profile={atmosphereProfile} settings={game.atmosphereSettings} cueKey={atmosphereCueKey} audioDirector={audioDirector} />
       <FloatingWindowLayer game={game} selectedSectorId={selectedSector} setTab={navigateToTab} />
       <aside className={`sidebar ${mobileNavOpen ? 'nav-open' : 'nav-closed'}`}>
@@ -1544,18 +1491,17 @@ function App() {
           setUseCampaignRecommendations={setUseCampaignRecommendations}
           applyDoctrine={applyNewGameDoctrine}
           startGame={startGame}
-          startGuidedGame={startGuidedOnboarding}
-          setTab={(tab) => setGame({ ...game, tab })}
         />}
-        {game.tab === 'onboarding' && <OnboardingScreen game={game} startGuidedGame={startGuidedOnboarding} selectTrack={chooseOnboardingTrack} completeChapter={completeOnboardingChapter} resetOnboarding={resetOnboardingStatus} runFirstDayScript={runOnboardingFirstDayScript} setTab={(tab) => setGame({ ...game, tab })} />}
+        {game.tab === 'prologue' && <CampaignPrologueScreen game={game} continueToTutorial={() => setGame({ ...game, tab: 'onboarding' })} />}
+        {game.tab === 'onboarding' && <OnboardingScreen game={game} completeChapter={completeOnboardingChapter} runFirstDayScript={runOnboardingFirstDayScript} setTab={(tab) => setGame({ ...game, tab })} />}
         {game.tab === 'dashboard' && <Dashboard game={game} dynamicBreencast={dynamicBreencast} timelinePreset={timelinePreset} atmosphereProfile={atmosphereProfile} globalAction={globalAction} eventSummary={eventSummary} setTab={(tab) => setGame({ ...game, tab })} />}
         {game.tab === 'command_deck_v2' && <UiuxV2CommandDeck game={game} setTab={navigateToTab} runAudit={auditUiuxProgression} />}
         {game.tab === 'progression' && <UiuxProgressionPanel game={game} purchaseUnlock={buyUiuxUnlock} runAudit={auditUiuxProgression} />}
-        {game.tab === 'campaigns' && <CampaignScreen game={game} startCampaign={startCampaign} />}
+        {game.tab === 'campaigns' && <CampaignScreen game={game} />}
         {game.tab === 'major_events' && <MajorStoryEventsScreen game={game} operations={majorStoryOperations} changePolicy={changeMajorStoryPolicy} applyOperation={applyMajorStoryOperation} />}
         {game.tab === 'finale' && <FinalVerdictScreen game={game} />}
         {game.tab === 'chronicle' && <FinalChronicleScreen game={game} />}
-        {game.tab === 'timeline' && <TimelinePanel game={game} current={timelinePreset} setTimeline={(timeline) => setGame(createInitialGame(game.city, game.scenario, timeline, game.profile, game.campaign.activeCampaignId, game.difficultySettings.activePresetId))} />}
+        {game.tab === 'timeline' && <TimelinePanel game={game} current={timelinePreset} />}
         {game.tab === 'sectors' && <Sectors game={game} selectedSector={selectedSector} setSelectedSector={setSelectedSector} sector={sector} sectorAction={sectorAction} deploy={deploy} />}
         {game.tab === 'population' && <PopulationScreen game={game} selectedSectorId={selectedSector} setSelectedSector={setSelectedSector} />}
         {game.tab === 'citizens' && <CitizenRegistryScreen game={game} actions={citizenActions} applyAction={applyCitizenAction} />}
@@ -1576,9 +1522,9 @@ function App() {
         {game.tab === 'reports' && <Reports reports={game.reports} log={game.log} policy={game.reportPolicy} setPolicy={setReportPolicy} />}
         {game.tab === 'archives' && <ArchivesScreen game={game} eventSummary={eventSummary} />}
         {game.tab === 'video_archives' && <VideoArchivesScreen game={game} operations={videoArchiveOperations} changePolicy={changeVideoArchivePolicy} applyOperation={applyVideoArchiveOperation} />}
-        {game.tab === 'save_system' && <SaveManagerScreen game={game} loadGame={loadGameFromSave} openNewGame={() => navigateToTab('new_game')} />}
+        {game.tab === 'save_system' && <SaveManagerScreen game={game} loadGame={loadGameFromSave} />}
         {game.tab === 'decision_history' && <DecisionHistoryScreen game={game} setFilter={setDecisionHistoryView} />}
-        {game.tab === 'difficulty' && <DifficultySettingsScreen game={game} applyPreset={applyDifficultyPreset} updateScalar={setDifficultyScalarValue} resetCustom={resetDifficultySettings} />}
+        {game.tab === 'difficulty' && <DifficultySettingsScreen game={game} applyPreset={applyDifficultyPreset} updateScalar={setDifficultyScalarValue} resetCustom={resetDifficultySettings} readOnly />}
         {game.tab === 'gameplay_balance' && <GameplayBalanceScreen game={game} />}
         {game.tab === 'atmosphere' && <AtmosphereScreen profile={atmosphereProfile} audioDirector={audioDirector} settings={game.atmosphereSettings} updateSettings={updateAtmosphereSettings} />}
         {game.tab === 'tauri_packaging' && <TauriPackagingScreen game={game} />}
@@ -1747,7 +1693,7 @@ function Dashboard({ game, dynamicBreencast, timelinePreset, atmosphereProfile, 
   </section>;
 }
 
-function TimelinePanel({ game, current, setTimeline }: { game: GameState; current: ReturnType<typeof getTimelinePreset>; setTimeline: (timeline: TimelineId) => void }) {
+function TimelinePanel({ game, current }: { game: GameState; current: ReturnType<typeof getTimelinePreset> }) {
   const ordered = timelineOrder.map((id) => timelinePresets[id]);
   return <section className="panel-grid timeline-layout">
     <div className="panel timeline-command">
@@ -1761,18 +1707,18 @@ function TimelinePanel({ game, current, setTimeline }: { game: GameState; curren
         <span>Xen x<b>{current.eventBias.xen}</b></span>
         <span>Citadelle x<b>{current.eventBias.citadel}</b></span>
       </div>
-      <div className="advice">Changer de timeline réinitialise la partie courante avec le même numéro de City, le même scénario opérationnel et le même profil, mais applique une époque différente.</div>
+      <div className="advice">Timeline verrouillée par le mandat initial. Elle ne peut être choisie que pendant la création de campagne.</div>
     </div>
 
     <div className="panel timeline-list">
-      <span className="brand-kicker">Sélection d’époque</span>
-      <h2>Chronologie jouable</h2>
+      <span className="brand-kicker">Archives chronologiques</span>
+      <h2>Époques consultables</h2>
       <div className="operation-list">
-        {ordered.map((preset) => <button key={preset.id} className={game.timeline === preset.id ? 'selected-operation' : ''} onClick={() => setTimeline(preset.id)}>
+        {ordered.map((preset) => <article key={preset.id} className={game.timeline === preset.id ? 'selected-operation directive-node' : 'directive-node'}>
           <strong>{preset.name}</strong>
           <span>{preset.canonWindow}</span>
           <em>{preset.subtitle}</em>
-        </button>)}
+        </article>)}
       </div>
     </div>
 

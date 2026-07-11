@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useState } from 'react';
-import { FilePlus2 } from 'lucide-react';
 import type { GameState, SaveSlotId, SaveSlotPayload } from '../types/game';
 import { saveSlotDefinitions } from '../data/saveSlots';
 import { buildSaveFileName, buildSaveSlotMeta, createSaveSlotPayload, deleteSaveSlot, downloadTextFile, exportAllManualSlots, exportCurrentGame, parseImportedSave, persistImportedSlot, readManualSaveSlots, writeSaveSlot } from '../systems/saveSlotSystem';
@@ -7,7 +6,6 @@ import { buildSaveFileName, buildSaveSlotMeta, createSaveSlotPayload, deleteSave
 type SaveManagerScreenProps = {
   game: GameState;
   loadGame: (game: GameState, source: string) => void;
-  openNewGame: () => void;
 };
 
 function formatDate(value: string) {
@@ -43,7 +41,7 @@ function SlotMetaSummary({ payload }: { payload: SaveSlotPayload | null }) {
   </>;
 }
 
-export function SaveManagerScreen({ game, loadGame, openNewGame }: SaveManagerScreenProps) {
+export function SaveManagerScreen({ game, loadGame }: SaveManagerScreenProps) {
   const [slots, setSlots] = useState<SaveSlotPayload[]>(() => readManualSaveSlots());
   const [notice, setNotice] = useState('COAN Save Manager prêt. Autosave locale active via localStorage.');
   const [imported, setImported] = useState<SaveSlotPayload | null>(null);
@@ -145,7 +143,6 @@ export function SaveManagerScreen({ game, loadGame, openNewGame }: SaveManagerSc
       </div>
       <p className="advice"><strong>Statut :</strong><br />{notice}</p>
       <div className="actions save-actions-row">
-        <button className="primary" onClick={openNewGame}><FilePlus2 size={16} /> Nouvelle administration</button>
         <button onClick={exportCurrent}>Exporter la session active</button>
         <button onClick={exportAll}>Exporter tous les slots</button>
       </div>

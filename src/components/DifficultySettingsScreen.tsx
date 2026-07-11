@@ -1,7 +1,7 @@
 import type { DifficultyPresetId, DifficultyScalarKey, DifficultySettingsState, GameState } from '../types/game';
 import { difficultyPresetOrder, difficultyPresets, difficultyScalarLabels } from '../data/difficultySettings';
 
-function ScalarControl({ scalarKey, value, onChange }: { scalarKey: DifficultyScalarKey; value: number; onChange: (key: DifficultyScalarKey, value: number) => void }) {
+function ScalarControl({ scalarKey, value, onChange, readOnly }: { scalarKey: DifficultyScalarKey; value: number; onChange: (key: DifficultyScalarKey, value: number) => void; readOnly: boolean }) {
   const meta = difficultyScalarLabels[scalarKey];
   const percent = Math.round(((value - 0.35) / 1.65) * 100);
   return <article className="difficulty-scalar-card">
@@ -12,7 +12,7 @@ function ScalarControl({ scalarKey, value, onChange }: { scalarKey: DifficultySc
       </div>
       <b>×{value.toFixed(2)}</b>
     </div>
-    <input type="range" min="0.35" max="2" step="0.05" value={value} onChange={(event) => onChange(scalarKey, Number(event.target.value))} />
+    <input type="range" min="0.35" max="2" step="0.05" value={value} disabled={readOnly} onChange={(event) => onChange(scalarKey, Number(event.target.value))} />
     <div className="difficulty-range-note">
       <span>{meta.low}</span>
       <i><em style={{ width: `${percent}%` }} /></i>
@@ -28,7 +28,7 @@ const scalarGroups: Array<{ title: string; subtitle: string; keys: DifficultySca
   { title: 'Appareil de contrôle', subtitle: 'Civil Protection, Nova Prospekt et dette technologique.', keys: ['cpBrutality', 'novaPressure', 'technologyDebt'] },
 ];
 
-export function DifficultySettingsScreen({ game, applyPreset, updateScalar, resetCustom }: { game: GameState; applyPreset: (presetId: DifficultyPresetId) => void; updateScalar: (key: DifficultyScalarKey, value: number) => void; resetCustom: () => void }) {
+export function DifficultySettingsScreen({ game, applyPreset, updateScalar, resetCustom, readOnly = false }: { game: GameState; applyPreset: (presetId: DifficultyPresetId) => void; updateScalar: (key: DifficultyScalarKey, value: number) => void; resetCustom: () => void; readOnly?: boolean }) {
   const difficulty = game.difficultySettings;
   const preset = difficultyPresets[difficulty.activePresetId] ?? difficultyPresets.standard_occupation;
   const highScalars = Object.entries(difficulty.scalars).filter(([, value]) => value >= 1.3);
@@ -48,6 +48,7 @@ export function DifficultySettingsScreen({ game, applyPreset, updateScalar, rese
       </div>
       <p className="lore-note"><b>Résumé :</b> {difficulty.startSummary}</p>
       <p className="advice"><strong>{preset.classification}</strong><br />{preset.loreFrame}</p>
+      {readOnly && <p className="lore-note">Mandat verrouillé : ces paramètres sont définis à la création et restent en lecture seule pendant la campagne.</p>}
     </div>
 
     <div className="panel difficulty-presets-panel">
@@ -56,14 +57,14 @@ export function DifficultySettingsScreen({ game, applyPreset, updateScalar, rese
       <div className="operation-list difficulty-preset-list">
         {difficultyPresetOrder.map((id) => {
           const item = difficultyPresets[id];
-          return <button key={id} className={difficulty.activePresetId === id ? 'selected-operation' : ''} onClick={() => applyPreset(id)}>
+          return <button key={id} disabled={readOnly} className={difficulty.activePresetId === id ? 'selected-operation' : ''} onClick={() => applyPreset(id)}>
             <strong>{item.name}</strong>
             <span>{item.subtitle}</span>
             <em>{item.recommendedFor}</em>
           </button>;
         })}
       </div>
-      <button className="module-danger-button" onClick={resetCustom}>Réinitialiser vers occupation standard</button>
+      <button className="module-danger-button" disabled={readOnly} onClick={resetCustom}>Réinitialiser vers occupation standard</button>
     </div>
 
     <div className="panel difficulty-summary-panel">
@@ -87,7 +88,7 @@ export function DifficultySettingsScreen({ game, applyPreset, updateScalar, rese
       <span className="brand-kicker">{group.subtitle}</span>
       <h2>{group.title}</h2>
       <div className="difficulty-scalar-grid">
-        {group.keys.map((key) => <ScalarControl key={key} scalarKey={key} value={difficulty.scalars[key]} onChange={updateScalar} />)}
+        {group.keys.map((key) => <ScalarControl key={key} scalarKey={key} value={difficulty.scalars[key]} onChange={updateScalar} readOnly={readOnly} />)}
       </div>
     </div>)}
 
