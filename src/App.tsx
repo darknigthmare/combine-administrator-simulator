@@ -83,9 +83,41 @@ const addStat = (base: Stats, effects: Partial<Stats>): Stats => ({
   suspicion: clamp(base.suspicion + (effects.suspicion ?? 0)),
 });
 
+function capDailySimulationDrift(previous: Stats, next: Stats, day: number, pressureScalar: number): { stats: Stats; capped: string[] } {
+  const phaseCap = day <= 7 ? 7 : day <= 20 ? 10 : 13;
+  const capUp = Math.max(5, Math.round(phaseCap * Math.max(0.8, Math.min(1.4, pressureScalar))));
+  const capDown = capUp + 3;
+  const capped: string[] = [];
+  const result = { ...next };
+  const threats: Array<keyof Pick<Stats, 'rebel' | 'xen' | 'suspicion' | 'fatigue' | 'fear'>> = ['rebel', 'xen', 'suspicion', 'fatigue', 'fear'];
+  const supports: Array<keyof Pick<Stats, 'stability' | 'loyalty' | 'production' | 'citadel' | 'info' | 'combine'>> = ['stability', 'loyalty', 'production', 'citadel', 'info', 'combine'];
+
+  for (const key of threats) {
+    const limited = Math.max(previous[key] - capDown, Math.min(previous[key] + capUp, next[key]));
+    if (limited !== next[key]) capped.push(key);
+    result[key] = limited;
+  }
+  for (const key of supports) {
+    const limited = Math.max(previous[key] - capUp, Math.min(previous[key] + capDown, next[key]));
+    if (limited !== next[key]) capped.push(key);
+    result[key] = limited;
+  }
+  return { stats: result, capped };
+}
+
 function pick<T>(arr: T[], day: number, offset = 0): T {
   return arr[Math.abs((day * 9301 + 49297 + offset) % arr.length)];
 }
+
+type DayTransitionSummary = {
+  day: number;
+  stability: number;
+  rebel: number;
+  xen: number;
+  audit: number;
+  directive: string;
+  crisisTitle?: string;
+};
 
 function createInitialGame(city: string, scenario: ScenarioId, timeline: TimelineId, profile: ProfileId, campaignId: CampaignId = 'custom_city_administration', difficultyPresetId: DifficultyPresetId = 'standard_occupation'): GameState {
   const difficultySettings = createInitialDifficultySettings(difficultyPresetId);
@@ -271,10 +303,17 @@ function App() {
   const [selectedSector, setSelectedSector] = useState<string>('admin');
   const [telemetryOpen, setTelemetryOpen] = useState(false);
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
+  const [dayTransition, setDayTransition] = useState<DayTransitionSummary | null>(null);
 
   useEffect(() => {
     localStorage.setItem(AUTOSAVE_STORAGE_KEY, JSON.stringify(game));
   }, [game]);
+
+  useEffect(() => {
+    if (!dayTransition) return;
+    const timer = window.setTimeout(() => setDayTransition(null), game.atmosphereSettings.reducedMotion ? 1800 : 4200);
+    return () => window.clearTimeout(timer);
+  }, [dayTransition, game.atmosphereSettings.reducedMotion]);
 
   useEffect(() => {
     const reconciled = reconcileDecisionHistory(game);
@@ -664,6 +703,10 @@ function App() {
       lines.push(`Directive active : ${directive.title} (${directiveDays} jours restants).`);
     }
 
+    const driftControl = capDailySimulationDrift(game.stats, stats, game.day, game.difficultySettings.scalars.campaignPressure);
+    stats = driftControl.stats;
+    if (driftControl.capped.length) lines.push(`Régulation de cycle : dérive quotidienne amortie sur ${driftControl.capped.join(', ')} pour préserver une campagne jouable.`);
+
     let ending: string | null = null;
     if (stats.rebel >= 100) ending = 'uprising';
     else if (stats.xen >= 88) ending = 'xen';
@@ -682,7 +725,8 @@ function App() {
       policy: game.reportPolicy,
     });
     stats = addStat(stats, { ...audit.effects, suspicion: (audit.effects.suspicion ?? 0) + transmission.suspicionDelta });
-    const auditHeat = clamp((game.auditHeat ?? 0) + transmission.auditRisk * 0.08 + (audit.discovered ? 24 : audit.triggered ? 8 : -4));
+    const rawAuditHeat = clamp((game.auditHeat ?? 0) + transmission.auditRisk * 0.08 + (audit.discovered ? 24 : audit.triggered ? 8 : -4));
+    const auditHeat = Math.min((game.auditHeat ?? 0) + (game.day <= 7 ? 10 : 14), rawAuditHeat);
     if (!ending && (stats.suspicion >= 100 || stats.citadel <= 0)) ending = 'replaced';
 
     const verdictSnapshot: GameState = {
@@ -739,6 +783,15 @@ function App() {
     const finalChronicle = finalVerdict
       ? buildFinalChronicle({ ...verdictSnapshot, reports: [nextReport, ...game.reports], finalVerdict }, finalVerdict, nextReport)
       : null;
+    setDayTransition({
+      day: game.day + 1,
+      stability: stats.stability - game.stats.stability,
+      rebel: stats.rebel - game.stats.rebel,
+      xen: stats.xen - game.stats.xen,
+      audit: auditHeat - game.auditHeat,
+      directive: directive.title,
+      crisisTitle: crisis?.title,
+    });
     setGame({
       ...game,
       day: game.day + 1,
@@ -1287,12 +1340,12 @@ function App() {
       ...game,
       stats: addStat(game.stats, result.statsDelta),
       onboarding: result.onboarding,
-      tab: result.suggestedTab,
+      tab: result.suggestedTab === 'dashboard' ? 'command_deck_v2' : result.suggestedTab,
       log: [`JOUR ${String(game.day).padStart(3, '0')} — ${result.logLines[0]}`, ...result.logLines.slice(1), ...game.log].slice(0, 100),
     });
   }
 
-  const fullNav: Array<[TabId, string]> = [['onboarding', 'Tutoriel COAN'], ['command_deck_v2', 'Command Deck V4'], ['progression', 'Requisitions'], ['campaigns', 'Campagnes'], ['major_events', 'Événements majeurs'], ['finale', 'Verdict final'], ['chronicle', 'Chronique finale'], ['timeline', 'Timeline'], ['sectors', 'Carte de City'], ['population', 'Population'], ['citizens', 'Registre Civil'], ['informants', 'Informateurs'], ['civil_protection', 'Civil Protection'], ['overwatch', 'Overwatch Command'], ['citadel', 'Citadel Directives'], ['technology', 'Technologies Combine'], ['combine', 'Forces Combine'], ['resistance', 'Résistance'], ['vortigaunts', 'Vortigaunts / Biotics'], ['xen', 'Quarantaine Xen'], ['xen_research', 'Recherche Xen'], ['xen_catastrophes', 'Catastrophes Xen'], ['rationing', 'Rationnement'], ['nova', 'Nova Prospekt'], ['propaganda', 'BreenCast'], ['reports', 'Rapports falsifiés'], ['archives', 'Archives'], ['video_archives', 'Archives vidéo'], ['save_system', 'Sauvegardes'], ['decision_history', 'Historique décisions'], ['difficulty', 'Difficulté'], ['gameplay_balance', 'Équilibrage'], ['atmosphere', 'Atmosphère'], ['tauri_packaging', 'Packaging EXE'], ['ux_polish', 'Polish UX'], ['codex', 'Codex Lore'], ['system_audit', 'Audit final']];
+  const fullNav: Array<[TabId, string]> = [['onboarding', 'Tutoriel COAN'], ['command_deck_v2', 'Command Deck'], ['progression', 'Requisitions'], ['campaigns', 'Campagne active'], ['major_events', 'Événements majeurs'], ['finale', 'Verdict final'], ['chronicle', 'Chronique finale'], ['timeline', 'Chronologie'], ['sectors', 'Carte de City'], ['population', 'Population'], ['citizens', 'Registre Civil'], ['informants', 'Informateurs'], ['civil_protection', 'Civil Protection'], ['overwatch', 'Overwatch Command'], ['citadel', 'Citadel Directives'], ['technology', 'Technologies Combine'], ['combine', 'Forces Combine'], ['resistance', 'Résistance'], ['vortigaunts', 'Vortigaunts / Biotics'], ['xen', 'Quarantaine Xen'], ['xen_research', 'Recherche Xen'], ['xen_catastrophes', 'Catastrophes Xen'], ['rationing', 'Rationnement'], ['nova', 'Nova Prospekt'], ['propaganda', 'BreenCast'], ['reports', 'Rapports'], ['archives', 'Archives'], ['video_archives', 'Archives vidéo'], ['save_system', 'Sauvegardes'], ['decision_history', 'Historique décisions'], ['difficulty', 'Mandat de difficulté'], ['atmosphere', 'Son & ambiance'], ['codex', 'Codex Lore']];
   const nav = getTerminalNavTabs(activeTerminal.id, fullNav).map(([id, label]) => [
     id,
     id === 'progression' ? 'Réquisitions' : label,
@@ -1309,7 +1362,7 @@ function App() {
   return (
     <div className={`app-shell ${game.tab === 'new_game' || game.tab === 'prologue' ? 'pre-session-shell' : ''} ux-density-${uxPolish.density} ${atmosphereProfile.bodyClass} alert-${atmosphereProfile.alertLevel}`}>
       <AtmosphereLayer profile={atmosphereProfile} settings={game.atmosphereSettings} cueKey={atmosphereCueKey} audioDirector={audioDirector} />
-      <FloatingWindowLayer game={game} selectedSectorId={selectedSector} setTab={navigateToTab} />
+      {game.tab !== 'new_game' && game.tab !== 'prologue' && <FloatingWindowLayer game={game} selectedSectorId={selectedSector} setTab={navigateToTab} />}
       <aside className={`sidebar ${mobileNavOpen ? 'nav-open' : 'nav-closed'}`}>
         <div className="brand">
           <div className="brand-row">
@@ -1380,7 +1433,7 @@ function App() {
             <span>REQ {game.uiuxProgression.resources.requisition}</span>
             <span className={game.stats.rebel > 65 ? 'danger' : ''}><Radio size={13} /> Λ {game.stats.rebel}%</span>
             <button className="telemetry-toggle" aria-expanded={telemetryOpen} onClick={() => setTelemetryOpen((open) => !open)}><Gauge size={15} /> {telemetryOpen ? 'Masquer' : 'Télémétrie'}</button>
-            <button className="end-day" onClick={nextDay} disabled={!!game.ending || !!game.crisis}>Clôturer la journée</button>
+            <button className="end-day" onClick={nextDay} disabled={!!game.ending || !!game.crisis || !!dayTransition}>Clôturer la journée</button>
           </div>
         </header>
 
@@ -1404,7 +1457,7 @@ function App() {
 
         <section className={`ux-command-strip score-${uxPolish.score >= 88 ? 'ok' : uxPolish.score >= 74 ? 'watch' : uxPolish.score >= 58 ? 'risk' : 'critical'}`}>
           <div>
-            <span className="brand-kicker">UX POLISH / {uxPolish.statusLabel}</span>
+            <span className="brand-kicker">PRIORITÉS COAN / {uxPolish.statusLabel}</span>
             <strong>{uxPolish.headline}</strong>
           </div>
           <div className="ux-command-routes">
@@ -1413,7 +1466,6 @@ function App() {
               <span>{route.priority}</span>
             </button>)}
           </div>
-          <button className="ghost" onClick={() => setGame({ ...game, tab: 'ux_polish' })}>Audit UX</button>
         </section>
 
         <section className="stats-grid">
@@ -1451,6 +1503,22 @@ function App() {
         </div>}
 
         {game.ending && game.tab !== 'new_game' && <div className="ending"><h2>PROTOCOLE DE FIN ACTIVÉ</h2><p>{game.finalVerdict ? `${game.finalVerdict.title} — ${game.finalVerdict.subtitle}` : (endings[game.ending] ?? endings.replaced).replaceAll('{city}', game.city)}</p></div>}
+
+        {dayTransition && <div className="day-transition" role="status" aria-live="polite">
+          <div className="day-transition-scan" />
+          <div className="day-transition-content">
+            <span className="brand-kicker">CYCLE ADMINISTRATIF SYNCHRONISÉ</span>
+            <h2>JOUR {String(dayTransition.day).padStart(3, '0')}</h2>
+            <p>{dayTransition.crisisTitle ? `Alerte en attente : ${dayTransition.crisisTitle}` : `Directive active : ${dayTransition.directive}`}</p>
+            <div className="day-transition-deltas">
+              <DayDelta label="Stabilité" value={dayTransition.stability} inverse />
+              <DayDelta label="Lambda" value={dayTransition.rebel} />
+              <DayDelta label="Xen" value={dayTransition.xen} />
+              <DayDelta label="Audit" value={dayTransition.audit} />
+            </div>
+            <button onClick={() => setDayTransition(null)}>Ouvrir le Command Deck</button>
+          </div>
+        </div>}
 
         {game.crisis && (
           <div className="crisis-modal">
@@ -1788,6 +1856,11 @@ function Sectors({ game, selectedSector, setSelectedSector, sector, sectorAction
 
 function Combine({ units, sector, deploy }: { units: Unit[]; sector: Sector; deploy: (u: Unit) => void }) {
   return <section className="cards unit-visual-grid">{units.map((u) => <article className="panel card unit-visual-card" key={u.id}><img src={getUnitVisual(u.id)} alt="" aria-hidden="true" /><span className="brand-kicker">{u.category}</span><h2>{u.name}</h2><p>{u.description}</p><p><b>Force :</b> {u.strength}</p><p><b>Limite :</b> {u.weakness}</p><p className="lore-note">{u.lore}</p><button disabled={u.reserve <= 0} onClick={() => deploy(u)}>Déployer vers {sector.name} — Réserve {u.reserve}</button></article>)}</section>;
+}
+
+function DayDelta({ label, value, inverse = false }: { label: string; value: number; inverse?: boolean }) {
+  const good = inverse ? value >= 0 : value <= 0;
+  return <span className={value === 0 ? 'neutral' : good ? 'good' : 'bad'}><small>{label}</small><b>{value > 0 ? '+' : ''}{value}</b></span>;
 }
 
 function Resistance({ sectors }: { sectors: Sector[] }) {

@@ -233,6 +233,45 @@ export function playSyntheticAudioCue(cueId: SyntheticAudioCueId, settings: Atmo
   setTimeout(() => context.close().catch(() => undefined), Math.min(1800, (longest + 0.35) * 1000));
 }
 
+export function startSyntheticAmbientBed(settings: AtmosphereSettings, director: SyntheticAudioDirectorSnapshot): () => void {
+  if (!settings.enabled || !settings.audioEnabled || !settings.advancedAudioEnabled || !settings.ambientDrone || typeof window === 'undefined') return () => undefined;
+  const AudioContextCtor = window.AudioContext || (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
+  if (!AudioContextCtor) return () => undefined;
+
+  const context = new AudioContextCtor();
+  const master = context.createGain();
+  const filter = context.createBiquadFilter();
+  const cue = syntheticAudioCues[director.ambientCue];
+  const root = Math.max(32, cue.segments.find((segment) => segment.oscillator !== 'noise')?.frequency ?? 58);
+  const baseVolume = Math.max(0, Math.min(1, settings.masterVolume / 100)) * (0.008 + director.intensity / 16000);
+  const oscillators = [1, 1.5, 2.01].map((ratio, index) => {
+    const oscillator = context.createOscillator();
+    oscillator.type = index === 0 ? 'sine' : 'triangle';
+    oscillator.frequency.value = root * ratio;
+    oscillator.detune.value = index === 2 ? -7 : index * 3;
+    oscillator.connect(filter);
+    oscillator.start();
+    return oscillator;
+  });
+
+  filter.type = 'lowpass';
+  filter.frequency.value = 190 + director.intensity * 3.2;
+  filter.Q.value = 0.7;
+  filter.connect(master);
+  master.connect(context.destination);
+  master.gain.setValueAtTime(0.0001, context.currentTime);
+  master.gain.exponentialRampToValueAtTime(Math.max(0.0002, baseVolume), context.currentTime + 1.4);
+
+  return () => {
+    const stopAt = context.currentTime + 0.65;
+    master.gain.cancelScheduledValues(context.currentTime);
+    master.gain.setValueAtTime(Math.max(0.0001, master.gain.value), context.currentTime);
+    master.gain.exponentialRampToValueAtTime(0.0001, stopAt);
+    oscillators.forEach((oscillator) => oscillator.stop(stopAt + 0.05));
+    window.setTimeout(() => context.close().catch(() => undefined), 800);
+  };
+}
+
 export function getSyntheticAudioCueDefinition(cueId: SyntheticAudioCueId) {
   return syntheticAudioCues[cueId] ?? syntheticAudioCues.terminal_ping;
 }

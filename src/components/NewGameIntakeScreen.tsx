@@ -1,7 +1,7 @@
 import type { AdministratorAvatarId, CampaignId, DifficultyPresetId, NewGameIntakeDoctrineId, OnboardingTrackId, ProfileId, ScenarioId, TabId, TimelineId } from '../types/game';
-import { campaignOrder, campaignPresets, difficultyPresetOrder, difficultyPresets, newGameIntakeDoctrineOrder, newGameIntakeDoctrines, newGameIntakePhases, newGameIntakeProfileLabels, newGameIntakeRecommendedCombos, newGameIntakeScenarioLabels, newGameIntakeThreatLabels, onboardingTrackOrder, onboardingTracks, timelineOrder, timelinePresets } from '../data';
+import { campaignOrder, campaignPresets, difficultyPresetOrder, difficultyPresets, newGameIntakeDoctrineOrder, newGameIntakeDoctrines, newGameIntakePhases, newGameIntakeProfileLabels, newGameIntakeScenarioLabels, newGameIntakeThreatLabels, onboardingTrackOrder, onboardingTracks, timelineOrder, timelinePresets } from '../data';
 import { administratorAvatarOrder, administratorAvatars, defaultAdministratorAvatar } from '../data/visualAssets';
-import { buildNewGameIntakePreview, doctrineToConfig } from '../systems/newGameIntakeSystem';
+import { buildNewGameIntakePreview } from '../systems/newGameIntakeSystem';
 
 type Props = {
   cityInput: string;
@@ -209,28 +209,5 @@ export function NewGameIntakeScreen(props: Props) {
       </div>
     </section>
 
-    <section className="panel">
-      <h3>Combinaisons QA recommandées</h3>
-      <div className="recommended-combo-grid">
-        {newGameIntakeRecommendedCombos.map((combo) => <button key={combo.label} onClick={() => {
-          props.setCityInput(combo.city);
-          props.setCampaignInput(combo.campaignId);
-          props.setDifficultyInput(combo.difficultyPresetId);
-          props.setUseCampaignRecommendations(true);
-          const doctrineId = Object.values(newGameIntakeDoctrines).find((entry) => entry.campaignId === combo.campaignId)?.id ?? 'manual';
-          props.setDoctrineInput(doctrineId);
-          const resolvedConfig = doctrineToConfig(doctrineId, combo.city);
-          props.setScenarioInput(resolvedConfig.scenario);
-          props.setTimelineInput(resolvedConfig.timeline);
-          props.setProfileInput(resolvedConfig.profile);
-          props.setAdministratorAvatarInput(defaultAdministratorAvatar(resolvedConfig.profile));
-          props.setOnboardingTrackInput(resolvedConfig.onboardingTrackId);
-        }}>
-          <strong>{combo.label}</strong>
-          <span>City {combo.city} · {campaignPresets[combo.campaignId].name}</span>
-          <small>{combo.note}</small>
-        </button>)}
-      </div>
-    </section>
   </div>;
 }

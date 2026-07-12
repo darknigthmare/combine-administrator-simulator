@@ -21,7 +21,7 @@ export function CampaignPrologueScreen({ game, continueToTutorial }: { game: Gam
     <div className="prologue-dossier panel">
       <img src={avatar.image} alt="" aria-hidden="true" />
       <div>
-        <span className="brand-kicker">MANDAT ATTRIBUE</span>
+        <span className="brand-kicker">MANDAT ATTRIBUÉ</span>
         <h2>{avatar.title}</h2>
         <p>{campaign.openingReport}</p>
         <div className="tag-row"><span>{campaign.name}</span><span>{timeline.name}</span><span>{difficulty.name}</span></div>
@@ -29,8 +29,8 @@ export function CampaignPrologueScreen({ game, continueToTutorial }: { game: Gam
     </div>
     <div className="panel prologue-order">
       <span className="brand-kicker">ORDRE DE PRISE DE FONCTION</span>
-      <h2>Le mandat est maintenant verrouille</h2>
-      <p>La campagne, la timeline, le profil et la difficulte ne pourront plus etre remplaces pendant cette session. Le tutoriel COAN presente ensuite les outils disponibles avant la premiere decision.</p>
+      <h2>Le mandat est maintenant verrouillé</h2>
+      <p>La campagne, la timeline, le profil et la difficulté ne pourront plus être remplacés pendant cette session. Le tutoriel COAN présente ensuite les outils disponibles avant la première décision.</p>
       <button className="primary" onClick={continueToTutorial}>Ouvrir le tutoriel COAN</button>
     </div>
   </section>;

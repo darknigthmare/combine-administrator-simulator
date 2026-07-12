@@ -27,7 +27,7 @@ const checks = {
   appScreenMounted: app.includes("game.tab === 'ux_polish'") && app.includes('UxPolishScreen'),
   commandStripPresent: app.includes('ux-command-strip') && app.includes('buildUxPolishReport'),
   dataExported: index.includes('./uxPolish'),
-  terminalRoutePresent: terminal.includes("'ux_polish'"),
+  terminalRouteHidden: !terminal.includes("'ux_polish'"),
   cssPresent: css.includes('ux-command-strip') && css.includes('ux-polish-screen'),
 };
 

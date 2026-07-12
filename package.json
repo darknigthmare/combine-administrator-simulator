@@ -17,13 +17,14 @@
     "audit:onboarding": "node scripts/coan-onboarding-audit.mjs",
     "check:modules": "tsc -p tsconfig.modules.json --noEmit",
     "audit:newgame": "node scripts/coan-new-game-audit.mjs",
+    "audit:session": "node scripts/coan-session-flow-audit.mjs",
     "audit:ux": "node scripts/coan-ux-polish-audit.mjs",
     "audit:tauri": "node scripts/coan-tauri-packaging-audit.mjs",
     "release:notes": "node scripts/coan-release-notes.mjs",
     "package:windows": "powershell -ExecutionPolicy Bypass -File scripts/coan-tauri-build-windows.ps1",
     "package:windows:offline": "powershell -ExecutionPolicy Bypass -File scripts/coan-tauri-build-windows.ps1 -OfflineWebView",
     "tauri:qa": "npm run check:modules && npm run audit:coan && npm run audit:tauri && npm run release:notes",
-    "audit:all": "npm run audit:coan && npm run audit:balance && npm run audit:onboarding && npm run audit:newgame && npm run audit:ux && npm run audit:tauri"
+    "audit:all": "npm run audit:coan && npm run audit:balance && npm run audit:onboarding && npm run audit:newgame && npm run audit:session && npm run audit:ux && npm run audit:tauri"
   },
   "dependencies": {
     "lucide-react": "^1.22.0",

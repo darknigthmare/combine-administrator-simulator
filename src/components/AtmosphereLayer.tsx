@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import type { AtmosphereProfile, AtmosphereSettings, SyntheticAudioDirectorSnapshot } from '../types/game';
-import { playSyntheticAudioCue } from '../systems/syntheticAudioSystem';
+import { playSyntheticAudioCue, startSyntheticAmbientBed } from '../systems/syntheticAudioSystem';
 
 export function AtmosphereLayer({
   profile,
@@ -38,6 +38,11 @@ export function AtmosphereLayer({
     if (!settings.uiCues && cueKey.includes('-tab-')) return;
     playSyntheticAudioCue(audioDirector?.activeCue ?? 'terminal_ping', settings, audioDirector);
   }, [cueKey, audioDirector, settings]);
+
+  useEffect(() => {
+    if (!audioDirector) return;
+    return startSyntheticAmbientBed(settings, audioDirector);
+  }, [audioDirector?.ambientCue, audioDirector?.intensity, settings.audioEnabled, settings.advancedAudioEnabled, settings.ambientDrone, settings.enabled, settings.masterVolume]);
 
   if (!settings.enabled) return null;
   return <div className={`atmosphere-layer ${profile.bodyClass} ${settings.chromatic ? 'chromatic-on' : ''} ${settings.ambientPulse ? 'pulse-on' : ''} ${settings.advancedAudioEnabled ? 'audio-advanced' : 'audio-legacy'}`} aria-hidden="true">

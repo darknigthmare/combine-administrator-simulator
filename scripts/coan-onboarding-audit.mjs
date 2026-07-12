@@ -24,7 +24,7 @@ const checks = [
   ['app wired', app.includes('OnboardingScreen') && app.includes("game.tab === 'onboarding'"), 'App import/render branch'],
   ['data exported', data.includes('./onboarding'), 'data barrel export'],
   ['terminal navigation', terminals.includes("'onboarding'") && app.includes('Tutoriel COAN'), 'City Terminal + nav label'],
-  ['guided start', app.includes('startGuidedOnboarding') && app.includes('resolveOnboardingFirstDay'), 'guided new game + first day script'],
+  ['guided sequence', app.includes("game.tab === 'prologue'") && app.includes('resolveOnboardingFirstDay'), 'campaign prologue + first day script'],
 ];
 
 let ok = true;

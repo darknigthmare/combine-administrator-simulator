@@ -22,7 +22,7 @@ export const onboardingTracks: Record<OnboardingTrackId, OnboardingTrack> = {
     profile: 'loyalist',
     difficultyPresetId: 'standard_occupation',
     doctrine: 'Stabilisation progressive : secteurs, rations, BreenCast, Civil Protection, rapports.',
-    startingTab: 'dashboard',
+    startingTab: 'command_deck_v2',
     briefingLines: [
       'Votre rôle n’est pas de gagner une guerre ouverte : votre rôle est de rendre l’occupation mesurable, transmissible et falsifiable si nécessaire.',
       'La ville tient tant que la faim, la peur, Xen, Lambda et la Citadelle restent sous des seuils compatibles avec la production.',
@@ -121,7 +121,7 @@ export const onboardingChapters: OnboardingChapter[] = [
     stage: 'briefing',
     body: 'Le joueur incarne une autorité civile sous occupation Combine. Le tableau de bord n’est pas une base héroïque : c’est un appareil de contrôle qui transforme la peur, la faim, le secret et la violence en chiffres transmis à la Citadelle.',
     operatorLesson: 'Surveille d’abord Stabilité, Rébellion, Xen, Rations, Suspicion et Audit. Ces six axes indiquent quelle crise va dominer la journée.',
-    linkedTabs: ['dashboard', 'gameplay_balance', 'codex'],
+    linkedTabs: ['command_deck_v2', 'campaigns', 'codex'],
     completionHint: 'Consulter Terminal COAN, Équilibrage et Codex Lore.',
   },
   {
@@ -181,7 +181,7 @@ export const onboardingChapters: OnboardingChapter[] = [
     stage: 'truth',
     body: 'Le joueur peut transmettre la vérité, minimiser Lambda, cacher Xen, classer les pertes ou protéger un double jeu. Mais chaque mensonge ajoute chaleur d’audit et risque Advisor.',
     operatorLesson: 'Un mensonge utile doit être cohérent avec les archives vidéo, Nova Prospekt et les logs CP.',
-    linkedTabs: ['reports', 'decision_history', 'video_archives', 'system_audit'],
+    linkedTabs: ['reports', 'decision_history', 'video_archives', 'citadel'],
     completionHint: 'Comparer rapport réel, rapport transmis, historique et audit final.',
   },
   {
@@ -191,13 +191,13 @@ export const onboardingChapters: OnboardingChapter[] = [
     stage: 'first_day',
     body: 'La première journée recommandée suit une boucle simple : lire dashboard, choisir une crise, vérifier secteurs voisins, ajuster rations, diffuser un BreenCast mesuré, puis finir la journée.',
     operatorLesson: 'La discipline du joueur compte autant que les chiffres : un bon tour commence par observer, pas cliquer partout.',
-    linkedTabs: ['dashboard', 'sectors', 'rationing', 'propaganda', 'reports'],
+    linkedTabs: ['command_deck_v2', 'sectors', 'rationing', 'propaganda', 'reports'],
     completionHint: 'Armer le script de première journée ou compléter manuellement les modules de base.',
   },
 ];
 
 export const onboardingFirstDayActions: OnboardingFirstDayAction[] = [
-  { id: 'read_coan', order: 1, title: 'Lire le Terminal COAN', relatedTab: 'dashboard', moduleLabel: 'Terminal COAN', description: 'Identifier la crise dominante, la directive Citadel et la pression la plus dangereuse.', expectedEffect: 'Aucun coût : meilleure compréhension des priorités.', severity: 1 },
+  { id: 'read_coan', order: 1, title: 'Lire le Command Deck', relatedTab: 'command_deck_v2', moduleLabel: 'Command Deck', description: 'Identifier la crise dominante, la directive Citadel et la pression la plus dangereuse.', expectedEffect: 'Aucun coût : meilleure compréhension des priorités.', severity: 1 },
   { id: 'inspect_sector', order: 2, title: 'Inspecter un secteur voisin critique', relatedTab: 'sectors', moduleLabel: 'Carte de City', description: 'Choisir un secteur dont Xen ou Lambda se propage par connexion.', expectedEffect: 'Réduit les erreurs de réponse locale aveugle.', severity: 2 },
   { id: 'ration_small', order: 3, title: 'Stabiliser les rations sans punition collective', relatedTab: 'rationing', moduleLabel: 'Rationnement', description: 'Favoriser une distribution standard ou ciblée plutôt qu’une coupe brutale au jour 1.', expectedEffect: 'Limite faim, marché noir et radicalisation précoce.', severity: 2 },
   { id: 'breencast_soft', order: 4, title: 'Diffuser un BreenCast mesuré', relatedTab: 'propaganda', moduleLabel: 'BreenCast', description: 'Utiliser la propagande pour cadrer la crise sans contradiction trop visible.', expectedEffect: 'Augmente contrôle informationnel avec backlash limité.', severity: 2 },
@@ -206,9 +206,9 @@ export const onboardingFirstDayActions: OnboardingFirstDayAction[] = [
 ];
 
 export const onboardingQuickLinks: Array<{ label: string; tab: TabId; reason: string }> = [
-  { label: 'Terminal COAN', tab: 'dashboard', reason: 'Voir la situation globale avant toute décision.' },
+  { label: 'Command Deck', tab: 'command_deck_v2', reason: 'Voir la situation globale avant toute décision.' },
   { label: 'Carte de City', tab: 'sectors', reason: 'Comprendre routes Lambda/Xen et voisinage.' },
   { label: 'Rationnement', tab: 'rationing', reason: 'Contrôler faim, marché noir et radicalisation.' },
   { label: 'Rapports falsifiés', tab: 'reports', reason: 'Comprendre la séparation vérité/transmission Citadel.' },
-  { label: 'Équilibrage', tab: 'gameplay_balance', reason: 'Diagnostiquer les spirales Lambda/Xen/Citadel.' },
+  { label: 'Campagne active', tab: 'campaigns', reason: 'Lire les objectifs, jalons et risques de long terme.' },
 ];
