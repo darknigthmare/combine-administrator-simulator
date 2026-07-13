@@ -1,5 +1,7 @@
+import { useState } from 'react';
+import { ArrowLeft } from 'lucide-react';
 import type { AdministratorAvatarId, CampaignId, DifficultyPresetId, NewGameIntakeDoctrineId, OnboardingTrackId, ProfileId, ScenarioId, TabId, TimelineId } from '../types/game';
-import { campaignOrder, campaignPresets, difficultyPresetOrder, difficultyPresets, newGameIntakeDoctrineOrder, newGameIntakeDoctrines, newGameIntakePhases, newGameIntakeProfileLabels, newGameIntakeScenarioLabels, newGameIntakeThreatLabels, onboardingTrackOrder, onboardingTracks, timelineOrder, timelinePresets } from '../data';
+import { campaignOrder, campaignPresets, difficultyPresetOrder, difficultyPresets, newGameIntakeDoctrineOrder, newGameIntakeDoctrines, newGameIntakeProfileLabels, newGameIntakeScenarioLabels, newGameIntakeThreatLabels, onboardingTrackOrder, onboardingTracks, timelineOrder, timelinePresets } from '../data';
 import { administratorAvatarOrder, administratorAvatars, defaultAdministratorAvatar } from '../data/visualAssets';
 import { buildNewGameIntakePreview } from '../systems/newGameIntakeSystem';
 
@@ -26,6 +28,7 @@ type Props = {
   setUseCampaignRecommendations: (value: boolean) => void;
   applyDoctrine: (value: NewGameIntakeDoctrineId) => void;
   startGame: () => void;
+  cancelCreation: () => void;
 };
 
 const intakeTabLabels: Partial<Record<TabId, string>> = {
@@ -39,6 +42,12 @@ const intakeTabLabels: Partial<Record<TabId, string>> = {
   nova: 'Nova Prospekt',
 };
 
+const creationSteps = [
+  { id: 'doctrine', label: '01', title: 'Doctrine' },
+  { id: 'configuration', label: '02', title: 'Mandat' },
+  { id: 'validation', label: '03', title: 'Validation' },
+] as const;
+
 function Gauge({ label, value, band }: { label: string; value: number; band: keyof typeof newGameIntakeThreatLabels }) {
   return <div className={`intake-gauge band-${band}`}>
     <div><span>{label}</span><b>{value}%</b></div>
@@ -48,6 +57,7 @@ function Gauge({ label, value, band }: { label: string; value: number; band: key
 }
 
 export function NewGameIntakeScreen(props: Props) {
+  const [step, setStep] = useState<0 | 1 | 2>(0);
   const preview = buildNewGameIntakePreview({
     city: props.cityInput,
     doctrineId: props.doctrineInput,
@@ -61,8 +71,10 @@ export function NewGameIntakeScreen(props: Props) {
   });
   const resolved = preview.resolved;
   const lockManual = props.useCampaignRecommendations && props.campaignInput !== 'custom_city_administration';
+  const recommendedFirstTabs = [...new Set(preview.recommendedFirstTabs.map((tab) => tab === 'dashboard' ? 'command_deck_v2' : tab))];
 
   return <div className="new-game-intake-screen">
+    <button className="intake-back-button" type="button" onClick={props.cancelCreation}><ArrowLeft size={16} /> Menu principal</button>
     <section className="panel intake-hero">
       <div>
         <span className="brand-kicker">COAN NEW ADMINISTRATION INTAKE</span>
@@ -82,18 +94,14 @@ export function NewGameIntakeScreen(props: Props) {
       </div>
     </section>
 
-    <section className="intake-phase-strip">
-      {newGameIntakePhases.map((phase) => <article key={phase.id}>
-        <span>{phase.label}</span>
-        <strong>{phase.title}</strong>
-        <p>{phase.description}</p>
-      </article>)}
-    </section>
+    <nav className="intake-step-tabs" aria-label="Étapes de création">
+      {creationSteps.map((phase, index) => <button key={phase.id} type="button" aria-current={step === index ? 'step' : undefined} className={step === index ? 'active' : ''} onClick={() => setStep(index as 0 | 1 | 2)}>
+        <span>{phase.label}</span><strong>{phase.title}</strong>
+      </button>)}
+    </nav>
 
-    <section className="grid two">
-      <div className="panel">
+    {step === 0 && <section className="panel intake-step-panel">
         <h3>Doctrine de départ</h3>
-        <p>Choisis un préréglage cohérent. Tu peux ensuite modifier manuellement les paramètres avant de lancer.</p>
         <div className="intake-doctrine-grid">
           {newGameIntakeDoctrineOrder.map((id) => {
             const doctrine = newGameIntakeDoctrines[id];
@@ -106,31 +114,32 @@ export function NewGameIntakeScreen(props: Props) {
             </button>;
           })}
         </div>
-      </div>
+        <div className="intake-step-actions"><button className="primary" type="button" onClick={() => setStep(1)}>Configurer le mandat</button></div>
+      </section>}
 
-      <div className="panel intake-config-panel">
+    {step === 1 && <section className="panel intake-config-panel intake-step-panel">
         <h3>Configuration administrative</h3>
-        <label>Numéro de City</label>
-        <input value={props.cityInput} onChange={(event) => props.setCityInput(event.target.value)} placeholder="17" />
+        <label htmlFor="campaign-city">Numéro de City</label>
+        <input id="campaign-city" value={props.cityInput} onChange={(event) => props.setCityInput(event.target.value)} placeholder="17" />
 
-        <label>Campagne longue</label>
-        <select value={props.campaignInput} onChange={(event) => props.setCampaignInput(event.target.value as CampaignId)}>
+        <label htmlFor="campaign-preset">Campagne longue</label>
+        <select id="campaign-preset" value={props.campaignInput} onChange={(event) => props.setCampaignInput(event.target.value as CampaignId)}>
           {campaignOrder.map((id) => <option key={id} value={id}>{campaignPresets[id].name}</option>)}
         </select>
         <label className="inline-check"><input type="checkbox" checked={props.useCampaignRecommendations} disabled={props.campaignInput === 'custom_city_administration'} onChange={(event) => props.setUseCampaignRecommendations(event.target.checked)} /> Verrouiller scénario/timeline/profil sur la campagne</label>
 
-        <label>Scénario local</label>
-        <select value={lockManual ? resolved.scenario : props.scenarioInput} disabled={lockManual} onChange={(event) => props.setScenarioInput(event.target.value as ScenarioId)}>
+        <label htmlFor="campaign-scenario">Scénario local</label>
+        <select id="campaign-scenario" value={lockManual ? resolved.scenario : props.scenarioInput} disabled={lockManual} onChange={(event) => props.setScenarioInput(event.target.value as ScenarioId)}>
           {Object.entries(newGameIntakeScenarioLabels).map(([id, label]) => <option key={id} value={id}>{label}</option>)}
         </select>
 
-        <label>Timeline Half-Life</label>
-        <select value={lockManual ? resolved.timeline : props.timelineInput} disabled={lockManual} onChange={(event) => props.setTimelineInput(event.target.value as TimelineId)}>
+        <label htmlFor="campaign-timeline">Timeline Half-Life</label>
+        <select id="campaign-timeline" value={lockManual ? resolved.timeline : props.timelineInput} disabled={lockManual} onChange={(event) => props.setTimelineInput(event.target.value as TimelineId)}>
           {timelineOrder.map((id) => <option key={id} value={id}>{timelinePresets[id].name}</option>)}
         </select>
 
-        <label>Profil de gouvernance</label>
-        <select value={lockManual ? resolved.profile : props.profileInput} disabled={lockManual} onChange={(event) => {
+        <label htmlFor="campaign-profile">Profil de gouvernance</label>
+        <select id="campaign-profile" value={lockManual ? resolved.profile : props.profileInput} disabled={lockManual} onChange={(event) => {
           const profile = event.target.value as ProfileId;
           props.setProfileInput(profile);
           props.setAdministratorAvatarInput(defaultAdministratorAvatar(profile));
@@ -143,26 +152,27 @@ export function NewGameIntakeScreen(props: Props) {
           {administratorAvatarOrder.map((id) => {
             const avatar = administratorAvatars[id];
             return <button type="button" key={id} aria-pressed={props.administratorAvatarInput === id} className={`administrator-avatar-option ${props.administratorAvatarInput === id ? 'active' : ''}`} onClick={() => props.setAdministratorAvatarInput(id)}>
-              <img src={avatar.image} alt="" aria-hidden="true" />
+              <img src={avatar.image} alt="" aria-hidden="true" loading="lazy" decoding="async" />
               <span><strong>{avatar.title}</strong><small>{avatar.subtitle}</small></span>
             </button>;
           })}
         </div>
 
-        <label>Difficulté avancée</label>
-        <select value={props.difficultyInput} onChange={(event) => props.setDifficultyInput(event.target.value as DifficultyPresetId)}>
+        <label htmlFor="campaign-difficulty">Difficulté</label>
+        <select id="campaign-difficulty" value={props.difficultyInput} onChange={(event) => props.setDifficultyInput(event.target.value as DifficultyPresetId)}>
           {difficultyPresetOrder.map((id) => <option key={id} value={id}>{difficultyPresets[id].name}</option>)}
         </select>
         <small>{difficultyPresets[props.difficultyInput].subtitle}</small>
 
-        <label>Piste tutoriel COAN</label>
-        <select value={props.onboardingTrackInput} onChange={(event) => props.setOnboardingTrackInput(event.target.value as OnboardingTrackId)}>
+        <label htmlFor="campaign-tutorial">Piste tutoriel</label>
+        <select id="campaign-tutorial" value={props.onboardingTrackInput} onChange={(event) => props.setOnboardingTrackInput(event.target.value as OnboardingTrackId)}>
           {onboardingTrackOrder.map((id) => <option key={id} value={id}>{onboardingTracks[id].title}</option>)}
         </select>
-      </div>
-    </section>
+        <div className="intake-step-actions"><button type="button" onClick={() => setStep(0)}>Retour</button><button className="primary" type="button" onClick={() => setStep(2)}>Vérifier le mandat</button></div>
+      </section>}
 
-    <section className="grid two">
+    {step === 2 && <>
+    <section className="grid two intake-review-grid">
       <div className="panel">
         <h3>Aperçu conséquences</h3>
         <div className="intake-gauge-grid">
@@ -192,9 +202,9 @@ export function NewGameIntakeScreen(props: Props) {
         <div className="briefing-log">
           {preview.summary.map((line) => <p key={line}>{line}</p>)}
         </div>
-        <h4>Modules recommandés après lancement</h4>
+        <h4>Priorités du mandat</h4>
         <div className="tag-row">
-          {preview.recommendedFirstTabs.map((tab) => <span className="link-chip" key={tab}>{intakeTabLabels[tab] ?? tab}</span>)}
+          {recommendedFirstTabs.map((tab) => <span className="link-chip" key={tab}>{intakeTabLabels[tab] ?? tab}</span>)}
         </div>
       </div>
     </section>
@@ -202,12 +212,14 @@ export function NewGameIntakeScreen(props: Props) {
     <section className="panel intake-launch-panel">
       <div>
         <h3>Initialisation</h3>
-        <p>La validation crée définitivement le mandat, ouvre le prologue Citadel, puis conduit au tutoriel COAN sélectionné.</p>
+        <p>Le dossier est prêt pour authentification Citadel et attribution définitive du mandat.</p>
       </div>
       <div className="intake-launch-actions">
+        <button type="button" onClick={() => setStep(1)}>Modifier</button>
         <button className="primary" onClick={props.startGame}>Valider le mandat et ouvrir le prologue</button>
       </div>
     </section>
+    </>}
 
   </div>;
 }

@@ -7,6 +7,7 @@ const required = [
   'src/data/gameplayBalance.ts',
   'src/systems/gameplayBalanceSystem.ts',
   'src/components/GameplayBalanceScreen.tsx',
+  'src/systems/dailyOrderSystem.ts',
   'README_STEP41_GAMEPLAY_BALANCE_QA.md',
 ];
 
@@ -17,10 +18,11 @@ const data = existsSync(path.join(root, 'src/data/index.ts')) ? readFileSync(pat
 
 const checks = [
   ['required files', missing.length === 0, missing.join(', ') || 'all present'],
-  ['tab wired', types.includes("'gameplay_balance'") && app.includes("game.tab === 'gameplay_balance'"), 'TabId + render branch'],
+  ['legacy tab typed', types.includes("'gameplay_balance'"), 'save compatibility'],
   ['data exported', data.includes("./gameplayBalance"), 'data barrel export'],
-  ['component imported', app.includes('GameplayBalanceScreen'), 'App import/render'],
-  ['terminal navigation', app.includes('Équilibrage') || app.includes('gameplay_balance'), 'nav label present'],
+  ['internal tool hidden', !app.includes("game.tab === 'gameplay_balance'") && !app.includes("import { GameplayBalanceScreen"), 'absent from player runtime'],
+  ['long-run controls', app.includes('createDailyOrderState') && app.includes('capDailySimulationDrift') && app.includes('catastrophicEndingRatio'), 'orders, drift cap, proportional endings'],
+  ['terminal navigation clean', !app.includes("['gameplay_balance', 'Équilibrage']"), 'no QA route in player nav'],
 ];
 
 let ok = true;

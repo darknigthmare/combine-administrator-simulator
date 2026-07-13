@@ -132,7 +132,7 @@ export function SaveManagerScreen({ game, loadGame }: SaveManagerScreenProps) {
     <div className="panel module-command save-command wide">
       <span className="brand-kicker">COAN Save Manager / local archive</span>
       <h2>Sauvegardes multiples</h2>
-      <p>Gestion locale des mandats City : slots manuels, autosave, export/import JSON et restauration complète de l’état de simulation. Les modules ajoutés jusque l’étape 36 sont conservés dans le payload.</p>
+      <p>Gestion locale des mandats City : archives manuelles, autosave, export/import et restauration complète de l’état de campagne.</p>
       <div className="module-stat-grid save-stat-grid">
         <span><small>City active</small><b>{game.city}</b></span>
         <span><small>Jour</small><b>{game.day}</b></span>
@@ -152,7 +152,7 @@ export function SaveManagerScreen({ game, loadGame }: SaveManagerScreenProps) {
       <span className="brand-kicker">Autosave active</span>
       <h2>Session actuelle</h2>
       <SlotMetaSummary payload={{ kind: 'coan-city-save', schemaVersion: 36, appLabel: currentMeta.appLabel, slotId: 'slot_01', label: 'Session active', savedAt: currentMeta.savedAt, meta: currentMeta, game }} />
-      <p className="lore-note">Cette autosave continue d’utiliser la clé historique <code>combine-city-lore-upgrade</code> pour rester compatible avec les étapes précédentes.</p>
+      <p className="lore-note">L’autosave locale maintient la continuité des anciens mandats COAN.</p>
     </div>
 
     <div className="panel import-panel">
@@ -161,16 +161,16 @@ export function SaveManagerScreen({ game, loadGame }: SaveManagerScreenProps) {
       <input type="file" accept="application/json,.json,.coan-save" onChange={(event) => importFile(event.currentTarget.files?.[0] ?? null)} />
       {imported ? <div className="import-preview">
         <SlotMetaSummary payload={imported} />
-        {importWarnings.length > 0 && <div className="lore-note">{importWarnings.map((warning) => <p key={warning}>⚠ {warning}</p>)}</div>}
-        <label>Slot cible pour stocker l’import</label>
-        <select value={importTarget} onChange={(event) => setImportTarget(event.target.value as SaveSlotId)}>
+        {importWarnings.length > 0 && <div className="lore-note">{importWarnings.map((warning) => <p key={warning}>{warning}</p>)}</div>}
+        <label htmlFor="save-import-target">Archive cible</label>
+        <select id="save-import-target" value={importTarget} onChange={(event) => setImportTarget(event.target.value as SaveSlotId)}>
           {saveSlotDefinitions.map((slot) => <option key={slot.id} value={slot.id}>{slot.label}</option>)}
         </select>
         <div className="actions save-actions-row">
           <button onClick={loadImported}>Charger maintenant</button>
           <button onClick={saveImportedToSlot}>Stocker dans le slot</button>
         </div>
-      </div> : <p className="muted">Aucun fichier importé. Les anciens exports GameState directs sont acceptés et migrés au chargement.</p>}
+      </div> : <p className="muted">Aucun dossier importé. Les anciens exports de mandat sont migrés au chargement.</p>}
     </div>
 
     <div className="panel save-slots-panel wide">
@@ -198,12 +198,12 @@ export function SaveManagerScreen({ game, loadGame }: SaveManagerScreenProps) {
 
     <div className="panel save-protocol-panel wide">
       <span className="brand-kicker">Compatibilité / migration</span>
-      <h2>Protocole de sauvegarde Step 36</h2>
+      <h2>Protocole d’archive COAN</h2>
       <div className="codex-grid compact-codex">
         <article><strong>Compatibilité ancienne autosave</strong><p>Les parties déjà présentes dans <code>combine-city-lore-upgrade</code> sont hydratées avec les migrations de tous les modules.</p></article>
         <article><strong>Payload complet</strong><p>Chaque slot contient le GameState complet : City, secteurs, citoyens, Lambda, Xen, Nova, Vortigaunts, objectifs, verdicts, archives vidéo et audio.</p></article>
         <article><strong>Export portable</strong><p>Un fichier <code>.coan-save.json</code> peut être copié entre machines ou placé dans un repo privé.</p></article>
-        <article><strong>Limite</strong><p>Le stockage reste local au navigateur/Tauri. Pour cloud sync ou SQLite, il faudra une étape dédiée.</p></article>
+        <article><strong>Périmètre</strong><p>Les archives restent locales à ce terminal et peuvent être transférées par export.</p></article>
       </div>
     </div>
   </section>;

@@ -60,7 +60,7 @@ function stateMetricPatch(node: CombineTechnologyNode): Partial<CombineTechnolog
   return patch;
 }
 
-export function researchTechnologyNode({ state, stats, units, sectors, nodeId, day }: { state: CombineTechnologyState; stats: Stats; units: Unit[]; sectors: Sector[]; nodeId: string; day: number }) {
+export function researchTechnologyNode({ state, stats: _stats, units, sectors, nodeId, day }: { state: CombineTechnologyState; stats: Stats; units: Unit[]; sectors: Sector[]; nodeId: string; day: number }) {
   const node = combineTechnologyNodes.find((item) => item.id === nodeId);
   if (!node) return { technology: state, statsDelta: {}, units, sectors, lines: ['TECH NODE — protocole inconnu.'] };
   const available = getAvailableTechnologyNodes(state).some((item) => item.id === node.id);

@@ -68,7 +68,7 @@ export function setCivilProtectionDoctrine(state: CivilProtectionState, doctrine
   return { civilProtection: next, statsDelta: doctrine.effects, lines: [`Doctrine Civil Protection : ${doctrine.name}.`, doctrine.description] };
 }
 
-export function resolveCivilProtectionOperation({ state, operation, sectors, selectedSectorId, stats, day }: { state: CivilProtectionState; operation: CivilProtectionOperation; sectors: Sector[]; selectedSectorId: string; stats: Stats; day: number }) {
+export function resolveCivilProtectionOperation({ state, operation, sectors, selectedSectorId, stats: _stats, day }: { state: CivilProtectionState; operation: CivilProtectionOperation; sectors: Sector[]; selectedSectorId: string; stats: Stats; day: number }) {
   const targetPostId = state.posts.find((post) => post.sectorId === selectedSectorId)?.id ?? state.posts[Math.abs((day + selectedSectorId.length) % state.posts.length)]?.id;
   let postName = 'poste CP local';
   const posts = state.posts.map((post) => {

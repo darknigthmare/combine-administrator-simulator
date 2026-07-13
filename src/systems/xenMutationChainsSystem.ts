@@ -18,16 +18,6 @@ function mutationStage(progress: number, mutationLoad: number): XenMutationStage
   return 'latent';
 }
 
-function stageLabel(stage: XenMutationStage) {
-  return {
-    latent: 'latente',
-    triggered: 'déclenchée',
-    accelerating: 'accélération',
-    outbreak: 'flambée',
-    catastrophic: 'catastrophique',
-  }[stage];
-}
-
 function layerPressure(ecosystem: XenEcosystemState | undefined, sectorId: string, ids: XenEcosystemLayerId[]) {
   if (!ecosystem?.layers?.length) return 0;
   const layers = ecosystem.layers.filter((layer) => layer.sectorId === sectorId && ids.includes(layer.layerId));
@@ -311,7 +301,7 @@ export function simulateXenMutationDay({ state, sectors, stats, ecosystem, popul
   return { xenMutation: next, sectors: nextSectors, statsDelta, lines };
 }
 
-export function resolveXenMutationOperation({ state, operation, sectors, selectedChainId, selectedSectorId, stats, day }: { state: XenMutationState; operation: XenMutationOperation; sectors: Sector[]; selectedChainId?: string; selectedSectorId?: string; stats: Stats; day: number }) {
+export function resolveXenMutationOperation({ state, operation, sectors, selectedChainId, selectedSectorId, stats: _stats, day }: { state: XenMutationState; operation: XenMutationOperation; sectors: Sector[]; selectedChainId?: string; selectedSectorId?: string; stats: Stats; day: number }) {
   const targetChain = state.chains.find((chain) => chain.id === selectedChainId) ?? [...state.chains].sort((a, b) => (b.progress + b.conversionLoad + b.mutationLoad) - (a.progress + a.conversionLoad + a.mutationLoad))[0];
   const targetSectorId = selectedSectorId ?? targetChain?.sectorId;
   const networkWide = operation.target === 'network';

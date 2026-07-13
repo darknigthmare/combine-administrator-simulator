@@ -1,4 +1,4 @@
-import type { CampaignId, DifficultyPresetId, NewGameIntakeDoctrine, NewGameIntakeDoctrineId, NewGameIntakePhase, OnboardingTrackId, ProfileId, ScenarioId, TimelineId } from '../types/game';
+import type { CampaignId, DifficultyPresetId, NewGameIntakeDoctrine, NewGameIntakeDoctrineId, NewGameIntakePhase, OnboardingTrackId, ProfileId, ScenarioId } from '../types/game';
 
 export const newGameIntakeVersion = 'COAN-NEW-GAME-43';
 
@@ -52,8 +52,8 @@ export const newGameIntakeDoctrines: Record<NewGameIntakeDoctrineId, NewGameInta
     difficultyPresetId: 'standard_occupation',
     onboardingTrackId: 'standard_command',
     citySuggestion: '17',
-    doctrineLine: 'Sandbox Combine : parfait pour tester les modules ou créer une City personnalisée.',
-    riskLine: 'Risque dépendant des choix manuels. Les campagnes non libres peuvent surcharger la cohérence si mélangées au hasard.',
+    doctrineLine: 'Mandat hors doctrine : chaque paramètre administratif reste sous la responsabilité directe de l’opérateur.',
+    riskLine: 'Risque dépendant des choix manuels. Les campagnes dirigées conservent leurs recommandations de cohérence.',
     tags: ['sandbox', 'city', 'manual'],
   },
   canonical_city17: {
@@ -98,7 +98,7 @@ export const newGameIntakeDoctrines: Record<NewGameIntakeDoctrineId, NewGameInta
     onboardingTrackId: 'nova_blackfile_intake',
     citySuggestion: '24',
     doctrineLine: 'Transformer l’intake Nova en stabilité apparente sans laisser les disparitions devenir mythe Lambda.',
-    riskLine: 'Audit, suspicion et martyrologie Lambda plus sévères. Recommandé pour systèmes rapports/archives/Nova.',
+    riskLine: 'Audit, suspicion et martyrologie Lambda plus sévères. Le secret des transferts devient une priorité de campagne.',
     tags: ['nova', 'razor', 'advisor'],
   },
   uprising_survival: {

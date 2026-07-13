@@ -41,6 +41,8 @@ const required = [
   'src/systems/onboardingSystem.ts',
   'src/systems/newGameIntakeSystem.ts',
   'src/systems/uxPolishSystem.ts',
+  'src/systems/dailyOrderSystem.ts',
+  'src/components/MainMenuScreen.tsx',
   'src-tauri/tauri.conf.json',
   'src-tauri/Cargo.toml',
   'package.tauri.patch.json',
@@ -69,7 +71,8 @@ const componentFiles = existingFiles.filter((file) => file.startsWith('src/compo
 const readmes = existingFiles.filter((file) => path.basename(file).startsWith('README_STEP'));
 
 const app = fs.readFileSync(path.join(packRoot, 'src/App.tsx'), 'utf8');
-const tabOk = app.includes("game.tab === 'system_audit'") && app.includes('SystemAuditScreen') && app.includes("game.tab === 'onboarding'") && app.includes('OnboardingScreen') && app.includes("game.tab === 'new_game'") && app.includes('NewGameIntakeScreen') && app.includes("game.tab === 'ux_polish'") && app.includes('UxPolishScreen') && app.includes("game.tab === 'tauri_packaging'") && app.includes('TauriPackagingScreen');
+const playerFlowOk = app.includes("game.tab === 'main_menu'") && app.includes('MainMenuScreen') && app.includes("game.tab === 'onboarding'") && app.includes('OnboardingScreen') && app.includes("game.tab === 'new_game'") && app.includes('NewGameIntakeScreen') && app.includes("game.tab === 'command_deck_v2'") && app.includes('UiuxV2CommandDeck');
+const internalToolsHidden = !app.includes("game.tab === 'system_audit'") && !app.includes("game.tab === 'ux_polish'") && !app.includes("game.tab === 'tauri_packaging'") && !app.includes("game.tab === 'gameplay_balance'");
 const tauriOk = fs.existsSync(path.join(packRoot, 'src-tauri/tauri.conf.json'));
 const index = fs.readFileSync(path.join(packRoot, 'src/data/index.ts'), 'utf8');
 const systemAuditExported = index.includes('./systemAudit');
@@ -90,7 +93,8 @@ const report = {
   checks: {
     requiredFiles: missing.length === 0,
     readmeCoverage: readmeMissing.length === 0,
-    systemAuditTabWired: tabOk,
+    playerFlowWired: playerFlowOk,
+    internalToolsHidden,
     systemAuditDataExported: systemAuditExported,
     newGameIntakeExported: newGameExported,
     uxPolishExported,
@@ -103,6 +107,6 @@ const report = {
 
 console.log(JSON.stringify(report, null, 2));
 
-if (missing.length || readmeMissing.length || !tabOk || !systemAuditExported || !newGameExported || !uxPolishExported || !tauriPackagingExported || !tauriOk) {
+if (missing.length || readmeMissing.length || !playerFlowOk || !internalToolsHidden || !systemAuditExported || !newGameExported || !uxPolishExported || !tauriPackagingExported || !tauriOk) {
   process.exit(1);
 }

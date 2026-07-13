@@ -69,26 +69,37 @@ function choosePolicy(game: Partial<GameState>): MajorStoryPolicyId {
   return 'preventive_censorship';
 }
 
+export function isMajorStoryEventAvailable(id: MajorStoryEventId, game: Partial<GameState>) {
+  const unlocked = game.uiuxProgression?.unlocked;
+  if (!unlocked) return true;
+  if (id === 'advisor_arrival') return unlocked.advisor_channel;
+  if (id === 'razor_train_loss') return unlocked.rail_network;
+  if (id === 'nova_prospekt_escape') return unlocked.nova_prospekt_link;
+  if (['major_xen_rift', 'vortigaunt_resonance_burst', 'headcrab_shell_exposure'].includes(id)) return unlocked.xen_bioscan;
+  return true;
+}
+
 function baseEvent(id: MajorStoryEventId, sectors: Sector[], game: Partial<GameState>, index: number): MajorStoryEventRuntime {
   const def = majorStoryEventDefinitions[id];
   const campaignBoost = def.campaignBias.includes(game.campaign?.activeCampaignId ?? 'custom_city_administration') ? 8 : 0;
   const timelineBoost = def.timelineBias.includes(game.timeline ?? 'pre_hl2') ? 8 : 0;
   const scenarioBoost = (game.scenario === 'uprising' && def.category === 'resistance') || (game.scenario === 'quarantine' && def.category === 'xen') || (game.scenario === 'post_nova' && def.category === 'nova') ? 10 : 0;
-  const heat = clamp(def.baseHeat + campaignBoost + timelineBoost + scenarioBoost + index % 7 - 8);
+  const available = isMajorStoryEventAvailable(id, game);
+  const heat = available ? clamp(def.baseHeat + campaignBoost + timelineBoost + scenarioBoost + index % 7 - 8) : 0;
   return {
     id: `major-${id}`,
     eventId: id,
     sectorId: pickSector(def.preferredSectors, sectors, index),
     stage: heat >= 52 ? 'active' : heat >= 28 ? 'warning' : 'dormant',
     heat,
-    secrecy: clamp(58 - heat * 0.25 + safeNum(game.stats?.info, 50) * 0.22),
-    containment: clamp(48 + safeNum(game.stats?.combine, 50) * 0.18 + safeNum(game.stats?.info, 50) * 0.12 - heat * 0.18),
-    publicAwareness: clamp(heat * 0.45 + safeNum(game.stats?.fatigue, 40) * 0.18 - safeNum(game.stats?.info, 50) * 0.1),
-    advisorAttention: clamp(heat * 0.25 + safeNum(game.stats?.suspicion, 0) * 0.35),
-    lambdaOpportunity: clamp(heat * 0.22 + safeNum(game.stats?.rebel, 0) * 0.25),
-    xenInstability: clamp(heat * 0.18 + safeNum(game.stats?.xen, 0) * 0.28),
+    secrecy: available ? clamp(58 - heat * 0.25 + safeNum(game.stats?.info, 50) * 0.22) : 100,
+    containment: available ? clamp(48 + safeNum(game.stats?.combine, 50) * 0.18 + safeNum(game.stats?.info, 50) * 0.12 - heat * 0.18) : 100,
+    publicAwareness: available ? clamp(heat * 0.45 + safeNum(game.stats?.fatigue, 40) * 0.18 - safeNum(game.stats?.info, 50) * 0.1) : 0,
+    advisorAttention: available ? clamp(heat * 0.25 + safeNum(game.stats?.suspicion, 0) * 0.35) : 0,
+    lambdaOpportunity: available ? clamp(heat * 0.22 + safeNum(game.stats?.rebel, 0) * 0.25) : 0,
+    xenInstability: available ? clamp(heat * 0.18 + safeNum(game.stats?.xen, 0) * 0.28) : 0,
     daysInStage: 0,
-    lastReport: `${def.combineLabel} surveillé : ${def.warningSigns[0]}`,
+    lastReport: available ? `${def.combineLabel} surveillé : ${def.warningSigns[0]}` : 'Dossier classifié : autorisation supérieure requise.',
   };
 }
 
@@ -234,6 +245,18 @@ export function simulateMajorStoryEventDay({ state, game, sectors, stats, day }:
   const lines: string[] = [];
   const events = state.events.map((event, index) => {
     const def = majorStoryEventDefinitions[event.eventId];
+    if (!isMajorStoryEventAvailable(event.eventId, game)) return {
+      ...event,
+      stage: 'dormant' as const,
+      heat: 0,
+      containment: 100,
+      secrecy: 100,
+      publicAwareness: 0,
+      advisorAttention: 0,
+      lambdaOpportunity: 0,
+      xenInstability: 0,
+      daysInStage: 0,
+    };
     const pressure = eventPressure(event.eventId, { ...game, stats, sectors: nextSectors, majorStoryEvents: state }, nextSectors);
     const previousStage = event.stage;
     const pressureDelta = Math.round((pressure - event.heat) * 0.14 + def.escalationRate * 0.05 + policy.heatBias * 0.12);

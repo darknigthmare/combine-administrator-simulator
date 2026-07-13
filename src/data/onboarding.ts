@@ -1,4 +1,4 @@
-import type { CampaignId, DifficultyPresetId, OnboardingChapter, OnboardingFirstDayAction, OnboardingTrack, OnboardingTrackId, ProfileId, ScenarioId, TabId, TimelineId } from '../types/game';
+import type { OnboardingChapter, OnboardingFirstDayAction, OnboardingTrack, OnboardingTrackId, TabId } from '../types/game';
 
 export const onboardingVersion = 'COAN-ONBOARDING-42';
 

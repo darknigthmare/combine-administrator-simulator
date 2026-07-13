@@ -5345,7 +5345,7 @@ html,
 body,
 #root {
   max-width: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 button:focus-visible,
@@ -5672,8 +5672,7 @@ select:focus-visible {
   }
 
   .sidebar {
-    position: sticky;
-    top: 0;
+    position: relative;
     z-index: 70;
     width: 100%;
     height: auto;
@@ -5717,7 +5716,9 @@ select:focus-visible {
   }
 
   .terminal-topbar {
-    position: static;
+    position: sticky;
+    top: 0;
+    z-index: 65;
     grid-template-columns: 1fr;
   }
 
@@ -5760,7 +5761,12 @@ select:focus-visible {
   }
 
   .topbar-command strong {
-    font-size: 11px;
+    display: none;
+  }
+
+  .topbar-status > span:nth-child(3),
+  .topbar-status > span:nth-child(4) {
+    display: none;
   }
 
   .topbar-status > span {
@@ -5781,5 +5787,154 @@ select:focus-visible {
 
   .uiux-v2-hero h2 {
     font-size: 28px;
+  }
+}
+
+/* Campaign setup and meta screens use the full viewport without the in-game shell. */
+.app-shell.pre-session-shell {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.app-shell.pre-session-shell > .sidebar {
+  display: none;
+}
+
+.app-shell.pre-session-shell > .main {
+  grid-column: 1;
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  overflow: visible;
+}
+
+.app-shell.pre-session-shell .new-game-intake-screen,
+.app-shell.pre-session-shell .campaign-prologue-screen {
+  padding: 18px;
+}
+
+.app-shell:not(.pre-session-shell) > .main {
+  overflow: visible;
+}
+
+.terminal-topbar {
+  top: 0;
+}
+
+.meta-menu-button {
+  display: inline-grid;
+  width: 36px;
+  min-width: 36px;
+  height: 36px;
+  padding: 0;
+  place-items: center;
+}
+
+.ending {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.ending > div {
+  min-width: 0;
+}
+
+.ending > button,
+.intake-back-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  white-space: nowrap;
+}
+
+.intake-back-button {
+  margin-bottom: 10px;
+}
+
+.intake-step-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.intake-step-tabs button {
+  min-height: 58px;
+  display: grid;
+  align-content: center;
+  gap: 3px;
+  text-align: left;
+  border-color: rgba(112, 186, 211, .2);
+  background: rgba(4, 13, 20, .82);
+}
+
+.intake-step-tabs button.active {
+  border-color: var(--cyan);
+  box-shadow: inset 3px 0 0 var(--cyan);
+}
+
+.intake-step-tabs span {
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.intake-step-tabs strong {
+  font-size: 12px;
+}
+
+.intake-step-panel {
+  min-height: min(620px, calc(100vh - 230px));
+}
+
+.intake-step-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.intake-config-panel {
+  width: min(860px, 100%);
+  margin-inline: auto;
+}
+
+.intake-review-grid {
+  align-items: stretch;
+}
+
+@media (max-width: 700px) {
+  .intake-step-tabs {
+    grid-template-columns: 1fr;
+  }
+
+  .intake-step-tabs button {
+    min-height: 46px;
+  }
+
+  .intake-step-actions,
+  .intake-step-actions button {
+    width: 100%;
+  }
+
+  .ending {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .ending > button {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

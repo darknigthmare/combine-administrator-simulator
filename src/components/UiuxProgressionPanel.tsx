@@ -6,11 +6,9 @@ import './UiuxProgressionPanel.css';
 export function UiuxProgressionPanel({
   game,
   purchaseUnlock,
-  runAudit,
 }: {
   game: GameState;
   purchaseUnlock: (id: UiuxUnlockId) => void;
-  runAudit: () => void;
 }) {
   const state = game.uiuxProgression;
   const acquired = Object.values(state.unlocked).filter(Boolean).length;
@@ -18,7 +16,7 @@ export function UiuxProgressionPanel({
   return <section className="uiux-progression">
     <header className="uiux-progression-hero">
       <div>
-        <span className="uiux-v2-kicker"><BadgeDollarSign size={14} /> UI/UX V4 / progression</span>
+        <span className="uiux-v2-kicker"><BadgeDollarSign size={14} /> AUTORISATIONS CITADEL</span>
         <h2>Réquisitions Citadel</h2>
         <p>Les dossiers sensibles sont des autorisations de campagne. Chaque canal ouvert augmente aussi le coût d’entretien quotidien et la charge de supervision.</p>
       </div>
@@ -51,7 +49,7 @@ export function UiuxProgressionPanel({
                 <div><dt>Débloque</dt><dd>{item.unlocks}</dd></div>
               </dl>
               <button className="uiux-v2-action" disabled={bought || !available} onClick={() => purchaseUnlock(item.id)}>
-                {bought ? <CheckCircle2 size={14} /> : <Lock size={14} />} {bought ? 'Autorisation active' : 'Acheter autorisation'}
+                {bought ? <CheckCircle2 size={14} /> : <Lock size={14} />} {bought ? 'Autorisation active' : item.narrative ? 'Découverte narrative requise' : 'Acheter autorisation'}
               </button>
             </div>
           </article>;
@@ -59,7 +57,7 @@ export function UiuxProgressionPanel({
       </div>
 
       <aside className="uiux-progression-audit">
-        <span className="uiux-v2-kicker"><ShieldCheck size={14} /> audit stabilisation</span>
+        <span className="uiux-v2-kicker"><ShieldCheck size={14} /> Évaluation de stabilité</span>
         <h3>Phase {formatUiuxPhase(state.phase)}</h3>
         <p>{state.lastAudit}</p>
         <div className="uiux-progression-score">
@@ -67,7 +65,6 @@ export function UiuxProgressionPanel({
           <span>Viabilité long terme</span>
           <b>{state.longTermScore}%</b>
         </div>
-        <button className="uiux-v2-action" onClick={runAudit}>Lancer audit V4</button>
         <div className="uiux-progression-rules">
           <p><strong>Xen</strong><span>Bio-signal masqué avant Bioscan.</span></p>
           <p><strong>Nova Prospekt</strong><span>Liaison OTA puis canal pénitentiaire.</span></p>

@@ -24,11 +24,11 @@ const terminal = fs.readFileSync(path.join(packRoot, 'src/data/terminalInterface
 const checks = {
   requiredFiles: missing.length === 0,
   tabTypePresent: types.includes("'ux_polish'"),
-  appScreenMounted: app.includes("game.tab === 'ux_polish'") && app.includes('UxPolishScreen'),
+  internalScreenHidden: !app.includes("game.tab === 'ux_polish'") && !app.includes("import { UxPolishScreen"),
   commandStripPresent: app.includes('ux-command-strip') && app.includes('buildUxPolishReport'),
   dataExported: index.includes('./uxPolish'),
   terminalRouteHidden: !terminal.includes("'ux_polish'"),
-  cssPresent: css.includes('ux-command-strip') && css.includes('ux-polish-screen'),
+  cssPresent: css.includes('ux-command-strip') && css.includes('prefers-reduced-motion'),
 };
 
 const report = { packRoot, checks, missing };

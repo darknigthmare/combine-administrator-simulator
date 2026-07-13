@@ -123,7 +123,7 @@ export const baseSectors: Sector[] = [
     ],
   },
   {
-    id: 'periphery', name: 'Périphérie contaminée', zone: 'Périphérie', x: 86, y: 72, strategicValue: 68, chokePoint: false,
+    id: 'periphery', name: 'Périphérie extérieure', zone: 'Périphérie', x: 86, y: 72, strategicValue: 68, chokePoint: false,
     role: 'Lisière urbaine, sols meubles, antlions, exfiltration rebelle.', population: 650, status: 'Infesté', rebel: 21, xen: 74, surveillance: 35, infrastructure: 31, loyalty: 8, fear: 84, units: { hunter: 1 },
     notes: 'Les vibrations de véhicules lourds peuvent provoquer une migration antlion.',
     connections: [

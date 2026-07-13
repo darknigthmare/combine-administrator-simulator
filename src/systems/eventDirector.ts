@@ -2,7 +2,7 @@
  * Step 4 event director.
  * Chooses lore events according to the current city pressure instead of using a pure array pick.
  */
-import type { Crisis, Sector, Stats, TimelineId } from '../types/game';
+import type { Crisis, Sector, Stats, TimelineId, UiuxUnlockId } from '../types/game';
 import { getTimelineThreatMultiplier } from './timelineSystem';
 
 type EventDirectorInput = {
@@ -11,6 +11,8 @@ type EventDirectorInput = {
   stats: Stats;
   day: number;
   timeline?: TimelineId;
+  unlocked?: Record<UiuxUnlockId, boolean>;
+  crisisHistory?: string[];
 };
 
 function deterministicNoise(seed: number, text: string) {
@@ -45,7 +47,24 @@ function sectorPressure(crisis: Crisis, sectors: Sector[]) {
   return score;
 }
 
-export function pickDirectedCrisis({ crises, sectors, stats, day, timeline }: EventDirectorInput): Crisis {
+function crisisIsAvailable(crisis: Crisis, input: EventDirectorInput): boolean {
+  const unlocked = input.unlocked;
+  const history = input.crisisHistory ?? [];
+  const lore = `${crisis.title} ${(crisis.loreTags ?? []).join(' ')}`.toLowerCase();
+
+  if (history.slice(0, 3).includes(crisis.id)) return false;
+  if (crisis.repeatable === false && history.includes(crisis.id)) return false;
+  if (crisis.type === 'XEN' && unlocked && !unlocked.xen_bioscan) return false;
+  if ((lore.includes('nova prospekt') || lore.includes('biotics')) && unlocked && !unlocked.nova_prospekt_link) return false;
+  if (lore.includes('razor train') && unlocked && !unlocked.rail_network) return false;
+  if (lore.includes('advisor') && unlocked && !unlocked.advisor_channel) return false;
+  if ((lore.includes('ordinal') || lore.includes('suppressor') || lore.includes('combine grunt')) && input.timeline !== 'alyx_era') return false;
+  if (lore.includes('hunter') && !['post_nova_prospekt', 'uprising', 'citadel_collapse'].includes(input.timeline ?? '')) return false;
+  return true;
+}
+
+export function pickDirectedCrisis(input: EventDirectorInput): Crisis | null {
+  const { crises, sectors, stats, day, timeline } = input;
   const timelineFactor = (crisis: Crisis) => {
     if (!timeline) return 1;
     if (crisis.type === 'REBELLION') return getTimelineThreatMultiplier('rebellion', timeline);
@@ -55,13 +74,15 @@ export function pickDirectedCrisis({ crises, sectors, stats, day, timeline }: Ev
     if (crisis.type === 'MORAL') return getTimelineThreatMultiplier('moral', timeline);
     return 1;
   };
-  const scored = crises.map((crisis) => ({
+  const availableCrises = crises.filter((crisis) => crisisIsAvailable(crisis, input));
+  const scored = availableCrises.map((crisis) => ({
     crisis,
     score: (typePressure(crisis, stats) + sectorPressure(crisis, sectors)) * timelineFactor(crisis) + (crisis.severity ?? 2) * 8 + deterministicNoise(day, crisis.id),
   }));
 
   scored.sort((a, b) => b.score - a.score);
   const topWindow = scored.slice(0, Math.min(12, scored.length));
+  if (topWindow.length === 0) return null;
   const index = Math.abs((day * 17 + stats.rebel + stats.xen + stats.suspicion) % topWindow.length);
   return topWindow[index].crisis;
 }

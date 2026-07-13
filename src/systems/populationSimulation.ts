@@ -2,8 +2,6 @@ import type { GameState, PopulationGroupId, PopulationSectorState, PopulationSta
 import { populationGroupDefinitions, populationGroupOrder } from '../data/populationGroups';
 
 const clamp = (value: number, min = 0, max = 100) => Math.max(min, Math.min(max, Math.round(value)));
-const positive = (value: number) => Math.max(0, Math.round(value));
-
 const emptyGroups = (): Record<PopulationGroupId, number> => Object.fromEntries(populationGroupOrder.map((id) => [id, 0])) as Record<PopulationGroupId, number>;
 
 function normalizeGroups(groups: Record<PopulationGroupId, number>, target: number): Record<PopulationGroupId, number> {

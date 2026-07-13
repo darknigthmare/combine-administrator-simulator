@@ -285,6 +285,24 @@
   margin-top: 14px;
 }
 
+.uiux-v2-order-list {
+  display: grid;
+  gap: 6px;
+  margin-top: 14px;
+}
+
+.uiux-v2-order-list span {
+  overflow: hidden;
+  padding: 8px 10px;
+  border-left: 2px solid var(--v2-cyan);
+  background: rgba(3, 7, 12, 0.46);
+  color: var(--v2-muted);
+  font-size: 11px;
+  line-height: 1.4;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .uiux-v2-chip {
   display: inline-flex;
   align-items: center;

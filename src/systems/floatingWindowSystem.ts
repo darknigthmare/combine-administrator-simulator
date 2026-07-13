@@ -1,5 +1,5 @@
 import type { FloatingWindowContent, FloatingWindowMetric, FloatingWindowPresetId, GameState, Sector, TabId } from '../types/game';
-import { combineTechnologyNodes, floatingWindowPresets, majorStoryEventDefinitions, xenCatastropheDefinitions, xenLayerDefinitions } from '../data';
+import { combineTechnologyNodes, floatingWindowPresets, majorStoryEventDefinitions, xenLayerDefinitions } from '../data';
 import { buildDynamicBreencast } from './dynamicBreencast';
 
 const clamp = (value: number, min = 0, max = 100) => Math.max(min, Math.min(max, Math.round(value)));

@@ -4,26 +4,6 @@ import { xenResearchPolicies, xenResearchPrograms, xenResearchProgramOrder } fro
 const clamp = (value: number, min = 0, max = 100) => Math.max(min, Math.min(max, Math.round(value)));
 const add = (value: number, delta = 0, min = 0, max = 100) => clamp(value + delta, min, max);
 
-function applyStats(base: Stats, effects: Partial<Stats>): Stats {
-  return {
-    ...base,
-    stability: add(base.stability, effects.stability ?? 0),
-    loyalty: add(base.loyalty, effects.loyalty ?? 0),
-    fear: add(base.fear, effects.fear ?? 0),
-    rebel: add(base.rebel, effects.rebel ?? 0),
-    xen: add(base.xen, effects.xen ?? 0),
-    combine: add(base.combine, effects.combine ?? 0),
-    production: add(base.production, effects.production ?? 0, 0, 120),
-    rations: Math.max(0, Math.round(base.rations + (effects.rations ?? 0))),
-    citadel: add(base.citadel, effects.citadel ?? 0),
-    info: add(base.info, effects.info ?? 0),
-    fatigue: add(base.fatigue, effects.fatigue ?? 0),
-    civilianLosses: Math.max(0, Math.round(base.civilianLosses + (effects.civilianLosses ?? 0))),
-    combineLosses: Math.max(0, Math.round(base.combineLosses + (effects.combineLosses ?? 0))),
-    suspicion: add(base.suspicion, effects.suspicion ?? 0),
-  };
-}
-
 function avg(values: number[]) {
   if (!values.length) return 0;
   return clamp(values.reduce((sum, value) => sum + value, 0) / values.length);

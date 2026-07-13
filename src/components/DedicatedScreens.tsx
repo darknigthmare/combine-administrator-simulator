@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import type { CampaignId, CitadelDirectiveNode, CivilProtectionDoctrineId, CivilProtectionOperation, CombineTechnologyBranchId, CombineTechnologyNode, GameState, PopulationGroupId, PopulationSectorState, RationOperation, RationPolicyId, ResistanceFactionDoctrineId, ResistanceFactionOperation, ResistanceNetworkState, ResistanceOperation, VortigauntDoctrineId, VortigauntOperation, XenEcosystemOperation, XenEcosystemPolicyId, XenMutationOperation, XenMutationPolicyId, QuarantineOperation, QuarantinePolicyId, XenResearchOperation, XenResearchPolicyId, XenCatastropheOperation, XenCatastrophePolicyId, MajorStoryOperation, MajorStoryPolicyId, VideoArchiveOperation, VideoArchivePolicyId, Sector, Unit } from '../types/game';
+import type { CitadelDirectiveNode, CivilProtectionDoctrineId, CivilProtectionOperation, CombineTechnologyBranchId, CombineTechnologyNode, GameState, PopulationGroupId, PopulationSectorState, RationOperation, RationPolicyId, ResistanceFactionDoctrineId, ResistanceFactionOperation, ResistanceNetworkState, ResistanceOperation, VortigauntDoctrineId, VortigauntOperation, XenEcosystemOperation, XenEcosystemPolicyId, XenMutationOperation, XenMutationPolicyId, QuarantineOperation, QuarantinePolicyId, XenResearchOperation, XenResearchPolicyId, XenCatastropheOperation, XenCatastrophePolicyId, MajorStoryOperation, MajorStoryPolicyId, VideoArchiveOperation, VideoArchivePolicyId, Sector, Unit } from '../types/game';
 import { rationPolicies } from '../data/rationEconomy';
 import { populationGroupDefinitions, populationGroupOrder } from '../data/populationGroups';
 import { informantDoctrines } from '../data/informantNetwork';
@@ -20,9 +20,8 @@ import { campaignOrder, campaignPresets } from '../data/campaignScenarios';
 import { getAvailableDirectiveNodes, getBranchCompletion } from '../systems/citadelDirectiveTreeSystem';
 import { getAvailableTechnologyNodes, getTechnologyBranchProgress } from '../systems/combineTechnologySystem';
 import { getPopulationRisk } from '../systems/populationSimulation';
-import { getConnectedSectors, getSectorPressure } from '../systems/sectorNetwork';
 import { reportPolicyLabels } from '../systems/reportFalsification';
-import { getMajorStoryStageLabel, getMajorStoryStageRank } from '../systems/majorStoryEventSystem';
+import { getMajorStoryStageLabel, getMajorStoryStageRank, isMajorStoryEventAvailable } from '../systems/majorStoryEventSystem';
 import { getDossierVisual, getUnitVisual } from '../data/visualAssets';
 
 type GlobalAction = (action: 'breencast' | 'ration_plus' | 'ration_cut' | 'advisor' | 'shadow_help') => void;
@@ -30,15 +29,19 @@ type SectorAction = (action: 'curfew' | 'raid' | 'quarantine' | 'seal' | 'purge'
 
 type Deploy = (unit: Unit) => void;
 
-function MiniStat({ label, value, dangerHigh = false }: { label: string; value: number | string; dangerHigh?: boolean }) {
+const countMetricPattern = /^(jour|jour génération|jours restants|pertes civiles|ravenholm-like|non résolus|population|total|agents cp|agents compromis|officiers|protocoles|capacités|champs altérés|réserve|prod\/jour|besoin\/jour|alloué\/jour|autonomie|rapports|logs|événements|objectifs|compromis|captifs|libres|sujets|zones suivies|partielles|totales|scellées|zones perdues|civils piégés|hôtes|dossiers|conformes|suspects|flags nova|dossiers secteur|sources|sources brûlées|dénonciations|exploitables|fausses|cellules exposées|dépense rations|budget r&d|spécimens|parasites|extract|percées|échantillons|crises actives|clips|rations)$/i;
+
+function MiniStat({ label, value, dangerHigh = false, unit = 'auto' }: { label: string; value: number | string; dangerHigh?: boolean; unit?: 'auto' | 'percent' | 'count' }) {
   const numeric = typeof value === 'number' ? value : 0;
   const danger = typeof value === 'number' && (dangerHigh ? numeric > 65 : numeric < 35);
-  return <span className={`module-mini-stat ${danger ? 'danger' : ''}`}><small>{label}</small><b>{value}{typeof value === 'number' && label !== 'Rations' ? '%' : ''}</b></span>;
+  const showPercent = unit === 'percent' || (unit === 'auto' && !countMetricPattern.test(label));
+  const suffix = typeof value === 'number' && showPercent ? '%' : '';
+  return <span className={`module-mini-stat ${danger ? 'danger' : ''}`}><small>{label}</small><b>{value}{suffix}</b></span>;
 }
 
 function UnitButton({ unit, sector, deploy }: { unit: Unit; sector: Sector; deploy: Deploy }) {
   return <button className="module-unit-button" disabled={unit.reserve <= 0} onClick={() => deploy(unit)}>
-    <img src={getUnitVisual(unit.id)} alt="" aria-hidden="true" />
+    <img src={getUnitVisual(unit.id)} alt="" aria-hidden="true" loading="lazy" decoding="async" />
     <strong>{unit.name}</strong>
     <span>{unit.category} — réserve {unit.reserve}</span>
     <em>Déployer vers {sector.name}</em>
@@ -60,7 +63,7 @@ export function FinalVerdictScreen({ game }: { game: GameState }) {
         <h2>Aucun verdict final déclenché</h2>
         <p>Le dossier final reste en attente. La clôture sera évaluée selon le contrôle de City, l’héritage Lambda, Xen, Nova Prospekt, les Advisors, les objectifs de campagne et les rapports falsifiés.</p>
         <div className="module-stat-grid">
-          <MiniStat label="Jour" value={game.day} />
+          <MiniStat label="Jour" value={game.day} unit="count" />
           <MiniStat label="Mandat" value={game.campaignMission.mandateScore} />
           <MiniStat label="Audit" value={game.auditHeat} dangerHigh />
           <MiniStat label="Xen" value={game.stats.xen} dangerHigh />
@@ -265,7 +268,9 @@ export function FinalChronicleScreen({ game }: { game: GameState }) {
 
 export function MajorStoryEventsScreen({ game, operations, changePolicy, applyOperation }: { game: GameState; operations: MajorStoryOperation[]; changePolicy: (policy: MajorStoryPolicyId) => void; applyOperation: (operation: MajorStoryOperation, eventId?: string) => void }) {
   const state = game.majorStoryEvents;
-  const sortedEvents = [...state.events].sort((a, b) => (getMajorStoryStageRank(b.stage) * 100 + b.heat + b.publicAwareness) - (getMajorStoryStageRank(a.stage) * 100 + a.heat + a.publicAwareness));
+  const sortedEvents = state.events
+    .filter((event) => isMajorStoryEventAvailable(event.eventId, game))
+    .sort((a, b) => (getMajorStoryStageRank(b.stage) * 100 + b.heat + b.publicAwareness) - (getMajorStoryStageRank(a.stage) * 100 + a.heat + a.publicAwareness));
   const current = sortedEvents[0];
   const currentDef = current ? majorStoryEventDefinitions[current.eventId] : null;
   const activeOrWorse = sortedEvents.filter((event) => getMajorStoryStageRank(event.stage) >= 2);
@@ -275,9 +280,9 @@ export function MajorStoryEventsScreen({ game, operations, changePolicy, applyOp
 
   return <section className="panel-grid dedicated-screen major-story-screen">
     <div className="panel module-command major-story-command">
-      <span className="brand-kicker">Major Story Director / Scripted HL Arc</span>
+      <span className="brand-kicker">COAN / JALONS STRATÉGIQUES</span>
       <h2>Événements scénarisés majeurs</h2>
-      <p>Ce module surveille les jalons lourds qui transforment une administration ordinaire en arc narratif Half-Life : Advisor, BreenCast, Razor Train, Nova Prospekt, mutinerie CP, faille Xen et assaut Lambda coordonné.</p>
+      <p>Le registre consolide uniquement les jalons déclassifiés pour le mandat actif et ses autorisations courantes.</p>
       <div className="module-stat-grid">
         <MiniStat label="Chaleur ville" value={state.citywideHeat} dangerHigh />
         <MiniStat label="Non résolus" value={state.unresolvedMajorEvents} dangerHigh />
@@ -333,7 +338,7 @@ export function MajorStoryEventsScreen({ game, operations, changePolicy, applyOp
     </div>
 
     <div className="panel major-event-list-panel wide">
-      <span className="brand-kicker">Table des jalons scénarisés</span>
+      <span className="brand-kicker">Table des jalons déclassifiés</span>
       <h2>État des arcs majeurs</h2>
       <div className="major-event-grid">
         {sortedEvents.map((event) => {
@@ -377,7 +382,6 @@ export function MajorStoryEventsScreen({ game, operations, changePolicy, applyOp
 export function CampaignScreen({ game }: { game: GameState }) {
   const active = campaignPresets[game.campaign.activeCampaignId];
   const upcomingMilestone = active.milestones.find((milestone, index) => index >= game.campaign.milestoneIndex);
-  const completed = game.campaign.objectives.filter((objective) => objective.achieved).length;
   const mission = game.campaignMission;
   const visibleMissionObjectives = mission.objectives.filter((objective) => objective.discovered);
   const primaryMission = visibleMissionObjectives.filter((objective) => objective.kind === 'primary');

@@ -4,7 +4,7 @@ export type ProfileId = 'loyalist' | 'technocrat' | 'tyrant' | 'collaborator' | 
 export type AdministratorAvatarId = 'civil_director' | 'field_prefect' | 'combine_technocrat' | 'quarantine_director';
 export type RationPolicyId = 'standard' | 'loyalty_priority' | 'industrial_priority' | 'punitive' | 'black_market_tolerance' | 'humanitarian_mask' | 'cp_informant_bounty';
 export type RationOperationId = 'redistribute' | 'worker_bonus' | 'punitive_cut' | 'informant_bonus' | 'market_sweep' | 'hidden_relief' | 'nova_requisition';
-export type TabId = 'new_game' | 'prologue' | 'onboarding' | 'dashboard' | 'command_deck_v2' | 'progression' | 'campaigns' | 'major_events' | 'finale' | 'chronicle' | 'timeline' | 'sectors' | 'population' | 'citizens' | 'informants' | 'civil_protection' | 'overwatch' | 'citadel' | 'technology' | 'combine' | 'resistance' | 'vortigaunts' | 'xen' | 'xen_research' | 'xen_catastrophes' | 'rationing' | 'nova' | 'propaganda' | 'reports' | 'archives' | 'video_archives' | 'save_system' | 'decision_history' | 'difficulty' | 'gameplay_balance' | 'atmosphere' | 'tauri_packaging' | 'codex' | 'system_audit' | 'ux_polish';
+export type TabId = 'main_menu' | 'new_game' | 'prologue' | 'onboarding' | 'dashboard' | 'command_deck_v2' | 'progression' | 'campaigns' | 'major_events' | 'finale' | 'chronicle' | 'timeline' | 'sectors' | 'population' | 'citizens' | 'informants' | 'civil_protection' | 'overwatch' | 'citadel' | 'technology' | 'combine' | 'resistance' | 'vortigaunts' | 'xen' | 'xen_research' | 'xen_catastrophes' | 'rationing' | 'nova' | 'propaganda' | 'reports' | 'archives' | 'video_archives' | 'save_system' | 'decision_history' | 'difficulty' | 'gameplay_balance' | 'atmosphere' | 'tauri_packaging' | 'codex' | 'system_audit' | 'ux_polish';
 export type NovaInterfaceMode = 'city' | 'nova';
 
 
@@ -177,6 +177,14 @@ export type UiuxProgressionState = {
   consecutiveCriticalDays: number;
   longTermScore: number;
   lastAudit: string;
+};
+
+export type DailyOrderState = {
+  day: number;
+  total: number;
+  remaining: number;
+  usedActionIds: string[];
+  issuedLabels: string[];
 };
 
 
@@ -2623,6 +2631,8 @@ export type GameState = {
   administratorAvatar: AdministratorAvatarId;
   campaign: CampaignState;
   uiuxProgression: UiuxProgressionState;
+  dailyOrders: DailyOrderState;
+  crisisHistory: string[];
   campaignMission: CampaignMissionState;
   difficultySettings: DifficultySettingsState;
   onboarding: OnboardingState;

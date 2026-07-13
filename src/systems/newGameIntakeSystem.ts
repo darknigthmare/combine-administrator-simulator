@@ -1,4 +1,4 @@
-import type { CampaignId, DifficultyPresetId, NewGameIntakeConfig, NewGameIntakeDoctrineId, NewGameIntakePreview, NewGameIntakeResolvedConfig, NewGameIntakeThreatBand, OnboardingTrackId, ProfileId, ScenarioId, Stats, TimelineId } from '../types/game';
+import type { DifficultyPresetId, NewGameIntakeConfig, NewGameIntakeDoctrineId, NewGameIntakePreview, NewGameIntakeResolvedConfig, NewGameIntakeThreatBand, OnboardingTrackId, ProfileId, ScenarioId, Stats, TimelineId } from '../types/game';
 import { baseStats, campaignPresets, difficultyPresets, newGameIntakeDoctrines, onboardingTracks, profileEffects, scenarioEffects, timelinePresets } from '../data';
 
 const clamp = (value: number, min = 0, max = 100) => Math.max(min, Math.min(max, Math.round(value)));

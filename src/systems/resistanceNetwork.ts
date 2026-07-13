@@ -128,7 +128,7 @@ export function simulateResistanceNetworkDay({ state, sectors, stats, day }: { s
   return { resistanceNetwork: next, statsDelta, lines };
 }
 
-export function resolveResistanceOperation({ state, operation, sectors, selectedCellId, selectedRouteId, selectedSectorId, stats, day }: { state: ResistanceNetworkState; operation: ResistanceOperation; sectors: Sector[]; selectedCellId?: string; selectedRouteId?: string; selectedSectorId?: string; stats: Stats; day: number }) {
+export function resolveResistanceOperation({ state, operation, sectors, selectedCellId, selectedRouteId, selectedSectorId, stats: _stats, day }: { state: ResistanceNetworkState; operation: ResistanceOperation; sectors: Sector[]; selectedCellId?: string; selectedRouteId?: string; selectedSectorId?: string; stats: Stats; day: number }) {
   let cells = state.cells.map(copyCell);
   let routes = state.routes.map(copyRoute);
   let nextSectors = sectors.map((sector) => ({ ...sector, units: { ...sector.units } }));

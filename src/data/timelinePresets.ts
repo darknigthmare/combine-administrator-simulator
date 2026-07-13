@@ -1,4 +1,4 @@
-import type { Stats, TimelinePreset } from '../types/game';
+import type { TimelinePreset } from '../types/game';
 
 /**
  * Canonical-era modifiers.

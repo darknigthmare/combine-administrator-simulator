@@ -1,5 +1,5 @@
 import type { CampaignId, DifficultyPresetId, GameState, OnboardingChapterId, OnboardingState, OnboardingTrackId, ProfileId, ScenarioId, Stats, TabId, TimelineId } from '../types/game';
-import { onboardingChapters, onboardingFirstDayActions, onboardingTrackOrder, onboardingTracks, onboardingVersion } from '../data/onboarding';
+import { onboardingChapters, onboardingFirstDayActions, onboardingTracks, onboardingVersion } from '../data/onboarding';
 
 const now = () => new Date().toISOString();
 const clamp = (value: number, min = 0, max = 100) => Math.max(min, Math.min(max, Math.round(value)));
@@ -90,14 +90,13 @@ export function buildOnboardingView(game: GameState): OnboardingView {
   const progress = clamp((completedCount / onboardingChapters.length) * 100);
   const warnings: string[] = [];
   if (game.stats.rebel > 65) warnings.push('Lambda est déjà trop haut : prioriser Carte de City, Résistance et Overwatch avant la théorie.');
-  if (game.stats.xen > 55 || game.xenMutation.outbreakRisk > 60) warnings.push('Xen domine la journée : lire Quarantine Terminal avant toute opération CP.');
+  if (game.uiuxProgression.unlocked.xen_bioscan && (game.stats.xen > 55 || game.xenMutation.outbreakRisk > 60)) warnings.push('Xen domine la journée : lire Quarantine Terminal avant toute opération CP.');
   if ((game.auditHeat ?? 0) > 60 || game.stats.suspicion > 65) warnings.push('Audit Advisor chaud : éviter les falsifications massives pendant le tutoriel.');
   if (game.rationEconomy.hungerIndex > 60) warnings.push('Faim élevée : le tutoriel recommande une stabilisation ration avant répression.');
   const recommendedNextChapter = onboardingChapters.find((chapter) => !completed.has(chapter.id))?.id ?? null;
   const recommendedTabs = Array.from(new Set([
     activeTrack.startingTab,
     ...onboardingChapters.filter((chapter) => !completed.has(chapter.id)).slice(0, 2).flatMap((chapter) => chapter.linkedTabs),
-    'gameplay_balance' as TabId,
   ])).slice(0, 8);
   return {
     version: onboardingVersion,

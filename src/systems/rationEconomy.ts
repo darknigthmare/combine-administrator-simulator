@@ -2,8 +2,6 @@ import type { GameState, ProfileId, RationEconomyState, RationOperation, RationP
 import { rationPolicies } from '../data/rationEconomy';
 
 const clamp = (value: number, min = 0, max = 100) => Math.max(min, Math.min(max, Math.round(value)));
-const round = (value: number) => Math.round(value);
-
 function getPolicy(policyId: RationPolicyId): RationPolicy {
   return rationPolicies.find((policy) => policy.id === policyId) ?? rationPolicies[0];
 }

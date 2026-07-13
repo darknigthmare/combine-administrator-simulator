@@ -144,8 +144,9 @@ export function simulateConnectedPropagation(args: {
   scenario: ScenarioId;
   profile: ProfileId;
   day: number;
+  xenEnabled?: boolean;
 }): PropagationReport {
-  const { sectors, units, stats, scenario, profile, day } = args;
+  const { sectors, units, stats, scenario, profile, day, xenEnabled = true } = args;
   let casualties = 0;
   let combineLosses = 0;
   let rebelSpreadEvents = 0;
@@ -158,7 +159,7 @@ export function simulateConnectedPropagation(args: {
   const nextSectors = sectors.map((sector) => {
     if (sector.status === 'Scellé' || sector.status === 'Abandonné') {
       sealedContainments += sector.status === 'Scellé' ? 1 : 0;
-      return { ...sector, rebel: clamp(sector.rebel - 3), xen: clamp(sector.xen - 5), infrastructure: clamp(sector.infrastructure - 1) };
+      return { ...sector, rebel: clamp(sector.rebel - 3), xen: xenEnabled ? clamp(sector.xen - 5) : sector.xen, infrastructure: clamp(sector.infrastructure - 1) };
     }
 
     const unitsHere = getUnitPresence(sector, units);
@@ -179,31 +180,32 @@ export function simulateConnectedPropagation(args: {
     const xenNetworkSpread = neighbor.xen > 16 ? Math.ceil(neighbor.xen / 12) : 0;
     const xenLocalDrift = 1 + scenarioXenPressure(scenario) + profileXenPressure(profile) + xenBiotopeBonus + (sector.infrastructure < 35 ? 2 : 0) + (newRebel > 70 ? 2 : 0);
     const xenSuppression = unitsHere.biocontrol / 6 + unitsHere.synth / 12 + (sector.status === 'En quarantaine' ? 5 : 0) + (sector.surveillance > 75 ? 1 : 0);
-    const newXen = clamp(sector.xen + xenLocalDrift + xenNetworkSpread - xenSuppression);
+    const newXen = xenEnabled ? clamp(sector.xen + xenLocalDrift + xenNetworkSpread - xenSuppression) : sector.xen;
+    const effectiveXen = xenEnabled ? newXen : 0;
 
     if (newRebel - sector.rebel >= 6) {
       rebelSpreadEvents += 1;
       if (lambdaVectors.length < 4 && neighbor.highestRebelName) lambdaVectors.push(`${sector.name} contaminé par réseau Lambda depuis ${neighbor.highestRebelName}.`);
     }
-    if (newXen - sector.xen >= 6) {
+    if (xenEnabled && newXen - sector.xen >= 6) {
       xenSpreadEvents += 1;
       if (xenVectors.length < 4 && neighbor.highestXenName) xenVectors.push(`${sector.name} exposé à un vecteur Xen depuis ${neighbor.highestXenName}.`);
     }
 
     const rebelCasualtyRate = newRebel > 82 ? 0.0045 : newRebel > 65 ? 0.002 : 0;
-    const xenCasualtyRate = newXen > 78 ? 0.009 : newXen > 60 ? 0.004 : newXen > 45 ? 0.0015 : 0;
+    const xenCasualtyRate = effectiveXen > 78 ? 0.009 : effectiveXen > 60 ? 0.004 : effectiveXen > 45 ? 0.0015 : 0;
     const repressionCasualtyRate = unitsHere.synth > 20 && newRebel > 55 ? 0.002 : unitsHere.overwatch > 20 && newRebel > 60 ? 0.001 : 0;
     const loss = Math.ceil(sector.population * (rebelCasualtyRate + xenCasualtyRate + repressionCasualtyRate));
     casualties += loss;
 
     if (newRebel > 80 && unitsHere.total > 25) combineLosses += Math.max(1, Math.round((newRebel - 70) / 18));
-    if (newXen > 76 && unitsHere.biocontrol + unitsHere.overwatch + unitsHere.synth > 12) combineLosses += 1;
+    if (effectiveXen > 76 && unitsHere.biocontrol + unitsHere.overwatch + unitsHere.synth > 12) combineLosses += 1;
 
-    if ((newRebel > 70 || newXen > 65) && flashpoints.length < 5) {
-      flashpoints.push(`${sector.name} : ${newRebel > newXen ? 'activité anti-citoyenne' : 'biosphère Xen'} au seuil critique.`);
+    if ((newRebel > 70 || effectiveXen > 65) && flashpoints.length < 5) {
+      flashpoints.push(`${sector.name} : ${newRebel > effectiveXen ? 'activité anti-citoyenne' : 'biosphère Xen'} au seuil critique.`);
     }
 
-    const infrastructureLoss = (newXen > 55 ? 4 : newXen > 35 ? 2 : 0) + (newRebel > 65 ? 3 : newRebel > 45 ? 1 : 0) + (unitsHere.synth > 20 ? 1 : 0);
+    const infrastructureLoss = (effectiveXen > 55 ? 4 : effectiveXen > 35 ? 2 : 0) + (newRebel > 65 ? 3 : newRebel > 45 ? 1 : 0) + (unitsHere.synth > 20 ? 1 : 0);
     const recovery = sector.status === 'Contrôle Combine total' && stats.production > 65 ? 2 : 1;
 
     return {
@@ -211,21 +213,21 @@ export function simulateConnectedPropagation(args: {
       rebel: newRebel,
       xen: newXen,
       population: Math.max(0, sector.population - loss),
-      status: statusFromPressures(sector, newRebel, newXen),
+      status: statusFromPressures(sector, newRebel, effectiveXen),
       infrastructure: clamp(sector.infrastructure - infrastructureLoss + recovery),
-      loyalty: clamp(sector.loyalty - (newRebel > 70 ? 2 : 0) - (newXen > 65 ? 3 : 0) + (stats.rations > 1600 ? 1 : 0)),
-      fear: clamp(sector.fear + (newXen > 55 ? 3 : 0) + (newRebel > 65 ? 2 : 0) + (unitsHere.synth > 0 ? 1 : 0)),
+      loyalty: clamp(sector.loyalty - (newRebel > 70 ? 2 : 0) - (effectiveXen > 65 ? 3 : 0) + (stats.rations > 1600 ? 1 : 0)),
+      fear: clamp(sector.fear + (effectiveXen > 55 ? 3 : 0) + (newRebel > 65 ? 2 : 0) + (unitsHere.synth > 0 ? 1 : 0)),
     };
   });
 
   const avgRebel = Math.round(nextSectors.reduce((acc, sector) => acc + sector.rebel, 0) / nextSectors.length);
-  const avgXen = Math.round(nextSectors.reduce((acc, sector) => acc + sector.xen, 0) / nextSectors.length);
+  const avgXen = xenEnabled ? Math.round(nextSectors.reduce((acc, sector) => acc + sector.xen, 0) / nextSectors.length) : stats.xen;
   const avgSurveillance = Math.round(nextSectors.reduce((acc, sector) => acc + sector.surveillance, 0) / nextSectors.length);
 
   if (day % 5 === 0 && avgRebel > 50 && lambdaVectors.length < 4) {
     lambdaVectors.push('Réseau Lambda : hausse synchronisée des radios pirates sur plusieurs routes non Combine.');
   }
-  if (day % 4 === 0 && avgXen > 42 && xenVectors.length < 4) {
+  if (xenEnabled && day % 4 === 0 && avgXen > 42 && xenVectors.length < 4) {
     xenVectors.push('Biosphère Xen : spores et excroissances signalées au-delà des secteurs initialement compromis.');
   }
 

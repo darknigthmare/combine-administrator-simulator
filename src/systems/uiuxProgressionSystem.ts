@@ -1,4 +1,4 @@
-import type { GameState, Stats, TabId, UiuxCampaignPhase, UiuxProgressionResources, UiuxProgressionState, UiuxUnlockId } from '../types/game';
+import type { GameState, ScenarioId, Stats, TabId, TimelineId, UiuxCampaignPhase, UiuxProgressionResources, UiuxProgressionState, UiuxUnlockId } from '../types/game';
 
 export type UiuxUnlockDefinition = {
   id: UiuxUnlockId;
@@ -11,6 +11,7 @@ export type UiuxUnlockDefinition = {
   unlocks: string;
   upkeep: string;
   image: string;
+  narrative?: boolean;
 };
 
 const uiuxPhaseLabels: Record<UiuxCampaignPhase, string> = {
@@ -27,13 +28,13 @@ export function formatUiuxPhase(phase: UiuxCampaignPhase) {
 
 export const uiuxUnlockCatalog: UiuxUnlockDefinition[] = [
   { id: 'citizen_intake', title: 'Registre Civil Intake', faction: 'Civil Authority', description: 'Autorise le traitement administratif des nouveaux citoyens hors du flux opérationnel.', cost: { requisition: 80, data: 20, compliance: 8 }, requiresDay: 1, unlocks: 'Autorisation civile et dossiers Intake.', upkeep: '14 REQ / 4 DATA par jour', image: '/openai-visuals/banners/citadel-requisitions.png' },
-  { id: 'ota_command', title: 'Liaison Overwatch Transhuman Arm', faction: 'Overwatch', description: 'Ouvre les réserves OTA et Airwatch lourdes après validation Citadel.', cost: { requisition: 170, data: 60, compliance: 18 }, requiresDay: 2, unlocks: 'Soldats Overwatch, Ordinal, Suppressor et Airwatch.', upkeep: '32 REQ / 4 DATA par jour', image: '/openai-visuals/unlocks/ota-command.png' },
+  { id: 'ota_command', title: 'Liaison Overwatch Transhuman Arm', faction: 'Overwatch', description: 'Ouvre les réserves OTA et Airwatch lourdes après validation Citadel.', cost: { requisition: 170, data: 60, compliance: 18 }, requiresDay: 2, unlocks: 'Unités OTA et Airwatch compatibles avec la fenêtre chronologique.', upkeep: '32 REQ / 4 DATA par jour', image: '/openai-visuals/unlocks/ota-command.png' },
   { id: 'xen_bioscan', title: 'Paquet Bioscan Xen', faction: 'Xen', description: 'Déclassifie les bio-signaux et ouvre les dossiers de biosphère Xen.', cost: { requisition: 120, data: 120, compliance: 10 }, requiresDay: 3, unlocks: 'Quarantaine, recherche et catastrophes Xen.', upkeep: '14 REQ / 16 DATA par jour', image: '/openai-visuals/unlocks/xen-bioscan.png' },
   { id: 'nova_prospekt_link', title: 'Canal Nova Prospekt', faction: 'Nova Prospekt', description: 'Ouvre le réseau de transfert pénitentiaire externe après liaison OTA.', cost: { requisition: 210, data: 100, compliance: 24 }, requiresDay: 4, requires: ['ota_command'], unlocks: 'Terminal Nova Prospekt et dossiers de détention.', upkeep: '14 REQ / 14 DATA par jour', image: '/openai-visuals/unlocks/nova-channel.png' },
   { id: 'advisor_channel', title: 'Canal direct Advisor', faction: 'Citadel', description: 'Autorise une inspection Advisor, au prix d’une surveillance administrative accrue.', cost: { requisition: 130, data: 80, compliance: 32 }, requiresDay: 5, unlocks: 'Validation Advisor et protocoles supérieurs.', upkeep: '14 REQ / 4 DATA / 4 CONF par jour', image: '/openai-visuals/unlocks/advisor-link.png' },
-  { id: 'rail_network', title: 'Canal ferroviaire Razor Train', faction: 'Overwatch', description: 'Réactive les priorités logistiques longue distance de la Combine.', cost: { requisition: 150, data: 80, compliance: 16 }, requiresDay: 3, unlocks: 'Bonus durable de production, rations et transferts.', upkeep: '14 REQ / 4 DATA par jour', image: '/openai-visuals/unlocks/razor-train.png' },
-  { id: 'ravenholm_blacklist', title: 'Blacklist Ravenholm', faction: 'Civil Authority', description: 'Classe Ravenholm comme archive interdite hors carte et protocole de non-intervention.', cost: { requisition: 90, data: 140, compliance: 20 }, requiresDay: 4, requires: ['xen_bioscan'], unlocks: 'Archive Ravenholm blacklist et doctrine de confinement.', upkeep: '14 REQ / 4 DATA par jour', image: '/openai-visuals/unlocks/xen-research.png' },
-  { id: 'synth_requisition', title: 'Réquisition Synth lourde', faction: 'Overwatch', description: 'Autorise Hunter et Strider pour les phases de guerre ouverte.', cost: { requisition: 360, data: 180, compliance: 42 }, requiresDay: 8, requires: ['ota_command', 'advisor_channel'], unlocks: 'Hunter, Strider et protocole de rupture.', upkeep: '54 REQ / 4 DATA par jour', image: '/openai-visuals/unlocks/ota-command.png' },
+  { id: 'rail_network', title: 'Canal ferroviaire Razor Train', faction: 'Overwatch', description: 'Réactive les priorités logistiques longue distance de la Combine.', cost: { requisition: 150, data: 80, compliance: 16 }, requiresDay: 3, unlocks: 'Bonus durable de production, rations et transferts.', upkeep: '14 REQ / 4 DATA par jour', image: '/openai-visuals/city17-sector-grid.svg' },
+  { id: 'ravenholm_blacklist', title: 'Dossier interdit Ravenholm', faction: 'Civil Authority', description: 'Archive narrative révélée par les signaux de quarantaine. Elle ne peut pas être achetée.', cost: { requisition: 0, data: 0, compliance: 0 }, requiresDay: 7, requires: ['xen_bioscan'], unlocks: 'Archive Ravenholm et doctrine de non-intervention.', upkeep: 'Aucun entretien', image: '/openai-visuals/events/xen-breach.png', narrative: true },
+  { id: 'synth_requisition', title: 'Réquisition Synth lourde', faction: 'Overwatch', description: 'Autorise Hunter et Strider pour les phases de guerre ouverte.', cost: { requisition: 360, data: 180, compliance: 42 }, requiresDay: 8, requires: ['ota_command', 'advisor_channel'], unlocks: 'Hunter, Strider et protocole de rupture.', upkeep: '54 REQ / 4 DATA par jour', image: '/openai-visuals/units/hunter.png' },
 ];
 
 const unlockStatEffects: Record<UiuxUnlockId, Partial<Stats>> = {
@@ -60,21 +61,31 @@ const emptyUnlocks = (): Record<UiuxUnlockId, boolean> => ({
 
 const clamp = (value: number) => Math.max(0, Math.min(100, Math.round(value)));
 
-export function createInitialUiuxProgressionState(): UiuxProgressionState {
+export function createInitialUiuxProgressionState(context?: { scenario?: ScenarioId; timeline?: TimelineId }): UiuxProgressionState {
+  const unlocked = emptyUnlocks();
+  if (context?.scenario === 'quarantine' || context?.timeline === 'alyx_era') unlocked.xen_bioscan = true;
+  if (context?.scenario === 'post_nova' || ['post_nova_prospekt', 'uprising', 'citadel_collapse'].includes(context?.timeline ?? '')) {
+    unlocked.ota_command = true;
+    unlocked.rail_network = true;
+    unlocked.nova_prospekt_link = true;
+  } else if (context?.scenario === 'uprising' || context?.timeline === 'hl2_arrival') {
+    unlocked.ota_command = true;
+    unlocked.rail_network = true;
+  }
   return {
     resources: { requisition: 220, data: 60, compliance: 18 },
-    unlocked: emptyUnlocks(),
+    unlocked,
     phase: 'occupation',
     heat: 18,
     bureaucraticLoad: 12,
     consecutiveCriticalDays: 0,
     longTermScore: 50,
-    lastAudit: 'Audit V4 prêt : aucun module sensible exposé au démarrage.',
+    lastAudit: 'Évaluation Citadel initiale : les dossiers sensibles suivent le mandat sélectionné.',
   };
 }
 
 export function migrateUiuxProgressionState(game: Partial<GameState>): UiuxProgressionState {
-  const base = createInitialUiuxProgressionState();
+  const base = createInitialUiuxProgressionState({ scenario: game.scenario, timeline: game.timeline });
   const saved = game.uiuxProgression;
   if (!saved) return base;
   return {
@@ -82,12 +93,14 @@ export function migrateUiuxProgressionState(game: Partial<GameState>): UiuxProgr
     ...saved,
     resources: { ...base.resources, ...saved.resources },
     unlocked: { ...base.unlocked, ...saved.unlocked },
+    lastAudit: (saved.lastAudit ?? base.lastAudit).replace(/Audit V4/gi, 'Évaluation Citadel').replace(/audit UIUX/gi, 'évaluation Citadel'),
   };
 }
 
 export function canPurchaseUiuxUnlock(state: UiuxProgressionState, item: UiuxUnlockDefinition, day: number): boolean {
   const { resources, unlocked } = state;
-  return !unlocked[item.id]
+  return !item.narrative
+    && !unlocked[item.id]
     && day >= item.requiresDay
     && (item.requires ?? []).every((id) => unlocked[id])
     && resources.requisition >= item.cost.requisition
@@ -122,7 +135,7 @@ export function purchaseUiuxUnlock(state: UiuxProgressionState, id: UiuxUnlockId
 }
 
 export function calculateUiuxUpkeep(unlocked: Record<UiuxUnlockId, boolean>) {
-  const active = Object.values(unlocked).filter(Boolean).length;
+  const active = Object.entries(unlocked).filter(([id, enabled]) => enabled && id !== 'ravenholm_blacklist').length;
   return {
     requisition: active * 14 + (unlocked.synth_requisition ? 40 : 0) + (unlocked.ota_command ? 18 : 0),
     data: active * 4 + (unlocked.xen_bioscan ? 12 : 0) + (unlocked.nova_prospekt_link ? 10 : 0),
@@ -134,15 +147,17 @@ export function calculateUiuxUpkeep(unlocked: Record<UiuxUnlockId, boolean>) {
 function resolvePhase(day: number, unlocked: Record<UiuxUnlockId, boolean>, stats: Stats): UiuxCampaignPhase {
   if (stats.suspicion > 78 || day >= 45) return 'citadel_review';
   if (stats.rebel > 70 || stats.stability < 35) return 'uprising';
-  if (unlocked.xen_bioscan || stats.xen > 55) return 'containment';
+  if (unlocked.xen_bioscan && stats.xen > 35) return 'containment';
   if (unlocked.ota_command || day >= 5) return 'pacification';
   return 'occupation';
 }
 
 export function simulateUiuxProgressionDay(state: UiuxProgressionState, stats: Stats, day: number) {
-  const upkeep = calculateUiuxUpkeep(state.unlocked);
+  const discoveredRavenholm = state.unlocked.xen_bioscan && !state.unlocked.ravenholm_blacklist && day >= 7 && stats.xen >= 42;
+  const unlocked = discoveredRavenholm ? { ...state.unlocked, ravenholm_blacklist: true } : state.unlocked;
+  const upkeep = calculateUiuxUpkeep(unlocked);
   const income = {
-    requisition: Math.round(52 + stats.production * 0.32 + (state.unlocked.rail_network ? 18 : 0)),
+    requisition: Math.round(52 + stats.production * 0.32 + (unlocked.rail_network ? 18 : 0)),
     data: Math.round(16 + stats.info * 0.24),
     compliance: Math.max(2, Math.round(stats.citadel / 22)),
   };
@@ -154,10 +169,12 @@ export function simulateUiuxProgressionDay(state: UiuxProgressionState, stats: S
   const critical = raw.requisition < 0 || raw.data < 0 || raw.compliance < 0 || upkeep.load >= 82;
   const consecutiveCriticalDays = critical ? state.consecutiveCriticalDays + 1 : Math.max(0, state.consecutiveCriticalDays - 1);
   const heat = clamp(state.heat + Math.round(upkeep.load / 24) + Math.round(stats.suspicion / 35) - (critical ? 0 : 3));
-  const longTermScore = clamp((stats.stability + stats.citadel + (100 - stats.rebel) + (100 - stats.xen) + (100 - heat) + (100 - upkeep.load)) / 6);
-  const phase = resolvePhase(day + 1, state.unlocked, stats);
+  const visibleXenPressure = unlocked.xen_bioscan ? stats.xen : 0;
+  const longTermScore = clamp((stats.stability + stats.citadel + (100 - stats.rebel) + (100 - visibleXenPressure) + (100 - heat) + (100 - upkeep.load)) / 6);
+  const phase = resolvePhase(day + 1, unlocked, stats);
   const nextState: UiuxProgressionState = {
     ...state,
+    unlocked,
     resources: {
       requisition: Math.max(0, raw.requisition),
       data: Math.max(0, raw.data),
@@ -169,12 +186,12 @@ export function simulateUiuxProgressionDay(state: UiuxProgressionState, stats: S
     consecutiveCriticalDays,
     longTermScore,
     lastAudit: critical
-      ? `Audit V4 : entretien critique au jour ${day}. Réduire la charge ou restaurer les ressources.`
-      : `Audit V4 : phase ${formatUiuxPhase(phase)}, viabilité ${longTermScore}%, entretien couvert au jour ${day}.`,
+      ? `Évaluation Citadel : entretien critique au jour ${day}. Réduire la charge ou restaurer les ressources.`
+      : `Évaluation Citadel : phase ${formatUiuxPhase(phase)}, viabilité ${longTermScore}%, entretien couvert au jour ${day}.`,
   };
   const statsDelta: Partial<Stats> = {
-    production: (state.unlocked.rail_network ? 1 : 0) + (critical ? -3 : 0),
-    rations: state.unlocked.rail_network ? 45 : 0,
+    production: (unlocked.rail_network ? 1 : 0) + (critical ? -3 : 0),
+    rations: unlocked.rail_network ? 45 : 0,
     citadel: critical ? -2 : 0,
     suspicion: critical ? 4 : 0,
   };
@@ -182,7 +199,8 @@ export function simulateUiuxProgressionDay(state: UiuxProgressionState, stats: S
     state: nextState,
     statsDelta,
     lines: [
-      `UIUX V4 : upkeep ${upkeep.requisition} REQ / ${upkeep.data} DATA / ${upkeep.compliance} CONF, revenus ${income.requisition}/${income.data}/${income.compliance}.`,
+      `Entretien Citadel : ${upkeep.requisition} REQ / ${upkeep.data} DATA / ${upkeep.compliance} CONF, revenus ${income.requisition}/${income.data}/${income.compliance}.`,
+      ...(discoveredRavenholm ? ['Archive narrative révélée : Ravenholm classée zone interdite, doctrine de non-intervention active.'] : []),
       nextState.lastAudit,
     ],
   };
@@ -198,8 +216,8 @@ export function runUiuxAudit(state: UiuxProgressionState, stats: Stats, day: num
   return {
     ...state,
     lastAudit: issues.length
-      ? `Audit V4 jour ${day} : ${issues.join(', ')}.`
-      : `Audit V4 jour ${day} : progression, gameplay et verrous lore cohérents.`,
+      ? `Évaluation Citadel jour ${day} : ${issues.join(', ')}.`
+      : `Évaluation Citadel jour ${day} : progression et autorisations cohérentes.`,
   };
 }
 

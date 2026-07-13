@@ -13,13 +13,13 @@ export function LoreCodexScreen({ game, setTab }: { game: GameState; setTab: (ta
 
   return <section className="panel-grid dedicated-screen lore-codex-screen">
     <div className="panel module-command lore-codex-command wide">
-      <span className="brand-kicker">COAN Lore Codex / internal doctrine</span>
-      <h2>Codex lore opérationnel Half-Life</h2>
-      <p>Base interne pour garder l’application cohérente : chaque entrée relie un élément canon ou une traduction gameplay aux modules de gestion, aux risques et aux règles à ne pas casser.</p>
+      <span className="brand-kicker">COAN / ARCHIVES DOCTRINALES</span>
+      <h2>Codex opérationnel</h2>
+      <p>Chaque dossier relie une référence historique aux registres administratifs, aux risques actifs et aux interdictions de doctrine.</p>
       <div className="module-stat-grid">
         <MiniCodexStat label="Entrées" value={view.totalEntries} />
         <MiniCodexStat label="Complétude" value={`${view.completeness}%`} />
-        <MiniCodexStat label="Risque lore actif" value={`${view.loreRisk}%`} danger={view.loreRisk > 65} />
+        <MiniCodexStat label="Risque doctrinal" value={`${view.loreRisk}%`} danger={view.loreRisk > 65} />
         <MiniCodexStat label="Recommandées" value={view.recommendedEntries.length} danger={view.recommendedEntries.length > 3} />
         <MiniCodexStat label="Filtre" value={loreCodexCategoryLabels[category]} />
       </div>
@@ -67,19 +67,19 @@ export function LoreCodexScreen({ game, setTab }: { game: GameState; setTab: (ta
       </div>
       <div className="codex-detail-body">
         <article>
-          <h3>Résumé canon / cadre</h3>
+          <h3>Cadre de référence</h3>
           <p>{selected.canonSummary.replaceAll('{{CITY_NUMBER}}', game.city)}</p>
         </article>
         <article>
-          <h3>Doctrine de simulation</h3>
+          <h3>Doctrine opérationnelle</h3>
           <p>{selected.operationalDoctrine.replaceAll('{{CITY_NUMBER}}', game.city)}</p>
         </article>
         <article>
-          <h3>Règles danger</h3>
+          <h3>Protocoles de risque</h3>
           {selected.dangerRules.map((line) => <p key={line}>▸ {line}</p>)}
         </article>
         <article>
-          <h3>À éviter</h3>
+          <h3>Interdictions doctrinales</h3>
           {selected.avoidRules.map((line) => <p key={line}>▸ {line}</p>)}
         </article>
       </div>

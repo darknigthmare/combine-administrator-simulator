@@ -134,7 +134,7 @@ export function applyDifficultySectorEffects(sectors: Sector[], difficulty: Diff
   });
 }
 
-export function simulateDifficultyDay({ difficulty, stats, sectors, day }: { difficulty: DifficultySettingsState; stats: Stats; sectors: Sector[]; day: number }): { statsDelta: Partial<Stats>; sectors: Sector[]; difficultySettings: DifficultySettingsState; lines: string[] } {
+export function simulateDifficultyDay({ difficulty, stats: _stats, sectors, day }: { difficulty: DifficultySettingsState; stats: Stats; sectors: Sector[]; day: number }): { statsDelta: Partial<Stats>; sectors: Sector[]; difficultySettings: DifficultySettingsState; lines: string[] } {
   const s = difficulty.scalars;
   const statsDelta: Partial<Stats> = {
     rebel: Math.round((s.lambdaForce - 1) * 3 + (s.citizenFragility - 1) * 2 + (s.rationScarcity - 1) * 2),

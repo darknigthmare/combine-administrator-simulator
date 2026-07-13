@@ -9,26 +9,6 @@ function avg(values: number[]) {
   return clamp(values.reduce((sum, value) => sum + value, 0) / values.length);
 }
 
-function applyStats(base: Stats, effects: Partial<Stats>): Stats {
-  return {
-    ...base,
-    stability: add(base.stability, effects.stability ?? 0),
-    loyalty: add(base.loyalty, effects.loyalty ?? 0),
-    fear: add(base.fear, effects.fear ?? 0),
-    rebel: add(base.rebel, effects.rebel ?? 0),
-    xen: add(base.xen, effects.xen ?? 0),
-    combine: add(base.combine, effects.combine ?? 0),
-    production: add(base.production, effects.production ?? 0, 0, 120),
-    rations: Math.max(0, Math.round(base.rations + (effects.rations ?? 0))),
-    citadel: add(base.citadel, effects.citadel ?? 0),
-    info: add(base.info, effects.info ?? 0),
-    fatigue: add(base.fatigue, effects.fatigue ?? 0),
-    civilianLosses: Math.max(0, Math.round(base.civilianLosses + (effects.civilianLosses ?? 0))),
-    combineLosses: Math.max(0, Math.round(base.combineLosses + (effects.combineLosses ?? 0))),
-    suspicion: add(base.suspicion, effects.suspicion ?? 0),
-  };
-}
-
 function choosePolicy(profile: string, scenario: string, timeline: string): XenCatastrophePolicyId {
   if (profile === 'sympathizer') return 'public_health_mask';
   if (profile === 'quarantine') return 'preventive_lockdown';
@@ -235,7 +215,7 @@ export function resolveXenCatastropheOperation({ state, operation, sectors, sele
   return { xenCatastrophes: summary, sectors: nextSectors, statsDelta: { ...operation.cost, ...operation.effects, suspicion: (operation.cost.suspicion ?? 0) + (riskRoll < operation.risk ? 2 : 0) }, lines: summary.log.slice(0, 4) };
 }
 
-export function simulateXenCatastropheDay({ state, sectors, stats, ecosystem, mutation, quarantine, research, nova, vortigaunts, day }: { state: XenCatastropheState; sectors: Sector[]; stats: Stats; ecosystem?: XenEcosystemState; mutation?: XenMutationState; quarantine?: QuarantineZoneState; research?: XenResearchState; nova?: NovaProspektState; vortigaunts?: VortigauntState; day: number }): { xenCatastrophes: XenCatastropheState; sectors: Sector[]; statsDelta: Partial<Stats>; lines: string[] } {
+export function simulateXenCatastropheDay({ state, sectors, stats, ecosystem, mutation, quarantine, research, nova, vortigaunts, day: _day }: { state: XenCatastropheState; sectors: Sector[]; stats: Stats; ecosystem?: XenEcosystemState; mutation?: XenMutationState; quarantine?: QuarantineZoneState; research?: XenResearchState; nova?: NovaProspektState; vortigaunts?: VortigauntState; day: number }): { xenCatastrophes: XenCatastropheState; sectors: Sector[]; statsDelta: Partial<Stats>; lines: string[] } {
   const policy = xenCatastrophePolicies.find((item) => item.id === state.activePolicy) ?? xenCatastrophePolicies[0];
   let nextSectors = sectors.map((sector) => ({ ...sector }));
   let statsDelta: Partial<Stats> = {};

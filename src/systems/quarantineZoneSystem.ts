@@ -314,7 +314,7 @@ function applyZoneEffects(zone: QuarantineSectorState, operation: QuarantineOper
   };
 }
 
-export function resolveQuarantineOperation({ state, operation, sectors, selectedSectorId, stats, day }: { state: QuarantineZoneState; operation: QuarantineOperation; sectors: Sector[]; selectedSectorId?: string; stats: Stats; day: number }) {
+export function resolveQuarantineOperation({ state, operation, sectors, selectedSectorId, stats: _stats, day }: { state: QuarantineZoneState; operation: QuarantineOperation; sectors: Sector[]; selectedSectorId?: string; stats: Stats; day: number }) {
   const selectedId = selectedSectorId ?? sectors.sort((a, b) => b.xen - a.xen)[0]?.id;
   let zones = state.zones.map((zone) => ({ ...zone }));
   const makeZone = (sectorId: string) => {

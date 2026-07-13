@@ -42,7 +42,7 @@ export function AtmosphereLayer({
   useEffect(() => {
     if (!audioDirector) return;
     return startSyntheticAmbientBed(settings, audioDirector);
-  }, [audioDirector?.ambientCue, audioDirector?.intensity, settings.audioEnabled, settings.advancedAudioEnabled, settings.ambientDrone, settings.enabled, settings.masterVolume]);
+  }, [audioDirector, settings]);
 
   if (!settings.enabled) return null;
   return <div className={`atmosphere-layer ${profile.bodyClass} ${settings.chromatic ? 'chromatic-on' : ''} ${settings.ambientPulse ? 'pulse-on' : ''} ${settings.advancedAudioEnabled ? 'audio-advanced' : 'audio-legacy'}`} aria-hidden="true">

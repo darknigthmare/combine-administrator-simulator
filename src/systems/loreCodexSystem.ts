@@ -14,6 +14,7 @@ export function getLoreCodexEntry(id: string): LoreCodexEntry | undefined {
 export function getLoreCodexEntries(category: LoreCodexCategoryId = 'all', query = ''): LoreCodexEntry[] {
   const needle = normalize(query.trim());
   return loreCodexEntries
+    .filter((entry) => entry.id !== 'private-fan-boundary')
     .filter((entry) => category === 'all' || entry.category === category)
     .filter((entry) => {
       if (!needle) return true;
@@ -34,8 +35,12 @@ export function getLoreCodexEntries(category: LoreCodexCategoryId = 'all', query
 }
 
 export function buildLoreCodexView(game: GameState, category: LoreCodexCategoryId = 'all', query = ''): LoreCodexView {
-  const filteredEntries = getLoreCodexEntries(category, query);
-  const categoryCounts = loreCodexEntries.reduce<Record<LoreCodexCategoryId, number>>((acc, entry) => {
+  const accessibleEntries = loreCodexEntries.filter((entry) => entry.id !== 'private-fan-boundary')
+    .filter((entry) => entry.category !== 'xen' || game.uiuxProgression.unlocked.xen_bioscan)
+    .filter((entry) => entry.category !== 'nova' || game.uiuxProgression.unlocked.nova_prospekt_link);
+  const accessibleIds = new Set(accessibleEntries.map((entry) => entry.id));
+  const filteredEntries = getLoreCodexEntries(category, query).filter((entry) => accessibleIds.has(entry.id));
+  const categoryCounts = accessibleEntries.reduce<Record<LoreCodexCategoryId, number>>((acc, entry) => {
     acc[entry.category] = (acc[entry.category] ?? 0) + 1;
     acc.all += 1;
     return acc;
@@ -46,12 +51,12 @@ export function buildLoreCodexView(game: GameState, category: LoreCodexCategoryI
     recommendedIds.add('resistance-lambda');
     recommendedIds.add('resistance-factions');
   }
-  if (game.stats.xen > 35 || game.xenEcosystem.networkSpread > 40) {
+  if (game.uiuxProgression.unlocked.xen_bioscan && (game.stats.xen > 35 || game.xenEcosystem.networkSpread > 40)) {
     recommendedIds.add('xen-biosphere');
     recommendedIds.add('headcrab-zombie-chain');
     recommendedIds.add('quarantine-ravenholm');
   }
-  if (game.novaProspekt.instability > 40 || (100 - game.novaProspekt.secrecy) > 40) {
+  if (game.uiuxProgression.unlocked.nova_prospekt_link && (game.novaProspekt.instability > 40 || (100 - game.novaProspekt.secrecy) > 40)) {
     recommendedIds.add('nova-prospekt');
     recommendedIds.add('vortigaunts-biotics');
   }
@@ -72,16 +77,16 @@ export function buildLoreCodexView(game: GameState, category: LoreCodexCategoryI
     recommendedIds.add('combine-occupation');
   }
 
-  const recommendedEntries = loreCodexEntries.filter((entry) => recommendedIds.has(entry.id)).sort((a, b) => b.weight - a.weight).slice(0, 6);
+  const recommendedEntries = accessibleEntries.filter((entry) => recommendedIds.has(entry.id)).sort((a, b) => b.weight - a.weight).slice(0, 6);
   const loreRisk = clamp(
-    Math.max(game.stats.rebel, game.stats.xen, game.auditHeat, game.novaProspekt.instability, game.xenCatastrophes.totalCatastropheRisk, game.resistanceNetwork.networkCohesion)
+    Math.max(game.stats.rebel, game.uiuxProgression.unlocked.xen_bioscan ? game.stats.xen : 0, game.auditHeat, game.uiuxProgression.unlocked.nova_prospekt_link ? game.novaProspekt.instability : 0, game.uiuxProgression.unlocked.xen_bioscan ? game.xenCatastrophes.totalCatastropheRisk : 0, game.resistanceNetwork.networkCohesion)
   );
   const completeness = clamp(Math.round((loreCodexEntries.length / 20) * 100));
   const activeWarnings = [
     game.stats.rebel > 70 ? 'Lambda proche de l’insurrection ouverte : relire Résistance Lambda / factions internes.' : '',
-    game.stats.xen > 70 ? 'Xen menace de dépasser le simple confinement : relire biosphère, chaînes parasitaires et Ravenholm-like.' : '',
+    game.uiuxProgression.unlocked.xen_bioscan && game.stats.xen > 70 ? 'Xen menace de dépasser le simple confinement : relire biosphère, chaînes parasitaires et Ravenholm-like.' : '',
     game.auditHeat > 65 ? 'Audit Advisor critique : relire rapports falsifiés, Citadelle et Advisors.' : '',
-    game.novaProspekt.instability > 65 ? 'Nova Prospekt instable : relire Nova Prospekt et Vortigaunts / Biotics.' : '',
+    game.uiuxProgression.unlocked.nova_prospekt_link && game.novaProspekt.instability > 65 ? 'Nova Prospekt instable : relire Nova Prospekt et Vortigaunts / Biotics.' : '',
     game.videoArchives.publicLeakRisk > 65 ? 'Risque de fuite vidéo élevé : relire archives vidéo et falsification.' : '',
   ].filter(Boolean);
 

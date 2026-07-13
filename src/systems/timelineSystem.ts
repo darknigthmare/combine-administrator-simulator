@@ -55,7 +55,28 @@ export function applyTimelineToSectors(sectors: Sector[], timeline: TimelineId):
 
 export function applyTimelineToUnits(units: Unit[], timeline: TimelineId): Unit[] {
   const overrides = getTimelinePreset(timeline).unitReserveOverrides;
-  return units.map((unit) => overrides[unit.id] === undefined ? unit : { ...unit, reserve: overrides[unit.id] ?? unit.reserve });
+  return units.map((unit) => {
+    if (!isUnitAvailableInTimeline(unit.id, timeline)) return { ...unit, reserve: 0 };
+    return overrides[unit.id] === undefined ? unit : { ...unit, reserve: overrides[unit.id] ?? unit.reserve };
+  });
+}
+
+const alyxEraUnits = new Set(['grunt', 'ordinal', 'suppressor']);
+const episodeEraUnits = new Set(['hunter']);
+
+export function isUnitAvailableInTimeline(unitId: string, timeline: TimelineId): boolean {
+  if (alyxEraUnits.has(unitId)) return timeline === 'alyx_era';
+  if (episodeEraUnits.has(unitId)) return ['post_nova_prospekt', 'uprising', 'citadel_collapse'].includes(timeline);
+  if (unitId === 'elite') return !['seven_hour_aftermath', 'early_occupation', 'alyx_era'].includes(timeline);
+  if (unitId === 'soldier') return timeline !== 'alyx_era';
+  return true;
+}
+
+export function getUnitTimelineAvailabilityReason(unitId: string, timeline: TimelineId): string {
+  if (isUnitAvailableInTimeline(unitId, timeline)) return 'Unité compatible avec la fenêtre chronologique active.';
+  if (alyxEraUnits.has(unitId)) return 'Unité réservée à la période Half-Life: Alyx.';
+  if (episodeEraUnits.has(unitId)) return 'Synthèse réservée aux périodes post-Nova Prospekt et Episodes.';
+  return 'Modèle indisponible dans cette fenêtre chronologique.';
 }
 
 export function getTimelineDirectiveWeight(stat: keyof Stats, timeline: TimelineId): number {

@@ -46,7 +46,7 @@ export const terminalInterfaces: Record<TerminalInterfaceId, TerminalInterfaceDe
     classification: 'DETENTION-BIOTIC / BLACK FILE',
     tone: 'detention',
     defaultTab: 'nova',
-    tabs: ['nova', 'vortigaunts', 'citizens', 'informants', 'civil_protection', 'reports', 'decision_history', 'archives', 'video_archives', 'chronicle', 'codex'],
+    tabs: ['nova', 'vortigaunts', 'citizens', 'informants', 'civil_protection', 'reports', 'decision_history', 'archives', 'video_archives', 'codex'],
     primaryTabs: ['nova', 'vortigaunts', 'citizens', 'reports'],
     statusVocabulary: ['manifeste Razor', 'intake', 'détainee', 'Biotics', 'traitement mémoire', 'disparition silencieuse'],
     visualDirectives: ['blanc clinique', 'gris carcéral', 'verrous rouges', 'bruit fluorescent', 'dossier noir'],

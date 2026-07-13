@@ -1,5 +1,5 @@
 import type { GameState, PopulationState, ProfileId, ScenarioId, Sector, Stats, TimelineId, VortigauntState, XenEcosystemLayerId, XenEcosystemLayerState, XenEcosystemOperation, XenEcosystemPolicyId, XenEcosystemState, XenLayerStage } from '../types/game';
-import { xenEcosystemOperations, xenEcosystemPolicies, xenLayerDefinitions, xenLayerOrder } from '../data/xenEcosystem';
+import { xenEcosystemPolicies, xenLayerDefinitions } from '../data/xenEcosystem';
 
 const clamp = (value: number, min = 0, max = 100) => Math.max(min, Math.min(max, Math.round(value)));
 const add = (value: number, delta = 0, min = 0, max = 100) => clamp(value + delta, min, max);
@@ -120,16 +120,6 @@ export function migrateXenEcosystem(game: Partial<GameState>): XenEcosystemState
     timeline: game.timeline ?? 'pre_hl2',
     sectors: game.sectors ?? [],
   });
-}
-
-function applyLayerDelta(layer: XenEcosystemLayerState, patch: Partial<XenEcosystemLayerState>): XenEcosystemLayerState {
-  const biomass = add(layer.biomass, typeof patch.biomass === 'number' ? patch.biomass - layer.biomass : 0);
-  const activity = add(layer.activity, typeof patch.activity === 'number' ? patch.activity - layer.activity : 0);
-  const spread = add(layer.spread, typeof patch.spread === 'number' ? patch.spread - layer.spread : 0);
-  const containment = add(layer.containment, typeof patch.containment === 'number' ? patch.containment - layer.containment : 0);
-  const mutationPressure = add(layer.mutationPressure, typeof patch.mutationPressure === 'number' ? patch.mutationPressure - layer.mutationPressure : 0);
-  const humanExposure = add(layer.humanExposure, typeof patch.humanExposure === 'number' ? patch.humanExposure - layer.humanExposure : 0);
-  return { ...layer, ...patch, biomass, activity, spread, containment, mutationPressure, humanExposure, stage: stageFor(biomass, spread), discovered: patch.discovered ?? layer.discovered };
 }
 
 function applyLayerEffects(layer: XenEcosystemLayerState, effects: Partial<Pick<XenEcosystemLayerState, 'biomass' | 'activity' | 'spread' | 'containment' | 'mutationPressure' | 'humanExposure' | 'discovered'>>): XenEcosystemLayerState {
@@ -271,7 +261,7 @@ export function simulateXenEcosystemDay({ state, sectors, stats, vortigaunts, po
   return { xenEcosystem: next, sectors: nextSectors, statsDelta, lines };
 }
 
-export function resolveXenEcosystemOperation({ state, operation, sectors, selectedLayerId, selectedSectorId, stats, day }: { state: XenEcosystemState; operation: XenEcosystemOperation; sectors: Sector[]; selectedLayerId?: string; selectedSectorId?: string; stats: Stats; day: number }) {
+export function resolveXenEcosystemOperation({ state, operation, sectors, selectedLayerId, selectedSectorId, stats: _stats, day }: { state: XenEcosystemState; operation: XenEcosystemOperation; sectors: Sector[]; selectedLayerId?: string; selectedSectorId?: string; stats: Stats; day: number }) {
   const targetLayer = state.layers.find((layer) => layer.id === selectedLayerId) ?? [...state.layers].sort((a, b) => (b.biomass + b.spread + b.mutationPressure) - (a.biomass + a.spread + a.mutationPressure))[0];
   const targetSectorId = selectedSectorId ?? targetLayer?.sectorId;
   const networkWide = operation.target === 'network';

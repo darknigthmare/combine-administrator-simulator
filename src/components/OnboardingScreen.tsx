@@ -1,5 +1,5 @@
+import { AlertTriangle, ArrowRight, CheckCircle2 } from 'lucide-react';
 import type { GameState, OnboardingChapterId, TabId } from '../types/game';
-import { onboardingQuickLinks } from '../data/onboarding';
 import { buildOnboardingView } from '../systems/onboardingSystem';
 
 export function OnboardingScreen({ game, completeChapter, runFirstDayScript, setTab }: {
@@ -10,13 +10,15 @@ export function OnboardingScreen({ game, completeChapter, runFirstDayScript, set
 }) {
   const view = buildOnboardingView(game);
   const completed = new Set(game.onboarding.completedChapterIds);
+  const currentChapter = view.chapters.find((chapter) => !completed.has(chapter.id)) ?? view.chapters[view.chapters.length - 1];
+  const currentDone = completed.has(currentChapter.id);
 
   return (
     <section className="screen onboarding-screen">
       <div className="section-heading onboarding-hero">
         <div>
-          <span className="brand-kicker">COAN INTAKE / ADMINISTRATOR TRAINING</span>
-          <h2>Tutoriel d’intro premium</h2>
+          <span className="brand-kicker">FORMATION ADMINISTRATEUR / JOUR 001</span>
+          <h2>Prise de fonction</h2>
           <p>{view.activeTrack.subtitle}</p>
         </div>
         <div className="onboarding-score-card">
@@ -32,85 +34,34 @@ export function OnboardingScreen({ game, completeChapter, runFirstDayScript, set
 
       {view.warnings.length > 0 && (
         <div className="warning-stack">
-          {view.warnings.map((warning) => <p key={warning}>⚠ {warning}</p>)}
+          {view.warnings.map((warning) => <p key={warning}><AlertTriangle size={15} /> {warning}</p>)}
         </div>
       )}
 
       <div className="grid two">
         <article className="panel onboarding-active-track">
-          <span className="brand-kicker">PISTE ACTIVE</span>
-          <h3>{view.activeTrack.title}</h3>
-          <p>{view.activeTrack.doctrine}</p>
-          <div className="tag-row">{view.activeTrack.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
-          <ul>
-            {view.activeTrack.briefingLines.map((line) => <li key={line}>{line}</li>)}
-          </ul>
-          <p className="lore-note">La piste a été choisie lors de la création du mandat et reste verrouillée pour cette campagne.</p>
+          <span className="brand-kicker">DOSSIER {String(currentChapter.order).padStart(2, '0')} / {currentChapter.stage.toUpperCase()}</span>
+          <h3>{currentChapter.title}</h3>
+          <p>{currentChapter.body}</p>
+          <p className="lesson-line">{currentChapter.operatorLesson}</p>
+          <div className="tag-row">{currentChapter.linkedTabs.map((tab) => <button key={tab} className="link-chip" onClick={() => setTab(tab)}>{tab}</button>)}</div>
+          <button className="primary" disabled={currentDone} onClick={() => completeChapter(currentChapter.id)}>
+            {currentDone ? <CheckCircle2 size={16} /> : <ArrowRight size={16} />} {currentDone ? 'Dossier validé' : 'Valider et ouvrir le dossier suivant'}
+          </button>
         </article>
 
         <article className="panel onboarding-first-day">
-          <span className="brand-kicker">PREMIÈRE JOURNÉE SCRIPTÉE</span>
-          <h3>{game.onboarding.firstDayScriptCompleted ? 'Script déjà exécuté' : view.readyForFirstDay ? 'Script prêt' : 'Script verrouillé'}</h3>
-          <p>Cette séquence applique une ouverture prudente : observation, secteur critique, rationnement modéré, BreenCast mesuré et rapport non-suicidaire.</p>
+          <span className="brand-kicker">MANDAT {view.activeTrack.title}</span>
+          <h3>{game.onboarding.firstDayScriptCompleted ? 'Briefing terminé' : view.readyForFirstDay ? 'Ordres guidés disponibles' : 'Formation en cours'}</h3>
+          <p>{view.activeTrack.doctrine}</p>
           <div className="mini-metrics">
             <span>Score intake <b>{view.intakeScore}%</b></span>
-            <span>Track <b>{view.activeTrackId}</b></span>
-            <span>Tab départ <b>{view.activeTrack.startingTab}</b></span>
+            <span>Dossiers <b>{view.completedCount}/{view.totalChapters}</b></span>
+            <span>Ordres préparés <b>3</b></span>
           </div>
-          <button disabled={!view.readyForFirstDay || game.onboarding.firstDayScriptCompleted} onClick={runFirstDayScript}>Exécuter journée guidée</button>
+          <button className="primary" disabled={!view.readyForFirstDay || game.onboarding.firstDayScriptCompleted} onClick={runFirstDayScript}>Appliquer les ordres guidés</button>
         </article>
       </div>
-
-      <section className="panel">
-        <div className="section-heading compact">
-          <div><span className="brand-kicker">BRIEFING PROGRESSIF</span><h3>Dossiers à comprendre avant de jouer vite</h3></div>
-        </div>
-        <div className="onboarding-chapter-list">
-          {view.chapters.map((chapter) => {
-            const done = completed.has(chapter.id);
-            return (
-              <article key={chapter.id} className={`chapter-card ${done ? 'done' : ''}`}>
-                <div className="chapter-index">{String(chapter.order).padStart(2, '0')}</div>
-                <div>
-                  <span className="brand-kicker">{chapter.stage.toUpperCase()}</span>
-                  <h4>{chapter.title}</h4>
-                  <p>{chapter.body}</p>
-                  <p className="lesson-line">{chapter.operatorLesson}</p>
-                  <div className="tag-row">{chapter.linkedTabs.map((tab) => <button key={tab} className="link-chip" onClick={() => setTab(tab)}>{tab}</button>)}</div>
-                </div>
-                <button disabled={done} onClick={() => completeChapter(chapter.id)}>{done ? 'Validé' : 'Valider'}</button>
-              </article>
-            );
-          })}
-        </div>
-      </section>
-
-      <section className="grid two">
-        <article className="panel">
-          <span className="brand-kicker">PLAN JOUR 001</span>
-          <h3>Séquence recommandée</h3>
-          <div className="first-day-list">
-            {view.firstDayActions.map((action) => (
-              <button key={action.id} className="first-day-action" onClick={() => setTab(action.relatedTab)}>
-                <b>{action.order}. {action.title}</b>
-                <span>{action.moduleLabel} — {action.description}</span>
-                <small>{action.expectedEffect}</small>
-              </button>
-            ))}
-          </div>
-        </article>
-
-        <article className="panel">
-          <span className="brand-kicker">RACCOURCIS COAN</span>
-          <h3>Modules à ouvrir sans te perdre</h3>
-          <div className="quick-link-list">
-            {onboardingQuickLinks.map((link) => <button key={link.tab} onClick={() => setTab(link.tab)}><b>{link.label}</b><span>{link.reason}</span></button>)}
-          </div>
-          <div className="briefing-log">
-            {game.onboarding.briefingLog.slice(0, 8).map((line) => <p key={line}>{line}</p>)}
-          </div>
-        </article>
-      </section>
     </section>
   );
 }

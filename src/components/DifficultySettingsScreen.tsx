@@ -1,4 +1,4 @@
-import type { DifficultyPresetId, DifficultyScalarKey, DifficultySettingsState, GameState } from '../types/game';
+import type { DifficultyPresetId, DifficultyScalarKey, GameState } from '../types/game';
 import { difficultyPresetOrder, difficultyPresets, difficultyScalarLabels } from '../data/difficultySettings';
 
 function ScalarControl({ scalarKey, value, onChange, readOnly }: { scalarKey: DifficultyScalarKey; value: number; onChange: (key: DifficultyScalarKey, value: number) => void; readOnly: boolean }) {

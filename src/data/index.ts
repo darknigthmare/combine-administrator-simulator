@@ -6,7 +6,6 @@ export { xenCodex } from './xenEntities';
 export { directives } from './directives';
 export { propagandaMessages } from './propagandaMessages';
 export { breencastStrategies, breencastOpeners, breencastClosers, breencastFragments } from './breencast';
-export { crises } from './crisisEvents';
 export { profileEffects } from './governanceProfiles';
 export { scenarioEffects } from './scenarioPresets';
 export { endings } from './endings';
