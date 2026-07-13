@@ -1,4 +1,4 @@
-# Combine Administrator Simulator — Desktop Release 0.45.0
+# Combine Administrator Simulator — Desktop Release 0.46.0
 
 ## Résumé
 Build privé desktop Tauri de Combine Administrator Simulator avec les modules COAN cumulés.
@@ -10,6 +10,13 @@ Build privé desktop Tauri de Combine Administrator Simulator avec les modules C
 - Audio synthétique, archives vidéo, fenêtres flottantes COAN OS.
 - Sauvegardes multi-slots, import/export JSON, historique décisions, codex lore.
 - Packaging Windows Tauri NSIS/MSI avec audit COAN.
+
+## Améliorations de cette version
+- Décisions de crise enrichies avec coût en ordre, effets immédiats et compte rendu après exécution.
+- Confirmation de fin de journée quand des ordres restent disponibles.
+- Navigation de création de partie, tutoriel, mobile et réquisitions clarifiés.
+- Visuels WebP et découpage du bundle pour accélérer le chargement initial.
+- Versions frontend, Tauri et Cargo synchronisées.
 
 ## Artefacts attendus
 - `src-tauri/target/release/combine-administrator-simulator.exe`

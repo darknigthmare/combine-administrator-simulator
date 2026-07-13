@@ -2,6 +2,23 @@ import { AlertTriangle, ArrowRight, CheckCircle2 } from 'lucide-react';
 import type { GameState, OnboardingChapterId, TabId } from '../types/game';
 import { buildOnboardingView } from '../systems/onboardingSystem';
 
+const onboardingTabLabels: Partial<Record<TabId, string>> = {
+  command_deck_v2: 'Command Deck',
+  campaigns: 'Campagne active',
+  codex: 'Codex Lore',
+  sectors: 'Carte de City',
+  population: 'Population',
+  rationing: 'Rationnement',
+  propaganda: 'BreenCast',
+  reports: 'Rapports',
+  resistance: 'Résistance',
+  civil_protection: 'Civil Protection',
+  xen: 'Quarantaine Xen',
+  nova: 'Nova Prospekt',
+  progression: 'Réquisitions',
+  timeline: 'Chronologie',
+};
+
 export function OnboardingScreen({ game, completeChapter, runFirstDayScript, setTab }: {
   game: GameState;
   completeChapter: (chapterId: OnboardingChapterId) => void;
@@ -44,7 +61,10 @@ export function OnboardingScreen({ game, completeChapter, runFirstDayScript, set
           <h3>{currentChapter.title}</h3>
           <p>{currentChapter.body}</p>
           <p className="lesson-line">{currentChapter.operatorLesson}</p>
-          <div className="tag-row">{currentChapter.linkedTabs.map((tab) => <button key={tab} className="link-chip" onClick={() => setTab(tab)}>{tab}</button>)}</div>
+          <div className="tag-row">{currentChapter.linkedTabs.map((tab) => {
+            const label = onboardingTabLabels[tab] ?? tab;
+            return <button key={tab} className="link-chip" aria-label={`Ouvrir ${label}`} onClick={() => setTab(tab)}>{label}</button>;
+          })}</div>
           <button className="primary" disabled={currentDone} onClick={() => completeChapter(currentChapter.id)}>
             {currentDone ? <CheckCircle2 size={16} /> : <ArrowRight size={16} />} {currentDone ? 'Dossier validé' : 'Valider et ouvrir le dossier suivant'}
           </button>

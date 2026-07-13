@@ -8,6 +8,8 @@ const types = read('src/types/game.ts');
 const onboarding = read('src/components/OnboardingScreen.tsx');
 const onboardingData = read('src/data/onboarding.ts');
 const intake = read('src/components/NewGameIntakeScreen.tsx');
+const progressionPanel = read('src/components/UiuxProgressionPanel.tsx');
+const progressionSystem = read('src/systems/uiuxProgressionSystem.ts');
 const campaign = read('src/components/DedicatedScreens.tsx');
 const saves = read('src/components/SaveManagerScreen.tsx');
 const terminals = read('src/data/terminalInterfaces.ts');
@@ -19,11 +21,17 @@ const checks = [
   ['campaign launch opens prologue', app.includes("tab: 'prologue'")],
   ['prologue leads to tutorial', app.includes("continueToTutorial={() => setGame({ ...game, tab: 'onboarding' })}")],
   ['day transition mounted', app.includes('day-transition') && app.includes('setDayTransition')],
+  ['unused orders require confirmation', app.includes('requestNextDay') && app.includes('endDayConfirmOpen') && app.includes('Les ordres inutilisés ne sont ni stockés ni convertis')],
+  ['crisis choices expose cost and effects', app.includes('choice-order-cost') && app.includes('describeCrisisEffects') && app.includes('Effets immédiats')],
+  ['crisis result feedback mounted', app.includes('actionFeedback') && app.includes('action-feedback') && app.includes('ORDRE EXÉCUTÉ')],
   ['campaign screen cannot restart', !campaign.includes('startCampaign: (campaignId: CampaignId)')],
   ['timeline is read only', !app.includes('setTimeline={(timeline) => setGame(createInitialGame')],
   ['tutorial cannot create a game', !onboarding.includes('startGuidedGame')],
   ['save manager has no new-game action', !saves.includes('openNewGame')],
   ['creation screen has no QA controls', !intake.includes('Combinaisons QA') && !intake.includes('newGameIntakeRecommendedCombos')],
+  ['creation steps restore context', intake.includes('changeStep') && intake.includes('scrollIntoView')],
+  ['tutorial tab labels are player facing', onboarding.includes('onboardingTabLabels') && onboarding.includes('Ouvrir ${label}')],
+  ['requisition lock reasons are explicit', progressionPanel.includes('uiux-unlock-reason') && progressionSystem.includes('getUiuxUnlockLockReason')],
   ['tutorial has no meta routes', !['gameplay_balance', 'tauri_packaging', 'ux_polish', 'system_audit'].some((tab) => onboardingData.includes(`'${tab}'`))],
   ['meta tabs absent from player nav', !['gameplay_balance', 'tauri_packaging', 'ux_polish', 'system_audit'].some((tab) => fullNav.includes(`'${tab}'`))],
   ['meta tabs absent from terminal menus', !['gameplay_balance', 'tauri_packaging', 'ux_polish', 'system_audit'].some((tab) => terminals.includes(`'${tab}'`))],

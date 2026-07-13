@@ -11,7 +11,7 @@ export function CampaignPrologueScreen({ game, continueToTutorial }: { game: Gam
   const avatar = administratorAvatars[game.administratorAvatar];
 
   return <section className="campaign-prologue-screen">
-    <div className="prologue-visual" style={{ backgroundImage: "url('/openai-visuals/banners/command-deck.png')" }}>
+    <div className="prologue-visual" style={{ backgroundImage: "url('/openai-visuals/banners/command-deck.webp')" }}>
       <div className="prologue-copy">
         <span className="brand-kicker">CITADEL MANDATE / PROLOGUE</span>
         <h1>City {game.city}</h1>

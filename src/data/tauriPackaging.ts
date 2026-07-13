@@ -37,12 +37,12 @@ export type TauriBuildCommand = {
   platform: 'all' | 'windows';
 };
 
-export const tauriPackagingVersion = 'COAN-TAURI-PACKAGING-45';
+export const tauriPackagingVersion = 'COAN-TAURI-PACKAGING-46';
 
 export const tauriAppMetadata = {
   productName: 'Combine Administrator Simulator',
   identifier: 'com.darknigthmare.combine-administrator-simulator',
-  version: '0.45.0',
+  version: '0.46.0',
   windowTitle: 'Combine Administrator Simulator',
   category: 'Game',
   shortDescription: 'Private Combine administration simulator',
@@ -137,7 +137,7 @@ export const tauriPackagingChecklist: TauriPackagingChecklistItem[] = [
     id: 'metadata-version',
     category: 'metadata',
     label: 'Version synchronisée',
-    expected: 'src-tauri/tauri.conf.json et src-tauri/Cargo.toml utilisent la même version 0.45.0.',
+    expected: 'package.json, src-tauri/tauri.conf.json et src-tauri/Cargo.toml utilisent la même version 0.46.0.',
     remediation: 'Modifier les deux fichiers en même temps avant chaque release.',
     severity: 5,
     relatedTab: 'tauri_packaging',

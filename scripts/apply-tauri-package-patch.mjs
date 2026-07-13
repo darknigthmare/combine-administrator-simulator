@@ -17,8 +17,9 @@ if (!fs.existsSync(patchPath)) {
 const pkg = JSON.parse(fs.readFileSync(packagePath, 'utf8'));
 const patch = JSON.parse(fs.readFileSync(patchPath, 'utf8'));
 
-pkg.scripts = { ...(pkg.scripts ?? {}), ...(patch.scripts ?? {}) };
-pkg.devDependencies = { ...(pkg.devDependencies ?? {}), ...(patch.devDependencies ?? {}) };
+// The patch only supplies missing Tauri entries; the repository remains authoritative.
+pkg.scripts = { ...(patch.scripts ?? {}), ...(pkg.scripts ?? {}) };
+pkg.devDependencies = { ...(patch.devDependencies ?? {}), ...(pkg.devDependencies ?? {}) };
 
 fs.writeFileSync(packagePath, `${JSON.stringify(pkg, null, 2)}\n`);
 console.log('package.json mis à jour avec les scripts/devDependencies Tauri.');

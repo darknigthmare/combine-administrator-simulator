@@ -39,7 +39,7 @@ export function UiuxV2CommandDeck({ game, setTab }: { game: GameState; setTab: (
       icon: Shield,
       title: 'Commandement Overwatch',
       text: 'Unités CP, OTA, Airwatch, Synths et escalade militaire.',
-      image: '/openai-visuals/unlocks/ota-command.png',
+      image: '/openai-visuals/unlocks/ota-command.webp',
       tab: 'overwatch',
       tone: 'overwatch',
     },
@@ -47,7 +47,7 @@ export function UiuxV2CommandDeck({ game, setTab }: { game: GameState; setTab: (
       icon: Radio,
       title: 'Résistance Lambda',
       text: 'Cellules, routes clandestines, agitation et signaux radio.',
-      image: '/openai-visuals/events/lambda-sabotage.png',
+      image: '/openai-visuals/events/lambda-sabotage.webp',
       tab: 'resistance',
       tone: 'lambda',
     },
@@ -55,7 +55,7 @@ export function UiuxV2CommandDeck({ game, setTab }: { game: GameState; setTab: (
       icon: Biohazard,
       title: 'Biosphère Xen',
       text: 'Quarantaines, mutations, recherche et catastrophes organiques.',
-      image: '/openai-visuals/unlocks/xen-bioscan.png',
+      image: '/openai-visuals/unlocks/xen-bioscan.webp',
       tab: 'xen',
       tone: 'xen',
       locked: !progression.unlocked.xen_bioscan,
@@ -64,7 +64,7 @@ export function UiuxV2CommandDeck({ game, setTab }: { game: GameState; setTab: (
       icon: Users,
       title: 'Citoyens & rations',
       text: 'Population, registre civil, rationnement et conformité locale.',
-      image: '/openai-visuals/dossiers/suspected-citizen.png',
+      image: '/openai-visuals/dossiers/suspected-citizen.webp',
       tab: 'population',
       tone: 'civil',
     },
@@ -80,7 +80,7 @@ export function UiuxV2CommandDeck({ game, setTab }: { game: GameState; setTab: (
       icon: BadgeDollarSign,
       title: 'Réquisitions Citadel',
       text: 'Autorisations OTA, Xen, Nova, Advisor, Razor Train et Synths.',
-      image: '/openai-visuals/banners/citadel-requisitions.png',
+      image: '/openai-visuals/banners/citadel-requisitions.webp',
       tab: 'progression',
       tone: 'archive',
     },
@@ -107,7 +107,7 @@ export function UiuxV2CommandDeck({ game, setTab }: { game: GameState; setTab: (
         </div>
       </div>
       <div className="uiux-v2-hero-image">
-        <img src="/openai-visuals/banners/command-deck.png" alt="Salle de commandement de la Citadelle surplombant City 17" />
+        <img src="/openai-visuals/banners/command-deck.webp" alt="Salle de commandement de la Citadelle surplombant City 17" />
       </div>
     </header>
 

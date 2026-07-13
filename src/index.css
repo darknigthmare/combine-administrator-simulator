@@ -73,8 +73,15 @@ blockquote { margin: 0 0 10px; padding: 12px; color: #c9f3ff; border-left: 3px s
 .crisis-box { max-width: 920px; width: 100%; border: 1px solid rgba(255, 156, 66, .7); background: linear-gradient(180deg, #101820, #05090d); padding: 22px; border-radius: 14px; box-shadow: 0 0 80px rgba(255, 119, 0, .12); }
 .crisis-event-visual { display: block; width: calc(100% + 44px); height: clamp(180px, 30vh, 300px); margin: -22px -22px 18px; object-fit: cover; border-bottom: 1px solid rgba(255, 156, 66, .35); }
 .crisis-box:has(> .crisis-event-visual) { max-height: calc(100vh - 40px); overflow: auto; }
+.confirmation-modal { position: fixed; inset: 0; z-index: 185; display: grid; place-items: center; padding: 20px; background: rgba(0, 0, 0, .84); }
+.app-shell:has(.confirmation-modal) > .main { position: relative; z-index: 175; }
+.confirmation-box { width: min(560px, 100%); padding: 24px; border: 1px solid rgba(255, 156, 66, .56); border-radius: 8px; background: #071016; box-shadow: 0 18px 64px rgba(0, 0, 0, .48); }
+.confirmation-box h2 { margin: 8px 0; color: #f5fbff; letter-spacing: 0; }
+.confirmation-box p { max-width: 62ch; color: #a9bbc4; line-height: 1.55; }
+.confirmation-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 18px; }
+.confirmation-actions button { min-height: 40px; }
 .day-transition { position: fixed; inset: 0; z-index: 180; display: grid; place-items: center; padding: 20px; background: rgba(1, 5, 8, .94); overflow: hidden; }
-.day-transition::before { content: ''; position: absolute; inset: 0; background: url('/openai-visuals/banners/command-deck.png') center / cover; opacity: .2; }
+.day-transition::before { content: ''; position: absolute; inset: 0; background: url('/openai-visuals/banners/command-deck.webp') center / cover; opacity: .2; }
 .day-transition-scan { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 0%, rgba(116, 214, 255, .13) 48%, transparent 52%); animation: day-scan 1.8s linear infinite; }
 .day-transition-content { position: relative; width: min(720px, 100%); padding: clamp(24px, 5vw, 54px); border-top: 1px solid rgba(116, 214, 255, .65); border-bottom: 1px solid rgba(116, 214, 255, .32); background: rgba(3, 10, 15, .88); text-align: center; }
 .day-transition-content h2 { margin: 8px 0; font-size: clamp(3rem, 12vw, 7rem); line-height: .95; letter-spacing: 0; color: #eaf8ff; }
@@ -105,6 +112,9 @@ blockquote { margin: 0 0 10px; padding: 12px; color: #c9f3ff; border-left: 3px s
 .choice-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 14px; }
 .choice-grid button strong { display: block; color: #f4fbff; margin-bottom: 6px; }
 .choice-grid button span { display: block; color: #93a6af; font-size: 12px; line-height: 1.45; }
+.choice-grid button .choice-order-cost { margin-top: 10px; padding-top: 8px; border-top: 1px solid rgba(255, 156, 66, .2); color: #ffc078; font-weight: 800; }
+.choice-grid button .choice-effect-label { margin-top: 7px; color: #dce8ed; font-size: 10px; font-weight: 800; text-transform: uppercase; }
+.choice-grid button .choice-effects { margin-top: 2px; color: #b8cad2; }
 .ending { border: 1px solid rgba(255, 92, 56, .7); background: rgba(92, 18, 12, .35); padding: 18px; border-radius: 12px; margin-bottom: 14px; }
 .ending h2 { color: #ff9b8a; }
 @media (max-width: 1100px) { .app-shell { grid-template-columns: 1fr; } .sidebar { position: relative; height: auto; } .stats-grid { grid-template-columns: repeat(2, 1fr); } .panel-grid.two, .panel-grid.map-layout, .cards, .cards.nested { grid-template-columns: 1fr; } .city-map { grid-template-columns: repeat(2, 1fr); } }
@@ -5600,6 +5610,53 @@ select:focus-visible {
   white-space: nowrap;
 }
 
+.action-feedback {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 8px 0 12px;
+  padding: 10px 12px;
+  border: 1px solid rgba(116, 214, 255, 0.28);
+  border-left: 3px solid #74d6ff;
+  border-radius: 6px;
+  background: rgba(4, 15, 21, 0.94);
+}
+
+.action-feedback > div {
+  min-width: 0;
+}
+
+.action-feedback strong {
+  display: block;
+  margin-top: 3px;
+  color: #edfaff;
+}
+
+.action-feedback-effects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 7px;
+}
+
+.action-feedback-effects span {
+  padding: 4px 6px;
+  border: 1px solid rgba(116, 214, 255, 0.14);
+  border-radius: 4px;
+  color: #a9c2cd;
+  font-size: 10px;
+}
+
+.action-feedback > button {
+  display: grid;
+  width: 34px;
+  min-width: 34px;
+  height: 34px;
+  padding: 0;
+  place-items: center;
+}
+
 .telemetry-drawer {
   margin-bottom: 14px;
   padding: 10px;
@@ -5780,6 +5837,25 @@ select:focus-visible {
     justify-content: center;
   }
 
+  .terminal-topbar {
+    margin-inline: -10px;
+    border-radius: 0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .28);
+  }
+
+  .confirmation-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .confirmation-actions button {
+    width: 100%;
+  }
+
+  .choice-grid {
+    grid-template-columns: 1fr;
+  }
+
   .panel,
   .app-shell.ux-density-dense .panel {
     padding: 10px;
@@ -5858,6 +5934,7 @@ select:focus-visible {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
   margin: 12px 0;
+  scroll-margin-top: 10px;
 }
 
 .intake-step-tabs button {

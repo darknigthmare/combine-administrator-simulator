@@ -12,7 +12,7 @@
   position: absolute;
   inset: 0;
   z-index: -2;
-  background: url('/openai-visuals/banners/command-deck.png') center 34% / cover no-repeat;
+  background: url('/openai-visuals/banners/command-deck.webp') center 34% / cover no-repeat;
 }
 
 .main-menu-screen::after {

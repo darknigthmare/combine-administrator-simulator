@@ -1,6 +1,6 @@
 [package]
 name = "combine-administrator-simulator"
-version = "0.45.0"
+version = "0.46.0"
 description = "Combine Administrator Simulator — private Half-Life lore administration terminal"
 authors = ["darknigthmare"]
 edition = "2021"

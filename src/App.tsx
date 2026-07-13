@@ -135,6 +135,41 @@ type DayTransitionSummary = {
   crisisTitle?: string;
 };
 
+type CrisisActionFeedback = {
+  title: string;
+  effects: string[];
+  sectorStatus?: string;
+};
+
+const crisisEffectLabels: Record<string, string> = {
+  stability: 'Stabilité',
+  loyalty: 'Loyauté',
+  fear: 'Peur',
+  rebel: 'Pression Lambda',
+  xen: 'Pression Xen',
+  combine: 'Contrôle Combine',
+  production: 'Production',
+  rations: 'Rations',
+  citadel: 'Approbation Citadel',
+  info: 'Renseignement',
+  fatigue: 'Fatigue',
+  civilianLosses: 'Pertes civiles',
+  combineLosses: 'Pertes Combine',
+  suspicion: 'Suspicion',
+  sectorRebel: 'Lambda secteur',
+  sectorXen: 'Xen secteur',
+  sectorFear: 'Peur secteur',
+  sectorLoyalty: 'Loyauté secteur',
+  sectorInfrastructure: 'Infrastructure secteur',
+};
+
+function describeCrisisEffects(effects: EventChoice['effects']): string[] {
+  return Object.entries(effects).flatMap(([key, value]) => {
+    if (typeof value !== 'number' || value === 0) return [];
+    return [`${crisisEffectLabels[key] ?? key} ${value > 0 ? '+' : ''}${value}`];
+  });
+}
+
 function createInitialGame(city: string, scenario: ScenarioId, timeline: TimelineId, profile: ProfileId, campaignId: CampaignId = 'custom_city_administration', difficultyPresetId: DifficultyPresetId = 'standard_occupation'): GameState {
   const difficultySettings = createInitialDifficultySettings(difficultyPresetId);
   let stats = applyDifficultyStartingEffects(applyCampaignToStats(applyTimelineToStats(addStat(addStat(baseStats, scenarioEffects[scenario]), profileEffects[profile]), timeline), campaignId), difficultySettings);
@@ -343,6 +378,8 @@ function App() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const [crisisCatalog, setCrisisCatalog] = useState<Crisis[]>([]);
   const [dayTransition, setDayTransition] = useState<DayTransitionSummary | null>(null);
+  const [endDayConfirmOpen, setEndDayConfirmOpen] = useState(false);
+  const [actionFeedback, setActionFeedback] = useState<CrisisActionFeedback | null>(null);
 
   useEffect(() => {
     if (!game.started || game.tab === 'main_menu' || game.tab === 'new_game') return;
@@ -364,6 +401,15 @@ function App() {
     window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
     document.querySelector<HTMLElement>('.main')?.scrollTo({ top: 0, left: 0, behavior: 'auto' });
   }, [game.tab]);
+
+  useEffect(() => {
+    if (!endDayConfirmOpen) return;
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setEndDayConfirmOpen(false);
+    };
+    window.addEventListener('keydown', closeOnEscape);
+    return () => window.removeEventListener('keydown', closeOnEscape);
+  }, [endDayConfirmOpen]);
 
   useEffect(() => {
     const reconciled = reconcileDecisionHistory(game);
@@ -436,11 +482,15 @@ function App() {
       ].slice(0, 100),
     });
     setSelectedSector('admin');
+    setEndDayConfirmOpen(false);
+    setActionFeedback(null);
   }
 
   function openNewCampaign() {
     applyNewGameDoctrine('canonical_city17');
     setDayTransition(null);
+    setEndDayConfirmOpen(false);
+    setActionFeedback(null);
     setTelemetryOpen(false);
     setGame({ ...game, tab: 'new_game' });
   }
@@ -451,12 +501,16 @@ function App() {
 
   function returnToMainMenu() {
     setDayTransition(null);
+    setEndDayConfirmOpen(false);
+    setActionFeedback(null);
     setTelemetryOpen(false);
     setGame({ ...game, tab: 'main_menu' });
   }
 
   function loadGameFromSave(savedGame: GameState, source: string) {
     const hydrated = hydrateSavedGame(savedGame);
+    setEndDayConfirmOpen(false);
+    setActionFeedback(null);
     setGame({
       ...hydrated,
       tab: 'command_deck_v2',
@@ -491,6 +545,11 @@ function App() {
       log: [`JOUR ${String(game.day).padStart(3, '0')} — Décision : ${choice.label} / ${crisis.title}.`, ...game.log].slice(0, 80),
       crisisHistory: [crisis.id, ...game.crisisHistory].slice(0, 60),
     }, actionId, `Crise : ${choice.label}`));
+    setActionFeedback({
+      title: `${crisis.title} : ${choice.label}`,
+      effects: describeCrisisEffects(choice.effects),
+      sectorStatus: choice.status,
+    });
   }
 
   function sectorAction(action: 'curfew' | 'raid' | 'quarantine' | 'seal' | 'purge' | 'propaganda') {
@@ -580,7 +639,17 @@ function App() {
     setGame({ ...game, tab: target });
   }
 
+  function requestNextDay() {
+    if (game.dailyOrders.remaining > 0) {
+      setEndDayConfirmOpen(true);
+      return;
+    }
+    nextDay();
+  }
+
   function nextDay() {
+    setEndDayConfirmOpen(false);
+    setActionFeedback(null);
     const xenUnlocked = game.uiuxProgression.unlocked.xen_bioscan;
     const novaUnlocked = game.uiuxProgression.unlocked.nova_prospekt_link;
     const propagation = simulateConnectedPropagation({
@@ -1598,9 +1667,21 @@ function App() {
             <span className={game.stats.rebel > 65 ? 'danger' : ''}><Radio size={13} /> Λ {game.stats.rebel}%</span>
             <button className="telemetry-toggle" aria-expanded={telemetryOpen} onClick={() => setTelemetryOpen((open) => !open)}><Gauge size={15} /> {telemetryOpen ? 'Masquer' : 'Télémétrie'}</button>
             <button className="meta-menu-button" title="Menu principal" aria-label="Ouvrir le menu principal" onClick={returnToMainMenu}><Home size={15} /></button>
-            <button className="end-day" onClick={nextDay} disabled={!!game.ending || !!game.crisis || !!dayTransition}>Clôturer la journée</button>
+            <button className="end-day" title={`Clôturer le jour ${game.day}`} onClick={requestNextDay} disabled={!!game.ending || !!game.crisis || !!dayTransition}>Clôturer la journée</button>
           </div>
         </header>}
+
+        {!preSession && actionFeedback && <div className="action-feedback" role="status" aria-live="polite">
+          <div>
+            <span className="brand-kicker">ORDRE EXÉCUTÉ / SOLDE {game.dailyOrders.remaining}/{game.dailyOrders.total}</span>
+            <strong>{actionFeedback.title}</strong>
+            <div className="action-feedback-effects">
+              {actionFeedback.effects.length > 0 ? actionFeedback.effects.map((effect) => <span key={effect}>{effect}</span>) : <span>Aucune variation immédiate</span>}
+              {actionFeedback.sectorStatus && <span>Statut secteur : {actionFeedback.sectorStatus}</span>}
+            </div>
+          </div>
+          <button type="button" aria-label="Fermer le compte rendu de l'ordre" onClick={() => setActionFeedback(null)}><X size={16} /></button>
+        </div>}
 
         {telemetryOpen && <div className="telemetry-drawer">
         <section className={`terminal-interface-banner tone-${activeTerminal.tone}`}>
@@ -1669,6 +1750,18 @@ function App() {
 
         {game.ending && !preSession && <div className="ending"><div><h2>PROTOCOLE DE FIN ACTIVÉ</h2><p>{game.finalVerdict ? `${game.finalVerdict.title} — ${game.finalVerdict.subtitle}` : (endings[game.ending] ?? endings.replaced).replaceAll('{city}', game.city)}</p></div><button onClick={returnToMainMenu}><Home size={16} /> Retour au menu</button></div>}
 
+        {!preSession && endDayConfirmOpen && !game.crisis && !dayTransition && <div className="confirmation-modal">
+          <section className="confirmation-box" role="dialog" aria-modal="true" aria-labelledby="end-day-confirm-title" aria-describedby="end-day-confirm-description">
+            <span className="brand-kicker">FIN DE CYCLE / JOUR {String(game.day).padStart(3, '0')}</span>
+            <h2 id="end-day-confirm-title">{game.dailyOrders.remaining} {game.dailyOrders.remaining > 1 ? 'ordres seront abandonnés' : 'ordre sera abandonné'}</h2>
+            <p id="end-day-confirm-description">Le passage au jour {game.day + 1} réinitialise le quota. Les ordres inutilisés ne sont ni stockés ni convertis en ressources.</p>
+            <div className="confirmation-actions">
+              <button type="button" autoFocus onClick={() => setEndDayConfirmOpen(false)}>Continuer les opérations</button>
+              <button type="button" className="primary" onClick={nextDay}>Clôturer malgré tout</button>
+            </div>
+          </section>
+        </div>}
+
         {dayTransition && <div className="day-transition" role="status" aria-live="polite">
           <div className="day-transition-scan" />
           <div className="day-transition-content">
@@ -1687,15 +1780,24 @@ function App() {
 
         {!preSession && game.crisis && !dayTransition && (
           <div className="crisis-modal">
-            <div className="crisis-box">
+            <div className="crisis-box" role="dialog" aria-modal="true" aria-labelledby="crisis-dialog-title">
               <img className="crisis-event-visual" src={getCrisisVisual(game.crisis.type)} alt="" aria-hidden="true" />
               <span className="brand-kicker">ALERTE {game.crisis.type}</span>
-              <h2>{game.crisis.title}</h2>
+              <h2 id="crisis-dialog-title">{game.crisis.title}</h2>
               <p>{game.crisis.body}</p>
               {game.crisis.loreTags && <div className="event-tags">{game.crisis.loreTags.map((tag) => <span key={tag}>{tag}</span>)}</div>}
               {game.crisis.severity && <p className="severity-line">Gravité protocolaire : {game.crisis.severity}/5</p>}
               <div className="choice-grid">
-                {game.crisis.choices.map((c) => <button key={c.id} onClick={() => resolveCrisis(c)}><strong>{c.label}</strong><span>{c.detail}</span></button>)}
+                {game.crisis.choices.map((c) => {
+                  const effects = describeCrisisEffects(c.effects);
+                  return <button key={c.id} onClick={() => resolveCrisis(c)}>
+                    <strong>{c.label}</strong>
+                    <span>{c.detail}</span>
+                    <span className="choice-order-cost">Coût : 1 ordre · Solde après décision : {Math.max(0, game.dailyOrders.remaining - 1)}/{game.dailyOrders.total}</span>
+                    <span className="choice-effect-label">Effets immédiats</span>
+                    <span className="choice-effects">{effects.length > 0 ? effects.join(' · ') : 'Aucune variation directe'}{c.status ? ` · Statut : ${c.status}` : ''}</span>
+                  </button>;
+                })}
               </div>
             </div>
           </div>

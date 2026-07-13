@@ -19,6 +19,7 @@ function check(condition, label, details = '') {
 }
 
 const tauri = readJson('src-tauri/tauri.conf.json');
+const packageJson = readJson('package.json');
 const pkgPatch = readJson('package.tauri.patch.json');
 const cargo = readText('src-tauri/Cargo.toml');
 const workflow = exists('.github/workflows/tauri-windows.yml') ? readText('.github/workflows/tauri-windows.yml') : '';
@@ -31,7 +32,8 @@ const icons = tauri.bundle?.icon ?? [];
 const checks = [
   check(tauri.productName === 'Combine Administrator Simulator', 'productName Combine Administrator Simulator', tauri.productName),
   check(tauri.identifier === 'com.darknigthmare.combine-administrator-simulator', 'identifier privé stable', tauri.identifier),
-  check(tauri.version === '0.45.0', 'tauri.conf.json version 0.45.0', tauri.version),
+  check(/^\d+\.\d+\.\d+$/.test(tauri.version), 'tauri.conf.json utilise une version SemVer', tauri.version),
+  check(packageJson.version === tauri.version, 'package.json version synchronisée', `${packageJson.version} / ${tauri.version}`),
   check(cargoVersion === tauri.version, 'Cargo.toml version synchronisée', `${cargoVersion} / ${tauri.version}`),
   check(tauri.build?.frontendDist === '../dist', 'frontendDist vers ../dist', tauri.build?.frontendDist),
   check(tauri.build?.beforeBuildCommand === 'npm run build', 'beforeBuildCommand npm run build', tauri.build?.beforeBuildCommand),

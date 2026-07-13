@@ -1,6 +1,6 @@
 import { BadgeDollarSign, CheckCircle2, Lock, Scale, ShieldCheck } from 'lucide-react';
 import type { GameState, UiuxUnlockId } from '../types/game';
-import { canPurchaseUiuxUnlock, formatUiuxPhase, uiuxUnlockCatalog } from '../systems/uiuxProgressionSystem';
+import { canPurchaseUiuxUnlock, formatUiuxPhase, getUiuxUnlockLockReason, uiuxUnlockCatalog } from '../systems/uiuxProgressionSystem';
 import './UiuxProgressionPanel.css';
 
 export function UiuxProgressionPanel({
@@ -35,6 +35,7 @@ export function UiuxProgressionPanel({
         {uiuxUnlockCatalog.map((item) => {
           const bought = state.unlocked[item.id];
           const available = canPurchaseUiuxUnlock(state, item, game.day);
+          const lockReason = getUiuxUnlockLockReason(state, item, game.day);
           return <article className={`uiux-unlock-card ${bought ? 'unlocked' : ''}`} key={item.id}>
             <img src={item.image} alt="" aria-hidden="true" />
             <div className="uiux-unlock-body">
@@ -48,7 +49,8 @@ export function UiuxProgressionPanel({
                 <div><dt>Entretien</dt><dd>{item.upkeep}</dd></div>
                 <div><dt>Débloque</dt><dd>{item.unlocks}</dd></div>
               </dl>
-              <button className="uiux-v2-action" disabled={bought || !available} onClick={() => purchaseUnlock(item.id)}>
+              {!available && !bought && <p className="uiux-unlock-reason"><Lock size={13} /> {lockReason}</p>}
+              <button className="uiux-v2-action" aria-label={`${bought ? 'Autorisation active' : available ? 'Acheter autorisation' : 'Autorisation verrouillée'} : ${item.title}`} disabled={bought || !available} onClick={() => purchaseUnlock(item.id)}>
                 {bought ? <CheckCircle2 size={14} /> : <Lock size={14} />} {bought ? 'Autorisation active' : item.narrative ? 'Découverte narrative requise' : 'Acheter autorisation'}
               </button>
             </div>

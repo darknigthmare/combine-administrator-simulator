@@ -58,6 +58,13 @@ function Gauge({ label, value, band }: { label: string; value: number; band: key
 
 export function NewGameIntakeScreen(props: Props) {
   const [step, setStep] = useState<0 | 1 | 2>(0);
+  function changeStep(nextStep: 0 | 1 | 2) {
+    setStep(nextStep);
+    window.requestAnimationFrame(() => {
+      const behavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+      document.querySelector<HTMLElement>('.intake-step-tabs')?.scrollIntoView({ behavior, block: 'start' });
+    });
+  }
   const preview = buildNewGameIntakePreview({
     city: props.cityInput,
     doctrineId: props.doctrineInput,
@@ -95,7 +102,7 @@ export function NewGameIntakeScreen(props: Props) {
     </section>
 
     <nav className="intake-step-tabs" aria-label="Étapes de création">
-      {creationSteps.map((phase, index) => <button key={phase.id} type="button" aria-current={step === index ? 'step' : undefined} className={step === index ? 'active' : ''} onClick={() => setStep(index as 0 | 1 | 2)}>
+      {creationSteps.map((phase, index) => <button key={phase.id} type="button" aria-current={step === index ? 'step' : undefined} className={step === index ? 'active' : ''} onClick={() => changeStep(index as 0 | 1 | 2)}>
         <span>{phase.label}</span><strong>{phase.title}</strong>
       </button>)}
     </nav>
@@ -114,7 +121,7 @@ export function NewGameIntakeScreen(props: Props) {
             </button>;
           })}
         </div>
-        <div className="intake-step-actions"><button className="primary" type="button" onClick={() => setStep(1)}>Configurer le mandat</button></div>
+        <div className="intake-step-actions"><button className="primary" type="button" onClick={() => changeStep(1)}>Configurer le mandat</button></div>
       </section>}
 
     {step === 1 && <section className="panel intake-config-panel intake-step-panel">
@@ -168,7 +175,7 @@ export function NewGameIntakeScreen(props: Props) {
         <select id="campaign-tutorial" value={props.onboardingTrackInput} onChange={(event) => props.setOnboardingTrackInput(event.target.value as OnboardingTrackId)}>
           {onboardingTrackOrder.map((id) => <option key={id} value={id}>{onboardingTracks[id].title}</option>)}
         </select>
-        <div className="intake-step-actions"><button type="button" onClick={() => setStep(0)}>Retour</button><button className="primary" type="button" onClick={() => setStep(2)}>Vérifier le mandat</button></div>
+        <div className="intake-step-actions"><button type="button" onClick={() => changeStep(0)}>Retour</button><button className="primary" type="button" onClick={() => changeStep(2)}>Vérifier le mandat</button></div>
       </section>}
 
     {step === 2 && <>
@@ -215,7 +222,7 @@ export function NewGameIntakeScreen(props: Props) {
         <p>Le dossier est prêt pour authentification Citadel et attribution définitive du mandat.</p>
       </div>
       <div className="intake-launch-actions">
-        <button type="button" onClick={() => setStep(1)}>Modifier</button>
+        <button type="button" onClick={() => changeStep(1)}>Modifier</button>
         <button className="primary" onClick={props.startGame}>Valider le mandat et ouvrir le prologue</button>
       </div>
     </section>

@@ -9,6 +9,50 @@ export default defineConfig({
   base: './',
   plugins: [react(), tailwindcss()],
   clearScreen: false,
+  build: {
+    rolldownOptions: {
+      output: {
+        codeSplitting: {
+          minSize: 20 * 1024,
+          maxSize: 420 * 1024,
+          groups: [
+            {
+              name: 'react-vendor',
+              test: /node_modules[\\/](?:react|react-dom|scheduler)[\\/]/,
+              priority: 40,
+              includeDependenciesRecursively: false,
+            },
+            {
+              name: 'charts-vendor',
+              test: /node_modules[\\/](?:recharts|d3-|victory-vendor|decimal\.js)/,
+              priority: 35,
+              includeDependenciesRecursively: false,
+            },
+            {
+              name: 'icons-vendor',
+              test: /node_modules[\\/]lucide-react[\\/]/,
+              priority: 35,
+              includeDependenciesRecursively: false,
+            },
+            {
+              name: 'game-data',
+              test: (id) => /[\\/]src[\\/]data[\\/]/.test(id) && !id.endsWith('crisisEvents.ts'),
+              priority: 30,
+              maxSize: 360 * 1024,
+              includeDependenciesRecursively: false,
+            },
+            {
+              name: 'game-systems',
+              test: /[\\/]src[\\/]systems[\\/]/,
+              priority: 25,
+              maxSize: 360 * 1024,
+              includeDependenciesRecursively: false,
+            },
+          ],
+        },
+      },
+    },
+  },
   server: {
     port: 5173,
     strictPort: true,

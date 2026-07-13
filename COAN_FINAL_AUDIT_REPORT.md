@@ -15,7 +15,7 @@ Ajouts principaux :
 - génération de release notes `npm run release:notes` ;
 - script Windows PowerShell `scripts/coan-tauri-build-windows.ps1` ;
 - wrapper CMD `scripts/coan-tauri-build-windows.cmd` ;
-- configuration Tauri versionnée `0.45.0` ;
+- configuration Tauri versionnée `0.46.0` ;
 - overlay `tauri.windows-offline.conf.json` pour WebView2 offline ;
 - overlay `tauri.release.conf.json` pour release standard ;
 - workflow GitHub Actions Windows renforcé ;
