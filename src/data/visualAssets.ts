@@ -87,12 +87,12 @@ export function getDossierVisual(dossierId: DossierVisualId) {
 const crisisVisuals: Record<CrisisType, string> = {
   REBELLION: '/openai-visuals/events/lambda-sabotage.webp',
   XEN: '/openai-visuals/events/xen-breach.webp',
-  CITADEL: '/openai-visuals/events/overwatch-pacification.webp',
+  CITADEL: '/openai-visuals/events/citadel-audit.webp',
   CIVIL: '/openai-visuals/events/civilian-riot.webp',
-  MORAL: '/openai-visuals/events/civilian-riot.webp',
+  MORAL: '/openai-visuals/events/moral-quarantine.webp',
   COMBINE: '/openai-visuals/events/overwatch-pacification.webp',
-  PROPAGANDA: '/openai-visuals/events/civilian-riot.webp',
-  INFRASTRUCTURE: '/openai-visuals/events/lambda-sabotage.webp',
+  PROPAGANDA: '/openai-visuals/events/breencast-propaganda.webp',
+  INFRASTRUCTURE: '/openai-visuals/events/infrastructure-failure.webp',
 };
 
 export function getCrisisVisual(crisisType: CrisisType) {

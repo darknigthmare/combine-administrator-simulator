@@ -1,4 +1,4 @@
-# Combine Administrator Simulator — Desktop Release 0.46.0
+# Combine Administrator Simulator — Desktop Release 0.46.1
 
 ## Résumé
 Build privé desktop Tauri de Combine Administrator Simulator avec les modules COAN cumulés.
