@@ -143,7 +143,7 @@ export function runLongRunVerification() {
     ...results.map((result) => ({ label: `${result.name}-ressources`, pass: result.minimumRawResource >= 0 })),
     ...results.map((result) => ({ label: `${result.name}-charge`, pass: result.load < 90 && result.criticalPenaltyDays === 0 })),
     { label: 'pression-produit-des-crises', pass: results.every((result) => result.crisisDays > 0) },
-    { label: 'arsenal-complet-soutenable', pass: Object.values(results.at(-1)?.dailyNet ?? {}).every((value) => value >= 0) },
+    { label: 'arsenal-complet-soutenable', pass: Object.values(results[results.length - 1]?.dailyNet ?? {}).every((value) => value >= 0) },
   ];
   return { ok: checks.every((check) => check.pass), checks, scenarios: results };
 }
