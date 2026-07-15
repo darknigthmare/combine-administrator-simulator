@@ -2026,11 +2026,32 @@ button.directive-node:hover { border-color: rgba(165, 220, 255, .48); transform:
 .major-event-card {
   border: 1px solid rgba(120, 170, 190, 0.2);
   background: linear-gradient(135deg, rgba(13, 23, 31, 0.86), rgba(22, 28, 34, 0.64));
-  border-radius: 14px;
+  border-radius: 6px;
   padding: 0.9rem;
   min-height: 180px;
   position: relative;
   overflow: hidden;
+}
+.major-current-visual {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 6;
+  max-height: 280px;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(120, 170, 190, 0.24);
+  border-radius: 4px;
+  object-fit: cover;
+  object-position: center;
+}
+.major-event-card-visual {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  margin-bottom: 0.75rem;
+  border-radius: 3px;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(0.82) contrast(1.04);
 }
 .major-event-card.stage-warning { border-color: rgba(255, 185, 92, 0.34); }
 .major-event-card.stage-active { border-color: rgba(255, 120, 78, 0.48); box-shadow: 0 0 22px rgba(255, 120, 78, 0.08); }

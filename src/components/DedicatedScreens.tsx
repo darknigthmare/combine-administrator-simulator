@@ -22,7 +22,7 @@ import { getAvailableTechnologyNodes, getTechnologyBranchProgress } from '../sys
 import { getPopulationRisk } from '../systems/populationSimulation';
 import { reportPolicyLabels } from '../systems/reportFalsification';
 import { getMajorStoryStageLabel, getMajorStoryStageRank, isMajorStoryEventAvailable } from '../systems/majorStoryEventSystem';
-import { getDossierVisual, getUnitVisual } from '../data/visualAssets';
+import { getDossierVisual, getMajorStoryEventVisual, getUnitVisual } from '../data/visualAssets';
 import { getTechnologyTimelineConflict } from '../systems/timelineSystem';
 import { getCampaignLoreStatus } from '../systems/campaignSystem';
 
@@ -311,6 +311,7 @@ export function MajorStoryEventsScreen({ game, operations, changePolicy, applyOp
     </div>
 
     {current && currentDef && <div className="panel major-current-panel">
+      <img className="major-current-visual" src={getMajorStoryEventVisual(current.eventId)} alt="" aria-hidden="true" />
       <span className="brand-kicker">Arc dominant</span>
       <h2>{currentDef.title}</h2>
       <p>{currentDef.description}</p>
@@ -347,6 +348,7 @@ export function MajorStoryEventsScreen({ game, operations, changePolicy, applyOp
         {sortedEvents.map((event) => {
           const def = majorStoryEventDefinitions[event.eventId];
           return <article key={event.id} className={`major-event-card stage-${event.stage}`}>
+            <img className="major-event-card-visual" src={getMajorStoryEventVisual(event.eventId)} alt="" aria-hidden="true" loading="lazy" decoding="async" />
             <div>
               <strong>{def.title}</strong>
               <span>{def.combineLabel}</span>

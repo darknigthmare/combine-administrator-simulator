@@ -63,6 +63,19 @@ Generated with the built-in OpenAI image tool for the UI/UX progression pass.
 - `events/breencast-propaganda.webp`: coerced public BreenCast viewing in City 17.
 - `events/infrastructure-failure.webp`: failed Combine relay at a City 17 rail and power interchange.
 
+## Major story events
+
+- `events/major-advisor-arrival.webp`: direct Advisor inspection inside the City 17 Citadel.
+- `events/major-breencast-relay-blast.webp`: public BreenCast relay sabotage in an occupied civic plaza.
+- `events/major-razor-train-loss.webp`: disabled black Razor Train on the human rail network.
+- `events/major-nova-prospekt-escape.webp`: detainees and a Vortigaunt Biotic escaping Nova Prospekt.
+- `events/major-civil-protection-mutiny.webp`: internal Metro Cop confrontation inside a City 17 station.
+- `events/major-xen-rift.webp`: dimensional Xen ecology breaching a Combine quarantine barrier.
+- `events/major-lambda-coordinated-assault.webp`: coordinated Resistance and Vortigaunt attack on a canal checkpoint.
+- `events/major-citadel-blackout.webp`: local Citadel grid failure visible from City 17 streets.
+- `events/major-vortessence-resonance.webp`: captive and free Vortigaunts synchronizing across containment.
+- `events/major-headcrab-shell-exposure.webp`: civilians witnessing an opened Headcrab Shell in a residential block.
+
 All prompts requested realistic, oppressive Half-Life 2 Combine production art with no readable generated text, logos, watermarks, Aperture references, or generic spaceship styling. Administrator portraits use the same centered chest-up dossier composition and administrative wall. Unit dossiers use the same landscape tactical-card composition with the subject on the right and dark UI space on the left.
 
 Files are consumed by `src/components/NewGameIntakeScreen.tsx`, `src/components/UiuxV2CommandDeck.tsx`, `src/components/DedicatedScreens.tsx`, `src/components/UiuxProgressionPanel.css`, `src/systems/uiuxProgressionSystem.ts`, and `src/App.tsx`.
