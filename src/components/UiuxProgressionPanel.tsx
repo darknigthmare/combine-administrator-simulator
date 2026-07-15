@@ -1,17 +1,23 @@
-import { BadgeDollarSign, CheckCircle2, Lock, Scale, ShieldCheck } from 'lucide-react';
+import { BadgeDollarSign, CheckCircle2, Lock, Power, Scale, ShieldCheck } from 'lucide-react';
 import type { GameState, UiuxUnlockId } from '../types/game';
-import { canPurchaseUiuxUnlock, formatUiuxPhase, getUiuxUnlockLockReason, uiuxUnlockCatalog } from '../systems/uiuxProgressionSystem';
+import { calculateUiuxIncome, calculateUiuxUpkeep, canPurchaseUiuxUnlock, formatUiuxPhase, getUiuxUnlockLockReason, uiuxUnlockCatalog } from '../systems/uiuxProgressionSystem';
 import './UiuxProgressionPanel.css';
 
 export function UiuxProgressionPanel({
   game,
   purchaseUnlock,
+  toggleUnlock,
 }: {
   game: GameState;
   purchaseUnlock: (id: UiuxUnlockId) => void;
+  toggleUnlock: (id: UiuxUnlockId, enabled: boolean) => void;
 }) {
   const state = game.uiuxProgression;
   const acquired = Object.values(state.unlocked).filter(Boolean).length;
+  const activeCount = Object.entries(state.active).filter(([id, active]) => active && id !== 'ravenholm_blacklist').length;
+  const upkeep = calculateUiuxUpkeep(state.active);
+  const income = calculateUiuxIncome(state.active, game.stats);
+  const netRequisition = income.requisition - upkeep.requisition;
 
   return <section className="uiux-progression">
     <header className="uiux-progression-hero">
@@ -25,8 +31,9 @@ export function UiuxProgressionPanel({
         <Metric label="Données" value={state.resources.data} />
         <Metric label="Conformité" value={state.resources.compliance} />
         <Metric label="Autorisations" value={`${acquired}/${uiuxUnlockCatalog.length}`} />
+        <Metric label="Actives" value={activeCount} />
         <Metric label="Charge" value={`${state.bureaucraticLoad}%`} danger={state.bureaucraticLoad > 70} />
-        <Metric label="Heat" value={`${state.heat}%`} danger={state.heat > 70} />
+        <Metric label="Solde REQ/j" value={`${netRequisition >= 0 ? '+' : ''}${netRequisition}`} danger={netRequisition < 0} />
       </div>
     </header>
 
@@ -34,25 +41,32 @@ export function UiuxProgressionPanel({
       <div className="uiux-progression-catalog">
         {uiuxUnlockCatalog.map((item) => {
           const bought = state.unlocked[item.id];
+          const active = state.active[item.id];
           const available = canPurchaseUiuxUnlock(state, item, game.day);
           const lockReason = getUiuxUnlockLockReason(state, item, game.day);
-          return <article className={`uiux-unlock-card ${bought ? 'unlocked' : ''}`} key={item.id}>
+          const projectedActive = { ...state.active, [item.id]: true };
+          const projectedUpkeep = calculateUiuxUpkeep(projectedActive);
+          const projectedIncome = calculateUiuxIncome(projectedActive, game.stats);
+          const projectedNet = projectedIncome.requisition - projectedUpkeep.requisition;
+          return <article className={`uiux-unlock-card ${bought ? 'unlocked' : ''} ${bought && !active ? 'suspended' : ''}`} key={item.id}>
             <img src={item.image} alt="" aria-hidden="true" />
             <div className="uiux-unlock-body">
-              <span className={`uiux-v2-chip ${bought ? 'good' : available ? 'warn' : 'bad'}`}>{bought ? 'AUTORISÉ' : available ? 'DISPONIBLE' : 'VERROUILLÉ'}</span>
+              <span className={`uiux-v2-chip ${bought && active ? 'good' : available || bought ? 'warn' : 'bad'}`}>{bought ? active ? 'ACTIVE' : 'SUSPENDUE' : available ? 'DISPONIBLE' : 'VERROUILLÉ'}</span>
               <small>{item.faction}</small>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
               <dl>
                 <div><dt>Coût</dt><dd>{item.cost.requisition} REQ / {item.cost.data} DATA / {item.cost.compliance} CONF</dd></div>
                 <div><dt>Jour minimal</dt><dd>J{item.requiresDay}</dd></div>
-                <div><dt>Entretien</dt><dd>{item.upkeep}</dd></div>
+                <div><dt>Projection active</dt><dd>{projectedUpkeep.requisition} REQ / {projectedUpkeep.data} DATA / {projectedUpkeep.compliance} CONF — solde REQ {projectedNet >= 0 ? '+' : ''}{projectedNet}</dd></div>
                 <div><dt>Débloque</dt><dd>{item.unlocks}</dd></div>
               </dl>
               {!available && !bought && <p className="uiux-unlock-reason"><Lock size={13} /> {lockReason}</p>}
-              <button className="uiux-v2-action" aria-label={`${bought ? 'Autorisation active' : available ? 'Acheter autorisation' : 'Autorisation verrouillée'} : ${item.title}`} disabled={bought || !available} onClick={() => purchaseUnlock(item.id)}>
-                {bought ? <CheckCircle2 size={14} /> : <Lock size={14} />} {bought ? 'Autorisation active' : item.narrative ? 'Découverte narrative requise' : 'Acheter autorisation'}
-              </button>
+              {bought && !item.narrative ? <button className="uiux-v2-action" aria-pressed={active} aria-label={`${active ? 'Suspendre' : 'Réactiver'} : ${item.title}`} onClick={() => toggleUnlock(item.id, !active)}>
+                <Power size={14} /> {active ? 'Suspendre l’autorisation' : 'Réactiver l’autorisation'}
+              </button> : <button className="uiux-v2-action" aria-label={`${available ? 'Acheter autorisation' : 'Autorisation verrouillée'} : ${item.title}`} disabled={bought || !available} onClick={() => purchaseUnlock(item.id)}>
+                {bought ? <CheckCircle2 size={14} /> : <Lock size={14} />} {bought ? 'Archive narrative active' : item.narrative ? 'Découverte narrative requise' : 'Acheter autorisation'}
+              </button>}
             </div>
           </article>;
         })}

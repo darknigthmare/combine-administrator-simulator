@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import { ArrowLeft } from 'lucide-react';
-import type { AdministratorAvatarId, CampaignId, DifficultyPresetId, NewGameIntakeDoctrineId, OnboardingTrackId, ProfileId, ScenarioId, TabId, TimelineId } from '../types/game';
+import type { AdministratorAvatarId, CampaignId, DifficultyPresetId, DifficultyScalarKey, DifficultyScalars, NewGameIntakeDoctrineId, OnboardingTrackId, ProfileId, ScenarioId, TabId, TimelineId } from '../types/game';
 import { campaignOrder, campaignPresets, difficultyPresetOrder, difficultyPresets, newGameIntakeDoctrineOrder, newGameIntakeDoctrines, newGameIntakeProfileLabels, newGameIntakeScenarioLabels, newGameIntakeThreatLabels, onboardingTrackOrder, onboardingTracks, timelineOrder, timelinePresets } from '../data';
 import { administratorAvatarOrder, administratorAvatars, defaultAdministratorAvatar } from '../data/visualAssets';
 import { buildNewGameIntakePreview } from '../systems/newGameIntakeSystem';
+import { getCampaignLoreStatus } from '../systems/campaignSystem';
+import { DifficultyScalarControls } from './DifficultySettingsScreen';
 
 type Props = {
   cityInput: string;
@@ -16,6 +18,8 @@ type Props = {
   setCampaignInput: (value: CampaignId) => void;
   difficultyInput: DifficultyPresetId;
   setDifficultyInput: (value: DifficultyPresetId) => void;
+  customDifficultyScalars: DifficultyScalars;
+  setCustomDifficultyScalar: (key: DifficultyScalarKey, value: number) => void;
   profileInput: ProfileId;
   setProfileInput: (value: ProfileId) => void;
   administratorAvatarInput: AdministratorAvatarId;
@@ -73,10 +77,12 @@ export function NewGameIntakeScreen(props: Props) {
     timeline: props.timelineInput,
     profile: props.profileInput,
     difficultyPresetId: props.difficultyInput,
+    difficultyScalars: props.difficultyInput === 'custom' ? props.customDifficultyScalars : undefined,
     onboardingTrackId: props.onboardingTrackInput,
     useCampaignRecommendations: props.useCampaignRecommendations,
   });
   const resolved = preview.resolved;
+  const campaignLore = getCampaignLoreStatus(props.campaignInput);
   const lockManual = props.useCampaignRecommendations && props.campaignInput !== 'custom_city_administration';
   const recommendedFirstTabs = [...new Set(preview.recommendedFirstTabs.map((tab) => tab === 'dashboard' ? 'command_deck_v2' : tab))];
 
@@ -133,6 +139,7 @@ export function NewGameIntakeScreen(props: Props) {
         <select id="campaign-preset" value={props.campaignInput} onChange={(event) => props.setCampaignInput(event.target.value as CampaignId)}>
           {campaignOrder.map((id) => <option key={id} value={id}>{campaignPresets[id].name}</option>)}
         </select>
+        <small className={`campaign-lore-status tone-${campaignLore.tone}`}><strong>{campaignLore.label}</strong> — {campaignLore.detail}</small>
         <label className="inline-check"><input type="checkbox" checked={props.useCampaignRecommendations} disabled={props.campaignInput === 'custom_city_administration'} onChange={(event) => props.setUseCampaignRecommendations(event.target.checked)} /> Verrouiller scénario/timeline/profil sur la campagne</label>
 
         <label htmlFor="campaign-scenario">Scénario local</label>
@@ -170,6 +177,10 @@ export function NewGameIntakeScreen(props: Props) {
           {difficultyPresetOrder.map((id) => <option key={id} value={id}>{difficultyPresets[id].name}</option>)}
         </select>
         <small>{difficultyPresets[props.difficultyInput].subtitle}</small>
+        {props.difficultyInput === 'custom' && <div className="intake-custom-difficulty">
+          <span className="brand-kicker">Matrice opérateur</span>
+          <DifficultyScalarControls compact scalars={props.customDifficultyScalars} onChange={props.setCustomDifficultyScalar} />
+        </div>}
 
         <label htmlFor="campaign-tutorial">Piste tutoriel</label>
         <select id="campaign-tutorial" value={props.onboardingTrackInput} onChange={(event) => props.setOnboardingTrackInput(event.target.value as OnboardingTrackId)}>

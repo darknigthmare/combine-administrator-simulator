@@ -1373,8 +1373,37 @@ button.directive-node:hover { border-color: rgba(165, 220, 255, .48); transform:
 .vort-log-panel p {
   color: #ddd6fe;
 }
+@media (max-width: 1500px) {
+  .vortigaunt-screen {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .vort-groups-panel {
+    grid-column: 1 / -1;
+  }
+
+  .vort-doctrine-panel .compact-policy-list,
+  .vort-group-list {
+    max-height: none;
+    overflow: visible;
+    padding-right: 0;
+  }
+
+  .vort-group-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 1200px) {
   .vortigaunt-screen {
+    grid-template-columns: 1fr;
+  }
+
+  .vort-groups-panel {
+    grid-column: auto;
+  }
+
+  .vort-group-list {
     grid-template-columns: 1fr;
   }
 }
@@ -1611,7 +1640,7 @@ button.directive-node:hover { border-color: rgba(165, 220, 255, .48); transform:
 .xen-research-command {
   background:
     linear-gradient(90deg, rgba(8, 17, 18, 0.98) 0%, rgba(8, 17, 18, 0.94) 52%, rgba(8, 17, 18, 0.72) 100%),
-    url('/openai-visuals/unlocks/xen-research.webp') center 42% / cover no-repeat;
+    url('/openai-visuals/unlocks/xen-research-lore.webp') center 42% / cover no-repeat;
 }
 
 .xen-research-program-list {
@@ -2665,6 +2694,10 @@ button.directive-node:hover { border-color: rgba(165, 220, 255, .48); transform:
   color: #f6c27b;
 }
 
+.floating-os-toggle svg {
+  flex: none;
+}
+
 .floating-dock {
   position: fixed;
   right: 20px;
@@ -2929,6 +2962,34 @@ button.directive-node:hover { border-color: rgba(165, 220, 255, .48); transform:
 }
 
 /* STEP 33 — Specialized terminal skins */
+@media (max-width: 1500px) {
+  .floating-os-toggle {
+    right: 10px;
+    bottom: 10px;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    gap: 0;
+    padding: 0;
+    border-radius: 6px;
+  }
+
+  .floating-os-label {
+    display: none;
+  }
+
+  .floating-os-toggle b {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 4px;
+    border: 1px solid rgba(141, 202, 255, 0.42);
+    font-size: 0.68rem;
+  }
+}
+
 .terminal-switcher {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -5827,8 +5888,8 @@ select:focus-visible {
     display: none;
   }
 
-  .topbar-status > span:nth-child(3),
-  .topbar-status > span:nth-child(4) {
+  .topbar-status > span:nth-child(2),
+  .topbar-status > span:nth-child(6) {
     display: none;
   }
 
@@ -6008,6 +6069,258 @@ select:focus-visible {
 
   .ending > button {
     width: 100%;
+  }
+}
+
+/* Audit UI/UX — information progressive, lisibilité et contrôle clavier. */
+* {
+  letter-spacing: 0 !important;
+}
+
+.brand-kicker,
+.sidebar-session-status,
+.topbar-status > span,
+.telemetry-toggle {
+  font-size: 11px;
+}
+
+.locked {
+  border-color: rgba(248, 164, 82, 0.24);
+  opacity: 0.72;
+}
+
+.locked:hover,
+.locked:focus-visible {
+  border-color: rgba(248, 164, 82, 0.62);
+  opacity: 1;
+}
+
+:where(button, a, input, select, summary, [tabindex]):focus-visible {
+  outline: 2px solid #8bdcff;
+  outline-offset: 2px;
+}
+
+.screen-view-tabs {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+  padding: 6px;
+  border: 1px solid rgba(116, 214, 255, 0.16);
+  border-radius: 6px;
+  background: rgba(3, 9, 13, 0.86);
+}
+
+.screen-view-tabs button {
+  min-height: 38px;
+  border-radius: 5px;
+  color: #9db4c0;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.screen-view-tabs button.active {
+  border-color: rgba(116, 214, 255, 0.56);
+  background: rgba(55, 145, 181, 0.16);
+  color: #edfaff;
+  box-shadow: inset 0 -2px 0 #74d6ff;
+}
+
+.campaign-screen > .panel,
+.xen-ecosystem-screen > .panel {
+  display: none;
+}
+
+.campaign-screen > .campaign-command-panel,
+.campaign-view-overview > .campaign-milestones-panel,
+.campaign-view-overview > .campaign-sector-panel,
+.campaign-view-objectives > .campaign-mission-panel,
+.campaign-view-objectives > .campaign-failure-panel,
+.campaign-view-timeline > .campaign-milestones-panel,
+.campaign-view-timeline > .campaign-sector-panel,
+.campaign-view-timeline > .campaign-log-panel,
+.campaign-view-archive > .campaign-selector-panel,
+.campaign-view-archive > .campaign-log-panel,
+.xen-ecosystem-screen > .xen-ecosystem-command,
+.xen-view-overview > .quarantine-zone-command-panel,
+.xen-view-overview > .xen-vector-panel,
+.xen-view-overview > .xen-ecosystem-log-panel,
+.xen-view-quarantine > .quarantine-zone-command-panel,
+.xen-view-quarantine > .quarantine-policy-panel,
+.xen-view-quarantine > .quarantine-zone-list-panel,
+.xen-view-quarantine > .quarantine-selected-panel,
+.xen-view-quarantine > .quarantine-network-ops-panel,
+.xen-view-ecosystem > .xen-policy-panel,
+.xen-view-ecosystem > .xen-layers-panel,
+.xen-view-ecosystem > .xen-selected-layer-panel,
+.xen-view-ecosystem > .xen-sector-ops-panel,
+.xen-view-ecosystem > .xen-network-ops-panel,
+.xen-view-mutations > .xen-mutation-policy-panel,
+.xen-view-mutations > .xen-mutation-chain-panel,
+.xen-view-mutations > .xen-selected-chain-panel,
+.xen-view-mutations > .xen-mutation-ops-panel {
+  display: block;
+}
+
+.campaign-screen > .campaign-command-panel,
+.xen-ecosystem-screen > .xen-ecosystem-command {
+  grid-column: 1 / -1;
+}
+
+.campaign-preset-card,
+.campaign-objective,
+.milestone,
+.xen-layer-card,
+.xen-operation-card,
+.difficulty-scalar-card {
+  border-radius: 8px;
+}
+
+.campaign-lore-status {
+  display: block;
+  margin-top: 8px;
+  color: #b4c8d2;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.campaign-lore-status.tone-canon strong,
+.campaign-lore-status.tone-canon {
+  color: #9fffc3;
+}
+
+.campaign-lore-status.tone-inferred strong,
+.campaign-lore-status.tone-inferred {
+  color: #ffd18a;
+}
+
+.campaign-lore-status.tone-private strong,
+.campaign-lore-status.tone-private {
+  color: #b9b5ff;
+}
+
+.campaign-lore-status.tone-alternate strong,
+.campaign-lore-status.tone-alternate {
+  color: #ffb38f;
+}
+
+.difficulty-scalar-controls {
+  display: grid;
+  gap: 9px;
+}
+
+.difficulty-scalar-controls details {
+  border: 1px solid rgba(126, 190, 244, 0.18);
+  border-radius: 6px;
+  background: rgba(3, 9, 15, 0.52);
+}
+
+.difficulty-scalar-controls summary {
+  display: grid;
+  gap: 3px;
+  padding: 11px 12px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.difficulty-scalar-controls summary::-webkit-details-marker {
+  display: none;
+}
+
+.difficulty-scalar-controls summary span {
+  color: #8aa0ad;
+  font-size: 11px;
+}
+
+.difficulty-scalar-controls details > .difficulty-scalar-grid {
+  padding: 0 10px 10px;
+}
+
+.difficulty-scalar-controls.compact .difficulty-scalar-card {
+  padding: 10px;
+}
+
+.intake-custom-difficulty {
+  grid-column: 1 / -1;
+  margin-top: 8px;
+}
+
+.garrison-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 7px;
+}
+
+.garrison-list > span {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 9px 10px;
+  border: 1px solid rgba(116, 214, 255, 0.15);
+  border-radius: 5px;
+  background: rgba(3, 9, 13, 0.54);
+}
+
+.telemetry-detail-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  width: 100%;
+  min-height: 36px;
+  margin: 8px 0;
+  justify-content: center;
+}
+
+.onboarding-action-checklist {
+  display: grid;
+  gap: 6px;
+  margin: 12px 0;
+}
+
+.onboarding-action-checklist button {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 9px;
+  align-items: center;
+  min-height: 48px;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+.onboarding-action-checklist button span,
+.onboarding-action-checklist button small {
+  display: block;
+}
+
+.onboarding-action-checklist button small {
+  margin-top: 2px;
+  color: #8299a5;
+}
+
+.onboarding-action-checklist button.completed {
+  border-color: rgba(52, 211, 153, 0.28);
+  color: #9fffc3;
+  opacity: 0.8;
+}
+
+.floating-window:focus-visible {
+  outline: 2px solid #8bdcff;
+  outline-offset: 3px;
+}
+
+@media (max-width: 700px) {
+  .screen-view-tabs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .campaign-screen,
+  .xen-ecosystem-screen {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .campaign-screen > .campaign-mission-panel {
+    grid-column: 1 / -1;
   }
 }
 

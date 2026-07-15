@@ -95,6 +95,16 @@
   border-color: rgba(52, 211, 153, 0.35);
 }
 
+.uiux-unlock-card.suspended {
+  border-color: rgba(248, 164, 82, 0.34);
+  background: linear-gradient(180deg, rgba(23, 20, 18, 0.92), rgba(9, 10, 12, 0.9));
+}
+
+.uiux-unlock-card.suspended > img {
+  filter: grayscale(0.72) contrast(0.88);
+  opacity: 0.48;
+}
+
 .uiux-unlock-card > img {
   width: 100%;
   height: 100%;

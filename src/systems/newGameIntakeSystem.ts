@@ -54,6 +54,9 @@ export function resolveNewGameIntakeConfig(config: NewGameIntakeConfig): NewGame
   const timeline: TimelineId = useCampaignRecommendations ? campaign.recommendedTimeline : config.timeline;
   const profile: ProfileId = useCampaignRecommendations ? campaign.recommendedProfile : config.profile;
   const difficultyPresetId: DifficultyPresetId = difficultyPresets[config.difficultyPresetId] ? config.difficultyPresetId : 'standard_occupation';
+  const difficulty = difficultyPresetId === 'custom' && config.difficultyScalars
+    ? { ...difficultyPresets.custom, scalars: { ...config.difficultyScalars } }
+    : difficultyPresets[difficultyPresetId];
   const onboardingTrackId: OnboardingTrackId = onboardingTracks[config.onboardingTrackId] ? config.onboardingTrackId : track.id;
   return {
     city,
@@ -62,7 +65,7 @@ export function resolveNewGameIntakeConfig(config: NewGameIntakeConfig): NewGame
     scenario,
     timeline,
     profile,
-    difficulty: difficultyPresets[difficultyPresetId],
+    difficulty,
     onboardingTrack: onboardingTracks[onboardingTrackId],
     useCampaignRecommendations,
   };

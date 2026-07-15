@@ -23,6 +23,7 @@ const packageJson = readJson('package.json');
 const pkgPatch = readJson('package.tauri.patch.json');
 const cargo = readText('src-tauri/Cargo.toml');
 const workflow = exists('.github/workflows/tauri-windows.yml') ? readText('.github/workflows/tauri-windows.yml') : '';
+const packagingData = readText('src/data/tauriPackaging.ts');
 
 const cargoVersion = cargo.match(/version\s*=\s*"([^"]+)"/)?.[1] ?? null;
 const bundleTargets = tauri.bundle?.targets ?? [];
@@ -35,6 +36,7 @@ const checks = [
   check(/^\d+\.\d+\.\d+$/.test(tauri.version), 'tauri.conf.json utilise une version SemVer', tauri.version),
   check(packageJson.version === tauri.version, 'package.json version synchronisée', `${packageJson.version} / ${tauri.version}`),
   check(cargoVersion === tauri.version, 'Cargo.toml version synchronisée', `${cargoVersion} / ${tauri.version}`),
+  check(packagingData.includes(`version: '${tauri.version}'`) && packagingData.includes(`même version ${tauri.version}`), 'données packaging version synchronisée', tauri.version),
   check(tauri.build?.frontendDist === '../dist', 'frontendDist vers ../dist', tauri.build?.frontendDist),
   check(tauri.build?.beforeBuildCommand === 'npm run build', 'beforeBuildCommand npm run build', tauri.build?.beforeBuildCommand),
   check(bundleTargets.includes('nsis'), 'target NSIS actif', JSON.stringify(bundleTargets)),

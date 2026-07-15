@@ -1,4 +1,4 @@
-import type { AdministratorAvatarId, CrisisType, ProfileId } from '../types/game';
+import type { AdministratorAvatarId, Crisis, CrisisType, ProfileId } from '../types/game';
 
 export type AdministratorAvatarDefinition = {
   id: AdministratorAvatarId;
@@ -53,18 +53,18 @@ export function defaultAdministratorAvatar(profile: ProfileId): AdministratorAva
 const unitVisuals: Record<string, string> = {
   cp: '/openai-visuals/units/civil-protection.webp',
   scanner: '/openai-visuals/units/city-scanner.webp',
-  manhack: '/openai-visuals/units/manhack.webp',
-  grunt: '/openai-visuals/units/combine-grunt.webp',
+  manhack: '/openai-visuals/units/manhack-lore.webp',
+  grunt: '/openai-visuals/units/combine-grunt-lore.webp',
   soldier: '/openai-visuals/units/overwatch-soldier.webp',
-  ordinal: '/openai-visuals/units/combine-ordinal.webp',
-  suppressor: '/openai-visuals/units/combine-suppressor.webp',
+  ordinal: '/openai-visuals/units/combine-ordinal-lore.webp',
+  suppressor: '/openai-visuals/units/combine-suppressor-lore.webp',
   elite: '/openai-visuals/units/combine-elite.webp',
-  hunter: '/openai-visuals/units/hunter.webp',
+  hunter: '/openai-visuals/units/hunter-lore.webp',
   strider: '/openai-visuals/units/strider.webp',
-  dropship: '/openai-visuals/units/dropship.webp',
-  gunship: '/openai-visuals/units/gunship.webp',
-  bioquarantine: '/openai-visuals/units/bioquarantine-team.webp',
-  advisor: '/openai-visuals/units/advisor.webp',
+  dropship: '/openai-visuals/units/dropship-lore.webp',
+  gunship: '/openai-visuals/units/gunship-lore.webp',
+  bioquarantine: '/openai-visuals/units/bioquarantine-team-lore.webp',
+  advisor: '/openai-visuals/units/advisor-lore.webp',
 };
 
 export function getUnitVisual(unitId: string) {
@@ -77,7 +77,7 @@ const dossierVisuals: Record<DossierVisualId, string> = {
   lambda_courier: '/openai-visuals/dossiers/lambda-courier.webp',
   suspected_citizen: '/openai-visuals/dossiers/suspected-citizen.webp',
   nova_detainee: '/openai-visuals/dossiers/nova-detainee.webp',
-  vortigaunt_biotic: '/openai-visuals/dossiers/vortigaunt-biotic.webp',
+  vortigaunt_biotic: '/openai-visuals/dossiers/vortigaunt-biotic-lore.webp',
 };
 
 export function getDossierVisual(dossierId: DossierVisualId) {
@@ -95,6 +95,22 @@ const crisisVisuals: Record<CrisisType, string> = {
   INFRASTRUCTURE: '/openai-visuals/events/infrastructure-failure.webp',
 };
 
-export function getCrisisVisual(crisisType: CrisisType) {
-  return crisisVisuals[crisisType];
+export function getCrisisVisual(crisis: Crisis | CrisisType) {
+  if (typeof crisis === 'string') return crisisVisuals[crisis];
+
+  const semanticKey = `${crisis.id} ${crisis.title} ${crisis.body} ${(crisis.loreTags ?? []).join(' ')}`.toLowerCase();
+
+  if (semanticKey.includes('advisor') || semanticKey.includes('citadel')) return crisisVisuals.CITADEL;
+  if (semanticKey.includes('breencast') || semanticKey.includes('propaganda')) return crisisVisuals.PROPAGANDA;
+  if (semanticKey.includes('lambda') || semanticKey.includes('rebellion') || semanticKey.includes('sabotage')) return crisisVisuals.REBELLION;
+  if (semanticKey.includes('xen') || semanticKey.includes('antlion') || semanticKey.includes('headcrab') || semanticKey.includes('quarantine')) {
+    return crisis.type === 'MORAL' ? crisisVisuals.MORAL : crisisVisuals.XEN;
+  }
+  if (semanticKey.includes('ration') || semanticKey.includes('riot') || semanticKey.includes('citizen')) return crisisVisuals.CIVIL;
+  if (semanticKey.includes('rail') || semanticKey.includes('power') || semanticKey.includes('relay') || semanticKey.includes('infrastructure')) {
+    return crisisVisuals.INFRASTRUCTURE;
+  }
+  if (semanticKey.includes('overwatch') || semanticKey.includes('ota') || semanticKey.includes('pacification')) return crisisVisuals.COMBINE;
+
+  return crisisVisuals[crisis.type];
 }

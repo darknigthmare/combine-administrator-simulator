@@ -25,6 +25,24 @@ export function getCampaignPreset(id: CampaignId) {
   return campaignPresets[id] ?? campaignPresets.custom_city_administration;
 }
 
+const campaignLoreStatus: Record<CampaignId, { label: string; tone: 'canon' | 'inferred' | 'alternate' | 'private'; detail: string }> = {
+  custom_city_administration: { label: 'Simulation privée', tone: 'private', detail: 'Configuration libre COAN sans statut canonique.' },
+  city17_pre_hl2: { label: 'Inférence compatible', tone: 'inferred', detail: 'Reconstruction administrative compatible avec la situation avant Half-Life 2.' },
+  contaminated_port_city: { label: 'Extrapolation Xen', tone: 'private', detail: 'L’activité aquatique Xen est une extrapolation, pas un événement confirmé dans City 17.' },
+  industrial_model_city: { label: 'Inférence compatible', tone: 'inferred', detail: 'City industrielle originale construite à partir des pratiques d’occupation connues.' },
+  post_nova_city: { label: 'Histoire alternative', tone: 'alternate', detail: 'Branche longue volontairement divergente de la semaine canonique après Nova Prospekt.' },
+  uprising_city: { label: 'Histoire alternative', tone: 'alternate', detail: 'La durée dépasse l’Uprising canonique et simule une résistance prolongée.' },
+  isolated_citadel_city: { label: 'Projection Episodes', tone: 'alternate', detail: 'Projection privée compatible avec une autorité Combine fragmentée après la Citadelle.' },
+};
+
+export function getCampaignLoreStatus(id: CampaignId) {
+  return campaignLoreStatus[id] ?? campaignLoreStatus.custom_city_administration;
+}
+
+export function getNextCampaignDay(dayInCampaign: number, durationDays: number, campaignComplete: boolean) {
+  return campaignComplete ? Math.min(dayInCampaign, durationDays) : Math.min(durationDays, dayInCampaign + 1);
+}
+
 function applySectorEffects(sectors: Sector[], effects: TimelineSectorEffect[] = []) {
   if (!effects.length) return sectors;
   return sectors.map((sector) => {
@@ -81,7 +99,9 @@ function objectiveProgress(objective: CampaignObjective, state: CampaignState, s
   const value = metricValue(objective, state, stats, sectors, game);
   const progress = objective.mode === 'above'
     ? clamp((value / Math.max(1, objective.target)) * 100)
-    : clamp(((objective.target - value) / Math.max(1, objective.target)) * 100);
+    : value <= objective.target
+      ? 100
+      : clamp(100 - ((value - objective.target) / Math.max(1, 100 - objective.target)) * 100);
   const achieved = objective.mode === 'above' ? value >= objective.target : value <= objective.target;
   const comparator = objective.mode === 'above' ? '≥' : '≤';
   return {
@@ -135,10 +155,7 @@ export function simulateCampaignDay({ game, stats, sectors }: { game: GameState;
   const preset = getCampaignPreset(game.campaign.activeCampaignId);
   let nextStats = addStat(stats, preset.dailyEffects);
   let nextSectors = sectors;
-  let nextCampaign: CampaignState = {
-    ...game.campaign,
-    dayInCampaign: game.campaign.dayInCampaign + 1,
-  };
+  let nextCampaign: CampaignState = { ...game.campaign };
   const lines: string[] = [`Campagne ${preset.name} : jour ${nextCampaign.dayInCampaign}/${preset.durationDays}.`];
 
   const dueMilestones = preset.milestones.filter((milestone, index) => index >= nextCampaign.milestoneIndex && nextCampaign.dayInCampaign >= milestone.day);

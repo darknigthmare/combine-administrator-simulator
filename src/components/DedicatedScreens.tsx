@@ -23,6 +23,8 @@ import { getPopulationRisk } from '../systems/populationSimulation';
 import { reportPolicyLabels } from '../systems/reportFalsification';
 import { getMajorStoryStageLabel, getMajorStoryStageRank, isMajorStoryEventAvailable } from '../systems/majorStoryEventSystem';
 import { getDossierVisual, getUnitVisual } from '../data/visualAssets';
+import { getTechnologyTimelineConflict } from '../systems/timelineSystem';
+import { getCampaignLoreStatus } from '../systems/campaignSystem';
 
 type GlobalAction = (action: 'breencast' | 'ration_plus' | 'ration_cut' | 'advisor' | 'shadow_help') => void;
 type SectorAction = (action: 'curfew' | 'raid' | 'quarantine' | 'seal' | 'purge' | 'propaganda') => void;
@@ -40,10 +42,11 @@ function MiniStat({ label, value, dangerHigh = false, unit = 'auto' }: { label: 
 }
 
 function UnitButton({ unit, sector, deploy }: { unit: Unit; sector: Sector; deploy: Deploy }) {
+  const stationed = sector.units[unit.id] ?? 0;
   return <button className="module-unit-button" disabled={unit.reserve <= 0} onClick={() => deploy(unit)}>
     <img src={getUnitVisual(unit.id)} alt="" aria-hidden="true" loading="lazy" decoding="async" />
     <strong>{unit.name}</strong>
-    <span>{unit.category} — réserve {unit.reserve}</span>
+    <span>{unit.category} — réserve {unit.reserve} / secteur {stationed}</span>
     <em>Déployer vers {sector.name}</em>
   </button>;
 }
@@ -380,7 +383,9 @@ export function MajorStoryEventsScreen({ game, operations, changePolicy, applyOp
 
 
 export function CampaignScreen({ game }: { game: GameState }) {
+  const [activeView, setActiveView] = useState<'overview' | 'objectives' | 'timeline' | 'archive'>('overview');
   const active = campaignPresets[game.campaign.activeCampaignId];
+  const loreStatus = getCampaignLoreStatus(game.campaign.activeCampaignId);
   const upcomingMilestone = active.milestones.find((milestone, index) => index >= game.campaign.milestoneIndex);
   const mission = game.campaignMission;
   const visibleMissionObjectives = mission.objectives.filter((objective) => objective.discovered);
@@ -393,7 +398,15 @@ export function CampaignScreen({ game }: { game: GameState }) {
     .sort((a, b) => (b.rebel + b.xen + (100 - b.infrastructure) + b.fear) - (a.rebel + a.xen + (100 - a.infrastructure) + a.fear))
     .slice(0, 6);
 
-  return <section className="panel-grid dedicated-screen campaign-screen">
+  return <section className={`panel-grid dedicated-screen campaign-screen campaign-view-${activeView}`}>
+    <div className="screen-view-tabs" role="tablist" aria-label="Vues de la campagne">
+      {[
+        ['overview', 'Aperçu'],
+        ['objectives', 'Objectifs'],
+        ['timeline', 'Chronologie'],
+        ['archive', 'Archives'],
+      ].map(([id, label]) => <button key={id} type="button" role="tab" aria-selected={activeView === id} className={activeView === id ? 'active' : ''} onClick={() => setActiveView(id as typeof activeView)}>{label}</button>)}
+    </div>
     <div className="panel module-command campaign-command-panel">
       <span className="brand-kicker">Long Campaign Director / City Narrative Arc</span>
       <h2>{active.name}</h2>
@@ -407,6 +420,7 @@ export function CampaignScreen({ game }: { game: GameState }) {
         <MiniStat label="Objectifs" value={`${mission.completedCount}/${visibleMissionObjectives.length}`} />
       </div>
       <p className="lore-note">Mandat : {active.adminMandate}</p>
+      <p className={`campaign-lore-status tone-${loreStatus.tone}`}><strong>{loreStatus.label}</strong> — {loreStatus.detail}</p>
       <div className="event-tags">{active.loreNotes.map((note) => <span key={note}>{note}</span>)}</div>
     </div>
 
@@ -417,26 +431,15 @@ export function CampaignScreen({ game }: { game: GameState }) {
       <div className="campaign-card-list">
         {campaignOrder.map((id) => {
           const preset = campaignPresets[id];
+          const presetLore = getCampaignLoreStatus(id);
           return <article key={id} className={id === game.campaign.activeCampaignId ? 'active campaign-preset-card' : 'campaign-preset-card'}>
             <strong>{preset.name}</strong>
             <span>{preset.subtitle}</span>
             <em>City {preset.recommendedCity} — {preset.durationDays} jours — {preset.recommendedTimeline}</em>
+            <small className={`campaign-lore-status tone-${presetLore.tone}`}>{presetLore.label}</small>
           </article>;
         })}
       </div>
-    </div>
-
-    <div className="panel campaign-objectives-panel">
-      <span className="brand-kicker">Objectifs de campagne</span>
-      <h2>Mandats longs</h2>
-      <div className="campaign-objective-list">
-        {game.campaign.objectives.map((objective) => <article key={objective.id} className={objective.achieved ? 'campaign-objective achieved' : 'campaign-objective'}>
-          <div><strong>{objective.title}</strong><span>{objective.detail}</span></div>
-          <b>{objective.progress}%</b>
-          <i><em style={{ width: `${objective.progress}%` }} /></i>
-        </article>)}
-      </div>
-      <div className="lore-note">▸ {active.openingReport}</div>
     </div>
 
     <div className="panel campaign-mission-panel">
@@ -1236,6 +1239,7 @@ export function VortigauntBioticsScreen({ game, operations, changeDoctrine, appl
 }
 
 export function XenQuarantineScreen({ game, sector, sectorAction, operations, changePolicy, applyOperation, mutationOperations, changeMutationPolicy, applyMutationOperation, quarantineOperations, changeQuarantinePolicy, applyQuarantineOperation }: { game: GameState; sector: Sector; sectorAction: SectorAction; operations: XenEcosystemOperation[]; changePolicy: (policy: XenEcosystemPolicyId) => void; applyOperation: (operation: XenEcosystemOperation, layerId?: string) => void; mutationOperations: XenMutationOperation[]; changeMutationPolicy: (policy: XenMutationPolicyId) => void; applyMutationOperation: (operation: XenMutationOperation, chainId?: string) => void; quarantineOperations: QuarantineOperation[]; changeQuarantinePolicy: (policy: QuarantinePolicyId) => void; applyQuarantineOperation: (operation: QuarantineOperation) => void }) {
+  const [activeView, setActiveView] = useState<'overview' | 'quarantine' | 'ecosystem' | 'mutations'>('overview');
   const [selectedLayerId, setSelectedLayerId] = useState(game.xenEcosystem.layers[0]?.id ?? '');
   const [selectedChainId, setSelectedChainId] = useState(game.xenMutation.chains[0]?.id ?? '');
   const ecosystem = game.xenEcosystem;
@@ -1272,7 +1276,15 @@ export function XenQuarantineScreen({ game, sector, sectorAction, operations, ch
   const sectorQuarantineOperations = quarantineOperations.filter((operation) => operation.target === 'sector');
   const networkQuarantineOperations = quarantineOperations.filter((operation) => operation.target === 'network');
 
-  return <section className="panel-grid dedicated-screen xen-quarantine-screen xen-ecosystem-screen">
+  return <section className={`panel-grid dedicated-screen xen-quarantine-screen xen-ecosystem-screen xen-view-${activeView}`}>
+    <div className="screen-view-tabs" role="tablist" aria-label="Vues Xen">
+      {[
+        ['overview', 'Aperçu'],
+        ['quarantine', 'Quarantaine'],
+        ['ecosystem', 'Écosystème'],
+        ['mutations', 'Mutations'],
+      ].map(([id, label]) => <button key={id} type="button" role="tab" aria-selected={activeView === id} className={activeView === id ? 'active' : ''} onClick={() => setActiveView(id as typeof activeView)}>{label}</button>)}
+    </div>
     <div className="panel module-command xen-ecosystem-command">
       <span className="brand-kicker">Xen Quarantine Authority / Dynamic Biosphere</span>
       <h2>Écosystème Xen dynamique</h2>
@@ -1844,6 +1856,7 @@ export function CombineTechnologyScreen({ game, researchTechnology }: { game: Ga
           const researched = researchedIds.has(node.id);
           const unlocked = availableIds.has(node.id);
           const affordable = tech.researchBudget >= node.cost;
+          const timelineConflict = getTechnologyTimelineConflict(node, game.timeline);
           return <article key={node.id} className={`technology-node-card tier-${node.tier} ${researched ? 'researched' : ''} ${unlocked ? 'available' : 'locked'}`}>
             <div className="technology-node-head">
               <span>Tier {node.tier}</span>
@@ -1858,7 +1871,8 @@ export function CombineTechnologyScreen({ game, researchTechnology }: { game: Ga
             </div>
             <div className="event-tags">{node.unlocks.map((unlock) => <span key={unlock}>{unlock}</span>)}</div>
             {node.prerequisites.length > 0 && <p className="lore-note">Prérequis : {node.prerequisites.join(', ')}</p>}
-            <button disabled={researched || !unlocked || !affordable} onClick={() => researchTechnology(node)}>
+            {timelineConflict && <p className="lore-note negative">{timelineConflict}</p>}
+            <button disabled={researched || !unlocked || !affordable || Boolean(timelineConflict)} onClick={() => researchTechnology(node)}>
               {researched ? 'PROTOCOLE ACTIF' : !unlocked ? 'VERROUILLÉ' : !affordable ? 'BUDGET INSUFFISANT' : 'RECHERCHER / ACTIVER'}
             </button>
           </article>;

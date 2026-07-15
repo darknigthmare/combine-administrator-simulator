@@ -1,4 +1,4 @@
-import type { Sector, Stats, TimelineId, TimelinePreset, Unit } from '../types/game';
+import type { CombineTechnologyNode, Sector, Stats, TimelineId, TimelinePreset, Unit } from '../types/game';
 import { timelinePresets } from '../data/timelinePresets';
 
 const clamp = (value: number, min = 0, max = 100) => Math.max(min, Math.min(max, Math.round(value)));
@@ -37,7 +37,7 @@ export function applyTimelineDailyPressure(stats: Stats, timeline: TimelineId): 
 
 export function applyTimelineToSectors(sectors: Sector[], timeline: TimelineId): Sector[] {
   const preset = getTimelinePreset(timeline);
-  return sectors.map((sector) => {
+  const adjusted = sectors.map((sector) => {
     const matches = preset.sectorEffects.filter((effect) => effect.sectorIds.includes(sector.id));
     if (matches.length === 0) return sector;
     return matches.reduce<Sector>((current, effect) => ({
@@ -51,6 +51,16 @@ export function applyTimelineToSectors(sectors: Sector[], timeline: TimelineId):
       status: effect.status ?? current.status,
     }), sector);
   });
+  return filterSectorUnitsForTimeline(adjusted, timeline);
+}
+
+export function filterSectorUnitsForTimeline(sectors: Sector[], timeline: TimelineId): Sector[] {
+  return sectors.map((sector) => ({
+    ...sector,
+    units: Object.fromEntries(
+      Object.entries(sector.units).filter(([unitId, count]) => count > 0 && isUnitAvailableInTimeline(unitId, timeline)),
+    ) as Sector['units'],
+  }));
 }
 
 export function applyTimelineToUnits(units: Unit[], timeline: TimelineId): Unit[] {
@@ -61,12 +71,16 @@ export function applyTimelineToUnits(units: Unit[], timeline: TimelineId): Unit[
   });
 }
 
+export function filterUnitsForTimeline(units: Unit[], timeline: TimelineId): Unit[] {
+  return units.map((unit) => isUnitAvailableInTimeline(unit.id, timeline) ? unit : { ...unit, reserve: 0 });
+}
+
 const alyxEraUnits = new Set(['grunt', 'ordinal', 'suppressor']);
 const episodeEraUnits = new Set(['hunter']);
 
 export function isUnitAvailableInTimeline(unitId: string, timeline: TimelineId): boolean {
   if (alyxEraUnits.has(unitId)) return timeline === 'alyx_era';
-  if (episodeEraUnits.has(unitId)) return ['post_nova_prospekt', 'uprising', 'citadel_collapse'].includes(timeline);
+  if (episodeEraUnits.has(unitId)) return timeline === 'citadel_collapse';
   if (unitId === 'elite') return !['seven_hour_aftermath', 'early_occupation', 'alyx_era'].includes(timeline);
   if (unitId === 'soldier') return timeline !== 'alyx_era';
   return true;
@@ -75,8 +89,25 @@ export function isUnitAvailableInTimeline(unitId: string, timeline: TimelineId):
 export function getUnitTimelineAvailabilityReason(unitId: string, timeline: TimelineId): string {
   if (isUnitAvailableInTimeline(unitId, timeline)) return 'Unité compatible avec la fenêtre chronologique active.';
   if (alyxEraUnits.has(unitId)) return 'Unité réservée à la période Half-Life: Alyx.';
-  if (episodeEraUnits.has(unitId)) return 'Synthèse réservée aux périodes post-Nova Prospekt et Episodes.';
+  if (episodeEraUnits.has(unitId)) return 'Hunter réservé aux opérations de type Episodes hors de City 17 ; disponible uniquement dans la branche Effondrement de la Citadelle.';
   return 'Modèle indisponible dans cette fenêtre chronologique.';
+}
+
+export function isBreenCastTimeline(timeline: TimelineId): boolean {
+  return ['pre_hl2', 'hl2_arrival', 'post_nova_prospekt', 'uprising'].includes(timeline);
+}
+
+export function getPropagandaNetworkLabel(timeline: TimelineId): string {
+  if (isBreenCastTimeline(timeline)) return 'BreenCast';
+  if (timeline === 'alyx_era') return 'Propagande Combine';
+  if (timeline === 'citadel_collapse') return 'Relais de continuité Combine';
+  return 'Réseau civique Combine';
+}
+
+export function getTechnologyTimelineConflict(node: CombineTechnologyNode, timeline: TimelineId): string | null {
+  const unavailable = Object.keys(node.reserveEffects ?? {}).filter((unitId) => !isUnitAvailableInTimeline(unitId, timeline));
+  if (!unavailable.length) return null;
+  return `Technologie incompatible avec cette chronologie : ${unavailable.join(', ')}.`;
 }
 
 export function getTimelineDirectiveWeight(stat: keyof Stats, timeline: TimelineId): number {

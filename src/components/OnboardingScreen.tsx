@@ -1,4 +1,4 @@
-import { AlertTriangle, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { AlertTriangle, ArrowRight, CheckCircle2, Circle } from 'lucide-react';
 import type { GameState, OnboardingChapterId, TabId } from '../types/game';
 import { buildOnboardingView } from '../systems/onboardingSystem';
 
@@ -29,6 +29,8 @@ export function OnboardingScreen({ game, completeChapter, runFirstDayScript, set
   const completed = new Set(game.onboarding.completedChapterIds);
   const currentChapter = view.chapters.find((chapter) => !completed.has(chapter.id)) ?? view.chapters[view.chapters.length - 1];
   const currentDone = completed.has(currentChapter.id);
+  const currentChapterReady = currentChapter.linkedTabs.some((tab) => game.onboarding.visitedTabs.includes(tab));
+  const completedFirstDayActions = view.firstDayProgress.filter((entry) => entry.completed).length;
 
   return (
     <section className="screen onboarding-screen">
@@ -65,21 +67,29 @@ export function OnboardingScreen({ game, completeChapter, runFirstDayScript, set
             const label = onboardingTabLabels[tab] ?? tab;
             return <button key={tab} className="link-chip" aria-label={`Ouvrir ${label}`} onClick={() => setTab(tab)}>{label}</button>;
           })}</div>
-          <button className="primary" disabled={currentDone} onClick={() => completeChapter(currentChapter.id)}>
-            {currentDone ? <CheckCircle2 size={16} /> : <ArrowRight size={16} />} {currentDone ? 'Dossier validé' : 'Valider et ouvrir le dossier suivant'}
+          <button className="primary" disabled={currentDone || !currentChapterReady} onClick={() => completeChapter(currentChapter.id)}>
+            {currentDone ? <CheckCircle2 size={16} /> : <ArrowRight size={16} />} {currentDone ? 'Dossier validé' : currentChapterReady ? 'Valider et ouvrir le dossier suivant' : 'Ouvrir un module lié pour valider'}
           </button>
         </article>
 
         <article className="panel onboarding-first-day">
           <span className="brand-kicker">MANDAT {view.activeTrack.title}</span>
-          <h3>{game.onboarding.firstDayScriptCompleted ? 'Briefing terminé' : view.readyForFirstDay ? 'Ordres guidés disponibles' : 'Formation en cours'}</h3>
+          <h3>{game.onboarding.firstDayScriptCompleted ? 'Boucle validée' : view.readyForFirstDay ? 'Exécution supervisée' : 'Formation en cours'}</h3>
           <p>{view.activeTrack.doctrine}</p>
           <div className="mini-metrics">
             <span>Score intake <b>{view.intakeScore}%</b></span>
             <span>Dossiers <b>{view.completedCount}/{view.totalChapters}</b></span>
-            <span>Ordres préparés <b>3</b></span>
+            <span>Étapes validées <b>{completedFirstDayActions}/{view.firstDayProgress.length}</b></span>
           </div>
-          <button className="primary" disabled={!view.readyForFirstDay || game.onboarding.firstDayScriptCompleted} onClick={runFirstDayScript}>Appliquer les ordres guidés</button>
+          <div className="onboarding-action-checklist">
+            {view.firstDayProgress.map(({ action, completed: actionCompleted }) => <button key={action.id} className={actionCompleted ? 'completed' : ''} disabled={actionCompleted || !view.readyForFirstDay} onClick={() => setTab(action.relatedTab)}>
+              {actionCompleted ? <CheckCircle2 size={15} /> : <Circle size={15} />}
+              <span><strong>{action.title}</strong><small>{action.moduleLabel}</small></span>
+            </button>)}
+          </div>
+          <button className="primary" disabled={!view.readyForFirstDay || game.onboarding.firstDayScriptCompleted} onClick={runFirstDayScript}>
+            {game.onboarding.firstDayScriptCompleted ? 'Boucle validée' : view.nextFirstDayAction ? `Ouvrir : ${view.nextFirstDayAction.moduleLabel}` : 'Valider la première journée réelle'}
+          </button>
         </article>
       </div>
     </section>

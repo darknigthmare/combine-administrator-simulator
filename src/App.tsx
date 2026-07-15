@@ -5,7 +5,7 @@ import './index.css';
 import type { AdministratorAvatarId } from './types/game';
 import { defaultAdministratorAvatar, getCrisisVisual, getDossierVisual, getUnitVisual } from './data/visualAssets';
 
-import type { AtmosphereSettings, SyntheticAudioDirectorSnapshot, CampaignId, DifficultyPresetId, DifficultyScalarKey, OnboardingChapterId, OnboardingTrackId, NewGameIntakeDoctrineId, CitizenAction, CitadelDirectiveNode, CombineTechnologyNode, Crisis, EventChoice, GameState, NovaOperation, NovaProspektState, ProfileId, InformantDoctrineId, InformantOperation, CivilProtectionDoctrineId, CivilProtectionOperation, RationOperation, RationPolicyId, ResistanceOperation, ResistanceNetworkState, ResistanceFactionDoctrineId, ResistanceFactionOperation, VortigauntDoctrineId, VortigauntOperation, XenEcosystemOperation, XenEcosystemPolicyId, XenMutationOperation, XenMutationPolicyId, QuarantineOperation, QuarantinePolicyId, XenResearchOperation, XenResearchPolicyId, XenCatastropheOperation, XenCatastrophePolicyId, MajorStoryOperation, MajorStoryPolicyId, VideoArchiveOperation, VideoArchivePolicyId, DecisionHistoryFilterId, Report, ReportPolicy, ScenarioId, TimelineId, Sector, SectorStatus, Stats, TabId, UiuxUnlockId, Unit } from './types/game';
+import type { AtmosphereSettings, SyntheticAudioDirectorSnapshot, CampaignId, DifficultyPresetId, DifficultyScalarKey, DifficultyScalars, OnboardingChapterId, OnboardingTrackId, NewGameIntakeDoctrineId, CitizenAction, CitadelDirectiveNode, CombineTechnologyNode, Crisis, EventChoice, GameState, NovaOperation, NovaProspektState, ProfileId, InformantDoctrineId, InformantOperation, CivilProtectionDoctrineId, CivilProtectionOperation, RationOperation, RationPolicyId, ResistanceOperation, ResistanceNetworkState, ResistanceFactionDoctrineId, ResistanceFactionOperation, VortigauntDoctrineId, VortigauntOperation, XenEcosystemOperation, XenEcosystemPolicyId, XenMutationOperation, XenMutationPolicyId, QuarantineOperation, QuarantinePolicyId, XenResearchOperation, XenResearchPolicyId, XenCatastropheOperation, XenCatastrophePolicyId, MajorStoryOperation, MajorStoryPolicyId, VideoArchiveOperation, VideoArchivePolicyId, DecisionHistoryFilterId, Report, ReportPolicy, ScenarioId, TimelineId, Sector, SectorStatus, Stats, TabId, UiuxUnlockId, Unit } from './types/game';
 import { baseSectors, baseStats, breencastStrategies, citizenActions, difficultyPresets, directives, endings, civilProtectionOperations, informantOperations, novaOperations, profileEffects, rationOperations, resistanceOperations, resistanceFactionOperations, vortigauntOperations, xenEcosystemOperations, xenMutationOperations, quarantineOperations, xenResearchOperations, xenCatastropheOperations, majorStoryOperations, videoArchiveOperations, syntheticAudioCues, syntheticAudioCueOrder, scenarioEffects, timelineOrder, timelinePresets, unitTemplates, newGameIntakeDoctrines } from './data';
 import { AUTOSAVE_STORAGE_KEY } from './data/saveSlots';
 import { getConnectedSectors, getNetworkLinks, getSectorPressure } from './systems/sectorNetwork';
@@ -14,7 +14,7 @@ import { getEventCatalogueSummary, pickDirectedCrisis } from './systems/eventDir
 import { buildTransmittedReport, reportPolicyDescriptions, reportPolicyLabels, resolveAdvisorAudit } from './systems/reportFalsification';
 import { createInitialNovaProspektState, getNovaAtmosphere, processNovaProspektDay, resolveNovaOperation, setNovaPolicy } from './systems/novaProspektSystem';
 import { buildDynamicBreencast, resolveBreencastStrategy } from './systems/dynamicBreencast';
-import { applyTimelineDailyPressure, applyTimelineToSectors, applyTimelineToStats, applyTimelineToUnits, getTimelinePreset, getTimelineReportLines, getUnitTimelineAvailabilityReason, isUnitAvailableInTimeline } from './systems/timelineSystem';
+import { applyTimelineDailyPressure, applyTimelineToSectors, applyTimelineToStats, applyTimelineToUnits, filterSectorUnitsForTimeline, filterUnitsForTimeline, getPropagandaNetworkLabel, getTechnologyTimelineConflict, getTimelinePreset, getTimelineReportLines, getUnitTimelineAvailabilityReason, isUnitAvailableInTimeline } from './systems/timelineSystem';
 import { AtmosphereLayer } from './components/AtmosphereLayer';
 import { FloatingWindowLayer } from './components/FloatingWindowLayer';
 import { SaveManagerScreen } from './components/SaveManagerScreen';
@@ -43,7 +43,7 @@ import { createInitialXenMutationState, migrateXenMutationState, resolveXenMutat
 import { createInitialQuarantineZoneState, migrateQuarantineZoneState, resolveQuarantineOperation, setQuarantinePolicy, simulateQuarantineZoneDay } from './systems/quarantineZoneSystem';
 import { createInitialXenResearchState, migrateXenResearchState, resolveXenResearchOperation, setXenResearchPolicy, simulateXenResearchDay } from './systems/xenResearchSystem';
 import { createInitialXenCatastropheState, migrateXenCatastropheState, resolveXenCatastropheOperation, setXenCatastrophePolicy, simulateXenCatastropheDay } from './systems/xenCatastropheSystem';
-import { applyCampaignToSectors, applyCampaignToStats, createInitialCampaignState, getCampaignPreset, migrateCampaignState, simulateCampaignDay } from './systems/campaignSystem';
+import { applyCampaignToSectors, applyCampaignToStats, createInitialCampaignState, getCampaignPreset, getNextCampaignDay, migrateCampaignState, simulateCampaignDay } from './systems/campaignSystem';
 import { createInitialCampaignMissionState, migrateCampaignMissionState, simulateCampaignMissionDay } from './systems/campaignObjectiveSystem';
 import { createInitialMajorStoryEventState, migrateMajorStoryEventState, resolveMajorStoryOperation, setMajorStoryPolicy, simulateMajorStoryEventDay } from './systems/majorStoryEventSystem';
 import { buildFinalVerdict } from './systems/finalVerdictSystem';
@@ -54,10 +54,10 @@ import { buildSyntheticAudioDirector, playSyntheticAudioCue } from './systems/sy
 import { createInitialVideoArchiveState, migrateVideoArchiveState, resolveVideoArchiveOperation, setVideoArchivePolicy, simulateVideoArchiveDay } from './systems/videoArchiveSystem';
 import { createInitialDecisionHistoryState, migrateDecisionHistoryState, reconcileDecisionHistory, setDecisionHistoryFilter } from './systems/decisionHistorySystem';
 import { applyDifficultySectorEffects, applyDifficultyStartingEffects, createInitialDifficultySettings, migrateDifficultySettings, resetCustomDifficulty, setDifficultyPreset, simulateDifficultyDay, updateDifficultyScalar } from './systems/difficultySettingsSystem';
-import { completeOnboardingChapter as completeOnboardingChapterState, createInitialOnboardingState, migrateOnboardingState, resolveOnboardingFirstDay, selectOnboardingTrack } from './systems/onboardingSystem';
+import { completeOnboardingChapter as completeOnboardingChapterState, createInitialOnboardingState, migrateOnboardingState, recordOnboardingAction, recordOnboardingTabVisit, resolveOnboardingFirstDay, selectOnboardingTrack } from './systems/onboardingSystem';
 import { doctrineToConfig } from './systems/newGameIntakeSystem';
 import { buildUxPolishReport } from './systems/uxPolishSystem';
-import { createInitialUiuxProgressionState, formatUiuxPhase, isUiuxTabUnlocked, isUiuxUnitUnlocked, migrateUiuxProgressionState, purchaseUiuxUnlock, simulateUiuxProgressionDay } from './systems/uiuxProgressionSystem';
+import { createInitialUiuxProgressionState, formatUiuxPhase, isUiuxCapabilityActive, isUiuxTabUnlocked, isUiuxUnitUnlocked, migrateUiuxProgressionState, purchaseUiuxUnlock, setUiuxUnlockActive, simulateUiuxProgressionDay } from './systems/uiuxProgressionSystem';
 import { createDailyOrderState, dailyOrderRefusal, migrateDailyOrderState, resetDailyOrders, spendDailyOrder } from './systems/dailyOrderSystem';
 
 const ArchivesScreen = lazy(async () => ({ default: (await import('./components/DedicatedScreens')).ArchivesScreen }));
@@ -170,8 +170,8 @@ function describeCrisisEffects(effects: EventChoice['effects']): string[] {
   });
 }
 
-function createInitialGame(city: string, scenario: ScenarioId, timeline: TimelineId, profile: ProfileId, campaignId: CampaignId = 'custom_city_administration', difficultyPresetId: DifficultyPresetId = 'standard_occupation'): GameState {
-  const difficultySettings = createInitialDifficultySettings(difficultyPresetId);
+function createInitialGame(city: string, scenario: ScenarioId, timeline: TimelineId, profile: ProfileId, campaignId: CampaignId = 'custom_city_administration', difficultyPresetId: DifficultyPresetId = 'standard_occupation', customDifficultyScalars?: DifficultyScalars): GameState {
+  const difficultySettings = createInitialDifficultySettings(difficultyPresetId, customDifficultyScalars);
   let stats = applyDifficultyStartingEffects(applyCampaignToStats(applyTimelineToStats(addStat(addStat(baseStats, scenarioEffects[scenario]), profileEffects[profile]), timeline), campaignId), difficultySettings);
   const sectors = applyDifficultySectorEffects(applyCampaignToSectors(applyTimelineToSectors(baseSectors.map((s) => ({ ...s, units: { ...s.units } })), timeline), campaignId), difficultySettings);
   if (scenario === 'quarantine') {
@@ -281,7 +281,8 @@ function hydrateSavedGame(raw: unknown): GameState {
     ...merged,
     administratorAvatar: merged.administratorAvatar ?? defaultAdministratorAvatar(profile),
     tab: normalizeSavedTab(merged.tab, uiuxProgression, merged.ending),
-    sectors: merged.sectors.map((sector) => sector.id === 'periphery' ? { ...sector, name: 'Périphérie extérieure' } : sector),
+    sectors: filterSectorUnitsForTimeline(merged.sectors.map((sector) => sector.id === 'periphery' ? { ...sector, name: 'Périphérie extérieure' } : sector), timeline),
+    units: filterUnitsForTimeline(merged.units, timeline),
     uiuxProgression,
     dailyOrders: migrateDailyOrderState(merged),
     crisisHistory: merged.crisisHistory ?? [],
@@ -368,6 +369,7 @@ function App() {
   const [timelineInput, setTimelineInput] = useState<TimelineId>(canonicalNewGameConfig.timeline);
   const [campaignInput, setCampaignInput] = useState<CampaignId>(canonicalNewGameConfig.campaignId);
   const [difficultyInput, setDifficultyInput] = useState<DifficultyPresetId>(canonicalNewGameConfig.difficultyPresetId);
+  const [customDifficultyScalars, setCustomDifficultyScalars] = useState<DifficultyScalars>({ ...difficultyPresets.custom.scalars });
   const [profileInput, setProfileInput] = useState<ProfileId>(canonicalNewGameConfig.profile);
   const [administratorAvatarInput, setAdministratorAvatarInput] = useState<AdministratorAvatarId>('civil_director');
   const [newGameDoctrineInput, setNewGameDoctrineInput] = useState<NewGameIntakeDoctrineId>('canonical_city17');
@@ -375,6 +377,7 @@ function App() {
   const [useCampaignRecommendations, setUseCampaignRecommendations] = useState(true);
   const [selectedSector, setSelectedSector] = useState<string>('admin');
   const [telemetryOpen, setTelemetryOpen] = useState(false);
+  const [telemetryDetailOpen, setTelemetryDetailOpen] = useState(false);
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const [crisisCatalog, setCrisisCatalog] = useState<Crisis[]>([]);
   const [dayTransition, setDayTransition] = useState<DayTransitionSummary | null>(null);
@@ -412,6 +415,42 @@ function App() {
   }, [endDayConfirmOpen]);
 
   useEffect(() => {
+    const surface = document.querySelector<HTMLElement>('[data-modal-surface="true"]');
+    if (!surface) return;
+    const previouslyFocused = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    const focusableSelector = 'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
+    const focusFirstControl = () => {
+      const first = surface.querySelector<HTMLElement>(focusableSelector);
+      (first ?? surface).focus();
+    };
+    const frame = window.requestAnimationFrame(focusFirstControl);
+    const trapFocus = (event: KeyboardEvent) => {
+      if (event.key !== 'Tab') return;
+      const controls = Array.from(surface.querySelectorAll<HTMLElement>(focusableSelector));
+      if (controls.length === 0) {
+        event.preventDefault();
+        surface.focus();
+        return;
+      }
+      const first = controls[0];
+      const last = controls[controls.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    };
+    window.addEventListener('keydown', trapFocus);
+    return () => {
+      window.cancelAnimationFrame(frame);
+      window.removeEventListener('keydown', trapFocus);
+      previouslyFocused?.focus();
+    };
+  }, [endDayConfirmOpen, game.crisis?.id, dayTransition?.day]);
+
+  useEffect(() => {
     const reconciled = reconcileDecisionHistory(game);
     if (reconciled.changed) {
       setGame({ ...game, decisionHistory: reconciled.decisionHistory });
@@ -420,6 +459,7 @@ function App() {
 
   const sector = useMemo(() => game.sectors.find((s) => s.id === selectedSector) ?? game.sectors[0], [game.sectors, selectedSector]);
   const dynamicBreencast = useMemo(() => buildDynamicBreencast(game), [game]);
+  const propagandaNetworkLabel = useMemo(() => getPropagandaNetworkLabel(game.timeline), [game.timeline]);
   const timelinePreset = useMemo(() => getTimelinePreset(game.timeline), [game.timeline]);
   const atmosphereProfile = useMemo(() => getAtmosphereProfile(game), [game]);
   const audioDirector = useMemo(() => buildSyntheticAudioDirector(game, atmosphereProfile), [game, atmosphereProfile]);
@@ -437,7 +477,11 @@ function App() {
   }
 
   function withIssuedOrder(next: GameState, actionId: string, label: string, cost = 1): GameState {
-    return { ...next, dailyOrders: spendDailyOrder(game.dailyOrders, actionId, label, cost) };
+    return {
+      ...next,
+      onboarding: recordOnboardingAction(next.onboarding, actionId),
+      dailyOrders: spendDailyOrder(game.dailyOrders, actionId, label, cost),
+    };
   }
 
   function commitIssuedOrder(actionId: string, label: string, next: GameState, cost = 1) {
@@ -469,7 +513,7 @@ function App() {
     const selectedTimeline = shouldUseCampaign ? campaign.recommendedTimeline : timelineInput;
     const selectedProfile = shouldUseCampaign ? campaign.recommendedProfile : profileInput;
     const selectedCity = (cityInput.trim() || (shouldUseCampaign ? campaign.recommendedCity : newGameIntakeDoctrines[newGameDoctrineInput]?.citySuggestion) || '17').replace(/^City\s*/i, '');
-    const next = createInitialGame(selectedCity, selectedScenario, selectedTimeline, selectedProfile, campaignInput, difficultyInput);
+    const next = createInitialGame(selectedCity, selectedScenario, selectedTimeline, selectedProfile, campaignInput, difficultyInput, difficultyInput === 'custom' ? customDifficultyScalars : undefined);
     setGame({
       ...next,
       administratorAvatar: administratorAvatarInput,
@@ -561,7 +605,9 @@ function App() {
       purge: { stats: { xen: -10, rebel: -10, stability: -12, fear: 16, loyalty: -18, civilianLosses: Math.ceil(sector.population * 0.24) }, sector: { status: 'Bombardé', xen: 0, rebel: 0, population: Math.ceil(sector.population * 0.76), infrastructure: clamp(sector.infrastructure - 45) }, log: `Purge thermique / bombardement local sur ${sector.name}.` },
       propaganda: { stats: { info: 10, fatigue: 4, loyalty: -2 }, sector: { fear: clamp(sector.fear + 4), loyalty: clamp(sector.loyalty + 2), surveillance: clamp(sector.surveillance + 5) }, log: `Breencast local imposé sur ${sector.name}.` },
     } as const;
-    const selected = effects[action];
+    const selected = action === 'propaganda'
+      ? { ...effects[action], log: `${propagandaNetworkLabel} local impose sur ${sector.name}.` }
+      : effects[action];
     const actionId = `sector:${sector.id}:${action}`;
     const cost = action === 'seal' || action === 'purge' ? 2 : 1;
     if (!canIssueOrder(actionId, selected.log, cost)) return;
@@ -574,7 +620,7 @@ function App() {
   }
 
   function globalAction(action: 'breencast' | 'ration_plus' | 'ration_cut' | 'advisor' | 'shadow_help') {
-    if (action === 'advisor' && !game.uiuxProgression.unlocked.advisor_channel) {
+    if (action === 'advisor' && !isUiuxCapabilityActive(game.uiuxProgression, 'advisor_channel')) {
       setGame({ ...game, log: [`JOUR ${String(game.day).padStart(3, '0')} - Inspection Advisor refusee : canal direct non autorise.`, ...game.log].slice(0, 80) });
       return;
     }
@@ -585,6 +631,7 @@ function App() {
       advisor: { effects: { citadel: 10, suspicion: 14, fear: 12, combine: 8 }, log: 'Inspection Advisor demandée. Autorité renforcée, surveillance personnelle accrue.' },
       shadow_help: { effects: { loyalty: 9, rebel: 6, suspicion: 16, xen: -4, civilianLosses: -20 }, log: 'Aide clandestine à des civils via réseau médical non déclaré.' },
     } satisfies Record<string, { effects: Partial<Stats>; log: string }>;
+    if (action === 'breencast') map.breencast.log = `${propagandaNetworkLabel} dynamique [${dynamicBreencast.recommended.title}] : ${randomPropaganda}`;
     const actionId = `global:${action}`;
     const cost = action === 'advisor' ? 2 : 1;
     if (!canIssueOrder(actionId, map[action].log, cost)) return;
@@ -636,7 +683,7 @@ function App() {
       setGame({ ...game, tab: 'progression', log: [`JOUR ${String(game.day).padStart(3, '0')} - Dossier ${tab} verrouille : autorisation requise.`, ...game.log].slice(0, 100) });
       return;
     }
-    setGame({ ...game, tab: target });
+    setGame({ ...game, tab: target, onboarding: recordOnboardingTabVisit(game.onboarding, target) });
   }
 
   function requestNextDay() {
@@ -647,11 +694,20 @@ function App() {
     nextDay();
   }
 
+  function toggleUiuxUnlock(id: UiuxUnlockId, enabled: boolean) {
+    const result = setUiuxUnlockActive(game.uiuxProgression, id, enabled);
+    setGame({
+      ...game,
+      uiuxProgression: result.state,
+      log: [`JOUR ${String(game.day).padStart(3, '0')} - ${result.message}`, ...game.log].slice(0, 100),
+    });
+  }
+
   function nextDay() {
     setEndDayConfirmOpen(false);
     setActionFeedback(null);
-    const xenUnlocked = game.uiuxProgression.unlocked.xen_bioscan;
-    const novaUnlocked = game.uiuxProgression.unlocked.nova_prospekt_link;
+    const xenUnlocked = isUiuxCapabilityActive(game.uiuxProgression, 'xen_bioscan');
+    const novaUnlocked = isUiuxCapabilityActive(game.uiuxProgression, 'nova_prospekt_link');
     const propagation = simulateConnectedPropagation({
       sectors: game.sectors,
       units: game.units,
@@ -972,7 +1028,7 @@ function App() {
       stats,
       day: game.day,
       timeline: game.timeline,
-      unlocked: uiuxProgressionDaily.state.unlocked,
+      unlocked: uiuxProgressionDaily.state.active,
       crisisHistory: game.crisisHistory,
     });
     const nextReport: Report = {
@@ -1036,7 +1092,10 @@ function App() {
       quarantineZones: quarantineZoneDaily.quarantineZones,
       xenResearch: xenResearchDaily.xenResearch,
       xenCatastrophes: xenCatastropheDaily.xenCatastrophes,
-      campaign: campaignDaily.campaign,
+      campaign: finalVerdict ? campaignDaily.campaign : {
+        ...campaignDaily.campaign,
+        dayInCampaign: getNextCampaignDay(campaignDaily.campaign.dayInCampaign, campaignDaily.campaign.durationDays, Boolean(finalVerdict)),
+      },
       campaignMission: missionDaily.campaignMission,
       difficultySettings: difficultyDaily.difficultySettings,
       majorStoryEvents: majorStoryDaily.majorStoryEvents,
@@ -1162,7 +1221,7 @@ function App() {
 
 
   function activateCitadelDirectiveProtocol(node: CitadelDirectiveNode) {
-    if (node.branchId === 'advisor' && !game.uiuxProgression.unlocked.advisor_channel) {
+    if (node.branchId === 'advisor' && !isUiuxCapabilityActive(game.uiuxProgression, 'advisor_channel')) {
       setGame({ ...game, tab: 'progression', log: [`JOUR ${String(game.day).padStart(3, '0')} - Protocole Advisor refuse : canal direct requis.`, ...game.log].slice(0, 80) });
       return;
     }
@@ -1177,6 +1236,11 @@ function App() {
 
 
   function researchCombineTechnology(node: CombineTechnologyNode) {
+    const timelineConflict = getTechnologyTimelineConflict(node, game.timeline);
+    if (timelineConflict) {
+      setGame({ ...game, log: [`JOUR ${String(game.day).padStart(3, '0')} - Recherche ${node.title} refusee : ${timelineConflict}`, ...game.log].slice(0, 80) });
+      return;
+    }
     const requiredUnlock = node.branchId === 'overwatch' || node.branchId === 'airwatch'
       ? 'ota_command'
       : node.branchId === 'biocontrol'
@@ -1184,7 +1248,7 @@ function App() {
         : node.branchId === 'nova'
           ? 'nova_prospekt_link'
           : null;
-    if (requiredUnlock && !game.uiuxProgression.unlocked[requiredUnlock]) {
+    if (requiredUnlock && !isUiuxCapabilityActive(game.uiuxProgression, requiredUnlock)) {
       setGame({ ...game, tab: 'progression', log: [`JOUR ${String(game.day).padStart(3, '0')} - Recherche ${node.title} refusee : autorisation ${requiredUnlock} requise.`, ...game.log].slice(0, 80) });
       return;
     }
@@ -1192,7 +1256,7 @@ function App() {
     commitIssuedOrder(`technology:${node.id}`, result.lines[0], {
       ...game,
       stats: addStat(game.stats, result.statsDelta),
-      units: result.units,
+      units: filterUnitsForTimeline(result.units, game.timeline),
       sectors: result.sectors,
       combineTechnology: result.technology,
       log: [`JOUR ${String(game.day).padStart(3, '0')} — ${result.lines[0]}`, ...result.lines.slice(1), ...game.log].slice(0, 80),
@@ -1539,6 +1603,13 @@ function App() {
 
   function completeOnboardingChapter(chapterId: OnboardingChapterId) {
     const nextOnboarding = completeOnboardingChapterState(game.onboarding, chapterId);
+    if (nextOnboarding === game.onboarding) {
+      setGame({
+        ...game,
+        log: [`JOUR ${String(game.day).padStart(3, '0')} — Tutoriel COAN : ouvrez au moins un module lié avant de valider ce dossier.`, ...game.log].slice(0, 80),
+      });
+      return;
+    }
     setGame({
       ...game,
       onboarding: nextOnboarding,
@@ -1548,28 +1619,16 @@ function App() {
 
   function runOnboardingFirstDayScript() {
     const result = resolveOnboardingFirstDay(game);
-    const targetSector = [...game.sectors].sort((a, b) => b.rebel - a.rebel)[0];
-    const rationResult = changeRationPolicy(game.rationEconomy, 'standard');
-    const broadcast = breencastStrategies.find((strategy) => strategy.id === 'civic_continuity') ?? breencastStrategies[0];
-    let orders = game.dailyOrders;
-    orders = spendDailyOrder(orders, 'tutorial:inspection', `Inspection : ${targetSector.name}`);
-    orders = spendDailyOrder(orders, 'tutorial:ration', 'Rationnement standard');
-    orders = spendDailyOrder(orders, 'tutorial:breencast', broadcast.name);
+    if (result.onboarding === game.onboarding) {
+      navigateToTab(result.suggestedTab);
+      return;
+    }
     setGame({
       ...game,
-      stats: addStat(addStat(addStat(game.stats, result.statsDelta), rationResult.statsDelta), broadcast.effects),
-      sectors: game.sectors.map((item) => item.id === targetSector.id ? { ...item, surveillance: clamp(item.surveillance + 6), rebel: clamp(item.rebel - 4) } : item),
-      rationEconomy: rationResult.rationEconomy,
-      reportPolicy: 'truthful',
-      dailyOrders: orders,
       onboarding: result.onboarding,
-      tab: result.suggestedTab === 'dashboard' ? 'command_deck_v2' : result.suggestedTab,
+      tab: 'onboarding',
       log: [
         `JOUR ${String(game.day).padStart(3, '0')} — ${result.logLines[0]}`,
-        `Inspection guidée : ${targetSector.name}, surveillance renforcée et pression Lambda réduite.`,
-        rationResult.lines[0],
-        `BreenCast guidé : ${broadcast.name}.`,
-        'Politique de rapport prudente : transmission factuelle active.',
         ...result.logLines.slice(1),
         ...game.log,
       ].slice(0, 100),
@@ -1611,7 +1670,7 @@ function App() {
             const status = buildTerminalInterfaceStatus(game, id);
             const target = getTerminalSwitchTarget(id);
             const locked = !isUiuxTabUnlocked(game.uiuxProgression, target);
-            return <button key={id} disabled={locked} title={locked ? 'Autorisation requise dans Requisitions' : terminal.label} className={`terminal-switch tone-${terminal.tone} ${activeTerminal.id === id ? 'active' : ''}`} onClick={() => navigateToTab(target)}>
+            return <button key={id} aria-label={locked ? `${terminal.label}, verrouillé. Ouvrir Requisitions.` : terminal.label} title={locked ? 'Autorisation requise dans Requisitions' : terminal.label} className={`terminal-switch tone-${terminal.tone} ${activeTerminal.id === id ? 'active' : ''} ${locked ? 'locked' : ''}`} onClick={() => navigateToTab(target)}>
               <strong>{terminal.shortLabel}</strong>
               <span>{locked ? 'LOCK / requisition' : `${status.integrity}% / risque ${status.risk}%`}</span>
             </button>;
@@ -1622,7 +1681,7 @@ function App() {
           {primaryNav.map(([id, label]) => {
             const locked = !isUiuxTabUnlocked(game.uiuxProgression, id);
             const Icon = primaryNavIcons[id] ?? Gauge;
-            return <button key={id} disabled={locked} title={locked ? 'Autorisation requise dans Requisitions' : (navHintMap.get(id) ?? label)} className={`sidebar-primary-link ${game.tab === id ? 'active' : ''} ${locked ? 'locked' : ''}`} onClick={() => navigateToTab(id)}>
+            return <button key={id} aria-label={locked ? `${label}, verrouillé. Ouvrir Requisitions.` : label} title={locked ? 'Autorisation requise dans Requisitions' : (navHintMap.get(id) ?? label)} className={`sidebar-primary-link ${game.tab === id ? 'active' : ''} ${locked ? 'locked' : ''}`} onClick={() => navigateToTab(id)}>
               <Icon size={17} /><span>{label}</span>{locked && <LockKeyhole size={13} />}
             </button>;
           })}
@@ -1636,7 +1695,7 @@ function App() {
                 <div>
                   {group.items.map(([id, label]) => {
                     const locked = !isUiuxTabUnlocked(game.uiuxProgression, id);
-                    return <button key={id} disabled={locked} title={locked ? 'Autorisation requise dans Requisitions' : (navHintMap.get(id) ?? label)} className={`${game.tab === id ? 'active' : ''} ${locked ? 'locked' : ''}`} onClick={() => navigateToTab(id)}>
+                    return <button key={id} aria-label={locked ? `${label}, verrouillé. Ouvrir Requisitions.` : label} title={locked ? 'Autorisation requise dans Requisitions' : (navHintMap.get(id) ?? label)} className={`${game.tab === id ? 'active' : ''} ${locked ? 'locked' : ''}`} onClick={() => navigateToTab(id)}>
                       <span>{label}</span>{locked && <LockKeyhole size={12} />}
                     </button>;
                   })}
@@ -1665,7 +1724,7 @@ function App() {
             <span>REQ {game.uiuxProgression.resources.requisition}</span>
             <span className={game.dailyOrders.remaining === 0 ? 'danger' : ''}>ORDRES {game.dailyOrders.remaining}/{game.dailyOrders.total}</span>
             <span className={game.stats.rebel > 65 ? 'danger' : ''}><Radio size={13} /> Λ {game.stats.rebel}%</span>
-            <button className="telemetry-toggle" aria-expanded={telemetryOpen} onClick={() => setTelemetryOpen((open) => !open)}><Gauge size={15} /> {telemetryOpen ? 'Masquer' : 'Télémétrie'}</button>
+            <button className="telemetry-toggle" aria-expanded={telemetryOpen} onClick={() => setTelemetryOpen((open) => { if (open) setTelemetryDetailOpen(false); return !open; })}><Gauge size={15} /> {telemetryOpen ? 'Masquer' : 'Télémétrie'}</button>
             <button className="meta-menu-button" title="Menu principal" aria-label="Ouvrir le menu principal" onClick={returnToMainMenu}><Home size={15} /></button>
             <button className="end-day" title={`Clôturer le jour ${game.day}`} onClick={requestNextDay} disabled={!!game.ending || !!game.crisis || !!dayTransition}>Clôturer la journée</button>
           </div>
@@ -1707,51 +1766,59 @@ function App() {
             <strong>{uxPolish.headline}</strong>
           </div>
           <div className="ux-command-routes">
-            {uxPolish.quickRoutes.slice(0, 5).map((route) => <button key={route.id} disabled={!isUiuxTabUnlocked(game.uiuxProgression, route.targetTab)} title={route.reason} className={`tone-${route.tone} ${route.active ? 'active' : ''}`} onClick={() => navigateToTab(route.targetTab)}>
+            {uxPolish.quickRoutes.slice(0, 5).map((route) => {
+              const locked = !isUiuxTabUnlocked(game.uiuxProgression, route.targetTab);
+              return <button key={route.id} aria-label={locked ? `${route.shortLabel}, verrouillé. Ouvrir Requisitions.` : route.shortLabel} title={route.reason} className={`tone-${route.tone} ${route.active ? 'active' : ''} ${locked ? 'locked' : ''}`} onClick={() => navigateToTab(route.targetTab)}>
               <b>{route.shortLabel}</b>
               <span>{route.priority}</span>
-            </button>)}
+              </button>;
+            })}
           </div>
         </section>
 
-        <section className="stats-grid">
+        <section className="stats-grid telemetry-priority-grid" aria-label="Indicateurs prioritaires">
           <Stat label="Stabilité" value={game.stats.stability} />
-          <Stat label="Loyauté" value={game.stats.loyalty} />
-          <Stat label="Peur" value={game.stats.fear} dangerHigh />
           <Stat label="Rébellion" value={game.stats.rebel} dangerHigh />
-          <Stat label={game.uiuxProgression.unlocked.xen_bioscan ? 'Xen' : 'Bio-signal masque'} value={game.uiuxProgression.unlocked.xen_bioscan ? game.stats.xen : 0} dangerHigh xen />
-          <Stat label="Combine" value={game.stats.combine} />
+          <Stat label={isUiuxCapabilityActive(game.uiuxProgression, 'xen_bioscan') ? 'Xen' : 'Bio-signal masqué'} value={isUiuxCapabilityActive(game.uiuxProgression, 'xen_bioscan') ? game.stats.xen : 0} dangerHigh xen />
           <Stat label="Production" value={game.stats.production} />
           <Stat label="Citadelle" value={game.stats.citadel} />
+          <Stat label="Suspicion" value={game.stats.suspicion} dangerHigh />
+          <Stat label="Mandat" value={game.campaignMission.mandateScore} />
+          <div className="stat"><span>Rations</span><b>{game.stats.rations}</b></div>
+        </section>
+        <button type="button" className="telemetry-detail-toggle" aria-expanded={telemetryDetailOpen} onClick={() => setTelemetryDetailOpen((open) => !open)}>
+          <ChevronDown size={15} /> {telemetryDetailOpen ? 'Masquer les systèmes secondaires' : 'Afficher les systèmes secondaires'}
+        </button>
+        {telemetryDetailOpen && <section className="stats-grid telemetry-detail-grid" aria-label="Indicateurs systèmes secondaires">
+          <Stat label="Loyauté" value={game.stats.loyalty} />
+          <Stat label="Peur" value={game.stats.fear} dangerHigh />
+          <Stat label="Combine" value={game.stats.combine} />
           <Stat label="Info" value={game.stats.info} />
           <Stat label="Fatigue" value={game.stats.fatigue} dangerHigh />
-          <Stat label="Suspicion" value={game.stats.suspicion} dangerHigh />
           <Stat label="Audit" value={game.auditHeat ?? 0} dangerHigh />
           <Stat label="Difficulté" value={game.difficultySettings.projectedThreat} dangerHigh />
           <Stat label="Campagne" value={game.campaign.pressure} dangerHigh />
-          <Stat label="Mandat obj." value={game.campaignMission.mandateScore} />
           <Stat label="Risque obj." value={game.campaignMission.failureRisk} dangerHigh />
           <Stat label="Événements majeurs" value={game.majorStoryEvents.citywideHeat} dangerHigh />
-          <div className="stat"><span>Rations</span><b>{game.stats.rations}</b></div>
           <Stat label="Faim" value={game.rationEconomy.hungerIndex} dangerHigh />
           <Stat label="Marché noir" value={game.rationEconomy.blackMarketIndex} dangerHigh />
           <Stat label="Conformité" value={game.population.complianceIndex} />
           <Stat label="Sympathie Λ" value={game.population.lambdaSupportIndex} dangerHigh />
           <Stat label="Vortessence" value={game.vortigaunts.vortessenceCoherence} dangerHigh />
           <Stat label="Biotics" value={game.vortigaunts.bioticPressure} dangerHigh />
-          {game.uiuxProgression.unlocked.xen_bioscan && <Stat label="Exposition bio" value={game.population.xenExposureIndex} dangerHigh xen />}
-          {game.uiuxProgression.unlocked.xen_bioscan && <Stat label="Mutations" value={game.xenMutation.outbreakRisk} dangerHigh xen />}
-          {game.uiuxProgression.unlocked.xen_bioscan && <Stat label="Conversion" value={game.xenMutation.hostConversionIndex} dangerHigh xen />}
-          {game.uiuxProgression.unlocked.xen_bioscan && <Stat label="R&D Xen" value={game.xenResearch.labIncidentRisk} dangerHigh xen />}
+          {isUiuxCapabilityActive(game.uiuxProgression, 'xen_bioscan') && <Stat label="Exposition bio" value={game.population.xenExposureIndex} dangerHigh xen />}
+          {isUiuxCapabilityActive(game.uiuxProgression, 'xen_bioscan') && <Stat label="Mutations" value={game.xenMutation.outbreakRisk} dangerHigh xen />}
+          {isUiuxCapabilityActive(game.uiuxProgression, 'xen_bioscan') && <Stat label="Conversion" value={game.xenMutation.hostConversionIndex} dangerHigh xen />}
+          {isUiuxCapabilityActive(game.uiuxProgression, 'xen_bioscan') && <Stat label="R&D Xen" value={game.xenResearch.labIncidentRisk} dangerHigh xen />}
           <Stat label="Tech" value={game.combineTechnology.scanEfficiency} />
           <Stat label="Dette tech" value={game.combineTechnology.maintenanceDebt} dangerHigh />
-        </section>
+        </section>}
         </div>}
 
         {game.ending && !preSession && <div className="ending"><div><h2>PROTOCOLE DE FIN ACTIVÉ</h2><p>{game.finalVerdict ? `${game.finalVerdict.title} — ${game.finalVerdict.subtitle}` : (endings[game.ending] ?? endings.replaced).replaceAll('{city}', game.city)}</p></div><button onClick={returnToMainMenu}><Home size={16} /> Retour au menu</button></div>}
 
         {!preSession && endDayConfirmOpen && !game.crisis && !dayTransition && <div className="confirmation-modal">
-          <section className="confirmation-box" role="dialog" aria-modal="true" aria-labelledby="end-day-confirm-title" aria-describedby="end-day-confirm-description">
+          <section className="confirmation-box" role="dialog" aria-modal="true" aria-labelledby="end-day-confirm-title" aria-describedby="end-day-confirm-description" data-modal-surface="true" tabIndex={-1}>
             <span className="brand-kicker">FIN DE CYCLE / JOUR {String(game.day).padStart(3, '0')}</span>
             <h2 id="end-day-confirm-title">{game.dailyOrders.remaining} {game.dailyOrders.remaining > 1 ? 'ordres seront abandonnés' : 'ordre sera abandonné'}</h2>
             <p id="end-day-confirm-description">Le passage au jour {game.day + 1} réinitialise le quota. Les ordres inutilisés ne sont ni stockés ni convertis en ressources.</p>
@@ -1762,12 +1829,12 @@ function App() {
           </section>
         </div>}
 
-        {dayTransition && <div className="day-transition" role="status" aria-live="polite">
+        {dayTransition && <div className="day-transition" role="dialog" aria-modal="true" aria-labelledby="day-transition-title" aria-describedby="day-transition-description">
           <div className="day-transition-scan" />
-          <div className="day-transition-content">
+          <div className="day-transition-content" data-modal-surface="true" tabIndex={-1}>
             <span className="brand-kicker">CYCLE ADMINISTRATIF SYNCHRONISÉ</span>
-            <h2>JOUR {String(dayTransition.day).padStart(3, '0')}</h2>
-            <p>{dayTransition.crisisTitle ? `Alerte en attente : ${dayTransition.crisisTitle}` : `Directive active : ${dayTransition.directive}`}</p>
+            <h2 id="day-transition-title">JOUR {String(dayTransition.day).padStart(3, '0')}</h2>
+            <p id="day-transition-description" aria-live="polite">{dayTransition.crisisTitle ? `Alerte en attente : ${dayTransition.crisisTitle}` : `Directive active : ${dayTransition.directive}`}</p>
             <div className="day-transition-deltas">
               <DayDelta label="Stabilité" value={dayTransition.stability} inverse />
               <DayDelta label="Lambda" value={dayTransition.rebel} />
@@ -1780,8 +1847,8 @@ function App() {
 
         {!preSession && game.crisis && !dayTransition && (
           <div className="crisis-modal">
-            <div className="crisis-box" role="dialog" aria-modal="true" aria-labelledby="crisis-dialog-title">
-              <img className="crisis-event-visual" src={getCrisisVisual(game.crisis.type)} alt="" aria-hidden="true" />
+            <div className="crisis-box" role="dialog" aria-modal="true" aria-labelledby="crisis-dialog-title" data-modal-surface="true" tabIndex={-1}>
+                <img className="crisis-event-visual" src={getCrisisVisual(game.crisis)} alt="" aria-hidden="true" />
               <span className="brand-kicker">ALERTE {game.crisis.type}</span>
               <h2 id="crisis-dialog-title">{game.crisis.title}</h2>
               <p>{game.crisis.body}</p>
@@ -1824,6 +1891,8 @@ function App() {
           setCampaignInput={setCampaignInput}
           difficultyInput={difficultyInput}
           setDifficultyInput={setDifficultyInput}
+          customDifficultyScalars={customDifficultyScalars}
+          setCustomDifficultyScalar={(key, value) => setCustomDifficultyScalars((current) => ({ ...current, [key]: value }))}
           profileInput={profileInput}
           setProfileInput={setProfileInput}
           administratorAvatarInput={administratorAvatarInput}
@@ -1839,9 +1908,9 @@ function App() {
           cancelCreation={returnToMainMenu}
         />}
         {game.tab === 'prologue' && <CampaignPrologueScreen game={game} continueToTutorial={() => setGame({ ...game, tab: 'onboarding' })} />}
-        {game.tab === 'onboarding' && <OnboardingScreen game={game} completeChapter={completeOnboardingChapter} runFirstDayScript={runOnboardingFirstDayScript} setTab={(tab) => setGame({ ...game, tab })} />}
+        {game.tab === 'onboarding' && <OnboardingScreen game={game} completeChapter={completeOnboardingChapter} runFirstDayScript={runOnboardingFirstDayScript} setTab={navigateToTab} />}
         {game.tab === 'command_deck_v2' && <UiuxV2CommandDeck game={game} setTab={navigateToTab} />}
-        {game.tab === 'progression' && <UiuxProgressionPanel game={game} purchaseUnlock={buyUiuxUnlock} />}
+        {game.tab === 'progression' && <UiuxProgressionPanel game={game} purchaseUnlock={buyUiuxUnlock} toggleUnlock={toggleUiuxUnlock} />}
         {game.tab === 'campaigns' && <CampaignScreen game={game} />}
         {game.tab === 'major_events' && <MajorStoryEventsScreen game={game} operations={majorStoryOperations} changePolicy={changeMajorStoryPolicy} applyOperation={applyMajorStoryOperation} />}
         {game.tab === 'finale' && <FinalVerdictScreen game={game} />}
@@ -1863,7 +1932,7 @@ function App() {
         {game.tab === 'xen_catastrophes' && <XenCatastropheScreen game={game} operations={xenCatastropheOperations} changePolicy={changeXenCatastrophePolicy} applyOperation={applyXenCatastropheOperation} />}
         {game.tab === 'rationing' && <RationingScreen game={game} globalAction={globalAction} operations={rationOperations} setPolicy={setRationPolicy} applyOperation={applyRationOperation} />}
         {game.tab === 'nova' && <NovaProspektPanel nova={game.novaProspekt} operations={novaOperations} applyOperation={applyNovaOperation} changePolicy={changeNovaPolicy} />}
-        {game.tab === 'propaganda' && <Propaganda dynamicBreencast={dynamicBreencast} strategies={breencastStrategies} globalAction={globalAction} applyStrategy={applyBreencastStrategy} />}
+        {game.tab === 'propaganda' && <Propaganda networkLabel={propagandaNetworkLabel} dynamicBreencast={dynamicBreencast} strategies={breencastStrategies} globalAction={globalAction} applyStrategy={applyBreencastStrategy} />}
         {game.tab === 'reports' && <Reports reports={game.reports} log={game.log} policy={game.reportPolicy} setPolicy={setReportPolicy} />}
         {game.tab === 'archives' && <ArchivesScreen game={game} eventSummary={eventSummary} />}
         {game.tab === 'video_archives' && <VideoArchivesScreen game={game} operations={videoArchiveOperations} changePolicy={changeVideoArchivePolicy} applyOperation={applyVideoArchiveOperation} />}
@@ -1951,6 +2020,10 @@ function Sectors({ game, selectedSector, setSelectedSector, sector, sectorAction
   const links = getNetworkLinks(game.sectors);
   const connected = getConnectedSectors(game.sectors, sector.id);
   const pressure = getSectorPressure(game.sectors, sector.id);
+  const networkLabel = getPropagandaNetworkLabel(game.timeline);
+  const garrison = Object.entries(sector.units)
+    .filter(([, count]) => count > 0)
+    .map(([unitId, count]) => ({ unit: game.units.find((item) => item.id === unitId), unitId, count }));
 
   return <section className="panel-grid map-layout">
     <div className="panel map-panel">
@@ -1972,7 +2045,13 @@ function Sectors({ game, selectedSector, setSelectedSector, sector, sectorAction
       </div>
       <div className="legend-grid"><span><i className="legend surface" /> Surface</span><span><i className="legend sewer" /> Égouts</span><span><i className="legend rail" /> Razor Train</span><span><i className="legend quarantine" /> Quarantaine/Xen</span><span><i className="legend citadel" /> Citadel</span></div>
     </div>
-    <div className="panel sector-detail"><span className="brand-kicker">Dossier secteur connecté</span><h2>{sector.name}</h2><p>{sector.role}</p><p>{sector.notes}</p><div className="mini-grid"><span>Population <b>{sector.population}</b></span><span>Zone <b>{sector.zone}</b></span><span>Valeur stratégique <b>{sector.strategicValue}%</b></span><span>Goulot <b>{sector.chokePoint ? 'Oui' : 'Non'}</b></span><span>Surveillance <b>{sector.surveillance}%</b></span><span>Infrastructure <b>{sector.infrastructure}%</b></span><span>Loyauté <b>{sector.loyalty}%</b></span><span>Peur <b>{sector.fear}%</b></span></div><div className="pressure-grid"><span>Pression Lambda voisine <b>{pressure.rebelPressure}%</b></span><span>Pression Xen voisine <b>{pressure.xenPressure}%</b></span><span>Isolement hors contrôle Combine <b>{pressure.combineIsolation}%</b></span><span>Route la plus risquée <b>{pressure.highestRiskRoute}%</b></span></div><h3>Connexions opérationnelles</h3><div className="route-list">{connected.map(({ sector: target, connection }) => <button key={`${target.id}-${connection.label}`} onClick={() => setSelectedSector(target.id)}><strong>{target.name}</strong><span>{connection.label} — {connection.type} — contrôle {connection.controlledBy} — risque {connection.risk}%</span></button>)}</div><div className="lore-note">{pressure.notes.map((note) => <p key={note}>▸ {note}</p>)}</div><div className="actions"><button onClick={() => sectorAction('curfew')}>Couvre-feu</button><button onClick={() => sectorAction('raid')}>Raid CP</button><button onClick={() => sectorAction('quarantine')}>Quarantaine</button><button onClick={() => sectorAction('seal')}>Sceller</button><button onClick={() => sectorAction('purge')}>Purge</button><button onClick={() => sectorAction('propaganda')}>Breencast local</button></div><h3>Déploiement rapide</h3><div className="actions">{game.units.filter((u) => u.reserve > 0).slice(0, 8).map((u) => <button key={u.id} onClick={() => deploy(u)}>{u.name} ({u.reserve})</button>)}</div></div>
+    <div className="panel sector-detail"><span className="brand-kicker">Dossier secteur connecté</span><h2>{sector.name}</h2><p>{sector.role}</p><p>{sector.notes}</p><div className="mini-grid"><span>Population <b>{sector.population}</b></span><span>Zone <b>{sector.zone}</b></span><span>Valeur stratégique <b>{sector.strategicValue}%</b></span><span>Goulot <b>{sector.chokePoint ? 'Oui' : 'Non'}</b></span><span>Surveillance <b>{sector.surveillance}%</b></span><span>Infrastructure <b>{sector.infrastructure}%</b></span><span>Loyauté <b>{sector.loyalty}%</b></span><span>Peur <b>{sector.fear}%</b></span></div><div className="pressure-grid"><span>Pression Lambda voisine <b>{pressure.rebelPressure}%</b></span><span>Pression Xen voisine <b>{pressure.xenPressure}%</b></span><span>Isolement hors contrôle Combine <b>{pressure.combineIsolation}%</b></span><span>Route la plus risquée <b>{pressure.highestRiskRoute}%</b></span></div><h3>Connexions opérationnelles</h3><div className="route-list">{connected.map(({ sector: target, connection }) => <button key={`${target.id}-${connection.label}`} onClick={() => setSelectedSector(target.id)}><strong>{target.name}</strong><span>{connection.label} — {connection.type} — contrôle {connection.controlledBy} — risque {connection.risk}%</span></button>)}</div><div className="lore-note">{pressure.notes.map((note) => <p key={note}>▸ {note}</p>)}</div><div className="actions"><button onClick={() => sectorAction('curfew')}>Couvre-feu</button><button onClick={() => sectorAction('raid')}>Raid CP</button><button onClick={() => sectorAction('quarantine')}>Quarantaine</button><button onClick={() => sectorAction('seal')}>Sceller</button><button onClick={() => sectorAction('purge')}>Purge</button><button onClick={() => sectorAction('propaganda')}>{networkLabel} local</button></div><h3>Déploiement rapide</h3><div className="actions">{game.units.filter((u) => u.reserve > 0).slice(0, 8).map((u) => <button key={u.id} onClick={() => deploy(u)}>{u.name} ({u.reserve})</button>)}</div></div>
+    <div className="panel sector-garrison-panel">
+      <span className="brand-kicker">Garnison active</span>
+      <h2>Unités stationnées — {sector.name}</h2>
+      {garrison.length ? <div className="garrison-list">{garrison.map(({ unit, unitId, count }) => <span key={unitId}><strong>{unit?.name ?? unitId}</strong><b>{count}</b></span>)}</div> : <p className="muted">Aucune unité stationnée dans ce secteur.</p>}
+      <p className="lore-note">Ces unités influencent directement surveillance, propagation Lambda et confinement Xen.</p>
+    </div>
   </section>;
 }
 
@@ -2091,10 +2170,10 @@ function NovaProspektPanel({ nova, operations, applyOperation, changePolicy }: {
   </section>;
 }
 
-function Propaganda({ dynamicBreencast, strategies, globalAction, applyStrategy }: { dynamicBreencast: ReturnType<typeof buildDynamicBreencast>; strategies: typeof breencastStrategies; globalAction: (a: 'breencast' | 'ration_plus' | 'ration_cut' | 'advisor' | 'shadow_help') => void; applyStrategy: (strategyId: string) => void }) {
+function Propaganda({ networkLabel, dynamicBreencast, strategies, globalAction, applyStrategy }: { networkLabel: string; dynamicBreencast: ReturnType<typeof buildDynamicBreencast>; strategies: typeof breencastStrategies; globalAction: (a: 'breencast' | 'ration_plus' | 'ration_cut' | 'advisor' | 'shadow_help') => void; applyStrategy: (strategyId: string) => void }) {
   return <section className="panel-grid propaganda-layout">
     <div className="panel breencast-main">
-      <span className="brand-kicker">BreenCast synthesis node</span>
+      <span className="brand-kicker">{networkLabel} synthesis node</span>
       <h2>{dynamicBreencast.recommended.title}</h2>
       <blockquote>{dynamicBreencast.recommended.publicLine}</blockquote>
       <p className="lore-note"><b>Intention cachée :</b> {dynamicBreencast.recommended.hiddenIntent}</p>
@@ -2104,7 +2183,7 @@ function Propaganda({ dynamicBreencast, strategies, globalAction, applyStrategy 
         <span>Impact info <b>{dynamicBreencast.recommended.effects.info ?? 0}</b></span>
         <span>Risque social <b>{Math.max(0, (dynamicBreencast.recommended.effects.rebel ?? 0) + (dynamicBreencast.recommended.effects.fatigue ?? 0))}</b></span>
       </div>
-      <div className="actions"><button onClick={() => globalAction('breencast')}>Diffuser ce BreenCast</button><button onClick={() => globalAction('ration_cut')}>Associer au rationnement</button><button onClick={() => globalAction('advisor')}>Valider par Citadelle</button></div>
+      <div className="actions"><button onClick={() => globalAction('breencast')}>Diffuser via {networkLabel}</button><button onClick={() => globalAction('ration_cut')}>Associer au rationnement</button><button onClick={() => globalAction('advisor')}>Valider par Citadelle</button></div>
     </div>
 
     <div className="panel feed breencast-diagnosis">

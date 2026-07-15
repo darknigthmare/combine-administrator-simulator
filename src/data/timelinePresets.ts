@@ -45,7 +45,7 @@ export const timelinePresets: Record<string, TimelinePreset> = {
     directiveBias: ['info', 'rations', 'production'],
     eventBias: { rebellion: 0.9, xen: 0.9, citadel: 1.1, civil: 1.2, moral: 1 },
     availabilityNotes: ['Rationnement et logements assignés pleinement actifs.', 'Résistance encore fragmentée.', 'Premiers transferts réguliers vers complexes externes.'],
-    unlocks: ['BreenCast local constant', 'Checkpoints étendus', 'Marché noir naissant'],
+    unlocks: ['Réseau de propagande local constant', 'Checkpoints étendus', 'Marché noir naissant'],
   },
   alyx_era: {
     id: 'alyx_era',

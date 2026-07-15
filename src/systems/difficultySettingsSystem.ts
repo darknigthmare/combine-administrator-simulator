@@ -1,4 +1,4 @@
-import type { DifficultyPresetId, DifficultyScalarKey, DifficultySettingsState, GameState, Sector, Stats } from '../types/game';
+import type { DifficultyPresetId, DifficultyScalarKey, DifficultyScalars, DifficultySettingsState, GameState, Sector, Stats } from '../types/game';
 import { difficultyPresets, difficultyScalarLabels } from '../data/difficultySettings';
 
 const clamp = (value: number, min = 0, max = 100) => Math.max(min, Math.min(max, Math.round(value)));
@@ -19,17 +19,18 @@ export const difficultyScalarKeys: DifficultyScalarKey[] = [
   'reportAuditStrictness',
 ];
 
-export function createInitialDifficultySettings(presetId: DifficultyPresetId = 'standard_occupation'): DifficultySettingsState {
+export function createInitialDifficultySettings(presetId: DifficultyPresetId = 'standard_occupation', customScalars?: DifficultyScalars): DifficultySettingsState {
   const preset = difficultyPresets[presetId] ?? difficultyPresets.standard_occupation;
+  const scalars = presetId === 'custom' && customScalars ? { ...customScalars } : { ...preset.scalars };
   return {
     activePresetId: presetId,
     customName: presetId === 'custom' ? 'Profil custom COAN' : preset.name,
-    scalars: { ...preset.scalars },
+    scalars,
     lastAppliedDay: 0,
-    projectedThreat: calculateDifficultyThreat(preset.scalars),
-    auditModifier: calculateAuditModifier(preset.scalars),
-    dailyPressure: calculateDailyPressure(preset.scalars),
-    startSummary: buildStartSummary(presetId, preset.scalars),
+    projectedThreat: calculateDifficultyThreat(scalars),
+    auditModifier: calculateAuditModifier(scalars),
+    dailyPressure: calculateDailyPressure(scalars),
+    startSummary: buildStartSummary(presetId, scalars),
     log: [`Profil difficulté initialisé : ${preset.name}.`],
   };
 }

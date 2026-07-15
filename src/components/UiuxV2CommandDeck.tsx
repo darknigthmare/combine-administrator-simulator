@@ -55,7 +55,7 @@ export function UiuxV2CommandDeck({ game, setTab }: { game: GameState; setTab: (
       icon: Biohazard,
       title: 'Biosphère Xen',
       text: 'Quarantaines, mutations, recherche et catastrophes organiques.',
-      image: '/openai-visuals/unlocks/xen-bioscan.webp',
+      image: '/openai-visuals/unlocks/xen-bioscan-lore.webp',
       tab: 'xen',
       tone: 'xen',
       locked: !progression.unlocked.xen_bioscan,

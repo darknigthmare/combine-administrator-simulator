@@ -171,6 +171,7 @@ export type UiuxProgressionResources = {
 export type UiuxProgressionState = {
   resources: UiuxProgressionResources;
   unlocked: Record<UiuxUnlockId, boolean>;
+  active: Record<UiuxUnlockId, boolean>;
   phase: UiuxCampaignPhase;
   heat: number;
   bureaucraticLoad: number;
@@ -2534,6 +2535,8 @@ export type OnboardingState = {
   schemaVersion: string;
   activeTrackId: OnboardingTrackId;
   completedChapterIds: OnboardingChapterId[];
+  visitedTabs: TabId[];
+  completedFirstDayActionIds: string[];
   firstDayScriptArmed: boolean;
   firstDayScriptCompleted: boolean;
   intakeScore: number;
@@ -2578,6 +2581,7 @@ export type NewGameIntakeConfig = {
   timeline: TimelineId;
   profile: ProfileId;
   difficultyPresetId: DifficultyPresetId;
+  difficultyScalars?: DifficultyScalars;
   onboardingTrackId: OnboardingTrackId;
   useCampaignRecommendations: boolean;
 };

@@ -82,7 +82,7 @@ export function buildFinalVerdict(game: GameState, stats: Stats, sectors: Sector
     : 50;
   const vortigauntOutcome = clamp(avg(averageVortigauntCondition, 100 - game.vortigaunts.novaAbuseIndex, game.vortigaunts.xenInsight, 100 - game.vortigaunts.advisorInterest));
   const humanCostIndex = clamp(100 - civilianSurvival + game.civilProtection.abuseReportIndex * 0.4 + game.novaProspekt.humaneIndex * -0.2 + game.xenResearch.ethicalDebt * 0.35);
-  const mandateScore = clamp(avg(game.campaignMission.mandateScore, game.campaign.objectives.filter((objective) => objective.achieved).length * 18, 100 - game.campaignMission.failureRisk));
+  const mandateScore = clamp(avg(game.campaignMission.mandateScore, 100 - game.campaignMission.failureRisk));
   const finalScore = clamp(avg(combineControl, 100 - xenLegacy, 100 - lambdaLegacy, reportIntegrity, mandateScore, civilianSurvival));
 
   const axes: FinalVerdictAxis[] = [

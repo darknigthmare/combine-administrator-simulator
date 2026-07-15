@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
-import type { MouseEvent as ReactMouseEvent } from 'react';
+import type { KeyboardEvent as ReactKeyboardEvent, MouseEvent as ReactMouseEvent } from 'react';
+import { ExternalLink, Minus, PanelsTopLeft, Pin, PinOff, X } from 'lucide-react';
 import type { FloatingWindowContent, FloatingWindowPresetId, FloatingWindowRuntime, GameState, TabId } from '../types/game';
 import { defaultFloatingWindowLoadout } from '../data';
 import { buildFloatingWindowContent, buildFloatingWindowLauncher, getFloatingWindowPreset } from '../systems/floatingWindowSystem';
@@ -82,12 +83,20 @@ export function FloatingWindowLayer({ game, selectedSectorId, setTab }: { game: 
   const minimized = windows.filter((window) => window.minimized);
 
   return <div className="floating-window-layer" aria-label="COAN floating dossier operating system">
-    <button className={`floating-os-toggle ${dockOpen ? 'active' : ''}`} onClick={() => setDockOpen(!dockOpen)}>
-      <span>COAN OS</span>
+    <button
+      className={`floating-os-toggle ${dockOpen ? 'active' : ''}`}
+      aria-label={dockOpen ? 'Fermer le gestionnaire de dossiers COAN' : 'Ouvrir le gestionnaire de dossiers COAN'}
+      aria-expanded={dockOpen}
+      aria-controls="coan-floating-dock"
+      title="Gestionnaire de dossiers COAN"
+      onClick={() => setDockOpen(!dockOpen)}
+    >
+      <PanelsTopLeft size={18} aria-hidden="true" />
+      <span className="floating-os-label">COAN OS</span>
       <b>{windows.filter((window) => !window.minimized).length}</b>
     </button>
 
-    {dockOpen && <div className="floating-dock panel">
+    {dockOpen && <div className="floating-dock panel" id="coan-floating-dock">
       <div className="floating-dock-head">
         <div>
           <span className="brand-kicker">COAN WINDOW MANAGER</span>
@@ -152,21 +161,41 @@ function FloatingWindow({ runtime, content, focusWindow, closeWindow, minimizeWi
     window.addEventListener('mouseup', onUp);
   }
 
+  function handleWindowKeyDown(event: ReactKeyboardEvent<HTMLElement>) {
+    if (event.target !== event.currentTarget) return;
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      minimizeWindow(runtime.id);
+      return;
+    }
+    if (!['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown'].includes(event.key) || runtime.pinned) return;
+    event.preventDefault();
+    const step = event.shiftKey ? 32 : 12;
+    const xDelta = event.key === 'ArrowLeft' ? -step : event.key === 'ArrowRight' ? step : 0;
+    const yDelta = event.key === 'ArrowUp' ? -step : event.key === 'ArrowDown' ? step : 0;
+    const nextX = Math.max(244, Math.min(window.innerWidth - 260, runtime.x + xDelta));
+    const nextY = Math.max(56, Math.min(window.innerHeight - 180, runtime.y + yDelta));
+    moveWindow(runtime.id, nextX, nextY);
+  }
+
   return <article
     className={`floating-window panel accent-${content.accent} severity-${content.severity} ${runtime.pinned ? 'pinned' : ''}`}
     style={{ left: runtime.x, top: runtime.y, zIndex: runtime.z, width: runtime.width }}
     onMouseDown={() => focusWindow(runtime.id)}
+    onKeyDown={handleWindowKeyDown}
+    tabIndex={0}
+    aria-label={`${content.title}. Fenêtre déplaçable avec les flèches, Maj pour accélérer.`}
   >
     <div className="floating-window-titlebar" onMouseDown={startDrag}>
       <div>
         <span>{content.classification}</span>
         <strong>{content.title}</strong>
       </div>
-      <div className="floating-window-actions">
-        <button title="Épingler" onClick={(e) => { e.stopPropagation(); togglePin(runtime.id); }}>{runtime.pinned ? 'PIN' : 'pin'}</button>
-        <button title="Ouvrir le module" onClick={(e) => { e.stopPropagation(); setTab(content.relatedTab); }}>↗</button>
-        <button title="Réduire" onClick={(e) => { e.stopPropagation(); minimizeWindow(runtime.id); }}>–</button>
-        <button title="Fermer" onClick={(e) => { e.stopPropagation(); closeWindow(runtime.id); }}>×</button>
+      <div className="floating-window-actions" onMouseDown={(event) => event.stopPropagation()}>
+        <button title={runtime.pinned ? 'Désépingler' : 'Épingler'} aria-label={runtime.pinned ? 'Désépingler la fenêtre' : 'Épingler la fenêtre'} onClick={(e) => { e.stopPropagation(); togglePin(runtime.id); }}>{runtime.pinned ? <PinOff size={14} /> : <Pin size={14} />}</button>
+        <button title="Ouvrir le module" aria-label="Ouvrir le module lié" onClick={(e) => { e.stopPropagation(); setTab(content.relatedTab); }}><ExternalLink size={14} /></button>
+        <button title="Réduire" aria-label="Réduire la fenêtre" onClick={(e) => { e.stopPropagation(); minimizeWindow(runtime.id); }}><Minus size={14} /></button>
+        <button title="Fermer" aria-label="Fermer la fenêtre" onClick={(e) => { e.stopPropagation(); closeWindow(runtime.id); }}><X size={14} /></button>
       </div>
     </div>
     <div className="floating-window-body">

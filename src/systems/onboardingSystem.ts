@@ -27,6 +27,8 @@ export type OnboardingView = {
   recommendedNextChapter: OnboardingChapterId | null;
   chapters: typeof onboardingChapters;
   firstDayActions: typeof onboardingFirstDayActions;
+  firstDayProgress: Array<{ action: (typeof onboardingFirstDayActions)[number]; completed: boolean }>;
+  nextFirstDayAction: (typeof onboardingFirstDayActions)[number] | null;
   warnings: string[];
   recommendedTabs: TabId[];
 };
@@ -45,6 +47,8 @@ export function createInitialOnboardingState(input: { scenario: ScenarioId; time
     schemaVersion: onboardingVersion,
     activeTrackId,
     completedChapterIds: [],
+    visitedTabs: [],
+    completedFirstDayActionIds: [],
     firstDayScriptArmed: false,
     firstDayScriptCompleted: false,
     intakeScore: 0,
@@ -74,6 +78,8 @@ export function migrateOnboardingState(game: Partial<GameState>): OnboardingStat
     schemaVersion: onboardingVersion,
     activeTrackId,
     completedChapterIds,
+    visitedTabs: Array.from(new Set((existing.visitedTabs ?? []).filter(Boolean))),
+    completedFirstDayActionIds: Array.from(new Set(existing.completedFirstDayActionIds ?? [])),
     firstDayScriptArmed: Boolean(existing.firstDayScriptArmed),
     firstDayScriptCompleted: Boolean(existing.firstDayScriptCompleted),
     intakeScore: clamp(existing.intakeScore ?? Math.round((completedChapterIds.length / onboardingChapters.length) * 100)),
@@ -98,6 +104,7 @@ export function buildOnboardingView(game: GameState): OnboardingView {
     activeTrack.startingTab,
     ...onboardingChapters.filter((chapter) => !completed.has(chapter.id)).slice(0, 2).flatMap((chapter) => chapter.linkedTabs),
   ])).slice(0, 8);
+  const firstDayProgress = getOnboardingFirstDayProgress(game);
   return {
     version: onboardingVersion,
     activeTrackId: onboarding.activeTrackId,
@@ -110,6 +117,8 @@ export function buildOnboardingView(game: GameState): OnboardingView {
     recommendedNextChapter,
     chapters: onboardingChapters,
     firstDayActions: onboardingFirstDayActions,
+    firstDayProgress,
+    nextFirstDayAction: firstDayProgress.find((entry) => !entry.completed)?.action ?? null,
     warnings,
     recommendedTabs,
   };
@@ -127,9 +136,42 @@ export function selectOnboardingTrack(state: OnboardingState, trackId: Onboardin
   };
 }
 
+export function recordOnboardingTabVisit(state: OnboardingState, tab: TabId): OnboardingState {
+  if (state.visitedTabs.includes(tab)) return state;
+  return { ...state, visitedTabs: [...state.visitedTabs, tab] };
+}
+
+export function recordOnboardingAction(state: OnboardingState, actionId: string): OnboardingState {
+  const completedId = actionId.startsWith('policy:ration') || actionId.startsWith('ration:')
+    ? 'ration_small'
+    : actionId.startsWith('breencast:') || actionId === 'global:breencast' || actionId.endsWith(':propaganda')
+      ? 'breencast_soft'
+      : actionId.startsWith('policy:report')
+        ? 'report_policy'
+        : null;
+  if (!completedId || state.completedFirstDayActionIds.includes(completedId)) return state;
+  return { ...state, completedFirstDayActionIds: [...state.completedFirstDayActionIds, completedId] };
+}
+
+export function getOnboardingFirstDayProgress(game: GameState): OnboardingView['firstDayProgress'] {
+  const visited = new Set(game.onboarding.visitedTabs);
+  const completed = new Set(game.onboarding.completedFirstDayActionIds);
+  return onboardingFirstDayActions.map((action) => ({
+    action,
+    completed: action.id === 'read_coan'
+      ? visited.has('command_deck_v2')
+      : action.id === 'inspect_sector'
+        ? visited.has('sectors')
+        : action.id === 'finish_day'
+          ? game.day > 1
+          : completed.has(action.id),
+  }));
+}
+
 export function completeOnboardingChapter(state: OnboardingState, chapterId: OnboardingChapterId): OnboardingState {
   const chapter = onboardingChapters.find((entry) => entry.id === chapterId);
   if (!chapter) return state;
+  if (!chapter.linkedTabs.some((tab) => state.visitedTabs.includes(tab))) return state;
   const completed = Array.from(new Set([...state.completedChapterIds, chapterId]));
   return {
     ...state,
@@ -174,25 +216,14 @@ export function buildGuidedStartConfig(trackId: OnboardingTrackId, cityFallback:
 export function resolveOnboardingFirstDay(game: GameState): { onboarding: OnboardingState; statsDelta: Partial<Stats>; logLines: string[]; suggestedTab: TabId } {
   const view = buildOnboardingView(game);
   const active = view.activeTrack;
-  const statsDelta: Partial<Stats> = {
-    info: 4,
-    stability: game.stats.rebel > 60 || game.stats.xen > 60 ? 2 : 4,
-    fatigue: -2,
-    suspicion: active.id === 'sympathizer_double_game' ? 2 : -1,
-    rations: active.id === 'alyx_quarantine_intake' ? -40 : -25,
-  };
-  if (active.id === 'uprising_survival_cell') {
-    statsDelta.combine = 3;
-    statsDelta.fear = 2;
-    statsDelta.rebel = -2;
-  }
-  if (active.id === 'alyx_quarantine_intake') {
-    statsDelta.xen = -2;
-    statsDelta.info = 6;
-  }
-  if (active.id === 'nova_blackfile_intake') {
-    statsDelta.suspicion = 3;
-    statsDelta.fear = 2;
+  const statsDelta: Partial<Stats> = {};
+  if (view.firstDayProgress.some((entry) => !entry.completed)) {
+    return {
+      onboarding: game.onboarding,
+      statsDelta,
+      logLines: ['COAN Intake : la boucle de première journée doit être exécutée manuellement.'],
+      suggestedTab: view.nextFirstDayAction?.relatedTab ?? active.startingTab,
+    };
   }
   const onboarding = {
     ...game.onboarding,
@@ -204,15 +235,14 @@ export function resolveOnboardingFirstDay(game: GameState): { onboarding: Onboar
     intakeScore: 100,
     lastCompletedAt: now(),
     briefingLog: [
-      `Première journée scriptée exécutée : ${active.title}.`,
-      'Séquence appliquée : lecture COAN, inspection secteur, rationnement prudent, BreenCast mesuré, rapport prudent.',
+      `Première journée validée : ${active.title}.`,
+      'Séquence exécutée par le joueur : lecture COAN, inspection secteur, rationnement, propagande mesurée, rapport prudent et clôture de cycle.',
       ...game.onboarding.briefingLog,
     ].slice(0, 60),
   };
   const logLines = [
-    `COAN Intake : première journée guidée exécutée pour ${active.title}.`,
-    'Séquence : dashboard → secteur critique → rationnement modéré → BreenCast mesuré → politique rapport prudente.',
-    `Effet formation : info +${statsDelta.info ?? 0}, stabilité +${statsDelta.stability ?? 0}, fatigue ${statsDelta.fatigue ?? 0}.`,
+    `COAN Intake : première journée validée pour ${active.title}.`,
+    'Aucun bonus artificiel appliqué : les résultats proviennent des décisions réellement exécutées.',
   ];
   return { onboarding, statsDelta, logLines, suggestedTab: active.startingTab };
 }

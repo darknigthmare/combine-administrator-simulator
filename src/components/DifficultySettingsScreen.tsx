@@ -1,4 +1,4 @@
-import type { DifficultyPresetId, DifficultyScalarKey, GameState } from '../types/game';
+import type { DifficultyPresetId, DifficultyScalarKey, DifficultyScalars, GameState } from '../types/game';
 import { difficultyPresetOrder, difficultyPresets, difficultyScalarLabels } from '../data/difficultySettings';
 
 function ScalarControl({ scalarKey, value, onChange, readOnly }: { scalarKey: DifficultyScalarKey; value: number; onChange: (key: DifficultyScalarKey, value: number) => void; readOnly: boolean }) {
@@ -27,6 +27,17 @@ const scalarGroups: Array<{ title: string; subtitle: string; keys: DifficultySca
   { title: 'Économie civique', subtitle: 'Rations, production et fragilité sociale.', keys: ['rationScarcity', 'productionBase', 'citizenFragility'] },
   { title: 'Appareil de contrôle', subtitle: 'Civil Protection, Nova Prospekt et dette technologique.', keys: ['cpBrutality', 'novaPressure', 'technologyDebt'] },
 ];
+
+export function DifficultyScalarControls({ scalars, onChange, readOnly = false, compact = false }: { scalars: DifficultyScalars; onChange: (key: DifficultyScalarKey, value: number) => void; readOnly?: boolean; compact?: boolean }) {
+  return <div className={`difficulty-scalar-controls ${compact ? 'compact' : ''}`}>
+    {scalarGroups.map((group) => <details key={group.title} open={compact ? undefined : true}>
+      <summary><strong>{group.title}</strong><span>{group.subtitle}</span></summary>
+      <div className="difficulty-scalar-grid">
+        {group.keys.map((key) => <ScalarControl key={key} scalarKey={key} value={scalars[key]} onChange={onChange} readOnly={readOnly} />)}
+      </div>
+    </details>)}
+  </div>;
+}
 
 export function DifficultySettingsScreen({ game, applyPreset, updateScalar, resetCustom, readOnly = false }: { game: GameState; applyPreset: (presetId: DifficultyPresetId) => void; updateScalar: (key: DifficultyScalarKey, value: number) => void; resetCustom: () => void; readOnly?: boolean }) {
   const difficulty = game.difficultySettings;

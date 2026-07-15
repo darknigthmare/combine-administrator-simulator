@@ -15,10 +15,10 @@ Generated with the built-in OpenAI image tool for the UI/UX progression pass.
 ## Authorization visuals
 
 - `unlocks/ota-command.webp`: Overwatch Transhuman Arm deployment bay.
-- `unlocks/xen-bioscan.webp`: Xen bioscan containment chamber.
+- `unlocks/xen-bioscan-lore.webp`: Xen bioscan containment chamber with a recognizable Antlion specimen.
 - `unlocks/nova-channel.webp`: Nova Prospekt external intake facility.
-- `unlocks/xen-research.webp`: Combine blacksite extracting Antlion material and storing Xen specimens.
-- `unlocks/advisor-link.webp`: direct Advisor liaison chamber.
+- `unlocks/xen-research-lore.webp`: Combine blacksite containing canonical Antlion, Antlion grub, and Headcrab specimens.
+- `unlocks/advisor-link-lore.webp`: direct Advisor liaison chamber with a non-humanoid Advisor presence.
 - `unlocks/razor-train.webp`: black wedge-nosed Combine freight train on the human rail network.
 
 ## Administrator portraits
@@ -33,24 +33,24 @@ Generated with the built-in OpenAI image tool for the UI/UX progression pass.
 - `units/civil-protection.webp`: Civil Protection checkpoint officer.
 - `units/city-scanner.webp`: City Scanner surveillance patrol.
 - `units/overwatch-soldier.webp`: Overwatch Soldier deployment corridor.
-- `units/hunter.webp`: Hunter synth on an exterior Razor corridor.
-- `units/manhack.webp`: Manhack patrol inside a residential block.
+- `units/hunter-lore.webp`: three-legged Hunter synth with its paired cyan sensory plates on an exterior Razor corridor.
+- `units/manhack-lore.webp`: Manhack patrol with the correct cutting-blade chassis inside a residential block.
 - `units/combine-elite.webp`: Combine Elite in a secure Citadel passage.
 - `units/strider.webp`: Strider patrol on a City 17 avenue.
-- `units/gunship.webp`: biomechanical Gunship above an industrial canal.
-- `units/bioquarantine-team.webp`: Combine biosecurity team at a Xen containment barrier.
-- `units/advisor.webp`: Advisor inspection chamber inside the Citadel.
-- `units/combine-grunt.webp`: early-occupation quarantine infantry.
-- `units/combine-ordinal.webp`: Ordinal field commander using a tactical projection.
-- `units/combine-suppressor.webp`: heavy urban suppression specialist.
-- `units/dropship.webp`: biomechanical aerial transport carrying a deployment pod.
+- `units/gunship-lore.webp`: biomechanical Gunship with the canonical annular rear rotor above an industrial canal.
+- `units/bioquarantine-team-lore.webp`: HLA-style yellow Combine hazmat workers at a Xen containment barrier.
+- `units/advisor-lore.webp`: Advisor inspection chamber inside the Citadel with horizontal grub-like morphology.
+- `units/combine-grunt-lore.webp`: early-occupation quarantine infantry with HLA Grunt silhouette and equipment.
+- `units/combine-ordinal-lore.webp`: Ordinal field commander with radio pack, dark armor, and command markings.
+- `units/combine-suppressor-lore.webp`: heavy urban suppression specialist with HLA Suppressor armor and weapon profile.
+- `units/dropship-lore.webp`: twin-lobed biomechanical Dropship gripping a troop deployment pod.
 
 ## Classified person dossiers
 
 - `dossiers/lambda-courier.webp`: Lambda courier inside a canal safehouse.
 - `dossiers/suspected-citizen.webp`: suspected anti-citizen under checkpoint surveillance.
 - `dossiers/nova-detainee.webp`: Nova Prospekt resistance detainee at intake.
-- `dossiers/vortigaunt-biotic.webp`: captive Vortigaunt Biotic assigned to containment work.
+- `dossiers/vortigaunt-biotic-lore.webp`: captive three-armed Vortigaunt Biotic assigned to containment work.
 
 ## Crisis events
 

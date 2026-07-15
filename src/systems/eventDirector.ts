@@ -3,7 +3,7 @@
  * Chooses lore events according to the current city pressure instead of using a pure array pick.
  */
 import type { Crisis, Sector, Stats, TimelineId, UiuxUnlockId } from '../types/game';
-import { getTimelineThreatMultiplier } from './timelineSystem';
+import { getTimelineThreatMultiplier, isBreenCastTimeline } from './timelineSystem';
 
 type EventDirectorInput = {
   crises: Crisis[];
@@ -58,12 +58,21 @@ function crisisIsAvailable(crisis: Crisis, input: EventDirectorInput): boolean {
   if ((lore.includes('nova prospekt') || lore.includes('biotics')) && unlocked && !unlocked.nova_prospekt_link) return false;
   if (lore.includes('razor train') && unlocked && !unlocked.rail_network) return false;
   if (lore.includes('advisor') && unlocked && !unlocked.advisor_channel) return false;
+  if (lore.includes('breencast') && input.timeline && !isBreenCastTimeline(input.timeline)) return false;
   if ((lore.includes('ordinal') || lore.includes('suppressor') || lore.includes('combine grunt')) && input.timeline !== 'alyx_era') return false;
-  if (lore.includes('hunter') && !['post_nova_prospekt', 'uprising', 'citadel_collapse'].includes(input.timeline ?? '')) return false;
+  if (lore.includes('hunter') && input.timeline !== 'citadel_collapse') return false;
   return true;
 }
 
+export function getCrisisCadence({ stats, day }: Pick<EventDirectorInput, 'stats' | 'day'>) {
+  const pressure = Math.max(stats.rebel, stats.xen, stats.suspicion, stats.fatigue, 100 - stats.stability);
+  const chance = Math.min(95, Math.max(28, Math.round(28 + pressure * 0.62)));
+  const roll = Math.abs((day * 37 + stats.rebel * 3 + stats.xen * 5 + stats.suspicion * 7 + stats.info) % 100);
+  return { scheduled: roll < chance, chance, roll, pressure };
+}
+
 export function pickDirectedCrisis(input: EventDirectorInput): Crisis | null {
+  if (!getCrisisCadence(input).scheduled) return null;
   const { crises, sectors, stats, day, timeline } = input;
   const timelineFactor = (crisis: Crisis) => {
     if (!timeline) return 1;
