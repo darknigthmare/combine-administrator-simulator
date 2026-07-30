@@ -49,12 +49,12 @@ export const campaignPresets: Record<CampaignId, CampaignPreset> = {
     briefing: 'City 17 paraît administrativement stabilisée. Les citoyens se déplacent par trains de transit, les blocs résidentiels obéissent aux ration cards, et la Citadelle impose une présence verticale constante. Sous cette surface, Lambda cartographie les canaux et les Vortigaunts libres commencent à réapparaître autour des safehouses.',
     adminMandate: 'Préserver l’illusion d’une City modèle jusqu’à l’arrivée du prochain cycle d’inspection BreenCast.',
     openingReport: 'Le réseau de surveillance signale des anomalies mineures : radios courtes dans les canaux, files de rationnement plus lentes et fragments biologiques dans les égouts techniques.',
-    startingEffects: { stability: 8, combine: 10, info: 8, fear: 5, rebel: -6, xen: -4, suspicion: -5 },
+    startingEffects: { stability: 8, combine: 10, info: 8, fear: 3, rebel: -6, xen: -4, suspicion: -5, rations: 220 },
     dailyEffects: { fatigue: 1, rebel: 1, info: 1 },
     sectorEffects: [
       { sectorIds: ['station', 'admin', 'citadel'], surveillance: 18, rebel: -8, loyalty: -4, fear: 8 },
-      { sectorIds: ['canals', 'sewers'], rebel: 10, xen: 4, surveillance: -4 },
-      { sectorIds: ['res_a', 'res_b'], fear: 6, loyalty: -3 },
+      { sectorIds: ['canals', 'sewers'], rebel: 4, xen: 2, surveillance: -2 },
+      { sectorIds: ['res_a', 'res_b'], fear: 3, loyalty: -1 },
     ],
     objectives: [
       { id: 'model_city_mask', title: 'Maintenir le masque de City modèle', description: 'Stabilité au-dessus de 72 jusqu’à la fin du cycle.', metric: 'stability', mode: 'above', target: 72 },

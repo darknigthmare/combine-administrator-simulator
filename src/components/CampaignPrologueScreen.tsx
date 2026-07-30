@@ -17,17 +17,8 @@ export function CampaignPrologueScreen({ game, continueToTutorial }: { game: Gam
       <div className="prologue-copy">
         <span className="brand-kicker">CITADEL MANDATE / PROLOGUE</span>
         <h1>City {game.city}</h1>
-        <p>{campaign.briefing}</p>
+        <p className="prologue-briefing">{campaign.briefing}</p>
         <p className={`campaign-lore-status tone-${loreStatus.tone}`}><strong>{loreStatus.label}</strong> — {loreStatus.detail}</p>
-      </div>
-    </div>
-    <div className="prologue-dossier panel">
-      <img src={avatar.image} alt="" aria-hidden="true" />
-      <div>
-        <span className="brand-kicker">MANDAT ATTRIBUÉ</span>
-        <h2>{avatar.title}</h2>
-        <p>{campaign.openingReport}</p>
-        <div className="tag-row"><span>{campaign.name}</span><span>{timeline.name}</span><span>{difficulty.name}</span></div>
       </div>
     </div>
     <div className="panel prologue-order">
@@ -35,6 +26,15 @@ export function CampaignPrologueScreen({ game, continueToTutorial }: { game: Gam
       <h2>Le mandat est maintenant verrouillé</h2>
       <p>La campagne, la timeline, le profil et la difficulté ne pourront plus être remplacés pendant cette session. Le tutoriel COAN présente ensuite les outils disponibles avant la première décision.</p>
       <button className="primary" onClick={continueToTutorial}>Ouvrir le tutoriel COAN</button>
+    </div>
+    <div className="prologue-dossier panel">
+      <img src={avatar.image} alt="" aria-hidden="true" />
+      <div>
+        <span className="brand-kicker">MANDAT ATTRIBUÉ</span>
+        <h2>{avatar.title}</h2>
+        <p className="prologue-opening-report">{campaign.openingReport}</p>
+        <div className="tag-row"><span>{campaign.name}</span><span>{timeline.name}</span><span>{difficulty.name}</span></div>
+      </div>
     </div>
   </section>;
 }

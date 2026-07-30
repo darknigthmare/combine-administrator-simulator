@@ -3,6 +3,7 @@ import type { AtmosphereProfile, AtmosphereSettings, GameState } from '../types/
 export const defaultAtmosphereSettings: AtmosphereSettings = {
   enabled: true,
   audioEnabled: true,
+  musicEnabled: true,
   advancedAudioEnabled: true,
   ambientDrone: true,
   eventCues: true,
@@ -15,6 +16,8 @@ export const defaultAtmosphereSettings: AtmosphereSettings = {
   ambientPulse: true,
   reducedMotion: false,
   masterVolume: 28,
+  musicVolume: 34,
+  effectsVolume: 62,
   audioComplexity: 'standard',
   cueCooldownMs: 650,
 };

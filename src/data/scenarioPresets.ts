@@ -2,7 +2,7 @@
 import type { ScenarioId, Stats } from '../types/game';
 
 export const scenarioEffects: Record<ScenarioId, Partial<Stats>> = {
-  pre_hl2: { stability: 12, info: 15, rebel: -12, fear: 7, xen: -4 },
+  pre_hl2: { stability: 12, info: 15, rebel: -12, fear: 4, xen: -4 },
   standard: {},
   dormant: { rebel: 20, loyalty: -8, stability: -8 },
   quarantine: { xen: 28, fear: 12, production: -6, stability: -10 },

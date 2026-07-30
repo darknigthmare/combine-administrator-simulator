@@ -1,7 +1,7 @@
-# Combine Administrator Simulator — Desktop Release 0.46.1
+# Combine Administrator Simulator — Desktop Release 0.47.0
 
 ## Résumé
-Build privé desktop Tauri de Combine Administrator Simulator avec les modules COAN cumulés.
+Build desktop Tauri du jeu de gestion Combine Administrator Simulator.
 
 ## Contenu majeur
 - Terminaux spécialisés City / Nova / Citadel / Quarantine.
@@ -12,10 +12,13 @@ Build privé desktop Tauri de Combine Administrator Simulator avec les modules C
 - Packaging Windows Tauri NSIS/MSI avec audit COAN.
 
 ## Améliorations de cette version
-- Décisions de crise enrichies avec coût en ordre, effets immédiats et compte rendu après exécution.
-- Confirmation de fin de journée quand des ordres restent disponibles.
-- Navigation de création de partie, tutoriel, mobile et réquisitions clarifiés.
-- Visuels WebP et découpage du bundle pour accélérer le chargement initial.
+- Menu hors-session avec réglages audio, accessibilité, crédits et mentions.
+- Musique originale adaptative avec mix séparé pour musique et effets.
+- Création mobile compacte, prologue borné et tutoriel relié à la première journée.
+- Sauvegardes et Codex reformulés en interfaces joueur, sans jargon de développement.
+- Réquisitions filtrables, vues compacte/détaillée et densité d’information progressive.
+- Matrice pré-release : 252 configurations, 12 verdicts et simulation longue.
+- Équilibrage du premier mandat et des secteurs Lambda recalibré.
 - Versions frontend, Tauri et Cargo synchronisées.
 
 ## Artefacts attendus
@@ -25,12 +28,9 @@ Build privé desktop Tauri de Combine Administrator Simulator avec les modules C
 
 ## Commandes QA recommandées
 ```bash
-node scripts/apply-tauri-package-patch.mjs
-npm install
-npm run check:modules
-npm run audit:coan
-npm run audit:tauri
-npm run build
+npm ci
+npm run quality
+npm run audit:all
 npm run tauri:build
 ```
 
@@ -81,5 +81,5 @@ npm run tauri:build
 - README_STEP44_UX_POLISH_TAURI.md
 - README_STEP45_TAURI_BUILD_PACKAGING_QA.md
 
-## Note privée
-Application fan-made privée. Ne pas bundler d’assets officiels protégés.
+## Statut
+Fangame non commercial et non officiel. Aucun asset audio propriétaire de Half-Life n’est inclus.

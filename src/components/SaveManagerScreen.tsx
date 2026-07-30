@@ -1,6 +1,10 @@
 import { useEffect, useMemo, useState } from 'react';
+import { Archive, Download, FileInput, HardDrive, Save, ShieldCheck, Trash2, Upload } from 'lucide-react';
 import type { GameState, SaveSlotId, SaveSlotPayload } from '../types/game';
-import { saveSlotDefinitions } from '../data/saveSlots';
+import { SAVE_APP_LABEL, SAVE_SCHEMA_VERSION, saveSlotDefinitions } from '../data/saveSlots';
+import { timelinePresets } from '../data/timelinePresets';
+import { newGameIntakeProfileLabels } from '../data/newGameIntake';
+import { campaignPresets } from '../data/campaignScenarios';
 import { buildSaveFileName, buildSaveSlotMeta, createSaveSlotPayload, deleteSaveSlot, downloadTextFile, exportAllManualSlots, exportCurrentGame, parseImportedSave, persistImportedSlot, readManualSaveSlots, writeSaveSlot } from '../systems/saveSlotSystem';
 
 type SaveManagerScreenProps = {
@@ -10,44 +14,48 @@ type SaveManagerScreenProps = {
 
 function formatDate(value: string) {
   try {
-    return new Intl.DateTimeFormat('fr-FR', { dateStyle: 'short', timeStyle: 'medium' }).format(new Date(value));
+    return new Intl.DateTimeFormat('fr-FR', { dateStyle: 'short', timeStyle: 'short' }).format(new Date(value));
   } catch {
     return value;
   }
 }
 
 function SlotMetaSummary({ payload }: { payload: SaveSlotPayload | null }) {
-  if (!payload) return <p className="muted">Slot vide — aucun mandat archivé.</p>;
+  if (!payload) return <p className="muted">Archive vide — aucun mandat enregistré.</p>;
   const meta = payload.meta;
   return <>
     <div className="module-stat-grid save-stat-grid">
-      <span><small>City</small><b>{meta.city}</b></span>
-      <span><small>Jour</small><b>{meta.day}</b></span>
-      <span><small>Stabilité</small><b>{meta.statsSnapshot.stability}%</b></span>
-      <span><small>Lambda</small><b>{meta.statsSnapshot.rebel}%</b></span>
-      <span><small>Xen</small><b>{meta.statsSnapshot.xen}%</b></span>
-      <span><small>Audit</small><b>{meta.statsSnapshot.auditHeat}%</b></span>
+      <SaveStat label="City" value={meta.city} />
+      <SaveStat label="Jour" value={meta.day} />
+      <SaveStat label="Stabilité" value={`${meta.statsSnapshot.stability}%`} />
+      <SaveStat label="Lambda" value={`${meta.statsSnapshot.rebel}%`} />
+      <SaveStat label="Xen" value={`${meta.statsSnapshot.xen}%`} />
+      <SaveStat label="Audit" value={`${meta.statsSnapshot.auditHeat}%`} />
     </div>
-    <p className="save-meta-line"><b>{meta.campaignName}</b> · {meta.timeline} · {meta.profile}</p>
-    <p className="save-meta-line">Sauvé le {formatDate(meta.savedAt)} · checksum COAN <code>{meta.checksum}</code></p>
+    <p className="save-meta-line"><b>{meta.campaignName}</b> · {timelinePresets[meta.timeline]?.name ?? meta.timeline} · {newGameIntakeProfileLabels[meta.profile] ?? meta.profile}</p>
+    <p className="save-meta-line">Enregistrée le {formatDate(meta.savedAt)} · sceau COAN <code>{meta.checksum}</code></p>
     {meta.finalVerdictTitle && <p className="advice"><strong>Verdict :</strong> {meta.finalVerdictTitle}</p>}
-    <div className="event-tags">
-      <span>danger sectors {meta.moduleSnapshot.dangerousSectors}</span>
-      <span>lost sectors {meta.moduleSnapshot.lostSectors}</span>
-      <span>hunger {meta.moduleSnapshot.rationHunger}%</span>
-      <span>CP abuse {meta.moduleSnapshot.cpAbuse}%</span>
-      <span>video leak {meta.moduleSnapshot.videoLeakRisk}%</span>
-    </div>
+    <details className="save-diagnostics">
+      <summary>État critique au moment de l’archive</summary>
+      <div className="event-tags">
+        <span>Secteurs dangereux {meta.moduleSnapshot.dangerousSectors}</span>
+        <span>Secteurs perdus {meta.moduleSnapshot.lostSectors}</span>
+        <span>Faim {meta.moduleSnapshot.rationHunger}%</span>
+        <span>Abus CP {meta.moduleSnapshot.cpAbuse}%</span>
+        <span>Risque de fuite {meta.moduleSnapshot.videoLeakRisk}%</span>
+      </div>
+    </details>
   </>;
 }
 
 export function SaveManagerScreen({ game, loadGame }: SaveManagerScreenProps) {
   const [slots, setSlots] = useState<SaveSlotPayload[]>(() => readManualSaveSlots());
-  const [notice, setNotice] = useState('COAN Save Manager prêt. Autosave locale active via localStorage.');
+  const [notice, setNotice] = useState('Registre prêt. La continuité automatique du mandat est active.');
   const [imported, setImported] = useState<SaveSlotPayload | null>(null);
   const [importWarnings, setImportWarnings] = useState<string[]>([]);
   const [importTarget, setImportTarget] = useState<SaveSlotId>('slot_06');
 
+  const campaignName = campaignPresets[game.campaign.activeCampaignId]?.name ?? 'Mandat personnalisé';
   const currentMeta = useMemo(() => buildSaveSlotMeta(game, 'slot_01', 'Session active'), [game]);
   const slotMap = useMemo(() => new Map(slots.map((slot) => [slot.slotId, slot])), [slots]);
 
@@ -62,49 +70,51 @@ export function SaveManagerScreen({ game, loadGame }: SaveManagerScreenProps) {
   function saveToSlot(slotId: SaveSlotId) {
     const payload = writeSaveSlot(game, slotId);
     refresh();
-    setNotice(`Sauvegarde écrite dans ${payload.label} — City ${payload.meta.city}, jour ${payload.meta.day}, checksum ${payload.meta.checksum}.`);
+    setNotice(`${payload.label} enregistrée — City ${payload.meta.city}, jour ${payload.meta.day}.`);
   }
 
   function removeSlot(slotId: SaveSlotId) {
+    const payload = slotMap.get(slotId);
+    if (!payload || !window.confirm(`Purger définitivement ${payload.label} ?`)) return;
     deleteSaveSlot(slotId);
     refresh();
-    setNotice(`Slot ${slotId.toUpperCase()} purgé du registre local.`);
+    setNotice('Archive purgée du registre local.');
   }
 
   function loadSlot(slotId: SaveSlotId) {
     const payload = slotMap.get(slotId);
     if (!payload) {
-      setNotice('Aucun dossier dans ce slot.');
+      setNotice('Cette archive est vide.');
       return;
     }
+    if (!window.confirm(`Charger ${payload.label} remplacera l’état actuel du mandat. Continuer ?`)) return;
     loadGame(payload.game, `${payload.label} / ${payload.meta.checksum}`);
   }
 
   function exportSlot(slotId: SaveSlotId) {
     const payload = slotMap.get(slotId);
     if (!payload) {
-      setNotice('Impossible d’exporter un slot vide.');
+      setNotice('Impossible d’exporter une archive vide.');
       return;
     }
     downloadTextFile(buildSaveFileName(payload.meta), JSON.stringify(payload, null, 2));
-    setNotice(`Export du slot ${slotId.toUpperCase()} généré.`);
+    setNotice('Dossier de transfert généré.');
   }
 
   function exportCurrent() {
     const payload = createSaveSlotPayload(game, 'slot_06', 'Export session active');
     downloadTextFile(buildSaveFileName(payload.meta), exportCurrentGame(game, 'slot_06'));
-    setNotice('Export JSON de la session active généré.');
+    setNotice('Dossier de la session active généré.');
   }
 
   function exportAll() {
-    downloadTextFile(`coan-manual-save-slots-${new Date().toISOString().replace(/[:.]/g, '-')}.json`, exportAllManualSlots());
-    setNotice('Archive JSON de tous les slots manuels générée.');
+    downloadTextFile(`coan-archives-${new Date().toISOString().replace(/[:.]/g, '-')}.json`, exportAllManualSlots());
+    setNotice('Registre complet exporté.');
   }
 
   async function importFile(file: File | null) {
     if (!file) return;
-    const raw = await file.text();
-    const result = parseImportedSave(raw);
+    const result = parseImportedSave(await file.text());
     if (!result.ok) {
       setImported(null);
       setImportWarnings([]);
@@ -113,52 +123,52 @@ export function SaveManagerScreen({ game, loadGame }: SaveManagerScreenProps) {
     }
     setImported(result.payload);
     setImportWarnings(result.warnings);
-    setNotice(`Import lu : City ${result.payload.meta.city}, jour ${result.payload.meta.day}, checksum ${result.payload.meta.checksum}.`);
+    setNotice(`Dossier reconnu : City ${result.payload.meta.city}, jour ${result.payload.meta.day}.`);
   }
 
   function loadImported() {
-    if (!imported) return;
-    loadGame(imported.game, `Import JSON / ${imported.meta.checksum}`);
+    if (!imported || !window.confirm('Charger ce dossier remplacera l’état actuel du mandat. Continuer ?')) return;
+    loadGame(imported.game, `Dossier importé / ${imported.meta.checksum}`);
   }
 
   function saveImportedToSlot() {
     if (!imported) return;
     const payload = persistImportedSlot(imported, importTarget);
     refresh();
-    setNotice(`Import écrit dans ${importTarget.toUpperCase()} — ${payload.meta.campaignName}.`);
+    setNotice(`Dossier importé dans ${payload.label}.`);
   }
 
   return <section className="panel-grid dedicated-screen save-manager-screen">
     <div className="panel module-command save-command wide">
-      <span className="brand-kicker">COAN Save Manager / local archive</span>
-      <h2>Sauvegardes multiples</h2>
-      <p>Gestion locale des mandats City : archives manuelles, autosave, export/import et restauration complète de l’état de campagne.</p>
+      <span className="brand-kicker"><HardDrive size={14} /> ARCHIVES LOCALES COAN</span>
+      <h2>Continuité du mandat</h2>
+      <p>Enregistrez un point de divergence, restaurez une journée antérieure ou préparez un dossier de transfert.</p>
       <div className="module-stat-grid save-stat-grid">
-        <span><small>City active</small><b>{game.city}</b></span>
-        <span><small>Jour</small><b>{game.day}</b></span>
-        <span><small>Campagne</small><b>{game.campaign.activeCampaignId}</b></span>
-        <span><small>Rapports</small><b>{game.reports.length}</b></span>
-        <span><small>Chronique</small><b>{game.finalChronicle ? 'générée' : 'inactive'}</b></span>
-        <span><small>Verdict</small><b>{game.finalVerdict ? 'verrouillé' : 'ouvert'}</b></span>
+        <SaveStat label="City active" value={game.city} />
+        <SaveStat label="Jour" value={game.day} />
+        <SaveStat label="Campagne" value={campaignName} />
+        <SaveStat label="Rapports" value={game.reports.length} />
+        <SaveStat label="Chronique" value={game.finalChronicle ? 'Générée' : 'En cours'} />
+        <SaveStat label="Verdict" value={game.finalVerdict ? 'Prononcé' : 'Ouvert'} />
       </div>
-      <p className="advice"><strong>Statut :</strong><br />{notice}</p>
+      <p className="advice" role="status"><strong>Statut :</strong><br />{notice}</p>
       <div className="actions save-actions-row">
-        <button onClick={exportCurrent}>Exporter la session active</button>
-        <button onClick={exportAll}>Exporter tous les slots</button>
+        <button onClick={exportCurrent}><Download size={15} /> Exporter la session</button>
+        <button onClick={exportAll}><Archive size={15} /> Exporter le registre</button>
       </div>
     </div>
 
     <div className="panel current-save-panel">
-      <span className="brand-kicker">Autosave active</span>
+      <span className="brand-kicker"><ShieldCheck size={14} /> CONTINUITÉ AUTOMATIQUE</span>
       <h2>Session actuelle</h2>
-      <SlotMetaSummary payload={{ kind: 'coan-city-save', schemaVersion: 36, appLabel: currentMeta.appLabel, slotId: 'slot_01', label: 'Session active', savedAt: currentMeta.savedAt, meta: currentMeta, game }} />
-      <p className="lore-note">L’autosave locale maintient la continuité des anciens mandats COAN.</p>
+      <SlotMetaSummary payload={{ kind: 'coan-city-save', schemaVersion: SAVE_SCHEMA_VERSION, appLabel: SAVE_APP_LABEL, slotId: 'slot_01', label: 'Session active', savedAt: currentMeta.savedAt, meta: currentMeta, game }} />
+      <p className="lore-note">Le terminal conserve automatiquement la dernière situation validée.</p>
     </div>
 
     <div className="panel import-panel">
-      <span className="brand-kicker">Import / transfert</span>
-      <h2>Importer un fichier COAN</h2>
-      <input type="file" accept="application/json,.json,.coan-save" onChange={(event) => importFile(event.currentTarget.files?.[0] ?? null)} />
+      <span className="brand-kicker"><FileInput size={14} /> TRANSFERT DE DOSSIER</span>
+      <h2>Importer une archive</h2>
+      <input aria-label="Choisir une archive COAN" type="file" accept="application/json,.json,.coan-save" onChange={(event) => importFile(event.currentTarget.files?.[0] ?? null)} />
       {imported ? <div className="import-preview">
         <SlotMetaSummary payload={imported} />
         {importWarnings.length > 0 && <div className="lore-note">{importWarnings.map((warning) => <p key={warning}>{warning}</p>)}</div>}
@@ -167,15 +177,15 @@ export function SaveManagerScreen({ game, loadGame }: SaveManagerScreenProps) {
           {saveSlotDefinitions.map((slot) => <option key={slot.id} value={slot.id}>{slot.label}</option>)}
         </select>
         <div className="actions save-actions-row">
-          <button onClick={loadImported}>Charger maintenant</button>
-          <button onClick={saveImportedToSlot}>Stocker dans le slot</button>
+          <button onClick={loadImported}><Upload size={15} /> Charger maintenant</button>
+          <button onClick={saveImportedToSlot}><Save size={15} /> Archiver le dossier</button>
         </div>
-      </div> : <p className="muted">Aucun dossier importé. Les anciens exports de mandat sont migrés au chargement.</p>}
+      </div> : <p className="muted">Aucun dossier sélectionné. Les anciens mandats compatibles seront adaptés à l’ouverture.</p>}
     </div>
 
     <div className="panel save-slots-panel wide">
-      <span className="brand-kicker">Slots manuels</span>
-      <h2>Archives locales</h2>
+      <span className="brand-kicker">POINTS DE DIVERGENCE</span>
+      <h2>Archives manuelles</h2>
       <div className="save-slot-grid">
         {saveSlotDefinitions.map((definition) => {
           const payload = slotMap.get(definition.id) ?? null;
@@ -186,10 +196,10 @@ export function SaveManagerScreen({ game, loadGame }: SaveManagerScreenProps) {
             </div>
             <SlotMetaSummary payload={payload} />
             <div className="actions save-slot-actions">
-              <button onClick={() => saveToSlot(definition.id)}>Sauver ici</button>
-              <button disabled={!payload} onClick={() => loadSlot(definition.id)}>Charger</button>
-              <button disabled={!payload} onClick={() => exportSlot(definition.id)}>Exporter</button>
-              <button disabled={!payload} onClick={() => removeSlot(definition.id)}>Purger</button>
+              <button onClick={() => saveToSlot(definition.id)}><Save size={14} /> Enregistrer</button>
+              <button disabled={!payload} onClick={() => loadSlot(definition.id)}><Upload size={14} /> Charger</button>
+              <button disabled={!payload} onClick={() => exportSlot(definition.id)}><Download size={14} /> Exporter</button>
+              <button disabled={!payload} onClick={() => removeSlot(definition.id)} aria-label={`Purger ${definition.label}`} title="Purger"><Trash2 size={14} /></button>
             </div>
           </article>;
         })}
@@ -197,14 +207,18 @@ export function SaveManagerScreen({ game, loadGame }: SaveManagerScreenProps) {
     </div>
 
     <div className="panel save-protocol-panel wide">
-      <span className="brand-kicker">Compatibilité / migration</span>
-      <h2>Protocole d’archive COAN</h2>
+      <span className="brand-kicker">SÉCURITÉ DU REGISTRE</span>
+      <h2>Transfert et compatibilité</h2>
       <div className="codex-grid compact-codex">
-        <article><strong>Compatibilité ancienne autosave</strong><p>Les parties déjà présentes dans <code>combine-city-lore-upgrade</code> sont hydratées avec les migrations de tous les modules.</p></article>
-        <article><strong>Payload complet</strong><p>Chaque slot contient le GameState complet : City, secteurs, citoyens, Lambda, Xen, Nova, Vortigaunts, objectifs, verdicts, archives vidéo et audio.</p></article>
-        <article><strong>Export portable</strong><p>Un fichier <code>.coan-save.json</code> peut être copié entre machines ou placé dans un repo privé.</p></article>
-        <article><strong>Périmètre</strong><p>Les archives restent locales à ce terminal et peuvent être transférées par export.</p></article>
+        <article><strong>Continuité locale</strong><p>La dernière situation reste disponible sur ce terminal sans connexion.</p></article>
+        <article><strong>Archives complètes</strong><p>Chaque point conserve la City, ses secteurs, ses ressources et l’historique du mandat.</p></article>
+        <article><strong>Transfert portable</strong><p>Les dossiers exportés peuvent être déplacés vers un autre terminal compatible.</p></article>
+        <article><strong>Anciens mandats</strong><p>Les archives des versions précédentes sont adaptées automatiquement lorsque cela reste possible.</p></article>
       </div>
     </div>
   </section>;
+}
+
+function SaveStat({ label, value }: { label: string; value: string | number }) {
+  return <span className="module-mini-stat"><small>{label}</small><b>{value}</b></span>;
 }

@@ -74,11 +74,11 @@ export const timelinePresets: Record<string, TimelinePreset> = {
     canonWindow: 'Juste avant le retour de Gordon Freeman.',
     briefing:
       'Les écrans publics, le rationnement et les patrouilles donnent une impression d’ordre. Sous la surface, les canaux, laboratoires cachés et safehouses Lambda sont déjà capables de faire circuler personnes, armes et informations.',
-    statEffects: { stability: 10, loyalty: -10, fear: 12, rebel: 18, xen: 8, combine: 14, production: 4, rations: -80, citadel: 7, info: 10, fatigue: 12, suspicion: 2 },
+    statEffects: { stability: 10, loyalty: -4, fear: 6, rebel: 18, xen: 8, combine: 14, production: 4, rations: -80, citadel: 7, info: 10, fatigue: 8, suspicion: 2 },
     dailyEffects: { rebel: 1, fatigue: 1 },
     sectorEffects: [
       { sectorIds: ['station', 'admin', 'citadel'], surveillance: 18, fear: 10, status: 'Surveillé' },
-      { sectorIds: ['canals', 'sewers', 'res_b', 'hospital'], rebel: 20, loyalty: -10 },
+      { sectorIds: ['canals', 'sewers', 'res_b', 'hospital'], rebel: 8, loyalty: -4 },
       { sectorIds: ['quarantine'], xen: 12, status: 'En quarantaine' },
     ],
     unitReserveOverrides: { cp: 16, soldier: 7, elite: 2, scanner: 10, manhack: 8, strider: 2, gunship: 1, dropship: 2 },

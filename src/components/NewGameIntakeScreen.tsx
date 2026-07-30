@@ -108,7 +108,7 @@ export function NewGameIntakeScreen(props: Props) {
     </section>
 
     <nav className="intake-step-tabs" aria-label="Étapes de création">
-      {creationSteps.map((phase, index) => <button key={phase.id} type="button" aria-current={step === index ? 'step' : undefined} className={step === index ? 'active' : ''} onClick={() => changeStep(index as 0 | 1 | 2)}>
+      {creationSteps.map((phase, index) => <button key={phase.id} type="button" aria-label={`Étape ${phase.label} — ${phase.title}`} aria-current={step === index ? 'step' : undefined} className={step === index ? 'active' : ''} onClick={() => changeStep(index as 0 | 1 | 2)}>
         <span>{phase.label}</span><strong>{phase.title}</strong>
       </button>)}
     </nav>

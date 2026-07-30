@@ -7,12 +7,12 @@ $ErrorActionPreference = "Stop"
 Write-Host "[COAN] Windows Tauri packaging runbook" -ForegroundColor Cyan
 
 if (-not $SkipInstall) {
-  Write-Host "[COAN] npm install" -ForegroundColor DarkCyan
-  npm install
+  Write-Host "[COAN] npm ci" -ForegroundColor DarkCyan
+  npm ci
 }
 
-Write-Host "[COAN] Applying package patch" -ForegroundColor DarkCyan
-node scripts/apply-tauri-package-patch.mjs
+Write-Host "[COAN] Web quality gates" -ForegroundColor DarkCyan
+npm run quality
 
 Write-Host "[COAN] Module check" -ForegroundColor DarkCyan
 npm run check:modules

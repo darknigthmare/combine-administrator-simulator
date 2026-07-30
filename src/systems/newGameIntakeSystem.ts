@@ -132,7 +132,7 @@ export function buildNewGameIntakePreview(config: NewGameIntakeConfig): NewGameI
     warnings,
     recommendedFirstTabs,
     summary: [
-      `City ${resolved.city} — ${resolved.campaign.name}`,
+      `Dossier de campagne : ${resolved.campaign.name}`,
       `${timelinePresets[resolved.timeline]?.name ?? resolved.timeline} / ${resolved.difficulty.name}`,
       `Doctrine : ${resolved.doctrine.doctrineLine}`,
       `Prévision stabilité : ${stabilityForecast}% / danger global ${overallDanger}%.`,

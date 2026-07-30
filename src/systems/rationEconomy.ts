@@ -33,6 +33,7 @@ export function createInitialRationEconomy(params: { scenario: ScenarioId; profi
   };
   const scenarioShift = params.scenario === 'quarantine' ? -220 : params.scenario === 'uprising' ? -360 : params.scenario === 'post_nova' ? -180 : 0;
   const timelineShift = params.timeline === 'uprising' || params.timeline === 'citadel_collapse' ? -280 : params.timeline === 'seven_hour_aftermath' ? -120 : 0;
+  const intakeGrace = params.scenario === 'pre_hl2' && params.timeline === 'pre_hl2' ? -15 : 0;
   const ledgers = params.sectors.map((sector) => {
     const priority = sectorPriority(sector);
     const dailyNeed = baseNeed(sector);
@@ -43,8 +44,8 @@ export function createInitialRationEconomy(params: { scenario: ScenarioId; profi
       dailyNeed,
       allocated: Math.max(0, Math.round(dailyNeed * (priority === 'Citadel' ? 1.08 : priority === 'Industry' ? 1.02 : 0.86))),
       caloricRatio: dailyNeed > 0 ? 86 : 100,
-      hunger: clamp(100 - sector.loyalty + rationPenalty - sector.fear * 0.15, 8, 88),
-      blackMarket: clamp(sector.rebel * 0.45 + (100 - sector.loyalty) * 0.35 + rationPenalty, 4, 92),
+      hunger: clamp(100 - sector.loyalty + rationPenalty - sector.fear * 0.15 + intakeGrace, 8, 88),
+      blackMarket: clamp(sector.rebel * 0.45 + (100 - sector.loyalty) * 0.35 + rationPenalty + intakeGrace * 0.4, 4, 92),
       informants: clamp(sector.surveillance * 0.28 + sector.fear * 0.22, 0, 80),
       hoarding: clamp((100 - sector.infrastructure) * 0.4 + sector.fear * 0.2, 0, 75),
       complianceBonus: priority === 'Citadel' || priority === 'Industry' ? 12 : 0,

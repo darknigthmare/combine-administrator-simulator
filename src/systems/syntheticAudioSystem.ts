@@ -149,7 +149,8 @@ export function playSyntheticAudioCue(cueId: SyntheticAudioCueId, settings: Atmo
 
   const context = new AudioContextCtor();
   const master = context.createGain();
-  const base = Math.max(0, Math.min(1, settings.masterVolume / 100));
+  const base = Math.max(0, Math.min(1, settings.masterVolume / 100))
+    * Math.max(0, Math.min(1, settings.effectsVolume / 100));
   const density = settings.audioComplexity === 'minimal' ? 0.62 : settings.audioComplexity === 'dense' ? 1.18 : 1;
   const dangerBoost = director ? 0.76 + director.intensity / 185 : 0.88;
   const volume = base * definition.baseVolume * density * dangerBoost * (settings.advancedAudioEnabled ? 0.08 : 0.052);
@@ -243,7 +244,9 @@ export function startSyntheticAmbientBed(settings: AtmosphereSettings, director:
   const filter = context.createBiquadFilter();
   const cue = syntheticAudioCues[director.ambientCue];
   const root = Math.max(32, cue.segments.find((segment) => segment.oscillator !== 'noise')?.frequency ?? 58);
-  const baseVolume = Math.max(0, Math.min(1, settings.masterVolume / 100)) * (0.008 + director.intensity / 16000);
+  const baseVolume = Math.max(0, Math.min(1, settings.masterVolume / 100))
+    * Math.max(0, Math.min(1, settings.effectsVolume / 100))
+    * (0.008 + director.intensity / 16000);
   const oscillators = [1, 1.5, 2.01].map((ratio, index) => {
     const oscillator = context.createOscillator();
     oscillator.type = index === 0 ? 'sine' : 'triangle';

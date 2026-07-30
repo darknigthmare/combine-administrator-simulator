@@ -1,7 +1,7 @@
 import type { SaveSlotDefinition, SaveSlotId } from '../types/game';
 
 export const SAVE_SCHEMA_VERSION = 36;
-export const SAVE_APP_LABEL = 'Combine Administrator Simulator — Lore Upgrade Step 36';
+export const SAVE_APP_LABEL = 'Combine Administrator Simulator';
 export const AUTOSAVE_STORAGE_KEY = 'combine-city-lore-upgrade';
 export const SAVE_SLOT_STORAGE_KEY = 'combine-city-lore-manual-slots-v36';
 export const SAVE_EXPORT_KIND = 'coan-city-save';

@@ -7,6 +7,7 @@
   text-rendering: geometricPrecision;
 }
 * { box-sizing: border-box; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 body { margin: 0; min-height: 100vh; background: radial-gradient(circle at top left, rgba(0, 212, 255, .08), transparent 35%), #030609; }
 button, input, select { font: inherit; }
 button { cursor: pointer; }
@@ -108,7 +109,72 @@ blockquote { margin: 0 0 10px; padding: 12px; color: #c9f3ff; border-left: 3px s
 .prologue-dossier { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 18px; align-items: center; }
 .prologue-dossier > img { width: 150px; aspect-ratio: 1; object-fit: cover; }
 .prologue-order { display: grid; justify-items: start; }
-@media (max-width: 640px) { .prologue-dossier { grid-template-columns: 84px minmax(0, 1fr); } .prologue-dossier > img { width: 84px; } }
+@media (max-width: 640px) {
+  .campaign-prologue-screen {
+    gap: 10px;
+  }
+
+  .prologue-visual {
+    min-height: 390px;
+  }
+
+  .prologue-copy {
+    padding: 20px;
+  }
+
+  .prologue-copy h1 {
+    font-size: 2.35rem;
+  }
+
+  .prologue-briefing,
+  .prologue-opening-report {
+    max-height: 150px;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding-right: 8px;
+    scrollbar-color: rgba(116, 214, 255, 0.52) rgba(0, 0, 0, 0.32);
+    scrollbar-width: thin;
+  }
+
+  .prologue-briefing::-webkit-scrollbar,
+  .prologue-opening-report::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .prologue-briefing::-webkit-scrollbar-thumb,
+  .prologue-opening-report::-webkit-scrollbar-thumb {
+    background: rgba(116, 214, 255, 0.52);
+  }
+
+  .prologue-order {
+    padding: 14px;
+  }
+
+  .prologue-order h2 {
+    margin: 4px 0;
+    font-size: 1.15rem;
+  }
+
+  .prologue-order p {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin: 4px 0 10px;
+  }
+
+  .prologue-order button {
+    width: 100%;
+  }
+
+  .prologue-dossier {
+    grid-template-columns: 84px minmax(0, 1fr);
+  }
+
+  .prologue-dossier > img {
+    width: 84px;
+  }
+}
 .choice-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 14px; }
 .choice-grid button strong { display: block; color: #f4fbff; margin-bottom: 6px; }
 .choice-grid button span { display: block; color: #93a6af; font-size: 12px; line-height: 1.45; }
@@ -3128,6 +3194,56 @@ button.directive-node:hover { border-color: rgba(165, 220, 255, .48); transform:
   grid-template-columns: minmax(320px, 1.15fr) minmax(300px, 0.85fr);
 }
 
+.atmosphere-view-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.atmosphere-view-toolbar h2 {
+  margin: 5px 0 0;
+}
+
+.atmosphere-view-segments {
+  display: flex;
+  gap: 2px;
+}
+
+.atmosphere-view-segments button {
+  min-height: 38px;
+  border-color: transparent;
+  background: rgba(0, 8, 14, 0.72);
+}
+
+.atmosphere-view-segments button[aria-pressed='true'] {
+  border-color: rgba(150, 220, 255, 0.38);
+  background: rgba(101, 219, 255, 0.12);
+  color: #e8fbff;
+}
+
+.audio-switches .settings-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.atmosphere-volume-grid {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.45fr) minmax(220px, 1fr);
+  gap: 10px 16px;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.atmosphere-volume-grid select {
+  margin: 0;
+}
+
+.audio-library .audio-cue-list {
+  max-height: 540px;
+  overflow: auto;
+  padding-right: 6px;
+}
+
 .audio-director-console {
   border-color: color-mix(in srgb, var(--atm-accent) 38%, rgba(255,255,255,0.08));
   box-shadow: 0 0 calc(12px + var(--audio-danger, 0.2) * 30px) rgba(101, 219, 255, 0.12);
@@ -3206,7 +3322,7 @@ button.directive-node:hover { border-color: rgba(165, 220, 255, .48); transform:
   border: 1px solid rgba(156, 236, 255, 0.24);
   background: rgba(101, 219, 255, 0.08);
   color: #e8fbff;
-  border-radius: 999px;
+  border-radius: 8px;
   padding: 0.45rem 0.85rem;
   cursor: pointer;
 }
@@ -3446,6 +3562,24 @@ body[data-audio-cue='nova_intake'] .app-shell {
   min-height: 4.25rem;
 }
 
+@media (max-width: 760px) {
+  .atmosphere-view-toolbar,
+  .atmosphere-view-segments {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .audio-switches .settings-list,
+  .atmosphere-volume-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.save-stat-grid .module-mini-stat b {
+  overflow-wrap: anywhere;
+  font-size: 1rem;
+}
+
 .save-meta-line {
   margin: 0.45rem 0;
   color: rgba(226, 241, 255, 0.74);
@@ -3474,7 +3608,7 @@ body[data-audio-cue='nova_intake'] .app-shell {
   padding: 1rem;
   border: 1px solid rgba(132, 191, 255, 0.22);
   background: linear-gradient(145deg, rgba(8, 18, 28, 0.95), rgba(7, 12, 19, 0.92));
-  border-radius: 1rem;
+  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -3545,7 +3679,7 @@ body[data-audio-cue='nova_intake'] .app-shell {
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   background: rgba(255, 183, 87, 0.08);
   border: 1px solid rgba(255, 191, 91, 0.18);
-  border-radius: 0.5rem;
+  border-radius: 8px;
   padding: 0.3rem 0.45rem;
 }
 
@@ -3555,7 +3689,30 @@ body[data-audio-cue='nova_intake'] .app-shell {
   background: rgba(8, 18, 28, 0.72);
   color: rgba(232, 244, 255, 0.78);
   padding: 0.85rem;
-  border-radius: 0.8rem;
+  border-radius: 8px;
+}
+
+.save-diagnostics {
+  margin-top: 10px;
+  color: rgba(219, 234, 245, 0.68);
+}
+
+.save-diagnostics summary {
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.save-slot-actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.save-slot-actions button[aria-label^='Purger'] {
+  min-width: 38px;
+  width: 38px;
+  padding-inline: 0;
 }
 
 .import-preview {
@@ -3791,7 +3948,7 @@ body[data-audio-cue='nova_intake'] .app-shell {
   }
 }
 
-/* STEP 38 — COAN Lore Codex */
+/* COAN Lore Codex */
 .lore-codex-screen {
   align-items: start;
 }
@@ -3838,10 +3995,32 @@ body[data-audio-cue='nova_intake'] .app-shell {
   background: rgba(3, 9, 15, 0.72);
   color: rgba(228, 241, 255, 0.96);
   padding: 10px 12px;
-  border-radius: 10px;
-  margin: 10px 0 14px;
+  border-radius: 0;
+  margin: 0;
   font: inherit;
   outline: none;
+}
+
+.codex-search-shell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0 14px;
+  padding: 0 10px;
+  border: 1px solid rgba(126, 190, 244, 0.2);
+  background: rgba(7, 13, 20, 0.82);
+}
+
+.codex-search-shell .codex-search {
+  border: 0;
+  background: transparent;
+}
+
+.codex-export-command {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 12px;
 }
 
 .codex-search:focus {
@@ -3868,7 +4047,7 @@ body[data-audio-cue='nova_intake'] .app-shell {
   border: 1px solid rgba(126, 190, 244, 0.2);
   background: rgba(7, 13, 20, 0.82);
   color: inherit;
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 12px;
   cursor: pointer;
   min-height: 112px;
@@ -6070,12 +6249,78 @@ select:focus-visible {
 }
 
 @media (max-width: 700px) {
+  .new-game-intake-screen {
+    gap: 10px;
+  }
+
+  .intake-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .intake-hero h1 {
+    font-size: clamp(20px, 7vw, 28px);
+    margin-bottom: 4px;
+  }
+
+  .intake-hero p {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .intake-hero .tag-row {
+    display: none;
+  }
+
+  .intake-danger-card {
+    min-width: 78px;
+    padding: 8px;
+    align-content: center;
+  }
+
+  .intake-danger-card b {
+    font-size: 2rem;
+  }
+
   .intake-step-tabs {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    position: sticky;
+    top: 6px;
+    z-index: 8;
+    padding: 4px;
+    background: rgba(3, 10, 16, 0.94);
+    backdrop-filter: blur(8px);
   }
 
   .intake-step-tabs button {
     min-height: 46px;
+    padding: 6px;
+    text-align: center;
+  }
+
+  .intake-step-tabs strong {
+    display: block;
+    font-size: 10px;
+  }
+
+  .doctrine-card p,
+  .doctrine-card small {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .doctrine-card .tag-row {
+    display: none;
+  }
+
+  .intake-step-panel {
+    min-height: 0;
   }
 
   .intake-step-actions,

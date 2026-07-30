@@ -625,6 +625,7 @@ export type SyntheticAudioDirectorSnapshot = {
 export type AtmosphereSettings = {
   enabled: boolean;
   audioEnabled: boolean;
+  musicEnabled: boolean;
   advancedAudioEnabled: boolean;
   ambientDrone: boolean;
   eventCues: boolean;
@@ -637,6 +638,8 @@ export type AtmosphereSettings = {
   ambientPulse: boolean;
   reducedMotion: boolean;
   masterVolume: number;
+  musicVolume: number;
+  effectsVolume: number;
   audioComplexity: 'minimal' | 'standard' | 'dense';
   cueCooldownMs: number;
 };

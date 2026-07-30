@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect, useMemo, useState } from 'react';
+import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react';
 import { Archive, ChevronDown, Database, Gauge, Home, LayoutDashboard, LockKeyhole, Map as MapIcon, Menu, Radio, Save, Settings, Shield, Target, X } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import './index.css';
@@ -28,6 +28,7 @@ import { UiuxV2CommandDeck } from './components/UiuxV2CommandDeck';
 import { UiuxProgressionPanel } from './components/UiuxProgressionPanel';
 import { MainMenuScreen } from './components/MainMenuScreen';
 import { defaultAtmosphereSettings, getAtmosphereProfile, mergeAtmosphereSettings } from './systems/atmosphereSystem';
+import { hasStoredPlayerPreferences, readPlayerPreferences, writePlayerPreferences } from './systems/playerPreferencesSystem';
 import { changeRationPolicy, createInitialRationEconomy, migrateRationEconomy, resolveRationOperation, simulateRationDay } from './systems/rationEconomy';
 import { createInitialPopulationState, migratePopulationState, simulatePopulationDay } from './systems/populationSimulation';
 import { createInitialCitizenRegistry, migrateCitizenRegistry, resolveCitizenAction, simulateCitizenRegistryDay } from './systems/citizenRegistry';
@@ -51,6 +52,7 @@ import { buildFinalChronicle } from './systems/finalChronicleSystem';
 import { terminalInterfaceOrder, terminalInterfaces } from './data/terminalInterfaces';
 import { buildTerminalInterfaceStatus, getTerminalInterfaceForTab, getTerminalNavTabs, getTerminalSwitchTarget } from './systems/terminalInterfaceSystem';
 import { buildSyntheticAudioDirector, playSyntheticAudioCue } from './systems/syntheticAudioSystem';
+import { getAdaptiveMusicTrack } from './systems/adaptiveMusicSystem';
 import { createInitialVideoArchiveState, migrateVideoArchiveState, resolveVideoArchiveOperation, setVideoArchivePolicy, simulateVideoArchiveDay } from './systems/videoArchiveSystem';
 import { createInitialDecisionHistoryState, migrateDecisionHistoryState, reconcileDecisionHistory, setDecisionHistoryFilter } from './systems/decisionHistorySystem';
 import { applyDifficultySectorEffects, applyDifficultyStartingEffects, createInitialDifficultySettings, migrateDifficultySettings, resetCustomDifficulty, setDifficultyPreset, simulateDifficultyDay, updateDifficultyScalar } from './systems/difficultySettingsSystem';
@@ -170,7 +172,8 @@ function describeCrisisEffects(effects: EventChoice['effects']): string[] {
   });
 }
 
-function createInitialGame(city: string, scenario: ScenarioId, timeline: TimelineId, profile: ProfileId, campaignId: CampaignId = 'custom_city_administration', difficultyPresetId: DifficultyPresetId = 'standard_occupation', customDifficultyScalars?: DifficultyScalars): GameState {
+// oxlint-disable-next-line react/only-export-components -- Release tests reuse the complete campaign factory.
+export function createInitialGame(city: string, scenario: ScenarioId, timeline: TimelineId, profile: ProfileId, campaignId: CampaignId = 'custom_city_administration', difficultyPresetId: DifficultyPresetId = 'standard_occupation', customDifficultyScalars?: DifficultyScalars): GameState {
   const difficultySettings = createInitialDifficultySettings(difficultyPresetId, customDifficultyScalars);
   let stats = applyDifficultyStartingEffects(applyCampaignToStats(applyTimelineToStats(addStat(addStat(baseStats, scenarioEffects[scenario]), profileEffects[profile]), timeline), campaignId), difficultySettings);
   const sectors = applyDifficultySectorEffects(applyCampaignToSectors(applyTimelineToSectors(baseSectors.map((s) => ({ ...s, units: { ...s.units } })), timeline), campaignId), difficultySettings);
@@ -294,7 +297,9 @@ function hydrateSavedGame(raw: unknown): GameState {
     onboarding: migrateOnboardingState(merged),
     campaignMission: migrateCampaignMissionState(merged),
     novaProspekt: merged.novaProspekt ?? createInitialNovaProspektState(merged.scenario ?? 'standard', merged.profile ?? 'loyalist'),
-    atmosphereSettings: mergeAtmosphereSettings(merged.atmosphereSettings),
+    atmosphereSettings: hasStoredPlayerPreferences()
+      ? mergeAtmosphereSettings({ ...merged.atmosphereSettings, ...readPlayerPreferences() })
+      : mergeAtmosphereSettings(merged.atmosphereSettings),
     rationEconomy: migrateRationEconomy(merged),
     population: migratePopulationState(merged),
     citizenRegistry: migrateCitizenRegistry(merged),
@@ -348,9 +353,11 @@ const canonicalNewGameConfig = doctrineToConfig('canonical_city17', '17');
 
 function App() {
   const [game, setGame] = useState<GameState>(() => {
+    const playerPreferences = readPlayerPreferences();
     const saved = localStorage.getItem(AUTOSAVE_STORAGE_KEY);
     if (!saved) return {
       ...createInitialGame(canonicalNewGameConfig.city, canonicalNewGameConfig.scenario, canonicalNewGameConfig.timeline, canonicalNewGameConfig.profile, canonicalNewGameConfig.campaignId, canonicalNewGameConfig.difficultyPresetId),
+      atmosphereSettings: playerPreferences,
       started: false,
       tab: 'main_menu',
     };
@@ -359,6 +366,7 @@ function App() {
     } catch {
       return {
         ...createInitialGame(canonicalNewGameConfig.city, canonicalNewGameConfig.scenario, canonicalNewGameConfig.timeline, canonicalNewGameConfig.profile, canonicalNewGameConfig.campaignId, canonicalNewGameConfig.difficultyPresetId),
+        atmosphereSettings: playerPreferences,
         started: false,
         tab: 'main_menu',
       };
@@ -383,6 +391,8 @@ function App() {
   const [dayTransition, setDayTransition] = useState<DayTransitionSummary | null>(null);
   const [endDayConfirmOpen, setEndDayConfirmOpen] = useState(false);
   const [actionFeedback, setActionFeedback] = useState<CrisisActionFeedback | null>(null);
+  const crisisScrollPosition = useRef(0);
+  const previousCrisisId = useRef<string | null>(null);
 
   useEffect(() => {
     if (!game.started || game.tab === 'main_menu' || game.tab === 'new_game') return;
@@ -406,6 +416,23 @@ function App() {
   }, [game.tab]);
 
   useEffect(() => {
+    const crisisId = game.crisis?.id ?? null;
+    const main = document.querySelector<HTMLElement>('.main');
+    if (crisisId && !previousCrisisId.current) {
+      crisisScrollPosition.current = main?.scrollTop ?? window.scrollY;
+    }
+    if (!crisisId && previousCrisisId.current) {
+      const restorePosition = crisisScrollPosition.current;
+      window.requestAnimationFrame(() => {
+        window.scrollTo({ top: restorePosition, left: 0, behavior: 'auto' });
+        main?.scrollTo({ top: restorePosition, left: 0, behavior: 'auto' });
+        document.querySelector<HTMLElement>('.action-feedback')?.focus({ preventScroll: true });
+      });
+    }
+    previousCrisisId.current = crisisId;
+  }, [game.crisis?.id]);
+
+  useEffect(() => {
     if (!endDayConfirmOpen) return;
     const closeOnEscape = (event: KeyboardEvent) => {
       if (event.key === 'Escape') setEndDayConfirmOpen(false);
@@ -418,6 +445,21 @@ function App() {
     const surface = document.querySelector<HTMLElement>('[data-modal-surface="true"]');
     if (!surface) return;
     const previouslyFocused = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    const main = surface.closest<HTMLElement>('.main');
+    const backgroundRegions = [
+      document.querySelector<HTMLElement>('.sidebar'),
+      document.querySelector<HTMLElement>('.floating-window-layer'),
+      ...Array.from(main?.children ?? []).filter((element): element is HTMLElement => element instanceof HTMLElement && !element.contains(surface)),
+    ].filter((element): element is HTMLElement => !!element);
+    const regionState = backgroundRegions.map((element) => ({
+      element,
+      ariaHidden: element.getAttribute('aria-hidden'),
+      inert: element.inert,
+    }));
+    backgroundRegions.forEach((element) => {
+      element.setAttribute('aria-hidden', 'true');
+      element.inert = true;
+    });
     const focusableSelector = 'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
     const focusFirstControl = () => {
       const first = surface.querySelector<HTMLElement>(focusableSelector);
@@ -446,6 +488,11 @@ function App() {
     return () => {
       window.cancelAnimationFrame(frame);
       window.removeEventListener('keydown', trapFocus);
+      regionState.forEach(({ element, ariaHidden, inert }) => {
+        if (ariaHidden === null) element.removeAttribute('aria-hidden');
+        else element.setAttribute('aria-hidden', ariaHidden);
+        element.inert = inert;
+      });
       previouslyFocused?.focus();
     };
   }, [endDayConfirmOpen, game.crisis?.id, dayTransition?.day]);
@@ -516,6 +563,7 @@ function App() {
     const next = createInitialGame(selectedCity, selectedScenario, selectedTimeline, selectedProfile, campaignInput, difficultyInput, difficultyInput === 'custom' ? customDifficultyScalars : undefined);
     setGame({
       ...next,
+      atmosphereSettings: game.atmosphereSettings,
       administratorAvatar: administratorAvatarInput,
       tab: 'prologue',
       onboarding: selectOnboardingTrack(next.onboarding, onboardingTrackInput),
@@ -1559,10 +1607,13 @@ function App() {
   }
 
   function updateAtmosphereSettings(patch: Partial<AtmosphereSettings>) {
+    const atmosphereSettings = writePlayerPreferences(mergeAtmosphereSettings({ ...game.atmosphereSettings, ...patch }));
     setGame({
       ...game,
-      atmosphereSettings: mergeAtmosphereSettings({ ...game.atmosphereSettings, ...patch }),
-      log: [`JOUR ${String(game.day).padStart(3, '0')} — Paramètres sensoriels mis à jour.`, ...game.log].slice(0, 80),
+      atmosphereSettings,
+      log: game.started
+        ? [`JOUR ${String(game.day).padStart(3, '0')} — Paramètres sensoriels mis à jour.`, ...game.log].slice(0, 80)
+        : game.log,
     });
   }
 
@@ -1730,7 +1781,7 @@ function App() {
           </div>
         </header>}
 
-        {!preSession && actionFeedback && <div className="action-feedback" role="status" aria-live="polite">
+        {!preSession && actionFeedback && <div className="action-feedback" role="status" aria-live="polite" tabIndex={-1}>
           <div>
             <span className="brand-kicker">ORDRE EXÉCUTÉ / SOLDE {game.dailyOrders.remaining}/{game.dailyOrders.total}</span>
             <strong>{actionFeedback.title}</strong>
@@ -1877,8 +1928,10 @@ function App() {
           city={game.city}
           day={game.day}
           administratorAvatar={game.administratorAvatar}
+          settings={game.atmosphereSettings}
           continueCampaign={continueCampaign}
           createCampaign={openNewCampaign}
+          updateSettings={updateAtmosphereSettings}
         />}
         {game.tab === 'new_game' && <NewGameIntakeScreen
           cityInput={cityInput}
@@ -2260,11 +2313,13 @@ function Reports({ reports, log, policy, setPolicy }: { reports: Report[]; log: 
 
 
 function AtmosphereScreen({ profile, audioDirector, settings, updateSettings }: { profile: ReturnType<typeof getAtmosphereProfile>; audioDirector: SyntheticAudioDirectorSnapshot; settings: AtmosphereSettings; updateSettings: (patch: Partial<AtmosphereSettings>) => void }) {
+  const [view, setView] = useState<'mix' | 'settings' | 'library'>('mix');
   const toggles: Array<[keyof AtmosphereSettings, string, string]> = [
     ['enabled', 'Couche visuelle active', 'Active/désactive l’habillage sensoriel global.'],
-    ['audioEnabled', 'Audio synthétique actif', 'Active les sons générés localement par Web Audio après interaction utilisateur.'],
+    ['audioEnabled', 'Audio actif', 'Active la partition, les ambiances et les signaux du terminal.'],
+    ['musicEnabled', 'Partition adaptative', 'Fait évoluer la musique originale selon la pression active.'],
     ['advancedAudioEnabled', 'Moteur audio avancé', 'Utilise les cues multicouches, bruit filtré, basses et ambiance contextuelle.'],
-    ['ambientDrone', 'Drone ambiant court', 'Ajoute une couche discrète selon l’ambiance dominante : Xen, Advisor, Nova ou Lambda.'],
+    ['ambientDrone', 'Texture ambiante', 'Ajoute une couche discrète selon l’ambiance dominante : Xen, Advisor, Nova ou Lambda.'],
     ['eventCues', 'Cues événementiels', 'Autorise les sons de crise au changement de jour, événement, terminal ou statut.'],
     ['uiCues', 'Cues UI / navigation', 'Autorise les bips courts de terminal lors des changements de contexte.'],
     ['bassResponse', 'Réponse basse Citadel', 'Renforce les graves pour Advisor, Strider, Citadel et verrouillage.'],
@@ -2278,14 +2333,26 @@ function AtmosphereScreen({ profile, audioDirector, settings, updateSettings }: 
   const activeCue = syntheticAudioCues[audioDirector.activeCue];
   const ambientCue = syntheticAudioCues[audioDirector.ambientCue];
   const recommended = audioDirector.recommendedCues.map((id) => syntheticAudioCues[id]);
+  const musicTrack = getAdaptiveMusicTrack(audioDirector);
   return <section className="panel-grid atmosphere-layout audio-layout">
-    <div className="panel atmosphere-console audio-director-console">
+    <div className="panel atmosphere-view-toolbar wide">
+      <div><span className="brand-kicker">IMMERSION / PRÉFÉRENCES JOUEUR</span><h2>Son et ambiance</h2></div>
+      <div className="atmosphere-view-segments">
+        <button aria-pressed={view === 'mix'} onClick={() => setView('mix')}>Mix actif</button>
+        <button aria-pressed={view === 'settings'} onClick={() => setView('settings')}>Réglages</button>
+        <button aria-pressed={view === 'library'} onClick={() => setView('library')}>Bibliothèque</button>
+      </div>
+    </div>
+
+    {view === 'mix' && <>
+    <div className="panel atmosphere-console audio-director-console wide">
       <span className="brand-kicker">SYNTHETIC AUDIO / VISUAL DIRECTOR</span>
       <h2>{profile.label}</h2>
       <p>{profile.reason}</p>
       <div className="mini-grid">
         <span>Mode <b>{profile.mode}</b></span>
         <span>Mix <b>{audioDirector.mixLabel}</b></span>
+        <span>Partition <b>{musicTrack.label}</b></span>
         <span>Alerte <b>{profile.alertLevel}/5</b></span>
         <span>Intensité visuelle <b>{profile.intensity}%</b></span>
         <span>Danger audio <b>{audioDirector.danger}%</b></span>
@@ -2296,7 +2363,33 @@ function AtmosphereScreen({ profile, audioDirector, settings, updateSettings }: 
       <div className="coan-lines">{audioDirector.routeLines.map((line) => <p key={line}>▸ {line}</p>)}</div>
     </div>
 
-    <div className="panel atmosphere-switches audio-switches">
+    <div className="panel audio-cue-current">
+      <span className="brand-kicker">PARTITION ACTIVE</span>
+      <h2>{musicTrack.label}</h2>
+      <p>{musicTrack.description}</p>
+      <div className="mini-grid">
+        <span>Musique <b>{settings.musicVolume}%</b></span>
+        <span>Effets <b>{settings.effectsVolume}%</b></span>
+      </div>
+    </div>
+
+    <div className="panel audio-cue-current">
+      <span className="brand-kicker">SIGNAL ACTIF</span>
+      <h2>{activeCue.label}</h2>
+      <p>{activeCue.description}</p>
+      <p className="lore-note">Déclencheur : {activeCue.trigger}</p>
+      <button type="button" onClick={() => playSyntheticAudioCue(activeCue.id, { ...settings, audioEnabled: true, eventCues: true }, audioDirector)}>Pré-écouter le signal</button>
+    </div>
+
+    <div className="panel audio-cue-current ambient wide">
+      <span className="brand-kicker">TEXTURE AMBIANTE</span>
+      <h2>{ambientCue.label}</h2>
+      <p>{ambientCue.description}</p>
+      <div className="alert-meter"><i style={{ width: `${audioDirector.intensity}%` }} /></div>
+    </div>
+    </>}
+
+    {view === 'settings' && <div className="panel atmosphere-switches audio-switches wide">
       <span className="brand-kicker">Paramètres</span>
       <h2>Contrôle de l’immersion</h2>
       <div className="settings-list">
@@ -2305,8 +2398,13 @@ function AtmosphereScreen({ profile, audioDirector, settings, updateSettings }: 
           <span><strong>{label}</strong><em>{description}</em></span>
         </label>)}
       </div>
-      <label>Volume maître synthétique : {settings.masterVolume}%</label>
+      <div className="atmosphere-volume-grid">
+      <label>Volume général : {settings.masterVolume}%</label>
       <input type="range" min="0" max="100" value={settings.masterVolume} onChange={(event) => updateSettings({ masterVolume: Number(event.target.value) })} />
+      <label>Musique : {settings.musicVolume}%</label>
+      <input type="range" min="0" max="100" value={settings.musicVolume} onChange={(event) => updateSettings({ musicVolume: Number(event.target.value) })} />
+      <label>Effets et signaux : {settings.effectsVolume}%</label>
+      <input type="range" min="0" max="100" value={settings.effectsVolume} onChange={(event) => updateSettings({ effectsVolume: Number(event.target.value) })} />
       <label>Cooldown cue : {settings.cueCooldownMs} ms</label>
       <input type="range" min="150" max="2200" step="50" value={settings.cueCooldownMs} onChange={(event) => updateSettings({ cueCooldownMs: Number(event.target.value) })} />
       <label>Complexité audio</label>
@@ -2315,34 +2413,13 @@ function AtmosphereScreen({ profile, audioDirector, settings, updateSettings }: 
         <option value="standard">Standard — couches principales</option>
         <option value="dense">Dense — couches complètes</option>
       </select>
-      <button type="button" onClick={() => playSyntheticAudioCue(audioDirector.activeCue, { ...settings, audioEnabled: true, eventCues: true }, audioDirector)}>Tester cue actif</button>
-      <p className="lore-note">L’audio est généré localement par oscillateurs, bruit filtré et enveloppes Web Audio. Aucun fichier sonore propriétaire Half-Life n’est inclus.</p>
-    </div>
-
-    <div className="panel audio-cue-current">
-      <span className="brand-kicker">Cue actif</span>
-      <h2>{activeCue.label}</h2>
-      <p>{activeCue.description}</p>
-      <div className="mini-grid">
-        <span>Tag <b>{activeCue.terminalTag}</b></span>
-        <span>Catégorie <b>{activeCue.category}</b></span>
-        <span>Priorité <b>{activeCue.priority}/5</b></span>
-        <span>Segments <b>{activeCue.segments.length}</b></span>
       </div>
-      <p className="lore-note">Déclencheur : {activeCue.trigger}</p>
-      <button type="button" onClick={() => playSyntheticAudioCue(activeCue.id, { ...settings, audioEnabled: true, eventCues: true }, audioDirector)}>Pré-écouter {activeCue.label}</button>
-    </div>
+      <button type="button" onClick={() => playSyntheticAudioCue(audioDirector.activeCue, { ...settings, audioEnabled: true, eventCues: true }, audioDirector)}>Tester cue actif</button>
+      <p className="lore-note">Partition et effets originaux. Aucun fichier sonore propriétaire Half-Life n’est inclus.</p>
+    </div>}
 
-    <div className="panel audio-cue-current ambient">
-      <span className="brand-kicker">Drone ambiant recommandé</span>
-      <h2>{ambientCue.label}</h2>
-      <p>{ambientCue.description}</p>
-      <div className="alert-meter"><i style={{ width: `${audioDirector.intensity}%` }} /></div>
-      <p className="lore-note">Utilisé comme couche courte si “Drone ambiant court” est actif.</p>
-      <button type="button" onClick={() => playSyntheticAudioCue(ambientCue.id, { ...settings, audioEnabled: true, eventCues: true }, audioDirector)}>Pré-écouter ambiance</button>
-    </div>
-
-    <div className="panel atmosphere-rules audio-library">
+    {view === 'library' && <>
+    <div className="panel atmosphere-rules audio-library wide">
       <span className="brand-kicker">Bibliothèque synthétique</span>
       <h2>Cues avancés</h2>
       <div className="broadcast-list audio-cue-list">
@@ -2360,7 +2437,7 @@ function AtmosphereScreen({ profile, audioDirector, settings, updateSettings }: 
       </div>
     </div>
 
-    <div className="panel atmosphere-rules">
+    <div className="panel atmosphere-rules wide">
       <span className="brand-kicker">Règles de bascule</span>
       <h2>Quand l’interface change</h2>
       <div className="broadcast-list">
@@ -2372,6 +2449,7 @@ function AtmosphereScreen({ profile, audioDirector, settings, updateSettings }: 
         <article className="broadcast-card"><h3>Effondrement</h3><p>City Failure Protocol : alarme Citadel, bruit filtré et verrouillage final.</p></article>
       </div>
     </div>
+    </>}
   </section>;
 }
 

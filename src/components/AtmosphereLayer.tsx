@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import type { AtmosphereProfile, AtmosphereSettings, SyntheticAudioDirectorSnapshot } from '../types/game';
 import { playSyntheticAudioCue, startSyntheticAmbientBed } from '../systems/syntheticAudioSystem';
+import { updateAdaptiveMusic } from '../systems/adaptiveMusicSystem';
 
 export function AtmosphereLayer({
   profile,
@@ -42,6 +43,11 @@ export function AtmosphereLayer({
   useEffect(() => {
     if (!audioDirector) return;
     return startSyntheticAmbientBed(settings, audioDirector);
+  }, [audioDirector, settings]);
+
+  useEffect(() => {
+    if (!audioDirector) return;
+    updateAdaptiveMusic(settings, audioDirector);
   }, [audioDirector, settings]);
 
   if (!settings.enabled) return null;

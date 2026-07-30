@@ -1,12 +1,17 @@
 {
-  "name": "dazzling-pascal",
+  "name": "combine-administrator-simulator",
   "private": true,
-  "version": "0.46.1",
+  "version": "0.47.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
+    "test": "vitest run --exclude e2e/**",
+    "test:unit": "vitest run --exclude e2e/**",
+    "test:e2e": "playwright test",
+    "test:matrix": "node scripts/coan-pre-release-matrix.mjs",
+    "quality": "npm run lint && npm run test:unit && npm run test:matrix && npm run build",
     "preview": "vite preview",
     "tauri": "tauri",
     "tauri:dev": "tauri dev",
@@ -35,15 +40,18 @@
     "zustand": "^5.0.14"
   },
   "devDependencies": {
-    "@tauri-apps/cli": "^2.0.0",
+    "@playwright/test": "^1.58.2",
     "@tailwindcss/vite": "^4.3.1",
+    "@tauri-apps/cli": "^2.0.0",
     "@types/node": "^24.13.2",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.2",
     "oxlint": "^1.69.0",
+    "postcss": "^8.5.25",
     "tailwindcss": "^4.3.1",
     "typescript": "~6.0.2",
-    "vite": "^8.1.0"
+    "vite": "^8.1.0",
+    "vitest": "^4.0.18"
   }
 }

@@ -1,5 +1,5 @@
 import type { GameState, LoreCodexCategoryId, LoreCodexEntry, LoreCodexView } from '../types/game';
-import { loreCodexEntries } from '../data/loreCodex';
+import { loreCodexCategoryLabels, loreCodexEntries, loreCodexSourceLabels } from '../data/loreCodex';
 
 const clamp = (value: number, min = 0, max = 100) => Math.max(min, Math.min(max, Math.round(value)));
 
@@ -101,26 +101,31 @@ export function buildLoreCodexView(game: GameState, category: LoreCodexCategoryI
   };
 }
 
-export function buildLoreCodexExport(entries: LoreCodexEntry[]): string {
-  return entries.map((entry) => [
+export function buildLoreCodexExport(entries: LoreCodexEntry[], city: string): string {
+  const resolveCity = (text: string) => text.replaceAll('{{CITY_NUMBER}}', city);
+  const dossierHeader = [
+    `# CODEX COAN — CITY ${city}`,
+    `Entrées exportées : ${entries.length}`,
+    '',
+    '---',
+    '',
+  ].join('\n');
+  return dossierHeader + entries.map((entry) => [
     `# ${entry.title}`,
     `Classification : ${entry.classification}`,
-    `Catégorie : ${entry.category}`,
-    `Source : ${entry.sourceType}`,
+    `Catégorie : ${loreCodexCategoryLabels[entry.category]}`,
+    `Référence : ${loreCodexSourceLabels[entry.sourceType]}`,
     '',
-    'Résumé canon :',
-    entry.canonSummary,
+    'Cadre de référence :',
+    resolveCity(entry.canonSummary),
     '',
     'Doctrine opérationnelle :',
-    entry.operationalDoctrine,
+    resolveCity(entry.operationalDoctrine),
     '',
-    'Règles danger :',
+    'Protocoles de risque :',
     ...entry.dangerRules.map((line) => `- ${line}`),
     '',
-    'À éviter :',
+    'Interdictions doctrinales :',
     ...entry.avoidRules.map((line) => `- ${line}`),
-    '',
-    `Modules liés : ${entry.connectedTabs.join(', ')}`,
-    `Systèmes liés : ${entry.relatedSystems.join(', ')}`,
   ].join('\n')).join('\n\n---\n\n');
 }

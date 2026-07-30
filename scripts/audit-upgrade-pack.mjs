@@ -53,11 +53,15 @@ const required = [
 
 const readmeExpected = Array.from({ length: 45 }, (_, index) => `README_STEP${index + 1}`);
 const existingFiles = [];
+const ignoredDirectories = new Set(['.git', '.audit', '.pnpm-store', 'dist', 'node_modules', 'target']);
 function walk(dir) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     const full = path.join(dir, entry.name);
-    if (entry.isDirectory()) walk(full);
-    else existingFiles.push(path.relative(packRoot, full).replaceAll('\\', '/'));
+    if (entry.isDirectory()) {
+      if (!ignoredDirectories.has(entry.name)) walk(full);
+    } else {
+      existingFiles.push(path.relative(packRoot, full).replaceAll('\\', '/'));
+    }
   }
 }
 walk(packRoot);
