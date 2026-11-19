@@ -1,0 +1,2844 @@
+{
+  "schema_version": "1.0",
+  "project": "Half Life Administrator",
+  "module": "Half Life Resonance",
+  "status": "design_specification_not_implemented",
+  "units": "logical pixels at 1920 by 1080",
+  "design_note": "All exact composition, encounters, stage finishers and 2D transitions are fan design proposals; source locations require capture-level verification. No generated image is claimed by this manifest.",
+  "stage_count": 24,
+  "priority_stage_count": 8,
+  "stages": [
+    {
+      "id": "STG_01_HL1_TRAM",
+      "slug": "hl1_tram",
+      "name_fr": "Terminus du tram de Black Mesa",
+      "source_game": "Half-Life",
+      "source_code": "HL1",
+      "priority": "P1",
+      "reference_location": "Quai de transport et infrastructure scientifique avant le sinistre",
+      "reference_status": "à vérifier sur captures du jeu source",
+      "evidence": {
+        "title": "Half-Life",
+        "url": "https://www.half-life.com/en/halflife",
+        "checked_scope": "Incident de Black Mesa, expérience et invasion; les détails de chaque salle exigent des captures en jeu."
+      },
+      "creative_status": "adaptation 2D originale non canonique",
+      "asset_status": "spécifié",
+      "competitive": {
+        "flat_ground": true,
+        "ground_y_logical_px": 880,
+        "arena_width_logical_px": 2560,
+        "viewport_logical_px": [
+          1920,
+          1080
+        ],
+        "hazards": false,
+        "random_gameplay": false,
+        "transitions_during_round": false
+      },
+      "layers": [
+        {
+          "id": "L00_ambience",
+          "parallax": 0,
+          "content": "pénombre du tunnel",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L01_far",
+          "parallax": 0.12,
+          "content": "réseau de poutres lointaines",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L02_mid",
+          "parallax": 0.3,
+          "content": "rame immobilisée au quai opposé",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L03_near",
+          "parallax": 0.55,
+          "content": "paroi de quai et portes de service",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L04_ground",
+          "parallax": 1,
+          "content": "quai de combat continu en béton",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L05_foreground",
+          "parallax": 1.1,
+          "content": "extrémités de garde-corps hors silhouettes",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        }
+      ],
+      "separate_props": [
+        {
+          "id": "PRP_HL1_TRAM_01",
+          "description": "signal de quai",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL1_TRAM_02",
+          "description": "chariot de maintenance",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL1_TRAM_03",
+          "description": "panneau directionnel sans texte",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL1_TRAM_04",
+          "description": "porte industrielle",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        }
+      ],
+      "ambience": "graves du tram, ventilation et relais mécaniques",
+      "spectacle_variant": "une rame traverse la profondeur, jamais le plan de collision",
+      "optional_transition": "porte de maintenance ouverte vers le sas",
+      "stage_finish_non_gore": "Le perdant est poussé dans une rame vide; les portes se ferment avant son départ lent.",
+      "finish_semantics": "cinématique après résultat; aucune modification du score ni du round",
+      "verification": [
+        "captures du jeu source identifiées",
+        "six couches séparées avec alpha quand nécessaire",
+        "alignement du sol vérifié",
+        "lisibilité des deux côtés",
+        "aucun danger actif en classé",
+        "cadence et flashs testés"
+      ]
+    },
+    {
+      "id": "STG_02_HL1_TEST_CHAMBER",
+      "slug": "hl1_test_chamber",
+      "name_fr": "Chambre du spectromètre",
+      "source_game": "Half-Life",
+      "source_code": "HL1",
+      "priority": "P0",
+      "reference_location": "Salle de l’expérience de la cascade de résonance dans Half-Life original",
+      "reference_status": "à vérifier sur captures du jeu source",
+      "evidence": {
+        "title": "Half-Life",
+        "url": "https://www.half-life.com/en/halflife",
+        "checked_scope": "Incident de Black Mesa, expérience et invasion; les détails de chaque salle exigent des captures en jeu."
+      },
+      "creative_status": "adaptation 2D originale non canonique",
+      "asset_status": "spécifié",
+      "competitive": {
+        "flat_ground": true,
+        "ground_y_logical_px": 880,
+        "arena_width_logical_px": 2560,
+        "viewport_logical_px": [
+          1920,
+          1080
+        ],
+        "hazards": false,
+        "random_gameplay": false,
+        "transitions_during_round": false
+      },
+      "layers": [
+        {
+          "id": "L00_ambience",
+          "parallax": 0,
+          "content": "coque sombre supérieure",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L01_far",
+          "parallax": 0.12,
+          "content": "structure cylindrique et passerelles hautes",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L02_mid",
+          "parallax": 0.3,
+          "content": "réacteur et chambre instrumentale",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L03_near",
+          "parallax": 0.55,
+          "content": "console latérale et rail du chariot",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L04_ground",
+          "parallax": 1,
+          "content": "passerelle de combat plane devant la chambre",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L05_foreground",
+          "parallax": 1.1,
+          "content": "câbles aux deux marges basses",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        }
+      ],
+      "separate_props": [
+        {
+          "id": "PRP_HL1_TEST_CHAMBER_01",
+          "description": "chariot porte-échantillon",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL1_TEST_CHAMBER_02",
+          "description": "cristal de test isolé",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL1_TEST_CHAMBER_03",
+          "description": "console instrumentale",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL1_TEST_CHAMBER_04",
+          "description": "voyant de sécurité",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        }
+      ],
+      "ambience": "bourdonnement énergétique, ventilation, décharges brèves",
+      "spectacle_variant": "arcs derrière les vitres; aucun éclair traversant le HUD",
+      "optional_transition": "sas de contrôle accessible entre manches en mode spectacle",
+      "stage_finish_non_gore": "Un portail se referme après avoir aspiré le perdant; un plan bref le montre vivant dans un sas de confinement.",
+      "finish_semantics": "cinématique après résultat; aucune modification du score ni du round",
+      "verification": [
+        "captures du jeu source identifiées",
+        "six couches séparées avec alpha quand nécessaire",
+        "alignement du sol vérifié",
+        "lisibilité des deux côtés",
+        "aucun danger actif en classé",
+        "cadence et flashs testés"
+      ]
+    },
+    {
+      "id": "STG_03_HL1_BLAST_PIT",
+      "slug": "hl1_blast_pit",
+      "name_fr": "Passerelle de Blast Pit",
+      "source_game": "Half-Life",
+      "source_code": "HL1",
+      "priority": "P1",
+      "reference_location": "Installation industrielle autour du silo de Blast Pit",
+      "reference_status": "à vérifier sur captures du jeu source",
+      "evidence": {
+        "title": "Half-Life",
+        "url": "https://www.half-life.com/en/halflife",
+        "checked_scope": "Incident de Black Mesa, expérience et invasion; les détails de chaque salle exigent des captures en jeu."
+      },
+      "creative_status": "adaptation 2D originale non canonique",
+      "asset_status": "spécifié",
+      "competitive": {
+        "flat_ground": true,
+        "ground_y_logical_px": 880,
+        "arena_width_logical_px": 2560,
+        "viewport_logical_px": [
+          1920,
+          1080
+        ],
+        "hazards": false,
+        "random_gameplay": false,
+        "transitions_during_round": false
+      },
+      "layers": [
+        {
+          "id": "L00_ambience",
+          "parallax": 0,
+          "content": "voûte industrielle noire",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L01_far",
+          "parallax": 0.12,
+          "content": "superstructure du silo",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L02_mid",
+          "parallax": 0.3,
+          "content": "tuyauteries et réservoirs",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L03_near",
+          "parallax": 0.55,
+          "content": "garde-corps du puits fermé",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L04_ground",
+          "parallax": 1,
+          "content": "passerelle de combat renforcée et continue",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L05_foreground",
+          "parallax": 1.1,
+          "content": "conduites tronquées aux angles",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        }
+      ],
+      "separate_props": [
+        {
+          "id": "PRP_HL1_BLAST_PIT_01",
+          "description": "vanne rouge",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL1_BLAST_PIT_02",
+          "description": "grille amovible",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL1_BLAST_PIT_03",
+          "description": "réservoir latéral",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL1_BLAST_PIT_04",
+          "description": "boîtier de commande",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        }
+      ],
+      "ambience": "chocs métalliques lointains et souffle des conduites",
+      "spectacle_variant": "silhouette du tentacule dans le fond en spectacle uniquement",
+      "optional_transition": "poste de commande adjacent via fondu entre manches",
+      "stage_finish_non_gore": "Un souffle industriel projette le perdant dans un filet de maintenance visible.",
+      "finish_semantics": "cinématique après résultat; aucune modification du score ni du round",
+      "verification": [
+        "captures du jeu source identifiées",
+        "six couches séparées avec alpha quand nécessaire",
+        "alignement du sol vérifié",
+        "lisibilité des deux côtés",
+        "aucun danger actif en classé",
+        "cadence et flashs testés"
+      ]
+    },
+    {
+      "id": "STG_04_HL1_LAMBDA",
+      "slug": "hl1_lambda",
+      "name_fr": "Anneau Lambda",
+      "source_game": "Half-Life",
+      "source_code": "HL1",
+      "priority": "P1",
+      "reference_location": "Infrastructure de téléportation du complexe Lambda",
+      "reference_status": "à vérifier sur captures du jeu source",
+      "evidence": {
+        "title": "Half-Life",
+        "url": "https://www.half-life.com/en/halflife",
+        "checked_scope": "Incident de Black Mesa, expérience et invasion; les détails de chaque salle exigent des captures en jeu."
+      },
+      "creative_status": "adaptation 2D originale non canonique",
+      "asset_status": "spécifié",
+      "competitive": {
+        "flat_ground": true,
+        "ground_y_logical_px": 880,
+        "arena_width_logical_px": 2560,
+        "viewport_logical_px": [
+          1920,
+          1080
+        ],
+        "hazards": false,
+        "random_gameplay": false,
+        "transitions_during_round": false
+      },
+      "layers": [
+        {
+          "id": "L00_ambience",
+          "parallax": 0,
+          "content": "cavité sombre",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L01_far",
+          "parallax": 0.12,
+          "content": "anneaux supérieurs",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L02_mid",
+          "parallax": 0.3,
+          "content": "cœur et bobines du téléporteur",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L03_near",
+          "parallax": 0.55,
+          "content": "consoles périphériques",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L04_ground",
+          "parallax": 1,
+          "content": "plateforme de service continue",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L05_foreground",
+          "parallax": 1.1,
+          "content": "câbles et conduits hors centre",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        }
+      ],
+      "separate_props": [
+        {
+          "id": "PRP_HL1_LAMBDA_01",
+          "description": "bobine énergétique",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL1_LAMBDA_02",
+          "description": "console de transfert",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL1_LAMBDA_03",
+          "description": "caisse scientifique",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL1_LAMBDA_04",
+          "description": "balise de téléportation",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        }
+      ],
+      "ambience": "moteurs et impulsions de champ",
+      "spectacle_variant": "anneaux lumineux à cadence lente; pas de stroboscope",
+      "optional_transition": "galerie de contrôle séparée",
+      "stage_finish_non_gore": "Le perdant traverse le téléporteur et réapparaît derrière une vitre de quarantaine.",
+      "finish_semantics": "cinématique après résultat; aucune modification du score ni du round",
+      "verification": [
+        "captures du jeu source identifiées",
+        "six couches séparées avec alpha quand nécessaire",
+        "alignement du sol vérifié",
+        "lisibilité des deux côtés",
+        "aucun danger actif en classé",
+        "cadence et flashs testés"
+      ]
+    },
+    {
+      "id": "STG_05_HL1_XEN",
+      "slug": "hl1_xen",
+      "name_fr": "Îlot frontière de Xen",
+      "source_game": "Half-Life",
+      "source_code": "HL1",
+      "priority": "P0",
+      "reference_location": "Îles rocheuses flottantes et biologie de Xen selon Half-Life original",
+      "reference_status": "à vérifier sur captures du jeu source",
+      "evidence": {
+        "title": "Half-Life",
+        "url": "https://www.half-life.com/en/halflife",
+        "checked_scope": "Incident de Black Mesa, expérience et invasion; les détails de chaque salle exigent des captures en jeu."
+      },
+      "creative_status": "adaptation 2D originale non canonique",
+      "asset_status": "spécifié",
+      "competitive": {
+        "flat_ground": true,
+        "ground_y_logical_px": 880,
+        "arena_width_logical_px": 2560,
+        "viewport_logical_px": [
+          1920,
+          1080
+        ],
+        "hazards": false,
+        "random_gameplay": false,
+        "transitions_during_round": false
+      },
+      "layers": [
+        {
+          "id": "L00_ambience",
+          "parallax": 0,
+          "content": "ciel extraterrestre du jeu original",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L01_far",
+          "parallax": 0.12,
+          "content": "îles minuscules lointaines",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L02_mid",
+          "parallax": 0.3,
+          "content": "rochers suspendus intermédiaires",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L03_near",
+          "parallax": 0.55,
+          "content": "végétation et formations rocheuses en retrait",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L04_ground",
+          "parallax": 1,
+          "content": "terrasse rocheuse de combat continue",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L05_foreground",
+          "parallax": 1.1,
+          "content": "petites excroissances aux coins inférieurs",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        }
+      ],
+      "separate_props": [
+        {
+          "id": "PRP_HL1_XEN_01",
+          "description": "cristal de Xen",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL1_XEN_02",
+          "description": "plante lumineuse",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL1_XEN_03",
+          "description": "rocher organique",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL1_XEN_04",
+          "description": "membrane de sol",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        }
+      ],
+      "ambience": "vent sourd, pulsations organiques, chants lointains",
+      "spectacle_variant": "organismes animés sans danger en compétitif",
+      "optional_transition": "îlot voisin relié par téléportation après résultat",
+      "stage_finish_non_gore": "Une bulle de téléportation transporte le perdant sur un îlot éloigné, debout et désarmé.",
+      "finish_semantics": "cinématique après résultat; aucune modification du score ni du round",
+      "verification": [
+        "captures du jeu source identifiées",
+        "six couches séparées avec alpha quand nécessaire",
+        "alignement du sol vérifié",
+        "lisibilité des deux côtés",
+        "aucun danger actif en classé",
+        "cadence et flashs testés"
+      ]
+    },
+    {
+      "id": "STG_06_OP4_CARGO",
+      "slug": "op4_cargo",
+      "name_fr": "Dépôt sous occupation",
+      "source_game": "Half-Life Opposing Force",
+      "source_code": "OP4",
+      "priority": "P1",
+      "reference_location": "Dépôts militaires et zones de fret de Black Mesa dans Opposing Force",
+      "reference_status": "à vérifier sur captures du jeu source",
+      "evidence": {
+        "title": "Half-Life Opposing Force",
+        "url": "https://store.steampowered.com/app/50/HalfLife_Opposing_Force/",
+        "checked_scope": "Extension Gearbox et retour à Black Mesa du point de vue militaire; topologie des lieux à vérifier en jeu."
+      },
+      "creative_status": "adaptation 2D originale non canonique",
+      "asset_status": "spécifié",
+      "competitive": {
+        "flat_ground": true,
+        "ground_y_logical_px": 880,
+        "arena_width_logical_px": 2560,
+        "viewport_logical_px": [
+          1920,
+          1080
+        ],
+        "hazards": false,
+        "random_gameplay": false,
+        "transitions_during_round": false
+      },
+      "layers": [
+        {
+          "id": "L00_ambience",
+          "parallax": 0,
+          "content": "ciel désertique",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L01_far",
+          "parallax": 0.12,
+          "content": "collines et tours",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L02_mid",
+          "parallax": 0.3,
+          "content": "hangar lointain",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L03_near",
+          "parallax": 0.55,
+          "content": "containers du dépôt",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L04_ground",
+          "parallax": 1,
+          "content": "bande de béton plane",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L05_foreground",
+          "parallax": 1.1,
+          "content": "angles de caisse hors piste",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        }
+      ],
+      "separate_props": [
+        {
+          "id": "PRP_OP4_CARGO_01",
+          "description": "caisse militaire",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_OP4_CARGO_02",
+          "description": "baril",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_OP4_CARGO_03",
+          "description": "projecteur sur pied",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_OP4_CARGO_04",
+          "description": "palette de fret",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        }
+      ],
+      "ambience": "rotor distant, radios militaires filtrées et vent",
+      "spectacle_variant": "projecteur mobile en fond, sans éblouissement du plan de combat",
+      "optional_transition": "porte du hangar vers une seconde composition",
+      "stage_finish_non_gore": "Une sangle de fret immobilise le perdant et le hisse hors de la zone de combat.",
+      "finish_semantics": "cinématique après résultat; aucune modification du score ni du round",
+      "verification": [
+        "captures du jeu source identifiées",
+        "six couches séparées avec alpha quand nécessaire",
+        "alignement du sol vérifié",
+        "lisibilité des deux côtés",
+        "aucun danger actif en classé",
+        "cadence et flashs testés"
+      ]
+    },
+    {
+      "id": "STG_07_OP4_GENE_WORM",
+      "slug": "op4_gene_worm",
+      "name_fr": "Chambre du portail Race X",
+      "source_game": "Half-Life Opposing Force",
+      "source_code": "OP4",
+      "priority": "P1",
+      "reference_location": "Chambre du combat final de Opposing Force; Gene Worm traité comme boss de décor",
+      "reference_status": "à vérifier sur captures du jeu source",
+      "evidence": {
+        "title": "Half-Life Opposing Force",
+        "url": "https://store.steampowered.com/app/50/HalfLife_Opposing_Force/",
+        "checked_scope": "Extension Gearbox et retour à Black Mesa du point de vue militaire; topologie des lieux à vérifier en jeu."
+      },
+      "creative_status": "adaptation 2D originale non canonique",
+      "asset_status": "spécifié",
+      "competitive": {
+        "flat_ground": true,
+        "ground_y_logical_px": 880,
+        "arena_width_logical_px": 2560,
+        "viewport_logical_px": [
+          1920,
+          1080
+        ],
+        "hazards": false,
+        "random_gameplay": false,
+        "transitions_during_round": false
+      },
+      "layers": [
+        {
+          "id": "L00_ambience",
+          "parallax": 0,
+          "content": "obscurité du puits",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L01_far",
+          "parallax": 0.12,
+          "content": "portail profond",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L02_mid",
+          "parallax": 0.3,
+          "content": "architecture de la chambre",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L03_near",
+          "parallax": 0.55,
+          "content": "dispositifs techniques et rebords",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L04_ground",
+          "parallax": 1,
+          "content": "coursive de service continue",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L05_foreground",
+          "parallax": 1.1,
+          "content": "grilles et câbles aux marges",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        }
+      ],
+      "separate_props": [
+        {
+          "id": "PRP_OP4_GENE_WORM_01",
+          "description": "émetteur scientifique",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_OP4_GENE_WORM_02",
+          "description": "projecteur",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_OP4_GENE_WORM_03",
+          "description": "console de chambre",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_OP4_GENE_WORM_04",
+          "description": "caisson blindé",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        }
+      ],
+      "ambience": "respiration du portail et machines lourdes",
+      "spectacle_variant": "Gene Worm visible seulement dans variante boss; silhouette non interactive en versus",
+      "optional_transition": "sas latéral après fermeture du portail",
+      "stage_finish_non_gore": "Un champ de transfert expulse le perdant dans un caisson visible; aucun démembrement.",
+      "finish_semantics": "cinématique après résultat; aucune modification du score ni du round",
+      "verification": [
+        "captures du jeu source identifiées",
+        "six couches séparées avec alpha quand nécessaire",
+        "alignement du sol vérifié",
+        "lisibilité des deux côtés",
+        "aucun danger actif en classé",
+        "cadence et flashs testés"
+      ]
+    },
+    {
+      "id": "STG_08_BS_FREIGHT",
+      "slug": "bs_freight",
+      "name_fr": "Cour de fret de Calhoun",
+      "source_game": "Half-Life Blue Shift",
+      "source_code": "BS",
+      "priority": "P1",
+      "reference_location": "Zone de fret de Black Mesa traversée dans Blue Shift",
+      "reference_status": "à vérifier sur captures du jeu source",
+      "evidence": {
+        "title": "Half-Life Blue Shift",
+        "url": "https://store.steampowered.com/app/130/HalfLife_Blue_Shift/",
+        "checked_scope": "Extension Gearbox avec Barney Calhoun à Black Mesa; topologie des lieux à vérifier en jeu."
+      },
+      "creative_status": "adaptation 2D originale non canonique",
+      "asset_status": "spécifié",
+      "competitive": {
+        "flat_ground": true,
+        "ground_y_logical_px": 880,
+        "arena_width_logical_px": 2560,
+        "viewport_logical_px": [
+          1920,
+          1080
+        ],
+        "hazards": false,
+        "random_gameplay": false,
+        "transitions_during_round": false
+      },
+      "layers": [
+        {
+          "id": "L00_ambience",
+          "parallax": 0,
+          "content": "ciel poussiéreux",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L01_far",
+          "parallax": 0.12,
+          "content": "relief désertique",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L02_mid",
+          "parallax": 0.3,
+          "content": "portiques ferroviaires",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L03_near",
+          "parallax": 0.55,
+          "content": "wagons et entrepôts",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L04_ground",
+          "parallax": 1,
+          "content": "quai de fret plat",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L05_foreground",
+          "parallax": 1.1,
+          "content": "bord de palette dans les coins",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        }
+      ],
+      "separate_props": [
+        {
+          "id": "PRP_BS_FREIGHT_01",
+          "description": "caisse de fret",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_BS_FREIGHT_02",
+          "description": "transpalette",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_BS_FREIGHT_03",
+          "description": "signal ferroviaire",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_BS_FREIGHT_04",
+          "description": "porte de wagon",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        }
+      ],
+      "ambience": "vent, métal qui travaille, aiguillage distant",
+      "spectacle_variant": "wagon qui se déplace uniquement sur la voie arrière",
+      "optional_transition": "hangar adjacent entre manches",
+      "stage_finish_non_gore": "Le perdant glisse dans un wagon vide dont la porte se verrouille sans choc.",
+      "finish_semantics": "cinématique après résultat; aucune modification du score ni du round",
+      "verification": [
+        "captures du jeu source identifiées",
+        "six couches séparées avec alpha quand nécessaire",
+        "alignement du sol vérifié",
+        "lisibilité des deux côtés",
+        "aucun danger actif en classé",
+        "cadence et flashs testés"
+      ]
+    },
+    {
+      "id": "STG_09_BS_ROSENBERG",
+      "slug": "bs_rosenberg",
+      "name_fr": "Laboratoire de Rosenberg",
+      "source_game": "Half-Life Blue Shift",
+      "source_code": "BS",
+      "priority": "P1",
+      "reference_location": "Laboratoire et installation de téléportation utilisés dans Blue Shift",
+      "reference_status": "à vérifier sur captures du jeu source",
+      "evidence": {
+        "title": "Half-Life Blue Shift",
+        "url": "https://store.steampowered.com/app/130/HalfLife_Blue_Shift/",
+        "checked_scope": "Extension Gearbox avec Barney Calhoun à Black Mesa; topologie des lieux à vérifier en jeu."
+      },
+      "creative_status": "adaptation 2D originale non canonique",
+      "asset_status": "spécifié",
+      "competitive": {
+        "flat_ground": true,
+        "ground_y_logical_px": 880,
+        "arena_width_logical_px": 2560,
+        "viewport_logical_px": [
+          1920,
+          1080
+        ],
+        "hazards": false,
+        "random_gameplay": false,
+        "transitions_during_round": false
+      },
+      "layers": [
+        {
+          "id": "L00_ambience",
+          "parallax": 0,
+          "content": "plafond sombre",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L01_far",
+          "parallax": 0.12,
+          "content": "charpente du laboratoire",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L02_mid",
+          "parallax": 0.3,
+          "content": "machine de téléportation",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L03_near",
+          "parallax": 0.55,
+          "content": "panneaux de contrôle",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L04_ground",
+          "parallax": 1,
+          "content": "passerelle de laboratoire continue",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L05_foreground",
+          "parallax": 1.1,
+          "content": "petits câbles aux coins",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        }
+      ],
+      "separate_props": [
+        {
+          "id": "PRP_BS_ROSENBERG_01",
+          "description": "console de laboratoire",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_BS_ROSENBERG_02",
+          "description": "capsule technique",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_BS_ROSENBERG_03",
+          "description": "bouteille de gaz",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_BS_ROSENBERG_04",
+          "description": "moniteur sans texte",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        }
+      ],
+      "ambience": "soufflerie et relais électriques",
+      "spectacle_variant": "pulsation de transfert derrière la piste",
+      "optional_transition": "local d’alimentation via transition scénarisée",
+      "stage_finish_non_gore": "Le perdant est évacué dans un halo de transfert puis montré assis dans une salle sûre.",
+      "finish_semantics": "cinématique après résultat; aucune modification du score ni du round",
+      "verification": [
+        "captures du jeu source identifiées",
+        "six couches séparées avec alpha quand nécessaire",
+        "alignement du sol vérifié",
+        "lisibilité des deux côtés",
+        "aucun danger actif en classé",
+        "cadence et flashs testés"
+      ]
+    },
+    {
+      "id": "STG_10_DECAY_GAMMA",
+      "slug": "decay_gamma",
+      "name_fr": "Installation de transfert Gamma",
+      "source_game": "Half-Life Decay",
+      "source_code": "DECAY",
+      "priority": "P1",
+      "reference_location": "Infrastructures de résonance de Decay; composition exacte suspendue à la référence PS2",
+      "reference_status": "à vérifier sur captures du jeu source",
+      "evidence": {
+        "title": "Half-Life Decay",
+        "url": null,
+        "checked_scope": "Référence de production prévue: jeu PlayStation 2. Captures et séquence exacte non examinées dans cette livraison."
+      },
+      "creative_status": "adaptation 2D originale non canonique",
+      "asset_status": "spécifié",
+      "competitive": {
+        "flat_ground": true,
+        "ground_y_logical_px": 880,
+        "arena_width_logical_px": 2560,
+        "viewport_logical_px": [
+          1920,
+          1080
+        ],
+        "hazards": false,
+        "random_gameplay": false,
+        "transitions_during_round": false
+      },
+      "layers": [
+        {
+          "id": "L00_ambience",
+          "parallax": 0,
+          "content": "plafond noir",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L01_far",
+          "parallax": 0.12,
+          "content": "structures porteuses",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L02_mid",
+          "parallax": 0.3,
+          "content": "dispositif de transfert",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L03_near",
+          "parallax": 0.55,
+          "content": "consoles jumelles",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L04_ground",
+          "parallax": 1,
+          "content": "plateforme scientifique plane",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L05_foreground",
+          "parallax": 1.1,
+          "content": "câbles aux marges",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        }
+      ],
+      "separate_props": [
+        {
+          "id": "PRP_DECAY_GAMMA_01",
+          "description": "terminal gauche",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_DECAY_GAMMA_02",
+          "description": "terminal droit",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_DECAY_GAMMA_03",
+          "description": "boîtier de champ",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_DECAY_GAMMA_04",
+          "description": "caisson de cristal",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        }
+      ],
+      "ambience": "impulsions synchronisées et moteurs de laboratoire",
+      "spectacle_variant": "deux consoles s’activent en alternance; aucune fréquence rapide",
+      "optional_transition": "salle de contrôle voisine en scénario",
+      "stage_finish_non_gore": "Deux faisceaux suspendent le perdant puis le déposent derrière un écran de confinement.",
+      "finish_semantics": "cinématique après résultat; aucune modification du score ni du round",
+      "verification": [
+        "captures du jeu source identifiées",
+        "six couches séparées avec alpha quand nécessaire",
+        "alignement du sol vérifié",
+        "lisibilité des deux côtés",
+        "aucun danger actif en classé",
+        "cadence et flashs testés"
+      ]
+    },
+    {
+      "id": "STG_11_HL2_STATION",
+      "slug": "hl2_station",
+      "name_fr": "Parvis de la gare de Cité 17",
+      "source_game": "Half-Life 2",
+      "source_code": "HL2",
+      "priority": "P0",
+      "reference_location": "Parvis extérieur de la gare de Half-Life 2 sous occupation Combine",
+      "reference_status": "à vérifier sur captures du jeu source",
+      "evidence": {
+        "title": "Half-Life 2",
+        "url": "https://www.half-life.com/en/halflife2",
+        "checked_scope": "Cité 17, occupation et résistance, Gordon et Alyx; détails architecturaux à vérifier en jeu."
+      },
+      "creative_status": "adaptation 2D originale non canonique",
+      "asset_status": "spécifié",
+      "competitive": {
+        "flat_ground": true,
+        "ground_y_logical_px": 880,
+        "arena_width_logical_px": 2560,
+        "viewport_logical_px": [
+          1920,
+          1080
+        ],
+        "hazards": false,
+        "random_gameplay": false,
+        "transitions_during_round": false
+      },
+      "layers": [
+        {
+          "id": "L00_ambience",
+          "parallax": 0,
+          "content": "ciel gris urbain",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L01_far",
+          "parallax": 0.12,
+          "content": "silhouette de la Citadelle à l’horizon",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L02_mid",
+          "parallax": 0.3,
+          "content": "toits et immeubles lointains",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L03_near",
+          "parallax": 0.55,
+          "content": "façade néoclassique de la gare et postes Combine latéraux",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L04_ground",
+          "parallax": 1,
+          "content": "parvis pavé de combat continu et dégagé",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L05_foreground",
+          "parallax": 1.1,
+          "content": "bordures basses aux marges",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        }
+      ],
+      "separate_props": [
+        {
+          "id": "PRP_HL2_STATION_01",
+          "description": "banc de gare",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL2_STATION_02",
+          "description": "valise",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL2_STATION_03",
+          "description": "barrière Combine",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL2_STATION_04",
+          "description": "borne de contrôle",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        }
+      ],
+      "ambience": "annonces filtrées depuis la gare, drones distants et vent urbain",
+      "spectacle_variant": "scanner en fond, jamais devant les mains des combattants",
+      "optional_transition": "hall de contrôle lors d’une transition après manche",
+      "stage_finish_non_gore": "Une barrière de contrôle se referme autour du perdant, immobilisé sans blessure.",
+      "finish_semantics": "cinématique après résultat; aucune modification du score ni du round",
+      "verification": [
+        "captures du jeu source identifiées",
+        "six couches séparées avec alpha quand nécessaire",
+        "alignement du sol vérifié",
+        "lisibilité des deux côtés",
+        "aucun danger actif en classé",
+        "cadence et flashs testés"
+      ]
+    },
+    {
+      "id": "STG_12_HL2_CANALS",
+      "slug": "hl2_canals",
+      "name_fr": "Écluse des canaux",
+      "source_game": "Half-Life 2",
+      "source_code": "HL2",
+      "priority": "P1",
+      "reference_location": "Canaux industriels de la fuite hors de Cité 17",
+      "reference_status": "à vérifier sur captures du jeu source",
+      "evidence": {
+        "title": "Half-Life 2",
+        "url": "https://www.half-life.com/en/halflife2",
+        "checked_scope": "Cité 17, occupation et résistance, Gordon et Alyx; détails architecturaux à vérifier en jeu."
+      },
+      "creative_status": "adaptation 2D originale non canonique",
+      "asset_status": "spécifié",
+      "competitive": {
+        "flat_ground": true,
+        "ground_y_logical_px": 880,
+        "arena_width_logical_px": 2560,
+        "viewport_logical_px": [
+          1920,
+          1080
+        ],
+        "hazards": false,
+        "random_gameplay": false,
+        "transitions_during_round": false
+      },
+      "layers": [
+        {
+          "id": "L00_ambience",
+          "parallax": 0,
+          "content": "ciel urbain",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L01_far",
+          "parallax": 0.12,
+          "content": "tours et cheminées",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L02_mid",
+          "parallax": 0.3,
+          "content": "pont et usine",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L03_near",
+          "parallax": 0.55,
+          "content": "canal inférieur et muret",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L04_ground",
+          "parallax": 1,
+          "content": "chemin de halage plat",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L05_foreground",
+          "parallax": 1.1,
+          "content": "herbes et tuyaux aux bords",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        }
+      ],
+      "separate_props": [
+        {
+          "id": "PRP_HL2_CANALS_01",
+          "description": "pneu",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL2_CANALS_02",
+          "description": "bidon",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL2_CANALS_03",
+          "description": "vanne d’écluse",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL2_CANALS_04",
+          "description": "panneau usé",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        }
+      ],
+      "ambience": "eau, résonance de tunnel et hélicoptère distant",
+      "spectacle_variant": "écluse derrière la piste, sans modification du sol",
+      "optional_transition": "ouvrage de pompage adjacent",
+      "stage_finish_non_gore": "Un jet d’eau emporte le perdant vers une plateforme de maintenance visible.",
+      "finish_semantics": "cinématique après résultat; aucune modification du score ni du round",
+      "verification": [
+        "captures du jeu source identifiées",
+        "six couches séparées avec alpha quand nécessaire",
+        "alignement du sol vérifié",
+        "lisibilité des deux côtés",
+        "aucun danger actif en classé",
+        "cadence et flashs testés"
+      ]
+    },
+    {
+      "id": "STG_13_HL2_BME",
+      "slug": "hl2_bme",
+      "name_fr": "Cour de Black Mesa East",
+      "source_game": "Half-Life 2",
+      "source_code": "HL2",
+      "priority": "P1",
+      "reference_location": "Zone d’entraînement et de travail de la résistance près de Black Mesa East",
+      "reference_status": "à vérifier sur captures du jeu source",
+      "evidence": {
+        "title": "Half-Life 2",
+        "url": "https://www.half-life.com/en/halflife2",
+        "checked_scope": "Cité 17, occupation et résistance, Gordon et Alyx; détails architecturaux à vérifier en jeu."
+      },
+      "creative_status": "adaptation 2D originale non canonique",
+      "asset_status": "spécifié",
+      "competitive": {
+        "flat_ground": true,
+        "ground_y_logical_px": 880,
+        "arena_width_logical_px": 2560,
+        "viewport_logical_px": [
+          1920,
+          1080
+        ],
+        "hazards": false,
+        "random_gameplay": false,
+        "transitions_during_round": false
+      },
+      "layers": [
+        {
+          "id": "L00_ambience",
+          "parallax": 0,
+          "content": "ciel couvert",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L01_far",
+          "parallax": 0.12,
+          "content": "falaises et forêt",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L02_mid",
+          "parallax": 0.3,
+          "content": "bâtiment de résistance",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L03_near",
+          "parallax": 0.55,
+          "content": "grillage et matériaux de récupération",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L04_ground",
+          "parallax": 1,
+          "content": "cour de combat plane",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L05_foreground",
+          "parallax": 1.1,
+          "content": "câbles et petits débris aux coins",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        }
+      ],
+      "separate_props": [
+        {
+          "id": "PRP_HL2_BME_01",
+          "description": "caisse de récupération",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL2_BME_02",
+          "description": "panier métallique",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL2_BME_03",
+          "description": "baril",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL2_BME_04",
+          "description": "matériel de laboratoire",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        }
+      ],
+      "ambience": "rivière, atelier et équipements électriques",
+      "spectacle_variant": "Dog observe en profondeur dans variante narrative, pas de soutien gratuit",
+      "optional_transition": "entrée de laboratoire entre manches",
+      "stage_finish_non_gore": "Dog réceptionne le perdant et le dépose au-delà d’une clôture basse.",
+      "finish_semantics": "cinématique après résultat; aucune modification du score ni du round",
+      "verification": [
+        "captures du jeu source identifiées",
+        "six couches séparées avec alpha quand nécessaire",
+        "alignement du sol vérifié",
+        "lisibilité des deux côtés",
+        "aucun danger actif en classé",
+        "cadence et flashs testés"
+      ]
+    },
+    {
+      "id": "STG_14_HL2_RAVENHOLM",
+      "slug": "hl2_ravenholm",
+      "name_fr": "Rue de Ravenholm",
+      "source_game": "Half-Life 2",
+      "source_code": "HL2",
+      "priority": "P0",
+      "reference_location": "Rue industrielle déserte de Ravenholm selon Half-Life 2",
+      "reference_status": "à vérifier sur captures du jeu source",
+      "evidence": {
+        "title": "Half-Life 2",
+        "url": "https://www.half-life.com/en/halflife2",
+        "checked_scope": "Cité 17, occupation et résistance, Gordon et Alyx; détails architecturaux à vérifier en jeu."
+      },
+      "creative_status": "adaptation 2D originale non canonique",
+      "asset_status": "spécifié",
+      "competitive": {
+        "flat_ground": true,
+        "ground_y_logical_px": 880,
+        "arena_width_logical_px": 2560,
+        "viewport_logical_px": [
+          1920,
+          1080
+        ],
+        "hazards": false,
+        "random_gameplay": false,
+        "transitions_during_round": false
+      },
+      "layers": [
+        {
+          "id": "L00_ambience",
+          "parallax": 0,
+          "content": "ciel nocturne",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L01_far",
+          "parallax": 0.12,
+          "content": "silhouettes de toits et cheminée",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L02_mid",
+          "parallax": 0.3,
+          "content": "façades lointaines",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L03_near",
+          "parallax": 0.55,
+          "content": "façades proches et atelier",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L04_ground",
+          "parallax": 1,
+          "content": "portion de rue plane sans fosse",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L05_foreground",
+          "parallax": 1.1,
+          "content": "grillage brisé et débris aux coins",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        }
+      ],
+      "separate_props": [
+        {
+          "id": "PRP_HL2_RAVENHOLM_01",
+          "description": "lame de scie séparée",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL2_RAVENHOLM_02",
+          "description": "moteur suspendu",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL2_RAVENHOLM_03",
+          "description": "bonbonne",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL2_RAVENHOLM_04",
+          "description": "lampadaire",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        }
+      ],
+      "ambience": "vent entre les tôles, bois qui craque et cloche distante",
+      "spectacle_variant": "pièges et créatures uniquement en spectacle; aucun mouvement au niveau du sol compétitif",
+      "optional_transition": "cour de l’atelier après résultat",
+      "stage_finish_non_gore": "Un mécanisme de fortune rabat une grille et enferme le perdant dans un abri éclairé.",
+      "finish_semantics": "cinématique après résultat; aucune modification du score ni du round",
+      "verification": [
+        "captures du jeu source identifiées",
+        "six couches séparées avec alpha quand nécessaire",
+        "alignement du sol vérifié",
+        "lisibilité des deux côtés",
+        "aucun danger actif en classé",
+        "cadence et flashs testés"
+      ]
+    },
+    {
+      "id": "STG_15_HL2_NOVA",
+      "slug": "hl2_nova",
+      "name_fr": "Cour de Nova Prospekt",
+      "source_game": "Half-Life 2",
+      "source_code": "HL2",
+      "priority": "P0",
+      "reference_location": "Prison de Nova Prospekt et greffe architecturale Combine",
+      "reference_status": "à vérifier sur captures du jeu source",
+      "evidence": {
+        "title": "Half-Life 2",
+        "url": "https://www.half-life.com/en/halflife2",
+        "checked_scope": "Cité 17, occupation et résistance, Gordon et Alyx; détails architecturaux à vérifier en jeu."
+      },
+      "creative_status": "adaptation 2D originale non canonique",
+      "asset_status": "spécifié",
+      "competitive": {
+        "flat_ground": true,
+        "ground_y_logical_px": 880,
+        "arena_width_logical_px": 2560,
+        "viewport_logical_px": [
+          1920,
+          1080
+        ],
+        "hazards": false,
+        "random_gameplay": false,
+        "transitions_during_round": false
+      },
+      "layers": [
+        {
+          "id": "L00_ambience",
+          "parallax": 0,
+          "content": "ciel côtier froid",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L01_far",
+          "parallax": 0.12,
+          "content": "tours et horizon",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L02_mid",
+          "parallax": 0.3,
+          "content": "murs de prison et miradors",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L03_near",
+          "parallax": 0.55,
+          "content": "barrière et machinerie Combine",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L04_ground",
+          "parallax": 1,
+          "content": "cour bétonnée continue",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L05_foreground",
+          "parallax": 1.1,
+          "content": "grillage proche hors silhouettes",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        }
+      ],
+      "separate_props": [
+        {
+          "id": "PRP_HL2_NOVA_01",
+          "description": "projecteur de prison",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL2_NOVA_02",
+          "description": "barrière métallique",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL2_NOVA_03",
+          "description": "caisson Combine",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL2_NOVA_04",
+          "description": "porte de cellule",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        }
+      ],
+      "ambience": "vent côtier, annonces étouffées et verrouillages métalliques",
+      "spectacle_variant": "fourmis-lions visibles derrière une séparation en spectacle",
+      "optional_transition": "bloc de cellules séparé par transition",
+      "stage_finish_non_gore": "Le perdant est repoussé dans une cellule dont le champ de sûreté se réactive.",
+      "finish_semantics": "cinématique après résultat; aucune modification du score ni du round",
+      "verification": [
+        "captures du jeu source identifiées",
+        "six couches séparées avec alpha quand nécessaire",
+        "alignement du sol vérifié",
+        "lisibilité des deux côtés",
+        "aucun danger actif en classé",
+        "cadence et flashs testés"
+      ]
+    },
+    {
+      "id": "STG_16_HL2_CITADEL",
+      "slug": "hl2_citadel",
+      "name_fr": "Plateforme de la Citadelle",
+      "source_game": "Half-Life 2",
+      "source_code": "HL2",
+      "priority": "P0",
+      "reference_location": "Intérieur métallique monumental de la Citadelle de Half-Life 2",
+      "reference_status": "à vérifier sur captures du jeu source",
+      "evidence": {
+        "title": "Half-Life 2",
+        "url": "https://www.half-life.com/en/halflife2",
+        "checked_scope": "Cité 17, occupation et résistance, Gordon et Alyx; détails architecturaux à vérifier en jeu."
+      },
+      "creative_status": "adaptation 2D originale non canonique",
+      "asset_status": "spécifié",
+      "competitive": {
+        "flat_ground": true,
+        "ground_y_logical_px": 880,
+        "arena_width_logical_px": 2560,
+        "viewport_logical_px": [
+          1920,
+          1080
+        ],
+        "hazards": false,
+        "random_gameplay": false,
+        "transitions_during_round": false
+      },
+      "layers": [
+        {
+          "id": "L00_ambience",
+          "parallax": 0,
+          "content": "vide industriel profond",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L01_far",
+          "parallax": 0.12,
+          "content": "piliers très lointains",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L02_mid",
+          "parallax": 0.3,
+          "content": "ascenseurs et structures verticales",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L03_near",
+          "parallax": 0.55,
+          "content": "machines de transport et parois",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L04_ground",
+          "parallax": 1,
+          "content": "plateforme de combat plane aux bords fermés",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L05_foreground",
+          "parallax": 1.1,
+          "content": "montants aux marges extrêmes",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        }
+      ],
+      "separate_props": [
+        {
+          "id": "PRP_HL2_CITADEL_01",
+          "description": "capsule de transport",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL2_CITADEL_02",
+          "description": "console Combine",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL2_CITADEL_03",
+          "description": "rail lumineux",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HL2_CITADEL_04",
+          "description": "montant industriel",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        }
+      ],
+      "ambience": "résonance verticale, convoyeurs et énergie grave",
+      "spectacle_variant": "capsules en déplacement dans la profondeur",
+      "optional_transition": "ascenseur scénarisé entre deux plateaux identiques en géométrie",
+      "stage_finish_non_gore": "Une capsule se referme autour du perdant et part dans le réseau de transport.",
+      "finish_semantics": "cinématique après résultat; aucune modification du score ni du round",
+      "verification": [
+        "captures du jeu source identifiées",
+        "six couches séparées avec alpha quand nécessaire",
+        "alignement du sol vérifié",
+        "lisibilité des deux côtés",
+        "aucun danger actif en classé",
+        "cadence et flashs testés"
+      ]
+    },
+    {
+      "id": "STG_17_EP1_CORE",
+      "slug": "ep1_core",
+      "name_fr": "Accès au cœur instable",
+      "source_game": "Half-Life 2 Episode One",
+      "source_code": "EP1",
+      "priority": "P1",
+      "reference_location": "Citadelle endommagée de Episode One, distincte de sa version Half-Life 2",
+      "reference_status": "à vérifier sur captures du jeu source",
+      "evidence": {
+        "title": "Half-Life 2 Episode One",
+        "url": "https://www.half-life.com/en/episode1",
+        "checked_scope": "Source primaire à capturer pour chaque décor; aucun plan exact reproduit à ce stade."
+      },
+      "creative_status": "adaptation 2D originale non canonique",
+      "asset_status": "spécifié",
+      "competitive": {
+        "flat_ground": true,
+        "ground_y_logical_px": 880,
+        "arena_width_logical_px": 2560,
+        "viewport_logical_px": [
+          1920,
+          1080
+        ],
+        "hazards": false,
+        "random_gameplay": false,
+        "transitions_during_round": false
+      },
+      "layers": [
+        {
+          "id": "L00_ambience",
+          "parallax": 0,
+          "content": "vide assombri",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L01_far",
+          "parallax": 0.12,
+          "content": "structures lointaines déformées",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L02_mid",
+          "parallax": 0.3,
+          "content": "cœur énergétique en arrière-plan",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L03_near",
+          "parallax": 0.55,
+          "content": "passerelles fissurées hors collision",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L04_ground",
+          "parallax": 1,
+          "content": "plateforme de service continue",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L05_foreground",
+          "parallax": 1.1,
+          "content": "petits câbles bas aux coins",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        }
+      ],
+      "separate_props": [
+        {
+          "id": "PRP_EP1_CORE_01",
+          "description": "bobine endommagée",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_EP1_CORE_02",
+          "description": "console de régulation",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_EP1_CORE_03",
+          "description": "panneau Combine",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_EP1_CORE_04",
+          "description": "câble arraché",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        }
+      ],
+      "ambience": "grondement irrégulier et alertes de confinement",
+      "spectacle_variant": "effets énergétiques réduits en compétitif et option photosensibilité",
+      "optional_transition": "sas de maintenance pour la sortie narrative",
+      "stage_finish_non_gore": "Une impulsion ouvre un sas de sécurité et y dépose le perdant avant fermeture.",
+      "finish_semantics": "cinématique après résultat; aucune modification du score ni du round",
+      "verification": [
+        "captures du jeu source identifiées",
+        "six couches séparées avec alpha quand nécessaire",
+        "alignement du sol vérifié",
+        "lisibilité des deux côtés",
+        "aucun danger actif en classé",
+        "cadence et flashs testés"
+      ]
+    },
+    {
+      "id": "STG_18_EP1_EVAC",
+      "slug": "ep1_evac",
+      "name_fr": "Quai d’évacuation",
+      "source_game": "Half-Life 2 Episode One",
+      "source_code": "EP1",
+      "priority": "P1",
+      "reference_location": "Évacuation ferroviaire de Cité 17 dans Episode One",
+      "reference_status": "à vérifier sur captures du jeu source",
+      "evidence": {
+        "title": "Half-Life 2 Episode One",
+        "url": "https://www.half-life.com/en/episode1",
+        "checked_scope": "Source primaire à capturer pour chaque décor; aucun plan exact reproduit à ce stade."
+      },
+      "creative_status": "adaptation 2D originale non canonique",
+      "asset_status": "spécifié",
+      "competitive": {
+        "flat_ground": true,
+        "ground_y_logical_px": 880,
+        "arena_width_logical_px": 2560,
+        "viewport_logical_px": [
+          1920,
+          1080
+        ],
+        "hazards": false,
+        "random_gameplay": false,
+        "transitions_during_round": false
+      },
+      "layers": [
+        {
+          "id": "L00_ambience",
+          "parallax": 0,
+          "content": "ciel de crise",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L01_far",
+          "parallax": 0.12,
+          "content": "ville éloignée",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L02_mid",
+          "parallax": 0.3,
+          "content": "charpentes ferroviaires",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L03_near",
+          "parallax": 0.55,
+          "content": "rame d’évacuation arrière",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L04_ground",
+          "parallax": 1,
+          "content": "quai plane",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L05_foreground",
+          "parallax": 1.1,
+          "content": "bagages aux coins",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        }
+      ],
+      "separate_props": [
+        {
+          "id": "PRP_EP1_EVAC_01",
+          "description": "valise civile",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_EP1_EVAC_02",
+          "description": "banc usé",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_EP1_EVAC_03",
+          "description": "signal de sortie",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_EP1_EVAC_04",
+          "description": "porte de rame",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        }
+      ],
+      "ambience": "sirènes lointaines, vapeur et moteurs",
+      "spectacle_variant": "passagers hors piste et hors ciblage; aucune victime de décor",
+      "optional_transition": "wagon de maintenance après manche",
+      "stage_finish_non_gore": "Le perdant est installé dans une rame qui quitte lentement le quai.",
+      "finish_semantics": "cinématique après résultat; aucune modification du score ni du round",
+      "verification": [
+        "captures du jeu source identifiées",
+        "six couches séparées avec alpha quand nécessaire",
+        "alignement du sol vérifié",
+        "lisibilité des deux côtés",
+        "aucun danger actif en classé",
+        "cadence et flashs testés"
+      ]
+    },
+    {
+      "id": "STG_19_EP2_ANTLION",
+      "slug": "ep2_antlion",
+      "name_fr": "Galerie des fourmis lions",
+      "source_game": "Half-Life 2 Episode Two",
+      "source_code": "EP2",
+      "priority": "P1",
+      "reference_location": "Réseau souterrain et milieu des fourmis-lions dans Episode Two",
+      "reference_status": "à vérifier sur captures du jeu source",
+      "evidence": {
+        "title": "Half-Life 2 Episode Two",
+        "url": "https://www.half-life.com/en/episode2",
+        "checked_scope": "Source primaire à capturer pour chaque décor; aucun plan exact reproduit à ce stade."
+      },
+      "creative_status": "adaptation 2D originale non canonique",
+      "asset_status": "spécifié",
+      "competitive": {
+        "flat_ground": true,
+        "ground_y_logical_px": 880,
+        "arena_width_logical_px": 2560,
+        "viewport_logical_px": [
+          1920,
+          1080
+        ],
+        "hazards": false,
+        "random_gameplay": false,
+        "transitions_during_round": false
+      },
+      "layers": [
+        {
+          "id": "L00_ambience",
+          "parallax": 0,
+          "content": "cavité sombre",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L01_far",
+          "parallax": 0.12,
+          "content": "galeries lointaines",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L02_mid",
+          "parallax": 0.3,
+          "content": "formations minérales et lueurs organiques",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L03_near",
+          "parallax": 0.55,
+          "content": "parois et accès de galerie",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L04_ground",
+          "parallax": 1,
+          "content": "terrasse rocheuse plane",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L05_foreground",
+          "parallax": 1.1,
+          "content": "excroissances aux coins",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        }
+      ],
+      "separate_props": [
+        {
+          "id": "PRP_EP2_ANTLION_01",
+          "description": "cristal minéral",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_EP2_ANTLION_02",
+          "description": "sécrétion lumineuse",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_EP2_ANTLION_03",
+          "description": "étai de mine",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_EP2_ANTLION_04",
+          "description": "rail de chantier",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        }
+      ],
+      "ambience": "échos minéraux et mouvements d’insectes au loin",
+      "spectacle_variant": "faune derrière un couloir séparé; aucun surgissement aléatoire en compétitif",
+      "optional_transition": "poste de mine adjacent",
+      "stage_finish_non_gore": "Une membrane élastique réceptionne le perdant dans une cavité éclairée hors piste.",
+      "finish_semantics": "cinématique après résultat; aucune modification du score ni du round",
+      "verification": [
+        "captures du jeu source identifiées",
+        "six couches séparées avec alpha quand nécessaire",
+        "alignement du sol vérifié",
+        "lisibilité des deux côtés",
+        "aucun danger actif en classé",
+        "cadence et flashs testés"
+      ]
+    },
+    {
+      "id": "STG_20_EP2_WHITEFOREST",
+      "slug": "ep2_whiteforest",
+      "name_fr": "Hangar de White Forest",
+      "source_game": "Half-Life 2 Episode Two",
+      "source_code": "EP2",
+      "priority": "P0",
+      "reference_location": "Base de White Forest et infrastructure de lancement dans Episode Two",
+      "reference_status": "à vérifier sur captures du jeu source",
+      "evidence": {
+        "title": "Half-Life 2 Episode Two",
+        "url": "https://www.half-life.com/en/episode2",
+        "checked_scope": "Source primaire à capturer pour chaque décor; aucun plan exact reproduit à ce stade."
+      },
+      "creative_status": "adaptation 2D originale non canonique",
+      "asset_status": "spécifié",
+      "competitive": {
+        "flat_ground": true,
+        "ground_y_logical_px": 880,
+        "arena_width_logical_px": 2560,
+        "viewport_logical_px": [
+          1920,
+          1080
+        ],
+        "hazards": false,
+        "random_gameplay": false,
+        "transitions_during_round": false
+      },
+      "layers": [
+        {
+          "id": "L00_ambience",
+          "parallax": 0,
+          "content": "ciel forestier",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L01_far",
+          "parallax": 0.12,
+          "content": "collines et forêt",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L02_mid",
+          "parallax": 0.3,
+          "content": "installations de lancement",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L03_near",
+          "parallax": 0.55,
+          "content": "charpente et portes du hangar",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L04_ground",
+          "parallax": 1,
+          "content": "sol de hangar continu",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L05_foreground",
+          "parallax": 1.1,
+          "content": "outils bas aux coins",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        }
+      ],
+      "separate_props": [
+        {
+          "id": "PRP_EP2_WHITEFOREST_01",
+          "description": "caisse de résistance",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_EP2_WHITEFOREST_02",
+          "description": "chariot d’atelier",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_EP2_WHITEFOREST_03",
+          "description": "panneau de maintenance",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_EP2_WHITEFOREST_04",
+          "description": "bidon de carburant",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        }
+      ],
+      "ambience": "vent forestier, atelier et communications de base",
+      "spectacle_variant": "préparation du lancement uniquement dans fond lointain",
+      "optional_transition": "cour extérieure du hangar entre manches",
+      "stage_finish_non_gore": "Un chariot de maintenance emporte le perdant jusqu’à une zone médicale visible.",
+      "finish_semantics": "cinématique après résultat; aucune modification du score ni du round",
+      "verification": [
+        "captures du jeu source identifiées",
+        "six couches séparées avec alpha quand nécessaire",
+        "alignement du sol vérifié",
+        "lisibilité des deux côtés",
+        "aucun danger actif en classé",
+        "cadence et flashs testés"
+      ]
+    },
+    {
+      "id": "STG_21_HLA_BALCONY",
+      "slug": "hla_balcony",
+      "name_fr": "Toits de Cité 17",
+      "source_game": "Half-Life Alyx",
+      "source_code": "HLA",
+      "priority": "P1",
+      "reference_location": "Panorama urbain de l’époque Half-Life Alyx avec Citadelle en construction",
+      "reference_status": "à vérifier sur captures du jeu source",
+      "evidence": {
+        "title": "Half-Life Alyx",
+        "url": "https://www.half-life.com/en/alyx",
+        "checked_scope": "Époque située entre Half-Life et Half-Life 2, Cité 17 et Citadelle; architecture de chaque lieu à vérifier en jeu."
+      },
+      "creative_status": "adaptation 2D originale non canonique",
+      "asset_status": "spécifié",
+      "competitive": {
+        "flat_ground": true,
+        "ground_y_logical_px": 880,
+        "arena_width_logical_px": 2560,
+        "viewport_logical_px": [
+          1920,
+          1080
+        ],
+        "hazards": false,
+        "random_gameplay": false,
+        "transitions_during_round": false
+      },
+      "layers": [
+        {
+          "id": "L00_ambience",
+          "parallax": 0,
+          "content": "ciel froid",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L01_far",
+          "parallax": 0.12,
+          "content": "Citadelle de cette époque",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L02_mid",
+          "parallax": 0.3,
+          "content": "toits et antennes intermédiaires",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L03_near",
+          "parallax": 0.55,
+          "content": "façades de l’immeuble",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L04_ground",
+          "parallax": 1,
+          "content": "terrasse de combat élargie et sécurisée",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L05_foreground",
+          "parallax": 1.1,
+          "content": "garde-corps aux marges",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        }
+      ],
+      "separate_props": [
+        {
+          "id": "PRP_HLA_BALCONY_01",
+          "description": "antenne",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HLA_BALCONY_02",
+          "description": "seau",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HLA_BALCONY_03",
+          "description": "radio civile",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HLA_BALCONY_04",
+          "description": "caisse de terrasse",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        }
+      ],
+      "ambience": "vent, trafic aérien et vie urbaine étouffée",
+      "spectacle_variant": "passage aérien loin de la piste",
+      "optional_transition": "escalier vers toit adjacent après résultat",
+      "stage_finish_non_gore": "Le perdant glisse sur une bâche et atterrit sur un balcon inférieur clairement visible.",
+      "finish_semantics": "cinématique après résultat; aucune modification du score ni du round",
+      "verification": [
+        "captures du jeu source identifiées",
+        "six couches séparées avec alpha quand nécessaire",
+        "alignement du sol vérifié",
+        "lisibilité des deux côtés",
+        "aucun danger actif en classé",
+        "cadence et flashs testés"
+      ]
+    },
+    {
+      "id": "STG_22_HLA_QUARANTINE",
+      "slug": "hla_quarantine",
+      "name_fr": "Rue de la zone de quarantaine",
+      "source_game": "Half-Life Alyx",
+      "source_code": "HLA",
+      "priority": "P0",
+      "reference_location": "Rue infestée de Cité 17 à l’époque Half-Life Alyx",
+      "reference_status": "à vérifier sur captures du jeu source",
+      "evidence": {
+        "title": "Half-Life Alyx",
+        "url": "https://www.half-life.com/en/alyx",
+        "checked_scope": "Époque située entre Half-Life et Half-Life 2, Cité 17 et Citadelle; architecture de chaque lieu à vérifier en jeu."
+      },
+      "creative_status": "adaptation 2D originale non canonique",
+      "asset_status": "spécifié",
+      "competitive": {
+        "flat_ground": true,
+        "ground_y_logical_px": 880,
+        "arena_width_logical_px": 2560,
+        "viewport_logical_px": [
+          1920,
+          1080
+        ],
+        "hazards": false,
+        "random_gameplay": false,
+        "transitions_during_round": false
+      },
+      "layers": [
+        {
+          "id": "L00_ambience",
+          "parallax": 0,
+          "content": "ciel laiteux",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L01_far",
+          "parallax": 0.12,
+          "content": "structures urbaines lointaines",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L02_mid",
+          "parallax": 0.3,
+          "content": "façades contaminées",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L03_near",
+          "parallax": 0.55,
+          "content": "barrière de quarantaine et épaves arrière",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L04_ground",
+          "parallax": 1,
+          "content": "bande de rue plane",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L05_foreground",
+          "parallax": 1.1,
+          "content": "petites pousses organiques hors centre",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        }
+      ],
+      "separate_props": [
+        {
+          "id": "PRP_HLA_QUARANTINE_01",
+          "description": "barrière de quarantaine",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HLA_QUARANTINE_02",
+          "description": "caisse de collecte",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HLA_QUARANTINE_03",
+          "description": "pousse de Xen",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HLA_QUARANTINE_04",
+          "description": "panneau d’avertissement sans texte",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        }
+      ],
+      "ambience": "gouttes, spores sonores et patrouille lointaine",
+      "spectacle_variant": "spores décoratives à densité réduite; aucun masque devant les silhouettes",
+      "optional_transition": "hall contaminé adjacent",
+      "stage_finish_non_gore": "Une porte de confinement et une mousse opaque isolent le perdant puis le montrent vivant derrière une vitre.",
+      "finish_semantics": "cinématique après résultat; aucune modification du score ni du round",
+      "verification": [
+        "captures du jeu source identifiées",
+        "six couches séparées avec alpha quand nécessaire",
+        "alignement du sol vérifié",
+        "lisibilité des deux côtés",
+        "aucun danger actif en classé",
+        "cadence et flashs testés"
+      ]
+    },
+    {
+      "id": "STG_23_HLA_DISTILLERY",
+      "slug": "hla_distillery",
+      "name_fr": "Distillerie en quarantaine",
+      "source_game": "Half-Life Alyx",
+      "source_code": "HLA",
+      "priority": "P1",
+      "reference_location": "Distillerie de Half-Life Alyx; Jeff réservé à la variante narrative",
+      "reference_status": "à vérifier sur captures du jeu source",
+      "evidence": {
+        "title": "Half-Life Alyx",
+        "url": "https://www.half-life.com/en/alyx",
+        "checked_scope": "Époque située entre Half-Life et Half-Life 2, Cité 17 et Citadelle; architecture de chaque lieu à vérifier en jeu."
+      },
+      "creative_status": "adaptation 2D originale non canonique",
+      "asset_status": "spécifié",
+      "competitive": {
+        "flat_ground": true,
+        "ground_y_logical_px": 880,
+        "arena_width_logical_px": 2560,
+        "viewport_logical_px": [
+          1920,
+          1080
+        ],
+        "hazards": false,
+        "random_gameplay": false,
+        "transitions_during_round": false
+      },
+      "layers": [
+        {
+          "id": "L00_ambience",
+          "parallax": 0,
+          "content": "charpente sombre",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L01_far",
+          "parallax": 0.12,
+          "content": "réservoirs lointains",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L02_mid",
+          "parallax": 0.3,
+          "content": "cuves et passerelles",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L03_near",
+          "parallax": 0.55,
+          "content": "table de bouteilles arrière",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L04_ground",
+          "parallax": 1,
+          "content": "bande de sol industriel dégagée",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L05_foreground",
+          "parallax": 1.1,
+          "content": "tuyaux hors centre",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        }
+      ],
+      "separate_props": [
+        {
+          "id": "PRP_HLA_DISTILLERY_01",
+          "description": "bouteille vide",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HLA_DISTILLERY_02",
+          "description": "cuve",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HLA_DISTILLERY_03",
+          "description": "vanne de vapeur",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HLA_DISTILLERY_04",
+          "description": "caisse de verrerie",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        }
+      ],
+      "ambience": "gouttes, cuves et sons localisés de verre",
+      "spectacle_variant": "réaction de Jeff au bruit seulement en mode scénario à règles déclarées",
+      "optional_transition": "salle technique après manche",
+      "stage_finish_non_gore": "Le perdant est enfermé derrière une porte de sécurité; Jeff reste séparé par une seconde grille.",
+      "finish_semantics": "cinématique après résultat; aucune modification du score ni du round",
+      "verification": [
+        "captures du jeu source identifiées",
+        "six couches séparées avec alpha quand nécessaire",
+        "alignement du sol vérifié",
+        "lisibilité des deux côtés",
+        "aucun danger actif en classé",
+        "cadence et flashs testés"
+      ]
+    },
+    {
+      "id": "STG_24_HLA_VAULT",
+      "slug": "hla_vault",
+      "name_fr": "Intérieur du Vault",
+      "source_game": "Half-Life Alyx",
+      "source_code": "HLA",
+      "priority": "P1",
+      "reference_location": "Architecture et anomalies spatiales de la fin de Half-Life Alyx",
+      "reference_status": "à vérifier sur captures du jeu source",
+      "evidence": {
+        "title": "Half-Life Alyx",
+        "url": "https://www.half-life.com/en/alyx",
+        "checked_scope": "Époque située entre Half-Life et Half-Life 2, Cité 17 et Citadelle; architecture de chaque lieu à vérifier en jeu."
+      },
+      "creative_status": "adaptation 2D originale non canonique",
+      "asset_status": "spécifié",
+      "competitive": {
+        "flat_ground": true,
+        "ground_y_logical_px": 880,
+        "arena_width_logical_px": 2560,
+        "viewport_logical_px": [
+          1920,
+          1080
+        ],
+        "hazards": false,
+        "random_gameplay": false,
+        "transitions_during_round": false
+      },
+      "layers": [
+        {
+          "id": "L00_ambience",
+          "parallax": 0,
+          "content": "vide lumineux contrôlé",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L01_far",
+          "parallax": 0.12,
+          "content": "fragments architecturaux très éloignés",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L02_mid",
+          "parallax": 0.3,
+          "content": "pièces suspendues",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L03_near",
+          "parallax": 0.55,
+          "content": "cloisons et meubles décalés en profondeur",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L04_ground",
+          "parallax": 1,
+          "content": "dalle de combat plane malgré le décor impossible",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        },
+        {
+          "id": "L05_foreground",
+          "parallax": 1.1,
+          "content": "fragments très bas aux coins",
+          "separate_image": true,
+          "generated": false,
+          "verified": false
+        }
+      ],
+      "separate_props": [
+        {
+          "id": "PRP_HLA_VAULT_01",
+          "description": "fragment de mur",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HLA_VAULT_02",
+          "description": "porte suspendue",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HLA_VAULT_03",
+          "description": "élément de sol",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        },
+        {
+          "id": "PRP_HLA_VAULT_04",
+          "description": "luminaire",
+          "status": "spécifié",
+          "collision": "aucune par défaut"
+        }
+      ],
+      "ambience": "silence filtré, basses lentes et objets en suspension",
+      "spectacle_variant": "distorsions spatiales seulement dans le fond; horizon de combat fixe",
+      "optional_transition": "pièce voisine via raccord impossible après résultat",
+      "stage_finish_non_gore": "La pièce se replie et place le perdant derrière une fenêtre, vivant mais hors de portée.",
+      "finish_semantics": "cinématique après résultat; aucune modification du score ni du round",
+      "verification": [
+        "captures du jeu source identifiées",
+        "six couches séparées avec alpha quand nécessaire",
+        "alignement du sol vérifié",
+        "lisibilité des deux côtés",
+        "aucun danger actif en classé",
+        "cadence et flashs testés"
+      ]
+    }
+  ]
+}

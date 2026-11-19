@@ -1,0 +1,559 @@
+asset_id,category,owner_id,description,priority,status,target_drawings,orientation,dependency,path_proposed
+STG_01_HL1_TRAM_L00_ambience,stage_layer,STG_01_HL1_TRAM,pénombre du tunnel,P1,spécifié,1,lateral,reference_approved,stages/hl1_tram/layers/l00_ambience_v001.png
+STG_01_HL1_TRAM_L01_far,stage_layer,STG_01_HL1_TRAM,réseau de poutres lointaines,P1,spécifié,1,lateral,reference_approved,stages/hl1_tram/layers/l01_far_v001.png
+STG_01_HL1_TRAM_L02_mid,stage_layer,STG_01_HL1_TRAM,rame immobilisée au quai opposé,P1,spécifié,1,lateral,reference_approved,stages/hl1_tram/layers/l02_mid_v001.png
+STG_01_HL1_TRAM_L03_near,stage_layer,STG_01_HL1_TRAM,paroi de quai et portes de service,P1,spécifié,1,lateral,reference_approved,stages/hl1_tram/layers/l03_near_v001.png
+STG_01_HL1_TRAM_L04_ground,stage_layer,STG_01_HL1_TRAM,quai de combat continu en béton,P1,spécifié,1,lateral,reference_approved,stages/hl1_tram/layers/l04_ground_v001.png
+STG_01_HL1_TRAM_L05_foreground,stage_layer,STG_01_HL1_TRAM,extrémités de garde-corps hors silhouettes,P1,spécifié,1,lateral,reference_approved,stages/hl1_tram/layers/l05_foreground_v001.png
+PRP_HL1_TRAM_01,prop,STG_01_HL1_TRAM,signal de quai,P1,spécifié,1,lateral,stage_scale_approved,stages/hl1_tram/props/prp_hl1_tram_01_v001.png
+PRP_HL1_TRAM_02,prop,STG_01_HL1_TRAM,chariot de maintenance,P1,spécifié,1,lateral,stage_scale_approved,stages/hl1_tram/props/prp_hl1_tram_02_v001.png
+PRP_HL1_TRAM_03,prop,STG_01_HL1_TRAM,panneau directionnel sans texte,P1,spécifié,1,lateral,stage_scale_approved,stages/hl1_tram/props/prp_hl1_tram_03_v001.png
+PRP_HL1_TRAM_04,prop,STG_01_HL1_TRAM,porte industrielle,P1,spécifié,1,lateral,stage_scale_approved,stages/hl1_tram/props/prp_hl1_tram_04_v001.png
+STG_02_HL1_TEST_CHAMBER_L00_ambience,stage_layer,STG_02_HL1_TEST_CHAMBER,coque sombre supérieure,P0,spécifié,1,lateral,reference_approved,stages/hl1_test_chamber/layers/l00_ambience_v001.png
+STG_02_HL1_TEST_CHAMBER_L01_far,stage_layer,STG_02_HL1_TEST_CHAMBER,structure cylindrique et passerelles hautes,P0,spécifié,1,lateral,reference_approved,stages/hl1_test_chamber/layers/l01_far_v001.png
+STG_02_HL1_TEST_CHAMBER_L02_mid,stage_layer,STG_02_HL1_TEST_CHAMBER,réacteur et chambre instrumentale,P0,spécifié,1,lateral,reference_approved,stages/hl1_test_chamber/layers/l02_mid_v001.png
+STG_02_HL1_TEST_CHAMBER_L03_near,stage_layer,STG_02_HL1_TEST_CHAMBER,console latérale et rail du chariot,P0,spécifié,1,lateral,reference_approved,stages/hl1_test_chamber/layers/l03_near_v001.png
+STG_02_HL1_TEST_CHAMBER_L04_ground,stage_layer,STG_02_HL1_TEST_CHAMBER,passerelle de combat plane devant la chambre,P0,spécifié,1,lateral,reference_approved,stages/hl1_test_chamber/layers/l04_ground_v001.png
+STG_02_HL1_TEST_CHAMBER_L05_foreground,stage_layer,STG_02_HL1_TEST_CHAMBER,câbles aux deux marges basses,P0,spécifié,1,lateral,reference_approved,stages/hl1_test_chamber/layers/l05_foreground_v001.png
+PRP_HL1_TEST_CHAMBER_01,prop,STG_02_HL1_TEST_CHAMBER,chariot porte-échantillon,P0,spécifié,1,lateral,stage_scale_approved,stages/hl1_test_chamber/props/prp_hl1_test_chamber_01_v001.png
+PRP_HL1_TEST_CHAMBER_02,prop,STG_02_HL1_TEST_CHAMBER,cristal de test isolé,P0,spécifié,1,lateral,stage_scale_approved,stages/hl1_test_chamber/props/prp_hl1_test_chamber_02_v001.png
+PRP_HL1_TEST_CHAMBER_03,prop,STG_02_HL1_TEST_CHAMBER,console instrumentale,P0,spécifié,1,lateral,stage_scale_approved,stages/hl1_test_chamber/props/prp_hl1_test_chamber_03_v001.png
+PRP_HL1_TEST_CHAMBER_04,prop,STG_02_HL1_TEST_CHAMBER,voyant de sécurité,P0,spécifié,1,lateral,stage_scale_approved,stages/hl1_test_chamber/props/prp_hl1_test_chamber_04_v001.png
+STG_03_HL1_BLAST_PIT_L00_ambience,stage_layer,STG_03_HL1_BLAST_PIT,voûte industrielle noire,P1,spécifié,1,lateral,reference_approved,stages/hl1_blast_pit/layers/l00_ambience_v001.png
+STG_03_HL1_BLAST_PIT_L01_far,stage_layer,STG_03_HL1_BLAST_PIT,superstructure du silo,P1,spécifié,1,lateral,reference_approved,stages/hl1_blast_pit/layers/l01_far_v001.png
+STG_03_HL1_BLAST_PIT_L02_mid,stage_layer,STG_03_HL1_BLAST_PIT,tuyauteries et réservoirs,P1,spécifié,1,lateral,reference_approved,stages/hl1_blast_pit/layers/l02_mid_v001.png
+STG_03_HL1_BLAST_PIT_L03_near,stage_layer,STG_03_HL1_BLAST_PIT,garde-corps du puits fermé,P1,spécifié,1,lateral,reference_approved,stages/hl1_blast_pit/layers/l03_near_v001.png
+STG_03_HL1_BLAST_PIT_L04_ground,stage_layer,STG_03_HL1_BLAST_PIT,passerelle de combat renforcée et continue,P1,spécifié,1,lateral,reference_approved,stages/hl1_blast_pit/layers/l04_ground_v001.png
+STG_03_HL1_BLAST_PIT_L05_foreground,stage_layer,STG_03_HL1_BLAST_PIT,conduites tronquées aux angles,P1,spécifié,1,lateral,reference_approved,stages/hl1_blast_pit/layers/l05_foreground_v001.png
+PRP_HL1_BLAST_PIT_01,prop,STG_03_HL1_BLAST_PIT,vanne rouge,P1,spécifié,1,lateral,stage_scale_approved,stages/hl1_blast_pit/props/prp_hl1_blast_pit_01_v001.png
+PRP_HL1_BLAST_PIT_02,prop,STG_03_HL1_BLAST_PIT,grille amovible,P1,spécifié,1,lateral,stage_scale_approved,stages/hl1_blast_pit/props/prp_hl1_blast_pit_02_v001.png
+PRP_HL1_BLAST_PIT_03,prop,STG_03_HL1_BLAST_PIT,réservoir latéral,P1,spécifié,1,lateral,stage_scale_approved,stages/hl1_blast_pit/props/prp_hl1_blast_pit_03_v001.png
+PRP_HL1_BLAST_PIT_04,prop,STG_03_HL1_BLAST_PIT,boîtier de commande,P1,spécifié,1,lateral,stage_scale_approved,stages/hl1_blast_pit/props/prp_hl1_blast_pit_04_v001.png
+STG_04_HL1_LAMBDA_L00_ambience,stage_layer,STG_04_HL1_LAMBDA,cavité sombre,P1,spécifié,1,lateral,reference_approved,stages/hl1_lambda/layers/l00_ambience_v001.png
+STG_04_HL1_LAMBDA_L01_far,stage_layer,STG_04_HL1_LAMBDA,anneaux supérieurs,P1,spécifié,1,lateral,reference_approved,stages/hl1_lambda/layers/l01_far_v001.png
+STG_04_HL1_LAMBDA_L02_mid,stage_layer,STG_04_HL1_LAMBDA,cœur et bobines du téléporteur,P1,spécifié,1,lateral,reference_approved,stages/hl1_lambda/layers/l02_mid_v001.png
+STG_04_HL1_LAMBDA_L03_near,stage_layer,STG_04_HL1_LAMBDA,consoles périphériques,P1,spécifié,1,lateral,reference_approved,stages/hl1_lambda/layers/l03_near_v001.png
+STG_04_HL1_LAMBDA_L04_ground,stage_layer,STG_04_HL1_LAMBDA,plateforme de service continue,P1,spécifié,1,lateral,reference_approved,stages/hl1_lambda/layers/l04_ground_v001.png
+STG_04_HL1_LAMBDA_L05_foreground,stage_layer,STG_04_HL1_LAMBDA,câbles et conduits hors centre,P1,spécifié,1,lateral,reference_approved,stages/hl1_lambda/layers/l05_foreground_v001.png
+PRP_HL1_LAMBDA_01,prop,STG_04_HL1_LAMBDA,bobine énergétique,P1,spécifié,1,lateral,stage_scale_approved,stages/hl1_lambda/props/prp_hl1_lambda_01_v001.png
+PRP_HL1_LAMBDA_02,prop,STG_04_HL1_LAMBDA,console de transfert,P1,spécifié,1,lateral,stage_scale_approved,stages/hl1_lambda/props/prp_hl1_lambda_02_v001.png
+PRP_HL1_LAMBDA_03,prop,STG_04_HL1_LAMBDA,caisse scientifique,P1,spécifié,1,lateral,stage_scale_approved,stages/hl1_lambda/props/prp_hl1_lambda_03_v001.png
+PRP_HL1_LAMBDA_04,prop,STG_04_HL1_LAMBDA,balise de téléportation,P1,spécifié,1,lateral,stage_scale_approved,stages/hl1_lambda/props/prp_hl1_lambda_04_v001.png
+STG_05_HL1_XEN_L00_ambience,stage_layer,STG_05_HL1_XEN,ciel extraterrestre du jeu original,P0,spécifié,1,lateral,reference_approved,stages/hl1_xen/layers/l00_ambience_v001.png
+STG_05_HL1_XEN_L01_far,stage_layer,STG_05_HL1_XEN,îles minuscules lointaines,P0,spécifié,1,lateral,reference_approved,stages/hl1_xen/layers/l01_far_v001.png
+STG_05_HL1_XEN_L02_mid,stage_layer,STG_05_HL1_XEN,rochers suspendus intermédiaires,P0,spécifié,1,lateral,reference_approved,stages/hl1_xen/layers/l02_mid_v001.png
+STG_05_HL1_XEN_L03_near,stage_layer,STG_05_HL1_XEN,végétation et formations rocheuses en retrait,P0,spécifié,1,lateral,reference_approved,stages/hl1_xen/layers/l03_near_v001.png
+STG_05_HL1_XEN_L04_ground,stage_layer,STG_05_HL1_XEN,terrasse rocheuse de combat continue,P0,spécifié,1,lateral,reference_approved,stages/hl1_xen/layers/l04_ground_v001.png
+STG_05_HL1_XEN_L05_foreground,stage_layer,STG_05_HL1_XEN,petites excroissances aux coins inférieurs,P0,spécifié,1,lateral,reference_approved,stages/hl1_xen/layers/l05_foreground_v001.png
+PRP_HL1_XEN_01,prop,STG_05_HL1_XEN,cristal de Xen,P0,spécifié,1,lateral,stage_scale_approved,stages/hl1_xen/props/prp_hl1_xen_01_v001.png
+PRP_HL1_XEN_02,prop,STG_05_HL1_XEN,plante lumineuse,P0,spécifié,1,lateral,stage_scale_approved,stages/hl1_xen/props/prp_hl1_xen_02_v001.png
+PRP_HL1_XEN_03,prop,STG_05_HL1_XEN,rocher organique,P0,spécifié,1,lateral,stage_scale_approved,stages/hl1_xen/props/prp_hl1_xen_03_v001.png
+PRP_HL1_XEN_04,prop,STG_05_HL1_XEN,membrane de sol,P0,spécifié,1,lateral,stage_scale_approved,stages/hl1_xen/props/prp_hl1_xen_04_v001.png
+STG_06_OP4_CARGO_L00_ambience,stage_layer,STG_06_OP4_CARGO,ciel désertique,P1,spécifié,1,lateral,reference_approved,stages/op4_cargo/layers/l00_ambience_v001.png
+STG_06_OP4_CARGO_L01_far,stage_layer,STG_06_OP4_CARGO,collines et tours,P1,spécifié,1,lateral,reference_approved,stages/op4_cargo/layers/l01_far_v001.png
+STG_06_OP4_CARGO_L02_mid,stage_layer,STG_06_OP4_CARGO,hangar lointain,P1,spécifié,1,lateral,reference_approved,stages/op4_cargo/layers/l02_mid_v001.png
+STG_06_OP4_CARGO_L03_near,stage_layer,STG_06_OP4_CARGO,containers du dépôt,P1,spécifié,1,lateral,reference_approved,stages/op4_cargo/layers/l03_near_v001.png
+STG_06_OP4_CARGO_L04_ground,stage_layer,STG_06_OP4_CARGO,bande de béton plane,P1,spécifié,1,lateral,reference_approved,stages/op4_cargo/layers/l04_ground_v001.png
+STG_06_OP4_CARGO_L05_foreground,stage_layer,STG_06_OP4_CARGO,angles de caisse hors piste,P1,spécifié,1,lateral,reference_approved,stages/op4_cargo/layers/l05_foreground_v001.png
+PRP_OP4_CARGO_01,prop,STG_06_OP4_CARGO,caisse militaire,P1,spécifié,1,lateral,stage_scale_approved,stages/op4_cargo/props/prp_op4_cargo_01_v001.png
+PRP_OP4_CARGO_02,prop,STG_06_OP4_CARGO,baril,P1,spécifié,1,lateral,stage_scale_approved,stages/op4_cargo/props/prp_op4_cargo_02_v001.png
+PRP_OP4_CARGO_03,prop,STG_06_OP4_CARGO,projecteur sur pied,P1,spécifié,1,lateral,stage_scale_approved,stages/op4_cargo/props/prp_op4_cargo_03_v001.png
+PRP_OP4_CARGO_04,prop,STG_06_OP4_CARGO,palette de fret,P1,spécifié,1,lateral,stage_scale_approved,stages/op4_cargo/props/prp_op4_cargo_04_v001.png
+STG_07_OP4_GENE_WORM_L00_ambience,stage_layer,STG_07_OP4_GENE_WORM,obscurité du puits,P1,spécifié,1,lateral,reference_approved,stages/op4_gene_worm/layers/l00_ambience_v001.png
+STG_07_OP4_GENE_WORM_L01_far,stage_layer,STG_07_OP4_GENE_WORM,portail profond,P1,spécifié,1,lateral,reference_approved,stages/op4_gene_worm/layers/l01_far_v001.png
+STG_07_OP4_GENE_WORM_L02_mid,stage_layer,STG_07_OP4_GENE_WORM,architecture de la chambre,P1,spécifié,1,lateral,reference_approved,stages/op4_gene_worm/layers/l02_mid_v001.png
+STG_07_OP4_GENE_WORM_L03_near,stage_layer,STG_07_OP4_GENE_WORM,dispositifs techniques et rebords,P1,spécifié,1,lateral,reference_approved,stages/op4_gene_worm/layers/l03_near_v001.png
+STG_07_OP4_GENE_WORM_L04_ground,stage_layer,STG_07_OP4_GENE_WORM,coursive de service continue,P1,spécifié,1,lateral,reference_approved,stages/op4_gene_worm/layers/l04_ground_v001.png
+STG_07_OP4_GENE_WORM_L05_foreground,stage_layer,STG_07_OP4_GENE_WORM,grilles et câbles aux marges,P1,spécifié,1,lateral,reference_approved,stages/op4_gene_worm/layers/l05_foreground_v001.png
+PRP_OP4_GENE_WORM_01,prop,STG_07_OP4_GENE_WORM,émetteur scientifique,P1,spécifié,1,lateral,stage_scale_approved,stages/op4_gene_worm/props/prp_op4_gene_worm_01_v001.png
+PRP_OP4_GENE_WORM_02,prop,STG_07_OP4_GENE_WORM,projecteur,P1,spécifié,1,lateral,stage_scale_approved,stages/op4_gene_worm/props/prp_op4_gene_worm_02_v001.png
+PRP_OP4_GENE_WORM_03,prop,STG_07_OP4_GENE_WORM,console de chambre,P1,spécifié,1,lateral,stage_scale_approved,stages/op4_gene_worm/props/prp_op4_gene_worm_03_v001.png
+PRP_OP4_GENE_WORM_04,prop,STG_07_OP4_GENE_WORM,caisson blindé,P1,spécifié,1,lateral,stage_scale_approved,stages/op4_gene_worm/props/prp_op4_gene_worm_04_v001.png
+STG_08_BS_FREIGHT_L00_ambience,stage_layer,STG_08_BS_FREIGHT,ciel poussiéreux,P1,spécifié,1,lateral,reference_approved,stages/bs_freight/layers/l00_ambience_v001.png
+STG_08_BS_FREIGHT_L01_far,stage_layer,STG_08_BS_FREIGHT,relief désertique,P1,spécifié,1,lateral,reference_approved,stages/bs_freight/layers/l01_far_v001.png
+STG_08_BS_FREIGHT_L02_mid,stage_layer,STG_08_BS_FREIGHT,portiques ferroviaires,P1,spécifié,1,lateral,reference_approved,stages/bs_freight/layers/l02_mid_v001.png
+STG_08_BS_FREIGHT_L03_near,stage_layer,STG_08_BS_FREIGHT,wagons et entrepôts,P1,spécifié,1,lateral,reference_approved,stages/bs_freight/layers/l03_near_v001.png
+STG_08_BS_FREIGHT_L04_ground,stage_layer,STG_08_BS_FREIGHT,quai de fret plat,P1,spécifié,1,lateral,reference_approved,stages/bs_freight/layers/l04_ground_v001.png
+STG_08_BS_FREIGHT_L05_foreground,stage_layer,STG_08_BS_FREIGHT,bord de palette dans les coins,P1,spécifié,1,lateral,reference_approved,stages/bs_freight/layers/l05_foreground_v001.png
+PRP_BS_FREIGHT_01,prop,STG_08_BS_FREIGHT,caisse de fret,P1,spécifié,1,lateral,stage_scale_approved,stages/bs_freight/props/prp_bs_freight_01_v001.png
+PRP_BS_FREIGHT_02,prop,STG_08_BS_FREIGHT,transpalette,P1,spécifié,1,lateral,stage_scale_approved,stages/bs_freight/props/prp_bs_freight_02_v001.png
+PRP_BS_FREIGHT_03,prop,STG_08_BS_FREIGHT,signal ferroviaire,P1,spécifié,1,lateral,stage_scale_approved,stages/bs_freight/props/prp_bs_freight_03_v001.png
+PRP_BS_FREIGHT_04,prop,STG_08_BS_FREIGHT,porte de wagon,P1,spécifié,1,lateral,stage_scale_approved,stages/bs_freight/props/prp_bs_freight_04_v001.png
+STG_09_BS_ROSENBERG_L00_ambience,stage_layer,STG_09_BS_ROSENBERG,plafond sombre,P1,spécifié,1,lateral,reference_approved,stages/bs_rosenberg/layers/l00_ambience_v001.png
+STG_09_BS_ROSENBERG_L01_far,stage_layer,STG_09_BS_ROSENBERG,charpente du laboratoire,P1,spécifié,1,lateral,reference_approved,stages/bs_rosenberg/layers/l01_far_v001.png
+STG_09_BS_ROSENBERG_L02_mid,stage_layer,STG_09_BS_ROSENBERG,machine de téléportation,P1,spécifié,1,lateral,reference_approved,stages/bs_rosenberg/layers/l02_mid_v001.png
+STG_09_BS_ROSENBERG_L03_near,stage_layer,STG_09_BS_ROSENBERG,panneaux de contrôle,P1,spécifié,1,lateral,reference_approved,stages/bs_rosenberg/layers/l03_near_v001.png
+STG_09_BS_ROSENBERG_L04_ground,stage_layer,STG_09_BS_ROSENBERG,passerelle de laboratoire continue,P1,spécifié,1,lateral,reference_approved,stages/bs_rosenberg/layers/l04_ground_v001.png
+STG_09_BS_ROSENBERG_L05_foreground,stage_layer,STG_09_BS_ROSENBERG,petits câbles aux coins,P1,spécifié,1,lateral,reference_approved,stages/bs_rosenberg/layers/l05_foreground_v001.png
+PRP_BS_ROSENBERG_01,prop,STG_09_BS_ROSENBERG,console de laboratoire,P1,spécifié,1,lateral,stage_scale_approved,stages/bs_rosenberg/props/prp_bs_rosenberg_01_v001.png
+PRP_BS_ROSENBERG_02,prop,STG_09_BS_ROSENBERG,capsule technique,P1,spécifié,1,lateral,stage_scale_approved,stages/bs_rosenberg/props/prp_bs_rosenberg_02_v001.png
+PRP_BS_ROSENBERG_03,prop,STG_09_BS_ROSENBERG,bouteille de gaz,P1,spécifié,1,lateral,stage_scale_approved,stages/bs_rosenberg/props/prp_bs_rosenberg_03_v001.png
+PRP_BS_ROSENBERG_04,prop,STG_09_BS_ROSENBERG,moniteur sans texte,P1,spécifié,1,lateral,stage_scale_approved,stages/bs_rosenberg/props/prp_bs_rosenberg_04_v001.png
+STG_10_DECAY_GAMMA_L00_ambience,stage_layer,STG_10_DECAY_GAMMA,plafond noir,P1,spécifié,1,lateral,reference_approved,stages/decay_gamma/layers/l00_ambience_v001.png
+STG_10_DECAY_GAMMA_L01_far,stage_layer,STG_10_DECAY_GAMMA,structures porteuses,P1,spécifié,1,lateral,reference_approved,stages/decay_gamma/layers/l01_far_v001.png
+STG_10_DECAY_GAMMA_L02_mid,stage_layer,STG_10_DECAY_GAMMA,dispositif de transfert,P1,spécifié,1,lateral,reference_approved,stages/decay_gamma/layers/l02_mid_v001.png
+STG_10_DECAY_GAMMA_L03_near,stage_layer,STG_10_DECAY_GAMMA,consoles jumelles,P1,spécifié,1,lateral,reference_approved,stages/decay_gamma/layers/l03_near_v001.png
+STG_10_DECAY_GAMMA_L04_ground,stage_layer,STG_10_DECAY_GAMMA,plateforme scientifique plane,P1,spécifié,1,lateral,reference_approved,stages/decay_gamma/layers/l04_ground_v001.png
+STG_10_DECAY_GAMMA_L05_foreground,stage_layer,STG_10_DECAY_GAMMA,câbles aux marges,P1,spécifié,1,lateral,reference_approved,stages/decay_gamma/layers/l05_foreground_v001.png
+PRP_DECAY_GAMMA_01,prop,STG_10_DECAY_GAMMA,terminal gauche,P1,spécifié,1,lateral,stage_scale_approved,stages/decay_gamma/props/prp_decay_gamma_01_v001.png
+PRP_DECAY_GAMMA_02,prop,STG_10_DECAY_GAMMA,terminal droit,P1,spécifié,1,lateral,stage_scale_approved,stages/decay_gamma/props/prp_decay_gamma_02_v001.png
+PRP_DECAY_GAMMA_03,prop,STG_10_DECAY_GAMMA,boîtier de champ,P1,spécifié,1,lateral,stage_scale_approved,stages/decay_gamma/props/prp_decay_gamma_03_v001.png
+PRP_DECAY_GAMMA_04,prop,STG_10_DECAY_GAMMA,caisson de cristal,P1,spécifié,1,lateral,stage_scale_approved,stages/decay_gamma/props/prp_decay_gamma_04_v001.png
+STG_11_HL2_STATION_L00_ambience,stage_layer,STG_11_HL2_STATION,ciel gris urbain,P0,spécifié,1,lateral,reference_approved,stages/hl2_station/layers/l00_ambience_v001.png
+STG_11_HL2_STATION_L01_far,stage_layer,STG_11_HL2_STATION,silhouette de la Citadelle à l’horizon,P0,spécifié,1,lateral,reference_approved,stages/hl2_station/layers/l01_far_v001.png
+STG_11_HL2_STATION_L02_mid,stage_layer,STG_11_HL2_STATION,toits et immeubles lointains,P0,spécifié,1,lateral,reference_approved,stages/hl2_station/layers/l02_mid_v001.png
+STG_11_HL2_STATION_L03_near,stage_layer,STG_11_HL2_STATION,façade néoclassique de la gare et postes Combine latéraux,P0,spécifié,1,lateral,reference_approved,stages/hl2_station/layers/l03_near_v001.png
+STG_11_HL2_STATION_L04_ground,stage_layer,STG_11_HL2_STATION,parvis pavé de combat continu et dégagé,P0,spécifié,1,lateral,reference_approved,stages/hl2_station/layers/l04_ground_v001.png
+STG_11_HL2_STATION_L05_foreground,stage_layer,STG_11_HL2_STATION,bordures basses aux marges,P0,spécifié,1,lateral,reference_approved,stages/hl2_station/layers/l05_foreground_v001.png
+PRP_HL2_STATION_01,prop,STG_11_HL2_STATION,banc de gare,P0,spécifié,1,lateral,stage_scale_approved,stages/hl2_station/props/prp_hl2_station_01_v001.png
+PRP_HL2_STATION_02,prop,STG_11_HL2_STATION,valise,P0,spécifié,1,lateral,stage_scale_approved,stages/hl2_station/props/prp_hl2_station_02_v001.png
+PRP_HL2_STATION_03,prop,STG_11_HL2_STATION,barrière Combine,P0,spécifié,1,lateral,stage_scale_approved,stages/hl2_station/props/prp_hl2_station_03_v001.png
+PRP_HL2_STATION_04,prop,STG_11_HL2_STATION,borne de contrôle,P0,spécifié,1,lateral,stage_scale_approved,stages/hl2_station/props/prp_hl2_station_04_v001.png
+STG_12_HL2_CANALS_L00_ambience,stage_layer,STG_12_HL2_CANALS,ciel urbain,P1,spécifié,1,lateral,reference_approved,stages/hl2_canals/layers/l00_ambience_v001.png
+STG_12_HL2_CANALS_L01_far,stage_layer,STG_12_HL2_CANALS,tours et cheminées,P1,spécifié,1,lateral,reference_approved,stages/hl2_canals/layers/l01_far_v001.png
+STG_12_HL2_CANALS_L02_mid,stage_layer,STG_12_HL2_CANALS,pont et usine,P1,spécifié,1,lateral,reference_approved,stages/hl2_canals/layers/l02_mid_v001.png
+STG_12_HL2_CANALS_L03_near,stage_layer,STG_12_HL2_CANALS,canal inférieur et muret,P1,spécifié,1,lateral,reference_approved,stages/hl2_canals/layers/l03_near_v001.png
+STG_12_HL2_CANALS_L04_ground,stage_layer,STG_12_HL2_CANALS,chemin de halage plat,P1,spécifié,1,lateral,reference_approved,stages/hl2_canals/layers/l04_ground_v001.png
+STG_12_HL2_CANALS_L05_foreground,stage_layer,STG_12_HL2_CANALS,herbes et tuyaux aux bords,P1,spécifié,1,lateral,reference_approved,stages/hl2_canals/layers/l05_foreground_v001.png
+PRP_HL2_CANALS_01,prop,STG_12_HL2_CANALS,pneu,P1,spécifié,1,lateral,stage_scale_approved,stages/hl2_canals/props/prp_hl2_canals_01_v001.png
+PRP_HL2_CANALS_02,prop,STG_12_HL2_CANALS,bidon,P1,spécifié,1,lateral,stage_scale_approved,stages/hl2_canals/props/prp_hl2_canals_02_v001.png
+PRP_HL2_CANALS_03,prop,STG_12_HL2_CANALS,vanne d’écluse,P1,spécifié,1,lateral,stage_scale_approved,stages/hl2_canals/props/prp_hl2_canals_03_v001.png
+PRP_HL2_CANALS_04,prop,STG_12_HL2_CANALS,panneau usé,P1,spécifié,1,lateral,stage_scale_approved,stages/hl2_canals/props/prp_hl2_canals_04_v001.png
+STG_13_HL2_BME_L00_ambience,stage_layer,STG_13_HL2_BME,ciel couvert,P1,spécifié,1,lateral,reference_approved,stages/hl2_bme/layers/l00_ambience_v001.png
+STG_13_HL2_BME_L01_far,stage_layer,STG_13_HL2_BME,falaises et forêt,P1,spécifié,1,lateral,reference_approved,stages/hl2_bme/layers/l01_far_v001.png
+STG_13_HL2_BME_L02_mid,stage_layer,STG_13_HL2_BME,bâtiment de résistance,P1,spécifié,1,lateral,reference_approved,stages/hl2_bme/layers/l02_mid_v001.png
+STG_13_HL2_BME_L03_near,stage_layer,STG_13_HL2_BME,grillage et matériaux de récupération,P1,spécifié,1,lateral,reference_approved,stages/hl2_bme/layers/l03_near_v001.png
+STG_13_HL2_BME_L04_ground,stage_layer,STG_13_HL2_BME,cour de combat plane,P1,spécifié,1,lateral,reference_approved,stages/hl2_bme/layers/l04_ground_v001.png
+STG_13_HL2_BME_L05_foreground,stage_layer,STG_13_HL2_BME,câbles et petits débris aux coins,P1,spécifié,1,lateral,reference_approved,stages/hl2_bme/layers/l05_foreground_v001.png
+PRP_HL2_BME_01,prop,STG_13_HL2_BME,caisse de récupération,P1,spécifié,1,lateral,stage_scale_approved,stages/hl2_bme/props/prp_hl2_bme_01_v001.png
+PRP_HL2_BME_02,prop,STG_13_HL2_BME,panier métallique,P1,spécifié,1,lateral,stage_scale_approved,stages/hl2_bme/props/prp_hl2_bme_02_v001.png
+PRP_HL2_BME_03,prop,STG_13_HL2_BME,baril,P1,spécifié,1,lateral,stage_scale_approved,stages/hl2_bme/props/prp_hl2_bme_03_v001.png
+PRP_HL2_BME_04,prop,STG_13_HL2_BME,matériel de laboratoire,P1,spécifié,1,lateral,stage_scale_approved,stages/hl2_bme/props/prp_hl2_bme_04_v001.png
+STG_14_HL2_RAVENHOLM_L00_ambience,stage_layer,STG_14_HL2_RAVENHOLM,ciel nocturne,P0,spécifié,1,lateral,reference_approved,stages/hl2_ravenholm/layers/l00_ambience_v001.png
+STG_14_HL2_RAVENHOLM_L01_far,stage_layer,STG_14_HL2_RAVENHOLM,silhouettes de toits et cheminée,P0,spécifié,1,lateral,reference_approved,stages/hl2_ravenholm/layers/l01_far_v001.png
+STG_14_HL2_RAVENHOLM_L02_mid,stage_layer,STG_14_HL2_RAVENHOLM,façades lointaines,P0,spécifié,1,lateral,reference_approved,stages/hl2_ravenholm/layers/l02_mid_v001.png
+STG_14_HL2_RAVENHOLM_L03_near,stage_layer,STG_14_HL2_RAVENHOLM,façades proches et atelier,P0,spécifié,1,lateral,reference_approved,stages/hl2_ravenholm/layers/l03_near_v001.png
+STG_14_HL2_RAVENHOLM_L04_ground,stage_layer,STG_14_HL2_RAVENHOLM,portion de rue plane sans fosse,P0,spécifié,1,lateral,reference_approved,stages/hl2_ravenholm/layers/l04_ground_v001.png
+STG_14_HL2_RAVENHOLM_L05_foreground,stage_layer,STG_14_HL2_RAVENHOLM,grillage brisé et débris aux coins,P0,spécifié,1,lateral,reference_approved,stages/hl2_ravenholm/layers/l05_foreground_v001.png
+PRP_HL2_RAVENHOLM_01,prop,STG_14_HL2_RAVENHOLM,lame de scie séparée,P0,spécifié,1,lateral,stage_scale_approved,stages/hl2_ravenholm/props/prp_hl2_ravenholm_01_v001.png
+PRP_HL2_RAVENHOLM_02,prop,STG_14_HL2_RAVENHOLM,moteur suspendu,P0,spécifié,1,lateral,stage_scale_approved,stages/hl2_ravenholm/props/prp_hl2_ravenholm_02_v001.png
+PRP_HL2_RAVENHOLM_03,prop,STG_14_HL2_RAVENHOLM,bonbonne,P0,spécifié,1,lateral,stage_scale_approved,stages/hl2_ravenholm/props/prp_hl2_ravenholm_03_v001.png
+PRP_HL2_RAVENHOLM_04,prop,STG_14_HL2_RAVENHOLM,lampadaire,P0,spécifié,1,lateral,stage_scale_approved,stages/hl2_ravenholm/props/prp_hl2_ravenholm_04_v001.png
+STG_15_HL2_NOVA_L00_ambience,stage_layer,STG_15_HL2_NOVA,ciel côtier froid,P0,spécifié,1,lateral,reference_approved,stages/hl2_nova/layers/l00_ambience_v001.png
+STG_15_HL2_NOVA_L01_far,stage_layer,STG_15_HL2_NOVA,tours et horizon,P0,spécifié,1,lateral,reference_approved,stages/hl2_nova/layers/l01_far_v001.png
+STG_15_HL2_NOVA_L02_mid,stage_layer,STG_15_HL2_NOVA,murs de prison et miradors,P0,spécifié,1,lateral,reference_approved,stages/hl2_nova/layers/l02_mid_v001.png
+STG_15_HL2_NOVA_L03_near,stage_layer,STG_15_HL2_NOVA,barrière et machinerie Combine,P0,spécifié,1,lateral,reference_approved,stages/hl2_nova/layers/l03_near_v001.png
+STG_15_HL2_NOVA_L04_ground,stage_layer,STG_15_HL2_NOVA,cour bétonnée continue,P0,spécifié,1,lateral,reference_approved,stages/hl2_nova/layers/l04_ground_v001.png
+STG_15_HL2_NOVA_L05_foreground,stage_layer,STG_15_HL2_NOVA,grillage proche hors silhouettes,P0,spécifié,1,lateral,reference_approved,stages/hl2_nova/layers/l05_foreground_v001.png
+PRP_HL2_NOVA_01,prop,STG_15_HL2_NOVA,projecteur de prison,P0,spécifié,1,lateral,stage_scale_approved,stages/hl2_nova/props/prp_hl2_nova_01_v001.png
+PRP_HL2_NOVA_02,prop,STG_15_HL2_NOVA,barrière métallique,P0,spécifié,1,lateral,stage_scale_approved,stages/hl2_nova/props/prp_hl2_nova_02_v001.png
+PRP_HL2_NOVA_03,prop,STG_15_HL2_NOVA,caisson Combine,P0,spécifié,1,lateral,stage_scale_approved,stages/hl2_nova/props/prp_hl2_nova_03_v001.png
+PRP_HL2_NOVA_04,prop,STG_15_HL2_NOVA,porte de cellule,P0,spécifié,1,lateral,stage_scale_approved,stages/hl2_nova/props/prp_hl2_nova_04_v001.png
+STG_16_HL2_CITADEL_L00_ambience,stage_layer,STG_16_HL2_CITADEL,vide industriel profond,P0,spécifié,1,lateral,reference_approved,stages/hl2_citadel/layers/l00_ambience_v001.png
+STG_16_HL2_CITADEL_L01_far,stage_layer,STG_16_HL2_CITADEL,piliers très lointains,P0,spécifié,1,lateral,reference_approved,stages/hl2_citadel/layers/l01_far_v001.png
+STG_16_HL2_CITADEL_L02_mid,stage_layer,STG_16_HL2_CITADEL,ascenseurs et structures verticales,P0,spécifié,1,lateral,reference_approved,stages/hl2_citadel/layers/l02_mid_v001.png
+STG_16_HL2_CITADEL_L03_near,stage_layer,STG_16_HL2_CITADEL,machines de transport et parois,P0,spécifié,1,lateral,reference_approved,stages/hl2_citadel/layers/l03_near_v001.png
+STG_16_HL2_CITADEL_L04_ground,stage_layer,STG_16_HL2_CITADEL,plateforme de combat plane aux bords fermés,P0,spécifié,1,lateral,reference_approved,stages/hl2_citadel/layers/l04_ground_v001.png
+STG_16_HL2_CITADEL_L05_foreground,stage_layer,STG_16_HL2_CITADEL,montants aux marges extrêmes,P0,spécifié,1,lateral,reference_approved,stages/hl2_citadel/layers/l05_foreground_v001.png
+PRP_HL2_CITADEL_01,prop,STG_16_HL2_CITADEL,capsule de transport,P0,spécifié,1,lateral,stage_scale_approved,stages/hl2_citadel/props/prp_hl2_citadel_01_v001.png
+PRP_HL2_CITADEL_02,prop,STG_16_HL2_CITADEL,console Combine,P0,spécifié,1,lateral,stage_scale_approved,stages/hl2_citadel/props/prp_hl2_citadel_02_v001.png
+PRP_HL2_CITADEL_03,prop,STG_16_HL2_CITADEL,rail lumineux,P0,spécifié,1,lateral,stage_scale_approved,stages/hl2_citadel/props/prp_hl2_citadel_03_v001.png
+PRP_HL2_CITADEL_04,prop,STG_16_HL2_CITADEL,montant industriel,P0,spécifié,1,lateral,stage_scale_approved,stages/hl2_citadel/props/prp_hl2_citadel_04_v001.png
+STG_17_EP1_CORE_L00_ambience,stage_layer,STG_17_EP1_CORE,vide assombri,P1,spécifié,1,lateral,reference_approved,stages/ep1_core/layers/l00_ambience_v001.png
+STG_17_EP1_CORE_L01_far,stage_layer,STG_17_EP1_CORE,structures lointaines déformées,P1,spécifié,1,lateral,reference_approved,stages/ep1_core/layers/l01_far_v001.png
+STG_17_EP1_CORE_L02_mid,stage_layer,STG_17_EP1_CORE,cœur énergétique en arrière-plan,P1,spécifié,1,lateral,reference_approved,stages/ep1_core/layers/l02_mid_v001.png
+STG_17_EP1_CORE_L03_near,stage_layer,STG_17_EP1_CORE,passerelles fissurées hors collision,P1,spécifié,1,lateral,reference_approved,stages/ep1_core/layers/l03_near_v001.png
+STG_17_EP1_CORE_L04_ground,stage_layer,STG_17_EP1_CORE,plateforme de service continue,P1,spécifié,1,lateral,reference_approved,stages/ep1_core/layers/l04_ground_v001.png
+STG_17_EP1_CORE_L05_foreground,stage_layer,STG_17_EP1_CORE,petits câbles bas aux coins,P1,spécifié,1,lateral,reference_approved,stages/ep1_core/layers/l05_foreground_v001.png
+PRP_EP1_CORE_01,prop,STG_17_EP1_CORE,bobine endommagée,P1,spécifié,1,lateral,stage_scale_approved,stages/ep1_core/props/prp_ep1_core_01_v001.png
+PRP_EP1_CORE_02,prop,STG_17_EP1_CORE,console de régulation,P1,spécifié,1,lateral,stage_scale_approved,stages/ep1_core/props/prp_ep1_core_02_v001.png
+PRP_EP1_CORE_03,prop,STG_17_EP1_CORE,panneau Combine,P1,spécifié,1,lateral,stage_scale_approved,stages/ep1_core/props/prp_ep1_core_03_v001.png
+PRP_EP1_CORE_04,prop,STG_17_EP1_CORE,câble arraché,P1,spécifié,1,lateral,stage_scale_approved,stages/ep1_core/props/prp_ep1_core_04_v001.png
+STG_18_EP1_EVAC_L00_ambience,stage_layer,STG_18_EP1_EVAC,ciel de crise,P1,spécifié,1,lateral,reference_approved,stages/ep1_evac/layers/l00_ambience_v001.png
+STG_18_EP1_EVAC_L01_far,stage_layer,STG_18_EP1_EVAC,ville éloignée,P1,spécifié,1,lateral,reference_approved,stages/ep1_evac/layers/l01_far_v001.png
+STG_18_EP1_EVAC_L02_mid,stage_layer,STG_18_EP1_EVAC,charpentes ferroviaires,P1,spécifié,1,lateral,reference_approved,stages/ep1_evac/layers/l02_mid_v001.png
+STG_18_EP1_EVAC_L03_near,stage_layer,STG_18_EP1_EVAC,rame d’évacuation arrière,P1,spécifié,1,lateral,reference_approved,stages/ep1_evac/layers/l03_near_v001.png
+STG_18_EP1_EVAC_L04_ground,stage_layer,STG_18_EP1_EVAC,quai plane,P1,spécifié,1,lateral,reference_approved,stages/ep1_evac/layers/l04_ground_v001.png
+STG_18_EP1_EVAC_L05_foreground,stage_layer,STG_18_EP1_EVAC,bagages aux coins,P1,spécifié,1,lateral,reference_approved,stages/ep1_evac/layers/l05_foreground_v001.png
+PRP_EP1_EVAC_01,prop,STG_18_EP1_EVAC,valise civile,P1,spécifié,1,lateral,stage_scale_approved,stages/ep1_evac/props/prp_ep1_evac_01_v001.png
+PRP_EP1_EVAC_02,prop,STG_18_EP1_EVAC,banc usé,P1,spécifié,1,lateral,stage_scale_approved,stages/ep1_evac/props/prp_ep1_evac_02_v001.png
+PRP_EP1_EVAC_03,prop,STG_18_EP1_EVAC,signal de sortie,P1,spécifié,1,lateral,stage_scale_approved,stages/ep1_evac/props/prp_ep1_evac_03_v001.png
+PRP_EP1_EVAC_04,prop,STG_18_EP1_EVAC,porte de rame,P1,spécifié,1,lateral,stage_scale_approved,stages/ep1_evac/props/prp_ep1_evac_04_v001.png
+STG_19_EP2_ANTLION_L00_ambience,stage_layer,STG_19_EP2_ANTLION,cavité sombre,P1,spécifié,1,lateral,reference_approved,stages/ep2_antlion/layers/l00_ambience_v001.png
+STG_19_EP2_ANTLION_L01_far,stage_layer,STG_19_EP2_ANTLION,galeries lointaines,P1,spécifié,1,lateral,reference_approved,stages/ep2_antlion/layers/l01_far_v001.png
+STG_19_EP2_ANTLION_L02_mid,stage_layer,STG_19_EP2_ANTLION,formations minérales et lueurs organiques,P1,spécifié,1,lateral,reference_approved,stages/ep2_antlion/layers/l02_mid_v001.png
+STG_19_EP2_ANTLION_L03_near,stage_layer,STG_19_EP2_ANTLION,parois et accès de galerie,P1,spécifié,1,lateral,reference_approved,stages/ep2_antlion/layers/l03_near_v001.png
+STG_19_EP2_ANTLION_L04_ground,stage_layer,STG_19_EP2_ANTLION,terrasse rocheuse plane,P1,spécifié,1,lateral,reference_approved,stages/ep2_antlion/layers/l04_ground_v001.png
+STG_19_EP2_ANTLION_L05_foreground,stage_layer,STG_19_EP2_ANTLION,excroissances aux coins,P1,spécifié,1,lateral,reference_approved,stages/ep2_antlion/layers/l05_foreground_v001.png
+PRP_EP2_ANTLION_01,prop,STG_19_EP2_ANTLION,cristal minéral,P1,spécifié,1,lateral,stage_scale_approved,stages/ep2_antlion/props/prp_ep2_antlion_01_v001.png
+PRP_EP2_ANTLION_02,prop,STG_19_EP2_ANTLION,sécrétion lumineuse,P1,spécifié,1,lateral,stage_scale_approved,stages/ep2_antlion/props/prp_ep2_antlion_02_v001.png
+PRP_EP2_ANTLION_03,prop,STG_19_EP2_ANTLION,étai de mine,P1,spécifié,1,lateral,stage_scale_approved,stages/ep2_antlion/props/prp_ep2_antlion_03_v001.png
+PRP_EP2_ANTLION_04,prop,STG_19_EP2_ANTLION,rail de chantier,P1,spécifié,1,lateral,stage_scale_approved,stages/ep2_antlion/props/prp_ep2_antlion_04_v001.png
+STG_20_EP2_WHITEFOREST_L00_ambience,stage_layer,STG_20_EP2_WHITEFOREST,ciel forestier,P0,spécifié,1,lateral,reference_approved,stages/ep2_whiteforest/layers/l00_ambience_v001.png
+STG_20_EP2_WHITEFOREST_L01_far,stage_layer,STG_20_EP2_WHITEFOREST,collines et forêt,P0,spécifié,1,lateral,reference_approved,stages/ep2_whiteforest/layers/l01_far_v001.png
+STG_20_EP2_WHITEFOREST_L02_mid,stage_layer,STG_20_EP2_WHITEFOREST,installations de lancement,P0,spécifié,1,lateral,reference_approved,stages/ep2_whiteforest/layers/l02_mid_v001.png
+STG_20_EP2_WHITEFOREST_L03_near,stage_layer,STG_20_EP2_WHITEFOREST,charpente et portes du hangar,P0,spécifié,1,lateral,reference_approved,stages/ep2_whiteforest/layers/l03_near_v001.png
+STG_20_EP2_WHITEFOREST_L04_ground,stage_layer,STG_20_EP2_WHITEFOREST,sol de hangar continu,P0,spécifié,1,lateral,reference_approved,stages/ep2_whiteforest/layers/l04_ground_v001.png
+STG_20_EP2_WHITEFOREST_L05_foreground,stage_layer,STG_20_EP2_WHITEFOREST,outils bas aux coins,P0,spécifié,1,lateral,reference_approved,stages/ep2_whiteforest/layers/l05_foreground_v001.png
+PRP_EP2_WHITEFOREST_01,prop,STG_20_EP2_WHITEFOREST,caisse de résistance,P0,spécifié,1,lateral,stage_scale_approved,stages/ep2_whiteforest/props/prp_ep2_whiteforest_01_v001.png
+PRP_EP2_WHITEFOREST_02,prop,STG_20_EP2_WHITEFOREST,chariot d’atelier,P0,spécifié,1,lateral,stage_scale_approved,stages/ep2_whiteforest/props/prp_ep2_whiteforest_02_v001.png
+PRP_EP2_WHITEFOREST_03,prop,STG_20_EP2_WHITEFOREST,panneau de maintenance,P0,spécifié,1,lateral,stage_scale_approved,stages/ep2_whiteforest/props/prp_ep2_whiteforest_03_v001.png
+PRP_EP2_WHITEFOREST_04,prop,STG_20_EP2_WHITEFOREST,bidon de carburant,P0,spécifié,1,lateral,stage_scale_approved,stages/ep2_whiteforest/props/prp_ep2_whiteforest_04_v001.png
+STG_21_HLA_BALCONY_L00_ambience,stage_layer,STG_21_HLA_BALCONY,ciel froid,P1,spécifié,1,lateral,reference_approved,stages/hla_balcony/layers/l00_ambience_v001.png
+STG_21_HLA_BALCONY_L01_far,stage_layer,STG_21_HLA_BALCONY,Citadelle de cette époque,P1,spécifié,1,lateral,reference_approved,stages/hla_balcony/layers/l01_far_v001.png
+STG_21_HLA_BALCONY_L02_mid,stage_layer,STG_21_HLA_BALCONY,toits et antennes intermédiaires,P1,spécifié,1,lateral,reference_approved,stages/hla_balcony/layers/l02_mid_v001.png
+STG_21_HLA_BALCONY_L03_near,stage_layer,STG_21_HLA_BALCONY,façades de l’immeuble,P1,spécifié,1,lateral,reference_approved,stages/hla_balcony/layers/l03_near_v001.png
+STG_21_HLA_BALCONY_L04_ground,stage_layer,STG_21_HLA_BALCONY,terrasse de combat élargie et sécurisée,P1,spécifié,1,lateral,reference_approved,stages/hla_balcony/layers/l04_ground_v001.png
+STG_21_HLA_BALCONY_L05_foreground,stage_layer,STG_21_HLA_BALCONY,garde-corps aux marges,P1,spécifié,1,lateral,reference_approved,stages/hla_balcony/layers/l05_foreground_v001.png
+PRP_HLA_BALCONY_01,prop,STG_21_HLA_BALCONY,antenne,P1,spécifié,1,lateral,stage_scale_approved,stages/hla_balcony/props/prp_hla_balcony_01_v001.png
+PRP_HLA_BALCONY_02,prop,STG_21_HLA_BALCONY,seau,P1,spécifié,1,lateral,stage_scale_approved,stages/hla_balcony/props/prp_hla_balcony_02_v001.png
+PRP_HLA_BALCONY_03,prop,STG_21_HLA_BALCONY,radio civile,P1,spécifié,1,lateral,stage_scale_approved,stages/hla_balcony/props/prp_hla_balcony_03_v001.png
+PRP_HLA_BALCONY_04,prop,STG_21_HLA_BALCONY,caisse de terrasse,P1,spécifié,1,lateral,stage_scale_approved,stages/hla_balcony/props/prp_hla_balcony_04_v001.png
+STG_22_HLA_QUARANTINE_L00_ambience,stage_layer,STG_22_HLA_QUARANTINE,ciel laiteux,P0,spécifié,1,lateral,reference_approved,stages/hla_quarantine/layers/l00_ambience_v001.png
+STG_22_HLA_QUARANTINE_L01_far,stage_layer,STG_22_HLA_QUARANTINE,structures urbaines lointaines,P0,spécifié,1,lateral,reference_approved,stages/hla_quarantine/layers/l01_far_v001.png
+STG_22_HLA_QUARANTINE_L02_mid,stage_layer,STG_22_HLA_QUARANTINE,façades contaminées,P0,spécifié,1,lateral,reference_approved,stages/hla_quarantine/layers/l02_mid_v001.png
+STG_22_HLA_QUARANTINE_L03_near,stage_layer,STG_22_HLA_QUARANTINE,barrière de quarantaine et épaves arrière,P0,spécifié,1,lateral,reference_approved,stages/hla_quarantine/layers/l03_near_v001.png
+STG_22_HLA_QUARANTINE_L04_ground,stage_layer,STG_22_HLA_QUARANTINE,bande de rue plane,P0,spécifié,1,lateral,reference_approved,stages/hla_quarantine/layers/l04_ground_v001.png
+STG_22_HLA_QUARANTINE_L05_foreground,stage_layer,STG_22_HLA_QUARANTINE,petites pousses organiques hors centre,P0,spécifié,1,lateral,reference_approved,stages/hla_quarantine/layers/l05_foreground_v001.png
+PRP_HLA_QUARANTINE_01,prop,STG_22_HLA_QUARANTINE,barrière de quarantaine,P0,spécifié,1,lateral,stage_scale_approved,stages/hla_quarantine/props/prp_hla_quarantine_01_v001.png
+PRP_HLA_QUARANTINE_02,prop,STG_22_HLA_QUARANTINE,caisse de collecte,P0,spécifié,1,lateral,stage_scale_approved,stages/hla_quarantine/props/prp_hla_quarantine_02_v001.png
+PRP_HLA_QUARANTINE_03,prop,STG_22_HLA_QUARANTINE,pousse de Xen,P0,spécifié,1,lateral,stage_scale_approved,stages/hla_quarantine/props/prp_hla_quarantine_03_v001.png
+PRP_HLA_QUARANTINE_04,prop,STG_22_HLA_QUARANTINE,panneau d’avertissement sans texte,P0,spécifié,1,lateral,stage_scale_approved,stages/hla_quarantine/props/prp_hla_quarantine_04_v001.png
+STG_23_HLA_DISTILLERY_L00_ambience,stage_layer,STG_23_HLA_DISTILLERY,charpente sombre,P1,spécifié,1,lateral,reference_approved,stages/hla_distillery/layers/l00_ambience_v001.png
+STG_23_HLA_DISTILLERY_L01_far,stage_layer,STG_23_HLA_DISTILLERY,réservoirs lointains,P1,spécifié,1,lateral,reference_approved,stages/hla_distillery/layers/l01_far_v001.png
+STG_23_HLA_DISTILLERY_L02_mid,stage_layer,STG_23_HLA_DISTILLERY,cuves et passerelles,P1,spécifié,1,lateral,reference_approved,stages/hla_distillery/layers/l02_mid_v001.png
+STG_23_HLA_DISTILLERY_L03_near,stage_layer,STG_23_HLA_DISTILLERY,table de bouteilles arrière,P1,spécifié,1,lateral,reference_approved,stages/hla_distillery/layers/l03_near_v001.png
+STG_23_HLA_DISTILLERY_L04_ground,stage_layer,STG_23_HLA_DISTILLERY,bande de sol industriel dégagée,P1,spécifié,1,lateral,reference_approved,stages/hla_distillery/layers/l04_ground_v001.png
+STG_23_HLA_DISTILLERY_L05_foreground,stage_layer,STG_23_HLA_DISTILLERY,tuyaux hors centre,P1,spécifié,1,lateral,reference_approved,stages/hla_distillery/layers/l05_foreground_v001.png
+PRP_HLA_DISTILLERY_01,prop,STG_23_HLA_DISTILLERY,bouteille vide,P1,spécifié,1,lateral,stage_scale_approved,stages/hla_distillery/props/prp_hla_distillery_01_v001.png
+PRP_HLA_DISTILLERY_02,prop,STG_23_HLA_DISTILLERY,cuve,P1,spécifié,1,lateral,stage_scale_approved,stages/hla_distillery/props/prp_hla_distillery_02_v001.png
+PRP_HLA_DISTILLERY_03,prop,STG_23_HLA_DISTILLERY,vanne de vapeur,P1,spécifié,1,lateral,stage_scale_approved,stages/hla_distillery/props/prp_hla_distillery_03_v001.png
+PRP_HLA_DISTILLERY_04,prop,STG_23_HLA_DISTILLERY,caisse de verrerie,P1,spécifié,1,lateral,stage_scale_approved,stages/hla_distillery/props/prp_hla_distillery_04_v001.png
+STG_24_HLA_VAULT_L00_ambience,stage_layer,STG_24_HLA_VAULT,vide lumineux contrôlé,P1,spécifié,1,lateral,reference_approved,stages/hla_vault/layers/l00_ambience_v001.png
+STG_24_HLA_VAULT_L01_far,stage_layer,STG_24_HLA_VAULT,fragments architecturaux très éloignés,P1,spécifié,1,lateral,reference_approved,stages/hla_vault/layers/l01_far_v001.png
+STG_24_HLA_VAULT_L02_mid,stage_layer,STG_24_HLA_VAULT,pièces suspendues,P1,spécifié,1,lateral,reference_approved,stages/hla_vault/layers/l02_mid_v001.png
+STG_24_HLA_VAULT_L03_near,stage_layer,STG_24_HLA_VAULT,cloisons et meubles décalés en profondeur,P1,spécifié,1,lateral,reference_approved,stages/hla_vault/layers/l03_near_v001.png
+STG_24_HLA_VAULT_L04_ground,stage_layer,STG_24_HLA_VAULT,dalle de combat plane malgré le décor impossible,P1,spécifié,1,lateral,reference_approved,stages/hla_vault/layers/l04_ground_v001.png
+STG_24_HLA_VAULT_L05_foreground,stage_layer,STG_24_HLA_VAULT,fragments très bas aux coins,P1,spécifié,1,lateral,reference_approved,stages/hla_vault/layers/l05_foreground_v001.png
+PRP_HLA_VAULT_01,prop,STG_24_HLA_VAULT,fragment de mur,P1,spécifié,1,lateral,stage_scale_approved,stages/hla_vault/props/prp_hla_vault_01_v001.png
+PRP_HLA_VAULT_02,prop,STG_24_HLA_VAULT,porte suspendue,P1,spécifié,1,lateral,stage_scale_approved,stages/hla_vault/props/prp_hla_vault_02_v001.png
+PRP_HLA_VAULT_03,prop,STG_24_HLA_VAULT,élément de sol,P1,spécifié,1,lateral,stage_scale_approved,stages/hla_vault/props/prp_hla_vault_03_v001.png
+PRP_HLA_VAULT_04,prop,STG_24_HLA_VAULT,luminaire,P1,spécifié,1,lateral,stage_scale_approved,stages/hla_vault/props/prp_hla_vault_04_v001.png
+CHR_GORDON_HL2_IDLE,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — idle,P0,spécifié,12,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/idle/frame_0001.png
+CHR_GORDON_HL2_WALK_FORWARD,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — walk_forward,P0,spécifié,12,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/walk_forward/frame_0001.png
+CHR_GORDON_HL2_WALK_BACK,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — walk_back,P0,spécifié,12,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/walk_back/frame_0001.png
+CHR_GORDON_HL2_DASH_FORWARD,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — dash_forward,P1,spécifié,8,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/dash_forward/frame_0001.png
+CHR_GORDON_HL2_DASH_BACK,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — dash_back,P1,spécifié,8,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/dash_back/frame_0001.png
+CHR_GORDON_HL2_CROUCH_ENTER,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — crouch_enter,P1,spécifié,3,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/crouch_enter/frame_0001.png
+CHR_GORDON_HL2_CROUCH_HOLD,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — crouch_hold,P1,spécifié,1,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/crouch_hold/frame_0001.png
+CHR_GORDON_HL2_CROUCH_EXIT,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — crouch_exit,P1,spécifié,3,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/crouch_exit/frame_0001.png
+CHR_GORDON_HL2_JUMP_START,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — jump_start,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/jump_start/frame_0001.png
+CHR_GORDON_HL2_JUMP_RISE,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — jump_rise,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/jump_rise/frame_0001.png
+CHR_GORDON_HL2_JUMP_APEX,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — jump_apex,P1,spécifié,2,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/jump_apex/frame_0001.png
+CHR_GORDON_HL2_JUMP_FALL,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — jump_fall,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/jump_fall/frame_0001.png
+CHR_GORDON_HL2_JUMP_LAND,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — jump_land,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/jump_land/frame_0001.png
+CHR_GORDON_HL2_TURN,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — turn,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/turn/frame_0001.png
+CHR_GORDON_HL2_GUARD_HIGH,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — guard_high,P0,spécifié,6,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/guard_high/frame_0001.png
+CHR_GORDON_HL2_GUARD_LOW,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — guard_low,P0,spécifié,6,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/guard_low/frame_0001.png
+CHR_GORDON_HL2_BLOCK_HIGH,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — block_high,P1,spécifié,3,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/block_high/frame_0001.png
+CHR_GORDON_HL2_BLOCK_LOW,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — block_low,P1,spécifié,3,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/block_low/frame_0001.png
+CHR_GORDON_HL2_HIT_HIGH,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — hit_high,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/hit_high/frame_0001.png
+CHR_GORDON_HL2_HIT_MID,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — hit_mid,P0,spécifié,4,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/hit_mid/frame_0001.png
+CHR_GORDON_HL2_HIT_LOW,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — hit_low,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/hit_low/frame_0001.png
+CHR_GORDON_HL2_HIT_AIR,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — hit_air,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/hit_air/frame_0001.png
+CHR_GORDON_HL2_KNOCKDOWN,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — knockdown,P0,spécifié,8,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/knockdown/frame_0001.png
+CHR_GORDON_HL2_GROUNDED,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — grounded,P1,spécifié,2,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/grounded/frame_0001.png
+CHR_GORDON_HL2_GETUP,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — getup,P0,spécifié,8,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/getup/frame_0001.png
+CHR_GORDON_HL2_THROW_FORWARD,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — throw_forward,P1,spécifié,14,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/throw_forward/frame_0001.png
+CHR_GORDON_HL2_THROW_BACK,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — throw_back,P1,spécifié,14,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/throw_back/frame_0001.png
+CHR_GORDON_HL2_THROWN,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — thrown,P1,spécifié,12,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/thrown/frame_0001.png
+CHR_GORDON_HL2_THROW_BREAK,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — throw_break,P1,spécifié,8,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/throw_break/frame_0001.png
+CHR_GORDON_HL2_NORMAL_5L,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — normal_5L,P0,spécifié,6,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/normal_5L/frame_0001.png
+CHR_GORDON_HL2_NORMAL_5M,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — normal_5M,P0,spécifié,8,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/normal_5M/frame_0001.png
+CHR_GORDON_HL2_NORMAL_5H,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — normal_5H,P0,spécifié,10,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/normal_5H/frame_0001.png
+CHR_GORDON_HL2_NORMAL_2L,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — normal_2L,P1,spécifié,6,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/normal_2L/frame_0001.png
+CHR_GORDON_HL2_NORMAL_2M,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — normal_2M,P1,spécifié,8,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/normal_2M/frame_0001.png
+CHR_GORDON_HL2_NORMAL_2H,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — normal_2H,P1,spécifié,10,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/normal_2H/frame_0001.png
+CHR_GORDON_HL2_NORMAL_JL,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — normal_jL,P1,spécifié,6,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/normal_jL/frame_0001.png
+CHR_GORDON_HL2_NORMAL_JM,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — normal_jM,P1,spécifié,8,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/normal_jM/frame_0001.png
+CHR_GORDON_HL2_NORMAL_JH,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — normal_jH,P1,spécifié,10,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/normal_jH/frame_0001.png
+CHR_GORDON_HL2_COMMAND_6H,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — command_6H,P1,spécifié,10,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/command_6H/frame_0001.png
+CHR_GORDON_HL2_GUARD_AIR,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — guard_air,P1,spécifié,10,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/guard_air/frame_0001.png
+CHR_GORDON_HL2_SPECIAL_01,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — special_01,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/special_01/frame_0001.png
+CHR_GORDON_HL2_SPECIAL_02,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — special_02,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/special_02/frame_0001.png
+CHR_GORDON_HL2_SPECIAL_03,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — special_03,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/special_03/frame_0001.png
+CHR_GORDON_HL2_SPECIAL_04,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — special_04,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/special_04/frame_0001.png
+CHR_GORDON_HL2_SPECIAL_05,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — special_05,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/special_05/frame_0001.png
+CHR_GORDON_HL2_SUPER,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — super,P1,spécifié,28,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/super/frame_0001.png
+CHR_GORDON_HL2_ULTIMATE,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — ultimate,P1,spécifié,28,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/ultimate/frame_0001.png
+CHR_GORDON_HL2_INTRO,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — intro,P1,spécifié,24,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/intro/frame_0001.png
+CHR_GORDON_HL2_TAUNT,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — taunt,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/taunt/frame_0001.png
+CHR_GORDON_HL2_VICTORY,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — victory,P1,spécifié,24,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/victory/frame_0001.png
+CHR_GORDON_HL2_DEFEAT,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — defeat,P1,spécifié,10,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/defeat/frame_0001.png
+CHR_GORDON_HL2_FATALITY,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — fatality,P1,spécifié,40,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/fatality/frame_0001.png
+CHR_GORDON_HL2_MERCY,animation_group,gordon_hl2,Gordon Freeman HEV Mark V — mercy,P1,spécifié,24,right,character_reference_and_move_timing_approved,fighters/gordon_hl2/default/right/mercy/frame_0001.png
+CHR_ALYX_HL2_IDLE,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — idle,P0,spécifié,12,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/idle/frame_0001.png
+CHR_ALYX_HL2_WALK_FORWARD,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — walk_forward,P0,spécifié,12,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/walk_forward/frame_0001.png
+CHR_ALYX_HL2_WALK_BACK,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — walk_back,P0,spécifié,12,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/walk_back/frame_0001.png
+CHR_ALYX_HL2_DASH_FORWARD,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — dash_forward,P1,spécifié,8,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/dash_forward/frame_0001.png
+CHR_ALYX_HL2_DASH_BACK,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — dash_back,P1,spécifié,8,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/dash_back/frame_0001.png
+CHR_ALYX_HL2_CROUCH_ENTER,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — crouch_enter,P1,spécifié,3,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/crouch_enter/frame_0001.png
+CHR_ALYX_HL2_CROUCH_HOLD,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — crouch_hold,P1,spécifié,1,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/crouch_hold/frame_0001.png
+CHR_ALYX_HL2_CROUCH_EXIT,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — crouch_exit,P1,spécifié,3,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/crouch_exit/frame_0001.png
+CHR_ALYX_HL2_JUMP_START,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — jump_start,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/jump_start/frame_0001.png
+CHR_ALYX_HL2_JUMP_RISE,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — jump_rise,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/jump_rise/frame_0001.png
+CHR_ALYX_HL2_JUMP_APEX,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — jump_apex,P1,spécifié,2,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/jump_apex/frame_0001.png
+CHR_ALYX_HL2_JUMP_FALL,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — jump_fall,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/jump_fall/frame_0001.png
+CHR_ALYX_HL2_JUMP_LAND,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — jump_land,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/jump_land/frame_0001.png
+CHR_ALYX_HL2_TURN,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — turn,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/turn/frame_0001.png
+CHR_ALYX_HL2_GUARD_HIGH,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — guard_high,P0,spécifié,6,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/guard_high/frame_0001.png
+CHR_ALYX_HL2_GUARD_LOW,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — guard_low,P0,spécifié,6,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/guard_low/frame_0001.png
+CHR_ALYX_HL2_BLOCK_HIGH,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — block_high,P1,spécifié,3,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/block_high/frame_0001.png
+CHR_ALYX_HL2_BLOCK_LOW,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — block_low,P1,spécifié,3,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/block_low/frame_0001.png
+CHR_ALYX_HL2_HIT_HIGH,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — hit_high,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/hit_high/frame_0001.png
+CHR_ALYX_HL2_HIT_MID,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — hit_mid,P0,spécifié,4,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/hit_mid/frame_0001.png
+CHR_ALYX_HL2_HIT_LOW,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — hit_low,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/hit_low/frame_0001.png
+CHR_ALYX_HL2_HIT_AIR,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — hit_air,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/hit_air/frame_0001.png
+CHR_ALYX_HL2_KNOCKDOWN,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — knockdown,P0,spécifié,8,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/knockdown/frame_0001.png
+CHR_ALYX_HL2_GROUNDED,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — grounded,P1,spécifié,2,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/grounded/frame_0001.png
+CHR_ALYX_HL2_GETUP,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — getup,P0,spécifié,8,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/getup/frame_0001.png
+CHR_ALYX_HL2_THROW_FORWARD,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — throw_forward,P1,spécifié,14,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/throw_forward/frame_0001.png
+CHR_ALYX_HL2_THROW_BACK,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — throw_back,P1,spécifié,14,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/throw_back/frame_0001.png
+CHR_ALYX_HL2_THROWN,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — thrown,P1,spécifié,12,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/thrown/frame_0001.png
+CHR_ALYX_HL2_THROW_BREAK,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — throw_break,P1,spécifié,8,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/throw_break/frame_0001.png
+CHR_ALYX_HL2_NORMAL_5L,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — normal_5L,P0,spécifié,6,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/normal_5L/frame_0001.png
+CHR_ALYX_HL2_NORMAL_5M,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — normal_5M,P0,spécifié,8,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/normal_5M/frame_0001.png
+CHR_ALYX_HL2_NORMAL_5H,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — normal_5H,P0,spécifié,10,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/normal_5H/frame_0001.png
+CHR_ALYX_HL2_NORMAL_2L,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — normal_2L,P1,spécifié,6,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/normal_2L/frame_0001.png
+CHR_ALYX_HL2_NORMAL_2M,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — normal_2M,P1,spécifié,8,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/normal_2M/frame_0001.png
+CHR_ALYX_HL2_NORMAL_2H,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — normal_2H,P1,spécifié,10,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/normal_2H/frame_0001.png
+CHR_ALYX_HL2_NORMAL_JL,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — normal_jL,P1,spécifié,6,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/normal_jL/frame_0001.png
+CHR_ALYX_HL2_NORMAL_JM,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — normal_jM,P1,spécifié,8,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/normal_jM/frame_0001.png
+CHR_ALYX_HL2_NORMAL_JH,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — normal_jH,P1,spécifié,10,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/normal_jH/frame_0001.png
+CHR_ALYX_HL2_COMMAND_6H,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — command_6H,P1,spécifié,10,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/command_6H/frame_0001.png
+CHR_ALYX_HL2_GUARD_AIR,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — guard_air,P1,spécifié,10,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/guard_air/frame_0001.png
+CHR_ALYX_HL2_SPECIAL_01,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — special_01,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/special_01/frame_0001.png
+CHR_ALYX_HL2_SPECIAL_02,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — special_02,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/special_02/frame_0001.png
+CHR_ALYX_HL2_SPECIAL_03,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — special_03,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/special_03/frame_0001.png
+CHR_ALYX_HL2_SPECIAL_04,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — special_04,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/special_04/frame_0001.png
+CHR_ALYX_HL2_SPECIAL_05,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — special_05,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/special_05/frame_0001.png
+CHR_ALYX_HL2_SUPER,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — super,P1,spécifié,28,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/super/frame_0001.png
+CHR_ALYX_HL2_ULTIMATE,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — ultimate,P1,spécifié,28,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/ultimate/frame_0001.png
+CHR_ALYX_HL2_INTRO,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — intro,P1,spécifié,24,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/intro/frame_0001.png
+CHR_ALYX_HL2_TAUNT,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — taunt,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/taunt/frame_0001.png
+CHR_ALYX_HL2_VICTORY,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — victory,P1,spécifié,24,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/victory/frame_0001.png
+CHR_ALYX_HL2_DEFEAT,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — defeat,P1,spécifié,10,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/defeat/frame_0001.png
+CHR_ALYX_HL2_FATALITY,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — fatality,P1,spécifié,40,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/fatality/frame_0001.png
+CHR_ALYX_HL2_MERCY,animation_group,alyx_hl2,Alyx Vance Half-Life 2 — mercy,P1,spécifié,24,right,character_reference_and_move_timing_approved,fighters/alyx_hl2/default/right/mercy/frame_0001.png
+CHR_BARNEY_HL2_IDLE,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — idle,P0,spécifié,12,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/idle/frame_0001.png
+CHR_BARNEY_HL2_WALK_FORWARD,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — walk_forward,P0,spécifié,12,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/walk_forward/frame_0001.png
+CHR_BARNEY_HL2_WALK_BACK,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — walk_back,P0,spécifié,12,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/walk_back/frame_0001.png
+CHR_BARNEY_HL2_DASH_FORWARD,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — dash_forward,P1,spécifié,8,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/dash_forward/frame_0001.png
+CHR_BARNEY_HL2_DASH_BACK,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — dash_back,P1,spécifié,8,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/dash_back/frame_0001.png
+CHR_BARNEY_HL2_CROUCH_ENTER,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — crouch_enter,P1,spécifié,3,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/crouch_enter/frame_0001.png
+CHR_BARNEY_HL2_CROUCH_HOLD,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — crouch_hold,P1,spécifié,1,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/crouch_hold/frame_0001.png
+CHR_BARNEY_HL2_CROUCH_EXIT,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — crouch_exit,P1,spécifié,3,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/crouch_exit/frame_0001.png
+CHR_BARNEY_HL2_JUMP_START,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — jump_start,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/jump_start/frame_0001.png
+CHR_BARNEY_HL2_JUMP_RISE,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — jump_rise,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/jump_rise/frame_0001.png
+CHR_BARNEY_HL2_JUMP_APEX,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — jump_apex,P1,spécifié,2,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/jump_apex/frame_0001.png
+CHR_BARNEY_HL2_JUMP_FALL,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — jump_fall,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/jump_fall/frame_0001.png
+CHR_BARNEY_HL2_JUMP_LAND,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — jump_land,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/jump_land/frame_0001.png
+CHR_BARNEY_HL2_TURN,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — turn,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/turn/frame_0001.png
+CHR_BARNEY_HL2_GUARD_HIGH,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — guard_high,P0,spécifié,6,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/guard_high/frame_0001.png
+CHR_BARNEY_HL2_GUARD_LOW,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — guard_low,P0,spécifié,6,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/guard_low/frame_0001.png
+CHR_BARNEY_HL2_BLOCK_HIGH,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — block_high,P1,spécifié,3,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/block_high/frame_0001.png
+CHR_BARNEY_HL2_BLOCK_LOW,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — block_low,P1,spécifié,3,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/block_low/frame_0001.png
+CHR_BARNEY_HL2_HIT_HIGH,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — hit_high,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/hit_high/frame_0001.png
+CHR_BARNEY_HL2_HIT_MID,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — hit_mid,P0,spécifié,4,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/hit_mid/frame_0001.png
+CHR_BARNEY_HL2_HIT_LOW,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — hit_low,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/hit_low/frame_0001.png
+CHR_BARNEY_HL2_HIT_AIR,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — hit_air,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/hit_air/frame_0001.png
+CHR_BARNEY_HL2_KNOCKDOWN,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — knockdown,P0,spécifié,8,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/knockdown/frame_0001.png
+CHR_BARNEY_HL2_GROUNDED,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — grounded,P1,spécifié,2,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/grounded/frame_0001.png
+CHR_BARNEY_HL2_GETUP,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — getup,P0,spécifié,8,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/getup/frame_0001.png
+CHR_BARNEY_HL2_THROW_FORWARD,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — throw_forward,P1,spécifié,14,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/throw_forward/frame_0001.png
+CHR_BARNEY_HL2_THROW_BACK,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — throw_back,P1,spécifié,14,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/throw_back/frame_0001.png
+CHR_BARNEY_HL2_THROWN,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — thrown,P1,spécifié,12,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/thrown/frame_0001.png
+CHR_BARNEY_HL2_THROW_BREAK,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — throw_break,P1,spécifié,8,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/throw_break/frame_0001.png
+CHR_BARNEY_HL2_NORMAL_5L,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — normal_5L,P0,spécifié,6,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/normal_5L/frame_0001.png
+CHR_BARNEY_HL2_NORMAL_5M,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — normal_5M,P0,spécifié,8,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/normal_5M/frame_0001.png
+CHR_BARNEY_HL2_NORMAL_5H,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — normal_5H,P0,spécifié,10,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/normal_5H/frame_0001.png
+CHR_BARNEY_HL2_NORMAL_2L,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — normal_2L,P1,spécifié,6,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/normal_2L/frame_0001.png
+CHR_BARNEY_HL2_NORMAL_2M,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — normal_2M,P1,spécifié,8,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/normal_2M/frame_0001.png
+CHR_BARNEY_HL2_NORMAL_2H,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — normal_2H,P1,spécifié,10,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/normal_2H/frame_0001.png
+CHR_BARNEY_HL2_NORMAL_JL,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — normal_jL,P1,spécifié,6,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/normal_jL/frame_0001.png
+CHR_BARNEY_HL2_NORMAL_JM,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — normal_jM,P1,spécifié,8,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/normal_jM/frame_0001.png
+CHR_BARNEY_HL2_NORMAL_JH,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — normal_jH,P1,spécifié,10,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/normal_jH/frame_0001.png
+CHR_BARNEY_HL2_COMMAND_6H,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — command_6H,P1,spécifié,10,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/command_6H/frame_0001.png
+CHR_BARNEY_HL2_GUARD_AIR,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — guard_air,P1,spécifié,10,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/guard_air/frame_0001.png
+CHR_BARNEY_HL2_SPECIAL_01,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — special_01,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/special_01/frame_0001.png
+CHR_BARNEY_HL2_SPECIAL_02,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — special_02,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/special_02/frame_0001.png
+CHR_BARNEY_HL2_SPECIAL_03,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — special_03,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/special_03/frame_0001.png
+CHR_BARNEY_HL2_SPECIAL_04,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — special_04,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/special_04/frame_0001.png
+CHR_BARNEY_HL2_SPECIAL_05,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — special_05,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/special_05/frame_0001.png
+CHR_BARNEY_HL2_SUPER,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — super,P1,spécifié,28,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/super/frame_0001.png
+CHR_BARNEY_HL2_ULTIMATE,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — ultimate,P1,spécifié,28,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/ultimate/frame_0001.png
+CHR_BARNEY_HL2_INTRO,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — intro,P1,spécifié,24,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/intro/frame_0001.png
+CHR_BARNEY_HL2_TAUNT,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — taunt,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/taunt/frame_0001.png
+CHR_BARNEY_HL2_VICTORY,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — victory,P1,spécifié,24,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/victory/frame_0001.png
+CHR_BARNEY_HL2_DEFEAT,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — defeat,P1,spécifié,10,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/defeat/frame_0001.png
+CHR_BARNEY_HL2_FATALITY,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — fatality,P1,spécifié,40,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/fatality/frame_0001.png
+CHR_BARNEY_HL2_MERCY,animation_group,barney_hl2,Barney Calhoun Half-Life 2 — mercy,P1,spécifié,24,right,character_reference_and_move_timing_approved,fighters/barney_hl2/default/right/mercy/frame_0001.png
+CHR_SHEPHARD_OP4_IDLE,animation_group,shephard_op4,Adrian Shephard Opposing Force — idle,P0,spécifié,12,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/idle/frame_0001.png
+CHR_SHEPHARD_OP4_WALK_FORWARD,animation_group,shephard_op4,Adrian Shephard Opposing Force — walk_forward,P0,spécifié,12,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/walk_forward/frame_0001.png
+CHR_SHEPHARD_OP4_WALK_BACK,animation_group,shephard_op4,Adrian Shephard Opposing Force — walk_back,P0,spécifié,12,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/walk_back/frame_0001.png
+CHR_SHEPHARD_OP4_DASH_FORWARD,animation_group,shephard_op4,Adrian Shephard Opposing Force — dash_forward,P1,spécifié,8,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/dash_forward/frame_0001.png
+CHR_SHEPHARD_OP4_DASH_BACK,animation_group,shephard_op4,Adrian Shephard Opposing Force — dash_back,P1,spécifié,8,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/dash_back/frame_0001.png
+CHR_SHEPHARD_OP4_CROUCH_ENTER,animation_group,shephard_op4,Adrian Shephard Opposing Force — crouch_enter,P1,spécifié,3,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/crouch_enter/frame_0001.png
+CHR_SHEPHARD_OP4_CROUCH_HOLD,animation_group,shephard_op4,Adrian Shephard Opposing Force — crouch_hold,P1,spécifié,1,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/crouch_hold/frame_0001.png
+CHR_SHEPHARD_OP4_CROUCH_EXIT,animation_group,shephard_op4,Adrian Shephard Opposing Force — crouch_exit,P1,spécifié,3,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/crouch_exit/frame_0001.png
+CHR_SHEPHARD_OP4_JUMP_START,animation_group,shephard_op4,Adrian Shephard Opposing Force — jump_start,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/jump_start/frame_0001.png
+CHR_SHEPHARD_OP4_JUMP_RISE,animation_group,shephard_op4,Adrian Shephard Opposing Force — jump_rise,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/jump_rise/frame_0001.png
+CHR_SHEPHARD_OP4_JUMP_APEX,animation_group,shephard_op4,Adrian Shephard Opposing Force — jump_apex,P1,spécifié,2,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/jump_apex/frame_0001.png
+CHR_SHEPHARD_OP4_JUMP_FALL,animation_group,shephard_op4,Adrian Shephard Opposing Force — jump_fall,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/jump_fall/frame_0001.png
+CHR_SHEPHARD_OP4_JUMP_LAND,animation_group,shephard_op4,Adrian Shephard Opposing Force — jump_land,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/jump_land/frame_0001.png
+CHR_SHEPHARD_OP4_TURN,animation_group,shephard_op4,Adrian Shephard Opposing Force — turn,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/turn/frame_0001.png
+CHR_SHEPHARD_OP4_GUARD_HIGH,animation_group,shephard_op4,Adrian Shephard Opposing Force — guard_high,P0,spécifié,6,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/guard_high/frame_0001.png
+CHR_SHEPHARD_OP4_GUARD_LOW,animation_group,shephard_op4,Adrian Shephard Opposing Force — guard_low,P0,spécifié,6,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/guard_low/frame_0001.png
+CHR_SHEPHARD_OP4_BLOCK_HIGH,animation_group,shephard_op4,Adrian Shephard Opposing Force — block_high,P1,spécifié,3,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/block_high/frame_0001.png
+CHR_SHEPHARD_OP4_BLOCK_LOW,animation_group,shephard_op4,Adrian Shephard Opposing Force — block_low,P1,spécifié,3,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/block_low/frame_0001.png
+CHR_SHEPHARD_OP4_HIT_HIGH,animation_group,shephard_op4,Adrian Shephard Opposing Force — hit_high,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/hit_high/frame_0001.png
+CHR_SHEPHARD_OP4_HIT_MID,animation_group,shephard_op4,Adrian Shephard Opposing Force — hit_mid,P0,spécifié,4,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/hit_mid/frame_0001.png
+CHR_SHEPHARD_OP4_HIT_LOW,animation_group,shephard_op4,Adrian Shephard Opposing Force — hit_low,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/hit_low/frame_0001.png
+CHR_SHEPHARD_OP4_HIT_AIR,animation_group,shephard_op4,Adrian Shephard Opposing Force — hit_air,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/hit_air/frame_0001.png
+CHR_SHEPHARD_OP4_KNOCKDOWN,animation_group,shephard_op4,Adrian Shephard Opposing Force — knockdown,P0,spécifié,8,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/knockdown/frame_0001.png
+CHR_SHEPHARD_OP4_GROUNDED,animation_group,shephard_op4,Adrian Shephard Opposing Force — grounded,P1,spécifié,2,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/grounded/frame_0001.png
+CHR_SHEPHARD_OP4_GETUP,animation_group,shephard_op4,Adrian Shephard Opposing Force — getup,P0,spécifié,8,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/getup/frame_0001.png
+CHR_SHEPHARD_OP4_THROW_FORWARD,animation_group,shephard_op4,Adrian Shephard Opposing Force — throw_forward,P1,spécifié,14,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/throw_forward/frame_0001.png
+CHR_SHEPHARD_OP4_THROW_BACK,animation_group,shephard_op4,Adrian Shephard Opposing Force — throw_back,P1,spécifié,14,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/throw_back/frame_0001.png
+CHR_SHEPHARD_OP4_THROWN,animation_group,shephard_op4,Adrian Shephard Opposing Force — thrown,P1,spécifié,12,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/thrown/frame_0001.png
+CHR_SHEPHARD_OP4_THROW_BREAK,animation_group,shephard_op4,Adrian Shephard Opposing Force — throw_break,P1,spécifié,8,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/throw_break/frame_0001.png
+CHR_SHEPHARD_OP4_NORMAL_5L,animation_group,shephard_op4,Adrian Shephard Opposing Force — normal_5L,P0,spécifié,6,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/normal_5L/frame_0001.png
+CHR_SHEPHARD_OP4_NORMAL_5M,animation_group,shephard_op4,Adrian Shephard Opposing Force — normal_5M,P0,spécifié,8,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/normal_5M/frame_0001.png
+CHR_SHEPHARD_OP4_NORMAL_5H,animation_group,shephard_op4,Adrian Shephard Opposing Force — normal_5H,P0,spécifié,10,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/normal_5H/frame_0001.png
+CHR_SHEPHARD_OP4_NORMAL_2L,animation_group,shephard_op4,Adrian Shephard Opposing Force — normal_2L,P1,spécifié,6,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/normal_2L/frame_0001.png
+CHR_SHEPHARD_OP4_NORMAL_2M,animation_group,shephard_op4,Adrian Shephard Opposing Force — normal_2M,P1,spécifié,8,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/normal_2M/frame_0001.png
+CHR_SHEPHARD_OP4_NORMAL_2H,animation_group,shephard_op4,Adrian Shephard Opposing Force — normal_2H,P1,spécifié,10,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/normal_2H/frame_0001.png
+CHR_SHEPHARD_OP4_NORMAL_JL,animation_group,shephard_op4,Adrian Shephard Opposing Force — normal_jL,P1,spécifié,6,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/normal_jL/frame_0001.png
+CHR_SHEPHARD_OP4_NORMAL_JM,animation_group,shephard_op4,Adrian Shephard Opposing Force — normal_jM,P1,spécifié,8,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/normal_jM/frame_0001.png
+CHR_SHEPHARD_OP4_NORMAL_JH,animation_group,shephard_op4,Adrian Shephard Opposing Force — normal_jH,P1,spécifié,10,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/normal_jH/frame_0001.png
+CHR_SHEPHARD_OP4_COMMAND_6H,animation_group,shephard_op4,Adrian Shephard Opposing Force — command_6H,P1,spécifié,10,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/command_6H/frame_0001.png
+CHR_SHEPHARD_OP4_GUARD_AIR,animation_group,shephard_op4,Adrian Shephard Opposing Force — guard_air,P1,spécifié,10,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/guard_air/frame_0001.png
+CHR_SHEPHARD_OP4_SPECIAL_01,animation_group,shephard_op4,Adrian Shephard Opposing Force — special_01,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/special_01/frame_0001.png
+CHR_SHEPHARD_OP4_SPECIAL_02,animation_group,shephard_op4,Adrian Shephard Opposing Force — special_02,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/special_02/frame_0001.png
+CHR_SHEPHARD_OP4_SPECIAL_03,animation_group,shephard_op4,Adrian Shephard Opposing Force — special_03,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/special_03/frame_0001.png
+CHR_SHEPHARD_OP4_SPECIAL_04,animation_group,shephard_op4,Adrian Shephard Opposing Force — special_04,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/special_04/frame_0001.png
+CHR_SHEPHARD_OP4_SPECIAL_05,animation_group,shephard_op4,Adrian Shephard Opposing Force — special_05,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/special_05/frame_0001.png
+CHR_SHEPHARD_OP4_SUPER,animation_group,shephard_op4,Adrian Shephard Opposing Force — super,P1,spécifié,28,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/super/frame_0001.png
+CHR_SHEPHARD_OP4_ULTIMATE,animation_group,shephard_op4,Adrian Shephard Opposing Force — ultimate,P1,spécifié,28,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/ultimate/frame_0001.png
+CHR_SHEPHARD_OP4_INTRO,animation_group,shephard_op4,Adrian Shephard Opposing Force — intro,P1,spécifié,24,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/intro/frame_0001.png
+CHR_SHEPHARD_OP4_TAUNT,animation_group,shephard_op4,Adrian Shephard Opposing Force — taunt,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/taunt/frame_0001.png
+CHR_SHEPHARD_OP4_VICTORY,animation_group,shephard_op4,Adrian Shephard Opposing Force — victory,P1,spécifié,24,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/victory/frame_0001.png
+CHR_SHEPHARD_OP4_DEFEAT,animation_group,shephard_op4,Adrian Shephard Opposing Force — defeat,P1,spécifié,10,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/defeat/frame_0001.png
+CHR_SHEPHARD_OP4_FATALITY,animation_group,shephard_op4,Adrian Shephard Opposing Force — fatality,P1,spécifié,40,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/fatality/frame_0001.png
+CHR_SHEPHARD_OP4_MERCY,animation_group,shephard_op4,Adrian Shephard Opposing Force — mercy,P1,spécifié,24,right,character_reference_and_move_timing_approved,fighters/shephard_op4/default/right/mercy/frame_0001.png
+CHR_VORTIGAUNT_HL2_IDLE,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — idle,P0,spécifié,12,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/idle/frame_0001.png
+CHR_VORTIGAUNT_HL2_WALK_FORWARD,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — walk_forward,P0,spécifié,12,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/walk_forward/frame_0001.png
+CHR_VORTIGAUNT_HL2_WALK_BACK,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — walk_back,P0,spécifié,12,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/walk_back/frame_0001.png
+CHR_VORTIGAUNT_HL2_DASH_FORWARD,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — dash_forward,P1,spécifié,8,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/dash_forward/frame_0001.png
+CHR_VORTIGAUNT_HL2_DASH_BACK,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — dash_back,P1,spécifié,8,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/dash_back/frame_0001.png
+CHR_VORTIGAUNT_HL2_CROUCH_ENTER,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — crouch_enter,P1,spécifié,3,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/crouch_enter/frame_0001.png
+CHR_VORTIGAUNT_HL2_CROUCH_HOLD,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — crouch_hold,P1,spécifié,1,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/crouch_hold/frame_0001.png
+CHR_VORTIGAUNT_HL2_CROUCH_EXIT,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — crouch_exit,P1,spécifié,3,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/crouch_exit/frame_0001.png
+CHR_VORTIGAUNT_HL2_JUMP_START,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — jump_start,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/jump_start/frame_0001.png
+CHR_VORTIGAUNT_HL2_JUMP_RISE,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — jump_rise,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/jump_rise/frame_0001.png
+CHR_VORTIGAUNT_HL2_JUMP_APEX,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — jump_apex,P1,spécifié,2,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/jump_apex/frame_0001.png
+CHR_VORTIGAUNT_HL2_JUMP_FALL,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — jump_fall,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/jump_fall/frame_0001.png
+CHR_VORTIGAUNT_HL2_JUMP_LAND,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — jump_land,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/jump_land/frame_0001.png
+CHR_VORTIGAUNT_HL2_TURN,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — turn,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/turn/frame_0001.png
+CHR_VORTIGAUNT_HL2_GUARD_HIGH,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — guard_high,P0,spécifié,6,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/guard_high/frame_0001.png
+CHR_VORTIGAUNT_HL2_GUARD_LOW,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — guard_low,P0,spécifié,6,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/guard_low/frame_0001.png
+CHR_VORTIGAUNT_HL2_BLOCK_HIGH,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — block_high,P1,spécifié,3,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/block_high/frame_0001.png
+CHR_VORTIGAUNT_HL2_BLOCK_LOW,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — block_low,P1,spécifié,3,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/block_low/frame_0001.png
+CHR_VORTIGAUNT_HL2_HIT_HIGH,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — hit_high,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/hit_high/frame_0001.png
+CHR_VORTIGAUNT_HL2_HIT_MID,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — hit_mid,P0,spécifié,4,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/hit_mid/frame_0001.png
+CHR_VORTIGAUNT_HL2_HIT_LOW,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — hit_low,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/hit_low/frame_0001.png
+CHR_VORTIGAUNT_HL2_HIT_AIR,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — hit_air,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/hit_air/frame_0001.png
+CHR_VORTIGAUNT_HL2_KNOCKDOWN,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — knockdown,P0,spécifié,8,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/knockdown/frame_0001.png
+CHR_VORTIGAUNT_HL2_GROUNDED,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — grounded,P1,spécifié,2,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/grounded/frame_0001.png
+CHR_VORTIGAUNT_HL2_GETUP,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — getup,P0,spécifié,8,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/getup/frame_0001.png
+CHR_VORTIGAUNT_HL2_THROW_FORWARD,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — throw_forward,P1,spécifié,14,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/throw_forward/frame_0001.png
+CHR_VORTIGAUNT_HL2_THROW_BACK,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — throw_back,P1,spécifié,14,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/throw_back/frame_0001.png
+CHR_VORTIGAUNT_HL2_THROWN,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — thrown,P1,spécifié,12,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/thrown/frame_0001.png
+CHR_VORTIGAUNT_HL2_THROW_BREAK,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — throw_break,P1,spécifié,8,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/throw_break/frame_0001.png
+CHR_VORTIGAUNT_HL2_NORMAL_5L,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — normal_5L,P0,spécifié,6,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/normal_5L/frame_0001.png
+CHR_VORTIGAUNT_HL2_NORMAL_5M,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — normal_5M,P0,spécifié,8,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/normal_5M/frame_0001.png
+CHR_VORTIGAUNT_HL2_NORMAL_5H,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — normal_5H,P0,spécifié,10,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/normal_5H/frame_0001.png
+CHR_VORTIGAUNT_HL2_NORMAL_2L,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — normal_2L,P1,spécifié,6,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/normal_2L/frame_0001.png
+CHR_VORTIGAUNT_HL2_NORMAL_2M,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — normal_2M,P1,spécifié,8,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/normal_2M/frame_0001.png
+CHR_VORTIGAUNT_HL2_NORMAL_2H,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — normal_2H,P1,spécifié,10,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/normal_2H/frame_0001.png
+CHR_VORTIGAUNT_HL2_NORMAL_JL,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — normal_jL,P1,spécifié,6,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/normal_jL/frame_0001.png
+CHR_VORTIGAUNT_HL2_NORMAL_JM,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — normal_jM,P1,spécifié,8,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/normal_jM/frame_0001.png
+CHR_VORTIGAUNT_HL2_NORMAL_JH,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — normal_jH,P1,spécifié,10,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/normal_jH/frame_0001.png
+CHR_VORTIGAUNT_HL2_COMMAND_6H,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — command_6H,P1,spécifié,10,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/command_6H/frame_0001.png
+CHR_VORTIGAUNT_HL2_GUARD_AIR,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — guard_air,P1,spécifié,10,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/guard_air/frame_0001.png
+CHR_VORTIGAUNT_HL2_SPECIAL_01,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — special_01,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/special_01/frame_0001.png
+CHR_VORTIGAUNT_HL2_SPECIAL_02,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — special_02,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/special_02/frame_0001.png
+CHR_VORTIGAUNT_HL2_SPECIAL_03,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — special_03,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/special_03/frame_0001.png
+CHR_VORTIGAUNT_HL2_SPECIAL_04,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — special_04,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/special_04/frame_0001.png
+CHR_VORTIGAUNT_HL2_SPECIAL_05,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — special_05,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/special_05/frame_0001.png
+CHR_VORTIGAUNT_HL2_SUPER,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — super,P1,spécifié,28,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/super/frame_0001.png
+CHR_VORTIGAUNT_HL2_ULTIMATE,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — ultimate,P1,spécifié,28,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/ultimate/frame_0001.png
+CHR_VORTIGAUNT_HL2_INTRO,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — intro,P1,spécifié,24,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/intro/frame_0001.png
+CHR_VORTIGAUNT_HL2_TAUNT,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — taunt,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/taunt/frame_0001.png
+CHR_VORTIGAUNT_HL2_VICTORY,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — victory,P1,spécifié,24,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/victory/frame_0001.png
+CHR_VORTIGAUNT_HL2_DEFEAT,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — defeat,P1,spécifié,10,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/defeat/frame_0001.png
+CHR_VORTIGAUNT_HL2_FATALITY,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — fatality,P1,spécifié,40,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/fatality/frame_0001.png
+CHR_VORTIGAUNT_HL2_MERCY,animation_group,vortigaunt_hl2,Vortigaunt Half-Life 2 — mercy,P1,spécifié,24,right,character_reference_and_move_timing_approved,fighters/vortigaunt_hl2/default/right/mercy/frame_0001.png
+CHR_COMBINE_ELITE_HL2_IDLE,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — idle,P0,spécifié,12,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/idle/frame_0001.png
+CHR_COMBINE_ELITE_HL2_WALK_FORWARD,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — walk_forward,P0,spécifié,12,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/walk_forward/frame_0001.png
+CHR_COMBINE_ELITE_HL2_WALK_BACK,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — walk_back,P0,spécifié,12,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/walk_back/frame_0001.png
+CHR_COMBINE_ELITE_HL2_DASH_FORWARD,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — dash_forward,P1,spécifié,8,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/dash_forward/frame_0001.png
+CHR_COMBINE_ELITE_HL2_DASH_BACK,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — dash_back,P1,spécifié,8,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/dash_back/frame_0001.png
+CHR_COMBINE_ELITE_HL2_CROUCH_ENTER,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — crouch_enter,P1,spécifié,3,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/crouch_enter/frame_0001.png
+CHR_COMBINE_ELITE_HL2_CROUCH_HOLD,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — crouch_hold,P1,spécifié,1,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/crouch_hold/frame_0001.png
+CHR_COMBINE_ELITE_HL2_CROUCH_EXIT,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — crouch_exit,P1,spécifié,3,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/crouch_exit/frame_0001.png
+CHR_COMBINE_ELITE_HL2_JUMP_START,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — jump_start,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/jump_start/frame_0001.png
+CHR_COMBINE_ELITE_HL2_JUMP_RISE,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — jump_rise,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/jump_rise/frame_0001.png
+CHR_COMBINE_ELITE_HL2_JUMP_APEX,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — jump_apex,P1,spécifié,2,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/jump_apex/frame_0001.png
+CHR_COMBINE_ELITE_HL2_JUMP_FALL,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — jump_fall,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/jump_fall/frame_0001.png
+CHR_COMBINE_ELITE_HL2_JUMP_LAND,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — jump_land,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/jump_land/frame_0001.png
+CHR_COMBINE_ELITE_HL2_TURN,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — turn,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/turn/frame_0001.png
+CHR_COMBINE_ELITE_HL2_GUARD_HIGH,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — guard_high,P0,spécifié,6,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/guard_high/frame_0001.png
+CHR_COMBINE_ELITE_HL2_GUARD_LOW,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — guard_low,P0,spécifié,6,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/guard_low/frame_0001.png
+CHR_COMBINE_ELITE_HL2_BLOCK_HIGH,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — block_high,P1,spécifié,3,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/block_high/frame_0001.png
+CHR_COMBINE_ELITE_HL2_BLOCK_LOW,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — block_low,P1,spécifié,3,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/block_low/frame_0001.png
+CHR_COMBINE_ELITE_HL2_HIT_HIGH,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — hit_high,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/hit_high/frame_0001.png
+CHR_COMBINE_ELITE_HL2_HIT_MID,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — hit_mid,P0,spécifié,4,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/hit_mid/frame_0001.png
+CHR_COMBINE_ELITE_HL2_HIT_LOW,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — hit_low,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/hit_low/frame_0001.png
+CHR_COMBINE_ELITE_HL2_HIT_AIR,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — hit_air,P1,spécifié,4,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/hit_air/frame_0001.png
+CHR_COMBINE_ELITE_HL2_KNOCKDOWN,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — knockdown,P0,spécifié,8,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/knockdown/frame_0001.png
+CHR_COMBINE_ELITE_HL2_GROUNDED,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — grounded,P1,spécifié,2,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/grounded/frame_0001.png
+CHR_COMBINE_ELITE_HL2_GETUP,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — getup,P0,spécifié,8,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/getup/frame_0001.png
+CHR_COMBINE_ELITE_HL2_THROW_FORWARD,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — throw_forward,P1,spécifié,14,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/throw_forward/frame_0001.png
+CHR_COMBINE_ELITE_HL2_THROW_BACK,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — throw_back,P1,spécifié,14,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/throw_back/frame_0001.png
+CHR_COMBINE_ELITE_HL2_THROWN,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — thrown,P1,spécifié,12,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/thrown/frame_0001.png
+CHR_COMBINE_ELITE_HL2_THROW_BREAK,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — throw_break,P1,spécifié,8,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/throw_break/frame_0001.png
+CHR_COMBINE_ELITE_HL2_NORMAL_5L,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — normal_5L,P0,spécifié,6,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/normal_5L/frame_0001.png
+CHR_COMBINE_ELITE_HL2_NORMAL_5M,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — normal_5M,P0,spécifié,8,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/normal_5M/frame_0001.png
+CHR_COMBINE_ELITE_HL2_NORMAL_5H,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — normal_5H,P0,spécifié,10,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/normal_5H/frame_0001.png
+CHR_COMBINE_ELITE_HL2_NORMAL_2L,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — normal_2L,P1,spécifié,6,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/normal_2L/frame_0001.png
+CHR_COMBINE_ELITE_HL2_NORMAL_2M,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — normal_2M,P1,spécifié,8,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/normal_2M/frame_0001.png
+CHR_COMBINE_ELITE_HL2_NORMAL_2H,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — normal_2H,P1,spécifié,10,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/normal_2H/frame_0001.png
+CHR_COMBINE_ELITE_HL2_NORMAL_JL,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — normal_jL,P1,spécifié,6,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/normal_jL/frame_0001.png
+CHR_COMBINE_ELITE_HL2_NORMAL_JM,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — normal_jM,P1,spécifié,8,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/normal_jM/frame_0001.png
+CHR_COMBINE_ELITE_HL2_NORMAL_JH,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — normal_jH,P1,spécifié,10,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/normal_jH/frame_0001.png
+CHR_COMBINE_ELITE_HL2_COMMAND_6H,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — command_6H,P1,spécifié,10,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/command_6H/frame_0001.png
+CHR_COMBINE_ELITE_HL2_GUARD_AIR,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — guard_air,P1,spécifié,10,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/guard_air/frame_0001.png
+CHR_COMBINE_ELITE_HL2_SPECIAL_01,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — special_01,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/special_01/frame_0001.png
+CHR_COMBINE_ELITE_HL2_SPECIAL_02,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — special_02,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/special_02/frame_0001.png
+CHR_COMBINE_ELITE_HL2_SPECIAL_03,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — special_03,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/special_03/frame_0001.png
+CHR_COMBINE_ELITE_HL2_SPECIAL_04,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — special_04,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/special_04/frame_0001.png
+CHR_COMBINE_ELITE_HL2_SPECIAL_05,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — special_05,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/special_05/frame_0001.png
+CHR_COMBINE_ELITE_HL2_SUPER,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — super,P1,spécifié,28,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/super/frame_0001.png
+CHR_COMBINE_ELITE_HL2_ULTIMATE,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — ultimate,P1,spécifié,28,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/ultimate/frame_0001.png
+CHR_COMBINE_ELITE_HL2_INTRO,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — intro,P1,spécifié,24,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/intro/frame_0001.png
+CHR_COMBINE_ELITE_HL2_TAUNT,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — taunt,P1,spécifié,16,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/taunt/frame_0001.png
+CHR_COMBINE_ELITE_HL2_VICTORY,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — victory,P1,spécifié,24,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/victory/frame_0001.png
+CHR_COMBINE_ELITE_HL2_DEFEAT,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — defeat,P1,spécifié,10,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/defeat/frame_0001.png
+CHR_COMBINE_ELITE_HL2_FATALITY,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — fatality,P1,spécifié,40,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/fatality/frame_0001.png
+CHR_COMBINE_ELITE_HL2_MERCY,animation_group,combine_elite_hl2,Combine Elite Half-Life 2 — mercy,P1,spécifié,24,right,character_reference_and_move_timing_approved,fighters/combine_elite_hl2/default/right/mercy/frame_0001.png

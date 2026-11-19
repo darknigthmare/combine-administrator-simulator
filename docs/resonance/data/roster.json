@@ -1,0 +1,3171 @@
+{
+  "schema_version": "1.0",
+  "title": "Half Life Resonance",
+  "status": "design_only",
+  "source_date": "2026-11-19",
+  "fighters": [
+    {
+      "id": "gordon_hl2",
+      "name": "Gordon Freeman",
+      "source_game": "Half-Life 2",
+      "wave": 1,
+      "pilot": true,
+      "role": "Polyvalent à contrôle physique",
+      "identity_lock": "HEV Mark V orange, visage lunettes et barbiche, proportions et arme gravitationnelle HL2. Aucun mélange avec le Mark IV. Gordon reste muet.",
+      "trait": {
+        "id": "gordon_hl2.trait",
+        "input": "5S",
+        "name": "Objet en réserve",
+        "description": "Saisit un débris propre au kit; un seul objet actif; le type fixe est connu des deux joueurs. Ne capture ni personnage ni projectile énergétique."
+      },
+      "specials": [
+        {
+          "id": "gordon_hl2.special_1",
+          "name": "Impulsion gravitationnelle",
+          "input": "236L",
+          "description": "Repousse le débris en trajectoire lisible; sans débris produit une courte poussée sans projectile.",
+          "resonance_cost": 0,
+          "ex_cost": 50,
+          "status": "design_only",
+          "ex_available": true
+        },
+        {
+          "id": "gordon_hl2.special_2",
+          "name": "Récupération",
+          "input": "214M",
+          "description": "Rappelle le débris du kit; récupération vulnérable; aucune aspiration d’un adversaire.",
+          "resonance_cost": 0,
+          "ex_cost": 50,
+          "status": "design_only",
+          "ex_available": true
+        },
+        {
+          "id": "gordon_hl2.special_3",
+          "name": "Arc du pied de biche",
+          "input": "623H",
+          "description": "Anti-air à portée courte; punissable au sol si anticipé.",
+          "resonance_cost": 0,
+          "ex_cost": 50,
+          "status": "design_only",
+          "ex_available": true
+        },
+        {
+          "id": "gordon_hl2.special_4",
+          "name": "Décharge de fusil",
+          "input": "236H",
+          "description": "Salve courte représentée par un projectile visible, avec récupération; ne tire pas à travers la garde.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "gordon_hl2.special_5",
+          "name": "Recul au pied de biche",
+          "input": "214L",
+          "description": "Frappe de recul qui espace sans esquive invulnérable.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        }
+      ],
+      "supers": [
+        {
+          "id": "gordon_hl2.super",
+          "input": "236236H",
+          "name": "Compression",
+          "description": "Touche avec l’objet puis deux frappes de pied de biche; dépense confirmable seulement sur attaque autorisée.",
+          "resonance_cost": 100
+        },
+        {
+          "id": "gordon_hl2.ultimate",
+          "input": "236236S",
+          "name": "Résonance de la Citadelle",
+          "description": "Surcharge ponctuelle de l’arme dans une cinématique; cette apparence de fin HL2 ne devient pas une aptitude permanente.",
+          "resonance_cost": 300
+        }
+      ],
+      "throw": {
+        "id": "gordon_hl2.throw",
+        "input": "L+M / 4+L+M",
+        "name": "Dégagement HEV",
+        "description": "Saisie d’épaule, renversement à gauche ou à droite; aucune télékinésie sur corps."
+      },
+      "costumes": [
+        "Base source HL2 Mark V",
+        "Usure de campagne adaptée et identifiée comme cosmétique non canonique; même silhouette"
+      ],
+      "intro": "Une caisse glisse hors du champ; Gordon la bloque du pied et prend le pied de biche sans parler.",
+      "rival": {
+        "id": "shephard_op4",
+        "reason": "Deux survivants de Black Mesa reçoivent des indications incompatibles; la confrontation teste leurs décisions, pas une haine affirmée par le canon.",
+        "scene": "Adrian vise une porte derrière Gordon. Gordon baisse son arme, voit le verrou se refermer, puis reprend sa garde."
+      },
+      "ending": "Gordon coupe l’alimentation du relais. L’image de la Citadelle s’efface; il garde une seule photo de Black Mesa avant de repartir vers la sortie. Aucune réplique.",
+      "finisher": "Finition létale optionnelle : projection du vaincu dans une porte de confinement qui se ferme hors champ. Variante allié : désarmement et mise en sûreté derrière la porte ouverte.",
+      "status": "specified_not_implemented",
+      "canon_status": "Character and source appearance are references; moves, encounters, endings and finishers are original noncanonical adaptations. Visual fidelity remains to be checked against captured source models.",
+      "super": {
+        "id": "gordon_hl2.super",
+        "input": "236236H",
+        "name": "Compression",
+        "description": "Touche avec l’objet puis deux frappes de pied de biche; dépense confirmable seulement sur attaque autorisée.",
+        "resonance_cost": 100
+      },
+      "ultimate": {
+        "id": "gordon_hl2.ultimate",
+        "input": "236236S",
+        "name": "Résonance de la Citadelle",
+        "description": "Surcharge ponctuelle de l’arme dans une cinématique; cette apparence de fin HL2 ne devient pas une aptitude permanente.",
+        "resonance_cost": 300
+      },
+      "ex_policy": "Seules les trois variantes listées dans ex_variants sont disponibles. Une motion donne un seul EX, quel que soit le bouton de la version normale.",
+      "ex_variants": [
+        {
+          "id": "gordon_hl2.special_1.ex",
+          "base_move_id": "gordon_hl2.special_1",
+          "name": "Impulsion gravitationnelle EX",
+          "input": "236L+M",
+          "resonance_cost": 50,
+          "description": "Angle plus stable et projection du débris plus éloignée; reste un seul objet actif.",
+          "status": "design_only"
+        },
+        {
+          "id": "gordon_hl2.special_2.ex",
+          "base_move_id": "gordon_hl2.special_2",
+          "name": "Récupération EX",
+          "input": "214L+M",
+          "resonance_cost": 50,
+          "description": "Préparation raccourcie après retour du débris; le trajet demeure vulnérable.",
+          "status": "design_only"
+        },
+        {
+          "id": "gordon_hl2.special_3.ex",
+          "base_move_id": "gordon_hl2.special_3",
+          "name": "Arc du pied de biche EX",
+          "input": "623L+M",
+          "resonance_cost": 50,
+          "description": "Couverture verticale accrue, sans protection universelle contre les frappes au sol.",
+          "status": "design_only"
+        }
+      ]
+    },
+    {
+      "id": "alyx_hl2",
+      "name": "Alyx Vance",
+      "source_game": "Half-Life 2 et épisodes",
+      "wave": 1,
+      "pilot": true,
+      "role": "Pression mobile et feintes",
+      "identity_lock": "Veste, bandeau, pantalon et Alyx Gun de HL2 à verrouiller sur modèle. Pas de gants gravitationnels HLA. Dog est un combattant autonome, jamais invoqué dans ce kit.",
+      "trait": {
+        "id": "alyx_hl2.trait",
+        "input": "5S",
+        "name": "Détournement",
+        "description": "Prépare une balise technologique fictive visible. La balise ne pirate jamais la manette, le HUD ou les pouvoirs organiques; un seul marqueur."
+      },
+      "specials": [
+        {
+          "id": "alyx_hl2.special_1",
+          "name": "Double tir",
+          "input": "236L",
+          "description": "Deux projectiles rapides visibles; la seconde décharge allonge la récupération.",
+          "resonance_cost": 0,
+          "ex_cost": 50,
+          "status": "design_only",
+          "ex_available": true
+        },
+        {
+          "id": "alyx_hl2.special_2",
+          "name": "Pas de côté",
+          "input": "214L",
+          "description": "Déplacement court dans le plan, sans traversée automatique; suivi L attaque basse, H attaque haute lente.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "alyx_hl2.special_3",
+          "name": "Interception",
+          "input": "623H",
+          "description": "Coup montant avec appui de l’arme; anti-air ciblé, aucune invulnérabilité universelle.",
+          "resonance_cost": 0,
+          "ex_cost": 50,
+          "status": "design_only",
+          "ex_available": true
+        },
+        {
+          "id": "alyx_hl2.special_4",
+          "name": "Court circuit",
+          "input": "214M",
+          "description": "Active la balise et couvre une petite zone; destruction possible avant activation.",
+          "resonance_cost": 0,
+          "ex_cost": 50,
+          "status": "design_only",
+          "ex_available": true
+        },
+        {
+          "id": "alyx_hl2.special_5",
+          "name": "Percée",
+          "input": "236M",
+          "description": "Avance derrière un coup d’épaule; interrompable avant contact.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        }
+      ],
+      "supers": [
+        {
+          "id": "alyx_hl2.super",
+          "input": "236236H",
+          "name": "Point faible",
+          "description": "Feinte de tir puis enchaînement rapproché de trois coups; confirme la mobilité sans aide de Dog.",
+          "resonance_cost": 100
+        },
+        {
+          "id": "alyx_hl2.ultimate",
+          "input": "236236S",
+          "name": "Sortie de secours",
+          "description": "Une porte Combine ouverte par Alyx devient le cadre d’une séquence de poursuite; retour obligatoire aux positions homologuées.",
+          "resonance_cost": 300
+        }
+      ],
+      "throw": {
+        "id": "alyx_hl2.throw",
+        "input": "L+M / 4+L+M",
+        "name": "Prise de poignet",
+        "description": "Désarme puis fait pivoter l’adversaire; l’arme revient à son propriétaire à la reprise."
+      },
+      "costumes": [
+        "Base source HL2",
+        "Variante Episode Two uniquement après validation des différences réelles; pas de recoloration vendue comme tenue canonique"
+      ],
+      "intro": "Alyx referme un panneau électrique et vérifie la voie de fuite avant de lever son arme.",
+      "rival": {
+        "id": "combine_elite_hl2",
+        "reason": "Elle cherche le code de contrôle du relais; l’unité en protège l’accès.",
+        "scene": "Alyx désigne le terminal : « Tu as la clé. Je prends la porte. » Dialogue original."
+      },
+      "ending": "Alyx transmet les coordonnées sûres à la Résistance, puis détruit les copies des identités prisonnières. Elle choisit de sauver une personne au lieu de préserver le relais.",
+      "finisher": "Finition optionnelle : verrouillage d’un sas et explosion vue depuis l’extérieur, sans mutilation. Variante allié : brouillage de l’armure et immobilisation temporaire.",
+      "status": "specified_not_implemented",
+      "canon_status": "Character and source appearance are references; moves, encounters, endings and finishers are original noncanonical adaptations. Visual fidelity remains to be checked against captured source models.",
+      "super": {
+        "id": "alyx_hl2.super",
+        "input": "236236H",
+        "name": "Point faible",
+        "description": "Feinte de tir puis enchaînement rapproché de trois coups; confirme la mobilité sans aide de Dog.",
+        "resonance_cost": 100
+      },
+      "ultimate": {
+        "id": "alyx_hl2.ultimate",
+        "input": "236236S",
+        "name": "Sortie de secours",
+        "description": "Une porte Combine ouverte par Alyx devient le cadre d’une séquence de poursuite; retour obligatoire aux positions homologuées.",
+        "resonance_cost": 300
+      },
+      "ex_policy": "Seules les trois variantes listées dans ex_variants sont disponibles. Une motion donne un seul EX, quel que soit le bouton de la version normale.",
+      "ex_variants": [
+        {
+          "id": "alyx_hl2.special_1.ex",
+          "base_move_id": "alyx_hl2.special_1",
+          "name": "Double tir EX",
+          "input": "236L+M",
+          "resonance_cost": 50,
+          "description": "Le second projectile part plus tôt; récupération de fin conservée et aucun suivi automatique.",
+          "status": "design_only"
+        },
+        {
+          "id": "alyx_hl2.special_4.ex",
+          "base_move_id": "alyx_hl2.special_4",
+          "name": "Court circuit EX",
+          "input": "214L+M",
+          "resonance_cost": 50,
+          "description": "Zone de balise légèrement élargie; une seule balise et destruction toujours possible.",
+          "status": "design_only"
+        },
+        {
+          "id": "alyx_hl2.special_3.ex",
+          "base_move_id": "alyx_hl2.special_3",
+          "name": "Interception EX",
+          "input": "623L+M",
+          "resonance_cost": 50,
+          "description": "Déplacement vertical accru, sans invulnérabilité aux projectiles ni traversée de garde.",
+          "status": "design_only"
+        }
+      ]
+    },
+    {
+      "id": "barney_hl2",
+      "name": "Barney Calhoun",
+      "source_game": "Half-Life 2",
+      "wave": 1,
+      "pilot": true,
+      "role": "Défense rusée et contre-attaque",
+      "identity_lock": "Visage et équipement Barney HL2; masque éventuel uniquement dans l’intro de déguisement et retiré avant duel. Les pouvoirs du Combine ne lui sont pas attribués.",
+      "trait": {
+        "id": "barney_hl2.trait",
+        "input": "5S",
+        "name": "Faux ordre",
+        "description": "Feinte radio au signal reconnaissable; retarde visuellement son animation, jamais une commande adverse. La feinte n’interrompt pas l’IA gratuitement."
+      },
+      "specials": [
+        {
+          "id": "barney_hl2.special_1",
+          "name": "Tir de couverture",
+          "input": "236L",
+          "description": "Projectile de pistolet basique, portée complète, récupération exposée.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "barney_hl2.special_2",
+          "name": "Coin de porte",
+          "input": "214M",
+          "description": "Posture de contre physique brève; perd contre projection et attente.",
+          "resonance_cost": 0,
+          "ex_cost": 50,
+          "status": "design_only",
+          "ex_available": true
+        },
+        {
+          "id": "barney_hl2.special_3",
+          "name": "Crosse montante",
+          "input": "623H",
+          "description": "Anti-air de proximité; faible portée horizontale.",
+          "resonance_cost": 0,
+          "ex_cost": 50,
+          "status": "design_only",
+          "ex_available": true
+        },
+        {
+          "id": "barney_hl2.special_4",
+          "name": "Rafale prudente",
+          "input": "236H",
+          "description": "Courte rafale de fusil approprié au modèle; trois trajectoires lisibles.",
+          "resonance_cost": 0,
+          "ex_cost": 50,
+          "status": "design_only",
+          "ex_available": true
+        },
+        {
+          "id": "barney_hl2.special_5",
+          "name": "Repli de garde",
+          "input": "214L",
+          "description": "Pas arrière suivi optionnel de L; la distance ne traverse pas le mur.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        }
+      ],
+      "supers": [
+        {
+          "id": "barney_hl2.super",
+          "input": "236236H",
+          "name": "Service de sécurité",
+          "description": "Contre scénarisé déclenché par une touche validée; saisie, désarmement et projection.",
+          "resonance_cost": 100
+        },
+        {
+          "id": "barney_hl2.ultimate",
+          "input": "236236S",
+          "name": "Evacuation prioritaire",
+          "description": "Barney enferme son adversaire dans un couloir de contrôle pendant que des civils passent à l’arrière-plan; dégâts condensés sans allié mécanique.",
+          "resonance_cost": 300
+        }
+      ],
+      "throw": {
+        "id": "barney_hl2.throw",
+        "input": "L+M / 4+L+M",
+        "name": "Clé de sécurité",
+        "description": "Clé du bras et renversement; version arrière change de côté."
+      },
+      "costumes": [
+        "Barney HL2 tenue de résistance ou déguisement validé sur modèle",
+        "Barney Blue Shift est un slot distinct avec squelette et armes propres"
+      ],
+      "intro": "Il retire son masque, laisse passer un civil et se place devant la porte.",
+      "rival": {
+        "id": "combine_elite_hl2",
+        "reason": "L’unité reconnaît un badge compromis.",
+        "scene": "Barney range le badge : « Bon. On va faire sans la procédure. » Dialogue original."
+      },
+      "ending": "Il maintient la dernière porte ouverte jusqu’au passage du dernier réfugié. Lorsque le relais s’éteint, son badge est définitivement inutilisable; il sourit et le jette.",
+      "finisher": "Finition optionnelle : l’adversaire est entraîné dans un sas hostile hors champ. Variante allié : menottage temporaire puis remise debout; aucune exécution d’un ami.",
+      "status": "specified_not_implemented",
+      "canon_status": "Character and source appearance are references; moves, encounters, endings and finishers are original noncanonical adaptations. Visual fidelity remains to be checked against captured source models.",
+      "super": {
+        "id": "barney_hl2.super",
+        "input": "236236H",
+        "name": "Service de sécurité",
+        "description": "Contre scénarisé déclenché par une touche validée; saisie, désarmement et projection.",
+        "resonance_cost": 100
+      },
+      "ultimate": {
+        "id": "barney_hl2.ultimate",
+        "input": "236236S",
+        "name": "Evacuation prioritaire",
+        "description": "Barney enferme son adversaire dans un couloir de contrôle pendant que des civils passent à l’arrière-plan; dégâts condensés sans allié mécanique.",
+        "resonance_cost": 300
+      },
+      "ex_policy": "Seules les trois variantes listées dans ex_variants sont disponibles. Une motion donne un seul EX, quel que soit le bouton de la version normale.",
+      "ex_variants": [
+        {
+          "id": "barney_hl2.special_4.ex",
+          "base_move_id": "barney_hl2.special_4",
+          "name": "Rafale prudente EX",
+          "input": "236L+M",
+          "resonance_cost": 50,
+          "description": "Rafale plus compacte; un engagement de fin demeure punissable.",
+          "status": "design_only"
+        },
+        {
+          "id": "barney_hl2.special_2.ex",
+          "base_move_id": "barney_hl2.special_2",
+          "name": "Coin de porte EX",
+          "input": "214L+M",
+          "resonance_cost": 50,
+          "description": "Fenêtre de contre élargie, compensée par récupération accrue sur raté.",
+          "status": "design_only"
+        },
+        {
+          "id": "barney_hl2.special_3.ex",
+          "base_move_id": "barney_hl2.special_3",
+          "name": "Crosse montante EX",
+          "input": "623L+M",
+          "resonance_cost": 50,
+          "description": "Portée verticale accrue avec récupération au sol conservée.",
+          "status": "design_only"
+        }
+      ]
+    },
+    {
+      "id": "shephard_op4",
+      "name": "Adrian Shephard",
+      "source_game": "Half-Life Opposing Force",
+      "wave": 1,
+      "pilot": true,
+      "role": "Soldat à changements d’outils",
+      "identity_lock": "Casque, masque et paquetage du modèle Opposing Force choisi; orthographe Shephard. Arsenal de cet épisode, jamais AR2 de HL2. Muet pendant les séquences jouées.",
+      "trait": {
+        "id": "shephard_op4.trait",
+        "input": "5S",
+        "name": "Sélection tactique",
+        "description": "5S alterne outil conventionnel et arme organique avec animation lisible; chaque mode garde les mêmes vitesses de marche."
+      },
+      "specials": [
+        {
+          "id": "shephard_op4.special_1",
+          "name": "Rafale HECU",
+          "input": "236L",
+          "description": "Rafale visible brève; contrainte de récupération au lieu d’un verrou de tirs infinis.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "shephard_op4.special_2",
+          "name": "Grapple barnacle",
+          "input": "214M",
+          "description": "Langue de l’arme sur un point du kit prédéfini; sert à déplacer Adrian, ne lui donne pas prise sur le décor arbitraire.",
+          "resonance_cost": 0,
+          "ex_cost": 50,
+          "status": "design_only",
+          "ex_available": true
+        },
+        {
+          "id": "shephard_op4.special_3",
+          "name": "Clef montante",
+          "input": "623H",
+          "description": "Anti-air avec clé serre-tube; ne bloque pas les projectiles.",
+          "resonance_cost": 0,
+          "ex_cost": 50,
+          "status": "design_only",
+          "ex_available": true
+        },
+        {
+          "id": "shephard_op4.special_4",
+          "name": "Spore de rupture",
+          "input": "236H",
+          "description": "Projectile organique à rebond unique; rebond déterministe, un actif maximum.",
+          "resonance_cost": 0,
+          "ex_cost": 50,
+          "status": "design_only",
+          "ex_available": true
+        },
+        {
+          "id": "shephard_op4.special_5",
+          "name": "Charge de désengagement",
+          "input": "214L",
+          "description": "Courte avance de couteau; touche unique et arrêt à la garde.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        }
+      ],
+      "supers": [
+        {
+          "id": "shephard_op4.super",
+          "input": "236236H",
+          "name": "Fenêtre de tir",
+          "description": "Enchaînement clé serre-tube puis tir de couverture pendant le recul.",
+          "resonance_cost": 100
+        },
+        {
+          "id": "shephard_op4.ultimate",
+          "input": "236236S",
+          "name": "Déplacement contrôlé",
+          "description": "Usage cinématique du Displacer pour une brève excursion à Xen puis retour; pas de téléportation libre en neutral.",
+          "resonance_cost": 300
+        }
+      ],
+      "throw": {
+        "id": "shephard_op4.throw",
+        "input": "L+M / 4+L+M",
+        "name": "Extraction manuelle",
+        "description": "Prise de gilet puis projection au sol; arme sécurisée pendant l’animation."
+      },
+      "costumes": [
+        "Base Opposing Force version standard à verrouiller",
+        "Version HD seulement en ensemble séparé documenté; pas de mélange des armes standard et HD"
+      ],
+      "intro": "Une radio crépite; Adrian vérifie son chargeur puis coupe l’émetteur sans répondre.",
+      "rival": {
+        "id": "gordon_hl2",
+        "reason": "Un ordre ancien reparaît dans la simulation et Adrian doit choisir de s’en écarter.",
+        "scene": "Il voit le nom Freeman sur son afficheur; il regarde l’homme réel puis la porte verrouillée."
+      },
+      "ending": "Adrian laisse le dossier « cible » dans une pièce vide et reprend sa marche. La porte de sortie devient une porte de transport; son refus reste visible, sa destination inconnue.",
+      "finisher": "Finition optionnelle : exil via Displacer vers un lieu dangereux, disparition sans détail graphique. Variante allié : déplacement vers un sas sûr et geste indiquant la sortie.",
+      "status": "specified_not_implemented",
+      "canon_status": "Character and source appearance are references; moves, encounters, endings and finishers are original noncanonical adaptations. Visual fidelity remains to be checked against captured source models.",
+      "super": {
+        "id": "shephard_op4.super",
+        "input": "236236H",
+        "name": "Fenêtre de tir",
+        "description": "Enchaînement clé serre-tube puis tir de couverture pendant le recul.",
+        "resonance_cost": 100
+      },
+      "ultimate": {
+        "id": "shephard_op4.ultimate",
+        "input": "236236S",
+        "name": "Déplacement contrôlé",
+        "description": "Usage cinématique du Displacer pour une brève excursion à Xen puis retour; pas de téléportation libre en neutral.",
+        "resonance_cost": 300
+      },
+      "ex_policy": "Seules les trois variantes listées dans ex_variants sont disponibles. Une motion donne un seul EX, quel que soit le bouton de la version normale.",
+      "ex_variants": [
+        {
+          "id": "shephard_op4.special_4.ex",
+          "base_move_id": "shephard_op4.special_4",
+          "name": "Spore de rupture EX",
+          "input": "236L+M",
+          "resonance_cost": 50,
+          "description": "Angle plus tendu; rebond unique et même maximum de projectile actif.",
+          "status": "design_only"
+        },
+        {
+          "id": "shephard_op4.special_2.ex",
+          "base_move_id": "shephard_op4.special_2",
+          "name": "Grapple barnacle EX",
+          "input": "214L+M",
+          "resonance_cost": 50,
+          "description": "Remontée raccourcie après attache; trajet toujours vulnérable.",
+          "status": "design_only"
+        },
+        {
+          "id": "shephard_op4.special_3.ex",
+          "base_move_id": "shephard_op4.special_3",
+          "name": "Clef montante EX",
+          "input": "623L+M",
+          "resonance_cost": 50,
+          "description": "Le coup soulève légèrement après impact confirmé; toute conversion doit être vérifiée.",
+          "status": "design_only"
+        }
+      ]
+    },
+    {
+      "id": "vortigaunt_hl2",
+      "name": "Vortigaunt",
+      "source_game": "Half-Life 2",
+      "wave": 1,
+      "pilot": true,
+      "role": "Charge électrique et contrôle de portée",
+      "identity_lock": "Anatomie et bras ventral propres au modèle HL2, posture et yeux à vérifier. Ne pas utiliser le collier d’esclave HL1 comme détail par défaut.",
+      "trait": {
+        "id": "vortigaunt_hl2.trait",
+        "input": "5S",
+        "name": "Concentration",
+        "description": "Maintien 5S accumule une charge personnelle bornée; la charge est perdue au coup reçu et ne remplace pas la jauge Résonance."
+      },
+      "specials": [
+        {
+          "id": "vortigaunt_hl2.special_1",
+          "name": "Trait vortique",
+          "input": "236L",
+          "description": "Projectile électrique annoncé par les mains; la charge modifie sa portée, pas sa priorité absolue.",
+          "resonance_cost": 0,
+          "ex_cost": 50,
+          "status": "design_only",
+          "ex_available": true
+        },
+        {
+          "id": "vortigaunt_hl2.special_2",
+          "name": "Onde terrestre",
+          "input": "214M",
+          "description": "Impulsion courte au sol; saut adverse la contourne.",
+          "resonance_cost": 0,
+          "ex_cost": 50,
+          "status": "design_only",
+          "ex_available": true
+        },
+        {
+          "id": "vortigaunt_hl2.special_3",
+          "name": "Arc ascendant",
+          "input": "623H",
+          "description": "Anti-air électrique oblique; angle fixe.",
+          "resonance_cost": 0,
+          "ex_cost": 50,
+          "status": "design_only",
+          "ex_available": true
+        },
+        {
+          "id": "vortigaunt_hl2.special_4",
+          "name": "Décharge concentrée",
+          "input": "236H",
+          "description": "Projectile plus lent et plus ample; consomme la charge personnelle.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "vortigaunt_hl2.special_5",
+          "name": "Pas commun",
+          "input": "214L",
+          "description": "Retrait bref et animation de rassemblement; déplacement physique, pas téléportation intangible.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        }
+      ],
+      "supers": [
+        {
+          "id": "vortigaunt_hl2.super",
+          "input": "236236H",
+          "name": "Convergence",
+          "description": "Deux arcs se rejoignent sur une cible touchée; ne traque pas un adversaire après esquive.",
+          "resonance_cost": 100
+        },
+        {
+          "id": "vortigaunt_hl2.ultimate",
+          "input": "236236S",
+          "name": "Le lien",
+          "description": "Cercle vortique cinématique puis libération de la cible; les silhouettes de Vortigaunts sont effets de récit sans summons compétitifs.",
+          "resonance_cost": 300
+        }
+      ],
+      "throw": {
+        "id": "vortigaunt_hl2.throw",
+        "input": "L+M / 4+L+M",
+        "name": "Renversement vortique",
+        "description": "Saisie anatomiquement correcte avec main principale et appui; troisième bras non allongé magiquement."
+      },
+      "costumes": [
+        "Base Vortigaunt libre HL2",
+        "Version serviteur HL1 réservée à une adaptation distincte; jamais appelée costume identique"
+      ],
+      "intro": "Il examine un reflet qui bouge en retard, puis se tourne vers l’adversaire.",
+      "rival": {
+        "id": "alien_grunt_hl1",
+        "reason": "Un écho d’ancienne servitude attaque tout ce qu’il ne reconnaît pas.",
+        "scene": "« Nous voyons la chaîne. Nous ne voyons pas son maître. » Dialogue original."
+      },
+      "ending": "Le Vortigaunt défait les liens du relais un à un. Les voix cessent d’être des armes et redeviennent des souvenirs; il n’annonce aucune vérité canonique sur le G-Man.",
+      "finisher": "Finition optionnelle : décharge qui dissout une silhouette d’écho sans gore détaillé. Variante allié : mise en sommeil puis réveil hors de la zone dangereuse.",
+      "status": "specified_not_implemented",
+      "canon_status": "Character and source appearance are references; moves, encounters, endings and finishers are original noncanonical adaptations. Visual fidelity remains to be checked against captured source models.",
+      "super": {
+        "id": "vortigaunt_hl2.super",
+        "input": "236236H",
+        "name": "Convergence",
+        "description": "Deux arcs se rejoignent sur une cible touchée; ne traque pas un adversaire après esquive.",
+        "resonance_cost": 100
+      },
+      "ultimate": {
+        "id": "vortigaunt_hl2.ultimate",
+        "input": "236236S",
+        "name": "Le lien",
+        "description": "Cercle vortique cinématique puis libération de la cible; les silhouettes de Vortigaunts sont effets de récit sans summons compétitifs.",
+        "resonance_cost": 300
+      },
+      "ex_policy": "Seules les trois variantes listées dans ex_variants sont disponibles. Une motion donne un seul EX, quel que soit le bouton de la version normale.",
+      "ex_variants": [
+        {
+          "id": "vortigaunt_hl2.special_1.ex",
+          "base_move_id": "vortigaunt_hl2.special_1",
+          "name": "Trait vortique EX",
+          "input": "236L+M",
+          "resonance_cost": 50,
+          "description": "Deux impulsions rapprochées du même projectile; un seul objet logique et scaling commun.",
+          "status": "design_only"
+        },
+        {
+          "id": "vortigaunt_hl2.special_2.ex",
+          "base_move_id": "vortigaunt_hl2.special_2",
+          "name": "Onde terrestre EX",
+          "input": "214L+M",
+          "resonance_cost": 50,
+          "description": "Distance de l’onde accrue; saut reste une réponse.",
+          "status": "design_only"
+        },
+        {
+          "id": "vortigaunt_hl2.special_3.ex",
+          "base_move_id": "vortigaunt_hl2.special_3",
+          "name": "Arc ascendant EX",
+          "input": "623L+M",
+          "resonance_cost": 50,
+          "description": "Couverture verticale accrue, sans victoire automatique contre une attaque terrestre.",
+          "status": "design_only"
+        }
+      ]
+    },
+    {
+      "id": "combine_elite_hl2",
+      "name": "Combine Elite",
+      "source_game": "Half-Life 2",
+      "wave": 1,
+      "pilot": true,
+      "role": "Pression de portée et orbes",
+      "identity_lock": "Armure blanche, optique rouge unique et silhouette Elite HL2; AR2 et équipement cohérents. Ne pas confondre avec les unités de HLA.",
+      "trait": {
+        "id": "combine_elite_hl2.trait",
+        "input": "5S",
+        "name": "Calibration",
+        "description": "5S marque sa prochaine trajectoire sur le sol; améliore un angle prévu mais annonce l’intention à l’ennemi. Aucun verrouillage permanent."
+      },
+      "specials": [
+        {
+          "id": "combine_elite_hl2.special_1",
+          "name": "Impulsions AR2",
+          "input": "236L",
+          "description": "Courte rafale de projectiles visibles; récupération commune, pas hitscan gratuit.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "combine_elite_hl2.special_2",
+          "name": "Orbe secondaire",
+          "input": "236H",
+          "description": "Une orbe énergétique active; rebond limité et signal sonore distinct.",
+          "resonance_cost": 0,
+          "ex_cost": 50,
+          "status": "design_only",
+          "ex_available": true
+        },
+        {
+          "id": "combine_elite_hl2.special_3",
+          "name": "Verrou de secteur",
+          "input": "214M",
+          "description": "Pose une balise du kit fictive; ralentit seulement son propre déploiement d’orbe, ne modifie pas les contrôles adverses.",
+          "resonance_cost": 0,
+          "ex_cost": 50,
+          "status": "design_only",
+          "ex_available": true
+        },
+        {
+          "id": "combine_elite_hl2.special_4",
+          "name": "Crosse de neutralisation",
+          "input": "623H",
+          "description": "Anti-air frontal court.",
+          "resonance_cost": 0,
+          "ex_cost": 50,
+          "status": "design_only",
+          "ex_available": true
+        },
+        {
+          "id": "combine_elite_hl2.special_5",
+          "name": "Repositionnement",
+          "input": "214L",
+          "description": "Pas armé arrière; n’ignore pas les attaques basses.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        }
+      ],
+      "supers": [
+        {
+          "id": "combine_elite_hl2.super",
+          "input": "236236H",
+          "name": "Priorité cible",
+          "description": "Une salve concentrée suit un premier impact confirmé; pas de visée après esquive.",
+          "resonance_cost": 100
+        },
+        {
+          "id": "combine_elite_hl2.ultimate",
+          "input": "236236S",
+          "name": "Protocole de suppression",
+          "description": "Confinement cinématique dans une chambre Combine; le résultat réapparaît sur le même terrain.",
+          "resonance_cost": 300
+        }
+      ],
+      "throw": {
+        "id": "combine_elite_hl2.throw",
+        "input": "L+M / 4+L+M",
+        "name": "Contrôle physique",
+        "description": "Saisie au col et choc de crosse; la direction choisie avant contact fixe le côté final."
+      },
+      "costumes": [
+        "Base Elite HL2 blanche",
+        "Version usée adaptation cosmétique, sans bonus ni baisse de lisibilité"
+      ],
+      "intro": "L’unité balaie la scène de son optique; le dernier secteur affiché demeure vide.",
+      "rival": {
+        "id": "alyx_hl2",
+        "reason": "Une intrusion compromet le relais dont l’unité a la garde.",
+        "scene": "Message radio original : « Accès compromis. Interception locale. »"
+      },
+      "ending": "Le relais est déclaré conforme, mais la liste des cibles disparaît avec son maître. L’unité attend un ordre qui ne vient plus; le scénario n’invente pas une personnalité canonique.",
+      "finisher": "Finition optionnelle : désintégration stylisée par orbe; variante sobre : capture dans un champ de confinement.",
+      "status": "specified_not_implemented",
+      "canon_status": "Character and source appearance are references; moves, encounters, endings and finishers are original noncanonical adaptations. Visual fidelity remains to be checked against captured source models.",
+      "super": {
+        "id": "combine_elite_hl2.super",
+        "input": "236236H",
+        "name": "Priorité cible",
+        "description": "Une salve concentrée suit un premier impact confirmé; pas de visée après esquive.",
+        "resonance_cost": 100
+      },
+      "ultimate": {
+        "id": "combine_elite_hl2.ultimate",
+        "input": "236236S",
+        "name": "Protocole de suppression",
+        "description": "Confinement cinématique dans une chambre Combine; le résultat réapparaît sur le même terrain.",
+        "resonance_cost": 300
+      },
+      "ex_policy": "Seules les trois variantes listées dans ex_variants sont disponibles. Une motion donne un seul EX, quel que soit le bouton de la version normale.",
+      "ex_variants": [
+        {
+          "id": "combine_elite_hl2.special_2.ex",
+          "base_move_id": "combine_elite_hl2.special_2",
+          "name": "Orbe secondaire EX",
+          "input": "236L+M",
+          "resonance_cost": 50,
+          "description": "Angle fixe plus tendu; limite d’une orbe et durée maximale inchangées.",
+          "status": "design_only"
+        },
+        {
+          "id": "combine_elite_hl2.special_3.ex",
+          "base_move_id": "combine_elite_hl2.special_3",
+          "name": "Verrou de secteur EX",
+          "input": "214L+M",
+          "resonance_cost": 50,
+          "description": "Déploiement du marqueur accéléré; le marqueur reste visible et destructible.",
+          "status": "design_only"
+        },
+        {
+          "id": "combine_elite_hl2.special_4.ex",
+          "base_move_id": "combine_elite_hl2.special_4",
+          "name": "Crosse de neutralisation EX",
+          "input": "623L+M",
+          "resonance_cost": 50,
+          "description": "Crosse plus haute et récupération longue sur raté.",
+          "status": "design_only"
+        }
+      ]
+    },
+    {
+      "id": "grigori_hl2",
+      "name": "Père Grigori",
+      "source_game": "Half-Life 2",
+      "wave": 1,
+      "pilot": false,
+      "role": "Pièges et maîtrise de distance",
+      "identity_lock": "Ravenholm, vêtement et fusil de Grigori d’après modèle HL2. Les pièges de gameplay sont une adaptation de son environnement.",
+      "trait": {
+        "id": "grigori_hl2.trait",
+        "input": "5S",
+        "name": "Appât sonore",
+        "description": "5S prépare un bruit placé au sol qui sert de repère à son prochain piège, sans forcer une marche adverse."
+      },
+      "specials": [
+        {
+          "id": "grigori_hl2.special_1",
+          "name": "Tir de chasse",
+          "input": "236L",
+          "description": "Gerbe visible à courte portée; dispersion fixe.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "grigori_hl2.special_2",
+          "name": "Piège rotatif",
+          "input": "214M",
+          "description": "Objet du kit au sol, télégraphié et destructible.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "grigori_hl2.special_3",
+          "name": "Crosse de veille",
+          "input": "623H",
+          "description": "Anti-air physique court.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "grigori_hl2.special_4",
+          "name": "Tir patient",
+          "input": "236H",
+          "description": "Tir chargé à portée accrue; peut être annulé seulement avant la préparation finale.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        }
+      ],
+      "supers": [
+        {
+          "id": "grigori_hl2.super",
+          "input": "236236H",
+          "name": "Dernier avertissement",
+          "description": "Tir suivi d’une projection vers un piège du kit.",
+          "resonance_cost": 100
+        },
+        {
+          "id": "grigori_hl2.ultimate",
+          "input": "236236S",
+          "name": "Les cloches de Ravenholm",
+          "description": "Fermeture d’une ruelle et série d’obstacles cinématiques; retour au duel sans danger persistant.",
+          "resonance_cost": 300
+        }
+      ],
+      "throw": {
+        "id": "grigori_hl2.throw",
+        "input": "L+M / 4+L+M",
+        "name": "Ecarter du passage",
+        "description": "Poussée à deux mains suivie d’un recul."
+      },
+      "costumes": [
+        "Base Ravenholm",
+        "Usure supplémentaire adaptation"
+      ],
+      "intro": "Il éteint une flamme et écoute le toit.",
+      "rival": {
+        "id": "zombie_hl2",
+        "reason": "Protéger les derniers passages de Ravenholm.",
+        "scene": "Il abaisse brièvement les yeux puis charge son arme."
+      },
+      "ending": "Les cloches sonnent pour une ville momentanément silencieuse. Grigori ouvre une porte de sortie et reste derrière pour garder le passage.",
+      "finisher": "Finition : piège mécanique en silhouette; variante sobre : cible enfermée derrière une grille.",
+      "status": "specified_not_implemented",
+      "canon_status": "Character and source appearance are references; moves, encounters, endings and finishers are original noncanonical adaptations. Visual fidelity remains to be checked against captured source models.",
+      "super": {
+        "id": "grigori_hl2.super",
+        "input": "236236H",
+        "name": "Dernier avertissement",
+        "description": "Tir suivi d’une projection vers un piège du kit.",
+        "resonance_cost": 100
+      },
+      "ultimate": {
+        "id": "grigori_hl2.ultimate",
+        "input": "236236S",
+        "name": "Les cloches de Ravenholm",
+        "description": "Fermeture d’une ruelle et série d’obstacles cinématiques; retour au duel sans danger persistant.",
+        "resonance_cost": 300
+      },
+      "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
+      "ex_variants": []
+    },
+    {
+      "id": "dog_hl2",
+      "name": "Dog",
+      "source_game": "Half-Life 2",
+      "wave": 1,
+      "pilot": false,
+      "role": "Lutteur lourd à objets",
+      "identity_lock": "Robot de grand gabarit conservé; aucun rétrécissement pour entrer dans une hurtbox humaine. Mains, ferraille et regard à vérifier sur modèle.",
+      "trait": {
+        "id": "dog_hl2.trait",
+        "input": "5S",
+        "name": "Ramassage",
+        "description": "5S fournit un unique objet propre au kit, sans voler les props de l’arène en tournoi."
+      },
+      "specials": [
+        {
+          "id": "dog_hl2.special_1",
+          "name": "Jet de ferraille",
+          "input": "236L",
+          "description": "Arc visible; récupération longue.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "dog_hl2.special_2",
+          "name": "Embrassade mécanique",
+          "input": "214M",
+          "description": "Command grab de portée courte, saut pour l’éviter.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "dog_hl2.special_3",
+          "name": "Bras levé",
+          "input": "623H",
+          "description": "Anti-air lourd, vulnérable à vide.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "dog_hl2.special_4",
+          "name": "Charge du robot",
+          "input": "236H",
+          "description": "Avance à engagement long, arrêt en garde et punition.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        }
+      ],
+      "supers": [
+        {
+          "id": "dog_hl2.super",
+          "input": "236236H",
+          "name": "Retour à l’expéditeur",
+          "description": "Rattrape son objet puis projette dans une séquence confirmée.",
+          "resonance_cost": 100
+        },
+        {
+          "id": "dog_hl2.ultimate",
+          "input": "236236S",
+          "name": "Force de récupération",
+          "description": "Suite de saisies mécaniques; caméra éloignée préserve sa taille.",
+          "resonance_cost": 300
+        }
+      ],
+      "throw": {
+        "id": "dog_hl2.throw",
+        "input": "L+M / 4+L+M",
+        "name": "Soulever déposer",
+        "description": "Soulève puis lance; version allié sans écrasement."
+      },
+      "costumes": [
+        "Base Dog HL2",
+        "Patine adaptée uniquement"
+      ],
+      "intro": "Dog pose une balle hors du couloir puis attend.",
+      "rival": {
+        "id": "combine_elite_hl2",
+        "reason": "Ouvrir une voie pour Alyx sans lui attribuer de dialogue.",
+        "scene": "Dog montre une porte, puis le barrage."
+      },
+      "ending": "Il revient chercher sa balle, entend un signal familier et s’élance vers une lumière hors champ.",
+      "finisher": "Finition : démantèlement d’un adversaire robotique; pour humain : projection hors champ. Variante allié : transport à l’abri.",
+      "status": "specified_not_implemented",
+      "canon_status": "Character and source appearance are references; moves, encounters, endings and finishers are original noncanonical adaptations. Visual fidelity remains to be checked against captured source models.",
+      "super": {
+        "id": "dog_hl2.super",
+        "input": "236236H",
+        "name": "Retour à l’expéditeur",
+        "description": "Rattrape son objet puis projette dans une séquence confirmée.",
+        "resonance_cost": 100
+      },
+      "ultimate": {
+        "id": "dog_hl2.ultimate",
+        "input": "236236S",
+        "name": "Force de récupération",
+        "description": "Suite de saisies mécaniques; caméra éloignée préserve sa taille.",
+        "resonance_cost": 300
+      },
+      "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
+      "ex_variants": []
+    },
+    {
+      "id": "hecu_hl1",
+      "name": "Soldat HECU",
+      "source_game": "Half-Life",
+      "wave": 1,
+      "pilot": false,
+      "role": "Polyvalent militaire à portée moyenne",
+      "identity_lock": "Un modèle HECU HL1 déterminé; visage et équipement ne mélangent pas tous les soldats en une silhouette composite.",
+      "trait": {
+        "id": "hecu_hl1.trait",
+        "input": "5S",
+        "name": "Discipline de tir",
+        "description": "5S prépare une rafale plus compacte mais immobilise brièvement."
+      },
+      "specials": [
+        {
+          "id": "hecu_hl1.special_1",
+          "name": "Rafale militaire",
+          "input": "236L",
+          "description": "Projectile visible de fusil.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "hecu_hl1.special_2",
+          "name": "Grenade",
+          "input": "214M",
+          "description": "Arc déterministe, retard fixe et icône claire.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "hecu_hl1.special_3",
+          "name": "Crosse montante",
+          "input": "623H",
+          "description": "Anti-air faible portée.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "hecu_hl1.special_4",
+          "name": "Tir appuyé",
+          "input": "236H",
+          "description": "Rafale lente à engagement marqué.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        }
+      ],
+      "supers": [
+        {
+          "id": "hecu_hl1.super",
+          "input": "236236H",
+          "name": "Secteur sécurisé",
+          "description": "Grenade puis rafale dans une cinématique déclenchée par hit confirmé.",
+          "resonance_cost": 100
+        },
+        {
+          "id": "hecu_hl1.ultimate",
+          "input": "236236S",
+          "name": "Extraction hostile",
+          "description": "Un corridor militaire fictif encadre l’enchaînement; aucun renfort invincible en combat libre.",
+          "resonance_cost": 300
+        }
+      ],
+      "throw": {
+        "id": "hecu_hl1.throw",
+        "input": "L+M / 4+L+M",
+        "name": "Prise de combat",
+        "description": "Saisie de bras puis balayage."
+      },
+      "costumes": [
+        "HECU HL1 modèle source choisi",
+        "Autres têtes uniformes uniquement après capture, hitboxes identiques"
+      ],
+      "intro": "Le soldat vérifie un ordre effacé sur sa radio.",
+      "rival": {
+        "id": "shephard_op4",
+        "reason": "Opposition d’ordres à Black Mesa, entièrement créée pour ce mode.",
+        "scene": "L’un exige le passage, l’autre montre les survivants derrière lui."
+      },
+      "ending": "Le soldat quitte le centre avec des témoins au lieu d’un rapport de mission. Le grade et l’identité restent non nommés.",
+      "finisher": "Finition : explosion masquée par un sas. Variante non létale : mise en détention.",
+      "status": "specified_not_implemented",
+      "canon_status": "Character and source appearance are references; moves, encounters, endings and finishers are original noncanonical adaptations. Visual fidelity remains to be checked against captured source models.",
+      "super": {
+        "id": "hecu_hl1.super",
+        "input": "236236H",
+        "name": "Secteur sécurisé",
+        "description": "Grenade puis rafale dans une cinématique déclenchée par hit confirmé.",
+        "resonance_cost": 100
+      },
+      "ultimate": {
+        "id": "hecu_hl1.ultimate",
+        "input": "236236S",
+        "name": "Extraction hostile",
+        "description": "Un corridor militaire fictif encadre l’enchaînement; aucun renfort invincible en combat libre.",
+        "resonance_cost": 300
+      },
+      "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
+      "ex_variants": []
+    },
+    {
+      "id": "black_ops_hl1",
+      "name": "Assassin Black Ops",
+      "source_game": "Half-Life",
+      "wave": 1,
+      "pilot": false,
+      "role": "Rushdown fragile et mobilité",
+      "identity_lock": "Assassin féminin du Half-Life original, silhouette noire et lunettes spécifiques; ne pas utiliser les assassins masculins Opposing Force par défaut.",
+      "trait": {
+        "id": "black_ops_hl1.trait",
+        "input": "5S",
+        "name": "Silence",
+        "description": "5S prépare une feinte d’atterrissage, toujours signalée par contour; aucune invisibilité totale compétitive."
+      },
+      "specials": [
+        {
+          "id": "black_ops_hl1.special_1",
+          "name": "Tir rapide",
+          "input": "236L",
+          "description": "Un projectile court puis récupération.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "black_ops_hl1.special_2",
+          "name": "Bond de recul",
+          "input": "214L",
+          "description": "Saut arrière scripté avec trajectoire vulnérable.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "black_ops_hl1.special_3",
+          "name": "Interception aérienne",
+          "input": "623H",
+          "description": "Coup montant étroit.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "black_ops_hl1.special_4",
+          "name": "Charge discrète",
+          "input": "214M",
+          "description": "Petit explosif visible, un seul actif.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        }
+      ],
+      "supers": [
+        {
+          "id": "black_ops_hl1.super",
+          "input": "236236H",
+          "name": "Angle mort",
+          "description": "Détour latéral scénarisé après touche, sans croisement pendant le freeze.",
+          "resonance_cost": 100
+        },
+        {
+          "id": "black_ops_hl1.ultimate",
+          "input": "236236S",
+          "name": "Effacement",
+          "description": "Séquence de bonds et tirs; l’objectif documentaire disparaît, pas la caméra compétitive.",
+          "resonance_cost": 300
+        }
+      ],
+      "throw": {
+        "id": "black_ops_hl1.throw",
+        "input": "L+M / 4+L+M",
+        "name": "Clé acrobatique",
+        "description": "Rotation et projection sans allonger les membres."
+      },
+      "costumes": [
+        "Base Black Ops HL1",
+        "Dégâts textiles adaptés"
+      ],
+      "intro": "Une visée s’éteint; la combattante apparaît depuis l’ombre.",
+      "rival": {
+        "id": "shephard_op4",
+        "reason": "Le témoin refuse d’être effacé.",
+        "scene": "Aucun dialogue explicatif; l’ordre de nettoyage apparaît seulement sur le terminal."
+      },
+      "ending": "Elle remet un dossier vide à son contact et disparaît. Son allégeance finale reste volontairement indéterminée.",
+      "finisher": "Finition : disparition dans un conduit avec bruit hors champ; variante sobre : neutralisation et extraction.",
+      "status": "specified_not_implemented",
+      "canon_status": "Character and source appearance are references; moves, encounters, endings and finishers are original noncanonical adaptations. Visual fidelity remains to be checked against captured source models.",
+      "super": {
+        "id": "black_ops_hl1.super",
+        "input": "236236H",
+        "name": "Angle mort",
+        "description": "Détour latéral scénarisé après touche, sans croisement pendant le freeze.",
+        "resonance_cost": 100
+      },
+      "ultimate": {
+        "id": "black_ops_hl1.ultimate",
+        "input": "236236S",
+        "name": "Effacement",
+        "description": "Séquence de bonds et tirs; l’objectif documentaire disparaît, pas la caméra compétitive.",
+        "resonance_cost": 300
+      },
+      "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
+      "ex_variants": []
+    },
+    {
+      "id": "alien_grunt_hl1",
+      "name": "Alien Grunt",
+      "source_game": "Half-Life",
+      "wave": 1,
+      "pilot": false,
+      "role": "Colosse de pression à projectiles biologiques",
+      "identity_lock": "Anatomie, armure et arme organique du modèle HL1, sans reskin d’un Vortigaunt. Taille conforme source après référence.",
+      "trait": {
+        "id": "alien_grunt_hl1.trait",
+        "input": "5S",
+        "name": "Carapace",
+        "description": "5S prépare un unique coup absorbé sur une attaque annoncée; pas de super-armure permanente."
+      },
+      "specials": [
+        {
+          "id": "alien_grunt_hl1.special_1",
+          "name": "Essaim",
+          "input": "236L",
+          "description": "Petit groupe de projectiles biologiques à suivi limité explicite.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "alien_grunt_hl1.special_2",
+          "name": "Percussion",
+          "input": "214M",
+          "description": "Charge d’épaule courte.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "alien_grunt_hl1.special_3",
+          "name": "Poing aérien",
+          "input": "623H",
+          "description": "Anti-air vertical lourd.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "alien_grunt_hl1.special_4",
+          "name": "Ruche concentrée",
+          "input": "236H",
+          "description": "Projectile plus gros, un actif et longue préparation.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        }
+      ],
+      "supers": [
+        {
+          "id": "alien_grunt_hl1.super",
+          "input": "236236H",
+          "name": "Pression de ruche",
+          "description": "Série de coups puis volée biologique.",
+          "resonance_cost": 100
+        },
+        {
+          "id": "alien_grunt_hl1.ultimate",
+          "input": "236236S",
+          "name": "Avant poste de Xen",
+          "description": "La cible est frappée devant une structure Xen cinématique, sans créer un personnage supplémentaire.",
+          "resonance_cost": 300
+        }
+      ],
+      "throw": {
+        "id": "alien_grunt_hl1.throw",
+        "input": "L+M / 4+L+M",
+        "name": "Etau",
+        "description": "Saisie puis jet au sol."
+      },
+      "costumes": [
+        "Base Alien Grunt HL1",
+        "Variation de matière adaptée, sans changement anatomique"
+      ],
+      "intro": "Il descend d’une plateforme et inspecte les bords de l’arène.",
+      "rival": {
+        "id": "vortigaunt_hl2",
+        "reason": "Un ordre d’asservissement survit dans l’écho.",
+        "scene": "Le Vortigaunt ouvre les mains; le Grunt frappe son armure."
+      },
+      "ending": "La ruche cesse de recevoir des instructions. Le Grunt choisit une direction et disparaît dans une ouverture de Xen.",
+      "finisher": "Finition : essaim couvrant l’écran puis coupe; variante sobre : cible emportée hors zone.",
+      "status": "specified_not_implemented",
+      "canon_status": "Character and source appearance are references; moves, encounters, endings and finishers are original noncanonical adaptations. Visual fidelity remains to be checked against captured source models.",
+      "super": {
+        "id": "alien_grunt_hl1.super",
+        "input": "236236H",
+        "name": "Pression de ruche",
+        "description": "Série de coups puis volée biologique.",
+        "resonance_cost": 100
+      },
+      "ultimate": {
+        "id": "alien_grunt_hl1.ultimate",
+        "input": "236236S",
+        "name": "Avant poste de Xen",
+        "description": "La cible est frappée devant une structure Xen cinématique, sans créer un personnage supplémentaire.",
+        "resonance_cost": 300
+      },
+      "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
+      "ex_variants": []
+    },
+    {
+      "id": "zombie_hl2",
+      "name": "Zombie standard",
+      "source_game": "Half-Life 2",
+      "wave": 1,
+      "pilot": false,
+      "role": "Pression lente et allonge irrégulière",
+      "identity_lock": "Zombie classique HL2 avec headcrab correspondant; aucune fusion avec Fast ou Poison Zombie.",
+      "trait": {
+        "id": "zombie_hl2.trait",
+        "input": "5S",
+        "name": "Accrochage",
+        "description": "5S prend une posture de bras tendus, utile en whiff punish mais facile à projeter."
+      },
+      "specials": [
+        {
+          "id": "zombie_hl2.special_1",
+          "name": "Griffure longue",
+          "input": "236L",
+          "description": "Avance légère et coup horizontal.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "zombie_hl2.special_2",
+          "name": "Jet de débris",
+          "input": "214M",
+          "description": "Un objet fixe du kit poussé maladroitement.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "zombie_hl2.special_3",
+          "name": "Revers haut",
+          "input": "623H",
+          "description": "Anti-air lent et large.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "zombie_hl2.special_4",
+          "name": "Roue des bras",
+          "input": "236H",
+          "description": "Double frappe avec récupération très lisible.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        }
+      ],
+      "supers": [
+        {
+          "id": "zombie_hl2.super",
+          "input": "236236H",
+          "name": "Etreinte",
+          "description": "Saisie après touche puis rejet de la cible.",
+          "resonance_cost": 100
+        },
+        {
+          "id": "zombie_hl2.ultimate",
+          "input": "236236S",
+          "name": "Couloir contaminé",
+          "description": "Une silhouette parasite recouvre brièvement l’image; pas de contrôle mental sur le joueur.",
+          "resonance_cost": 300
+        }
+      ],
+      "throw": {
+        "id": "zombie_hl2.throw",
+        "input": "L+M / 4+L+M",
+        "name": "Agrippement",
+        "description": "Tire puis repousse, sans insta-kill."
+      },
+      "costumes": [
+        "Zombie HL2 tenue modèle fixe",
+        "Autres modèles civils validés comme variantes visuelles seulement"
+      ],
+      "intro": "Un bruit attire le headcrab; le corps se relève.",
+      "rival": {
+        "id": "grigori_hl2",
+        "reason": "Obstacle de survie plutôt que rivalité consciente.",
+        "scene": "Grigori arme son fusil pendant que la créature traverse une flaque."
+      },
+      "ending": "L’image suit le headcrab qui quitte un couloir désert. Cette fin de créature reste un court tableau, sans lui inventer un monologue humain.",
+      "finisher": "Finition : attaque montrée en ombre et coupe; option sobre : fuite de la cible hors du cadre.",
+      "status": "specified_not_implemented",
+      "canon_status": "Character and source appearance are references; moves, encounters, endings and finishers are original noncanonical adaptations. Visual fidelity remains to be checked against captured source models.",
+      "super": {
+        "id": "zombie_hl2.super",
+        "input": "236236H",
+        "name": "Etreinte",
+        "description": "Saisie après touche puis rejet de la cible.",
+        "resonance_cost": 100
+      },
+      "ultimate": {
+        "id": "zombie_hl2.ultimate",
+        "input": "236236S",
+        "name": "Couloir contaminé",
+        "description": "Une silhouette parasite recouvre brièvement l’image; pas de contrôle mental sur le joueur.",
+        "resonance_cost": 300
+      },
+      "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
+      "ex_variants": []
+    },
+    {
+      "id": "gina_decay",
+      "name": "Gina Cross",
+      "source_game": "Half-Life Decay PlayStation 2",
+      "wave": 2,
+      "pilot": false,
+      "role": "Contrôle méthodique et préparation",
+      "identity_lock": "Identité Dr Gina Cross et combinaison source Decay; teinte, coupe et accessoires à verrouiller depuis le jeu PS2, pas depuis un fan remake.",
+      "trait": {
+        "id": "gina_decay.trait",
+        "input": "5S",
+        "name": "Procédure",
+        "description": "5S prépare un cycle de sécurité fictif qui renforce une prochaine frappe de distance; préparation interrompable."
+      },
+      "specials": [
+        {
+          "id": "gina_decay.special_1",
+          "name": "Tir de sécurité",
+          "input": "236L",
+          "description": "Projectile visible de pistolet.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "gina_decay.special_2",
+          "name": "Balise de mesure",
+          "input": "214M",
+          "description": "Marqueur scientifique fictif destructible, un actif.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "gina_decay.special_3",
+          "name": "Levier défensif",
+          "input": "623H",
+          "description": "Frappe montante au pied de biche.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "gina_decay.special_4",
+          "name": "Poussée de laboratoire",
+          "input": "236H",
+          "description": "Débris fixe poussé depuis une balise, pas de gravity gun.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        }
+      ],
+      "supers": [
+        {
+          "id": "gina_decay.super",
+          "input": "236236H",
+          "name": "Protocole expérimental",
+          "description": "Suite de frappes et déclenchement de la balise.",
+          "resonance_cost": 100
+        },
+        {
+          "id": "gina_decay.ultimate",
+          "input": "236236S",
+          "name": "Inversion de résonance",
+          "description": "Cinématique inspirée du contexte scientifique de Decay; pouvoir individuel inventé et borné au mode.",
+          "resonance_cost": 300
+        }
+      ],
+      "throw": {
+        "id": "gina_decay.throw",
+        "input": "L+M / 4+L+M",
+        "name": "Sécurité des personnes",
+        "description": "Prise et renversement contrôlé."
+      },
+      "costumes": [
+        "Base Gina Decay à capturer",
+        "Version holographique uniquement effet visuel d’entraînement, pas costume de tournoi"
+      ],
+      "intro": "Elle examine la chambre puis ferme le registre de test.",
+      "rival": {
+        "id": "colette_decay",
+        "reason": "Duel d’essai amical pour synchroniser les instruments.",
+        "scene": "Les deux scientifiques comparent leurs relevés avant un exercice non létal."
+      },
+      "ending": "Gina ferme la dernière boucle de mesure et confirme par geste que Colette est sortie. Leur destin après cet écho n’est pas présenté comme celui du canon.",
+      "finisher": "Finition : confinement d’une créature; contre allié, extinction du matériel et assistance.",
+      "status": "specified_not_implemented",
+      "canon_status": "Character and source appearance are references; moves, encounters, endings and finishers are original noncanonical adaptations. Visual fidelity remains to be checked against captured source models.",
+      "super": {
+        "id": "gina_decay.super",
+        "input": "236236H",
+        "name": "Protocole expérimental",
+        "description": "Suite de frappes et déclenchement de la balise.",
+        "resonance_cost": 100
+      },
+      "ultimate": {
+        "id": "gina_decay.ultimate",
+        "input": "236236S",
+        "name": "Inversion de résonance",
+        "description": "Cinématique inspirée du contexte scientifique de Decay; pouvoir individuel inventé et borné au mode.",
+        "resonance_cost": 300
+      },
+      "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
+      "ex_variants": []
+    },
+    {
+      "id": "colette_decay",
+      "name": "Colette Green",
+      "source_game": "Half-Life Decay PlayStation 2",
+      "wave": 2,
+      "pilot": false,
+      "role": "Pièges d’ingénierie et adaptation",
+      "identity_lock": "Dr Colette Green; combinaison et visage Decay PS2 indépendants de ceux de Gina. Ne pas leur attribuer les biographies contradictoires de fichiers inutilisés.",
+      "trait": {
+        "id": "colette_decay.trait",
+        "input": "5S",
+        "name": "Diagnostic",
+        "description": "5S change la direction annoncée de sa prochaine impulsion de kit."
+      },
+      "specials": [
+        {
+          "id": "colette_decay.special_1",
+          "name": "Tir mesuré",
+          "input": "236L",
+          "description": "Projectile de pistolet lisible.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "colette_decay.special_2",
+          "name": "Contact de relais",
+          "input": "214M",
+          "description": "Petit circuit au sol, un actif, adaptation de combat.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "colette_decay.special_3",
+          "name": "Arc de protection",
+          "input": "623H",
+          "description": "Frappe montante physique avec outil source choisi.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "colette_decay.special_4",
+          "name": "Décharge de banc",
+          "input": "236H",
+          "description": "Impulsion du relais fixe, ne jaillit pas de pouvoirs personnels.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        }
+      ],
+      "supers": [
+        {
+          "id": "colette_decay.super",
+          "input": "236236H",
+          "name": "Circuit fermé",
+          "description": "Enchaîne un impact puis le relais.",
+          "resonance_cost": 100
+        },
+        {
+          "id": "colette_decay.ultimate",
+          "input": "236236S",
+          "name": "Réamorçage",
+          "description": "Une installation de laboratoire cinématique se rallume et chasse la cible du champ.",
+          "resonance_cost": 300
+        }
+      ],
+      "throw": {
+        "id": "colette_decay.throw",
+        "input": "L+M / 4+L+M",
+        "name": "Dégagement technique",
+        "description": "Balayage et recul protégé."
+      },
+      "costumes": [
+        "Base Colette Decay à capturer",
+        "Patine expérimentale adaptation"
+      ],
+      "intro": "Une alarme s’arrête quand elle retire un câble défectueux.",
+      "rival": {
+        "id": "gina_decay",
+        "reason": "Vérification croisée d’un protocole, jamais duel mortel entre partenaires.",
+        "scene": "« Même mesure, autre angle. » Dialogue original."
+      },
+      "ending": "Colette détruit la copie dangereuse du dispositif et conserve seulement les relevés nécessaires au retour.",
+      "finisher": "Finition : éjection hors de la chambre; contre allié, arrêt d’urgence et sortie assistée.",
+      "status": "specified_not_implemented",
+      "canon_status": "Character and source appearance are references; moves, encounters, endings and finishers are original noncanonical adaptations. Visual fidelity remains to be checked against captured source models.",
+      "super": {
+        "id": "colette_decay.super",
+        "input": "236236H",
+        "name": "Circuit fermé",
+        "description": "Enchaîne un impact puis le relais.",
+        "resonance_cost": 100
+      },
+      "ultimate": {
+        "id": "colette_decay.ultimate",
+        "input": "236236S",
+        "name": "Réamorçage",
+        "description": "Une installation de laboratoire cinématique se rallume et chasse la cible du champ.",
+        "resonance_cost": 300
+      },
+      "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
+      "ex_variants": []
+    },
+    {
+      "id": "gordon_hl1",
+      "name": "Gordon Freeman Mark IV",
+      "source_game": "Half-Life",
+      "wave": 2,
+      "pilot": false,
+      "role": "Polyvalent à arsenal expérimental",
+      "identity_lock": "HEV Mark IV HL1; modèle standard ou HD choisi et documenté. Pas de gravity gun.",
+      "trait": {
+        "id": "gordon_hl1.trait",
+        "input": "5S",
+        "name": "Sélecteur de laboratoire",
+        "description": "5S bascule un profil de charge pour l’arme expérimentale; aucune nouvelle arme hors HL1."
+      },
+      "specials": [
+        {
+          "id": "gordon_hl1.special_1",
+          "name": "Tir de pistolet",
+          "input": "236L",
+          "description": "Projectile visible.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "gordon_hl1.special_2",
+          "name": "Charge Tau",
+          "input": "214M",
+          "description": "Prépare une décharge, annulation précoce seulement.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "gordon_hl1.special_3",
+          "name": "Pied de biche montant",
+          "input": "623H",
+          "description": "Anti-air court.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "gordon_hl1.special_4",
+          "name": "Impulsion Gauss",
+          "input": "236H",
+          "description": "Décharge chargée traversant le couloir sans suivi.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        }
+      ],
+      "supers": [
+        {
+          "id": "gordon_hl1.super",
+          "input": "236236H",
+          "name": "Expérience dirigée",
+          "description": "Impact de pied de biche suivi de décharge.",
+          "resonance_cost": 100
+        },
+        {
+          "id": "gordon_hl1.ultimate",
+          "input": "236236S",
+          "name": "Chambre Lambda",
+          "description": "Utilisation cinématique de l’arsenal HL1; téléporteur décoratif, pas pouvoir de Gordon.",
+          "resonance_cost": 300
+        }
+      ],
+      "throw": {
+        "id": "gordon_hl1.throw",
+        "input": "L+M / 4+L+M",
+        "name": "Renversement HEV",
+        "description": "Saisie et projection."
+      },
+      "costumes": [
+        "Mark IV HL1",
+        "HL Source et HD ne sont pas fusionnés dans un même modèle"
+      ],
+      "intro": "Il ajuste son gant devant un moniteur de laboratoire.",
+      "rival": {
+        "id": "alien_grunt_hl1",
+        "reason": "Franchir un verrou de Xen.",
+        "scene": "Le Grunt barre la porte; Gordon avance son pied de biche."
+      },
+      "ending": "Le couloir s’ouvre sur une station inconnue. Il hésite, puis continue sans une parole.",
+      "finisher": "Finition : rayon expérimental stylisé; variante non létale : désarmement par débris.",
+      "status": "specified_not_implemented",
+      "canon_status": "Character and source appearance are references; moves, encounters, endings and finishers are original noncanonical adaptations. Visual fidelity remains to be checked against captured source models.",
+      "super": {
+        "id": "gordon_hl1.super",
+        "input": "236236H",
+        "name": "Expérience dirigée",
+        "description": "Impact de pied de biche suivi de décharge.",
+        "resonance_cost": 100
+      },
+      "ultimate": {
+        "id": "gordon_hl1.ultimate",
+        "input": "236236S",
+        "name": "Chambre Lambda",
+        "description": "Utilisation cinématique de l’arsenal HL1; téléporteur décoratif, pas pouvoir de Gordon.",
+        "resonance_cost": 300
+      },
+      "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
+      "ex_variants": []
+    },
+    {
+      "id": "barney_blueshift",
+      "name": "Barney Calhoun Blue Shift",
+      "source_game": "Half-Life Blue Shift",
+      "wave": 2,
+      "pilot": false,
+      "role": "Défenseur précis et économie de gestes",
+      "identity_lock": "Uniforme et casque de sécurité Blue Shift; choix standard ou HD explicite. Séparé du Barney HL2.",
+      "trait": {
+        "id": "barney_blueshift.trait",
+        "input": "5S",
+        "name": "Vigilance",
+        "description": "5S prend une posture de lecture sans auto-parade; modifie la prochaine feinte de recul."
+      },
+      "specials": [
+        {
+          "id": "barney_blueshift.special_1",
+          "name": "Pistolet de service",
+          "input": "236L",
+          "description": "Projectile visible.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "barney_blueshift.special_2",
+          "name": "Barrage",
+          "input": "214M",
+          "description": "Coup de blocage physique qui ne bat pas projection.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "barney_blueshift.special_3",
+          "name": "Crosse de garde",
+          "input": "623H",
+          "description": "Anti-air court.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "barney_blueshift.special_4",
+          "name": "Tir d’arrêt",
+          "input": "236H",
+          "description": "Tir lent à recul marqué.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        }
+      ],
+      "supers": [
+        {
+          "id": "barney_blueshift.super",
+          "input": "236236H",
+          "name": "Ronde interrompue",
+          "description": "Contre puis deux frappes physiques.",
+          "resonance_cost": 100
+        },
+        {
+          "id": "barney_blueshift.ultimate",
+          "input": "236236S",
+          "name": "Passage sûr",
+          "description": "Cinématique d’évacuation par ascenseur, bornée au résultat du hit.",
+          "resonance_cost": 300
+        }
+      ],
+      "throw": {
+        "id": "barney_blueshift.throw",
+        "input": "L+M / 4+L+M",
+        "name": "Immobilisation",
+        "description": "Clé de sécurité et poussée."
+      },
+      "costumes": [
+        "Uniforme Blue Shift standard",
+        "Pack HD séparé à vérifier"
+      ],
+      "intro": "Il essaye un badge; la porte refuse et il sort son arme.",
+      "rival": {
+        "id": "hecu_hl1",
+        "reason": "Faire passer des scientifiques.",
+        "scene": "Barney montre le couloir civil; le soldat barre l’accès."
+      },
+      "ending": "Le train quitte la zone. Barney s’assied quelques secondes avant de retourner vérifier les autres wagons.",
+      "finisher": "Finition : sas de sécurité; variante allié : maîtrise puis remise debout.",
+      "status": "specified_not_implemented",
+      "canon_status": "Character and source appearance are references; moves, encounters, endings and finishers are original noncanonical adaptations. Visual fidelity remains to be checked against captured source models.",
+      "super": {
+        "id": "barney_blueshift.super",
+        "input": "236236H",
+        "name": "Ronde interrompue",
+        "description": "Contre puis deux frappes physiques.",
+        "resonance_cost": 100
+      },
+      "ultimate": {
+        "id": "barney_blueshift.ultimate",
+        "input": "236236S",
+        "name": "Passage sûr",
+        "description": "Cinématique d’évacuation par ascenseur, bornée au résultat du hit.",
+        "resonance_cost": 300
+      },
+      "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
+      "ex_variants": []
+    },
+    {
+      "id": "alyx_hla",
+      "name": "Alyx Vance période Alyx",
+      "source_game": "Half-Life Alyx",
+      "wave": 2,
+      "pilot": false,
+      "role": "Manipulation d’objets et mobilité courte",
+      "identity_lock": "Visage, gants gravitationnels et tenue de Half-Life Alyx; arme VR et mult outil de cette époque. Slot distinct HL2.",
+      "trait": {
+        "id": "alyx_hla.trait",
+        "input": "5S",
+        "name": "Russells",
+        "description": "5S attire un unique objet léger du kit; ne possède pas la force du gravity gun sur les corps."
+      },
+      "specials": [
+        {
+          "id": "alyx_hla.special_1",
+          "name": "Tir chargé",
+          "input": "236L",
+          "description": "Projectile de pistolet visible.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "alyx_hla.special_2",
+          "name": "Rappel de pièce",
+          "input": "214M",
+          "description": "Retour d’un débris fixe vers sa main.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "alyx_hla.special_3",
+          "name": "Interception de proximité",
+          "input": "623H",
+          "description": "Coup d’arme montant.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "alyx_hla.special_4",
+          "name": "Jet en ricochet",
+          "input": "236H",
+          "description": "Lance l’objet léger avec un rebond déterministe.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        }
+      ],
+      "supers": [
+        {
+          "id": "alyx_hla.super",
+          "input": "236236H",
+          "name": "Deux mains libres",
+          "description": "Manipulation de débris puis tir confirmé.",
+          "resonance_cost": 100
+        },
+        {
+          "id": "alyx_hla.ultimate",
+          "input": "236236S",
+          "name": "Détour par la quarantaine",
+          "description": "Cinématique de contournement d’un barrage, sans reproduire une révélation finale du jeu.",
+          "resonance_cost": 300
+        }
+      ],
+      "throw": {
+        "id": "alyx_hla.throw",
+        "input": "L+M / 4+L+M",
+        "name": "Déviation",
+        "description": "Prise du poignet, rotation et fuite courte."
+      },
+      "costumes": [
+        "Tenue HLA modèle source",
+        "Gants et upgrades uniquement s’ils restent cohérents avec la version choisie"
+      ],
+      "intro": "Elle rattrape un petit objet en l’air puis regarde le passage.",
+      "rival": {
+        "id": "combine_ordinal_hla",
+        "reason": "Libérer un accès de la zone occupée.",
+        "scene": "Alyx observe les signaux de commandement avant de rompre le couvert."
+      },
+      "ending": "Elle transmet un message bref puis ferme le relais pour protéger une cache. Aucun dévoilement imposé de la fin de HLA.",
+      "finisher": "Finition : piège de quarantaine hors champ; variante allié : immobilisation par objet léger et sortie.",
+      "status": "specified_not_implemented",
+      "canon_status": "Character and source appearance are references; moves, encounters, endings and finishers are original noncanonical adaptations. Visual fidelity remains to be checked against captured source models.",
+      "super": {
+        "id": "alyx_hla.super",
+        "input": "236236H",
+        "name": "Deux mains libres",
+        "description": "Manipulation de débris puis tir confirmé.",
+        "resonance_cost": 100
+      },
+      "ultimate": {
+        "id": "alyx_hla.ultimate",
+        "input": "236236S",
+        "name": "Détour par la quarantaine",
+        "description": "Cinématique de contournement d’un barrage, sans reproduire une révélation finale du jeu.",
+        "resonance_cost": 300
+      },
+      "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
+      "ex_variants": []
+    },
+    {
+      "id": "combine_grunt_hla",
+      "name": "Combine Grunt",
+      "source_game": "Half-Life Alyx",
+      "wave": 2,
+      "pilot": false,
+      "role": "Pression de base et déplacement",
+      "identity_lock": "Modèle Grunt HLA uniquement; silhouette, sac et arme capturés depuis source.",
+      "trait": {
+        "id": "combine_grunt_hla.trait",
+        "input": "5S",
+        "name": "Appui",
+        "description": "5S prépare un pas de tir court."
+      },
+      "specials": [
+        {
+          "id": "combine_grunt_hla.special_1",
+          "name": "Rafale de patrouille",
+          "input": "236L",
+          "description": "Projectiles visibles.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "combine_grunt_hla.special_2",
+          "name": "Grenade de secteur",
+          "input": "214M",
+          "description": "Arc borné.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "combine_grunt_hla.special_3",
+          "name": "Crosse verticale",
+          "input": "623H",
+          "description": "Anti-air court.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "combine_grunt_hla.special_4",
+          "name": "Avancée armée",
+          "input": "236H",
+          "description": "Déplacement engagé plus tir retardé.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        }
+      ],
+      "supers": [
+        {
+          "id": "combine_grunt_hla.super",
+          "input": "236236H",
+          "name": "Contrôle de rue",
+          "description": "Salve confirmée puis recul.",
+          "resonance_cost": 100
+        },
+        {
+          "id": "combine_grunt_hla.ultimate",
+          "input": "236236S",
+          "name": "Bouclage",
+          "description": "Portes et barrières enferment la scène cinématique.",
+          "resonance_cost": 300
+        }
+      ],
+      "throw": {
+        "id": "combine_grunt_hla.throw",
+        "input": "L+M / 4+L+M",
+        "name": "Arrestation",
+        "description": "Saisie et projection."
+      },
+      "costumes": [
+        "Base Grunt HLA",
+        "Usure cosmétique adaptée"
+      ],
+      "intro": "Un signal lui fait quitter son poste.",
+      "rival": {
+        "id": "alyx_hla",
+        "reason": "Une interception dans la quarantaine.",
+        "scene": "Il bloque un escalier et lève son arme."
+      },
+      "ending": "L’unité reprend sa route; l’écran d’ordres se vide au prochain carrefour.",
+      "finisher": "Finition : confinement; variante sobre : mise en détention.",
+      "status": "specified_not_implemented",
+      "canon_status": "Character and source appearance are references; moves, encounters, endings and finishers are original noncanonical adaptations. Visual fidelity remains to be checked against captured source models.",
+      "super": {
+        "id": "combine_grunt_hla.super",
+        "input": "236236H",
+        "name": "Contrôle de rue",
+        "description": "Salve confirmée puis recul.",
+        "resonance_cost": 100
+      },
+      "ultimate": {
+        "id": "combine_grunt_hla.ultimate",
+        "input": "236236S",
+        "name": "Bouclage",
+        "description": "Portes et barrières enferment la scène cinématique.",
+        "resonance_cost": 300
+      },
+      "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
+      "ex_variants": []
+    },
+    {
+      "id": "combine_ordinal_hla",
+      "name": "Combine Ordinal",
+      "source_game": "Half-Life Alyx",
+      "wave": 2,
+      "pilot": false,
+      "role": "Commandement traduit en marquage",
+      "identity_lock": "Modèle Ordinal HLA; aucun pouvoir de commandement télépathique inventé comme canon.",
+      "trait": {
+        "id": "combine_ordinal_hla.trait",
+        "input": "5S",
+        "name": "Ordre local",
+        "description": "5S marque un secteur qui modifie seulement son prochain tir; pas de soldats invoqués."
+      },
+      "specials": [
+        {
+          "id": "combine_ordinal_hla.special_1",
+          "name": "Salve de contrôle",
+          "input": "236L",
+          "description": "Projectiles visibles.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "combine_ordinal_hla.special_2",
+          "name": "Balise de priorité",
+          "input": "214M",
+          "description": "Marqueur destructible.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "combine_ordinal_hla.special_3",
+          "name": "Interception de crosse",
+          "input": "623H",
+          "description": "Anti-air.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "combine_ordinal_hla.special_4",
+          "name": "Tir convergent",
+          "input": "236H",
+          "description": "Tir à angle fixé par balise, annoncé avant émission.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        }
+      ],
+      "supers": [
+        {
+          "id": "combine_ordinal_hla.super",
+          "input": "236236H",
+          "name": "Priorité confirmée",
+          "description": "Combinaison de marquage et tir.",
+          "resonance_cost": 100
+        },
+        {
+          "id": "combine_ordinal_hla.ultimate",
+          "input": "236236S",
+          "name": "Zone isolée",
+          "description": "Séquence de verrouillage du relais; renforts purement visuels.",
+          "resonance_cost": 300
+        }
+      ],
+      "throw": {
+        "id": "combine_ordinal_hla.throw",
+        "input": "L+M / 4+L+M",
+        "name": "Mise à terre",
+        "description": "Projection standard."
+      },
+      "costumes": [
+        "Base Ordinal HLA",
+        "Usure adaptée"
+      ],
+      "intro": "Il compare deux signaux contradictoires.",
+      "rival": {
+        "id": "alyx_hla",
+        "reason": "Elle efface ses routes de commandement.",
+        "scene": "L’Ordinal détruit lui-même la balise compromise."
+      },
+      "ending": "La dernière transmission n’a plus de destinataire. Il continue pourtant le balayage.",
+      "finisher": "Finition : barrage de confinement; variante sobre : capture.",
+      "status": "specified_not_implemented",
+      "canon_status": "Character and source appearance are references; moves, encounters, endings and finishers are original noncanonical adaptations. Visual fidelity remains to be checked against captured source models.",
+      "super": {
+        "id": "combine_ordinal_hla.super",
+        "input": "236236H",
+        "name": "Priorité confirmée",
+        "description": "Combinaison de marquage et tir.",
+        "resonance_cost": 100
+      },
+      "ultimate": {
+        "id": "combine_ordinal_hla.ultimate",
+        "input": "236236S",
+        "name": "Zone isolée",
+        "description": "Séquence de verrouillage du relais; renforts purement visuels.",
+        "resonance_cost": 300
+      },
+      "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
+      "ex_variants": []
+    },
+    {
+      "id": "combine_charger_hla",
+      "name": "Combine Charger",
+      "source_game": "Half-Life Alyx",
+      "wave": 2,
+      "pilot": false,
+      "role": "Briseur de garde à très courte portée",
+      "identity_lock": "Charger HLA et équipement source exact; distinction visuelle stricte avec Suppressor.",
+      "trait": {
+        "id": "combine_charger_hla.trait",
+        "input": "5S",
+        "name": "Préparation de charge",
+        "description": "5S prépare un engagement frontal télégraphié, jamais armure permanente."
+      },
+      "specials": [
+        {
+          "id": "combine_charger_hla.special_1",
+          "name": "Décharge courte",
+          "input": "236L",
+          "description": "Projectile court et large.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "combine_charger_hla.special_2",
+          "name": "Accrochage lourd",
+          "input": "214M",
+          "description": "Command grab évitable par saut.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "combine_charger_hla.special_3",
+          "name": "Revers blindé",
+          "input": "623H",
+          "description": "Anti-air très court.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "combine_charger_hla.special_4",
+          "name": "Percée",
+          "input": "236H",
+          "description": "Charge physique longue et punissable.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        }
+      ],
+      "supers": [
+        {
+          "id": "combine_charger_hla.super",
+          "input": "236236H",
+          "name": "Brèche",
+          "description": "Charge confirmée puis impact.",
+          "resonance_cost": 100
+        },
+        {
+          "id": "combine_charger_hla.ultimate",
+          "input": "236236S",
+          "name": "Porte enfoncée",
+          "description": "Séquence où la cible traverse une porte de service; retour au terrain canonique du match.",
+          "resonance_cost": 300
+        }
+      ],
+      "throw": {
+        "id": "combine_charger_hla.throw",
+        "input": "L+M / 4+L+M",
+        "name": "Prise blindée",
+        "description": "Soulève et rejette."
+      },
+      "costumes": [
+        "Base Charger HLA",
+        "Dommages adaptés"
+      ],
+      "intro": "La porte plie avant son arrivée.",
+      "rival": {
+        "id": "dog_hl2",
+        "reason": "Collision de deux forces dans une simulation de franchissement.",
+        "scene": "Le robot barre la porte; le Charger abaisse son centre de gravité."
+      },
+      "ending": "Il franchit tous les obstacles jusqu’à un couloir sans issue. La mission est terminée, le passage ne mène nulle part.",
+      "finisher": "Finition : impact en silhouette; variante sobre : immobilisation au sol.",
+      "status": "specified_not_implemented",
+      "canon_status": "Character and source appearance are references; moves, encounters, endings and finishers are original noncanonical adaptations. Visual fidelity remains to be checked against captured source models.",
+      "super": {
+        "id": "combine_charger_hla.super",
+        "input": "236236H",
+        "name": "Brèche",
+        "description": "Charge confirmée puis impact.",
+        "resonance_cost": 100
+      },
+      "ultimate": {
+        "id": "combine_charger_hla.ultimate",
+        "input": "236236S",
+        "name": "Porte enfoncée",
+        "description": "Séquence où la cible traverse une porte de service; retour au terrain canonique du match.",
+        "resonance_cost": 300
+      },
+      "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
+      "ex_variants": []
+    },
+    {
+      "id": "combine_suppressor_hla",
+      "name": "Combine Suppressor",
+      "source_game": "Half-Life Alyx",
+      "wave": 2,
+      "pilot": false,
+      "role": "Zoning lourd à engagements lisibles",
+      "identity_lock": "Suppressor HLA et arme volumineuse; aucun mélange avec Elite HL2.",
+      "trait": {
+        "id": "combine_suppressor_hla.trait",
+        "input": "5S",
+        "name": "Mise en batterie",
+        "description": "5S prépare un tir prolongé; déplacement réduit seulement pendant la posture."
+      },
+      "specials": [
+        {
+          "id": "combine_suppressor_hla.special_1",
+          "name": "Salve courte",
+          "input": "236L",
+          "description": "Projectiles visibles.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "combine_suppressor_hla.special_2",
+          "name": "Pivot de batterie",
+          "input": "214M",
+          "description": "Change l’angle prévu sans tracking automatique.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "combine_suppressor_hla.special_3",
+          "name": "Crosse lourde",
+          "input": "623H",
+          "description": "Anti-air lent.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "combine_suppressor_hla.special_4",
+          "name": "Suppression",
+          "input": "236H",
+          "description": "Rafale prolongée avec trous déterministes et grande récupération.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        }
+      ],
+      "supers": [
+        {
+          "id": "combine_suppressor_hla.super",
+          "input": "236236H",
+          "name": "Couloir saturé",
+          "description": "Rafale confirmée, scaling appliqué à tous les impacts.",
+          "resonance_cost": 100
+        },
+        {
+          "id": "combine_suppressor_hla.ultimate",
+          "input": "236236S",
+          "name": "Mur d’impulsions",
+          "description": "Grand faisceau cinématique après hit; n’existe pas en neutral.",
+          "resonance_cost": 300
+        }
+      ],
+      "throw": {
+        "id": "combine_suppressor_hla.throw",
+        "input": "L+M / 4+L+M",
+        "name": "Dégagement blindé",
+        "description": "Poussée et coup de crosse."
+      },
+      "costumes": [
+        "Base Suppressor HLA",
+        "Patine adaptée"
+      ],
+      "intro": "L’arme se déploie avant que l’unité lève la tête.",
+      "rival": {
+        "id": "gordon_hl2",
+        "reason": "Test de franchissement d’un barrage.",
+        "scene": "Un débris roulé par Gordon interrompt l’alignement de tir."
+      },
+      "ending": "Il maintient son secteur alors que le bâtiment de l’écho s’efface autour de lui.",
+      "finisher": "Finition : lumière et coupe hors champ; variante sobre : capture derrière un champ.",
+      "status": "specified_not_implemented",
+      "canon_status": "Character and source appearance are references; moves, encounters, endings and finishers are original noncanonical adaptations. Visual fidelity remains to be checked against captured source models.",
+      "super": {
+        "id": "combine_suppressor_hla.super",
+        "input": "236236H",
+        "name": "Couloir saturé",
+        "description": "Rafale confirmée, scaling appliqué à tous les impacts.",
+        "resonance_cost": 100
+      },
+      "ultimate": {
+        "id": "combine_suppressor_hla.ultimate",
+        "input": "236236S",
+        "name": "Mur d’impulsions",
+        "description": "Grand faisceau cinématique après hit; n’existe pas en neutral.",
+        "resonance_cost": 300
+      },
+      "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
+      "ex_variants": []
+    },
+    {
+      "id": "hunter_ep2",
+      "name": "Hunter",
+      "source_game": "Half-Life 2 Episode Two",
+      "wave": 2,
+      "pilot": false,
+      "role": "Mobile à trois appuis et pointes",
+      "identity_lock": "Hunter de petite classe synth face au Strider géant; trois pattes et proportions à conserver. Validation spécifique hurtboxes nécessaire avant classé.",
+      "trait": {
+        "id": "hunter_ep2.trait",
+        "input": "5S",
+        "name": "Visée de flechettes",
+        "description": "5S affiche un angle fixe avant son prochain tir."
+      },
+      "specials": [
+        {
+          "id": "hunter_ep2.special_1",
+          "name": "Flechette",
+          "input": "236L",
+          "description": "Projectile visible avec délai de réaction.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "hunter_ep2.special_2",
+          "name": "Bond latéral",
+          "input": "214M",
+          "description": "Arc bas vulnérable.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "hunter_ep2.special_3",
+          "name": "Coup de patte",
+          "input": "623H",
+          "description": "Anti-air oblique.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "hunter_ep2.special_4",
+          "name": "Ruée",
+          "input": "236H",
+          "description": "Charge courte; pas de traversée gratuite.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        }
+      ],
+      "supers": [
+        {
+          "id": "hunter_ep2.super",
+          "input": "236236H",
+          "name": "Salve croisée",
+          "description": "Tirs convergents après impact initial.",
+          "resonance_cost": 100
+        },
+        {
+          "id": "hunter_ep2.ultimate",
+          "input": "236236S",
+          "name": "Poursuite dans les bois",
+          "description": "Cinématique de chasse à travers un décor forestier.",
+          "resonance_cost": 300
+        }
+      ],
+      "throw": {
+        "id": "hunter_ep2.throw",
+        "input": "L+M / 4+L+M",
+        "name": "Percussion",
+        "description": "Renversement avec appuis mécaniques, sans mains inventées."
+      },
+      "costumes": [
+        "Modèle Hunter Episode Two",
+        "Dégâts adaptés"
+      ],
+      "intro": "Il contourne un tronc avant de pivoter vers le duel.",
+      "rival": {
+        "id": "alyx_hl2",
+        "reason": "Poursuite hostile dans un écho de forêt.",
+        "scene": "Alyx repère son reflet avant son arrivée."
+      },
+      "ending": "Le Hunter retourne à une balise muette et attend la reprise d’un réseau disparu.",
+      "finisher": "Finition : charge hors champ; variante sobre : expulsion de l’arène.",
+      "status": "specified_not_implemented",
+      "canon_status": "Character and source appearance are references; moves, encounters, endings and finishers are original noncanonical adaptations. Visual fidelity remains to be checked against captured source models.",
+      "super": {
+        "id": "hunter_ep2.super",
+        "input": "236236H",
+        "name": "Salve croisée",
+        "description": "Tirs convergents après impact initial.",
+        "resonance_cost": 100
+      },
+      "ultimate": {
+        "id": "hunter_ep2.ultimate",
+        "input": "236236S",
+        "name": "Poursuite dans les bois",
+        "description": "Cinématique de chasse à travers un décor forestier.",
+        "resonance_cost": 300
+      },
+      "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
+      "ex_variants": []
+    },
+    {
+      "id": "antlion_worker_ep2",
+      "name": "Fourmilion ouvrier",
+      "source_game": "Half-Life 2 Episode Two",
+      "wave": 2,
+      "pilot": false,
+      "role": "Acide en arcs et déplacements bas",
+      "identity_lock": "Version ouvrière Episode Two, distincte du fourmilion standard; taille réelle jamais artificiellement humaine.",
+      "trait": {
+        "id": "antlion_worker_ep2.trait",
+        "input": "5S",
+        "name": "Réserve acide",
+        "description": "5S prépare une poche personnelle bornée; ressource propre, pas soin."
+      },
+      "specials": [
+        {
+          "id": "antlion_worker_ep2.special_1",
+          "name": "Crachat acide",
+          "input": "236L",
+          "description": "Arc visible faible portée.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "antlion_worker_ep2.special_2",
+          "name": "Bond de galerie",
+          "input": "214M",
+          "description": "Saut bas à trajectoire fixe.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "antlion_worker_ep2.special_3",
+          "name": "Patte haute",
+          "input": "623H",
+          "description": "Anti-air très court.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "antlion_worker_ep2.special_4",
+          "name": "Poche éclatée",
+          "input": "236H",
+          "description": "Projectile lourd consommant la réserve, une flaque bornée et lisible.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        }
+      ],
+      "supers": [
+        {
+          "id": "antlion_worker_ep2.super",
+          "input": "236236H",
+          "name": "Défense de galerie",
+          "description": "Deux crachats après contact.",
+          "resonance_cost": 100
+        },
+        {
+          "id": "antlion_worker_ep2.ultimate",
+          "input": "236236S",
+          "name": "Chambre de ruche",
+          "description": "Séquence dans une cavité, sans invoquer une reine inventée.",
+          "resonance_cost": 300
+        }
+      ],
+      "throw": {
+        "id": "antlion_worker_ep2.throw",
+        "input": "L+M / 4+L+M",
+        "name": "Poussée de carapace",
+        "description": "Percussion et retournement."
+      },
+      "costumes": [
+        "Base ouvrier Episode Two",
+        "Variations source à vérifier, aucune reine inventée"
+      ],
+      "intro": "Il suit une vibration dans le sol.",
+      "rival": {
+        "id": "vortigaunt_hl2",
+        "reason": "Défense du territoire, non haine personnelle.",
+        "scene": "Le Vortigaunt recule d’un pas puis prépare un arc."
+      },
+      "ending": "L’ouvrier rejoint une galerie éclairée de larves. Le récit reste animal, sans narration humaine de victoire.",
+      "finisher": "Finition : nuage acide stylisé; variante sobre : retraite forcée par jets au sol.",
+      "status": "specified_not_implemented",
+      "canon_status": "Character and source appearance are references; moves, encounters, endings and finishers are original noncanonical adaptations. Visual fidelity remains to be checked against captured source models.",
+      "super": {
+        "id": "antlion_worker_ep2.super",
+        "input": "236236H",
+        "name": "Défense de galerie",
+        "description": "Deux crachats après contact.",
+        "resonance_cost": 100
+      },
+      "ultimate": {
+        "id": "antlion_worker_ep2.ultimate",
+        "input": "236236S",
+        "name": "Chambre de ruche",
+        "description": "Séquence dans une cavité, sans invoquer une reine inventée.",
+        "resonance_cost": 300
+      },
+      "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
+      "ex_variants": []
+    },
+    {
+      "id": "pit_drone_op4",
+      "name": "Pit Drone",
+      "source_game": "Half-Life Opposing Force",
+      "wave": 2,
+      "pilot": false,
+      "role": "Rushdown à pointes limitées",
+      "identity_lock": "Pit Drone Race X, modèle Opposing Force; pas d’assimilation à une espèce de Xen sans qualification.",
+      "trait": {
+        "id": "pit_drone_op4.trait",
+        "input": "5S",
+        "name": "Réserve de pointes",
+        "description": "5S prépare la récupération de pointes du kit, sans régénération invisible."
+      },
+      "specials": [
+        {
+          "id": "pit_drone_op4.special_1",
+          "name": "Pointe",
+          "input": "236L",
+          "description": "Projectile visible consommant une réserve personnelle.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "pit_drone_op4.special_2",
+          "name": "Pas chasseur",
+          "input": "214M",
+          "description": "Déplacement court qui perd face aux attaques basses.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "pit_drone_op4.special_3",
+          "name": "Griffe ascendante",
+          "input": "623H",
+          "description": "Anti-air étroit.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        },
+        {
+          "id": "pit_drone_op4.special_4",
+          "name": "Assaut croisé",
+          "input": "236H",
+          "description": "Double frappe au sol, punissable en garde.",
+          "resonance_cost": 0,
+          "ex_cost": null,
+          "status": "design_only",
+          "ex_available": false
+        }
+      ],
+      "supers": [
+        {
+          "id": "pit_drone_op4.super",
+          "input": "236236H",
+          "name": "Charge prédatrice",
+          "description": "Course puis série de griffures.",
+          "resonance_cost": 100
+        },
+        {
+          "id": "pit_drone_op4.ultimate",
+          "input": "236236S",
+          "name": "Brèche Race X",
+          "description": "Séquence à travers une ouverture de combat fictive, sans déclaration sur les origines de Race X.",
+          "resonance_cost": 300
+        }
+      ],
+      "throw": {
+        "id": "pit_drone_op4.throw",
+        "input": "L+M / 4+L+M",
+        "name": "Crochet",
+        "description": "Agrippe par griffes puis rejette."
+      },
+      "costumes": [
+        "Base Opposing Force",
+        "Usure adaptée"
+      ],
+      "intro": "Il renifle un sol étranger et déploie ses pointes.",
+      "rival": {
+        "id": "shephard_op4",
+        "reason": "Opposition de survie issue de la rencontre de leurs factions.",
+        "scene": "Adrian repère une pointe plantée dans sa route."
+      },
+      "ending": "Le Drone suit une ouverture qui se referme derrière lui; aucune origine cosmique n’est révélée.",
+      "finisher": "Finition : assaut en ombre; variante sobre : poursuite hors du champ.",
+      "status": "specified_not_implemented",
+      "canon_status": "Character and source appearance are references; moves, encounters, endings and finishers are original noncanonical adaptations. Visual fidelity remains to be checked against captured source models.",
+      "super": {
+        "id": "pit_drone_op4.super",
+        "input": "236236H",
+        "name": "Charge prédatrice",
+        "description": "Course puis série de griffures.",
+        "resonance_cost": 100
+      },
+      "ultimate": {
+        "id": "pit_drone_op4.ultimate",
+        "input": "236236S",
+        "name": "Brèche Race X",
+        "description": "Séquence à travers une ouverture de combat fictive, sans déclaration sur les origines de Race X.",
+        "resonance_cost": 300
+      },
+      "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
+      "ex_variants": []
+    }
+  ],
+  "rules": {
+    "tick_rate": 60,
+    "super_cost": 100,
+    "ultimate_cost": 300,
+    "ex_cost": 50,
+    "trait_input": "5S",
+    "prop_input": "6S",
+    "throw_input": "L+M"
+  },
+  "source_notes": [
+    {
+      "url": "https://www.half-life.com/en/alyx",
+      "verification": "Official page opened; confirms Alyx period and occupation context, not every model detail."
+    },
+    {
+      "url": "https://store.steampowered.com/app/50/HalfLife_Opposing_Force/",
+      "verification": "Official page opened; confirms Gearbox expansion and military perspective."
+    },
+    {
+      "url": "https://store.steampowered.com/app/130/HalfLife_Blue_Shift/",
+      "verification": "Official page opened; confirms Barney protagonist and Black Mesa."
+    },
+    {
+      "url": "https://valvearchive.com/Games/Half-Life%20%28PlayStation%202%29/Documents/Manual.pdf",
+      "verification": "Indexed extract of original PlayStation 2 manual only; PDF could not be opened. Extract names Gina Cross and Colette Green and cooperative Decay."
+    }
+  ],
+  "story_chapters": [
+    {
+      "id": "story_01",
+      "number": 1,
+      "title": "Le registre",
+      "playable": "Gordon HL2",
+      "arena_theme": "Laboratoire de Black Mesa",
+      "encounter": "Tutoriel déplacement, garde et projection contre automate d’entraînement.",
+      "intro": "Un terminal ajoute des événements qui n’ont pas encore eu lieu. Gordon reconnaît sa signature mais ne répond pas à la voix administrative.",
+      "objective": "Arrêter le premier relais sans dégâts létaux; choix visuel sauver les relevés ou sauver un témoin.",
+      "outro": "La porte suivante donne sur une gare, sans voyage temporel canonique affirmé.",
+      "canon_status": "original_fan_scenario",
+      "status": "specified_not_implemented"
+    },
+    {
+      "id": "story_02",
+      "number": 2,
+      "title": "Ligne coupée",
+      "playable": "Barney HL2",
+      "arena_theme": "Gare de Cité 17",
+      "encounter": "Deux duels contre patrouille puis Elite.",
+      "intro": "Barney fait évacuer une file de civils pendant que les panneaux changent de destination.",
+      "objective": "Gagner avec une route libre; une défaite reprend le duel sans effacer les civils déjà sauvés.",
+      "outro": "Un badge ancien ouvre une porte de Black Mesa.",
+      "canon_status": "original_fan_scenario",
+      "status": "specified_not_implemented"
+    },
+    {
+      "id": "story_03",
+      "number": 3,
+      "title": "Ordres persistants",
+      "playable": "Adrian Shephard",
+      "arena_theme": "Couloirs militaires",
+      "encounter": "HECU puis Black Ops; apprentissage de portée et engagement.",
+      "intro": "Un ordre d’élimination se répète alors que les unités autour d’Adrian changent d’époque. Il coupe sa radio.",
+      "objective": "Franchir le barrage; les décisions sont gestes et trajectoires, pas dialogues inventés pour Adrian.",
+      "outro": "Le nom Freeman apparaît dans un dossier scellé.",
+      "canon_status": "original_fan_scenario",
+      "status": "specified_not_implemented"
+    },
+    {
+      "id": "story_04",
+      "number": 4,
+      "title": "La chambre commune",
+      "playable": "Gina et Colette",
+      "arena_theme": "Chambre de test Decay",
+      "encounter": "Deux duels alternés, personnages choisis séquentiellement; pas de tag implicite.",
+      "intro": "Gina et Colette trouvent des mesures incompatibles et synchronisent leurs relevés.",
+      "objective": "Chaque scientifique désactive une boucle; l’épreuve entre elles est toujours non létale.",
+      "outro": "Une fréquence correspond au signal de la gare.",
+      "canon_status": "original_fan_scenario",
+      "status": "specified_not_implemented"
+    },
+    {
+      "id": "story_05",
+      "number": 5,
+      "title": "Le bruit des toits",
+      "playable": "Grigori",
+      "arena_theme": "Ravenholm",
+      "encounter": "Zombie puis vague de survie en mode histoire distinct.",
+      "intro": "Les cloches sonnent sans mouvement. Grigori suit les vibrations vers une route envahie.",
+      "objective": "Protéger une issue, apprendre à lire les créatures et neutraliser les pièges de stage activés pour ce chapitre.",
+      "outro": "Une balise Combine bat au rythme de la cloche.",
+      "canon_status": "original_fan_scenario",
+      "status": "specified_not_implemented"
+    },
+    {
+      "id": "story_06",
+      "number": 6,
+      "title": "Retour sans détour",
+      "playable": "Alyx HL2",
+      "arena_theme": "Black Mesa Est",
+      "encounter": "Duel technique contre Barney puis combat hostile Elite.",
+      "intro": "Alyx teste un passage avec Barney. Leur bref duel sert à vérifier que les copies conservent leurs réactions.",
+      "objective": "Détruire la balise en sauvant les archives de personnes captives; aucun combat amical ne permet fatalité.",
+      "outro": "Dog reconnaît un signal venant de dessous le bâtiment.",
+      "canon_status": "original_fan_scenario",
+      "status": "specified_not_implemented"
+    },
+    {
+      "id": "story_07",
+      "number": 7,
+      "title": "Le poids du passage",
+      "playable": "Dog",
+      "arena_theme": "Cour industrielle",
+      "encounter": "Charger ou adversaire lourd de remplacement selon contenu livré.",
+      "intro": "Dog pousse une porte dont l’intérieur semble plus grand que le bâtiment.",
+      "objective": "Briser trois verrous entre les manches; ce sont objectifs scénarisés et non variations de classé.",
+      "outro": "La dernière porte donne sur une forêt.",
+      "canon_status": "original_fan_scenario",
+      "status": "specified_not_implemented"
+    },
+    {
+      "id": "story_08",
+      "number": 8,
+      "title": "Les chaînes",
+      "playable": "Vortigaunt",
+      "arena_theme": "Avant poste de Xen",
+      "encounter": "Alien Grunt et créature de défense.",
+      "intro": "Une voix ancienne tente de rétablir une hiérarchie que le Vortigaunt refuse.",
+      "objective": "Défaire les relais; les lignes sont originales et évitent toute révélation sur la nature des entités supérieures.",
+      "outro": "Le Vortigaunt montre la différence entre un souvenir et un ordre.",
+      "canon_status": "original_fan_scenario",
+      "status": "specified_not_implemented"
+    },
+    {
+      "id": "story_09",
+      "number": 9,
+      "title": "Témoin de quarantaine",
+      "playable": "Alyx HLA",
+      "arena_theme": "Zone de quarantaine",
+      "encounter": "Grunt puis Ordinal.",
+      "intro": "Une Alyx d’une autre période traverse une copie du secteur occupé; aucun personnage n’en tire une vérité sur l’histoire officielle.",
+      "objective": "Récupérer un témoin puis désactiver les portes. La campagne indique clairement que ce chapitre utilise une variante de personnage.",
+      "outro": "Un fichier joint porte le nom du laboratoire Lambda.",
+      "canon_status": "original_fan_scenario",
+      "status": "specified_not_implemented"
+    },
+    {
+      "id": "story_10",
+      "number": 10,
+      "title": "Deux hommes sans ordre",
+      "playable": "Gordon HL2 ou Adrian",
+      "arena_theme": "Salle Lambda reconstruite",
+      "encounter": "Rival principal Gordon contre Adrian.",
+      "intro": "Les deux entrent par des portes opposées. Le même écran désigne chacun comme cible de l’autre.",
+      "objective": "Duel non létal obligatoire. Après KO, le gagnant détruit le terminal au lieu d’exécuter l’adversaire.",
+      "outro": "Ils regardent la porte commune; aucune réplique n’est écrite pour l’un ou l’autre.",
+      "canon_status": "original_fan_scenario",
+      "status": "specified_not_implemented"
+    },
+    {
+      "id": "story_11",
+      "number": 11,
+      "title": "Accès administrateur",
+      "playable": "Equipe choisie",
+      "arena_theme": "Citadelle",
+      "encounter": "Elite puis boss de grande échelle, avec contrat de boss dédié.",
+      "intro": "Le relais tente d’effacer ses témoins et de restaurer tous ses scénarios.",
+      "objective": "Trois phases lisibles : briser alimentation, détourner faisceau, ouvrir issue. Le boss n’utilise pas les règles de tournoi.",
+      "outro": "Une porte isolée reste debout au milieu du vide.",
+      "canon_status": "original_fan_scenario",
+      "status": "specified_not_implemented"
+    },
+    {
+      "id": "story_12",
+      "number": 12,
+      "title": "Ce qui reste",
+      "playable": "Combattant sélectionné",
+      "arena_theme": "Chambre de résonance",
+      "encounter": "Dernière épreuve de règles supervisée par une présence jamais blessable comme un humain.",
+      "intro": "La présence propose la conservation du relais contre la remise des souvenirs. Son identité peut évoquer le G-Man sans expliquer ses employeurs.",
+      "objective": "Choix final : détruire le relais, évacuer les témoins ou préserver une archive inerte. Ces choix changent l’épilogue fan du mode.",
+      "outro": "La fin propre au personnage se joue, puis une galerie montre les conséquences choisies; le canon externe demeure inchangé.",
+      "canon_status": "original_fan_scenario",
+      "status": "specified_not_implemented"
+    }
+  ],
+  "reserves": [
+    {
+      "id": "civil_protection_hl2",
+      "name": "Civil Protection",
+      "role": "Contrôle court",
+      "ideas": [
+        "Matraque à engagement court",
+        "Sifflet comme feinte lisible"
+      ],
+      "status": "reserve_not_in_24",
+      "competitive_gate": "Anatomie, échelle et interactions à valider; aucun slot déjà livré."
+    },
+    {
+      "id": "overwatch_soldier_hl2",
+      "name": "Overwatch Soldier",
+      "role": "Polyvalent",
+      "ideas": [
+        "Rafale visible",
+        "Grenade à rebond borné"
+      ],
+      "status": "reserve_not_in_24",
+      "competitive_gate": "Anatomie, échelle et interactions à valider; aucun slot déjà livré."
+    },
+    {
+      "id": "fast_zombie_hl2",
+      "name": "Fast Zombie",
+      "role": "Rushdown aérien",
+      "ideas": [
+        "Bond de toit à trajectoire fixe",
+        "Griffure plongeante punissable"
+      ],
+      "status": "reserve_not_in_24",
+      "competitive_gate": "Anatomie, échelle et interactions à valider; aucun slot déjà livré."
+    },
+    {
+      "id": "poison_zombie_hl2",
+      "name": "Poison Zombie",
+      "role": "Marche lente et espace",
+      "ideas": [
+        "Lancer limité de headcrab",
+        "Nuage de menace sans poison létal instantané"
+      ],
+      "status": "reserve_not_in_24",
+      "competitive_gate": "Anatomie, échelle et interactions à valider; aucun slot déjà livré."
+    },
+    {
+      "id": "zombine_ep1",
+      "name": "Zombine",
+      "role": "Risque de proximité",
+      "ideas": [
+        "Course courte télégraphiée",
+        "Grenade récupérable par règle déterministe"
+      ],
+      "status": "reserve_not_in_24",
+      "competitive_gate": "Anatomie, échelle et interactions à valider; aucun slot déjà livré."
+    },
+    {
+      "id": "bullsquid_hl1",
+      "name": "Bullsquid",
+      "role": "Zoning bas",
+      "ideas": [
+        "Crachat en arc",
+        "Balayage de queue"
+      ],
+      "status": "reserve_not_in_24",
+      "competitive_gate": "Anatomie, échelle et interactions à valider; aucun slot déjà livré."
+    },
+    {
+      "id": "houndeye_hl1",
+      "name": "Houndeye",
+      "role": "Zone sonore",
+      "ideas": [
+        "Onde circulaire avec délai",
+        "Bond défensif court"
+      ],
+      "status": "reserve_not_in_24",
+      "competitive_gate": "Anatomie, échelle et interactions à valider; aucun slot déjà livré."
+    },
+    {
+      "id": "shock_trooper_op4",
+      "name": "Shock Trooper",
+      "role": "Pression organique",
+      "ideas": [
+        "Projectile électrique",
+        "Attaque à plusieurs bras fidèle à l’anatomie"
+      ],
+      "status": "reserve_not_in_24",
+      "competitive_gate": "Anatomie, échelle et interactions à valider; aucun slot déjà livré."
+    },
+    {
+      "id": "alien_controller_hl1",
+      "name": "Alien Controller",
+      "role": "Vol borné",
+      "ideas": [
+        "Orbes lentes",
+        "Station aérienne limitée par réserve"
+      ],
+      "status": "reserve_not_in_24",
+      "competitive_gate": "Anatomie, échelle et interactions à valider; aucun slot déjà livré."
+    },
+    {
+      "id": "headcrab_hl1",
+      "name": "Headcrab",
+      "role": "Très petit gabarit",
+      "ideas": [
+        "Saut annoncé",
+        "Accrochage court sans contrôle du joueur"
+      ],
+      "status": "reserve_not_in_24",
+      "competitive_gate": "Anatomie, échelle et interactions à valider; aucun slot déjà livré."
+    },
+    {
+      "id": "gonome_op4",
+      "name": "Gonome",
+      "role": "Lutteur organique",
+      "ideas": [
+        "Projection courte",
+        "Projectile organique à faible fréquence"
+      ],
+      "status": "reserve_not_in_24",
+      "competitive_gate": "Anatomie, échelle et interactions à valider; aucun slot déjà livré."
+    },
+    {
+      "id": "antlion_hl2",
+      "name": "Fourmilion standard",
+      "role": "Mobilité au sol",
+      "ideas": [
+        "Bond oblique",
+        "Percussion de carapace"
+      ],
+      "status": "reserve_not_in_24",
+      "competitive_gate": "Anatomie, échelle et interactions à valider; aucun slot déjà livré."
+    }
+  ]
+}

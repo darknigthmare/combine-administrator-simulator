@@ -1,0 +1,203 @@
+{
+  "schema_version": "0.1.0",
+  "ruleset_id": "resonance_prototype_001",
+  "title": "HALF LIFE RESONANCE",
+  "status": "design_contract_not_implemented",
+  "canon_status": "original_gameplay_adaptation",
+  "simulation": {
+    "ticks_per_second": 60,
+    "authoritative_coordinates": "integer_or_fixed_point",
+    "seeded_randomness_required": true,
+    "rendering_independent": true,
+    "active_timer_excludes": ["intro", "hitstop", "super_cinematic", "transition", "local_pause"]
+  },
+  "duel": {
+    "reference_max_hp": 10000,
+    "proposed_roster_hp_range": [9000, 11500],
+    "rounds_to_win": 2,
+    "round_active_ticks": 5940,
+    "full_hp_on_round_start": true,
+    "timeout_rule": "compare_remaining_hp_fractions_by_cross_multiplication",
+    "simultaneous_ko_rule": "draw_round",
+    "tied_hp_fraction_rule": "draw_round",
+    "draw_round_resource_policy": "restore_round_start_snapshot",
+    "consecutive_draw_rounds_before_draw_game": 3,
+    "draw_game_policy": "replay_game_without_awarding_set_point"
+  },
+  "controls": {
+    "notation": "relative_numpad_facing_right",
+    "buttons": ["L", "M", "H", "S"],
+    "action_buffer_ticks": 6,
+    "quarter_circle_window_ticks": 20,
+    "double_quarter_circle_window_ticks": 30,
+    "normal_directions": ["5", "2", "j"],
+    "forward_directional_heavy": "6H",
+    "character_trait": "5S",
+    "context_prop_interaction": "6S",
+    "forward_dash": "66",
+    "back_dash": "44",
+    "forward_throw": "L+M",
+    "back_throw": "4+L+M",
+    "special_ex": "recognized_special_motion+L+M",
+    "super": "236236H",
+    "ultimate": "236236S",
+    "guard_counter": "6+M+H",
+    "defensive_break": "M+H+S",
+    "ex_input_priority_over_throw": true,
+    "insufficient_meter_ex_falls_back_to_throw": false,
+    "allowed_simple_input_policy": "identical_timing_damage_and_costs_no_combo_macro",
+    "recognition_priority_when_state_allows": ["defensive_command", "ultimate", "super", "ex", "special", "throw", "trait", "prop_interaction", "normal"],
+    "recognized_unaffordable_command_falls_back_to_simple_action": false,
+    "simultaneous_opposite_directions": "neutral_per_axis_before_relative_facing_conversion"
+  },
+  "resonance": {
+    "display_max": 300,
+    "internal_units_per_display_point": 1000,
+    "internal_max": 300000,
+    "initial_internal_units": 0,
+    "persists_between_rounds": true,
+    "resets_between_games": true,
+    "costs_display_points": {
+      "ex": 50,
+      "super": 100,
+      "guard_counter": 100,
+      "defensive_break": 200,
+      "ultimate": 300,
+      "post_victory_finisher": 0
+    },
+    "gain_basis": "actual_hp_removed_by_ordinary_unblocked_hits_after_combo_scaling",
+    "attacker_internal_units_per_hp_removed": 10,
+    "defender_internal_units_per_hp_removed": 5,
+    "no_gain_from": ["whiff", "block", "chip", "ex", "super", "ultimate", "guard_counter", "defensive_break", "stage_hazard"],
+    "cost_commit": "on_validated_action_entry",
+    "refund_after_interruption": false
+  },
+  "defense": {
+    "standing_guard_blocks": ["mid", "high", "overhead"],
+    "crouching_guard_blocks": ["mid", "low"],
+    "overhead_requires_standing_guard": true,
+    "throw_tech_window_ticks": 7,
+    "air_guard_landing_recovery_ticks": 12,
+    "grounded_anti_air_can_have_air_unblockable_flag": true,
+    "chip_percent_of_base_damage": {
+      "normal": 0,
+      "special": 5,
+      "ex": 10,
+      "super": 10,
+      "ultimate": 10
+    },
+    "chip_minimum_remaining_hp": 1,
+    "guard_counter_damage": 0,
+    "defensive_break_attempts_per_game": 1,
+    "defensive_break_forbidden_during": ["throw", "boss_capture", "confirmed_super_cinematic"],
+    "defensive_break_consumes_use_on_valid_attempt_even_if_whiffed": true
+  },
+  "combo": {
+    "normal_chain": ["L", "M", "H"],
+    "same_normal_tier_uses_per_chain": 1,
+    "ordinary_hit_scaling_percent": [100, 90, 80, 70, 60, 50, 45, 40, 30],
+    "ordinary_hit_scaling_floor_percent": 30,
+    "super_scaling_floor_percent": 15,
+    "ultimate_scaling_floor_percent": 20,
+    "damage_rounding": "floor",
+    "minimum_damage_on_damaging_hit": 1,
+    "wall_bounces_per_combo": 1,
+    "ground_bounces_per_combo": 1,
+    "initial_juggle_budget": 12,
+    "maximum_active_ticks_without_control": 600,
+    "forced_escape_policy": "next_safe_action_boundary_no_new_capture_after_current_cinematic",
+    "combo_reset_requires_actionable_defender_state": true,
+    "review_targets_not_hard_caps": {
+      "ordinary_meterless_route_max_reference_hp_percent": 45,
+      "expensive_route_max_reference_hp_percent": 65
+    }
+  },
+  "stage_profiles": {
+    "tournament": {
+      "flat_continuous_floor": true,
+      "normalized_collision": true,
+      "mechanical_props": false,
+      "damage_hazards": false,
+      "parallax_cosmetic_only": true
+    },
+    "spectacle": {
+      "mechanical_props": true,
+      "prop_interactions_per_player_per_round": 2,
+      "prop_respawn": "next_round",
+      "hazards_require_telegraph": true,
+      "hazards_deterministic": true,
+      "mechanical_effects_declared_in_lobby": true
+    }
+  },
+  "projectiles": {
+    "default_max_persistent_per_fighter": 2,
+    "heavy_exception_max_instances": 1,
+    "clash_policy": "authored_durability_and_compatibility",
+    "full_screen_instant_normal_shots": false
+  },
+  "arcade": {
+    "ordinary_fights": 6,
+    "rival_fights": 1,
+    "boss_fights": 1,
+    "total_steps": 8,
+    "required_narrative": ["character_intro", "rival_scene", "rival_victory", "ending"],
+    "canon_status": "original_interpretation"
+  },
+  "mode_exceptions": {
+    "survival": {
+      "post_win_hp_restore_max_hp_percent": 15,
+      "hp_restore_capped_to_max": true,
+      "resonance_persists_between_fights": true
+    },
+    "three_fighter_relay": {
+      "instant_tag": false,
+      "survivor_hp_restore_max_hp_percent": 10,
+      "new_entrant_resources_reset": true
+    }
+  },
+  "tournament": {
+    "formats": ["single_elimination", "double_elimination"],
+    "supported_bracket_sizes": [4, 8, 16, 32],
+    "minimum_entrants": 4,
+    "maximum_entrants": 32,
+    "bracket_size_policy": "smallest_supported_size_at_least_entrant_count",
+    "default_games_to_win_set": 2,
+    "finals_games_to_win_set": 3,
+    "finals_categories": ["winners_final", "losers_final", "grand_final"],
+    "double_elimination_losses_to_eliminate": 2,
+    "grand_final_reset_if_losers_bracket_winner_wins_first_set": true,
+    "grand_final_reset_is_complete_new_set": true,
+    "byes_are_not_played_game_wins": true,
+    "game_winner_keeps_fighter": true,
+    "game_loser_can_change_fighter": true,
+    "score_corrections_must_expose_invalidated_descendants": true
+  },
+  "finishers": {
+    "available_only_after_game_victory": true,
+    "choice_window_ticks": 300,
+    "meter_cost": 0,
+    "default_if_no_input": "short_victory_pose",
+    "incompatible_victim_fallback": "authored_variant_or_short_victory",
+    "reduced_violence_presentation_supported": true,
+    "cannot_change_match_result": true
+  },
+  "training": {
+    "dummy_recording_slots_per_fighter": 5,
+    "seeded_weighted_random_playback": true,
+    "frame_step_uses_simulation_ticks": true,
+    "save_situation_includes_projectiles_and_resources": true,
+    "input_refusal_reasons": ["resource", "range", "state", "incomplete_motion", "unsupported_variant"]
+  },
+  "integration_proposal": {
+    "repository": "darknigthmare/combine-administrator-simulator",
+    "observed_branch": "master",
+    "observed_package_version": "0.47.0",
+    "proposed_module": "src/features/resonance",
+    "simulation_independent_from_react_render": true,
+    "progression_namespace_isolated_from_management": true,
+    "rollback_status": "target_not_implemented",
+    "online_services_status": "target_not_implemented",
+    "replay_requires": ["schema_version", "rules_version", "fighter_ids", "stage_id", "influential_options", "rng_seed", "inputs"],
+    "production_statuses": ["proposed", "documented", "image_generated", "image_reviewed", "animation_produced", "integrated", "verified_in_game"]
+  }
+}

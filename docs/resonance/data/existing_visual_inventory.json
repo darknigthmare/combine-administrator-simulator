@@ -1,0 +1,605 @@
+[
+  {
+    "path": "public/citadel_blueprint.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/combine_terminal_banner.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/favicon.png",
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/administrators/civil-director.webp",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/administrators/combine-technocrat.webp",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/administrators/field-prefect.webp",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/administrators/quarantine-director.webp",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/banners/citadel-requisitions.webp",
+    "size": [
+      2027,
+      776
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/banners/command-deck.webp",
+    "size": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/dossiers/lambda-courier.webp",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/dossiers/nova-detainee.webp",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/dossiers/suspected-citizen.webp",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/dossiers/vortigaunt-biotic-lore.webp",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/dossiers/vortigaunt-biotic.webp",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/events/breencast-propaganda.webp",
+    "size": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/events/citadel-audit.webp",
+    "size": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/events/civilian-riot.webp",
+    "size": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/events/infrastructure-failure.webp",
+    "size": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/events/lambda-sabotage.webp",
+    "size": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/events/major-advisor-arrival.webp",
+    "size": [
+      1600,
+      900
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/events/major-breencast-relay-blast.webp",
+    "size": [
+      1600,
+      900
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/events/major-citadel-blackout.webp",
+    "size": [
+      1600,
+      900
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/events/major-civil-protection-mutiny.webp",
+    "size": [
+      1600,
+      900
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/events/major-headcrab-shell-exposure.webp",
+    "size": [
+      1600,
+      900
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/events/major-lambda-coordinated-assault.webp",
+    "size": [
+      1600,
+      900
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/events/major-nova-prospekt-escape.webp",
+    "size": [
+      1600,
+      900
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/events/major-razor-train-loss.webp",
+    "size": [
+      1600,
+      900
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/events/major-vortessence-resonance.webp",
+    "size": [
+      1600,
+      900
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/events/major-xen-rift.webp",
+    "size": [
+      1600,
+      900
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/events/moral-quarantine.webp",
+    "size": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/events/overwatch-pacification.webp",
+    "size": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/events/xen-breach.webp",
+    "size": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/modules/breencast-archive.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/modules/city17-surveillance.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/units/advisor-lore.webp",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/units/advisor.webp",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/units/bioquarantine-team-lore.webp",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/units/bioquarantine-team.webp",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/units/city-scanner.webp",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/units/civil-protection.webp",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/units/combine-elite.webp",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/units/combine-grunt-lore.webp",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/units/combine-grunt.webp",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/units/combine-ordinal-lore.webp",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/units/combine-ordinal.webp",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/units/combine-suppressor-lore.webp",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/units/combine-suppressor.webp",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/units/dropship-lore.webp",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/units/dropship.webp",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/units/gunship-lore.webp",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/units/gunship.webp",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/units/hunter-lore.webp",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/units/hunter.webp",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/units/manhack-lore.webp",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/units/manhack.webp",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/units/overwatch-soldier.webp",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/units/strider.webp",
+    "size": [
+      1448,
+      1086
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/unlocks/advisor-link-lore.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/unlocks/advisor-link.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/unlocks/nova-channel.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/unlocks/ota-command.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/unlocks/razor-train.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/unlocks/xen-bioscan-lore.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/unlocks/xen-bioscan.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/unlocks/xen-research-lore.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/openai-visuals/unlocks/xen-research.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGB",
+    "frames": 1
+  },
+  {
+    "path": "public/wallace_breen_cctv.png",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "RGB",
+    "frames": 1
+  }
+]
