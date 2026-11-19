@@ -109,13 +109,15 @@
       "file_path": "assets/resonance/candidates/stage_black_mesa_testchamber_master.png",
       "repository_path": "assets/resonance/candidates/stage_black_mesa_testchamber_master.png",
       "certified_one_to_one": false,
-      "integrated_in_game": false,
+      "integrated_in_game": true,
       "animation_clip_complete": false,
       "notes": "Panorama maître original en composition latérale. Une image composite ne constitue pas six couches de parallaxe.",
       "prompt": "Use case: stylized-concept. Produce one wide landscape master background illustration for a SIDE-ON 2D fighting game arena based faithfully on the ANOMALOUS MATERIALS TEST CHAMBER and anti-mass spectrometer in the ORIGINAL HALF-LIFE 1998 Black Mesa laboratory, not the Crowbar Collective remake. Treat this as a layout reference, no characters. Camera at fighter torso height looking directly across a completely level horizontal combat platform spanning the entire lower quarter. Original game industrial circular test chamber architecture: central towering yellow-black scientific spectrometer apparatus in the BACKGROUND behind combat plane, thick steel columns, large cylindrical machine with emitting green-yellow beam apparatus, industrial tiled metallic walls, heavy glass control windows high at side, hazard stripes, ribbed metal catwalks, chunky restrained late-1990s science facility design. Main combat lane flat and unobstructed from left edge to right edge, no stairs/perspective runway. Provide depth strata: distant chamber ceiling, back machine and walls, middle pipes, clear foreground metal platform and small edge details. Muted grey green steel palette with amber industrial light and green beam highlights, controlled contrast behind future fighters. Detailed painted 2D UHD background, faithful Half-Life visual motifs, not photoreal camera, not isometric, not cinematic tilted view. Absolutely no people, no HUD, no text overlays, no title, no logo. One complete panorama.",
       "owner_type": "stage",
       "sha256": "2043431d54840038b51bcc2f0f08e16fcd0907c6b7ef9e772e1d6db6f5d2982b",
-      "byte_size": 2408365
+      "byte_size": 2408365,
+      "integration_scope": "boss_battle_prototype_background",
+      "integration_note": "Réutilisation du panorama candidat dans le rendu tactique Boss Battle. Ne valide pas une arène à six couches ni la fidélité 1:1."
     },
     {
       "asset_id": "stage_city17_station_master",
@@ -131,13 +133,15 @@
       "file_path": "assets/resonance/candidates/stage_city17_station_master.png",
       "repository_path": "assets/resonance/candidates/stage_city17_station_master.png",
       "certified_one_to_one": false,
-      "integrated_in_game": false,
+      "integrated_in_game": true,
       "animation_clip_complete": false,
       "notes": "Panorama maître de gare. Relevé de façade, position de Citadelle et signalétique à comparer aux captures du jeu.",
       "prompt": "Use case: stylized-concept. Generate ONE wide landscape master background for a 2D side-view fighting arena at the exterior railway station plaza of CITY 17 in HALF-LIFE 2, faithful visual reference candidate. No characters. Side-on fixed fighting game camera: uninterrupted level flat cobbled combat lane spans all of lower quarter, horizon above fighters, no stairs or props blocking the lane. Behind it distinctive faded eastern European neoclassical station facade, old stone archways, subtle yellow plaster and worn grey masonry, overhead catenary cables, Combine utilitarian metal checkpoint barriers at the SIDES behind the combat lane, station clocks and distant weathered apartment blocks; in the distance tall unmistakable angular blue grey Combine Citadel dominating hazy pale overcast sky. Pre-uprising setting, intact but oppressive occupied city; not post-apocalyptic flames or neon cyberpunk. Plan visual layers: far sky/Citadel, distant rooftops, station back facade, rear checkpoint details, flat cobbled ground, restrained foreground curb at very bottom. Warm faded ochre stone against cold steel blue, detailed hand-painted 2D UHD background, crisp material detail with controlled contrast. Original Half-Life 2 look. NO fighters, NO civilians, NO police, NO HUD, NO menu, NO captions, NO title. One empty arena panorama, not a contact sheet, not isometric.",
       "owner_type": "stage",
       "sha256": "cf8098ad5ff20a9fde880a449b1c6d2c16bc930cb95ae7560a95ea24f69ab970",
-      "byte_size": 2803658
+      "byte_size": 2803658,
+      "integration_scope": "boss_battle_prototype_background",
+      "integration_note": "Réutilisation du panorama candidat dans le rendu tactique Boss Battle. Ne valide pas une arène à six couches ni la fidélité 1:1."
     },
     {
       "asset_id": "layer_black_mesa_floor",

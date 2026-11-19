@@ -144,6 +144,16 @@
     "canon_status": "original_interpretation"
   },
   "mode_exceptions": {
+    "boss_battle": {
+      "rules_file": "boss_battle_rules.json",
+      "catalog_file": "boss_battle_catalog.json",
+      "runtime_module": "src/features/resonance/bossBattle",
+      "status": "playable_mechanics_prototype",
+      "separate_encounter_simulation": true,
+      "uses_duel_round_structure": false,
+      "fighter_profiles_are_not_full_duel_movesets": true,
+      "certified_one_to_one": false
+    },
     "survival": {
       "post_win_hp_restore_max_hp_percent": 15,
       "hp_restore_capped_to_max": true,

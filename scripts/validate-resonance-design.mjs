@@ -108,7 +108,11 @@ for (const move of moves) {
 
 let generated = 0;
 for (const asset of art.assets) {
-  check(asset.certified_one_to_one === false && asset.integrated_in_game === false, `${asset.asset_id}: unsupported completion claim`);
+  check(asset.certified_one_to_one === false, `${asset.asset_id}: unsupported fidelity claim`);
+  if (asset.integrated_in_game) {
+    check(['stage_black_mesa_testchamber_master', 'stage_city17_station_master'].includes(asset.asset_id), `${asset.asset_id}: unexpected prototype integration`);
+    check(asset.integration_scope === 'boss_battle_prototype_background', `${asset.asset_id}: unspecified prototype integration scope`);
+  }
   if (asset.owner_type === 'fighter') check(fighterIds.has(asset.owner_id), `${asset.asset_id}: unknown fighter owner`);
   if (asset.owner_type === 'stage') check(stageIds.has(asset.owner_id), `${asset.asset_id}: unknown stage owner`);
   if (asset.generation_status !== 'généré') {
@@ -130,5 +134,5 @@ if (errors.length) {
   console.error(errors.map(error => `FAIL ${error}`).join('\n'));
   process.exitCode = 1;
 } else {
-  console.log(JSON.stringify({ status: 'passed', fighters: fighters.length, storyChapters: roster.story_chapters.length, specialTechniques: specials.length, exVariants: exVariants.length, stages: stages.length, productionGroups: backlog.length, animationSequencesPerPilot: animation.sequences.length, drawingsPerPilotOneFacing: 547, pilotMoves: moves.length, generatedImages: generated, certifiedOneToOne: 0, note: 'Design data and returned assets validated; no gameplay or network implementation asserted.' }, null, 2));
+  console.log(JSON.stringify({ status: 'passed', fighters: fighters.length, storyChapters: roster.story_chapters.length, specialTechniques: specials.length, exVariants: exVariants.length, stages: stages.length, productionGroups: backlog.length, animationSequencesPerPilot: animation.sequences.length, drawingsPerPilotOneFacing: 547, pilotMoves: moves.length, generatedImages: generated, prototypeBackgrounds: art.assets.filter(asset => asset.integrated_in_game).length, certifiedOneToOne: 0, note: 'Design data and image provenance validated. The Boss Battle simulation has its own tests; no network implementation or final visual fidelity is asserted.' }, null, 2));
 }
