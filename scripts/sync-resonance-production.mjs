@@ -145,6 +145,12 @@ for (const asset of requests) {
   if (!linkedTargets.length) unassignedRequests.push({ ...requestSummary, reason: asset.owner_type === 'shared_collection' ? 'shared_collection_outside_target_queue' : 'no_exact_target_association', repository_path: file?.repository_path ?? null });
   for (const target of linkedTargets) {
     if (target.category === 'archive' && asset.runtime_enabled === true) fail('archive_asset_runtime_enabled', 'An archive asset must not enable runtime content.', { asset_id: id, target_id: target.target_id });
+    if (target.category === 'stage') {
+      const layerId = asset.layer_id;
+      if (layerId != null && (typeof layerId !== 'string' || !layerId.trim())) fail('invalid_layer_id', 'A declared layer_id must be a non-empty string.', { asset_id: id, target_id: target.target_id });
+      else if (layerId != null && target.required_layer_ids.length && !target.required_layer_ids.includes(layerId)) fail('unknown_stage_layer_id', 'The declared layer_id is absent from this stage contract.', { asset_id: id, target_id: target.target_id, layer_id: layerId, required_layer_ids: target.required_layer_ids });
+      if (file && /stage_layer/.test(asset.category ?? '') && layerId == null) warn('layer_id_missing', 'A legacy layer file has no declared layer_id; it counts as a file, not an identified stage plane.', { asset_id: id, target_id: target.target_id, repository_path: file.repository_path });
+    }
     if (file) target.actual_assets.push({ asset_id: id, ...file, category: asset.category ?? null, layer_id: asset.layer_id ?? null, qa_status: asset.qa_status ?? null, certified_one_to_one_declared: asset.certified_one_to_one === true, animation_clip_complete_declared: asset.animation_clip_complete === true, integrated_in_game_declared: asset.integrated_in_game === true, association: explicitlyTargeted ? 'explicit_target_id' : 'base_owner_id' });
     else if (refused) target.refused_requests.push(requestSummary);
     else target.other_unproduced_requests.push(requestSummary);
@@ -154,7 +160,23 @@ for (const asset of requests) {
 for (const target of targetMap.values()) {
   target.actual_file_count = new Set(target.actual_assets.map(asset => asset.repository_path)).size;
   target.master_candidate_count = new Set(target.actual_assets.filter(asset => asset.category === 'stage_master').map(asset => asset.repository_path)).size;
-  target.layer_candidate_count = new Set(target.actual_assets.filter(asset => /stage_layer/.test(asset.category ?? '')).map(asset => asset.repository_path)).size;
+  const layerAssets = target.actual_assets.filter(asset => /stage_layer/.test(asset.category ?? ''));
+  target.layer_candidate_count = new Set(layerAssets.map(asset => asset.repository_path)).size;
+  if (target.category === 'stage') {
+    const fileLayerIds = new Map();
+    for (const asset of layerAssets) {
+      if (!fileLayerIds.has(asset.repository_path)) fileLayerIds.set(asset.repository_path, new Set());
+      if (typeof asset.layer_id === 'string' && asset.layer_id.trim()) fileLayerIds.get(asset.repository_path).add(asset.layer_id);
+    }
+    // Revisions of one plane count once; one physical file cannot supply two planes.
+    for (const [path, ids] of fileLayerIds) if (ids.size > 1) fail('conflicting_file_layer_ids', 'One PNG is assigned to multiple planes of the same stage.', { target_id: target.target_id, repository_path: path, layer_ids: [...ids] });
+    target.layer_contract_known = target.required_layer_ids.length > 0;
+    target.layer_candidate_ids = [...new Set([...fileLayerIds.values()].filter(ids => ids.size === 1).flatMap(ids => [...ids]))].filter(id => !target.layer_contract_known || target.required_layer_ids.includes(id)).sort();
+    target.layer_candidate_id_count = target.layer_candidate_ids.length;
+    target.layer_candidate_files_without_id_count = [...fileLayerIds.values()].filter(ids => ids.size === 0).length;
+    target.missing_layer_ids = target.layer_contract_known ? target.required_layer_ids.filter(id => !target.layer_candidate_ids.includes(id)) : null;
+    target.missing_layer_id_count = target.missing_layer_ids?.length ?? null;
+  }
   target.certified_asset_count_declared = target.actual_assets.filter(asset => asset.certified_one_to_one_declared).length;
   target.production_status = target.actual_file_count ? 'candidate_files_present_work_remaining' : target.refused_requests.length ? 'no_file_refusal_recorded' : 'no_file';
   target.completion_note = 'No target, animation, visual-fidelity review or six-layer stage is closed by this queue.';
@@ -171,6 +193,8 @@ for (const target of targetMap.values()) {
 }
 
 const targets = [...targetMap.values()];
+const stageTargets = targets.filter(target => target.category === 'stage');
+const stageLayerAssets = stageTargets.flatMap(target => target.actual_assets.filter(asset => /stage_layer/.test(asset.category ?? '')));
 const counts = {
   targets: targets.length, by_source_bucket: groupCounts(targets, 'source_bucket'), by_category: groupCounts(targets, 'category'), by_content_class: groupCounts(targets, 'content_class'),
   targets_with_files: targets.filter(target => target.actual_file_count > 0).length,
@@ -179,6 +203,11 @@ const counts = {
   costume_targets_with_exactly_associated_files: targets.filter(target => target.category === 'costume' && target.actual_file_count > 0).length,
   generation_requests: requests.length, generated_requests: generatedRequests, refused_requests: refusedRequests, distinct_registered_png_files_present: physicalFiles.size,
   requests_outside_target_queue: unassignedRequests.length,
+  stage_layer_candidate_files: new Set(stageLayerAssets.map(asset => asset.repository_path)).size,
+  stage_layer_candidate_ids: stageTargets.reduce((sum, target) => sum + target.layer_candidate_id_count, 0),
+  stage_layer_files_without_id: new Set(stageLayerAssets.filter(asset => asset.layer_id == null).map(asset => asset.repository_path)).size,
+  stage_layer_missing_ids_in_known_contracts: stageTargets.reduce((sum, target) => sum + (target.missing_layer_id_count ?? 0), 0),
+  stages_without_layer_contract: stageTargets.filter(target => !target.layer_contract_known).length,
   archives: targets.filter(target => target.category === 'archive').length,
   archives_runtime_enabled: targets.filter(target => target.category === 'archive' && target.runtime_enabled_declared === true).length,
   targets_automatically_completed: 0,
@@ -187,7 +216,7 @@ if (targets.some(target => !target.source_game)) warn('source_game_missing', 'So
 const queue = {
   schema_version: '1.0', generated_at: new Date().toISOString(), module: 'Half Life Resonance', status: errors.length ? 'failed' : 'passed',
   input_files: [...new Set(sourceEntries.map(([, filename]) => `${dataDirectory}/${filename}`)), `${dataDirectory}/generated_art_register.json`],
-  semantics: { target_count: 'Catalogue targets, not playable characters or produced sprites.', physical_files: 'Only registered PNG paths that currently exist. See asset_audit.json for header and checksum validation.', costumes: 'Explicit own target_ids required; base-owner artwork is never inherited.', references: 'Source IDs resolve within their own catalogue namespace; roster-wide references remain labelled catalogue context.', completion: 'Candidate files never automatically complete fidelity, animation or stage production.' },
+  semantics: { target_count: 'Catalogue targets, not playable characters or produced sprites.', physical_files: 'Only registered PNG paths that currently exist. See asset_audit.json for header and checksum validation.', stage_layers: 'layer_candidate_count counts distinct PNG paths; layer_candidate_ids counts declared plane IDs once per stage, regardless of revisions. Files without layer_id identify no plane. Missing IDs refer only to known contracts and remain null for unknown contracts. A candidate plane is not a validated or completed plane.', costumes: 'Explicit own target_ids required; base-owner artwork is never inherited.', references: 'Source IDs resolve within their own catalogue namespace; roster-wide references remain labelled catalogue context.', completion: 'Candidate files never automatically complete fidelity, animation or stage production.' },
   counts, targets, refusals_by_owner: refusalsByOwner, requests_outside_target_queue: unassignedRequests, errors, warnings,
 };
 
@@ -222,5 +251,6 @@ if (args.includes('--write') && !errors.length) {
 
 console.log(JSON.stringify({ status: queue.status, counts, errors: errors.length, warnings: warnings.length, written: args.includes('--write') && !errors.length }));
 for (const error of errors.slice(0, 12)) console.error(`FAIL ${error.code}: ${error.target_id ?? error.asset_id ?? error.source_id ?? ''} ${error.message}`);
+for (const warning of warnings.filter(item => item.code === 'layer_id_missing').slice(0, 12)) console.warn(`WARN ${warning.code}: ${warning.asset_id} ${warning.message}`);
 if (errors.length > 12) console.error(`... ${errors.length - 12} further validation errors.`);
 if (errors.length) process.exitCode = 1;

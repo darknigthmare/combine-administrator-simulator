@@ -1314,14 +1314,14 @@
       "source_code": "HL2",
       "priority": "P1",
       "reference_location": "Canaux industriels de la fuite hors de Cité 17",
-      "reference_status": "à vérifier sur captures du jeu source",
+      "reference_status": "capture officielle inspectée; adaptation latérale candidate à valider",
       "evidence": {
-        "title": "Half-Life 2",
-        "url": "https://www.half-life.com/en/halflife2",
-        "checked_scope": "Cité 17, occupation et résistance, Gordon et Alyx; détails architecturaux à vérifier en jeu."
+        "title": "Valve / Steam — canaux, capture 06",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_394f4ad714937db2cc90545972b318ddb6db7231.1920x1080.jpg?t=1745368545",
+        "checked_scope": "Référence visuelle effectivement chargée. Projection latérale recomposée pour le combat; ni topologie ni fichiers générés certifiés 1:1."
       },
       "creative_status": "adaptation 2D originale non canonique",
-      "asset_status": "spécifié",
+      "asset_status": "maître candidat présent; couches et validation restantes",
       "competitive": {
         "flat_ground": true,
         "ground_y_logical_px": 880,
@@ -1373,7 +1373,11 @@
           "content": "chemin de halage plat",
           "separate_image": true,
           "generated": false,
-          "verified": false
+          "verified": false,
+          "candidate_asset_ids": [
+            "layer_canals_floor_d"
+          ],
+          "candidate_note": "Fichier candidat seulement; generated/verified restent faux jusqu’à validation de la couche complète."
         },
         {
           "id": "L05_foreground",
@@ -1422,6 +1426,24 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
+      ],
+      "reference_capture": {
+        "reference_filename": "steam_220_06.jpg",
+        "sha256": "3a62820009b6d7e1ddb3829187f3df1b8642b42825be056f18e159d829fe6eb4",
+        "width": 1920,
+        "height": 1080,
+        "visually_inspected": true,
+        "source_id": "steam_canals_d",
+        "title": "Valve / Steam — canaux, capture 06",
+        "source_game": "Half-Life 2",
+        "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_394f4ad714937db2cc90545972b318ddb6db7231.1920x1080.jpg?t=1745368545",
+        "provenance": "primary_official_screenshot",
+        "context_note": "La page Steam app220 inclut aussi les épisodes; le contenu de cette capture détermine ici le jeu, pas le seul appid.",
+        "role": "visual_identity_reference"
+      },
+      "generated_asset_ids": [
+        "layer_canals_floor_d",
+        "stage_canals_master_d"
       ]
     },
     {
@@ -1550,14 +1572,14 @@
       "source_code": "HL2",
       "priority": "P0",
       "reference_location": "Rue industrielle déserte de Ravenholm selon Half-Life 2",
-      "reference_status": "à vérifier sur captures du jeu source",
+      "reference_status": "capture officielle inspectée; adaptation latérale candidate à valider",
       "evidence": {
-        "title": "Half-Life 2",
-        "url": "https://www.half-life.com/en/halflife2",
-        "checked_scope": "Cité 17, occupation et résistance, Gordon et Alyx; détails architecturaux à vérifier en jeu."
+        "title": "Valve / Steam — Ravenholm, capture 04",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_c400361f185800786ea984e795f2a0dd4afee990.1920x1080.jpg?t=1745368545",
+        "checked_scope": "Référence visuelle effectivement chargée. Projection latérale recomposée pour le combat; ni topologie ni fichiers générés certifiés 1:1."
       },
       "creative_status": "adaptation 2D originale non canonique",
-      "asset_status": "spécifié",
+      "asset_status": "maître candidat présent; couches et validation restantes",
       "competitive": {
         "flat_ground": true,
         "ground_y_logical_px": 880,
@@ -1658,6 +1680,23 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
+      ],
+      "reference_capture": {
+        "reference_filename": "steam_220_04.jpg",
+        "sha256": "da41455633dce18fac0cacb1fa5de222b4ac098163a0091ae0efe24f66fe1515",
+        "width": 1920,
+        "height": 1080,
+        "visually_inspected": true,
+        "source_id": "steam_ravenholm_d",
+        "title": "Valve / Steam — Ravenholm, capture 04",
+        "source_game": "Half-Life 2",
+        "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_c400361f185800786ea984e795f2a0dd4afee990.1920x1080.jpg?t=1745368545",
+        "provenance": "primary_official_screenshot",
+        "context_note": "La page Steam app220 inclut aussi les épisodes; le contenu de cette capture détermine ici le jeu, pas le seul appid.",
+        "role": "visual_identity_reference"
+      },
+      "generated_asset_ids": [
+        "stage_ravenholm_master_d"
       ]
     },
     {

@@ -244,6 +244,30 @@
       "kind": "site_officiel",
       "accessed": "2026-11-19",
       "note": "Accès aux démonstrations restaurées et au documentaire officiel."
+    },
+    {
+      "id": "steam_strider_ep2_09_d",
+      "title": "Valve / Steam — Strider et Hunters, capture 09",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_ed5532325f508728f8481f0109d662352a519e0a.1920x1080.jpg?t=1745368545",
+      "kind": "primary_official_screenshot",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Bitmap effectivement chargé et inspecté pour le lot D; aucune certification automatique de la sortie générée."
+    },
+    {
+      "id": "steam_strider_ep2_18_d",
+      "title": "Valve / Steam — Strider et Hunters, capture 18",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_fe894d70bdfa75236a4b451efbeea7d4ce3e0174.1920x1080.jpg?t=1745368545",
+      "kind": "primary_official_screenshot",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Bitmap effectivement chargé et inspecté pour le lot D; aucune certification automatique de la sortie générée."
+    },
+    {
+      "id": "valve_advisor_model_video_d",
+      "title": "Valve — Advisor, vidéo de modèle du 20e anniversaire",
+      "url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/advisor.webm",
+      "kind": "primary_official_model_video_frame",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Bitmap effectivement chargé et inspecté pour le lot D; aucune certification automatique de la sortie générée."
     }
   ],
   "bosses": [
@@ -527,16 +551,41 @@
       ],
       "source_ids": [
         "strider",
-        "ep2_commentary"
+        "ep2_commentary",
+        "steam_strider_ep2_09_d",
+        "steam_strider_ep2_18_d"
       ],
       "source_urls": [
         "https://www.combineoverwiki.net/wiki/Strider",
-        "https://combineoverwiki.net/wiki/Developer_commentary/Half-Life_2:_Episode_Two"
+        "https://combineoverwiki.net/wiki/Developer_commentary/Half-Life_2:_Episode_Two",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_ed5532325f508728f8481f0109d662352a519e0a.1920x1080.jpg?t=1745368545",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_fe894d70bdfa75236a4b451efbeea7d4ce3e0174.1920x1080.jpg?t=1745368545"
       ],
       "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
       "visual_status": "reference_and_animation_validation_required",
       "certified_one_to_one": false,
-      "runtime_enabled": false
+      "runtime_enabled": false,
+      "reference_capture": {
+        "reference_filename": "steam_220_09.jpg",
+        "sha256": "91ccecc3c41cbf60a0d762549da72546bcbb81b6d4735785da355a1e0ba8ff3d",
+        "width": 1440,
+        "height": 900,
+        "visually_inspected": true,
+        "source_id": "steam_strider_ep2_09_d",
+        "title": "Valve / Steam — Strider et Hunters, capture 09",
+        "source_game": "Half-Life 2 Episode Two",
+        "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_ed5532325f508728f8481f0109d662352a519e0a.1920x1080.jpg?t=1745368545",
+        "provenance": "primary_official_screenshot",
+        "context_note": "La page Steam app220 inclut aussi les épisodes; le contenu de cette capture détermine ici le jeu, pas le seul appid.",
+        "role": "visual_identity_reference"
+      },
+      "visual_reference_status": "official_bitmap_inspected_candidate_not_certified",
+      "generated_asset_ids": [
+        "strider_whiteforest_ep2_idle_left_d"
+      ],
+      "failed_request_ids": [
+        "strider_whiteforest_ep2_idle_left_v2_d"
+      ]
     },
     {
       "id": "strider_hla",
@@ -1388,15 +1437,39 @@
         "Aucun corps humanoïde ajouté"
       ],
       "source_ids": [
-        "advisor"
+        "advisor",
+        "valve_advisor_model_video_d"
       ],
       "source_urls": [
-        "https://combineoverwiki.net/wiki/Advisor"
+        "https://combineoverwiki.net/wiki/Advisor",
+        "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/advisor.webm"
       ],
       "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
       "visual_status": "reference_and_animation_validation_required",
       "certified_one_to_one": false,
-      "runtime_enabled": false
+      "runtime_enabled": false,
+      "reference_capture": {
+        "reference_filename": "advisor_reference_01.png",
+        "sha256": "181a2da5e43cd0351acd2bef51a5b35408e0b336050bf698f4d3c47d2742a290",
+        "width": 717,
+        "height": 640,
+        "visually_inspected": true,
+        "source_id": "valve_advisor_model_video_d",
+        "title": "Valve — Advisor, vidéo de modèle du 20e anniversaire",
+        "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/advisor.webm",
+        "page_url": "https://www.half-life.com/en/halflife2/20th",
+        "provenance": "primary_official_model_video_frame",
+        "video_sha256": "27320ddfa73f8295f87ae7320c1562ddefa94117b812810f5ab596b12d677d4b",
+        "video_byte_size": 1026113,
+        "extraction": "ffmpeg -c:v libvpx -i valve_advisor.webm -vf fps=1 -frames:v 3 advisor_reference_%02d.png; première sortie retenue, sans redimensionnement.",
+        "timecode_seconds": null,
+        "context_note": "Modèle officiel Valve utilisé pour le candidat Advisor; le timecode exact de sélection fps=1 n’est pas déclaré. Aucun duel canonique ni animation complète n’en est déduit.",
+        "role": "visual_identity_reference"
+      },
+      "visual_reference_status": "official_bitmap_inspected_candidate_not_certified",
+      "generated_asset_ids": [
+        "advisor_extraction_ep2_idle_right_d"
+      ]
     },
     {
       "id": "glados_portal1",

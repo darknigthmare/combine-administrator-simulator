@@ -2,13 +2,23 @@
 
 Bible, production graphique et premier module Boss Battle jouable du mode annexe de combat 2D de Half Life Administrator.
 
-## Suite du 20 novembre — lot C publié après le lot B
+## Suite du 20 novembre — lot D
 
-La bible Markdown passe en **version 1.3**. Le [chapitre Aperture](chapters/aperture_combat_design_20261120.md) développe trois kits et 69 actions proposées, douze routes, les parcours narratifs, une rencontre Rocket Turret en trois phases et deux plans d’arènes. Ces spécifications enrichissent huit cibles existantes et restent à implémenter.
+La bible Markdown passe en **version 1.4**. Le [chapitre des machines du Cartel](chapters/combine_encounter_design_20261120.md) précise cinq profils existants, quinze phases, treize attaques, dix-sept zones de collision proposées et **77 clips à produire**. Il ajoute trois plans de stages et dix-huit couches documentaires. Les comportements observés dans le prototype et les règles attestées par le SDK Valve sont distingués des adaptations proposées.
+
+Le [lot D et sa galerie](production/continuation_20261120_d/README.md) ajoutent **huit PNG pour sept cibles** : soldat Overwatch, Fourmilion et Zombine de la réserve, Strider de White Forest, Advisor, maîtres Ravenholm et Canaux, et sol séparé des Canaux. Aucun costume n’est ajouté dans ce lot. Une correction du détourage du Strider a été refusée ; sa première version reste disponible avec ses franges documentées.
+
+L’état courant vérifié est de **27 PNG distincts**, **39 demandes**, **12 refus**, **187 cibles**, dont **20 avec un fichier associé et 167 sans fichier**. Les douze réserves ont désormais un jeu d’origine renseigné. Les quatre fichiers de couches correspondent à trois plans identifiés ; la silhouette de Cité 17 mélange encore ciel et Citadelle et reste sans ID de plan. Aucun stage à six couches, clip animé ni contrôle de fidélité 1:1 n’est déclaré terminé.
+
+Les nouveaux fichiers restent candidats et ne changent pas les quatre boss du prototype. Les exports Word/Excel v1 demeurent historiques ; les sources Markdown/JSON courantes font foi.
+
+## Lot C — état historique avant le lot D
+
+La bible Markdown passait en **version 1.3**. Le [chapitre Aperture](chapters/aperture_combat_design_20261120.md) développe trois kits et 69 actions proposées, douze routes, les parcours narratifs, une rencontre Rocket Turret en trois phases et deux plans d’arènes. Ces spécifications enrichissent huit cibles existantes et restent à implémenter.
 
 Le [lot C et sa galerie](production/continuation_20261120_c/README.md) ajoutent **sept PNG pour cinq cibles** : Chell Portal 1, tenue Chell Portal 2, noyau de Grady, Rocket Turret (v1 et v2) et chaîne de fabrication Portal 2 (maître et sol séparé). Wheatley, ATLAS et P-body ont été refusés par le service et restent sans fichier.
 
-L’état courant vérifié est de **19 PNG distincts**, **30 demandes**, **11 refus**, **187 cibles**, dont **13 avec un fichier associé et 174 sans fichier**. Les contours, poses latérales, animations, autres couches et validations de fidélité restent à terminer. Les exports Word/Excel v1 demeurent historiques ; le Markdown/JSON courant fait foi.
+À l’issue du lot C, l’état vérifié était de **19 PNG distincts**, **30 demandes**, **11 refus**, **187 cibles**, dont **13 avec un fichier associé et 174 sans fichier**. Les contours, poses latérales, animations, autres couches et validations de fidélité restent à terminer.
 
 <!-- CURRENT_CONTINUATION_20261120_B -->
 ## Lot B — état historique avant le lot C

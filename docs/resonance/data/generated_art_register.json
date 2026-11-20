@@ -4,15 +4,15 @@
   "module": "Half Life Resonance",
   "generator": "image_gen built-in",
   "counts": {
-    "requests": 30,
-    "generated": 19,
-    "blocked": 11,
+    "requests": 39,
+    "generated": 27,
+    "blocked": 12,
     "certified_one_to_one": 0,
     "integrated_in_game": 2,
     "completed_animation_clips": 0,
     "completed_six_layer_stages": 0,
     "discarded_generated_iterations": 1,
-    "generation_calls_including_discarded_iterations": 31
+    "generation_calls_including_discarded_iterations": 40
   },
   "assets": [
     {
@@ -165,7 +165,9 @@
       "prompt": "Use case: background-extraction. Edit this existing empty Half-Life Black Mesa stage master to create ONE separate compositing layer for the 2D arena. KEEP ONLY the entire bottom horizontal metal fighting platform: its flat walkable top surface, front steel fascia, tiny amber utility lamps, and bottom front structure. Remove all test chamber background, machine, beam, back railings, pipes, upper walls and ceiling and replace those removed pixels with TRUE TRANSPARENCY. Keep the original whole wide canvas, same layout, scale, camera, perspective and position of the floor; don't crop or zoom. The floor must remain a continuous strip across the very bottom of the original canvas; everything above the fighting platform is alpha-transparent. Preserve its existing material and yellow lighting. No added objects, no character, no labels. This image will be a compositing layer, not a new room painting.",
       "owner_type": "stage",
       "sha256": "ab623ac98e7633fe842960eb1357a6b7a604bbd4c137b845c713f22bdc77fc8a",
-      "byte_size": 641901
+      "byte_size": 641901,
+      "layer_id": "L04_ground",
+      "layer_identity_review": "2026-11-20: inspection visuelle du sol métallique seul; attribution à L04_ground, sans validation de couche complète."
     },
     {
       "asset_id": "layer_city17_distant_skyline",
@@ -1342,6 +1344,840 @@
       "reference_bitmap_loaded": true,
       "reference_bitmap_role": "visual_identity_reference",
       "selected_for_next_review": false
+    },
+    {
+      "asset_id": "stage_ravenholm_master_d",
+      "name_fr": "Ravenholm — maître de rue",
+      "owner_id": "STG_14_HL2_RAVENHOLM",
+      "owner_type": "stage",
+      "target_ids": [
+        "STG_14_HL2_RAVENHOLM"
+      ],
+      "category": "stage_master",
+      "batch_id": "continuation_20261120_d",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Produce ONE high-detail raster background master for a 2D side-view fighting game, based closely on the supplied official Half-Life 2 Ravenholm screenshot. Wide 3:1 composition, around 2160x720. Preserve the recognizable retail Ravenholm materials and shapes from this reference: old soot-dark orange brick industrial facades, tall arched inset windows, narrow external metal gallery, angular metal electrical pylons and overhead wires, a square industrial chimney, bluish night sky and localized amber window/fire light. Recompose the reference architecture into a straight, level, side-view fighting arena: a clear continuous stone and concrete ground strip across the entire width near 80% image height, with a shallow readable top surface, front fascia below it. Keep the central 70% of the playable ground open. All doorways, gallery railings and distant windows remain behind the fighters' space. Small low fires only in distant background recesses, never across the playable floor. Ground must not have steps, ramps, deep holes or platform jumps. No people, zombies, creatures, player arms, weapons, HUD, title, logos, collage, panels, vignette or visible layer labels. Use source-game weathering, restrained rough textured shading and crisp readable forms, not vector artwork or a flat minimalist illustration. This is one coherent environmental master, not a set of separate layers. Preserve the source visual identity; do not add unrelated fantasy or modern sci-fi architecture.",
+      "source_references": [
+        {
+          "reference_filename": "steam_220_04.jpg",
+          "sha256": "da41455633dce18fac0cacb1fa5de222b4ac098163a0091ae0efe24f66fe1515",
+          "width": 1920,
+          "height": 1080,
+          "visually_inspected": true,
+          "source_id": "steam_ravenholm_d",
+          "title": "Valve / Steam — Ravenholm, capture 04",
+          "source_game": "Half-Life 2",
+          "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_c400361f185800786ea984e795f2a0dd4afee990.1920x1080.jpg?t=1745368545",
+          "provenance": "primary_official_screenshot",
+          "context_note": "La page Steam app220 inclut aussi les épisodes; le contenu de cette capture détermine ici le jeu, pas le seul appid.",
+          "role": "visual_identity_reference"
+        }
+      ],
+      "source_urls": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_c400361f185800786ea984e795f2a0dd4afee990.1920x1080.jpg?t=1745368545"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "visual_identity_reference",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à corriger",
+      "file_path": "assets/resonance/candidates/continuation_20261120_d/stage_ravenholm_master_d.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_d/stage_ravenholm_master_d.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": false,
+      "selected_for_next_review": true,
+      "notes": "Façades de brique, cheminée, pylônes et galerie reprennent les motifs de la capture officielle. Piste continue dégagée; feux reportés aux bords du décor. Projection latérale et topologie adaptées au combat, pas copie pixel par pixel. Maître seul: six couches non terminées.",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGB",
+      "byte_size": 2679945,
+      "sha256": "4e29d7d47f284422bff83e01d774f77ac40682f8569f03a608b6012567b0cb7e",
+      "alpha_check": "sans objet",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false
+    },
+    {
+      "asset_id": "stage_canals_master_d",
+      "name_fr": "Canaux de Cité 17 — maître",
+      "owner_id": "STG_12_HL2_CANALS",
+      "owner_type": "stage",
+      "target_ids": [
+        "STG_12_HL2_CANALS"
+      ],
+      "category": "stage_master",
+      "batch_id": "continuation_20261120_d",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Create ONE high-detail raster background master for a level 2D side-view fighting arena using the supplied official Half-Life2 canal screenshot as the visual reference. Wide 3:1 composition around2160x720. Closely preserve the distinctive retail-game canal vocabulary: weathered mossy dark brick retaining walls, timber shoring with diagonal posts, dark brown calm canal water, old iron upper railings, overhead utility wires, distant worn Eastern European apartment blocks, pale cloudy blue-grey sky, and the small round sewer outlets. Recompose that environment laterally, not in first-person perspective: the canal runs behind the fighters across the scene. A dry continuous flat stone-and-concrete towpath spans the entire front from left to right, with a level collision baseline at80% image height and a thick dark front fascia below. The water is visibly behind and lower than this safe fighting lane. Keep central70% of the lane completely clear, with no gaps, stairs, ramps, protruding posts, vehicles or crates. Timber supports, walls and sewer arches are scenery behind the playable plane. Adapt placement only enough to support a readable side-view arena; preserve exact source material character and weathering rather than replacing it with generic sci-fi. No characters, creatures, gun, hand, HUD, lettering, logos, infographic, multiple panels or layer guides. Coherent textured game raster aesthetic, restrained cloudy daylight, legible near and far planes. One finished environmental master, not six separate layers.",
+      "source_references": [
+        {
+          "reference_filename": "steam_220_06.jpg",
+          "sha256": "3a62820009b6d7e1ddb3829187f3df1b8642b42825be056f18e159d829fe6eb4",
+          "width": 1920,
+          "height": 1080,
+          "visually_inspected": true,
+          "source_id": "steam_canals_d",
+          "title": "Valve / Steam — canaux, capture 06",
+          "source_game": "Half-Life 2",
+          "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_394f4ad714937db2cc90545972b318ddb6db7231.1920x1080.jpg?t=1745368545",
+          "provenance": "primary_official_screenshot",
+          "context_note": "La page Steam app220 inclut aussi les épisodes; le contenu de cette capture détermine ici le jeu, pas le seul appid.",
+          "role": "visual_identity_reference"
+        }
+      ],
+      "source_urls": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_394f4ad714937db2cc90545972b318ddb6db7231.1920x1080.jpg?t=1745368545"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "visual_identity_reference",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à corriger",
+      "file_path": "assets/resonance/candidates/continuation_20261120_d/stage_canals_master_d.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_d/stage_canals_master_d.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": false,
+      "selected_for_next_review": true,
+      "notes": "Briques, palplanches de bois, arches, eau brune et immeubles reprennent la capture officielle. Chemin de halage sec ajouté au premier plan pour la piste 2D, eau derrière le sol. La nouvelle projection est une adaptation, pas une reconstitution 1:1 de la carte.",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGB",
+      "byte_size": 3197487,
+      "sha256": "5766b37fbd175db30f6b95971e8012eeaff64475a45fea25d77ff3ffc65e8a2a",
+      "alpha_check": "sans objet",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false
+    },
+    {
+      "asset_id": "strider_whiteforest_ep2_idle_left_d",
+      "name_fr": "Strider de White Forest — pose entière",
+      "owner_id": "strider_whiteforest_ep2",
+      "owner_type": "boss",
+      "target_ids": [
+        "strider_whiteforest_ep2"
+      ],
+      "category": "boss_sprite",
+      "batch_id": "continuation_20261120_d",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Produce ONE complete isolated raster sprite of the retail Half-Life 2 Episode Two Strider visible in the supplied official screenshots. Only the enormous three-legged Strider, not the small Hunters and not the scenery. Keep the exact recognizable model anatomy, proportions and surface appearance: a small ochre/brown organic armored central body high above three extraordinarily long thin jointed legs, the integrated dark underslung forward cannon, segmented yellow-brown carapace and joints. Exactly THREE legs, each complete from its distinct body attachment through its single main joint down to its sharp narrow foot. Preserve the extremely long leg-to-body ratio; do not shorten into a spider, add a fourth leg, add aircraft parts or redesign the shell. Single neutral idle stance, facing screen LEFT in a readable mild three-quarter side view, with all three feet visible and separately readable near the same horizontal baseline. The body is calm, cannon inactive, no projectiles, no muzzle flash. No Magnusson device attached in this base state; that optional attachment will be produced separately. Center the entire silhouette with at least8% fully transparent empty space on every edge, especially above shell and below all three feet. Portrait canvas around1400x2000 to fit the unusually tall entire subject; keep every extremity inside. Transparent alpha background, no ground plane, no forest, no characters, no dust, no shadow ellipse, no border, no text, no diagram, no multiple poses or collage. Crisp textured source-model raster rendering with neutral even light, not vector illustration, not a redesigned sci-fi creature.",
+      "source_references": [
+        {
+          "reference_filename": "steam_220_09.jpg",
+          "sha256": "91ccecc3c41cbf60a0d762549da72546bcbb81b6d4735785da355a1e0ba8ff3d",
+          "width": 1440,
+          "height": 900,
+          "visually_inspected": true,
+          "source_id": "steam_strider_ep2_09_d",
+          "title": "Valve / Steam — Strider et Hunters, capture 09",
+          "source_game": "Half-Life 2 Episode Two",
+          "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_ed5532325f508728f8481f0109d662352a519e0a.1920x1080.jpg?t=1745368545",
+          "provenance": "primary_official_screenshot",
+          "context_note": "La page Steam app220 inclut aussi les épisodes; le contenu de cette capture détermine ici le jeu, pas le seul appid.",
+          "role": "visual_identity_reference"
+        },
+        {
+          "reference_filename": "steam_220_18.jpg",
+          "sha256": "7ce5a9a75b8cbf915a97ad66e2dc9e6c3620687f1f3c653beb09409c3078b7bf",
+          "width": 1440,
+          "height": 900,
+          "visually_inspected": true,
+          "source_id": "steam_strider_ep2_18_d",
+          "title": "Valve / Steam — Strider et Hunters, capture 18",
+          "source_game": "Half-Life 2 Episode Two",
+          "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_fe894d70bdfa75236a4b451efbeea7d4ce3e0174.1920x1080.jpg?t=1745368545",
+          "provenance": "primary_official_screenshot",
+          "context_note": "La page Steam app220 inclut aussi les épisodes; le contenu de cette capture détermine ici le jeu, pas le seul appid.",
+          "role": "visual_identity_reference"
+        }
+      ],
+      "source_urls": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_ed5532325f508728f8481f0109d662352a519e0a.1920x1080.jpg?t=1745368545",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_fe894d70bdfa75236a4b451efbeea7d4ce3e0174.1920x1080.jpg?t=1745368545"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "visual_identity_reference",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à corriger",
+      "file_path": "assets/resonance/candidates/continuation_20261120_d/strider_whiteforest_ep2_idle_left_d.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_d/strider_whiteforest_ep2_idle_left_d.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "notes": "Trois longues pattes, trois pointes complètes, carapace ocre et canon ventral présents. Vue trois-quarts, pas profil orthogonal; appuis proches mais non exactement alignés. Franges rouges/jaunes nettes le long de la carapace et des pattes. Dispositif Magnusson et Hunters séparés, non produits ici. La correction v2 a été refusée; v1 reste candidate à corriger.",
+      "width": 1049,
+      "height": 1499,
+      "color_mode": "RGBA",
+      "byte_size": 474464,
+      "sha256": "acbfbc6cfbbea3d4e9f4aba8254bdc84b1a2e207b529e9f89e18ac9f03d8ae85",
+      "alpha_check": "présent; contours et opacité à valider",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "alpha_stats": {
+        "transparent_pixels": 1388284,
+        "transparent_fraction": 0.8828790213494729,
+        "partial_pixels": 182857,
+        "opaque_pixels": 1310,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "bbox_alpha_nonzero": [
+          25,
+          19,
+          1045,
+          1499
+        ],
+        "bbox_alpha_at_least_16": [
+          68,
+          115,
+          958,
+          1417
+        ]
+      },
+      "padding_pixels_at_alpha_ge_16": {
+        "left": 68,
+        "top": 115,
+        "right": 91,
+        "bottom": 82
+      }
+    },
+    {
+      "asset_id": "advisor_extraction_ep2_idle_right_d",
+      "name_fr": "Advisor — pose entière",
+      "owner_id": "advisor_extraction_ep2",
+      "owner_type": "boss",
+      "target_ids": [
+        "advisor_extraction_ep2"
+      ],
+      "category": "boss_sprite",
+      "batch_id": "continuation_20261120_d",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Create ONE isolated high-detail raster sprite based very closely on this official Valve Half-Life2 Advisor model reference. Preserve the retail model silhouette and components: enormous pale cream wrinkled larval body, olive-grey enveloping Combine harness, black technological frame and folds, small twin luminous white-blue lenses beside the ridged central breathing grille, dangling dark respirator hoses, and the two long jointed external appendages with angular clawlike ends. Nonhumanoid, no human torso or legs, no decorative helmet additions or invented weapons. Preserve the original materials and subdued worn palette. A single complete neutral hovering idle pose facing screenRIGHT in the same readable slight three-quarter angle as the reference. All visible shell, apparatus, hoses and two appendages must be fully within frame, with no clipping, overlaps hiding their extremities, or duplicated limbs. Center the full subject with generous at least8% transparent padding all around on a roughly square canvas. No tongue extension, attack, effects, energy aura, ground, shadow ellipse, background, text, watermark, separate views, animation sheet or collage. Transparent RGBA background. Sharp legible bitmap rendering close to the source game's textured model, not flat vector art or modernized redesign. Deliver only this one subject and pose.",
+      "source_references": [
+        {
+          "reference_filename": "advisor_reference_01.png",
+          "sha256": "181a2da5e43cd0351acd2bef51a5b35408e0b336050bf698f4d3c47d2742a290",
+          "width": 717,
+          "height": 640,
+          "visually_inspected": true,
+          "source_id": "valve_advisor_model_video_d",
+          "title": "Valve — Advisor, vidéo de modèle du 20e anniversaire",
+          "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/advisor.webm",
+          "page_url": "https://www.half-life.com/en/halflife2/20th",
+          "provenance": "primary_official_model_video_frame",
+          "video_sha256": "27320ddfa73f8295f87ae7320c1562ddefa94117b812810f5ab596b12d677d4b",
+          "video_byte_size": 1026113,
+          "extraction": "ffmpeg -c:v libvpx -i valve_advisor.webm -vf fps=1 -frames:v 3 advisor_reference_%02d.png; première sortie retenue, sans redimensionnement.",
+          "timecode_seconds": null,
+          "context_note": "Modèle officiel Valve utilisé pour le candidat Advisor; le timecode exact de sélection fps=1 n’est pas déclaré. Aucun duel canonique ni animation complète n’en est déduit.",
+          "role": "visual_identity_reference"
+        }
+      ],
+      "source_urls": [
+        "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/advisor.webm"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "visual_identity_reference",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à corriger",
+      "file_path": "assets/resonance/candidates/continuation_20261120_d/advisor_extraction_ep2_idle_right_d.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_d/advisor_extraction_ep2_idle_right_d.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "notes": "Corps larvaire, harnais olive, masque, deux lentilles et deux appendices complets reconnaissables d’après le modèle Valve. Vue presque frontale en trois-quarts, pas profil de combat; marges inégales et franges colorées résiduelles sous le masque et aux contours. Ni langue déployée, ni télékinésie, ni animation complète.",
+      "width": 1254,
+      "height": 1254,
+      "color_mode": "RGBA",
+      "byte_size": 1377294,
+      "sha256": "1da20dda89a21ac7642344fecd2b3993af26ab94508b1838764bc7989bb57aed",
+      "alpha_check": "présent; contours et opacité à valider",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "alpha_stats": {
+        "transparent_pixels": 890796,
+        "transparent_fraction": 0.5664781789183703,
+        "partial_pixels": 680825,
+        "opaque_pixels": 895,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "bbox_alpha_nonzero": [
+          0,
+          17,
+          1254,
+          1254
+        ],
+        "bbox_alpha_at_least_16": [
+          55,
+          126,
+          1212,
+          1143
+        ]
+      },
+      "padding_pixels_at_alpha_ge_16": {
+        "left": 55,
+        "top": 126,
+        "right": 42,
+        "bottom": 111
+      }
+    },
+    {
+      "asset_id": "layer_canals_floor_d",
+      "name_fr": "Canaux de Cité 17 — sol L04_ground",
+      "owner_id": "STG_12_HL2_CANALS",
+      "owner_type": "stage",
+      "target_ids": [
+        "STG_12_HL2_CANALS"
+      ],
+      "category": "stage_layer_candidate",
+      "batch_id": "continuation_20261120_d",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Edit the supplied 2172x724 canal arena master into ONE separate transparent FLOOR compositing layer. Keep exactly the same full wide canvas, camera, framing, size and pixel placement. Retain ONLY the continuous dry horizontal stone and concrete towpath across the bottom of the image, including its narrow scuffed top surface starting around y580 and its full dark mossy vertical front fascia down to the lower canvas edge. Preserve every slab seam, texture and silhouette of that existing floor; do not repaint, reshape, zoom, crop or recenter the platform. Remove ALL water, reflections, timber supports, brick retaining walls, bridges, sewer arches, apartment blocks, railings, cables, tree, sky and distant buildings, replacing every removed pixel with true alpha transparency. The entire upper roughly80% should be fully transparent, and the retained floor strip should touch left, right and bottom edges in the exact same position as the input. A tight clean alpha boundary at the floor's rear edge, no sky haze, halo, dark backdrop or added shadow. No character, prop, text, border, labels, panels or second view. This is a single L04_ground compositing candidate from the existing master, not a newly designed scene.",
+      "source_references": [
+        {
+          "reference_filename": "exec-cd9ba4ac-19ca-4cc6-bb7b-980700828809.png",
+          "sha256": "5766b37fbd175db30f6b95971e8012eeaff64475a45fea25d77ff3ffc65e8a2a",
+          "width": 2172,
+          "height": 724,
+          "visually_inspected": true,
+          "repository_path": "assets/resonance/candidates/continuation_20261120_d/stage_canals_master_d.png",
+          "source_asset_id": "stage_canals_master_d",
+          "provenance": "generated_project_candidate",
+          "role": "edit_target"
+        }
+      ],
+      "source_urls": [],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "edit_target",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à corriger",
+      "file_path": "assets/resonance/candidates/continuation_20261120_d/layer_canals_floor_d.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_d/layer_canals_floor_d.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "notes": "Une seule couche candidate L04_ground extraite générativement du maître, canevas 2172 × 724 conservé. Haut transparent et bande basse continue. Frange claire/colorée à la limite haute et réinterprétation des textures: alignement et raccord pixel à vérifier en composition.",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 732214,
+      "sha256": "d48de1d3bcb68c7c56c1afd35e844dd4254db7015f76260722a3c049e8a32d8f",
+      "alpha_check": "présent; contours et opacité à valider",
+      "layer_id": "L04_ground",
+      "parent_asset_id": "stage_canals_master_d",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "alpha_stats": {
+        "transparent_pixels": 1238093,
+        "transparent_fraction": 0.7873265213719565,
+        "partial_pixels": 334430,
+        "opaque_pixels": 5,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "bbox_alpha_nonzero": [
+          0,
+          182,
+          2172,
+          724
+        ],
+        "bbox_alpha_at_least_16": [
+          0,
+          576,
+          2172,
+          724
+        ]
+      },
+      "padding_pixels_at_alpha_ge_16": {
+        "left": 0,
+        "top": 576,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "asset_id": "strider_whiteforest_ep2_idle_left_v2_d",
+      "name_fr": "Strider de White Forest — correction de détourage refusée",
+      "owner_id": "strider_whiteforest_ep2",
+      "owner_type": "boss",
+      "target_ids": [
+        "strider_whiteforest_ep2"
+      ],
+      "category": "boss_sprite",
+      "batch_id": "continuation_20261120_d",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Edit ONLY the alpha edge quality of this existing single Strider sprite. Keep its entire existing anatomy, exact three legs and feet, ochre shell, underslung cannon, textures, colors, proportions, pose, facing direction, canvas dimensions and every subject pixel position. Do not redesign, recrop, recolor, rotate, zoom, move or add any part. Remove the obvious bright RED and neon YELLOW/GREEN matte fringes and jagged red residue that currently cling OUTSIDE the genuine brown creature silhouette, especially the shell top, outer sloping upper legs, joints and long lower legs. Those external matte-colored pixels are extraction artifacts and must become fully transparent. Preserve the real ochre/brown edge pixels of the character and use only tight natural-colored antialiasing at the true silhouette. No colored stroke, halo, background-removal matte, glow, hard black outline, fog or drop shadow. Keep all THREE long pointed feet completely intact. Fully transparent background, one pose only, no other visible content.",
+      "source_references": [
+        {
+          "reference_filename": "exec-2a556a93-7945-4513-bf6b-35d24261a207.png",
+          "sha256": "acbfbc6cfbbea3d4e9f4aba8254bdc84b1a2e207b529e9f89e18ac9f03d8ae85",
+          "width": 1049,
+          "height": 1499,
+          "visually_inspected": true,
+          "repository_path": "assets/resonance/candidates/continuation_20261120_d/strider_whiteforest_ep2_idle_left_d.png",
+          "source_asset_id": "strider_whiteforest_ep2_idle_left_d",
+          "provenance": "generated_project_candidate",
+          "role": "edit_target"
+        }
+      ],
+      "source_urls": [],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "edit_target",
+      "generation_status": "refus automatique",
+      "status": "non produit",
+      "qa_status": "non produit",
+      "file_path": null,
+      "repository_path": null,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": true,
+      "selected_for_next_review": false,
+      "notes": "Demande de nettoyage du détourage de la v1 refusée à la sortie par le service (moderation_blocked, other). Aucun PNG v2. Aucune relance; la v1 produite reste conservée avec ses limites.",
+      "width": null,
+      "height": null,
+      "color_mode": null,
+      "byte_size": null,
+      "sha256": null,
+      "alpha_check": "non applicable",
+      "revision_of": "strider_whiteforest_ep2_idle_left_d",
+      "generation_error": "image generation failed: http 400 Bad Request: Some(\"{\\n  \\\"error\\\": {\\n    \\\"message\\\": \\\"Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID f17b89ff-9e6c-4afa-bb48-ad8419de5855.\\\",\\n    \\\"type\\\": \\\"image_generation_user_error\\\",\\n    \\\"param\\\": null,\\n    \\\"code\\\": \\\"moderation_blocked\\\",\\n    \\\"moderation_details\\\": {\\n      \\\"moderation_stage\\\": \\\"output\\\",\\n      \\\"categories\\\": [\\n        \\\"other\\\"\\n      ]\\n    }\\n  }\\n}\")",
+      "retry_after_refusal": false
+    },
+    {
+      "asset_id": "overwatch_soldier_hl2_idle_left_d",
+      "owner_id": "overwatch_soldier_hl2",
+      "owner_type": "reserve_character",
+      "category": "fighter_key_pose",
+      "source_game": "Half-Life 2",
+      "roster_status": "reserve_not_in_24",
+      "requested_repository_path": "assets/resonance/candidates/continuation_20261120_d/overwatch_soldier_hl2_idle_left_d.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_d/overwatch_soldier_hl2_idle_left_d.png",
+      "file_path": "assets/resonance/candidates/continuation_20261120_d/overwatch_soldier_hl2_idle_left_d.png",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à corriger",
+      "candidate_status": "generated_pending_reference_cleanup",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: stylized-concept.\nCreate ONE large, detailed 2D raster fighting-game character sprite, showing ONE full-body standard Overwatch Soldier from the released Half-Life 2 game. The attached image is a frame at 00:04.000 from Valve's official Half-Life 2 twentieth-anniversary combine.webm, and is the strict appearance reference. Preserve this specific retail model's identity and design. Do not redesign the character.\nMatch the reference's normal human proportions, grey-blue weathered cloth uniform, dark grey ribbed chest armour, blue-grey central groin plate, thigh and elbow armour, black gloves, black boots, helmet and circular respirator structure. Exactly TWO cyan goggle lenses. Preserve the arm markings on the correct physical arms, including the yellow emblem visible on the character's left upper arm at image right; do not mirror the markings or swap them. Keep the compact black MP7-style submachine gun already visible in the reference, held across the waist by both hands, without adding any weapon or attachments.\nOne neutral ready/idle pose close to the supplied reference, viewed at its slight three-quarter angle with attention directed a little toward screen left. Preserve the visible silhouette and gear placement. Keep both boots and the whole gun visible. Do not invent a side or rear design not visible in the reference. The work is a painted raster sprite for a 2D game, with crisp edges, fine shaded pixel detail, readable small silhouette and restrained texture; no vector shapes, no flat icon style, no sculptural render setup.\nOutput on true transparent alpha, fully transparent outside the subject. Single isolated character only. Opaque material interiors. Keep generous empty transparent padding, at least about 7 percent of the canvas on every side; no pixels of helmet, gun, arms or boots cut off. No floor, no backdrop, no cast shadow, no checkerboard baked into the image, no contact sheet, no multiple angles, no alternate poses, no text, no UI, no border, no extra characters.",
+      "transparent_background_requested": true,
+      "retried": false,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "reference": {
+        "page_url": "https://www.half-life.com/en/halflife2/20th",
+        "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/combine.webm",
+        "source_type": "official_valve_video_frame",
+        "video_filename": "combine.webm",
+        "video_sha256": "95e2616345c2e2dddac3b279607277b85e16ab24135076893b6e03b07bab9619",
+        "video_byte_size": 1466552,
+        "timecode_seconds": 4,
+        "sha256": "6075de00e7e4ffa6e371a6b9ddec9b9d567be0c4620c116ca7a6364a1615b050",
+        "width": 351,
+        "height": 810,
+        "color_mode": "RGBA",
+        "byte_size": 331027,
+        "visually_inspected": true,
+        "extraction": "ffmpeg -c:v libvpx -ss TIME -i VIDEO -frames:v 1 FRAME.png; no crop, resize, color correction or alpha repaint",
+        "provenance": "Vidéo intégrée à la page officielle Valve du 20e anniversaire; modèle retail visible. Référence du Zombine rattachée à Episode One, inclus dans cette collection.",
+        "reference_filename": "combine_t04000_alpha.png",
+        "source_id": "valve_overwatch_soldier_hl2_model_video_d",
+        "title": "Valve — overwatch_soldier_hl2, vidéo de modèle",
+        "role": "visual_identity_reference"
+      },
+      "official_context_sources": [
+        "https://www.half-life.com/en/halflife2/20th",
+        "https://store.steampowered.com/app/220/HalfLife_2/"
+      ],
+      "width": 822,
+      "height": 1914,
+      "color_mode": "RGBA",
+      "byte_size": 1363467,
+      "sha256": "c2fd3510c125fbc53ae714e0edc68f6efe4cabaade77fcc6651e6c03f3f6edb3",
+      "alpha_check": "vérifié: canal alpha réel avec zones alpha 0; quelques pixels de bord alpha 1 et franges à nettoyer",
+      "alpha_metrics": {
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "alpha_zero_fraction": 0.5699335413027837,
+        "alpha_opaque_fraction": 0.00019830827784515174,
+        "alpha_near_opaque_fraction": 0.4037931542965522,
+        "alpha_mode_value": 252,
+        "alpha_nonzero_bbox": [
+          0,
+          25,
+          802,
+          1888
+        ],
+        "bbox_alpha_ge_16": [
+          84,
+          105,
+          749,
+          1855
+        ],
+        "bbox_alpha_ge_128": [
+          85,
+          106,
+          748,
+          1854
+        ],
+        "edges_nonzero": {
+          "top": 0,
+          "bottom": 0,
+          "left": 4,
+          "right": 0
+        }
+      },
+      "padding_pixels_at_alpha_ge_16": {
+        "left": 84,
+        "top": 105,
+        "right": 73,
+        "bottom": 59
+      },
+      "edge_alpha_maximum": 1,
+      "visual_qa_performed": true,
+      "single_subject": true,
+      "full_body_visible": true,
+      "opaque_subject_cropped": false,
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "notes": "Silhouette entière; deux lunettes cyan, casque/respirateur, MP7 tenu à deux mains, uniforme gris-bleu, plaque centrale et bottes cohérents avec le cadre Valve. Orientation trois-quarts proche de la référence; ce fichier ne fournit pas une véritable vue latérale et ne valide aucune animation de combat. Détails de coutures, masque et inscriptions réinterprétés par génération; fidélité exacte des marquages non certifiée. Marges significatives au seuil alpha>=16: gauche 84, haut 105, droite 73, bas 59 px. Les marges haute et basse n’atteignent pas la cible de 7 % demandée. Quatre pixels de bord gauche ont alpha 1; aucun élément opaque du personnage n’est coupé. Quelques franges fines claires/colorées restent perceptibles. L’alpha non nul dominant est 252/255: intérieurs presque opaques mais pas une couche totalement opaque certifiée.",
+      "target_ids": [
+        "overwatch_soldier_hl2"
+      ],
+      "batch_id": "continuation_20261120_d",
+      "created_at": "2026-11-20",
+      "selected_for_next_review": true,
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "visual_identity_reference",
+      "source_references": [
+        {
+          "page_url": "https://www.half-life.com/en/halflife2/20th",
+          "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/combine.webm",
+          "source_type": "official_valve_video_frame",
+          "video_filename": "combine.webm",
+          "video_sha256": "95e2616345c2e2dddac3b279607277b85e16ab24135076893b6e03b07bab9619",
+          "video_byte_size": 1466552,
+          "timecode_seconds": 4,
+          "sha256": "6075de00e7e4ffa6e371a6b9ddec9b9d567be0c4620c116ca7a6364a1615b050",
+          "width": 351,
+          "height": 810,
+          "color_mode": "RGBA",
+          "byte_size": 331027,
+          "visually_inspected": true,
+          "extraction": "ffmpeg -c:v libvpx -ss TIME -i VIDEO -frames:v 1 FRAME.png; no crop, resize, color correction or alpha repaint",
+          "provenance": "Vidéo intégrée à la page officielle Valve du 20e anniversaire; modèle retail visible. Référence du Zombine rattachée à Episode One, inclus dans cette collection.",
+          "reference_filename": "combine_t04000_alpha.png",
+          "source_id": "valve_overwatch_soldier_hl2_model_video_d",
+          "title": "Valve — overwatch_soldier_hl2, vidéo de modèle",
+          "role": "visual_identity_reference"
+        }
+      ],
+      "source_urls": [
+        "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/combine.webm"
+      ]
+    },
+    {
+      "asset_id": "antlion_hl2_idle_d",
+      "owner_id": "antlion_hl2",
+      "owner_type": "reserve_character",
+      "category": "fighter_key_pose",
+      "source_game": "Half-Life 2",
+      "roster_status": "reserve_not_in_24",
+      "requested_repository_path": "assets/resonance/candidates/continuation_20261120_d/antlion_hl2_idle_d.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_d/antlion_hl2_idle_d.png",
+      "file_path": "assets/resonance/candidates/continuation_20261120_d/antlion_hl2_idle_d.png",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à corriger",
+      "candidate_status": "generated_pending_reference_cleanup",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: stylized-concept.\nCreate ONE large, detailed 2D raster fighting-game creature sprite, showing ONE entire standard Antlion from the released Half-Life 2 game. The attached image is a frame at 00:04.000 from Valve's official Half-Life 2 twentieth-anniversary antlion.webm, and is the strict appearance reference. Preserve this exact green/ochre retail creature variant and its anatomy.\nMatch the broad, vertically rising ridged carapace with olive-green, yellow-ochre and muted brown markings; its pointed central crest, flared upper shell edges, small lowered head shield and the mouth structures actually visible in the reference. Preserve the creature's FOUR long jointed walking limbs, their very thin pointed lower sections, the relative lengths, joint placement and irregular shell texture. Do not turn it into a six-legged realistic insect. Do not add human arms, glowing organs, a tail, a different antlion caste, or new horns.\nUse one idle pose close to the supplied source pose. The body remains at the same near-front three-quarter angle, with the lowered head slightly toward screen left. The full carapace, all four legs and every needle-like leg tip must be inside the canvas and distinct from one another. Preserve the original anatomy rather than inventing an unseen side view. This is a hand-painted raster sprite for a 2D arcade fighting game, crisp fine shaded pixel detail with readable silhouette; no vector icon, no cartoon simplification and no scene rendering.\nTrue transparent alpha outside the single creature, opaque shell and limbs, generous empty padding of at least about 7 percent on all sides. No ground, no environment, no shadow, no black background, no baked checkerboard, no grid, no sprite sheet, no multiple views, no text and no other creature.",
+      "transparent_background_requested": true,
+      "retried": false,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "reference": {
+        "page_url": "https://www.half-life.com/en/halflife2/20th",
+        "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/antlion.webm",
+        "source_type": "official_valve_video_frame",
+        "video_filename": "antlion.webm",
+        "video_sha256": "f53bfed2282eac5aa6d11f97f9a11fd93dc415a3fe0aac3a19d79aea2af60cbd",
+        "video_byte_size": 3071402,
+        "timecode_seconds": 4,
+        "sha256": "a0f7714d0167020b550a1a63b0ccfd0cb3eee774aadc6423a27e7302a5d9b947",
+        "width": 810,
+        "height": 800,
+        "color_mode": "RGBA",
+        "byte_size": 559529,
+        "visually_inspected": true,
+        "extraction": "ffmpeg -c:v libvpx -ss TIME -i VIDEO -frames:v 1 FRAME.png; no crop, resize, color correction or alpha repaint",
+        "provenance": "Vidéo intégrée à la page officielle Valve du 20e anniversaire; modèle retail visible. Référence du Zombine rattachée à Episode One, inclus dans cette collection.",
+        "reference_filename": "antlion_t04000_alpha.png",
+        "source_id": "valve_antlion_hl2_model_video_d",
+        "title": "Valve — antlion_hl2, vidéo de modèle",
+        "role": "visual_identity_reference"
+      },
+      "official_context_sources": [
+        "https://www.half-life.com/en/halflife2/20th",
+        "https://store.steampowered.com/app/220/HalfLife_2/"
+      ],
+      "width": 1358,
+      "height": 1158,
+      "color_mode": "RGBA",
+      "byte_size": 1279083,
+      "sha256": "568cf4bf7d303072bac028442999e1876b067ce4c1776db8b7ae5e7f92161809",
+      "alpha_check": "vérifié: canal alpha réel avec zones alpha 0; quelques pixels de bord alpha 1 et franges à nettoyer",
+      "alpha_metrics": {
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "alpha_zero_fraction": 0.6731439865086571,
+        "alpha_opaque_fraction": 0.0002696233666801478,
+        "alpha_near_opaque_fraction": 0.26937472815096875,
+        "alpha_mode_value": 252,
+        "alpha_nonzero_bbox": [
+          0,
+          17,
+          1344,
+          1158
+        ],
+        "bbox_alpha_ge_16": [
+          59,
+          45,
+          1294,
+          1128
+        ],
+        "bbox_alpha_ge_128": [
+          60,
+          46,
+          1293,
+          1128
+        ],
+        "edges_nonzero": {
+          "top": 0,
+          "bottom": 10,
+          "left": 14,
+          "right": 0
+        }
+      },
+      "padding_pixels_at_alpha_ge_16": {
+        "left": 59,
+        "top": 45,
+        "right": 64,
+        "bottom": 30
+      },
+      "edge_alpha_maximum": 1,
+      "visual_qa_performed": true,
+      "single_subject": true,
+      "full_body_visible": true,
+      "opaque_subject_cropped": false,
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "notes": "Une seule créature entière: carapace verte/ocre à crête et quatre pattes articulées conservées; pointes visibles et séparées, tête basse orientée comme le cadre Valve. La morphologie suit la référence; grain, reflets et proportions fines de la tête/bouche réinterprétés. Aucun contrôle 1:1 au modèle de jeu n’est validé. Franges rouge/jaune visibles sur plusieurs contours, notamment les pattes; nettoyage de bord encore requis avant usage. Marges significatives au seuil alpha>=16: gauche 59, haut 45, droite 64, bas 30 px; elles restent sous la cible 7 %. Aucun membre opaque ne touche le cadre. 14 pixels sur bord gauche et 10 sur bord inférieur ont alpha 1 seulement. L’alpha dominant 252/255 ne démontre pas des intérieurs parfaitement opaques. Pose quasi frontale de référence; pas de vue latérale de combat, pas de clip complet ni d’échelle runtime validée.",
+      "target_ids": [
+        "antlion_hl2"
+      ],
+      "batch_id": "continuation_20261120_d",
+      "created_at": "2026-11-20",
+      "selected_for_next_review": true,
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "visual_identity_reference",
+      "source_references": [
+        {
+          "page_url": "https://www.half-life.com/en/halflife2/20th",
+          "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/antlion.webm",
+          "source_type": "official_valve_video_frame",
+          "video_filename": "antlion.webm",
+          "video_sha256": "f53bfed2282eac5aa6d11f97f9a11fd93dc415a3fe0aac3a19d79aea2af60cbd",
+          "video_byte_size": 3071402,
+          "timecode_seconds": 4,
+          "sha256": "a0f7714d0167020b550a1a63b0ccfd0cb3eee774aadc6423a27e7302a5d9b947",
+          "width": 810,
+          "height": 800,
+          "color_mode": "RGBA",
+          "byte_size": 559529,
+          "visually_inspected": true,
+          "extraction": "ffmpeg -c:v libvpx -ss TIME -i VIDEO -frames:v 1 FRAME.png; no crop, resize, color correction or alpha repaint",
+          "provenance": "Vidéo intégrée à la page officielle Valve du 20e anniversaire; modèle retail visible. Référence du Zombine rattachée à Episode One, inclus dans cette collection.",
+          "reference_filename": "antlion_t04000_alpha.png",
+          "source_id": "valve_antlion_hl2_model_video_d",
+          "title": "Valve — antlion_hl2, vidéo de modèle",
+          "role": "visual_identity_reference"
+        }
+      ],
+      "source_urls": [
+        "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/antlion.webm"
+      ]
+    },
+    {
+      "asset_id": "zombine_ep1_idle_d",
+      "owner_id": "zombine_ep1",
+      "owner_type": "reserve_character",
+      "category": "fighter_key_pose",
+      "source_game": "Half-Life 2: Episode One",
+      "roster_status": "reserve_not_in_24",
+      "requested_repository_path": "assets/resonance/candidates/continuation_20261120_d/zombine_ep1_idle_d.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_d/zombine_ep1_idle_d.png",
+      "file_path": "assets/resonance/candidates/continuation_20261120_d/zombine_ep1_idle_d.png",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à corriger",
+      "candidate_status": "generated_pending_reference_cleanup",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: stylized-concept.\nCreate ONE large, detailed 2D raster fighting-game character sprite of ONE full-body Zombine from the released Half-Life 2: Episode One game. The attached image is a frame at 00:00.500 from Valve's official Half-Life 2 twentieth-anniversary zombine.webm. Treat it as the strict visual reference for the retail character model, proportions, costume, damage, parasite and pose.\nPreserve the hunched human silhouette and the tan standard headcrab attached over the entire head; there is no visible human face and no helmet over the headcrab. Preserve the worn dark blue-grey Combine soldier torso armour, shoulder plates, central groin plate, battered trousers and black boots. Keep the reference's yellow arm emblem on the correct physical arm. Reproduce the existing dark reddish wear/stains and exposed claw-like hands at the same restrained game-texture level, without adding or exaggerating injury detail. No additional dismemberment and no new exposed organs.\nThe creature stands in one unstable idle pose close to the reference, shoulders hunched, elbows bent, clawed hands partly raised. Retain the reference's mild three-quarter camera angle and clear full silhouette; no invented side-view redesign. Keep the complete headcrab, both hands and both boots visible. No grenade or weapon is held, because none is present in this reference frame.\nDetailed hand-painted 2D raster sprite, crisp shaded pixel detail and controlled edges, readable fighting-game scale, source-faithful muted palette. Do not produce a vector drawing, flat icon or cinematic scene.\nIsolate this single character on true transparent alpha, opaque subject interiors, at least about 7 percent empty transparent padding on every side. No floor, shadow, scenery, black background, checkerboard, caption, UI, sprite sheet, alternate pose, mirrored copy or other character.",
+      "transparent_background_requested": true,
+      "retried": false,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "reference": {
+        "page_url": "https://www.half-life.com/en/halflife2/20th",
+        "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/zombine.webm",
+        "source_type": "official_valve_video_frame",
+        "video_filename": "zombine.webm",
+        "video_sha256": "39cc362ca343bd4bb26dd892b52574c8861fc4228960c6b056890c1264f241f0",
+        "video_byte_size": 405576,
+        "timecode_seconds": 0.5,
+        "sha256": "3acfb822c27f601d1efb1f22f8b87c9ffb3a33fa7b1b640094c92f372cf8c261",
+        "width": 595,
+        "height": 800,
+        "color_mode": "RGBA",
+        "byte_size": 403474,
+        "visually_inspected": true,
+        "extraction": "ffmpeg -c:v libvpx -ss TIME -i VIDEO -frames:v 1 FRAME.png; no crop, resize, color correction or alpha repaint",
+        "provenance": "Vidéo intégrée à la page officielle Valve du 20e anniversaire; modèle retail visible. Référence du Zombine rattachée à Episode One, inclus dans cette collection.",
+        "reference_filename": "zombine_t00500_alpha.png",
+        "source_id": "valve_zombine_ep1_model_video_d",
+        "title": "Valve — zombine_ep1, vidéo de modèle",
+        "role": "visual_identity_reference"
+      },
+      "official_context_sources": [
+        "https://www.half-life.com/en/halflife2/20th",
+        "https://store.steampowered.com/app/220/HalfLife_2/"
+      ],
+      "width": 1081,
+      "height": 1455,
+      "color_mode": "RGBA",
+      "byte_size": 1143085,
+      "sha256": "0cc2a7aa9b194421eb0c6707ba01637a3a2388577bfffa9cfafa3af655b26b4c",
+      "alpha_check": "vérifié: canal alpha réel avec zones alpha 0; quelques pixels de bord alpha 1 et franges à nettoyer",
+      "alpha_metrics": {
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "alpha_zero_fraction": 0.6427579147473861,
+        "alpha_opaque_fraction": 0.00015640348283853248,
+        "alpha_near_opaque_fraction": 0.33595468113716775,
+        "alpha_mode_value": 252,
+        "alpha_nonzero_bbox": [
+          0,
+          15,
+          1075,
+          1455
+        ],
+        "bbox_alpha_ge_16": [
+          247,
+          21,
+          1010,
+          1429
+        ],
+        "bbox_alpha_ge_128": [
+          248,
+          22,
+          1009,
+          1429
+        ],
+        "edges_nonzero": {
+          "top": 0,
+          "bottom": 12,
+          "left": 6,
+          "right": 0
+        }
+      },
+      "padding_pixels_at_alpha_ge_16": {
+        "left": 247,
+        "top": 21,
+        "right": 71,
+        "bottom": 26
+      },
+      "edge_alpha_maximum": 1,
+      "visual_qa_performed": true,
+      "single_subject": true,
+      "full_body_visible": true,
+      "opaque_subject_cropped": false,
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "notes": "Sujet entier et seul, headcrab beige couvrant le visage, silhouette voûtée, deux mains griffues, armure Combine gris-bleu, plaque centrale et bottes présents; aucune grenade ajoutée. Les taches rouges sont plus saturées et les détails de surface plus explicites que le cadre Valve sombre; la fidélité chromatique reste à corriger. Le symbole jaune du bras gauche est approximatif et doit être comparé/repris sur référence; il n’est pas certifié. Composition décalée vers la droite. Marges significatives au seuil alpha>=16: gauche 247, haut 21, droite 71, bas 26 px; haut/bas inférieurs à 2 % de la hauteur. Franges colorées très fines sur le contour; six pixels de bord gauche et 12 de bord inférieur ont alpha 1 seulement, sans découpe de matière opaque. L’alpha dominant 252/255 est presque opaque; aucun clip complet, vue latérale ou pivot de sol runtime n’est validé.",
+      "target_ids": [
+        "zombine_ep1"
+      ],
+      "batch_id": "continuation_20261120_d",
+      "created_at": "2026-11-20",
+      "selected_for_next_review": true,
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "visual_identity_reference",
+      "source_references": [
+        {
+          "page_url": "https://www.half-life.com/en/halflife2/20th",
+          "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/zombine.webm",
+          "source_type": "official_valve_video_frame",
+          "video_filename": "zombine.webm",
+          "video_sha256": "39cc362ca343bd4bb26dd892b52574c8861fc4228960c6b056890c1264f241f0",
+          "video_byte_size": 405576,
+          "timecode_seconds": 0.5,
+          "sha256": "3acfb822c27f601d1efb1f22f8b87c9ffb3a33fa7b1b640094c92f372cf8c261",
+          "width": 595,
+          "height": 800,
+          "color_mode": "RGBA",
+          "byte_size": 403474,
+          "visually_inspected": true,
+          "extraction": "ffmpeg -c:v libvpx -ss TIME -i VIDEO -frames:v 1 FRAME.png; no crop, resize, color correction or alpha repaint",
+          "provenance": "Vidéo intégrée à la page officielle Valve du 20e anniversaire; modèle retail visible. Référence du Zombine rattachée à Episode One, inclus dans cette collection.",
+          "reference_filename": "zombine_t00500_alpha.png",
+          "source_id": "valve_zombine_ep1_model_video_d",
+          "title": "Valve — zombine_ep1, vidéo de modèle",
+          "role": "visual_identity_reference"
+        }
+      ],
+      "source_urls": [
+        "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/zombine.webm"
+      ]
     }
   ],
   "updated_at": "2026-11-20",

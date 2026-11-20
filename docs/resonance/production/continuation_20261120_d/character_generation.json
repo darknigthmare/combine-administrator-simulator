@@ -1,0 +1,375 @@
+{
+  "schema_version": "1.0",
+  "module": "Half Life Resonance",
+  "batch_id": "continuation_20261120_d",
+  "recorded_at": "2026-11-20T15:34:17.797259+00:00",
+  "generator": "image_gen built-in",
+  "purpose": "Trois poses individuelles Half-Life issues de références Valve effectivement inspectées; candidats visuels de réserve, sans intégration runtime.",
+  "counts": {
+    "requests": 3,
+    "generated": 3,
+    "blocked": 0,
+    "physical_output_files": 3,
+    "certified_one_to_one": 0,
+    "runtime_enabled": 0,
+    "complete_animation_clips": 0
+  },
+  "selection_notes": [
+    "Registre global lu avant toute demande: les 11 propriétaires à refus antérieur ont été exclus; aucune relance de refus.",
+    "Les cibles initiales Barney/Grigori/costume ont été remplacées après échec de récupération des bitmaps exacts; ces cibles ne sont ni refusées ni produites par ce lot.",
+    "Trois IDs existants dans la réserve du roster ont été choisis sur des vidéos officielles Valve montrant des sujets entiers. Les références sont sans mirroring et les asymétries visibles sont maintenues autant que la génération le permet."
+  ],
+  "deferred_targets": [
+    {
+      "owner_id": "barney_hl2",
+      "status": "not_attempted_reference_unavailable",
+      "page_url": "https://combineoverwiki.net/wiki/File:Barney_hl2.jpg",
+      "failed_bitmap_url": "https://combineoverwiki.net/images/0/0b/Barney_hl2.jpg",
+      "failure": "HTTP 404 observed; no equivalent complete retail reference retrieved."
+    },
+    {
+      "owner_id": "grigori_hl2",
+      "status": "not_attempted_reference_unavailable",
+      "page_url": "https://combineoverwiki.net/wiki/File:Monk_model.jpg",
+      "failed_bitmap_url": "https://combineoverwiki.net/images/9/9c/Monk_model.jpg",
+      "failure": "HTTP 404 observed; no equivalent complete retail reference retrieved."
+    },
+    {
+      "owner_id": "costume_nova_guard_hl2",
+      "status": "not_attempted_reference_unavailable",
+      "page_url": "https://combineoverwiki.net/wiki/File:Combine_prison_guard.jpg",
+      "failed_bitmap_url": "https://combineoverwiki.net/images/0/08/Combine_prison_guard.jpg",
+      "failure": "HTTP 404 observed; the separate guard_2 shotgun variant was not substituted for the standard guard."
+    }
+  ],
+  "assets": [
+    {
+      "asset_id": "overwatch_soldier_hl2_idle_left_d",
+      "owner_id": "overwatch_soldier_hl2",
+      "owner_type": "reserve_character",
+      "category": "fighter_key_pose",
+      "source_game": "Half-Life 2",
+      "roster_status": "reserve_not_in_24",
+      "requested_repository_path": "assets/resonance/candidates/continuation_20261120_d/overwatch_soldier_hl2_idle_left_d.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_d/overwatch_soldier_hl2_idle_left_d.png",
+      "file_path": "assets/resonance/candidates/continuation_20261120_d/overwatch_soldier_hl2_idle_left_d.png",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à corriger",
+      "candidate_status": "generated_pending_reference_cleanup",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: stylized-concept.\nCreate ONE large, detailed 2D raster fighting-game character sprite, showing ONE full-body standard Overwatch Soldier from the released Half-Life 2 game. The attached image is a frame at 00:04.000 from Valve's official Half-Life 2 twentieth-anniversary combine.webm, and is the strict appearance reference. Preserve this specific retail model's identity and design. Do not redesign the character.\nMatch the reference's normal human proportions, grey-blue weathered cloth uniform, dark grey ribbed chest armour, blue-grey central groin plate, thigh and elbow armour, black gloves, black boots, helmet and circular respirator structure. Exactly TWO cyan goggle lenses. Preserve the arm markings on the correct physical arms, including the yellow emblem visible on the character's left upper arm at image right; do not mirror the markings or swap them. Keep the compact black MP7-style submachine gun already visible in the reference, held across the waist by both hands, without adding any weapon or attachments.\nOne neutral ready/idle pose close to the supplied reference, viewed at its slight three-quarter angle with attention directed a little toward screen left. Preserve the visible silhouette and gear placement. Keep both boots and the whole gun visible. Do not invent a side or rear design not visible in the reference. The work is a painted raster sprite for a 2D game, with crisp edges, fine shaded pixel detail, readable small silhouette and restrained texture; no vector shapes, no flat icon style, no sculptural render setup.\nOutput on true transparent alpha, fully transparent outside the subject. Single isolated character only. Opaque material interiors. Keep generous empty transparent padding, at least about 7 percent of the canvas on every side; no pixels of helmet, gun, arms or boots cut off. No floor, no backdrop, no cast shadow, no checkerboard baked into the image, no contact sheet, no multiple angles, no alternate poses, no text, no UI, no border, no extra characters.",
+      "transparent_background_requested": true,
+      "retried": false,
+      "generator_output_path": "/workspace/scratch/39ffba56d829/generated_images/exec-c974f1f2-ff08-40d5-9921-a621b10eb4da.png",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "reference": {
+        "page_url": "https://www.half-life.com/en/halflife2/20th",
+        "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/combine.webm",
+        "source_type": "official_valve_video_frame",
+        "video_filename": "combine.webm",
+        "video_local_review_path": "/workspace/scratch/39ffba56d829/reference-review/lot_d/combine.webm",
+        "video_sha256": "95e2616345c2e2dddac3b279607277b85e16ab24135076893b6e03b07bab9619",
+        "video_byte_size": 1466552,
+        "timecode_seconds": 4,
+        "frame_local_review_path": "/workspace/scratch/39ffba56d829/reference-review/lot_d/combine_t04000_alpha.png",
+        "sha256": "6075de00e7e4ffa6e371a6b9ddec9b9d567be0c4620c116ca7a6364a1615b050",
+        "width": 351,
+        "height": 810,
+        "color_mode": "RGBA",
+        "byte_size": 331027,
+        "visually_inspected": true,
+        "extraction": "ffmpeg -c:v libvpx -ss TIME -i VIDEO -frames:v 1 FRAME.png; no crop, resize, color correction or alpha repaint",
+        "provenance": "Vidéo intégrée à la page officielle Valve du 20e anniversaire; modèle retail visible. Référence du Zombine rattachée à Episode One, inclus dans cette collection."
+      },
+      "official_context_sources": [
+        "https://www.half-life.com/en/halflife2/20th",
+        "https://store.steampowered.com/app/220/HalfLife_2/"
+      ],
+      "width": 822,
+      "height": 1914,
+      "color_mode": "RGBA",
+      "byte_size": 1363467,
+      "sha256": "c2fd3510c125fbc53ae714e0edc68f6efe4cabaade77fcc6651e6c03f3f6edb3",
+      "alpha_check": "vérifié: canal alpha réel avec zones alpha 0; quelques pixels de bord alpha 1 et franges à nettoyer",
+      "alpha_metrics": {
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "alpha_zero_fraction": 0.5699335413027837,
+        "alpha_opaque_fraction": 0.00019830827784515174,
+        "alpha_near_opaque_fraction": 0.4037931542965522,
+        "alpha_mode_value": 252,
+        "alpha_nonzero_bbox": [
+          0,
+          25,
+          802,
+          1888
+        ],
+        "bbox_alpha_ge_16": [
+          84,
+          105,
+          749,
+          1855
+        ],
+        "bbox_alpha_ge_128": [
+          85,
+          106,
+          748,
+          1854
+        ],
+        "edges_nonzero": {
+          "top": 0,
+          "bottom": 0,
+          "left": 4,
+          "right": 0
+        }
+      },
+      "padding_pixels_at_alpha_ge_16": {
+        "left": 84,
+        "top": 105,
+        "right": 73,
+        "bottom": 59
+      },
+      "edge_alpha_maximum": 1,
+      "visual_qa_performed": true,
+      "single_subject": true,
+      "full_body_visible": true,
+      "opaque_subject_cropped": false,
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "notes": [
+        "Silhouette entière; deux lunettes cyan, casque/respirateur, MP7 tenu à deux mains, uniforme gris-bleu, plaque centrale et bottes cohérents avec le cadre Valve.",
+        "Orientation trois-quarts proche de la référence; ce fichier ne fournit pas une véritable vue latérale et ne valide aucune animation de combat.",
+        "Détails de coutures, masque et inscriptions réinterprétés par génération; fidélité exacte des marquages non certifiée.",
+        "Marges significatives au seuil alpha>=16: gauche 84, haut 105, droite 73, bas 59 px. Les marges haute et basse n’atteignent pas la cible de 7 % demandée.",
+        "Quatre pixels de bord gauche ont alpha 1; aucun élément opaque du personnage n’est coupé. Quelques franges fines claires/colorées restent perceptibles.",
+        "L’alpha non nul dominant est 252/255: intérieurs presque opaques mais pas une couche totalement opaque certifiée."
+      ],
+      "target_ids": [
+        "overwatch_soldier_hl2"
+      ]
+    },
+    {
+      "asset_id": "antlion_hl2_idle_d",
+      "owner_id": "antlion_hl2",
+      "owner_type": "reserve_character",
+      "category": "fighter_key_pose",
+      "source_game": "Half-Life 2",
+      "roster_status": "reserve_not_in_24",
+      "requested_repository_path": "assets/resonance/candidates/continuation_20261120_d/antlion_hl2_idle_d.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_d/antlion_hl2_idle_d.png",
+      "file_path": "assets/resonance/candidates/continuation_20261120_d/antlion_hl2_idle_d.png",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à corriger",
+      "candidate_status": "generated_pending_reference_cleanup",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: stylized-concept.\nCreate ONE large, detailed 2D raster fighting-game creature sprite, showing ONE entire standard Antlion from the released Half-Life 2 game. The attached image is a frame at 00:04.000 from Valve's official Half-Life 2 twentieth-anniversary antlion.webm, and is the strict appearance reference. Preserve this exact green/ochre retail creature variant and its anatomy.\nMatch the broad, vertically rising ridged carapace with olive-green, yellow-ochre and muted brown markings; its pointed central crest, flared upper shell edges, small lowered head shield and the mouth structures actually visible in the reference. Preserve the creature's FOUR long jointed walking limbs, their very thin pointed lower sections, the relative lengths, joint placement and irregular shell texture. Do not turn it into a six-legged realistic insect. Do not add human arms, glowing organs, a tail, a different antlion caste, or new horns.\nUse one idle pose close to the supplied source pose. The body remains at the same near-front three-quarter angle, with the lowered head slightly toward screen left. The full carapace, all four legs and every needle-like leg tip must be inside the canvas and distinct from one another. Preserve the original anatomy rather than inventing an unseen side view. This is a hand-painted raster sprite for a 2D arcade fighting game, crisp fine shaded pixel detail with readable silhouette; no vector icon, no cartoon simplification and no scene rendering.\nTrue transparent alpha outside the single creature, opaque shell and limbs, generous empty padding of at least about 7 percent on all sides. No ground, no environment, no shadow, no black background, no baked checkerboard, no grid, no sprite sheet, no multiple views, no text and no other creature.",
+      "transparent_background_requested": true,
+      "retried": false,
+      "generator_output_path": "/workspace/scratch/39ffba56d829/generated_images/exec-55bf3d16-de86-45c1-99e0-f68b5c271d48.png",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "reference": {
+        "page_url": "https://www.half-life.com/en/halflife2/20th",
+        "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/antlion.webm",
+        "source_type": "official_valve_video_frame",
+        "video_filename": "antlion.webm",
+        "video_local_review_path": "/workspace/scratch/39ffba56d829/reference-review/lot_d/antlion.webm",
+        "video_sha256": "f53bfed2282eac5aa6d11f97f9a11fd93dc415a3fe0aac3a19d79aea2af60cbd",
+        "video_byte_size": 3071402,
+        "timecode_seconds": 4,
+        "frame_local_review_path": "/workspace/scratch/39ffba56d829/reference-review/lot_d/antlion_t04000_alpha.png",
+        "sha256": "a0f7714d0167020b550a1a63b0ccfd0cb3eee774aadc6423a27e7302a5d9b947",
+        "width": 810,
+        "height": 800,
+        "color_mode": "RGBA",
+        "byte_size": 559529,
+        "visually_inspected": true,
+        "extraction": "ffmpeg -c:v libvpx -ss TIME -i VIDEO -frames:v 1 FRAME.png; no crop, resize, color correction or alpha repaint",
+        "provenance": "Vidéo intégrée à la page officielle Valve du 20e anniversaire; modèle retail visible. Référence du Zombine rattachée à Episode One, inclus dans cette collection."
+      },
+      "official_context_sources": [
+        "https://www.half-life.com/en/halflife2/20th",
+        "https://store.steampowered.com/app/220/HalfLife_2/"
+      ],
+      "width": 1358,
+      "height": 1158,
+      "color_mode": "RGBA",
+      "byte_size": 1279083,
+      "sha256": "568cf4bf7d303072bac028442999e1876b067ce4c1776db8b7ae5e7f92161809",
+      "alpha_check": "vérifié: canal alpha réel avec zones alpha 0; quelques pixels de bord alpha 1 et franges à nettoyer",
+      "alpha_metrics": {
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "alpha_zero_fraction": 0.6731439865086571,
+        "alpha_opaque_fraction": 0.0002696233666801478,
+        "alpha_near_opaque_fraction": 0.26937472815096875,
+        "alpha_mode_value": 252,
+        "alpha_nonzero_bbox": [
+          0,
+          17,
+          1344,
+          1158
+        ],
+        "bbox_alpha_ge_16": [
+          59,
+          45,
+          1294,
+          1128
+        ],
+        "bbox_alpha_ge_128": [
+          60,
+          46,
+          1293,
+          1128
+        ],
+        "edges_nonzero": {
+          "top": 0,
+          "bottom": 10,
+          "left": 14,
+          "right": 0
+        }
+      },
+      "padding_pixels_at_alpha_ge_16": {
+        "left": 59,
+        "top": 45,
+        "right": 64,
+        "bottom": 30
+      },
+      "edge_alpha_maximum": 1,
+      "visual_qa_performed": true,
+      "single_subject": true,
+      "full_body_visible": true,
+      "opaque_subject_cropped": false,
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "notes": [
+        "Une seule créature entière: carapace verte/ocre à crête et quatre pattes articulées conservées; pointes visibles et séparées, tête basse orientée comme le cadre Valve.",
+        "La morphologie suit la référence; grain, reflets et proportions fines de la tête/bouche réinterprétés. Aucun contrôle 1:1 au modèle de jeu n’est validé.",
+        "Franges rouge/jaune visibles sur plusieurs contours, notamment les pattes; nettoyage de bord encore requis avant usage.",
+        "Marges significatives au seuil alpha>=16: gauche 59, haut 45, droite 64, bas 30 px; elles restent sous la cible 7 %. Aucun membre opaque ne touche le cadre.",
+        "14 pixels sur bord gauche et 10 sur bord inférieur ont alpha 1 seulement. L’alpha dominant 252/255 ne démontre pas des intérieurs parfaitement opaques.",
+        "Pose quasi frontale de référence; pas de vue latérale de combat, pas de clip complet ni d’échelle runtime validée."
+      ],
+      "target_ids": [
+        "antlion_hl2"
+      ]
+    },
+    {
+      "asset_id": "zombine_ep1_idle_d",
+      "owner_id": "zombine_ep1",
+      "owner_type": "reserve_character",
+      "category": "fighter_key_pose",
+      "source_game": "Half-Life 2: Episode One",
+      "roster_status": "reserve_not_in_24",
+      "requested_repository_path": "assets/resonance/candidates/continuation_20261120_d/zombine_ep1_idle_d.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_d/zombine_ep1_idle_d.png",
+      "file_path": "assets/resonance/candidates/continuation_20261120_d/zombine_ep1_idle_d.png",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à corriger",
+      "candidate_status": "generated_pending_reference_cleanup",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: stylized-concept.\nCreate ONE large, detailed 2D raster fighting-game character sprite of ONE full-body Zombine from the released Half-Life 2: Episode One game. The attached image is a frame at 00:00.500 from Valve's official Half-Life 2 twentieth-anniversary zombine.webm. Treat it as the strict visual reference for the retail character model, proportions, costume, damage, parasite and pose.\nPreserve the hunched human silhouette and the tan standard headcrab attached over the entire head; there is no visible human face and no helmet over the headcrab. Preserve the worn dark blue-grey Combine soldier torso armour, shoulder plates, central groin plate, battered trousers and black boots. Keep the reference's yellow arm emblem on the correct physical arm. Reproduce the existing dark reddish wear/stains and exposed claw-like hands at the same restrained game-texture level, without adding or exaggerating injury detail. No additional dismemberment and no new exposed organs.\nThe creature stands in one unstable idle pose close to the reference, shoulders hunched, elbows bent, clawed hands partly raised. Retain the reference's mild three-quarter camera angle and clear full silhouette; no invented side-view redesign. Keep the complete headcrab, both hands and both boots visible. No grenade or weapon is held, because none is present in this reference frame.\nDetailed hand-painted 2D raster sprite, crisp shaded pixel detail and controlled edges, readable fighting-game scale, source-faithful muted palette. Do not produce a vector drawing, flat icon or cinematic scene.\nIsolate this single character on true transparent alpha, opaque subject interiors, at least about 7 percent empty transparent padding on every side. No floor, shadow, scenery, black background, checkerboard, caption, UI, sprite sheet, alternate pose, mirrored copy or other character.",
+      "transparent_background_requested": true,
+      "retried": false,
+      "generator_output_path": "/workspace/scratch/39ffba56d829/generated_images/exec-7f19c013-04ce-4b60-8883-ed4283856f19.png",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "reference": {
+        "page_url": "https://www.half-life.com/en/halflife2/20th",
+        "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/zombine.webm",
+        "source_type": "official_valve_video_frame",
+        "video_filename": "zombine.webm",
+        "video_local_review_path": "/workspace/scratch/39ffba56d829/reference-review/lot_d/zombine.webm",
+        "video_sha256": "39cc362ca343bd4bb26dd892b52574c8861fc4228960c6b056890c1264f241f0",
+        "video_byte_size": 405576,
+        "timecode_seconds": 0.5,
+        "frame_local_review_path": "/workspace/scratch/39ffba56d829/reference-review/lot_d/zombine_t00500_alpha.png",
+        "sha256": "3acfb822c27f601d1efb1f22f8b87c9ffb3a33fa7b1b640094c92f372cf8c261",
+        "width": 595,
+        "height": 800,
+        "color_mode": "RGBA",
+        "byte_size": 403474,
+        "visually_inspected": true,
+        "extraction": "ffmpeg -c:v libvpx -ss TIME -i VIDEO -frames:v 1 FRAME.png; no crop, resize, color correction or alpha repaint",
+        "provenance": "Vidéo intégrée à la page officielle Valve du 20e anniversaire; modèle retail visible. Référence du Zombine rattachée à Episode One, inclus dans cette collection."
+      },
+      "official_context_sources": [
+        "https://www.half-life.com/en/halflife2/20th",
+        "https://store.steampowered.com/app/220/HalfLife_2/"
+      ],
+      "width": 1081,
+      "height": 1455,
+      "color_mode": "RGBA",
+      "byte_size": 1143085,
+      "sha256": "0cc2a7aa9b194421eb0c6707ba01637a3a2388577bfffa9cfafa3af655b26b4c",
+      "alpha_check": "vérifié: canal alpha réel avec zones alpha 0; quelques pixels de bord alpha 1 et franges à nettoyer",
+      "alpha_metrics": {
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "alpha_zero_fraction": 0.6427579147473861,
+        "alpha_opaque_fraction": 0.00015640348283853248,
+        "alpha_near_opaque_fraction": 0.33595468113716775,
+        "alpha_mode_value": 252,
+        "alpha_nonzero_bbox": [
+          0,
+          15,
+          1075,
+          1455
+        ],
+        "bbox_alpha_ge_16": [
+          247,
+          21,
+          1010,
+          1429
+        ],
+        "bbox_alpha_ge_128": [
+          248,
+          22,
+          1009,
+          1429
+        ],
+        "edges_nonzero": {
+          "top": 0,
+          "bottom": 12,
+          "left": 6,
+          "right": 0
+        }
+      },
+      "padding_pixels_at_alpha_ge_16": {
+        "left": 247,
+        "top": 21,
+        "right": 71,
+        "bottom": 26
+      },
+      "edge_alpha_maximum": 1,
+      "visual_qa_performed": true,
+      "single_subject": true,
+      "full_body_visible": true,
+      "opaque_subject_cropped": false,
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "notes": [
+        "Sujet entier et seul, headcrab beige couvrant le visage, silhouette voûtée, deux mains griffues, armure Combine gris-bleu, plaque centrale et bottes présents; aucune grenade ajoutée.",
+        "Les taches rouges sont plus saturées et les détails de surface plus explicites que le cadre Valve sombre; la fidélité chromatique reste à corriger.",
+        "Le symbole jaune du bras gauche est approximatif et doit être comparé/repris sur référence; il n’est pas certifié.",
+        "Composition décalée vers la droite. Marges significatives au seuil alpha>=16: gauche 247, haut 21, droite 71, bas 26 px; haut/bas inférieurs à 2 % de la hauteur.",
+        "Franges colorées très fines sur le contour; six pixels de bord gauche et 12 de bord inférieur ont alpha 1 seulement, sans découpe de matière opaque.",
+        "L’alpha dominant 252/255 est presque opaque; aucun clip complet, vue latérale ou pivot de sol runtime n’est validé."
+      ],
+      "target_ids": [
+        "zombine_ep1"
+      ]
+    }
+  ],
+  "scope_note": "Uniquement trois nouveaux PNG du lot D et ce journal. Aucun registre global, file de production, README, bible ou roster modifié par cet agent. Les médias sources restent des références de travail; aucune revendication de licence nouvelle ni de capture officielle du rendu généré."
+}
