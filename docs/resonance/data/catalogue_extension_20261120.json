@@ -667,6 +667,22 @@
       "kind": "secondary_hosted_game_model",
       "checked_on": "2026-11-20",
       "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée."
+    },
+    {
+      "id": "valve_hl25_uplink_hecu_beret_e",
+      "title": "Valve — Half-Life 25th anniversary, capture Uplink, soldat au béret à gauche",
+      "url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/uplink_1.jpg",
+      "kind": "primary_official_gameplay_screenshot",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Capture officielle inspectée pour le costume original au béret du lot E; ne valide pas les autres variantes HECU ni le dessin généré 1:1."
+    },
+    {
+      "id": "valve_steam70_hecu_beret_e",
+      "title": "Valve / Steam — Half-Life, capture officielle 0000002343",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/70/0000002343.1920x1080.jpg?t=1745368462",
+      "kind": "primary_official_gameplay_screenshot",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Capture officielle inspectée pour le costume original au béret du lot E; ne valide pas les autres variantes HECU ni le dessin généré 1:1."
     }
   ],
   "targets": [
@@ -1930,15 +1946,35 @@
       "priority": "P1",
       "identity_lock": "Sélection explicite du modèle HECU original; ne pas emprunter tête HD ou accessoires Opposing Force.",
       "source_ids": [
-        "hecu_models"
+        "hecu_models",
+        "valve_hl25_uplink_hecu_beret_e",
+        "valve_steam70_hecu_beret_e"
       ],
-      "reference_capture": null,
-      "visual_reference_status": "capture_required",
-      "generation_status": "not_started",
+      "reference_capture": {
+        "reference_filename": "uplink_1.jpg",
+        "width": 2560,
+        "height": 1600,
+        "sha256": "6583dcb74e493ee06c8bf2e5db563cf7d4a28d371b5a84b8d25fe87e27a27d21",
+        "byte_size": 725063,
+        "visually_inspected": true,
+        "source_id": "valve_hl25_uplink_hecu_beret_e",
+        "title": "Valve — Half-Life 25th anniversary, capture Uplink, soldat au béret à gauche",
+        "source_page": "https://www.half-life.com/en/halflife/25th",
+        "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/uplink_1.jpg",
+        "provenance": "primary_official_gameplay_screenshot",
+        "role": "visual_identity_and_pose_reference",
+        "version_identification": "Modèles originaux GoldSrc visibles dans Uplink; tête au béret confirmée par la capture Steam de Half-Life."
+      },
+      "visual_reference_status": "official_bitmap_inspected_candidate_not_certified",
+      "generation_status": "candidate_generated_requires_review",
       "runtime_enabled": false,
       "certified_one_to_one": false,
       "implementation_status": "catalogued_not_implemented",
-      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée.",
+      "generated_asset_ids": [
+        "costume_hecu_beret_hl1_guard_right_e"
+      ],
+      "asset_scope_note": "Pose au béret seulement; ne couvre ni le HECU de base ni le masque à gaz, aucune animation complète."
     },
     {
       "id": "costume_hecu_gasmask_hl1",
@@ -2776,7 +2812,16 @@
       "runtime_enabled": false,
       "certified_one_to_one": false,
       "implementation_status": "catalogued_not_implemented",
-      "design_note": "Archive non canonique. Une reconstruction jouable serait une adaptation originale, annoncée comme telle et désactivée par défaut."
+      "design_note": "Archive non canonique. Une reconstruction jouable serait une adaptation originale, annoncée comme telle et désactivée par défaut.",
+      "archive_reference_contract": {
+        "document": "docs/resonance/data/archive_reference_contracts_20261120.json",
+        "chapter": "docs/resonance/chapters/archive_reference_contracts_20261120.md",
+        "target_id": "archive_kingpin_hl1",
+        "scope": "deferred_evidence_dossier",
+        "native_reference_capture_acquired": false,
+        "new_archive_candidate_produced": false,
+        "review_note": "Contrat documentaire; aucune capture de référence approuvée, apparence certifiée ou activation moteur déduite de cette fiche."
+      }
     },
     {
       "id": "archive_mr_friendly_hl1",
@@ -2797,7 +2842,16 @@
       "runtime_enabled": false,
       "certified_one_to_one": false,
       "implementation_status": "catalogued_not_implemented",
-      "design_note": "Archive non canonique. Une reconstruction jouable serait une adaptation originale, annoncée comme telle et désactivée par défaut."
+      "design_note": "Archive non canonique. Une reconstruction jouable serait une adaptation originale, annoncée comme telle et désactivée par défaut.",
+      "archive_reference_contract": {
+        "document": "docs/resonance/data/archive_reference_contracts_20261120.json",
+        "chapter": "docs/resonance/chapters/archive_reference_contracts_20261120.md",
+        "target_id": "archive_mr_friendly_hl1",
+        "scope": "deferred_evidence_dossier",
+        "native_reference_capture_acquired": false,
+        "new_archive_candidate_produced": false,
+        "review_note": "Contrat documentaire; aucune capture de référence approuvée, apparence certifiée ou activation moteur déduite de cette fiche."
+      }
     },
     {
       "id": "archive_cremator_hl2_2002",
@@ -2819,8 +2873,18 @@
       "generation_status": "not_started",
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "implementation_status": "catalogued_not_implemented",
-      "design_note": "Archive non canonique. Une reconstruction jouable serait une adaptation originale, annoncée comme telle et désactivée par défaut."
+      "implementation_status": "documentary_contract_not_implemented",
+      "design_note": "Archive non canonique. Une reconstruction jouable serait une adaptation originale, annoncée comme telle et désactivée par défaut.",
+      "archive_reference_contract": {
+        "document": "docs/resonance/data/archive_reference_contracts_20261120.json",
+        "chapter": "docs/resonance/chapters/archive_reference_contracts_20261120.md",
+        "target_id": "archive_cremator_hl2_2002",
+        "scope": "detailed_profile",
+        "native_reference_capture_acquired": false,
+        "new_archive_candidate_produced": false,
+        "review_note": "Contrat documentaire; aucune capture de référence approuvée, apparence certifiée ou activation moteur déduite de cette fiche."
+      },
+      "design_profile_path": "docs/resonance/data/archive_reference_contracts_20261120.json"
     },
     {
       "id": "archive_alien_assassin_hl2_2002",
@@ -2841,8 +2905,18 @@
       "generation_status": "not_started",
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "implementation_status": "catalogued_not_implemented",
-      "design_note": "Archive non canonique. Une reconstruction jouable serait une adaptation originale, annoncée comme telle et désactivée par défaut."
+      "implementation_status": "documentary_contract_not_implemented",
+      "design_note": "Archive non canonique. Une reconstruction jouable serait une adaptation originale, annoncée comme telle et désactivée par défaut.",
+      "archive_reference_contract": {
+        "document": "docs/resonance/data/archive_reference_contracts_20261120.json",
+        "chapter": "docs/resonance/chapters/archive_reference_contracts_20261120.md",
+        "target_id": "archive_alien_assassin_hl2_2002",
+        "scope": "detailed_profile",
+        "native_reference_capture_acquired": false,
+        "new_archive_candidate_produced": false,
+        "review_note": "Contrat documentaire; aucune capture de référence approuvée, apparence certifiée ou activation moteur déduite de cette fiche."
+      },
+      "design_profile_path": "docs/resonance/data/archive_reference_contracts_20261120.json"
     },
     {
       "id": "archive_odell_hl2",
@@ -2863,8 +2937,18 @@
       "generation_status": "not_started",
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "implementation_status": "catalogued_not_implemented",
-      "design_note": "Archive non canonique. Une reconstruction jouable serait une adaptation originale, annoncée comme telle et désactivée par défaut."
+      "implementation_status": "documentary_contract_not_implemented",
+      "design_note": "Archive non canonique. Une reconstruction jouable serait une adaptation originale, annoncée comme telle et désactivée par défaut.",
+      "archive_reference_contract": {
+        "document": "docs/resonance/data/archive_reference_contracts_20261120.json",
+        "chapter": "docs/resonance/chapters/archive_reference_contracts_20261120.md",
+        "target_id": "archive_odell_hl2",
+        "scope": "detailed_profile",
+        "native_reference_capture_acquired": false,
+        "new_archive_candidate_produced": false,
+        "review_note": "Contrat documentaire; aucune capture de référence approuvée, apparence certifiée ou activation moteur déduite de cette fiche."
+      },
+      "design_profile_path": "docs/resonance/data/archive_reference_contracts_20261120.json"
     },
     {
       "id": "archive_air_exchange_hl2",
@@ -2885,7 +2969,16 @@
       "runtime_enabled": false,
       "certified_one_to_one": false,
       "implementation_status": "catalogued_not_implemented",
-      "design_note": "Archive non canonique. Une reconstruction jouable serait une adaptation originale, annoncée comme telle et désactivée par défaut."
+      "design_note": "Archive non canonique. Une reconstruction jouable serait une adaptation originale, annoncée comme telle et désactivée par défaut.",
+      "archive_reference_contract": {
+        "document": "docs/resonance/data/archive_reference_contracts_20261120.json",
+        "chapter": "docs/resonance/chapters/archive_reference_contracts_20261120.md",
+        "target_id": "archive_air_exchange_hl2",
+        "scope": "deferred_evidence_dossier",
+        "native_reference_capture_acquired": false,
+        "new_archive_candidate_produced": false,
+        "review_note": "Contrat documentaire; aucune capture de référence approuvée, apparence certifiée ou activation moteur déduite de cette fiche."
+      }
     },
     {
       "id": "archive_borealis_hl2_cut",
@@ -2906,8 +2999,18 @@
       "generation_status": "not_started",
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "implementation_status": "catalogued_not_implemented",
-      "design_note": "Archive non canonique. Une reconstruction jouable serait une adaptation originale, annoncée comme telle et désactivée par défaut."
+      "implementation_status": "documentary_contract_not_implemented",
+      "design_note": "Archive non canonique. Une reconstruction jouable serait une adaptation originale, annoncée comme telle et désactivée par défaut.",
+      "archive_reference_contract": {
+        "document": "docs/resonance/data/archive_reference_contracts_20261120.json",
+        "chapter": "docs/resonance/chapters/archive_reference_contracts_20261120.md",
+        "target_id": "archive_borealis_hl2_cut",
+        "scope": "detailed_profile",
+        "native_reference_capture_acquired": false,
+        "new_archive_candidate_produced": false,
+        "review_note": "Contrat documentaire; aucune capture de référence approuvée, apparence certifiée ou activation moteur déduite de cette fiche."
+      },
+      "design_profile_path": "docs/resonance/data/archive_reference_contracts_20261120.json"
     },
     {
       "id": "archive_blob_ep3",
@@ -2928,8 +3031,18 @@
       "generation_status": "not_started",
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "implementation_status": "catalogued_not_implemented",
-      "design_note": "Archive non canonique. Une reconstruction jouable serait une adaptation originale, annoncée comme telle et désactivée par défaut."
+      "implementation_status": "documentary_contract_not_implemented",
+      "design_note": "Archive non canonique. Une reconstruction jouable serait une adaptation originale, annoncée comme telle et désactivée par défaut.",
+      "archive_reference_contract": {
+        "document": "docs/resonance/data/archive_reference_contracts_20261120.json",
+        "chapter": "docs/resonance/chapters/archive_reference_contracts_20261120.md",
+        "target_id": "archive_blob_ep3",
+        "scope": "detailed_profile",
+        "native_reference_capture_acquired": false,
+        "new_archive_candidate_produced": false,
+        "review_note": "Contrat documentaire; aucune capture de référence approuvée, apparence certifiée ou activation moteur déduite de cette fiche."
+      },
+      "design_profile_path": "docs/resonance/data/archive_reference_contracts_20261120.json"
     },
     {
       "id": "archive_icegun_ep3",
@@ -2950,8 +3063,18 @@
       "generation_status": "not_started",
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "implementation_status": "catalogued_not_implemented",
-      "design_note": "Archive non canonique. Une reconstruction jouable serait une adaptation originale, annoncée comme telle et désactivée par défaut."
+      "implementation_status": "documentary_contract_not_implemented",
+      "design_note": "Archive non canonique. Une reconstruction jouable serait une adaptation originale, annoncée comme telle et désactivée par défaut.",
+      "archive_reference_contract": {
+        "document": "docs/resonance/data/archive_reference_contracts_20261120.json",
+        "chapter": "docs/resonance/chapters/archive_reference_contracts_20261120.md",
+        "target_id": "archive_icegun_ep3",
+        "scope": "detailed_profile",
+        "native_reference_capture_acquired": false,
+        "new_archive_candidate_produced": false,
+        "review_note": "Contrat documentaire; aucune capture de référence approuvée, apparence certifiée ou activation moteur déduite de cette fiche."
+      },
+      "design_profile_path": "docs/resonance/data/archive_reference_contracts_20261120.json"
     },
     {
       "id": "archive_arctic_ep3",
@@ -2972,8 +3095,18 @@
       "generation_status": "not_started",
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "implementation_status": "catalogued_not_implemented",
-      "design_note": "Archive non canonique. Une reconstruction jouable serait une adaptation originale, annoncée comme telle et désactivée par défaut."
+      "implementation_status": "documentary_contract_not_implemented",
+      "design_note": "Archive non canonique. Une reconstruction jouable serait une adaptation originale, annoncée comme telle et désactivée par défaut.",
+      "archive_reference_contract": {
+        "document": "docs/resonance/data/archive_reference_contracts_20261120.json",
+        "chapter": "docs/resonance/chapters/archive_reference_contracts_20261120.md",
+        "target_id": "archive_arctic_ep3",
+        "scope": "detailed_profile",
+        "native_reference_capture_acquired": false,
+        "new_archive_candidate_produced": false,
+        "review_note": "Contrat documentaire; aucune capture de référence approuvée, apparence certifiée ou activation moteur déduite de cette fiche."
+      },
+      "design_profile_path": "docs/resonance/data/archive_reference_contracts_20261120.json"
     },
     {
       "id": "sentry_turret_portal2",

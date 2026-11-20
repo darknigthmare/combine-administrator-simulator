@@ -2,13 +2,23 @@
 
 Bible, production graphique et premier module Boss Battle jouable du mode annexe de combat 2D de Half Life Administrator.
 
-## Suite du 20 novembre — lot D
+## Suite du 20 novembre — lot E
 
-La bible Markdown passe en **version 1.4**. Le [chapitre des machines du Cartel](chapters/combine_encounter_design_20261120.md) précise cinq profils existants, quinze phases, treize attaques, dix-sept zones de collision proposées et **77 clips à produire**. Il ajoute trois plans de stages et dix-huit couches documentaires. Les comportements observés dans le prototype et les règles attestées par le SDK Valve sont distingués des adaptations proposées.
+La bible Markdown passe en **version 1.5**. Le [dossier des archives](chapters/archive_reference_contracts_20261120.md) développe huit contrats de référence pour le contenu abandonné et suit les trois autres archives dont les preuves restent à compléter. Les modèles, concepts, prototypes et adaptations proposées sont distingués ; aucun personnage inédit n’est présenté comme une apparence officielle finale.
 
-Le [lot D et sa galerie](production/continuation_20261120_d/README.md) ajoutent **huit PNG pour sept cibles** : soldat Overwatch, Fourmilion et Zombine de la réserve, Strider de White Forest, Advisor, maîtres Ravenholm et Canaux, et sol séparé des Canaux. Aucun costume n’est ajouté dans ce lot. Une correction du détourage du Strider a été refusée ; sa première version reste disponible avec ses franges documentées.
+Le [lot E et sa galerie](production/continuation_20261120_e/README.md) ajoutent **douze PNG pour sept cibles** : Dog, Hunter, Fourmilion ouvrier, costume HECU au béret, Gargantua vu de dos, cinq fichiers de couches des Canaux et deux de Ravenholm. La révision du mur central des Canaux remplace la v1 pour la prochaine revue. Les Canaux ont cinq plans candidats sur six ; Ravenholm en a deux.
 
-L’état courant vérifié est de **27 PNG distincts**, **39 demandes**, **12 refus**, **187 cibles**, dont **20 avec un fichier associé et 167 sans fichier**. Les douze réserves ont désormais un jeu d’origine renseigné. Les quatre fichiers de couches correspondent à trois plans identifiés ; la silhouette de Cité 17 mélange encore ciel et Citadelle et reste sans ID de plan. Aucun stage à six couches, clip animé ni contrôle de fidélité 1:1 n’est déclaré terminé.
+L’état courant vérifié est de **39 PNG distincts, 51 demandes et 12 refus**, pour **187 cibles dont 25 avec fichier et 162 sans fichier**. Aucun nouveau refus n’a été enregistré dans ce lot. Les onze fichiers de couches couvrent neuf couples stage/plan identifiés ; le fichier historique de Cité 17 reste sans ID. Aucun stage complet, clip animé ni contrôle de fidélité 1:1 n’est déclaré terminé.
+
+La [relecture alpha du lot D](production/continuation_20261120_e/alpha_review_previous_assets.json) corrige le diagnostic de franges rouges nettes pour trois sprites sur les fonds testés. Les PNG et le refus historique de la correction Strider sont conservés. Les nouveaux fichiers restent candidats ; les exports Word/Excel v1 restent historiques.
+
+## Lot D — état historique avant le lot E
+
+La bible Markdown passait en **version 1.4**. Le [chapitre des machines du Cartel](chapters/combine_encounter_design_20261120.md) précise cinq profils existants, quinze phases, treize attaques, dix-sept zones de collision proposées et **77 clips à produire**. Il ajoute trois plans de stages et dix-huit couches documentaires. Les comportements observés dans le prototype et les règles attestées par le SDK Valve sont distingués des adaptations proposées.
+
+Le [lot D et sa galerie](production/continuation_20261120_d/README.md) ajoutent **huit PNG pour sept cibles** : soldat Overwatch, Fourmilion et Zombine de la réserve, Strider de White Forest, Advisor, maîtres Ravenholm et Canaux, et sol séparé des Canaux. Aucun costume n’est ajouté dans ce lot. Une correction du détourage du Strider a été refusée ; sa première version reste disponible. Le diagnostic initial de franges est précisé par la relecture alpha du lot E.
+
+À l’issue du lot D, l’état vérifié était de **27 PNG distincts**, **39 demandes**, **12 refus**, **187 cibles**, dont **20 avec un fichier associé et 167 sans fichier**. Les douze réserves ont désormais un jeu d’origine renseigné. Les quatre fichiers de couches correspondent à trois plans identifiés ; la silhouette de Cité 17 mélange encore ciel et Citadelle et reste sans ID de plan. Aucun stage à six couches, clip animé ni contrôle de fidélité 1:1 n’est déclaré terminé.
 
 Les nouveaux fichiers restent candidats et ne changent pas les quatre boss du prototype. Les exports Word/Excel v1 demeurent historiques ; les sources Markdown/JSON courantes font foi.
 

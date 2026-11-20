@@ -268,6 +268,22 @@
       "kind": "primary_official_model_video_frame",
       "checked_on": "2026-11-20",
       "checked_scope": "Bitmap effectivement chargé et inspecté pour le lot D; aucune certification automatique de la sortie générée."
+    },
+    {
+      "id": "valve_hl25_gargantua_26s_e",
+      "title": "Valve — Half-Life 25th anniversary, Gargantua à 26,0 secondes",
+      "url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/hl1_anniversary_mashup_looping_H.264.mp4",
+      "kind": "primary_official_video_frame",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Cadre officiel inspecté pour le candidat arrière du lot E, pas certification de l’asset généré."
+    },
+    {
+      "id": "valve_hl25_gargantua_25_5s_e",
+      "title": "Valve — Half-Life 25th anniversary, Gargantua à 25,5 secondes",
+      "url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/hl1_anniversary_mashup_looping_H.264.mp4",
+      "kind": "primary_official_video_frame",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Cadre officiel inspecté pour le candidat arrière du lot E, pas certification de l’asset généré."
     }
   ],
   "bosses": [
@@ -492,16 +508,42 @@
       ],
       "source_ids": [
         "garg_code",
-        "garg"
+        "garg",
+        "valve_hl25_gargantua_26s_e",
+        "valve_hl25_gargantua_25_5s_e"
       ],
       "source_urls": [
         "https://github.com/ValveSoftware/halflife/blob/master/dlls/gargantua.cpp",
-        "https://www.combineoverwiki.net/wiki/Gargantua"
+        "https://www.combineoverwiki.net/wiki/Gargantua",
+        "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/hl1_anniversary_mashup_looping_H.264.mp4"
       ],
       "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
       "visual_status": "reference_and_animation_validation_required",
       "certified_one_to_one": false,
-      "runtime_enabled": true
+      "runtime_enabled": true,
+      "reference_capture": {
+        "reference_filename": "gargantua_montage_26_0s.png",
+        "width": 960,
+        "height": 600,
+        "sha256": "f7474efb77d1679e40745ac991ed774456d701d8fc69f0b2398924be879d7fb6",
+        "byte_size": 510467,
+        "visually_inspected": true,
+        "source_id": "valve_hl25_gargantua_26s_e",
+        "title": "Valve — Half-Life 25th anniversary, Gargantua à 26,0 secondes",
+        "source_page": "https://www.half-life.com/en/halflife/25th",
+        "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/hl1_anniversary_mashup_looping_H.264.mp4",
+        "source_video_sha256": "3ae217b122c1d6962212576cd1269f31c3a7c593962e40ff37740cb1e6d08611",
+        "source_timestamp_seconds": 26,
+        "provenance": "primary_official_video_frame",
+        "role": "visual_identity_and_pose_reference",
+        "extraction": "ffmpeg, une image PNG à l’instant exact; aucune transformation de couleur, rotation ou retouche.",
+        "version_identification": "Gargantua GoldSrc original dans le parking de Surface Tension; vue arrière / trois-quarts latérale. Aucun détail frontal invisible n’est certifié."
+      },
+      "visual_reference_status": "official_bitmap_inspected_candidate_not_certified",
+      "generated_asset_ids": [
+        "boss_gargantua_hl1_rear_threequarter_e"
+      ],
+      "candidate_scope_note": "Vue arrière trois-quarts HL1, référence du parking de Surface Tension; ne valide pas l’arène Power Up, la face avant, les flammes, les clips ou un remplacement du rendu schématique runtime."
     },
     {
       "id": "strider_whiteforest_ep2",
@@ -1759,7 +1801,17 @@
       "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
       "visual_status": "reference_and_animation_validation_required",
       "certified_one_to_one": false,
-      "runtime_enabled": false
+      "runtime_enabled": false,
+      "archive_reference_contract": {
+        "document": "docs/resonance/data/archive_reference_contracts_20261120.json",
+        "chapter": "docs/resonance/chapters/archive_reference_contracts_20261120.md",
+        "target_id": "hydra_hl2_cut",
+        "scope": "detailed_profile",
+        "native_reference_capture_acquired": false,
+        "new_archive_candidate_produced": false,
+        "review_note": "Contrat documentaire; aucune capture de référence approuvée, apparence certifiée ou activation moteur déduite de cette fiche."
+      },
+      "design_profile_path": "docs/resonance/data/archive_reference_contracts_20261120.json"
     }
   ]
 }

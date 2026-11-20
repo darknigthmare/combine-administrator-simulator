@@ -1102,7 +1102,31 @@
         "resonance_cost": 300
       },
       "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
-      "ex_variants": []
+      "ex_variants": [],
+      "reference_capture": {
+        "source_id": "steam_dog_hl2_07_e",
+        "steam_app": 220,
+        "screenshot_id": 7,
+        "role": "primary_hl2_appearance_and_pose_reference",
+        "reference_filename": "steam_220_07.jpg",
+        "sha256": "ebacc6c2da8256d0f7a348b59f3d43455275b698a248359e12971b466ac65767",
+        "width": 1600,
+        "height": 900,
+        "color_mode": "RGB",
+        "byte_size": 479577,
+        "visually_inspected": true,
+        "bitmap_modified_before_generation": false,
+        "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_412b0e9f8285d3695d0b39840da41c184dff591a.1920x1080.jpg?t=1745368545",
+        "page_url": "https://store.steampowered.com/app/220/HalfLife_2/",
+        "source_type": "primary_official_screenshot",
+        "title": "Valve / Steam — capture 220/07",
+        "source_game": "Half-Life 2",
+        "context_note": "La fiche app 220 comprend aussi les épisodes; le jeu/variante est identifié sur le contenu de cette capture, pas le seul appid."
+      },
+      "visual_reference_status": "official_bitmap_inspected_candidate_not_certified",
+      "generated_asset_ids": [
+        "dog_hl2_idle_e"
+      ]
     },
     {
       "id": "hecu_hl1",
@@ -2628,7 +2652,31 @@
         "resonance_cost": 300
       },
       "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
-      "ex_variants": []
+      "ex_variants": [],
+      "reference_capture": {
+        "source_id": "steam_hunter_ep2_09_e",
+        "steam_app": 220,
+        "screenshot_id": 9,
+        "role": "whole_body_anatomy_reference",
+        "reference_filename": "steam_220_09.jpg",
+        "sha256": "91ccecc3c41cbf60a0d762549da72546bcbb81b6d4735785da355a1e0ba8ff3d",
+        "width": 1440,
+        "height": 900,
+        "color_mode": "RGB",
+        "byte_size": 555455,
+        "visually_inspected": true,
+        "bitmap_modified_before_generation": false,
+        "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_ed5532325f508728f8481f0109d662352a519e0a.1920x1080.jpg?t=1745368545",
+        "page_url": "https://store.steampowered.com/app/220/HalfLife_2/",
+        "source_type": "primary_official_screenshot",
+        "title": "Valve / Steam — capture 220/09",
+        "source_game": "Half-Life 2: Episode Two",
+        "context_note": "La fiche app 220 comprend aussi les épisodes; le jeu/variante est identifié sur le contenu de cette capture, pas le seul appid."
+      },
+      "visual_reference_status": "official_bitmap_inspected_candidate_not_certified",
+      "generated_asset_ids": [
+        "hunter_ep2_idle_e"
+      ]
     },
     {
       "id": "antlion_worker_ep2",
@@ -2737,7 +2785,31 @@
         "resonance_cost": 300
       },
       "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
-      "ex_variants": []
+      "ex_variants": [],
+      "reference_capture": {
+        "source_id": "steam_antlion_worker_ep2_15_e",
+        "steam_app": 220,
+        "screenshot_id": 15,
+        "role": "whole_creature_appearance_reference",
+        "reference_filename": "steam_220_15.jpg",
+        "sha256": "629fba4527309d238ce5eb996fef63d67f42c86af45e18cd449a21888370fff7",
+        "width": 1620,
+        "height": 1080,
+        "color_mode": "RGB",
+        "byte_size": 358700,
+        "visually_inspected": true,
+        "bitmap_modified_before_generation": false,
+        "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_b3de6987b384b2db61b5dcad2dd6460fd2969612.1920x1080.jpg?t=1745368545",
+        "page_url": "https://store.steampowered.com/app/220/HalfLife_2/",
+        "source_type": "primary_official_screenshot",
+        "title": "Valve / Steam — capture 220/15",
+        "source_game": "Half-Life 2: Episode Two",
+        "context_note": "La fiche app 220 comprend aussi les épisodes; le jeu/variante est identifié sur le contenu de cette capture, pas le seul appid."
+      },
+      "visual_reference_status": "official_bitmap_inspected_candidate_not_certified",
+      "generated_asset_ids": [
+        "antlion_worker_ep2_idle_e"
+      ]
     },
     {
       "id": "pit_drone_op4",

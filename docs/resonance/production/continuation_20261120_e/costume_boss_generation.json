@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0",
+  "module": "Half Life Resonance",
+  "batch_id": "continuation_20261120_e",
+  "recorded_at": "2026-11-20T16:41:36.294433+00:00",
+  "generator": "image_gen built-in",
+  "purpose": "Deux candidats individuels Half-Life original depuis des bitmaps officiels réellement inspectés: un costume HECU distinct et une vue arrière du Gargantua.",
+  "counts": {
+    "requests": 2,
+    "generated": 2,
+    "blocked": 0,
+    "physical_output_files": 2,
+    "distinct_catalogue_targets": 2,
+    "certified_one_to_one": 0,
+    "runtime_enabled": 0,
+    "complete_animation_clips": 0
+  },
+  "selection_notes": [
+    "Registre global et catalogue lus avant toute demande. Aucun propriétaire ayant déjà subi un refus ni variante utilisée comme relance n’a été demandé.",
+    "Cibles annoncées avant les appels: costume_hecu_beret_hl1 et gargantua_hl1. Chaque demande possède une ou plusieurs références bitmaps ouvertes et inspectées.",
+    "Les deux cibles emploient le modèle original GoldSrc; le pack HD, les apparences Opposing Force et le remake Black Mesa ne servent pas de référence.",
+    "Les références officielles sont documentées avec leurs URL et SHA-256; seuls les deux PNG générés sont ajoutés aux assets du dépôt.",
+    "La vue arrière du Gargantua est volontairement conservée car la vidéo officielle consultée ne fournit pas une vue frontale complète assez lisible. Aucune face absente n’est inventée comme référence.",
+    "Le scientifique à lunettes inspecté sur le site officiel n’a pas été demandé; aucune relance indirecte d’anciens essais Kleiner/Eli."
+  ],
+  "deferred_targets": [
+    {
+      "target_id": "costume_gman_hl1",
+      "status": "not_attempted_reference_unavailable",
+      "page_url": "https://combineoverwiki.net/wiki/File:Gman_hl.png",
+      "failed_bitmap_url": "https://combineoverwiki.net/images/9/93/Gman_hl.png",
+      "failure": "HTTP 404 observé lors de la récupération du bitmap exact. Aucune demande imagegen; ce n’est pas un refus de génération."
+    },
+    {
+      "target_id": "costume_hecu_gasmask_hl1",
+      "status": "not_attempted_reference_insufficient",
+      "reason": "La capture Steam consultée montre les masques à distance et avec occultations. Le présent lot conserve seulement le béret mieux documenté."
+    }
+  ],
+  "assets": [
+    {
+      "batch_id": "continuation_20261120_e",
+      "created_at": "2026-11-20",
+      "source_game": "Half-Life",
+      "source_version": "GoldSrc original / non-HD",
+      "generator": "image_gen built-in",
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "visual_identity_reference",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "révision requise",
+      "candidate_status": "generated_pending_reference_cleanup",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": true,
+      "alpha_check": "présent",
+      "selected_for_next_review": true,
+      "visually_inspected": true,
+      "file_path": "assets/resonance/candidates/continuation_20261120_e/costume_hecu_beret_hl1_guard_right_e.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/costume_hecu_beret_hl1_guard_right_e.png",
+      "width": 1448,
+      "height": 1086,
+      "color_mode": "RGBA",
+      "byte_size": 943278,
+      "sha256": "78daa658d35921bd242e98361d94044895e5c11a57ba7908f826043ac0e0d29d",
+      "alpha_stats": {
+        "transparent_pixels": 1084688,
+        "transparent_fraction": 0.6897734094400862,
+        "partial_pixels": 487474,
+        "opaque_pixels": 366,
+        "max_alpha": 255,
+        "bbox_alpha_nonzero": [
+          0,
+          29,
+          1418,
+          1068
+        ],
+        "bbox_alpha_at_least_16": [
+          259,
+          67,
+          1239,
+          1059
+        ]
+      },
+      "asset_id": "costume_hecu_beret_hl1_guard_right_e",
+      "name_fr": "HECU original — costume au béret",
+      "owner_id": "hecu_hl1",
+      "owner_type": "fighter",
+      "target_ids": [
+        "costume_hecu_beret_hl1"
+      ],
+      "category": "costume_reference_sprite",
+      "prompt": "Use case: identity-preserve. Asset type: one raster 2D fighting-game costume reference sprite, a single full human figure in a single crouched guard pose. Input image 1 is Valve's official Half-Life 25th anniversary Uplink gameplay screenshot, using original GoldSrc retail models. Use ONLY the left foreground HECU soldier wearing the burgundy red beret as the appearance and pose reference. Input image 2 is Valve's Half-Life Steam screenshot and confirms the same original beret head, original uniform and MP5-like in-game weapon geometry. Preserve the specific original Half-Life 1998 HECU beret appearance: pale angular face with short brown hair, burgundy beret with small front badge, grey/white/black urban camouflage uniform, short rolled sleeves and bare forearms, dark olive segmented tactical vest with pouch shapes shown, olive rectangular pack and black boots. Preserve the original game's outfit proportions and equipment layout. Produce only that one soldier, crouching with both boots visible, aiming the black original Half-Life submachine gun toward the right in the same three-quarter side view as the left soldier in image 1. Keep the anatomy, clothing silhouette, beret outline, shoulder-to-arm proportions and held weapon shape directly tied to the source; do not change to Half-Life HD pack, Opposing Force marine, Black Mesa remake or modern military equipment. Clean detailed hand-painted raster game sprite with restrained source colors and readable volume; no photorealistic person, no new embellishments. Entire figure and entire weapon comfortably framed, with clear empty margin on every side. True alpha-transparent background including spaces between arms, legs and weapon. Single subject, single pose. No other soldier, creature, landscape, container, floor, muzzle flash, cartridge, projectile, blood, particles, cast shadow, text, badge label, border, logo or UI.",
+      "source_references": [
+        {
+          "reference_filename": "uplink_1.jpg",
+          "width": 2560,
+          "height": 1600,
+          "sha256": "6583dcb74e493ee06c8bf2e5db563cf7d4a28d371b5a84b8d25fe87e27a27d21",
+          "byte_size": 725063,
+          "visually_inspected": true,
+          "source_id": "valve_hl25_uplink_hecu_beret_e",
+          "title": "Valve — Half-Life 25th anniversary, capture Uplink, soldat au béret à gauche",
+          "source_page": "https://www.half-life.com/en/halflife/25th",
+          "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/uplink_1.jpg",
+          "provenance": "primary_official_gameplay_screenshot",
+          "role": "visual_identity_and_pose_reference",
+          "version_identification": "Modèles originaux GoldSrc visibles dans Uplink; tête au béret confirmée par la capture Steam de Half-Life."
+        },
+        {
+          "reference_filename": "steam70_1.jpg",
+          "width": 1024,
+          "height": 768,
+          "sha256": "8d1874b823bdbcb9e23ead7434bab1cefd18d1148fa1756c7204e620af1a3acb",
+          "byte_size": 111652,
+          "visually_inspected": true,
+          "source_id": "valve_steam70_hecu_beret_e",
+          "title": "Valve / Steam — Half-Life, capture officielle 0000002343",
+          "source_page": "https://store.steampowered.com/app/70/HalfLife/",
+          "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/70/0000002343.1920x1080.jpg?t=1745368462",
+          "provenance": "primary_official_gameplay_screenshot",
+          "role": "visual_identity_reference",
+          "version_identification": "Soldat HECU original au béret; vue de face en contre-plongée utilisée seulement pour confirmer tête, uniforme et arme."
+        }
+      ],
+      "source_urls": [
+        "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/uplink_1.jpg",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/70/0000002343.1920x1080.jpg?t=1745368462"
+      ],
+      "source_generated_filename": "exec-a0fc668e-be95-42f9-b7ff-8a86007881c2.png",
+      "pose": "Garde accroupie, vue de trois-quarts latérale vers la droite",
+      "notes": "Béret bordeaux, camouflage urbain gris/blanc/noir, gilet et sac olive, bras nus et deux bottes présents. Une seule figure entière et une seule pose. Vérification par alpha_composite sur blanc et gris foncé avant réduction: aucune frange colorée nette ni halo saturé visible. L’impression initiale de franges dans l’affichage RGBA brut n’est donc pas retenue comme défaut avéré. L’arme a été redessinée: silhouette du chargeur et ensemble sous-canon à comparer au modèle GoldSrc. Les poches et le visage sont davantage détaillés que la référence; aucune fidélité 1:1 certifiée. Pose accroupie: ne vaut pas garde debout ni animation complète. Le target_ids explicite rattache uniquement ce PNG au costume au béret; il ne couvre pas le masque à gaz.",
+      "alpha_compositing_qa": {
+        "checked_at": "2026-11-20T16:44:18.980873+00:00",
+        "method": "Pillow Image.alpha_composite sur fond opaque à la résolution native; conversion RGB puis thumbnail LANCZOS pour la planche de contrôle. Inspection visuelle des composites blanc et gris foncé.",
+        "background_rgb": [
+          [
+            255,
+            255,
+            255
+          ],
+          [
+            38,
+            42,
+            46
+          ]
+        ],
+        "composite_before_resize": true,
+        "source_image_modified": false,
+        "source_sha256_verified": true,
+        "very_low_alpha_pixels_1_to_15": 19687,
+        "observation": "Aucune frange saturée nette ni halo coloré visible sur les composites inspectés. L’affichage RGBA brut ne suffit pas à établir un défaut de détourage.",
+        "remaining_gate": "Fidélité à la référence, proportions et détails de l’équipement ou de l’anatomie restent à valider; aucun changement de statut 1:1 ou runtime."
+      }
+    },
+    {
+      "batch_id": "continuation_20261120_e",
+      "created_at": "2026-11-20",
+      "source_game": "Half-Life",
+      "source_version": "GoldSrc original / non-HD",
+      "generator": "image_gen built-in",
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "visual_identity_reference",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "révision requise",
+      "candidate_status": "generated_pending_reference_cleanup",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": true,
+      "alpha_check": "présent",
+      "selected_for_next_review": true,
+      "visually_inspected": true,
+      "file_path": "assets/resonance/candidates/continuation_20261120_e/boss_gargantua_hl1_rear_threequarter_e.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/boss_gargantua_hl1_rear_threequarter_e.png",
+      "width": 1312,
+      "height": 1199,
+      "color_mode": "RGBA",
+      "byte_size": 1307540,
+      "sha256": "3e4edb5ef2fc5a847304210facc6098d752a1575719362f9b4d933d16cd85c1f",
+      "alpha_stats": {
+        "transparent_pixels": 794537,
+        "transparent_fraction": 0.5050810889155597,
+        "partial_pixels": 778155,
+        "opaque_pixels": 396,
+        "max_alpha": 255,
+        "bbox_alpha_nonzero": [
+          0,
+          3,
+          1306,
+          1199
+        ],
+        "bbox_alpha_at_least_16": [
+          101,
+          18,
+          1176,
+          1179
+        ]
+      },
+      "asset_id": "boss_gargantua_hl1_rear_threequarter_e",
+      "name_fr": "Gargantua original — vue arrière trois-quarts",
+      "owner_id": "gargantua_hl1",
+      "owner_type": "boss",
+      "target_ids": [
+        "gargantua_hl1"
+      ],
+      "category": "boss_reference_sprite",
+      "prompt": "Use case: identity-preserve. Asset type: one full-body raster 2D boss reference sprite. Input images 1 and 2 are exact frames at 26.0 seconds and 25.5 seconds from Valve's official Half-Life 25th-anniversary gameplay montage. They show the original Half-Life 1998 GoldSrc Gargantua in the Surface Tension parking-garage encounter. Isolate and redraw only this giant alien boss as one clean, detailed raster game sprite. Keep the original creature's exact visible silhouette and source orientation: a rear / rear-side three-quarter view, broad hunched fan-shaped ridged upper carapace, concentric segmented blue-green plates with dark gaps and brown ribbed insets, bulky torso, long forearms ending in the source pincer-like flame emitters, short heavy bent legs and original broad pointed feet. Preserve the original asymmetric visible pose and body proportions. The same original GoldSrc design and markings as the supplied screenshots; no Black Mesa remake, no HD redesign, no extra spikes, no decorative armor, no invented machinery. Preserve the visible rear-side viewpoint instead of inventing an unseen front face. Bring the entire creature into view, keeping the source pose readable and all limbs inside the canvas, with margin on every side. One single subject and one single pose. Hand-painted 2D raster sprite with carefully defined source shapes, restrained blue-green/brown colors and neutral lighting so the existing plates remain readable. True alpha-transparent background including gaps between limbs. Remove the cars, soldier, parking structure, floor, grenade, weapon viewmodel, HUD and every scene element from the references. No flames, smoke, particles, scenery, cast shadow, vignette, ground plane, text, labels, multiple poses or extra creature.",
+      "source_references": [
+        {
+          "reference_filename": "gargantua_montage_26_0s.png",
+          "width": 960,
+          "height": 600,
+          "sha256": "f7474efb77d1679e40745ac991ed774456d701d8fc69f0b2398924be879d7fb6",
+          "byte_size": 510467,
+          "visually_inspected": true,
+          "source_id": "valve_hl25_gargantua_26s_e",
+          "title": "Valve — Half-Life 25th anniversary, Gargantua à 26,0 secondes",
+          "source_page": "https://www.half-life.com/en/halflife/25th",
+          "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/hl1_anniversary_mashup_looping_H.264.mp4",
+          "source_video_sha256": "3ae217b122c1d6962212576cd1269f31c3a7c593962e40ff37740cb1e6d08611",
+          "source_timestamp_seconds": 26,
+          "provenance": "primary_official_video_frame",
+          "role": "visual_identity_and_pose_reference",
+          "extraction": "ffmpeg, une image PNG à l’instant exact; aucune transformation de couleur, rotation ou retouche.",
+          "version_identification": "Gargantua GoldSrc original dans le parking de Surface Tension; vue arrière / trois-quarts latérale. Aucun détail frontal invisible n’est certifié."
+        },
+        {
+          "reference_filename": "gargantua_montage_25_5s.png",
+          "width": 960,
+          "height": 600,
+          "sha256": "bd75bc4fa2ef562d54ccfc0193b590fe59a961d490b69282e5766746968faa88",
+          "byte_size": 457373,
+          "visually_inspected": true,
+          "source_id": "valve_hl25_gargantua_25_5s_e",
+          "title": "Valve — Half-Life 25th anniversary, Gargantua à 25,5 secondes",
+          "source_page": "https://www.half-life.com/en/halflife/25th",
+          "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/hl1_anniversary_mashup_looping_H.264.mp4",
+          "source_video_sha256": "3ae217b122c1d6962212576cd1269f31c3a7c593962e40ff37740cb1e6d08611",
+          "source_timestamp_seconds": 25.5,
+          "provenance": "primary_official_video_frame",
+          "role": "visual_identity_and_pose_reference",
+          "extraction": "ffmpeg, une image PNG à l’instant exact; aucune transformation de couleur, rotation ou retouche.",
+          "version_identification": "Gargantua GoldSrc original dans le parking de Surface Tension; vue arrière / trois-quarts latérale. Aucun détail frontal invisible n’est certifié."
+        }
+      ],
+      "source_urls": [
+        "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/hl1_anniversary_mashup_looping_H.264.mp4"
+      ],
+      "source_generated_filename": "exec-8230e640-a4ac-4645-b0d5-2ec6b11d6682.png",
+      "pose": "Vue arrière / trois-quarts latérale issue du parking de Surface Tension",
+      "notes": "Carapace en éventail bleu-vert, nervures brunes, volumes des avant-bras et deux pieds visibles; un seul boss entier. Vue arrière conservée selon les références: ni œil ni face ne sont certifiés. Marges serrées au sommet. Vérification par alpha_composite sur blanc et gris foncé avant réduction: aucune frange colorée nette ni halo saturé visible. Les pixels de très faible alpha mesurés dans le fichier ne sont pas, à eux seuls, un défaut visible de contour. Articulation du bras lointain et contours des pinces à revalider sur un modèle complet. Ce candidat documente le volume arrière et ne remplace pas une garde latérale de gameplay. Le prototype de mécanique Gargantua existait avant ce lot; ce fichier n’y est pas intégré.",
+      "alpha_compositing_qa": {
+        "checked_at": "2026-11-20T16:44:19.044482+00:00",
+        "method": "Pillow Image.alpha_composite sur fond opaque à la résolution native; conversion RGB puis thumbnail LANCZOS pour la planche de contrôle. Inspection visuelle des composites blanc et gris foncé.",
+        "background_rgb": [
+          [
+            255,
+            255,
+            255
+          ],
+          [
+            38,
+            42,
+            46
+          ]
+        ],
+        "composite_before_resize": true,
+        "source_image_modified": false,
+        "source_sha256_verified": true,
+        "very_low_alpha_pixels_1_to_15": 43540,
+        "observation": "Aucune frange saturée nette ni halo coloré visible sur les composites inspectés. L’affichage RGBA brut ne suffit pas à établir un défaut de détourage.",
+        "remaining_gate": "Fidélité à la référence, proportions et détails de l’équipement ou de l’anatomie restent à valider; aucun changement de statut 1:1 ou runtime."
+      }
+    }
+  ],
+  "scope_note": "Journal limité aux deux demandes de ce sous-lot E. Ne comprend pas les autres assets E créés par les autres agents. Aucun registre partagé, catalogue, roster, script ou code runtime modifié par ce sous-lot; aucun stage terminé et aucun clip d’animation terminé."
+}

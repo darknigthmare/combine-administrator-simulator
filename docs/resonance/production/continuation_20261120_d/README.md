@@ -1,5 +1,9 @@
 # Reprise du 20 novembre 2026 — lot D, Half-Life et Combine
 
+## Erratum de transparence — revue du lot E
+
+Ce rapport conserve l’état historique du lot D. La [relecture alpha du lot E](../continuation_20261120_e/alpha_review_previous_assets.json) révise les mentions de « franges rouges nettes » du Strider, du Fourmilion standard et de l’Advisor ci-dessous : sur les fonds opaques clair et foncé testés, ces franges nettes ne sont pas confirmées. Les pixels rouge saturé mesurés ont tous un alpha de 1 à 15. Les PNG originaux sont inchangés, les autres limites restent ouvertes et le refus historique de la correction Strider est conservé. Le registre global contient la conclusion courante.
+
 Ce lot poursuit la [PR #2](https://github.com/darknigthmare/combine-administrator-simulator/pull/2) après le lot C, depuis le commit `25b3392`. Il conserve les cibles existantes du catalogue et ajoute **huit PNG candidats pour sept cibles** : trois poses de personnages de réserve, deux poses de boss, deux maîtres de décor et un sol des Canaux. **Aucun costume n’a été produit dans ce lot.**
 
 Les fichiers sont des candidats de production. Aucune nouvelle animation complète, intégration moteur, certification visuelle 1:1 ou arène à six couches n’est déclarée.

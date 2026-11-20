@@ -1321,7 +1321,7 @@
         "checked_scope": "Référence visuelle effectivement chargée. Projection latérale recomposée pour le combat; ni topologie ni fichiers générés certifiés 1:1."
       },
       "creative_status": "adaptation 2D originale non canonique",
-      "asset_status": "maître candidat présent; couches et validation restantes",
+      "asset_status": "maître et cinq plans candidats présents; L05, raccords et parallaxe à terminer",
       "competitive": {
         "flat_ground": true,
         "ground_y_logical_px": 880,
@@ -1341,7 +1341,12 @@
           "content": "ciel urbain",
           "separate_image": true,
           "generated": false,
-          "verified": false
+          "verified": false,
+          "candidate_asset_ids": [
+            "layer_canals_sky_e"
+          ],
+          "selected_candidate_asset_id": "layer_canals_sky_e",
+          "candidate_note": "Fichier candidat et revue statique seulement; generated/verified restent faux jusqu’à validation des raccords et de la parallaxe."
         },
         {
           "id": "L01_far",
@@ -1349,7 +1354,12 @@
           "content": "tours et cheminées",
           "separate_image": true,
           "generated": false,
-          "verified": false
+          "verified": false,
+          "candidate_asset_ids": [
+            "layer_canals_far_city_e"
+          ],
+          "selected_candidate_asset_id": "layer_canals_far_city_e",
+          "candidate_note": "Fichier candidat et revue statique seulement; generated/verified restent faux jusqu’à validation des raccords et de la parallaxe."
         },
         {
           "id": "L02_mid",
@@ -1357,7 +1367,13 @@
           "content": "pont et usine",
           "separate_image": true,
           "generated": false,
-          "verified": false
+          "verified": false,
+          "candidate_asset_ids": [
+            "layer_canals_mid_structure_e",
+            "layer_canals_mid_structure_v2_e"
+          ],
+          "selected_candidate_asset_id": "layer_canals_mid_structure_v2_e",
+          "candidate_note": "Fichier candidat et revue statique seulement; generated/verified restent faux jusqu’à validation des raccords et de la parallaxe."
         },
         {
           "id": "L03_near",
@@ -1365,7 +1381,12 @@
           "content": "canal inférieur et muret",
           "separate_image": true,
           "generated": false,
-          "verified": false
+          "verified": false,
+          "candidate_asset_ids": [
+            "layer_canals_near_water_e"
+          ],
+          "selected_candidate_asset_id": "layer_canals_near_water_e",
+          "candidate_note": "Fichier candidat et revue statique seulement; generated/verified restent faux jusqu’à validation des raccords et de la parallaxe."
         },
         {
           "id": "L04_ground",
@@ -1442,9 +1463,15 @@
         "role": "visual_identity_reference"
       },
       "generated_asset_ids": [
+        "layer_canals_far_city_e",
         "layer_canals_floor_d",
+        "layer_canals_mid_structure_e",
+        "layer_canals_mid_structure_v2_e",
+        "layer_canals_near_water_e",
+        "layer_canals_sky_e",
         "stage_canals_master_d"
-      ]
+      ],
+      "layer_review_report": "docs/resonance/production/continuation_20261120_e/stage_layer_review.json"
     },
     {
       "id": "STG_13_HL2_BME",
@@ -1579,7 +1606,7 @@
         "checked_scope": "Référence visuelle effectivement chargée. Projection latérale recomposée pour le combat; ni topologie ni fichiers générés certifiés 1:1."
       },
       "creative_status": "adaptation 2D originale non canonique",
-      "asset_status": "maître candidat présent; couches et validation restantes",
+      "asset_status": "maître, ciel et sol candidats présents; quatre plans et raccords à terminer",
       "competitive": {
         "flat_ground": true,
         "ground_y_logical_px": 880,
@@ -1599,7 +1626,12 @@
           "content": "ciel nocturne",
           "separate_image": true,
           "generated": false,
-          "verified": false
+          "verified": false,
+          "candidate_asset_ids": [
+            "layer_ravenholm_sky_e"
+          ],
+          "selected_candidate_asset_id": "layer_ravenholm_sky_e",
+          "candidate_note": "Fichier candidat et revue statique seulement; generated/verified restent faux jusqu’à validation des raccords et de la parallaxe."
         },
         {
           "id": "L01_far",
@@ -1631,7 +1663,12 @@
           "content": "portion de rue plane sans fosse",
           "separate_image": true,
           "generated": false,
-          "verified": false
+          "verified": false,
+          "candidate_asset_ids": [
+            "layer_ravenholm_floor_e"
+          ],
+          "selected_candidate_asset_id": "layer_ravenholm_floor_e",
+          "candidate_note": "Fichier candidat et revue statique seulement; generated/verified restent faux jusqu’à validation des raccords et de la parallaxe."
         },
         {
           "id": "L05_foreground",
@@ -1696,8 +1733,11 @@
         "role": "visual_identity_reference"
       },
       "generated_asset_ids": [
+        "layer_ravenholm_floor_e",
+        "layer_ravenholm_sky_e",
         "stage_ravenholm_master_d"
-      ]
+      ],
+      "layer_review_report": "docs/resonance/production/continuation_20261120_e/stage_layer_review.json"
     },
     {
       "id": "STG_15_HL2_NOVA",
