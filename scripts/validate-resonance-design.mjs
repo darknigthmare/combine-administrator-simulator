@@ -19,6 +19,9 @@ const stages = read('stages.json').stages;
 const backlog = read('asset_backlog.json').rows;
 const animation = read('animation_budget.json');
 const art = read('generated_art_register.json');
+const extension = read('catalogue_extension_20261120.json');
+const extensionIds = new Set(extension.targets.map(target => target.id));
+const bossIds = new Set(read('boss_battle_catalog.json').bosses.map(boss => boss.id));
 const frameData = read('frame_data_pilote.json');
 const fighters = roster.fighters;
 check(Array.isArray(fighters), 'Roster must expose fighters[]');
@@ -115,6 +118,9 @@ for (const asset of art.assets) {
   }
   if (asset.owner_type === 'fighter') check(fighterIds.has(asset.owner_id), `${asset.asset_id}: unknown fighter owner`);
   if (asset.owner_type === 'stage') check(stageIds.has(asset.owner_id), `${asset.asset_id}: unknown stage owner`);
+  if (asset.owner_type === 'boss') check(bossIds.has(asset.owner_id), `${asset.asset_id}: unknown boss owner`);
+  if (['support_character', 'support_machine'].includes(asset.owner_type)) check(extensionIds.has(asset.owner_id), `${asset.asset_id}: unknown extension owner`);
+  check(['fighter', 'stage', 'boss', 'support_character', 'support_machine', 'shared_collection'].includes(asset.owner_type), `${asset.asset_id}: unknown owner type`);
   if (asset.generation_status !== 'généré') {
     check(asset.file_path === null && asset.repository_path === null, `${asset.asset_id}: failed request has an asset path`);
     continue;
@@ -129,7 +135,9 @@ for (const asset of art.assets) {
   check(createHash('sha256').update(bytes).digest('hex') === asset.sha256, `${asset.asset_id}: image checksum`);
   if (asset.alpha_check === 'présent') check(bytes[25] === 6 || bytes[25] === 4, `${asset.asset_id}: alpha channel missing`);
 }
-check(generated === 6 && art.assets.length === 9, 'Image generation journal count mismatch');
+check(generated === art.counts.generated && art.assets.length === art.counts.requests, 'Image generation journal count mismatch');
+check(art.assets.filter(asset => asset.generation_status === 'refus automatique').length === art.counts.blocked, 'Blocked generation journal count mismatch');
+check(art.assets.filter(asset => asset.integrated_in_game).length === art.counts.integrated_in_game, 'Prototype integration journal count mismatch');
 if (errors.length) {
   console.error(errors.map(error => `FAIL ${error}`).join('\n'));
   process.exitCode = 1;

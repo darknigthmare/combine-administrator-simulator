@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-11-20",
+  "generator": "image_gen built-in",
+  "assets": [
+    {
+      "asset_id": "gonarch_hl1_idle_right_b",
+      "owner_id": "gonarch_hl1",
+      "owner_type": "boss",
+      "category": "boss_key_pose",
+      "filename": "gonarch_hl1_idle_right.png",
+      "source_urls": [
+        "https://www.combineoverwiki.net/wiki/Gonarch",
+        "https://combineoverwiki.net/wiki/File:Hl_gonarch_model.png",
+        "https://github.com/ValveSoftware/halflife/blob/master/dlls/bigmomma.cpp"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: single isolated boss sprite candidate for a 2D fighting game. Create exactly ONE Gonarch from the original released HALF-LIFE (1998), NOT the Black Mesa remake. Preserve the recognizable original model design: a broad smooth dark-brown flattened armored carapace, EXACTLY FOUR long powerful angular arthropod legs tapering to dark pointed feet, and ONE large pale fleshy softly wrinkled hanging egg sac beneath the center of the carapace. The central body remains low and wide; no humanoid face or head, no jaws, no pincers, no additional arms, no extra legs, no invented spines or tentacles. Full body lateral gameplay view facing screen right with slight three-quarter depth just enough to see all four legs clearly. One neutral grounded stance, every leg tip and the whole upper body visible, generous padding around silhouette. Crisp high-resolution hand-painted 2D game art with restrained natural material texture, Half-Life original color identity and readable anatomy, not a redesign or photoreal creature photo. Lighting upper-left. True transparent background, no floor, no shadow pedestal, no scene, no small headcrabs, no other characters, no text, no UI, no contact sheet. This is one complete subject in one image.",
+      "transparent_background": true,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "reference_bitmap_loaded": false,
+      "reference_access_note": "Pages et sources textuelles consultées. Les URLs bitmap d’origine ont renvoyé 404 ; aucune comparaison pixel-à-pixel ni source bitmap passée au générateur.",
+      "generation_status": "refus automatique",
+      "status": "non produit",
+      "qa_status": "non produit",
+      "file_path": null,
+      "repository_path": null,
+      "width": null,
+      "height": null,
+      "color_mode": null,
+      "alpha_check": "non applicable",
+      "error": {
+        "code": "moderation_blocked",
+        "moderation_stage": "output",
+        "request_id": "48fb94df-eac5-4fd6-8e20-33ee68e23075",
+        "message": "Your request was rejected by the safety system."
+      }
+    },
+    {
+      "asset_id": "apache_hecu_hl1_hover_left_b",
+      "owner_id": "apache_hl1",
+      "owner_type": "boss",
+      "category": "boss_vehicle_key_pose",
+      "filename": "apache_hecu_hl1_hover_left.png",
+      "source_urls": [
+        "https://www.combineoverwiki.net/wiki/AH-64_Apache",
+        "https://combineoverwiki.net/wiki/File:Apache_model.jpg",
+        "https://github.com/ValveSoftware/halflife/blob/master/dlls/apache.cpp"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one isolated vehicle boss sprite for Half-Life Resonance. Create ONE AH-64 APACHE helicopter as represented by the original released HALF-LIFE 1998 HECU model. Original-game dark olive green angular fuselage, tandem two-seat stepped black cockpit glazing, long narrow tail boom with tail rotor, four-blade main rotor, short stub wings carrying the original game's compact rocket/missile stores, chin-mounted chain gun, wheeled landing gear. Preserve the recognizable restrained low-detail 1998 model proportions and dark green HECU paint; do not redesign into a modern AH-64D Longbow and do not add a radar mushroom above the rotor; do not use black Opposing Force Black Ops livery. Small subdued ARMY marking on the side and restrained original shark-mouth nose art if readable, no external captions. Show the full helicopter in strict side-on horizontal flight facing SCREEN LEFT, camera aligned with fuselage middle height. All rotor tips, tail, landing wheels, wing equipment and nose fully inside image with ample transparent margins. Crisp detailed hand-painted 2D UHD game sprite, neutral upper-left lighting, sharp silhouette. True transparent background. No pilot outside the helicopter, no scenery, no smoke or explosion, no muzzle flash, no separate rockets, no floor, no motion streaks that hide the silhouette, no duplicate, exactly one vehicle one image.",
+      "transparent_background": true,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "reference_bitmap_loaded": false,
+      "reference_access_note": "Pages et sources textuelles consultées. Les URLs bitmap d’origine ont renvoyé 404 ; aucune comparaison pixel-à-pixel ni source bitmap passée au générateur.",
+      "generation_status": "généré",
+      "status": "généré",
+      "file_path": "assets/resonance/candidates/continuation_20261120_b/apache_hecu_hl1_hover_left.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_b/apache_hecu_hl1_hover_left.png",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "sha256": "baff2f1ab11df8fec17d6b23944043a7c15118a457fa1a65329ad24c5b58dc01",
+      "byte_size": 1045538,
+      "alpha_check": "présent",
+      "alpha_stats": {
+        "transparent_pixels": 934087,
+        "opaque_pixels": 1676,
+        "intermediate_pixels": 636765,
+        "transparent_fraction": 0.5940034136117132,
+        "subject_bbox": [
+          0,
+          6,
+          2172,
+          724
+        ],
+        "visible_subject_bbox_alpha_gt_128": [
+          28,
+          40,
+          2159,
+          704
+        ],
+        "pixels_alpha_1_to_10": 68672
+      },
+      "qa_status": "candidat à vérifier",
+      "notes": "Inspection visuelle : un hélicoptère complet vers la gauche ; rotor, queue et roues dans le cadre ; livrée olive, ARMY et nose art présents. Comparaison aux proportions, texture et stores du modèle HL1 encore requise. Une pose statique ne constitue pas un clip animé. Alpha du corps autour de 252–253/255 ; faible halo alpha 1–10 en périphérie, à nettoyer avant intégration."
+    },
+    {
+      "asset_id": "stage_whiteforest_ep2_hangar_master_b",
+      "owner_id": "STG_20_EP2_WHITEFOREST",
+      "owner_type": "stage",
+      "category": "stage_master",
+      "filename": "stage_whiteforest_ep2_hangar_master.png",
+      "source_urls": [
+        "https://www.combineoverwiki.net/wiki/White_Forest",
+        "https://combineoverwiki.net/wiki/File:Heli_hangar2.jpg",
+        "https://combineoverwiki.net/wiki/File:Magnusson_rocket_silo_WF.jpg"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one wide master background candidate for a side-on 2D fighting game. Depict the WHITE FOREST Resistance base MAIN GROUND-FLOOR VEHICLE HANGAR from HALF-LIFE 2 EPISODE TWO, the workshop hangar where the Muscle Car is serviced, not a generic sci-fi spaceport. Faithful original-game industrial setting: weathered concrete and corrugated utilitarian metal walls, heavy roof trusses, an open broad exit to green conifer forest and muted daylight, battered workshop equipment and cables positioned only along the rear wall, grounded Eastern European former military base materials. This is the main vehicle workshop near the silo complex, NOT the separate Mil Mi-8 helicopter hangar of the ending. Make an empty 2D arena with a continuous perfectly level wide concrete fighting lane crossing the lower quarter from left to right. Camera side-on perpendicular to this lane, not isometric, not a road receding into the distance. Architectural backdrop behind the lane, open middle with strong readable depth bands, pale forest light contrasting warm dim workshop lamps, detailed hand-painted UHD 2D environment. NO people, no aliens, no vehicles, no guns, no active combat, no fire, no UI, no text labels, no title. Props must not block the fighting lane. One complete panoramic stage master, wide 3:1 canvas. Do not render a layer sheet or multiple panels.",
+      "transparent_background": false,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "reference_bitmap_loaded": false,
+      "reference_access_note": "Pages et sources textuelles consultées. Les URLs bitmap d’origine ont renvoyé 404 ; aucune comparaison pixel-à-pixel ni source bitmap passée au générateur.",
+      "generation_status": "généré",
+      "status": "généré",
+      "file_path": "assets/resonance/candidates/continuation_20261120_b/stage_whiteforest_ep2_hangar_master.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_b/stage_whiteforest_ep2_hangar_master.png",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGB",
+      "sha256": "3a696d169dc647eca91548e7328a61858a9e24aa8e6599e0daff8bcf5caa6915",
+      "byte_size": 2888943,
+      "alpha_check": "sans objet",
+      "qa_status": "révision requise",
+      "notes": "Inspection visuelle : voie de combat continue et dégagée, vue latérale, aucun personnage. La vue extérieure ajoute de grands silos cylindriques non confirmés par les captures de la base ; architecture et emplacement doivent être revus depuis une capture du hangar principal. Un panorama n’est pas un décor à six couches."
+    },
+    {
+      "asset_id": "abrams_hl1_idle_left_b",
+      "owner_id": "abrams_hl1",
+      "owner_type": "boss",
+      "category": "boss_vehicle_key_pose",
+      "filename": "abrams_hl1_idle_left.png",
+      "source_urls": [
+        "https://www.combineoverwiki.net/wiki/M1A1_Abrams",
+        "https://combineoverwiki.net/wiki/Topside_Motorpool"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE isolated 2D vehicle boss sprite candidate for Half-Life Resonance. Subject is the HECU M1A1 ABRAMS as it appears in the ORIGINAL HALF-LIFE 1998 Surface Tension level, built from simple angular brush geometry, NOT a modern real-life Abrams reinterpretation and NOT the Black Mesa remake. Low broad olive-green armored hull with dark continuous tank tracks, blocky shallow angular turret, one long main gun barrel pointing screen left, simple muted green rectangular armor planes and sparse original-game surface detail. Preserve the chunky low-profile, simple original Half-Life visual identity. No extra modern armor kits, no drone system, no elaborate accessories, no neon, no reactive armor tiles. Show full tank from the side facing SCREEN LEFT, parked level, main cannon horizontal, entire barrel and both front/back edges of track entirely visible with generous clean transparent margins. A subtly three-quarter depth is allowed only to read turret and track depth; main view is lateral for 2D combat. Crisp detailed painted UHD 2D game asset with restrained weathered military materials, natural upper-left light. One complete tank and nothing else. TRUE TRANSPARENT BACKGROUND, no terrain, no ground plane, no platform, no shadow haze outside the tank, no smoke, no fire, no soldier, no second vehicle, no UI, no captions, no contact sheet.",
+      "transparent_background": true,
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261120_b/abrams_hl1_idle_left.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_b/abrams_hl1_idle_left.png",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "sha256": "8cc0aa1af8e8eacd1e4a4a27f7bdc0560080d7de874d840fa6a975a8d286b609",
+      "byte_size": 1462551,
+      "alpha_check": "présent",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "reference_bitmap_loaded": false,
+      "alpha_stats": {
+        "transparent_pixels": 750839,
+        "opaque_pixels": 1135,
+        "intermediate_pixels": 820554,
+        "transparent_fraction": 0.47747257918459957,
+        "subject_bbox": [
+          30,
+          5,
+          2143,
+          701
+        ],
+        "visible_subject_bbox_alpha_gt_128": [
+          33,
+          93,
+          2139,
+          664
+        ],
+        "pixels_alpha_1_to_10": 21236
+      },
+      "reference_access_note": "Description textuelle de la version finale HL1 consultée ; aucune capture bitmap chargée. Ne pas valider une géométrie de tank réel à la place de la géométrie brush du jeu.",
+      "notes": "Inspection visuelle : un seul véhicule olive en vue latérale gauche, canon et chenilles complets, fond transparent. Comparaison des volumes de la tourelle, du canon et du chassis à la géométrie brush HL1 encore requise. Pas de TOW ajouté (variante Blue Shift distincte), pas de décor. Une pose statique ne constitue pas un clip."
+    }
+  ],
+  "counts": {
+    "requests": 4,
+    "generated": 3,
+    "blocked": 1,
+    "certified_one_to_one": 0,
+    "integrated_in_game": 0,
+    "completed_animation_clips": 0,
+    "completed_six_layer_stages": 0
+  }
+}

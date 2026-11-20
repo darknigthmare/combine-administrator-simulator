@@ -2,6 +2,18 @@
 
 Bible, production graphique et premier module Boss Battle jouable du mode annexe de combat 2D de Half Life Administrator.
 
+<!-- CURRENT_CONTINUATION_20261120_B -->
+## Reprise du 20 novembre — état vérifié
+
+La bible Markdown passe en **version 1.2** avec [102 cibles supplémentaires](chapters/catalogue_extension_20261120.md): personnages, petites machines, costumes, stages, rencontres et archives séparées. Cette extension est documentaire; elle n’ajoute pas 102 combattants jouables.
+
+**Douze PNG sont réellement présents**, dont six nouveaux fichiers couvrant Colette, G-Man, Apache HECU, Abrams et White Forest (v1 plus correction v2). [La galerie et le rapport du lot](production/continuation_20261120_b/README.md) décrivent les limites, les cinq nouveaux refus et les prompts. Tous restent candidats, sans certification 1:1 ni animation complète.
+
+La [file consolidée des manquants](production/MISSING_TARGETS.md) et son [JSON](data/production_queue.json) relient les catalogues aux images présentes. Le [rapport d’audit](production/asset_audit.md) vérifie chemins, dimensions, tailles et SHA256. Les 68 PNG et 229 cibles évoqués dans une reprise antérieure n’ont pas été retrouvés; ils ne sont pas présentés comme livrés. [Détail de récupération](production/continuation_20261120_b/RECOVERY_STATUS.md).
+
+Les exports Word/Excel v1 ci-dessous restent des instantanés historiques. Les sources Markdown/JSON actuelles font foi.
+<!-- END_CURRENT_CONTINUATION_20261120_B -->
+
 ## Boss Battle
 
 Le menu principal ouvre désormais **Half Life Resonance · Boss Battle**, également accessible avec `?module=resonance-boss-battle`. Six profils pilotes affrontent quatre boss dans une simulation à 60 Hz : Strider, Dropship et sa nacelle, Gunship, Gargantua. Opération libre, Boss Rush de quatre rencontres et entraînement fonctionnent, avec trois difficultés, commandes clavier/tactiles, interactions d'arène, pause, résultats et records locaux séparés de la gestion.
@@ -14,7 +26,7 @@ Le [chapitre Boss Battle](BOSS_BATTLE.md), repris dans la bible complète, docum
 - `src/features/resonance/bossBattle` : moteur, catalogue pilote, écran, rendu et tests.
 - [État de validation du lot](technical/BOSS_BATTLE_VALIDATION.md).
 
-## Contenu du lot
+## Premier lot — historique du 19 novembre
 
 La conception couvre 24 combattants, 24 arènes, six kits pilotes, une histoire en douze chapitres, les parcours arcade avec intro, rival et ending, les modes de tournoi, l'entraînement, les fatalités optionnelles et la production des décors en parallaxe.
 
@@ -39,7 +51,7 @@ Ces exports Word et Excel sont les instantanés historiques v1 du premier lot ; 
 - `data/frame_data_pilote.json` : données initiales des normales et projections des six pilotes.
 - `data/asset_backlog.json` et `asset_backlog.csv` : groupes de production.
 - `data/animation_inventory.json` et `animation_budget.json` : séquences et dessins cibles.
-- `data/generated_art_register.json` : journal des neuf demandes et des six résultats.
+- `data/generated_art_register.json` : journal courant des demandes, fichiers, refus et itérations non retenues.
 - `data/existing_visual_inventory.json` : visuels présents dans la base auditée.
 - `technical/resonance_contracts.ts` : contrats proposés et vérifications partielles.
 
@@ -52,6 +64,8 @@ Depuis la racine du dépôt :
 ```bash
 node scripts/validate-resonance-design.mjs
 node scripts/validate-resonance-boss-design.mjs
+node scripts/audit-resonance-production.mjs --write-report
+node scripts/sync-resonance-production.mjs --write
 npm run quality
 ```
 
