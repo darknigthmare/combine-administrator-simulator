@@ -1,0 +1,246 @@
+{
+  "schema_version": "1.0",
+  "generator": "image_gen built-in",
+  "date": "2026-11-20",
+  "assets": [
+    {
+      "asset_id": "colette_decay_idle_right_b",
+      "owner_id": "colette_decay",
+      "owner_type": "fighter",
+      "name_fr": "Colette Green — Decay",
+      "target_ids": [
+        "colette_decay"
+      ],
+      "category": "fighter_key_pose",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "prompt": "Use case: stylized-concept. Asset type: ONE individual full-body 2D UHD fighting-game key-pose sprite for Half-Life Resonance. Subject: Dr. Colette Green, exactly the adult scientist protagonist's RELEASED PlayStation 2 Half-Life: Decay appearance, not Gina Cross and not a fan remake. Preserve her distinctive short chin-length brown bob hair, uncovered face, original realistic slim adult proportions, and her MAROON / dark burgundy HEV suit with charcoal ribbed flexible joints, pale metal inset details and correct HEV lambda chest emblem. Do not use Gordon's orange Mark V suit or Gina's pale suit. Pose: full figure head to soles, relaxed ready stance turned toward screen right in side-on gameplay projection with slight three-quarter torso; holds the original Half-Life red steel crowbar lowered in the near hand, free hand lightly raised, legs separated on one horizontal baseline. Frame all hair, feet, fingers and entire crowbar with ample margin. Medium: crisp, detailed hand-painted high resolution 2D game sprite, faithful recognizable Half-Life Decay design and material palette, restrained neutral lighting from upper left, precise edges, modest expression. Scene: genuinely transparent background only, no scenery and no ground plane. ONE character, ONE pose, no sheet, no additional body, no caption, no text outside suit emblem, no watermark, no glow halo, no cut-off limbs. Visual identity fidelity is the priority; this is a candidate for source-model comparison.",
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/Colette_Green",
+        "https://combineoverwiki.net/wiki/File:Ps2_colette_decay.png"
+      ],
+      "reference_bitmap_loaded": false,
+      "reference_access_note": "Sources textuelles consultées. Les images de référence du wiki n’ont pas pu être récupérées. Aucune comparaison visuelle directe au modèle original n’est déclarée.",
+      "file_path": "assets/resonance/candidates/continuation_20261120_b/colette_decay_idle_right.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_b/colette_decay_idle_right.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "width": 1024,
+      "height": 1536,
+      "color_mode": "RGBA",
+      "alpha_check": "présent",
+      "batch_id": "continuation_20261120_b",
+      "sha256": "f9b702b0a174dd75d82c93894e8af4aa23a2d8ca526b1c796edb7413217d1c17",
+      "byte_size": 1732456,
+      "alpha_stats": {
+        "transparent_pixels": 1134234,
+        "partial_pixels": 438630,
+        "opaque_pixels": 0,
+        "max_alpha": 254,
+        "transparent_fraction": 0.7211265563964844,
+        "pixels_alpha_1_to_10": 18604,
+        "visible_subject_bbox_alpha_gt_128": [
+          149,
+          13,
+          810,
+          1523
+        ]
+      },
+      "notes": "Une figure complète et une seule pose. Transparence réelle; de nombreux pixels RGB de brume visibles dans certains aperçus ont alpha zéro. Une faible frange alpha 1–10 et une opacité maximale 254 subsistent: contrôler sur fond clair/sombre avant runtime. Visage, proportions et vêtement à confronter au modèle exact. Aucun clip animé terminé. Tenue bordeaux et cheveux courts conservés. L’essai de détourage supplémentaire n’a pas apporté une amélioration suffisante et n’est pas retenu.",
+      "selected_for_next_review": true
+    },
+    {
+      "asset_id": "gman_hl2_idle_right_b",
+      "owner_id": "gman_hl2",
+      "owner_type": "support_character",
+      "name_fr": "G-Man — Half-Life 2",
+      "target_ids": [
+        "gman_hl2"
+      ],
+      "category": "support_key_pose",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "prompt": "Use case: stylized-concept. One individual full-body high-resolution 2D painted game character sprite of the G-Man as he appears in the released Half-Life 2. Faithful original final HL2 appearance: slender middle-aged pale man, angular gaunt face and prominent cheekbones, neat dark-brown side-parted hair, discreet green-grey eyes with ordinary subtle reflection and NO glowing eyes. Canonical plain blue-grey business suit, jacket with narrow lapels, pale shirt, restrained dark tie, straight matching trousers and black leather dress shoes. Carries his single rectangular dark briefcase naturally in one lowered hand. Unsettling composed neutral standing pose facing screen right, subtle three-quarter torso, free hand straightening the tie, shoes planted on a shared horizontal baseline. Entire figure and entire briefcase fully visible with generous margins; realistic original proportions. Clean detailed hand-painted UHD sprite, fine material textures, sharp controlled edges and upper-left light. TRUE TRANSPARENT BACKGROUND: no colored backdrop, no mist or halo, no shadow on a ground plane, no particles, no extra person, no collage, no labels, no UI, no text. ONE pose in ONE image. Fidelity to the HL2 final model only, not the Half-Life Alyx face or a cinematic actor's likeness, not stylized villain caricature.",
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/The_G-Man",
+        "https://www.half-life.com/en/halflife2/20th"
+      ],
+      "reference_bitmap_loaded": false,
+      "reference_access_note": "Sources textuelles consultées. Les images de référence du wiki n’ont pas pu être récupérées. Aucune comparaison visuelle directe au modèle original n’est déclarée.",
+      "file_path": "assets/resonance/candidates/continuation_20261120_b/gman_hl2_idle_right.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_b/gman_hl2_idle_right.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "width": 1024,
+      "height": 1536,
+      "color_mode": "RGBA",
+      "alpha_check": "présent",
+      "batch_id": "continuation_20261120_b",
+      "sha256": "ec757a7bc655292484ab172a7098094321576b2646c0d2cec2616eef6e7840b7",
+      "byte_size": 1509587,
+      "alpha_stats": {
+        "transparent_pixels": 1103870,
+        "partial_pixels": 468994,
+        "opaque_pixels": 0,
+        "max_alpha": 254,
+        "transparent_fraction": 0.7018216451009115,
+        "pixels_alpha_1_to_10": 16848,
+        "visible_subject_bbox_alpha_gt_128": [
+          215,
+          12,
+          742,
+          1526
+        ]
+      },
+      "notes": "Une figure complète et une seule pose. Transparence réelle; de nombreux pixels RGB de brume visibles dans certains aperçus ont alpha zéro. Une faible frange alpha 1–10 et une opacité maximale 254 subsistent: contrôler sur fond clair/sombre avant runtime. Visage, proportions et vêtement à confronter au modèle exact. Aucun clip animé terminé. Mallette et costume complet; yeux sans lueur verte, conformément à la correction Valve. Pose narrative/assistance, pas moveset jouable.",
+      "selected_for_next_review": true
+    },
+    {
+      "asset_id": "kleiner_hl2_idle_right_b",
+      "owner_id": "kleiner_hl2",
+      "owner_type": "support_character",
+      "name_fr": "Isaac Kleiner — Half-Life 2",
+      "target_ids": [
+        "kleiner_hl2"
+      ],
+      "category": "support_key_pose",
+      "generation_status": "refus automatique",
+      "status": "non produit",
+      "qa_status": "non produit",
+      "prompt": "Use case: stylized-concept. Asset: one full-body high-resolution hand-painted 2D game character sprite for Half-Life Resonance. Precisely recognizable Dr. Isaac Kleiner from released Half-Life 2 (2004), his canonical final model, no redesign. Thin elderly bald scientist with sparse grey hair at sides, large forehead, thin black-frame glasses, narrow gentle lined face. Worn off-white long laboratory coat, light shirt and dark simple necktie, pens in chest pocket, grey-brown trousers and sensible brown shoes. Original Half-Life 2 body and head proportions. Neutral cautious pose turned toward screen right, slight three-quarter torso, both hands relaxed at midsection as if discussing an experiment, without weapon, Lamarr, clipboard or second subject. Complete head to shoe soles fully inside the frame with generous margin and feet on a common horizontal baseline. Detailed crisp 2D UHD painted sprite finish, restrained realistic materials and upper-left light, strong gameplay readability. True transparent alpha background, absolutely no studio backdrop, haze, glow, floor shadow, floor disc, scenery, text, labels or duplicate pose. ONE character per image. Match the released HL2 model's face, clothing silhouette and palette; not a younger scientist, not HL1 scientist model, not a superhero reinterpretation.",
+      "source_urls": [
+        "https://www.combineoverwiki.net/wiki/Isaac_Kleiner",
+        "https://combineoverwiki.net/wiki/File:Kleiner_model.jpg"
+      ],
+      "reference_bitmap_loaded": false,
+      "reference_access_note": "Sources textuelles consultées. Les images de référence du wiki n’ont pas pu être récupérées. Aucune comparaison visuelle directe au modèle original n’est déclarée.",
+      "file_path": null,
+      "repository_path": null,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "width": null,
+      "height": null,
+      "color_mode": null,
+      "alpha_check": "non applicable",
+      "batch_id": "continuation_20261120_b",
+      "generation_error": "image generation failed: http 400 Bad Request: Some(\"{\\n  \\\"error\\\": {\\n    \\\"message\\\": \\\"Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID 6a948a55-dfe9-4a9a-8e41-dc58bd15bef7.\\\",\\n    \\\"type\\\": \\\"image_generation_user_error\\\",\\n    \\\"param\\\": null,\\n    \\\"code\\\": \\\"moderation_blocked\\\",\\n    \\\"moderation_details\\\": {\\n      \\\"moderation_stage\\\": \\\"output\\\",\\n      \\\"categories\\\": [\\n        \\\"other\\\"\\n      ]\\n    }\\n  }\\n}\")",
+      "notes": "Le service image_gen a refusé la sortie automatiquement (moderation_blocked). Aucun PNG produit; aucune reformulation de contournement tentée."
+    },
+    {
+      "asset_id": "eli_hl2_idle_right_b",
+      "owner_id": "eli_hl2",
+      "owner_type": "support_character",
+      "name_fr": "Eli Vance — Half-Life 2",
+      "target_ids": [
+        "eli_hl2"
+      ],
+      "category": "support_key_pose",
+      "generation_status": "refus automatique",
+      "status": "non produit",
+      "qa_status": "non produit",
+      "prompt": "Use case: stylized-concept. Asset type: one individual full-body 2D UHD painted character sprite of Eli Vance in his canonical released HALF-LIFE 2 appearance. Elderly Black scientist, short greying hair, neatly trimmed grey facial hair, weathered thoughtful face. Faded muted green long-sleeved sweater over pale shirt, worn grey-brown practical trousers, brown leather footwear. Crucial anatomy: LEFT LEG is amputated below the knee and has Eli's distinctive visible makeshift mechanical prosthetic lower leg; his RIGHT leg is biological and wears the normal trouser leg and shoe. Do not mirror left and right. Pose in three-quarter side view facing SCREEN RIGHT with his anatomical LEFT side toward viewer so that the prosthetic left shin is unobscured and clearly distinguishable. Original elderly human physique, calm balanced standing dialogue/assist pose with both hands relaxed in front, not an armed fighter. Entire body from head to both soles in frame, generous transparent margins, horizontal foot baseline. Crisp detailed realistic painted 2D game sprite preserving the released HL2 model identity and clothing colors. No Yale lettering or invented shirt graphics, no lab coat, no Alyx-era costume. True alpha-transparent background, no scenery, no second subject, no floor plate or ground shadow, no smoky halo, no labels, no text, no UI, one character one pose.",
+      "source_urls": [
+        "https://www.combineoverwiki.net/wiki/Eli_Vance"
+      ],
+      "reference_bitmap_loaded": false,
+      "reference_access_note": "Sources textuelles consultées. Les images de référence du wiki n’ont pas pu être récupérées. Aucune comparaison visuelle directe au modèle original n’est déclarée.",
+      "file_path": null,
+      "repository_path": null,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "width": null,
+      "height": null,
+      "color_mode": null,
+      "alpha_check": "non applicable",
+      "batch_id": "continuation_20261120_b",
+      "generation_error": "image generation failed: http 400 Bad Request: Some(\"{\\n  \\\"error\\\": {\\n    \\\"message\\\": \\\"Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID 505fd436-f306-46ac-b028-431fbac2626f.\\\",\\n    \\\"type\\\": \\\"image_generation_user_error\\\",\\n    \\\"param\\\": null,\\n    \\\"code\\\": \\\"moderation_blocked\\\",\\n    \\\"moderation_details\\\": {\\n      \\\"moderation_stage\\\": \\\"output\\\",\\n      \\\"categories\\\": [\\n        \\\"other\\\"\\n      ]\\n    }\\n  }\\n}\")",
+      "notes": "Le service image_gen a refusé la sortie automatiquement (moderation_blocked). Aucun PNG produit; aucune reformulation de contournement tentée."
+    },
+    {
+      "asset_id": "sentry_turret_portal2_idle_right_b",
+      "owner_id": "sentry_turret_portal2",
+      "owner_type": "support_machine",
+      "name_fr": "Tourelle sentinelle — Portal 2",
+      "target_ids": [
+        "sentry_turret_portal2"
+      ],
+      "category": "support_key_pose",
+      "generation_status": "refus automatique",
+      "status": "non produit",
+      "qa_status": "non produit",
+      "prompt": "Use case: stylized-concept. Create ONE isolated high resolution 2D game sprite of the standard APERTURE SCIENCE SENTRY TURRET from the released PORTAL 2. Exact recognizable original turret silhouette: narrow elegant upright elongated white egg-shaped outer shell, a single small red circular optical eye in the front central black slit, three thin black articulated supporting legs with pointed feet forming a stable tripod. Two curved white side shell wings CLOSED in its calm standby configuration so weapons are retracted. Smooth off-white shell with fine seam lines and very restrained wear, black central internal mechanism visible in narrow gaps. No human arms, no tank base, no wheels, no huge guns or military redesign. Three-quarter SIDE view facing screen RIGHT for a 2D fighting game's assist or environmental machine sprite; show entire turret including all three foot tips with generous margin. Original Portal 2 proportions, clean crisp detailed hand-painted UHD sprite, controlled neutral upper-left light. TRUE alpha-transparent background only. No floor, no platform, no studio backdrop or glow haze, no laser beam, no muzzle flash, no scene, no labels, no text or logo overlays, no second turret, no spritesheet. One machine in one image.",
+      "source_urls": [
+        "https://theportalwiki.com/wiki/Turret"
+      ],
+      "reference_bitmap_loaded": false,
+      "reference_access_note": "Sources textuelles consultées. Les images de référence du wiki n’ont pas pu être récupérées. Aucune comparaison visuelle directe au modèle original n’est déclarée.",
+      "file_path": null,
+      "repository_path": null,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "width": null,
+      "height": null,
+      "color_mode": null,
+      "alpha_check": "non applicable",
+      "batch_id": "continuation_20261120_b",
+      "generation_error": "image generation failed: http 400 Bad Request: Some(\"{\\n  \\\"error\\\": {\\n    \\\"message\\\": \\\"Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID ea493518-01aa-455c-b2c8-826e7f5c8b88.\\\",\\n    \\\"type\\\": \\\"image_generation_user_error\\\",\\n    \\\"param\\\": null,\\n    \\\"code\\\": \\\"moderation_blocked\\\",\\n    \\\"moderation_details\\\": {\\n      \\\"moderation_stage\\\": \\\"output\\\",\\n      \\\"categories\\\": [\\n        \\\"other\\\"\\n      ]\\n    }\\n  }\\n}\")",
+      "notes": "Le service image_gen a refusé la sortie automatiquement (moderation_blocked). Aucun PNG produit; aucune reformulation de contournement tentée."
+    },
+    {
+      "asset_id": "defective_turret_portal2_idle_right_b",
+      "owner_id": "defective_turret_portal2",
+      "owner_type": "support_machine",
+      "name_fr": "Tourelle défectueuse — Portal 2",
+      "target_ids": [
+        "defective_turret_portal2"
+      ],
+      "category": "support_key_pose",
+      "generation_status": "refus automatique",
+      "status": "non produit",
+      "qa_status": "non produit",
+      "prompt": "Use case: stylized-concept. One single full-body 2D UHD sprite of the DEFECTIVE TURRET from released Portal 2 SINGLE-PLAYER Chapter 5. This is the recognizable incomplete Sentry Turret from the production line: exposed thin dark skeletal internal chassis and wiring, missing the normal smooth white egg-shaped outer shell panels, one exposed red optical eye assembly near the upper front, three narrow black tripod legs with pointed tips. Preserve Portal 2 factory turret proportions, exposed internal arms and machinery, simple worn grey metal, black mechanical parts and minor wiring details. No improvised human skull, no humanoid arms or head, no wheels, no armored military redesign, no added ammunition. It is the harmless empty-ammunition single-player defective unit, not the functional co-op turret reskin. Resting neutral pose, slightly three-quarter SIDE view aimed screen RIGHT, feet along horizontal game baseline. Show the complete entire unit with all three legs within the frame and generous margins. Crisp detailed painted 2D game sprite faithful to the released Portal 2 defective turret design. True transparent alpha, no background, no ground plate, no ground shadow or diffuse glow, no laser, no gunfire, no text, no second unit, no contact sheet. One machine one image.",
+      "source_urls": [
+        "https://theportalwiki.com/wiki/Defective_Turret",
+        "https://theportalwiki.com/wiki/Turret"
+      ],
+      "reference_bitmap_loaded": false,
+      "reference_access_note": "Sources textuelles consultées. Les images de référence du wiki n’ont pas pu être récupérées. Aucune comparaison visuelle directe au modèle original n’est déclarée.",
+      "file_path": null,
+      "repository_path": null,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "width": null,
+      "height": null,
+      "color_mode": null,
+      "alpha_check": "non applicable",
+      "batch_id": "continuation_20261120_b",
+      "generation_error": "image generation failed: http 400 Bad Request: Some(\"{\\n  \\\"error\\\": {\\n    \\\"message\\\": \\\"Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID 21001d7c-c88c-42e8-970f-ca9675dc6051.\\\",\\n    \\\"type\\\": \\\"image_generation_user_error\\\",\\n    \\\"param\\\": null,\\n    \\\"code\\\": \\\"moderation_blocked\\\",\\n    \\\"moderation_details\\\": {\\n      \\\"moderation_stage\\\": \\\"output\\\",\\n      \\\"categories\\\": [\\n        \\\"other\\\"\\n      ]\\n    }\\n  }\\n}\")",
+      "notes": "Le service image_gen a refusé la sortie automatiquement (moderation_blocked). Aucun PNG produit; aucune reformulation de contournement tentée."
+    }
+  ],
+  "iterations_not_retained": [
+    {
+      "iteration_id": "colette_background_edit_b",
+      "input_asset_id": "colette_decay_idle_right_b",
+      "prompt": "Use case: background-extraction. Edit the provided Colette Green sprite only to clean its transparency. Preserve the complete existing character exactly: identical face, short brown bob, maroon HEV armor, lambda chest, hands, crowbar, pose, boots, all color and detail, exact canvas and scale. Remove ALL of the diffuse brown/grey/black atmospheric glow and soft cloud surrounding the body and between the legs and arms. All pixels that are not physical character or crowbar must be fully alpha transparent. Tight clean antialiased edges at the actual silhouette only, with no drop shadow, no surrounding light, no backdrop and no floor. Do not redesign, crop, sharpen away details or move any body part. One single sprite.",
+      "outcome": "generated_not_selected",
+      "repository_path": null,
+      "output_sha256": "3ba2a74e45898f5933b20e1c11d6a2d0b32af3d090a5b33b96a06da3dfd94fad",
+      "note": "Essai de détourage non sélectionné: pas d’amélioration suffisante observée. Ne compte pas comme un personnage ni comme un fichier livré supplémentaire."
+    }
+  ]
+}

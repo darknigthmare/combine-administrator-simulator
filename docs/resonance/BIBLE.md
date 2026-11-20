@@ -1,11 +1,23 @@
 # Half Life Resonance
 
-Bible du mode annexe de combat 2D — version 1.1 — 19 novembre 2026
+Bible du mode annexe de combat 2D — version 1.5 — 20 novembre 2026
 
+
+<!-- CURRENT_CONTINUATION_20261120_E -->
+## Mise à jour du 20 novembre — lot E et archives
+
+Le [lot E](production/continuation_20261120_e/README.md) livre douze PNG candidats pour sept cibles existantes : Dog, Hunter, Fourmilion ouvrier, costume HECU au béret, Gargantua, Canaux et Ravenholm. Le [registre consolidé](data/generated_art_register.json) compte désormais **39 PNG, 51 demandes et 12 refus**, sans nouveau refus dans ce lot. Le catalogue conserve **187 cibles : 25 avec fichier, 162 sans fichier**.
+
+Les Canaux disposent de cinq plans candidats sur six et Ravenholm de deux. La v2 du mur central des Canaux remplace la v1 pour la prochaine revue ; les raccords et les parties cachées en parallaxe restent à terminer. Les cinq nouveaux sujets sont des poses uniques, sans clips animés ni intégration moteur. Aucun candidat n’est certifié 1:1 et aucun stage complet à six couches n’est déclaré terminé.
+
+Le [dossier d’archives](chapters/archive_reference_contracts_20261120.md), repris à la fin de cette bible, développe **huit contrats détaillés et trois dossiers de recherche**, avec 21 sources, 16 repères visuels inspectés et 48 éléments de capture demandés. Ses 41 sorties proposées, dont douze couches de lieux, sont un plan de travail : aucune image d’archive n’a été produite. Les onze archives restent désactivées. Concepts, prototypes, code publié et versions commercialisées sont distingués.
+
+La [relecture alpha](production/continuation_20261120_e/alpha_review_previous_assets.json) révise le diagnostic de franges rouges nettes de trois sprites D après composition sur fonds opaques. Les fichiers originaux et le refus historique Strider restent conservés. Les exports Word/Excel v1 demeurent historiques ; cette bible Markdown et les données JSON sont les sources courantes.
+<!-- END_CURRENT_CONTINUATION_20261120_E -->
 
 ## Mise à jour Boss Battle
 
-Le dernier chapitre ajoute le mode Boss Battle et son catalogue de 24 rencontres, plus une archive Hydra. Le module jouable livre six profils pilotes et quatre opérations en solo, Boss Rush et entraînement. Les autres chapitres gardent leurs spécifications de duel et leur historique de production : leur mention de moteur non implémenté concerne cette base de conception, pas le nouveau module Boss Battle. Les exports Word et Excel v1 restent des instantanés du premier lot. Les visuels de boss actuels sont des rendus de travail, sans certification 1:1.
+Le chapitre Boss Battle ajoute ce mode et son catalogue de 24 rencontres, plus une archive Hydra. Le module jouable livre six profils pilotes et quatre opérations en solo, Boss Rush et entraînement. Les autres chapitres gardent leurs spécifications de duel et leur historique de production : leur mention de moteur non implémenté concerne cette base de conception, pas le nouveau module Boss Battle. Les exports Word et Excel v1 restent des instantanés du premier lot. Les visuels de boss actuels sont des rendus de travail, sans certification 1:1.
 
 
 # Vision du mode Half Life Resonance
@@ -2084,3 +2096,2253 @@ Les identifiants ci-dessous correspondent au registre de sources du catalogue, c
 [^portal2_commentary]: [Commentaires Valve Portal 2](https://theportalwiki.com/wiki/Portal_2_developer_commentary).
 
 [^hl2_anniversary]: [Valve Half Life 2 vingtième anniversaire](https://www.half-life.com/fr/halflife2/20th/).
+
+<!-- CONTINUATION_20261120_B -->
+
+# Extension du catalogue — 20 novembre 2026
+
+**102 nouvelles cibles de production**, ajoutées aux catalogues déjà présents dans la PR. Elles ne représentent pas 102 combattants jouables. Le JSON associé conserve les rôles, propriétaires, sources et états de production.
+
+| Catégorie | Nouvelles cibles |
+|---|---:|
+| Personnages, créatures et petites machines | 50 |
+| Costumes et variantes | 16 |
+| Arènes | 22 |
+| Rencontres de boss et machines | 4 |
+| Archives et contenu coupé | 10 |
+
+## Règles de version et de fidélité
+
+- Un personnage, une machine ou un accessoire isolé par image. Corps et extrémités complets. Les stages sont des images distinctes et vides.
+- Chaque tenue reste liée à sa version précise. Une variante de costume ne crée pas un nouveau personnage et ne réutilise pas automatiquement le dessin de son propriétaire.
+- Les PNJ, assistances et petites machines gardent leur rôle proposé; un nom dans le catalogue ne devient pas automatiquement un combattant.
+- Les démonstrations officielles, variantes multijoueur publiées, continuités alternatives et archives de développement portent des classes distinctes. Les dix archives restent désactivées par défaut.
+- La rubrique Episode Three porte sur des archives identifiées. Aucun jeu, roster ou visuel final Half-Life 3 n’est présumé.
+- Une pose ne clôt pas une animation; un panorama ne clôt pas six plans de parallaxe. La fidélité 1:1 exige une comparaison au modèle ou à une capture de la version retenue.
+- Les 68 PNG et 229 cibles évoqués dans une reprise antérieure n’ont pas été récupérés. Ils ne sont pas comptés comme fichiers ou entrées disponibles.
+
+## État réel de cette extension
+
+Après les lots B et C, G-Man, Chell Portal 1, la tenue Chell Portal 2, le noyau de Grady, la Rocket Turret et la chaîne de fabrication disposent de candidats. Les demandes Kleiner, Eli, tourelle sentinelle, tourelle défectueuse, Wheatley, ATLAS et P-body restent sans fichier après refus du service. Colette, les véhicules HECU et White Forest relèvent des catalogues de base; leur production est détaillée dans le registre général. Aucun nouveau moveset jouable n’est déclaré terminé.
+
+## Personnages, créatures et petites machines
+
+| ID | Sujet et version | Rôle proposé | Verrou de référence | État | Sources |
+|---|---|---|---|---|---|
+| `kleiner_hl2` | **Isaac Kleiner** — Half-Life 2 | `npc_and_assist_candidate` | Modèle retail HL2; lunettes et blouse. Exclure le modèle Source 2 coupé de Half-Life: Alyx. | Refus automatique, aucun fichier | [kleiner](https://www.combineoverwiki.net/wiki/Isaac_Kleiner) · [kleiner_model](https://combineoverwiki.net/wiki/File:Kleiner_model.jpg) |
+| `eli_hl2` | **Eli Vance** — Half-Life 2 | `npc_and_assist_candidate` | Apparence HL2; prothèse sous le genou GAUCHE. Ne pas inverser le sprite pour simuler une seconde orientation validée. | Refus automatique, aucun fichier | [eli](https://www.combineoverwiki.net/wiki/Eli_Vance) |
+| `mossman_hl2` | **Judith Mossman** — Half-Life 2 | `npc_and_assist_candidate` | Modèle retail de Black Mesa East, distinct du modèle préliminaire Elena et de la tenue des transmissions arctiques. | À produire | [mossman](https://www.combineoverwiki.net/wiki/Judith_Mossman) |
+| `breen_hl2` | **Wallace Breen** — Half-Life 2 | `story_npc` | Modèle retail de Breen; aucune fusion avec le Consul abandonné. Gestes de discours, aucun arsenal militaire personnel inventé. | À produire | [breen](https://www.combineoverwiki.net/wiki/Wallace_Breen) |
+| `gman_hl2` | **G-Man** — Half-Life 2 | `story_npc` | Costume, mallette et visage du modèle HL2. Yeux avec reflet discret; pas de lueur verte ajoutée. | Candidat présent, validation en cours | [gman](https://www.combineoverwiki.net/wiki/The_G-Man) · [hl220](https://www.half-life.com/en/halflife2/20th) |
+| `odessa_hl2` | **Odessa Cubbage** — Half-Life 2 | `npc_and_assist_candidate` | Moustache et tenue de New Little Odessa; ne pas reprendre la combinaison orange d’Odell. | À produire | [odessa](https://www.combineoverwiki.net/wiki/Odessa_Cubbage) |
+| `lamarr_hl2` | **Lamarr** — Half-Life 2 | `noncombat_companion` | Crabe de tête apprivoisé de Kleiner, débecqué. Les animations de morsure parasitaire ne sont pas son comportement de base. | À produire | [lamarr](https://www.combineoverwiki.net/wiki/Hedy_Lamarr) |
+| `magnusson_ep2` | **Arne Magnusson** — Half-Life 2: Episode Two | `npc_and_assist_candidate` | Scientifique de White Forest; silhouette et tenue propres. Appareil Magnusson en accessoire séparé. | À produire | [magnusson](https://www.combineoverwiki.net/wiki/Arne_Magnusson) |
+| `uriah_ep2` | **Uriah** — Half-Life 2: Episode Two | `npc_and_assist_candidate` | Vortigaunt avec blouse, badge et stylo; préserver le troisième bras et la morphologie, sans remplacer par Kleiner. | À produire | [uriah](https://www.combineoverwiki.net/wiki/Uriah) |
+| `griggs_ep2` | **Griggs** — Half-Life 2: Episode Two | `assist_candidate` | Référence male_06 de type medic de Victory Mine; image individuelle et identité distincte de Sheckley. | À produire | [griggs_sheckley](https://www.combineoverwiki.net/wiki/Griggs_and_Sheckley) |
+| `sheckley_ep2` | **Sheckley** — Half-Life 2: Episode Two | `assist_candidate` | Référence male_08 rebelle de Victory Mine; image individuelle et identité distincte de Griggs. | À produire | [griggs_sheckley](https://www.combineoverwiki.net/wiki/Griggs_and_Sheckley) |
+| `fisherman_lostcoast` | **Le Pêcheur** — Half-Life 2: Lost Coast | `story_npc` | Apparence propre à la démo officielle Lost Coast; ne pas inventer une identité de campagne HL2. | À produire | [fisherman](https://www.combineoverwiki.net/wiki/The_Fisherman) · [hl220](https://www.half-life.com/en/halflife2/20th) |
+| `russell_hla` | **Russell** — Half-Life: Alyx | `npc_and_assist_candidate` | Tenue et modèle final HLA; le drone de Russell est un autre sujet, pas une partie de sa silhouette. | À produire | [russell](https://www.combineoverwiki.net/wiki/Russell) · [alyx](https://www.half-life.com/en/alyx) |
+| `larry_hla` | **Larry** — Half-Life: Alyx | `story_npc` | Survivant de la distillerie dans HLA; gestes d’aide et de discrétion. Pas de transformation en Jeff. | À produire | [larry](https://www.combineoverwiki.net/wiki/Larry) · [alyx_story](https://combineoverwiki.net/wiki/Half-Life:_Alyx_storyline) |
+| `gary_hla` | **Gary** — Half-Life: Alyx | `story_npc` | Vortigaunt rencontré dans la zone de quarantaine; référence HLA distincte du Vortigaunt générique HL2 et de Grady. | À produire | [alyx_story](https://combineoverwiki.net/wiki/Half-Life:_Alyx_storyline) |
+| `rosenberg_blueshift` | **Rosenberg** — Half-Life: Blue Shift | `npc_and_assist_candidate` | Modèle propre Blue Shift; ne pas substituer Kleiner. Variante Decay à cataloguer ensuite avec sa propre capture. | À produire | [rosenberg](https://combineoverwiki.net/wiki/Rosenberg) · [bs_story](https://www.combineoverwiki.net/wiki/Half-Life:_Blue_Shift_storyline) |
+| `simmons_blueshift` | **Simmons** — Half-Life: Blue Shift | `story_npc` | Scientifique de l’équipe du téléporteur; modèle de Blue Shift vérifié individuellement, pas portrait générique arbitraire. | À produire | [simmons](https://combineoverwiki.net/wiki/Simmons) · [bs_story](https://www.combineoverwiki.net/wiki/Half-Life:_Blue_Shift_storyline) |
+| `walter_bennet_blueshift` | **Walter Bennet** — Half-Life: Blue Shift | `story_npc` | Scientifique nommé de Blue Shift. Ne pas identifier automatiquement tous les scientifiques à lunettes comme Walter. | À produire | [walter](https://combineoverwiki.net/wiki/Walter_Bennet) · [bs_story](https://www.combineoverwiki.net/wiki/Half-Life:_Blue_Shift_storyline) |
+| `richard_keller_decay` | **Richard Keller** — Half-Life: Decay | `npc_and_assist_candidate` | Modèle PS2 de Keller avec son fauteuil; dimensions du fauteuil conservées dans un futur sprite entier. | À produire | [decay](https://combineoverwiki.net/wiki/Half-Life:_Decay) |
+| `otis_op4` | **Otis Laurey** — Half-Life: Opposing Force | `assist_candidate` | Garde Otis du jeu source; silhouette distincte de Barney, sans emprunter le modèle d’un mod. | À produire | [op4](https://combineoverwiki.net/wiki/Half-Life:_Opposing_Force) |
+| `hecu_medic_op4` | **Infirmier HECU** — Half-Life: Opposing Force | `assist_candidate` | Spécialité Medic du jeu original; équipement de soin et tête du modèle retenu à capturer. | À produire | [hecu_models](https://www.combineoverwiki.net/wiki/List_of_Hazardous_Environment_Combat_Unit_models) |
+| `hecu_engineer_op4` | **Ingénieur HECU** — Half-Life: Opposing Force | `assist_candidate` | Équipement d’ingénieur du jeu; chalumeau lié à l’ouverture des passages, pas lance-flammes ajouté. | À produire | [hecu_models](https://www.combineoverwiki.net/wiki/List_of_Hazardous_Environment_Combat_Unit_models) |
+| `black_ops_male_op4` | **Black Ops masculin** — Half-Life: Opposing Force | `fighter_candidate` | Uniforme masculin Opposing Force distinct de l’assassin féminin HL1 déjà catalogué. | À produire | [op4](https://combineoverwiki.net/wiki/Half-Life:_Opposing_Force) |
+| `shock_roach_op4` | **Shock Roach** — Half-Life: Opposing Force | `creature_or_weapon_prop` | Arme vivante Race X; représentation isolée, jamais confondue avec le Shock Trooper qui la porte. | À produire | [shock_roach](https://www.combineoverwiki.net/wiki/Shock_Roach) |
+| `voltigore_op4` | **Voltigore** — Half-Life: Opposing Force | `large_enemy_candidate` | Anatomie adulte de Race X à relever; conserver l’échelle relative, sans étirer un Pit Drone. | À produire | [voltigore](https://www.combineoverwiki.net/wiki/Voltigore) |
+| `baby_voltigore_op4` | **Baby Voltigore** — Half-Life: Opposing Force | `small_enemy_candidate` | Modèle juvénile source à capturer; ne pas considérer une simple réduction du PNG adulte comme un modèle validé. | À produire | [voltigore](https://www.combineoverwiki.net/wiki/Voltigore) |
+| `barnacle_hl1` | **Barnacle** — Half-Life | `environment_enemy` | Version HL1 attachée au plafond; langue et corps séparables à l’animation, aucun déplacement humanoïde. | À produire | [barnacle](https://www.combineoverwiki.net/wiki/Barnacle) |
+| `ichthyosaur_hl1` | **Ichthyosaur** — Half-Life | `aquatic_enemy_candidate` | Version HL1; production de profil aquatique et gabarit complet, pas un combattant terrestre standard. | À produire | [ichthyosaur](https://www.combineoverwiki.net/wiki/Ichthyosaur) |
+| `snark_hl1` | **Snark** — Half-Life | `small_creature` | Modèle HL1 séparé de l’animal HLA; conserver l’échelle petite, ne pas le compter comme boss géant. | À produire | [snark](https://www.combineoverwiki.net/wiki/Snark) |
+| `scientist_slick_hl1` | **Scientifique HL1 — Slick** — Half-Life | `story_npc` | Corps scientifique original et tête HEAD_SLICK. Nom technique de variante, pas biographie individuelle. | À produire | [scientist_sdk](https://github.com/ValveSoftware/halflife/blob/master/dlls/scientist.cpp) |
+| `stalker_hl2` | **Stalker** — Half-Life 2 | `enemy_candidate` | Modèle retail HL2; ne pas reprendre Stalker E3 2002 ou une reconstruction de mod. | À produire | [combine](https://www.combineoverwiki.net/wiki/Combine) |
+| `manhack_hl2` | **Manhack** — Half-Life 2 | `small_machine_enemy` | Drone à lames du jeu final; silhouette mécanique complète et lames lisibles. | À produire | [combine](https://www.combineoverwiki.net/wiki/Combine) |
+| `city_scanner_hl2` | **City Scanner** — Half-Life 2 | `small_machine_enemy` | Scanner urbain de reconnaissance; caméra et corps du modèle retail, distinct du Shield Scanner. | À produire | [combine](https://www.combineoverwiki.net/wiki/Combine) |
+| `shield_scanner_hl2` | **Shield Scanner** — Half-Life 2 | `small_machine_enemy` | Seconde famille de Scanner; prise de référence séparée et aucun simple recoloriage du City Scanner. | À produire | [combine](https://www.combineoverwiki.net/wiki/Combine) |
+| `rollermine_hl2` | **Rollermine** — Half-Life 2 | `small_machine_enemy` | États fermé/déployé et taille réelle du modèle; un état par image. | À produire | [combine](https://www.combineoverwiki.net/wiki/Combine) |
+| `chell_portal1` | **Chell** — Portal | `fighter_candidate` | Tenue et appareil de Portal 1; ne pas mélanger supports de jambe et bottes de Portal 2. | Candidat présent, validation en cours | [portal_story](https://www.combineoverwiki.net/wiki/Portal_storyline) · [portal_chars](https://theportalwiki.com/wiki/Characters) |
+| `atlas_portal2` | **ATLAS** — Portal 2 — coopération | `fighter_candidate` | Robot compact à œil bleu; proportions et appareil propres au coop. Un seul robot par fichier. | Refus automatique, aucun fichier | [coop](https://combineoverwiki.net/wiki/ATLAS_and_P-body) |
+| `pbody_portal2` | **P-body** — Portal 2 — coopération | `fighter_candidate` | Robot élancé à œil orange; silhouette distincte d’ATLAS. Un seul robot par fichier. | Refus automatique, aucun fichier | [coop](https://combineoverwiki.net/wiki/ATLAS_and_P-body) |
+| `wheatley_core_portal2` | **Wheatley — noyau mobile** — Portal 2 | `story_npc_and_assist` | Noyau autonome, distinct de Wheatley installé dans le corps central déjà catalogué comme boss. | Refus automatique, aucun fichier | [cores](https://theportalwiki.com/wiki/Cores) · [portal2_story](https://combineoverwiki.net/wiki/Portal_2_storyline) |
+| `doug_rattmann_labrat` | **Doug Rattmann** — Portal 2: Lab Rat | `story_npc` | Référence dessinée du comic officiel; toute traduction en sprite de profil est une adaptation à valider. | À produire | [labrat](https://www.thinkwithportals.com/comic/) |
+| `grady_deskjob` | **Grady** — Aperture Desk Job | `story_npc` | Noyau avec bras et support de Desk Job; continuité alternative distincte. Ne pas fusionner avec Gary de HLA. | Candidat présent, validation en cours | [grady](https://www.combineoverwiki.net/wiki/Grady) · [deskjob](https://store.steampowered.com/app/1902490/) |
+| `frankenturret_portal2` | **Frankenturret** — Portal 2 | `machine_enemy_candidate` | Créature mécanique fabriquée par Wheatley; cubes et tourelles du modèle source, sans articulation humanoïde inventée. | À produire | [portal_chars](https://theportalwiki.com/wiki/Characters) · [portal2_story](https://combineoverwiki.net/wiki/Portal_2_storyline) |
+| `reviver_hla` | **Reviver / Lightning Dog** — Half-Life: Alyx | `enemy_candidate` | Créature électrique source HLA; état autonome distinct du cadavre réanimé. | À produire | [reviver](https://www.combineoverwiki.net/wiki/Reviver) |
+| `armored_headcrab_hla` | **Crabe de tête cuirassé** — Half-Life: Alyx | `enemy_candidate` | Carapace source HLA; différencier carapace entière et état retourné au stade animation. | À produire | [armored_headcrab](https://combineoverwiki.net/wiki/Armored_Headcrab) |
+| `space_core_portal2` | **Space Core** — Portal 2 | `story_npc_and_objective` | Noyau corrompu de Portal 2; iris et capot de sa référence, image isolée sans autres noyaux. | À produire | [cores](https://theportalwiki.com/wiki/Cores) |
+| `adventure_core_portal2` | **Adventure Core / Rick** — Portal 2 | `story_npc_and_objective` | Noyau corrompu de Portal 2; identité visuelle propre, ne pas recolorier simplement Wheatley. | À produire | [cores](https://theportalwiki.com/wiki/Cores) |
+| `fact_core_portal2` | **Fact Core** — Portal 2 | `story_npc_and_objective` | Noyau corrompu de Portal 2; œil et motifs exacts à relever avant génération. | À produire | [cores](https://theportalwiki.com/wiki/Cores) |
+| `bendy_peti` | **Bendy — sujet de tests PeTI** — Portal 2: Perpetual Testing Initiative | `test_subject_candidate` | Figure de test du multivers PeTI; respecter son aspect schématique officiel. Pas de corps humain réaliste ajouté. | À produire | [peti](https://store.steampowered.com/news/posts/?appids=620&enddate=1335559264) · [peti_story](https://combineoverwiki.net/wiki/Perpetual_Testing_Initiative) |
+| `sentry_turret_portal2` | **Tourelle sentinelle Aperture — Portal 2** — Portal 2 | `stationary_machine_enemy_candidate` | Capturer la tourelle sentinelle standard dans Portal 2, avec une seule pose cohérente et la coque du modèle retail. Ne pas mélanger version Portal 1, Rocket Turret, Frankenturret, Animal King ou Prima Donna. Un sujet par fichier, mécanisme ouvert ou fermé explicitement fixé par la capture. | Refus automatique, aucun fichier | [portal2_turrets_official](https://www.thinkwithportals.com/blog.php?id=5222) · [portal2_turrets_video](https://www.youtube.com/watch?v=6i-nMWgBUp0) · [portal2_turrets](https://theportalwiki.com/wiki/Turrets) |
+| `defective_turret_portal2` | **Tourelle défectueuse — campagne Portal 2** — Portal 2 | `noncombatant_machine_and_assist_candidate` | Fixer un modèle défectueux précis de la campagne, par exemple celui manipulé dans sp_a2_bts4. Reproduire ses pièces manquantes telles qu’elles apparaissent dans la capture ; ne pas fusionner plusieurs assemblages. Cette cible vise la tourelle de campagne sans munitions, distincte des modèles à aspect dénudé fonctionnels de la coopération et de l’Oracle Turret. | Refus automatique, aucun fichier | [portal2_defective](https://theportalwiki.com/wiki/Defective_Turret) · [portal2_turrets](https://theportalwiki.com/wiki/Turrets) · [portal2_turret_control](https://www.theportalwiki.com/wiki/Portal_2_Chapter_5_Turret_Control_Center) |
+
+## Costumes et variantes
+
+| ID | Sujet et version | Rôle proposé | Verrou de référence | État | Sources |
+|---|---|---|---|---|---|
+| `costume_chell_portal2` | **Chell — tenue Portal 2** — Portal 2 | `appearance_variant` | Modèle Portal 2, combinaison à la taille et Long Fall Boots; aucune fusion avec la tenue Portal 1. | Candidat présent, validation en cours | [portal2_story](https://combineoverwiki.net/wiki/Portal_2_storyline) · [portal_chars](https://theportalwiki.com/wiki/Characters) |
+| `costume_gman_hl1` | **G-Man — modèle Half-Life** — Half-Life | `appearance_variant` | Version GoldSrc originale; visage, texture de costume et mallette du même jeu. | À produire | [gman](https://www.combineoverwiki.net/wiki/The_G-Man) |
+| `costume_gman_hla` | **G-Man — modèle Alyx** — Half-Life: Alyx | `appearance_variant` | Version Source 2 HLA; ne pas présenter un repaint du visage HL2 comme modèle HLA. | À produire | [gman](https://www.combineoverwiki.net/wiki/The_G-Man) · [alyx_story](https://combineoverwiki.net/wiki/Half-Life:_Alyx_storyline) |
+| `costume_eli_hla` | **Eli Vance — période Alyx** — Half-Life: Alyx | `appearance_variant` | Apparence HLA de la période antérieure, distincte de l’épilogue et du modèle HL2. | À produire | [eli](https://www.combineoverwiki.net/wiki/Eli_Vance) · [alyx](https://www.half-life.com/en/alyx) |
+| `costume_mossman_arctic` | **Judith Mossman — transmission arctique** — Half-Life 2: Episode One / Episode Two | `appearance_variant` | Modèle de la transmission des épisodes; ne pas transformer une tenue issue de concept art Episode Three en costume publié. | À produire | [mossman](https://www.combineoverwiki.net/wiki/Judith_Mossman) |
+| `costume_barney_cp_helmet` | **Barney — déguisement avec casque** — Half-Life 2 | `appearance_variant` | Capture de l’apparition à la gare, casque et tenue cohérents; raffine la mention du déguisement déjà dans roster. | À produire | [characters](https://combineoverwiki.net/wiki/Template:Characters) |
+| `costume_hecu_beret_hl1` | **HECU — tête au béret** — Half-Life | `appearance_variant` | Sélection explicite du modèle HECU original; ne pas emprunter tête HD ou accessoires Opposing Force. | À produire | [hecu_models](https://www.combineoverwiki.net/wiki/List_of_Hazardous_Environment_Combat_Unit_models) |
+| `costume_hecu_gasmask_hl1` | **HECU — masque à gaz** — Half-Life | `appearance_variant` | Tête masquée du modèle retenu; arme et équipement doivent appartenir à la même version. | À produire | [hecu_models](https://www.combineoverwiki.net/wiki/List_of_Hazardous_Environment_Combat_Unit_models) |
+| `costume_nova_guard_hl2` | **Soldat — garde de Nova Prospekt** — Half-Life 2 | `appearance_variant` | Insignes Nova Prospekt et lunettes de la variante source; différencier le garde standard et le garde fusil à pompe. | À produire | [soldier](https://www.combineoverwiki.net/wiki/Combine_Soldier) · [combine_markings](https://www.combineoverwiki.net/wiki/Combine_Imagery) |
+| `costume_shotgun_soldier_ep2` | **Soldat — Shotgun Soldier** — Half-Life 2: Episode Two | `appearance_variant` | Variante de modèle et texture identifiée dans Episode Two; référence du fusil à pompe distincte de l’AR2. | À produire | [soldier](https://www.combineoverwiki.net/wiki/Combine_Soldier) |
+| `costume_scientist_glasses_hl1` | **Scientifique HL1 — Glasses** — Half-Life | `appearance_variant` | Tête HEAD_GLASSES du scientifique générique; ne pas donner automatiquement le nom de Kleiner ou Walter. | À produire | [scientist_sdk](https://github.com/ValveSoftware/halflife/blob/master/dlls/scientist.cpp) |
+| `costume_scientist_einstein_hl1` | **Scientifique HL1 — Einstein** — Half-Life | `appearance_variant` | Tête HEAD_EINSTEIN et corps original, variante visuelle sans nouvelle biographie. | À produire | [scientist_sdk](https://github.com/ValveSoftware/halflife/blob/master/dlls/scientist.cpp) |
+| `costume_scientist_luther_hl1` | **Scientifique HL1 — Luther** — Half-Life | `appearance_variant` | Tête HEAD_LUTHER avec les mains correspondant au modèle. Ne pas transformer toutes ses instances en Eli. | À produire | [scientist_sdk](https://github.com/ValveSoftware/halflife/blob/master/dlls/scientist.cpp) |
+| `costume_colette_headtohead_ps2` | **Colette — Head-to-Head PS2** — Half-Life — PlayStation 2 | `appearance_variant` | Référence de version Head-to-Head distincte du modèle campagne Decay; palette exacte à capturer. | À produire | [colette_model](https://combineoverwiki.net/wiki/File:Ps2_colette_decay.png) |
+| `ivan_hl25_multiplayer` | **Ivan the Space Biker — skin publié** — Half-Life — 25th Anniversary | `official_multiplayer_skin` | Modèle multijoueur publié avec la mise à jour anniversaire; origine prototype documentée mais cette distribution est officielle. | À produire | [hl25](https://www.half-life.com/en/halflife/25th) |
+| `proto_barney_hl25_multiplayer` | **Proto-Barney — skin publié** — Half-Life — 25th Anniversary | `official_multiplayer_skin` | Modèle multijoueur publié avec la mise à jour anniversaire; ne pas le classer seulement comme archive inaccessible. | À produire | [hl25](https://www.half-life.com/en/halflife/25th) |
+
+## Arènes
+
+| ID | Sujet et version | Rôle proposé | Verrou de référence | État | Sources |
+|---|---|---|---|---|---|
+| `STG_EXT_HL1_SURFACE_DAM` | **Barrage de Surface Tension** — Half-Life | `arena_candidate` | Choisir le barrage du jeu original; voie 2D ajoutée comme adaptation, volumes du remake Black Mesa exclus. | À produire | [locations](https://combineoverwiki.net/wiki/Locations_in_the_Half-Life_and_Portal_universe) |
+| `STG_EXT_HL1_QUESTIONABLE_ETHICS` | **Laboratoires de Questionable Ethics** — Half-Life | `arena_candidate` | Choisir une salle et une carte précises; ne pas mélanger avec le spectromètre déjà catalogué. | À produire | [locations](https://combineoverwiki.net/wiki/Locations_in_the_Half-Life_and_Portal_universe) |
+| `STG_EXT_UPLINK_COMMUNICATIONS` | **Centre de communications Uplink** — Half-Life: Uplink | `arena_candidate` | Capture de la mini-campagne officielle Uplink; un lieu identifié plutôt qu’un laboratoire générique. | À produire | [hl25](https://www.half-life.com/en/halflife/25th) |
+| `STG_EXT_HLDM_CONTAMINATION` | **Contamination** — Half-Life Deathmatch — 25th Anniversary | `arena_candidate` | Relever la carte Valve contamination; la géométrie de combat 2D reste originale. | À produire | [hl25](https://www.half-life.com/en/halflife/25th) |
+| `STG_EXT_HLDM_POOL_PARTY` | **Pool Party** — Half-Life Deathmatch — 25th Anniversary | `arena_candidate` | Relever la carte officielle pool_party; préserver les piscines de soin et la référence Xen choisie. | À produire | [hl25](https://www.half-life.com/en/halflife/25th) |
+| `STG_EXT_HLDM_ROCKET_FRENZY` | **Rocket Frenzy** — Half-Life Deathmatch — 25th Anniversary | `arena_candidate` | Capture de la carte officielle rocket_frenzy; ne pas la confondre avec le stage Blast Pit existant. | À produire | [hl25](https://www.half-life.com/en/halflife/25th) |
+| `STG_EXT_BS_XEN_RELAY` | **Relais de Xen — Blue Shift** — Half-Life: Blue Shift | `arena_candidate` | Utiliser le lieu visité pendant Focal Point; géométrie propre à Blue Shift, distincte du Xen HL1 générique. | À produire | [locations](https://combineoverwiki.net/wiki/Locations_in_the_Half-Life_and_Portal_universe) · [bs_story](https://www.combineoverwiki.net/wiki/Half-Life:_Blue_Shift_storyline) |
+| `STG_EXT_DECAY_DORMITORIES` | **Dortoirs niveau 3 — Domestic Violence** — Half-Life: Decay | `arena_candidate` | Référence PS2 ht05dorms; ne pas utiliser le port amateur PC comme preuve de l’apparence d’origine. | À produire | [decay_story](https://www.combineoverwiki.net/wiki/Domestic_Violence) · [locations](https://combineoverwiki.net/wiki/Locations_in_the_Half-Life_and_Portal_universe) |
+| `STG_EXT_LOSTCOAST_MONASTERY` | **Monastère de Lost Coast** — Half-Life 2: Lost Coast | `arena_candidate` | Lieu de la démo officielle; préserver le relevé des matériaux et l’éclairage choisi. | À produire | [hl220](https://www.half-life.com/en/halflife2/20th) · [locations](https://combineoverwiki.net/wiki/Locations_in_the_Half-Life_and_Portal_universe) |
+| `STG_EXT_HLA_NORTHERN_STAR` | **Hôtel Northern Star** — Half-Life: Alyx | `arena_candidate` | Capture de l’hôtel; choisir un espace identifiable et inscrire tout élargissement de sol comme adaptation 2D. | À produire | [alyx_story](https://combineoverwiki.net/wiki/Half-Life:_Alyx_storyline) |
+| `STG_EXT_HLA_ZOO` | **Zoo de Cité 17** — Half-Life: Alyx | `arena_candidate` | Référence du chapitre Captivity; ne pas remplacer par le quartier de quarantaine général déjà au catalogue. | À produire | [alyx_story](https://combineoverwiki.net/wiki/Half-Life:_Alyx_storyline) |
+| `STG_EXT_PORTAL1_RELAXATION` | **Relaxation Vault — Portal** — Portal | `arena_candidate` | Apparence initiale Portal 1, environnement clinique intact. La version délabrée Portal 2 est une autre référence. | À produire | [portal_story](https://www.combineoverwiki.net/wiki/Portal_storyline) |
+| `STG_EXT_PORTAL1_TEST17` | **Salle 17 et incinérateur** — Portal | `arena_candidate` | Sélectionner une vue de la salle source avec dispositifs séparés. Aucun numéro de salle inventé. | À produire | [portal_story](https://www.combineoverwiki.net/wiki/Portal_storyline) |
+| `STG_EXT_PORTAL1_MAINTENANCE` | **Maintenance — The Escape** — Portal | `arena_candidate` | Couloirs techniques de Portal 1; échelle et trame des murs à capturer avant maître et plans. | À produire | [portal_story](https://www.combineoverwiki.net/wiki/Portal_storyline) |
+| `STG_EXT_PORTAL2_RELAXATION` | **Chambre de relaxation délabrée** — Portal 2 | `arena_candidate` | Chambre du début de Portal 2; vieillissement source, pas de combinaison arbitraire avec Portal 1. | À produire | [portal2_story](https://combineoverwiki.net/wiki/Portal_2_storyline) |
+| `STG_EXT_PORTAL2_OLD_APERTURE` | **Ancien Aperture — sphère de tests** — Portal 2 | `arena_candidate` | Choisir une sphère et une période du secteur ancien; ambiance différente du laboratoire moderne. | À produire | [portal2_story](https://combineoverwiki.net/wiki/Portal_2_storyline) |
+| `STG_EXT_PORTAL2_TURRET_FACTORY` | **Chaîne de fabrication des tourelles** — Portal 2 | `arena_candidate` | Secteur industriel de fabrication Portal 2, captures officielles Steam 08 et 09: bras orange, tapis et puits mécanique. Projection latérale recomposée et explicitement adaptée, sans confusion avec une chambre blanche ni le hub coop. | Candidat présent, validation en cours | [portal2_story](https://combineoverwiki.net/wiki/Portal_2_storyline) |
+| `STG_EXT_PORTAL2_COOP_HUB` | **Hub de la coopération** — Portal 2 — coopération | `arena_candidate` | Référence du hub coop officiel; pas de chambre communautaire présentée comme carte Valve. | À produire | [coop](https://combineoverwiki.net/wiki/ATLAS_and_P-body) · [portal2_story](https://combineoverwiki.net/wiki/Portal_2_storyline) |
+| `STG_EXT_PORTAL2_COOP_VAULT` | **Voûte des sujets humains** — Portal 2 — coopération | `arena_candidate` | Lieu de conclusion de la campagne coop; stage vide et sujets de stase en arrière-plan optionnel séparé. | À produire | [portal2_story](https://combineoverwiki.net/wiki/Portal_2_storyline) |
+| `STG_EXT_PORTAL2_PEER_REVIEW` | **Art Therapy — Peer Review** — Portal 2: Peer Review | `arena_candidate` | Une carte officielle de Peer Review à sélectionner; capture exacte requise, pas de salle générique certifiée. | À produire | [portal2_story](https://combineoverwiki.net/wiki/Portal_2_storyline) |
+| `STG_EXT_DESKJOB_FACTORY` | **Poste de contrôle des produits** — Aperture Desk Job | `arena_candidate` | Atelier et établi de Desk Job; conserver sa continuité à part et produire un panorama sans personnage. | À produire | [deskjob](https://store.steampowered.com/app/1902490/) · [deskjob_story](https://www.combineoverwiki.net/wiki/Aperture_Desk_Job_storyline) |
+| `STG_EXT_DESKJOB_OFFICE` | **Bureau de Cave Johnson** — Aperture Desk Job | `arena_candidate` | Bureau final; tête de Cave livrée séparément comme acteur, pas peinte dans la couche de collision. | À produire | [deskjob_story](https://www.combineoverwiki.net/wiki/Aperture_Desk_Job_storyline) |
+
+## Rencontres de boss et machines
+
+| ID | Sujet et version | Rôle proposé | Verrou de référence | État | Sources |
+|---|---|---|---|---|---|
+| `osprey_hl1` | **Osprey HECU** — Half-Life | `large_machine_encounter` | Modèle HL1 avec deux nacelles de moteur. Déploiement et destruction à vérifier sur l’implémentation source avant équilibrage. | À produire | [osprey](https://www.combineoverwiki.net/wiki/Osprey_Heliplane) |
+| `rocket_turret_portal1` | **Rocket Turret** — Portal | `machine_puzzle_encounter` | Tourelle fixe de Portal; rencontre de redirection par portails, pas une machine mobile géante. | Candidat présent, validation en cours | [rocket_turret](https://www.combineoverwiki.net/wiki/Rocket_Turret) · [portal_story](https://www.combineoverwiki.net/wiki/Portal_storyline) |
+| `cave_head_deskjob` | **Cave Johnson — tête informatique** — Aperture Desk Job | `scripted_machine_objective` | Tête géante et structure interne du jeu; résultat narratif à respecter, aucune mort canonique garantie par dégâts simples. | À produire | [deskjob_story](https://www.combineoverwiki.net/wiki/Aperture_Desk_Job_storyline) · [deskjob](https://store.steampowered.com/app/1902490/) |
+| `appliance_turret_deskjob` | **Tourelle électroménagère** — Aperture Desk Job | `machine_wave_encounter` | Choisir un modèle d’appareil réellement rencontré dans l’ascension; un appareil par image et fichier. | À produire | [deskjob_story](https://www.combineoverwiki.net/wiki/Aperture_Desk_Job_storyline) |
+
+## Archives et contenu coupé
+
+| ID | Sujet et version | Rôle proposé | Verrou de référence | État | Sources |
+|---|---|---|---|---|---|
+| `archive_kingpin_hl1` | **Kingpin** — Half-Life — développement | `archival_creature` | Choisir une révision précise de concept ou de modèle; ne pas utiliser la version d’un mod comme preuve du modèle Valve. | À produire | [kingpin](https://combineoverwiki.net/wiki/Kingpin) |
+| `archive_mr_friendly_hl1` | **Mr. Friendly** — Half-Life — développement | `archival_creature` | Documenter uniquement silhouette et modèle d’archive. Les mécanismes non produits restent hors périmètre du kit. | À produire | [friendly](https://combineoverwiki.net/wiki/Mr._Friendly) |
+| `archive_cremator_hl2_2002` | **Cremator — révision HL2 2002** — Half-Life 2 — développement | `archival_enemy` | Fixer une capture datée de la démonstration 2002; ne pas mélanger avec les concepts HLA ou un mod moderne. | À produire | [cremator](https://www.combineoverwiki.net/wiki/Cremator) · [hl220](https://www.half-life.com/en/halflife2/20th) · [hl2doc](https://www.youtube.com/watch?v=YCjNT9qGjh4) |
+| `archive_alien_assassin_hl2_2002` | **Alien Assassin — révision HL2 2002** — Half-Life 2 — développement | `archival_enemy` | Même révision de masque, crêtes, mains et silhouette; ce n’est pas le Shock Trooper de Race X. | À produire | [alien_assassin](https://combineoverwiki.net/wiki/Alien_Assassin) · [hl2doc](https://www.youtube.com/watch?v=YCjNT9qGjh4) |
+| `archive_odell_hl2` | **Odell** — Half-Life 2 — développement | `archival_story_npc` | Combinaison et modèle d’Odell à figer sur référence; personnage distinct d’Odessa malgré réemploi du visage. | À produire | [odell](https://combineoverwiki.net/wiki/Odell) · [hl220](https://www.half-life.com/en/halflife2/20th) |
+| `archive_air_exchange_hl2` | **Air Exchange** — Half-Life 2 — développement | `archival_stage` | Choisir une carte ou un concept daté du dossier de développement; ne pas fusionner plusieurs versions incompatibles. | À produire | [hl2_dev](https://combineoverwiki.net/wiki/Development_of_Half-Life_2) |
+| `archive_borealis_hl2_cut` | **Borealis — chapitre abandonné HL2** — Half-Life 2 — développement | `archival_stage` | Le navire de développement HL2/Odell constitue sa propre version; ne pas l’étiqueter décor jouable Episode Three. | À produire | [odell](https://combineoverwiki.net/wiki/Odell) · [hl2_dev](https://combineoverwiki.net/wiki/Development_of_Half-Life_2) |
+| `archive_blob_ep3` | **Blob** — Half-Life 2: Episode Three — prototype | `archival_enemy` | Référence du prototype montré dans le documentaire Valve; ni espèce livrée ni sprite officiel certifié. | À produire | [blob](https://www.combineoverwiki.net/wiki/Blob) · [hl2doc](https://www.youtube.com/watch?v=YCjNT9qGjh4) |
+| `archive_icegun_ep3` | **Ice Gun — effet prototype** — Half-Life 2: Episode Three — prototype | `archival_prop_and_effect` | Le prototype ne donne pas un modèle d’arme final unique; ne pas inventer un fusil et le nommer 1:1. | À produire | [icegun](https://www.combineoverwiki.net/wiki/Ice_Gun) · [hl2doc](https://www.youtube.com/watch?v=YCjNT9qGjh4) |
+| `archive_arctic_ep3` | **Environnement arctique du prototype** — Half-Life 2: Episode Three — prototype | `archival_stage` | Utiliser seulement une scène révélée dans le documentaire avec timecode; aucun environnement commercial HL3 présumé. | À produire | [hl2doc](https://www.youtube.com/watch?v=YCjNT9qGjh4) · [hl220](https://www.half-life.com/en/halflife2/20th) |
+
+## Sources et portée des vérifications
+
+Les sources documentaires confirment une identité ou une version, selon la portée indiquée. Elles ne prouvent pas que les images candidates reproduisent exactement cette référence. Le lot B ne disposait pas de plusieurs bitmaps du wiki. Le lot C a effectivement chargé les modèles Chell, ATLAS, P-body et Rocket Turret, ainsi que des captures Steam pour Wheatley, Grady et la chaîne; empreintes et limites sont consignées dans son registre.
+
+| ID | Source | Type | Portée vérifiée |
+|---|---|---|---|
+| `hl25` | [Valve — Half-Life 25th Anniversary](https://www.half-life.com/en/halflife/25th) | `primary_official` | Uplink, quatre nouvelles cartes, modèles multijoueur Ivan et Proto-Barney officiellement distribués. Ne certifie pas les dessins du projet. |
+| `hl220` | [Valve — Half-Life 2 20th Anniversary](https://www.half-life.com/en/halflife2/20th) | `primary_official` | Lost Coast; archives vidéo E3 2002/2003; expériences Episode Three; correction du reflet des yeux du G-Man. |
+| `hl2doc` | [Valve — Half-Life 2: 20th Anniversary Documentary](https://www.youtube.com/watch?v=YCjNT9qGjh4) | `primary_official` | Documentaire de développement. Pour les archives, choisir une image et un timecode avant génération. |
+| `alyx` | [Valve — Half-Life: Alyx](https://www.half-life.com/en/alyx) | `primary_official` | Période située entre Half-Life et Half-Life 2; identité Alyx/Eli. Ne suffit pas à certifier un costume. |
+| `deskjob` | [Valve — Aperture Desk Job](https://store.steampowered.com/app/1902490/) | `primary_official` | Jeu court officiel situé dans l’univers Portal; produit distinct de Portal 3. La continuité est conservée séparément. |
+| `labrat` | [Valve — Lab Rat](https://www.thinkwithportals.com/comic/) | `primary_official` | Bande dessinée officielle à utiliser comme référence dessinée; pas de modèle 3D retail de Rattmann affirmé. |
+| `peti` | [Valve — The Perpetual Testing Initiative](https://store.steampowered.com/news/posts/?appids=620&enddate=1335559264) | `primary_official` | Annonce de Puzzle Maker/Steam Workshop. Les cartes communautaires ne deviennent pas officielles par leur hébergement. |
+| `peti_story` | [Perpetual Testing Initiative — multivers et Bendy](https://combineoverwiki.net/wiki/Perpetual_Testing_Initiative) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `scientist_sdk` | [Valve Half-Life SDK — scientist.cpp](https://github.com/ValveSoftware/halflife/blob/master/dlls/scientist.cpp) | `primary_source_code` | Identifiants HEAD_GLASSES, HEAD_EINSTEIN, HEAD_LUTHER et HEAD_SLICK; variations de tête, pas quatre biographies canoniques. |
+| `kleiner` | [Isaac Kleiner](https://www.combineoverwiki.net/wiki/Isaac_Kleiner) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `kleiner_model` | [Modèle retail Isaac Kleiner](https://combineoverwiki.net/wiki/File:Kleiner_model.jpg) | `game_asset_metadata` | Fiche du modèle Half-Life 2, 721×1742. Original image indisponible au contrôle HTTP; référence visuelle non inspectée. |
+| `eli` | [Eli Vance](https://www.combineoverwiki.net/wiki/Eli_Vance) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `mossman` | [Judith Mossman](https://www.combineoverwiki.net/wiki/Judith_Mossman) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `breen` | [Wallace Breen](https://www.combineoverwiki.net/wiki/Wallace_Breen) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `gman` | [The G-Man](https://www.combineoverwiki.net/wiki/The_G-Man) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `odessa` | [Odessa Cubbage](https://www.combineoverwiki.net/wiki/Odessa_Cubbage) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `lamarr` | [Hedy Lamarr](https://www.combineoverwiki.net/wiki/Hedy_Lamarr) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `magnusson` | [Arne Magnusson](https://www.combineoverwiki.net/wiki/Arne_Magnusson) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `uriah` | [Uriah](https://www.combineoverwiki.net/wiki/Uriah) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `griggs_sheckley` | [Griggs and Sheckley](https://www.combineoverwiki.net/wiki/Griggs_and_Sheckley) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `characters` | [Half-Life — personnages](https://combineoverwiki.net/wiki/Template:Characters) | `secondary_index` | Index de noms, utilisé seulement pour l’identité; détails de modèle à capturer. |
+| `fisherman` | [Le Pêcheur — Lost Coast](https://www.combineoverwiki.net/wiki/The_Fisherman) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `russell` | [Russell](https://www.combineoverwiki.net/wiki/Russell) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `larry` | [Larry](https://www.combineoverwiki.net/wiki/Larry) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `alyx_story` | [Half-Life: Alyx — lieux et personnages](https://combineoverwiki.net/wiki/Half-Life:_Alyx_storyline) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `reviver` | [Reviver](https://www.combineoverwiki.net/wiki/Reviver) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `armored_headcrab` | [Armored Headcrab](https://combineoverwiki.net/wiki/Armored_Headcrab) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `bs_story` | [Blue Shift — storyline](https://www.combineoverwiki.net/wiki/Half-Life:_Blue_Shift_storyline) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `rosenberg` | [Rosenberg](https://combineoverwiki.net/wiki/Rosenberg) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `walter` | [Walter Bennet](https://combineoverwiki.net/wiki/Walter_Bennet) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `simmons` | [Simmons](https://combineoverwiki.net/wiki/Simmons) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `decay` | [Half-Life: Decay](https://combineoverwiki.net/wiki/Half-Life:_Decay) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `decay_story` | [Decay — Domestic Violence](https://www.combineoverwiki.net/wiki/Domestic_Violence) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `decay_vorts` | [X-8973 and R-4913](https://combineoverwiki.net/wiki/X-8973_and_R-4913) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `colette_model` | [Colette Green — modèle Decay](https://combineoverwiki.net/wiki/File:Ps2_colette_decay.png) | `game_asset_metadata` | Fiche du modèle player/ginacol/ginacol.dol, 1100×1100; distingue version Head-to-Head. Image originale indisponible au contrôle HTTP. |
+| `op4` | [Half-Life: Opposing Force](https://combineoverwiki.net/wiki/Half-Life:_Opposing_Force) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `hecu_models` | [HECU — modèles et spécialités](https://www.combineoverwiki.net/wiki/List_of_Hazardous_Environment_Combat_Unit_models) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `voltigore` | [Voltigore](https://www.combineoverwiki.net/wiki/Voltigore) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `shock_roach` | [Shock Roach](https://www.combineoverwiki.net/wiki/Shock_Roach) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `barnacle` | [Barnacle](https://www.combineoverwiki.net/wiki/Barnacle) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `ichthyosaur` | [Ichthyosaur](https://www.combineoverwiki.net/wiki/Ichthyosaur) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `snark` | [Snark](https://www.combineoverwiki.net/wiki/Snark) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `combine` | [Combine — unités](https://www.combineoverwiki.net/wiki/Combine) | `secondary_index` | Index des unités; modèle et version exacts restent à capturer. |
+| `soldier` | [Combine Soldier — variantes](https://www.combineoverwiki.net/wiki/Combine_Soldier) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `combine_markings` | [Combine imagery](https://www.combineoverwiki.net/wiki/Combine_Imagery) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `locations` | [Lieux Half-Life et Portal](https://combineoverwiki.net/wiki/Locations_in_the_Half-Life_and_Portal_universe) | `secondary_index` | Noms de lieux et cartes; aucune topologie 2D finale n’est attestée. |
+| `portal_story` | [Portal — storyline](https://www.combineoverwiki.net/wiki/Portal_storyline) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `portal2_story` | [Portal 2 — storyline](https://combineoverwiki.net/wiki/Portal_2_storyline) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `portal_chars` | [Portal — characters](https://theportalwiki.com/wiki/Characters) | `secondary_index` | Index de personnages; référence de modèle requise avant génération. |
+| `coop` | [ATLAS and P-body](https://combineoverwiki.net/wiki/ATLAS_and_P-body) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `cores` | [Portal — Cores](https://theportalwiki.com/wiki/Cores) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `grady` | [Grady](https://www.combineoverwiki.net/wiki/Grady) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `deskjob_story` | [Aperture Desk Job — storyline](https://www.combineoverwiki.net/wiki/Aperture_Desk_Job_storyline) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `osprey` | [Osprey Heliplane](https://www.combineoverwiki.net/wiki/Osprey_Heliplane) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `rocket_turret` | [Rocket Turret](https://www.combineoverwiki.net/wiki/Rocket_Turret) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `kingpin` | [Kingpin — contenu retiré HL1](https://combineoverwiki.net/wiki/Kingpin) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `friendly` | [Mr. Friendly — contenu retiré HL1](https://combineoverwiki.net/wiki/Mr._Friendly) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `hl2_dev` | [Développement de Half-Life 2](https://combineoverwiki.net/wiki/Development_of_Half-Life_2) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `cremator` | [Cremator](https://www.combineoverwiki.net/wiki/Cremator) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `alien_assassin` | [Alien Assassin](https://combineoverwiki.net/wiki/Alien_Assassin) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `odell` | [Odell](https://combineoverwiki.net/wiki/Odell) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `blob` | [Blob — prototype Episode Three](https://www.combineoverwiki.net/wiki/Blob) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `icegun` | [Ice Gun — prototype Episode Three](https://www.combineoverwiki.net/wiki/Ice_Gun) | `secondary_reference` | Identité et présence documentées; capture du modèle ou du lieu encore nécessaire. |
+| `portal2_turrets_official` | [Valve — Aperture Investment Opportunity #3: Turrets](https://www.thinkwithportals.com/blog.php?id=5222) | `primary_official` | Présentation officielle de la ligne de tourelles ; vidéo Valve liée. Ne prouve pas à elle seule le comportement des tourelles défectueuses en jeu. |
+| `portal2_turrets_video` | [Valve — bande-annonce Turrets](https://www.youtube.com/watch?v=6i-nMWgBUp0) | `primary_official` | Vidéo publiée par la chaîne Valve ; référence visuelle potentielle, images non capturées dans cette recherche. |
+| `portal2_turrets` | [Portal Wiki — Turrets](https://theportalwiki.com/wiki/Turrets) | `secondary_reference` | Variantes Sentry, Defective et autres tourelles ; différencie campagne et coopération. |
+| `portal2_defective` | [Portal Wiki — Defective Turret](https://theportalwiki.com/wiki/Defective_Turret) | `secondary_reference` | Version défectueuse de campagne sans munitions ; les tourelles à aspect dénudé rencontrées en coopération peuvent fonctionner normalement. |
+| `portal2_turret_control` | [Portal Wiki — Portal 2 Chapter 5 Turret Control Center](https://www.theportalwiki.com/wiki/Portal_2_Chapter_5_Turret_Control_Center) | `secondary_reference` | Scène de remplacement du modèle de validation de la chaîne de tourelles ; carte sp_a2_bts4. |
+
+| `portal1_rocket_model_c` | [Portal Wiki — modèle props_bts/rocket_sentry de Portal](https://i1.theportalwiki.net/img/d/d5/Portal_Rocket_Turret.png) | `secondary_hosted_game_model` | Référence bitmap chargée et inspectée dans le lot C; sortie générée encore à valider. |
+| `portal2_chell_model_c` | [Portal Wiki — modèle retail Chell Portal 2](https://i1.theportalwiki.net/img/4/40/Chell.png) | `secondary_hosted_game_model` | Référence bitmap chargée et inspectée dans le lot C; sortie générée encore à valider. |
+| `portal1_chell_model_c` | [Portal Wiki — modèle retail Chell Portal](https://i1.theportalwiki.net/img/8/81/Portal_Chell.png) | `secondary_hosted_game_model` | Référence bitmap chargée et inspectée dans le lot C; sortie générée encore à valider. |
+| `portal2_wheatley_capture_c` | [Valve / Steam — Wheatley, capture 02](https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0cdd90fafc160b52d08b303d205f9fd4e83cf164.1920x1080.jpg?t=1790187113) | `primary_official_screenshot` | Référence bitmap chargée et inspectée dans le lot C; sortie générée encore à valider. |
+| `portal2_factory_capture08_c` | [Valve / Steam — chaîne de fabrication, capture 08](https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0e16bceacb6616a5ca4bc4ba4d28c7a0d06b671c.1920x1080.jpg?t=1790187113) | `primary_official_screenshot` | Référence bitmap chargée et inspectée dans le lot C; sortie générée encore à valider. |
+| `portal2_factory_capture09_c` | [Valve / Steam — chaîne de fabrication, capture 09](https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_d8f172249d6e89999c3692bf2c380921f197fd82.1920x1080.jpg?t=1790187113) | `primary_official_screenshot` | Référence bitmap chargée et inspectée dans le lot C; sortie générée encore à valider. |
+| `deskjob_grady_capture01_c` | [Valve / Steam — Grady, capture 01](https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1902490/ss_4b8b8d6ab04d3c42584abb31b5b4d7d534478d1d.1920x1080.jpg?t=1745368564) | `primary_official_screenshot` | Référence bitmap chargée et inspectée dans le lot C; sortie générée encore à valider. |
+| `portal2_atlas_model_c` | [Portal Wiki — modèle retail ATLAS](https://i1.theportalwiki.net/img/0/04/Atlas.png) | `secondary_hosted_game_model` | Référence bitmap chargée et inspectée dans le lot C; sortie générée encore à valider. |
+| `portal2_pbody_model_c` | [Portal Wiki — modèle retail P-body](https://i1.theportalwiki.net/img/7/74/P-body.png) | `secondary_hosted_game_model` | Référence bitmap chargée et inspectée dans le lot C; sortie générée encore à valider. |
+
+## Prochaine production
+
+La file consolidée `data/production_queue.json` rapproche ces cibles des catalogues de base et des fichiers présents. `production/MISSING_TARGETS.md` précise les étapes restantes sans convertir un dessin statique en animation terminée. Le registre `data/generated_art_register.json` demeure la source de vérité des demandes et fichiers réellement produits.
+
+<!-- CONTINUATION_20261120_C -->
+
+# Portal / Aperture — kits, épreuve et production
+
+**Continuation du 20 novembre 2026 — conception détaillée, non implémentée et non testée en jeu.** Ce chapitre enrichit huit cibles déjà présentes dans le catalogue. Il ne crée ni personnage de catalogue supplémentaire, ni image, ni animation terminée. Son contrat machine est [aperture_combat_design_20261120.json](data/aperture_combat_design_20261120.json).
+
+
+## 1. Périmètre et statut des références
+
+La campagne coopérative officielle de Portal 2 possède ses personnages, ses chambres et son récit propres [AP01]. Resonance conserve cette provenance tout en proposant ici un duel original. Les valeurs de vie, les frappes, les projections, les portails limités, les dialogues, les rivaux et les fins de parcours ci-dessous sont des créations de game design pour ce mode annexe. Elles ne sont pas présentées comme des capacités de combat ou des événements attestés dans les jeux Valve.
+
+| Objet | Conception livrée | État réel |
+|---|---|---|
+| ATLAS, P-body, Chell | 3 kits, 69 actions détaillées | Conception; aucun ajout au sélecteur de combattants |
+| Chell, tenue Portal 2 | 1 profil cosmétique distinct | Références et animations propres requises |
+| Wheatley autonome | 1 PNJ/assist, 8 états | Conception; pas de combattant humanoïde |
+| Rocket Turret de Portal | 1 épreuve, 3 phases | Conception; pas de boss géant destructible |
+| Hub coop et ancien Aperture | 2 arènes, 12 couches prévues | Aucun assemblage à six plans validé ici |
+| Parcours et vérification | 12 routes proposées, 12 scénarios | Aucune route certifiée combo ni scénario exécuté |
+
+Les huit identifiants sont `atlas_portal2`, `pbody_portal2`, `chell_portal1`, `costume_chell_portal2`, `wheatley_core_portal2`, `rocket_turret_portal1`, `STG_EXT_PORTAL2_COOP_HUB` et `STG_EXT_PORTAL2_OLD_APERTURE`. Le registre graphique courant reste la source des générations réussies, refusées ou à corriger; ce chapitre ne recopie aucun total d’images en cours de production.
+
+Les pages Valve Bot Trust, Boots et Meet Wheatley sont des références officielles identifiées [AP02–AP04]. Les détails de modèle sont à contrôler sur des captures correspondant à la version retenue. Les pages secondaires utilisées pour les couleurs, silhouettes et la Rocket Turret sont étiquetées comme telles [AP06–AP10]. Une page qui nomme le sujet ne valide pas à elle seule une pose ni une architecture.
+
+
+### Conventions communes
+
+- Simulation proposée à **60 Hz**, vie de référence 10 000; ATLAS 10 500, P-body 9 500, Chell 10 000. Ces écarts restent à équilibrer après collisions.
+- `P/A/R` signifie préparation / activité / récupération en ticks. La préparation inclut le premier tick actif. Pour une frappe, durée totale = P + A + R − 1.
+- Avantage au premier tick actif = stun − (A − 1 + R), hors hitfreeze partagé. Pour une attaque aérienne, l’atterrissage peut changer le résultat; la table ne garantit pas l’avantage obtenu en jeu.
+- Commandes relatives au personnage tourné à droite. `L`, `M`, `H`, `S` suivent le contrat existant; chaîne normale L → M → H, chaque niveau une fois. `6H` est un overhead annoncé.
+- Les normales aériennes sont overhead; `2H` reste une frappe mid anti-air non gardable dans les airs. Au sol, un mid se garde debout ou accroupi; un low accroupi; un overhead debout.
+- EX = **50**, super = **100**, ultime = **300** Résonance. Coût débité à l’entrée validée, sans remboursement après interruption; pas de gain de Résonance provenant de ces actions.
+- Budget aérien initial 12, un rebond de mur et un rebond au sol au maximum par combo. Les routes ci-dessous n’ajoutent aucun rebond gratuit. La limite de 600 ticks actifs sans contrôle du contrat général reste applicable.
+- Les portées sont des cibles en unités logiques. Elles ne sont pas des hitboxes déjà écrites et ne déterminent pas la résolution en pixels des sprites.
+
+
+## 2. Système de portails de duel
+
+L’appareil à portails sert au placement de passages; le rayon de placement ne devient pas une balle ou un rayon de dégâts [AP05, AP07]. La traduction en combat ci-dessous est volontairement bornée : elle garde des signaux lisibles et évite les déplacements sans réponse possible.
+
+| Propriétaire | Paire de couleur source | Identification complémentaire |
+|---|---|---|
+| Chell | Bleu / orange | A/B et motif du joueur |
+| ATLAS | Cyan / indigo | A/B et motif du joueur |
+| P-body | Jaune / rouge | A/B et motif du joueur |
+
+Les couleurs ci-dessus viennent de la description des portails [AP07]. L’œil orange de P-body ne signifie donc pas que sa paire de portails doit être une copie bleu/orange de celle de Chell. Les motifs additionnels, noms d’ancrage et contours sont des choix d’accessibilité de Resonance.
+
+
+### Placement
+
+Chaque combattant dispose d’une paire et d’un cube de kit au maximum. `5S` parcourt quatre emplacements de simulation, dont le choix est visible pour les deux joueurs. `236L` place A et `214L` place B. Un ancrage dure au plus 300 ticks; l’ouverture demande 12 ticks. Replacer une couleur remplace uniquement son ancien ancrage à la validation de l’événement; il n’existe jamais un troisième portail temporaire.
+
+Sur une arène logique de 2 560 unités et une ligne de sol à y = 880, les sockets muraux sont placés à x = 320 et 2 240, centre y = 710; les sockets de sol à x = 760 et 1 800. Ces panneaux sont un équipement du simulateur créé pour le duel, indépendant de l’architecture d’arrière-plan. Ils restent les mêmes en tournoi et ne réactivent pas les accessoires mécaniques du stage.
+
+
+### Traversée et réponse adverse
+
+`214M` exige une paire ouverte, un acteur libre et une entrée à moins de 120 unités. La sortie est annoncée pendant 18 ticks puis laisse 18 ticks de récupération vulnérable. Il n’existe aucune invulnérabilité universelle. Un seul transit est autorisé par combo, avec 90 ticks de délai de paire après usage. L’EX `214L+M` conserve les 18 ticks d’annonce et raccourcit seulement la récupération à 12 ticks : il ne permet pas une arrivée sans signal.
+
+Une sortie obstruée cherche le segment libre le plus proche dans la direction de l’entrée; si aucun n’est valide, la traversée est refusée. L’opération ne superpose pas les acteurs et ne repousse pas gratuitement le défenseur. Une fermeture de paire pendant un transit déjà engagé résout la sortie prévalidée; elle ne laisse jamais le combattant hors scène. La paire se ferme au KO et au changement de round.
+
+
+### Objets, dégâts et prévention des boucles
+
+Seuls le cube du kit et la roquette de l’épreuve dédiée sont initialement déclarés compatibles. Chacun ne traverse qu’une fois; la norme de vitesse autorisée est conservée et aucun multiplicateur de dégâts n’est ajouté. Les balles, les rayons et les attaques de boss ne sont pas convertis automatiquement. Un adversaire libre n’est jamais aspiré ni forcé à traverser à distance. Les transferts de victime appartiennent seulement à une projection ou une cinématique déjà confirmée.
+
+Un hit peut interrompre une pose ou une traversée encore en préparation; une garde ne supprime pas arbitrairement la paire. Une commande reconnue mais impossible indique sa cause — ressources, paire, portée, état ou sortie — et ne se transforme pas en projection. Les jeux Portal possèdent leur propre physique; la durée des portails, les sockets et ces restrictions sont des règles proposées pour Resonance, sans prétention d’identité mécanique complète.
+
+
+## 3. ATLAS — fiche de combattant
+
+**ID : `atlas_portal2` · Vie proposée : 10 500 · Rôle : Contrôle compact  cube et occupation de l’espace · Prise en main : intermédiaire.
+
+
+### Identité et lecture du kit
+
+- Corps compact arrondi, œil bleu et structure mécanique propre au modèle coop.
+- Appareil et pinces cohérents avec la même version; pas de châssis P-body.
+- Un robot entier par image; le second robot n’est pas un membre du sprite.
+
+Sources de référence : AP01, AP02, AP07. Les gestes de frappe et valeurs ci-dessous sont des adaptations originales.
+
+| Atouts proposés | Faiblesses à préserver |
+|---|---|
+| Normales courtes fiables. | Atteint difficilement les longues allonges. |
+| Cube du kit facile à suivre. | Transit interrompable avant engagement. |
+| Placement défensif lisible. | Le châssis compact ne réduit pas automatiquement les collisions pour passer sous les attaques. |
+
+
+### Normales
+
+| Commande | Mouvement | P/A/R | Dégâts | Garde | Avantage hit/bloc | Portée |
+|---|---|---|---|---|---|---|
+| 5L | Contact du manipulateur | 7/3/11 | 320 | mid | +4/-1 | 85 |
+| 5M | Poussée du châssis | 11/3/16 | 620 | mid | +5/-1 | 135 |
+| 5H | Balancier du bras | 17/4/23 | 980 | mid | +4/-6 | 175 |
+| 2L | Coup bas du pied | 7/2/12 | 290 | low | +4/-1 | 90 |
+| 2M | Balayage compact | 12/3/18 | 590 | low | +5/-2 | 145 |
+| 2H | Vérin ascendant | 15/5/26 | 900 | mid | +2/-10 | 130 |
+| j.L | Tapotement aérien | 7/4/13 | 310 | overhead | +2/-2 | 80 |
+| j.M | Bras déployé | 10/5/17 | 600 | overhead | +3/-4 | 135 |
+| j.H | Châssis en arc | 14/6/23 | 930 | overhead | +2/-7 | 160 |
+| 6H | Saut court du châssis | 25/3/26 | 1050 | overhead | +3/-8 | 145 |
+
+`2H` lance la cible; les attaques `j.` ont une récupération d’atterrissage cible de 10 ticks. Les avantages affichés sont des calculs statiques au contact initial, pas des mesures de jeu. Les hurtboxes restent présentes sur les membres déployés. `6H` ne s’annule pas en pression de garde. Les annulations normales vers un spécial sont autorisées sur hit pour 5M, 5H, 2M et 2H; les supers sur hit de 5H ou 2H. Aucun whiff cancel n’est prévu.
+
+
+### Trait, projections et spéciaux
+
+**5S — Choix du point d’ancrage.** Action utilitaire de 12 ticks, sans dégâts; elle prévisualise le socket suivant. Son annulation vers la pose de portail n’arrive qu’après ces 12 ticks.
+
+**L+M / 4+L+M — Dégagement.** Préparation 6 ticks, activité 2, fenêtre de déchoppe 7; 28 ticks de récupération à vide. La capture confirmée dure 36 ticks puis libère avec 16 ticks de récupération et un renversement de 40 ticks. Portée cible 80; dégâts 1100. La projection n’attrape pas à travers un portail et ne déclenche ni rebond de mur ni rebond de sol.
+
+| Commande | Action | Préparation / récupération | Dégâts | Fonction | Réponse |
+|---|---|---|---|---|---|
+| 236L | Pose du portail A | 20 / 18 | 0 | Place l’ancrage A au socket prévisualisé; ouverture en 12 ticks; ne blesse pas. | Interrompre la préparation ou occuper la sortie. |
+| 214L | Pose du portail B | 22 / 18 | 0 | Place l’ancrage B; la paire ne fonctionne que lorsque les deux bords sont ouverts. | Avancer pendant la récupération et limiter le temps de préparation. |
+| 214M | Traversée préparée | 18 / 18 | 0 | Entre dans la paire existante, un transit par combo; sortie signalée et vulnérable. | Couvrir la sortie annoncée; ne pas poursuivre aveuglément à l’entrée. |
+| 236H | Lancer du cube de test | 24 / 26 | 850 | Lance l’unique cube du kit; projectile à durée bornée, une seule traversée de portail. Ce cube fourni au duel est une adaptation. | Sauter sa trajectoire, le faire entrer en collision ou punir le lancer à courte distance. |
+| 623H | Extension des vérins | 12 / 32 | 1100 | Frappe anti-air du corps; aucune invulnérabilité aux coups au sol. | Rester au sol puis punir la récupération. |
+
+Le cube est un projectile visible de durée maximale 90 ticks, vitesse proposée 12 unités par tick et durabilité de collision 1. Il touche une fois et reste l’unique cube actif. Son avantage dépend de la distance de collision. L’anti-air a 5 ticks actifs, coûte 4 points de budget aérien et ne protège pas des frappes au sol. Le cube fourni au kit est une convention du duel; il ne prétend pas constituer un inventaire permanent du personnage source.
+
+
+### Variantes EX et cinématiques de combat
+
+| Commande | Coût | Variante | Détail |
+|---|---|---|---|
+| 236L+M | 50 | Pose A EX | Préparation 14 ticks, récupération 14; l’ouverture reste 12. Ne pose qu’un portail. |
+| 214L+M | 50 | Traversée EX | Même préparation et signal de sortie de 18 ticks; récupération réduite à 12. Toujours vulnérable; paire préexistante obligatoire. |
+| 623L+M | 50 | Anti-air EX | Même démarrage que l’anti-air, 1300 dégâts, récupération 36; couverture verticale accrue, aucune invulnérabilité universelle. |
+
+Une variante EX par motion 236/214/623. 236L+M signifie Pose A EX, jamais le lancer de cube. 214L+M signifie Traversée EX, jamais Pose B EX. Une commande reconnue mais impossible ne devient pas une projection.
+
+| Commande | Nom | Coût | Démarrage | Dégâts de base | Capture | Récupération sur garde/à vide |
+|---|---|---|---|---|---|---|
+| 236236H | Transfert contrôlé | 100 | 12 | 2400 | 120 | 38 |
+| 236236S | Protocole de sortie | 300 | 18 | 4300 | 240 | 48 |
+
+Une courte frappe corporelle mid doit confirmer le contact avant toute capture cinématique. Le super et l’ultime ont 3 ticks de contact, aucune invulnérabilité universelle et une sortie punissable si le départ manque ou est gardé. Les dégâts de base sont appliqués comme un impact logique unique après la mise en scène; les planchers de scaling restent 15 % et 20 %. Le trajet par portails et l’impact de cube sont une chorégraphie originale, jamais une attaque canonique ajoutée silencieusement.
+
+
+### Routes à éprouver en entraînement
+
+| Séquence | Coût | But et préconditions | État |
+|---|---|---|---|
+| 5L → 5M → 5H | 0 | Conversion simple au sol. Contact proche; L→M→H une fois chacun. | Dégâts théoriques 1662 si tous les contacts passent; À vérifier en collision |
+| 2L → 2M → 2H → 623H | 0 | Conversion basse vers anti-air. Vérifier portée après lancement; coût aérien 4, une seule reprise de niveau H. | À vérifier en collision |
+| 5M → 5H → 236236H | 100 | Confirmation du super. Annulation sur hit seulement; aucun super automatique en garde. | À vérifier en collision |
+| 236L → 214L → 214M | 0 | Préparation de position, sans dégâts. Paire ouverte et entrée proche; cette séquence utilitaire ne constitue pas un combo. | À vérifier en collision |
+
+La route de placement ne provoque pas de hitstun et n’est pas un combo. Les trois autres routes dépendent encore de la portée, du pushback, des fenêtres d’annulation, du budget aérien et de l’état réel de la cible; leur écriture ne garantit pas une chaîne sans échappatoire.
+
+
+### Intro, rival, victoire et ending
+
+**Intro —** ATLAS sort d’un appareil d’assemblage arrêté, vérifie ses deux pinces puis pointe la sortie du doigt. Un bip bref accompagne la sélection; aucun second robot n’est dessiné dans sa frame.
+
+**Rivalité —** Le simulateur attribue le même dernier emplacement à deux partenaires. Le duel teste un protocole de coopération mal transcrit, sans affirmer une hostilité canonique.
+
+**Scène de rival —** Les deux robots désignent tour à tour le même bouton; ATLAS pose un cube entre eux. Ils reculent sur leurs repères lorsque le signal de simulation retentit.
+
+**Victoire sur le rival —** ATLAS avance la main puis attend que P-body se relève; le geste coopératif complet n’est lancé que si les deux acteurs sont disponibles.
+
+**Ending —** ATLAS place le cube sur le bon capteur et maintient la porte ouverte. P-body passe, puis revient tenir le mécanisme. Les deux voyants indiquent enfin le même objectif.
+
+**Finition après résultat —** Après victoire, transfère le perdant vers un sas de récupération vide. Pour une machine compatible, fermeture des bras de maintenance hors champ; pour un humain, désarmement et porte ouverte. Aucun score modifié.
+
+Le rival désigné est `pbody_portal2`. Le parcours conserve le format de la bible : six combats ordinaires, un rival, un boss. La Rocket Turret peut occuper une épreuve intermédiaire de scénario; elle ne remplace pas automatiquement le boss final de tous les parcours. Le finisher n’est proposé qu’après la victoire de la partie, dans la fenêtre générale de 300 ticks; absence d’entrée ou victime incompatible mène à une courte pose de victoire.
+
+
+## 4. P-body — fiche de combattant
+
+**ID : `pbody_portal2` · Vie proposée : 9 500 · Rôle : Allonge et déplacements préparés · Prise en main : avancée.
+
+
+### Identité et lecture du kit
+
+- Silhouette verticale élancée et œil orange.
+- Membres longs et minces; ne pas élargir le corps pour égaliser ATLAS.
+- L’appareil, les articulations et les pieds viennent du modèle coop retenu.
+
+Sources de référence : AP01, AP02, AP07, AP10. Les gestes de frappe et valeurs ci-dessous sont des adaptations originales.
+
+| Atouts proposés | Faiblesses à préserver |
+|---|---|
+| Bonne allonge au sol et dans les airs. | Récupérations lourdes. |
+| Menace de placement à distance. | Faible vie de référence. |
+| Conversion de cube après lecture de saut. | Longs membres avec hurtboxes actives, pas de frappe à longue portée désincarnée. |
+
+
+### Normales
+
+| Commande | Mouvement | P/A/R | Dégâts | Garde | Avantage hit/bloc | Portée |
+|---|---|---|---|---|---|---|
+| 5L | Pointe du manipulateur | 8/3/12 | 330 | mid | +4/-2 | 105 |
+| 5M | Allonge du bras | 12/3/18 | 660 | mid | +5/-3 | 170 |
+| 5H | Fauchage du membre | 19/4/27 | 1080 | mid | +3/-9 | 225 |
+| 2L | Contact du pied avant | 8/2/13 | 300 | low | +4/-2 | 100 |
+| 2M | Balayage de jambe | 14/4/21 | 680 | low | +4/-5 | 200 |
+| 2H | Déploiement vertical | 17/5/28 | 980 | mid | +2/-10 | 170 |
+| j.L | Manipulateur descendant | 8/4/14 | 330 | overhead | +2/-3 | 100 |
+| j.M | Jambe en diagonale | 12/5/20 | 660 | overhead | +3/-6 | 190 |
+| j.H | Grand arc descendant | 17/6/26 | 1020 | overhead | +3/-9 | 215 |
+| 6H | Pas enjambé | 28/4/29 | 1120 | overhead | +2/-11 | 180 |
+
+`2H` lance la cible; les attaques `j.` ont une récupération d’atterrissage cible de 10 ticks. Les avantages affichés sont des calculs statiques au contact initial, pas des mesures de jeu. Les hurtboxes restent présentes sur les membres déployés. `6H` ne s’annule pas en pression de garde. Les annulations normales vers un spécial sont autorisées sur hit pour 5M, 5H, 2M et 2H; les supers sur hit de 5H ou 2H. Aucun whiff cancel n’est prévu.
+
+
+### Trait, projections et spéciaux
+
+**5S — Choix du point d’ancrage.** Action utilitaire de 12 ticks, sans dégâts; elle prévisualise le socket suivant. Son annulation vers la pose de portail n’arrive qu’après ces 12 ticks.
+
+**L+M / 4+L+M — Dégagement.** Préparation 6 ticks, activité 2, fenêtre de déchoppe 7; 28 ticks de récupération à vide. La capture confirmée dure 36 ticks puis libère avec 16 ticks de récupération et un renversement de 40 ticks. Portée cible 80; dégâts 1150. La projection n’attrape pas à travers un portail et ne déclenche ni rebond de mur ni rebond de sol.
+
+| Commande | Action | Préparation / récupération | Dégâts | Fonction | Réponse |
+|---|---|---|---|---|---|
+| 236L | Pose du portail A | 20 / 18 | 0 | Place l’ancrage A au socket prévisualisé; ouverture en 12 ticks; ne blesse pas. | Interrompre la préparation ou occuper la sortie. |
+| 214L | Pose du portail B | 22 / 18 | 0 | Place l’ancrage B; la paire ne fonctionne que lorsque les deux bords sont ouverts. | Avancer pendant la récupération et limiter le temps de préparation. |
+| 214M | Traversée préparée | 18 / 18 | 0 | Entre dans la paire existante, un transit par combo; sortie signalée et vulnérable. | Couvrir la sortie annoncée; ne pas poursuivre aveuglément à l’entrée. |
+| 236H | Lancer du cube de test | 28 / 30 | 900 | Lance l’unique cube du kit; projectile à durée bornée, une seule traversée de portail. Ce cube fourni au duel est une adaptation. | Sauter sa trajectoire, le faire entrer en collision ou punir le lancer à courte distance. |
+| 623H | Arc de la jambe | 15 / 35 | 1150 | Frappe anti-air du corps; aucune invulnérabilité aux coups au sol. | Rester au sol puis punir la récupération. |
+
+Le cube est un projectile visible de durée maximale 90 ticks, vitesse proposée 12 unités par tick et durabilité de collision 1. Il touche une fois et reste l’unique cube actif. Son avantage dépend de la distance de collision. L’anti-air a 5 ticks actifs, coûte 4 points de budget aérien et ne protège pas des frappes au sol. Le cube fourni au kit est une convention du duel; il ne prétend pas constituer un inventaire permanent du personnage source.
+
+
+### Variantes EX et cinématiques de combat
+
+| Commande | Coût | Variante | Détail |
+|---|---|---|---|
+| 236L+M | 50 | Pose A EX | Préparation 14 ticks, récupération 14; l’ouverture reste 12. Ne pose qu’un portail. |
+| 214L+M | 50 | Traversée EX | Même préparation et signal de sortie de 18 ticks; récupération réduite à 12. Toujours vulnérable; paire préexistante obligatoire. |
+| 623L+M | 50 | Anti-air EX | Même démarrage que l’anti-air, 1300 dégâts, récupération 36; couverture verticale accrue, aucune invulnérabilité universelle. |
+
+Une variante EX par motion 236/214/623. 236L+M signifie Pose A EX, jamais le lancer de cube. 214L+M signifie Traversée EX, jamais Pose B EX. Une commande reconnue mais impossible ne devient pas une projection.
+
+| Commande | Nom | Coût | Démarrage | Dégâts de base | Capture | Récupération sur garde/à vide |
+|---|---|---|---|---|---|---|
+| 236236H | Transfert contrôlé | 100 | 12 | 2400 | 120 | 38 |
+| 236236S | Protocole de sortie | 300 | 18 | 4300 | 240 | 48 |
+
+Une courte frappe corporelle mid doit confirmer le contact avant toute capture cinématique. Le super et l’ultime ont 3 ticks de contact, aucune invulnérabilité universelle et une sortie punissable si le départ manque ou est gardé. Les dégâts de base sont appliqués comme un impact logique unique après la mise en scène; les planchers de scaling restent 15 % et 20 %. Le trajet par portails et l’impact de cube sont une chorégraphie originale, jamais une attaque canonique ajoutée silencieusement.
+
+
+### Routes à éprouver en entraînement
+
+| Séquence | Coût | But et préconditions | État |
+|---|---|---|---|
+| 5L → 5M → 5H | 0 | Conversion simple au sol. Contact proche; L→M→H une fois chacun. | Dégâts théoriques 1788 si tous les contacts passent; À vérifier en collision |
+| 2L → 2M → 2H → 623H | 0 | Conversion basse vers anti-air. Vérifier portée après lancement; coût aérien 4, une seule reprise de niveau H. | À vérifier en collision |
+| 5M → 5H → 236236H | 100 | Confirmation du super. Annulation sur hit seulement; aucun super automatique en garde. | À vérifier en collision |
+| 236L → 214L → 214M | 0 | Préparation de position, sans dégâts. Paire ouverte et entrée proche; cette séquence utilitaire ne constitue pas un combo. | À vérifier en collision |
+
+La route de placement ne provoque pas de hitstun et n’est pas un combo. Les trois autres routes dépendent encore de la portée, du pushback, des fenêtres d’annulation, du budget aérien et de l’état réel de la cible; leur écriture ne garantit pas une chaîne sans échappatoire.
+
+
+### Intro, rival, victoire et ending
+
+**Intro —** P-body se déplie de toute sa hauteur, observe la caméra puis pose un pied exactement sur le repère au sol. Le bras ajuste l’appareil sans le faire flotter.
+
+**Rivalité —** Même erreur de protocole vue depuis l’autre robot; la rivalité reste une scène du mode annexe.
+
+**Scène de rival —** P-body indique un passage trop haut pour ATLAS. Le panneau descend soudain jusqu’au sol et affiche les deux repères de duel; P-body incline la tête puis se prépare.
+
+**Victoire sur le rival —** P-body propose une tape dans la main à hauteur d’ATLAS. Si le partenaire est absent ou incompatible, le geste devient un salut vers la caméra.
+
+**Ending —** Au lieu de prendre la sortie seul, P-body redirige le cube vers le mécanisme d’ATLAS. Les robots utilisent ensuite un passage différent chacun et se retrouvent de l’autre côté.
+
+**Finition après résultat —** Une pince du décor place le vaincu dans une nacelle ouverte à distance sûre. La variante machine peut montrer des étincelles, jamais une modification du résultat.
+
+Le rival désigné est `atlas_portal2`. Le parcours conserve le format de la bible : six combats ordinaires, un rival, un boss. La Rocket Turret peut occuper une épreuve intermédiaire de scénario; elle ne remplace pas automatiquement le boss final de tous les parcours. Le finisher n’est proposé qu’après la victoire de la partie, dans la fenêtre générale de 300 ticks; absence d’entrée ou victime incompatible mène à une courte pose de victoire.
+
+
+## 5. Chell — fiche de combattant
+
+**ID : `chell_portal1` · Vie proposée : 10 000 · Rôle : Mobilité méthodique et punition proche · Prise en main : intermédiaire.
+
+
+### Identité et lecture du kit
+
+- Base: combinaison et protections de jambe de Portal, appareil de cette version.
+- Le costume Portal 2 dispose de ses propres références et images.
+- Silhouette humaine et gestuelle silencieuse; aucune force surhumaine ajoutée comme fait canon.
+
+Sources de référence : AP03, AP05, AP07, AP08. Les gestes de frappe et valeurs ci-dessous sont des adaptations originales.
+
+| Atouts proposés | Faiblesses à préserver |
+|---|---|
+| Meilleur démarrage léger de ces trois propositions. | Portée de frappe modeste. |
+| Punition de récupération proche. | Installation de portails vulnérable. |
+| Changements de position annoncés. | Pas de projectile direct blessant tiré par le Portal Gun. |
+
+
+### Normales
+
+| Commande | Mouvement | P/A/R | Dégâts | Garde | Avantage hit/bloc | Portée |
+|---|---|---|---|---|---|---|
+| 5L | Dégagement du coude | 6/3/10 | 300 | mid | +4/+0 | 80 |
+| 5M | Paume de dégagement | 10/3/15 | 560 | mid | +5/-1 | 125 |
+| 5H | Revers avec appui | 16/4/22 | 900 | mid | +4/-6 | 165 |
+| 2L | Coup de pied bas | 6/2/11 | 270 | low | +4/-1 | 85 |
+| 2M | Balayage glissé | 11/3/17 | 560 | low | +5/-2 | 145 |
+| 2H | Genou ascendant | 14/4/25 | 850 | mid | +2/-9 | 120 |
+| j.L | Coude aérien | 6/3/12 | 290 | overhead | +3/-2 | 75 |
+| j.M | Coup de pied en travers | 9/4/16 | 550 | overhead | +4/-3 | 130 |
+| j.H | Talon descendant | 13/5/22 | 870 | overhead | +3/-6 | 155 |
+| 6H | Pas sauté | 24/3/25 | 970 | overhead | +3/-8 | 140 |
+
+`2H` lance la cible; les attaques `j.` ont une récupération d’atterrissage cible de 10 ticks. Les avantages affichés sont des calculs statiques au contact initial, pas des mesures de jeu. Les hurtboxes restent présentes sur les membres déployés. `6H` ne s’annule pas en pression de garde. Les annulations normales vers un spécial sont autorisées sur hit pour 5M, 5H, 2M et 2H; les supers sur hit de 5H ou 2H. Aucun whiff cancel n’est prévu.
+
+
+### Trait, projections et spéciaux
+
+**5S — Choix du point d’ancrage.** Action utilitaire de 12 ticks, sans dégâts; elle prévisualise le socket suivant. Son annulation vers la pose de portail n’arrive qu’après ces 12 ticks.
+
+**L+M / 4+L+M — Dégagement.** Préparation 6 ticks, activité 2, fenêtre de déchoppe 7; 28 ticks de récupération à vide. La capture confirmée dure 36 ticks puis libère avec 16 ticks de récupération et un renversement de 40 ticks. Portée cible 80; dégâts 1100. La projection n’attrape pas à travers un portail et ne déclenche ni rebond de mur ni rebond de sol.
+
+| Commande | Action | Préparation / récupération | Dégâts | Fonction | Réponse |
+|---|---|---|---|---|---|
+| 236L | Pose du portail A | 20 / 18 | 0 | Place l’ancrage A au socket prévisualisé; ouverture en 12 ticks; ne blesse pas. | Interrompre la préparation ou occuper la sortie. |
+| 214L | Pose du portail B | 22 / 18 | 0 | Place l’ancrage B; la paire ne fonctionne que lorsque les deux bords sont ouverts. | Avancer pendant la récupération et limiter le temps de préparation. |
+| 214M | Traversée préparée | 18 / 18 | 0 | Entre dans la paire existante, un transit par combo; sortie signalée et vulnérable. | Couvrir la sortie annoncée; ne pas poursuivre aveuglément à l’entrée. |
+| 236H | Lancer du cube de test | 24 / 26 | 800 | Lance l’unique cube du kit; projectile à durée bornée, une seule traversée de portail. Ce cube fourni au duel est une adaptation. | Sauter sa trajectoire, le faire entrer en collision ou punir le lancer à courte distance. |
+| 623H | Dégagement vertical | 12 / 32 | 1000 | Frappe anti-air du corps; aucune invulnérabilité aux coups au sol. | Rester au sol puis punir la récupération. |
+
+Le cube est un projectile visible de durée maximale 90 ticks, vitesse proposée 12 unités par tick et durabilité de collision 1. Il touche une fois et reste l’unique cube actif. Son avantage dépend de la distance de collision. L’anti-air a 5 ticks actifs, coûte 4 points de budget aérien et ne protège pas des frappes au sol. Le cube fourni au kit est une convention du duel; il ne prétend pas constituer un inventaire permanent du personnage source.
+
+
+### Variantes EX et cinématiques de combat
+
+| Commande | Coût | Variante | Détail |
+|---|---|---|---|
+| 236L+M | 50 | Pose A EX | Préparation 14 ticks, récupération 14; l’ouverture reste 12. Ne pose qu’un portail. |
+| 214L+M | 50 | Traversée EX | Même préparation et signal de sortie de 18 ticks; récupération réduite à 12. Toujours vulnérable; paire préexistante obligatoire. |
+| 623L+M | 50 | Anti-air EX | Même démarrage que l’anti-air, 1300 dégâts, récupération 36; couverture verticale accrue, aucune invulnérabilité universelle. |
+
+Une variante EX par motion 236/214/623. 236L+M signifie Pose A EX, jamais le lancer de cube. 214L+M signifie Traversée EX, jamais Pose B EX. Une commande reconnue mais impossible ne devient pas une projection.
+
+| Commande | Nom | Coût | Démarrage | Dégâts de base | Capture | Récupération sur garde/à vide |
+|---|---|---|---|---|---|---|
+| 236236H | Transfert contrôlé | 100 | 12 | 2400 | 120 | 38 |
+| 236236S | Protocole de sortie | 300 | 18 | 4300 | 240 | 48 |
+
+Une courte frappe corporelle mid doit confirmer le contact avant toute capture cinématique. Le super et l’ultime ont 3 ticks de contact, aucune invulnérabilité universelle et une sortie punissable si le départ manque ou est gardé. Les dégâts de base sont appliqués comme un impact logique unique après la mise en scène; les planchers de scaling restent 15 % et 20 %. Le trajet par portails et l’impact de cube sont une chorégraphie originale, jamais une attaque canonique ajoutée silencieusement.
+
+
+### Routes à éprouver en entraînement
+
+| Séquence | Coût | But et préconditions | État |
+|---|---|---|---|
+| 5L → 5M → 5H | 0 | Conversion simple au sol. Contact proche; L→M→H une fois chacun. | Dégâts théoriques 1524 si tous les contacts passent; À vérifier en collision |
+| 2L → 2M → 2H → 623H | 0 | Conversion basse vers anti-air. Vérifier portée après lancement; coût aérien 4, une seule reprise de niveau H. | À vérifier en collision |
+| 5M → 5H → 236236H | 100 | Confirmation du super. Annulation sur hit seulement; aucun super automatique en garde. | À vérifier en collision |
+| 236L → 214L → 214M | 0 | Préparation de position, sans dégâts. Paire ouverte et entrée proche; cette séquence utilitaire ne constitue pas un combo. | À vérifier en collision |
+
+La route de placement ne provoque pas de hitstun et n’est pas un combo. Les trois autres routes dépendent encore de la portée, du pushback, des fenêtres d’annulation, du budget aérien et de l’état réel de la cible; leur écriture ne garantit pas une chaîne sans échappatoire.
+
+
+### Intro, rival, victoire et ending
+
+**Intro —** Chell observe les panneaux, vérifie l’appareil puis avance sur le repère sans parler. La tenue sélectionnée conserve son jeu source durant toute la scène.
+
+**Rivalité —** Deux sorties de simulation partagent une alimentation. Le conflit est écrit pour Resonance et ne prétend pas raconter une rencontre officielle.
+
+**Scène de rival —** Gordon présente un débris à un capteur; Chell désigne l’autre face du panneau. Le protocole les sépare avant qu’ils puissent l’essayer ensemble. Aucun dialogue imposé.
+
+**Victoire sur le rival —** Chell abaisse l’appareil et montre à Gordon le chemin encore praticable. Le geste remplace une réplique de victoire.
+
+**Ending —** Chell ferme le circuit du simulateur, récupère l’appareil et franchit une porte de service. La caméra reste sur le panneau éteint; le récit ne fixe ni famille ni date future.
+
+**Finition après résultat —** Redirige le vaincu vers une salle de confinement sûre après confirmation de victoire. La version à violence réduite garde la porte ouverte et se termine par une posture de garde; Chell reste silencieuse.
+
+Le rival désigné est `gordon_hl2`. Le parcours conserve le format de la bible : six combats ordinaires, un rival, un boss. La Rocket Turret peut occuper une épreuve intermédiaire de scénario; elle ne remplace pas automatiquement le boss final de tous les parcours. Le finisher n’est proposé qu’après la victoire de la partie, dans la fenêtre générale de 300 ticks; absence d’entrée ou victime incompatible mène à une courte pose de victoire.
+
+
+## 6. Chell — costume Portal 2
+
+**Cible : `costume_chell_portal2` ; propriétaire : `chell_portal1`.** Ce profil change l’apparence, pas les règles du kit. La référence Portal 2 combine débardeur, combinaison à la taille et Long Fall Boots [AP03, AP08]. La base Portal conserve ses protections de jambe de cette version; un sprite hybride ne valide aucune des deux apparences.
+
+- Débardeur et combinaison attachée à la taille de la référence retail Portal 2.
+- Long Fall Boots et dispositif appartenant à cette version.
+- Visage, cheveux, attaches et latéralité relevés sur captures cohérentes; aucun recoloriage de la base Portal 1 déclaré suffisant.
+
+Créer un dossier d’animations propre pour cette tenue. Il doit couvrir les mêmes actions, transitions et orientations que la base, mais les vêtements, les bottes, les cheveux et la prise de l’appareil demandent leurs propres dessins et contrôles. Les collisions, dégâts, coûts et temps restent normalisés. La protection contre les chutes dans le jeu source ne devient pas une invulnérabilité des pieds en duel. Le miroir automatique d’une image ne suffit pas à certifier les détails asymétriques.
+
+
+## 7. Wheatley — noyau narratif et assistance
+
+**Cible : `wheatley_core_portal2`.** Le noyau autonome reste séparé du Wheatley installé dans le corps central, déjà traité comme une autre cible [AP04, AP09]. Il n’occupe pas une case de combattant et ne reçoit ni squelette humain, ni frappes de poing, ni bouche dessinée.
+
+- Noyau sphérique autonome à œil bleu, coques et poignées propres à Wheatley.
+- Vérifier les asymétries de façade sur la référence exacte; ne pas obtenir la seconde orientation par miroir validé d’office.
+- Séparer le rail ou le support en prop; aucun corps humanoïde, bras de combattant ou corps central de boss ajouté.
+
+| État | Production attendue |
+|---|---|
+| rail_idle | Présence sur rail, regard vers le joueur. |
+| scan | Mouvement d’iris, sans rotation incohérente de la coque. |
+| speak | Paupières mécaniques, iris et petites rotations; aucune bouche dessinée. |
+| detach | Transition du rail vers l’objet porté, support rendu séparément. |
+| carried | Pivot et poignées suivent la prise du porteur. |
+| hint | Regard vers le socket utile sans flèche produite dans le bitmap. |
+| startled | Rétraction légère de l’iris; pas de téléportation de la coque. |
+| socketed | Noyau fixé dans une console de scène sans devenir le boss central. |
+
+Dans une scène compatible, `6S` près de sa console demande une aide. Portée cible 140 unités, activation 30 ticks, deux usages maximum par rencontre et délai de 900 ticks. L’indice pointe un socket pendant 180 ticks, sans poser le portail, déplacer l’ennemi, infliger de dégâts ni masquer un danger. Un hit avant validation annule l’activation sans consommer l’indice. Cette assistance est désactivée en tournoi.
+
+Exemples de textes **originaux proposés pour Resonance**, sans piste audio générée :
+
+- Ce panneau. Enfin, celui qui tient encore au mur.
+- J’avais prévu cette ouverture. À peu près à cette hauteur.
+- Tu peux garder l’appareil en main pendant que je réfléchis ?
+
+L’animation de parole utilise iris, paupières mécaniques et petites rotations de la sphère. L’état porté emploie un pivot cohérent avec les mains du porteur; le rail, la fixation et la console sont des assets distincts. Une pose du noyau ne produit pas les huit états ci-dessus.
+
+
+## 8. Rocket Turret — épreuve d’évasion en trois phases
+
+**Cible : `rocket_turret_portal1` ; référence : Portal.** La documentation consultée décrit une tourelle fixe dont les roquettes peuvent être redirigées vers des cibles du décor; un retour sur la tourelle est neutralisé [AP06]. Le contrat conserve ce comportement. L’épreuve ne comporte aucune barre de PV de tourelle et aucune victoire par sa propre destruction. GLaDOS reste une rencontre distincte.
+
+Le joueur doit résoudre trois verrous environnementaux par trois redirections, puis activer et franchir le sas. Vie de référence proposée 10 000, temps actif 9 000 ticks (150 secondes). La géométrie, les trois phases et leurs compteurs sont une création Resonance à vérifier, pas la reproduction annoncée d’une salle précise du jeu.
+
+
+### Accès pour tous les profils autorisés
+
+Un combattant équipé d’un appareil à portails emploie sa paire sur les sockets de la rencontre. Les autres utilisent une console environnementale à deux ancrages prédéfinis : `6S` à moins de 150 unités, 24 ticks d’activation. Un hit avant la fin annule la commande. Le personnage conserve son équipement et ne reçoit pas artificiellement un Portal Gun. La rencontre ne peut être activée dans une rotation tant que chacun des profils proposés ne peut pas en résoudre les trois phases.
+
+
+### Cycle de tir proposé
+
+| État | Durée standard | Réponse attendue |
+|---|---|---|
+| Acquisition | 90 ticks | Préparer le trajet et attirer la ligne de visée |
+| Verrouillage | 24 ticks | La position visée se fige; quitter la trajectoire |
+| Départ | 1 événement | Roquette visible, un seul projectile actif |
+| Récupération | 90 ticks | Déplacer les ancrages ou activer la console |
+
+Une roquette dure au plus 180 ticks, ne traverse qu’un portail et ne cause qu’une application de dégâts. Dégâts proposés 1 800, garde inopérante; la réponse est le mouvement ou la redirection. Après un impact, 60 ticks empêchent une cascade d’autres dégâts du même cycle. Ligne, forme du réticule et signal sonore annoncent le tir. L’assistance porte l’acquisition à 120 ticks et le verrouillage à 36; l’expert réduit seulement l’acquisition à 72, conserve les 24 ticks de signal et retire les indices. Les solutions et l’indestructibilité de la tourelle restent identiques.
+
+
+### Comprendre la redirection
+
+**Cible —** Vitrage de service marqué au fond de la voie.
+
+**Boucle —** Placer la sortie face au vitrage, attirer la visée vers l’entrée, quitter la trajectoire après verrouillage.
+
+**Réponse et reprise —** Sortir de la ligne fixée; la roquette conserve une trajectoire lisible. Vitrage intact: nouveau cycle après dissipation; aucun état irréversible.
+
+**Validation —** Vitrage brisé et relais A visible. Ouvrir le passage vers la console latérale; courte pause de tir de 120 ticks.
+
+
+### Lire le volet
+
+**Cible —** Verrou B derrière un volet au cycle annoncé.
+
+**Boucle —** Une interaction de console ouvre le volet 180 ticks; le joueur doit préparer le trajet avant de déclencher la fenêtre.
+
+**Réponse et reprise —** Ne pas rester près de la console après l’activation. Le volet se referme puis redevient activable après 120 ticks; une roquette échouée ne détruit aucun outil nécessaire.
+
+**Validation —** Verrou B désengagé. Rendre accessible le socket final; pause de tir de 120 ticks.
+
+
+### Ouvrir puis sortir
+
+**Cible —** Verrou C du sas de sortie, à l’écart de la tourelle.
+
+**Boucle —** Placer la dernière paire, obtenir une redirection, puis activer 6S au sas pendant 24 ticks et traverser la zone de sortie.
+
+**Réponse et reprise —** La tourelle continue ses cycles tant que le sas n’est pas franchi; la sortie reste ouverte une fois le verrou détruit. Aucune fermeture punitive du sas; le joueur peut attendre le cycle suivant avant de traverser.
+
+**Validation —** Acteur dans la zone de sortie avec trois verrous résolus. Figer le résultat, couper les nouvelles collisions de danger et jouer une sortie courte.
+
+Les résultats sont `escaped`, `defeated`, `time_expired` ou `abandoned`. La sortie ouverte ne se referme pas pour punir un délai de déplacement. Une réussite fige d’abord le score et désactive les nouvelles collisions de danger avant la cinématique. Le classement peut utiliser temps actif, dégâts reçus et tirs nécessaires; il n’accorde aucun bonus permanent de dégâts. La production de tourelle prévoit repos, déploiement, acquisition, verrouillage, tir, recul, récupération et retour au repos. Aucune animation de mort de tourelle n’est requise pour cette épreuve.
+
+
+## 9. Arène — Hub de la coopération
+
+**Cible : `STG_EXT_PORTAL2_COOP_HUB`.** Hub officiel de Portal 2 coop; état précis du hub, passages déverrouillés et cadrage à capturer.
+
+La page officielle confirme le contexte des laboratoires et de la coopération [AP01, AP05]; elle ne certifie pas la géométrie ci-dessous. Avant acceptation visuelle, rattacher des captures au lieu et à son état exacts. La bande de duel horizontale est une adaptation de composition explicitement déclarée.
+
+| Couche | Parallaxe | Contenu prévu | Fichier |
+|---|---|---|---|
+| L00_ambience | 0 | Volume sombre et atmosphère industrielle de l’arrière-plan. | PNG distinct; opaque |
+| L01_far | 0.12 | Structures éloignées et passerelles du hub de référence. | PNG distinct avec alpha |
+| L02_mid | 0.3 | Accès aux parcours selon l’état du hub choisi. | PNG distinct avec alpha |
+| L03_near | 0.55 | Consoles et cadres des zones d’assemblage derrière les combattants. | PNG distinct avec alpha |
+| L04_ground | 1 | Voie horizontale continue adaptée au duel; repère sol stable. | PNG distinct avec alpha |
+| L05_foreground | 1.1 | Raccords de câbles et bords de rail au bas du cadre, hors silhouettes. | PNG distinct avec alpha |
+
+La scène logique utilise 2 560 × 1 080, fenêtre 1 920 × 1 080 et sol à y = 880. Le tournoi conserve un sol continu, aucune collision décorative aléatoire et aucun danger de stage. Les portails du kit suivent le même contrat normalisé que sur les autres arènes. Les six couches conservent le même canevas et la même origine; les zones masquées sont à reconstruire proprement avant séparation. Un panorama maître ne compte jamais comme six images de parallaxe.
+
+**Variante spectacle — Signal de calibration.** 6S, 30 ticks d’activation et 120 ticks d’effet : Active un signal sur la console, utile à un objectif d’entraînement; aucune téléportation forcée ni piège de tournoi. Deux utilisations par joueur et par round au maximum. L’interaction reste éteinte en tournoi.
+
+**Ambiance proposée —** Ventilation, appareils d’assemblage et bips courts espacés.
+
+- Captures du lieu exact et état choisi archivés par référence.
+- Six fichiers distincts et leur recomposition contrôlés.
+- Sol et pieds stables aux deux extrémités de caméra.
+- Pas d’élément opaque sur les silhouettes ou les télégraphes.
+- Option de paralaxe réduite sans changement de collisions.
+- Marquages du lieu contrôlés sur capture; aucun faux texte décoratif certifié.
+
+
+## 10. Arène — Ancien Aperture — sphère de tests
+
+**Cible : `STG_EXT_PORTAL2_OLD_APERTURE`.** Fixer une sphère et une période du secteur ancien avant validation. Les propositions de matière ci-dessous ne certifient aucune chambre précise.
+
+La page officielle confirme le contexte des laboratoires et de la coopération [AP01, AP05]; elle ne certifie pas la géométrie ci-dessous. Avant acceptation visuelle, rattacher des captures au lieu et à son état exacts. La bande de duel horizontale est une adaptation de composition explicitement déclarée.
+
+| Couche | Parallaxe | Contenu prévu | Fichier |
+|---|---|---|---|
+| L00_ambience | 0 | Profondeur de la cavité et brume légère loin du plan de combat. | PNG distinct; opaque |
+| L01_far | 0.12 | Coque de la sphère et structure porteuse distante. | PNG distinct avec alpha |
+| L02_mid | 0.3 | Passerelles, conduites et locaux du secteur source retenu. | PNG distinct avec alpha |
+| L03_near | 0.55 | Paroi de maintenance et tuyaux proches en retrait. | PNG distinct avec alpha |
+| L04_ground | 1 | Passerelle de duel horizontale; façade et dessus du sol alignés. | PNG distinct avec alpha |
+| L05_foreground | 1.1 | Tranches de support et câbles sans masquer pieds ni télégraphes. | PNG distinct avec alpha |
+
+La scène logique utilise 2 560 × 1 080, fenêtre 1 920 × 1 080 et sol à y = 880. Le tournoi conserve un sol continu, aucune collision décorative aléatoire et aucun danger de stage. Les portails du kit suivent le même contrat normalisé que sur les autres arènes. Les six couches conservent le même canevas et la même origine; les zones masquées sont à reconstruire proprement avant séparation. Un panorama maître ne compte jamais comme six images de parallaxe.
+
+**Variante spectacle — Évacuation du conduit.** 6S, 36 ticks d’activation et 150 ticks d’effet : Ouvre une vanne décorative derrière la voie; indique une étape de scénario. Les gels et changements de friction ne sont pas activés dans ce premier contrat. Deux utilisations par joueur et par round au maximum. L’interaction reste éteinte en tournoi.
+
+**Ambiance proposée —** Résonance métallique, tuyauterie, ventilation lointaine.
+
+- Captures du lieu exact et état choisi archivés par référence.
+- Six fichiers distincts et leur recomposition contrôlés.
+- Sol et pieds stables aux deux extrémités de caméra.
+- Pas d’élément opaque sur les silhouettes ou les télégraphes.
+- Option de paralaxe réduite sans changement de collisions.
+- Marquages du lieu contrôlés sur capture; aucun faux texte décoratif certifié.
+
+
+## 11. Production des animations, poses et effets
+
+Chaque frame de production contient **un sujet et une pose**, avec transparence pour les acteurs. Les fichiers se rangent par cible, orientation, clip et index stable : `assets/resonance/production/actors/{target_id}/{orientation}/{clip_id}/{frame_index:04d}.png`. Les deux orientations sont contrôlées séparément. La tenue Portal 2 de Chell possède son propre dossier; un partage du profil de gameplay ne vaut pas partage visuel validé.
+
+Le pivot au sol reste entre les appuis, sur la ligne de sol. La bbox visible ne recentre pas chaque frame. Les frames aériennes gardent la même origine logique; la simulation porte la trajectoire. Wheatley pivote autour du centre mécanique de sa sphère. La Rocket Turret conserve son axe de socle entre la visée, le tir et le recul.
+
+| Clip commun | Dessins cibles par orientation |
+|---|---|
+| idle | 8 |
+| walk_forward | 8 |
+| walk_back | 8 |
+| dash_forward | 6 |
+| dash_back | 6 |
+| jump_takeoff | 3 |
+| jump_rise | 3 |
+| jump_apex | 2 |
+| jump_fall | 3 |
+| jump_land | 3 |
+| crouch_enter | 3 |
+| crouch_idle | 4 |
+| crouch_exit | 3 |
+| turn | 4 |
+| guard_high | 4 |
+| guard_low | 4 |
+| air_guard | 4 |
+| hit_light | 4 |
+| hit_heavy | 6 |
+| launch_react | 5 |
+| knockdown | 6 |
+| stand_up | 7 |
+| throw_tech | 4 |
+| taunt | 10 |
+| victory | 10 |
+| defeat | 8 |
+| intro | 12 |
+
+Ces **27 types de clips** décrivent locomotion, réactions et scènes. S’y ajoutent les clips d’action liés à chacun des 23 `move_id` d’un kit. Les budgets ci-dessous indiquent des dessins d’anticipation / contact ou événement / récupération; ils ne sont pas les ticks de simulation. Une même frame peut durer plusieurs ticks, sans que cette répétition crée de nouveaux dessins.
+
+| Action | Budget dessins anticipation / contact / retour |
+|---|---|
+| normal_light | 2 / 1 / 3 |
+| normal_medium | 3 / 2 / 4 |
+| normal_heavy | 4 / 2 / 5 |
+| throw | 3 / 5 / 4 |
+| portal_placement | 4 / 2 / 4 |
+| portal_transit | 3 / 4 / 4 |
+| cube_throw | 4 / 2 / 5 |
+| anti_air | 3 / 3 / 5 |
+| ex | 4 / 3 / 5 |
+| super | 4 / 8 / 5 |
+| ultimate | 6 / 14 / 6 |
+| trait | 2 / 1 / 3 |
+
+Le retour vers idle, la transition vers garde, l’annulation autorisée et le changement de direction doivent être contrôlés; un clip dont seule l’attaque centrale existe n’est pas terminé. Les gestes de partenaire ne sont joués que si les deux acteurs existent avec la bonne distance, et chaque acteur conserve ses frames individuelles.
+
+
+### Assets séparés
+
+- Cube unique du kit, tenu et lancé avec pivot cohérent.
+- Portail A: ouverture, boucle, fermeture.
+- Portail B: ouverture, boucle, fermeture.
+- Rayon de placement sans collision de dégâts.
+- Effet de transit et aperçu de sortie.
+- Ombre au sol et effets de contact séparés.
+- Support ou rail Wheatley indépendant du noyau.
+- Roquette, visée, fumée et impact de la rencontre Rocket Turret.
+
+Événements à aligner sur les données : `portal_place`, `portal_open`, `portal_enter`, `portal_exit`, `cube_release`, `strike_contact`, `throw_capture`, `throw_release`, `rocket_lock`, `rocket_launch`, `environment_lock_break`, `exit_confirmed`. Un dessin d’effet ne définit pas l’instant de collision. Aucun clip terminé, aucun lot de six couches et aucune certification 1:1 ne sont produits par l’écriture de ce contrat.
+
+
+## 12. Scénarios de vérification et ordre d’intégration
+
+Les douze scénarios suivants sont des **critères de recette prévus**, sans exécution annoncée. Ils servent à vérifier les risques concrets de ce système une fois implémenté; ils ne remplacent pas l’inspection des images ou le contrôle des sources.
+
+| ID / scénario | Préparation | Résultat attendu |
+|---|---|---|
+| AP_T01 — Lire la paire | Placer A puis B; attendre l’ouverture des deux. | Deux sockets distincts ouverts, sans dégâts ni déplacement inattendu. |
+| AP_T02 — Refuser une sortie occupée | Préparer le transit vers un segment bloqué. | Refus explicite et retour stable; aucun acteur superposé. |
+| AP_T03 — Punir l’installation | Enregistrer 236L puis attaquer la préparation. | Pose interrompue avant événement; ancien ancrage conservé jusqu’à remplacement validé. |
+| AP_T04 — Réagir à la sortie | Enregistrer un transit puis garder ou attaquer l’arrivée. | Télégraphe visible au moins 18 ticks; aucune invulnérabilité cachée. |
+| AP_T05 — Limiter la boucle | Faire traverser un cube puis tenter un second passage. | Deuxième traversée ignorée ou collision résolue; dégâts et vitesse non multipliés. |
+| AP_T06 — Comprendre EX | Saisir 214L+M sans paire ou sans 50 Résonance. | Refus pour précondition/ressource; jamais projection ni Pose B de remplacement. |
+| AP_T07 — Différencier les costumes | Rejouer un même état avec Chell P1 et tenue P2. | Mêmes coûts, collision et résultat; images et protections de jambe distinctes. |
+| AP_T08 — Répondre à l’anti-air | Varier saut et approche au sol contre 623H. | Le saut peut être pris, mais une approche au sol peut punir la récupération. |
+| AP_T09 — Résoudre la Rocket Turret | Renvoyer une roquette sur la tourelle puis sur le vitrage. | La première se neutralise sans victoire; seul le vitrage progresse. |
+| AP_T10 — Sortir avec un autre profil | Sélectionner un combattant sans Portal Gun. | La console permet de résoudre les mêmes trois objectifs sans changer son identité. |
+| AP_T11 — Lire sans couleur | Activer palette adaptée et couper les sons. | Pictogrammes de paire, forme de verrouillage et durée restent lisibles. |
+| AP_T12 — Ne pas surcompter la production | Comparer un master, ses couches futures et une pose. | Aucune pose déclarée animation complète; un master n’est ni six plans ni une nouvelle arène par variante. |
+
+L’intégration commence par un kit pilote, sa paire et un cube, puis l’épreuve de tourelle avec console. Les deux autres kits ne sont activés qu’après vérification du socle partagé. Les skins, Wheatley et les variantes de stage viennent ensuite avec leurs données propres. Les quatre boss et six profils déjà jouables dans le prototype Boss Battle ne sont pas modifiés par l’ajout de ces fichiers documentaires.
+
+- Références de version et vues opposées approuvées.
+- Frames individuelles, pivots, hitboxes, hurtboxes et événements rédigés.
+- Simulation de portails déterministe et bornée implémentée dans un module distinct.
+- Préconditions de transit, annulations, coûts et combos vérifiés en jeu.
+- Rencontre Rocket Turret gagnable avec chaque profil autorisé.
+- Contrastes, collisions et options de réduction visuelle contrôlés.
+
+
+### Contrôles statiques effectués
+
+Les huit cibles se résolvent dans les catalogues existants; les 69 commandes et identifiants d’action sont uniques par kit. Les coûts sont cohérents avec `combat_rules.json`. Les durées et avantages de 39 lignes de frappe, les six avantages sur garde des cinématiques et les six fenêtres de déchoppe ont été vérifiés arithmétiquement. Les trois compteurs de phase et les douze couches prévues sont cohérents. Ces contrôles ne valident ni les collisions, ni les combos, ni le rendu, ni la fidélité visuelle.
+
+### Sources et portée
+
+**AP01 — [Valve — Portal 2 sur Steam](https://store.steampowered.com/app/620/Portal_2/)** · officielle · consultée le 20 novembre 2026. Campagne coopérative distincte, deux personnages et chambres dédiées; ne valide pas les kits de duel.
+
+**AP02 — [Valve — Bot Trust](https://www.thinkwithportals.com/media_16.php)** · officielle · consultée le 20 novembre 2026. Vidéo officielle de présentation des robots; la page est consultée, les captures de pose finales restent à rattacher au registre.
+
+**AP03 — [Valve — Boots](https://www.thinkwithportals.com/media_14.php)** · officielle · consultée le 20 novembre 2026. Référence officielle Long Fall Boots; aucune invulnérabilité de combat déduite des protections de chute.
+
+**AP04 — [Valve — Meet Wheatley](https://www.thinkwithportals.com/media.php)** · officielle · consultée le 20 novembre 2026. Présentation officielle du noyau Wheatley; état autonome à séparer du corps central.
+
+**AP05 — [Valve — Portal 2, présentation](https://www.thinkwithportals.com/about.php)** · officielle · consultée le 20 novembre 2026. Identité du dispositif à portails et du jeu de réflexion; aucun coup chiffré ci-dessous ne provient de cette source.
+
+**AP06 — [Portal Wiki — Turrets, Rocket Turret](https://theportalwiki.com/wiki/Rocket_Turret)** · secondaire · consultée le 20 novembre 2026. Tourelle fixe à verrouillage et roquettes; renvoi sur la tourelle neutralisé; redirection vers vitrages ou GLaDOS. À recouper avec capture du jeu avant fidélité validée.
+
+**AP07 — [Portal Wiki — Portals](https://theportalwiki.com/wiki/Portals)** · secondaire · consultée le 20 novembre 2026. Paires et couleurs: Chell bleu/orange, ATLAS cyan/indigo, P-body jaune/rouge. Ne source ni les limites temporelles ni les ancrages de combat proposés.
+
+**AP08 — [Portal Wiki — Chell](https://theportalwiki.com/wiki/Chell)** · secondaire · consultée le 20 novembre 2026. Protagoniste silencieuse; distinguer tenue et protections de jambe des deux jeux.
+
+**AP09 — [Portal Wiki — Wheatley](https://theportalwiki.com/wiki/Wheatley)** · secondaire · consultée le 20 novembre 2026. Noyau autonome, rail et rôle narratif; pas de corps humanoïde.
+
+**AP10 — [Portal Wiki — P-body](https://theportalwiki.com/wiki/P-body)** · secondaire · consultée le 20 novembre 2026. Robot élancé à œil orange; les gestes coopératifs doivent conserver leurs partenaires et leurs préconditions.
+
+Les JSON de référence du projet restent `combat_rules.json`, `frame_data_pilote.json` et `catalogue_extension_20261120.json`. Les nouvelles valeurs sont contrôlables arithmétiquement, mais ne sont pas présentées comme équilibrées ni jouables. Les divergences de silhouette, de détail ou d’architecture restent visibles dans le suivi de production jusqu’à comparaison avec la référence exacte.
+
+<!-- CONTINUATION_20261120_D -->
+
+# Bible Resonance — Machines du Cartel et production des rencontres
+
+Lot D du 20 novembre 2026 · référence de lecture du moteur : `25b3392`.
+
+Ce chapitre précise la production de cinq rencontres déjà cataloguées : Strider, Dropship avec nacelle, Gunship, APC et Hunter Chopper. Il fournit leurs contrats de silhouette, de dégâts, de collision et d’animation, ainsi que les plans de six couches de Ravenholm, Nova Prospekt et des Canaux. Le fichier associé, `docs/resonance/data/combine_encounter_design_20261120.json`, contient les identifiants, budgets, paramètres et listes de vérification exploitables par la production.
+
+**Ces profils ne livrent aucun nouveau comportement de jeu.** Le moteur Boss Battle observé possède toujours quatre boss : Strider, Dropship, Gunship et Gargantua. Dans ce chapitre, trois profils développent les prototypes existants ; APC et Hunter Chopper restent des rencontres documentaires. Aucun de ces cinq appareils ne reçoit une case de combattant jouable. Les illustrations produites dans d’autres travaux du lot D ont leur propre registre ; une pose, même retenue, ne valide ni les clips décrits ici, ni les hitboxes, ni les six fichiers d’un décor.
+
+La métadonnée `source_game` des douze réserves a été intégrée séparément dans `roster.json`, avec sa provenance documentaire, puis vérifiée en lecture. Le présent chapitre conserve l’état d’origine dans `baseline_source_game_in_roster: null`, rattaché à `25b3392`. Les recommandations de modèles, de versions et de comportement restent documentaires. Cette attribution de jeu n’accorde aucune jouabilité et ne certifie aucune image.
+
+## 1. Périmètre et conventions
+
+| Livrable de conception | Quantité | Statut |
+| --- | --- | --- |
+| Profils de machines existantes | 5 | 3 prototypes déjà actifs, 2 documentaires |
+| Profils de phases | 15 | Libellés du catalogue conservés |
+| Profils d’attaque ou de déploiement | 13 | 6 relevés du prototype, 7 propositions |
+| Zones de collision | 17 | Géométrie proposée, à ajuster aux images approuvées |
+| Clips d’animation | 77 | Planifiés ; aucun clip produit par ce document |
+| Dessins ciblés par orientation | 557 | Budget prévisionnel, distinct d’un nombre de fichiers livrés |
+| Demandes de vues de référence des machines | 30 | 6 vues par machine ; mesures à acquérir |
+| Stages / couches / props conservés | 3 / 18 / 12 | Plans de production, sans nouveau fond intégré |
+| Réserves documentées | 12 | source_game intégré séparément ; autres champs proposés |
+| Contrôles de production / scénarios de recette | 43 / 16 | À exécuter lors de la production et de l’intégration |
+| Sources | 22 | Code officiel fixé par commit et attribution documentaire |
+
+### Ce qui relève de Valve, du projet ou d’une proposition
+
+Les résumés **source** décrivent uniquement les chemins consultés du code officiel. Ils ne remplacent pas la vérification d’un build commercial, d’un réglage de difficulté ou d’un script de carte. Les invariants visuels sont repris du catalogue existant et doivent être confrontés à des captures versionnées. Les champs `source_behavior_summary` et `source_ids` servent à retrouver ces preuves.
+
+Les valeurs **observées dans Resonance** sont isolées dans `runtime_snapshot` et portent la référence `25b3392`. Les séquences 2D, jauges, récupérations, phases, contre-jeux et volumes proposés constituent du design original. Une entrée `proposed_not_implemented` ne décrit pas une fonction active. Les tableaux ci-dessous emploient les noms du catalogue, tandis que l’interface du prototype peut employer d’autres libellés de phase : les deux nomenclatures sont conservées dans le JSON.
+
+**Temps :** 60 ticks logiques par seconde. Une valeur de 90 ticks correspond à 1,5 seconde de simulation. Les nombres de dessins indiqués pour les clips mesurent un budget artistique, pas une durée : huit dessins peuvent être tenus ou répartis sur une séquence de 90 ticks. Le lecteur d’animation ne crée jamais de dégâts par lui-même.
+
+**Dégâts :** la colonne D indique les dégâts infligés au combattant dans l’échelle du prototype. Ses combattants possèdent entre 10 500 et 13 000 PV à la référence lue. Les boss utilisent une autre échelle, par exemple 1 200 PV pour le Strider ; comparer directement « 1 300 de rafale » et « 1 200 PV de boss » serait trompeur. La garde indiquée concerne uniquement le pattern de Resonance, pas une possibilité de parer ce véhicule dans Half-Life 2.
+
+**Coordonnées :** le prototype Boss Battle possède une largeur logique de 1 280. Le contrat des stages de duel utilise un monde de 2 560, une fenêtre de 1 920 × 1 080 et un sol à y = 880. Tout rapprochement exige un adaptateur explicite. Les boîtes normalisées du JSON sont des guides pour les futures poses, pas des hitboxes extraites des modèles Valve.
+
+### Cadence actuelle et limites de la lecture
+
+Pour les six patterns existants, les valeurs présentées correspondent à la phase 0, difficulté normale. Le moteur applique ensuite `max(42, base + difficulté − phase × 5)` au télégraphe : histoire +20, normale 0, difficile −12. La récupération vaut `max(45, 115 − phase × 18 − ajustement difficile)`, ce dernier ajustement étant 18. Ces formules sont celles du projet ; elles ne sont pas attribuées au SDK.
+
+Une interaction valide déclenche immédiatement le ravitaillement ou le tir et affiche l’état `interact` pendant 18 ticks. Le joueur porte au maximum trois roquettes ; le poste de ravitaillement possède une récupération de 100 ticks et le lanceur de 90 ticks. Une roquette inflige 300 dégâts à une cible admissible. Cette dotation appartient au terrain et permet aux profils autorisés de résoudre la rencontre sans leur ajouter un lanceur permanent. Toute nouvelle animation devra rendre l’accès, la prise et le tir lisibles sans déplacer ces événements de simulation.
+
+## 2. Références, échelle et fichiers à produire
+
+### Versionner la preuve avant la fidélité
+
+Les références techniques principales sont les dépôts officiels `ValveSoftware/source-sdk-2013`, commit `3e957b70b167929f120360115d359d1ecb4c1699`, et `ValveSoftware/halflife`, commit `b1b5cf5892918535619b2937bb927e46cb097ba1`. Chaque fichier de code utilisé possède son empreinte SHA-256 et les symboles consultés dans le JSON. Une modification ultérieure de la branche distante ne change donc pas la référence de ce chapitre.
+
+Le profil visuel `HL2_RETAIL_SOURCE_BASE_D01` vise la campagne de base Half-Life 2. Son identifiant de build reste à renseigner. Les six demandes par machine couvrent côté droit, côté gauche, face ou arrière pour les asymétries, attache d’arme, état endommagé et comparaison avec un humain dans une caméra comparable. Il faut enregistrer carte, position ou timecode, FOV, modèle, skin, bodygroup, rendu et empreinte de capture. La page officielle anniversaire fournit un contexte de référence ; elle n’établit pas à elle seule une dimension ou l’architecture exacte de chaque rencontre. [CB07]
+
+Une référence d’Episode Two ne remplit pas automatiquement le dossier de `strider_hl2`. Elle peut servir à une cible de variante déjà identifiée, avec sa propre provenance. De même, un rendu de Gunship ne remplace pas le Hunter Chopper, même si certains chemins du SDK partagent des mécanismes de vol. Le nom d’une classe logicielle ne suffit pas à certifier une silhouette.
+
+### Mesure par témoin humain
+
+On définit H comme la hauteur du témoin humain dans une projection comparable. Les ratios suivants servent uniquement à préparer le cadrage 2D. **Ils ne constituent pas des dimensions canoniques mesurées.** Le JSON conserve `source_measured_ratios: null` et `measurement_status: not_measured`. La capture doit permettre de séparer profondeur, perspective et adaptation de caméra ; une réduction graphique pour faire tenir le boss à l’écran se consigne comme adaptation.
+
+| Machine | Cibles de cadrage, non mesurées | Échelle source validée |
+| --- | --- | --- |
+| Strider de Cité 17 | hauteur debout : 4.6 H ; largeur d’appui : 3.4 H ; hauteur accroupie : 3.2 H | Non |
+| Dropship et nacelle de débarquement | envergure du porteur : 5.4 H ; hauteur du porteur : 1.9 H ; longueur de nacelle : 2.7 H ; hauteur de nacelle : 1.25 H | Non |
+| Gunship du Cartel | longueur du corps : 4.5 H ; hauteur du corps : 1.6 H ; diamètre du ventilateur : 1.05 H | Non |
+| APC du Cartel | longueur du véhicule : 3.2 H ; hauteur de coque : 1.25 H ; hauteur avec tourelle : 1.7 H | Non |
+| Hunter Chopper des canaux | longueur entière : 5.4 H ; diamètre du rotor principal : 4.0 H ; hauteur du fuselage : 1.65 H | Non |
+
+### Contrat de fichiers individuels
+
+Un fichier représente un sujet et une pose. Les acteurs utilisent un fond transparent ; le décor et la caméra restent hors de ces fichiers. Le chemin prévu est `assets/resonance/production/bosses/{target_id}/{orientation}/{state}/{frame:04d}.png`, avec `left` et `right` documentés séparément. Un miroir automatique ne vaut pas contrôle des asymétries. Chaque clip conserve son pivot, son rectangle de référence et les attaches des effets.
+
+Les tracés de tir, fumées, impacts, ombres et projectiles sont des effets séparés. La nacelle reste un sujet distinct du porteur ; une bombe sortie de l’hélicoptère devient un acteur indépendant. Les débris de fin ne récupèrent pas implicitement une collision offensive. Le budget de 557 dessins par orientation, soit 1 114 pour deux orientations, est une estimation de travail pour 77 clips : aucune de ces unités n’est comptée comme image réalisée.
+
+Pour chaque attaque, la simulation traverse les intervalles `[0,T)`, `[T,T+A)` et `[T+A,T+A+R)`. T est le télégraphe, A la fenêtre active, R la récupération. Les noms d’événements du JSON sont des points de raccordement ; leurs positions exactes dans les clips attendent les images approuvées. Une pause, un saut de frame ou une boucle visuelle ne doit produire ni second projectile, ni second soldat, ni seconde dose de dégâts.
+
+Une application de dégâts est identifiée par le couple attaque/réservoir de santé. Plusieurs volumes partageant le même réservoir ne multiplient pas l’impact. Les patterns multiples proposés pour APC et hélicoptère sont plafonnés à une application par attaque au stade de cette conception ; une autre règle exigerait une décision d’équilibrage explicite.
+
+## 3. Profils de rencontre
+
+Dans les tableaux d’attaque, T/A/R sont les durées en ticks. « Observé » désigne le prototype Resonance à la référence lue ; « proposé » désigne le travail restant à intégrer. Les phases numérotées appartiennent au catalogue de rencontres, sans prétendre reproduire des chapitres ou scripts officiels.
+
+### 3.1. Strider de Cité 17 — `strider_hl2`
+
+Le Strider se lit d’abord par ses trois longues pattes, son corps haut et ses deux armes distinctes. La production doit conserver les trois chaînes d’appui pendant la marche, l’abaissement et la chute. Une patte cachée par la profondeur garde son existence dans la pose et la collision ; elle ne se transforme pas en quatrième membre au changement de vue.
+
+**Source.** Le code officiel possède un traitement explicite des balles Combine, avec un chemin particulier pour l’AR2. Les explosions admissibles sont traitées sur le corps ; la branche de dégâts ordinaires placée sous `#if 0` est inactive. `BigGun` et `MiniGun` sont des attaches distinctes. Les chemins consultés n’établissent pas de santé indépendante pour un genou ou une patte. [CB01] [CB06]
+
+**Adaptation de rencontre.** Le RPG et la réserve sont des équipements de terrain. La rafale enseigne l’usage du couvert ; l’écrasement impose un déplacement ; le canon demande de quitter la zone annoncée. Le joueur doit pouvoir relire le membre choisi avant l’impact. Le flash du canon ne remplace pas la forme de son télégraphe, afin que la réduction des effets lumineux conserve le même contre-jeu.
+
+**Ancrage de catalogue :** `BBA_STRIDER_HL2`, stage de base `STG_11_HL2_STATION`, victoire `destroy_boss`. Le nouveau profil est `production_design_not_implemented` ; son existence ne change pas l’état du prototype.
+
+#### Assemblage, réception et armes
+
+| Élément | Volume proposé | Réservoir | Rôle et contrôle |
+| --- | --- | --- | --- |
+| Corps | ellipse | boss | Recevoir le RPG sur la masse centrale, jamais sur une tache rouge inventée. |
+| Patte 1 | capsule | aucun | Capsule à reconstruire depuis chaque pose; pas de PV de genou. |
+| Patte 2 | capsule | aucun | Même règle; pas de détachement à un seuil de dégâts. |
+| Patte 3 | capsule | aucun | La troisième patte peut passer en profondeur, elle ne disparaît pas du cycle. |
+
+Les coordonnées normalisées sont conservées dans le JSON et seront ajustées à chaque pose approuvée. Aucun de ces volumes ne possède un multiplicateur de point faible indépendant.
+
+| Arme / événement | Attache logique | Règle de production |
+| --- | --- | --- |
+| Tir de suppression | `MiniGun` | Effet de bouche indépendant du corps; suivre orientation du canon. |
+| Canon à distorsion | `BigGun` | La charge, le tir et l’impact sont des événements séparés. |
+| Frappe de patte | `selected_foot_contact` | Le télégraphe indique l’appui choisi; aucune jambe surnuméraire pour l’animation. |
+
+#### Télégraphes et fenêtres
+
+| Pattern | Origine | T / A / R | D | Garde | Télégraphe et réponse |
+| --- | --- | --- | --- | --- | --- |
+| Rafale | observé | 70 / 34 / 115 | 1300 | oui | Orientation du MiniGun, ligne de secteur et signal bref. Couvert ou esquive; utiliser la récupération pour le RPG. |
+| Écrasement | observé | 65 / 20 / 115 | 2100 | non | Patte identifiée levée et zone de contact bornée. S’éloigner de l’appui ou sauter selon la règle actuelle. |
+| Canon à distorsion | observé | 90 / 18 / 115 | 2600 | non | Charge au BigGun et marque au sol; destination fixée à la création de l’attaque actuelle. Quitter la zone annoncée; la garde ne remplace pas le déplacement. |
+
+#### Phases et transition de résultat
+
+| Phase du catalogue | Objectif | Consigne de production |
+| --- | --- | --- |
+| 1 — Contact | Rejoindre le poste de tir | Faire découvrir couvert, réserve et poste RPG avant de demander une rotation de positions. |
+| 2 — Contre attaque | Atteindre le corps au RPG | Cadrer les fenêtres après rafale/écrasement; aucune nouvelle faiblesse anatomique. |
+| 3 — Pression finale | Détruire le Strider | Augmenter la pression par cadence prévue, jamais supprimer le télégraphe. |
+
+**Lecture du prototype :** 1200 PV de boss ; libellés actuels : Patrouille, Suppression, Dernière avancée. Les deux seuils sont les deux tiers et le tiers de PV restants.
+
+**Fin :** Valider la neutralisation puis jouer la chute; aucun écrasement tardif après résultat.
+
+#### États et fichiers d’animation à produire
+
+| Relation d’états proposée | Contrat |
+| --- | --- |
+| entry | enter → idle ou walk. Le déplacement conserve trois pistes de contact de patte. |
+| attack | burst_aim → burst_fire → recover; cannon_charge → cannon_fire → recover; stomp_prepare → stomp_contact → recover. |
+| height | crouch_down → crouch_idle → rise, sans lancer une seconde attaque pendant la transition. |
+| interrupt | heavy_flinch suspend les demandes non engagées; les événements déjà partis restent attachés à leur identifiant. |
+| terminal | death_fall → wreck_settle; aucune boucle de combat ne redémarre. |
+
+| État / dossier | Dessins par orientation | Boucle | Finalité |
+| --- | --- | --- | --- |
+| `enter` | 8 | non | apparition entière |
+| `idle` | 8 | oui | équilibre des trois pattes |
+| `walk` | 12 | oui | contacts alternés sans glissement |
+| `crouch_down` | 6 | non | corps abaissé sans raccourcir les membres |
+| `crouch_idle` | 6 | oui | pose basse |
+| `rise` | 6 | non | retour à la hauteur |
+| `burst_aim` | 5 | non | axe MiniGun |
+| `burst_fire` | 6 | oui | rafale |
+| `cannon_charge` | 8 | non | charge du BigGun |
+| `cannon_fire` | 5 | non | départ du canon |
+| `stomp_prepare` | 6 | non | levée de patte |
+| `stomp_contact` | 4 | non | impact local |
+| `recover` | 6 | non | reprise d’appui |
+| `heavy_flinch` | 6 | non | réaction du corps sans perte de patte |
+| `death_fall` | 14 | non | chute de l’ensemble |
+| `wreck_settle` | 5 | non | fin du mouvement |
+
+Budget du profil : **16 clips**, **111 dessins par orientation**. Chaque ligne utilise le chemin de fichiers individuels défini en section 2 ; toutes restent `planned_not_generated` et `runtime_clip_wired: false`.
+
+#### Liste de contrôle de production
+
+- [ ] Compter exactement trois pattes sur toute la boucle.
+- [ ] Comparer la hauteur debout et accroupie sans tricher par squash global.
+- [ ] Aligner BigGun et MiniGun sur leurs événements.
+- [ ] Séparer réception de projectiles sur le corps et frappe de patte.
+- [ ] Ne produire ni genou rouge ni membre arraché comme faiblesse canonique.
+
+### 3.2. Dropship et nacelle de débarquement — `dropship_hl2`
+
+Le sujet est un transporteur invulnérable portant une nacelle attaquable, avec des soldats individualisés. Cette séparation gouverne le dessin, les pivots, la sélection de cible, les dégâts et la victoire. Aucun moteur rouge, canon supplémentaire sur le porteur ou état « transport abattu » n’est introduit pour rendre la rencontre plus conventionnelle.
+
+**Source.** Le code crée `prop_dropship_container` séparément et l’attache au transport. Le chemin de dégâts du porteur renvoie zéro et peut transmettre l’impact à la nacelle. Celle-ci filtre notamment explosions et dégâts AIRBOAT ; le même impact peut être dédupliqué lorsqu’il traverse les deux chemins. Les attaches de tir sont lues sur la nacelle. Les flags de carte pouvant aussi protéger celle-ci doivent être distingués du choix d’une nacelle destructible dans cette rencontre. [CB02]
+
+**Adaptation de rencontre.** Le prototype donne 900 PV à l’objectif de cargaison. Sa phase de déploiement commence à 240 ticks actifs ; les renforts apparaissent actuellement un cycle sur deux, dans la limite de trois simultanés. Le déploiement de 72/24/90 ci-dessous est une proposition de synchronisation future, pas une animation déjà branchée. À zéro PV de cargaison, annuler les futures attaques et sorties de trappe, laisser les soldats présents continuer et montrer le retrait intact du transporteur. Le retrait actuel dure 180 ticks ; la victoire attend aussi l’élimination des renforts.
+
+**Ancrage de catalogue :** `BBA_DROPSHIP_HL2`, stage de base `STG_15_HL2_NOVA`, victoire `destroy_cargo_and_clear_reinforcements`. Le nouveau profil est `production_design_not_implemented` ; son existence ne change pas l’état du prototype.
+
+#### Assemblage, réception et armes
+
+| Élément | Volume proposé | Réservoir | Rôle et contrôle |
+| --- | --- | --- | --- |
+| Porteur | ellipse | aucun | Sélection possible avec retour invulnérable; aucune jauge de moteur. |
+| Nacelle | box | cargo | Seule santé de grande cible dans cette rencontre. |
+| Canon de nacelle | capsule | cargo | Pas de tourelle détachable ni multiplicateur de point faible ajouté. |
+| Sortie des renforts | box | aucun | Ne reçoit pas de dégâts; chaque renfort possède ensuite sa collision propre. |
+
+Les coordonnées normalisées sont conservées dans le JSON et seront ajustées à chaque pose approuvée. Aucun de ces volumes ne possède un multiplicateur de point faible indépendant.
+
+| Arme / événement | Attache logique | Règle de production |
+| --- | --- | --- |
+| Mitrailleuse de nacelle | `cargo.muzzle` | Le porteur n’a pas une deuxième mitrailleuse dessinée par erreur. |
+| Débarquement | `cargo.deploy_landpoint` | Soldats individualisés, entrée et appui visibles. |
+
+#### Télégraphes et fenêtres
+
+| Pattern | Origine | T / A / R | D | Garde | Télégraphe et réponse |
+| --- | --- | --- | --- | --- | --- |
+| Rafale de nacelle | observé | 75 / 32 / 115 | 1200 | oui | Rotation du canon ventral, secteur de tir et bref signal. Changer de couvert; cibler explicitement la nacelle. |
+| Débarquement visible | proposé | 72 / 24 / 90 | 0 | non | Nacelle stabilisée, trappe annoncée et aire d’arrivée visible. Intercepter le soldat après son apparition, sans frapper un marqueur vide. |
+
+#### Phases et transition de résultat
+
+| Phase du catalogue | Objectif | Consigne de production |
+| --- | --- | --- |
+| 1 — Approche | Lire les passes de la nacelle | Montrer porteur et nacelle comme deux cibles nommées. |
+| 2 — Interception | Neutraliser la nacelle | Faire alterner tir sur cargaison et gestion des renforts; pas de double comptage de blast. |
+| 3 — Sécurisation | Éliminer les renforts restants | Désactiver les attaques de nacelle, animer le départ intact et attendre les renforts restants. |
+
+**Lecture du prototype :** 900 PV de nacelle ; libellés actuels : Approche, Débarquement, Retrait du transport. Les déclencheurs temporel et de destruction sont décrits ci-dessus.
+
+**Fin :** Libellé d’interception ou débarquement neutralisé; ne jamais écrire Dropship abattu.
+
+#### États et fichiers d’animation à produire
+
+| Relation d’états proposée | Contrat |
+| --- | --- |
+| entry | carrier_approach → carrier_brake → carrier_hover_loaded; la nacelle suit une attache stable. |
+| attack | cargo_aim → cargo_fire, indépendamment du maintien du porteur. |
+| deploy | cargo_open → troop_exit → troop_land; un acteur n’est créé qu’une fois à l’événement de sortie. |
+| cargo_loss | cargo_destroy puis carrier_release; supprimer feu et déploiements futurs, garder les soldats déjà présents. |
+| terminal | carrier_hover_empty → carrier_depart; victoire après retrait et élimination des renforts. |
+
+| État / dossier | Dessins par orientation | Boucle | Finalité |
+| --- | --- | --- | --- |
+| `carrier_approach` | 10 | oui | vol avec nacelle |
+| `carrier_brake` | 6 | non | ralentissement |
+| `carrier_hover_loaded` | 10 | oui | porteur avec attache chargée |
+| `cargo_aim` | 5 | non | orientation du canon |
+| `cargo_fire` | 5 | oui | bouche et recul |
+| `cargo_open` | 6 | non | trappe |
+| `troop_exit` | 8 | non | sortie un acteur par frame |
+| `troop_land` | 4 | non | contact sol |
+| `cargo_hit` | 5 | non | impact lourd |
+| `cargo_smoke` | 6 | oui | fumée en FX séparé |
+| `cargo_destroy` | 12 | non | destruction de nacelle seule |
+| `carrier_release` | 6 | non | détachement |
+| `carrier_hover_empty` | 8 | oui | porteur sans nacelle |
+| `carrier_depart` | 10 | non | retrait intact |
+| `cargo_debris_settle` | 6 | non | débris sans nouvelle collision offensive |
+
+Budget du profil : **15 clips**, **107 dessins par orientation**. Chaque ligne utilise le chemin de fichiers individuels défini en section 2 ; toutes restent `planned_not_generated` et `runtime_clip_wired: false`.
+
+#### Liste de contrôle de production
+
+- [ ] Séparer les pivots porteur/nacelle et leur attache.
+- [ ] Placer tous les FX de mitrailleuse sur la nacelle.
+- [ ] Prévoir chargement et retrait sans nacelle; aucune explosion du porteur.
+- [ ] Empêcher une double application d’explosion sur cargaison via plusieurs zones.
+- [ ] Ne faire apparaître un renfort actif qu’au passage de sortie prévu.
+
+### 3.3. Gunship du Cartel — `gunship_hl2`
+
+Le Gunship doit conserver sa silhouette synthétique, son canon frontal et son ventilateur arrière. Il n’emprunte ni le rotor central d’un hélicoptère, ni la nacelle et les soldats d’un Dropship. Son mouvement organise la lecture des passes ; l’interception est une action de son canon, pas une arme additionnelle inventée.
+
+**Source.** Les traces de balles ordinaires sont écartées et les explosions passent par un filtre de dégâts. La logique de tir inclut la défense contre les missiles. Le fichier contient aussi des variantes de modèle et d’attaque au sol, qui ne suffisent pas à établir leur présence dans la scène retail choisie. Les indicateurs anti-dissolution imposent de ne pas assimiler automatiquement l’orbe du prototype à toutes les interactions d’une balle Combine du jeu source. [CB03] [CB06]
+
+**Adaptation de rencontre.** Le prototype travaille avec une trajectoire de RPG simplifiée. Pendant la rafale active, une roquette suffisamment proche peut être interceptée ; le seuil lu est de 200 unités logiques. Une fenêtre de repositionnement doit rendre la riposte compréhensible. Le joueur ne doit pas apprendre une règle visuelle fausse, par exemple viser le ventilateur comme un réservoir séparé. La chute finale reste à distance de la voie de déplacement après résolution du combat.
+
+**Ancrage de catalogue :** `BBA_GUNSHIP_HL2`, stage de base `STG_15_HL2_NOVA`, victoire `destroy_boss`. Le nouveau profil est `production_design_not_implemented` ; son existence ne change pas l’état du prototype.
+
+#### Assemblage, réception et armes
+
+| Élément | Volume proposé | Réservoir | Rôle et contrôle |
+| --- | --- | --- | --- |
+| Corps | ellipse | boss | Réception sur le fuselage; pas de cockpit humain ajouté. |
+| Ventilateur arrière | ellipse | boss | Animation mécanique distincte; aucune jauge ou casse indépendante. |
+| Canon frontal | capsule | boss | Aligner visée et FX; pas de nacelle de transport. |
+
+Les coordonnées normalisées sont conservées dans le JSON et seront ajustées à chaque pose approuvée. Aucun de ces volumes ne possède un multiplicateur de point faible indépendant.
+
+| Arme / événement | Attache logique | Règle de production |
+| --- | --- | --- |
+| Canon frontal | `muzzle` | Canon unique servant également à l’interception. |
+| Interception de roquette | `muzzle` | Action de défense de trajectoire; ne pas ajouter un second lance-missiles visuel. |
+
+#### Télégraphes et fenêtres
+
+| Pattern | Origine | T / A / R | D | Garde | Télégraphe et réponse |
+| --- | --- | --- | --- | --- | --- |
+| Rafale et interception | observé | 80 / 75 / 115 | 1500 | oui | Nez orienté et bande de suppression indiquée. Tirer après la salve; les roquettes proches peuvent être interceptées. |
+| Passe à impulsions | observé | 70 / 24 / 115 | 2100 | oui | Inclinaison avant passe et bande prévue. Couverture ou esquive puis changement de poste. |
+
+#### Phases et transition de résultat
+
+| Phase du catalogue | Objectif | Consigne de production |
+| --- | --- | --- |
+| 1 — Repérage | Observer la passe de suppression | Enseigner couverture et perte possible d’une roquette pendant interception. |
+| 2 — Interception | Faire parvenir une roquette | Montrer une fenêtre de repositionnement exploitable sans modifier le blindage. |
+| 3 — Dernière passe | Confirmer la destruction | Changer de poste en conservant la distinction des passes; chute hors voie. |
+
+**Lecture du prototype :** 1000 PV de boss ; libellés actuels : Passe de reconnaissance, Feu de suppression, Rupture de trajectoire. Les deux seuils sont les deux tiers et le tiers de PV restants.
+
+**Fin :** Neutralisation puis chute à distance; pas de collision tardive sur le héros après résultat.
+
+#### États et fichiers d’animation à produire
+
+| Relation d’états proposée | Contrat |
+| --- | --- |
+| entry | approach → hover; ventilateur et masse centrale restent cohérents pendant les inclinaisons. |
+| attack | aim → burst → recover ou bank_left/bank_right → strafe_pass → recover. |
+| defense | intercept_turn → intercept_fire → recover; même canon que la rafale. |
+| interrupt | heavy_hit → damaged_flight; les traces de tir déjà engagées gardent leur propriétaire. |
+| terminal | death_spiral → distant_impact; la piste du joueur n’acquiert pas un nouveau volume de crash. |
+
+| État / dossier | Dessins par orientation | Boucle | Finalité |
+| --- | --- | --- | --- |
+| `approach` | 10 | oui | entrée en vol |
+| `hover` | 10 | oui | maintien propulsif |
+| `bank_left` | 7 | non | inclinaison |
+| `bank_right` | 7 | non | inclinaison opposée |
+| `aim` | 5 | non | nez et canon |
+| `burst` | 6 | oui | rafale |
+| `intercept_turn` | 6 | non | visée vers roquette |
+| `intercept_fire` | 4 | non | tir défensif |
+| `strafe_pass` | 10 | oui | passe latérale |
+| `recover` | 7 | non | repositionnement |
+| `heavy_hit` | 6 | non | déviation du fuselage |
+| `damaged_flight` | 8 | oui | fumée distincte |
+| `death_spiral` | 14 | non | chute distante |
+| `distant_impact` | 7 | non | impact hors voie |
+
+Budget du profil : **14 clips**, **107 dessins par orientation**. Chaque ligne utilise le chemin de fichiers individuels défini en section 2 ; toutes restent `planned_not_generated` et `runtime_clip_wired: false`.
+
+#### Liste de contrôle de production
+
+- [ ] Ne dessiner ni rotor central, ni nacelle de soldats, ni silhouette de Dropship.
+- [ ] Maintenir le ventilateur arrière pendant toutes les inclinaisons.
+- [ ] Faire sortir le tir offensif et défensif du même canon.
+- [ ] Séparer l’interception réellement visible de la destruction de la roquette.
+- [ ] Garder ground attack hors kit tant qu’une version/scène approuvée ne l’exige pas.
+
+### 3.4. APC du Cartel — `apc_hl2`
+
+L’APC reste une rencontre documentée, absente des identifiants jouables du moteur Boss Battle. Le profil prépare un véhicule roulant, sa coque, ses roues, sa tourelle, son tir et ses missiles. Le nombre et l’implantation des roues doivent être relevés dans la référence retenue, sans déduire l’autre flanc d’une silhouette incomplète.
+
+**Source.** `CPropAPC::OnTakeDamage` traite notamment BLAST et AIRBOAT. Le code distingue les tirs du véhicule, les missiles et une séquence de tir lors de sa fin. Cela n’établit ni vulnérabilité d’un pneu, ni réacteur exposé, ni tourelle destructible séparée. Le modèle étant fourni dans le contexte de carte, le chemin de modèle proposé doit encore être confirmé par la capture retenue. [CB04]
+
+**Adaptation de rencontre.** Un poste lourd ou un canon monté permet la riposte. Le véhicule prépare une salve dont les destinations se verrouillent avant le lancement. Les deux impacts annoncés laissent un corridor atteignable ; les dessins et numéros maintiennent cette information sans dépendre seulement de couleurs. La dernière attaque est un état vivant optionnel, entièrement résolu avant la confirmation de victoire. L’épave ne lance ensuite aucun projectile et ne bloque pas arbitrairement la sortie.
+
+**Ancrage de catalogue :** `BBA_APC_HL2`, stage de base `STG_12_HL2_CANALS`, victoire `destroy_boss`. Le nouveau profil est `production_design_not_implemented` ; son existence ne change pas l’état du prototype.
+
+#### Assemblage, réception et armes
+
+| Élément | Volume proposé | Réservoir | Rôle et contrôle |
+| --- | --- | --- | --- |
+| Coque blindée | box | boss | Pas de noyau lumineux ajouté. |
+| Roues visibles | capsule | boss | Nombre et essieux à relever dans la même référence; pas de pneus destructibles inventés. |
+| Tourelle | box | boss | Attache de canon et missiles distincts, aucune barre de tourelle. |
+
+Les coordonnées normalisées sont conservées dans le JSON et seront ajustées à chaque pose approuvée. Aucun de ces volumes ne possède un multiplicateur de point faible indépendant.
+
+| Arme / événement | Attache logique | Règle de production |
+| --- | --- | --- |
+| Canon | `machinegun_muzzle` | Nom logique à aligner avec l’attache retenue dans le modèle. |
+| Salve de missiles | `cannon_muzzle` | Projectile séparé du tracé du canon; sélection de côté et trajectoire explicites. |
+
+#### Télégraphes et fenêtres
+
+| Pattern | Origine | T / A / R | D | Garde | Télégraphe et réponse |
+| --- | --- | --- | --- | --- | --- |
+| Rafale de barrage | proposé | 78 / 36 / 102 | 1100 | oui | Tourelle tourne, bouche orientée, secteur marqué. Couvert; sortie après le dernier impact annoncé. |
+| Salve de missiles | proposé | 96 / 42 / 126 | 1900 | non | Deux points d’impact successifs, ordre affiché par formes numérotées. Se déplacer vers le corridor libre; aucun suivi caché après verrouillage. |
+| Dernier tir avant neutralisation | proposé | 108 / 24 / 144 | 2100 | non | Préparation plus longue et unique destination verrouillée. Réserver une fenêtre de tir lourd puis quitter le point annoncé. |
+
+#### Phases et transition de résultat
+
+| Phase du catalogue | Objectif | Consigne de production |
+| --- | --- | --- |
+| 1 — Barrage | Passer la salve de missiles | Accès au couvert et à un poste lourd avant la première salve. |
+| 2 — Ouverture | Placer les dégâts lourds | Alternance canon/missiles, fenêtre de riposte après récupération. |
+| 3 — Neutralisation | Détruire le véhicule | Dernier tir signalé avant résultat, puis aucune attaque post-victoire. |
+
+**Lecture du prototype :** aucun profil actif, aucune jauge ni aucun seuil de phase intégré pour cette cible. Les durées proposées demandent une future recette de déplacement et de riposte.
+
+**Fin :** Épave immobile, voie dégagée; aucune poursuite de dommages après le résultat.
+
+#### États et fichiers d’animation à produire
+
+| Relation d’états proposée | Contrat |
+| --- | --- |
+| entry | enter_drive → brake → idle; roues et coque partagent la vitesse de translation. |
+| attack | turret_track → gun_prepare → gun_fire → recover ou missile_prepare → missile_launch → recover. |
+| reposition | reposition revient à idle avant une nouvelle préparation; aucune visée téléportée. |
+| damage | heavy_hit puis damaged_idle; aucune roue n’est retirée pour fabriquer un palier. |
+| terminal | final_attack est un état vivant optionnel, ensuite destroy → wreck; aucune salve après victoire. |
+
+| État / dossier | Dessins par orientation | Boucle | Finalité |
+| --- | --- | --- | --- |
+| `enter_drive` | 10 | oui | véhicule entier |
+| `brake` | 5 | non | arrêt de roues et coque |
+| `idle` | 6 | oui | tourelle stable |
+| `turret_track` | 6 | oui | rotation sans glisser la coque |
+| `gun_prepare` | 4 | non | orientation |
+| `gun_fire` | 5 | oui | rafale |
+| `missile_prepare` | 6 | non | ouverture/attache source à capturer |
+| `missile_launch` | 5 | non | départ séparé |
+| `recover` | 6 | non | reprise de visée |
+| `reposition` | 10 | oui | translation sur roues |
+| `heavy_hit` | 5 | non | réaction sans faux blindage arraché |
+| `damaged_idle` | 6 | oui | fumée graduelle |
+| `final_attack` | 7 | non | dernier tir avant résultat |
+| `destroy` | 12 | non | neutralisation |
+| `wreck` | 6 | oui | épave immobile |
+
+Budget du profil : **15 clips**, **99 dessins par orientation**. Chaque ligne utilise le chemin de fichiers individuels défini en section 2 ; toutes restent `planned_not_generated` et `runtime_clip_wired: false`.
+
+#### Liste de contrôle de production
+
+- [ ] Fixer le nombre de roues et les essieux d’après la référence; pas de symétrie devinée.
+- [ ] Canon, missiles et fumée possèdent leurs sorties propres.
+- [ ] RPG et explosifs admissibles atteignent le même réservoir de vie.
+- [ ] Aucune destruction séparée de roues ou canon n’est déclarée canonique.
+- [ ] La salve finale se termine avant confirmation de victoire, sans projectiles hostiles résiduels.
+
+### 3.5. Hunter Chopper des canaux — `hunter_chopper_hl2`
+
+Le Hunter Chopper garde un rotor principal, un fuselage et un empennage d’hélicoptère, avec des bombes séparées. Le passage aérien ne transforme pas l’appareil en Gunship. Ce profil reste documentaire : ni ce boss, ni une section d’airboat complète ne sont ajoutés au moteur par le chapitre.
+
+**Source.** Le filtre consulté accepte notamment AIRBOAT et les entités classées missiles. La propriété d’une bombe intervient dans ses dégâts au propre hélicoptère ; une bombe simplement tombée ne devient donc pas automatiquement un projectile allié. Des règles de carte peuvent modifier l’invulnérabilité. Ces chemins ne décrivent pas le rotor comme une faiblesse indépendante. [CB05]
+
+**Adaptation de rencontre.** La proposition emploie un canon inspiré de l’airboat sur un poste fixe, ou, si un futur mode l’assume, une section véhicule distincte. La version fixe est une transformation 2D déclarée. Trois trajectoires de bombes se verrouillent avant leurs départs et conservent une sortie sur toute la séquence, y compris pour le profil autorisé le moins rapide. Une éventuelle récupération de bombe exige sa propre prise, son transfert de propriétaire et ses règles de collision ; elle n’est pas activée par ce document. Un rotor dessiné ne crée pas non plus un danger au sol implicite.
+
+**Ancrage de catalogue :** `BBA_HUNTER_CHOPPER_HL2`, stage de base `STG_12_HL2_CANALS`, victoire `destroy_boss`. Le nouveau profil est `production_design_not_implemented` ; son existence ne change pas l’état du prototype.
+
+#### Assemblage, réception et armes
+
+| Élément | Volume proposé | Réservoir | Rôle et contrôle |
+| --- | --- | --- | --- |
+| Fuselage | ellipse | boss | Pas de cockpit humain transparent ajouté. |
+| Rotor principal | capsule | aucun | Garder hors du plan de collision du joueur; aucun disque létal implicite. |
+| Trappe de bombes | box | aucun | Le marqueur n’est pas un point faible; bombes avec collision propre. |
+
+Les coordonnées normalisées sont conservées dans le JSON et seront ajustées à chaque pose approuvée. Aucun de ces volumes ne possède un multiplicateur de point faible indépendant.
+
+| Arme / événement | Attache logique | Règle de production |
+| --- | --- | --- |
+| Canon | `gun_muzzle` | Alignement exact du modèle à relever, canon indépendant du rotor. |
+| Bombes | `bomb_release` | Objet distinct avec chute et signaux; jamais missile de Gunship. |
+
+#### Télégraphes et fenêtres
+
+| Pattern | Origine | T / A / R | D | Garde | Télégraphe et réponse |
+| --- | --- | --- | --- | --- | --- |
+| Rafale de poursuite | proposé | 84 / 36 / 96 | 1400 | oui | Fuselage incliné et axe de poursuite annoncé. Gagner la couverture puis le poste monté. |
+| Ligne de bombes | proposé | 108 / 72 / 132 | 1800 | non | Trois trajectoires et impacts numérotés, corridor libre maintenu. Traverser l’intervalle préparé; ne pas suivre la première bombe. |
+| Passe de bombardement finale | proposé | 120 / 84 / 156 | 2100 | non | Inclinaison et pattern final annoncés avant le premier largage. Sortir de la bande marquée puis reprendre le tir monté. |
+
+#### Phases et transition de résultat
+
+| Phase du catalogue | Objectif | Consigne de production |
+| --- | --- | --- |
+| 1 — Poursuite | Gagner le poste de riposte | Atteindre le canon monté sous les passes annoncées. |
+| 2 — Riposte | Endommager l’appareil | Suivre le fuselage pendant une fenêtre de tir, sans viser un rotor faible fictif. |
+| 3 — Bombardement | Survivre à la passe finale | Combiner sortie de pattern et riposte; chaque difficulté garde un intervalle atteignable. |
+
+**Lecture du prototype :** aucun profil actif, aucune jauge ni aucun seuil de phase intégré pour cette cible. Les durées proposées demandent une future recette de déplacement et de riposte.
+
+**Fin :** Crash hors piste et canal ouvert après résultat; aucun projectile oublié ne peut tuer le joueur pendant la sortie.
+
+#### États et fichiers d’animation à produire
+
+| Relation d’états proposée | Contrat |
+| --- | --- |
+| entry | approach → hover → bank; rotor et fuselage ne sont pas redimensionnés entre états. |
+| attack | gun_track → gun_prepare → gun_fire → climb_recover. |
+| bomb | bomb_prepare → bomb_release sur le porteur; chaque bombe suit bomb_fall → bomb_warning → bomb_explode dans un acteur séparé. |
+| damage | heavy_hit → damaged_flight; final_pass réutilise un pattern annoncé et borné. |
+| terminal | death_fall → distant_impact hors piste; les bombes engagées sont résolues avant confirmation du résultat. |
+
+| État / dossier | Dessins par orientation | Boucle | Finalité |
+| --- | --- | --- | --- |
+| `approach` | 10 | oui | arrivée entière |
+| `hover` | 10 | oui | rotor et stabilité |
+| `bank` | 8 | non | inclinaison du fuselage |
+| `gun_track` | 6 | oui | visée |
+| `gun_prepare` | 5 | non | anticipation |
+| `gun_fire` | 6 | oui | rafale |
+| `bomb_prepare` | 6 | non | sortie sous fuselage |
+| `bomb_release` | 5 | non | détachement de bombe |
+| `bomb_fall` | 6 | oui | bombe isolée |
+| `bomb_warning` | 5 | oui | alerte de l’objet, hors sprite du porteur |
+| `bomb_explode` | 8 | non | FX isolé |
+| `climb_recover` | 8 | non | sortie de passe |
+| `heavy_hit` | 6 | non | réaction cohérente |
+| `damaged_flight` | 10 | oui | vol endommagé |
+| `final_pass` | 12 | oui | bombardement annoncé |
+| `death_fall` | 14 | non | crash hors piste |
+| `distant_impact` | 8 | non | effet après neutralisation |
+
+Budget du profil : **17 clips**, **133 dessins par orientation**. Chaque ligne utilise le chemin de fichiers individuels défini en section 2 ; toutes restent `planned_not_generated` et `runtime_clip_wired: false`.
+
+#### Liste de contrôle de production
+
+- [ ] Conserver rotor principal, fuselage et empennage sans pièces de Gunship.
+- [ ] Animer l’attache de bombe avant séparation; compter chaque bombe active.
+- [ ] Garantir le corridor de fuite sur tout le pattern, pas seulement sur une frame.
+- [ ] Ne pas autoriser le renvoi de bombe sans prise, transfert de propriété et collision dédiés.
+- [ ] Le rotor ne devient pas un point faible ou un danger au sol implicite.
+
+## 4. Stages : six plans physiques par lieu
+
+Les trois plans suivants prolongent les entrées de `stages.json`. Ils ne prétendent pas qu’une image master a déjà été découpée. Une composition aplatie fournit un contrôle de perspective ; les six fichiers avec transparence et zones reconstruites derrière les occlusions restent une production distincte. Les références exactes de carte, build, éclairage et caméra restent à renseigner dans le dossier de chaque stage.
+
+Le contrat compétitif conserve une voie plane, aucun danger, aucune variation aléatoire de gameplay et aucune transition pendant la manche. Les accessoires et interactions spectacle ont une activation explicite. Choisir le fond de Nova Prospekt ne fait apparaître ni cargaison vivante ni soldat ; choisir les Canaux ne crée pas un canon utilisable ; choisir Ravenholm ne rend pas sa scie létale.
+
+### Canevas, parallaxe et recomposition
+
+Les six ratios du catalogue sont conservés : 0 ; 0,12 ; 0,30 ; 0,55 ; 1 ; 1,10. Pour la fenêtre de 1 920 dans le monde de 2 560, le déplacement maximal de caméra vaut 640. Le premier plan à 1,10 demande donc 64 pixels logiques de réserve supplémentaire. La proposition de production utilise un canevas commun de **2 688 × 1 080**, avec **64 pixels de marge de chaque côté** et l’origine monde en **(64,0)**. La largeur jouable reste 2 560 ; ces marges ne l’allongent pas.
+
+La position de dessin proposée est `x = −64 − caméra_x × parallaxe`. Le sol reste à y = 880 dans le monde. Les six images partagent dimensions et origine ; seule L00 peut être entièrement opaque. Les portions cachées du fond sont reconstruites pour éviter qu’un mouvement de caméra révèle une découpe vide. Ce choix de canevas est une spécification d’export future, pas une modification d’assets existants.
+
+Les couches futures suivront `assets/resonance/production/stages/{stage_id}/{layer_id}.png`. Chaque fichier devra être contrôlé seul, puis recomposé aux deux limites de caméra, puis avec parallaxe désactivée. Une marge transparente au premier plan est acceptable tant que le fond complet reste couvert et que les repères de lecture ne disparaissent pas sans intention.
+
+### 4.1. Rue de Ravenholm — `STG_14_HL2_RAVENHOLM`
+
+L’intention du catalogue est une rue industrielle nocturne avec une voie continue. Les variations de lumière et les créatures restent derrière l’aire de combat dans le profil compétitif. La présence d’un atelier, d’une scie ou d’un moteur suspendu n’autorise pas à mélanger des architectures de plusieurs lieux sans documentation. Ce décor ne transforme pas une rencontre de Strider, d’APC ou de Gunship en scène officielle de Ravenholm.
+
+Le piège optionnel est une règle originale de spectacle : Interaction près du mécanisme, 90 ticks de préparation, 24 d’activité, 180 de récupération, au maximum deux activations par joueur et par manche. La collision est désactivée par défaut. Le moteur suspendu, le levier et la zone de passage disposent de leurs propres fichiers et événements. Avant activation, il faut démontrer une issue atteignable et empêcher le décor proche de masquer le signal.
+
+| Fichier de couche | Ratio | Contenu du catalogue | Tâche de production |
+| --- | --- | --- | --- |
+| `L00_ambience.png` | 0 | ciel nocturne | Ciel nocturne continu derrière chaque découpe de toiture; aucun crâne ou motif étranger. |
+| `L01_far.png` | 0.12 | silhouettes de toits et cheminée | Relever les silhouettes de toits, cheminées et différences de hauteur du point de vue choisi. |
+| `L02_mid.png` | 0.3 | façades lointaines | Reconstruire les façades cachées par la couche proche; conserver un contraste bas. |
+| `L03_near.png` | 0.55 | façades proches et atelier | Atelier et façades latérales; fenêtres et portes suivent la même perspective. |
+| `L04_ground.png` | 1 | portion de rue plane sans fosse | Rue plane continue; rigoles et pavés restent graphiques, sans trous de collision. |
+| `L05_foreground.png` | 1.1 | grillage brisé et débris aux coins | Débris et grillage limités aux coins; ne pas recouvrir pieds, corps ou signaux de piège. |
+
+| Prop conservé | Identifiant | Collision initiale |
+| --- | --- | --- |
+| lame de scie séparée | `PRP_HL2_RAVENHOLM_01` | aucune par défaut |
+| moteur suspendu | `PRP_HL2_RAVENHOLM_02` | aucune par défaut |
+| bonbonne | `PRP_HL2_RAVENHOLM_03` | aucune par défaut |
+| lampadaire | `PRP_HL2_RAVENHOLM_04` | aucune par défaut |
+
+**Ambiance proposée par le catalogue :** vent entre les tôles, bois qui craque et cloche distante.
+
+**Fin de stage, adaptation Resonance après résultat :** Un mécanisme de fortune rabat une grille et enferme le perdant dans un abri éclairé. Cette séquence est une proposition de mise en scène ; elle ne change pas la collision de la manche terminée.
+
+**Contrôles à réaliser :**
+
+- [ ] Fixer carte, build, point de vue et lumière des captures.
+- [ ] Conserver l’échelle du témoin humain et le sol à y=880 logique.
+- [ ] Recomposer les six couches et comparer au master retenu.
+- [ ] Tester déplacement de caméra aux deux limites et avec parallaxe désactivée.
+- [ ] Maintenir un contraste suffisant derrière les silhouettes et télégraphes.
+- [ ] Tournoi sans danger ni collision décorative aléatoire; règles spectacle explicitement distinctes.
+
+### 4.2. Cour de Nova Prospekt — `STG_15_HL2_NOVA`
+
+Le contrat vise une cour extérieure : ciel côtier, horizon, miradors, murs de prison et greffes Combine. Une capture de hall intérieur ne remplit pas ce dossier. Les six plans restent à produire à partir d’une référence compatible avec cette cour ; aucun master de Nova Prospekt n’est déclaré livré ou validé par ce chapitre.
+
+Pour les rencontres Dropship et Gunship déjà associées à ce stage, les éléments actifs demeurent dans une surcouche de rencontre : couverture, poste lourd, nacelle, signaux et renforts. Le fond de prison ne porte aucune de leurs jauges. La proposition de débarquement annonce l’aire d’arrivée 72 ticks avant l’événement et conserve un plafond de trois renforts ; elle reste désactivée dans le duel de tournoi. Les fourmilions d’ambiance éventuels restent derrière une séparation lisible.
+
+| Fichier de couche | Ratio | Contenu du catalogue | Tâche de production |
+| --- | --- | --- | --- |
+| `L00_ambience.png` | 0 | ciel côtier froid | Ciel côtier cohérent, luminosité verrouillée au même état du jeu. |
+| `L01_far.png` | 0.12 | tours et horizon | Tours et horizon stables, sans y ajouter la Citadelle par automatisme. |
+| `L02_mid.png` | 0.3 | murs de prison et miradors | Maçonnerie, tours et miradors de prison de la référence, distincts des ajouts Combine. |
+| `L03_near.png` | 0.55 | barrière et machinerie Combine | Barrières et greffes Combine, réservant les corridors de lecture de nacelle et renforts. |
+| `L04_ground.png` | 1 | cour bétonnée continue | Cour bétonnée d’un seul tenant; repères sol compatibles avec pieds et équipements. |
+| `L05_foreground.png` | 1.1 | grillage proche hors silhouettes | Grillage très proche hors silhouettes; prévoir variante désactivée pour lisibilité. |
+
+| Prop conservé | Identifiant | Collision initiale |
+| --- | --- | --- |
+| projecteur de prison | `PRP_HL2_NOVA_01` | aucune par défaut |
+| barrière métallique | `PRP_HL2_NOVA_02` | aucune par défaut |
+| caisson Combine | `PRP_HL2_NOVA_03` | aucune par défaut |
+| porte de cellule | `PRP_HL2_NOVA_04` | aucune par défaut |
+
+**Ambiance proposée par le catalogue :** vent côtier, annonces étouffées et verrouillages métalliques.
+
+**Fin de stage, adaptation Resonance après résultat :** Le perdant est repoussé dans une cellule dont le champ de sûreté se réactive. Cette séquence est une proposition de mise en scène ; elle ne change pas la collision de la manche terminée.
+
+**Contrôles à réaliser :**
+
+- [ ] Fixer carte, build, point de vue et lumière des captures.
+- [ ] Conserver l’échelle du témoin humain et le sol à y=880 logique.
+- [ ] Recomposer les six couches et comparer au master retenu.
+- [ ] Tester déplacement de caméra aux deux limites et avec parallaxe désactivée.
+- [ ] Maintenir un contraste suffisant derrière les silhouettes et télégraphes.
+- [ ] Tournoi sans danger ni collision décorative aléatoire; règles spectacle explicitement distinctes.
+
+### 4.3. Écluse des canaux — `STG_12_HL2_CANALS`
+
+Le chemin de halage fournit la piste continue ; l’eau, le canal inférieur et l’écluse organisent la profondeur. Les traces d’usure et les surfaces humides ne doivent pas créer une fausse pente de collision. Le pont et l’usine seront relevés dans la même référence de lieu, avec les parties cachées reconstruites lors de la séparation des plans.
+
+La proposition de spectacle associe une vanne et un poste monté, avec 84 ticks de préparation pour l’interaction prévue. La vanne déplace l’eau derrière la piste. Un sol inondable ou une conduite complète d’airboat exigerait un mode distinct, avec ses propres règles. Les rencontres documentaires APC et Hunter Chopper peuvent réutiliser le vocabulaire du décor, mais leur présence n’est pas activée par sa sélection. Les marqueurs de bombe restent lisibles devant les herbes et les tuyaux du premier plan.
+
+| Fichier de couche | Ratio | Contenu du catalogue | Tâche de production |
+| --- | --- | --- | --- |
+| `L00_ambience.png` | 0 | ciel urbain | Ciel urbain et brume en profondeur; limiter les contrastes sous les trajectoires aériennes. |
+| `L01_far.png` | 0.12 | tours et cheminées | Tours et cheminées relevées; aucun bâtiment d’une autre époque ajouté. |
+| `L02_mid.png` | 0.3 | pont et usine | Pont et usine cohérents avec l’écluse choisie; arches reconstruites derrière les couches proches. |
+| `L03_near.png` | 0.55 | canal inférieur et muret | Eau du canal inférieur et muret; l’eau ne coupe pas la voie de duel. |
+| `L04_ground.png` | 1 | chemin de halage plat | Chemin de halage plat; contact du personnage et des postes vérifié sur toute la largeur. |
+| `L05_foreground.png` | 1.1 | herbes et tuyaux aux bords | Herbes, tuyaux et pneus aux bords seulement; aucune occultation des marqueurs de bombe. |
+
+| Prop conservé | Identifiant | Collision initiale |
+| --- | --- | --- |
+| pneu | `PRP_HL2_CANALS_01` | aucune par défaut |
+| bidon | `PRP_HL2_CANALS_02` | aucune par défaut |
+| vanne d’écluse | `PRP_HL2_CANALS_03` | aucune par défaut |
+| panneau usé | `PRP_HL2_CANALS_04` | aucune par défaut |
+
+**Ambiance proposée par le catalogue :** eau, résonance de tunnel et hélicoptère distant.
+
+**Fin de stage, adaptation Resonance après résultat :** Un jet d’eau emporte le perdant vers une plateforme de maintenance visible. Cette séquence est une proposition de mise en scène ; elle ne change pas la collision de la manche terminée.
+
+**Contrôles à réaliser :**
+
+- [ ] Fixer carte, build, point de vue et lumière des captures.
+- [ ] Conserver l’échelle du témoin humain et le sol à y=880 logique.
+- [ ] Recomposer les six couches et comparer au master retenu.
+- [ ] Tester déplacement de caméra aux deux limites et avec parallaxe désactivée.
+- [ ] Maintenir un contraste suffisant derrière les silhouettes et télégraphes.
+- [ ] Tournoi sans danger ni collision décorative aléatoire; règles spectacle explicitement distinctes.
+
+## 5. Les douze réserves : attribution de jeu et limites
+
+Les douze identifiants ci-dessous existaient déjà à la référence `25b3392`, sans champ `source_game`. Les valeurs proposées sont maintenant intégrées à ce champ avec un lien vers la présente provenance. Aucun identifiant supplémentaire n’est créé. Les autres colonnes décrivent le dossier à compléter : la présence d’un nom de modèle dans un SDK ne constitue pas une image inspectée.
+
+Les sources de code officiel établissent les classes et modèles cités pour Half-Life et Half-Life 2. Le rattachement du Zombine à Episode One combine une attribution de jeu et un dossier technique distincts. Pour Opposing Force, les sources consultées suffisent à l’attribution de la réserve ; elles ne fondent aucun comportement technique nouveau. Les chemins d’entité et de modèle de ces deux cibles restent donc nuls dans la proposition.
+
+| Réserve existante | source_game intégré | Classe / modèle vérifiés ou limite | Provenance |
+| --- | --- | --- | --- |
+| `civil_protection_hl2` | Half-Life 2 | `npc_metropolice` ; `models/police.mdl` | [RS01] [CB07] |
+| `overwatch_soldier_hl2` | Half-Life 2 | `npc_combine_s` ; `models/combine_soldier.mdl` | [RS02] [CB07] |
+| `fast_zombie_hl2` | Half-Life 2 | `npc_fastzombie` ; `models/zombie/fast.mdl` | [RS03] [CB07] |
+| `poison_zombie_hl2` | Half-Life 2 | `npc_poisonzombie` ; `models/zombie/poison.mdl` | [RS04] [CB07] |
+| `zombine_ep1` | Half-Life 2: Episode One | `npc_zombine` ; `models/zombie/zombie_soldier.mdl` | [RS05] [RS11] [CB08] |
+| `bullsquid_hl1` | Half-Life | `monster_bullchicken` ; `models/bullsquid.mdl` | [RS07] |
+| `houndeye_hl1` | Half-Life | `monster_houndeye` ; `models/houndeye.mdl` | [RS08] |
+| `shock_trooper_op4` | Half-Life: Opposing Force | Modèle et classe à relever ; aucun chemin déclaré vérifié | [RS12] [RS14] |
+| `alien_controller_hl1` | Half-Life | `monster_alien_controller` ; `models/controller.mdl` | [RS09] |
+| `headcrab_hl1` | Half-Life | `monster_headcrab` ; `models/headcrab.mdl` | [RS10] |
+| `gonome_op4` | Half-Life: Opposing Force | Modèle et classe à relever ; aucun chemin déclaré vérifié | [RS13] [RS14] |
+| `antlion_hl2` | Half-Life 2 | `npc_antlion` ; `models/antlion.mdl` | [RS06] [CB07] |
+
+**Niveau de preuve particulier.** La page de capture du Shock Trooper identifie Opposing Force et une carte source ; ce n’est pas un SDK technique officiel. La page Gonome n’a pas été entièrement récupérée : seule l’attribution de jeu de l’extrait indexé a été retenue, et cette limite est inscrite dans la source RS13. Le code de mods ou de réimplémentations communautaires n’a pas été présenté comme celui de Valve. Les pages Steam officielles établissent l’existence et le contexte des jeux concernés, pas les dimensions des monstres. [RS12] [RS13] [RS14] [CB08]
+
+Pour une production fidèle, chaque réserve conserve sa version de référence et ses exclusions :
+
+| Réserve | Version proposée | Contrôle d’identité |
+| --- | --- | --- |
+| Civil Protection | Source, modèle retail de Civil Protection | Séparer Civil Protection, garde Overwatch et costume infiltré de Barney. |
+| Overwatch Soldier | Source, soldat Overwatch standard | Exclure Élite, shotgun et Nova Prospekt de la pose standard. |
+| Fast Zombie | Source, Fast Zombie corps entier | Torse séparé et modèle des épisodes ne remplacent pas la référence entière. |
+| Poison Zombie | Source, Poison Zombie | Le headcrab noir porté doit avoir son propre suivi lorsque détaché. |
+| Zombine | Source, apparition Episode One retenue | Conserver la grenade comme état/objet dédié; pas de variante fast ou poison inventée. |
+| Bullsquid | GoldSrc, modèle original; HD et remake séparés | Ne pas importer le modèle Black Mesa dans la cible HL1. |
+| Houndeye | GoldSrc, modèle original; HD et remake séparés | Conserver le gabarit et les appuis du modèle source; ne pas lui donner un squelette canin générique. |
+| Shock Trooper | GoldSrc, campagne Opposing Force | Source de capture identifiée; modèle exact et géométrie à relever. Aucun code communautaire présenté comme SDK officiel. |
+| Alien Controller | GoldSrc, Alien Controller original | Position aérienne et boules d’énergie relèvent de fichiers distincts; aucune fusion avec Advisor. |
+| Headcrab | GoldSrc, Headcrab standard original | Ni baby_headcrab, ni headcrab rapide/poison de HL2. |
+| Gonome | GoldSrc, campagne Opposing Force | Attribution du jeu documentée par l’extrait consulté; référence de modèle et source technique restent à acquérir. |
+| Fourmilion standard | Source, Fourmilion standard | Séparer worker, guard et variantes des épisodes. |
+
+Les éventuelles images réalisées ailleurs dans le lot D se consultent dans leur registre graphique. Le statut `capture_required` de ces propositions concerne le dossier de références décrit ici ; il n’efface ni ne certifie les fichiers graphiques d’un autre sous-lot. Le contrôle d’intégration a comparé seulement les douze valeurs `source_game` au roster, sans écrire dans celui-ci.
+
+## 6. Points ouverts avant intégration de la conception
+
+### Orbes AR2 : garder la règle actuelle et sa provenance distinctes
+
+Le prototype autorise `energy_orb` sur le Strider, le Gunship et la nacelle du Dropship. Le Strider possède un traitement explicite dans le SDK consulté. Pour Gunship et nacelle, les chemins lus ne démontrent pas cette équivalence ; les filtres de dégâts et de dissolution demandent une vérification de scène et de version. Le chapitre conserve donc ce comportement comme **adaptation actuelle à revoir**, sans le transformer en faiblesse canonique et sans modifier le moteur. Une décision ultérieure devra soit apporter une preuve retail précise, soit changer séparément la règle et ses contrôles. [CB01] [CB02] [CB03] [CB06]
+
+### Autres contrôles ouverts
+
+| Point | Cibles | Décision requise |
+| --- | --- | --- |
+| CB_REVIEW_02 | gunship_hl2 | Ne pas ajouter ces modes à la cible Gunship retail choisie sans référence de scène/version. |
+| CB_REVIEW_03 | dropship_hl2 | Dédupliquer par identifiant de projectile/explosion et réservoir de santé; ne compter qu’une application sur cargo. |
+| CB_REVIEW_04 | strider_hl2, dropship_hl2, gunship_hl2, apc_hl2, hunter_chopper_hl2 | Remplir les mesures du profil de référence avant d’annoncer 1:1. |
+
+### Recettes futures, distinctes de la vérification documentaire
+
+Les seize scénarios suivants sont préparés pour l’intégration. Ils ne sont pas déclarés exécutés. Ils visent les risques concrets du changement : faux points faibles, double application de dégâts, interruption, obstacles de caméra, absence de sortie et résultat contradictoire. Aucun test artificiel reproduisant le JSON n’est ajouté au dépôt.
+
+| Scénario | Critère à démontrer |
+| --- | --- |
+| CB_TEST_COLLISION_HEAVY | Vérifier bullets/melee puis RPG sur chaque zone; aucun contact normal ne crée une faiblesse de genou, moteur, roue ou rotor. |
+| CB_TEST_DROPSHIP_BODY | Frappes sur porteur: zéro perte de vie du porteur, aucun état de mort, aucun compteur Dropship abattu. |
+| CB_TEST_DROPSHIP_CARGO | Une explosion chevauchant porteur et nacelle ne retire qu’une dose à cargo. |
+| CB_TEST_DROPSHIP_VICTORY | Cargaison nulle avec renfort vivant: pas de victoire; retrait achevé et renforts nuls: interception réussie. |
+| CB_TEST_GUNSHIP_INTERCEPT | Roquette avant, pendant et après la fenêtre: signal et issue cohérents, aucune interception invisible hors fenêtre prévue. |
+| CB_TEST_STRIDER_LEGS | Lire une boucle complète dans les deux orientations: trois pattes, appuis stables, aucune quatrième patte de transition. |
+| CB_TEST_STATION_ACCESS | Chaque profil autorisé peut atteindre réserve et arme lourde sans posséder personnellement l’équipement. |
+| CB_TEST_APC_PHASE | Les salves ont un ordre figé et une sortie atteignable; dernière attaque terminée avant résultat. |
+| CB_TEST_CHOPPER_PATTERN | Pour chaque vitesse de profil et difficulté, vérifier le corridor libre sur toute la suite de bombes. |
+| CB_TEST_CHOPPER_OWNERSHIP | Bombe propre non récupérée et bombe reprise ont un propriétaire distinct; aucune réflexion gratuite activée par simple collision. |
+| CB_TEST_PAUSE_EVENTS | Pause à la frame précédant fire/contact/spawn: reprise ne duplique ni projectile, ni soldat, ni dégâts. |
+| CB_TEST_RESULT_CLEANUP | Après victoire, aucun événement hostile différé ne modifie HP ou résultat. |
+| CB_TEST_STAGE_CANVAS | Six couches partagent dimensions/origine; limites caméra sans trous ni décalage du sol. |
+| CB_TEST_STAGE_TOURNAMENT | Les trois fonds n’activent ni piège, ni nacelle, ni canon par leur seule sélection en tournoi. |
+| CB_TEST_ACCESSIBILITY | Télégraphes reconnus sans couleur et avec réduction de flashs; réduire FX ne change jamais collisions ni durées. |
+| CB_TEST_PRODUCTION_ACCOUNTING | Une pose reste une pose; un master reste un master; budget de dessins et fichiers générés ne sont jamais additionnés. |
+
+### Conditions de passage en production validée
+
+- [ ] **CB_GATE_REF :** Référence de modèle/build, vues opposées, armes et mesure d’échelle enregistrées.
+- [ ] **CB_GATE_VISUAL :** Frames individuelles inspectées, proportions et détails comparés aux captures.
+- [ ] **CB_GATE_MOTION :** Pivots, appuis, transitions, événements et FX synchronisés.
+- [ ] **CB_GATE_COLLISION :** Zones liées au réservoir approprié; aucun faux point faible; explosion dédupliquée.
+- [ ] **CB_GATE_PLAY :** Recettes de contre-jeu, accès à l’arsenal et nettoyage du résultat exécutées.
+
+Ces conditions restent toutes en attente. La validation statique du présent lot porte sur les données et leur cohérence avec le catalogue ; elle ne prétend pas remplacer une comparaison de pixels, une lecture de boucle d’animation ou une session de jeu.
+
+## 7. Sources consultées et traçabilité
+
+Les codes CB désignent les références des machines et du contexte Half-Life 2 ; les codes RS désignent les preuves d’attribution des réserves. Les liens de code sont fixés par commit. Les empreintes complètes, méthodes de lecture, symboles et limites de chaque source figurent dans le JSON associé. Les contenus d’architecture et les noms de phase sont repris des catalogues internes cités en section 1 ; les nombres de design de ce chapitre sont des valeurs Resonance.
+
+| Source | Document | Nature et limite |
+| --- | --- | --- |
+| CB01 | [Valve — npc_strider.cpp](https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_strider.cpp) | primary_official_source_code — Dégâts filtrés, traitement explicite des orbes, canon et attaches BigGun/MiniGun. La branche de dégâts ordinaires sous #if 0 est inactive. |
+| CB02 | [Valve — npc_combinedropship.cpp](https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_combinedropship.cpp) | primary_official_source_code — Porteur et nacelle distincts; transmission de dégâts sans mort du porteur; filtrage nacelle BLAST/AIRBOAT; déduplication d’une même explosion; attaches de canon sur la nacelle. |
+| CB03 | [Valve — npc_combinegunship.cpp](https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_combinegunship.cpp) | primary_official_source_code — Filtrage des balles, seuil explosif, interception de missiles et flags anti-dissolution. Des variantes de modèle/ground attack existent dans le SDK sans prouver leur usage dans la scène retail choisie. |
+| CB04 | [Valve — vehicle_apc.cpp](https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/vehicle_apc.cpp) | primary_official_source_code — Dégâts BLAST/AIRBOAT, canon et missiles séparés; le code de salve de mort ne vaut pas autorisation de poursuivre les collisions après résultat dans Resonance. |
+| CB05 | [Valve — npc_attackchopper.cpp](https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_attackchopper.cpp) | primary_official_source_code — Canon d’airboat et missiles; filtres de propriété des bombes et état indestructible; modèles du fuselage et des bombes. |
+| CB06 | [Valve — prop_combine_ball.cpp](https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/prop_combine_ball.cpp) | primary_official_source_code — Distinction entre contact de balle Combine, dissolution et cas Strider. Un tag energy_orb du prototype ne constitue pas une preuve d’équivalence avec tous les chemins SDK. |
+| RS01 | [Valve — npc_metropolice.cpp](https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_metropolice.cpp) | primary_official_source_code — Entité Civil Protection et référence models/police.mdl. |
+| RS02 | [Valve — npc_combines.cpp](https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_combines.cpp) | primary_official_source_code — Entité soldat Overwatch et modèles de soldat; séparer variante standard, Élite et Nova Prospekt. |
+| RS03 | [Valve — npc_fastzombie.cpp](https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_fastzombie.cpp) | primary_official_source_code — Entité Fast Zombie, modèle de corps entier distinct du torse. |
+| RS04 | [Valve — npc_PoisonZombie.cpp](https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_PoisonZombie.cpp) | primary_official_source_code — Entité Poison Zombie et modèle poison.mdl. |
+| RS05 | [Valve — npc_zombine.cpp](https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_zombine.cpp) | primary_official_source_code — Entité Zombine et modèle zombie_soldier.mdl; l’attribution Episode One est recoupée par RS11. |
+| RS06 | [Valve — npc_antlion.cpp](https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_antlion.cpp) | primary_official_source_code — Fourmilion standard et distinction du modèle worker. |
+| RS07 | [Valve — bullsquid.cpp](https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/bullsquid.cpp) | primary_official_source_code — Identité de l’entité et modèle dans le SDK Half-Life GoldSrc; ne constitue pas une référence au remake Black Mesa ou à une version HD. |
+| RS08 | [Valve — houndeye.cpp](https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/houndeye.cpp) | primary_official_source_code — Identité de l’entité et modèle dans le SDK Half-Life GoldSrc; ne constitue pas une référence au remake Black Mesa ou à une version HD. |
+| RS09 | [Valve — controller.cpp](https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/controller.cpp) | primary_official_source_code — Identité de l’entité et modèle dans le SDK Half-Life GoldSrc; ne constitue pas une référence au remake Black Mesa ou à une version HD. |
+| RS10 | [Valve — headcrab.cpp](https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/headcrab.cpp) | primary_official_source_code — Identité de l’entité et modèle dans le SDK Half-Life GoldSrc; ne constitue pas une référence au remake Black Mesa ou à une version HD. |
+| RS11 | [Combine OverWiki — Zombine](https://www.combineoverwiki.net/wiki/Zombine) | secondary_reference — Attribution de la première rencontre à Episode One, chapitre Lowlife; aucune extrapolation sur les états mentaux de l’hôte. |
+| RS12 | [Combine OverWiki — capture Shock Trooper of1a5b](https://combineoverwiki.net/wiki/File:Of1a5b_trooper.jpg) | secondary_documented_game_capture — Métadonnées de capture: Shock Trooper, carte of1a5b, Half-Life: Opposing Force. La capture complète reste à examiner pour production visuelle. |
+| RS13 | [Combine OverWiki — Gonome](https://www.combineoverwiki.net/wiki/Gonome) | secondary_reference_search_excerpt — Extrait indexé consulté identifie le Gonome à Opposing Force. Page complète indisponible pendant cette lecture; aucun comportement technique déduit de cette source. |
+| RS14 | [Valve / Gearbox — Half-Life: Opposing Force sur Steam](https://store.steampowered.com/app/50/HalfLife_Opposing_Force/) | primary_official_product — Identité du jeu et attribution Gearbox/Valve; la page produit ne constitue pas un catalogue détaillé des monstres. |
+| CB07 | [Valve — Half-Life 2, 20e anniversaire](https://www.half-life.com/en/halflife2/20th) | primary_official_product — Version anniversaire, choix visuels et contenu retail. Chaque capture doit enregistrer le build et les options; une archive E3 ne remplace pas la référence retail. |
+| CB08 | [Valve — Half-Life 2: Episode One sur Steam](https://store.steampowered.com/app/380/HalfLife_2_Episode_One/) | primary_official_product — Épisode officiel distinct; ne suffit pas à identifier seul un modèle d’ennemi. |
+
+## 8. Vérification documentaire du livrable
+
+Le contrôle compare les cinq identifiants de machine, leurs trois phases et leurs statuts au catalogue existant ; les trois stages à leurs six couches et ratios d’origine ; les douze réserves au roster et à leurs valeurs `source_game` intégrées séparément. Il vérifie aussi les liens de sources, les empreintes des fichiers consultés, l’unicité des identifiants de clips, les bornes des volumes normalisés, la cohérence des durées et les compteurs de production.
+
+Le transporteur Dropship conserve son immunité et aucun clip de mort du porteur. Les armes et appendices ne reçoivent aucune faiblesse indépendante. Les exports de stage restent des chemins prévus, les 77 clips restent non produits, les mesures restent non renseignées et APC/Hunter Chopper restent hors du moteur. Les scénarios de jeu et les contrôles visuels attendent des assets et une intégration concrète.
+
+Résultat détaillé de la vérification statique : voir `document_validation` dans le JSON. Le périmètre de ce document reste strictement la conception et la provenance ; il n’annonce ni nouvelle image, ni nouveau boss actif, ni validation 1:1.
+
+[CB01]: https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_strider.cpp
+
+[CB02]: https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_combinedropship.cpp
+
+[CB03]: https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_combinegunship.cpp
+
+[CB04]: https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/vehicle_apc.cpp
+
+[CB05]: https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_attackchopper.cpp
+
+[CB06]: https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/prop_combine_ball.cpp
+
+[RS01]: https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_metropolice.cpp
+
+[RS02]: https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_combines.cpp
+
+[RS03]: https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_fastzombie.cpp
+
+[RS04]: https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_PoisonZombie.cpp
+
+[RS05]: https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_zombine.cpp
+
+[RS06]: https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_antlion.cpp
+
+[RS07]: https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/bullsquid.cpp
+
+[RS08]: https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/houndeye.cpp
+
+[RS09]: https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/controller.cpp
+
+[RS10]: https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/headcrab.cpp
+
+[RS11]: https://www.combineoverwiki.net/wiki/Zombine
+
+[RS12]: https://combineoverwiki.net/wiki/File:Of1a5b_trooper.jpg
+
+[RS13]: https://www.combineoverwiki.net/wiki/Gonome
+
+[RS14]: https://store.steampowered.com/app/50/HalfLife_Opposing_Force/
+
+[CB07]: https://www.half-life.com/en/halflife2/20th
+
+[CB08]: https://store.steampowered.com/app/380/HalfLife_2_Episode_One/
+
+<!-- CONTINUATION_20261120_E -->
+
+# Archives — contrats de référence et de production, lot E
+
+**20 novembre 2026 — documentation uniquement.** Ce chapitre approfondit huit des onze archives déjà présentes dans Resonance et inscrit les trois autres dans un suivi de recherche précis. Il ne crée aucune cible, aucun personnage jouable et aucun boss supplémentaire. Les onze cibles conservent `runtime_enabled=false` et `certified_one_to_one=false`.
+
+Le livrable exploitable est le [contrat JSON](data/archive_reference_contracts_20261120.json). Il complète le [catalogue d’extension](data/catalogue_extension_20261120.json), la [file de production](data/production_queue.json) et le [catalogue de rencontres](data/boss_battle_catalog.json). Les noms de captures, dossiers et sorties ci-dessous sont des **demandes de production** ; aucun de ces fichiers n’est déclaré créé.
+
+## 1. Périmètre et niveau de preuve
+
+Une archive exige deux décisions distinctes : identifier le document, puis déterminer ce que ce document permet réellement de dessiner. Une vidéo officielle peut montrer un ancien modèle sans en donner le nom ; un wiki peut aider à identifier ce modèle sans transformer son interprétation en déclaration Valve. De même, un fichier public du SDK atteste le code à une révision précise, sans démontrer que le modèle montré dans une vidéo utilise exactement cette révision.
+
+La recherche a commencé par les publications officielles Valve, les métadonnées des vidéos qu’elles diffusent et le dépôt officiel `ValveSoftware/source-sdk-2013`. Les sources secondaires servent à localiser et nommer les objets. Les données provenant de fuites ne sont pas incorporées comme comportement officiel ; aucun build divulgué n’a été téléchargé ou exécuté.
+
+| Mesure documentaire | Résultat |
+| --- | --- |
+| Archives existantes lues | 11 |
+| Fiches approfondies / dossiers en attente | 8 / 3 |
+| Sources primaires / secondaires | 10 / 11 |
+| Repères visuels inspectés | 16 |
+| Éléments de capture demandés | 48 |
+| Sorties individuelles proposées | 41, dont 12 couches pour deux études de lieux |
+| Images candidates d’archives présentes au relevé | 0 |
+| Captures natives acquises / animations terminées / entrées runtime ajoutées | 0 / 0 / 0 |
+
+Les quatre boss du runtime restent `strider_hl2`, `dropship_hl2`, `gunship_hl2` et `gargantua_hl1`. Les étapes documentaires de l’Hydra ne constituent pas un cinquième combat intégré. Ces comptes concernent les archives de ce chapitre ; ils ne résument pas les images produites ailleurs dans le lot E.
+
+### Ce qui a effectivement été inspecté
+
+Les lecteurs officiels YouTube ont fourni leur titre, la chaîne **Valve**, leur durée et leurs miniatures de repérage. Les images inspectées sont des échantillons espacés de **10 secondes**, en **320 × 180** pour le documentaire et **240 × 180** pour E3 2002. Le JSON enregistre la planche, la case, l’empreinte du fichier consulté et le lien vers le temps correspondant. Le temps est celui d’un échantillon, sans prétendre être le début exact du plan.
+
+Il n’y a eu ni visionnage continu validé, ni transcription audio exploitée, ni capture native haute résolution acquise. Les tentatives de récupération de certains JPEG de galeries secondaires n’ont pas abouti ; leur légende reste une métadonnée secondaire. Les miniatures suffisent à choisir des zones à capturer et à éviter plusieurs confusions de silhouettes. Elles ne suffisent pas pour certifier des doigts, un rig, un nombre de frames, une collision ou une vitesse.
+
+### Versions qu’il faut maintenir distinctes
+
+| Document ou version | Usage retenu | Source |
+| --- | --- | --- |
+| E3 2002 | Démonstration préparée mais non montrée à l’E3 à l’époque ; publication vidéo officielle ultérieure. Pas de build jouable déclaré livré. | [Valve — Half-Life 2, 20th Anniversary](https://www.half-life.com/en/halflife2/20th) ; [Half Life 2 Anniversary Archive: E3 2002 Demo](https://www.youtube.com/watch?v=8CoMdbnJwvE) |
+| E3 2003 | Démo historique et capture officielle distinctes de 2002. Ne pas identifier les vidéos à partir du seul ordre des iframes de la page. | [Valve — Half-Life 2, 20th Anniversary](https://www.half-life.com/en/halflife2/20th) ; [Half Life 2 Anniversary Archive: E3 2003 Demo](https://www.youtube.com/watch?v=CaHtOISsLT4) |
+| Hydra / Blob / Assassin du SDK | Conserver commit et modèle déclaré. Un nom d’entité commun ne démontre pas une identité visuelle commune. | [ValveSoftware/source-sdk-2013 — npc_hydra.cpp](https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_hydra.cpp) ; [ValveSoftware/source-sdk-2013 — npc_blob.cpp](https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_blob.cpp) ; [ValveSoftware/source-sdk-2013 — npc_assassin.cpp](https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_assassin.cpp) |
+| Concepts et expériences du troisième épisode | Support concept ou test noté plan par plan ; aucune apparence définitive de Half-Life 3 dérivée de ce corpus. | [Half-Life 2: 20th Anniversary Documentary](https://www.youtube.com/watch?v=YCjNT9qGjh4) ; [Valve — Half-Life 2, 20th Anniversary](https://www.half-life.com/en/halflife2/20th) |
+| Contenus anniversaire explicitement livrés | Uplink, skins HL1 restaurés et intégration des Episodes/Lost Coast relèvent des annonces de versions publiées. Aucun de ces exemples ne valide les onze archives. | [Valve — Half-Life, 25th Anniversary](https://www.half-life.com/en/halflife/25th) ; [Valve — Half-Life 2, 20th Anniversary](https://www.half-life.com/en/halflife2/20th) |
+| Raising the Bar | La page officielle est une piste vers une publication ; aucune page du livre ni disponibilité actuelle n’est revendiquée comme vérifiée ici. | [Valve — Half-Life 2, 20th Anniversary](https://www.half-life.com/en/halflife2/20th) |
+
+Le titre exact des vidéos a été vérifié dans leurs métadonnées : **E3 2002 = `8CoMdbnJwvE`**, **E3 2003 = `CaHtOISsLT4`** et **documentaire = `YCjNT9qGjh4`**. L’ordre des iframes dans une extraction de page n’est pas utilisé pour les attribuer. Une capture directe publiée en 2024 ne signifie pas que le build ancien a été distribué au public.
+
+## 2. Fiches de référence
+
+Dans chaque fiche, « observé » désigne seulement l’image inspectée. « Rapporté » désigne l’apport secondaire à vérifier. Toutes les propositions d’animation, de calques et d’interaction sont des adaptations Resonance à produire ultérieurement. Les dégâts, points de vie et données à 60 Hz restent indéfinis : leur donner des valeurs maintenant fabriquerait une précision sans référence ni prototype.
+
+
+### 2.1. Hydra des versions abandonnées — `hydra_hl2_cut`
+
+**Version retenue.** Démonstration E3 2002 publiée par Valve ; détail anatomique à verrouiller avec une capture native. Le code SDK constitue un dossier technique distinct, figé au commit indiqué.
+
+**État de preuve.** Identité de code primaire ; apparence primaire repérée à distance ; continuité code/modèle/film non démontrée.
+
+**Base documentaire.** Le SDK publié contient une entité Hydra et un modèle nommé Hydra.mdl. Le client calcule la pose le long d’une spline. La référence filmée choisie est le repère E3 2002 ; le dossier ne le remplace pas par un montage de fans comprenant des plans supplémentaires. Sources : [Half Life 2 Anniversary Archive: E3 2002 Demo](https://www.youtube.com/watch?v=8CoMdbnJwvE) ; [ValveSoftware/source-sdk-2013 — npc_hydra.cpp](https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_hydra.cpp) ; [ValveSoftware/source-sdk-2013 — npc_hydra.h](https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_hydra.h) ; [ValveSoftware/source-sdk-2013 — c_npc_hydra.cpp](https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/client/hl2/c_npc_hydra.cpp) ; [Combine OverWiki — Hydra](https://combineoverwiki.net/wiki/Hydra).
+
+| Repère inspecté | Observation | Limite |
+| --- | --- | --- |
+| [20:20](https://www.youtube.com/watch?v=8CoMdbnJwvE&t=1220s) | Dans un égout sombre, une forme étroite cyan et translucide est visible à distance. | Attribution Hydra croisée avec le catalogue, le SDK et la référence secondaire ; nombre et forme détaillée des extrémités non résolus par cette miniature. |
+
+**Invariants visuels utilisables.** Forme cyan et translucide dans le plan inspecté ; fond sombre nécessaire pour lire sa présence. Le volume étroit et souple doit rester distinct du Tentacle de Half-Life ; aucun corps humanoïde ajouté.
+
+**Détails rapportés, encore à vérifier.** La source secondaire décrit plusieurs tentacules et extrémités différentes ; leur nombre exact reste à confirmer sur la révision filmée retenue.
+
+**Preuves absentes.** Aucun gros plan natif, dos ou échelle mesurée acquis. Aucun combat complet livré servant de référence, aucune vulnérabilité finale, aucun timing de frappe validé. La correspondance entre le code SDK actuel et le binaire de la démonstration 2002 n’est pas établie.
+
+**Mélanges à éviter.**
+
+- Ne pas fusionner les plans E3 2002 et 2003 sans marquer leur version.
+- Ne pas transférer les réactions au son, le bec ou le combat du Tentacle.
+- Ne pas transformer les étapes Références / Prototype isolé / Validation du catalogue en trois phases de boss canoniques.
+
+**Dossier de captures requis.** Dossier proposé : `references/resonance/archives/hydra_hl2_cut/`.
+
+| Fichier demandé | Vérification attendue |
+| --- | --- |
+| `context_e3_2002_1220.png` | Conserver un cadre natif complet autour du repère 20:20, avec les repères du décor. |
+| `silhouette_same_revision.png` | Choisir le plan le moins occulté ; relever chaque extrémité réellement visible. |
+| `material_same_revision.png` | Comparer bords, cœur translucide et lumière ambiante sans supprimer le fond source. |
+| `motion_window_same_revision.mp4` | Relever émergence, courbure et éventuelle attaque dans une séquence continue ; noter ce qui n’apparaît pas. |
+| `scale_same_frame.png` | Mesurer uniquement une proportion par rapport à un personnage ou élément visible dans le même plan. |
+| `provenance.json` | URL, temps exact, format natif, empreinte, version et limites ; joindre le commit séparé pour les observations de code. |
+
+**Sorties individuelles proposées.** Dossier proposé : `assets/resonance/candidates/archives/hydra_hl2_cut/`. Tous les fichiers ci-dessous restent au plan.
+
+| Sortie proposée | Condition de production |
+| --- | --- |
+| `identity_candidate.png` | Un sujet complet sur transparence ; nombre d’appendices déterminé seulement après verrou anatomique. |
+| `curve_rest_000.png` | Pose de repos originale 2D gardant le volume interne lisible. |
+| `curve_anticipation_000.png` | Pose de préparation hypothétique, séparée de la référence vidéo et étiquetée adaptation. |
+| `curve_extension_000.png` | Extension sans section détachée inventée ; portée uniquement lors d’un prototype ultérieur. |
+| `curve_retract_000.png` | Repli vers l’ancrage ; pas de mort canonique fabriquée. |
+
+**Compatibilité du catalogue Hydra.** `BBA_HYDRA_HL2_CUT` reste son identifiant documentaire, sans `base_stage_id`. Les intitulés **Références → Prototype isolé → Validation** décrivent un travail de recherche et de conception. Ils ne sont ni des phases attestées, ni une victoire débloquée dans le Boss Rush.
+
+**Idée originale Resonance, facultative et non intégrée.** Laboratoire d’esquive : une courbe s’arme vers une zone annoncée, puis traverse cette zone et se retire. La sortie dépendrait d’un passage ouvert, sans supposer que l’Hydra puisse être tuée. Cette idée ne décrit aucune rencontre Valve.
+
+**Décision de production.** Recherche primaire partiellement acquise. Autoriser le relevé et les annotations ; retenir toute génération fidèle tant que les extrémités restent indéterminées.
+
+
+### 2.2. Cremator — révision HL2 2002 — `archive_cremator_hl2_2002`
+
+**Version retenue.** Silhouette ancienne montrée à environ 12:50 dans le documentaire officiel ; attribution au build 2002 rapportée par la légende secondaire. L’appartenance à la vidéo autonome E3 2002 n’est pas prouvée.
+
+**État de preuve.** Publication visuelle primaire ; identification et année corroborées secondairement ; gros plans et build précis encore requis.
+
+**Base documentaire.** Le plan officiel inspecté montre une silhouette en tenue longue dans une rue. La légende secondaire date ce matériel de 2002. Le verrou du catalogue mentionne une démonstration 2002 ; il reste ouvert tant que la provenance exacte de ce plan n’a pas été établie. Sources : [Half-Life 2: 20th Anniversary Documentary](https://www.youtube.com/watch?v=YCjNT9qGjh4) ; [Combine OverWiki — Cremator](https://combineoverwiki.net/wiki/Cremator) ; [Combine OverWiki — légende 2002 Cremator 01](https://combineoverwiki.net/wiki/File:2002_Cremator_01.jpg).
+
+| Repère inspecté | Observation | Limite |
+| --- | --- | --- |
+| [12:50](https://www.youtube.com/watch?v=YCjNT9qGjh4&t=770s) | Silhouette haute à vêtement long sombre et petite tête claire, dans une rue verdâtre. | Identification Cremator et date 2002 appuyées par la légende secondaire ; tuyau, doigts et arme non certifiés à cette résolution. |
+
+**Invariants visuels utilisables.** Silhouette haute, manteau sombre allongé, petite tête claire ; conserver ces rapports au lieu d’un soldat standard en armure.
+
+**Détails rapportés, encore à vérifier.** Col haut, bras longs, gros abdomen, tuyau vers l’arme et doigts sont décrits par la référence secondaire ; ils doivent être visibles sur la même révision avant d’être fixés.
+
+**Preuves absentes.** Aucun gros plan natif de la liaison arme/abdomen ni des mains. Dimensions métriques, couleur exacte du tir et règles de résistance non validées. Aucune preuve de ce lot ne relie le plan à un fichier de map ou à une IA officiellement publiée.
+
+**Mélanges à éviter.**
+
+- Pas de combinaison avec un concept de Half-Life: Alyx.
+- Pas de mod moderne utilisé pour finir les parties cachées.
+- Pas de tête conservée en laboratoire utilisée comme preuve d’un corps animé retail.
+- Pas de propriétés déduites de scripts divulgués présentées comme comportement livré.
+
+**Dossier de captures requis.** Dossier proposé : `references/resonance/archives/archive_cremator_hl2_2002/`.
+
+| Fichier demandé | Vérification attendue |
+| --- | --- |
+| `context_documentary_0770.png` | Cadre natif complet du personnage dans la rue, avec quelques secondes de contexte avant et après. |
+| `full_body_same_revision.png` | Pieds, tête et arme dans un même plan ; mesurer la silhouette sans inventer l’arrière. |
+| `head_hands_hose_detail.png` | Détails séparés de la tête, des mains et du raccord d’arme, tous de cette révision. |
+| `weapon_state_window.mp4` | Vérifier si le film montre déplacement, armement ou tir ; marquer les états non observés. |
+| `relative_scale.png` | Comparer un personnage proche si la perspective le permet ; garder la taille canonique inconnue sinon. |
+| `provenance.json` | Séparer date de publication 2024, année de build rapportée 2002 et date précise inconnue ; ne pas écrire E3 sans preuve. |
+
+**Sorties individuelles proposées.** Dossier proposé : `assets/resonance/candidates/archives/archive_cremator_hl2_2002/`. Tous les fichiers ci-dessous restent au plan.
+
+| Sortie proposée | Condition de production |
+| --- | --- |
+| `identity_candidate.png` | Un personnage intégral et son équipement attesté, fond transparent. |
+| `idle_000.png` | Pose originale de repos, taille relative à confirmer. |
+| `walk_contact_000.png` | Contact au sol ; ne pas réduire le manteau à une jupe générique. |
+| `weapon_ready_000.png` | Pose d’arme seulement après validation du raccord et du côté de port. |
+| `effect_candidate_000.png` | Effet isolé à produire uniquement après fixation de la couleur et de la forme de référence. |
+
+**Idée originale Resonance, facultative et non intégrée.** Une adaptation pourrait annoncer un couloir de nettoyage au sol, puis laisser une fenêtre de déplacement. Le type d’effet, les dégâts et un éventuel point faible resteraient des décisions originales ultérieures ; aucun réservoir explosif obligatoire n’est présumé.
+
+**Décision de production.** Contrat de silhouette exploitable pour recherche ; génération d’un modèle fidèle suspendue au plan natif et au contrôle du couple arme/abdomen.
+
+
+### 2.3. Alien Assassin — révision HL2 2002 — `archive_alien_assassin_hl2_2002`
+
+**Version retenue.** Modèle ancien repéré vers 11:40 dans le documentaire ; le nom Alien Assassin et la révision 2002 sont rapprochés du dossier secondaire. Ne pas confondre avec la classe npc_assassin du SDK actuel.
+
+**État de preuve.** Silhouette primaire visible ; identification secondaire et détails anatomiques incomplets ; contrôle de code négatif explicite.
+
+**Base documentaire.** Le modèle filmé inspecté présente une posture accroupie et des membres allongés. Dans le SDK officiel épinglé, npc_assassin charge fassassin.mdl. Ce fichier n’établit donc pas les capacités de l’Alien Assassin de cette archive. Sources : [Half-Life 2: 20th Anniversary Documentary](https://www.youtube.com/watch?v=YCjNT9qGjh4) ; [Combine OverWiki — Alien Assassin](https://combineoverwiki.net/wiki/Alien_Assassin) ; [ValveSoftware/source-sdk-2013 — npc_assassin.cpp](https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_assassin.cpp).
+
+| Repère inspecté | Observation | Limite |
+| --- | --- | --- |
+| [11:40](https://www.youtube.com/watch?v=YCjNT9qGjh4&t=700s) | Humanoïde accroupi, membres allongés, tête portant des accents rouges, dans une pièce de brique. | Rapprochement avec l’Alien Assassin documenté secondairement ; masque, doigts, orteils et datation précise du build restent à confirmer en capture native. |
+
+**Invariants visuels utilisables.** Membres longs et posture ramassée ; accents rouges sur la tête dans l’image de repérage.
+
+**Détails rapportés, encore à vérifier.** Masque respiratoire, griffes, tuyaux et nombre d’orteils sont des détails rapportés à confirmer sur une capture native. La marche sur cordes, fumigènes, pièges et autres équipements décrits secondairement ne sont pas des capacités livrées établies ici.
+
+**Preuves absentes.** Aucun relevé natif fiable des mains, pieds et côtés du masque. Aucune séquence continue d’attaque validée. Aucune correspondance démontrée entre ce modèle et le code de l’assassin féminin du SDK.
+
+**Mélanges à éviter.**
+
+- Pas de Shock Trooper Race X, malgré un alias historique rapporté.
+- Pas d’armure et de pistolets du Combine Assassin importés depuis fassassin.mdl.
+- Pas de squelette de Fast Zombie adopté comme preuve du modèle source.
+- Pas de miroir automatique des mains tant que les asymétries sont inconnues.
+
+**Dossier de captures requis.** Dossier proposé : `references/resonance/archives/archive_alien_assassin_hl2_2002/`.
+
+| Fichier demandé | Vérification attendue |
+| --- | --- |
+| `context_documentary_0700.png` | Cadre natif complet de la pièce en brique ; conserver la posture entière. |
+| `silhouette_front_three_quarter.png` | Choisir les angles réellement montrés ; annoter le dos inconnu. |
+| `mask_hands_feet.png` | Relever masque, crêtes, doigts et orteils séparément, avec la même provenance. |
+| `locomotion_window.mp4` | Relever les changements d’appui visibles ; aucune cadence déduite de miniatures espacées. |
+| `asymmetry_and_scale.png` | Table gauche/droite et proportions dans le même plan ; aucune taille métrique inventée. |
+| `provenance.json` | Nom documentaire, attribution secondaire et contrôle npc_assassin/fassassin à trois entrées distinctes. |
+
+**Sorties individuelles proposées.** Dossier proposé : `assets/resonance/candidates/archives/archive_alien_assassin_hl2_2002/`. Tous les fichiers ci-dessous restent au plan.
+
+| Sortie proposée | Condition de production |
+| --- | --- |
+| `identity_candidate.png` | Corps entier ; silhouette de la révision retenue et non celle d’un autre assassin. |
+| `crouch_000.png` | Pose de référence transposée en 2D, sans équipement ajouté. |
+| `step_contact_000.png` | Premier appui proposé ; longueur des membres verrouillée avant animation. |
+| `turn_000.png` | Vue opposée à dessiner séparément si les détails sont asymétriques. |
+| `leap_anticipation_000.png` | Uniquement une adaptation originale éventuelle ; ne constitue pas la restitution d’une animation Valve. |
+
+**Idée originale Resonance, facultative et non intégrée.** Duel de mobilité envisageable : prise d’appui très lisible, bond sur un point annoncé, récupération. Ces trois états sont une proposition originale ; téléportation, invisibilité et gadgets n’en sont pas déduits.
+
+**Décision de production.** Relevé anatomique prioritaire. Aucun kit de tir ou d’invisibilité n’est approuvé par le simple nom assassin.
+
+
+### 2.4. Odell — `archive_odell_hl2`
+
+**Version retenue.** Odell du chapitre de développement HL2 ; révision de modèle et capture primaire encore à sélectionner. Ne pas certifier la galerie secondaire comme extraction Valve déjà inspectée.
+
+**État de preuve.** Identité documentée secondairement ; aucune vue primaire nominativement verrouillée dans ce lot.
+
+**Base documentaire.** La source secondaire distingue Odell d’Odessa et rapporte une combinaison orange ainsi qu’un modèle de visage réutilisé. Aucun plan de repérage inspecté n’est retenu ici comme preuve suffisante de l’identité visuelle d’Odell. Sources : [Combine OverWiki — Odell](https://combineoverwiki.net/wiki/Odell) ; [Half-Life 2: 20th Anniversary Documentary](https://www.youtube.com/watch?v=YCjNT9qGjh4) ; [Half Life 2 Anniversary Archive: E3 2002 Demo](https://www.youtube.com/watch?v=8CoMdbnJwvE).
+
+**Aucune observation visuelle primaire attribuée à cette cible n’est validée.** Les captures demandées commencent par l’identification du plan.
+
+**Invariants visuels utilisables.** Aucun invariant primaire n’est certifié dans ce lot ; la liste suivante sert uniquement de contrôle de recherche.
+
+**Détails rapportés, encore à vérifier.** Combinaison de survie orange, bonnet sombre, barbe grise et bandage au genou droit : liste de vérification secondaire, pas silhouette certifiée. Le rôle d’ingénieur et les usages d’un chalumeau sont des pistes de scénario de développement, pas un kit de combat livré.
+
+**Preuves absentes.** Capture native officielle clairement attribuée à Odell. Position exacte des détails, dos et tenue à la révision choisie. Preuve continue du geste d’outil ; voix, lignes de dialogue et trajectoire narrative ne sont pas validées dans ce dossier.
+
+**Mélanges à éviter.**
+
+- Pas de veste, insignes ou RPG d’Odessa Cubbage.
+- Pas de modèle de fuite corrigé par un tiers présenté comme modèle Valve publié.
+- Pas d’apparence de doublure ou de simple placeholder utilisée comme identité définitive.
+- Pas de mort, de destination ou de lien scénaristique repris comme fait canon.
+
+**Dossier de captures requis.** Dossier proposé : `references/resonance/archives/archive_odell_hl2/`.
+
+| Fichier demandé | Vérification attendue |
+| --- | --- |
+| `primary_context_to_locate.png` | Trouver et identifier un plan officiel ; laisser le temps nul tant que ce travail n’est pas fait. |
+| `full_body_selected_revision.png` | Fixer costume, bottes et bonnet sur un seul modèle sourcé. |
+| `face_knee_tool_details.png` | Vérifier la barbe, le côté du bandage et l’outil effectivement visible. |
+| `gesture_window.mp4` | Capturer le mouvement montré ou déclarer explicitement qu’aucun geste de référence n’est disponible. |
+| `odell_odessa_comparison.json` | Documenter les différences sans fondre les deux identités ni ajouter Odessa à cette production. |
+| `provenance.json` | Identifier source, révision, temps exact, auteur et statut éventuel de reconstruction ; une piste de galerie ne suffit pas. |
+
+**Sorties individuelles proposées.** Dossier proposé : `assets/resonance/candidates/archives/archive_odell_hl2/`. Tous les fichiers ci-dessous restent au plan.
+
+| Sortie proposée | Condition de production |
+| --- | --- |
+| `identity_candidate.png` | À produire seulement après acquisition de la première capture primaire. |
+| `idle_000.png` | Posture neutre de personnage de récit, sans arme ajoutée. |
+| `inspect_door_000.png` | Geste original éventuel ; ne pas déclarer une animation retrouvée. |
+| `tool_overlay_000.png` | Accessoire séparé uniquement si la révision le montre. |
+
+**Idée originale Resonance, facultative et non intégrée.** Rôle de soutien possible : signaler une porte puis travailler sur un mécanisme pendant que le joueur garde un espace libre. Pas de slot jouable, de compétence RPG ni de route canonique créée.
+
+**Décision de production.** Dossier détaillé de recherche ; blocage de production visuelle tant que l’identité primaire n’est pas acquise. Il reste une fiche utile, pas une validation du modèle.
+
+
+### 2.5. Borealis — chapitre abandonné HL2 — `archive_borealis_hl2_cut`
+
+**Version retenue.** Navire de la vidéo officielle E3 2002, repères 10:30 à 13:00. Sélection visuelle proposée : pont extérieur à 11:00 ; intérieurs conservés comme vues distinctes de cette séquence.
+
+**État de preuve.** Architecture primaire inspectée ; nom du navire attribué par recoupement secondaire ; nom de map et métrique inconnus.
+
+**Base documentaire.** La vidéo officielle 2002 montre un navire rouge et clair, son pont et des espaces industriels. L’attribution au chapitre Borealis abandonné est documentaire ; cette séquence ne constitue pas un décor jouable publié d’Episode Three. Sources : [Half Life 2 Anniversary Archive: E3 2002 Demo](https://www.youtube.com/watch?v=8CoMdbnJwvE) ; [Valve — Half-Life 2, 20th Anniversary](https://www.half-life.com/en/halflife2/20th) ; [Combine OverWiki — Borealis — cut ship](https://combineoverwiki.net/wiki/Borealis_(cut_ship)).
+
+| Repère inspecté | Observation | Limite |
+| --- | --- | --- |
+| [10:30](https://www.youtube.com/watch?v=8CoMdbnJwvE&t=630s) | Navire : coque inférieure rouge, superstructure claire, numéro 02 visible. | Attribution au Borealis abandonné par le contexte documentaire secondaire ; aucun logo Aperture déduit. |
+| [11:00](https://www.youtube.com/watch?v=8CoMdbnJwvE&t=660s) | Pont extérieur, parois métalliques claires, hublot, garde-corps et escalier. | Un angle filmé ; pas de géométrie arrière complète ni d’échelle métrique démontrée. |
+| [11:50](https://www.youtube.com/watch?v=8CoMdbnJwvE&t=710s) | Intérieur industriel, poteaux et caisses ; feu visible au fond. | Le plan ne fournit ni déclencheur de feu ni collision jouable vérifiée. |
+| [13:00](https://www.youtube.com/watch?v=8CoMdbnJwvE&t=780s) | Passerelle intérieure bordée de tuyaux et de rails clairs. | Aucun nom de fichier de carte établi à partir de l’image. |
+
+**Invariants visuels utilisables.** Coque rouge et superstructure claire pour la vue extérieure retenue. Rails, hublots, marches et surfaces métalliques du pont visibles dans le plan de 11:00.
+
+**Détails rapportés, encore à vérifier.** Les différents noms et versions de cartes cités secondairement ne sont pas assignés aux plans sans preuve de correspondance.
+
+**Preuves absentes.** Nom de la carte exécutée, révision binaire et fichier de build. Relevé métrique et faces hors caméra. Preuve de continuité spatiale entre toutes les salles du montage ; aucun parcours complet jouable établi.
+
+**Mélanges à éviter.**
+
+- Pas de logos Aperture ou de matériel d’Episode Two ajouté au pont 2002.
+- Pas de glace des concepts EP3 collée au navire pour fabriquer une version finale.
+- Pas de pièces de mods ou de maps de fuite comblant les zones invisibles.
+- Ne pas ajouter un stage runtime ni un identifiant STG inventé.
+
+**Dossier de captures requis.** Dossier proposé : `references/resonance/archives/archive_borealis_hl2_cut/`.
+
+| Fichier demandé | Vérification attendue |
+| --- | --- |
+| `context_e3_2002_0630.png` | Vue générale de coque, dans son format natif 4:3. |
+| `deck_e3_2002_0660.png` | Ancre de composition : pont, escalier et hublot à 11:00. |
+| `deck_detail_same_view.png` | Relever rails, joints et usure ; limiter les détails aux surfaces visibles. |
+| `interior_e3_2002_0710.png` | Archiver la vue intérieure comme alternative séparée, sans fusion de perspective. |
+| `layout_and_occlusion.json` | Lister surfaces vues, inconnues et extensions 2D originales ; pas de carte prétendue exacte. |
+| `provenance.json` | Vidéo E3 2002, temps exact, rapport 4:3, identité attribuée et map inconnue. |
+
+**Sorties individuelles proposées.** Dossier proposé : `assets/resonance/candidates/archives/archive_borealis_hl2_cut/`. Tous les fichiers ci-dessous restent au plan.
+
+| Sortie proposée | Condition de production |
+| --- | --- |
+| `layer_01_atmosphere.png` | Ciel visible dans la vue du pont ; aucune tempête arctique ajoutée comme fait. |
+| `layer_02_far_structure.png` | Silhouettes lointaines présentes ; garder transparent ce qui n’est pas attesté. |
+| `layer_03_ship_structure.png` | Paroi, hublot et volume clair choisis dans le même point de vue. |
+| `layer_04_deck.png` | Surface de lecture du combat éventuel : extension 2D originale explicitement étiquetée. |
+| `layer_05_near_rail.png` | Premier plan limité aux rails attestés, sans masquer les appuis du joueur. |
+| `layer_06_effects.png` | Éclairage ou atmosphère optionnels ; aucun feu de l’intérieur transféré automatiquement sur le pont. |
+
+**Idée originale Resonance, facultative et non intégrée.** Une scène latérale pourrait réserver une bande stable du pont et utiliser une porte comme objectif d’évacuation. L’extension de perspective, les limites de déplacement et l’objectif seraient des choix Resonance, sans nouveau chapitre canonique.
+
+**Décision de production.** Ancre de lieu suffisamment repérée pour demander une capture native. Un plan à six couches est proposé ; aucune couche ni arène n’est produite ou complète.
+
+
+### 2.6. Blob — `archive_blob_ep3`
+
+**Version retenue.** Expérience translucide de l’épilogue du documentaire, repère visuel 1:55:00 ; dossier séparé du npc_blob du SDK.
+
+**État de preuve.** Matière et volume primaires repérés ; nom et comportement détaillé recoupés secondairement, non mesurés.
+
+**Base documentaire.** Le documentaire montre une forme translucide arrondie avec une structure intérieure dans une séquence de démonstration technique. Le fichier SDK npc_blob contient un modèle de test headcrab.mdl et INT_MAX. Ces choix techniques ne sont pas un contrat d’apparence ou de santé de la version filmée. Sources : [Half-Life 2: 20th Anniversary Documentary](https://www.youtube.com/watch?v=YCjNT9qGjh4) ; [ValveSoftware/source-sdk-2013 — npc_blob.cpp](https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_blob.cpp) ; [Combine OverWiki — Blob](https://combineoverwiki.net/wiki/Blob).
+
+| Repère inspecté | Observation | Limite |
+| --- | --- | --- |
+| [1:54:30](https://www.youtube.com/watch?v=YCjNT9qGjh4&t=6870s) | Séquence industrielle portant le libellé Tech Demo. | Le libellé décrit une démonstration ; il ne certifie pas un contenu livré. |
+| [1:54:40](https://www.youtube.com/watch?v=YCjNT9qGjh4&t=6880s) | Masse verdâtre ou cyan sous une structure industrielle. | Pas de causalité de division ou de passage à travers une grille établie par une image isolée. |
+| [1:55:00](https://www.youtube.com/watch?v=YCjNT9qGjh4&t=6900s) | Volume arrondi translucide avec structure intérieure sombre et rouge ; canon à gravité au premier plan. | Nom Blob attribué en croisant le contexte et la source secondaire ; matière lisible, détails internes incomplets. |
+
+**Invariants visuels utilisables.** Enveloppe translucide distincte du fond ; structure sombre/rouge intérieure dans le plan retenu. Pas de visage, d’yeux expressifs ou de carapace de Headcrab attestés pour cette version filmée.
+
+**Détails rapportés, encore à vérifier.** Absorption, division et passage par des grilles sont des comportements rapportés ; leur séquence exacte doit être relevée dans le film continu avant toute restitution.
+
+**Preuves absentes.** Masque d’alpha natif, vues opposées, détails internes nets. Chronométrage de déformation, absorption et séparation. Lien de version démontré entre l’expérience filmée et ce commit SDK ; résistance finale et contre canonique inconnus.
+
+**Mélanges à éviter.**
+
+- Pas d’error.mdl, de Headcrab ou de Snarks comme apparence officielle EP3.
+- Pas d’INT_MAX converti en points de vie du jeu de combat.
+- Pas de gels Portal ajoutés sur la base d’une filiation technique rapportée.
+- Pas de segmentation visible inventée pour justifier une attaque.
+
+**Dossier de captures requis.** Dossier proposé : `references/resonance/archives/archive_blob_ep3/`.
+
+| Fichier demandé | Vérification attendue |
+| --- | --- |
+| `context_documentary_6900.png` | Cadre natif complet avec l’objet et l’environnement de contraste. |
+| `envelope_and_interior.png` | Séparer visuellement enveloppe, reflet et structure interne sans fabriquer ce qui est masqué. |
+| `contrasting_backgrounds.png` | Acquérir plusieurs fonds de la même version afin d’étudier la transparence réelle. |
+| `continuous_deformation_window.mp4` | Documenter les transformations réellement visibles et leur ordre ; aucune extrapolation depuis deux miniatures. |
+| `scale_and_contacts.json` | Relever rapports à une caisse, un fût ou un personnage du même plan ; identifier contact et simple recouvrement. |
+| `provenance.json` | Vidéo, repères, résolution, nom attribué ; maintenir un volet séparé pour le code SDK. |
+
+**Sorties individuelles proposées.** Dossier proposé : `assets/resonance/candidates/archives/archive_blob_ep3/`. Tous les fichiers ci-dessous restent au plan.
+
+| Sortie proposée | Condition de production |
+| --- | --- |
+| `envelope_candidate_000.png` | Volume translucide isolé, testé sur fond sombre et clair. |
+| `interior_candidate_000.png` | Structure intérieure seulement après validation des détails. |
+| `compress_000.png` | Déformation originale éventuelle sans supposer un rig humanoïde. |
+| `stretch_000.png` | Étirement original éventuel ; préserver la lecture du volume. |
+| `reform_000.png` | Retour proposé à un volume lisible, pas une résurrection canonique. |
+
+**Idée originale Resonance, facultative et non intégrée.** Prototype éventuel de contrôle d’espace : une masse avance vers un appât annoncé puis laisse temporairement un passage. Le jeu pourrait mesurer l’ouverture du passage plutôt qu’un nombre de dégâts ; c’est une proposition originale, sans faiblesse élémentaire canonique.
+
+**Décision de production.** Étude de matière avant animation. Une image fixe ne clôt ni l’effet de transparence ni la mécanique de déformation.
+
+
+### 2.7. Ice Gun — effet prototype — `archive_icegun_ep3`
+
+**Version retenue.** Effet de glace dans les pièces grises de test de l’épilogue, repères 1:53:40–1:54:10 ; aucune forme d’arme finale choisie.
+
+**État de preuve.** Formations de glace et environnement de test repérés dans la source primaire ; modes et durées à revoir en mouvement.
+
+**Base documentaire.** Les images inspectées montrent des masses de glace dans un blockout à la première personne. Aucun modèle unique final d’Ice Gun n’est validé par ce dossier ; le nom d’entité rapporté depuis des fichiers divulgués n’est pas traité comme du code Valve officiellement publié. Sources : [Half-Life 2: 20th Anniversary Documentary](https://www.youtube.com/watch?v=YCjNT9qGjh4) ; [Combine OverWiki — Ice Gun](https://combineoverwiki.net/wiki/Ice_Gun).
+
+| Repère inspecté | Observation | Limite |
+| --- | --- | --- |
+| [1:53:40](https://www.youtube.com/watch?v=YCjNT9qGjh4&t=6820s) | Vue à la première personne dans un espace gris de test ; masses claires de glace au premier plan. | Le fonctionnement continu et les modes d’entrée ne sont pas mesurables avec cette image. |
+| [1:53:50](https://www.youtube.com/watch?v=YCjNT9qGjh4&t=6830s) | Autre vue du test avec une formation de glace et une arme à l’écran. | Aucun modèle final unique d’Ice Gun n’est établi par ce plan. |
+| [1:54:10](https://www.youtube.com/watch?v=YCjNT9qGjh4&t=6850s) | Espace de test gris avec silhouettes de soldats et géométrie simple. | L’effet précis sur les ennemis demande la séquence continue ; aucune valeur de gel ou de dégâts déduite. |
+
+**Invariants visuels utilisables.** Glace claire et irrégulière sur un décor gris ; conserver la séparation entre effet et arme affichée. L’environnement de test n’autorise pas à inventer une carte arctique finie.
+
+**Détails rapportés, encore à vérifier.** Création de murs, rampes et gel d’ennemis sont décrits secondairement ; ils doivent être rattachés à des séquences continues pour être transposés comme gestes observés.
+
+**Preuves absentes.** Géométrie d’une arme complète, vue à la troisième personne et modèle de prise en main. Timings, consommation, fonte, collisions et dégâts officiels. Code publié correspondant précisément à la démonstration filmée.
+
+**Mélanges à éviter.**
+
+- Pas de fusil nouveau appelé modèle officiel ou 1:1.
+- Pas de mélange du décor gris et d’une peinture EP3 pour présenter une carte finie.
+- Pas de weapon_icegun provenant d’un leak requalifié en SDK public.
+- Pas de projectile élémentaire générique ajouté sans le déclarer adaptation.
+
+**Dossier de captures requis.** Dossier proposé : `references/resonance/archives/archive_icegun_ep3/`.
+
+| Fichier demandé | Vérification attendue |
+| --- | --- |
+| `context_documentary_6820.png` | Vue native complète du test, en conservant l’interface et l’arme visible. |
+| `ice_form_documentary_6830.png` | Ancrage principal de forme ; pas de lissage qui transforme le matériau en cristal décoratif. |
+| `effect_contact_detail.png` | Point d’apparition, liaison au sol et bord de l’effet sur une seule révision. |
+| `creation_and_change_window.mp4` | Relever apparition, croissance et éventuel changement ; séparer mécanisme vu et commentaire entendu. |
+| `collision_evidence.json` | Documenter ce qui prouve une collision ou une rampe ; inscrire inconnu si seule l’image est disponible. |
+| `provenance.json` | Conserver le nom d’expérience et la limite : modèle final d’arme non établi. |
+
+**Sorties individuelles proposées.** Dossier proposé : `assets/resonance/candidates/archives/archive_icegun_ep3/`. Tous les fichiers ci-dessous restent au plan.
+
+| Sortie proposée | Condition de production |
+| --- | --- |
+| `effect_start_000.png` | Amorce d’effet proposée, indépendante de tout nouveau fusil. |
+| `ice_mass_000.png` | Masse de glace isolée inspirée de la vue fixée. |
+| `ice_edge_000.png` | Jonction au sol, sans collision moteur automatique. |
+| `effect_end_000.png` | Fin d’effet originale éventuelle, marquée comme telle. |
+| `readability_preview.png` | Aperçu de l’effet sur fond gris ; ne pas le comptabiliser comme arme jouable. |
+
+**Idée originale Resonance, facultative et non intégrée.** Une règle originale pourrait créer un obstacle temporaire de hauteur limitée, clairement annoncé, avec une durée fixée lors d’un prototype ultérieur. L’obstacle n’est ni un gel universel des ennemis ni une compétence canonique livrée.
+
+**Décision de production.** Production limitée à l’étude d’effet après capture native. Aucun sprite d’arme complet n’est demandé tant que la source n’en fournit pas.
+
+
+### 2.8. Environnement arctique du prototype — `archive_arctic_ep3`
+
+**Version retenue.** Une seule illustration publiée dans le documentaire : navire et massif de glace au repère 1:53:20. Le champ source_game du catalogue est conservé, mais le support précis est un concept, pas une capture de prototype jouable.
+
+**État de preuve.** Concept primaire inspecté en miniature ; auteur, date de dessin et fichier natif non confirmés.
+
+**Base documentaire.** Le documentaire présente des illustrations de neige, de glace et de structures ; l’ancre choisie est le navire contre le massif de glace. Le corpus examiné ne fixe aucune apparence officielle définitive d’un produit nommé Half-Life 3. Sources : [Half-Life 2: 20th Anniversary Documentary](https://www.youtube.com/watch?v=YCjNT9qGjh4) ; [Valve — Half-Life 2, 20th Anniversary](https://www.half-life.com/en/halflife2/20th).
+
+| Repère inspecté | Observation | Limite |
+| --- | --- | --- |
+| [1:53:20](https://www.youtube.com/watch?v=YCjNT9qGjh4&t=6800s) | Illustration d’un navire sombre pris près d’un massif de glace bleu et blanc. | Concept montré officiellement ; pas une capture de carte jouable ni une apparence commerciale définitive de Half-Life 3. |
+| [1:53:30](https://www.youtube.com/watch?v=YCjNT9qGjh4&t=6810s) | Autre illustration de figures et de structures dans la neige. | Plan distinct ; ne complète pas automatiquement la géométrie du concept à 6800 s. |
+| [1:55:20](https://www.youtube.com/watch?v=YCjNT9qGjh4&t=6920s) | Illustration d’une arche rocheuse et glacée près de la mer. | Illustration alternative ; ne pas l’assembler au navire de 6800 s comme un même lieu attesté. |
+
+**Invariants visuels utilisables.** Grandes masses de glace bleues/blanches et navire sombre pour le concept à 6800 s. Conserver le contraste et la direction de composition de cette illustration seule.
+
+**Détails rapportés, encore à vérifier.** Des attributions d’auteur et dates de concept existent dans des galeries secondaires ; elles ne sont pas reprises comme métadonnées vérifiées de cette image.
+
+**Preuves absentes.** Concept natif haute résolution et légende complète. Auteur et date confirmés par publication primaire. Géométrie cachée, échelle jouable, emplacement exact, nom de map et liens spatiaux aux autres images.
+
+**Mélanges à éviter.**
+
+- Pas d’assemblage des concepts 6800, 6810 et 6920 présenté comme un lieu continu.
+- Pas de pont 2002 ni de blockout Ice Gun greffés comme version finale.
+- Pas de personnages, ennemis ou logos ajoutés en prétendant qu’ils étaient dans le plan.
+- Pas de nom de carte ou de version commerciale HL3 inventé.
+
+**Dossier de captures requis.** Dossier proposé : `references/resonance/archives/archive_arctic_ep3/`.
+
+| Fichier demandé | Vérification attendue |
+| --- | --- |
+| `concept_documentary_6800.png` | Relever le concept entier, sans crop esthétique supprimant sa composition. |
+| `concept_caption_context.png` | Capturer titre, crédit et contexte s’ils sont présents ; garder auteur/date inconnus sinon. |
+| `structure_detail.png` | Relever uniquement les formes lisibles du navire et des falaises de cette illustration. |
+| `depth_partition.json` | Décrire les plans réellement séparables ; tous les espaces nouvellement révélés sont des reconstructions originales. |
+| `unknown_geometry_mask.png` | Annoter la zone de sol et les faces absentes ; empêcher leur certification comme architecture Valve. |
+| `provenance.json` | Support concept, vidéo, temps exact ; aucun nom de map ni build joué. |
+
+**Sorties individuelles proposées.** Dossier proposé : `assets/resonance/candidates/archives/archive_arctic_ep3/`. Tous les fichiers ci-dessous restent au plan.
+
+| Sortie proposée | Condition de production |
+| --- | --- |
+| `layer_01_sky.png` | Ciel transposé depuis le concept sélectionné ; texture originale signalée. |
+| `layer_02_far_ice.png` | Massif lointain, sans ajout d’un autre concept. |
+| `layer_03_ship.png` | Volume du navire visible ; face cachée non reconstituée comme officielle. |
+| `layer_04_play_plane.png` | Sol latéral éventuel : géométrie originale Resonance et collision future distincte. |
+| `layer_05_near_ice.png` | Premier plan seulement à partir des masses visibles ; ne pas masquer toute la zone de lecture. |
+| `layer_06_atmosphere.png` | Effets facultatifs explicitement originaux ; le concept ne prouve pas une simulation de blizzard. |
+
+**Lecture du champ existant.** `source_game` reste « Half-Life 2: Episode Three — prototype » dans le catalogue ; le contrat affine le support de cette fiche en **illustration conceptuelle montrée officiellement**. Il ne modifie pas silencieusement l’entrée partagée.
+
+**Idée originale Resonance, facultative et non intégrée.** Scène d’étude envisageable autour d’un objectif de traverse sur sol stable. Vent, glace glissante, effondrement et disparition du navire restent exclus tant qu’un design original séparé ne les définit pas ; ils ne sont pas inférés de l’illustration.
+
+**Décision de production.** Contrat de concept sélectionné ; une transposition à six couches serait une interprétation artistique. Aucun stage officiel achevé ni master produit dans ce dossier.
+
+
+## 3. Trois dossiers conservés en recherche
+
+Ces cibles ont été lues et rapprochées de leurs sources existantes. Elles ne sont pas supprimées et ne sont pas comptées parmi les huit contrats approfondis. Le manque d’une référence primaire fixée est enregistré comme une tâche précise, sans inventer une version pour remplir un quota.
+
+| Cible existante | Pourquoi elle reste en recherche | Prochaine acquisition | Source secondaire |
+| --- | --- | --- | --- |
+| **Kingpin** — `archive_kingpin_hl1` | Plusieurs révisions anatomiques sont rapportées ; aucune planche primaire précise n’a été inspectée et choisie. | Retrouver une publication Valve ou un concept dûment attribué avec sa page, sa date et sa légende. Choisir une seule révision et relever silhouette, appendices et vues manquantes. Écarter les captures de mods comme preuve du modèle original. | [Combine OverWiki — Kingpin](https://combineoverwiki.net/wiki/Kingpin) |
+| **Mr. Friendly** — `archive_mr_friendly_hl1` | Identité secondaire disponible, mais aucune capture native primaire de la révision à produire. | Acquérir un concept ou rendu de publication primaire avec crédit et légende. Fixer la silhouette et ses asymétries ; inscrire inconnu pour les parties cachées. Limiter ce dossier au modèle visuel, conformément au verrou existant. | [Combine OverWiki — Mr. Friendly](https://combineoverwiki.net/wiki/Mr._Friendly) |
+| **Air Exchange** — `archive_air_exchange_hl2` | La source secondaire mélange des concepts et des variantes de cartes ; aucun point de vue primaire daté n’est encore choisi. | Choisir une seule illustration ou démonstration officielle et en vérifier l’attribution Air Exchange. Distinguer concept pictural, scène de démonstration et carte de développement décrite par un tiers. Acquérir un cadre entier et les limites spatiales avant de dessiner un master ou des couches. | [Combine OverWiki — Air Exchange](https://combineoverwiki.net/wiki/Air_Exchange) |
+
+**Kingpin : verrou de version.** Ne pas fusionner différentes dispositions de pattes et de queue ; aucune apparition retail déduite d’un bestiaire communautaire.
+
+**Mr. Friendly : verrou de version.** Ne pas transformer les intentions abandonnées ou la reconstruction d’un mod en mécanismes validés.
+
+**Air Exchange : verrou de version.** Ne pas reconstruire une usine unique à partir de plans, cartes divulguées et concepts incompatibles.
+
+
+La mise à jour anniversaire de Half-Life fournit un exemple utile de différence de statut : Valve décrit expressément des skins multijoueurs restaurés et Uplink. Elle ne donne pas, par simple proximité thématique, une preuve de livraison des deux créatures HL1 de cette liste. Le dossier n’ajoute aucun nouvel identifiant pour ces exemples. Source : [Valve — Half-Life, 25th Anniversary](https://www.half-life.com/en/halflife/25th).
+
+
+## 4. Checklist de production commune
+
+Les portes suivantes se ferment **pour chaque cible**, indépendamment du fait que d’autres images du lot E aient été produites. Un fichier candidat ne peut pas transformer une hypothèse de référence en fait établi.
+
+- [ ] **ARCHIVE_GATE_01 — Provenance précise.** Une référence primaire identifiée, son support, sa version et son temps ou numéro de page sont enregistrés ; identification secondaire explicitement séparée.
+- [ ] **ARCHIVE_GATE_02 — Image native.** Au moins un cadre natif entier est acquis ; résolution, recadrage éventuel et empreinte sont enregistrés. Une miniature du lecteur ne suffit pas à fermer ce point.
+- [ ] **ARCHIVE_GATE_03 — Anatomie ou architecture.** Les détails déterminants sont visibles ou déclarés inconnus ; aucune reconstruction de parties cachées présentée comme preuve.
+- [ ] **ARCHIVE_GATE_04 — Version unique.** Chaque élément du candidat appartient à la même révision choisie ; variantes, leaks, concepts et mods restent dans des dossiers distincts.
+- [ ] **ARCHIVE_GATE_05 — Traduction 2D contrôlée.** Un sujet par fichier, corps entier pour un acteur, alpha vérifié sur deux fonds ; une vue d’archive n’est pas un clip animé ; une image de décor n’est pas six couches.
+- [ ] **ARCHIVE_GATE_06 — Statut lisible.** Le candidat porte archive / adaptation selon le cas ; runtime_enabled reste false et aucune entrée jouable ou donnée de combat canonique n’est créée par ce dossier.
+
+
+### Métadonnées à joindre aux captures
+
+Le sidecar `provenance.json` doit indiquer l’identifiant existant, le document source, son URL, le type de support, le libellé de version, le temps exact ou la page, les dimensions, le rapport d’image original, le recadrage éventuel, l’empreinte et la date de capture. Il doit aussi séparer observations directes, identification secondaire, détails inconnus et surfaces reconstruites. Les temps absents restent `null` ; une approximation ne doit pas être transformée en timecode exact.
+
+Les cadres sources sont conservés entiers. Un détail recadré et une annotation restent des dérivés reliés à ce cadre. Pour un acteur, le candidat montre un seul sujet entier et garde un fond transparent ; l’étude d’une seconde orientation doit respecter les asymétries attestées. Pour un lieu, un master peut aider à choisir la composition, mais les couches séparées restent nécessaires et les zones révélées par la parallaxe sont identifiées comme reconstruction.
+
+### Revue utile avant un premier candidat
+
+- [ ] La révision est identifiable sans se fier seulement à un nom de fichier communautaire.
+- [ ] Les détails déterminants sont lisibles à la résolution source ; une miniature agrandie n’est pas traitée comme un détail neuf.
+- [ ] Les parties inconnues restent hors certification ; elles ne sont pas complétées par un autre jeu, un mod ou un concept voisin.
+- [ ] Les couleurs proviennent du même plan ; éclairage verdâtre et matériau de base ne sont pas confondus.
+- [ ] Le masque alpha d’un volume translucide garde une lecture sur fond clair et sombre, sans trou intérieur artificiel.
+- [ ] Les phases d’une interaction proposée sont étiquetées adaptation originale ; aucun test de combat n’est annoncé avant implémentation.
+- [ ] Le résultat est compté comme un fichier candidat individuel. Ni une planche, ni un rendu maître, ni un seul état d’effet ne ferme une animation ou une arène complète.
+
+## 5. Contrôles documentaires et limites restantes
+
+Les **124 contrôles de cohérence** vérifient la couverture exacte des onze identifiants, la répartition 8 + 3, les valeurs `source_game` reprises sans modification, les liens internes de sources et d’observations, la correspondance temps/planche/case des repères, les empreintes des cinq fichiers SDK, les 48 éléments de capture et le statut exclusivement proposé des sorties. Les quatre boss runtime du catalogue restent inchangés. Aucun test artificiel, compilation du SDK ou test de gameplay n’a été ajouté.
+
+
+La première décision utile pour poursuivre est l’acquisition de cadres natifs aux repères indiqués. Odell requiert d’abord l’identification d’un plan ; Kingpin, Mr. Friendly et Air Exchange requièrent une sélection primaire de version. Les recherches satisfont ainsi un objectif borné : réduire les erreurs de provenance et fournir des demandes de production exécutables, sans déclarer terminé ce que les sources ou les fichiers ne permettent pas encore de vérifier.
+
+## 6. Répertoire des sources
+
+Le JSON contient les périmètres de vérification, les limites et les empreintes des copies effectivement consultées. Les URLs suivantes sont les points de publication ; les images temporaires de repérage ne sont pas promises comme fichiers livrés par le dépôt.
+
+| Identifiant | Classe | Publication |
+| --- | --- | --- |
+| `valve_hl2_anniversary` | primary_official_page | [Valve — Half-Life 2, 20th Anniversary](https://www.half-life.com/en/halflife2/20th) |
+| `valve_hl1_anniversary` | primary_official_page | [Valve — Half-Life, 25th Anniversary](https://www.half-life.com/en/halflife/25th) |
+| `valve_documentary` | primary_official_video | [Half-Life 2: 20th Anniversary Documentary](https://www.youtube.com/watch?v=YCjNT9qGjh4) |
+| `valve_e3_2002` | primary_official_video | [Half Life 2 Anniversary Archive: E3 2002 Demo](https://www.youtube.com/watch?v=8CoMdbnJwvE) |
+| `valve_e3_2003` | primary_official_video | [Half Life 2 Anniversary Archive: E3 2003 Demo](https://www.youtube.com/watch?v=CaHtOISsLT4) |
+| `sdk_hydra_server` | primary_published_source_code | [ValveSoftware/source-sdk-2013 — npc_hydra.cpp](https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_hydra.cpp) |
+| `sdk_hydra_header` | primary_published_source_code | [ValveSoftware/source-sdk-2013 — npc_hydra.h](https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_hydra.h) |
+| `sdk_hydra_client` | primary_published_source_code | [ValveSoftware/source-sdk-2013 — c_npc_hydra.cpp](https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/client/hl2/c_npc_hydra.cpp) |
+| `sdk_blob_server` | primary_published_source_code | [ValveSoftware/source-sdk-2013 — npc_blob.cpp](https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_blob.cpp) |
+| `sdk_assassin_control` | primary_published_source_code | [ValveSoftware/source-sdk-2013 — npc_assassin.cpp](https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_assassin.cpp) |
+| `secondary_hydra` | secondary_reference | [Combine OverWiki — Hydra](https://combineoverwiki.net/wiki/Hydra) |
+| `secondary_cremator` | secondary_reference | [Combine OverWiki — Cremator](https://combineoverwiki.net/wiki/Cremator) |
+| `secondary_alien_assassin` | secondary_reference | [Combine OverWiki — Alien Assassin](https://combineoverwiki.net/wiki/Alien_Assassin) |
+| `secondary_odell` | secondary_reference | [Combine OverWiki — Odell](https://combineoverwiki.net/wiki/Odell) |
+| `secondary_borealis` | secondary_reference | [Combine OverWiki — Borealis — cut ship](https://combineoverwiki.net/wiki/Borealis_(cut_ship)) |
+| `secondary_blob` | secondary_reference | [Combine OverWiki — Blob](https://combineoverwiki.net/wiki/Blob) |
+| `secondary_icegun` | secondary_reference | [Combine OverWiki — Ice Gun](https://combineoverwiki.net/wiki/Ice_Gun) |
+| `secondary_kingpin` | secondary_reference | [Combine OverWiki — Kingpin](https://combineoverwiki.net/wiki/Kingpin) |
+| `secondary_friendly` | secondary_reference | [Combine OverWiki — Mr. Friendly](https://combineoverwiki.net/wiki/Mr._Friendly) |
+| `secondary_air_exchange` | secondary_reference | [Combine OverWiki — Air Exchange](https://combineoverwiki.net/wiki/Air_Exchange) |
+| `secondary_cremator_2002_caption` | secondary_image_metadata | [Combine OverWiki — légende 2002 Cremator 01](https://combineoverwiki.net/wiki/File:2002_Cremator_01.jpg) |
+
+Le code est fixé au commit `3e957b70b167929f120360115d359d1ecb4c1699`. Les noms d’entités et modèles qu’il contient sont des données de cette révision ; toute utilisation future doit conserver cette provenance au lieu de les attribuer indistinctement à une « bêta HL2 ».

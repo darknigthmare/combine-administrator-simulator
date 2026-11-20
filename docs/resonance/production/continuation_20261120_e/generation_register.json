@@ -1,0 +1,1239 @@
+{
+  "schema_version": "1.0",
+  "module": "Half Life Resonance",
+  "batch_id": "continuation_20261120_e",
+  "baseline_commit": "b3a8ace24fcb5d28a3e52c62e73bf870092417c5",
+  "generator": "image_gen built-in",
+  "counts": {
+    "requests": 12,
+    "generated_png_files": 12,
+    "blocked": 0,
+    "targets_with_new_files": 7,
+    "new_catalogue_entities": 0,
+    "new_character_files": 3,
+    "new_costume_files": 1,
+    "new_boss_files": 1,
+    "new_stage_layer_files": 7,
+    "new_distinct_stage_layer_ids": 6,
+    "new_runtime_assets": 0,
+    "certified_one_to_one": 0,
+    "completed_animation_clips": 0,
+    "completed_six_layer_stages": 0,
+    "targets_receiving_first_file": 5
+  },
+  "deferred_targets": [
+    {
+      "owner_id": "civil_protection_hl2",
+      "generation_status": "not_attempted_reference_unavailable",
+      "reason": "Aucune vue officielle entière et de la bonne variante n’a été retenue. Les captures Nova Prospekt de 220 ne décrivent pas un agent CP et les captures Deathmatch de 320 consultées ont un contexte/apparence inadéquats pour verrouiller ce modèle. Aucun refus ajouté."
+    }
+  ],
+  "assets": [
+    {
+      "asset_id": "hunter_ep2_idle_e",
+      "owner_id": "hunter_ep2",
+      "owner_type": "fighter",
+      "target_ids": [
+        "hunter_ep2"
+      ],
+      "category": "fighter_key_pose",
+      "source_game": "Half-Life 2: Episode Two",
+      "roster_status": "specified_not_implemented",
+      "batch_id": "continuation_20261120_e",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: stylized-concept.\nCreate ONE complete isolated high-detail 2D raster character sprite of ONE retail Hunter from Half-Life 2: Episode Two. Use the attached official Valve screenshots as strict appearance references. In image 1 the intended subject is the smaller, dark, THREE-legged Hunter standing near the center foreground, not the tall Strider on the left. Image 2 gives the Hunter's close-up front shell and sensor detail. Only the Hunter is requested; do not include the Strider, other Hunters or any scenery.\nPreserve the Hunter's compact heavy upper body, hunched forward silhouette, dark grey-brown organic-metallic shell with restrained green iridescent highlights, pale central face plate and exactly TWO round cyan sensors stacked vertically. Match the joint shapes, three-legged anatomy, foot shapes and body-to-leg proportions from the complete Hunter in image 1. The two front legs and the third rear leg all remain separately readable and complete, with their source-model angular joints and narrow lower feet. No fourth leg, no arms or hands, no separate animal head, no new weapons and no human proportions.\nOne quiet ready stance close to the complete source pose, at a near-front mild three-quarter view. Preserve the body design and take only the additional visible material and head detail from image 2. All THREE feet rest near the same horizontal baseline without a drawn floor. The flechette system is inactive; no projectile or muzzle flash.\nThe result is a crisp detailed raster sprite for a 2D fighting game, with controlled shaded texture and readable contour. Match the retail game design rather than redesigning a generic robot. No vector shapes, flat icon style, concept-art sheet or cinematic scene.\nTrue transparent alpha everywhere outside the single Hunter; fully opaque materials inside the silhouette. Keep all body parts complete and center the subject with a generous transparent border of approximately 10 percent on every edge. No crop, ground, forest, dust, cast shadow, baked checkerboard, color fringe, halo, caption, UI, border, alternate view or duplicate creature.",
+      "transparent_background_requested": true,
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à corriger",
+      "selected_for_next_review": true,
+      "retried": false,
+      "source_references": [
+        {
+          "source_id": "steam_hunter_ep2_09_e",
+          "steam_app": 220,
+          "screenshot_id": 9,
+          "role": "whole_body_anatomy_reference",
+          "reference_filename": "steam_220_09.jpg",
+          "sha256": "91ccecc3c41cbf60a0d762549da72546bcbb81b6d4735785da355a1e0ba8ff3d",
+          "width": 1440,
+          "height": 900,
+          "color_mode": "RGB",
+          "byte_size": 555455,
+          "visually_inspected": true,
+          "bitmap_modified_before_generation": false,
+          "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_ed5532325f508728f8481f0109d662352a519e0a.1920x1080.jpg?t=1745368545",
+          "page_url": "https://store.steampowered.com/app/220/HalfLife_2/",
+          "source_type": "primary_official_screenshot",
+          "title": "Valve / Steam — capture 220/09",
+          "source_game": "Half-Life 2: Episode Two",
+          "context_note": "La fiche app 220 comprend aussi les épisodes; le jeu/variante est identifié sur le contenu de cette capture, pas le seul appid."
+        },
+        {
+          "source_id": "steam_hunter_ep2_18_e",
+          "steam_app": 220,
+          "screenshot_id": 18,
+          "role": "head_and_shell_detail_reference",
+          "reference_filename": "steam_220_18.jpg",
+          "sha256": "7ce5a9a75b8cbf915a97ad66e2dc9e6c3620687f1f3c653beb09409c3078b7bf",
+          "width": 1440,
+          "height": 900,
+          "color_mode": "RGB",
+          "byte_size": 504806,
+          "visually_inspected": true,
+          "bitmap_modified_before_generation": false,
+          "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_fe894d70bdfa75236a4b451efbeea7d4ce3e0174.1920x1080.jpg?t=1745368545",
+          "page_url": "https://store.steampowered.com/app/220/HalfLife_2/",
+          "source_type": "primary_official_screenshot",
+          "title": "Valve / Steam — capture 220/18",
+          "source_game": "Half-Life 2: Episode Two",
+          "context_note": "La fiche app 220 comprend aussi les épisodes; le jeu/variante est identifié sur le contenu de cette capture, pas le seul appid."
+        }
+      ],
+      "source_urls": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_ed5532325f508728f8481f0109d662352a519e0a.1920x1080.jpg?t=1745368545",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_fe894d70bdfa75236a4b451efbeea7d4ce3e0174.1920x1080.jpg?t=1745368545"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "visual_identity_reference",
+      "requested_repository_path": "assets/resonance/candidates/continuation_20261120_e/hunter_ep2_idle_e.png",
+      "file_path": "assets/resonance/candidates/continuation_20261120_e/hunter_ep2_idle_e.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/hunter_ep2_idle_e.png",
+      "width": 1315,
+      "height": 1196,
+      "color_mode": "RGBA",
+      "byte_size": 830063,
+      "sha256": "b798364fdc80fa864d473bd26f7b29e9b655190321e6fb3e23e9a5801e4a99c9",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "alpha_check": "vérifié: composites alpha sur gris et blanc; fond transparent, pas de halo coloré majeur confirmé",
+      "alpha_metrics": {
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "alpha_zero_fraction": 0.7584883706143418,
+        "alpha_opaque_fraction": 0.0005773363683762097,
+        "alpha_near_opaque_fraction": 0.21417208184442438,
+        "alpha_mode_value": 253,
+        "alpha_nonzero_bbox": [
+          0,
+          19,
+          1303,
+          1180
+        ],
+        "bbox_alpha_ge_16": [
+          181,
+          61,
+          1139,
+          1158
+        ],
+        "bbox_alpha_ge_128": [
+          182,
+          62,
+          1138,
+          1157
+        ],
+        "edge_alpha_maxima": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      "padding_pixels_at_alpha_ge_16": {
+        "left": 181,
+        "top": 61,
+        "right": 176,
+        "bottom": 38
+      },
+      "alpha_visual_qa": {
+        "method": "PIL Image.alpha_composite(background_RGBA_opaque, original_RGBA).convert(RGB); vues de contrôle séparées, aucune écriture dans les PNG candidats.",
+        "backgrounds_rgb": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            255,
+            255,
+            255
+          ]
+        ],
+        "composites_visually_inspected": true,
+        "rgb_hidden_in_transparent_pixels_not_treated_as_visible_halo": true,
+        "qa_composites_are_deliverable_assets": false,
+        "preview_names": [
+          "qa_hunter_ep2_idle_e_gray.png",
+          "qa_hunter_ep2_idle_e_white.png"
+        ]
+      },
+      "visual_qa_performed": true,
+      "single_subject": true,
+      "full_body_in_canvas": true,
+      "opaque_subject_cropped": false,
+      "all_limb_tips_individually_visible": true,
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "notes": "Une seule créature, trois pattes et trois extrémités entières, deux capteurs cyan verticaux, carapace sombre irisée et face claire cohérentes avec les captures officielles. Pose presque frontale, non profil latéral de combat. Le pied arrière termine plus haut dans le cadre que les deux pieds avant: la baseline runtime reste à définir. Les détails de matière, les articulations et les volumes fins ont été réinterprétés; la capture entière est relativement petite dans son cadre. Aucun contrôle modèle 1:1 certifié. Marges au seuil alpha>=16: gauche 181, haut 61, droite 176, bas 38 px; la demande de 10 % sur tous les bords n’est pas atteinte. Composites réels inspectés sur gris 128 et blanc: aucun fond opaque ni frange rouge/jaune majeure confirmé. Les couleurs visibles dans un aperçu RGB brut ne suffisent pas à diagnostiquer une frange visible. Alpha dominant 253/255 et quelques résidus alpha 1 au bord gauche. Aucun sujet opaque coupé, aucun clip, pivot ou activation moteur livré.",
+      "name_fr": "Hunter — Episode Two",
+      "completed_six_layer_stage": false,
+      "transparent_background": true
+    },
+    {
+      "asset_id": "dog_hl2_idle_e",
+      "owner_id": "dog_hl2",
+      "owner_type": "fighter",
+      "target_ids": [
+        "dog_hl2"
+      ],
+      "category": "fighter_key_pose",
+      "source_game": "Half-Life 2",
+      "roster_status": "specified_not_implemented",
+      "batch_id": "continuation_20261120_e",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: stylized-concept.\nCreate ONE full-body high-detail 2D raster sprite of Dog, the large friendly scavenged robot from the released Half-Life 2 game. The first attached image is the primary official Valve in-game appearance and idle-pose reference. Dog is the large robot on the left; only Dog is requested. The second attached image is official Valve promotional art and provides supplementary views of Dog's complete mechanical hands, fingers, feet and exposed joints. Do not copy its airborne action pose or its other creature.\nMatch Dog's distinctive bulky, forward-hunched upper shell, enormous long mechanical arms, relatively compact bent legs, exposed cables, pistons, circular joints and irregular salvaged plates. Preserve his actual asymmetry: the two arms and gripping mechanisms have different hardware and shapes; do not mirror one arm to make a symmetrical robot. Keep the worn pale metal and dirty grey/cream/yellow shell patches, orange-rust sections, dark cables and aged metal texture shown in the primary screenshot. Do not add an animal face, ears, tail, dog paws or humanoid armour.\nOne grounded calm idle pose close to image 1, hunched and heavy, with long arms hanging low and the small sensor head tucked under the overhanging upper shell at the reference angle. Do not enlarge or invent a new face. Keep the complete hands and fingers inside the image, using the supplementary reference to avoid the hand-tip crop in image 1. Keep both feet complete, readable and planted near one horizontal baseline. Preserve the large robot proportions; do not shrink into a normal human-sized silhouette.\nPaint this as a detailed 2D raster fighting-game sprite with crisp controlled shading and fine weathered pixel texture. Retain the source design and recognizable mechanical construction. No vector drawing, simplified icon, modern redesign or photoreal cinematic scene.\nOnly one robot isolated on true transparent alpha, with opaque metal interiors. Give at least about 10 percent empty transparent padding around the whole robot, including all fingers and feet. No human companion, no second creature, no landscape, floor, shadow ellipse, checkerboard, edge halo, colored fringe, text, labels, sheet, alternate angle or duplicate figure.",
+      "transparent_background_requested": true,
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à corriger",
+      "selected_for_next_review": true,
+      "retried": false,
+      "source_references": [
+        {
+          "source_id": "steam_dog_hl2_07_e",
+          "steam_app": 220,
+          "screenshot_id": 7,
+          "role": "primary_hl2_appearance_and_pose_reference",
+          "reference_filename": "steam_220_07.jpg",
+          "sha256": "ebacc6c2da8256d0f7a348b59f3d43455275b698a248359e12971b466ac65767",
+          "width": 1600,
+          "height": 900,
+          "color_mode": "RGB",
+          "byte_size": 479577,
+          "visually_inspected": true,
+          "bitmap_modified_before_generation": false,
+          "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_412b0e9f8285d3695d0b39840da41c184dff591a.1920x1080.jpg?t=1745368545",
+          "page_url": "https://store.steampowered.com/app/220/HalfLife_2/",
+          "source_type": "primary_official_screenshot",
+          "title": "Valve / Steam — capture 220/07",
+          "source_game": "Half-Life 2",
+          "context_note": "La fiche app 220 comprend aussi les épisodes; le jeu/variante est identifié sur le contenu de cette capture, pas le seul appid."
+        },
+        {
+          "source_id": "valve_dog_wallpaper01_e",
+          "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/hl2wallpaper01_16x9.jpg",
+          "page_url": "https://www.half-life.com/en/halflife2/20th",
+          "source_type": "official_promotional_art",
+          "role": "supplementary_hand_and_foot_geometry_reference",
+          "reference_filename": "wallpaper01_full.jpg",
+          "sha256": "9813875895ec7ffc789773d57cc510da40c3a04a18ef5b80dc1901391e5469fc",
+          "width": 3840,
+          "height": 2160,
+          "color_mode": "RGB",
+          "byte_size": 3021811,
+          "visually_inspected": true,
+          "bitmap_modified_before_generation": false,
+          "title": "Valve — wallpaper 01 du vingtième anniversaire",
+          "context_note": "Illustration promotionnelle montrant Dog et un Strider; complément des mains et pieds uniquement. La capture Half-Life 2 reste la référence principale de la pose et des matériaux."
+        }
+      ],
+      "source_urls": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_412b0e9f8285d3695d0b39840da41c184dff591a.1920x1080.jpg?t=1745368545",
+        "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/hl2wallpaper01_16x9.jpg"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "visual_identity_reference",
+      "requested_repository_path": "assets/resonance/candidates/continuation_20261120_e/dog_hl2_idle_e.png",
+      "file_path": "assets/resonance/candidates/continuation_20261120_e/dog_hl2_idle_e.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/dog_hl2_idle_e.png",
+      "width": 1312,
+      "height": 1199,
+      "color_mode": "RGBA",
+      "byte_size": 1889988,
+      "sha256": "a7ff08064314e322f5e3d9a1296591a9c6da9359d6536ba1d239f8148b9aaf8e",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "alpha_check": "vérifié: composites alpha sur gris et blanc; fond transparent, pas de halo coloré majeur confirmé",
+      "alpha_metrics": {
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "alpha_zero_fraction": 0.5343305651050673,
+        "alpha_opaque_fraction": 0.00013349539250188166,
+        "alpha_near_opaque_fraction": 0.40133164832482354,
+        "alpha_mode_value": 252,
+        "alpha_nonzero_bbox": [
+          0,
+          29,
+          1298,
+          1180
+        ],
+        "bbox_alpha_ge_16": [
+          83,
+          32,
+          1219,
+          1173
+        ],
+        "bbox_alpha_ge_128": [
+          84,
+          32,
+          1218,
+          1172
+        ],
+        "edge_alpha_maxima": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      "padding_pixels_at_alpha_ge_16": {
+        "left": 83,
+        "top": 32,
+        "right": 93,
+        "bottom": 26
+      },
+      "alpha_visual_qa": {
+        "method": "PIL Image.alpha_composite(background_RGBA_opaque, original_RGBA).convert(RGB); vues de contrôle séparées, aucune écriture dans les PNG candidats.",
+        "backgrounds_rgb": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            255,
+            255,
+            255
+          ]
+        ],
+        "composites_visually_inspected": true,
+        "rgb_hidden_in_transparent_pixels_not_treated_as_visible_halo": true,
+        "qa_composites_are_deliverable_assets": false,
+        "preview_names": [
+          "qa_dog_hl2_idle_e_gray.png",
+          "qa_dog_hl2_idle_e_white.png"
+        ]
+      },
+      "visual_qa_performed": true,
+      "single_subject": true,
+      "full_body_in_canvas": true,
+      "opaque_subject_cropped": false,
+      "all_limb_tips_individually_visible": true,
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "notes": "Dog entier, silhouette lourde et voûtée, longs bras asymétriques, deux mains différentes, deux pieds, pistons et câbles conservés. La vue primaire reste celle du modèle Half-Life 2; le wallpaper Valve complète les extrémités. Le capteur reste partiellement caché sous la coque dans cet angle; aucune nouvelle vue de son visage n’est prétendue. Une pose trois-quarts unique ne définit pas les deux orientations de combat. La patine jaune/crème/orange suit la capture éclairée chaudement; elle ne constitue pas une validation de la couleur des matériaux sous éclairage neutre. Les pièces fines et proportions restent à comparer au modèle. Marges au seuil alpha>=16: gauche 83, haut 32, droite 93, bas 26 px. Les mains sont entières, mais les marges haute et basse sont trop courtes pour la cible 10 %. Les fortes franges rouge/jaune de l’aperçu RGB brut ne se confirment pas sur les composites alpha gris et blanc. Les contours sont lisibles sans halo coloré majeur; source PNG conservée sans retouche. Alpha dominant 252/255, résidu alpha 1 au bord gauche. Aucune certification 1:1, animation ou intégration moteur.",
+      "name_fr": "Dog — Half-Life 2",
+      "completed_six_layer_stage": false,
+      "transparent_background": true
+    },
+    {
+      "asset_id": "antlion_worker_ep2_idle_e",
+      "owner_id": "antlion_worker_ep2",
+      "owner_type": "fighter",
+      "target_ids": [
+        "antlion_worker_ep2"
+      ],
+      "category": "fighter_key_pose",
+      "source_game": "Half-Life 2: Episode Two",
+      "roster_status": "specified_not_implemented",
+      "batch_id": "continuation_20261120_e",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: stylized-concept.\nProduce ONE complete isolated high-detail 2D raster creature sprite of the retail Antlion Worker from Half-Life 2: Episode Two. The attached official Valve screenshot is the exact appearance reference. The intended subject is the large pale green worker antlion in the foreground; exclude the distant insects and the cave.\nPreserve this worker caste's unmistakable huge rounded pale yellow-green head, darker small mouth region, two long slender forward mouth appendages, pale green articulated FOUR-leg anatomy and the source model's rounded/striped shell and abdomen behind the head. Match its broad low body and exceptionally large head-to-body ratio. Maintain the exact leg shapes and arrangement, including the long pointed front legs and the rear limbs seen behind them. Do not substitute the green-and-ochre standard Antlion, an Antlion Guard, a six-legged realistic insect or a new fantasy creature. Keep the small dark surface marks and gently translucent-looking green material as painted surface shading, not an actually transparent body.\nOne grounded quiet idle pose close to the screenshot's near-front three-quarter angle, with the large head lowered and mouth appendages pointing forward. All four limbs and their pointed tips remain complete inside the canvas, with no anatomical additions. No acid spit, no explosion, no particles or newly invented glow.\nDetailed shaded 2D raster sprite for a fighting game, source-faithful proportions and muted green palette, fine texture and crisp readable contour. No vector icon, cartoon simplification, multiple poses or cinematic environment.\nTrue transparent alpha outside the single creature, opaque subject pixels inside. Keep approximately 10 percent empty transparent border on all sides and show every extremity. No cave, ground, rock, other creature, cast shadow, black background, baked checkerboard, colored outline or halo, lettering, HUD, sheet or duplicate image.",
+      "transparent_background_requested": true,
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à corriger",
+      "selected_for_next_review": true,
+      "retried": false,
+      "source_references": [
+        {
+          "source_id": "steam_antlion_worker_ep2_15_e",
+          "steam_app": 220,
+          "screenshot_id": 15,
+          "role": "whole_creature_appearance_reference",
+          "reference_filename": "steam_220_15.jpg",
+          "sha256": "629fba4527309d238ce5eb996fef63d67f42c86af45e18cd449a21888370fff7",
+          "width": 1620,
+          "height": 1080,
+          "color_mode": "RGB",
+          "byte_size": 358700,
+          "visually_inspected": true,
+          "bitmap_modified_before_generation": false,
+          "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_b3de6987b384b2db61b5dcad2dd6460fd2969612.1920x1080.jpg?t=1745368545",
+          "page_url": "https://store.steampowered.com/app/220/HalfLife_2/",
+          "source_type": "primary_official_screenshot",
+          "title": "Valve / Steam — capture 220/15",
+          "source_game": "Half-Life 2: Episode Two",
+          "context_note": "La fiche app 220 comprend aussi les épisodes; le jeu/variante est identifié sur le contenu de cette capture, pas le seul appid."
+        }
+      ],
+      "source_urls": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_b3de6987b384b2db61b5dcad2dd6460fd2969612.1920x1080.jpg?t=1745368545"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "visual_identity_reference",
+      "requested_repository_path": "assets/resonance/candidates/continuation_20261120_e/antlion_worker_ep2_idle_e.png",
+      "file_path": "assets/resonance/candidates/continuation_20261120_e/antlion_worker_ep2_idle_e.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/antlion_worker_ep2_idle_e.png",
+      "width": 1536,
+      "height": 1024,
+      "color_mode": "RGBA",
+      "byte_size": 1878983,
+      "sha256": "a981694bd2ca128a09509d6ac1884d6390a70853eb1438ed6c540dccbdbeaf60",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "alpha_check": "vérifié: composites alpha sur gris et blanc; fond transparent, pas de halo coloré majeur confirmé",
+      "alpha_metrics": {
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "alpha_zero_fraction": 0.6564610799153646,
+        "alpha_opaque_fraction": 0.0,
+        "alpha_near_opaque_fraction": 0.29900550842285156,
+        "alpha_mode_value": 253,
+        "alpha_nonzero_bbox": [
+          0,
+          0,
+          1530,
+          1024
+        ],
+        "bbox_alpha_ge_16": [
+          80,
+          90,
+          1470,
+          959
+        ],
+        "bbox_alpha_ge_128": [
+          81,
+          90,
+          1469,
+          958
+        ],
+        "edge_alpha_maxima": [
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      "padding_pixels_at_alpha_ge_16": {
+        "left": 80,
+        "top": 90,
+        "right": 66,
+        "bottom": 65
+      },
+      "alpha_visual_qa": {
+        "method": "PIL Image.alpha_composite(background_RGBA_opaque, original_RGBA).convert(RGB); vues de contrôle séparées, aucune écriture dans les PNG candidats.",
+        "backgrounds_rgb": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            255,
+            255,
+            255
+          ]
+        ],
+        "composites_visually_inspected": true,
+        "rgb_hidden_in_transparent_pixels_not_treated_as_visible_halo": true,
+        "qa_composites_are_deliverable_assets": false,
+        "preview_names": [
+          "qa_antlion_worker_ep2_idle_e_gray.png",
+          "qa_antlion_worker_ep2_idle_e_white.png"
+        ]
+      },
+      "visual_qa_performed": true,
+      "single_subject": true,
+      "full_body_in_canvas": true,
+      "opaque_subject_cropped": false,
+      "all_limb_tips_individually_visible": false,
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "notes": "Un seul fourmilion ouvrier, large tête pâle vert-jaune, coque arrière striée, longues pattes et deux appendices buccaux cohérents avec la capture Episode Two. Les quatre membres ne sont pas tous séparément lisibles: les pattes arrière sont repliées et partiellement masquées par le corps. La vue est proche de la référence, avec variations génératives de proportions et de détail. Aucune classe standard verte/ocre ni Antlion Guard substituée. Marges au seuil alpha>=16: gauche 80, haut 90, droite 66, bas 65 px; silhouette entière dans le canevas mais cible 10 % non atteinte sur tous les côtés. Le halo vert vu dans l’aperçu brut se trouve dans les RGB de pixels alpha 0. Les composites sur gris 128 et blanc montrent un fond uniforme sans ce halo. Aucune correction de fond n’a été demandée, car l’alpha réel était déjà présent. Alpha dominant 253/255, maximum 254/255; intérieurs presque opaques sans pixels alpha 255. Résidus alpha 1 sur trois bords, sans découpe de matière opaque. Pose unique, pas de silhouette latérale opposée, pas de projection d’acide, pas de clip complet ni d’intégration moteur.",
+      "name_fr": "Fourmilion ouvrier — Episode Two",
+      "completed_six_layer_stage": false,
+      "transparent_background": true
+    },
+    {
+      "batch_id": "continuation_20261120_e",
+      "created_at": "2026-11-20",
+      "source_game": "Half-Life",
+      "source_version": "GoldSrc original / non-HD",
+      "generator": "image_gen built-in",
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "visual_identity_reference",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "révision requise",
+      "candidate_status": "generated_pending_reference_cleanup",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": true,
+      "alpha_check": "présent",
+      "selected_for_next_review": true,
+      "visually_inspected": true,
+      "file_path": "assets/resonance/candidates/continuation_20261120_e/costume_hecu_beret_hl1_guard_right_e.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/costume_hecu_beret_hl1_guard_right_e.png",
+      "width": 1448,
+      "height": 1086,
+      "color_mode": "RGBA",
+      "byte_size": 943278,
+      "sha256": "78daa658d35921bd242e98361d94044895e5c11a57ba7908f826043ac0e0d29d",
+      "alpha_stats": {
+        "transparent_pixels": 1084688,
+        "transparent_fraction": 0.6897734094400862,
+        "partial_pixels": 487474,
+        "opaque_pixels": 366,
+        "max_alpha": 255,
+        "bbox_alpha_nonzero": [
+          0,
+          29,
+          1418,
+          1068
+        ],
+        "bbox_alpha_at_least_16": [
+          259,
+          67,
+          1239,
+          1059
+        ]
+      },
+      "asset_id": "costume_hecu_beret_hl1_guard_right_e",
+      "name_fr": "HECU original — costume au béret",
+      "owner_id": "hecu_hl1",
+      "owner_type": "fighter",
+      "target_ids": [
+        "costume_hecu_beret_hl1"
+      ],
+      "category": "costume_reference_sprite",
+      "prompt": "Use case: identity-preserve. Asset type: one raster 2D fighting-game costume reference sprite, a single full human figure in a single crouched guard pose. Input image 1 is Valve's official Half-Life 25th anniversary Uplink gameplay screenshot, using original GoldSrc retail models. Use ONLY the left foreground HECU soldier wearing the burgundy red beret as the appearance and pose reference. Input image 2 is Valve's Half-Life Steam screenshot and confirms the same original beret head, original uniform and MP5-like in-game weapon geometry. Preserve the specific original Half-Life 1998 HECU beret appearance: pale angular face with short brown hair, burgundy beret with small front badge, grey/white/black urban camouflage uniform, short rolled sleeves and bare forearms, dark olive segmented tactical vest with pouch shapes shown, olive rectangular pack and black boots. Preserve the original game's outfit proportions and equipment layout. Produce only that one soldier, crouching with both boots visible, aiming the black original Half-Life submachine gun toward the right in the same three-quarter side view as the left soldier in image 1. Keep the anatomy, clothing silhouette, beret outline, shoulder-to-arm proportions and held weapon shape directly tied to the source; do not change to Half-Life HD pack, Opposing Force marine, Black Mesa remake or modern military equipment. Clean detailed hand-painted raster game sprite with restrained source colors and readable volume; no photorealistic person, no new embellishments. Entire figure and entire weapon comfortably framed, with clear empty margin on every side. True alpha-transparent background including spaces between arms, legs and weapon. Single subject, single pose. No other soldier, creature, landscape, container, floor, muzzle flash, cartridge, projectile, blood, particles, cast shadow, text, badge label, border, logo or UI.",
+      "source_references": [
+        {
+          "reference_filename": "uplink_1.jpg",
+          "width": 2560,
+          "height": 1600,
+          "sha256": "6583dcb74e493ee06c8bf2e5db563cf7d4a28d371b5a84b8d25fe87e27a27d21",
+          "byte_size": 725063,
+          "visually_inspected": true,
+          "source_id": "valve_hl25_uplink_hecu_beret_e",
+          "title": "Valve — Half-Life 25th anniversary, capture Uplink, soldat au béret à gauche",
+          "source_page": "https://www.half-life.com/en/halflife/25th",
+          "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/uplink_1.jpg",
+          "provenance": "primary_official_gameplay_screenshot",
+          "role": "visual_identity_and_pose_reference",
+          "version_identification": "Modèles originaux GoldSrc visibles dans Uplink; tête au béret confirmée par la capture Steam de Half-Life."
+        },
+        {
+          "reference_filename": "steam70_1.jpg",
+          "width": 1024,
+          "height": 768,
+          "sha256": "8d1874b823bdbcb9e23ead7434bab1cefd18d1148fa1756c7204e620af1a3acb",
+          "byte_size": 111652,
+          "visually_inspected": true,
+          "source_id": "valve_steam70_hecu_beret_e",
+          "title": "Valve / Steam — Half-Life, capture officielle 0000002343",
+          "source_page": "https://store.steampowered.com/app/70/HalfLife/",
+          "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/70/0000002343.1920x1080.jpg?t=1745368462",
+          "provenance": "primary_official_gameplay_screenshot",
+          "role": "visual_identity_reference",
+          "version_identification": "Soldat HECU original au béret; vue de face en contre-plongée utilisée seulement pour confirmer tête, uniforme et arme."
+        }
+      ],
+      "source_urls": [
+        "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/uplink_1.jpg",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/70/0000002343.1920x1080.jpg?t=1745368462"
+      ],
+      "source_generated_filename": "exec-a0fc668e-be95-42f9-b7ff-8a86007881c2.png",
+      "pose": "Garde accroupie, vue de trois-quarts latérale vers la droite",
+      "notes": "Béret bordeaux, camouflage urbain gris/blanc/noir, gilet et sac olive, bras nus et deux bottes présents. Une seule figure entière et une seule pose. Vérification par alpha_composite sur blanc et gris foncé avant réduction: aucune frange colorée nette ni halo saturé visible. L’impression initiale de franges dans l’affichage RGBA brut n’est donc pas retenue comme défaut avéré. L’arme a été redessinée: silhouette du chargeur et ensemble sous-canon à comparer au modèle GoldSrc. Les poches et le visage sont davantage détaillés que la référence; aucune fidélité 1:1 certifiée. Pose accroupie: ne vaut pas garde debout ni animation complète. Le target_ids explicite rattache uniquement ce PNG au costume au béret; il ne couvre pas le masque à gaz.",
+      "alpha_compositing_qa": {
+        "checked_at": "2026-11-20T16:44:18.980873+00:00",
+        "method": "Pillow Image.alpha_composite sur fond opaque à la résolution native; conversion RGB puis thumbnail LANCZOS pour la planche de contrôle. Inspection visuelle des composites blanc et gris foncé.",
+        "background_rgb": [
+          [
+            255,
+            255,
+            255
+          ],
+          [
+            38,
+            42,
+            46
+          ]
+        ],
+        "composite_before_resize": true,
+        "source_image_modified": false,
+        "source_sha256_verified": true,
+        "very_low_alpha_pixels_1_to_15": 19687,
+        "observation": "Aucune frange saturée nette ni halo coloré visible sur les composites inspectés. L’affichage RGBA brut ne suffit pas à établir un défaut de détourage.",
+        "remaining_gate": "Fidélité à la référence, proportions et détails de l’équipement ou de l’anatomie restent à valider; aucun changement de statut 1:1 ou runtime."
+      },
+      "pixel_modification_after_generation": false
+    },
+    {
+      "batch_id": "continuation_20261120_e",
+      "created_at": "2026-11-20",
+      "source_game": "Half-Life",
+      "source_version": "GoldSrc original / non-HD",
+      "generator": "image_gen built-in",
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "visual_identity_reference",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "révision requise",
+      "candidate_status": "generated_pending_reference_cleanup",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": true,
+      "alpha_check": "présent",
+      "selected_for_next_review": true,
+      "visually_inspected": true,
+      "file_path": "assets/resonance/candidates/continuation_20261120_e/boss_gargantua_hl1_rear_threequarter_e.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/boss_gargantua_hl1_rear_threequarter_e.png",
+      "width": 1312,
+      "height": 1199,
+      "color_mode": "RGBA",
+      "byte_size": 1307540,
+      "sha256": "3e4edb5ef2fc5a847304210facc6098d752a1575719362f9b4d933d16cd85c1f",
+      "alpha_stats": {
+        "transparent_pixels": 794537,
+        "transparent_fraction": 0.5050810889155597,
+        "partial_pixels": 778155,
+        "opaque_pixels": 396,
+        "max_alpha": 255,
+        "bbox_alpha_nonzero": [
+          0,
+          3,
+          1306,
+          1199
+        ],
+        "bbox_alpha_at_least_16": [
+          101,
+          18,
+          1176,
+          1179
+        ]
+      },
+      "asset_id": "boss_gargantua_hl1_rear_threequarter_e",
+      "name_fr": "Gargantua original — vue arrière trois-quarts",
+      "owner_id": "gargantua_hl1",
+      "owner_type": "boss",
+      "target_ids": [
+        "gargantua_hl1"
+      ],
+      "category": "boss_reference_sprite",
+      "prompt": "Use case: identity-preserve. Asset type: one full-body raster 2D boss reference sprite. Input images 1 and 2 are exact frames at 26.0 seconds and 25.5 seconds from Valve's official Half-Life 25th-anniversary gameplay montage. They show the original Half-Life 1998 GoldSrc Gargantua in the Surface Tension parking-garage encounter. Isolate and redraw only this giant alien boss as one clean, detailed raster game sprite. Keep the original creature's exact visible silhouette and source orientation: a rear / rear-side three-quarter view, broad hunched fan-shaped ridged upper carapace, concentric segmented blue-green plates with dark gaps and brown ribbed insets, bulky torso, long forearms ending in the source pincer-like flame emitters, short heavy bent legs and original broad pointed feet. Preserve the original asymmetric visible pose and body proportions. The same original GoldSrc design and markings as the supplied screenshots; no Black Mesa remake, no HD redesign, no extra spikes, no decorative armor, no invented machinery. Preserve the visible rear-side viewpoint instead of inventing an unseen front face. Bring the entire creature into view, keeping the source pose readable and all limbs inside the canvas, with margin on every side. One single subject and one single pose. Hand-painted 2D raster sprite with carefully defined source shapes, restrained blue-green/brown colors and neutral lighting so the existing plates remain readable. True alpha-transparent background including gaps between limbs. Remove the cars, soldier, parking structure, floor, grenade, weapon viewmodel, HUD and every scene element from the references. No flames, smoke, particles, scenery, cast shadow, vignette, ground plane, text, labels, multiple poses or extra creature.",
+      "source_references": [
+        {
+          "reference_filename": "gargantua_montage_26_0s.png",
+          "width": 960,
+          "height": 600,
+          "sha256": "f7474efb77d1679e40745ac991ed774456d701d8fc69f0b2398924be879d7fb6",
+          "byte_size": 510467,
+          "visually_inspected": true,
+          "source_id": "valve_hl25_gargantua_26s_e",
+          "title": "Valve — Half-Life 25th anniversary, Gargantua à 26,0 secondes",
+          "source_page": "https://www.half-life.com/en/halflife/25th",
+          "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/hl1_anniversary_mashup_looping_H.264.mp4",
+          "source_video_sha256": "3ae217b122c1d6962212576cd1269f31c3a7c593962e40ff37740cb1e6d08611",
+          "source_timestamp_seconds": 26,
+          "provenance": "primary_official_video_frame",
+          "role": "visual_identity_and_pose_reference",
+          "extraction": "ffmpeg, une image PNG à l’instant exact; aucune transformation de couleur, rotation ou retouche.",
+          "version_identification": "Gargantua GoldSrc original dans le parking de Surface Tension; vue arrière / trois-quarts latérale. Aucun détail frontal invisible n’est certifié."
+        },
+        {
+          "reference_filename": "gargantua_montage_25_5s.png",
+          "width": 960,
+          "height": 600,
+          "sha256": "bd75bc4fa2ef562d54ccfc0193b590fe59a961d490b69282e5766746968faa88",
+          "byte_size": 457373,
+          "visually_inspected": true,
+          "source_id": "valve_hl25_gargantua_25_5s_e",
+          "title": "Valve — Half-Life 25th anniversary, Gargantua à 25,5 secondes",
+          "source_page": "https://www.half-life.com/en/halflife/25th",
+          "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/hl1_anniversary_mashup_looping_H.264.mp4",
+          "source_video_sha256": "3ae217b122c1d6962212576cd1269f31c3a7c593962e40ff37740cb1e6d08611",
+          "source_timestamp_seconds": 25.5,
+          "provenance": "primary_official_video_frame",
+          "role": "visual_identity_and_pose_reference",
+          "extraction": "ffmpeg, une image PNG à l’instant exact; aucune transformation de couleur, rotation ou retouche.",
+          "version_identification": "Gargantua GoldSrc original dans le parking de Surface Tension; vue arrière / trois-quarts latérale. Aucun détail frontal invisible n’est certifié."
+        }
+      ],
+      "source_urls": [
+        "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/hl1_anniversary_mashup_looping_H.264.mp4"
+      ],
+      "source_generated_filename": "exec-8230e640-a4ac-4645-b0d5-2ec6b11d6682.png",
+      "pose": "Vue arrière / trois-quarts latérale issue du parking de Surface Tension",
+      "notes": "Carapace en éventail bleu-vert, nervures brunes, volumes des avant-bras et deux pieds visibles; un seul boss entier. Vue arrière conservée selon les références: ni œil ni face ne sont certifiés. Marges serrées au sommet. Vérification par alpha_composite sur blanc et gris foncé avant réduction: aucune frange colorée nette ni halo saturé visible. Les pixels de très faible alpha mesurés dans le fichier ne sont pas, à eux seuls, un défaut visible de contour. Articulation du bras lointain et contours des pinces à revalider sur un modèle complet. Ce candidat documente le volume arrière et ne remplace pas une garde latérale de gameplay. Le prototype de mécanique Gargantua existait avant ce lot; ce fichier n’y est pas intégré.",
+      "alpha_compositing_qa": {
+        "checked_at": "2026-11-20T16:44:19.044482+00:00",
+        "method": "Pillow Image.alpha_composite sur fond opaque à la résolution native; conversion RGB puis thumbnail LANCZOS pour la planche de contrôle. Inspection visuelle des composites blanc et gris foncé.",
+        "background_rgb": [
+          [
+            255,
+            255,
+            255
+          ],
+          [
+            38,
+            42,
+            46
+          ]
+        ],
+        "composite_before_resize": true,
+        "source_image_modified": false,
+        "source_sha256_verified": true,
+        "very_low_alpha_pixels_1_to_15": 43540,
+        "observation": "Aucune frange saturée nette ni halo coloré visible sur les composites inspectés. L’affichage RGBA brut ne suffit pas à établir un défaut de détourage.",
+        "remaining_gate": "Fidélité à la référence, proportions et détails de l’équipement ou de l’anatomie restent à valider; aucun changement de statut 1:1 ou runtime."
+      },
+      "pixel_modification_after_generation": false
+    },
+    {
+      "asset_id": "layer_canals_sky_e",
+      "name_fr": "Canaux — ciel L00",
+      "owner_id": "STG_12_HL2_CANALS",
+      "owner_type": "stage",
+      "target_ids": [
+        "STG_12_HL2_CANALS"
+      ],
+      "category": "stage_layer_candidate",
+      "batch_id": "continuation_20261120_e",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Use the supplied stage master as the exact geometric edit target. Output ONE image only on the same full 2172x724 canvas. Do not crop, zoom, recenter, rotate, alter the camera or shift objects. Preserve the retained objects' source textures, scale and exact positions. This is one compositing layer, not a new scene, not a collage. No characters, text, labels, HUD, borders or layer diagrams. Create only the distant SKY background plate. Keep the same muted cloudy blue-grey daylight and source cloud structure visible across the top. Remove every building, roof, tree, wire, iron railing, brick wall, bridge, wooden post, water reflection and ground surface, then seamlessly continue the same cloudy sky behind all removed geometry to fill the entire canvas. Sky and subtle cloud texture only, fully opaque from edge to edge, without a horizon, sun disk, landscape or fog wall. The sky will be occluded by the other transparent architecture layers.",
+      "source_references": [
+        {
+          "source_asset_id": "stage_canals_master_d",
+          "repository_path": "assets/resonance/candidates/continuation_20261120_d/stage_canals_master_d.png",
+          "reference_filename": "stage_canals_master_d.png",
+          "sha256": "5766b37fbd175db30f6b95971e8012eeaff64475a45fea25d77ff3ffc65e8a2a",
+          "width": 2172,
+          "height": 724,
+          "provenance": "generated_project_candidate",
+          "role": "edit_target",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_394f4ad714937db2cc90545972b318ddb6db7231.1920x1080.jpg?t=1745368545"
+      ],
+      "upstream_reference_note": "Les URL officielles sont celles du maître D. Les bitmaps utilisés dans cette édition E sont les candidats générés ci-dessus, pas des captures directes du jeu.",
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "generated_project_candidate_edit_target",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à corriger",
+      "file_path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_sky_e.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_sky_e.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": false,
+      "selected_for_next_review": true,
+      "notes": "Plaque de ciel opaque sur tout le canevas, sans architecture. Palette bleu-gris proche du maître; nuages et zones cachées reconstitués générativement, sans identité pixel à pixel.",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGB",
+      "byte_size": 1579557,
+      "sha256": "cf8dc89190cdba44cb2967cd33b7331ce080ebc69755839bae9bb9748996b7f7",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "layer_id": "L00_ambience",
+      "parent_asset_id": "stage_canals_master_d",
+      "qa_report": "docs/resonance/production/continuation_20261120_e/stage_layer_review.json",
+      "alpha_check": "sans objet: ciel volontairement opaque"
+    },
+    {
+      "asset_id": "layer_canals_far_city_e",
+      "name_fr": "Canaux — ville lointaine L01",
+      "owner_id": "STG_12_HL2_CANALS",
+      "owner_type": "stage",
+      "target_ids": [
+        "STG_12_HL2_CANALS"
+      ],
+      "category": "stage_layer_candidate",
+      "batch_id": "continuation_20261120_e",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Use the supplied stage master as the exact geometric edit target. Output ONE image only on the same full 2172x724 canvas. Do not crop, zoom, recenter, rotate, alter the camera or shift objects. Preserve the retained objects' source textures, scale and exact positions. This is one compositing layer, not a new scene, not a collage. No characters, text, labels, HUD, borders or layer diagrams. Keep ONLY the distant skyline: the worn tan high-rise and neighboring grey apartment blocks in the upper left/center, the small cream house and red tiled roof visible through the central bridge opening, and the far cream/red-roof house with leafless branches toward the upper right. Preserve their recognizable architecture, materials and placement. Complete only small hidden background portions needed behind removed nearer objects; do not add new towers or expand buildings upward. Remove the whole sky, all overhead utility wires, all canal brick retaining walls and their iron rails, all timber bridge beams and posts, right wooden bank shoring, water, reflections and foreground stone platform. Removed areas must be truly alpha transparent. Keep distant buildings in their original positions, not arranged as separate floating thumbnails or centered as a lineup. No canal walls or bridge remnants should survive in this distant-city layer. Clean natural-colored silhouette edges without glow or colored matte fringes.",
+      "source_references": [
+        {
+          "source_asset_id": "stage_canals_master_d",
+          "repository_path": "assets/resonance/candidates/continuation_20261120_d/stage_canals_master_d.png",
+          "reference_filename": "stage_canals_master_d.png",
+          "sha256": "5766b37fbd175db30f6b95971e8012eeaff64475a45fea25d77ff3ffc65e8a2a",
+          "width": 2172,
+          "height": 724,
+          "provenance": "generated_project_candidate",
+          "role": "edit_target",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_394f4ad714937db2cc90545972b318ddb6db7231.1920x1080.jpg?t=1745368545"
+      ],
+      "upstream_reference_note": "Les URL officielles sont celles du maître D. Les bitmaps utilisés dans cette édition E sont les candidats générés ci-dessus, pas des captures directes du jeu.",
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "generated_project_candidate_edit_target",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à corriger",
+      "file_path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_far_city_e.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_far_city_e.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "notes": "Immeubles, maison centrale et pignon/arbre droit isolés aux positions approximatives du maître. Les parties cachées par les murs restent incomplètes: une translation en parallaxe peut révéler des coupes. Ne pas considérer la seule séparation alpha comme une couche terminée.",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 535444,
+      "sha256": "9fee06185646e6b65c8d04022f05b04bf8a1590d6340fa46bc629981a6a26a4e",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "layer_id": "L01_far",
+      "parent_asset_id": "stage_canals_master_d",
+      "qa_report": "docs/resonance/production/continuation_20261120_e/stage_layer_review.json",
+      "alpha_check": "canal A présent; composition de contrôle effectuée, raccords encore à valider",
+      "alpha_stats": {
+        "transparent_pixels": 1374397,
+        "transparent_fraction": 0.874004787196158,
+        "partial_pixels": 197712,
+        "opaque_pixels": 419,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "bbox_alpha_nonzero": [
+          93,
+          21,
+          2126,
+          724
+        ],
+        "bbox_alpha_at_least_16": [
+          399,
+          24,
+          1739,
+          392
+        ]
+      }
+    },
+    {
+      "asset_id": "layer_canals_mid_structure_e",
+      "name_fr": "Canaux — murs et pont L02, première version",
+      "owner_id": "STG_12_HL2_CANALS",
+      "owner_type": "stage",
+      "target_ids": [
+        "STG_12_HL2_CANALS"
+      ],
+      "category": "stage_layer_candidate",
+      "batch_id": "continuation_20261120_e",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Use the supplied stage master as the exact geometric edit target. Output ONE image only on the same full 2172x724 canvas. Do not crop, zoom, recenter, rotate, alter the camera or shift objects. Preserve the retained objects' source textures, scale and exact positions. This is one compositing layer, not a new scene, not a collage. No characters, text, labels, HUD, borders or layer diagrams. Keep ONLY the brick canal retaining structures and the central timber bridge/gantry: the weathered dark brick walls on left and right, their round sewer arches and recessed dark tunnel interiors, the iron railings physically attached to the tops of the brick walls, and the central horizontal timber bridge with its supporting vertical timber posts. Preserve their exact arrangement and depths as seen in the master. Do not center or enlarge the bridge. Remove all sky, distant apartment buildings and cream houses, red roofs, leafless tree, overhead wires, all water and reflections, all foreground stone fighting platform, and the RIGHT BANK wooden wall panels with diagonal shoring braces (these are reserved for a separate near layer). Also remove the large diagonal loose timber leaning against the left wall; keep its underlying brick surface naturally continuous. Every removed area becomes true transparency. Keep the retained structure where it originally stood, with alpha above the skyline and below the wall/post silhouettes. This must not include a new floor, lake, city silhouette or sky. Clean edges without red, yellow or white matte residue.",
+      "source_references": [
+        {
+          "source_asset_id": "stage_canals_master_d",
+          "repository_path": "assets/resonance/candidates/continuation_20261120_d/stage_canals_master_d.png",
+          "reference_filename": "stage_canals_master_d.png",
+          "sha256": "5766b37fbd175db30f6b95971e8012eeaff64475a45fea25d77ff3ffc65e8a2a",
+          "width": 2172,
+          "height": 724,
+          "provenance": "generated_project_candidate",
+          "role": "edit_target",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_394f4ad714937db2cc90545972b318ddb6db7231.1920x1080.jpg?t=1745368545"
+      ],
+      "upstream_reference_note": "Les URL officielles sont celles du maître D. Les bitmaps utilisés dans cette édition E sont les candidats générés ci-dessus, pas des captures directes du jeu.",
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "generated_project_candidate_edit_target",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à corriger",
+      "file_path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_mid_structure_e.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_mid_structure_e.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": true,
+      "selected_for_next_review": false,
+      "notes": "Première séparation des murs latéraux, arches et pont. Le mur arrière central et ses deux sorties d’égout ont été omis; le composite v1 révélait le ciel sous la maison. Conservée pour traçabilité, non retenue pour la prochaine revue; remplacée à cette étape par layer_canals_mid_structure_v2_e.",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 1950267,
+      "sha256": "6c8ed08825999198ad8fe83cc4dd11afefc6a6f943657da27dd0b0f052ec0309",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "layer_id": "L02_mid",
+      "parent_asset_id": "stage_canals_master_d",
+      "qa_report": "docs/resonance/production/continuation_20261120_e/stage_layer_review.json",
+      "alpha_check": "canal A présent; composition de contrôle effectuée, raccords encore à valider",
+      "alpha_stats": {
+        "transparent_pixels": 779905,
+        "transparent_fraction": 0.4959561928309067,
+        "partial_pixels": 791424,
+        "opaque_pixels": 1199,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "bbox_alpha_nonzero": [
+          0,
+          0,
+          2172,
+          724
+        ],
+        "bbox_alpha_at_least_16": [
+          0,
+          0,
+          2172,
+          576
+        ]
+      }
+    },
+    {
+      "asset_id": "layer_canals_near_water_e",
+      "name_fr": "Canaux — eau et soutènements L03",
+      "owner_id": "STG_12_HL2_CANALS",
+      "owner_type": "stage",
+      "target_ids": [
+        "STG_12_HL2_CANALS"
+      ],
+      "category": "stage_layer_candidate",
+      "batch_id": "continuation_20261120_e",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Use the supplied stage master as the exact geometric edit target. Output ONE image only on the same full 2172x724 canvas. Do not crop, zoom, recenter, rotate, alter the camera or shift objects. Preserve the retained objects' source textures, scale and exact positions. This is one compositing layer, not a new scene, not a collage. No characters, text, labels, HUD, borders or layer diagrams. Keep ONLY the near canal water surface and the wooden bank shoring: the complete dark brown water band in its original place just behind the fighting walkway, with the source ripples and reflections, the RIGHT bank dark wooden vertical wall panels and diagonal bracing poles, and the large diagonal loose timber leaning against the LEFT brick wall. Preserve their material and exact positions. The water band must stop at the original rear edge of the foreground stone walkway near y580; do not invent water below or in front of the walkway. Remove all brick walls and sewer arches, iron railings, the central timber bridge/gantry including its vertical supporting posts, distant city and houses, sky, tree, wires and every part of the foreground fighting floor/front fascia. Removed regions become true alpha transparency. Fill only tiny water or wood regions previously hidden by the removed bridge posts so the remaining layer has no accidental holes. Do not turn it into a standalone centered lake or a new scene. Keep the upper sky/building area empty except the original right wood panels and left leaning timber. Clean alpha edges, no colored fringe or cloudy backdrop.",
+      "source_references": [
+        {
+          "source_asset_id": "stage_canals_master_d",
+          "repository_path": "assets/resonance/candidates/continuation_20261120_d/stage_canals_master_d.png",
+          "reference_filename": "stage_canals_master_d.png",
+          "sha256": "5766b37fbd175db30f6b95971e8012eeaff64475a45fea25d77ff3ffc65e8a2a",
+          "width": 2172,
+          "height": 724,
+          "provenance": "generated_project_candidate",
+          "role": "edit_target",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_394f4ad714937db2cc90545972b318ddb6db7231.1920x1080.jpg?t=1745368545"
+      ],
+      "upstream_reference_note": "Les URL officielles sont celles du maître D. Les bitmaps utilisés dans cette édition E sont les candidats générés ci-dessus, pas des captures directes du jeu.",
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "generated_project_candidate_edit_target",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à corriger",
+      "file_path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_near_water_e.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_near_water_e.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "notes": "Eau brune, soutènement de bois droit et poutre inclinée gauche séparés. Les reflets restent peints dans l’eau; aucune animation livrée. De petits jours de ciel subsistent à la jonction eau/structures dans le composite v2. Raccords, occultations et extension en parallaxe restent à corriger.",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 983823,
+      "sha256": "8033c8cd67f79772f8d90c97be81565294b3af1a5d46d4aaab638966c6cd59c2",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "layer_id": "L03_near",
+      "parent_asset_id": "stage_canals_master_d",
+      "qa_report": "docs/resonance/production/continuation_20261120_e/stage_layer_review.json",
+      "alpha_check": "canal A présent; composition de contrôle effectuée, raccords encore à valider",
+      "alpha_stats": {
+        "transparent_pixels": 1145770,
+        "transparent_fraction": 0.7286165969699745,
+        "partial_pixels": 425714,
+        "opaque_pixels": 1044,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "bbox_alpha_nonzero": [
+          0,
+          21,
+          2172,
+          724
+        ],
+        "bbox_alpha_at_least_16": [
+          0,
+          112,
+          2172,
+          590
+        ]
+      }
+    },
+    {
+      "asset_id": "layer_ravenholm_sky_e",
+      "name_fr": "Ravenholm — ciel L00",
+      "owner_id": "STG_14_HL2_RAVENHOLM",
+      "owner_type": "stage",
+      "target_ids": [
+        "STG_14_HL2_RAVENHOLM"
+      ],
+      "category": "stage_layer_candidate",
+      "batch_id": "continuation_20261120_e",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Use the supplied stage master as the exact geometric edit target. Output ONE image only on the same full 2172x724 canvas. Do not crop, zoom, recenter, rotate, alter the camera or shift objects. Preserve the retained objects' source textures, scale and exact positions. This is one compositing layer, not a new scene, not a collage. No characters, text, labels, HUD, borders or layer diagrams. Create only the distant NIGHT SKY background plate for this exact Ravenholm arena. Keep the muted dark slate-blue overcast sky and subtle cloud texture visible in the original upper band. Remove every brick or wooden building, chimney, roof, pylon, wire, light fixture, tree, fire and ground; seamlessly continue the same night sky behind all removed objects to fill the entire canvas. Fully opaque sky only, edge to edge, no skyline, moon, stars, text, architecture or ground. Match the subdued original exposure without brightening the arena into daytime.",
+      "source_references": [
+        {
+          "source_asset_id": "stage_ravenholm_master_d",
+          "repository_path": "assets/resonance/candidates/continuation_20261120_d/stage_ravenholm_master_d.png",
+          "reference_filename": "stage_ravenholm_master_d.png",
+          "sha256": "4e29d7d47f284422bff83e01d774f77ac40682f8569f03a608b6012567b0cb7e",
+          "width": 2172,
+          "height": 724,
+          "provenance": "generated_project_candidate",
+          "role": "edit_target",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_c400361f185800786ea984e795f2a0dd4afee990.1920x1080.jpg?t=1745368545"
+      ],
+      "upstream_reference_note": "Les URL officielles sont celles du maître D. Les bitmaps utilisés dans cette édition E sont les candidats générés ci-dessus, pas des captures directes du jeu.",
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "generated_project_candidate_edit_target",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à corriger",
+      "file_path": "assets/resonance/candidates/continuation_20261120_e/layer_ravenholm_sky_e.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/layer_ravenholm_sky_e.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": false,
+      "selected_for_next_review": true,
+      "notes": "Plaque opaque de ciel nocturne ardoise, sans bâtiment ni cheminée. Fond prolongé générativement derrière les objets retirés; seule la continuité visuelle candidate est visée.",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGB",
+      "byte_size": 1448558,
+      "sha256": "a4ca6a5806bf54b9ec983af1c1e2bd884498e5d9dd346a45d72c2c1ca90b5a2b",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "layer_id": "L00_ambience",
+      "parent_asset_id": "stage_ravenholm_master_d",
+      "qa_report": "docs/resonance/production/continuation_20261120_e/stage_layer_review.json",
+      "alpha_check": "sans objet: ciel volontairement opaque"
+    },
+    {
+      "asset_id": "layer_ravenholm_floor_e",
+      "name_fr": "Ravenholm — sol L04",
+      "owner_id": "STG_14_HL2_RAVENHOLM",
+      "owner_type": "stage",
+      "target_ids": [
+        "STG_14_HL2_RAVENHOLM"
+      ],
+      "category": "stage_layer_candidate",
+      "batch_id": "continuation_20261120_e",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Use the supplied stage master as the exact geometric edit target. Output ONE image only on the same full 2172x724 canvas. Do not crop, zoom, recenter, rotate, alter the camera or shift objects. Preserve the retained objects' source textures, scale and exact positions. This is one compositing layer, not a new scene, not a collage. No characters, text, labels, HUD, borders or layer diagrams. Keep ONLY the entire continuous flat stone fighting walkway along the bottom: its thin worn slab top surface, the straight curb edge, and the dark stone/concrete front fascia down to the bottom canvas edge. Preserve its original shape, exact y position, perspective, slab seams and warm lighting. Remove every building, brick facade, wooden hut, pipe, tank, chimney, doorway, pylon and its base, wire, rail, fire, sky and background ground behind the fighting platform. All removed pixels become truly transparent. The retained platform must still touch the left, right and bottom canvas edges, staying in the exact position of the source. Do not retain pieces of the left hut or right brick wall standing on top of the floor. Do not introduce any new steps, ramps, gaps, objects, shadows, fog, dark background or neon outline. Tight clean alpha edge along the back of the stone strip. This is one L04_ground candidate compositing layer, not a newly painted room.",
+      "source_references": [
+        {
+          "source_asset_id": "stage_ravenholm_master_d",
+          "repository_path": "assets/resonance/candidates/continuation_20261120_d/stage_ravenholm_master_d.png",
+          "reference_filename": "stage_ravenholm_master_d.png",
+          "sha256": "4e29d7d47f284422bff83e01d774f77ac40682f8569f03a608b6012567b0cb7e",
+          "width": 2172,
+          "height": 724,
+          "provenance": "generated_project_candidate",
+          "role": "edit_target",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_c400361f185800786ea984e795f2a0dd4afee990.1920x1080.jpg?t=1745368545"
+      ],
+      "upstream_reference_note": "Les URL officielles sont celles du maître D. Les bitmaps utilisés dans cette édition E sont les candidats générés ci-dessus, pas des captures directes du jeu.",
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "generated_project_candidate_edit_target",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à corriger",
+      "file_path": "assets/resonance/candidates/continuation_20261120_e/layer_ravenholm_floor_e.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/layer_ravenholm_floor_e.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "notes": "Bande de sol et face verticale basse isolées sur le canevas complet. La limite arrière est légèrement aplatie/déplacée par rapport au maître; raccord exact, alignement du sol et projection logique restent à valider. Aucun décor complet ne peut être déduit de ce sol.",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 506677,
+      "sha256": "b0ad3db0ec698377f8d2e7d34499ab3ef977b09860399e4ae7a4b89b178ef5ae",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "layer_id": "L04_ground",
+      "parent_asset_id": "stage_ravenholm_master_d",
+      "qa_report": "docs/resonance/production/continuation_20261120_e/stage_layer_review.json",
+      "alpha_check": "canal A présent; composition de contrôle effectuée, raccords encore à valider",
+      "alpha_stats": {
+        "transparent_pixels": 1341108,
+        "transparent_fraction": 0.8528356887762889,
+        "partial_pixels": 231381,
+        "opaque_pixels": 39,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "bbox_alpha_nonzero": [
+          0,
+          19,
+          2172,
+          724
+        ],
+        "bbox_alpha_at_least_16": [
+          0,
+          621,
+          2172,
+          724
+        ]
+      }
+    },
+    {
+      "asset_id": "layer_canals_mid_structure_v2_e",
+      "name_fr": "Canaux — murs et pont L02, révision du mur arrière",
+      "owner_id": "STG_12_HL2_CANALS",
+      "owner_type": "stage",
+      "target_ids": [
+        "STG_12_HL2_CANALS"
+      ],
+      "category": "stage_layer_candidate",
+      "batch_id": "continuation_20261120_e",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Correct ONE omission in the transparent compositing layer shown in image1. Image2 is the full original stage master and must be used only as a geometric reference. Keep exactly image1's whole 2172x724 canvas, all its existing side brick walls, attached iron rails and central timber bridge/posts in precisely the same positions. The missing piece is the distant REAR BRICK WALL under the small cream/red-roof house, visible through and behind the central bridge in image2. Restore this rear retaining wall in its original position, approximately the central opening x880–1340 and y390–525, including its TWO small round sewer outlets, low black iron railing, dark openings and weathered brown brick. It must sit BEHIND the existing timber posts, with the posts remaining fully visible in front. This restored wall should close the accidental empty gap beneath the distant house when composited. Also retain the original thin utility wires crossing the upper sky, following the exact curves and positions visible in image2. Keep all sky, buildings/houses/roofs/tree, water/reflections, right wooden bank panels and diagonal shoring, left loose leaning timber, and foreground fighting floor fully alpha transparent; those belong to other layers. Do not restore the full scene. Do not add a sky or water behind the bridge. Do not alter the existing walls/arches, move the bridge, change perspective, crop, recenter or zoom. Clean naturally antialiased edges without colored matte residue. Output only this corrected transparent architecture layer, with no text, labels, borders or extra panels.",
+      "source_references": [
+        {
+          "source_asset_id": "layer_canals_mid_structure_e",
+          "repository_path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_mid_structure_e.png",
+          "reference_filename": "exec-3f6be428-c94e-43aa-9030-b9f8d07f931d.png",
+          "sha256": "6c8ed08825999198ad8fe83cc4dd11afefc6a6f943657da27dd0b0f052ec0309",
+          "width": 2172,
+          "height": 724,
+          "provenance": "generated_project_candidate",
+          "role": "edit_target",
+          "visually_inspected": true
+        },
+        {
+          "source_asset_id": "stage_canals_master_d",
+          "repository_path": "assets/resonance/candidates/continuation_20261120_d/stage_canals_master_d.png",
+          "reference_filename": "stage_canals_master_d.png",
+          "sha256": "5766b37fbd175db30f6b95971e8012eeaff64475a45fea25d77ff3ffc65e8a2a",
+          "width": 2172,
+          "height": 724,
+          "provenance": "generated_project_candidate",
+          "role": "generated_master_geometry_reference",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_394f4ad714937db2cc90545972b318ddb6db7231.1920x1080.jpg?t=1745368545"
+      ],
+      "upstream_reference_note": "Les URL officielles sont celles du maître D. Les bitmaps utilisés dans cette édition E sont les candidats générés ci-dessus, pas des captures directes du jeu.",
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "generated_project_candidate_edit_target",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à corriger",
+      "file_path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_mid_structure_v2_e.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_mid_structure_v2_e.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "notes": "Le mur arrière central, les deux arches d’égout et la rambarde basse sont rétablis; les fils supérieurs sont conservés. Le composite v2 ferme la grande lacune sous la maison. Quelques jours étroits persistent près de la ligne d’eau et les raccords ne sont pas certifiés. Révision retenue pour la prochaine revue, pas validation finale de L02.",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 1942184,
+      "sha256": "e43c4be54cbb2b0c8510a103d9d5603480405c62fc0311d52785d08a5dacc680",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "layer_id": "L02_mid",
+      "parent_asset_id": "stage_canals_master_d",
+      "qa_report": "docs/resonance/production/continuation_20261120_e/stage_layer_review.json",
+      "revision_of": "layer_canals_mid_structure_e",
+      "alpha_check": "canal A présent; composition de contrôle effectuée, raccords encore à valider",
+      "alpha_stats": {
+        "transparent_pixels": 729896,
+        "transparent_fraction": 0.4641545333374032,
+        "partial_pixels": 841552,
+        "opaque_pixels": 1080,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "bbox_alpha_nonzero": [
+          0,
+          0,
+          2172,
+          724
+        ],
+        "bbox_alpha_at_least_16": [
+          0,
+          0,
+          2172,
+          579
+        ]
+      }
+    }
+  ],
+  "targets_receiving_first_file": [
+    "antlion_worker_ep2",
+    "costume_hecu_beret_hl1",
+    "dog_hl2",
+    "gargantua_hl1",
+    "hunter_ep2"
+  ]
+}

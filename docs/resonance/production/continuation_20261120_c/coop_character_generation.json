@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0",
+  "module": "Half Life Resonance",
+  "batch_id": "continuation_20261120_c",
+  "recorded_at": "2026-11-20T15:02:51.897Z",
+  "generator": "image_gen built-in",
+  "purpose": "Deux sprites individuels ATLAS et P-body, demandés à partir de références de modèle, non produits.",
+  "counts": {
+    "requests": 2,
+    "generated": 0,
+    "blocked": 2,
+    "physical_output_files": 0,
+    "certified_one_to_one": 0
+  },
+  "assets": [
+    {
+      "asset_id": "atlas_portal2_idle_c",
+      "owner_id": "atlas_portal2",
+      "owner_type": "support_character",
+      "category": "fighter_key_pose",
+      "requested_repository_path": "assets/resonance/candidates/continuation_20261120_c/atlas_portal2_idle_c.png",
+      "generation_status": "refus automatique",
+      "status": "non produit",
+      "qa_status": "non produit",
+      "alpha_check": "non applicable",
+      "prompt": "Use case: stylized-concept. Asset type: ONE individual full-body raster 2D fighting-game sprite for Half-Life Resonance. Input image 1 is a visual model reference for ATLAS from the released Portal 2 game, not a style suggestion: preserve its actual recognizable identity, mechanical construction, white spherical torso, small bright blue radial iris within the rectangular dark ocular opening, compact stout proportions, slim exposed metal arm linkages, blue details, asymmetrical leg machinery and feet. Create ATLAS alone in a calm mechanical ready stance, facing screen RIGHT in side-on gameplay projection with a slight three-quarter torso so the eye remains visible. Both feet supported on one level baseline; complete body, hands and feet visible. Arms relaxed and slightly bent, hands poised at waist/chest level rather than a raised salute. Do not add a weapon, portal gun, human head, neck, armor, extra limbs or a second robot. The source proportions are essential: compact spherical body and short legs, long articulated arms, not a humanoid soldier. Preserve physical left/right placement of the reference's asymmetrical parts. Detailed hand-painted raster UHD game-sprite treatment, clean edges and readable silhouette, faithful restrained white and dark metal with small blue accents, soft upper-left light and natural surface wear; no vector outlines or cartoon redesign. TRUE transparent alpha background, generous transparent margins on all sides, no floor or ground shadow disc, no scene, no text, no logo overlay, no UI, no contact sheet, no duplicate pose, no cropping. One robot, one image.",
+      "transparent_background_requested": true,
+      "reference": {
+        "page_url": "https://theportalwiki.com/wiki/File:Atlas.png",
+        "image_url": "https://i1.theportalwiki.net/img/0/04/Atlas.png",
+        "sha256": "bdecd308ddb015d437e5e42bf362983ac950c5c3f5d5c6098be81b368bffbd5c",
+        "width": 778,
+        "height": 1762,
+        "byte_size": 173881,
+        "provenance": "Capture de modèle Portal 2 attribuée à Valve Corporation par la page de fichier Portal Wiki; hébergement secondaire.",
+        "visually_inspected": true,
+        "reference_filename": "wiki_Atlas.png"
+      },
+      "official_context_sources": [
+        {
+          "title": "Valve — Bot Trust",
+          "url": "https://www.thinkwithportals.com/media_16.php",
+          "scope": "Présentation officielle des robots coopératifs; pas la source bitmap effectivement soumise."
+        },
+        {
+          "title": "Valve — Peer Review",
+          "url": "https://www.thinkwithportals.com/blog.php?id=6430",
+          "scope": "Confirme ATLAS et P-body comme acteurs de la campagne coopérative officielle."
+        }
+      ],
+      "tool_error": {
+        "code": "moderation_blocked",
+        "stage": "output",
+        "categories": [
+          "other"
+        ],
+        "request_id": "db95e1b4-52d2-4686-9d81-d86e91f64fa0",
+        "message": "Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID db95e1b4-52d2-4686-9d81-d86e91f64fa0."
+      },
+      "retried": false,
+      "repository_path": null,
+      "file_path": null,
+      "width": null,
+      "height": null,
+      "color_mode": null,
+      "byte_size": null,
+      "sha256": null,
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "notes": "Aucun fichier candidat produit. Le refus automatique ne fournit pas de justification plus précise que « other ». Aucune relance, conversion, retouche ou certification n'a été effectuée; la cible reste à produire.",
+      "batch_id": "continuation_20261120_c",
+      "name_fr": "ATLAS — coopération Portal 2",
+      "target_ids": [
+        "atlas_portal2"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "visual_identity_reference",
+      "selected_for_next_review": false
+    },
+    {
+      "asset_id": "pbody_portal2_idle_c",
+      "owner_id": "pbody_portal2",
+      "owner_type": "support_character",
+      "category": "fighter_key_pose",
+      "requested_repository_path": "assets/resonance/candidates/continuation_20261120_c/pbody_portal2_idle_c.png",
+      "generation_status": "refus automatique",
+      "status": "non produit",
+      "qa_status": "non produit",
+      "alpha_check": "non applicable",
+      "prompt": "Use case: stylized-concept. Asset type: ONE individual full-body raster 2D fighting-game sprite for Half-Life Resonance. Input image 1 is the visual model reference for P-body from the released Portal 2 game. Preserve its exact recognizable tall slender silhouette: elongated white oval turret-like torso with a small single orange radial iris, thin articulated dark mechanical arms, very long narrow jointed legs, original white shell panels and small mechanical feet. Keep the anatomy and asymmetries shown by the source, especially the broad orange stripe on the character's RIGHT lower leg (the leg appearing on the left in the frontal source image); do not swap it to the other leg or apply stripes to both legs. Preserve the little orange mark on the torso and the original worn white material. Create P-body alone in a relaxed mechanical ready stance facing screen RIGHT with a slight three-quarter torso so the single eye can be read; both feet on one horizontal baseline and both hands softly open with elbows bent. No portal gun or weapon, no extra props. Full body entirely visible with generous transparent margins above the head, below both feet and beside both hands. Detailed hand-painted raster UHD 2D game sprite, crisp natural edges, controlled upper-left lighting, faithful original game geometry and joints; avoid chibi proportions, human head or neck, extra armor, vector-art outlines, or redesign. TRUE transparent alpha background, no scenery, no floor, no ground shadow disc, no text, no labels, no UI, no duplicate pose, no contact sheet. Exactly one robot per image.",
+      "transparent_background_requested": true,
+      "reference": {
+        "page_url": "https://theportalwiki.com/wiki/File:P-body.png",
+        "image_url": "https://i1.theportalwiki.net/img/7/74/P-body.png",
+        "sha256": "b021bb9c3d18664dd4f19ca5a7c94cf8fce9c74e9db4577da39bc87818942c49",
+        "width": 753,
+        "height": 1415,
+        "byte_size": 178194,
+        "provenance": "Capture de modèle Portal 2 attribuée à Valve Corporation par la page de fichier Portal Wiki; hébergement secondaire.",
+        "visually_inspected": true,
+        "reference_filename": "wiki_P-body.png"
+      },
+      "official_context_sources": [
+        {
+          "title": "Valve — Bot Trust",
+          "url": "https://www.thinkwithportals.com/media_16.php",
+          "scope": "Présentation officielle des robots coopératifs; pas la source bitmap effectivement soumise."
+        },
+        {
+          "title": "Valve — Peer Review",
+          "url": "https://www.thinkwithportals.com/blog.php?id=6430",
+          "scope": "Confirme ATLAS et P-body comme acteurs de la campagne coopérative officielle."
+        }
+      ],
+      "tool_error": {
+        "code": "moderation_blocked",
+        "stage": "output",
+        "categories": [
+          "other"
+        ],
+        "request_id": "0b3677f9-3293-4e66-9e39-a5793bdad81e",
+        "message": "Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID 0b3677f9-3293-4e66-9e39-a5793bdad81e."
+      },
+      "retried": false,
+      "repository_path": null,
+      "file_path": null,
+      "width": null,
+      "height": null,
+      "color_mode": null,
+      "byte_size": null,
+      "sha256": null,
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "notes": "Aucun fichier candidat produit. Le refus automatique ne fournit pas de justification plus précise que « other ». Aucune relance, conversion, retouche ou certification n'a été effectuée; la cible reste à produire.",
+      "batch_id": "continuation_20261120_c",
+      "name_fr": "P-body — coopération Portal 2",
+      "target_ids": [
+        "pbody_portal2"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "visual_identity_reference",
+      "selected_for_next_review": false
+    }
+  ]
+}

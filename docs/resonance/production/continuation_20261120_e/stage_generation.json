@@ -1,0 +1,534 @@
+{
+  "schema_version": "1.0",
+  "module": "Half Life Resonance",
+  "batch_id": "continuation_20261120_e",
+  "counts": {
+    "requests": 7,
+    "generated_png_files": 7,
+    "blocked": 0,
+    "distinct_stage_layer_ids": 6
+  },
+  "assets": [
+    {
+      "asset_id": "layer_canals_sky_e",
+      "name_fr": "Canaux — ciel L00",
+      "owner_id": "STG_12_HL2_CANALS",
+      "owner_type": "stage",
+      "target_ids": [
+        "STG_12_HL2_CANALS"
+      ],
+      "category": "stage_layer_candidate",
+      "batch_id": "continuation_20261120_e",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Use the supplied stage master as the exact geometric edit target. Output ONE image only on the same full 2172x724 canvas. Do not crop, zoom, recenter, rotate, alter the camera or shift objects. Preserve the retained objects' source textures, scale and exact positions. This is one compositing layer, not a new scene, not a collage. No characters, text, labels, HUD, borders or layer diagrams. Create only the distant SKY background plate. Keep the same muted cloudy blue-grey daylight and source cloud structure visible across the top. Remove every building, roof, tree, wire, iron railing, brick wall, bridge, wooden post, water reflection and ground surface, then seamlessly continue the same cloudy sky behind all removed geometry to fill the entire canvas. Sky and subtle cloud texture only, fully opaque from edge to edge, without a horizon, sun disk, landscape or fog wall. The sky will be occluded by the other transparent architecture layers.",
+      "source_references": [
+        {
+          "source_asset_id": "stage_canals_master_d",
+          "repository_path": "assets/resonance/candidates/continuation_20261120_d/stage_canals_master_d.png",
+          "reference_filename": "stage_canals_master_d.png",
+          "sha256": "5766b37fbd175db30f6b95971e8012eeaff64475a45fea25d77ff3ffc65e8a2a",
+          "width": 2172,
+          "height": 724,
+          "provenance": "generated_project_candidate",
+          "role": "edit_target",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_394f4ad714937db2cc90545972b318ddb6db7231.1920x1080.jpg?t=1745368545"
+      ],
+      "upstream_reference_note": "Les URL officielles sont celles du maître D. Les bitmaps utilisés dans cette édition E sont les candidats générés ci-dessus, pas des captures directes du jeu.",
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "generated_project_candidate_edit_target",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à corriger",
+      "file_path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_sky_e.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_sky_e.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": false,
+      "selected_for_next_review": true,
+      "notes": "Plaque de ciel opaque sur tout le canevas, sans architecture. Palette bleu-gris proche du maître; nuages et zones cachées reconstitués générativement, sans identité pixel à pixel.",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGB",
+      "byte_size": 1579557,
+      "sha256": "cf8dc89190cdba44cb2967cd33b7331ce080ebc69755839bae9bb9748996b7f7",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "layer_id": "L00_ambience",
+      "parent_asset_id": "stage_canals_master_d",
+      "qa_report": "docs/resonance/production/continuation_20261120_e/stage_layer_review.json",
+      "alpha_check": "sans objet: ciel volontairement opaque"
+    },
+    {
+      "asset_id": "layer_canals_far_city_e",
+      "name_fr": "Canaux — ville lointaine L01",
+      "owner_id": "STG_12_HL2_CANALS",
+      "owner_type": "stage",
+      "target_ids": [
+        "STG_12_HL2_CANALS"
+      ],
+      "category": "stage_layer_candidate",
+      "batch_id": "continuation_20261120_e",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Use the supplied stage master as the exact geometric edit target. Output ONE image only on the same full 2172x724 canvas. Do not crop, zoom, recenter, rotate, alter the camera or shift objects. Preserve the retained objects' source textures, scale and exact positions. This is one compositing layer, not a new scene, not a collage. No characters, text, labels, HUD, borders or layer diagrams. Keep ONLY the distant skyline: the worn tan high-rise and neighboring grey apartment blocks in the upper left/center, the small cream house and red tiled roof visible through the central bridge opening, and the far cream/red-roof house with leafless branches toward the upper right. Preserve their recognizable architecture, materials and placement. Complete only small hidden background portions needed behind removed nearer objects; do not add new towers or expand buildings upward. Remove the whole sky, all overhead utility wires, all canal brick retaining walls and their iron rails, all timber bridge beams and posts, right wooden bank shoring, water, reflections and foreground stone platform. Removed areas must be truly alpha transparent. Keep distant buildings in their original positions, not arranged as separate floating thumbnails or centered as a lineup. No canal walls or bridge remnants should survive in this distant-city layer. Clean natural-colored silhouette edges without glow or colored matte fringes.",
+      "source_references": [
+        {
+          "source_asset_id": "stage_canals_master_d",
+          "repository_path": "assets/resonance/candidates/continuation_20261120_d/stage_canals_master_d.png",
+          "reference_filename": "stage_canals_master_d.png",
+          "sha256": "5766b37fbd175db30f6b95971e8012eeaff64475a45fea25d77ff3ffc65e8a2a",
+          "width": 2172,
+          "height": 724,
+          "provenance": "generated_project_candidate",
+          "role": "edit_target",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_394f4ad714937db2cc90545972b318ddb6db7231.1920x1080.jpg?t=1745368545"
+      ],
+      "upstream_reference_note": "Les URL officielles sont celles du maître D. Les bitmaps utilisés dans cette édition E sont les candidats générés ci-dessus, pas des captures directes du jeu.",
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "generated_project_candidate_edit_target",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à corriger",
+      "file_path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_far_city_e.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_far_city_e.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "notes": "Immeubles, maison centrale et pignon/arbre droit isolés aux positions approximatives du maître. Les parties cachées par les murs restent incomplètes: une translation en parallaxe peut révéler des coupes. Ne pas considérer la seule séparation alpha comme une couche terminée.",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 535444,
+      "sha256": "9fee06185646e6b65c8d04022f05b04bf8a1590d6340fa46bc629981a6a26a4e",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "layer_id": "L01_far",
+      "parent_asset_id": "stage_canals_master_d",
+      "qa_report": "docs/resonance/production/continuation_20261120_e/stage_layer_review.json",
+      "alpha_check": "canal A présent; composition de contrôle effectuée, raccords encore à valider",
+      "alpha_stats": {
+        "transparent_pixels": 1374397,
+        "transparent_fraction": 0.874004787196158,
+        "partial_pixels": 197712,
+        "opaque_pixels": 419,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "bbox_alpha_nonzero": [
+          93,
+          21,
+          2126,
+          724
+        ],
+        "bbox_alpha_at_least_16": [
+          399,
+          24,
+          1739,
+          392
+        ]
+      }
+    },
+    {
+      "asset_id": "layer_canals_mid_structure_e",
+      "name_fr": "Canaux — murs et pont L02, première version",
+      "owner_id": "STG_12_HL2_CANALS",
+      "owner_type": "stage",
+      "target_ids": [
+        "STG_12_HL2_CANALS"
+      ],
+      "category": "stage_layer_candidate",
+      "batch_id": "continuation_20261120_e",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Use the supplied stage master as the exact geometric edit target. Output ONE image only on the same full 2172x724 canvas. Do not crop, zoom, recenter, rotate, alter the camera or shift objects. Preserve the retained objects' source textures, scale and exact positions. This is one compositing layer, not a new scene, not a collage. No characters, text, labels, HUD, borders or layer diagrams. Keep ONLY the brick canal retaining structures and the central timber bridge/gantry: the weathered dark brick walls on left and right, their round sewer arches and recessed dark tunnel interiors, the iron railings physically attached to the tops of the brick walls, and the central horizontal timber bridge with its supporting vertical timber posts. Preserve their exact arrangement and depths as seen in the master. Do not center or enlarge the bridge. Remove all sky, distant apartment buildings and cream houses, red roofs, leafless tree, overhead wires, all water and reflections, all foreground stone fighting platform, and the RIGHT BANK wooden wall panels with diagonal shoring braces (these are reserved for a separate near layer). Also remove the large diagonal loose timber leaning against the left wall; keep its underlying brick surface naturally continuous. Every removed area becomes true transparency. Keep the retained structure where it originally stood, with alpha above the skyline and below the wall/post silhouettes. This must not include a new floor, lake, city silhouette or sky. Clean edges without red, yellow or white matte residue.",
+      "source_references": [
+        {
+          "source_asset_id": "stage_canals_master_d",
+          "repository_path": "assets/resonance/candidates/continuation_20261120_d/stage_canals_master_d.png",
+          "reference_filename": "stage_canals_master_d.png",
+          "sha256": "5766b37fbd175db30f6b95971e8012eeaff64475a45fea25d77ff3ffc65e8a2a",
+          "width": 2172,
+          "height": 724,
+          "provenance": "generated_project_candidate",
+          "role": "edit_target",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_394f4ad714937db2cc90545972b318ddb6db7231.1920x1080.jpg?t=1745368545"
+      ],
+      "upstream_reference_note": "Les URL officielles sont celles du maître D. Les bitmaps utilisés dans cette édition E sont les candidats générés ci-dessus, pas des captures directes du jeu.",
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "generated_project_candidate_edit_target",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à corriger",
+      "file_path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_mid_structure_e.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_mid_structure_e.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": true,
+      "selected_for_next_review": false,
+      "notes": "Première séparation des murs latéraux, arches et pont. Le mur arrière central et ses deux sorties d’égout ont été omis; le composite v1 révélait le ciel sous la maison. Conservée pour traçabilité, non retenue pour la prochaine revue; remplacée à cette étape par layer_canals_mid_structure_v2_e.",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 1950267,
+      "sha256": "6c8ed08825999198ad8fe83cc4dd11afefc6a6f943657da27dd0b0f052ec0309",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "layer_id": "L02_mid",
+      "parent_asset_id": "stage_canals_master_d",
+      "qa_report": "docs/resonance/production/continuation_20261120_e/stage_layer_review.json",
+      "alpha_check": "canal A présent; composition de contrôle effectuée, raccords encore à valider",
+      "alpha_stats": {
+        "transparent_pixels": 779905,
+        "transparent_fraction": 0.4959561928309067,
+        "partial_pixels": 791424,
+        "opaque_pixels": 1199,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "bbox_alpha_nonzero": [
+          0,
+          0,
+          2172,
+          724
+        ],
+        "bbox_alpha_at_least_16": [
+          0,
+          0,
+          2172,
+          576
+        ]
+      }
+    },
+    {
+      "asset_id": "layer_canals_near_water_e",
+      "name_fr": "Canaux — eau et soutènements L03",
+      "owner_id": "STG_12_HL2_CANALS",
+      "owner_type": "stage",
+      "target_ids": [
+        "STG_12_HL2_CANALS"
+      ],
+      "category": "stage_layer_candidate",
+      "batch_id": "continuation_20261120_e",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Use the supplied stage master as the exact geometric edit target. Output ONE image only on the same full 2172x724 canvas. Do not crop, zoom, recenter, rotate, alter the camera or shift objects. Preserve the retained objects' source textures, scale and exact positions. This is one compositing layer, not a new scene, not a collage. No characters, text, labels, HUD, borders or layer diagrams. Keep ONLY the near canal water surface and the wooden bank shoring: the complete dark brown water band in its original place just behind the fighting walkway, with the source ripples and reflections, the RIGHT bank dark wooden vertical wall panels and diagonal bracing poles, and the large diagonal loose timber leaning against the LEFT brick wall. Preserve their material and exact positions. The water band must stop at the original rear edge of the foreground stone walkway near y580; do not invent water below or in front of the walkway. Remove all brick walls and sewer arches, iron railings, the central timber bridge/gantry including its vertical supporting posts, distant city and houses, sky, tree, wires and every part of the foreground fighting floor/front fascia. Removed regions become true alpha transparency. Fill only tiny water or wood regions previously hidden by the removed bridge posts so the remaining layer has no accidental holes. Do not turn it into a standalone centered lake or a new scene. Keep the upper sky/building area empty except the original right wood panels and left leaning timber. Clean alpha edges, no colored fringe or cloudy backdrop.",
+      "source_references": [
+        {
+          "source_asset_id": "stage_canals_master_d",
+          "repository_path": "assets/resonance/candidates/continuation_20261120_d/stage_canals_master_d.png",
+          "reference_filename": "stage_canals_master_d.png",
+          "sha256": "5766b37fbd175db30f6b95971e8012eeaff64475a45fea25d77ff3ffc65e8a2a",
+          "width": 2172,
+          "height": 724,
+          "provenance": "generated_project_candidate",
+          "role": "edit_target",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_394f4ad714937db2cc90545972b318ddb6db7231.1920x1080.jpg?t=1745368545"
+      ],
+      "upstream_reference_note": "Les URL officielles sont celles du maître D. Les bitmaps utilisés dans cette édition E sont les candidats générés ci-dessus, pas des captures directes du jeu.",
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "generated_project_candidate_edit_target",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à corriger",
+      "file_path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_near_water_e.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_near_water_e.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "notes": "Eau brune, soutènement de bois droit et poutre inclinée gauche séparés. Les reflets restent peints dans l’eau; aucune animation livrée. De petits jours de ciel subsistent à la jonction eau/structures dans le composite v2. Raccords, occultations et extension en parallaxe restent à corriger.",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 983823,
+      "sha256": "8033c8cd67f79772f8d90c97be81565294b3af1a5d46d4aaab638966c6cd59c2",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "layer_id": "L03_near",
+      "parent_asset_id": "stage_canals_master_d",
+      "qa_report": "docs/resonance/production/continuation_20261120_e/stage_layer_review.json",
+      "alpha_check": "canal A présent; composition de contrôle effectuée, raccords encore à valider",
+      "alpha_stats": {
+        "transparent_pixels": 1145770,
+        "transparent_fraction": 0.7286165969699745,
+        "partial_pixels": 425714,
+        "opaque_pixels": 1044,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "bbox_alpha_nonzero": [
+          0,
+          21,
+          2172,
+          724
+        ],
+        "bbox_alpha_at_least_16": [
+          0,
+          112,
+          2172,
+          590
+        ]
+      }
+    },
+    {
+      "asset_id": "layer_ravenholm_sky_e",
+      "name_fr": "Ravenholm — ciel L00",
+      "owner_id": "STG_14_HL2_RAVENHOLM",
+      "owner_type": "stage",
+      "target_ids": [
+        "STG_14_HL2_RAVENHOLM"
+      ],
+      "category": "stage_layer_candidate",
+      "batch_id": "continuation_20261120_e",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Use the supplied stage master as the exact geometric edit target. Output ONE image only on the same full 2172x724 canvas. Do not crop, zoom, recenter, rotate, alter the camera or shift objects. Preserve the retained objects' source textures, scale and exact positions. This is one compositing layer, not a new scene, not a collage. No characters, text, labels, HUD, borders or layer diagrams. Create only the distant NIGHT SKY background plate for this exact Ravenholm arena. Keep the muted dark slate-blue overcast sky and subtle cloud texture visible in the original upper band. Remove every brick or wooden building, chimney, roof, pylon, wire, light fixture, tree, fire and ground; seamlessly continue the same night sky behind all removed objects to fill the entire canvas. Fully opaque sky only, edge to edge, no skyline, moon, stars, text, architecture or ground. Match the subdued original exposure without brightening the arena into daytime.",
+      "source_references": [
+        {
+          "source_asset_id": "stage_ravenholm_master_d",
+          "repository_path": "assets/resonance/candidates/continuation_20261120_d/stage_ravenholm_master_d.png",
+          "reference_filename": "stage_ravenholm_master_d.png",
+          "sha256": "4e29d7d47f284422bff83e01d774f77ac40682f8569f03a608b6012567b0cb7e",
+          "width": 2172,
+          "height": 724,
+          "provenance": "generated_project_candidate",
+          "role": "edit_target",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_c400361f185800786ea984e795f2a0dd4afee990.1920x1080.jpg?t=1745368545"
+      ],
+      "upstream_reference_note": "Les URL officielles sont celles du maître D. Les bitmaps utilisés dans cette édition E sont les candidats générés ci-dessus, pas des captures directes du jeu.",
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "generated_project_candidate_edit_target",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à corriger",
+      "file_path": "assets/resonance/candidates/continuation_20261120_e/layer_ravenholm_sky_e.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/layer_ravenholm_sky_e.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": false,
+      "selected_for_next_review": true,
+      "notes": "Plaque opaque de ciel nocturne ardoise, sans bâtiment ni cheminée. Fond prolongé générativement derrière les objets retirés; seule la continuité visuelle candidate est visée.",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGB",
+      "byte_size": 1448558,
+      "sha256": "a4ca6a5806bf54b9ec983af1c1e2bd884498e5d9dd346a45d72c2c1ca90b5a2b",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "layer_id": "L00_ambience",
+      "parent_asset_id": "stage_ravenholm_master_d",
+      "qa_report": "docs/resonance/production/continuation_20261120_e/stage_layer_review.json",
+      "alpha_check": "sans objet: ciel volontairement opaque"
+    },
+    {
+      "asset_id": "layer_ravenholm_floor_e",
+      "name_fr": "Ravenholm — sol L04",
+      "owner_id": "STG_14_HL2_RAVENHOLM",
+      "owner_type": "stage",
+      "target_ids": [
+        "STG_14_HL2_RAVENHOLM"
+      ],
+      "category": "stage_layer_candidate",
+      "batch_id": "continuation_20261120_e",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Use the supplied stage master as the exact geometric edit target. Output ONE image only on the same full 2172x724 canvas. Do not crop, zoom, recenter, rotate, alter the camera or shift objects. Preserve the retained objects' source textures, scale and exact positions. This is one compositing layer, not a new scene, not a collage. No characters, text, labels, HUD, borders or layer diagrams. Keep ONLY the entire continuous flat stone fighting walkway along the bottom: its thin worn slab top surface, the straight curb edge, and the dark stone/concrete front fascia down to the bottom canvas edge. Preserve its original shape, exact y position, perspective, slab seams and warm lighting. Remove every building, brick facade, wooden hut, pipe, tank, chimney, doorway, pylon and its base, wire, rail, fire, sky and background ground behind the fighting platform. All removed pixels become truly transparent. The retained platform must still touch the left, right and bottom canvas edges, staying in the exact position of the source. Do not retain pieces of the left hut or right brick wall standing on top of the floor. Do not introduce any new steps, ramps, gaps, objects, shadows, fog, dark background or neon outline. Tight clean alpha edge along the back of the stone strip. This is one L04_ground candidate compositing layer, not a newly painted room.",
+      "source_references": [
+        {
+          "source_asset_id": "stage_ravenholm_master_d",
+          "repository_path": "assets/resonance/candidates/continuation_20261120_d/stage_ravenholm_master_d.png",
+          "reference_filename": "stage_ravenholm_master_d.png",
+          "sha256": "4e29d7d47f284422bff83e01d774f77ac40682f8569f03a608b6012567b0cb7e",
+          "width": 2172,
+          "height": 724,
+          "provenance": "generated_project_candidate",
+          "role": "edit_target",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_c400361f185800786ea984e795f2a0dd4afee990.1920x1080.jpg?t=1745368545"
+      ],
+      "upstream_reference_note": "Les URL officielles sont celles du maître D. Les bitmaps utilisés dans cette édition E sont les candidats générés ci-dessus, pas des captures directes du jeu.",
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "generated_project_candidate_edit_target",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à corriger",
+      "file_path": "assets/resonance/candidates/continuation_20261120_e/layer_ravenholm_floor_e.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/layer_ravenholm_floor_e.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "notes": "Bande de sol et face verticale basse isolées sur le canevas complet. La limite arrière est légèrement aplatie/déplacée par rapport au maître; raccord exact, alignement du sol et projection logique restent à valider. Aucun décor complet ne peut être déduit de ce sol.",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 506677,
+      "sha256": "b0ad3db0ec698377f8d2e7d34499ab3ef977b09860399e4ae7a4b89b178ef5ae",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "layer_id": "L04_ground",
+      "parent_asset_id": "stage_ravenholm_master_d",
+      "qa_report": "docs/resonance/production/continuation_20261120_e/stage_layer_review.json",
+      "alpha_check": "canal A présent; composition de contrôle effectuée, raccords encore à valider",
+      "alpha_stats": {
+        "transparent_pixels": 1341108,
+        "transparent_fraction": 0.8528356887762889,
+        "partial_pixels": 231381,
+        "opaque_pixels": 39,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "bbox_alpha_nonzero": [
+          0,
+          19,
+          2172,
+          724
+        ],
+        "bbox_alpha_at_least_16": [
+          0,
+          621,
+          2172,
+          724
+        ]
+      }
+    },
+    {
+      "asset_id": "layer_canals_mid_structure_v2_e",
+      "name_fr": "Canaux — murs et pont L02, révision du mur arrière",
+      "owner_id": "STG_12_HL2_CANALS",
+      "owner_type": "stage",
+      "target_ids": [
+        "STG_12_HL2_CANALS"
+      ],
+      "category": "stage_layer_candidate",
+      "batch_id": "continuation_20261120_e",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Correct ONE omission in the transparent compositing layer shown in image1. Image2 is the full original stage master and must be used only as a geometric reference. Keep exactly image1's whole 2172x724 canvas, all its existing side brick walls, attached iron rails and central timber bridge/posts in precisely the same positions. The missing piece is the distant REAR BRICK WALL under the small cream/red-roof house, visible through and behind the central bridge in image2. Restore this rear retaining wall in its original position, approximately the central opening x880–1340 and y390–525, including its TWO small round sewer outlets, low black iron railing, dark openings and weathered brown brick. It must sit BEHIND the existing timber posts, with the posts remaining fully visible in front. This restored wall should close the accidental empty gap beneath the distant house when composited. Also retain the original thin utility wires crossing the upper sky, following the exact curves and positions visible in image2. Keep all sky, buildings/houses/roofs/tree, water/reflections, right wooden bank panels and diagonal shoring, left loose leaning timber, and foreground fighting floor fully alpha transparent; those belong to other layers. Do not restore the full scene. Do not add a sky or water behind the bridge. Do not alter the existing walls/arches, move the bridge, change perspective, crop, recenter or zoom. Clean naturally antialiased edges without colored matte residue. Output only this corrected transparent architecture layer, with no text, labels, borders or extra panels.",
+      "source_references": [
+        {
+          "source_asset_id": "layer_canals_mid_structure_e",
+          "repository_path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_mid_structure_e.png",
+          "reference_filename": "exec-3f6be428-c94e-43aa-9030-b9f8d07f931d.png",
+          "sha256": "6c8ed08825999198ad8fe83cc4dd11afefc6a6f943657da27dd0b0f052ec0309",
+          "width": 2172,
+          "height": 724,
+          "provenance": "generated_project_candidate",
+          "role": "edit_target",
+          "visually_inspected": true
+        },
+        {
+          "source_asset_id": "stage_canals_master_d",
+          "repository_path": "assets/resonance/candidates/continuation_20261120_d/stage_canals_master_d.png",
+          "reference_filename": "stage_canals_master_d.png",
+          "sha256": "5766b37fbd175db30f6b95971e8012eeaff64475a45fea25d77ff3ffc65e8a2a",
+          "width": 2172,
+          "height": 724,
+          "provenance": "generated_project_candidate",
+          "role": "generated_master_geometry_reference",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_394f4ad714937db2cc90545972b318ddb6db7231.1920x1080.jpg?t=1745368545"
+      ],
+      "upstream_reference_note": "Les URL officielles sont celles du maître D. Les bitmaps utilisés dans cette édition E sont les candidats générés ci-dessus, pas des captures directes du jeu.",
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "generated_project_candidate_edit_target",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à corriger",
+      "file_path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_mid_structure_v2_e.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_mid_structure_v2_e.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "notes": "Le mur arrière central, les deux arches d’égout et la rambarde basse sont rétablis; les fils supérieurs sont conservés. Le composite v2 ferme la grande lacune sous la maison. Quelques jours étroits persistent près de la ligne d’eau et les raccords ne sont pas certifiés. Révision retenue pour la prochaine revue, pas validation finale de L02.",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 1942184,
+      "sha256": "e43c4be54cbb2b0c8510a103d9d5603480405c62fc0311d52785d08a5dacc680",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "layer_id": "L02_mid",
+      "parent_asset_id": "stage_canals_master_d",
+      "qa_report": "docs/resonance/production/continuation_20261120_e/stage_layer_review.json",
+      "revision_of": "layer_canals_mid_structure_e",
+      "alpha_check": "canal A présent; composition de contrôle effectuée, raccords encore à valider",
+      "alpha_stats": {
+        "transparent_pixels": 729896,
+        "transparent_fraction": 0.4641545333374032,
+        "partial_pixels": 841552,
+        "opaque_pixels": 1080,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "bbox_alpha_nonzero": [
+          0,
+          0,
+          2172,
+          724
+        ],
+        "bbox_alpha_at_least_16": [
+          0,
+          0,
+          2172,
+          579
+        ]
+      }
+    }
+  ]
+}

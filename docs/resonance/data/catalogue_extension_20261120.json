@@ -1,0 +1,3164 @@
+{
+  "schema_version": "1.0",
+  "module": "Half Life Resonance",
+  "created_on": "2026-11-20",
+  "scope": "Extension additive documentée depuis le contenu réellement présent dans la PR; audit de production, pas inventaire exhaustif de toute la franchise.",
+  "baseline": {
+    "branch": "feat/half-life-resonance-bible-v1",
+    "commit": "aa2eb7224911be62214fc019b4a823269eb6252c",
+    "fighter_count": 24,
+    "reserve_count": 12,
+    "stage_count": 24,
+    "boss_catalog_count": 25
+  },
+  "count_semantics": "Les costumes sont des apparences liées à un owner, pas des personnages supplémentaires; les scènes, noyaux et petites machines ne sont pas tous des combattants. Chaque ligne est une cible de production.",
+  "counts": {
+    "targets": 102,
+    "by_category": {
+      "character": 50,
+      "costume": 16,
+      "stage": 22,
+      "boss": 4,
+      "archive": 10
+    },
+    "by_content_class": {
+      "released_reference": 82,
+      "official_demo_reference": 2,
+      "official_alternate_continuity": 6,
+      "released_multiplayer_variant": 2,
+      "documented_cut_content": 10
+    },
+    "new_generated_images": 8,
+    "new_playable_fighters": 0,
+    "certified_one_to_one": 0,
+    "targets_with_generation_blocked": 7,
+    "new_generated_images_scope": "PNG cumulés liés aux 102 cibles de cette extension; inclut versions conservées et couche de sol. Ce compteur ne mesure ni personnages terminés ni nouvelles entités."
+  },
+  "production_contract": {
+    "single_subject_per_image": true,
+    "full_body_for_actors": true,
+    "transparent_actor_background": true,
+    "stage_master_does_not_complete_parallax": true,
+    "archive_disabled_by_default": true,
+    "fidelity_requires_reference_comparison": true
+  },
+  "exclusions_and_gates": [
+    "Les 68 PNG et 229 cibles mentionnés dans un historique précédent ne sont pas supposés disponibles: aucun fichier récupéré ici et aucun compte repris comme livré.",
+    "La rubrique Episode Three est fondée sur les archives identifiées; aucune sortie, apparence ou campagne Half-Life 3 n’est présumée.",
+    "Les sources secondaires établissent des identités; elles ne certifient pas des silhouettes générées. Plusieurs originaux du wiki étaient indisponibles lors de cette recherche.",
+    "Pas de mélange de modèles du remake Black Mesa, de ports amateurs, de Half-Life HD et de GoldSrc original.",
+    "Les contenus communautaires du Workshop ne deviennent pas des contenus officiels par leur présence sur Steam.",
+    "Aperture Desk Job reste un module officiel de continuité alternative; ses événements ne sont pas imposés à Portal 1/2.",
+    "Les apparences qui n’existent que par portrait/voix ne reçoivent pas de corps inventé prétendument fidèle."
+  ],
+  "sources": [
+    {
+      "id": "hl25",
+      "title": "Valve — Half-Life 25th Anniversary",
+      "url": "https://www.half-life.com/en/halflife/25th",
+      "kind": "primary_official",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Uplink, quatre nouvelles cartes, modèles multijoueur Ivan et Proto-Barney officiellement distribués. Ne certifie pas les dessins du projet."
+    },
+    {
+      "id": "hl220",
+      "title": "Valve — Half-Life 2 20th Anniversary",
+      "url": "https://www.half-life.com/en/halflife2/20th",
+      "kind": "primary_official",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Lost Coast; archives vidéo E3 2002/2003; expériences Episode Three; correction du reflet des yeux du G-Man."
+    },
+    {
+      "id": "hl2doc",
+      "title": "Valve — Half-Life 2: 20th Anniversary Documentary",
+      "url": "https://www.youtube.com/watch?v=YCjNT9qGjh4",
+      "kind": "primary_official",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Documentaire de développement. Pour les archives, choisir une image et un timecode avant génération."
+    },
+    {
+      "id": "alyx",
+      "title": "Valve — Half-Life: Alyx",
+      "url": "https://www.half-life.com/en/alyx",
+      "kind": "primary_official",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Période située entre Half-Life et Half-Life 2; identité Alyx/Eli. Ne suffit pas à certifier un costume."
+    },
+    {
+      "id": "deskjob",
+      "title": "Valve — Aperture Desk Job",
+      "url": "https://store.steampowered.com/app/1902490/",
+      "kind": "primary_official",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Jeu court officiel situé dans l’univers Portal; produit distinct de Portal 3. La continuité est conservée séparément."
+    },
+    {
+      "id": "labrat",
+      "title": "Valve — Lab Rat",
+      "url": "https://www.thinkwithportals.com/comic/",
+      "kind": "primary_official",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Bande dessinée officielle à utiliser comme référence dessinée; pas de modèle 3D retail de Rattmann affirmé."
+    },
+    {
+      "id": "peti",
+      "title": "Valve — The Perpetual Testing Initiative",
+      "url": "https://store.steampowered.com/news/posts/?appids=620&enddate=1335559264",
+      "kind": "primary_official",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Annonce de Puzzle Maker/Steam Workshop. Les cartes communautaires ne deviennent pas officielles par leur hébergement."
+    },
+    {
+      "id": "peti_story",
+      "title": "Perpetual Testing Initiative — multivers et Bendy",
+      "url": "https://combineoverwiki.net/wiki/Perpetual_Testing_Initiative",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "scientist_sdk",
+      "title": "Valve Half-Life SDK — scientist.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/scientist.cpp",
+      "kind": "primary_source_code",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identifiants HEAD_GLASSES, HEAD_EINSTEIN, HEAD_LUTHER et HEAD_SLICK; variations de tête, pas quatre biographies canoniques."
+    },
+    {
+      "id": "kleiner",
+      "title": "Isaac Kleiner",
+      "url": "https://www.combineoverwiki.net/wiki/Isaac_Kleiner",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "kleiner_model",
+      "title": "Modèle retail Isaac Kleiner",
+      "url": "https://combineoverwiki.net/wiki/File:Kleiner_model.jpg",
+      "kind": "game_asset_metadata",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Fiche du modèle Half-Life 2, 721×1742. Original image indisponible au contrôle HTTP; référence visuelle non inspectée."
+    },
+    {
+      "id": "eli",
+      "title": "Eli Vance",
+      "url": "https://www.combineoverwiki.net/wiki/Eli_Vance",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "mossman",
+      "title": "Judith Mossman",
+      "url": "https://www.combineoverwiki.net/wiki/Judith_Mossman",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "breen",
+      "title": "Wallace Breen",
+      "url": "https://www.combineoverwiki.net/wiki/Wallace_Breen",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "gman",
+      "title": "The G-Man",
+      "url": "https://www.combineoverwiki.net/wiki/The_G-Man",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "odessa",
+      "title": "Odessa Cubbage",
+      "url": "https://www.combineoverwiki.net/wiki/Odessa_Cubbage",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "lamarr",
+      "title": "Hedy Lamarr",
+      "url": "https://www.combineoverwiki.net/wiki/Hedy_Lamarr",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "magnusson",
+      "title": "Arne Magnusson",
+      "url": "https://www.combineoverwiki.net/wiki/Arne_Magnusson",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "uriah",
+      "title": "Uriah",
+      "url": "https://www.combineoverwiki.net/wiki/Uriah",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "griggs_sheckley",
+      "title": "Griggs and Sheckley",
+      "url": "https://www.combineoverwiki.net/wiki/Griggs_and_Sheckley",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "characters",
+      "title": "Half-Life — personnages",
+      "url": "https://combineoverwiki.net/wiki/Template:Characters",
+      "kind": "secondary_index",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Index de noms, utilisé seulement pour l’identité; détails de modèle à capturer."
+    },
+    {
+      "id": "fisherman",
+      "title": "Le Pêcheur — Lost Coast",
+      "url": "https://www.combineoverwiki.net/wiki/The_Fisherman",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "russell",
+      "title": "Russell",
+      "url": "https://www.combineoverwiki.net/wiki/Russell",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "larry",
+      "title": "Larry",
+      "url": "https://www.combineoverwiki.net/wiki/Larry",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "alyx_story",
+      "title": "Half-Life: Alyx — lieux et personnages",
+      "url": "https://combineoverwiki.net/wiki/Half-Life:_Alyx_storyline",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "reviver",
+      "title": "Reviver",
+      "url": "https://www.combineoverwiki.net/wiki/Reviver",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "armored_headcrab",
+      "title": "Armored Headcrab",
+      "url": "https://combineoverwiki.net/wiki/Armored_Headcrab",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "bs_story",
+      "title": "Blue Shift — storyline",
+      "url": "https://www.combineoverwiki.net/wiki/Half-Life:_Blue_Shift_storyline",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "rosenberg",
+      "title": "Rosenberg",
+      "url": "https://combineoverwiki.net/wiki/Rosenberg",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "walter",
+      "title": "Walter Bennet",
+      "url": "https://combineoverwiki.net/wiki/Walter_Bennet",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "simmons",
+      "title": "Simmons",
+      "url": "https://combineoverwiki.net/wiki/Simmons",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "decay",
+      "title": "Half-Life: Decay",
+      "url": "https://combineoverwiki.net/wiki/Half-Life:_Decay",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "decay_story",
+      "title": "Decay — Domestic Violence",
+      "url": "https://www.combineoverwiki.net/wiki/Domestic_Violence",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "decay_vorts",
+      "title": "X-8973 and R-4913",
+      "url": "https://combineoverwiki.net/wiki/X-8973_and_R-4913",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "colette_model",
+      "title": "Colette Green — modèle Decay",
+      "url": "https://combineoverwiki.net/wiki/File:Ps2_colette_decay.png",
+      "kind": "game_asset_metadata",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Fiche du modèle player/ginacol/ginacol.dol, 1100×1100; distingue version Head-to-Head. Image originale indisponible au contrôle HTTP."
+    },
+    {
+      "id": "op4",
+      "title": "Half-Life: Opposing Force",
+      "url": "https://combineoverwiki.net/wiki/Half-Life:_Opposing_Force",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "hecu_models",
+      "title": "HECU — modèles et spécialités",
+      "url": "https://www.combineoverwiki.net/wiki/List_of_Hazardous_Environment_Combat_Unit_models",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "voltigore",
+      "title": "Voltigore",
+      "url": "https://www.combineoverwiki.net/wiki/Voltigore",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "shock_roach",
+      "title": "Shock Roach",
+      "url": "https://www.combineoverwiki.net/wiki/Shock_Roach",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "barnacle",
+      "title": "Barnacle",
+      "url": "https://www.combineoverwiki.net/wiki/Barnacle",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "ichthyosaur",
+      "title": "Ichthyosaur",
+      "url": "https://www.combineoverwiki.net/wiki/Ichthyosaur",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "snark",
+      "title": "Snark",
+      "url": "https://www.combineoverwiki.net/wiki/Snark",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "combine",
+      "title": "Combine — unités",
+      "url": "https://www.combineoverwiki.net/wiki/Combine",
+      "kind": "secondary_index",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Index des unités; modèle et version exacts restent à capturer."
+    },
+    {
+      "id": "soldier",
+      "title": "Combine Soldier — variantes",
+      "url": "https://www.combineoverwiki.net/wiki/Combine_Soldier",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "combine_markings",
+      "title": "Combine imagery",
+      "url": "https://www.combineoverwiki.net/wiki/Combine_Imagery",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "locations",
+      "title": "Lieux Half-Life et Portal",
+      "url": "https://combineoverwiki.net/wiki/Locations_in_the_Half-Life_and_Portal_universe",
+      "kind": "secondary_index",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Noms de lieux et cartes; aucune topologie 2D finale n’est attestée."
+    },
+    {
+      "id": "portal_story",
+      "title": "Portal — storyline",
+      "url": "https://www.combineoverwiki.net/wiki/Portal_storyline",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "portal2_story",
+      "title": "Portal 2 — storyline",
+      "url": "https://combineoverwiki.net/wiki/Portal_2_storyline",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "portal_chars",
+      "title": "Portal — characters",
+      "url": "https://theportalwiki.com/wiki/Characters",
+      "kind": "secondary_index",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Index de personnages; référence de modèle requise avant génération."
+    },
+    {
+      "id": "coop",
+      "title": "ATLAS and P-body",
+      "url": "https://combineoverwiki.net/wiki/ATLAS_and_P-body",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "cores",
+      "title": "Portal — Cores",
+      "url": "https://theportalwiki.com/wiki/Cores",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "grady",
+      "title": "Grady",
+      "url": "https://www.combineoverwiki.net/wiki/Grady",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "deskjob_story",
+      "title": "Aperture Desk Job — storyline",
+      "url": "https://www.combineoverwiki.net/wiki/Aperture_Desk_Job_storyline",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "osprey",
+      "title": "Osprey Heliplane",
+      "url": "https://www.combineoverwiki.net/wiki/Osprey_Heliplane",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "rocket_turret",
+      "title": "Rocket Turret",
+      "url": "https://www.combineoverwiki.net/wiki/Rocket_Turret",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "kingpin",
+      "title": "Kingpin — contenu retiré HL1",
+      "url": "https://combineoverwiki.net/wiki/Kingpin",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "friendly",
+      "title": "Mr. Friendly — contenu retiré HL1",
+      "url": "https://combineoverwiki.net/wiki/Mr._Friendly",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "hl2_dev",
+      "title": "Développement de Half-Life 2",
+      "url": "https://combineoverwiki.net/wiki/Development_of_Half-Life_2",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "cremator",
+      "title": "Cremator",
+      "url": "https://www.combineoverwiki.net/wiki/Cremator",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "alien_assassin",
+      "title": "Alien Assassin",
+      "url": "https://combineoverwiki.net/wiki/Alien_Assassin",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "odell",
+      "title": "Odell",
+      "url": "https://combineoverwiki.net/wiki/Odell",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "blob",
+      "title": "Blob — prototype Episode Three",
+      "url": "https://www.combineoverwiki.net/wiki/Blob",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "icegun",
+      "title": "Ice Gun — prototype Episode Three",
+      "url": "https://www.combineoverwiki.net/wiki/Ice_Gun",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+    },
+    {
+      "id": "portal2_turrets_official",
+      "title": "Valve — Aperture Investment Opportunity #3: Turrets",
+      "url": "https://www.thinkwithportals.com/blog.php?id=5222",
+      "kind": "primary_official",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Présentation officielle de la ligne de tourelles ; vidéo Valve liée. Ne prouve pas à elle seule le comportement des tourelles défectueuses en jeu."
+    },
+    {
+      "id": "portal2_turrets_video",
+      "title": "Valve — bande-annonce Turrets",
+      "url": "https://www.youtube.com/watch?v=6i-nMWgBUp0",
+      "kind": "primary_official",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Vidéo publiée par la chaîne Valve ; référence visuelle potentielle, images non capturées dans cette recherche."
+    },
+    {
+      "id": "portal2_turrets",
+      "title": "Portal Wiki — Turrets",
+      "url": "https://theportalwiki.com/wiki/Turrets",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Variantes Sentry, Defective et autres tourelles ; différencie campagne et coopération."
+    },
+    {
+      "id": "portal2_defective",
+      "title": "Portal Wiki — Defective Turret",
+      "url": "https://theportalwiki.com/wiki/Defective_Turret",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Version défectueuse de campagne sans munitions ; les tourelles à aspect dénudé rencontrées en coopération peuvent fonctionner normalement."
+    },
+    {
+      "id": "portal2_turret_control",
+      "title": "Portal Wiki — Portal 2 Chapter 5 Turret Control Center",
+      "url": "https://www.theportalwiki.com/wiki/Portal_2_Chapter_5_Turret_Control_Center",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Scène de remplacement du modèle de validation de la chaîne de tourelles ; carte sp_a2_bts4."
+    },
+    {
+      "id": "portal1_rocket_model_c",
+      "title": "Portal Wiki — modèle props_bts/rocket_sentry de Portal",
+      "url": "https://i1.theportalwiki.net/img/d/d5/Portal_Rocket_Turret.png",
+      "kind": "secondary_hosted_game_model",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée."
+    },
+    {
+      "id": "portal2_chell_model_c",
+      "title": "Portal Wiki — modèle retail Chell Portal 2",
+      "url": "https://i1.theportalwiki.net/img/4/40/Chell.png",
+      "kind": "secondary_hosted_game_model",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée."
+    },
+    {
+      "id": "portal1_chell_model_c",
+      "title": "Portal Wiki — modèle retail Chell Portal",
+      "url": "https://i1.theportalwiki.net/img/8/81/Portal_Chell.png",
+      "kind": "secondary_hosted_game_model",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée."
+    },
+    {
+      "id": "portal2_wheatley_capture_c",
+      "title": "Valve / Steam — Wheatley, capture 02",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0cdd90fafc160b52d08b303d205f9fd4e83cf164.1920x1080.jpg?t=1790187113",
+      "kind": "primary_official_screenshot",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée."
+    },
+    {
+      "id": "portal2_factory_capture08_c",
+      "title": "Valve / Steam — chaîne de fabrication, capture 08",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0e16bceacb6616a5ca4bc4ba4d28c7a0d06b671c.1920x1080.jpg?t=1790187113",
+      "kind": "primary_official_screenshot",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée."
+    },
+    {
+      "id": "portal2_factory_capture09_c",
+      "title": "Valve / Steam — chaîne de fabrication, capture 09",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_d8f172249d6e89999c3692bf2c380921f197fd82.1920x1080.jpg?t=1790187113",
+      "kind": "primary_official_screenshot",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée."
+    },
+    {
+      "id": "deskjob_grady_capture01_c",
+      "title": "Valve / Steam — Grady, capture 01",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1902490/ss_4b8b8d6ab04d3c42584abb31b5b4d7d534478d1d.1920x1080.jpg?t=1745368564",
+      "kind": "primary_official_screenshot",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée."
+    },
+    {
+      "id": "portal2_atlas_model_c",
+      "title": "Portal Wiki — modèle retail ATLAS",
+      "url": "https://i1.theportalwiki.net/img/0/04/Atlas.png",
+      "kind": "secondary_hosted_game_model",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée."
+    },
+    {
+      "id": "portal2_pbody_model_c",
+      "title": "Portal Wiki — modèle retail P-body",
+      "url": "https://i1.theportalwiki.net/img/7/74/P-body.png",
+      "kind": "secondary_hosted_game_model",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée."
+    },
+    {
+      "id": "valve_hl25_uplink_hecu_beret_e",
+      "title": "Valve — Half-Life 25th anniversary, capture Uplink, soldat au béret à gauche",
+      "url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/uplink_1.jpg",
+      "kind": "primary_official_gameplay_screenshot",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Capture officielle inspectée pour le costume original au béret du lot E; ne valide pas les autres variantes HECU ni le dessin généré 1:1."
+    },
+    {
+      "id": "valve_steam70_hecu_beret_e",
+      "title": "Valve / Steam — Half-Life, capture officielle 0000002343",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/70/0000002343.1920x1080.jpg?t=1745368462",
+      "kind": "primary_official_gameplay_screenshot",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Capture officielle inspectée pour le costume original au béret du lot E; ne valide pas les autres variantes HECU ni le dessin généré 1:1."
+    }
+  ],
+  "targets": [
+    {
+      "id": "kleiner_hl2",
+      "name_fr": "Isaac Kleiner",
+      "source_game": "Half-Life 2",
+      "category": "character",
+      "owner_id": "kleiner_hl2",
+      "content_class": "released_reference",
+      "proposed_role": "npc_and_assist_candidate",
+      "priority": "P0",
+      "identity_lock": "Modèle retail HL2; lunettes et blouse. Exclure le modèle Source 2 coupé de Half-Life: Alyx.",
+      "source_ids": [
+        "kleiner",
+        "kleiner_model"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "generation_blocked",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée.",
+      "failed_request_ids": [
+        "kleiner_hl2_idle_right_b"
+      ]
+    },
+    {
+      "id": "eli_hl2",
+      "name_fr": "Eli Vance",
+      "source_game": "Half-Life 2",
+      "category": "character",
+      "owner_id": "eli_hl2",
+      "content_class": "released_reference",
+      "proposed_role": "npc_and_assist_candidate",
+      "priority": "P0",
+      "identity_lock": "Apparence HL2; prothèse sous le genou GAUCHE. Ne pas inverser le sprite pour simuler une seconde orientation validée.",
+      "source_ids": [
+        "eli"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "generation_blocked",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée.",
+      "failed_request_ids": [
+        "eli_hl2_idle_right_b"
+      ]
+    },
+    {
+      "id": "mossman_hl2",
+      "name_fr": "Judith Mossman",
+      "source_game": "Half-Life 2",
+      "category": "character",
+      "owner_id": "mossman_hl2",
+      "content_class": "released_reference",
+      "proposed_role": "npc_and_assist_candidate",
+      "priority": "P1",
+      "identity_lock": "Modèle retail de Black Mesa East, distinct du modèle préliminaire Elena et de la tenue des transmissions arctiques.",
+      "source_ids": [
+        "mossman"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "breen_hl2",
+      "name_fr": "Wallace Breen",
+      "source_game": "Half-Life 2",
+      "category": "character",
+      "owner_id": "breen_hl2",
+      "content_class": "released_reference",
+      "proposed_role": "story_npc",
+      "priority": "P1",
+      "identity_lock": "Modèle retail de Breen; aucune fusion avec le Consul abandonné. Gestes de discours, aucun arsenal militaire personnel inventé.",
+      "source_ids": [
+        "breen"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "gman_hl2",
+      "name_fr": "G-Man",
+      "source_game": "Half-Life 2",
+      "category": "character",
+      "owner_id": "gman_hl2",
+      "content_class": "released_reference",
+      "proposed_role": "story_npc",
+      "priority": "P0",
+      "identity_lock": "Costume, mallette et visage du modèle HL2. Yeux avec reflet discret; pas de lueur verte ajoutée.",
+      "source_ids": [
+        "gman",
+        "hl220"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "text_checked_source_bitmap_unavailable",
+      "generation_status": "candidate_generated",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée.",
+      "candidate_asset_ids": [
+        "gman_hl2_idle_right_b"
+      ]
+    },
+    {
+      "id": "odessa_hl2",
+      "name_fr": "Odessa Cubbage",
+      "source_game": "Half-Life 2",
+      "category": "character",
+      "owner_id": "odessa_hl2",
+      "content_class": "released_reference",
+      "proposed_role": "npc_and_assist_candidate",
+      "priority": "P1",
+      "identity_lock": "Moustache et tenue de New Little Odessa; ne pas reprendre la combinaison orange d’Odell.",
+      "source_ids": [
+        "odessa"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "lamarr_hl2",
+      "name_fr": "Lamarr",
+      "source_game": "Half-Life 2",
+      "category": "character",
+      "owner_id": "lamarr_hl2",
+      "content_class": "released_reference",
+      "proposed_role": "noncombat_companion",
+      "priority": "P1",
+      "identity_lock": "Crabe de tête apprivoisé de Kleiner, débecqué. Les animations de morsure parasitaire ne sont pas son comportement de base.",
+      "source_ids": [
+        "lamarr"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "magnusson_ep2",
+      "name_fr": "Arne Magnusson",
+      "source_game": "Half-Life 2: Episode Two",
+      "category": "character",
+      "owner_id": "magnusson_ep2",
+      "content_class": "released_reference",
+      "proposed_role": "npc_and_assist_candidate",
+      "priority": "P1",
+      "identity_lock": "Scientifique de White Forest; silhouette et tenue propres. Appareil Magnusson en accessoire séparé.",
+      "source_ids": [
+        "magnusson"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "uriah_ep2",
+      "name_fr": "Uriah",
+      "source_game": "Half-Life 2: Episode Two",
+      "category": "character",
+      "owner_id": "uriah_ep2",
+      "content_class": "released_reference",
+      "proposed_role": "npc_and_assist_candidate",
+      "priority": "P1",
+      "identity_lock": "Vortigaunt avec blouse, badge et stylo; préserver le troisième bras et la morphologie, sans remplacer par Kleiner.",
+      "source_ids": [
+        "uriah"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "griggs_ep2",
+      "name_fr": "Griggs",
+      "source_game": "Half-Life 2: Episode Two",
+      "category": "character",
+      "owner_id": "griggs_ep2",
+      "content_class": "released_reference",
+      "proposed_role": "assist_candidate",
+      "priority": "P1",
+      "identity_lock": "Référence male_06 de type medic de Victory Mine; image individuelle et identité distincte de Sheckley.",
+      "source_ids": [
+        "griggs_sheckley"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "sheckley_ep2",
+      "name_fr": "Sheckley",
+      "source_game": "Half-Life 2: Episode Two",
+      "category": "character",
+      "owner_id": "sheckley_ep2",
+      "content_class": "released_reference",
+      "proposed_role": "assist_candidate",
+      "priority": "P1",
+      "identity_lock": "Référence male_08 rebelle de Victory Mine; image individuelle et identité distincte de Griggs.",
+      "source_ids": [
+        "griggs_sheckley"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "fisherman_lostcoast",
+      "name_fr": "Le Pêcheur",
+      "source_game": "Half-Life 2: Lost Coast",
+      "category": "character",
+      "owner_id": "fisherman_lostcoast",
+      "content_class": "official_demo_reference",
+      "proposed_role": "story_npc",
+      "priority": "P1",
+      "identity_lock": "Apparence propre à la démo officielle Lost Coast; ne pas inventer une identité de campagne HL2.",
+      "source_ids": [
+        "fisherman",
+        "hl220"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "russell_hla",
+      "name_fr": "Russell",
+      "source_game": "Half-Life: Alyx",
+      "category": "character",
+      "owner_id": "russell_hla",
+      "content_class": "released_reference",
+      "proposed_role": "npc_and_assist_candidate",
+      "priority": "P1",
+      "identity_lock": "Tenue et modèle final HLA; le drone de Russell est un autre sujet, pas une partie de sa silhouette.",
+      "source_ids": [
+        "russell",
+        "alyx"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "larry_hla",
+      "name_fr": "Larry",
+      "source_game": "Half-Life: Alyx",
+      "category": "character",
+      "owner_id": "larry_hla",
+      "content_class": "released_reference",
+      "proposed_role": "story_npc",
+      "priority": "P1",
+      "identity_lock": "Survivant de la distillerie dans HLA; gestes d’aide et de discrétion. Pas de transformation en Jeff.",
+      "source_ids": [
+        "larry",
+        "alyx_story"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "gary_hla",
+      "name_fr": "Gary",
+      "source_game": "Half-Life: Alyx",
+      "category": "character",
+      "owner_id": "gary_hla",
+      "content_class": "released_reference",
+      "proposed_role": "story_npc",
+      "priority": "P1",
+      "identity_lock": "Vortigaunt rencontré dans la zone de quarantaine; référence HLA distincte du Vortigaunt générique HL2 et de Grady.",
+      "source_ids": [
+        "alyx_story"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "rosenberg_blueshift",
+      "name_fr": "Rosenberg",
+      "source_game": "Half-Life: Blue Shift",
+      "category": "character",
+      "owner_id": "rosenberg_blueshift",
+      "content_class": "released_reference",
+      "proposed_role": "npc_and_assist_candidate",
+      "priority": "P1",
+      "identity_lock": "Modèle propre Blue Shift; ne pas substituer Kleiner. Variante Decay à cataloguer ensuite avec sa propre capture.",
+      "source_ids": [
+        "rosenberg",
+        "bs_story"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "simmons_blueshift",
+      "name_fr": "Simmons",
+      "source_game": "Half-Life: Blue Shift",
+      "category": "character",
+      "owner_id": "simmons_blueshift",
+      "content_class": "released_reference",
+      "proposed_role": "story_npc",
+      "priority": "P1",
+      "identity_lock": "Scientifique de l’équipe du téléporteur; modèle de Blue Shift vérifié individuellement, pas portrait générique arbitraire.",
+      "source_ids": [
+        "simmons",
+        "bs_story"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "walter_bennet_blueshift",
+      "name_fr": "Walter Bennet",
+      "source_game": "Half-Life: Blue Shift",
+      "category": "character",
+      "owner_id": "walter_bennet_blueshift",
+      "content_class": "released_reference",
+      "proposed_role": "story_npc",
+      "priority": "P1",
+      "identity_lock": "Scientifique nommé de Blue Shift. Ne pas identifier automatiquement tous les scientifiques à lunettes comme Walter.",
+      "source_ids": [
+        "walter",
+        "bs_story"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "richard_keller_decay",
+      "name_fr": "Richard Keller",
+      "source_game": "Half-Life: Decay",
+      "category": "character",
+      "owner_id": "richard_keller_decay",
+      "content_class": "released_reference",
+      "proposed_role": "npc_and_assist_candidate",
+      "priority": "P1",
+      "identity_lock": "Modèle PS2 de Keller avec son fauteuil; dimensions du fauteuil conservées dans un futur sprite entier.",
+      "source_ids": [
+        "decay"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "otis_op4",
+      "name_fr": "Otis Laurey",
+      "source_game": "Half-Life: Opposing Force",
+      "category": "character",
+      "owner_id": "otis_op4",
+      "content_class": "released_reference",
+      "proposed_role": "assist_candidate",
+      "priority": "P1",
+      "identity_lock": "Garde Otis du jeu source; silhouette distincte de Barney, sans emprunter le modèle d’un mod.",
+      "source_ids": [
+        "op4"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "hecu_medic_op4",
+      "name_fr": "Infirmier HECU",
+      "source_game": "Half-Life: Opposing Force",
+      "category": "character",
+      "owner_id": "hecu_medic_op4",
+      "content_class": "released_reference",
+      "proposed_role": "assist_candidate",
+      "priority": "P1",
+      "identity_lock": "Spécialité Medic du jeu original; équipement de soin et tête du modèle retenu à capturer.",
+      "source_ids": [
+        "hecu_models"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "hecu_engineer_op4",
+      "name_fr": "Ingénieur HECU",
+      "source_game": "Half-Life: Opposing Force",
+      "category": "character",
+      "owner_id": "hecu_engineer_op4",
+      "content_class": "released_reference",
+      "proposed_role": "assist_candidate",
+      "priority": "P1",
+      "identity_lock": "Équipement d’ingénieur du jeu; chalumeau lié à l’ouverture des passages, pas lance-flammes ajouté.",
+      "source_ids": [
+        "hecu_models"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "black_ops_male_op4",
+      "name_fr": "Black Ops masculin",
+      "source_game": "Half-Life: Opposing Force",
+      "category": "character",
+      "owner_id": "black_ops_male_op4",
+      "content_class": "released_reference",
+      "proposed_role": "fighter_candidate",
+      "priority": "P1",
+      "identity_lock": "Uniforme masculin Opposing Force distinct de l’assassin féminin HL1 déjà catalogué.",
+      "source_ids": [
+        "op4"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "shock_roach_op4",
+      "name_fr": "Shock Roach",
+      "source_game": "Half-Life: Opposing Force",
+      "category": "character",
+      "owner_id": "shock_roach_op4",
+      "content_class": "released_reference",
+      "proposed_role": "creature_or_weapon_prop",
+      "priority": "P1",
+      "identity_lock": "Arme vivante Race X; représentation isolée, jamais confondue avec le Shock Trooper qui la porte.",
+      "source_ids": [
+        "shock_roach"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "voltigore_op4",
+      "name_fr": "Voltigore",
+      "source_game": "Half-Life: Opposing Force",
+      "category": "character",
+      "owner_id": "voltigore_op4",
+      "content_class": "released_reference",
+      "proposed_role": "large_enemy_candidate",
+      "priority": "P1",
+      "identity_lock": "Anatomie adulte de Race X à relever; conserver l’échelle relative, sans étirer un Pit Drone.",
+      "source_ids": [
+        "voltigore"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "baby_voltigore_op4",
+      "name_fr": "Baby Voltigore",
+      "source_game": "Half-Life: Opposing Force",
+      "category": "character",
+      "owner_id": "baby_voltigore_op4",
+      "content_class": "released_reference",
+      "proposed_role": "small_enemy_candidate",
+      "priority": "P1",
+      "identity_lock": "Modèle juvénile source à capturer; ne pas considérer une simple réduction du PNG adulte comme un modèle validé.",
+      "source_ids": [
+        "voltigore"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "barnacle_hl1",
+      "name_fr": "Barnacle",
+      "source_game": "Half-Life",
+      "category": "character",
+      "owner_id": "barnacle_hl1",
+      "content_class": "released_reference",
+      "proposed_role": "environment_enemy",
+      "priority": "P1",
+      "identity_lock": "Version HL1 attachée au plafond; langue et corps séparables à l’animation, aucun déplacement humanoïde.",
+      "source_ids": [
+        "barnacle"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "ichthyosaur_hl1",
+      "name_fr": "Ichthyosaur",
+      "source_game": "Half-Life",
+      "category": "character",
+      "owner_id": "ichthyosaur_hl1",
+      "content_class": "released_reference",
+      "proposed_role": "aquatic_enemy_candidate",
+      "priority": "P1",
+      "identity_lock": "Version HL1; production de profil aquatique et gabarit complet, pas un combattant terrestre standard.",
+      "source_ids": [
+        "ichthyosaur"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "snark_hl1",
+      "name_fr": "Snark",
+      "source_game": "Half-Life",
+      "category": "character",
+      "owner_id": "snark_hl1",
+      "content_class": "released_reference",
+      "proposed_role": "small_creature",
+      "priority": "P1",
+      "identity_lock": "Modèle HL1 séparé de l’animal HLA; conserver l’échelle petite, ne pas le compter comme boss géant.",
+      "source_ids": [
+        "snark"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "scientist_slick_hl1",
+      "name_fr": "Scientifique HL1 — Slick",
+      "source_game": "Half-Life",
+      "category": "character",
+      "owner_id": "scientist_slick_hl1",
+      "content_class": "released_reference",
+      "proposed_role": "story_npc",
+      "priority": "P1",
+      "identity_lock": "Corps scientifique original et tête HEAD_SLICK. Nom technique de variante, pas biographie individuelle.",
+      "source_ids": [
+        "scientist_sdk"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "stalker_hl2",
+      "name_fr": "Stalker",
+      "source_game": "Half-Life 2",
+      "category": "character",
+      "owner_id": "stalker_hl2",
+      "content_class": "released_reference",
+      "proposed_role": "enemy_candidate",
+      "priority": "P1",
+      "identity_lock": "Modèle retail HL2; ne pas reprendre Stalker E3 2002 ou une reconstruction de mod.",
+      "source_ids": [
+        "combine"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "manhack_hl2",
+      "name_fr": "Manhack",
+      "source_game": "Half-Life 2",
+      "category": "character",
+      "owner_id": "manhack_hl2",
+      "content_class": "released_reference",
+      "proposed_role": "small_machine_enemy",
+      "priority": "P1",
+      "identity_lock": "Drone à lames du jeu final; silhouette mécanique complète et lames lisibles.",
+      "source_ids": [
+        "combine"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "city_scanner_hl2",
+      "name_fr": "City Scanner",
+      "source_game": "Half-Life 2",
+      "category": "character",
+      "owner_id": "city_scanner_hl2",
+      "content_class": "released_reference",
+      "proposed_role": "small_machine_enemy",
+      "priority": "P1",
+      "identity_lock": "Scanner urbain de reconnaissance; caméra et corps du modèle retail, distinct du Shield Scanner.",
+      "source_ids": [
+        "combine"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "shield_scanner_hl2",
+      "name_fr": "Shield Scanner",
+      "source_game": "Half-Life 2",
+      "category": "character",
+      "owner_id": "shield_scanner_hl2",
+      "content_class": "released_reference",
+      "proposed_role": "small_machine_enemy",
+      "priority": "P1",
+      "identity_lock": "Seconde famille de Scanner; prise de référence séparée et aucun simple recoloriage du City Scanner.",
+      "source_ids": [
+        "combine"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "rollermine_hl2",
+      "name_fr": "Rollermine",
+      "source_game": "Half-Life 2",
+      "category": "character",
+      "owner_id": "rollermine_hl2",
+      "content_class": "released_reference",
+      "proposed_role": "small_machine_enemy",
+      "priority": "P1",
+      "identity_lock": "États fermé/déployé et taille réelle du modèle; un état par image.",
+      "source_ids": [
+        "combine"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "chell_portal1",
+      "name_fr": "Chell",
+      "source_game": "Portal",
+      "category": "character",
+      "owner_id": "chell_portal1",
+      "content_class": "released_reference",
+      "proposed_role": "fighter_candidate",
+      "priority": "P1",
+      "identity_lock": "Tenue et appareil de Portal 1; ne pas mélanger supports de jambe et bottes de Portal 2.",
+      "source_ids": [
+        "portal_story",
+        "portal_chars",
+        "portal1_chell_model_c"
+      ],
+      "reference_capture": {
+        "reference_filename": "wiki_Portal_Chell.png",
+        "sha256": "00be97f29b36e43c7e3c09ec8973f5eaac79fb58375d9547af01bdc937a3210c",
+        "width": 239,
+        "height": 861,
+        "visually_inspected": true,
+        "source_id": "portal1_chell_model_c",
+        "title": "Portal Wiki — modèle retail Chell Portal",
+        "source_url": "https://i1.theportalwiki.net/img/8/81/Portal_Chell.png",
+        "provenance": "secondary_hosted_game_model",
+        "role": "visual_identity_reference"
+      },
+      "visual_reference_status": "bitmap_inspected_generation_comparison_pending",
+      "generation_status": "candidate_generated",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "detailed_design_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée.",
+      "generated_asset_ids": [
+        "chell_portal1_idle_c"
+      ],
+      "design_profile_path": "docs/resonance/data/aperture_combat_design_20261120.json"
+    },
+    {
+      "id": "atlas_portal2",
+      "name_fr": "ATLAS",
+      "source_game": "Portal 2 — coopération",
+      "category": "character",
+      "owner_id": "atlas_portal2",
+      "content_class": "released_reference",
+      "proposed_role": "fighter_candidate",
+      "priority": "P1",
+      "identity_lock": "Robot compact à œil bleu; proportions et appareil propres au coop. Un seul robot par fichier.",
+      "source_ids": [
+        "coop",
+        "portal2_atlas_model_c"
+      ],
+      "reference_capture": {
+        "source_id": "portal2_atlas_model_c",
+        "source_url": "https://i1.theportalwiki.net/img/0/04/Atlas.png",
+        "sha256": "bdecd308ddb015d437e5e42bf362983ac950c5c3f5d5c6098be81b368bffbd5c",
+        "width": 778,
+        "height": 1762,
+        "provenance": "Capture de modèle Portal 2 attribuée à Valve Corporation par la page de fichier Portal Wiki; hébergement secondaire."
+      },
+      "visual_reference_status": "bitmap_inspected_generation_comparison_pending",
+      "generation_status": "generation_blocked",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "detailed_design_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée.",
+      "generated_asset_ids": [],
+      "failed_request_ids": [
+        "atlas_portal2_idle_c"
+      ],
+      "design_profile_path": "docs/resonance/data/aperture_combat_design_20261120.json"
+    },
+    {
+      "id": "pbody_portal2",
+      "name_fr": "P-body",
+      "source_game": "Portal 2 — coopération",
+      "category": "character",
+      "owner_id": "pbody_portal2",
+      "content_class": "released_reference",
+      "proposed_role": "fighter_candidate",
+      "priority": "P1",
+      "identity_lock": "Robot élancé à œil orange; silhouette distincte d’ATLAS. Un seul robot par fichier.",
+      "source_ids": [
+        "coop",
+        "portal2_pbody_model_c"
+      ],
+      "reference_capture": {
+        "source_id": "portal2_pbody_model_c",
+        "source_url": "https://i1.theportalwiki.net/img/7/74/P-body.png",
+        "sha256": "b021bb9c3d18664dd4f19ca5a7c94cf8fce9c74e9db4577da39bc87818942c49",
+        "width": 753,
+        "height": 1415,
+        "provenance": "Capture de modèle Portal 2 attribuée à Valve Corporation par la page de fichier Portal Wiki; hébergement secondaire."
+      },
+      "visual_reference_status": "bitmap_inspected_generation_comparison_pending",
+      "generation_status": "generation_blocked",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "detailed_design_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée.",
+      "generated_asset_ids": [],
+      "failed_request_ids": [
+        "pbody_portal2_idle_c"
+      ],
+      "design_profile_path": "docs/resonance/data/aperture_combat_design_20261120.json"
+    },
+    {
+      "id": "wheatley_core_portal2",
+      "name_fr": "Wheatley — noyau mobile",
+      "source_game": "Portal 2",
+      "category": "character",
+      "owner_id": "wheatley_core_portal2",
+      "content_class": "released_reference",
+      "proposed_role": "story_npc_and_assist",
+      "priority": "P1",
+      "identity_lock": "Noyau autonome, distinct de Wheatley installé dans le corps central déjà catalogué comme boss.",
+      "source_ids": [
+        "cores",
+        "portal2_story",
+        "portal2_wheatley_capture_c"
+      ],
+      "reference_capture": {
+        "reference_filename": "steam_620_02.jpg",
+        "sha256": "0773e4664dac8a6a05a0faa0a723022baf5dd912c7cd53c0c78ba3d80b95bb4d",
+        "width": 1920,
+        "height": 1080,
+        "visually_inspected": true,
+        "source_id": "portal2_wheatley_capture_c",
+        "title": "Valve / Steam — Wheatley, capture 02",
+        "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0cdd90fafc160b52d08b303d205f9fd4e83cf164.1920x1080.jpg?t=1790187113",
+        "provenance": "primary_official_screenshot",
+        "role": "visual_identity_reference"
+      },
+      "visual_reference_status": "bitmap_inspected_generation_comparison_pending",
+      "generation_status": "generation_blocked",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "detailed_design_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée.",
+      "generated_asset_ids": [],
+      "failed_request_ids": [
+        "wheatley_core_portal2_idle_c"
+      ],
+      "design_profile_path": "docs/resonance/data/aperture_combat_design_20261120.json"
+    },
+    {
+      "id": "doug_rattmann_labrat",
+      "name_fr": "Doug Rattmann",
+      "source_game": "Portal 2: Lab Rat",
+      "category": "character",
+      "owner_id": "doug_rattmann_labrat",
+      "content_class": "released_reference",
+      "proposed_role": "story_npc",
+      "priority": "P1",
+      "identity_lock": "Référence dessinée du comic officiel; toute traduction en sprite de profil est une adaptation à valider.",
+      "source_ids": [
+        "labrat"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "grady_deskjob",
+      "name_fr": "Grady",
+      "source_game": "Aperture Desk Job",
+      "category": "character",
+      "owner_id": "grady_deskjob",
+      "content_class": "official_alternate_continuity",
+      "proposed_role": "story_npc",
+      "priority": "P1",
+      "identity_lock": "Noyau avec bras et support de Desk Job; continuité alternative distincte. Ne pas fusionner avec Gary de HLA.",
+      "source_ids": [
+        "grady",
+        "deskjob",
+        "deskjob_grady_capture01_c"
+      ],
+      "reference_capture": {
+        "reference_filename": "steam_1902490_01.jpg",
+        "sha256": "dc6222601c0a30347e306f15865de293f68c5c7e2040f3642d54115cbb95ef8f",
+        "width": 1920,
+        "height": 1080,
+        "visually_inspected": true,
+        "source_id": "deskjob_grady_capture01_c",
+        "title": "Valve / Steam — Grady, capture 01",
+        "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1902490/ss_4b8b8d6ab04d3c42584abb31b5b4d7d534478d1d.1920x1080.jpg?t=1745368564",
+        "provenance": "primary_official_screenshot",
+        "role": "visual_identity_reference"
+      },
+      "visual_reference_status": "bitmap_inspected_generation_comparison_pending",
+      "generation_status": "candidate_generated",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée.",
+      "generated_asset_ids": [
+        "grady_deskjob_core_idle_c"
+      ]
+    },
+    {
+      "id": "frankenturret_portal2",
+      "name_fr": "Frankenturret",
+      "source_game": "Portal 2",
+      "category": "character",
+      "owner_id": "frankenturret_portal2",
+      "content_class": "released_reference",
+      "proposed_role": "machine_enemy_candidate",
+      "priority": "P1",
+      "identity_lock": "Créature mécanique fabriquée par Wheatley; cubes et tourelles du modèle source, sans articulation humanoïde inventée.",
+      "source_ids": [
+        "portal_chars",
+        "portal2_story"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "reviver_hla",
+      "name_fr": "Reviver / Lightning Dog",
+      "source_game": "Half-Life: Alyx",
+      "category": "character",
+      "owner_id": "reviver_hla",
+      "content_class": "released_reference",
+      "proposed_role": "enemy_candidate",
+      "priority": "P1",
+      "identity_lock": "Créature électrique source HLA; état autonome distinct du cadavre réanimé.",
+      "source_ids": [
+        "reviver"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "armored_headcrab_hla",
+      "name_fr": "Crabe de tête cuirassé",
+      "source_game": "Half-Life: Alyx",
+      "category": "character",
+      "owner_id": "armored_headcrab_hla",
+      "content_class": "released_reference",
+      "proposed_role": "enemy_candidate",
+      "priority": "P1",
+      "identity_lock": "Carapace source HLA; différencier carapace entière et état retourné au stade animation.",
+      "source_ids": [
+        "armored_headcrab"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "space_core_portal2",
+      "name_fr": "Space Core",
+      "source_game": "Portal 2",
+      "category": "character",
+      "owner_id": "space_core_portal2",
+      "content_class": "released_reference",
+      "proposed_role": "story_npc_and_objective",
+      "priority": "P1",
+      "identity_lock": "Noyau corrompu de Portal 2; iris et capot de sa référence, image isolée sans autres noyaux.",
+      "source_ids": [
+        "cores"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "adventure_core_portal2",
+      "name_fr": "Adventure Core / Rick",
+      "source_game": "Portal 2",
+      "category": "character",
+      "owner_id": "adventure_core_portal2",
+      "content_class": "released_reference",
+      "proposed_role": "story_npc_and_objective",
+      "priority": "P1",
+      "identity_lock": "Noyau corrompu de Portal 2; identité visuelle propre, ne pas recolorier simplement Wheatley.",
+      "source_ids": [
+        "cores"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "fact_core_portal2",
+      "name_fr": "Fact Core",
+      "source_game": "Portal 2",
+      "category": "character",
+      "owner_id": "fact_core_portal2",
+      "content_class": "released_reference",
+      "proposed_role": "story_npc_and_objective",
+      "priority": "P1",
+      "identity_lock": "Noyau corrompu de Portal 2; œil et motifs exacts à relever avant génération.",
+      "source_ids": [
+        "cores"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "bendy_peti",
+      "name_fr": "Bendy — sujet de tests PeTI",
+      "source_game": "Portal 2: Perpetual Testing Initiative",
+      "category": "character",
+      "owner_id": "bendy_peti",
+      "content_class": "official_alternate_continuity",
+      "proposed_role": "test_subject_candidate",
+      "priority": "P1",
+      "identity_lock": "Figure de test du multivers PeTI; respecter son aspect schématique officiel. Pas de corps humain réaliste ajouté.",
+      "source_ids": [
+        "peti",
+        "peti_story"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "costume_chell_portal2",
+      "name_fr": "Chell — tenue Portal 2",
+      "source_game": "Portal 2",
+      "category": "costume",
+      "owner_id": "chell_portal1",
+      "content_class": "released_reference",
+      "proposed_role": "appearance_variant",
+      "priority": "P1",
+      "identity_lock": "Modèle Portal 2, combinaison à la taille et Long Fall Boots; aucune fusion avec la tenue Portal 1.",
+      "source_ids": [
+        "portal2_story",
+        "portal_chars",
+        "portal2_chell_model_c"
+      ],
+      "reference_capture": {
+        "reference_filename": "wiki_Chell.png",
+        "sha256": "bd4290fdcb2490ceb50fe203febed0a140c0d129f9df91f0b9ca16a3a8b295fc",
+        "width": 200,
+        "height": 580,
+        "visually_inspected": true,
+        "source_id": "portal2_chell_model_c",
+        "title": "Portal Wiki — modèle retail Chell Portal 2",
+        "source_url": "https://i1.theportalwiki.net/img/4/40/Chell.png",
+        "provenance": "secondary_hosted_game_model",
+        "role": "visual_identity_reference"
+      },
+      "visual_reference_status": "bitmap_inspected_generation_comparison_pending",
+      "generation_status": "candidate_generated",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "detailed_design_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée.",
+      "generated_asset_ids": [
+        "costume_chell_portal2_idle_c"
+      ],
+      "design_profile_path": "docs/resonance/data/aperture_combat_design_20261120.json"
+    },
+    {
+      "id": "costume_gman_hl1",
+      "name_fr": "G-Man — modèle Half-Life",
+      "source_game": "Half-Life",
+      "category": "costume",
+      "owner_id": "gman_hl2",
+      "content_class": "released_reference",
+      "proposed_role": "appearance_variant",
+      "priority": "P1",
+      "identity_lock": "Version GoldSrc originale; visage, texture de costume et mallette du même jeu.",
+      "source_ids": [
+        "gman"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "costume_gman_hla",
+      "name_fr": "G-Man — modèle Alyx",
+      "source_game": "Half-Life: Alyx",
+      "category": "costume",
+      "owner_id": "gman_hl2",
+      "content_class": "released_reference",
+      "proposed_role": "appearance_variant",
+      "priority": "P1",
+      "identity_lock": "Version Source 2 HLA; ne pas présenter un repaint du visage HL2 comme modèle HLA.",
+      "source_ids": [
+        "gman",
+        "alyx_story"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "costume_eli_hla",
+      "name_fr": "Eli Vance — période Alyx",
+      "source_game": "Half-Life: Alyx",
+      "category": "costume",
+      "owner_id": "eli_hl2",
+      "content_class": "released_reference",
+      "proposed_role": "appearance_variant",
+      "priority": "P1",
+      "identity_lock": "Apparence HLA de la période antérieure, distincte de l’épilogue et du modèle HL2.",
+      "source_ids": [
+        "eli",
+        "alyx"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "costume_mossman_arctic",
+      "name_fr": "Judith Mossman — transmission arctique",
+      "source_game": "Half-Life 2: Episode One / Episode Two",
+      "category": "costume",
+      "owner_id": "mossman_hl2",
+      "content_class": "released_reference",
+      "proposed_role": "appearance_variant",
+      "priority": "P1",
+      "identity_lock": "Modèle de la transmission des épisodes; ne pas transformer une tenue issue de concept art Episode Three en costume publié.",
+      "source_ids": [
+        "mossman"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "costume_barney_cp_helmet",
+      "name_fr": "Barney — déguisement avec casque",
+      "source_game": "Half-Life 2",
+      "category": "costume",
+      "owner_id": "barney_hl2",
+      "content_class": "released_reference",
+      "proposed_role": "appearance_variant",
+      "priority": "P1",
+      "identity_lock": "Capture de l’apparition à la gare, casque et tenue cohérents; raffine la mention du déguisement déjà dans roster.",
+      "source_ids": [
+        "characters"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "Fiche de production d’une apparence déjà évoquée sans ID; aucun nouveau personnage compté."
+    },
+    {
+      "id": "costume_hecu_beret_hl1",
+      "name_fr": "HECU — tête au béret",
+      "source_game": "Half-Life",
+      "category": "costume",
+      "owner_id": "hecu_hl1",
+      "content_class": "released_reference",
+      "proposed_role": "appearance_variant",
+      "priority": "P1",
+      "identity_lock": "Sélection explicite du modèle HECU original; ne pas emprunter tête HD ou accessoires Opposing Force.",
+      "source_ids": [
+        "hecu_models",
+        "valve_hl25_uplink_hecu_beret_e",
+        "valve_steam70_hecu_beret_e"
+      ],
+      "reference_capture": {
+        "reference_filename": "uplink_1.jpg",
+        "width": 2560,
+        "height": 1600,
+        "sha256": "6583dcb74e493ee06c8bf2e5db563cf7d4a28d371b5a84b8d25fe87e27a27d21",
+        "byte_size": 725063,
+        "visually_inspected": true,
+        "source_id": "valve_hl25_uplink_hecu_beret_e",
+        "title": "Valve — Half-Life 25th anniversary, capture Uplink, soldat au béret à gauche",
+        "source_page": "https://www.half-life.com/en/halflife/25th",
+        "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/uplink_1.jpg",
+        "provenance": "primary_official_gameplay_screenshot",
+        "role": "visual_identity_and_pose_reference",
+        "version_identification": "Modèles originaux GoldSrc visibles dans Uplink; tête au béret confirmée par la capture Steam de Half-Life."
+      },
+      "visual_reference_status": "official_bitmap_inspected_candidate_not_certified",
+      "generation_status": "candidate_generated_requires_review",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée.",
+      "generated_asset_ids": [
+        "costume_hecu_beret_hl1_guard_right_e"
+      ],
+      "asset_scope_note": "Pose au béret seulement; ne couvre ni le HECU de base ni le masque à gaz, aucune animation complète."
+    },
+    {
+      "id": "costume_hecu_gasmask_hl1",
+      "name_fr": "HECU — masque à gaz",
+      "source_game": "Half-Life",
+      "category": "costume",
+      "owner_id": "hecu_hl1",
+      "content_class": "released_reference",
+      "proposed_role": "appearance_variant",
+      "priority": "P1",
+      "identity_lock": "Tête masquée du modèle retenu; arme et équipement doivent appartenir à la même version.",
+      "source_ids": [
+        "hecu_models"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "costume_nova_guard_hl2",
+      "name_fr": "Soldat — garde de Nova Prospekt",
+      "source_game": "Half-Life 2",
+      "category": "costume",
+      "owner_id": "overwatch_soldier_hl2",
+      "content_class": "released_reference",
+      "proposed_role": "appearance_variant",
+      "priority": "P1",
+      "identity_lock": "Insignes Nova Prospekt et lunettes de la variante source; différencier le garde standard et le garde fusil à pompe.",
+      "source_ids": [
+        "soldier",
+        "combine_markings"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "costume_shotgun_soldier_ep2",
+      "name_fr": "Soldat — Shotgun Soldier",
+      "source_game": "Half-Life 2: Episode Two",
+      "category": "costume",
+      "owner_id": "overwatch_soldier_hl2",
+      "content_class": "released_reference",
+      "proposed_role": "appearance_variant",
+      "priority": "P1",
+      "identity_lock": "Variante de modèle et texture identifiée dans Episode Two; référence du fusil à pompe distincte de l’AR2.",
+      "source_ids": [
+        "soldier"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "costume_scientist_glasses_hl1",
+      "name_fr": "Scientifique HL1 — Glasses",
+      "source_game": "Half-Life",
+      "category": "costume",
+      "owner_id": "scientist_slick_hl1",
+      "content_class": "released_reference",
+      "proposed_role": "appearance_variant",
+      "priority": "P1",
+      "identity_lock": "Tête HEAD_GLASSES du scientifique générique; ne pas donner automatiquement le nom de Kleiner ou Walter.",
+      "source_ids": [
+        "scientist_sdk"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "costume_scientist_einstein_hl1",
+      "name_fr": "Scientifique HL1 — Einstein",
+      "source_game": "Half-Life",
+      "category": "costume",
+      "owner_id": "scientist_slick_hl1",
+      "content_class": "released_reference",
+      "proposed_role": "appearance_variant",
+      "priority": "P1",
+      "identity_lock": "Tête HEAD_EINSTEIN et corps original, variante visuelle sans nouvelle biographie.",
+      "source_ids": [
+        "scientist_sdk"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "costume_scientist_luther_hl1",
+      "name_fr": "Scientifique HL1 — Luther",
+      "source_game": "Half-Life",
+      "category": "costume",
+      "owner_id": "scientist_slick_hl1",
+      "content_class": "released_reference",
+      "proposed_role": "appearance_variant",
+      "priority": "P1",
+      "identity_lock": "Tête HEAD_LUTHER avec les mains correspondant au modèle. Ne pas transformer toutes ses instances en Eli.",
+      "source_ids": [
+        "scientist_sdk"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "costume_colette_headtohead_ps2",
+      "name_fr": "Colette — Head-to-Head PS2",
+      "source_game": "Half-Life — PlayStation 2",
+      "category": "costume",
+      "owner_id": "colette_decay",
+      "content_class": "released_reference",
+      "proposed_role": "appearance_variant",
+      "priority": "P1",
+      "identity_lock": "Référence de version Head-to-Head distincte du modèle campagne Decay; palette exacte à capturer.",
+      "source_ids": [
+        "colette_model"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "ivan_hl25_multiplayer",
+      "name_fr": "Ivan the Space Biker — skin publié",
+      "source_game": "Half-Life — 25th Anniversary",
+      "category": "costume",
+      "owner_id": "ivan_hl25_multiplayer",
+      "content_class": "released_multiplayer_variant",
+      "proposed_role": "official_multiplayer_skin",
+      "priority": "P1",
+      "identity_lock": "Modèle multijoueur publié avec la mise à jour anniversaire; origine prototype documentée mais cette distribution est officielle.",
+      "source_ids": [
+        "hl25"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "proto_barney_hl25_multiplayer",
+      "name_fr": "Proto-Barney — skin publié",
+      "source_game": "Half-Life — 25th Anniversary",
+      "category": "costume",
+      "owner_id": "proto_barney_hl25_multiplayer",
+      "content_class": "released_multiplayer_variant",
+      "proposed_role": "official_multiplayer_skin",
+      "priority": "P1",
+      "identity_lock": "Modèle multijoueur publié avec la mise à jour anniversaire; ne pas le classer seulement comme archive inaccessible.",
+      "source_ids": [
+        "hl25"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "STG_EXT_HL1_SURFACE_DAM",
+      "name_fr": "Barrage de Surface Tension",
+      "source_game": "Half-Life",
+      "category": "stage",
+      "owner_id": "STG_EXT_HL1_SURFACE_DAM",
+      "content_class": "released_reference",
+      "proposed_role": "arena_candidate",
+      "priority": "P1",
+      "identity_lock": "Choisir le barrage du jeu original; voie 2D ajoutée comme adaptation, volumes du remake Black Mesa exclus.",
+      "source_ids": [
+        "locations"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "STG_EXT_HL1_QUESTIONABLE_ETHICS",
+      "name_fr": "Laboratoires de Questionable Ethics",
+      "source_game": "Half-Life",
+      "category": "stage",
+      "owner_id": "STG_EXT_HL1_QUESTIONABLE_ETHICS",
+      "content_class": "released_reference",
+      "proposed_role": "arena_candidate",
+      "priority": "P1",
+      "identity_lock": "Choisir une salle et une carte précises; ne pas mélanger avec le spectromètre déjà catalogué.",
+      "source_ids": [
+        "locations"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "STG_EXT_UPLINK_COMMUNICATIONS",
+      "name_fr": "Centre de communications Uplink",
+      "source_game": "Half-Life: Uplink",
+      "category": "stage",
+      "owner_id": "STG_EXT_UPLINK_COMMUNICATIONS",
+      "content_class": "released_reference",
+      "proposed_role": "arena_candidate",
+      "priority": "P1",
+      "identity_lock": "Capture de la mini-campagne officielle Uplink; un lieu identifié plutôt qu’un laboratoire générique.",
+      "source_ids": [
+        "hl25"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "STG_EXT_HLDM_CONTAMINATION",
+      "name_fr": "Contamination",
+      "source_game": "Half-Life Deathmatch — 25th Anniversary",
+      "category": "stage",
+      "owner_id": "STG_EXT_HLDM_CONTAMINATION",
+      "content_class": "released_reference",
+      "proposed_role": "arena_candidate",
+      "priority": "P1",
+      "identity_lock": "Relever la carte Valve contamination; la géométrie de combat 2D reste originale.",
+      "source_ids": [
+        "hl25"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "STG_EXT_HLDM_POOL_PARTY",
+      "name_fr": "Pool Party",
+      "source_game": "Half-Life Deathmatch — 25th Anniversary",
+      "category": "stage",
+      "owner_id": "STG_EXT_HLDM_POOL_PARTY",
+      "content_class": "released_reference",
+      "proposed_role": "arena_candidate",
+      "priority": "P1",
+      "identity_lock": "Relever la carte officielle pool_party; préserver les piscines de soin et la référence Xen choisie.",
+      "source_ids": [
+        "hl25"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "STG_EXT_HLDM_ROCKET_FRENZY",
+      "name_fr": "Rocket Frenzy",
+      "source_game": "Half-Life Deathmatch — 25th Anniversary",
+      "category": "stage",
+      "owner_id": "STG_EXT_HLDM_ROCKET_FRENZY",
+      "content_class": "released_reference",
+      "proposed_role": "arena_candidate",
+      "priority": "P1",
+      "identity_lock": "Capture de la carte officielle rocket_frenzy; ne pas la confondre avec le stage Blast Pit existant.",
+      "source_ids": [
+        "hl25"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "STG_EXT_BS_XEN_RELAY",
+      "name_fr": "Relais de Xen — Blue Shift",
+      "source_game": "Half-Life: Blue Shift",
+      "category": "stage",
+      "owner_id": "STG_EXT_BS_XEN_RELAY",
+      "content_class": "released_reference",
+      "proposed_role": "arena_candidate",
+      "priority": "P1",
+      "identity_lock": "Utiliser le lieu visité pendant Focal Point; géométrie propre à Blue Shift, distincte du Xen HL1 générique.",
+      "source_ids": [
+        "locations",
+        "bs_story"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "STG_EXT_DECAY_DORMITORIES",
+      "name_fr": "Dortoirs niveau 3 — Domestic Violence",
+      "source_game": "Half-Life: Decay",
+      "category": "stage",
+      "owner_id": "STG_EXT_DECAY_DORMITORIES",
+      "content_class": "released_reference",
+      "proposed_role": "arena_candidate",
+      "priority": "P1",
+      "identity_lock": "Référence PS2 ht05dorms; ne pas utiliser le port amateur PC comme preuve de l’apparence d’origine.",
+      "source_ids": [
+        "decay_story",
+        "locations"
+      ],
+      "reference_capture": "ht05dorms",
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "STG_EXT_LOSTCOAST_MONASTERY",
+      "name_fr": "Monastère de Lost Coast",
+      "source_game": "Half-Life 2: Lost Coast",
+      "category": "stage",
+      "owner_id": "STG_EXT_LOSTCOAST_MONASTERY",
+      "content_class": "official_demo_reference",
+      "proposed_role": "arena_candidate",
+      "priority": "P1",
+      "identity_lock": "Lieu de la démo officielle; préserver le relevé des matériaux et l’éclairage choisi.",
+      "source_ids": [
+        "hl220",
+        "locations"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "STG_EXT_HLA_NORTHERN_STAR",
+      "name_fr": "Hôtel Northern Star",
+      "source_game": "Half-Life: Alyx",
+      "category": "stage",
+      "owner_id": "STG_EXT_HLA_NORTHERN_STAR",
+      "content_class": "released_reference",
+      "proposed_role": "arena_candidate",
+      "priority": "P1",
+      "identity_lock": "Capture de l’hôtel; choisir un espace identifiable et inscrire tout élargissement de sol comme adaptation 2D.",
+      "source_ids": [
+        "alyx_story"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "STG_EXT_HLA_ZOO",
+      "name_fr": "Zoo de Cité 17",
+      "source_game": "Half-Life: Alyx",
+      "category": "stage",
+      "owner_id": "STG_EXT_HLA_ZOO",
+      "content_class": "released_reference",
+      "proposed_role": "arena_candidate",
+      "priority": "P1",
+      "identity_lock": "Référence du chapitre Captivity; ne pas remplacer par le quartier de quarantaine général déjà au catalogue.",
+      "source_ids": [
+        "alyx_story"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "STG_EXT_PORTAL1_RELAXATION",
+      "name_fr": "Relaxation Vault — Portal",
+      "source_game": "Portal",
+      "category": "stage",
+      "owner_id": "STG_EXT_PORTAL1_RELAXATION",
+      "content_class": "released_reference",
+      "proposed_role": "arena_candidate",
+      "priority": "P1",
+      "identity_lock": "Apparence initiale Portal 1, environnement clinique intact. La version délabrée Portal 2 est une autre référence.",
+      "source_ids": [
+        "portal_story"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "STG_EXT_PORTAL1_TEST17",
+      "name_fr": "Salle 17 et incinérateur",
+      "source_game": "Portal",
+      "category": "stage",
+      "owner_id": "STG_EXT_PORTAL1_TEST17",
+      "content_class": "released_reference",
+      "proposed_role": "arena_candidate",
+      "priority": "P1",
+      "identity_lock": "Sélectionner une vue de la salle source avec dispositifs séparés. Aucun numéro de salle inventé.",
+      "source_ids": [
+        "portal_story"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "STG_EXT_PORTAL1_MAINTENANCE",
+      "name_fr": "Maintenance — The Escape",
+      "source_game": "Portal",
+      "category": "stage",
+      "owner_id": "STG_EXT_PORTAL1_MAINTENANCE",
+      "content_class": "released_reference",
+      "proposed_role": "arena_candidate",
+      "priority": "P1",
+      "identity_lock": "Couloirs techniques de Portal 1; échelle et trame des murs à capturer avant maître et plans.",
+      "source_ids": [
+        "portal_story"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "STG_EXT_PORTAL2_RELAXATION",
+      "name_fr": "Chambre de relaxation délabrée",
+      "source_game": "Portal 2",
+      "category": "stage",
+      "owner_id": "STG_EXT_PORTAL2_RELAXATION",
+      "content_class": "released_reference",
+      "proposed_role": "arena_candidate",
+      "priority": "P1",
+      "identity_lock": "Chambre du début de Portal 2; vieillissement source, pas de combinaison arbitraire avec Portal 1.",
+      "source_ids": [
+        "portal2_story"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "STG_EXT_PORTAL2_OLD_APERTURE",
+      "name_fr": "Ancien Aperture — sphère de tests",
+      "source_game": "Portal 2",
+      "category": "stage",
+      "owner_id": "STG_EXT_PORTAL2_OLD_APERTURE",
+      "content_class": "released_reference",
+      "proposed_role": "arena_candidate",
+      "priority": "P1",
+      "identity_lock": "Choisir une sphère et une période du secteur ancien; ambiance différente du laboratoire moderne.",
+      "source_ids": [
+        "portal2_story"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "detailed_design_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée.",
+      "design_profile_path": "docs/resonance/data/aperture_combat_design_20261120.json"
+    },
+    {
+      "id": "STG_EXT_PORTAL2_TURRET_FACTORY",
+      "name_fr": "Chaîne de fabrication des tourelles",
+      "source_game": "Portal 2",
+      "category": "stage",
+      "owner_id": "STG_EXT_PORTAL2_TURRET_FACTORY",
+      "content_class": "released_reference",
+      "proposed_role": "arena_candidate",
+      "priority": "P1",
+      "identity_lock": "Secteur industriel de fabrication Portal 2, captures officielles Steam 08 et 09: bras orange, tapis et puits mécanique. Projection latérale recomposée et explicitement adaptée, sans confusion avec une chambre blanche ni le hub coop.",
+      "source_ids": [
+        "portal2_story",
+        "portal2_factory_capture08_c",
+        "portal2_factory_capture09_c"
+      ],
+      "reference_capture": {
+        "reference_filename": "steam_620_08.jpg",
+        "sha256": "557a184ce2292a2b3821c48ac0090d9e7573c16b229cca86dab8e99dfac16ba1",
+        "width": 1920,
+        "height": 1080,
+        "visually_inspected": true,
+        "source_id": "portal2_factory_capture08_c",
+        "title": "Valve / Steam — chaîne de fabrication, capture 08",
+        "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0e16bceacb6616a5ca4bc4ba4d28c7a0d06b671c.1920x1080.jpg?t=1790187113",
+        "provenance": "primary_official_screenshot",
+        "role": "visual_identity_reference"
+      },
+      "visual_reference_status": "bitmap_inspected_generation_comparison_pending",
+      "generation_status": "candidate_generated",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée.",
+      "generated_asset_ids": [
+        "layer_portal2_turret_factory_floor_c",
+        "stage_portal2_turret_factory_master_c"
+      ],
+      "layers": [
+        {
+          "id": "L1",
+          "name_fr": "Atmosphère du puits",
+          "parallax": 0,
+          "production_status": "planned_not_generated"
+        },
+        {
+          "id": "L2",
+          "name_fr": "Charpentes et passerelles lointaines",
+          "parallax": 0.12,
+          "production_status": "planned_not_generated"
+        },
+        {
+          "id": "L3",
+          "name_fr": "Parois industrielles",
+          "parallax": 0.3,
+          "production_status": "planned_not_generated"
+        },
+        {
+          "id": "L4",
+          "name_fr": "Chaîne et bras en arrière-plan",
+          "parallax": 0.55,
+          "production_status": "planned_not_generated"
+        },
+        {
+          "id": "L5",
+          "name_fr": "Sol de combat",
+          "parallax": 1,
+          "production_status": "candidate_present"
+        },
+        {
+          "id": "L6",
+          "name_fr": "Bordure de premier plan",
+          "parallax": 1.1,
+          "production_status": "planned_not_generated"
+        }
+      ]
+    },
+    {
+      "id": "STG_EXT_PORTAL2_COOP_HUB",
+      "name_fr": "Hub de la coopération",
+      "source_game": "Portal 2 — coopération",
+      "category": "stage",
+      "owner_id": "STG_EXT_PORTAL2_COOP_HUB",
+      "content_class": "released_reference",
+      "proposed_role": "arena_candidate",
+      "priority": "P1",
+      "identity_lock": "Référence du hub coop officiel; pas de chambre communautaire présentée comme carte Valve.",
+      "source_ids": [
+        "coop",
+        "portal2_story"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "detailed_design_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée.",
+      "design_profile_path": "docs/resonance/data/aperture_combat_design_20261120.json"
+    },
+    {
+      "id": "STG_EXT_PORTAL2_COOP_VAULT",
+      "name_fr": "Voûte des sujets humains",
+      "source_game": "Portal 2 — coopération",
+      "category": "stage",
+      "owner_id": "STG_EXT_PORTAL2_COOP_VAULT",
+      "content_class": "released_reference",
+      "proposed_role": "arena_candidate",
+      "priority": "P1",
+      "identity_lock": "Lieu de conclusion de la campagne coop; stage vide et sujets de stase en arrière-plan optionnel séparé.",
+      "source_ids": [
+        "portal2_story"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "STG_EXT_PORTAL2_PEER_REVIEW",
+      "name_fr": "Art Therapy — Peer Review",
+      "source_game": "Portal 2: Peer Review",
+      "category": "stage",
+      "owner_id": "STG_EXT_PORTAL2_PEER_REVIEW",
+      "content_class": "released_reference",
+      "proposed_role": "arena_candidate",
+      "priority": "P1",
+      "identity_lock": "Une carte officielle de Peer Review à sélectionner; capture exacte requise, pas de salle générique certifiée.",
+      "source_ids": [
+        "portal2_story"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "STG_EXT_DESKJOB_FACTORY",
+      "name_fr": "Poste de contrôle des produits",
+      "source_game": "Aperture Desk Job",
+      "category": "stage",
+      "owner_id": "STG_EXT_DESKJOB_FACTORY",
+      "content_class": "official_alternate_continuity",
+      "proposed_role": "arena_candidate",
+      "priority": "P1",
+      "identity_lock": "Atelier et établi de Desk Job; conserver sa continuité à part et produire un panorama sans personnage.",
+      "source_ids": [
+        "deskjob",
+        "deskjob_story"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "STG_EXT_DESKJOB_OFFICE",
+      "name_fr": "Bureau de Cave Johnson",
+      "source_game": "Aperture Desk Job",
+      "category": "stage",
+      "owner_id": "STG_EXT_DESKJOB_OFFICE",
+      "content_class": "official_alternate_continuity",
+      "proposed_role": "arena_candidate",
+      "priority": "P1",
+      "identity_lock": "Bureau final; tête de Cave livrée séparément comme acteur, pas peinte dans la couche de collision.",
+      "source_ids": [
+        "deskjob_story"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "osprey_hl1",
+      "name_fr": "Osprey HECU",
+      "source_game": "Half-Life",
+      "category": "boss",
+      "owner_id": "osprey_hl1",
+      "content_class": "released_reference",
+      "proposed_role": "large_machine_encounter",
+      "priority": "P1",
+      "identity_lock": "Modèle HL1 avec deux nacelles de moteur. Déploiement et destruction à vérifier sur l’implémentation source avant équilibrage.",
+      "source_ids": [
+        "osprey"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "rocket_turret_portal1",
+      "name_fr": "Rocket Turret",
+      "source_game": "Portal",
+      "category": "boss",
+      "owner_id": "rocket_turret_portal1",
+      "content_class": "released_reference",
+      "proposed_role": "machine_puzzle_encounter",
+      "priority": "P1",
+      "identity_lock": "Tourelle fixe de Portal; rencontre de redirection par portails, pas une machine mobile géante.",
+      "source_ids": [
+        "rocket_turret",
+        "portal_story",
+        "portal1_rocket_model_c"
+      ],
+      "reference_capture": {
+        "reference_filename": "portal1_rocket_turret_model.png",
+        "sha256": "df2f749f815f199267ab171de0612d102234d7f9f134e296dcb9ed76485307a8",
+        "width": 467,
+        "height": 654,
+        "visually_inspected": true,
+        "source_id": "portal1_rocket_model_c",
+        "title": "Portal Wiki — modèle props_bts/rocket_sentry de Portal",
+        "source_url": "https://i1.theportalwiki.net/img/d/d5/Portal_Rocket_Turret.png",
+        "provenance": "secondary_hosted_game_model",
+        "role": "visual_identity_reference"
+      },
+      "visual_reference_status": "bitmap_inspected_generation_comparison_pending",
+      "generation_status": "candidate_generated",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "detailed_design_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée.",
+      "generated_asset_ids": [
+        "rocket_turret_portal1_idle_left_c",
+        "rocket_turret_portal1_idle_left_v2_c"
+      ],
+      "design_profile_path": "docs/resonance/data/aperture_combat_design_20261120.json"
+    },
+    {
+      "id": "cave_head_deskjob",
+      "name_fr": "Cave Johnson — tête informatique",
+      "source_game": "Aperture Desk Job",
+      "category": "boss",
+      "owner_id": "cave_head_deskjob",
+      "content_class": "official_alternate_continuity",
+      "proposed_role": "scripted_machine_objective",
+      "priority": "P1",
+      "identity_lock": "Tête géante et structure interne du jeu; résultat narratif à respecter, aucune mort canonique garantie par dégâts simples.",
+      "source_ids": [
+        "deskjob_story",
+        "deskjob"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "appliance_turret_deskjob",
+      "name_fr": "Tourelle électroménagère",
+      "source_game": "Aperture Desk Job",
+      "category": "boss",
+      "owner_id": "appliance_turret_deskjob",
+      "content_class": "official_alternate_continuity",
+      "proposed_role": "machine_wave_encounter",
+      "priority": "P1",
+      "identity_lock": "Choisir un modèle d’appareil réellement rencontré dans l’ascension; un appareil par image et fichier.",
+      "source_ids": [
+        "deskjob_story"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+    },
+    {
+      "id": "archive_kingpin_hl1",
+      "name_fr": "Kingpin",
+      "source_game": "Half-Life — développement",
+      "category": "archive",
+      "owner_id": "archive_kingpin_hl1",
+      "content_class": "documented_cut_content",
+      "proposed_role": "archival_creature",
+      "priority": "P2",
+      "identity_lock": "Choisir une révision précise de concept ou de modèle; ne pas utiliser la version d’un mod comme preuve du modèle Valve.",
+      "source_ids": [
+        "kingpin"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "Archive non canonique. Une reconstruction jouable serait une adaptation originale, annoncée comme telle et désactivée par défaut.",
+      "archive_reference_contract": {
+        "document": "docs/resonance/data/archive_reference_contracts_20261120.json",
+        "chapter": "docs/resonance/chapters/archive_reference_contracts_20261120.md",
+        "target_id": "archive_kingpin_hl1",
+        "scope": "deferred_evidence_dossier",
+        "native_reference_capture_acquired": false,
+        "new_archive_candidate_produced": false,
+        "review_note": "Contrat documentaire; aucune capture de référence approuvée, apparence certifiée ou activation moteur déduite de cette fiche."
+      }
+    },
+    {
+      "id": "archive_mr_friendly_hl1",
+      "name_fr": "Mr. Friendly",
+      "source_game": "Half-Life — développement",
+      "category": "archive",
+      "owner_id": "archive_mr_friendly_hl1",
+      "content_class": "documented_cut_content",
+      "proposed_role": "archival_creature",
+      "priority": "P2",
+      "identity_lock": "Documenter uniquement silhouette et modèle d’archive. Les mécanismes non produits restent hors périmètre du kit.",
+      "source_ids": [
+        "friendly"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "Archive non canonique. Une reconstruction jouable serait une adaptation originale, annoncée comme telle et désactivée par défaut.",
+      "archive_reference_contract": {
+        "document": "docs/resonance/data/archive_reference_contracts_20261120.json",
+        "chapter": "docs/resonance/chapters/archive_reference_contracts_20261120.md",
+        "target_id": "archive_mr_friendly_hl1",
+        "scope": "deferred_evidence_dossier",
+        "native_reference_capture_acquired": false,
+        "new_archive_candidate_produced": false,
+        "review_note": "Contrat documentaire; aucune capture de référence approuvée, apparence certifiée ou activation moteur déduite de cette fiche."
+      }
+    },
+    {
+      "id": "archive_cremator_hl2_2002",
+      "name_fr": "Cremator — révision HL2 2002",
+      "source_game": "Half-Life 2 — développement",
+      "category": "archive",
+      "owner_id": "archive_cremator_hl2_2002",
+      "content_class": "documented_cut_content",
+      "proposed_role": "archival_enemy",
+      "priority": "P2",
+      "identity_lock": "Fixer une capture datée de la démonstration 2002; ne pas mélanger avec les concepts HLA ou un mod moderne.",
+      "source_ids": [
+        "cremator",
+        "hl220",
+        "hl2doc"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "documentary_contract_not_implemented",
+      "design_note": "Archive non canonique. Une reconstruction jouable serait une adaptation originale, annoncée comme telle et désactivée par défaut.",
+      "archive_reference_contract": {
+        "document": "docs/resonance/data/archive_reference_contracts_20261120.json",
+        "chapter": "docs/resonance/chapters/archive_reference_contracts_20261120.md",
+        "target_id": "archive_cremator_hl2_2002",
+        "scope": "detailed_profile",
+        "native_reference_capture_acquired": false,
+        "new_archive_candidate_produced": false,
+        "review_note": "Contrat documentaire; aucune capture de référence approuvée, apparence certifiée ou activation moteur déduite de cette fiche."
+      },
+      "design_profile_path": "docs/resonance/data/archive_reference_contracts_20261120.json"
+    },
+    {
+      "id": "archive_alien_assassin_hl2_2002",
+      "name_fr": "Alien Assassin — révision HL2 2002",
+      "source_game": "Half-Life 2 — développement",
+      "category": "archive",
+      "owner_id": "archive_alien_assassin_hl2_2002",
+      "content_class": "documented_cut_content",
+      "proposed_role": "archival_enemy",
+      "priority": "P2",
+      "identity_lock": "Même révision de masque, crêtes, mains et silhouette; ce n’est pas le Shock Trooper de Race X.",
+      "source_ids": [
+        "alien_assassin",
+        "hl2doc"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "documentary_contract_not_implemented",
+      "design_note": "Archive non canonique. Une reconstruction jouable serait une adaptation originale, annoncée comme telle et désactivée par défaut.",
+      "archive_reference_contract": {
+        "document": "docs/resonance/data/archive_reference_contracts_20261120.json",
+        "chapter": "docs/resonance/chapters/archive_reference_contracts_20261120.md",
+        "target_id": "archive_alien_assassin_hl2_2002",
+        "scope": "detailed_profile",
+        "native_reference_capture_acquired": false,
+        "new_archive_candidate_produced": false,
+        "review_note": "Contrat documentaire; aucune capture de référence approuvée, apparence certifiée ou activation moteur déduite de cette fiche."
+      },
+      "design_profile_path": "docs/resonance/data/archive_reference_contracts_20261120.json"
+    },
+    {
+      "id": "archive_odell_hl2",
+      "name_fr": "Odell",
+      "source_game": "Half-Life 2 — développement",
+      "category": "archive",
+      "owner_id": "archive_odell_hl2",
+      "content_class": "documented_cut_content",
+      "proposed_role": "archival_story_npc",
+      "priority": "P2",
+      "identity_lock": "Combinaison et modèle d’Odell à figer sur référence; personnage distinct d’Odessa malgré réemploi du visage.",
+      "source_ids": [
+        "odell",
+        "hl220"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "documentary_contract_not_implemented",
+      "design_note": "Archive non canonique. Une reconstruction jouable serait une adaptation originale, annoncée comme telle et désactivée par défaut.",
+      "archive_reference_contract": {
+        "document": "docs/resonance/data/archive_reference_contracts_20261120.json",
+        "chapter": "docs/resonance/chapters/archive_reference_contracts_20261120.md",
+        "target_id": "archive_odell_hl2",
+        "scope": "detailed_profile",
+        "native_reference_capture_acquired": false,
+        "new_archive_candidate_produced": false,
+        "review_note": "Contrat documentaire; aucune capture de référence approuvée, apparence certifiée ou activation moteur déduite de cette fiche."
+      },
+      "design_profile_path": "docs/resonance/data/archive_reference_contracts_20261120.json"
+    },
+    {
+      "id": "archive_air_exchange_hl2",
+      "name_fr": "Air Exchange",
+      "source_game": "Half-Life 2 — développement",
+      "category": "archive",
+      "owner_id": "archive_air_exchange_hl2",
+      "content_class": "documented_cut_content",
+      "proposed_role": "archival_stage",
+      "priority": "P2",
+      "identity_lock": "Choisir une carte ou un concept daté du dossier de développement; ne pas fusionner plusieurs versions incompatibles.",
+      "source_ids": [
+        "hl2_dev"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "Archive non canonique. Une reconstruction jouable serait une adaptation originale, annoncée comme telle et désactivée par défaut.",
+      "archive_reference_contract": {
+        "document": "docs/resonance/data/archive_reference_contracts_20261120.json",
+        "chapter": "docs/resonance/chapters/archive_reference_contracts_20261120.md",
+        "target_id": "archive_air_exchange_hl2",
+        "scope": "deferred_evidence_dossier",
+        "native_reference_capture_acquired": false,
+        "new_archive_candidate_produced": false,
+        "review_note": "Contrat documentaire; aucune capture de référence approuvée, apparence certifiée ou activation moteur déduite de cette fiche."
+      }
+    },
+    {
+      "id": "archive_borealis_hl2_cut",
+      "name_fr": "Borealis — chapitre abandonné HL2",
+      "source_game": "Half-Life 2 — développement",
+      "category": "archive",
+      "owner_id": "archive_borealis_hl2_cut",
+      "content_class": "documented_cut_content",
+      "proposed_role": "archival_stage",
+      "priority": "P2",
+      "identity_lock": "Le navire de développement HL2/Odell constitue sa propre version; ne pas l’étiqueter décor jouable Episode Three.",
+      "source_ids": [
+        "odell",
+        "hl2_dev"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "documentary_contract_not_implemented",
+      "design_note": "Archive non canonique. Une reconstruction jouable serait une adaptation originale, annoncée comme telle et désactivée par défaut.",
+      "archive_reference_contract": {
+        "document": "docs/resonance/data/archive_reference_contracts_20261120.json",
+        "chapter": "docs/resonance/chapters/archive_reference_contracts_20261120.md",
+        "target_id": "archive_borealis_hl2_cut",
+        "scope": "detailed_profile",
+        "native_reference_capture_acquired": false,
+        "new_archive_candidate_produced": false,
+        "review_note": "Contrat documentaire; aucune capture de référence approuvée, apparence certifiée ou activation moteur déduite de cette fiche."
+      },
+      "design_profile_path": "docs/resonance/data/archive_reference_contracts_20261120.json"
+    },
+    {
+      "id": "archive_blob_ep3",
+      "name_fr": "Blob",
+      "source_game": "Half-Life 2: Episode Three — prototype",
+      "category": "archive",
+      "owner_id": "archive_blob_ep3",
+      "content_class": "documented_cut_content",
+      "proposed_role": "archival_enemy",
+      "priority": "P2",
+      "identity_lock": "Référence du prototype montré dans le documentaire Valve; ni espèce livrée ni sprite officiel certifié.",
+      "source_ids": [
+        "blob",
+        "hl2doc"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "documentary_contract_not_implemented",
+      "design_note": "Archive non canonique. Une reconstruction jouable serait une adaptation originale, annoncée comme telle et désactivée par défaut.",
+      "archive_reference_contract": {
+        "document": "docs/resonance/data/archive_reference_contracts_20261120.json",
+        "chapter": "docs/resonance/chapters/archive_reference_contracts_20261120.md",
+        "target_id": "archive_blob_ep3",
+        "scope": "detailed_profile",
+        "native_reference_capture_acquired": false,
+        "new_archive_candidate_produced": false,
+        "review_note": "Contrat documentaire; aucune capture de référence approuvée, apparence certifiée ou activation moteur déduite de cette fiche."
+      },
+      "design_profile_path": "docs/resonance/data/archive_reference_contracts_20261120.json"
+    },
+    {
+      "id": "archive_icegun_ep3",
+      "name_fr": "Ice Gun — effet prototype",
+      "source_game": "Half-Life 2: Episode Three — prototype",
+      "category": "archive",
+      "owner_id": "archive_icegun_ep3",
+      "content_class": "documented_cut_content",
+      "proposed_role": "archival_prop_and_effect",
+      "priority": "P2",
+      "identity_lock": "Le prototype ne donne pas un modèle d’arme final unique; ne pas inventer un fusil et le nommer 1:1.",
+      "source_ids": [
+        "icegun",
+        "hl2doc"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "documentary_contract_not_implemented",
+      "design_note": "Archive non canonique. Une reconstruction jouable serait une adaptation originale, annoncée comme telle et désactivée par défaut.",
+      "archive_reference_contract": {
+        "document": "docs/resonance/data/archive_reference_contracts_20261120.json",
+        "chapter": "docs/resonance/chapters/archive_reference_contracts_20261120.md",
+        "target_id": "archive_icegun_ep3",
+        "scope": "detailed_profile",
+        "native_reference_capture_acquired": false,
+        "new_archive_candidate_produced": false,
+        "review_note": "Contrat documentaire; aucune capture de référence approuvée, apparence certifiée ou activation moteur déduite de cette fiche."
+      },
+      "design_profile_path": "docs/resonance/data/archive_reference_contracts_20261120.json"
+    },
+    {
+      "id": "archive_arctic_ep3",
+      "name_fr": "Environnement arctique du prototype",
+      "source_game": "Half-Life 2: Episode Three — prototype",
+      "category": "archive",
+      "owner_id": "archive_arctic_ep3",
+      "content_class": "documented_cut_content",
+      "proposed_role": "archival_stage",
+      "priority": "P2",
+      "identity_lock": "Utiliser seulement une scène révélée dans le documentaire avec timecode; aucun environnement commercial HL3 présumé.",
+      "source_ids": [
+        "hl2doc",
+        "hl220"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "documentary_contract_not_implemented",
+      "design_note": "Archive non canonique. Une reconstruction jouable serait une adaptation originale, annoncée comme telle et désactivée par défaut.",
+      "archive_reference_contract": {
+        "document": "docs/resonance/data/archive_reference_contracts_20261120.json",
+        "chapter": "docs/resonance/chapters/archive_reference_contracts_20261120.md",
+        "target_id": "archive_arctic_ep3",
+        "scope": "detailed_profile",
+        "native_reference_capture_acquired": false,
+        "new_archive_candidate_produced": false,
+        "review_note": "Contrat documentaire; aucune capture de référence approuvée, apparence certifiée ou activation moteur déduite de cette fiche."
+      },
+      "design_profile_path": "docs/resonance/data/archive_reference_contracts_20261120.json"
+    },
+    {
+      "id": "sentry_turret_portal2",
+      "name_fr": "Tourelle sentinelle Aperture — Portal 2",
+      "source_game": "Portal 2",
+      "category": "character",
+      "owner_id": "sentry_turret_portal2",
+      "content_class": "released_reference",
+      "proposed_role": "stationary_machine_enemy_candidate",
+      "priority": "P0",
+      "identity_lock": "Capturer la tourelle sentinelle standard dans Portal 2, avec une seule pose cohérente et la coque du modèle retail. Ne pas mélanger version Portal 1, Rocket Turret, Frankenturret, Animal King ou Prima Donna. Un sujet par fichier, mécanisme ouvert ou fermé explicitement fixé par la capture.",
+      "source_ids": [
+        "portal2_turrets_official",
+        "portal2_turrets_video",
+        "portal2_turrets"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "generation_blocked",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "Petite machine fixe candidate à une rencontre ou assistance ; aucune transformation en combattant humanoïde ni implémentation annoncée.",
+      "failed_request_ids": [
+        "sentry_turret_portal2_idle_right_b"
+      ]
+    },
+    {
+      "id": "defective_turret_portal2",
+      "name_fr": "Tourelle défectueuse — campagne Portal 2",
+      "source_game": "Portal 2",
+      "category": "character",
+      "owner_id": "defective_turret_portal2",
+      "content_class": "released_reference",
+      "proposed_role": "noncombatant_machine_and_assist_candidate",
+      "priority": "P0",
+      "identity_lock": "Fixer un modèle défectueux précis de la campagne, par exemple celui manipulé dans sp_a2_bts4. Reproduire ses pièces manquantes telles qu’elles apparaissent dans la capture ; ne pas fusionner plusieurs assemblages. Cette cible vise la tourelle de campagne sans munitions, distincte des modèles à aspect dénudé fonctionnels de la coopération et de l’Oracle Turret.",
+      "source_ids": [
+        "portal2_defective",
+        "portal2_turrets",
+        "portal2_turret_control"
+      ],
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "generation_blocked",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "Rôle proposé : présence de scène ou assistance comique. Ne pas lui attribuer un tir de balles au titre de son comportement de campagne. Une tourelle coop fonctionnelle demanderait une cible séparée.",
+      "failed_request_ids": [
+        "defective_turret_portal2_idle_right_b"
+      ]
+    }
+  ]
+}

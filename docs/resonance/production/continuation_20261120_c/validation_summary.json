@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "continuation_20261120_c",
+  "date": "2026-11-20",
+  "png_decoding": "passed_7_files",
+  "fidelity_certification": false,
+  "new_runtime_assets": 0,
+  "design_static_review": "passed; second independent review found no material count, frame arithmetic or canon/adaptation issue",
+  "scope": "Fichiers, transparence, provenance et cohérence documentaire. Aucun test de gameplay ou validation 1:1 prétendu.",
+  "pending_visual_work": {
+    "rocket_turret_portal1_idle_left_c": "Silhouette, iris vert, canon, mécanisme et socle proches de la référence chargée. Cadrage trop serré et franges colorées/claires; v2 préférée. Une seule pose de machine, aucune animation ni rencontre intégrée.",
+    "rocket_turret_portal1_idle_left_v2_c": "Révision du même sujet: cadrage élargi, tête et socle dégagés des bords. La marge de 8 % demandée n’est pas atteinte uniformément; de faibles résidus de détourage subsistent. Préférée à v1 pour la prochaine revue, sans certification 1:1.",
+    "costume_chell_portal2_idle_c": "Corps entier, débardeur, combinaison nouée et Long Fall Boots avec ressorts de talon présents. Franges rouges/jaunes à corriger. Pose de référence presque frontale, pieds sur deux niveaux: pas une garde latérale prête pour le moteur. Costume distinct de l’apparence Portal 1.",
+    "chell_portal1_idle_c": "Combinaison fermée, manches courtes, jambes et pieds nus, supports de genoux et ressorts noirs conservés. Pose de référence en trois-quarts, pas une garde latérale. Cheveux près du bord supérieur, très faible marge basse et franges colorées à corriger avant intégration.",
+    "stage_portal2_turret_factory_master_c": "Panorama latéral recomposé depuis deux captures officielles: bras orange, tapis, panneaux, passerelles et profondeur conservés comme motifs. Voie plane continue et dégagée. La topologie est adaptée au combat 2D, pas reproduite pixel par pixel; un maître ne termine pas six couches.",
+    "layer_portal2_turret_factory_floor_c": "Sol extrait générativement du maître, canevas 2172 × 724 conservé. Zone opaque au bas du cadre, haut transparent et garde-corps retiré. Alignement géométrique et textures à vérifier en composition; pixels non garantis identiques au maître. Une seule couche candidate L5 sur six.",
+    "grady_deskjob_core_idle_c": "Noyau turquoise et iris radial orange/rouge reconnaissables d’après la capture officielle. Assemblage limité au noyau, supports latéraux et attache supérieure. Le bras complet, la main, le câble et les animations restent à produire. Franges colorées et extrémité haute de l’attache à reprendre."
+  },
+  "design_counts": {
+    "existing_targets_enriched": 8,
+    "fighter_kits": 3,
+    "normals": 30,
+    "throws": 6,
+    "traits": 3,
+    "specials": 15,
+    "ex_variants": 9,
+    "supers_and_ultimates": 6,
+    "total_fighter_actions": 69,
+    "combo_or_position_routes": 12,
+    "costume_profiles": 1,
+    "assist_profiles": 1,
+    "puzzle_encounters": 1,
+    "puzzle_phases": 3,
+    "stage_profiles": 2,
+    "planned_stage_layers": 12,
+    "shared_motion_clip_types": 27,
+    "training_scenarios": 12,
+    "new_catalogue_entities": 0,
+    "new_runtime_fighters": 0,
+    "completed_animation_clips": 0
+  },
+  "checks": {
+    "validate_resonance_design": "passed",
+    "validate_resonance_boss_design": "passed",
+    "audit_resonance_production": {
+      "status": "passed",
+      "errors": 0,
+      "warnings": 0,
+      "distinct_png_files": 19
+    },
+    "sync_resonance_production": {
+      "status": "passed",
+      "errors": 0,
+      "warnings": 1,
+      "warning": "source_game_missing: 12 historical reserve entries"
+    },
+    "png_decode": {
+      "status": "passed",
+      "all_files": 19,
+      "new_batch_files": 7
+    },
+    "local_markdown_links": {
+      "status": "passed",
+      "documents": 5,
+      "broken_links": 0
+    }
+  }
+}

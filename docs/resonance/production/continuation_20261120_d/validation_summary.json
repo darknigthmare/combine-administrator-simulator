@@ -1,0 +1,212 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "continuation_20261120_d",
+  "date": "2026-11-20",
+  "scope": "Fichiers, provenance, compteurs et cohérence documentaire; aucun changement moteur, test de jeu nouveau ni certification 1:1.",
+  "batch_counts": {
+    "requests": 9,
+    "generated_png_files": 8,
+    "blocked": 1,
+    "targets_with_new_files": 7,
+    "new_catalogue_entities": 0,
+    "new_runtime_assets": 0,
+    "certified_one_to_one": 0,
+    "completed_animation_clips": 0,
+    "completed_six_layer_stages": 0
+  },
+  "global_generation_counts": {
+    "requests": 39,
+    "generated": 27,
+    "blocked": 12,
+    "certified_one_to_one": 0,
+    "integrated_in_game": 2,
+    "completed_animation_clips": 0,
+    "completed_six_layer_stages": 0,
+    "discarded_generated_iterations": 1,
+    "generation_calls_including_discarded_iterations": 40
+  },
+  "queue_counts": {
+    "targets": 187,
+    "by_source_bucket": {
+      "boss_battle_catalog.bosses": 25,
+      "catalogue_extension_20261120.targets": 102,
+      "roster.fighters": 24,
+      "roster.reserves": 12,
+      "stages.stages": 24
+    },
+    "by_category": {
+      "archive": 11,
+      "boss": 28,
+      "character": 86,
+      "costume": 16,
+      "stage": 46
+    },
+    "by_content_class": {
+      "cut_content_archive": 1,
+      "documented_cut_content": 10,
+      "official_alternate_continuity": 6,
+      "official_demo_reference": 2,
+      "original_encounter_from_released_identity": 1,
+      "released_multiplayer_variant": 2,
+      "released_reference": 105,
+      "unspecified": 60
+    },
+    "targets_with_files": 20,
+    "targets_without_files": 167,
+    "targets_with_refusals": 12,
+    "costume_targets_with_exactly_associated_files": 1,
+    "generation_requests": 39,
+    "generated_requests": 27,
+    "refused_requests": 12,
+    "distinct_registered_png_files_present": 27,
+    "requests_outside_target_queue": 1,
+    "stage_layer_candidate_files": 4,
+    "stage_layer_candidate_ids": 3,
+    "stage_layer_files_without_id": 1,
+    "stage_layer_missing_ids_in_known_contracts": 147,
+    "stages_without_layer_contract": 21,
+    "archives": 11,
+    "archives_runtime_enabled": 0,
+    "targets_automatically_completed": 0
+  },
+  "design_counts": {
+    "boss_profiles": 5,
+    "boss_profiles_with_existing_runtime": 3,
+    "boss_profiles_documentary_only": 2,
+    "phase_profiles": 15,
+    "attack_profiles": 13,
+    "collision_parts_proposed": 17,
+    "animation_clips_planned": 77,
+    "source_capture_requests": 30,
+    "stage_profiles": 3,
+    "stage_layers_planned": 18,
+    "stage_props_retained": 12,
+    "reserve_metadata_proposals": 12,
+    "boss_production_checks": 25,
+    "stage_production_checks": 18,
+    "verification_scenarios": 16,
+    "source_records": 22,
+    "new_catalogue_entities": 0,
+    "new_runtime_bosses": 0,
+    "new_generated_images": 0,
+    "completed_animation_clips": 0,
+    "animation_drawings_per_orientation_target": 557,
+    "animation_drawings_two_orientations_target": 1114
+  },
+  "reserve_source_games_completed": 12,
+  "checks": {
+    "validate_resonance_design": "passed",
+    "validate_resonance_boss_design": "passed",
+    "audit_resonance_production": {
+      "status": "passed",
+      "errors": 0,
+      "warnings": 0,
+      "distinct_png_files": 27
+    },
+    "sync_resonance_production": {
+      "status": "passed",
+      "errors": 0,
+      "warnings": 1,
+      "warning": "layer_id_missing: layer_city17_distant_skyline; mélange ciel/Citadelle sans attribution automatique."
+    },
+    "png_decode": {
+      "status": "passed",
+      "all_files": 27,
+      "new_batch_files": 8,
+      "new_batch": [
+        {
+          "path": "assets/resonance/candidates/continuation_20261120_d/advisor_extraction_ep2_idle_right_d.png",
+          "size": [
+            1254,
+            1254
+          ],
+          "mode": "RGBA"
+        },
+        {
+          "path": "assets/resonance/candidates/continuation_20261120_d/antlion_hl2_idle_d.png",
+          "size": [
+            1358,
+            1158
+          ],
+          "mode": "RGBA"
+        },
+        {
+          "path": "assets/resonance/candidates/continuation_20261120_d/layer_canals_floor_d.png",
+          "size": [
+            2172,
+            724
+          ],
+          "mode": "RGBA"
+        },
+        {
+          "path": "assets/resonance/candidates/continuation_20261120_d/overwatch_soldier_hl2_idle_left_d.png",
+          "size": [
+            822,
+            1914
+          ],
+          "mode": "RGBA"
+        },
+        {
+          "path": "assets/resonance/candidates/continuation_20261120_d/stage_canals_master_d.png",
+          "size": [
+            2172,
+            724
+          ],
+          "mode": "RGB"
+        },
+        {
+          "path": "assets/resonance/candidates/continuation_20261120_d/stage_ravenholm_master_d.png",
+          "size": [
+            2172,
+            724
+          ],
+          "mode": "RGB"
+        },
+        {
+          "path": "assets/resonance/candidates/continuation_20261120_d/strider_whiteforest_ep2_idle_left_d.png",
+          "size": [
+            1049,
+            1499
+          ],
+          "mode": "RGBA"
+        },
+        {
+          "path": "assets/resonance/candidates/continuation_20261120_d/zombine_ep1_idle_d.png",
+          "size": [
+            1081,
+            1455
+          ],
+          "mode": "RGBA"
+        }
+      ]
+    },
+    "independent_design_json_review": "passed: counts, clip IDs, duration arithmetic, layer contracts, runtime parameters and canon/adaptation distinctions checked",
+    "stage_layer_tracking": "passed: independent temporary fixtures checked unique planes per stage, revisions, invalid IDs and conflicting file-to-plane declarations",
+    "reserve_owner_validation": "passed: three reserve IDs accepted; unknown owner and cross-category owners rejected",
+    "local_markdown_links": {
+      "status": "passed",
+      "documents": 7,
+      "local_links_checked": 48,
+      "broken_links": 0
+    },
+    "git_diff_check": "passed",
+    "independent_design_markdown_review": "passed after correcting RPG interaction wording: effect immediate, 18 ticks of visual state, 100/90 ticks of station cooldown; confirmed in engine.ts::interact"
+  },
+  "pending_visual_work": {
+    "stage_ravenholm_master_d": "Façades de brique, cheminée, pylônes et galerie reprennent les motifs de la capture officielle. Piste continue dégagée; feux reportés aux bords du décor. Projection latérale et topologie adaptées au combat, pas copie pixel par pixel. Maître seul: six couches non terminées.",
+    "stage_canals_master_d": "Briques, palplanches de bois, arches, eau brune et immeubles reprennent la capture officielle. Chemin de halage sec ajouté au premier plan pour la piste 2D, eau derrière le sol. La nouvelle projection est une adaptation, pas une reconstitution 1:1 de la carte.",
+    "strider_whiteforest_ep2_idle_left_d": "Trois longues pattes, trois pointes complètes, carapace ocre et canon ventral présents. Vue trois-quarts, pas profil orthogonal; appuis proches mais non exactement alignés. Franges rouges/jaunes nettes le long de la carapace et des pattes. Dispositif Magnusson et Hunters séparés, non produits ici. La correction v2 a été refusée; v1 reste candidate à corriger.",
+    "advisor_extraction_ep2_idle_right_d": "Corps larvaire, harnais olive, masque, deux lentilles et deux appendices complets reconnaissables d’après le modèle Valve. Vue presque frontale en trois-quarts, pas profil de combat; marges inégales et franges colorées résiduelles sous le masque et aux contours. Ni langue déployée, ni télékinésie, ni animation complète.",
+    "layer_canals_floor_d": "Une seule couche candidate L04_ground extraite générativement du maître, canevas 2172 × 724 conservé. Haut transparent et bande basse continue. Frange claire/colorée à la limite haute et réinterprétation des textures: alignement et raccord pixel à vérifier en composition.",
+    "strider_whiteforest_ep2_idle_left_v2_d": "Demande de nettoyage du détourage de la v1 refusée à la sortie par le service (moderation_blocked, other). Aucun PNG v2. Aucune relance; la v1 produite reste conservée avec ses limites.",
+    "overwatch_soldier_hl2_idle_left_d": "Silhouette entière; deux lunettes cyan, casque/respirateur, MP7 tenu à deux mains, uniforme gris-bleu, plaque centrale et bottes cohérents avec le cadre Valve. Orientation trois-quarts proche de la référence; ce fichier ne fournit pas une véritable vue latérale et ne valide aucune animation de combat. Détails de coutures, masque et inscriptions réinterprétés par génération; fidélité exacte des marquages non certifiée. Marges significatives au seuil alpha>=16: gauche 84, haut 105, droite 73, bas 59 px. Les marges haute et basse n’atteignent pas la cible de 7 % demandée. Quatre pixels de bord gauche ont alpha 1; aucun élément opaque du personnage n’est coupé. Quelques franges fines claires/colorées restent perceptibles. L’alpha non nul dominant est 252/255: intérieurs presque opaques mais pas une couche totalement opaque certifiée.",
+    "antlion_hl2_idle_d": "Une seule créature entière: carapace verte/ocre à crête et quatre pattes articulées conservées; pointes visibles et séparées, tête basse orientée comme le cadre Valve. La morphologie suit la référence; grain, reflets et proportions fines de la tête/bouche réinterprétés. Aucun contrôle 1:1 au modèle de jeu n’est validé. Franges rouge/jaune visibles sur plusieurs contours, notamment les pattes; nettoyage de bord encore requis avant usage. Marges significatives au seuil alpha>=16: gauche 59, haut 45, droite 64, bas 30 px; elles restent sous la cible 7 %. Aucun membre opaque ne touche le cadre. 14 pixels sur bord gauche et 10 sur bord inférieur ont alpha 1 seulement. L’alpha dominant 252/255 ne démontre pas des intérieurs parfaitement opaques. Pose quasi frontale de référence; pas de vue latérale de combat, pas de clip complet ni d’échelle runtime validée.",
+    "zombine_ep1_idle_d": "Sujet entier et seul, headcrab beige couvrant le visage, silhouette voûtée, deux mains griffues, armure Combine gris-bleu, plaque centrale et bottes présents; aucune grenade ajoutée. Les taches rouges sont plus saturées et les détails de surface plus explicites que le cadre Valve sombre; la fidélité chromatique reste à corriger. Le symbole jaune du bras gauche est approximatif et doit être comparé/repris sur référence; il n’est pas certifié. Composition décalée vers la droite. Marges significatives au seuil alpha>=16: gauche 247, haut 21, droite 71, bas 26 px; haut/bas inférieurs à 2 % de la hauteur. Franges colorées très fines sur le contour; six pixels de bord gauche et 12 de bord inférieur ont alpha 1 seulement, sans découpe de matière opaque. L’alpha dominant 252/255 est presque opaque; aucun clip complet, vue latérale ou pivot de sol runtime n’est validé."
+  },
+  "certified_one_to_one": false,
+  "new_runtime_assets": 0,
+  "completed_animation_clips": 0,
+  "completed_six_layer_stages": 0,
+  "bible_version": "1.4",
+  "chapter_sha256": "d65bc89382e8140a9fcf0c2476e37c19038abf81559b59a9f6ca3c9d5e3814e3"
+}

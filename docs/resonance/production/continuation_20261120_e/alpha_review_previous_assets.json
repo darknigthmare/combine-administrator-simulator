@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "reviewed_on": "2026-11-20",
+  "scope": "Relecture de trois candidats D dont les aperçus bruts avaient conduit à signaler des franges rouges nettes.",
+  "method": "Image.alpha_composite sur fonds opaques RGB(245,245,245) et RGB(30,30,30), à taille native avant toute miniature; inspection visuelle des six vues.",
+  "red_pixel_predicate": "R > 240 AND G < 40 AND B < 40",
+  "source_images_modified": false,
+  "qa_previews_counted_as_assets": false,
+  "conclusion": "Pour ces trois images, les pixels rouge saturé mesurés ont tous alpha entre 1 et 15 inclus. Les composites n’affichent pas les franges rouges nettes décrites dans la première QA. Ce constat corrige ce diagnostic précis; il ne valide ni la fidélité, ni les appuis, ni les marges ou les animations.",
+  "historical_records": "Les demandes, le refus de la correction Strider et les journaux initiaux D sont conservés. Cet erratum ne relance aucune génération refusée.",
+  "assets": [
+    {
+      "asset_id": "strider_whiteforest_ep2_idle_left_d",
+      "high_saturation_red_pixels": 7379,
+      "red_alpha_zero": 0,
+      "red_alpha_1_to_15": 7379,
+      "red_alpha_at_least_16": 0,
+      "repository_path": "assets/resonance/candidates/continuation_20261120_d/strider_whiteforest_ep2_idle_left_d.png",
+      "sha256": "acbfbc6cfbbea3d4e9f4aba8254bdc84b1a2e207b529e9f89e18ac9f03d8ae85",
+      "visible_red_fringe_confirmed_on_tested_backgrounds": false
+    },
+    {
+      "asset_id": "antlion_hl2_idle_d",
+      "high_saturation_red_pixels": 3783,
+      "red_alpha_zero": 0,
+      "red_alpha_1_to_15": 3783,
+      "red_alpha_at_least_16": 0,
+      "repository_path": "assets/resonance/candidates/continuation_20261120_d/antlion_hl2_idle_d.png",
+      "sha256": "568cf4bf7d303072bac028442999e1876b067ce4c1776db8b7ae5e7f92161809",
+      "visible_red_fringe_confirmed_on_tested_backgrounds": false
+    },
+    {
+      "asset_id": "advisor_extraction_ep2_idle_right_d",
+      "high_saturation_red_pixels": 198,
+      "red_alpha_zero": 0,
+      "red_alpha_1_to_15": 198,
+      "red_alpha_at_least_16": 0,
+      "repository_path": "assets/resonance/candidates/continuation_20261120_d/advisor_extraction_ep2_idle_right_d.png",
+      "sha256": "1da20dda89a21ac7642344fecd2b3993af26ab94508b1838764bc7989bb57aed",
+      "visible_red_fringe_confirmed_on_tested_backgrounds": false
+    }
+  ]
+}

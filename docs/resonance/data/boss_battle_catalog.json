@@ -244,6 +244,46 @@
       "kind": "site_officiel",
       "accessed": "2026-11-19",
       "note": "Accès aux démonstrations restaurées et au documentaire officiel."
+    },
+    {
+      "id": "steam_strider_ep2_09_d",
+      "title": "Valve / Steam — Strider et Hunters, capture 09",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_ed5532325f508728f8481f0109d662352a519e0a.1920x1080.jpg?t=1745368545",
+      "kind": "primary_official_screenshot",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Bitmap effectivement chargé et inspecté pour le lot D; aucune certification automatique de la sortie générée."
+    },
+    {
+      "id": "steam_strider_ep2_18_d",
+      "title": "Valve / Steam — Strider et Hunters, capture 18",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_fe894d70bdfa75236a4b451efbeea7d4ce3e0174.1920x1080.jpg?t=1745368545",
+      "kind": "primary_official_screenshot",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Bitmap effectivement chargé et inspecté pour le lot D; aucune certification automatique de la sortie générée."
+    },
+    {
+      "id": "valve_advisor_model_video_d",
+      "title": "Valve — Advisor, vidéo de modèle du 20e anniversaire",
+      "url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/advisor.webm",
+      "kind": "primary_official_model_video_frame",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Bitmap effectivement chargé et inspecté pour le lot D; aucune certification automatique de la sortie générée."
+    },
+    {
+      "id": "valve_hl25_gargantua_26s_e",
+      "title": "Valve — Half-Life 25th anniversary, Gargantua à 26,0 secondes",
+      "url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/hl1_anniversary_mashup_looping_H.264.mp4",
+      "kind": "primary_official_video_frame",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Cadre officiel inspecté pour le candidat arrière du lot E, pas certification de l’asset généré."
+    },
+    {
+      "id": "valve_hl25_gargantua_25_5s_e",
+      "title": "Valve — Half-Life 25th anniversary, Gargantua à 25,5 secondes",
+      "url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/hl1_anniversary_mashup_looping_H.264.mp4",
+      "kind": "primary_official_video_frame",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Cadre officiel inspecté pour le candidat arrière du lot E, pas certification de l’asset généré."
     }
   ],
   "bosses": [
@@ -468,16 +508,42 @@
       ],
       "source_ids": [
         "garg_code",
-        "garg"
+        "garg",
+        "valve_hl25_gargantua_26s_e",
+        "valve_hl25_gargantua_25_5s_e"
       ],
       "source_urls": [
         "https://github.com/ValveSoftware/halflife/blob/master/dlls/gargantua.cpp",
-        "https://www.combineoverwiki.net/wiki/Gargantua"
+        "https://www.combineoverwiki.net/wiki/Gargantua",
+        "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/hl1_anniversary_mashup_looping_H.264.mp4"
       ],
       "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
       "visual_status": "reference_and_animation_validation_required",
       "certified_one_to_one": false,
-      "runtime_enabled": true
+      "runtime_enabled": true,
+      "reference_capture": {
+        "reference_filename": "gargantua_montage_26_0s.png",
+        "width": 960,
+        "height": 600,
+        "sha256": "f7474efb77d1679e40745ac991ed774456d701d8fc69f0b2398924be879d7fb6",
+        "byte_size": 510467,
+        "visually_inspected": true,
+        "source_id": "valve_hl25_gargantua_26s_e",
+        "title": "Valve — Half-Life 25th anniversary, Gargantua à 26,0 secondes",
+        "source_page": "https://www.half-life.com/en/halflife/25th",
+        "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/hl1_anniversary_mashup_looping_H.264.mp4",
+        "source_video_sha256": "3ae217b122c1d6962212576cd1269f31c3a7c593962e40ff37740cb1e6d08611",
+        "source_timestamp_seconds": 26,
+        "provenance": "primary_official_video_frame",
+        "role": "visual_identity_and_pose_reference",
+        "extraction": "ffmpeg, une image PNG à l’instant exact; aucune transformation de couleur, rotation ou retouche.",
+        "version_identification": "Gargantua GoldSrc original dans le parking de Surface Tension; vue arrière / trois-quarts latérale. Aucun détail frontal invisible n’est certifié."
+      },
+      "visual_reference_status": "official_bitmap_inspected_candidate_not_certified",
+      "generated_asset_ids": [
+        "boss_gargantua_hl1_rear_threequarter_e"
+      ],
+      "candidate_scope_note": "Vue arrière trois-quarts HL1, référence du parking de Surface Tension; ne valide pas l’arène Power Up, la face avant, les flammes, les clips ou un remplacement du rendu schématique runtime."
     },
     {
       "id": "strider_whiteforest_ep2",
@@ -527,16 +593,41 @@
       ],
       "source_ids": [
         "strider",
-        "ep2_commentary"
+        "ep2_commentary",
+        "steam_strider_ep2_09_d",
+        "steam_strider_ep2_18_d"
       ],
       "source_urls": [
         "https://www.combineoverwiki.net/wiki/Strider",
-        "https://combineoverwiki.net/wiki/Developer_commentary/Half-Life_2:_Episode_Two"
+        "https://combineoverwiki.net/wiki/Developer_commentary/Half-Life_2:_Episode_Two",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_ed5532325f508728f8481f0109d662352a519e0a.1920x1080.jpg?t=1745368545",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_fe894d70bdfa75236a4b451efbeea7d4ce3e0174.1920x1080.jpg?t=1745368545"
       ],
       "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
       "visual_status": "reference_and_animation_validation_required",
       "certified_one_to_one": false,
-      "runtime_enabled": false
+      "runtime_enabled": false,
+      "reference_capture": {
+        "reference_filename": "steam_220_09.jpg",
+        "sha256": "91ccecc3c41cbf60a0d762549da72546bcbb81b6d4735785da355a1e0ba8ff3d",
+        "width": 1440,
+        "height": 900,
+        "visually_inspected": true,
+        "source_id": "steam_strider_ep2_09_d",
+        "title": "Valve / Steam — Strider et Hunters, capture 09",
+        "source_game": "Half-Life 2 Episode Two",
+        "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220/ss_ed5532325f508728f8481f0109d662352a519e0a.1920x1080.jpg?t=1745368545",
+        "provenance": "primary_official_screenshot",
+        "context_note": "La page Steam app220 inclut aussi les épisodes; le contenu de cette capture détermine ici le jeu, pas le seul appid.",
+        "role": "visual_identity_reference"
+      },
+      "visual_reference_status": "official_bitmap_inspected_candidate_not_certified",
+      "generated_asset_ids": [
+        "strider_whiteforest_ep2_idle_left_d"
+      ],
+      "failed_request_ids": [
+        "strider_whiteforest_ep2_idle_left_v2_d"
+      ]
     },
     {
       "id": "strider_hla",
@@ -1388,15 +1479,39 @@
         "Aucun corps humanoïde ajouté"
       ],
       "source_ids": [
-        "advisor"
+        "advisor",
+        "valve_advisor_model_video_d"
       ],
       "source_urls": [
-        "https://combineoverwiki.net/wiki/Advisor"
+        "https://combineoverwiki.net/wiki/Advisor",
+        "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/advisor.webm"
       ],
       "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
       "visual_status": "reference_and_animation_validation_required",
       "certified_one_to_one": false,
-      "runtime_enabled": false
+      "runtime_enabled": false,
+      "reference_capture": {
+        "reference_filename": "advisor_reference_01.png",
+        "sha256": "181a2da5e43cd0351acd2bef51a5b35408e0b336050bf698f4d3c47d2742a290",
+        "width": 717,
+        "height": 640,
+        "visually_inspected": true,
+        "source_id": "valve_advisor_model_video_d",
+        "title": "Valve — Advisor, vidéo de modèle du 20e anniversaire",
+        "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/advisor.webm",
+        "page_url": "https://www.half-life.com/en/halflife2/20th",
+        "provenance": "primary_official_model_video_frame",
+        "video_sha256": "27320ddfa73f8295f87ae7320c1562ddefa94117b812810f5ab596b12d677d4b",
+        "video_byte_size": 1026113,
+        "extraction": "ffmpeg -c:v libvpx -i valve_advisor.webm -vf fps=1 -frames:v 3 advisor_reference_%02d.png; première sortie retenue, sans redimensionnement.",
+        "timecode_seconds": null,
+        "context_note": "Modèle officiel Valve utilisé pour le candidat Advisor; le timecode exact de sélection fps=1 n’est pas déclaré. Aucun duel canonique ni animation complète n’en est déduit.",
+        "role": "visual_identity_reference"
+      },
+      "visual_reference_status": "official_bitmap_inspected_candidate_not_certified",
+      "generated_asset_ids": [
+        "advisor_extraction_ep2_idle_right_d"
+      ]
     },
     {
       "id": "glados_portal1",
@@ -1686,7 +1801,17 @@
       "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
       "visual_status": "reference_and_animation_validation_required",
       "certified_one_to_one": false,
-      "runtime_enabled": false
+      "runtime_enabled": false,
+      "archive_reference_contract": {
+        "document": "docs/resonance/data/archive_reference_contracts_20261120.json",
+        "chapter": "docs/resonance/chapters/archive_reference_contracts_20261120.md",
+        "target_id": "hydra_hl2_cut",
+        "scope": "detailed_profile",
+        "native_reference_capture_acquired": false,
+        "new_archive_candidate_produced": false,
+        "review_note": "Contrat documentaire; aucune capture de référence approuvée, apparence certifiée ou activation moteur déduite de cette fiche."
+      },
+      "design_profile_path": "docs/resonance/data/archive_reference_contracts_20261120.json"
     }
   ]
 }

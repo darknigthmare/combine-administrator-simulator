@@ -1,0 +1,340 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "continuation_20261120_e",
+  "checked_on": "2026-11-20",
+  "baseline_commit": "b3a8ace24fcb5d28a3e52c62e73bf870092417c5",
+  "status": "passed",
+  "bible_version": "1.5",
+  "scope": "Assets et documentation; aucun changement de code runtime, de dépendances ou de scripts de validation dans ce lot.",
+  "batch_counts": {
+    "requests": 12,
+    "generated_png_files": 12,
+    "blocked": 0,
+    "targets_with_new_files": 7,
+    "new_catalogue_entities": 0,
+    "new_character_files": 3,
+    "new_costume_files": 1,
+    "new_boss_files": 1,
+    "new_stage_layer_files": 7,
+    "new_distinct_stage_layer_ids": 6,
+    "new_runtime_assets": 0,
+    "certified_one_to_one": 0,
+    "completed_animation_clips": 0,
+    "completed_six_layer_stages": 0,
+    "targets_receiving_first_file": 5
+  },
+  "production_queue_counts": {
+    "targets": 187,
+    "by_source_bucket": {
+      "boss_battle_catalog.bosses": 25,
+      "catalogue_extension_20261120.targets": 102,
+      "roster.fighters": 24,
+      "roster.reserves": 12,
+      "stages.stages": 24
+    },
+    "by_category": {
+      "archive": 11,
+      "boss": 28,
+      "character": 86,
+      "costume": 16,
+      "stage": 46
+    },
+    "by_content_class": {
+      "cut_content_archive": 1,
+      "documented_cut_content": 10,
+      "official_alternate_continuity": 6,
+      "official_demo_reference": 2,
+      "original_encounter_from_released_identity": 1,
+      "released_multiplayer_variant": 2,
+      "released_reference": 105,
+      "unspecified": 60
+    },
+    "targets_with_files": 25,
+    "targets_without_files": 162,
+    "targets_with_refusals": 12,
+    "costume_targets_with_exactly_associated_files": 2,
+    "generation_requests": 51,
+    "generated_requests": 39,
+    "refused_requests": 12,
+    "distinct_registered_png_files_present": 39,
+    "requests_outside_target_queue": 1,
+    "stage_layer_candidate_files": 11,
+    "stage_layer_candidate_ids": 9,
+    "stage_layer_files_without_id": 1,
+    "stage_layer_missing_ids_in_known_contracts": 141,
+    "stages_without_layer_contract": 21,
+    "archives": 11,
+    "archives_runtime_enabled": 0,
+    "targets_automatically_completed": 0
+  },
+  "archive_document_counts": {
+    "existing_archive_targets_reviewed": 11,
+    "detailed_profiles": 8,
+    "deferred_dossiers": 3,
+    "new_targets": 0,
+    "sources": 21,
+    "primary_sources": 10,
+    "secondary_sources": 11,
+    "visual_observations": 16,
+    "required_capture_items": 48,
+    "planned_individual_outputs": 41,
+    "proposed_archive_stage_layers": 12,
+    "original_adaptation_notes": 8,
+    "global_production_gates": 6,
+    "actual_archive_candidate_files_at_snapshot": 0,
+    "new_images_produced_by_this_document": 0,
+    "native_reference_captures_acquired": 0,
+    "completed_animation_clips": 0,
+    "runtime_entries_added": 0,
+    "existing_runtime_boss_count": 4
+  },
+  "checks": {
+    "validate_resonance_design": {
+      "status": "passed",
+      "fighters": 24,
+      "storyChapters": 12,
+      "specialTechniques": 102,
+      "exVariants": 18,
+      "stages": 24,
+      "productionGroups": 558,
+      "animationSequencesPerPilot": 53,
+      "drawingsPerPilotOneFacing": 547,
+      "pilotMoves": 66,
+      "generatedImages": 39,
+      "prototypeBackgrounds": 2,
+      "certifiedOneToOne": 0,
+      "note": "Design data and image provenance validated. The Boss Battle simulation has its own tests; no network implementation or final visual fidelity is asserted."
+    },
+    "validate_resonance_boss_design": {
+      "status": "passed",
+      "encounters": 24,
+      "archives": 1,
+      "playableBosses": 4,
+      "pilots": 6,
+      "sources": 34,
+      "plannedArtGroups": 72,
+      "finishedArtGroups": 0,
+      "certifiedOneToOne": 0
+    },
+    "audit_resonance_production": {
+      "status": "passed",
+      "actual_png_files": 39,
+      "valid_png_headers": 39,
+      "distinct_png_contents": 39,
+      "requests": 51,
+      "generated_requests": 39,
+      "generated_requests_with_verified_file": 39,
+      "blocked_requests": 12,
+      "unproduced_requests": 12,
+      "unclassified_requests": 0,
+      "requests_with_files": 39,
+      "registered_png_files": 39,
+      "unregistered_png_files": 0,
+      "certified_one_to_one_declared": 0,
+      "certified_one_to_one_with_verified_file": 0,
+      "integrated_in_game_declared": 2,
+      "completed_animation_clips_declared": 0,
+      "errors": 0,
+      "warnings": 0,
+      "report_written": true
+    },
+    "sync_resonance_production": {
+      "status": "passed",
+      "counts": {
+        "targets": 187,
+        "by_source_bucket": {
+          "boss_battle_catalog.bosses": 25,
+          "catalogue_extension_20261120.targets": 102,
+          "roster.fighters": 24,
+          "roster.reserves": 12,
+          "stages.stages": 24
+        },
+        "by_category": {
+          "archive": 11,
+          "boss": 28,
+          "character": 86,
+          "costume": 16,
+          "stage": 46
+        },
+        "by_content_class": {
+          "cut_content_archive": 1,
+          "documented_cut_content": 10,
+          "official_alternate_continuity": 6,
+          "official_demo_reference": 2,
+          "original_encounter_from_released_identity": 1,
+          "released_multiplayer_variant": 2,
+          "released_reference": 105,
+          "unspecified": 60
+        },
+        "targets_with_files": 25,
+        "targets_without_files": 162,
+        "targets_with_refusals": 12,
+        "costume_targets_with_exactly_associated_files": 2,
+        "generation_requests": 51,
+        "generated_requests": 39,
+        "refused_requests": 12,
+        "distinct_registered_png_files_present": 39,
+        "requests_outside_target_queue": 1,
+        "stage_layer_candidate_files": 11,
+        "stage_layer_candidate_ids": 9,
+        "stage_layer_files_without_id": 1,
+        "stage_layer_missing_ids_in_known_contracts": 141,
+        "stages_without_layer_contract": 21,
+        "archives": 11,
+        "archives_runtime_enabled": 0,
+        "targets_automatically_completed": 0
+      },
+      "errors": 0,
+      "warnings": 1,
+      "written": true
+    },
+    "new_png_decode_and_metadata": {
+      "status": "passed",
+      "files": [
+        {
+          "path": "assets/resonance/candidates/continuation_20261120_e/hunter_ep2_idle_e.png",
+          "width": 1315,
+          "height": 1196,
+          "mode": "RGBA",
+          "sha256_matches": true
+        },
+        {
+          "path": "assets/resonance/candidates/continuation_20261120_e/dog_hl2_idle_e.png",
+          "width": 1312,
+          "height": 1199,
+          "mode": "RGBA",
+          "sha256_matches": true
+        },
+        {
+          "path": "assets/resonance/candidates/continuation_20261120_e/antlion_worker_ep2_idle_e.png",
+          "width": 1536,
+          "height": 1024,
+          "mode": "RGBA",
+          "sha256_matches": true
+        },
+        {
+          "path": "assets/resonance/candidates/continuation_20261120_e/costume_hecu_beret_hl1_guard_right_e.png",
+          "width": 1448,
+          "height": 1086,
+          "mode": "RGBA",
+          "sha256_matches": true
+        },
+        {
+          "path": "assets/resonance/candidates/continuation_20261120_e/boss_gargantua_hl1_rear_threequarter_e.png",
+          "width": 1312,
+          "height": 1199,
+          "mode": "RGBA",
+          "sha256_matches": true
+        },
+        {
+          "path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_sky_e.png",
+          "width": 2172,
+          "height": 724,
+          "mode": "RGB",
+          "sha256_matches": true
+        },
+        {
+          "path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_far_city_e.png",
+          "width": 2172,
+          "height": 724,
+          "mode": "RGBA",
+          "sha256_matches": true
+        },
+        {
+          "path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_mid_structure_e.png",
+          "width": 2172,
+          "height": 724,
+          "mode": "RGBA",
+          "sha256_matches": true
+        },
+        {
+          "path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_near_water_e.png",
+          "width": 2172,
+          "height": 724,
+          "mode": "RGBA",
+          "sha256_matches": true
+        },
+        {
+          "path": "assets/resonance/candidates/continuation_20261120_e/layer_ravenholm_sky_e.png",
+          "width": 2172,
+          "height": 724,
+          "mode": "RGB",
+          "sha256_matches": true
+        },
+        {
+          "path": "assets/resonance/candidates/continuation_20261120_e/layer_ravenholm_floor_e.png",
+          "width": 2172,
+          "height": 724,
+          "mode": "RGBA",
+          "sha256_matches": true
+        },
+        {
+          "path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_mid_structure_v2_e.png",
+          "width": 2172,
+          "height": 724,
+          "mode": "RGBA",
+          "sha256_matches": true
+        }
+      ]
+    },
+    "local_markdown_links": {
+      "status": "passed",
+      "documents": 8,
+      "local_links_checked": 92,
+      "broken_links": 0
+    },
+    "git_diff_check": {
+      "status": "passed"
+    }
+  },
+  "independent_asset_review": {
+    "status": "passed",
+    "new_png_files": 12,
+    "rgba_files": 10,
+    "opaque_rgb_sky_files": 2,
+    "scope": [
+      "SHA-256, tailles et dimensions des douze PNG concordants.",
+      "HECU au béret lié uniquement à son target_id costume.",
+      "24 IDs de fighters inchangés; aucun budget modifié.",
+      "Sept fichiers de couches pour six couples stage/plan.",
+      "L02 Canaux v1/v2 distincts, v2 seule sélectionnée.",
+      "generated/verified restent faux pour les douze contrats de couches des deux stages.",
+      "Aucun nouveau runtime, clip complet, stage complet ou asset certifié."
+    ]
+  },
+  "independent_archive_review": {
+    "status": "passed",
+    "reviewed_profiles": 8,
+    "reviewed_deferred_dossiers": 3,
+    "source_hashes_checked": true,
+    "storyboard_observations_checked": 16,
+    "scope": "Identifiants et jeux sources, comptes, empreintes, temps/cases/résolutions, distinction code/modèle/concept/prototype, limites de capture et liens relatifs.",
+    "no_material_issue_found": true
+  },
+  "alpha_review": {
+    "new_subjects": 5,
+    "previous_subjects_rechecked": 3,
+    "method": "Composition réelle sur fonds opaques à résolution native avant réduction; PNG originaux inchangés.",
+    "previous_assets_report": "docs/resonance/production/continuation_20261120_e/alpha_review_previous_assets.json",
+    "stage_report": "docs/resonance/production/continuation_20261120_e/stage_layer_review.json",
+    "not_a_model_fidelity_certification": true
+  },
+  "document_sha256": {
+    "archive_json": "2a8cfe7e8d6c35b554ea249831b84d97461ac49d60ab61c789c6076e3f59eba1",
+    "archive_chapter": "fff3b0d398a02269a754e2ab0f39efa79b6e7b8b5472dd43cfe9c8b5af14eaf6",
+    "bible": "8ec4295bec90349c853dc506b8db846e7826fe75c6a4d103f7d218d087ffd988"
+  },
+  "warnings": [
+    {
+      "code": "layer_id_missing",
+      "message": "A legacy layer file has no declared layer_id; it counts as a file, not an identified stage plane.",
+      "asset_id": "layer_city17_distant_skyline",
+      "target_id": "STG_11_HL2_STATION",
+      "repository_path": "assets/resonance/candidates/layer_city17_distant_skyline.png"
+    }
+  ],
+  "new_runtime_assets": 0,
+  "completed_animation_clips": 0,
+  "completed_six_layer_stages": 0,
+  "certified_one_to_one": false
+}

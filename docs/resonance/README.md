@@ -2,6 +2,46 @@
 
 Bible, production graphique et premier module Boss Battle jouable du mode annexe de combat 2D de Half Life Administrator.
 
+## Suite du 20 novembre — lot E
+
+La bible Markdown passe en **version 1.5**. Le [dossier des archives](chapters/archive_reference_contracts_20261120.md) développe huit contrats de référence pour le contenu abandonné et suit les trois autres archives dont les preuves restent à compléter. Les modèles, concepts, prototypes et adaptations proposées sont distingués ; aucun personnage inédit n’est présenté comme une apparence officielle finale.
+
+Le [lot E et sa galerie](production/continuation_20261120_e/README.md) ajoutent **douze PNG pour sept cibles** : Dog, Hunter, Fourmilion ouvrier, costume HECU au béret, Gargantua vu de dos, cinq fichiers de couches des Canaux et deux de Ravenholm. La révision du mur central des Canaux remplace la v1 pour la prochaine revue. Les Canaux ont cinq plans candidats sur six ; Ravenholm en a deux.
+
+L’état courant vérifié est de **39 PNG distincts, 51 demandes et 12 refus**, pour **187 cibles dont 25 avec fichier et 162 sans fichier**. Aucun nouveau refus n’a été enregistré dans ce lot. Les onze fichiers de couches couvrent neuf couples stage/plan identifiés ; le fichier historique de Cité 17 reste sans ID. Aucun stage complet, clip animé ni contrôle de fidélité 1:1 n’est déclaré terminé.
+
+La [relecture alpha du lot D](production/continuation_20261120_e/alpha_review_previous_assets.json) corrige le diagnostic de franges rouges nettes pour trois sprites sur les fonds testés. Les PNG et le refus historique de la correction Strider sont conservés. Les nouveaux fichiers restent candidats ; les exports Word/Excel v1 restent historiques.
+
+## Lot D — état historique avant le lot E
+
+La bible Markdown passait en **version 1.4**. Le [chapitre des machines du Cartel](chapters/combine_encounter_design_20261120.md) précise cinq profils existants, quinze phases, treize attaques, dix-sept zones de collision proposées et **77 clips à produire**. Il ajoute trois plans de stages et dix-huit couches documentaires. Les comportements observés dans le prototype et les règles attestées par le SDK Valve sont distingués des adaptations proposées.
+
+Le [lot D et sa galerie](production/continuation_20261120_d/README.md) ajoutent **huit PNG pour sept cibles** : soldat Overwatch, Fourmilion et Zombine de la réserve, Strider de White Forest, Advisor, maîtres Ravenholm et Canaux, et sol séparé des Canaux. Aucun costume n’est ajouté dans ce lot. Une correction du détourage du Strider a été refusée ; sa première version reste disponible. Le diagnostic initial de franges est précisé par la relecture alpha du lot E.
+
+À l’issue du lot D, l’état vérifié était de **27 PNG distincts**, **39 demandes**, **12 refus**, **187 cibles**, dont **20 avec un fichier associé et 167 sans fichier**. Les douze réserves ont désormais un jeu d’origine renseigné. Les quatre fichiers de couches correspondent à trois plans identifiés ; la silhouette de Cité 17 mélange encore ciel et Citadelle et reste sans ID de plan. Aucun stage à six couches, clip animé ni contrôle de fidélité 1:1 n’est déclaré terminé.
+
+Les nouveaux fichiers restent candidats et ne changent pas les quatre boss du prototype. Les exports Word/Excel v1 demeurent historiques ; les sources Markdown/JSON courantes font foi.
+
+## Lot C — état historique avant le lot D
+
+La bible Markdown passait en **version 1.3**. Le [chapitre Aperture](chapters/aperture_combat_design_20261120.md) développe trois kits et 69 actions proposées, douze routes, les parcours narratifs, une rencontre Rocket Turret en trois phases et deux plans d’arènes. Ces spécifications enrichissent huit cibles existantes et restent à implémenter.
+
+Le [lot C et sa galerie](production/continuation_20261120_c/README.md) ajoutent **sept PNG pour cinq cibles** : Chell Portal 1, tenue Chell Portal 2, noyau de Grady, Rocket Turret (v1 et v2) et chaîne de fabrication Portal 2 (maître et sol séparé). Wheatley, ATLAS et P-body ont été refusés par le service et restent sans fichier.
+
+À l’issue du lot C, l’état vérifié était de **19 PNG distincts**, **30 demandes**, **11 refus**, **187 cibles**, dont **13 avec un fichier associé et 174 sans fichier**. Les contours, poses latérales, animations, autres couches et validations de fidélité restent à terminer.
+
+<!-- CURRENT_CONTINUATION_20261120_B -->
+## Lot B — état historique avant le lot C
+
+La bible Markdown passe en **version 1.2** avec [102 cibles supplémentaires](chapters/catalogue_extension_20261120.md): personnages, petites machines, costumes, stages, rencontres et archives séparées. Cette extension est documentaire; elle n’ajoute pas 102 combattants jouables.
+
+**Douze PNG sont réellement présents**, dont six nouveaux fichiers couvrant Colette, G-Man, Apache HECU, Abrams et White Forest (v1 plus correction v2). [La galerie et le rapport du lot](production/continuation_20261120_b/README.md) décrivent les limites, les cinq nouveaux refus et les prompts. Tous restent candidats, sans certification 1:1 ni animation complète.
+
+La [file consolidée des manquants](production/MISSING_TARGETS.md) et son [JSON](data/production_queue.json) relient les catalogues aux images présentes. Le [rapport d’audit](production/asset_audit.md) vérifie chemins, dimensions, tailles et SHA256. Les 68 PNG et 229 cibles évoqués dans une reprise antérieure n’ont pas été retrouvés; ils ne sont pas présentés comme livrés. [Détail de récupération](production/continuation_20261120_b/RECOVERY_STATUS.md).
+
+Les exports Word/Excel v1 ci-dessous restent des instantanés historiques. Les sources Markdown/JSON actuelles font foi.
+<!-- END_CURRENT_CONTINUATION_20261120_B -->
+
 ## Boss Battle
 
 Le menu principal ouvre désormais **Half Life Resonance · Boss Battle**, également accessible avec `?module=resonance-boss-battle`. Six profils pilotes affrontent quatre boss dans une simulation à 60 Hz : Strider, Dropship et sa nacelle, Gunship, Gargantua. Opération libre, Boss Rush de quatre rencontres et entraînement fonctionnent, avec trois difficultés, commandes clavier/tactiles, interactions d'arène, pause, résultats et records locaux séparés de la gestion.
@@ -14,7 +54,7 @@ Le [chapitre Boss Battle](BOSS_BATTLE.md), repris dans la bible complète, docum
 - `src/features/resonance/bossBattle` : moteur, catalogue pilote, écran, rendu et tests.
 - [État de validation du lot](technical/BOSS_BATTLE_VALIDATION.md).
 
-## Contenu du lot
+## Premier lot — historique du 19 novembre
 
 La conception couvre 24 combattants, 24 arènes, six kits pilotes, une histoire en douze chapitres, les parcours arcade avec intro, rival et ending, les modes de tournoi, l'entraînement, les fatalités optionnelles et la production des décors en parallaxe.
 
@@ -39,7 +79,7 @@ Ces exports Word et Excel sont les instantanés historiques v1 du premier lot ; 
 - `data/frame_data_pilote.json` : données initiales des normales et projections des six pilotes.
 - `data/asset_backlog.json` et `asset_backlog.csv` : groupes de production.
 - `data/animation_inventory.json` et `animation_budget.json` : séquences et dessins cibles.
-- `data/generated_art_register.json` : journal des neuf demandes et des six résultats.
+- `data/generated_art_register.json` : journal courant des demandes, fichiers, refus et itérations non retenues.
 - `data/existing_visual_inventory.json` : visuels présents dans la base auditée.
 - `technical/resonance_contracts.ts` : contrats proposés et vérifications partielles.
 
@@ -52,6 +92,8 @@ Depuis la racine du dépôt :
 ```bash
 node scripts/validate-resonance-design.mjs
 node scripts/validate-resonance-boss-design.mjs
+node scripts/audit-resonance-production.mjs --write-report
+node scripts/sync-resonance-production.mjs --write
 npm run quality
 ```
 

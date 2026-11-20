@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "continuation_20261120_e",
+  "reviewed_on": "2026-11-20",
+  "method": "Composition alpha des PNG originaux, à taille native 2172 × 724 et sans déplacement; aperçu de contrôle séparé des candidats, aucune retouche de leurs pixels.",
+  "source_images_modified": false,
+  "qa_previews_counted_as_assets": false,
+  "counts": {
+    "new_png_files": 7,
+    "new_distinct_stage_layer_ids": 6,
+    "revisions_of_existing_layer_id": 1,
+    "completed_six_layer_stages": 0
+  },
+  "canals": {
+    "owner_id": "STG_12_HL2_CANALS",
+    "composition_order_back_to_front": [
+      "layer_canals_sky_e",
+      "layer_canals_far_city_e",
+      "layer_canals_mid_structure_v2_e",
+      "layer_canals_near_water_e",
+      "layer_canals_floor_d"
+    ],
+    "v1_composite_visually_inspected": true,
+    "v2_composite_visually_inspected": true,
+    "v1_defect": "Absence du mur arrière sous la maison centrale; ciel visible dans une grande ouverture non prévue.",
+    "v2_observation": "Mur arrière et deux sorties d’égout rétablis. La lacune majeure est fermée, quelques jours étroits demeurent à la ligne d’eau. Aucune correction pixel manuelle.",
+    "candidate_layer_ids_present": [
+      "L00_ambience",
+      "L01_far",
+      "L02_mid",
+      "L03_near",
+      "L04_ground"
+    ],
+    "missing_layer_ids": [
+      "L05_foreground"
+    ],
+    "remaining_work": [
+      "Corriger les petits jours à la ligne d’eau.",
+      "Compléter les zones masquées des bâtiments avant translation en parallaxe.",
+      "Vérifier les raccords des reflets, du sol et des murs à échelle de jeu.",
+      "Produire L05 depuis une référence suffisante; le maître ne fournit pas à lui seul toutes les herbes et conduites prévues.",
+      "Valider lisibilité, pivots, sol logique et parallax scrolling en moteur."
+    ],
+    "complete": false
+  },
+  "ravenholm": {
+    "owner_id": "STG_14_HL2_RAVENHOLM",
+    "candidate_layer_ids_present": [
+      "L00_ambience",
+      "L04_ground"
+    ],
+    "missing_layer_ids": [
+      "L01_far",
+      "L02_mid",
+      "L03_near",
+      "L05_foreground"
+    ],
+    "remaining_work": [
+      "Recaler la limite arrière du sol au maître.",
+      "Produire architecture distante, architecture moyenne, éléments proches et avant-plan.",
+      "Vérifier raccords, lisibilité, feu décoratif et parallaxe en moteur."
+    ],
+    "complete": false,
+    "sky_floor_composite_visually_inspected": true,
+    "composite_observation": "Le ciel et le sol se composent sans grand halo coloré; ce montage de deux couches laisse volontairement toutes les architectures absentes. Le bord arrière du sol reste à recaler par rapport au maître."
+  },
+  "source_limit": "Les maîtres D sont des adaptations latérales candidates fondées sur des captures officielles. Les couches E ne sont pas des extractions du jeu ni une preuve de fidélité 1:1."
+}
