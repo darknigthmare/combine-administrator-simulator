@@ -21,13 +21,22 @@ const animation = read('animation_budget.json');
 const art = read('generated_art_register.json');
 const extension = read('catalogue_extension_20261120.json');
 const extensionIds = new Set(extension.targets.map(target => target.id));
-const bossIds = new Set(read('boss_battle_catalog.json').bosses.map(boss => boss.id));
+const bossIds = new Set([
+  ...read('boss_battle_catalog.json').bosses.map(boss => boss.id),
+  ...extension.targets.filter(target => target.category === 'boss').map(target => target.id),
+]);
 const frameData = read('frame_data_pilote.json');
 const fighters = roster.fighters;
 check(Array.isArray(fighters), 'Roster must expose fighters[]');
 if (!Array.isArray(fighters)) throw new Error(errors.join('\n'));
 const fighterIds = new Set(fighters.map(fighter => fighter.id));
 const stageIds = new Set(stages.map(stage => stage.id));
+// Artwork can also belong to documented extension stages; the original
+// 24-stage production budget below remains scoped to the original catalogue.
+const assetStageIds = new Set([
+  ...stageIds,
+  ...extension.targets.filter(target => target.category === 'stage').map(target => target.id),
+]);
 unique([...fighters.map(fighter => fighter.id)], 'fighters');
 unique(stages.map(stage => stage.id), 'stages');
 unique(backlog.map(asset => asset.asset_id), 'production groups');
@@ -117,7 +126,7 @@ for (const asset of art.assets) {
     check(asset.integration_scope === 'boss_battle_prototype_background', `${asset.asset_id}: unspecified prototype integration scope`);
   }
   if (asset.owner_type === 'fighter') check(fighterIds.has(asset.owner_id), `${asset.asset_id}: unknown fighter owner`);
-  if (asset.owner_type === 'stage') check(stageIds.has(asset.owner_id), `${asset.asset_id}: unknown stage owner`);
+  if (asset.owner_type === 'stage') check(assetStageIds.has(asset.owner_id), `${asset.asset_id}: unknown stage owner`);
   if (asset.owner_type === 'boss') check(bossIds.has(asset.owner_id), `${asset.asset_id}: unknown boss owner`);
   if (['support_character', 'support_machine'].includes(asset.owner_type)) check(extensionIds.has(asset.owner_id), `${asset.asset_id}: unknown extension owner`);
   check(['fighter', 'stage', 'boss', 'support_character', 'support_machine', 'shared_collection'].includes(asset.owner_type), `${asset.asset_id}: unknown owner type`);

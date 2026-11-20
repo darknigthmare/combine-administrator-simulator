@@ -1,7 +1,8 @@
 # Candidats graphiques de Half Life Resonance
 
-Le dépôt contient **12 PNG vérifiés**, dont **6 nouveaux fichiers pour 5 sujets** dans le lot du 20 novembre. White Forest v1 et v2 sont deux versions du même panorama. Les fichiers sont rangés par lot sous `candidates/` et aucun n’est certifié 1:1.
+Le dépôt contient **19 PNG vérifiés**, dont **7 nouveaux fichiers pour 5 cibles** dans le lot C du 20 novembre. Les deux versions de Rocket Turret représentent une seule machine ; le maître et le sol de la chaîne de fabrication représentent un seul stage en cours. Les fichiers sont rangés par lot sous `candidates/` et aucun n’est certifié 1:1.
 
+- [Galerie, références et contrôle du lot C](../../docs/resonance/production/continuation_20261120_c/README.md).
 - [Galerie et contrôle du lot B](../../docs/resonance/production/continuation_20261120_b/README.md).
 - [Registre des demandes et empreintes](../../docs/resonance/data/generated_art_register.json).
 - [Audit des fichiers présents](../../docs/resonance/production/asset_audit.md).

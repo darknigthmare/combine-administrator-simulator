@@ -1,0 +1,695 @@
+{
+  "schema_version": "1.0",
+  "module": "Half Life Resonance",
+  "batch_id": "continuation_20261120_c",
+  "generator": "image_gen built-in",
+  "counts": {
+    "requests": 10,
+    "generated_png_files": 7,
+    "blocked": 3,
+    "new_catalogue_entities": 0,
+    "new_runtime_assets": 0,
+    "certified_one_to_one": 0
+  },
+  "assets": [
+    {
+      "asset_id": "rocket_turret_portal1_idle_left_c",
+      "name_fr": "Rocket Turret — première version",
+      "owner_id": "rocket_turret_portal1",
+      "owner_type": "boss",
+      "target_ids": [
+        "rocket_turret_portal1"
+      ],
+      "category": "boss_reference_sprite",
+      "batch_id": "continuation_20261120_c",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: identity-preserve. Asset type: a single large isolated 2D game sprite for Half-Life Resonance. Input image 1 is the exact visual identity reference of the retail Portal (2007) model props_bts/rocket_sentry. Reproduce this ONE Rocket Turret faithfully, with the same three-quarter-left orientation and raised active pose. Preserve the specific silhouette: round off-white spherical armored head with a green circular iris, open right side shell revealing the small red-tipped dark components and internal black machinery, one short black launcher barrel pointing diagonally toward lower left, a thick white articulated support stem with dark circular hinge pivots, a broad circular flush floor mount. Keep the correct exact proportions, panels, seams, visible joints and material wear from the reference. It is a fixed mechanical turret, not a walking robot. Render the entire device from head to circular mounting rim, fully visible, centered, with comfortable empty margin all around; no underground unmodeled pedestal. Detailed raster 2D UHD sprite with crisp readable edges and restrained realistic material shading matching the source. True transparent background everywhere outside the physical machine, including spaces between mechanical parts. No floor, no scenery, no drop shadow, no glow, no HUD, no text, no extra objects, no other turrets, no second pose. Do not redesign or add weapons. One sprite in one image.",
+      "source_references": [
+        {
+          "reference_filename": "portal1_rocket_turret_model.png",
+          "sha256": "df2f749f815f199267ab171de0612d102234d7f9f134e296dcb9ed76485307a8",
+          "width": 467,
+          "height": 654,
+          "visually_inspected": true,
+          "source_id": "portal1_rocket_model_c",
+          "title": "Portal Wiki — modèle props_bts/rocket_sentry de Portal",
+          "source_url": "https://i1.theportalwiki.net/img/d/d5/Portal_Rocket_Turret.png",
+          "provenance": "secondary_hosted_game_model",
+          "role": "visual_identity_reference"
+        }
+      ],
+      "source_urls": [
+        "https://i1.theportalwiki.net/img/d/d5/Portal_Rocket_Turret.png"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "visual_identity_reference",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "révision requise",
+      "file_path": "assets/resonance/candidates/continuation_20261120_c/rocket_turret_portal1_idle_left_c.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_c/rocket_turret_portal1_idle_left_c.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": true,
+      "selected_for_next_review": false,
+      "width": 1060,
+      "height": 1484,
+      "color_mode": "RGBA",
+      "byte_size": 1658002,
+      "sha256": "5d8fdb8863639b4f4aeca8f5a909df93bf94fd3eacb59fe4b7e8c3b3a2efc61a",
+      "alpha_check": "présent",
+      "notes": "Silhouette, iris vert, canon, mécanisme et socle proches de la référence chargée. Cadrage trop serré et franges colorées/claires; v2 préférée. Une seule pose de machine, aucune animation ni rencontre intégrée.",
+      "alpha_stats": {
+        "transparent_pixels": 648657,
+        "transparent_fraction": 0.41235887199308346,
+        "partial_pixels": 923907,
+        "opaque_pixels": 476,
+        "max_alpha": 255,
+        "bbox_alpha_nonzero": [
+          0,
+          0,
+          1060,
+          1484
+        ],
+        "bbox_alpha_at_least_16": [
+          4,
+          3,
+          1057,
+          1484
+        ],
+        "note": "Les valeurs alpha 253/255 ne constituent pas toutes des halos; défauts visibles décrits dans notes."
+      },
+      "superseded_by": "rocket_turret_portal1_idle_left_v2_c"
+    },
+    {
+      "asset_id": "wheatley_core_portal2_idle_c",
+      "name_fr": "Wheatley — noyau Portal 2",
+      "owner_id": "wheatley_core_portal2",
+      "owner_type": "support_character",
+      "target_ids": [
+        "wheatley_core_portal2"
+      ],
+      "category": "character_reference_sprite",
+      "batch_id": "continuation_20261120_c",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: identity-preserve. Asset type: one isolated 2D UHD game sprite. Input image 1 is an official Valve Portal 2 screenshot and is the identity reference. Create ONE complete standalone Wheatley personality core in exactly this visual design and same slight three-quarter orientation: dirty off-white segmented spherical shell, black inner mechanics, large luminous BLUE iris with the fine textured aperture pattern, exact source eyelid plates and shell seams, the thin metal supports and the two characteristic horizontal black grip handles above and below the face. Preserve source proportions, irregular panel details, scratches and the character's neutral attentive expression. Show the entire spherical core and both complete handles with generous margins, no cropping at top. Remove the environment and the holding cradle/rail/support behind it; show only the autonomous core and its own handles. Do not give him arms or legs, do not substitute ATLAS, do not add decorative glowing rings or orbiting effects. Detailed raster 2D game sprite, clean crisp contour, subtle source-like material shading, consistent soft upper-left light. TRUE transparent background surrounding the object and through the gaps; no scene, floor, cast shadow, grey halo, text, UI, other subject, multiple views or contact sheet. Faithful reference candidate for the exact retail Portal 2 core, one subject per image.",
+      "source_references": [
+        {
+          "reference_filename": "steam_620_02.jpg",
+          "sha256": "0773e4664dac8a6a05a0faa0a723022baf5dd912c7cd53c0c78ba3d80b95bb4d",
+          "width": 1920,
+          "height": 1080,
+          "visually_inspected": true,
+          "source_id": "portal2_wheatley_capture_c",
+          "title": "Valve / Steam — Wheatley, capture 02",
+          "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0cdd90fafc160b52d08b303d205f9fd4e83cf164.1920x1080.jpg?t=1790187113",
+          "provenance": "primary_official_screenshot",
+          "role": "visual_identity_reference"
+        }
+      ],
+      "source_urls": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0cdd90fafc160b52d08b303d205f9fd4e83cf164.1920x1080.jpg?t=1790187113"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "visual_identity_reference",
+      "generation_status": "refus automatique",
+      "status": "non produit",
+      "qa_status": "non produit",
+      "file_path": null,
+      "repository_path": null,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": true,
+      "selected_for_next_review": false,
+      "width": null,
+      "height": null,
+      "color_mode": null,
+      "byte_size": null,
+      "sha256": null,
+      "alpha_check": "non applicable",
+      "notes": "Refus automatique à la sortie (moderation_blocked); aucun PNG produit et aucune relance.",
+      "generation_error": "moderation_blocked; output; category other; request ID e5199123-10a6-4228-bd49-26e6c2ef3ab6"
+    },
+    {
+      "asset_id": "costume_chell_portal2_idle_c",
+      "name_fr": "Chell — tenue Portal 2",
+      "owner_id": "chell_portal1",
+      "owner_type": "support_character",
+      "target_ids": [
+        "costume_chell_portal2"
+      ],
+      "category": "costume_reference_sprite",
+      "batch_id": "continuation_20261120_c",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: identity-preserve. Asset type: one full-body raster 2D fighting-game character sprite, neutral idle pose. Input image 1 is the retail Portal 2 model appearance reference of Chell. Reproduce precisely this adult character and this Portal 2 outfit, keeping the reference pose and three-quarter-front view: the same face, tied-back dark brown hair with loose front strands, white worn sleeveless Aperture tank top, pale blue-grey band/waist layer, orange jumpsuit trousers with the upper half and sleeves tied around the waist, visible cream inner cloth lining, wrist wraps as shown, dark lower leg straps and the complete white-and-black Long Fall Boots with their distinctive mechanical heel supports. Preserve the slim athletic source proportions, actual seam/pocket arrangement, boot proportions and costume asymmetries. Do not substitute Portal 1's closed orange suit or a generic sci-fi suit. Entire person visible from top of head to both complete soles and heel mechanisms, comfortably framed with margin on every side. Arms resting ready as in the source; empty hands, no new equipment. High-detail 2D UHD raster sprite, clean edges, subtle realistic volume, neutral source-faithful materials, not vector art, not a poster. True alpha-transparent background including the spaces between limbs. No ground plane, no soft background halo, no drop shadow, no scenery, no other character, no multiple poses, no UI, no labels. Single subject and single pose, fidelity to the loaded appearance reference.",
+      "source_references": [
+        {
+          "reference_filename": "wiki_Chell.png",
+          "sha256": "bd4290fdcb2490ceb50fe203febed0a140c0d129f9df91f0b9ca16a3a8b295fc",
+          "width": 200,
+          "height": 580,
+          "visually_inspected": true,
+          "source_id": "portal2_chell_model_c",
+          "title": "Portal Wiki — modèle retail Chell Portal 2",
+          "source_url": "https://i1.theportalwiki.net/img/4/40/Chell.png",
+          "provenance": "secondary_hosted_game_model",
+          "role": "visual_identity_reference"
+        }
+      ],
+      "source_urls": [
+        "https://i1.theportalwiki.net/img/4/40/Chell.png"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "visual_identity_reference",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "révision requise",
+      "file_path": "assets/resonance/candidates/continuation_20261120_c/costume_chell_portal2_idle_c.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_c/costume_chell_portal2_idle_c.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "width": 736,
+      "height": 2135,
+      "color_mode": "RGBA",
+      "byte_size": 1491548,
+      "sha256": "1c897482d3eb8f37625e5d9b4eface11f04374b7686b65cb4fe90304a48f8a63",
+      "alpha_check": "présent",
+      "notes": "Corps entier, débardeur, combinaison nouée et Long Fall Boots avec ressorts de talon présents. Franges rouges/jaunes à corriger. Pose de référence presque frontale, pieds sur deux niveaux: pas une garde latérale prête pour le moteur. Costume distinct de l’apparence Portal 1.",
+      "alpha_stats": {
+        "transparent_pixels": 874917,
+        "transparent_fraction": 0.5567896599124326,
+        "partial_pixels": 696408,
+        "opaque_pixels": 35,
+        "max_alpha": 255,
+        "bbox_alpha_nonzero": [
+          0,
+          24,
+          712,
+          2118
+        ],
+        "bbox_alpha_at_least_16": [
+          32,
+          27,
+          662,
+          2115
+        ],
+        "note": "Les valeurs alpha 253/255 ne constituent pas toutes des halos; défauts visibles décrits dans notes."
+      }
+    },
+    {
+      "asset_id": "stage_portal2_turret_factory_master_c",
+      "name_fr": "Portal 2 — chaîne de fabrication, maître",
+      "owner_id": "STG_EXT_PORTAL2_TURRET_FACTORY",
+      "owner_type": "stage",
+      "target_ids": [
+        "STG_EXT_PORTAL2_TURRET_FACTORY"
+      ],
+      "category": "stage_master",
+      "batch_id": "continuation_20261120_c",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: stylized-concept. Asset type: ONE wide empty 2D side-view fighting-game arena master panorama for Half-Life Resonance. Input images 1 and 2 are official Valve Portal 2 screenshots of the same behind-the-scenes turret manufacturing factory and are the strict architectural and material references. Re-express that exact setting from a fixed horizontal side-on fighting-game camera, keeping its recognizable dark rust-orange articulated welding arms, black steel trusses, tall ribbed industrial wall sections, overhead orange rail gantry, exposed cables, deep blue-grey machinery shaft, grated walkways, and conveyor carrying sparse unfinished white shell pieces. The near combat lane must be an uninterrupted, level horizontal metal service walkway spanning the entire lower fifth of the panorama, empty and wide enough for large sprites; the factory machinery and conveyor stay BEHIND this lane. Place one or two source-shaped orange assembly arms in the middle background, their small red welding lights restrained and behind the fighting silhouettes. No active hostile turrets and no characters. Palette, weathering, practical lights and gloomy volume must match the reference industrial area; do not invent a clean white test chamber, giant reactor, distant city or lava. Detailed hand-painted raster 2D UHD environment with crisp structural edges and controlled atmosphere. Wide landscape about 3:1. Keep horizontal floor edges, fixed level camera, no isometric view or aerial angle. Plan separate depths for far shaft haze, distant trusses, factory wall, rear machinery, flat combat floor, thin foreground edge, while delivering a single master panorama in this image. No text, no title, no HUD, no labels, no borders, no fighters, no additional views. Opaque full background.",
+      "source_references": [
+        {
+          "reference_filename": "steam_620_08.jpg",
+          "sha256": "557a184ce2292a2b3821c48ac0090d9e7573c16b229cca86dab8e99dfac16ba1",
+          "width": 1920,
+          "height": 1080,
+          "visually_inspected": true,
+          "source_id": "portal2_factory_capture08_c",
+          "title": "Valve / Steam — chaîne de fabrication, capture 08",
+          "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0e16bceacb6616a5ca4bc4ba4d28c7a0d06b671c.1920x1080.jpg?t=1790187113",
+          "provenance": "primary_official_screenshot",
+          "role": "visual_identity_reference"
+        },
+        {
+          "reference_filename": "steam_620_09.jpg",
+          "sha256": "cc6528d886d46e548e20084bef6c8e4572a5abd4c65228fdb9169affa5caf5de",
+          "width": 1920,
+          "height": 1080,
+          "visually_inspected": true,
+          "source_id": "portal2_factory_capture09_c",
+          "title": "Valve / Steam — chaîne de fabrication, capture 09",
+          "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_d8f172249d6e89999c3692bf2c380921f197fd82.1920x1080.jpg?t=1790187113",
+          "provenance": "primary_official_screenshot",
+          "role": "visual_identity_reference"
+        }
+      ],
+      "source_urls": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0e16bceacb6616a5ca4bc4ba4d28c7a0d06b671c.1920x1080.jpg?t=1790187113",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_d8f172249d6e89999c3692bf2c380921f197fd82.1920x1080.jpg?t=1790187113"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "visual_identity_reference",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261120_c/stage_portal2_turret_factory_master_c.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_c/stage_portal2_turret_factory_master_c.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": false,
+      "selected_for_next_review": true,
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGB",
+      "byte_size": 1902840,
+      "sha256": "002de2836d1c3ad7b0ce35f59a6bc4f9c1443504bb48098b48a6f5fcf3d6512d",
+      "alpha_check": "sans objet",
+      "notes": "Panorama latéral recomposé depuis deux captures officielles: bras orange, tapis, panneaux, passerelles et profondeur conservés comme motifs. Voie plane continue et dégagée. La topologie est adaptée au combat 2D, pas reproduite pixel par pixel; un maître ne termine pas six couches."
+    },
+    {
+      "asset_id": "rocket_turret_portal1_idle_left_v2_c",
+      "name_fr": "Rocket Turret — cadrage corrigé",
+      "owner_id": "rocket_turret_portal1",
+      "owner_type": "boss",
+      "target_ids": [
+        "rocket_turret_portal1"
+      ],
+      "category": "boss_reference_sprite_revision",
+      "batch_id": "continuation_20261120_c",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: precise-object-edit. Input image 1 is the already generated Rocket Turret sprite to correct. Make only a framing and transparency cleanup revision. Keep the exact existing single machine, its silhouette, green iris, launcher barrel, open shell and inner details, articulated stem, circular floor mounting ring, pose, materials and colors. Fit the COMPLETE same machine within a portrait canvas with a clearly empty transparent border of at least 8 percent on all four sides; nothing may touch the canvas edge. In particular keep the entire top head shell and complete lower circular rim. Remove every isolated white/grey pixel fragment and halo outside the true physical silhouette, including around the very top and base rim. Preserve clean antialiased edges only at the actual metal boundary. Do not repaint the device, change its relative proportions, add details, crop any part or invent missing machinery. True transparent background, no floor, no shadow, no second object, no text. This is the same single sprite with safe padding and clean alpha, not a new design.",
+      "source_references": [
+        {
+          "reference_filename": "rocket_turret_portal1_idle_left_c.png",
+          "sha256": "5d8fdb8863639b4f4aeca8f5a909df93bf94fd3eacb59fe4b7e8c3b3a2efc61a",
+          "width": 1060,
+          "height": 1484,
+          "visually_inspected": true,
+          "repository_path": "assets/resonance/candidates/continuation_20261120_c/rocket_turret_portal1_idle_left_c.png",
+          "provenance": "generated_project_candidate",
+          "role": "edit_target"
+        }
+      ],
+      "source_urls": [],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "edit_target",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "révision requise",
+      "file_path": "assets/resonance/candidates/continuation_20261120_c/rocket_turret_portal1_idle_left_v2_c.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_c/rocket_turret_portal1_idle_left_v2_c.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "width": 1060,
+      "height": 1484,
+      "color_mode": "RGBA",
+      "byte_size": 1379728,
+      "sha256": "5dc0129132bda84098e021c76a93676930f5339d9536d9d1b075378d1cdec648",
+      "alpha_check": "présent",
+      "notes": "Révision du même sujet: cadrage élargi, tête et socle dégagés des bords. La marge de 8 % demandée n’est pas atteinte uniformément; de faibles résidus de détourage subsistent. Préférée à v1 pour la prochaine revue, sans certification 1:1.",
+      "alpha_stats": {
+        "transparent_pixels": 800536,
+        "transparent_fraction": 0.5089101357880282,
+        "partial_pixels": 771530,
+        "opaque_pixels": 974,
+        "max_alpha": 255,
+        "bbox_alpha_nonzero": [
+          50,
+          86,
+          1059,
+          1452
+        ],
+        "bbox_alpha_at_least_16": [
+          54,
+          96,
+          1015,
+          1449
+        ],
+        "note": "Les valeurs alpha 253/255 ne constituent pas toutes des halos; défauts visibles décrits dans notes."
+      },
+      "supersedes": "rocket_turret_portal1_idle_left_c",
+      "revision_scope": "Cadrage et détourage, même sujet."
+    },
+    {
+      "asset_id": "grady_deskjob_core_idle_c",
+      "name_fr": "Grady — noyau Aperture Desk Job",
+      "owner_id": "grady_deskjob",
+      "owner_type": "support_character",
+      "target_ids": [
+        "grady_deskjob"
+      ],
+      "category": "character_reference_sprite",
+      "batch_id": "continuation_20261120_c",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: identity-preserve. Asset type: ONE isolated raster 2D game sprite of GRADY from Valve's APERTURE DESK JOB. Input image 1 is the official game's screenshot and the strict design reference. Isolate and faithfully recreate only Grady's turquoise spherical CORE assembly in the middle-left of the screenshot: scuffed turquoise enamel shell with vertical seam, circular orange-red iris made of thin radial black shutter blades with a dark central pupil, off-white/grey metal bezel, the exact grey side swivel brackets and bolts on both sides, and the small grey top suspension connector with a short straight attachment rod. Show the complete sphere and these connected brackets, all visible with generous margins. Keep the same frontal view, recognizable proportions, material wear and source details. Exclude the separate large articulated crane arm and robotic hand on the right, exclude the overhead long arm segment, exclude the control desk, switches, room and hanging telephone cable that belongs to the environment. Do not transform the core into a standing humanoid or add legs, weapons, two eyes, new handles or different shell markings. Detailed source-faithful raster UHD 2D sprite, clear contours, soft neutral upper-left lighting, true transparent alpha surrounding the one physical core and attachment pieces. No backdrop, floor, cast shadow, background halo, labels, text, HUD, multiple poses or extra subject. This is a core assembly asset, not the complete rigged ceiling-arm character.",
+      "source_references": [
+        {
+          "reference_filename": "steam_1902490_01.jpg",
+          "sha256": "dc6222601c0a30347e306f15865de293f68c5c7e2040f3642d54115cbb95ef8f",
+          "width": 1920,
+          "height": 1080,
+          "visually_inspected": true,
+          "source_id": "deskjob_grady_capture01_c",
+          "title": "Valve / Steam — Grady, capture 01",
+          "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1902490/ss_4b8b8d6ab04d3c42584abb31b5b4d7d534478d1d.1920x1080.jpg?t=1745368564",
+          "provenance": "primary_official_screenshot",
+          "role": "visual_identity_reference"
+        }
+      ],
+      "source_urls": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1902490/ss_4b8b8d6ab04d3c42584abb31b5b4d7d534478d1d.1920x1080.jpg?t=1745368564"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "visual_identity_reference",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "révision requise",
+      "file_path": "assets/resonance/candidates/continuation_20261120_c/grady_deskjob_core_idle_c.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_c/grady_deskjob_core_idle_c.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "width": 1448,
+      "height": 1086,
+      "color_mode": "RGBA",
+      "byte_size": 1291991,
+      "sha256": "8e47d7bd766f23c8476ff6509981aa1790d50fe952735fab29e2cb562b1de5cb",
+      "alpha_check": "présent",
+      "notes": "Noyau turquoise et iris radial orange/rouge reconnaissables d’après la capture officielle. Assemblage limité au noyau, supports latéraux et attache supérieure. Le bras complet, la main, le câble et les animations restent à produire. Franges colorées et extrémité haute de l’attache à reprendre.",
+      "alpha_stats": {
+        "transparent_pixels": 960789,
+        "transparent_fraction": 0.610983715393303,
+        "partial_pixels": 611191,
+        "opaque_pixels": 548,
+        "max_alpha": 255,
+        "bbox_alpha_nonzero": [
+          0,
+          0,
+          1392,
+          1062
+        ],
+        "bbox_alpha_at_least_16": [
+          152,
+          11,
+          1296,
+          1028
+        ],
+        "note": "Les valeurs alpha 253/255 ne constituent pas toutes des halos; défauts visibles décrits dans notes."
+      }
+    },
+    {
+      "asset_id": "layer_portal2_turret_factory_floor_c",
+      "name_fr": "Portal 2 — chaîne de fabrication, sol L5",
+      "owner_id": "STG_EXT_PORTAL2_TURRET_FACTORY",
+      "owner_type": "stage",
+      "target_ids": [
+        "STG_EXT_PORTAL2_TURRET_FACTORY"
+      ],
+      "category": "stage_layer_candidate",
+      "batch_id": "continuation_20261120_c",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: background-extraction. Input image 1 is the completed wide 2172 x 724 Portal 2 factory arena master. Create ONE separate FLOOR compositing layer for THIS SAME stage. Keep the exact whole 2172 x 724 canvas and camera, with no crop, no zoom, no recentering. Retain ONLY the continuous lower metal fighting walkway, starting at its horizontal rear edge near the bottom fifth, its lit metal top plates, and its dark front fascia with lower support posts and cables along the bottom edge. All this floor geometry must remain in the exact same pixel positions, width, scale, shape and perspective as the input. Remove the entire orange railing, every factory machine, welding arm, conveyor, shell, gantry, tall wall, background truss and all upper atmosphere, replacing those removed pixels with TRUE TRANSPARENCY. Above the back edge of the metal floor all pixels must be transparent. Preserve the existing floor textures and lighting without additions. Do not invent a new floor or stretch it, do not add lights, no characters, no text, no halo. One single aligned full-canvas layer; empty top area stays transparent rather than being cropped away.",
+      "source_references": [
+        {
+          "reference_filename": "stage_portal2_turret_factory_master_c.png",
+          "sha256": "002de2836d1c3ad7b0ce35f59a6bc4f9c1443504bb48098b48a6f5fcf3d6512d",
+          "width": 2172,
+          "height": 724,
+          "visually_inspected": true,
+          "repository_path": "assets/resonance/candidates/continuation_20261120_c/stage_portal2_turret_factory_master_c.png",
+          "provenance": "generated_project_candidate",
+          "role": "edit_target"
+        }
+      ],
+      "source_urls": [],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "edit_target",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261120_c/layer_portal2_turret_factory_floor_c.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_c/layer_portal2_turret_factory_floor_c.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 580863,
+      "sha256": "4ac08390bd7ab534f32a561f8bf9ac92febe0e8fbb45c8c632cfb4fe56aad55a",
+      "alpha_check": "présent",
+      "notes": "Sol extrait générativement du maître, canevas 2172 × 724 conservé. Zone opaque au bas du cadre, haut transparent et garde-corps retiré. Alignement géométrique et textures à vérifier en composition; pixels non garantis identiques au maître. Une seule couche candidate L5 sur six.",
+      "layer_id": "L5",
+      "alpha_stats": {
+        "transparent_pixels": 1221578,
+        "transparent_fraction": 0.7768243236368446,
+        "partial_pixels": 350949,
+        "opaque_pixels": 1,
+        "max_alpha": 255,
+        "bbox_alpha_nonzero": [
+          0,
+          39,
+          2172,
+          724
+        ],
+        "bbox_alpha_at_least_16": [
+          0,
+          566,
+          2172,
+          724
+        ],
+        "note": "Les valeurs alpha 253/255 ne constituent pas toutes des halos; défauts visibles décrits dans notes."
+      },
+      "parent_asset_id": "stage_portal2_turret_factory_master_c"
+    },
+    {
+      "asset_id": "chell_portal1_idle_c",
+      "name_fr": "Chell — apparence Portal 1",
+      "owner_id": "chell_portal1",
+      "owner_type": "support_character",
+      "target_ids": [
+        "chell_portal1"
+      ],
+      "category": "character_reference_sprite",
+      "batch_id": "continuation_20261120_c",
+      "created_at": "2026-11-20",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: identity-preserve. Asset type: ONE isolated full-body 2D UHD raster game sprite. Input image 1 is the retail original PORTAL (2007) Chell model and is the exact identity and costume reference. Reproduce this single adult woman faithfully in the same calm idle pose and front-three-quarter orientation. Keep her source facial features and grey eyes, dark hair tied back, orange fully zipped short-sleeved test-subject jumpsuit with collar, white undershirt visible at the collar, distinctive pale piping and pocket seams, grey belt details, trousers ending just below the knees, bare lower legs and bare feet, and the TWO original black curved Advanced Knee Replacement heel springs attached with their grey calf/knee brackets and small cyan circular details. These are the exposed Portal 1 leg supports exactly as shown; do not give her the white boots or tank top from Portal 2. Preserve physical left/right placement, proportions, complete hands, all toes, black spring tips and source outfit details. Full figure from hair to both feet/support tips visible with comfortable transparent margin all around. No weapon or accessory not present in the reference. Render as a detailed raster 2D game sprite with crisp readable edges, source-faithful materials and natural soft upper-left shading, not vector art or stylized cartoon. True transparent background everywhere outside the physical person and supports, including gaps between limbs. No ground, no shadow halo, no props, no text, no UI, no other person, no additional pose or collage. One figure per image; the exact original Portal appearance must remain distinct from her sequel costume.",
+      "source_references": [
+        {
+          "reference_filename": "wiki_Portal_Chell.png",
+          "sha256": "00be97f29b36e43c7e3c09ec8973f5eaac79fb58375d9547af01bdc937a3210c",
+          "width": 239,
+          "height": 861,
+          "visually_inspected": true,
+          "source_id": "portal1_chell_model_c",
+          "title": "Portal Wiki — modèle retail Chell Portal",
+          "source_url": "https://i1.theportalwiki.net/img/8/81/Portal_Chell.png",
+          "provenance": "secondary_hosted_game_model",
+          "role": "visual_identity_reference"
+        }
+      ],
+      "source_urls": [
+        "https://i1.theportalwiki.net/img/8/81/Portal_Chell.png"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "visual_identity_reference",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "révision requise",
+      "file_path": "assets/resonance/candidates/continuation_20261120_c/chell_portal1_idle_c.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_c/chell_portal1_idle_c.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "width": 725,
+      "height": 2170,
+      "color_mode": "RGBA",
+      "byte_size": 1427826,
+      "sha256": "ff9a3b10f4da533359af55d9e3e3512e1185afe2b2d05cb1b26f21654c073688",
+      "alpha_check": "présent",
+      "notes": "Combinaison fermée, manches courtes, jambes et pieds nus, supports de genoux et ressorts noirs conservés. Pose de référence en trois-quarts, pas une garde latérale. Cheveux près du bord supérieur, très faible marge basse et franges colorées à corriger avant intégration.",
+      "alpha_stats": {
+        "transparent_pixels": 868524,
+        "transparent_fraction": 0.5520572064198316,
+        "partial_pixels": 703130,
+        "opaque_pixels": 1596,
+        "max_alpha": 255,
+        "bbox_alpha_nonzero": [
+          0,
+          0,
+          701,
+          2170
+        ],
+        "bbox_alpha_at_least_16": [
+          59,
+          0,
+          669,
+          2165
+        ],
+        "note": "Les valeurs alpha 253/255 ne constituent pas toutes des halos; défauts visibles décrits dans notes."
+      }
+    },
+    {
+      "asset_id": "atlas_portal2_idle_c",
+      "owner_id": "atlas_portal2",
+      "owner_type": "support_character",
+      "category": "fighter_key_pose",
+      "requested_repository_path": "assets/resonance/candidates/continuation_20261120_c/atlas_portal2_idle_c.png",
+      "generation_status": "refus automatique",
+      "status": "non produit",
+      "qa_status": "non produit",
+      "alpha_check": "non applicable",
+      "prompt": "Use case: stylized-concept. Asset type: ONE individual full-body raster 2D fighting-game sprite for Half-Life Resonance. Input image 1 is a visual model reference for ATLAS from the released Portal 2 game, not a style suggestion: preserve its actual recognizable identity, mechanical construction, white spherical torso, small bright blue radial iris within the rectangular dark ocular opening, compact stout proportions, slim exposed metal arm linkages, blue details, asymmetrical leg machinery and feet. Create ATLAS alone in a calm mechanical ready stance, facing screen RIGHT in side-on gameplay projection with a slight three-quarter torso so the eye remains visible. Both feet supported on one level baseline; complete body, hands and feet visible. Arms relaxed and slightly bent, hands poised at waist/chest level rather than a raised salute. Do not add a weapon, portal gun, human head, neck, armor, extra limbs or a second robot. The source proportions are essential: compact spherical body and short legs, long articulated arms, not a humanoid soldier. Preserve physical left/right placement of the reference's asymmetrical parts. Detailed hand-painted raster UHD game-sprite treatment, clean edges and readable silhouette, faithful restrained white and dark metal with small blue accents, soft upper-left light and natural surface wear; no vector outlines or cartoon redesign. TRUE transparent alpha background, generous transparent margins on all sides, no floor or ground shadow disc, no scene, no text, no logo overlay, no UI, no contact sheet, no duplicate pose, no cropping. One robot, one image.",
+      "transparent_background_requested": true,
+      "reference": {
+        "page_url": "https://theportalwiki.com/wiki/File:Atlas.png",
+        "image_url": "https://i1.theportalwiki.net/img/0/04/Atlas.png",
+        "sha256": "bdecd308ddb015d437e5e42bf362983ac950c5c3f5d5c6098be81b368bffbd5c",
+        "width": 778,
+        "height": 1762,
+        "byte_size": 173881,
+        "provenance": "Capture de modèle Portal 2 attribuée à Valve Corporation par la page de fichier Portal Wiki; hébergement secondaire.",
+        "visually_inspected": true,
+        "reference_filename": "wiki_Atlas.png"
+      },
+      "official_context_sources": [
+        {
+          "title": "Valve — Bot Trust",
+          "url": "https://www.thinkwithportals.com/media_16.php",
+          "scope": "Présentation officielle des robots coopératifs; pas la source bitmap effectivement soumise."
+        },
+        {
+          "title": "Valve — Peer Review",
+          "url": "https://www.thinkwithportals.com/blog.php?id=6430",
+          "scope": "Confirme ATLAS et P-body comme acteurs de la campagne coopérative officielle."
+        }
+      ],
+      "tool_error": {
+        "code": "moderation_blocked",
+        "stage": "output",
+        "categories": [
+          "other"
+        ],
+        "request_id": "db95e1b4-52d2-4686-9d81-d86e91f64fa0",
+        "message": "Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID db95e1b4-52d2-4686-9d81-d86e91f64fa0."
+      },
+      "retried": false,
+      "repository_path": null,
+      "file_path": null,
+      "width": null,
+      "height": null,
+      "color_mode": null,
+      "byte_size": null,
+      "sha256": null,
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "notes": "Aucun fichier candidat produit. Le refus automatique ne fournit pas de justification plus précise que « other ». Aucune relance, conversion, retouche ou certification n'a été effectuée; la cible reste à produire.",
+      "batch_id": "continuation_20261120_c",
+      "name_fr": "ATLAS — coopération Portal 2",
+      "target_ids": [
+        "atlas_portal2"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "visual_identity_reference",
+      "selected_for_next_review": false
+    },
+    {
+      "asset_id": "pbody_portal2_idle_c",
+      "owner_id": "pbody_portal2",
+      "owner_type": "support_character",
+      "category": "fighter_key_pose",
+      "requested_repository_path": "assets/resonance/candidates/continuation_20261120_c/pbody_portal2_idle_c.png",
+      "generation_status": "refus automatique",
+      "status": "non produit",
+      "qa_status": "non produit",
+      "alpha_check": "non applicable",
+      "prompt": "Use case: stylized-concept. Asset type: ONE individual full-body raster 2D fighting-game sprite for Half-Life Resonance. Input image 1 is the visual model reference for P-body from the released Portal 2 game. Preserve its exact recognizable tall slender silhouette: elongated white oval turret-like torso with a small single orange radial iris, thin articulated dark mechanical arms, very long narrow jointed legs, original white shell panels and small mechanical feet. Keep the anatomy and asymmetries shown by the source, especially the broad orange stripe on the character's RIGHT lower leg (the leg appearing on the left in the frontal source image); do not swap it to the other leg or apply stripes to both legs. Preserve the little orange mark on the torso and the original worn white material. Create P-body alone in a relaxed mechanical ready stance facing screen RIGHT with a slight three-quarter torso so the single eye can be read; both feet on one horizontal baseline and both hands softly open with elbows bent. No portal gun or weapon, no extra props. Full body entirely visible with generous transparent margins above the head, below both feet and beside both hands. Detailed hand-painted raster UHD 2D game sprite, crisp natural edges, controlled upper-left lighting, faithful original game geometry and joints; avoid chibi proportions, human head or neck, extra armor, vector-art outlines, or redesign. TRUE transparent alpha background, no scenery, no floor, no ground shadow disc, no text, no labels, no UI, no duplicate pose, no contact sheet. Exactly one robot per image.",
+      "transparent_background_requested": true,
+      "reference": {
+        "page_url": "https://theportalwiki.com/wiki/File:P-body.png",
+        "image_url": "https://i1.theportalwiki.net/img/7/74/P-body.png",
+        "sha256": "b021bb9c3d18664dd4f19ca5a7c94cf8fce9c74e9db4577da39bc87818942c49",
+        "width": 753,
+        "height": 1415,
+        "byte_size": 178194,
+        "provenance": "Capture de modèle Portal 2 attribuée à Valve Corporation par la page de fichier Portal Wiki; hébergement secondaire.",
+        "visually_inspected": true,
+        "reference_filename": "wiki_P-body.png"
+      },
+      "official_context_sources": [
+        {
+          "title": "Valve — Bot Trust",
+          "url": "https://www.thinkwithportals.com/media_16.php",
+          "scope": "Présentation officielle des robots coopératifs; pas la source bitmap effectivement soumise."
+        },
+        {
+          "title": "Valve — Peer Review",
+          "url": "https://www.thinkwithportals.com/blog.php?id=6430",
+          "scope": "Confirme ATLAS et P-body comme acteurs de la campagne coopérative officielle."
+        }
+      ],
+      "tool_error": {
+        "code": "moderation_blocked",
+        "stage": "output",
+        "categories": [
+          "other"
+        ],
+        "request_id": "0b3677f9-3293-4e66-9e39-a5793bdad81e",
+        "message": "Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID 0b3677f9-3293-4e66-9e39-a5793bdad81e."
+      },
+      "retried": false,
+      "repository_path": null,
+      "file_path": null,
+      "width": null,
+      "height": null,
+      "color_mode": null,
+      "byte_size": null,
+      "sha256": null,
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "notes": "Aucun fichier candidat produit. Le refus automatique ne fournit pas de justification plus précise que « other ». Aucune relance, conversion, retouche ou certification n'a été effectuée; la cible reste à produire.",
+      "batch_id": "continuation_20261120_c",
+      "name_fr": "P-body — coopération Portal 2",
+      "target_ids": [
+        "pbody_portal2"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "visual_identity_reference",
+      "selected_for_next_review": false
+    }
+  ]
+}

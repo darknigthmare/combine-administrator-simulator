@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-20T12:54:48.250Z",
+  "generated_at": "2026-11-20T15:10:28.532Z",
   "module": "Half Life Resonance",
   "status": "passed",
   "input_files": [
@@ -43,14 +43,14 @@
       "released_reference": 105,
       "unspecified": 60
     },
-    "targets_with_files": 8,
-    "targets_without_files": 179,
-    "targets_with_refusals": 8,
-    "costume_targets_with_exactly_associated_files": 0,
-    "generation_requests": 20,
-    "generated_requests": 12,
-    "refused_requests": 8,
-    "distinct_registered_png_files_present": 12,
+    "targets_with_files": 13,
+    "targets_without_files": 174,
+    "targets_with_refusals": 11,
+    "costume_targets_with_exactly_associated_files": 1,
+    "generation_requests": 30,
+    "generated_requests": 19,
+    "refused_requests": 11,
+    "distinct_registered_png_files_present": 19,
     "requests_outside_target_queue": 1,
     "archives": 11,
     "archives_runtime_enabled": 0,
@@ -6607,25 +6607,56 @@
           "url": "https://theportalwiki.com/wiki/Characters",
           "kind": "secondary_index",
           "checked_scope": "Index de personnages; référence de modèle requise avant génération."
+        },
+        {
+          "namespace": "catalogue_extension_20261120",
+          "source_id": "portal1_chell_model_c",
+          "title": "Portal Wiki — modèle retail Chell Portal",
+          "url": "https://i1.theportalwiki.net/img/8/81/Portal_Chell.png",
+          "kind": "secondary_hosted_game_model",
+          "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée."
         }
       ],
-      "reference_capture": null,
-      "reference_status": "capture_required",
+      "reference_capture": {
+        "reference_filename": "wiki_Portal_Chell.png",
+        "sha256": "00be97f29b36e43c7e3c09ec8973f5eaac79fb58375d9547af01bdc937a3210c",
+        "width": 239,
+        "height": 861,
+        "visually_inspected": true,
+        "source_id": "portal1_chell_model_c",
+        "title": "Portal Wiki — modèle retail Chell Portal",
+        "source_url": "https://i1.theportalwiki.net/img/8/81/Portal_Chell.png",
+        "provenance": "secondary_hosted_game_model",
+        "role": "visual_identity_reference"
+      },
+      "reference_status": "bitmap_inspected_generation_comparison_pending",
       "runtime_enabled_declared": false,
       "target_certified_one_to_one_declared": false,
       "required_layer_ids": [],
-      "actual_assets": [],
+      "actual_assets": [
+        {
+          "asset_id": "chell_portal1_idle_c",
+          "repository_path": "assets/resonance/candidates/continuation_20261120_c/chell_portal1_idle_c.png",
+          "byte_size_actual": 1427826,
+          "category": "character_reference_sprite",
+          "layer_id": null,
+          "qa_status": "révision requise",
+          "certified_one_to_one_declared": false,
+          "animation_clip_complete_declared": false,
+          "integrated_in_game_declared": false,
+          "association": "explicit_target_id"
+        }
+      ],
       "refused_requests": [],
       "other_unproduced_requests": [],
-      "actual_file_count": 0,
+      "actual_file_count": 1,
       "master_candidate_count": 0,
       "layer_candidate_count": 0,
       "certified_asset_count_declared": 0,
-      "production_status": "no_file",
+      "production_status": "candidate_files_present_work_remaining",
       "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
       "next_work": [
-        "Ajouter des captures du modèle ou du lieu exact et vérifier les invariants visuels.",
-        "Produire une première image candidate individuelle après fixation des références.",
+        "Comparer chaque candidat aux références et corriger les écarts avant validation 1:1.",
         "Produire et vérifier les poses, transitions et animations prévues; une pose isolée ne termine pas le personnage ou le costume."
       ]
     },
@@ -6649,25 +6680,46 @@
           "url": "https://combineoverwiki.net/wiki/ATLAS_and_P-body",
           "kind": "secondary_reference",
           "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+        },
+        {
+          "namespace": "catalogue_extension_20261120",
+          "source_id": "portal2_atlas_model_c",
+          "title": "Portal Wiki — modèle retail ATLAS",
+          "url": "https://i1.theportalwiki.net/img/0/04/Atlas.png",
+          "kind": "secondary_hosted_game_model",
+          "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée."
         }
       ],
-      "reference_capture": null,
-      "reference_status": "capture_required",
+      "reference_capture": {
+        "source_id": "portal2_atlas_model_c",
+        "source_url": "https://i1.theportalwiki.net/img/0/04/Atlas.png",
+        "sha256": "bdecd308ddb015d437e5e42bf362983ac950c5c3f5d5c6098be81b368bffbd5c",
+        "width": 778,
+        "height": 1762,
+        "provenance": "Capture de modèle Portal 2 attribuée à Valve Corporation par la page de fichier Portal Wiki; hébergement secondaire."
+      },
+      "reference_status": "bitmap_inspected_generation_comparison_pending",
       "runtime_enabled_declared": false,
       "target_certified_one_to_one_declared": false,
       "required_layer_ids": [],
       "actual_assets": [],
-      "refused_requests": [],
+      "refused_requests": [
+        {
+          "asset_id": "atlas_portal2_idle_c",
+          "owner_id": "atlas_portal2",
+          "generation_status": "refus automatique",
+          "notes": "Aucun fichier candidat produit. Le refus automatique ne fournit pas de justification plus précise que « other ». Aucune relance, conversion, retouche ou certification n'a été effectuée; la cible reste à produire."
+        }
+      ],
       "other_unproduced_requests": [],
       "actual_file_count": 0,
       "master_candidate_count": 0,
       "layer_candidate_count": 0,
       "certified_asset_count_declared": 0,
-      "production_status": "no_file",
+      "production_status": "no_file_refusal_recorded",
       "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
       "next_work": [
-        "Ajouter des captures du modèle ou du lieu exact et vérifier les invariants visuels.",
-        "Produire une première image candidate individuelle après fixation des références.",
+        "Conserver les refus enregistrés; la première image candidate reste à produire.",
         "Produire et vérifier les poses, transitions et animations prévues; une pose isolée ne termine pas le personnage ou le costume."
       ]
     },
@@ -6691,25 +6743,46 @@
           "url": "https://combineoverwiki.net/wiki/ATLAS_and_P-body",
           "kind": "secondary_reference",
           "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+        },
+        {
+          "namespace": "catalogue_extension_20261120",
+          "source_id": "portal2_pbody_model_c",
+          "title": "Portal Wiki — modèle retail P-body",
+          "url": "https://i1.theportalwiki.net/img/7/74/P-body.png",
+          "kind": "secondary_hosted_game_model",
+          "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée."
         }
       ],
-      "reference_capture": null,
-      "reference_status": "capture_required",
+      "reference_capture": {
+        "source_id": "portal2_pbody_model_c",
+        "source_url": "https://i1.theportalwiki.net/img/7/74/P-body.png",
+        "sha256": "b021bb9c3d18664dd4f19ca5a7c94cf8fce9c74e9db4577da39bc87818942c49",
+        "width": 753,
+        "height": 1415,
+        "provenance": "Capture de modèle Portal 2 attribuée à Valve Corporation par la page de fichier Portal Wiki; hébergement secondaire."
+      },
+      "reference_status": "bitmap_inspected_generation_comparison_pending",
       "runtime_enabled_declared": false,
       "target_certified_one_to_one_declared": false,
       "required_layer_ids": [],
       "actual_assets": [],
-      "refused_requests": [],
+      "refused_requests": [
+        {
+          "asset_id": "pbody_portal2_idle_c",
+          "owner_id": "pbody_portal2",
+          "generation_status": "refus automatique",
+          "notes": "Aucun fichier candidat produit. Le refus automatique ne fournit pas de justification plus précise que « other ». Aucune relance, conversion, retouche ou certification n'a été effectuée; la cible reste à produire."
+        }
+      ],
       "other_unproduced_requests": [],
       "actual_file_count": 0,
       "master_candidate_count": 0,
       "layer_candidate_count": 0,
       "certified_asset_count_declared": 0,
-      "production_status": "no_file",
+      "production_status": "no_file_refusal_recorded",
       "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
       "next_work": [
-        "Ajouter des captures du modèle ou du lieu exact et vérifier les invariants visuels.",
-        "Produire une première image candidate individuelle après fixation des références.",
+        "Conserver les refus enregistrés; la première image candidate reste à produire.",
         "Produire et vérifier les poses, transitions et animations prévues; une pose isolée ne termine pas le personnage ou le costume."
       ]
     },
@@ -6741,25 +6814,50 @@
           "url": "https://combineoverwiki.net/wiki/Portal_2_storyline",
           "kind": "secondary_reference",
           "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+        },
+        {
+          "namespace": "catalogue_extension_20261120",
+          "source_id": "portal2_wheatley_capture_c",
+          "title": "Valve / Steam — Wheatley, capture 02",
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0cdd90fafc160b52d08b303d205f9fd4e83cf164.1920x1080.jpg?t=1790187113",
+          "kind": "primary_official_screenshot",
+          "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée."
         }
       ],
-      "reference_capture": null,
-      "reference_status": "capture_required",
+      "reference_capture": {
+        "reference_filename": "steam_620_02.jpg",
+        "sha256": "0773e4664dac8a6a05a0faa0a723022baf5dd912c7cd53c0c78ba3d80b95bb4d",
+        "width": 1920,
+        "height": 1080,
+        "visually_inspected": true,
+        "source_id": "portal2_wheatley_capture_c",
+        "title": "Valve / Steam — Wheatley, capture 02",
+        "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0cdd90fafc160b52d08b303d205f9fd4e83cf164.1920x1080.jpg?t=1790187113",
+        "provenance": "primary_official_screenshot",
+        "role": "visual_identity_reference"
+      },
+      "reference_status": "bitmap_inspected_generation_comparison_pending",
       "runtime_enabled_declared": false,
       "target_certified_one_to_one_declared": false,
       "required_layer_ids": [],
       "actual_assets": [],
-      "refused_requests": [],
+      "refused_requests": [
+        {
+          "asset_id": "wheatley_core_portal2_idle_c",
+          "owner_id": "wheatley_core_portal2",
+          "generation_status": "refus automatique",
+          "notes": "Refus automatique à la sortie (moderation_blocked); aucun PNG produit et aucune relance."
+        }
+      ],
       "other_unproduced_requests": [],
       "actual_file_count": 0,
       "master_candidate_count": 0,
       "layer_candidate_count": 0,
       "certified_asset_count_declared": 0,
-      "production_status": "no_file",
+      "production_status": "no_file_refusal_recorded",
       "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
       "next_work": [
-        "Ajouter des captures du modèle ou du lieu exact et vérifier les invariants visuels.",
-        "Produire une première image candidate individuelle après fixation des références.",
+        "Conserver les refus enregistrés; la première image candidate reste à produire.",
         "Produire et vérifier les poses, transitions et animations prévues; une pose isolée ne termine pas le personnage ou le costume."
       ]
     },
@@ -6833,25 +6931,56 @@
           "url": "https://store.steampowered.com/app/1902490/",
           "kind": "primary_official",
           "checked_scope": "Jeu court officiel situé dans l’univers Portal; produit distinct de Portal 3. La continuité est conservée séparément."
+        },
+        {
+          "namespace": "catalogue_extension_20261120",
+          "source_id": "deskjob_grady_capture01_c",
+          "title": "Valve / Steam — Grady, capture 01",
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1902490/ss_4b8b8d6ab04d3c42584abb31b5b4d7d534478d1d.1920x1080.jpg?t=1745368564",
+          "kind": "primary_official_screenshot",
+          "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée."
         }
       ],
-      "reference_capture": null,
-      "reference_status": "capture_required",
+      "reference_capture": {
+        "reference_filename": "steam_1902490_01.jpg",
+        "sha256": "dc6222601c0a30347e306f15865de293f68c5c7e2040f3642d54115cbb95ef8f",
+        "width": 1920,
+        "height": 1080,
+        "visually_inspected": true,
+        "source_id": "deskjob_grady_capture01_c",
+        "title": "Valve / Steam — Grady, capture 01",
+        "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1902490/ss_4b8b8d6ab04d3c42584abb31b5b4d7d534478d1d.1920x1080.jpg?t=1745368564",
+        "provenance": "primary_official_screenshot",
+        "role": "visual_identity_reference"
+      },
+      "reference_status": "bitmap_inspected_generation_comparison_pending",
       "runtime_enabled_declared": false,
       "target_certified_one_to_one_declared": false,
       "required_layer_ids": [],
-      "actual_assets": [],
+      "actual_assets": [
+        {
+          "asset_id": "grady_deskjob_core_idle_c",
+          "repository_path": "assets/resonance/candidates/continuation_20261120_c/grady_deskjob_core_idle_c.png",
+          "byte_size_actual": 1291991,
+          "category": "character_reference_sprite",
+          "layer_id": null,
+          "qa_status": "révision requise",
+          "certified_one_to_one_declared": false,
+          "animation_clip_complete_declared": false,
+          "integrated_in_game_declared": false,
+          "association": "explicit_target_id"
+        }
+      ],
       "refused_requests": [],
       "other_unproduced_requests": [],
-      "actual_file_count": 0,
+      "actual_file_count": 1,
       "master_candidate_count": 0,
       "layer_candidate_count": 0,
       "certified_asset_count_declared": 0,
-      "production_status": "no_file",
+      "production_status": "candidate_files_present_work_remaining",
       "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
       "next_work": [
-        "Ajouter des captures du modèle ou du lieu exact et vérifier les invariants visuels.",
-        "Produire une première image candidate individuelle après fixation des références.",
+        "Comparer chaque candidat aux références et corriger les écarts avant validation 1:1.",
         "Produire et vérifier les poses, transitions et animations prévues; une pose isolée ne termine pas le personnage ou le costume."
       ]
     },
@@ -7193,25 +7322,56 @@
           "url": "https://theportalwiki.com/wiki/Characters",
           "kind": "secondary_index",
           "checked_scope": "Index de personnages; référence de modèle requise avant génération."
+        },
+        {
+          "namespace": "catalogue_extension_20261120",
+          "source_id": "portal2_chell_model_c",
+          "title": "Portal Wiki — modèle retail Chell Portal 2",
+          "url": "https://i1.theportalwiki.net/img/4/40/Chell.png",
+          "kind": "secondary_hosted_game_model",
+          "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée."
         }
       ],
-      "reference_capture": null,
-      "reference_status": "capture_required",
+      "reference_capture": {
+        "reference_filename": "wiki_Chell.png",
+        "sha256": "bd4290fdcb2490ceb50fe203febed0a140c0d129f9df91f0b9ca16a3a8b295fc",
+        "width": 200,
+        "height": 580,
+        "visually_inspected": true,
+        "source_id": "portal2_chell_model_c",
+        "title": "Portal Wiki — modèle retail Chell Portal 2",
+        "source_url": "https://i1.theportalwiki.net/img/4/40/Chell.png",
+        "provenance": "secondary_hosted_game_model",
+        "role": "visual_identity_reference"
+      },
+      "reference_status": "bitmap_inspected_generation_comparison_pending",
       "runtime_enabled_declared": false,
       "target_certified_one_to_one_declared": false,
       "required_layer_ids": [],
-      "actual_assets": [],
+      "actual_assets": [
+        {
+          "asset_id": "costume_chell_portal2_idle_c",
+          "repository_path": "assets/resonance/candidates/continuation_20261120_c/costume_chell_portal2_idle_c.png",
+          "byte_size_actual": 1491548,
+          "category": "costume_reference_sprite",
+          "layer_id": null,
+          "qa_status": "révision requise",
+          "certified_one_to_one_declared": false,
+          "animation_clip_complete_declared": false,
+          "integrated_in_game_declared": false,
+          "association": "explicit_target_id"
+        }
+      ],
       "refused_requests": [],
       "other_unproduced_requests": [],
-      "actual_file_count": 0,
+      "actual_file_count": 1,
       "master_candidate_count": 0,
       "layer_candidate_count": 0,
       "certified_asset_count_declared": 0,
-      "production_status": "no_file",
+      "production_status": "candidate_files_present_work_remaining",
       "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
       "next_work": [
-        "Ajouter des captures du modèle ou du lieu exact et vérifier les invariants visuels.",
-        "Produire une première image candidate individuelle après fixation des références.",
+        "Comparer chaque candidat aux références et corriger les écarts avant validation 1:1.",
         "Produire et vérifier les poses, transitions et animations prévues; une pose isolée ne termine pas le personnage ou le costume."
       ]
     },
@@ -8575,7 +8735,7 @@
       "source_game": "Portal 2",
       "content_class": "released_reference",
       "priority": "P1",
-      "identity_lock": "Décor de The Escape; tourelles et tapis roulants distincts de la voie de collision future.",
+      "identity_lock": "Secteur industriel de fabrication Portal 2, captures officielles Steam 08 et 09: bras orange, tapis et puits mécanique. Projection latérale recomposée et explicitement adaptée, sans confusion avec une chambre blanche ni le hub coop.",
       "source_refs": [
         {
           "namespace": "catalogue_extension_20261120",
@@ -8584,25 +8744,83 @@
           "url": "https://combineoverwiki.net/wiki/Portal_2_storyline",
           "kind": "secondary_reference",
           "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+        },
+        {
+          "namespace": "catalogue_extension_20261120",
+          "source_id": "portal2_factory_capture08_c",
+          "title": "Valve / Steam — chaîne de fabrication, capture 08",
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0e16bceacb6616a5ca4bc4ba4d28c7a0d06b671c.1920x1080.jpg?t=1790187113",
+          "kind": "primary_official_screenshot",
+          "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée."
+        },
+        {
+          "namespace": "catalogue_extension_20261120",
+          "source_id": "portal2_factory_capture09_c",
+          "title": "Valve / Steam — chaîne de fabrication, capture 09",
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_d8f172249d6e89999c3692bf2c380921f197fd82.1920x1080.jpg?t=1790187113",
+          "kind": "primary_official_screenshot",
+          "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée."
         }
       ],
-      "reference_capture": null,
-      "reference_status": "capture_required",
+      "reference_capture": {
+        "reference_filename": "steam_620_08.jpg",
+        "sha256": "557a184ce2292a2b3821c48ac0090d9e7573c16b229cca86dab8e99dfac16ba1",
+        "width": 1920,
+        "height": 1080,
+        "visually_inspected": true,
+        "source_id": "portal2_factory_capture08_c",
+        "title": "Valve / Steam — chaîne de fabrication, capture 08",
+        "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0e16bceacb6616a5ca4bc4ba4d28c7a0d06b671c.1920x1080.jpg?t=1790187113",
+        "provenance": "primary_official_screenshot",
+        "role": "visual_identity_reference"
+      },
+      "reference_status": "bitmap_inspected_generation_comparison_pending",
       "runtime_enabled_declared": false,
       "target_certified_one_to_one_declared": false,
-      "required_layer_ids": [],
-      "actual_assets": [],
+      "required_layer_ids": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6"
+      ],
+      "actual_assets": [
+        {
+          "asset_id": "stage_portal2_turret_factory_master_c",
+          "repository_path": "assets/resonance/candidates/continuation_20261120_c/stage_portal2_turret_factory_master_c.png",
+          "byte_size_actual": 1902840,
+          "category": "stage_master",
+          "layer_id": null,
+          "qa_status": "candidat à vérifier",
+          "certified_one_to_one_declared": false,
+          "animation_clip_complete_declared": false,
+          "integrated_in_game_declared": false,
+          "association": "explicit_target_id"
+        },
+        {
+          "asset_id": "layer_portal2_turret_factory_floor_c",
+          "repository_path": "assets/resonance/candidates/continuation_20261120_c/layer_portal2_turret_factory_floor_c.png",
+          "byte_size_actual": 580863,
+          "category": "stage_layer_candidate",
+          "layer_id": "L5",
+          "qa_status": "candidat à vérifier",
+          "certified_one_to_one_declared": false,
+          "animation_clip_complete_declared": false,
+          "integrated_in_game_declared": false,
+          "association": "explicit_target_id"
+        }
+      ],
       "refused_requests": [],
       "other_unproduced_requests": [],
-      "actual_file_count": 0,
-      "master_candidate_count": 0,
-      "layer_candidate_count": 0,
+      "actual_file_count": 2,
+      "master_candidate_count": 1,
+      "layer_candidate_count": 1,
       "certified_asset_count_declared": 0,
-      "production_status": "no_file",
+      "production_status": "candidate_files_present_work_remaining",
       "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
       "next_work": [
-        "Ajouter des captures du modèle ou du lieu exact et vérifier les invariants visuels.",
-        "Produire une première image candidate individuelle après fixation des références.",
+        "Comparer chaque candidat aux références et corriger les écarts avant validation 1:1.",
         "Produire, aligner et contrôler six plans de parallaxe distincts; un panorama maître ne termine pas ces plans."
       ]
     },
@@ -8902,25 +9120,68 @@
           "url": "https://www.combineoverwiki.net/wiki/Portal_storyline",
           "kind": "secondary_reference",
           "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire."
+        },
+        {
+          "namespace": "catalogue_extension_20261120",
+          "source_id": "portal1_rocket_model_c",
+          "title": "Portal Wiki — modèle props_bts/rocket_sentry de Portal",
+          "url": "https://i1.theportalwiki.net/img/d/d5/Portal_Rocket_Turret.png",
+          "kind": "secondary_hosted_game_model",
+          "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée."
         }
       ],
-      "reference_capture": null,
-      "reference_status": "capture_required",
+      "reference_capture": {
+        "reference_filename": "portal1_rocket_turret_model.png",
+        "sha256": "df2f749f815f199267ab171de0612d102234d7f9f134e296dcb9ed76485307a8",
+        "width": 467,
+        "height": 654,
+        "visually_inspected": true,
+        "source_id": "portal1_rocket_model_c",
+        "title": "Portal Wiki — modèle props_bts/rocket_sentry de Portal",
+        "source_url": "https://i1.theportalwiki.net/img/d/d5/Portal_Rocket_Turret.png",
+        "provenance": "secondary_hosted_game_model",
+        "role": "visual_identity_reference"
+      },
+      "reference_status": "bitmap_inspected_generation_comparison_pending",
       "runtime_enabled_declared": false,
       "target_certified_one_to_one_declared": false,
       "required_layer_ids": [],
-      "actual_assets": [],
+      "actual_assets": [
+        {
+          "asset_id": "rocket_turret_portal1_idle_left_c",
+          "repository_path": "assets/resonance/candidates/continuation_20261120_c/rocket_turret_portal1_idle_left_c.png",
+          "byte_size_actual": 1658002,
+          "category": "boss_reference_sprite",
+          "layer_id": null,
+          "qa_status": "révision requise",
+          "certified_one_to_one_declared": false,
+          "animation_clip_complete_declared": false,
+          "integrated_in_game_declared": false,
+          "association": "explicit_target_id"
+        },
+        {
+          "asset_id": "rocket_turret_portal1_idle_left_v2_c",
+          "repository_path": "assets/resonance/candidates/continuation_20261120_c/rocket_turret_portal1_idle_left_v2_c.png",
+          "byte_size_actual": 1379728,
+          "category": "boss_reference_sprite_revision",
+          "layer_id": null,
+          "qa_status": "révision requise",
+          "certified_one_to_one_declared": false,
+          "animation_clip_complete_declared": false,
+          "integrated_in_game_declared": false,
+          "association": "explicit_target_id"
+        }
+      ],
       "refused_requests": [],
       "other_unproduced_requests": [],
-      "actual_file_count": 0,
+      "actual_file_count": 2,
       "master_candidate_count": 0,
       "layer_candidate_count": 0,
       "certified_asset_count_declared": 0,
-      "production_status": "no_file",
+      "production_status": "candidate_files_present_work_remaining",
       "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
       "next_work": [
-        "Ajouter des captures du modèle ou du lieu exact et vérifier les invariants visuels.",
-        "Produire une première image candidate individuelle après fixation des références.",
+        "Comparer chaque candidat aux références et corriger les écarts avant validation 1:1.",
         "Produire les poses et animations du boss puis valider ses phases, son échelle et ses interactions."
       ]
     },
@@ -9694,6 +9955,30 @@
         "owner_id": "gonarch_hl1",
         "generation_status": "refus automatique",
         "notes": null
+      }
+    ],
+    "wheatley_core_portal2": [
+      {
+        "asset_id": "wheatley_core_portal2_idle_c",
+        "owner_id": "wheatley_core_portal2",
+        "generation_status": "refus automatique",
+        "notes": "Refus automatique à la sortie (moderation_blocked); aucun PNG produit et aucune relance."
+      }
+    ],
+    "atlas_portal2": [
+      {
+        "asset_id": "atlas_portal2_idle_c",
+        "owner_id": "atlas_portal2",
+        "generation_status": "refus automatique",
+        "notes": "Aucun fichier candidat produit. Le refus automatique ne fournit pas de justification plus précise que « other ». Aucune relance, conversion, retouche ou certification n'a été effectuée; la cible reste à produire."
+      }
+    ],
+    "pbody_portal2": [
+      {
+        "asset_id": "pbody_portal2_idle_c",
+        "owner_id": "pbody_portal2",
+        "generation_status": "refus automatique",
+        "notes": "Aucun fichier candidat produit. Le refus automatique ne fournit pas de justification plus précise que « other ». Aucune relance, conversion, retouche ou certification n'a été effectuée; la cible reste à produire."
       }
     ]
   },

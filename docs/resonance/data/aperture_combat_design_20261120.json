@@ -1,0 +1,3842 @@
+{
+  "schema_version": "1.0",
+  "document_id": "aperture_combat_design_20261120",
+  "module": "Half Life Resonance",
+  "created_on": "2026-11-20",
+  "status": "specified_not_implemented_or_playtested",
+  "runtime_enabled": false,
+  "canon_status": "Source identities and appearances are references; duel actions, numbers, encounters, dialogues and narratives are original noncanonical adaptations.",
+  "ruleset_id": "resonance_prototype_001",
+  "source_contracts": [
+    "docs/resonance/data/combat_rules.json",
+    "docs/resonance/data/frame_data_pilote.json",
+    "docs/resonance/data/catalogue_extension_20261120.json"
+  ],
+  "scope": "Enrichit huit cibles existantes sans ajout d’entité au catalogue, sans enregistrement de PNG et sans intégration au moteur.",
+  "ticks_per_second": 60,
+  "frame_convention": {
+    "startup_includes_first_active_tick": true,
+    "strike_total": "startup + active + recovery - 1",
+    "first_active_advantage": "stun - (active - 1 + recovery)",
+    "utility_total": "startup_until_event + recovery",
+    "airborne_note": "Les chiffres de frappe aérienne ne garantissent pas l’avantage après atterrissage.",
+    "hitfreeze": "Durée partagée exclue des chiffres ci-dessous."
+  },
+  "balance_rules": {
+    "reference_hp": 10000,
+    "meter_costs": {
+      "ex": 50,
+      "super": 100,
+      "ultimate": 300
+    },
+    "normal_chain": "L → M → H; une utilisation par niveau et chaîne.",
+    "initial_juggle_budget": 12,
+    "wall_bounces_per_combo": 1,
+    "ground_bounces_per_combo": 1,
+    "max_active_ticks_without_control": 600,
+    "no_resource_gain_on_meter_actions": true,
+    "damage_scaling_source": "combat_rules.json",
+    "ordinary_route_review_target_percent_hp": 45,
+    "expensive_route_review_target_percent_hp": 65,
+    "values_status": "Initial proposals, not established balance."
+  },
+  "sources": [
+    {
+      "id": "AP01",
+      "title": "Valve — Portal 2 sur Steam",
+      "url": "https://store.steampowered.com/app/620/Portal_2/",
+      "kind": "primary_official",
+      "checked_on": "2026-11-20",
+      "scope": "Campagne coopérative distincte, deux personnages et chambres dédiées; ne valide pas les kits de duel."
+    },
+    {
+      "id": "AP02",
+      "title": "Valve — Bot Trust",
+      "url": "https://www.thinkwithportals.com/media_16.php",
+      "kind": "primary_official_media",
+      "checked_on": "2026-11-20",
+      "scope": "Vidéo officielle de présentation des robots; la page est consultée, les captures de pose finales restent à rattacher au registre."
+    },
+    {
+      "id": "AP03",
+      "title": "Valve — Boots",
+      "url": "https://www.thinkwithportals.com/media_14.php",
+      "kind": "primary_official_media",
+      "checked_on": "2026-11-20",
+      "scope": "Référence officielle Long Fall Boots; aucune invulnérabilité de combat déduite des protections de chute."
+    },
+    {
+      "id": "AP04",
+      "title": "Valve — Meet Wheatley",
+      "url": "https://www.thinkwithportals.com/media.php",
+      "kind": "primary_official_media",
+      "checked_on": "2026-11-20",
+      "scope": "Présentation officielle du noyau Wheatley; état autonome à séparer du corps central."
+    },
+    {
+      "id": "AP05",
+      "title": "Valve — Portal 2, présentation",
+      "url": "https://www.thinkwithportals.com/about.php",
+      "kind": "primary_official",
+      "checked_on": "2026-11-20",
+      "scope": "Identité du dispositif à portails et du jeu de réflexion; aucun coup chiffré ci-dessous ne provient de cette source."
+    },
+    {
+      "id": "AP06",
+      "title": "Portal Wiki — Turrets, Rocket Turret",
+      "url": "https://theportalwiki.com/wiki/Rocket_Turret",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "scope": "Tourelle fixe à verrouillage et roquettes; renvoi sur la tourelle neutralisé; redirection vers vitrages ou GLaDOS. À recouper avec capture du jeu avant fidélité validée."
+    },
+    {
+      "id": "AP07",
+      "title": "Portal Wiki — Portals",
+      "url": "https://theportalwiki.com/wiki/Portals",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "scope": "Paires et couleurs: Chell bleu/orange, ATLAS cyan/indigo, P-body jaune/rouge. Ne source ni les limites temporelles ni les ancrages de combat proposés."
+    },
+    {
+      "id": "AP08",
+      "title": "Portal Wiki — Chell",
+      "url": "https://theportalwiki.com/wiki/Chell",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "scope": "Protagoniste silencieuse; distinguer tenue et protections de jambe des deux jeux."
+    },
+    {
+      "id": "AP09",
+      "title": "Portal Wiki — Wheatley",
+      "url": "https://theportalwiki.com/wiki/Wheatley",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "scope": "Noyau autonome, rail et rôle narratif; pas de corps humanoïde."
+    },
+    {
+      "id": "AP10",
+      "title": "Portal Wiki — P-body",
+      "url": "https://theportalwiki.com/wiki/P-body",
+      "kind": "secondary_reference",
+      "checked_on": "2026-11-20",
+      "scope": "Robot élancé à œil orange; les gestes coopératifs doivent conserver leurs partenaires et leurs préconditions."
+    }
+  ],
+  "portal_system": {
+    "id": "APERTURE_PORTAL_DUEL_V1",
+    "status": "specified_not_implemented_or_playtested",
+    "canon_status": "original_gameplay_adaptation",
+    "source_ids": [
+      "AP05",
+      "AP07"
+    ],
+    "source_invariant": "Le dispositif crée une paire de passages. Son rayon de placement ne constitue pas une balle ni une décharge infligeant des dégâts.",
+    "max_pairs_per_fighter": 1,
+    "max_anchors_per_pair": 2,
+    "max_solid_kit_objects_per_fighter": 1,
+    "colors": {
+      "chell_portal1": [
+        "blue",
+        "orange"
+      ],
+      "atlas_portal2": [
+        "cyan",
+        "indigo"
+      ],
+      "pbody_portal2": [
+        "yellow",
+        "red"
+      ]
+    },
+    "display_identity": "Ajouter des pictogrammes A/B et un motif de bord propre au joueur; les couleurs sources ne suffisent pas à la lisibilité en miroir.",
+    "normalized_sockets": {
+      "logical_arena_width": 2560,
+      "floor_y": 880,
+      "wall_sockets_x": [
+        320,
+        2240
+      ],
+      "wall_socket_center_y": 710,
+      "floor_sockets_x": [
+        760,
+        1800
+      ],
+      "floor_socket_y": 880,
+      "selection": "5S parcourt les quatre emplacements, sans déplacement automatique; cible prévisualisée pour les deux joueurs."
+    },
+    "socket_geometry_note": "Panneaux de simulation créés pour Resonance, présents dans le kit sur toutes les arènes. Leur position ne prétend pas reproduire un niveau Valve. Ils ne sont pas des accessoires mécaniques de stage.",
+    "placement": {
+      "input_a": "236L",
+      "input_b": "214L",
+      "per_anchor_lifetime_ticks": 300,
+      "opening_ticks": 12,
+      "replacement": "Le nouvel ancrage remplace le précédent de même couleur à la validation de pose; aucun troisième ancrage transitoire.",
+      "rejection": "Emplacement déjà occupé par l’autre ancrage de cette paire, acteur capturé, ou zone de sortie obstruée: action refusée avec motif, sans déplacement ni dépense."
+    },
+    "traversal": {
+      "input": "214M",
+      "requires": "Paire ouverte et combattant libre, à 120 unités logiques de l’entrée choisie.",
+      "exit_warning_ticks": 18,
+      "exit_vulnerable_recovery_ticks": 18,
+      "invulnerability_ticks": 0,
+      "max_transits_per_combo": 1,
+      "pair_cooldown_after_transit_ticks": 90,
+      "placement_on_same_tick": "Un ancrage créé au tick courant ne peut être emprunté avant la fin de son ouverture.",
+      "occupied_exit": "Reporter le point de sortie vers le segment libre le plus proche, côté entrée; sinon annuler le transit. Ne jamais superposer les collision boxes ni repousser gratuitement le défenseur.",
+      "ex_exception": "214L+M conserve 18 ticks de préparation et de télégraphe, puis réduit seulement la récupération de sortie de 18 à 12 ticks pour 50 Résonance."
+    },
+    "transfer_rules": {
+      "enemy_actor_forced_transfer": false,
+      "captured_victim_transfer": "Seulement dans une projection ou cinématique déjà confirmée; aucun portail ne capture à distance.",
+      "projectile_allowlist": [
+        "aperture_kit_cube",
+        "rocket_turret_encounter_rocket"
+      ],
+      "max_portal_transits_per_projectile": 1,
+      "damage_multiplier_after_transfer": 1,
+      "velocity_policy": "Conserver la norme de vitesse autorisée et appliquer la rotation entre axes entrée/sortie; aucune accumulation de vitesse par boucle.",
+      "unsupported_projectile": "Collision normale de son contrat; aucune conversion automatique des balles, rayons ou attaques de boss."
+    },
+    "reset_rules": [
+      "Fermer la paire au KO et au changement de round.",
+      "Une mise en garde ne ferme pas la paire; un hit confirmé interrompt seulement un placement ou transit encore en préparation.",
+      "La fermeture pendant une traversée déjà engagée résout la sortie prévalidée; jamais d’acteur perdu hors de la scène.",
+      "Le cube disparaît en fin de durée, au KO et au changement de round; aucun objet de terrain n’est créé par un costume."
+    ],
+    "limits": "Les coûts, délais, sockets, immunités et restrictions sont des décisions de duel proposées. Ils ne décrivent pas la physique complète des jeux Portal."
+  },
+  "fighters": [
+    {
+      "fighter_id": "atlas_portal2",
+      "name_fr": "ATLAS",
+      "source_game": "Portal 2 — coopération",
+      "status": "specified_not_implemented_or_playtested",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "role": "Contrôle compact, cube et occupation de l’espace",
+      "source_ids": [
+        "AP01",
+        "AP02",
+        "AP07"
+      ],
+      "identity_lock": [
+        "Corps compact arrondi, œil bleu et structure mécanique propre au modèle coop.",
+        "Appareil et pinces cohérents avec la même version; pas de châssis P-body.",
+        "Un robot entier par image; le second robot n’est pas un membre du sprite."
+      ],
+      "reference_hp": 10500,
+      "difficulty": "intermédiaire",
+      "strengths": [
+        "Normales courtes fiables.",
+        "Cube du kit facile à suivre.",
+        "Placement défensif lisible."
+      ],
+      "weaknesses": [
+        "Atteint difficilement les longues allonges.",
+        "Transit interrompable avant engagement.",
+        "Le châssis compact ne réduit pas automatiquement les collisions pour passer sous les attaques."
+      ],
+      "trait": {
+        "move_id": "atlas_portal2.trait",
+        "fighter_id": "atlas_portal2",
+        "input": "5S",
+        "name_fr": "Choix du point d’ancrage",
+        "category": "utility",
+        "status": "specified_not_implemented_or_playtested",
+        "canon_status": "original_fighting_game_adaptation",
+        "resonance_cost": 0,
+        "startup_ticks": 1,
+        "total_action_ticks": 12,
+        "base_damage": 0,
+        "behavior": "Cycle la sélection visible A/B des quatre sockets normalisés; aucune attaque ni téléportation.",
+        "cancel_into": [
+          "236L",
+          "214L"
+        ],
+        "cancel_after_tick": 12
+      },
+      "normals": [
+        {
+          "move_id": "atlas_portal2.5L",
+          "fighter_id": "atlas_portal2",
+          "input": "5L",
+          "name_fr": "Contact du manipulateur",
+          "category": "normal",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 7,
+          "first_active_tick": 7,
+          "active_ticks": 3,
+          "recovery_ticks": 11,
+          "total_action_ticks_without_shared_hitfreeze": 20,
+          "base_damage": 320,
+          "hit_count": 1,
+          "hitstun_ticks": 17,
+          "blockstun_ticks": 12,
+          "first_active_hit_advantage_ticks": 4,
+          "first_active_block_advantage_ticks": -1,
+          "guard_type": "mid",
+          "ground_guard_allowed": [
+            "standing",
+            "crouching"
+          ],
+          "air_guard_allowed": true,
+          "grounded_anti_air": false,
+          "launches": false,
+          "airborne_attack": false,
+          "landing_recovery_ticks": 0,
+          "reach_logical_px": 85,
+          "range_status": "design_target_hitboxes_not_authored",
+          "note_fr": "Courte vérification au sol.",
+          "cancel_policy": {
+            "normal_chain_next_tiers": [
+              "M",
+              "H"
+            ],
+            "on": [
+              "hit",
+              "block"
+            ],
+            "special_cancel_on_hit": false,
+            "special_cancel_on_block": false,
+            "super_cancel_on_hit": false,
+            "whiff_cancel": false
+          },
+          "advantage_scope": "Contact au premier tick actif, même durée de hitfreeze, cible au sol; pour les normales aériennes ces calculs cessent de suffire si un atterrissage intervient."
+        },
+        {
+          "move_id": "atlas_portal2.5M",
+          "fighter_id": "atlas_portal2",
+          "input": "5M",
+          "name_fr": "Poussée du châssis",
+          "category": "normal",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 11,
+          "first_active_tick": 11,
+          "active_ticks": 3,
+          "recovery_ticks": 16,
+          "total_action_ticks_without_shared_hitfreeze": 29,
+          "base_damage": 620,
+          "hit_count": 1,
+          "hitstun_ticks": 23,
+          "blockstun_ticks": 17,
+          "first_active_hit_advantage_ticks": 5,
+          "first_active_block_advantage_ticks": -1,
+          "guard_type": "mid",
+          "ground_guard_allowed": [
+            "standing",
+            "crouching"
+          ],
+          "air_guard_allowed": true,
+          "grounded_anti_air": false,
+          "launches": false,
+          "airborne_attack": false,
+          "landing_recovery_ticks": 0,
+          "reach_logical_px": 135,
+          "range_status": "design_target_hitboxes_not_authored",
+          "note_fr": "Avance courte sans armure.",
+          "cancel_policy": {
+            "normal_chain_next_tiers": [
+              "H"
+            ],
+            "on": [
+              "hit",
+              "block"
+            ],
+            "special_cancel_on_hit": true,
+            "special_cancel_on_block": false,
+            "super_cancel_on_hit": false,
+            "whiff_cancel": false
+          },
+          "advantage_scope": "Contact au premier tick actif, même durée de hitfreeze, cible au sol; pour les normales aériennes ces calculs cessent de suffire si un atterrissage intervient."
+        },
+        {
+          "move_id": "atlas_portal2.5H",
+          "fighter_id": "atlas_portal2",
+          "input": "5H",
+          "name_fr": "Balancier du bras",
+          "category": "normal",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 17,
+          "first_active_tick": 17,
+          "active_ticks": 4,
+          "recovery_ticks": 23,
+          "total_action_ticks_without_shared_hitfreeze": 43,
+          "base_damage": 980,
+          "hit_count": 1,
+          "hitstun_ticks": 30,
+          "blockstun_ticks": 20,
+          "first_active_hit_advantage_ticks": 4,
+          "first_active_block_advantage_ticks": -6,
+          "guard_type": "mid",
+          "ground_guard_allowed": [
+            "standing",
+            "crouching"
+          ],
+          "air_guard_allowed": true,
+          "grounded_anti_air": false,
+          "launches": false,
+          "airborne_attack": false,
+          "landing_recovery_ticks": 0,
+          "reach_logical_px": 175,
+          "range_status": "design_target_hitboxes_not_authored",
+          "note_fr": "Grande récupération, repousse le défenseur.",
+          "cancel_policy": {
+            "normal_chain_next_tiers": [],
+            "on": [
+              "hit",
+              "block"
+            ],
+            "special_cancel_on_hit": true,
+            "special_cancel_on_block": false,
+            "super_cancel_on_hit": true,
+            "whiff_cancel": false
+          },
+          "advantage_scope": "Contact au premier tick actif, même durée de hitfreeze, cible au sol; pour les normales aériennes ces calculs cessent de suffire si un atterrissage intervient."
+        },
+        {
+          "move_id": "atlas_portal2.2L",
+          "fighter_id": "atlas_portal2",
+          "input": "2L",
+          "name_fr": "Coup bas du pied",
+          "category": "normal",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 7,
+          "first_active_tick": 7,
+          "active_ticks": 2,
+          "recovery_ticks": 12,
+          "total_action_ticks_without_shared_hitfreeze": 20,
+          "base_damage": 290,
+          "hit_count": 1,
+          "hitstun_ticks": 17,
+          "blockstun_ticks": 12,
+          "first_active_hit_advantage_ticks": 4,
+          "first_active_block_advantage_ticks": -1,
+          "guard_type": "low",
+          "ground_guard_allowed": [
+            "crouching"
+          ],
+          "air_guard_allowed": true,
+          "grounded_anti_air": false,
+          "launches": false,
+          "airborne_attack": false,
+          "landing_recovery_ticks": 0,
+          "reach_logical_px": 90,
+          "range_status": "design_target_hitboxes_not_authored",
+          "note_fr": "Portée courte, aucune glissade sous projectile.",
+          "cancel_policy": {
+            "normal_chain_next_tiers": [
+              "M",
+              "H"
+            ],
+            "on": [
+              "hit",
+              "block"
+            ],
+            "special_cancel_on_hit": false,
+            "special_cancel_on_block": false,
+            "super_cancel_on_hit": false,
+            "whiff_cancel": false
+          },
+          "advantage_scope": "Contact au premier tick actif, même durée de hitfreeze, cible au sol; pour les normales aériennes ces calculs cessent de suffire si un atterrissage intervient."
+        },
+        {
+          "move_id": "atlas_portal2.2M",
+          "fighter_id": "atlas_portal2",
+          "input": "2M",
+          "name_fr": "Balayage compact",
+          "category": "normal",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 12,
+          "first_active_tick": 12,
+          "active_ticks": 3,
+          "recovery_ticks": 18,
+          "total_action_ticks_without_shared_hitfreeze": 32,
+          "base_damage": 590,
+          "hit_count": 1,
+          "hitstun_ticks": 25,
+          "blockstun_ticks": 18,
+          "first_active_hit_advantage_ticks": 5,
+          "first_active_block_advantage_ticks": -2,
+          "guard_type": "low",
+          "ground_guard_allowed": [
+            "crouching"
+          ],
+          "air_guard_allowed": true,
+          "grounded_anti_air": false,
+          "launches": false,
+          "airborne_attack": false,
+          "landing_recovery_ticks": 0,
+          "reach_logical_px": 145,
+          "range_status": "design_target_hitboxes_not_authored",
+          "note_fr": "Convertit une erreur de garde basse.",
+          "cancel_policy": {
+            "normal_chain_next_tiers": [
+              "H"
+            ],
+            "on": [
+              "hit",
+              "block"
+            ],
+            "special_cancel_on_hit": true,
+            "special_cancel_on_block": false,
+            "super_cancel_on_hit": false,
+            "whiff_cancel": false
+          },
+          "advantage_scope": "Contact au premier tick actif, même durée de hitfreeze, cible au sol; pour les normales aériennes ces calculs cessent de suffire si un atterrissage intervient."
+        },
+        {
+          "move_id": "atlas_portal2.2H",
+          "fighter_id": "atlas_portal2",
+          "input": "2H",
+          "name_fr": "Vérin ascendant",
+          "category": "normal",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 15,
+          "first_active_tick": 15,
+          "active_ticks": 5,
+          "recovery_ticks": 26,
+          "total_action_ticks_without_shared_hitfreeze": 45,
+          "base_damage": 900,
+          "hit_count": 1,
+          "hitstun_ticks": 32,
+          "blockstun_ticks": 20,
+          "first_active_hit_advantage_ticks": 2,
+          "first_active_block_advantage_ticks": -10,
+          "guard_type": "mid",
+          "ground_guard_allowed": [
+            "standing",
+            "crouching"
+          ],
+          "air_guard_allowed": false,
+          "grounded_anti_air": true,
+          "launches": true,
+          "airborne_attack": false,
+          "landing_recovery_ticks": 0,
+          "reach_logical_px": 130,
+          "range_status": "design_target_hitboxes_not_authored",
+          "note_fr": "Anti-air, lancement; ne bat pas universellement les frappes au sol.",
+          "cancel_policy": {
+            "normal_chain_next_tiers": [],
+            "on": [
+              "hit",
+              "block"
+            ],
+            "special_cancel_on_hit": true,
+            "special_cancel_on_block": false,
+            "super_cancel_on_hit": true,
+            "whiff_cancel": false
+          },
+          "advantage_scope": "Contact au premier tick actif, même durée de hitfreeze, cible au sol; pour les normales aériennes ces calculs cessent de suffire si un atterrissage intervient."
+        },
+        {
+          "move_id": "atlas_portal2.j.L",
+          "fighter_id": "atlas_portal2",
+          "input": "j.L",
+          "name_fr": "Tapotement aérien",
+          "category": "normal",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 7,
+          "first_active_tick": 7,
+          "active_ticks": 4,
+          "recovery_ticks": 13,
+          "total_action_ticks_without_shared_hitfreeze": 23,
+          "base_damage": 310,
+          "hit_count": 1,
+          "hitstun_ticks": 18,
+          "blockstun_ticks": 14,
+          "first_active_hit_advantage_ticks": 2,
+          "first_active_block_advantage_ticks": -2,
+          "guard_type": "overhead",
+          "ground_guard_allowed": [
+            "standing"
+          ],
+          "air_guard_allowed": true,
+          "grounded_anti_air": false,
+          "launches": false,
+          "airborne_attack": true,
+          "landing_recovery_ticks": 10,
+          "reach_logical_px": 80,
+          "range_status": "design_target_hitboxes_not_authored",
+          "note_fr": "Contact rapide en descente.",
+          "cancel_policy": {
+            "normal_chain_next_tiers": [
+              "M",
+              "H"
+            ],
+            "on": [
+              "hit",
+              "block"
+            ],
+            "special_cancel_on_hit": false,
+            "special_cancel_on_block": false,
+            "super_cancel_on_hit": false,
+            "whiff_cancel": false
+          },
+          "advantage_scope": "Contact au premier tick actif, même durée de hitfreeze, cible au sol; pour les normales aériennes ces calculs cessent de suffire si un atterrissage intervient."
+        },
+        {
+          "move_id": "atlas_portal2.j.M",
+          "fighter_id": "atlas_portal2",
+          "input": "j.M",
+          "name_fr": "Bras déployé",
+          "category": "normal",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 10,
+          "first_active_tick": 10,
+          "active_ticks": 5,
+          "recovery_ticks": 17,
+          "total_action_ticks_without_shared_hitfreeze": 31,
+          "base_damage": 600,
+          "hit_count": 1,
+          "hitstun_ticks": 24,
+          "blockstun_ticks": 17,
+          "first_active_hit_advantage_ticks": 3,
+          "first_active_block_advantage_ticks": -4,
+          "guard_type": "overhead",
+          "ground_guard_allowed": [
+            "standing"
+          ],
+          "air_guard_allowed": true,
+          "grounded_anti_air": false,
+          "launches": false,
+          "airborne_attack": true,
+          "landing_recovery_ticks": 10,
+          "reach_logical_px": 135,
+          "range_status": "design_target_hitboxes_not_authored",
+          "note_fr": "Air-à-air de portée moyenne.",
+          "cancel_policy": {
+            "normal_chain_next_tiers": [
+              "H"
+            ],
+            "on": [
+              "hit",
+              "block"
+            ],
+            "special_cancel_on_hit": false,
+            "special_cancel_on_block": false,
+            "super_cancel_on_hit": false,
+            "whiff_cancel": false
+          },
+          "advantage_scope": "Contact au premier tick actif, même durée de hitfreeze, cible au sol; pour les normales aériennes ces calculs cessent de suffire si un atterrissage intervient."
+        },
+        {
+          "move_id": "atlas_portal2.j.H",
+          "fighter_id": "atlas_portal2",
+          "input": "j.H",
+          "name_fr": "Châssis en arc",
+          "category": "normal",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 14,
+          "first_active_tick": 14,
+          "active_ticks": 6,
+          "recovery_ticks": 23,
+          "total_action_ticks_without_shared_hitfreeze": 42,
+          "base_damage": 930,
+          "hit_count": 1,
+          "hitstun_ticks": 30,
+          "blockstun_ticks": 21,
+          "first_active_hit_advantage_ticks": 2,
+          "first_active_block_advantage_ticks": -7,
+          "guard_type": "overhead",
+          "ground_guard_allowed": [
+            "standing"
+          ],
+          "air_guard_allowed": true,
+          "grounded_anti_air": false,
+          "launches": false,
+          "airborne_attack": true,
+          "landing_recovery_ticks": 10,
+          "reach_logical_px": 160,
+          "range_status": "design_target_hitboxes_not_authored",
+          "note_fr": "Descente lisible, corps vulnérable.",
+          "cancel_policy": {
+            "normal_chain_next_tiers": [],
+            "on": [
+              "hit",
+              "block"
+            ],
+            "special_cancel_on_hit": false,
+            "special_cancel_on_block": false,
+            "super_cancel_on_hit": false,
+            "whiff_cancel": false
+          },
+          "advantage_scope": "Contact au premier tick actif, même durée de hitfreeze, cible au sol; pour les normales aériennes ces calculs cessent de suffire si un atterrissage intervient."
+        },
+        {
+          "move_id": "atlas_portal2.6H",
+          "fighter_id": "atlas_portal2",
+          "input": "6H",
+          "name_fr": "Saut court du châssis",
+          "category": "normal",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 25,
+          "first_active_tick": 25,
+          "active_ticks": 3,
+          "recovery_ticks": 26,
+          "total_action_ticks_without_shared_hitfreeze": 53,
+          "base_damage": 1050,
+          "hit_count": 1,
+          "hitstun_ticks": 31,
+          "blockstun_ticks": 20,
+          "first_active_hit_advantage_ticks": 3,
+          "first_active_block_advantage_ticks": -8,
+          "guard_type": "overhead",
+          "ground_guard_allowed": [
+            "standing"
+          ],
+          "air_guard_allowed": true,
+          "grounded_anti_air": false,
+          "launches": false,
+          "airborne_attack": false,
+          "landing_recovery_ticks": 0,
+          "reach_logical_px": 145,
+          "range_status": "design_target_hitboxes_not_authored",
+          "note_fr": "Overhead lent sans annulation sur garde.",
+          "cancel_policy": {
+            "normal_chain_next_tiers": [],
+            "on": [],
+            "special_cancel_on_hit": false,
+            "special_cancel_on_block": false,
+            "super_cancel_on_hit": false,
+            "whiff_cancel": false
+          },
+          "advantage_scope": "Contact au premier tick actif, même durée de hitfreeze, cible au sol; pour les normales aériennes ces calculs cessent de suffire si un atterrissage intervient."
+        }
+      ],
+      "throws": [
+        {
+          "move_id": "atlas_portal2.throw_forward",
+          "fighter_id": "atlas_portal2",
+          "input": "L+M",
+          "name_fr": "Dégagement vers l’avant",
+          "category": "throw",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 6,
+          "active_ticks": 2,
+          "recovery_on_whiff_ticks": 28,
+          "tech_window_ticks": 7,
+          "capture_ticks": 36,
+          "release_recovery_ticks": 16,
+          "base_damage": 1100,
+          "range_logical_px": 80,
+          "guard_type": "throw",
+          "launches": false,
+          "hard_knockdown_ticks": 40,
+          "invulnerability_ticks": 0,
+          "capture_rule": "Adversaire au sol, saisissable et hors invulnérabilité; pas de saisie à travers un portail.",
+          "wall_bounce": false,
+          "ground_bounce": false
+        },
+        {
+          "move_id": "atlas_portal2.throw_back",
+          "fighter_id": "atlas_portal2",
+          "input": "4+L+M",
+          "name_fr": "Dégagement vers l’arrière",
+          "category": "throw",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 6,
+          "active_ticks": 2,
+          "recovery_on_whiff_ticks": 28,
+          "tech_window_ticks": 7,
+          "capture_ticks": 36,
+          "release_recovery_ticks": 16,
+          "base_damage": 1100,
+          "range_logical_px": 80,
+          "guard_type": "throw",
+          "launches": false,
+          "hard_knockdown_ticks": 40,
+          "invulnerability_ticks": 0,
+          "capture_rule": "Adversaire au sol, saisissable et hors invulnérabilité; pas de saisie à travers un portail.",
+          "wall_bounce": false,
+          "ground_bounce": false
+        }
+      ],
+      "specials": [
+        {
+          "move_id": "atlas_portal2.portal_a",
+          "fighter_id": "atlas_portal2",
+          "input": "236L",
+          "name_fr": "Pose du portail A",
+          "category": "special",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 20,
+          "recovery_ticks": 18,
+          "behavior": "Place l’ancrage A au socket prévisualisé; ouverture en 12 ticks; ne blesse pas.",
+          "counterplay": "Interrompre la préparation ou occuper la sortie.",
+          "invulnerability_ticks": 0,
+          "active_ticks": 0,
+          "event_tick": 20,
+          "total_action_ticks": 38,
+          "base_damage": 0,
+          "hitstun_ticks": null,
+          "blockstun_ticks": null,
+          "advantage_scope": "Action utilitaire; aucune formule d’avantage de frappe.",
+          "cancel_policy": {
+            "whiff_cancel": false,
+            "special_to_special": false,
+            "super_on_hit": false,
+            "super_on_block": false
+          }
+        },
+        {
+          "move_id": "atlas_portal2.portal_b",
+          "fighter_id": "atlas_portal2",
+          "input": "214L",
+          "name_fr": "Pose du portail B",
+          "category": "special",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 22,
+          "recovery_ticks": 18,
+          "behavior": "Place l’ancrage B; la paire ne fonctionne que lorsque les deux bords sont ouverts.",
+          "counterplay": "Avancer pendant la récupération et limiter le temps de préparation.",
+          "invulnerability_ticks": 0,
+          "active_ticks": 0,
+          "event_tick": 22,
+          "total_action_ticks": 40,
+          "base_damage": 0,
+          "hitstun_ticks": null,
+          "blockstun_ticks": null,
+          "advantage_scope": "Action utilitaire; aucune formule d’avantage de frappe.",
+          "cancel_policy": {
+            "whiff_cancel": false,
+            "special_to_special": false,
+            "super_on_hit": false,
+            "super_on_block": false
+          }
+        },
+        {
+          "move_id": "atlas_portal2.transit",
+          "fighter_id": "atlas_portal2",
+          "input": "214M",
+          "name_fr": "Traversée préparée",
+          "category": "special",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 18,
+          "recovery_ticks": 18,
+          "behavior": "Entre dans la paire existante, un transit par combo; sortie signalée et vulnérable.",
+          "counterplay": "Couvrir la sortie annoncée; ne pas poursuivre aveuglément à l’entrée.",
+          "invulnerability_ticks": 0,
+          "active_ticks": 0,
+          "event_tick": 18,
+          "total_action_ticks": 36,
+          "base_damage": 0,
+          "hitstun_ticks": null,
+          "blockstun_ticks": null,
+          "advantage_scope": "Action utilitaire; aucune formule d’avantage de frappe.",
+          "requires": "Paire ouverte, entrée à portée, sortie valide; refus explicite si l’une de ces conditions manque.",
+          "cancel_policy": {
+            "whiff_cancel": false,
+            "special_to_special": false,
+            "super_on_hit": false,
+            "super_on_block": false
+          }
+        },
+        {
+          "move_id": "atlas_portal2.cube",
+          "fighter_id": "atlas_portal2",
+          "input": "236H",
+          "name_fr": "Lancer du cube de test",
+          "category": "special",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 24,
+          "recovery_ticks": 26,
+          "behavior": "Lance l’unique cube du kit; projectile à durée bornée, une seule traversée de portail. Ce cube fourni au duel est une adaptation.",
+          "counterplay": "Sauter sa trajectoire, le faire entrer en collision ou punir le lancer à courte distance.",
+          "invulnerability_ticks": 0,
+          "active_ticks": 1,
+          "total_action_ticks": 50,
+          "base_damage": 850,
+          "guard_type": "mid",
+          "air_guard_allowed": true,
+          "hitstun_ticks": 32,
+          "blockstun_ticks": 18,
+          "launches": false,
+          "projectile": true,
+          "advantage_scope": "À calculer depuis la collision réelle du projectile.",
+          "projectile_lifetime_ticks": 90,
+          "projectile_speed_logical_px_per_tick": 12,
+          "max_instances": 1,
+          "projectile_hit_count": 1,
+          "portal_compatible": true,
+          "projectile_clash_durability": 1,
+          "cancel_policy": {
+            "whiff_cancel": false,
+            "special_to_special": false,
+            "super_on_hit": true,
+            "super_on_block": false
+          }
+        },
+        {
+          "move_id": "atlas_portal2.anti_air",
+          "fighter_id": "atlas_portal2",
+          "input": "623H",
+          "name_fr": "Extension des vérins",
+          "category": "special",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 12,
+          "recovery_ticks": 32,
+          "behavior": "Frappe anti-air du corps; aucune invulnérabilité aux coups au sol.",
+          "counterplay": "Rester au sol puis punir la récupération.",
+          "invulnerability_ticks": 0,
+          "active_ticks": 5,
+          "total_action_ticks": 48,
+          "base_damage": 1100,
+          "guard_type": "mid",
+          "air_guard_allowed": false,
+          "hitstun_ticks": 38,
+          "blockstun_ticks": 22,
+          "launches": true,
+          "projectile": false,
+          "advantage_scope": "Premier tick actif, aucune annulation, hitfreeze partagé exclu.",
+          "first_active_hit_advantage_ticks": 2,
+          "first_active_block_advantage_ticks": -14,
+          "juggle_cost": 4,
+          "cancel_policy": {
+            "whiff_cancel": false,
+            "special_to_special": false,
+            "super_on_hit": true,
+            "super_on_block": false
+          }
+        }
+      ],
+      "ex_variants": [
+        {
+          "move_id": "atlas_portal2.ex_236",
+          "fighter_id": "atlas_portal2",
+          "input": "236L+M",
+          "name_fr": "Pose A EX",
+          "category": "ex",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 50,
+          "base_move_id": "atlas_portal2.portal_a",
+          "behavior": "Préparation 14 ticks, récupération 14; l’ouverture reste 12. Ne pose qu’un portail.",
+          "base_damage": 0,
+          "invulnerability_ticks": 0,
+          "refund_after_interruption": false,
+          "startup_ticks": 14,
+          "event_tick": 14,
+          "active_ticks": 0,
+          "recovery_ticks": 14,
+          "total_action_ticks": 28
+        },
+        {
+          "move_id": "atlas_portal2.ex_214",
+          "fighter_id": "atlas_portal2",
+          "input": "214L+M",
+          "name_fr": "Traversée EX",
+          "category": "ex",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 50,
+          "base_move_id": "atlas_portal2.transit",
+          "behavior": "Même préparation et signal de sortie de 18 ticks; récupération réduite à 12. Toujours vulnérable; paire préexistante obligatoire.",
+          "base_damage": 0,
+          "invulnerability_ticks": 0,
+          "refund_after_interruption": false,
+          "startup_ticks": 18,
+          "event_tick": 18,
+          "active_ticks": 0,
+          "recovery_ticks": 12,
+          "total_action_ticks": 30,
+          "requires": "Les mêmes préconditions que la traversée normale; coût débité uniquement après validation de ces préconditions."
+        },
+        {
+          "move_id": "atlas_portal2.ex_623",
+          "fighter_id": "atlas_portal2",
+          "input": "623L+M",
+          "name_fr": "Anti-air EX",
+          "category": "ex",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 50,
+          "base_move_id": "atlas_portal2.anti_air",
+          "behavior": "Même démarrage que l’anti-air, 1300 dégâts, récupération 36; couverture verticale accrue, aucune invulnérabilité universelle.",
+          "base_damage": 1300,
+          "invulnerability_ticks": 0,
+          "refund_after_interruption": false,
+          "startup_ticks": 12,
+          "active_ticks": 6,
+          "recovery_ticks": 36,
+          "total_action_ticks": 53,
+          "guard_type": "mid",
+          "air_guard_allowed": false,
+          "hitstun_ticks": 44,
+          "blockstun_ticks": 24,
+          "first_active_hit_advantage_ticks": 3,
+          "first_active_block_advantage_ticks": -17,
+          "juggle_cost": 5,
+          "launches": true
+        }
+      ],
+      "supers": [
+        {
+          "move_id": "atlas_portal2.super",
+          "fighter_id": "atlas_portal2",
+          "input": "236236H",
+          "name_fr": "Transfert contrôlé",
+          "category": "super",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 100,
+          "startup_ticks": 12,
+          "active_ticks": 3,
+          "base_damage": 2400,
+          "hit_count": 1,
+          "guard_type": "mid",
+          "air_guard_allowed": true,
+          "cinematic_capture_ticks": 120,
+          "recovery_on_whiff_or_block_ticks": 38,
+          "blockstun_ticks": 24,
+          "first_active_block_advantage_ticks": -16,
+          "hit_confirm_required_for_cinematic": true,
+          "invulnerability_ticks": 0,
+          "animation": "Une frappe corporelle courte confirme un trajet chorégraphié par portails puis un impact de cube. Le tir de placement ne touche pas directement le corps adverse.",
+          "source_status": "Mise en scène originale de Resonance; aucun événement de campagne Valve reproduit.",
+          "resource_gain": 0,
+          "hit_scaling_floor_percent": 15
+        },
+        {
+          "move_id": "atlas_portal2.ultimate",
+          "fighter_id": "atlas_portal2",
+          "input": "236236S",
+          "name_fr": "Protocole de sortie",
+          "category": "ultimate",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 300,
+          "startup_ticks": 18,
+          "active_ticks": 3,
+          "base_damage": 4300,
+          "hit_count": 1,
+          "guard_type": "mid",
+          "air_guard_allowed": true,
+          "cinematic_capture_ticks": 240,
+          "recovery_on_whiff_or_block_ticks": 48,
+          "blockstun_ticks": 28,
+          "first_active_block_advantage_ticks": -22,
+          "hit_confirm_required_for_cinematic": true,
+          "invulnerability_ticks": 0,
+          "animation": "Une frappe corporelle courte confirme un trajet chorégraphié par portails puis un impact de cube. Le tir de placement ne touche pas directement le corps adverse.",
+          "source_status": "Mise en scène originale de Resonance; aucun événement de campagne Valve reproduit.",
+          "resource_gain": 0,
+          "hit_scaling_floor_percent": 20
+        }
+      ],
+      "ex_policy": "Une variante EX par motion 236/214/623. 236L+M signifie Pose A EX, jamais le lancer de cube. 214L+M signifie Traversée EX, jamais Pose B EX. Une commande reconnue mais impossible ne devient pas une projection.",
+      "movement": {
+        "walk_forward_logical_px_per_tick": 4,
+        "walk_back_logical_px_per_tick": 3,
+        "forward_dash_ticks": 18,
+        "back_dash_ticks": 22,
+        "back_dash_invulnerability_ticks": 0,
+        "jump_total_ticks_target": 46,
+        "double_jump": false,
+        "air_dash": false,
+        "status": "Propositions à régler après collision et animation; aucune taille de sprite source déduite de ces valeurs."
+      },
+      "combo_routes": [
+        {
+          "route_id": "atlas_portal2.route_basic",
+          "inputs": [
+            "5L",
+            "5M",
+            "5H"
+          ],
+          "resonance_cost": 0,
+          "purpose": "Conversion simple au sol.",
+          "preconditions": "Contact proche; L→M→H une fois chacun.",
+          "status": "candidate_not_combo_verified",
+          "guaranteed_true_combo": false,
+          "damage_if_connections_confirmed": 1662,
+          "note": "Les annulations proposées autorisent la séquence; portée, pushback, budget aérien et contact réel restent à vérifier."
+        },
+        {
+          "route_id": "atlas_portal2.route_launch",
+          "inputs": [
+            "2L",
+            "2M",
+            "2H",
+            "623H"
+          ],
+          "resonance_cost": 0,
+          "purpose": "Conversion basse vers anti-air.",
+          "preconditions": "Vérifier portée après lancement; coût aérien 4, une seule reprise de niveau H.",
+          "status": "candidate_not_combo_verified",
+          "guaranteed_true_combo": false,
+          "damage_if_connections_confirmed": null,
+          "note": "Les annulations proposées autorisent la séquence; portée, pushback, budget aérien et contact réel restent à vérifier."
+        },
+        {
+          "route_id": "atlas_portal2.route_super",
+          "inputs": [
+            "5M",
+            "5H",
+            "236236H"
+          ],
+          "resonance_cost": 100,
+          "purpose": "Confirmation du super.",
+          "preconditions": "Annulation sur hit seulement; aucun super automatique en garde.",
+          "status": "candidate_not_combo_verified",
+          "guaranteed_true_combo": false,
+          "damage_if_connections_confirmed": null,
+          "note": "Les annulations proposées autorisent la séquence; portée, pushback, budget aérien et contact réel restent à vérifier."
+        },
+        {
+          "route_id": "atlas_portal2.route_position",
+          "inputs": [
+            "236L",
+            "214L",
+            "214M"
+          ],
+          "resonance_cost": 0,
+          "purpose": "Préparation de position, sans dégâts.",
+          "preconditions": "Paire ouverte et entrée proche; cette séquence utilitaire ne constitue pas un combo.",
+          "status": "candidate_not_combo_verified",
+          "guaranteed_true_combo": false,
+          "damage_if_connections_confirmed": null,
+          "note": "Les annulations proposées autorisent la séquence; portée, pushback, budget aérien et contact réel restent à vérifier."
+        }
+      ],
+      "narrative": {
+        "intro": "ATLAS sort d’un appareil d’assemblage arrêté, vérifie ses deux pinces puis pointe la sortie du doigt. Un bip bref accompagne la sélection; aucun second robot n’est dessiné dans sa frame.",
+        "rival_id": "pbody_portal2",
+        "rival_reason": "Le simulateur attribue le même dernier emplacement à deux partenaires. Le duel teste un protocole de coopération mal transcrit, sans affirmer une hostilité canonique.",
+        "rival_scene": "Les deux robots désignent tour à tour le même bouton; ATLAS pose un cube entre eux. Ils reculent sur leurs repères lorsque le signal de simulation retentit.",
+        "rival_victory": "ATLAS avance la main puis attend que P-body se relève; le geste coopératif complet n’est lancé que si les deux acteurs sont disponibles.",
+        "ending": "ATLAS place le cube sur le bon capteur et maintient la porte ouverte. P-body passe, puis revient tenir le mécanisme. Les deux voyants indiquent enfin le même objectif.",
+        "finisher": "Après victoire, transfère le perdant vers un sas de récupération vide. Pour une machine compatible, fermeture des bras de maintenance hors champ; pour un humain, désarmement et porte ouverte. Aucun score modifié."
+      }
+    },
+    {
+      "fighter_id": "pbody_portal2",
+      "name_fr": "P-body",
+      "source_game": "Portal 2 — coopération",
+      "status": "specified_not_implemented_or_playtested",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "role": "Allonge et déplacements préparés",
+      "source_ids": [
+        "AP01",
+        "AP02",
+        "AP07",
+        "AP10"
+      ],
+      "identity_lock": [
+        "Silhouette verticale élancée et œil orange.",
+        "Membres longs et minces; ne pas élargir le corps pour égaliser ATLAS.",
+        "L’appareil, les articulations et les pieds viennent du modèle coop retenu."
+      ],
+      "reference_hp": 9500,
+      "difficulty": "avancée",
+      "strengths": [
+        "Bonne allonge au sol et dans les airs.",
+        "Menace de placement à distance.",
+        "Conversion de cube après lecture de saut."
+      ],
+      "weaknesses": [
+        "Récupérations lourdes.",
+        "Faible vie de référence.",
+        "Longs membres avec hurtboxes actives, pas de frappe à longue portée désincarnée."
+      ],
+      "trait": {
+        "move_id": "pbody_portal2.trait",
+        "fighter_id": "pbody_portal2",
+        "input": "5S",
+        "name_fr": "Choix du point d’ancrage",
+        "category": "utility",
+        "status": "specified_not_implemented_or_playtested",
+        "canon_status": "original_fighting_game_adaptation",
+        "resonance_cost": 0,
+        "startup_ticks": 1,
+        "total_action_ticks": 12,
+        "base_damage": 0,
+        "behavior": "Cycle la sélection visible A/B des quatre sockets normalisés; aucune attaque ni téléportation.",
+        "cancel_into": [
+          "236L",
+          "214L"
+        ],
+        "cancel_after_tick": 12
+      },
+      "normals": [
+        {
+          "move_id": "pbody_portal2.5L",
+          "fighter_id": "pbody_portal2",
+          "input": "5L",
+          "name_fr": "Pointe du manipulateur",
+          "category": "normal",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 8,
+          "first_active_tick": 8,
+          "active_ticks": 3,
+          "recovery_ticks": 12,
+          "total_action_ticks_without_shared_hitfreeze": 22,
+          "base_damage": 330,
+          "hit_count": 1,
+          "hitstun_ticks": 18,
+          "blockstun_ticks": 12,
+          "first_active_hit_advantage_ticks": 4,
+          "first_active_block_advantage_ticks": -2,
+          "guard_type": "mid",
+          "ground_guard_allowed": [
+            "standing",
+            "crouching"
+          ],
+          "air_guard_allowed": true,
+          "grounded_anti_air": false,
+          "launches": false,
+          "airborne_attack": false,
+          "landing_recovery_ticks": 0,
+          "reach_logical_px": 105,
+          "range_status": "design_target_hitboxes_not_authored",
+          "note_fr": "Plus longue portée, démarrage plus lent.",
+          "cancel_policy": {
+            "normal_chain_next_tiers": [
+              "M",
+              "H"
+            ],
+            "on": [
+              "hit",
+              "block"
+            ],
+            "special_cancel_on_hit": false,
+            "special_cancel_on_block": false,
+            "super_cancel_on_hit": false,
+            "whiff_cancel": false
+          },
+          "advantage_scope": "Contact au premier tick actif, même durée de hitfreeze, cible au sol; pour les normales aériennes ces calculs cessent de suffire si un atterrissage intervient."
+        },
+        {
+          "move_id": "pbody_portal2.5M",
+          "fighter_id": "pbody_portal2",
+          "input": "5M",
+          "name_fr": "Allonge du bras",
+          "category": "normal",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 12,
+          "first_active_tick": 12,
+          "active_ticks": 3,
+          "recovery_ticks": 18,
+          "total_action_ticks_without_shared_hitfreeze": 32,
+          "base_damage": 660,
+          "hit_count": 1,
+          "hitstun_ticks": 25,
+          "blockstun_ticks": 17,
+          "first_active_hit_advantage_ticks": 5,
+          "first_active_block_advantage_ticks": -3,
+          "guard_type": "mid",
+          "ground_guard_allowed": [
+            "standing",
+            "crouching"
+          ],
+          "air_guard_allowed": true,
+          "grounded_anti_air": false,
+          "launches": false,
+          "airborne_attack": false,
+          "landing_recovery_ticks": 0,
+          "reach_logical_px": 170,
+          "range_status": "design_target_hitboxes_not_authored",
+          "note_fr": "Contre les approches au sol.",
+          "cancel_policy": {
+            "normal_chain_next_tiers": [
+              "H"
+            ],
+            "on": [
+              "hit",
+              "block"
+            ],
+            "special_cancel_on_hit": true,
+            "special_cancel_on_block": false,
+            "super_cancel_on_hit": false,
+            "whiff_cancel": false
+          },
+          "advantage_scope": "Contact au premier tick actif, même durée de hitfreeze, cible au sol; pour les normales aériennes ces calculs cessent de suffire si un atterrissage intervient."
+        },
+        {
+          "move_id": "pbody_portal2.5H",
+          "fighter_id": "pbody_portal2",
+          "input": "5H",
+          "name_fr": "Fauchage du membre",
+          "category": "normal",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 19,
+          "first_active_tick": 19,
+          "active_ticks": 4,
+          "recovery_ticks": 27,
+          "total_action_ticks_without_shared_hitfreeze": 49,
+          "base_damage": 1080,
+          "hit_count": 1,
+          "hitstun_ticks": 33,
+          "blockstun_ticks": 21,
+          "first_active_hit_advantage_ticks": 3,
+          "first_active_block_advantage_ticks": -9,
+          "guard_type": "mid",
+          "ground_guard_allowed": [
+            "standing",
+            "crouching"
+          ],
+          "air_guard_allowed": true,
+          "grounded_anti_air": false,
+          "launches": false,
+          "airborne_attack": false,
+          "landing_recovery_ticks": 0,
+          "reach_logical_px": 225,
+          "range_status": "design_target_hitboxes_not_authored",
+          "note_fr": "Extrémité atteignable; punition nette si manqué.",
+          "cancel_policy": {
+            "normal_chain_next_tiers": [],
+            "on": [
+              "hit",
+              "block"
+            ],
+            "special_cancel_on_hit": true,
+            "special_cancel_on_block": false,
+            "super_cancel_on_hit": true,
+            "whiff_cancel": false
+          },
+          "advantage_scope": "Contact au premier tick actif, même durée de hitfreeze, cible au sol; pour les normales aériennes ces calculs cessent de suffire si un atterrissage intervient."
+        },
+        {
+          "move_id": "pbody_portal2.2L",
+          "fighter_id": "pbody_portal2",
+          "input": "2L",
+          "name_fr": "Contact du pied avant",
+          "category": "normal",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 8,
+          "first_active_tick": 8,
+          "active_ticks": 2,
+          "recovery_ticks": 13,
+          "total_action_ticks_without_shared_hitfreeze": 22,
+          "base_damage": 300,
+          "hit_count": 1,
+          "hitstun_ticks": 18,
+          "blockstun_ticks": 12,
+          "first_active_hit_advantage_ticks": 4,
+          "first_active_block_advantage_ticks": -2,
+          "guard_type": "low",
+          "ground_guard_allowed": [
+            "crouching"
+          ],
+          "air_guard_allowed": true,
+          "grounded_anti_air": false,
+          "launches": false,
+          "airborne_attack": false,
+          "landing_recovery_ticks": 0,
+          "reach_logical_px": 100,
+          "range_status": "design_target_hitboxes_not_authored",
+          "note_fr": "Courte chaîne basse.",
+          "cancel_policy": {
+            "normal_chain_next_tiers": [
+              "M",
+              "H"
+            ],
+            "on": [
+              "hit",
+              "block"
+            ],
+            "special_cancel_on_hit": false,
+            "special_cancel_on_block": false,
+            "super_cancel_on_hit": false,
+            "whiff_cancel": false
+          },
+          "advantage_scope": "Contact au premier tick actif, même durée de hitfreeze, cible au sol; pour les normales aériennes ces calculs cessent de suffire si un atterrissage intervient."
+        },
+        {
+          "move_id": "pbody_portal2.2M",
+          "fighter_id": "pbody_portal2",
+          "input": "2M",
+          "name_fr": "Balayage de jambe",
+          "category": "normal",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 14,
+          "first_active_tick": 14,
+          "active_ticks": 4,
+          "recovery_ticks": 21,
+          "total_action_ticks_without_shared_hitfreeze": 38,
+          "base_damage": 680,
+          "hit_count": 1,
+          "hitstun_ticks": 28,
+          "blockstun_ticks": 19,
+          "first_active_hit_advantage_ticks": 4,
+          "first_active_block_advantage_ticks": -5,
+          "guard_type": "low",
+          "ground_guard_allowed": [
+            "crouching"
+          ],
+          "air_guard_allowed": true,
+          "grounded_anti_air": false,
+          "launches": false,
+          "airborne_attack": false,
+          "landing_recovery_ticks": 0,
+          "reach_logical_px": 200,
+          "range_status": "design_target_hitboxes_not_authored",
+          "note_fr": "Pied exposé pendant la récupération.",
+          "cancel_policy": {
+            "normal_chain_next_tiers": [
+              "H"
+            ],
+            "on": [
+              "hit",
+              "block"
+            ],
+            "special_cancel_on_hit": true,
+            "special_cancel_on_block": false,
+            "super_cancel_on_hit": false,
+            "whiff_cancel": false
+          },
+          "advantage_scope": "Contact au premier tick actif, même durée de hitfreeze, cible au sol; pour les normales aériennes ces calculs cessent de suffire si un atterrissage intervient."
+        },
+        {
+          "move_id": "pbody_portal2.2H",
+          "fighter_id": "pbody_portal2",
+          "input": "2H",
+          "name_fr": "Déploiement vertical",
+          "category": "normal",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 17,
+          "first_active_tick": 17,
+          "active_ticks": 5,
+          "recovery_ticks": 28,
+          "total_action_ticks_without_shared_hitfreeze": 49,
+          "base_damage": 980,
+          "hit_count": 1,
+          "hitstun_ticks": 34,
+          "blockstun_ticks": 22,
+          "first_active_hit_advantage_ticks": 2,
+          "first_active_block_advantage_ticks": -10,
+          "guard_type": "mid",
+          "ground_guard_allowed": [
+            "standing",
+            "crouching"
+          ],
+          "air_guard_allowed": false,
+          "grounded_anti_air": true,
+          "launches": true,
+          "airborne_attack": false,
+          "landing_recovery_ticks": 0,
+          "reach_logical_px": 170,
+          "range_status": "design_target_hitboxes_not_authored",
+          "note_fr": "Anti-air étendu; angle mort très près du corps.",
+          "cancel_policy": {
+            "normal_chain_next_tiers": [],
+            "on": [
+              "hit",
+              "block"
+            ],
+            "special_cancel_on_hit": true,
+            "special_cancel_on_block": false,
+            "super_cancel_on_hit": true,
+            "whiff_cancel": false
+          },
+          "advantage_scope": "Contact au premier tick actif, même durée de hitfreeze, cible au sol; pour les normales aériennes ces calculs cessent de suffire si un atterrissage intervient."
+        },
+        {
+          "move_id": "pbody_portal2.j.L",
+          "fighter_id": "pbody_portal2",
+          "input": "j.L",
+          "name_fr": "Manipulateur descendant",
+          "category": "normal",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 8,
+          "first_active_tick": 8,
+          "active_ticks": 4,
+          "recovery_ticks": 14,
+          "total_action_ticks_without_shared_hitfreeze": 25,
+          "base_damage": 330,
+          "hit_count": 1,
+          "hitstun_ticks": 19,
+          "blockstun_ticks": 14,
+          "first_active_hit_advantage_ticks": 2,
+          "first_active_block_advantage_ticks": -3,
+          "guard_type": "overhead",
+          "ground_guard_allowed": [
+            "standing"
+          ],
+          "air_guard_allowed": true,
+          "grounded_anti_air": false,
+          "launches": false,
+          "airborne_attack": true,
+          "landing_recovery_ticks": 10,
+          "reach_logical_px": 100,
+          "range_status": "design_target_hitboxes_not_authored",
+          "note_fr": "Réponse aérienne proche.",
+          "cancel_policy": {
+            "normal_chain_next_tiers": [
+              "M",
+              "H"
+            ],
+            "on": [
+              "hit",
+              "block"
+            ],
+            "special_cancel_on_hit": false,
+            "special_cancel_on_block": false,
+            "super_cancel_on_hit": false,
+            "whiff_cancel": false
+          },
+          "advantage_scope": "Contact au premier tick actif, même durée de hitfreeze, cible au sol; pour les normales aériennes ces calculs cessent de suffire si un atterrissage intervient."
+        },
+        {
+          "move_id": "pbody_portal2.j.M",
+          "fighter_id": "pbody_portal2",
+          "input": "j.M",
+          "name_fr": "Jambe en diagonale",
+          "category": "normal",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 12,
+          "first_active_tick": 12,
+          "active_ticks": 5,
+          "recovery_ticks": 20,
+          "total_action_ticks_without_shared_hitfreeze": 36,
+          "base_damage": 660,
+          "hit_count": 1,
+          "hitstun_ticks": 27,
+          "blockstun_ticks": 18,
+          "first_active_hit_advantage_ticks": 3,
+          "first_active_block_advantage_ticks": -6,
+          "guard_type": "overhead",
+          "ground_guard_allowed": [
+            "standing"
+          ],
+          "air_guard_allowed": true,
+          "grounded_anti_air": false,
+          "launches": false,
+          "airborne_attack": true,
+          "landing_recovery_ticks": 10,
+          "reach_logical_px": 190,
+          "range_status": "design_target_hitboxes_not_authored",
+          "note_fr": "Meilleure portée sans priorité universelle.",
+          "cancel_policy": {
+            "normal_chain_next_tiers": [
+              "H"
+            ],
+            "on": [
+              "hit",
+              "block"
+            ],
+            "special_cancel_on_hit": false,
+            "special_cancel_on_block": false,
+            "super_cancel_on_hit": false,
+            "whiff_cancel": false
+          },
+          "advantage_scope": "Contact au premier tick actif, même durée de hitfreeze, cible au sol; pour les normales aériennes ces calculs cessent de suffire si un atterrissage intervient."
+        },
+        {
+          "move_id": "pbody_portal2.j.H",
+          "fighter_id": "pbody_portal2",
+          "input": "j.H",
+          "name_fr": "Grand arc descendant",
+          "category": "normal",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 17,
+          "first_active_tick": 17,
+          "active_ticks": 6,
+          "recovery_ticks": 26,
+          "total_action_ticks_without_shared_hitfreeze": 48,
+          "base_damage": 1020,
+          "hit_count": 1,
+          "hitstun_ticks": 34,
+          "blockstun_ticks": 22,
+          "first_active_hit_advantage_ticks": 3,
+          "first_active_block_advantage_ticks": -9,
+          "guard_type": "overhead",
+          "ground_guard_allowed": [
+            "standing"
+          ],
+          "air_guard_allowed": true,
+          "grounded_anti_air": false,
+          "launches": false,
+          "airborne_attack": true,
+          "landing_recovery_ticks": 10,
+          "reach_logical_px": 215,
+          "range_status": "design_target_hitboxes_not_authored",
+          "note_fr": "Anticipation visible; dangereux si la cible passe dessous.",
+          "cancel_policy": {
+            "normal_chain_next_tiers": [],
+            "on": [
+              "hit",
+              "block"
+            ],
+            "special_cancel_on_hit": false,
+            "special_cancel_on_block": false,
+            "super_cancel_on_hit": false,
+            "whiff_cancel": false
+          },
+          "advantage_scope": "Contact au premier tick actif, même durée de hitfreeze, cible au sol; pour les normales aériennes ces calculs cessent de suffire si un atterrissage intervient."
+        },
+        {
+          "move_id": "pbody_portal2.6H",
+          "fighter_id": "pbody_portal2",
+          "input": "6H",
+          "name_fr": "Pas enjambé",
+          "category": "normal",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 28,
+          "first_active_tick": 28,
+          "active_ticks": 4,
+          "recovery_ticks": 29,
+          "total_action_ticks_without_shared_hitfreeze": 60,
+          "base_damage": 1120,
+          "hit_count": 1,
+          "hitstun_ticks": 34,
+          "blockstun_ticks": 21,
+          "first_active_hit_advantage_ticks": 2,
+          "first_active_block_advantage_ticks": -11,
+          "guard_type": "overhead",
+          "ground_guard_allowed": [
+            "standing"
+          ],
+          "air_guard_allowed": true,
+          "grounded_anti_air": false,
+          "launches": false,
+          "airborne_attack": false,
+          "landing_recovery_ticks": 0,
+          "reach_logical_px": 180,
+          "range_status": "design_target_hitboxes_not_authored",
+          "note_fr": "Overhead très lent; ne traverse pas la collision adverse.",
+          "cancel_policy": {
+            "normal_chain_next_tiers": [],
+            "on": [],
+            "special_cancel_on_hit": false,
+            "special_cancel_on_block": false,
+            "super_cancel_on_hit": false,
+            "whiff_cancel": false
+          },
+          "advantage_scope": "Contact au premier tick actif, même durée de hitfreeze, cible au sol; pour les normales aériennes ces calculs cessent de suffire si un atterrissage intervient."
+        }
+      ],
+      "throws": [
+        {
+          "move_id": "pbody_portal2.throw_forward",
+          "fighter_id": "pbody_portal2",
+          "input": "L+M",
+          "name_fr": "Dégagement vers l’avant",
+          "category": "throw",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 6,
+          "active_ticks": 2,
+          "recovery_on_whiff_ticks": 28,
+          "tech_window_ticks": 7,
+          "capture_ticks": 36,
+          "release_recovery_ticks": 16,
+          "base_damage": 1150,
+          "range_logical_px": 80,
+          "guard_type": "throw",
+          "launches": false,
+          "hard_knockdown_ticks": 40,
+          "invulnerability_ticks": 0,
+          "capture_rule": "Adversaire au sol, saisissable et hors invulnérabilité; pas de saisie à travers un portail.",
+          "wall_bounce": false,
+          "ground_bounce": false
+        },
+        {
+          "move_id": "pbody_portal2.throw_back",
+          "fighter_id": "pbody_portal2",
+          "input": "4+L+M",
+          "name_fr": "Dégagement vers l’arrière",
+          "category": "throw",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 6,
+          "active_ticks": 2,
+          "recovery_on_whiff_ticks": 28,
+          "tech_window_ticks": 7,
+          "capture_ticks": 36,
+          "release_recovery_ticks": 16,
+          "base_damage": 1150,
+          "range_logical_px": 80,
+          "guard_type": "throw",
+          "launches": false,
+          "hard_knockdown_ticks": 40,
+          "invulnerability_ticks": 0,
+          "capture_rule": "Adversaire au sol, saisissable et hors invulnérabilité; pas de saisie à travers un portail.",
+          "wall_bounce": false,
+          "ground_bounce": false
+        }
+      ],
+      "specials": [
+        {
+          "move_id": "pbody_portal2.portal_a",
+          "fighter_id": "pbody_portal2",
+          "input": "236L",
+          "name_fr": "Pose du portail A",
+          "category": "special",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 20,
+          "recovery_ticks": 18,
+          "behavior": "Place l’ancrage A au socket prévisualisé; ouverture en 12 ticks; ne blesse pas.",
+          "counterplay": "Interrompre la préparation ou occuper la sortie.",
+          "invulnerability_ticks": 0,
+          "active_ticks": 0,
+          "event_tick": 20,
+          "total_action_ticks": 38,
+          "base_damage": 0,
+          "hitstun_ticks": null,
+          "blockstun_ticks": null,
+          "advantage_scope": "Action utilitaire; aucune formule d’avantage de frappe.",
+          "cancel_policy": {
+            "whiff_cancel": false,
+            "special_to_special": false,
+            "super_on_hit": false,
+            "super_on_block": false
+          }
+        },
+        {
+          "move_id": "pbody_portal2.portal_b",
+          "fighter_id": "pbody_portal2",
+          "input": "214L",
+          "name_fr": "Pose du portail B",
+          "category": "special",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 22,
+          "recovery_ticks": 18,
+          "behavior": "Place l’ancrage B; la paire ne fonctionne que lorsque les deux bords sont ouverts.",
+          "counterplay": "Avancer pendant la récupération et limiter le temps de préparation.",
+          "invulnerability_ticks": 0,
+          "active_ticks": 0,
+          "event_tick": 22,
+          "total_action_ticks": 40,
+          "base_damage": 0,
+          "hitstun_ticks": null,
+          "blockstun_ticks": null,
+          "advantage_scope": "Action utilitaire; aucune formule d’avantage de frappe.",
+          "cancel_policy": {
+            "whiff_cancel": false,
+            "special_to_special": false,
+            "super_on_hit": false,
+            "super_on_block": false
+          }
+        },
+        {
+          "move_id": "pbody_portal2.transit",
+          "fighter_id": "pbody_portal2",
+          "input": "214M",
+          "name_fr": "Traversée préparée",
+          "category": "special",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 18,
+          "recovery_ticks": 18,
+          "behavior": "Entre dans la paire existante, un transit par combo; sortie signalée et vulnérable.",
+          "counterplay": "Couvrir la sortie annoncée; ne pas poursuivre aveuglément à l’entrée.",
+          "invulnerability_ticks": 0,
+          "active_ticks": 0,
+          "event_tick": 18,
+          "total_action_ticks": 36,
+          "base_damage": 0,
+          "hitstun_ticks": null,
+          "blockstun_ticks": null,
+          "advantage_scope": "Action utilitaire; aucune formule d’avantage de frappe.",
+          "requires": "Paire ouverte, entrée à portée, sortie valide; refus explicite si l’une de ces conditions manque.",
+          "cancel_policy": {
+            "whiff_cancel": false,
+            "special_to_special": false,
+            "super_on_hit": false,
+            "super_on_block": false
+          }
+        },
+        {
+          "move_id": "pbody_portal2.cube",
+          "fighter_id": "pbody_portal2",
+          "input": "236H",
+          "name_fr": "Lancer du cube de test",
+          "category": "special",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 28,
+          "recovery_ticks": 30,
+          "behavior": "Lance l’unique cube du kit; projectile à durée bornée, une seule traversée de portail. Ce cube fourni au duel est une adaptation.",
+          "counterplay": "Sauter sa trajectoire, le faire entrer en collision ou punir le lancer à courte distance.",
+          "invulnerability_ticks": 0,
+          "active_ticks": 1,
+          "total_action_ticks": 58,
+          "base_damage": 900,
+          "guard_type": "mid",
+          "air_guard_allowed": true,
+          "hitstun_ticks": 32,
+          "blockstun_ticks": 18,
+          "launches": false,
+          "projectile": true,
+          "advantage_scope": "À calculer depuis la collision réelle du projectile.",
+          "projectile_lifetime_ticks": 90,
+          "projectile_speed_logical_px_per_tick": 12,
+          "max_instances": 1,
+          "projectile_hit_count": 1,
+          "portal_compatible": true,
+          "projectile_clash_durability": 1,
+          "cancel_policy": {
+            "whiff_cancel": false,
+            "special_to_special": false,
+            "super_on_hit": true,
+            "super_on_block": false
+          }
+        },
+        {
+          "move_id": "pbody_portal2.anti_air",
+          "fighter_id": "pbody_portal2",
+          "input": "623H",
+          "name_fr": "Arc de la jambe",
+          "category": "special",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 15,
+          "recovery_ticks": 35,
+          "behavior": "Frappe anti-air du corps; aucune invulnérabilité aux coups au sol.",
+          "counterplay": "Rester au sol puis punir la récupération.",
+          "invulnerability_ticks": 0,
+          "active_ticks": 5,
+          "total_action_ticks": 54,
+          "base_damage": 1150,
+          "guard_type": "mid",
+          "air_guard_allowed": false,
+          "hitstun_ticks": 38,
+          "blockstun_ticks": 22,
+          "launches": true,
+          "projectile": false,
+          "advantage_scope": "Premier tick actif, aucune annulation, hitfreeze partagé exclu.",
+          "first_active_hit_advantage_ticks": -1,
+          "first_active_block_advantage_ticks": -17,
+          "juggle_cost": 4,
+          "cancel_policy": {
+            "whiff_cancel": false,
+            "special_to_special": false,
+            "super_on_hit": true,
+            "super_on_block": false
+          }
+        }
+      ],
+      "ex_variants": [
+        {
+          "move_id": "pbody_portal2.ex_236",
+          "fighter_id": "pbody_portal2",
+          "input": "236L+M",
+          "name_fr": "Pose A EX",
+          "category": "ex",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 50,
+          "base_move_id": "pbody_portal2.portal_a",
+          "behavior": "Préparation 14 ticks, récupération 14; l’ouverture reste 12. Ne pose qu’un portail.",
+          "base_damage": 0,
+          "invulnerability_ticks": 0,
+          "refund_after_interruption": false,
+          "startup_ticks": 14,
+          "event_tick": 14,
+          "active_ticks": 0,
+          "recovery_ticks": 14,
+          "total_action_ticks": 28
+        },
+        {
+          "move_id": "pbody_portal2.ex_214",
+          "fighter_id": "pbody_portal2",
+          "input": "214L+M",
+          "name_fr": "Traversée EX",
+          "category": "ex",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 50,
+          "base_move_id": "pbody_portal2.transit",
+          "behavior": "Même préparation et signal de sortie de 18 ticks; récupération réduite à 12. Toujours vulnérable; paire préexistante obligatoire.",
+          "base_damage": 0,
+          "invulnerability_ticks": 0,
+          "refund_after_interruption": false,
+          "startup_ticks": 18,
+          "event_tick": 18,
+          "active_ticks": 0,
+          "recovery_ticks": 12,
+          "total_action_ticks": 30,
+          "requires": "Les mêmes préconditions que la traversée normale; coût débité uniquement après validation de ces préconditions."
+        },
+        {
+          "move_id": "pbody_portal2.ex_623",
+          "fighter_id": "pbody_portal2",
+          "input": "623L+M",
+          "name_fr": "Anti-air EX",
+          "category": "ex",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 50,
+          "base_move_id": "pbody_portal2.anti_air",
+          "behavior": "Même démarrage que l’anti-air, 1300 dégâts, récupération 36; couverture verticale accrue, aucune invulnérabilité universelle.",
+          "base_damage": 1300,
+          "invulnerability_ticks": 0,
+          "refund_after_interruption": false,
+          "startup_ticks": 15,
+          "active_ticks": 6,
+          "recovery_ticks": 36,
+          "total_action_ticks": 56,
+          "guard_type": "mid",
+          "air_guard_allowed": false,
+          "hitstun_ticks": 44,
+          "blockstun_ticks": 24,
+          "first_active_hit_advantage_ticks": 3,
+          "first_active_block_advantage_ticks": -17,
+          "juggle_cost": 5,
+          "launches": true
+        }
+      ],
+      "supers": [
+        {
+          "move_id": "pbody_portal2.super",
+          "fighter_id": "pbody_portal2",
+          "input": "236236H",
+          "name_fr": "Transfert contrôlé",
+          "category": "super",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 100,
+          "startup_ticks": 12,
+          "active_ticks": 3,
+          "base_damage": 2400,
+          "hit_count": 1,
+          "guard_type": "mid",
+          "air_guard_allowed": true,
+          "cinematic_capture_ticks": 120,
+          "recovery_on_whiff_or_block_ticks": 38,
+          "blockstun_ticks": 24,
+          "first_active_block_advantage_ticks": -16,
+          "hit_confirm_required_for_cinematic": true,
+          "invulnerability_ticks": 0,
+          "animation": "Une frappe corporelle courte confirme un trajet chorégraphié par portails puis un impact de cube. Le tir de placement ne touche pas directement le corps adverse.",
+          "source_status": "Mise en scène originale de Resonance; aucun événement de campagne Valve reproduit.",
+          "resource_gain": 0,
+          "hit_scaling_floor_percent": 15
+        },
+        {
+          "move_id": "pbody_portal2.ultimate",
+          "fighter_id": "pbody_portal2",
+          "input": "236236S",
+          "name_fr": "Protocole de sortie",
+          "category": "ultimate",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 300,
+          "startup_ticks": 18,
+          "active_ticks": 3,
+          "base_damage": 4300,
+          "hit_count": 1,
+          "guard_type": "mid",
+          "air_guard_allowed": true,
+          "cinematic_capture_ticks": 240,
+          "recovery_on_whiff_or_block_ticks": 48,
+          "blockstun_ticks": 28,
+          "first_active_block_advantage_ticks": -22,
+          "hit_confirm_required_for_cinematic": true,
+          "invulnerability_ticks": 0,
+          "animation": "Une frappe corporelle courte confirme un trajet chorégraphié par portails puis un impact de cube. Le tir de placement ne touche pas directement le corps adverse.",
+          "source_status": "Mise en scène originale de Resonance; aucun événement de campagne Valve reproduit.",
+          "resource_gain": 0,
+          "hit_scaling_floor_percent": 20
+        }
+      ],
+      "ex_policy": "Une variante EX par motion 236/214/623. 236L+M signifie Pose A EX, jamais le lancer de cube. 214L+M signifie Traversée EX, jamais Pose B EX. Une commande reconnue mais impossible ne devient pas une projection.",
+      "movement": {
+        "walk_forward_logical_px_per_tick": 5,
+        "walk_back_logical_px_per_tick": 3,
+        "forward_dash_ticks": 16,
+        "back_dash_ticks": 22,
+        "back_dash_invulnerability_ticks": 0,
+        "jump_total_ticks_target": 48,
+        "double_jump": false,
+        "air_dash": false,
+        "status": "Propositions à régler après collision et animation; aucune taille de sprite source déduite de ces valeurs."
+      },
+      "combo_routes": [
+        {
+          "route_id": "pbody_portal2.route_basic",
+          "inputs": [
+            "5L",
+            "5M",
+            "5H"
+          ],
+          "resonance_cost": 0,
+          "purpose": "Conversion simple au sol.",
+          "preconditions": "Contact proche; L→M→H une fois chacun.",
+          "status": "candidate_not_combo_verified",
+          "guaranteed_true_combo": false,
+          "damage_if_connections_confirmed": 1788,
+          "note": "Les annulations proposées autorisent la séquence; portée, pushback, budget aérien et contact réel restent à vérifier."
+        },
+        {
+          "route_id": "pbody_portal2.route_launch",
+          "inputs": [
+            "2L",
+            "2M",
+            "2H",
+            "623H"
+          ],
+          "resonance_cost": 0,
+          "purpose": "Conversion basse vers anti-air.",
+          "preconditions": "Vérifier portée après lancement; coût aérien 4, une seule reprise de niveau H.",
+          "status": "candidate_not_combo_verified",
+          "guaranteed_true_combo": false,
+          "damage_if_connections_confirmed": null,
+          "note": "Les annulations proposées autorisent la séquence; portée, pushback, budget aérien et contact réel restent à vérifier."
+        },
+        {
+          "route_id": "pbody_portal2.route_super",
+          "inputs": [
+            "5M",
+            "5H",
+            "236236H"
+          ],
+          "resonance_cost": 100,
+          "purpose": "Confirmation du super.",
+          "preconditions": "Annulation sur hit seulement; aucun super automatique en garde.",
+          "status": "candidate_not_combo_verified",
+          "guaranteed_true_combo": false,
+          "damage_if_connections_confirmed": null,
+          "note": "Les annulations proposées autorisent la séquence; portée, pushback, budget aérien et contact réel restent à vérifier."
+        },
+        {
+          "route_id": "pbody_portal2.route_position",
+          "inputs": [
+            "236L",
+            "214L",
+            "214M"
+          ],
+          "resonance_cost": 0,
+          "purpose": "Préparation de position, sans dégâts.",
+          "preconditions": "Paire ouverte et entrée proche; cette séquence utilitaire ne constitue pas un combo.",
+          "status": "candidate_not_combo_verified",
+          "guaranteed_true_combo": false,
+          "damage_if_connections_confirmed": null,
+          "note": "Les annulations proposées autorisent la séquence; portée, pushback, budget aérien et contact réel restent à vérifier."
+        }
+      ],
+      "narrative": {
+        "intro": "P-body se déplie de toute sa hauteur, observe la caméra puis pose un pied exactement sur le repère au sol. Le bras ajuste l’appareil sans le faire flotter.",
+        "rival_id": "atlas_portal2",
+        "rival_reason": "Même erreur de protocole vue depuis l’autre robot; la rivalité reste une scène du mode annexe.",
+        "rival_scene": "P-body indique un passage trop haut pour ATLAS. Le panneau descend soudain jusqu’au sol et affiche les deux repères de duel; P-body incline la tête puis se prépare.",
+        "rival_victory": "P-body propose une tape dans la main à hauteur d’ATLAS. Si le partenaire est absent ou incompatible, le geste devient un salut vers la caméra.",
+        "ending": "Au lieu de prendre la sortie seul, P-body redirige le cube vers le mécanisme d’ATLAS. Les robots utilisent ensuite un passage différent chacun et se retrouvent de l’autre côté.",
+        "finisher": "Une pince du décor place le vaincu dans une nacelle ouverte à distance sûre. La variante machine peut montrer des étincelles, jamais une modification du résultat."
+      }
+    },
+    {
+      "fighter_id": "chell_portal1",
+      "name_fr": "Chell",
+      "source_game": "Portal; costume Portal 2 séparé",
+      "status": "specified_not_implemented_or_playtested",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "role": "Mobilité méthodique et punition proche",
+      "source_ids": [
+        "AP03",
+        "AP05",
+        "AP07",
+        "AP08"
+      ],
+      "identity_lock": [
+        "Base: combinaison et protections de jambe de Portal, appareil de cette version.",
+        "Le costume Portal 2 dispose de ses propres références et images.",
+        "Silhouette humaine et gestuelle silencieuse; aucune force surhumaine ajoutée comme fait canon."
+      ],
+      "reference_hp": 10000,
+      "difficulty": "intermédiaire",
+      "strengths": [
+        "Meilleur démarrage léger de ces trois propositions.",
+        "Punition de récupération proche.",
+        "Changements de position annoncés."
+      ],
+      "weaknesses": [
+        "Portée de frappe modeste.",
+        "Installation de portails vulnérable.",
+        "Pas de projectile direct blessant tiré par le Portal Gun."
+      ],
+      "trait": {
+        "move_id": "chell_portal1.trait",
+        "fighter_id": "chell_portal1",
+        "input": "5S",
+        "name_fr": "Choix du point d’ancrage",
+        "category": "utility",
+        "status": "specified_not_implemented_or_playtested",
+        "canon_status": "original_fighting_game_adaptation",
+        "resonance_cost": 0,
+        "startup_ticks": 1,
+        "total_action_ticks": 12,
+        "base_damage": 0,
+        "behavior": "Cycle la sélection visible A/B des quatre sockets normalisés; aucune attaque ni téléportation.",
+        "cancel_into": [
+          "236L",
+          "214L"
+        ],
+        "cancel_after_tick": 12
+      },
+      "normals": [
+        {
+          "move_id": "chell_portal1.5L",
+          "fighter_id": "chell_portal1",
+          "input": "5L",
+          "name_fr": "Dégagement du coude",
+          "category": "normal",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 6,
+          "first_active_tick": 6,
+          "active_ticks": 3,
+          "recovery_ticks": 10,
+          "total_action_ticks_without_shared_hitfreeze": 18,
+          "base_damage": 300,
+          "hit_count": 1,
+          "hitstun_ticks": 16,
+          "blockstun_ticks": 12,
+          "first_active_hit_advantage_ticks": 4,
+          "first_active_block_advantage_ticks": 0,
+          "guard_type": "mid",
+          "ground_guard_allowed": [
+            "standing",
+            "crouching"
+          ],
+          "air_guard_allowed": true,
+          "grounded_anti_air": false,
+          "launches": false,
+          "airborne_attack": false,
+          "landing_recovery_ticks": 0,
+          "reach_logical_px": 80,
+          "range_status": "design_target_hitboxes_not_authored",
+          "note_fr": "Rapide à courte portée.",
+          "cancel_policy": {
+            "normal_chain_next_tiers": [
+              "M",
+              "H"
+            ],
+            "on": [
+              "hit",
+              "block"
+            ],
+            "special_cancel_on_hit": false,
+            "special_cancel_on_block": false,
+            "super_cancel_on_hit": false,
+            "whiff_cancel": false
+          },
+          "advantage_scope": "Contact au premier tick actif, même durée de hitfreeze, cible au sol; pour les normales aériennes ces calculs cessent de suffire si un atterrissage intervient."
+        },
+        {
+          "move_id": "chell_portal1.5M",
+          "fighter_id": "chell_portal1",
+          "input": "5M",
+          "name_fr": "Paume de dégagement",
+          "category": "normal",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 10,
+          "first_active_tick": 10,
+          "active_ticks": 3,
+          "recovery_ticks": 15,
+          "total_action_ticks_without_shared_hitfreeze": 27,
+          "base_damage": 560,
+          "hit_count": 1,
+          "hitstun_ticks": 22,
+          "blockstun_ticks": 16,
+          "first_active_hit_advantage_ticks": 5,
+          "first_active_block_advantage_ticks": -1,
+          "guard_type": "mid",
+          "ground_guard_allowed": [
+            "standing",
+            "crouching"
+          ],
+          "air_guard_allowed": true,
+          "grounded_anti_air": false,
+          "launches": false,
+          "airborne_attack": false,
+          "landing_recovery_ticks": 0,
+          "reach_logical_px": 125,
+          "range_status": "design_target_hitboxes_not_authored",
+          "note_fr": "L’appareil reste tenu; aucun tir énergétique blessant.",
+          "cancel_policy": {
+            "normal_chain_next_tiers": [
+              "H"
+            ],
+            "on": [
+              "hit",
+              "block"
+            ],
+            "special_cancel_on_hit": true,
+            "special_cancel_on_block": false,
+            "super_cancel_on_hit": false,
+            "whiff_cancel": false
+          },
+          "advantage_scope": "Contact au premier tick actif, même durée de hitfreeze, cible au sol; pour les normales aériennes ces calculs cessent de suffire si un atterrissage intervient."
+        },
+        {
+          "move_id": "chell_portal1.5H",
+          "fighter_id": "chell_portal1",
+          "input": "5H",
+          "name_fr": "Revers avec appui",
+          "category": "normal",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 16,
+          "first_active_tick": 16,
+          "active_ticks": 4,
+          "recovery_ticks": 22,
+          "total_action_ticks_without_shared_hitfreeze": 41,
+          "base_damage": 900,
+          "hit_count": 1,
+          "hitstun_ticks": 29,
+          "blockstun_ticks": 19,
+          "first_active_hit_advantage_ticks": 4,
+          "first_active_block_advantage_ticks": -6,
+          "guard_type": "mid",
+          "ground_guard_allowed": [
+            "standing",
+            "crouching"
+          ],
+          "air_guard_allowed": true,
+          "grounded_anti_air": false,
+          "launches": false,
+          "airborne_attack": false,
+          "landing_recovery_ticks": 0,
+          "reach_logical_px": 165,
+          "range_status": "design_target_hitboxes_not_authored",
+          "note_fr": "Pivot du corps, longue récupération.",
+          "cancel_policy": {
+            "normal_chain_next_tiers": [],
+            "on": [
+              "hit",
+              "block"
+            ],
+            "special_cancel_on_hit": true,
+            "special_cancel_on_block": false,
+            "super_cancel_on_hit": true,
+            "whiff_cancel": false
+          },
+          "advantage_scope": "Contact au premier tick actif, même durée de hitfreeze, cible au sol; pour les normales aériennes ces calculs cessent de suffire si un atterrissage intervient."
+        },
+        {
+          "move_id": "chell_portal1.2L",
+          "fighter_id": "chell_portal1",
+          "input": "2L",
+          "name_fr": "Coup de pied bas",
+          "category": "normal",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 6,
+          "first_active_tick": 6,
+          "active_ticks": 2,
+          "recovery_ticks": 11,
+          "total_action_ticks_without_shared_hitfreeze": 18,
+          "base_damage": 270,
+          "hit_count": 1,
+          "hitstun_ticks": 16,
+          "blockstun_ticks": 11,
+          "first_active_hit_advantage_ticks": 4,
+          "first_active_block_advantage_ticks": -1,
+          "guard_type": "low",
+          "ground_guard_allowed": [
+            "crouching"
+          ],
+          "air_guard_allowed": true,
+          "grounded_anti_air": false,
+          "launches": false,
+          "airborne_attack": false,
+          "landing_recovery_ticks": 0,
+          "reach_logical_px": 85,
+          "range_status": "design_target_hitboxes_not_authored",
+          "note_fr": "Vérification défensive courte.",
+          "cancel_policy": {
+            "normal_chain_next_tiers": [
+              "M",
+              "H"
+            ],
+            "on": [
+              "hit",
+              "block"
+            ],
+            "special_cancel_on_hit": false,
+            "special_cancel_on_block": false,
+            "super_cancel_on_hit": false,
+            "whiff_cancel": false
+          },
+          "advantage_scope": "Contact au premier tick actif, même durée de hitfreeze, cible au sol; pour les normales aériennes ces calculs cessent de suffire si un atterrissage intervient."
+        },
+        {
+          "move_id": "chell_portal1.2M",
+          "fighter_id": "chell_portal1",
+          "input": "2M",
+          "name_fr": "Balayage glissé",
+          "category": "normal",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 11,
+          "first_active_tick": 11,
+          "active_ticks": 3,
+          "recovery_ticks": 17,
+          "total_action_ticks_without_shared_hitfreeze": 30,
+          "base_damage": 560,
+          "hit_count": 1,
+          "hitstun_ticks": 24,
+          "blockstun_ticks": 17,
+          "first_active_hit_advantage_ticks": 5,
+          "first_active_block_advantage_ticks": -2,
+          "guard_type": "low",
+          "ground_guard_allowed": [
+            "crouching"
+          ],
+          "air_guard_allowed": true,
+          "grounded_anti_air": false,
+          "launches": false,
+          "airborne_attack": false,
+          "landing_recovery_ticks": 0,
+          "reach_logical_px": 145,
+          "range_status": "design_target_hitboxes_not_authored",
+          "note_fr": "Aucune invulnérabilité basse garantie.",
+          "cancel_policy": {
+            "normal_chain_next_tiers": [
+              "H"
+            ],
+            "on": [
+              "hit",
+              "block"
+            ],
+            "special_cancel_on_hit": true,
+            "special_cancel_on_block": false,
+            "super_cancel_on_hit": false,
+            "whiff_cancel": false
+          },
+          "advantage_scope": "Contact au premier tick actif, même durée de hitfreeze, cible au sol; pour les normales aériennes ces calculs cessent de suffire si un atterrissage intervient."
+        },
+        {
+          "move_id": "chell_portal1.2H",
+          "fighter_id": "chell_portal1",
+          "input": "2H",
+          "name_fr": "Genou ascendant",
+          "category": "normal",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 14,
+          "first_active_tick": 14,
+          "active_ticks": 4,
+          "recovery_ticks": 25,
+          "total_action_ticks_without_shared_hitfreeze": 42,
+          "base_damage": 850,
+          "hit_count": 1,
+          "hitstun_ticks": 30,
+          "blockstun_ticks": 19,
+          "first_active_hit_advantage_ticks": 2,
+          "first_active_block_advantage_ticks": -9,
+          "guard_type": "mid",
+          "ground_guard_allowed": [
+            "standing",
+            "crouching"
+          ],
+          "air_guard_allowed": false,
+          "grounded_anti_air": true,
+          "launches": true,
+          "airborne_attack": false,
+          "landing_recovery_ticks": 0,
+          "reach_logical_px": 120,
+          "range_status": "design_target_hitboxes_not_authored",
+          "note_fr": "Anti-air proche, ouverture aux frappes au sol.",
+          "cancel_policy": {
+            "normal_chain_next_tiers": [],
+            "on": [
+              "hit",
+              "block"
+            ],
+            "special_cancel_on_hit": true,
+            "special_cancel_on_block": false,
+            "super_cancel_on_hit": true,
+            "whiff_cancel": false
+          },
+          "advantage_scope": "Contact au premier tick actif, même durée de hitfreeze, cible au sol; pour les normales aériennes ces calculs cessent de suffire si un atterrissage intervient."
+        },
+        {
+          "move_id": "chell_portal1.j.L",
+          "fighter_id": "chell_portal1",
+          "input": "j.L",
+          "name_fr": "Coude aérien",
+          "category": "normal",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 6,
+          "first_active_tick": 6,
+          "active_ticks": 3,
+          "recovery_ticks": 12,
+          "total_action_ticks_without_shared_hitfreeze": 20,
+          "base_damage": 290,
+          "hit_count": 1,
+          "hitstun_ticks": 17,
+          "blockstun_ticks": 12,
+          "first_active_hit_advantage_ticks": 3,
+          "first_active_block_advantage_ticks": -2,
+          "guard_type": "overhead",
+          "ground_guard_allowed": [
+            "standing"
+          ],
+          "air_guard_allowed": true,
+          "grounded_anti_air": false,
+          "launches": false,
+          "airborne_attack": true,
+          "landing_recovery_ticks": 10,
+          "reach_logical_px": 75,
+          "range_status": "design_target_hitboxes_not_authored",
+          "note_fr": "Réaction courte, angle restreint.",
+          "cancel_policy": {
+            "normal_chain_next_tiers": [
+              "M",
+              "H"
+            ],
+            "on": [
+              "hit",
+              "block"
+            ],
+            "special_cancel_on_hit": false,
+            "special_cancel_on_block": false,
+            "super_cancel_on_hit": false,
+            "whiff_cancel": false
+          },
+          "advantage_scope": "Contact au premier tick actif, même durée de hitfreeze, cible au sol; pour les normales aériennes ces calculs cessent de suffire si un atterrissage intervient."
+        },
+        {
+          "move_id": "chell_portal1.j.M",
+          "fighter_id": "chell_portal1",
+          "input": "j.M",
+          "name_fr": "Coup de pied en travers",
+          "category": "normal",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 9,
+          "first_active_tick": 9,
+          "active_ticks": 4,
+          "recovery_ticks": 16,
+          "total_action_ticks_without_shared_hitfreeze": 28,
+          "base_damage": 550,
+          "hit_count": 1,
+          "hitstun_ticks": 23,
+          "blockstun_ticks": 16,
+          "first_active_hit_advantage_ticks": 4,
+          "first_active_block_advantage_ticks": -3,
+          "guard_type": "overhead",
+          "ground_guard_allowed": [
+            "standing"
+          ],
+          "air_guard_allowed": true,
+          "grounded_anti_air": false,
+          "launches": false,
+          "airborne_attack": true,
+          "landing_recovery_ticks": 10,
+          "reach_logical_px": 130,
+          "range_status": "design_target_hitboxes_not_authored",
+          "note_fr": "Air-à-air sans projectile.",
+          "cancel_policy": {
+            "normal_chain_next_tiers": [
+              "H"
+            ],
+            "on": [
+              "hit",
+              "block"
+            ],
+            "special_cancel_on_hit": false,
+            "special_cancel_on_block": false,
+            "super_cancel_on_hit": false,
+            "whiff_cancel": false
+          },
+          "advantage_scope": "Contact au premier tick actif, même durée de hitfreeze, cible au sol; pour les normales aériennes ces calculs cessent de suffire si un atterrissage intervient."
+        },
+        {
+          "move_id": "chell_portal1.j.H",
+          "fighter_id": "chell_portal1",
+          "input": "j.H",
+          "name_fr": "Talon descendant",
+          "category": "normal",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 13,
+          "first_active_tick": 13,
+          "active_ticks": 5,
+          "recovery_ticks": 22,
+          "total_action_ticks_without_shared_hitfreeze": 39,
+          "base_damage": 870,
+          "hit_count": 1,
+          "hitstun_ticks": 29,
+          "blockstun_ticks": 20,
+          "first_active_hit_advantage_ticks": 3,
+          "first_active_block_advantage_ticks": -6,
+          "guard_type": "overhead",
+          "ground_guard_allowed": [
+            "standing"
+          ],
+          "air_guard_allowed": true,
+          "grounded_anti_air": false,
+          "launches": false,
+          "airborne_attack": true,
+          "landing_recovery_ticks": 10,
+          "reach_logical_px": 155,
+          "range_status": "design_target_hitboxes_not_authored",
+          "note_fr": "Impact guidé par le corps, pas par l’appareil.",
+          "cancel_policy": {
+            "normal_chain_next_tiers": [],
+            "on": [
+              "hit",
+              "block"
+            ],
+            "special_cancel_on_hit": false,
+            "special_cancel_on_block": false,
+            "super_cancel_on_hit": false,
+            "whiff_cancel": false
+          },
+          "advantage_scope": "Contact au premier tick actif, même durée de hitfreeze, cible au sol; pour les normales aériennes ces calculs cessent de suffire si un atterrissage intervient."
+        },
+        {
+          "move_id": "chell_portal1.6H",
+          "fighter_id": "chell_portal1",
+          "input": "6H",
+          "name_fr": "Pas sauté",
+          "category": "normal",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 24,
+          "first_active_tick": 24,
+          "active_ticks": 3,
+          "recovery_ticks": 25,
+          "total_action_ticks_without_shared_hitfreeze": 51,
+          "base_damage": 970,
+          "hit_count": 1,
+          "hitstun_ticks": 30,
+          "blockstun_ticks": 19,
+          "first_active_hit_advantage_ticks": 3,
+          "first_active_block_advantage_ticks": -8,
+          "guard_type": "overhead",
+          "ground_guard_allowed": [
+            "standing"
+          ],
+          "air_guard_allowed": true,
+          "grounded_anti_air": false,
+          "launches": false,
+          "airborne_attack": false,
+          "landing_recovery_ticks": 0,
+          "reach_logical_px": 140,
+          "range_status": "design_target_hitboxes_not_authored",
+          "note_fr": "Overhead annoncé; les bottes ne confèrent aucune armure.",
+          "cancel_policy": {
+            "normal_chain_next_tiers": [],
+            "on": [],
+            "special_cancel_on_hit": false,
+            "special_cancel_on_block": false,
+            "super_cancel_on_hit": false,
+            "whiff_cancel": false
+          },
+          "advantage_scope": "Contact au premier tick actif, même durée de hitfreeze, cible au sol; pour les normales aériennes ces calculs cessent de suffire si un atterrissage intervient."
+        }
+      ],
+      "throws": [
+        {
+          "move_id": "chell_portal1.throw_forward",
+          "fighter_id": "chell_portal1",
+          "input": "L+M",
+          "name_fr": "Dégagement vers l’avant",
+          "category": "throw",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 6,
+          "active_ticks": 2,
+          "recovery_on_whiff_ticks": 28,
+          "tech_window_ticks": 7,
+          "capture_ticks": 36,
+          "release_recovery_ticks": 16,
+          "base_damage": 1100,
+          "range_logical_px": 80,
+          "guard_type": "throw",
+          "launches": false,
+          "hard_knockdown_ticks": 40,
+          "invulnerability_ticks": 0,
+          "capture_rule": "Adversaire au sol, saisissable et hors invulnérabilité; pas de saisie à travers un portail.",
+          "wall_bounce": false,
+          "ground_bounce": false
+        },
+        {
+          "move_id": "chell_portal1.throw_back",
+          "fighter_id": "chell_portal1",
+          "input": "4+L+M",
+          "name_fr": "Dégagement vers l’arrière",
+          "category": "throw",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 6,
+          "active_ticks": 2,
+          "recovery_on_whiff_ticks": 28,
+          "tech_window_ticks": 7,
+          "capture_ticks": 36,
+          "release_recovery_ticks": 16,
+          "base_damage": 1100,
+          "range_logical_px": 80,
+          "guard_type": "throw",
+          "launches": false,
+          "hard_knockdown_ticks": 40,
+          "invulnerability_ticks": 0,
+          "capture_rule": "Adversaire au sol, saisissable et hors invulnérabilité; pas de saisie à travers un portail.",
+          "wall_bounce": false,
+          "ground_bounce": false
+        }
+      ],
+      "specials": [
+        {
+          "move_id": "chell_portal1.portal_a",
+          "fighter_id": "chell_portal1",
+          "input": "236L",
+          "name_fr": "Pose du portail A",
+          "category": "special",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 20,
+          "recovery_ticks": 18,
+          "behavior": "Place l’ancrage A au socket prévisualisé; ouverture en 12 ticks; ne blesse pas.",
+          "counterplay": "Interrompre la préparation ou occuper la sortie.",
+          "invulnerability_ticks": 0,
+          "active_ticks": 0,
+          "event_tick": 20,
+          "total_action_ticks": 38,
+          "base_damage": 0,
+          "hitstun_ticks": null,
+          "blockstun_ticks": null,
+          "advantage_scope": "Action utilitaire; aucune formule d’avantage de frappe.",
+          "cancel_policy": {
+            "whiff_cancel": false,
+            "special_to_special": false,
+            "super_on_hit": false,
+            "super_on_block": false
+          }
+        },
+        {
+          "move_id": "chell_portal1.portal_b",
+          "fighter_id": "chell_portal1",
+          "input": "214L",
+          "name_fr": "Pose du portail B",
+          "category": "special",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 22,
+          "recovery_ticks": 18,
+          "behavior": "Place l’ancrage B; la paire ne fonctionne que lorsque les deux bords sont ouverts.",
+          "counterplay": "Avancer pendant la récupération et limiter le temps de préparation.",
+          "invulnerability_ticks": 0,
+          "active_ticks": 0,
+          "event_tick": 22,
+          "total_action_ticks": 40,
+          "base_damage": 0,
+          "hitstun_ticks": null,
+          "blockstun_ticks": null,
+          "advantage_scope": "Action utilitaire; aucune formule d’avantage de frappe.",
+          "cancel_policy": {
+            "whiff_cancel": false,
+            "special_to_special": false,
+            "super_on_hit": false,
+            "super_on_block": false
+          }
+        },
+        {
+          "move_id": "chell_portal1.transit",
+          "fighter_id": "chell_portal1",
+          "input": "214M",
+          "name_fr": "Traversée préparée",
+          "category": "special",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 18,
+          "recovery_ticks": 18,
+          "behavior": "Entre dans la paire existante, un transit par combo; sortie signalée et vulnérable.",
+          "counterplay": "Couvrir la sortie annoncée; ne pas poursuivre aveuglément à l’entrée.",
+          "invulnerability_ticks": 0,
+          "active_ticks": 0,
+          "event_tick": 18,
+          "total_action_ticks": 36,
+          "base_damage": 0,
+          "hitstun_ticks": null,
+          "blockstun_ticks": null,
+          "advantage_scope": "Action utilitaire; aucune formule d’avantage de frappe.",
+          "requires": "Paire ouverte, entrée à portée, sortie valide; refus explicite si l’une de ces conditions manque.",
+          "cancel_policy": {
+            "whiff_cancel": false,
+            "special_to_special": false,
+            "super_on_hit": false,
+            "super_on_block": false
+          }
+        },
+        {
+          "move_id": "chell_portal1.cube",
+          "fighter_id": "chell_portal1",
+          "input": "236H",
+          "name_fr": "Lancer du cube de test",
+          "category": "special",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 24,
+          "recovery_ticks": 26,
+          "behavior": "Lance l’unique cube du kit; projectile à durée bornée, une seule traversée de portail. Ce cube fourni au duel est une adaptation.",
+          "counterplay": "Sauter sa trajectoire, le faire entrer en collision ou punir le lancer à courte distance.",
+          "invulnerability_ticks": 0,
+          "active_ticks": 1,
+          "total_action_ticks": 50,
+          "base_damage": 800,
+          "guard_type": "mid",
+          "air_guard_allowed": true,
+          "hitstun_ticks": 32,
+          "blockstun_ticks": 18,
+          "launches": false,
+          "projectile": true,
+          "advantage_scope": "À calculer depuis la collision réelle du projectile.",
+          "projectile_lifetime_ticks": 90,
+          "projectile_speed_logical_px_per_tick": 12,
+          "max_instances": 1,
+          "projectile_hit_count": 1,
+          "portal_compatible": true,
+          "projectile_clash_durability": 1,
+          "cancel_policy": {
+            "whiff_cancel": false,
+            "special_to_special": false,
+            "super_on_hit": true,
+            "super_on_block": false
+          }
+        },
+        {
+          "move_id": "chell_portal1.anti_air",
+          "fighter_id": "chell_portal1",
+          "input": "623H",
+          "name_fr": "Dégagement vertical",
+          "category": "special",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 0,
+          "startup_ticks": 12,
+          "recovery_ticks": 32,
+          "behavior": "Frappe anti-air du corps; aucune invulnérabilité aux coups au sol.",
+          "counterplay": "Rester au sol puis punir la récupération.",
+          "invulnerability_ticks": 0,
+          "active_ticks": 5,
+          "total_action_ticks": 48,
+          "base_damage": 1000,
+          "guard_type": "mid",
+          "air_guard_allowed": false,
+          "hitstun_ticks": 38,
+          "blockstun_ticks": 22,
+          "launches": true,
+          "projectile": false,
+          "advantage_scope": "Premier tick actif, aucune annulation, hitfreeze partagé exclu.",
+          "first_active_hit_advantage_ticks": 2,
+          "first_active_block_advantage_ticks": -14,
+          "juggle_cost": 4,
+          "cancel_policy": {
+            "whiff_cancel": false,
+            "special_to_special": false,
+            "super_on_hit": true,
+            "super_on_block": false
+          }
+        }
+      ],
+      "ex_variants": [
+        {
+          "move_id": "chell_portal1.ex_236",
+          "fighter_id": "chell_portal1",
+          "input": "236L+M",
+          "name_fr": "Pose A EX",
+          "category": "ex",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 50,
+          "base_move_id": "chell_portal1.portal_a",
+          "behavior": "Préparation 14 ticks, récupération 14; l’ouverture reste 12. Ne pose qu’un portail.",
+          "base_damage": 0,
+          "invulnerability_ticks": 0,
+          "refund_after_interruption": false,
+          "startup_ticks": 14,
+          "event_tick": 14,
+          "active_ticks": 0,
+          "recovery_ticks": 14,
+          "total_action_ticks": 28
+        },
+        {
+          "move_id": "chell_portal1.ex_214",
+          "fighter_id": "chell_portal1",
+          "input": "214L+M",
+          "name_fr": "Traversée EX",
+          "category": "ex",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 50,
+          "base_move_id": "chell_portal1.transit",
+          "behavior": "Même préparation et signal de sortie de 18 ticks; récupération réduite à 12. Toujours vulnérable; paire préexistante obligatoire.",
+          "base_damage": 0,
+          "invulnerability_ticks": 0,
+          "refund_after_interruption": false,
+          "startup_ticks": 18,
+          "event_tick": 18,
+          "active_ticks": 0,
+          "recovery_ticks": 12,
+          "total_action_ticks": 30,
+          "requires": "Les mêmes préconditions que la traversée normale; coût débité uniquement après validation de ces préconditions."
+        },
+        {
+          "move_id": "chell_portal1.ex_623",
+          "fighter_id": "chell_portal1",
+          "input": "623L+M",
+          "name_fr": "Anti-air EX",
+          "category": "ex",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 50,
+          "base_move_id": "chell_portal1.anti_air",
+          "behavior": "Même démarrage que l’anti-air, 1300 dégâts, récupération 36; couverture verticale accrue, aucune invulnérabilité universelle.",
+          "base_damage": 1300,
+          "invulnerability_ticks": 0,
+          "refund_after_interruption": false,
+          "startup_ticks": 12,
+          "active_ticks": 6,
+          "recovery_ticks": 36,
+          "total_action_ticks": 53,
+          "guard_type": "mid",
+          "air_guard_allowed": false,
+          "hitstun_ticks": 44,
+          "blockstun_ticks": 24,
+          "first_active_hit_advantage_ticks": 3,
+          "first_active_block_advantage_ticks": -17,
+          "juggle_cost": 5,
+          "launches": true
+        }
+      ],
+      "supers": [
+        {
+          "move_id": "chell_portal1.super",
+          "fighter_id": "chell_portal1",
+          "input": "236236H",
+          "name_fr": "Transfert contrôlé",
+          "category": "super",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 100,
+          "startup_ticks": 12,
+          "active_ticks": 3,
+          "base_damage": 2400,
+          "hit_count": 1,
+          "guard_type": "mid",
+          "air_guard_allowed": true,
+          "cinematic_capture_ticks": 120,
+          "recovery_on_whiff_or_block_ticks": 38,
+          "blockstun_ticks": 24,
+          "first_active_block_advantage_ticks": -16,
+          "hit_confirm_required_for_cinematic": true,
+          "invulnerability_ticks": 0,
+          "animation": "Une frappe corporelle courte confirme un trajet chorégraphié par portails puis un impact de cube. Le tir de placement ne touche pas directement le corps adverse.",
+          "source_status": "Mise en scène originale de Resonance; aucun événement de campagne Valve reproduit.",
+          "resource_gain": 0,
+          "hit_scaling_floor_percent": 15
+        },
+        {
+          "move_id": "chell_portal1.ultimate",
+          "fighter_id": "chell_portal1",
+          "input": "236236S",
+          "name_fr": "Protocole de sortie",
+          "category": "ultimate",
+          "status": "specified_not_implemented_or_playtested",
+          "canon_status": "original_fighting_game_adaptation",
+          "resonance_cost": 300,
+          "startup_ticks": 18,
+          "active_ticks": 3,
+          "base_damage": 4300,
+          "hit_count": 1,
+          "guard_type": "mid",
+          "air_guard_allowed": true,
+          "cinematic_capture_ticks": 240,
+          "recovery_on_whiff_or_block_ticks": 48,
+          "blockstun_ticks": 28,
+          "first_active_block_advantage_ticks": -22,
+          "hit_confirm_required_for_cinematic": true,
+          "invulnerability_ticks": 0,
+          "animation": "Une frappe corporelle courte confirme un trajet chorégraphié par portails puis un impact de cube. Le tir de placement ne touche pas directement le corps adverse.",
+          "source_status": "Mise en scène originale de Resonance; aucun événement de campagne Valve reproduit.",
+          "resource_gain": 0,
+          "hit_scaling_floor_percent": 20
+        }
+      ],
+      "ex_policy": "Une variante EX par motion 236/214/623. 236L+M signifie Pose A EX, jamais le lancer de cube. 214L+M signifie Traversée EX, jamais Pose B EX. Une commande reconnue mais impossible ne devient pas une projection.",
+      "movement": {
+        "walk_forward_logical_px_per_tick": 5,
+        "walk_back_logical_px_per_tick": 3,
+        "forward_dash_ticks": 16,
+        "back_dash_ticks": 22,
+        "back_dash_invulnerability_ticks": 0,
+        "jump_total_ticks_target": 48,
+        "double_jump": false,
+        "air_dash": false,
+        "status": "Propositions à régler après collision et animation; aucune taille de sprite source déduite de ces valeurs."
+      },
+      "combo_routes": [
+        {
+          "route_id": "chell_portal1.route_basic",
+          "inputs": [
+            "5L",
+            "5M",
+            "5H"
+          ],
+          "resonance_cost": 0,
+          "purpose": "Conversion simple au sol.",
+          "preconditions": "Contact proche; L→M→H une fois chacun.",
+          "status": "candidate_not_combo_verified",
+          "guaranteed_true_combo": false,
+          "damage_if_connections_confirmed": 1524,
+          "note": "Les annulations proposées autorisent la séquence; portée, pushback, budget aérien et contact réel restent à vérifier."
+        },
+        {
+          "route_id": "chell_portal1.route_launch",
+          "inputs": [
+            "2L",
+            "2M",
+            "2H",
+            "623H"
+          ],
+          "resonance_cost": 0,
+          "purpose": "Conversion basse vers anti-air.",
+          "preconditions": "Vérifier portée après lancement; coût aérien 4, une seule reprise de niveau H.",
+          "status": "candidate_not_combo_verified",
+          "guaranteed_true_combo": false,
+          "damage_if_connections_confirmed": null,
+          "note": "Les annulations proposées autorisent la séquence; portée, pushback, budget aérien et contact réel restent à vérifier."
+        },
+        {
+          "route_id": "chell_portal1.route_super",
+          "inputs": [
+            "5M",
+            "5H",
+            "236236H"
+          ],
+          "resonance_cost": 100,
+          "purpose": "Confirmation du super.",
+          "preconditions": "Annulation sur hit seulement; aucun super automatique en garde.",
+          "status": "candidate_not_combo_verified",
+          "guaranteed_true_combo": false,
+          "damage_if_connections_confirmed": null,
+          "note": "Les annulations proposées autorisent la séquence; portée, pushback, budget aérien et contact réel restent à vérifier."
+        },
+        {
+          "route_id": "chell_portal1.route_position",
+          "inputs": [
+            "236L",
+            "214L",
+            "214M"
+          ],
+          "resonance_cost": 0,
+          "purpose": "Préparation de position, sans dégâts.",
+          "preconditions": "Paire ouverte et entrée proche; cette séquence utilitaire ne constitue pas un combo.",
+          "status": "candidate_not_combo_verified",
+          "guaranteed_true_combo": false,
+          "damage_if_connections_confirmed": null,
+          "note": "Les annulations proposées autorisent la séquence; portée, pushback, budget aérien et contact réel restent à vérifier."
+        }
+      ],
+      "narrative": {
+        "intro": "Chell observe les panneaux, vérifie l’appareil puis avance sur le repère sans parler. La tenue sélectionnée conserve son jeu source durant toute la scène.",
+        "rival_id": "gordon_hl2",
+        "rival_reason": "Deux sorties de simulation partagent une alimentation. Le conflit est écrit pour Resonance et ne prétend pas raconter une rencontre officielle.",
+        "rival_scene": "Gordon présente un débris à un capteur; Chell désigne l’autre face du panneau. Le protocole les sépare avant qu’ils puissent l’essayer ensemble. Aucun dialogue imposé.",
+        "rival_victory": "Chell abaisse l’appareil et montre à Gordon le chemin encore praticable. Le geste remplace une réplique de victoire.",
+        "ending": "Chell ferme le circuit du simulateur, récupère l’appareil et franchit une porte de service. La caméra reste sur le panneau éteint; le récit ne fixe ni famille ni date future.",
+        "finisher": "Redirige le vaincu vers une salle de confinement sûre après confirmation de victoire. La version à violence réduite garde la porte ouverte et se termine par une posture de garde; Chell reste silencieuse."
+      }
+    }
+  ],
+  "costumes": [
+    {
+      "target_id": "costume_chell_portal2",
+      "owner_id": "chell_portal1",
+      "source_game": "Portal 2",
+      "status": "specified_not_implemented_or_playtested",
+      "source_ids": [
+        "AP03",
+        "AP08"
+      ],
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "visual_invariants": [
+        "Débardeur et combinaison attachée à la taille de la référence retail Portal 2.",
+        "Long Fall Boots et dispositif appartenant à cette version.",
+        "Visage, cheveux, attaches et latéralité relevés sur captures cohérentes; aucun recoloriage de la base Portal 1 déclaré suffisant."
+      ],
+      "gameplay_changes": false,
+      "shared_gameplay_profile": "chell_portal1",
+      "separate_animation_directory": true,
+      "orientation_policy": "Dessin droit et gauche vérifiés séparément; aucune symétrie automatique certifiée.",
+      "collision_policy": "Collision normalisée identique à la base; la cosmétique ne donne pas d’invulnérabilité aux pieds.",
+      "scope": "L’héritage du kit est une convention Resonance; le costume ne crée pas un personnage de catalogue supplémentaire."
+    }
+  ],
+  "assist": {
+    "target_id": "wheatley_core_portal2",
+    "status": "specified_not_implemented_or_playtested",
+    "role": "PNJ narratif et aide de scénario, sans case de combattant de duel",
+    "source_ids": [
+      "AP04",
+      "AP09"
+    ],
+    "runtime_enabled": false,
+    "certified_one_to_one": false,
+    "identity_lock": [
+      "Noyau sphérique autonome à œil bleu, coques et poignées propres à Wheatley.",
+      "Vérifier les asymétries de façade sur la référence exacte; ne pas obtenir la seconde orientation par miroir validé d’office.",
+      "Séparer le rail ou le support en prop; aucun corps humanoïde, bras de combattant ou corps central de boss ajouté."
+    ],
+    "interaction": {
+      "input": "6S près de la console de scénario",
+      "trigger_range_logical_px": 140,
+      "activation_ticks": 30,
+      "cooldown_ticks": 900,
+      "uses_per_encounter": 2,
+      "damage": 0,
+      "effect": "Le noyau indique un socket pendant 180 ticks. Il ne place pas le portail, ne modifie pas l’IA adverse et ne masque pas le télégraphe de danger.",
+      "availability": "Histoire et entraînement assisté; absent du duel de tournoi.",
+      "interruption": "Interrompre l’action sur hit avant tick 30; aucun indice consommé avant validation."
+    },
+    "states": [
+      {
+        "id": "rail_idle",
+        "note": "Présence sur rail, regard vers le joueur."
+      },
+      {
+        "id": "scan",
+        "note": "Mouvement d’iris, sans rotation incohérente de la coque."
+      },
+      {
+        "id": "speak",
+        "note": "Paupières mécaniques, iris et petites rotations; aucune bouche dessinée."
+      },
+      {
+        "id": "detach",
+        "note": "Transition du rail vers l’objet porté, support rendu séparément."
+      },
+      {
+        "id": "carried",
+        "note": "Pivot et poignées suivent la prise du porteur."
+      },
+      {
+        "id": "hint",
+        "note": "Regard vers le socket utile sans flèche produite dans le bitmap."
+      },
+      {
+        "id": "startled",
+        "note": "Rétraction légère de l’iris; pas de téléportation de la coque."
+      },
+      {
+        "id": "socketed",
+        "note": "Noyau fixé dans une console de scène sans devenir le boss central."
+      }
+    ],
+    "original_dialogue_drafts": [
+      "Ce panneau. Enfin, celui qui tient encore au mur.",
+      "J’avais prévu cette ouverture. À peu près à cette hauteur.",
+      "Tu peux garder l’appareil en main pendant que je réfléchis ?"
+    ],
+    "dialogue_status": "Textes originaux proposés pour Resonance; aucune réplique officielle ou piste audio livrée."
+  },
+  "puzzle_encounter": {
+    "target_id": "rocket_turret_portal1",
+    "status": "specified_not_implemented_or_playtested",
+    "source_game": "Portal",
+    "source_ids": [
+      "AP06"
+    ],
+    "runtime_enabled": false,
+    "certified_one_to_one": false,
+    "encounter_type": "stationary_environmental_puzzle",
+    "giant_boss": false,
+    "direct_damage_to_turret_enabled": false,
+    "boss_hp": null,
+    "source_fidelity_locks": [
+      "La tourelle demeure fixée sur son mécanisme.",
+      "La visée et le tir sont annoncés avant départ de la roquette.",
+      "Un retour de roquette sur la tourelle se neutralise; aucune victoire par auto-destruction.",
+      "La cible de la redirection est le décor; GLaDOS reste une autre rencontre."
+    ],
+    "objective": "Détruire trois verrous environnementaux par trois redirections réussies, puis ouvrir le sas et sortir. La tourelle reste en place.",
+    "success_counter_max": 3,
+    "timer_active_ticks": 9000,
+    "player_reference_hp": 10000,
+    "controls": {
+      "portal_fighter": "Utilise sa paire aux sockets de la rencontre.",
+      "other_fighters": "6S à la console actionne un émetteur environnemental à deux ancrages prédéfinis; la sélection de profil n’attribue pas un Portal Gun au personnage.",
+      "console_action_ticks": 24,
+      "console_range_logical_px": 150,
+      "console_interruption": "Tout hit avant la fin annule la commande, sans changer l’ancrage."
+    },
+    "attack_cycle": {
+      "acquire_ticks": 90,
+      "locked_warning_ticks": 24,
+      "fire_event_ticks": 1,
+      "cooldown_ticks": 90,
+      "target_position_freezes_at_lock": true,
+      "rocket_damage": 1800,
+      "rocket_is_blockable": false,
+      "same_projectile_damage_applications": 1,
+      "max_live_rockets": 1,
+      "rocket_lifetime_ticks": 180,
+      "max_transits_per_rocket": 1,
+      "damage_grace_after_hit_ticks": 60,
+      "telegraph": "Ligne de visée, forme du réticule et son; la couleur ne constitue jamais l’unique indice."
+    },
+    "difficulty": {
+      "assist": {
+        "acquire_ticks": 120,
+        "locked_warning_ticks": 36,
+        "hint_available": true
+      },
+      "standard": {
+        "acquire_ticks": 90,
+        "locked_warning_ticks": 24,
+        "hint_available": true
+      },
+      "expert": {
+        "acquire_ticks": 72,
+        "locked_warning_ticks": 24,
+        "hint_available": false
+      },
+      "invariants": "Même solution et mêmes sockets; la difficulté ne rend pas la tourelle destructible et ne retire jamais le signal de verrouillage."
+    },
+    "phases": [
+      {
+        "id": "rocket_phase_1",
+        "name_fr": "Comprendre la redirection",
+        "entry_successes": 0,
+        "required_new_successes": 1,
+        "environment_target": "Vitrage de service marqué au fond de la voie.",
+        "loop": "Placer la sortie face au vitrage, attirer la visée vers l’entrée, quitter la trajectoire après verrouillage.",
+        "counterplay": "Sortir de la ligne fixée; la roquette conserve une trajectoire lisible.",
+        "failure_recovery": "Vitrage intact: nouveau cycle après dissipation; aucun état irréversible.",
+        "completion": "Vitrage brisé et relais A visible.",
+        "changes_after_completion": "Ouvrir le passage vers la console latérale; courte pause de tir de 120 ticks."
+      },
+      {
+        "id": "rocket_phase_2",
+        "name_fr": "Lire le volet",
+        "entry_successes": 1,
+        "required_new_successes": 1,
+        "environment_target": "Verrou B derrière un volet au cycle annoncé.",
+        "loop": "Une interaction de console ouvre le volet 180 ticks; le joueur doit préparer le trajet avant de déclencher la fenêtre.",
+        "counterplay": "Ne pas rester près de la console après l’activation.",
+        "failure_recovery": "Le volet se referme puis redevient activable après 120 ticks; une roquette échouée ne détruit aucun outil nécessaire.",
+        "completion": "Verrou B désengagé.",
+        "changes_after_completion": "Rendre accessible le socket final; pause de tir de 120 ticks."
+      },
+      {
+        "id": "rocket_phase_3",
+        "name_fr": "Ouvrir puis sortir",
+        "entry_successes": 2,
+        "required_new_successes": 1,
+        "environment_target": "Verrou C du sas de sortie, à l’écart de la tourelle.",
+        "loop": "Placer la dernière paire, obtenir une redirection, puis activer 6S au sas pendant 24 ticks et traverser la zone de sortie.",
+        "counterplay": "La tourelle continue ses cycles tant que le sas n’est pas franchi; la sortie reste ouverte une fois le verrou détruit.",
+        "failure_recovery": "Aucune fermeture punitive du sas; le joueur peut attendre le cycle suivant avant de traverser.",
+        "completion": "Acteur dans la zone de sortie avec trois verrous résolus.",
+        "changes_after_completion": "Figer le résultat, couper les nouvelles collisions de danger et jouer une sortie courte."
+      }
+    ],
+    "loss_conditions": [
+      "HP du joueur à zéro.",
+      "Temps actif épuisé."
+    ],
+    "result_states": [
+      "escaped",
+      "defeated",
+      "time_expired",
+      "abandoned"
+    ],
+    "reward": "Score fondé sur temps actif, dégâts subis et nombre de tirs nécessaires; aucun bonus de dégâts permanent.",
+    "production_states": [
+      "dormant",
+      "deploy",
+      "acquire",
+      "locked",
+      "fire",
+      "recoil",
+      "cooldown",
+      "return_to_dormant"
+    ],
+    "excluded_animation": "Aucune death_loop de tourelle pour cette rencontre."
+  },
+  "stages": [
+    {
+      "target_id": "STG_EXT_PORTAL2_COOP_HUB",
+      "name_fr": "Hub de la coopération",
+      "source_game": "Portal 2",
+      "status": "specified_not_implemented_or_playtested",
+      "source_ids": [
+        "AP01",
+        "AP05"
+      ],
+      "reference_scope": "Hub officiel de Portal 2 coop; état précis du hub, passages déverrouillés et cadrage à capturer.",
+      "reference_capture": null,
+      "reference_status": "specific_in_game_capture_required",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "competitive": {
+        "flat_ground": true,
+        "ground_y_logical_px": 880,
+        "arena_width_logical_px": 2560,
+        "viewport_logical_px": [
+          1920,
+          1080
+        ],
+        "hazards": false,
+        "random_gameplay": false,
+        "transitions_during_round": false,
+        "character_portal_sockets": "APERTURE_PORTAL_DUEL_V1"
+      },
+      "layers": [
+        {
+          "id": "L00_ambience",
+          "parallax": 0,
+          "content": "Volume sombre et atmosphère industrielle de l’arrière-plan.",
+          "separate_image": true,
+          "generated": false,
+          "verified": false,
+          "planned_path": "assets/resonance/production/stages/STG_EXT_PORTAL2_COOP_HUB/L00_ambience.png",
+          "alpha_required": false
+        },
+        {
+          "id": "L01_far",
+          "parallax": 0.12,
+          "content": "Structures éloignées et passerelles du hub de référence.",
+          "separate_image": true,
+          "generated": false,
+          "verified": false,
+          "planned_path": "assets/resonance/production/stages/STG_EXT_PORTAL2_COOP_HUB/L01_far.png",
+          "alpha_required": true
+        },
+        {
+          "id": "L02_mid",
+          "parallax": 0.3,
+          "content": "Accès aux parcours selon l’état du hub choisi.",
+          "separate_image": true,
+          "generated": false,
+          "verified": false,
+          "planned_path": "assets/resonance/production/stages/STG_EXT_PORTAL2_COOP_HUB/L02_mid.png",
+          "alpha_required": true
+        },
+        {
+          "id": "L03_near",
+          "parallax": 0.55,
+          "content": "Consoles et cadres des zones d’assemblage derrière les combattants.",
+          "separate_image": true,
+          "generated": false,
+          "verified": false,
+          "planned_path": "assets/resonance/production/stages/STG_EXT_PORTAL2_COOP_HUB/L03_near.png",
+          "alpha_required": true
+        },
+        {
+          "id": "L04_ground",
+          "parallax": 1,
+          "content": "Voie horizontale continue adaptée au duel; repère sol stable.",
+          "separate_image": true,
+          "generated": false,
+          "verified": false,
+          "planned_path": "assets/resonance/production/stages/STG_EXT_PORTAL2_COOP_HUB/L04_ground.png",
+          "alpha_required": true
+        },
+        {
+          "id": "L05_foreground",
+          "parallax": 1.1,
+          "content": "Raccords de câbles et bords de rail au bas du cadre, hors silhouettes.",
+          "separate_image": true,
+          "generated": false,
+          "verified": false,
+          "planned_path": "assets/resonance/production/stages/STG_EXT_PORTAL2_COOP_HUB/L05_foreground.png",
+          "alpha_required": true
+        }
+      ],
+      "ambience": "Ventilation, appareils d’assemblage et bips courts espacés.",
+      "spectacle_interaction": {
+        "name_fr": "Signal de calibration",
+        "input": "6S",
+        "startup_ticks": 30,
+        "effect_ticks": 120,
+        "damage": 0,
+        "effect": "Active un signal sur la console, utile à un objectif d’entraînement; aucune téléportation forcée ni piège de tournoi.",
+        "uses_per_player_per_round": 2
+      },
+      "master_is_six_layers": false,
+      "layer_export_contract": "Même canevas et origine, aucun recadrage par contenu; arrière-plan reconstruit sous les objets retirés. Un master ne compte pas comme six couches.",
+      "layout_note": "La bande de duel est une adaptation latérale; les modifications architecturales doivent rester explicites et ne pas être certifiées comme reproduction pixel à pixel.",
+      "acceptance": [
+        "Captures du lieu exact et état choisi archivés par référence.",
+        "Six fichiers distincts et leur recomposition contrôlés.",
+        "Sol et pieds stables aux deux extrémités de caméra.",
+        "Pas d’élément opaque sur les silhouettes ou les télégraphes.",
+        "Option de paralaxe réduite sans changement de collisions.",
+        "Marquages du lieu contrôlés sur capture; aucun faux texte décoratif certifié."
+      ]
+    },
+    {
+      "target_id": "STG_EXT_PORTAL2_OLD_APERTURE",
+      "name_fr": "Ancien Aperture — sphère de tests",
+      "source_game": "Portal 2",
+      "status": "specified_not_implemented_or_playtested",
+      "source_ids": [
+        "AP01",
+        "AP05"
+      ],
+      "reference_scope": "Fixer une sphère et une période du secteur ancien avant validation. Les propositions de matière ci-dessous ne certifient aucune chambre précise.",
+      "reference_capture": null,
+      "reference_status": "specific_in_game_capture_required",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "competitive": {
+        "flat_ground": true,
+        "ground_y_logical_px": 880,
+        "arena_width_logical_px": 2560,
+        "viewport_logical_px": [
+          1920,
+          1080
+        ],
+        "hazards": false,
+        "random_gameplay": false,
+        "transitions_during_round": false,
+        "character_portal_sockets": "APERTURE_PORTAL_DUEL_V1"
+      },
+      "layers": [
+        {
+          "id": "L00_ambience",
+          "parallax": 0,
+          "content": "Profondeur de la cavité et brume légère loin du plan de combat.",
+          "separate_image": true,
+          "generated": false,
+          "verified": false,
+          "planned_path": "assets/resonance/production/stages/STG_EXT_PORTAL2_OLD_APERTURE/L00_ambience.png",
+          "alpha_required": false
+        },
+        {
+          "id": "L01_far",
+          "parallax": 0.12,
+          "content": "Coque de la sphère et structure porteuse distante.",
+          "separate_image": true,
+          "generated": false,
+          "verified": false,
+          "planned_path": "assets/resonance/production/stages/STG_EXT_PORTAL2_OLD_APERTURE/L01_far.png",
+          "alpha_required": true
+        },
+        {
+          "id": "L02_mid",
+          "parallax": 0.3,
+          "content": "Passerelles, conduites et locaux du secteur source retenu.",
+          "separate_image": true,
+          "generated": false,
+          "verified": false,
+          "planned_path": "assets/resonance/production/stages/STG_EXT_PORTAL2_OLD_APERTURE/L02_mid.png",
+          "alpha_required": true
+        },
+        {
+          "id": "L03_near",
+          "parallax": 0.55,
+          "content": "Paroi de maintenance et tuyaux proches en retrait.",
+          "separate_image": true,
+          "generated": false,
+          "verified": false,
+          "planned_path": "assets/resonance/production/stages/STG_EXT_PORTAL2_OLD_APERTURE/L03_near.png",
+          "alpha_required": true
+        },
+        {
+          "id": "L04_ground",
+          "parallax": 1,
+          "content": "Passerelle de duel horizontale; façade et dessus du sol alignés.",
+          "separate_image": true,
+          "generated": false,
+          "verified": false,
+          "planned_path": "assets/resonance/production/stages/STG_EXT_PORTAL2_OLD_APERTURE/L04_ground.png",
+          "alpha_required": true
+        },
+        {
+          "id": "L05_foreground",
+          "parallax": 1.1,
+          "content": "Tranches de support et câbles sans masquer pieds ni télégraphes.",
+          "separate_image": true,
+          "generated": false,
+          "verified": false,
+          "planned_path": "assets/resonance/production/stages/STG_EXT_PORTAL2_OLD_APERTURE/L05_foreground.png",
+          "alpha_required": true
+        }
+      ],
+      "ambience": "Résonance métallique, tuyauterie, ventilation lointaine.",
+      "spectacle_interaction": {
+        "name_fr": "Évacuation du conduit",
+        "input": "6S",
+        "startup_ticks": 36,
+        "effect_ticks": 150,
+        "damage": 0,
+        "effect": "Ouvre une vanne décorative derrière la voie; indique une étape de scénario. Les gels et changements de friction ne sont pas activés dans ce premier contrat.",
+        "uses_per_player_per_round": 2
+      },
+      "master_is_six_layers": false,
+      "layer_export_contract": "Même canevas et origine, aucun recadrage par contenu; arrière-plan reconstruit sous les objets retirés. Un master ne compte pas comme six couches.",
+      "layout_note": "La bande de duel est une adaptation latérale; les modifications architecturales doivent rester explicites et ne pas être certifiées comme reproduction pixel à pixel.",
+      "acceptance": [
+        "Captures du lieu exact et état choisi archivés par référence.",
+        "Six fichiers distincts et leur recomposition contrôlés.",
+        "Sol et pieds stables aux deux extrémités de caméra.",
+        "Pas d’élément opaque sur les silhouettes ou les télégraphes.",
+        "Option de paralaxe réduite sans changement de collisions.",
+        "Marquages du lieu contrôlés sur capture; aucun faux texte décoratif certifié."
+      ]
+    }
+  ],
+  "animation_contract": {
+    "status": "planned_not_generated",
+    "single_subject_per_frame": true,
+    "transparent_actor_background": true,
+    "separate_left_right_review": true,
+    "no_automatic_mirror_certification": true,
+    "frame_template": "assets/resonance/production/actors/{target_id}/{orientation}/{clip_id}/{frame_index:04d}.png",
+    "orientations": [
+      "right",
+      "left"
+    ],
+    "shared_motion_clips": [
+      {
+        "clip_id": "idle",
+        "unique_drawings_per_orientation_target": 8,
+        "status": "not_produced"
+      },
+      {
+        "clip_id": "walk_forward",
+        "unique_drawings_per_orientation_target": 8,
+        "status": "not_produced"
+      },
+      {
+        "clip_id": "walk_back",
+        "unique_drawings_per_orientation_target": 8,
+        "status": "not_produced"
+      },
+      {
+        "clip_id": "dash_forward",
+        "unique_drawings_per_orientation_target": 6,
+        "status": "not_produced"
+      },
+      {
+        "clip_id": "dash_back",
+        "unique_drawings_per_orientation_target": 6,
+        "status": "not_produced"
+      },
+      {
+        "clip_id": "jump_takeoff",
+        "unique_drawings_per_orientation_target": 3,
+        "status": "not_produced"
+      },
+      {
+        "clip_id": "jump_rise",
+        "unique_drawings_per_orientation_target": 3,
+        "status": "not_produced"
+      },
+      {
+        "clip_id": "jump_apex",
+        "unique_drawings_per_orientation_target": 2,
+        "status": "not_produced"
+      },
+      {
+        "clip_id": "jump_fall",
+        "unique_drawings_per_orientation_target": 3,
+        "status": "not_produced"
+      },
+      {
+        "clip_id": "jump_land",
+        "unique_drawings_per_orientation_target": 3,
+        "status": "not_produced"
+      },
+      {
+        "clip_id": "crouch_enter",
+        "unique_drawings_per_orientation_target": 3,
+        "status": "not_produced"
+      },
+      {
+        "clip_id": "crouch_idle",
+        "unique_drawings_per_orientation_target": 4,
+        "status": "not_produced"
+      },
+      {
+        "clip_id": "crouch_exit",
+        "unique_drawings_per_orientation_target": 3,
+        "status": "not_produced"
+      },
+      {
+        "clip_id": "turn",
+        "unique_drawings_per_orientation_target": 4,
+        "status": "not_produced"
+      },
+      {
+        "clip_id": "guard_high",
+        "unique_drawings_per_orientation_target": 4,
+        "status": "not_produced"
+      },
+      {
+        "clip_id": "guard_low",
+        "unique_drawings_per_orientation_target": 4,
+        "status": "not_produced"
+      },
+      {
+        "clip_id": "air_guard",
+        "unique_drawings_per_orientation_target": 4,
+        "status": "not_produced"
+      },
+      {
+        "clip_id": "hit_light",
+        "unique_drawings_per_orientation_target": 4,
+        "status": "not_produced"
+      },
+      {
+        "clip_id": "hit_heavy",
+        "unique_drawings_per_orientation_target": 6,
+        "status": "not_produced"
+      },
+      {
+        "clip_id": "launch_react",
+        "unique_drawings_per_orientation_target": 5,
+        "status": "not_produced"
+      },
+      {
+        "clip_id": "knockdown",
+        "unique_drawings_per_orientation_target": 6,
+        "status": "not_produced"
+      },
+      {
+        "clip_id": "stand_up",
+        "unique_drawings_per_orientation_target": 7,
+        "status": "not_produced"
+      },
+      {
+        "clip_id": "throw_tech",
+        "unique_drawings_per_orientation_target": 4,
+        "status": "not_produced"
+      },
+      {
+        "clip_id": "taunt",
+        "unique_drawings_per_orientation_target": 10,
+        "status": "not_produced"
+      },
+      {
+        "clip_id": "victory",
+        "unique_drawings_per_orientation_target": 10,
+        "status": "not_produced"
+      },
+      {
+        "clip_id": "defeat",
+        "unique_drawings_per_orientation_target": 8,
+        "status": "not_produced"
+      },
+      {
+        "clip_id": "intro",
+        "unique_drawings_per_orientation_target": 12,
+        "status": "not_produced"
+      }
+    ],
+    "action_clip_rule": "Un clip par move_id, avec anticipation, impact ou événement, récupération et retour vers idle. Aucune planche multi-poses comme frame moteur.",
+    "action_keyframes": {
+      "normal_light": [
+        2,
+        1,
+        3
+      ],
+      "normal_medium": [
+        3,
+        2,
+        4
+      ],
+      "normal_heavy": [
+        4,
+        2,
+        5
+      ],
+      "throw": [
+        3,
+        5,
+        4
+      ],
+      "portal_placement": [
+        4,
+        2,
+        4
+      ],
+      "portal_transit": [
+        3,
+        4,
+        4
+      ],
+      "cube_throw": [
+        4,
+        2,
+        5
+      ],
+      "anti_air": [
+        3,
+        3,
+        5
+      ],
+      "ex": [
+        4,
+        3,
+        5
+      ],
+      "super": [
+        4,
+        8,
+        5
+      ],
+      "ultimate": [
+        6,
+        14,
+        6
+      ],
+      "trait": [
+        2,
+        1,
+        3
+      ]
+    },
+    "keyframe_semantics": "Trois nombres: dessins d’anticipation / contact ou événement / récupération. Ils ne sont pas les ticks de simulation et restent des budgets.",
+    "separate_asset_groups": [
+      "Cube unique du kit, tenu et lancé avec pivot cohérent.",
+      "Portail A: ouverture, boucle, fermeture.",
+      "Portail B: ouverture, boucle, fermeture.",
+      "Rayon de placement sans collision de dégâts.",
+      "Effet de transit et aperçu de sortie.",
+      "Ombre au sol et effets de contact séparés.",
+      "Support ou rail Wheatley indépendant du noyau.",
+      "Roquette, visée, fumée et impact de la rencontre Rocket Turret."
+    ],
+    "pivot_contract": {
+      "grounded_actor": "Pivot fixe au centre entre les appuis sur ligne de sol; ne pas recentrer par bbox à chaque frame.",
+      "airborne_actor": "Même origine logique que le squelette debout; trajectoire portée par simulation.",
+      "wheatley": "Centre mécanique de la sphère; support séparé.",
+      "rocket_turret": "Axe du socle fixe; aucune translation de la base entre acquisition et recul."
+    },
+    "synchronization_events": [
+      "portal_place",
+      "portal_open",
+      "portal_enter",
+      "portal_exit",
+      "cube_release",
+      "strike_contact",
+      "throw_capture",
+      "throw_release",
+      "rocket_lock",
+      "rocket_launch",
+      "environment_lock_break",
+      "exit_confirmed"
+    ],
+    "target_sets": [
+      "atlas_portal2",
+      "pbody_portal2",
+      "chell_portal1",
+      "costume_chell_portal2"
+    ],
+    "generated_images_in_this_design_file": 0,
+    "completed_animation_clips": 0
+  },
+  "training_scenarios": [
+    {
+      "id": "AP_T01",
+      "name_fr": "Lire la paire",
+      "setup": "Placer A puis B; attendre l’ouverture des deux.",
+      "acceptance": "Deux sockets distincts ouverts, sans dégâts ni déplacement inattendu.",
+      "status": "planned_manual_scenario_not_executed"
+    },
+    {
+      "id": "AP_T02",
+      "name_fr": "Refuser une sortie occupée",
+      "setup": "Préparer le transit vers un segment bloqué.",
+      "acceptance": "Refus explicite et retour stable; aucun acteur superposé.",
+      "status": "planned_manual_scenario_not_executed"
+    },
+    {
+      "id": "AP_T03",
+      "name_fr": "Punir l’installation",
+      "setup": "Enregistrer 236L puis attaquer la préparation.",
+      "acceptance": "Pose interrompue avant événement; ancien ancrage conservé jusqu’à remplacement validé.",
+      "status": "planned_manual_scenario_not_executed"
+    },
+    {
+      "id": "AP_T04",
+      "name_fr": "Réagir à la sortie",
+      "setup": "Enregistrer un transit puis garder ou attaquer l’arrivée.",
+      "acceptance": "Télégraphe visible au moins 18 ticks; aucune invulnérabilité cachée.",
+      "status": "planned_manual_scenario_not_executed"
+    },
+    {
+      "id": "AP_T05",
+      "name_fr": "Limiter la boucle",
+      "setup": "Faire traverser un cube puis tenter un second passage.",
+      "acceptance": "Deuxième traversée ignorée ou collision résolue; dégâts et vitesse non multipliés.",
+      "status": "planned_manual_scenario_not_executed"
+    },
+    {
+      "id": "AP_T06",
+      "name_fr": "Comprendre EX",
+      "setup": "Saisir 214L+M sans paire ou sans 50 Résonance.",
+      "acceptance": "Refus pour précondition/ressource; jamais projection ni Pose B de remplacement.",
+      "status": "planned_manual_scenario_not_executed"
+    },
+    {
+      "id": "AP_T07",
+      "name_fr": "Différencier les costumes",
+      "setup": "Rejouer un même état avec Chell P1 et tenue P2.",
+      "acceptance": "Mêmes coûts, collision et résultat; images et protections de jambe distinctes.",
+      "status": "planned_manual_scenario_not_executed"
+    },
+    {
+      "id": "AP_T08",
+      "name_fr": "Répondre à l’anti-air",
+      "setup": "Varier saut et approche au sol contre 623H.",
+      "acceptance": "Le saut peut être pris, mais une approche au sol peut punir la récupération.",
+      "status": "planned_manual_scenario_not_executed"
+    },
+    {
+      "id": "AP_T09",
+      "name_fr": "Résoudre la Rocket Turret",
+      "setup": "Renvoyer une roquette sur la tourelle puis sur le vitrage.",
+      "acceptance": "La première se neutralise sans victoire; seul le vitrage progresse.",
+      "status": "planned_manual_scenario_not_executed"
+    },
+    {
+      "id": "AP_T10",
+      "name_fr": "Sortir avec un autre profil",
+      "setup": "Sélectionner un combattant sans Portal Gun.",
+      "acceptance": "La console permet de résoudre les mêmes trois objectifs sans changer son identité.",
+      "status": "planned_manual_scenario_not_executed"
+    },
+    {
+      "id": "AP_T11",
+      "name_fr": "Lire sans couleur",
+      "setup": "Activer palette adaptée et couper les sons.",
+      "acceptance": "Pictogrammes de paire, forme de verrouillage et durée restent lisibles.",
+      "status": "planned_manual_scenario_not_executed"
+    },
+    {
+      "id": "AP_T12",
+      "name_fr": "Ne pas surcompter la production",
+      "setup": "Comparer un master, ses couches futures et une pose.",
+      "acceptance": "Aucune pose déclarée animation complète; un master n’est ni six plans ni une nouvelle arène par variante.",
+      "status": "planned_manual_scenario_not_executed"
+    }
+  ],
+  "runtime_gates": [
+    "Références de version et vues opposées approuvées.",
+    "Frames individuelles, pivots, hitboxes, hurtboxes et événements rédigés.",
+    "Simulation de portails déterministe et bornée implémentée dans un module distinct.",
+    "Préconditions de transit, annulations, coûts et combos vérifiés en jeu.",
+    "Rencontre Rocket Turret gagnable avec chaque profil autorisé.",
+    "Contrastes, collisions et options de réduction visuelle contrôlés."
+  ],
+  "integration_note": "Les quatre boss et six profils déjà jouables dans le prototype Boss Battle sont inchangés par ce document. Aucune de ces huit cibles devient jouable par ajout de JSON.",
+  "counts": {
+    "existing_targets_enriched": 8,
+    "fighter_kits": 3,
+    "normals": 30,
+    "throws": 6,
+    "traits": 3,
+    "specials": 15,
+    "ex_variants": 9,
+    "supers_and_ultimates": 6,
+    "total_fighter_actions": 69,
+    "combo_or_position_routes": 12,
+    "costume_profiles": 1,
+    "assist_profiles": 1,
+    "puzzle_encounters": 1,
+    "puzzle_phases": 3,
+    "stage_profiles": 2,
+    "planned_stage_layers": 12,
+    "shared_motion_clip_types": 27,
+    "training_scenarios": 12,
+    "new_catalogue_entities": 0,
+    "new_runtime_fighters": 0,
+    "completed_animation_clips": 0
+  },
+  "static_validation": {
+    "performed_on": "2026-11-20",
+    "result": "passed",
+    "scope": "Unique catalogue references, command and move IDs, meter costs, timing arithmetic, guards, throws, phase counters and stage layer cardinality. No engine execution, hitbox, visual or combo validation.",
+    "strike_timing_rows_checked": 39,
+    "super_block_advantage_rows_checked": 6,
+    "throw_tech_rows_checked": 6,
+    "existing_targets_resolved": 8,
+    "fighter_action_ids_unique": 69,
+    "stage_layers_planned": 12,
+    "runtime_tested": false,
+    "visual_fidelity_validated": false
+  }
+}

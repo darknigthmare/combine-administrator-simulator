@@ -2,8 +2,16 @@
 
 Bible, production graphique et premier module Boss Battle jouable du mode annexe de combat 2D de Half Life Administrator.
 
+## Suite du 20 novembre — lot C publié après le lot B
+
+La bible Markdown passe en **version 1.3**. Le [chapitre Aperture](chapters/aperture_combat_design_20261120.md) développe trois kits et 69 actions proposées, douze routes, les parcours narratifs, une rencontre Rocket Turret en trois phases et deux plans d’arènes. Ces spécifications enrichissent huit cibles existantes et restent à implémenter.
+
+Le [lot C et sa galerie](production/continuation_20261120_c/README.md) ajoutent **sept PNG pour cinq cibles** : Chell Portal 1, tenue Chell Portal 2, noyau de Grady, Rocket Turret (v1 et v2) et chaîne de fabrication Portal 2 (maître et sol séparé). Wheatley, ATLAS et P-body ont été refusés par le service et restent sans fichier.
+
+L’état courant vérifié est de **19 PNG distincts**, **30 demandes**, **11 refus**, **187 cibles**, dont **13 avec un fichier associé et 174 sans fichier**. Les contours, poses latérales, animations, autres couches et validations de fidélité restent à terminer. Les exports Word/Excel v1 demeurent historiques ; le Markdown/JSON courant fait foi.
+
 <!-- CURRENT_CONTINUATION_20261120_B -->
-## Reprise du 20 novembre — état vérifié
+## Lot B — état historique avant le lot C
 
 La bible Markdown passe en **version 1.2** avec [102 cibles supplémentaires](chapters/catalogue_extension_20261120.md): personnages, petites machines, costumes, stages, rencontres et archives séparées. Cette extension est documentaire; elle n’ajoute pas 102 combattants jouables.
 

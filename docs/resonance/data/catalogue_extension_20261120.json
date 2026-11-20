@@ -28,11 +28,11 @@
       "released_multiplayer_variant": 2,
       "documented_cut_content": 10
     },
-    "new_generated_images": 1,
+    "new_generated_images": 8,
     "new_playable_fighters": 0,
     "certified_one_to_one": 0,
-    "targets_with_generation_blocked": 4,
-    "new_generated_images_scope": "Images liées aux 102 nouvelles cibles uniquement; les productions Colette/boss/White Forest relèvent des catalogues de base et sont comptées dans generated_art_register."
+    "targets_with_generation_blocked": 7,
+    "new_generated_images_scope": "PNG cumulés liés aux 102 cibles de cette extension; inclut versions conservées et couche de sol. Ce compteur ne mesure ni personnages terminés ni nouvelles entités."
   },
   "production_contract": {
     "single_subject_per_image": true,
@@ -595,6 +595,78 @@
       "kind": "secondary_reference",
       "checked_on": "2026-11-20",
       "checked_scope": "Scène de remplacement du modèle de validation de la chaîne de tourelles ; carte sp_a2_bts4."
+    },
+    {
+      "id": "portal1_rocket_model_c",
+      "title": "Portal Wiki — modèle props_bts/rocket_sentry de Portal",
+      "url": "https://i1.theportalwiki.net/img/d/d5/Portal_Rocket_Turret.png",
+      "kind": "secondary_hosted_game_model",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée."
+    },
+    {
+      "id": "portal2_chell_model_c",
+      "title": "Portal Wiki — modèle retail Chell Portal 2",
+      "url": "https://i1.theportalwiki.net/img/4/40/Chell.png",
+      "kind": "secondary_hosted_game_model",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée."
+    },
+    {
+      "id": "portal1_chell_model_c",
+      "title": "Portal Wiki — modèle retail Chell Portal",
+      "url": "https://i1.theportalwiki.net/img/8/81/Portal_Chell.png",
+      "kind": "secondary_hosted_game_model",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée."
+    },
+    {
+      "id": "portal2_wheatley_capture_c",
+      "title": "Valve / Steam — Wheatley, capture 02",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0cdd90fafc160b52d08b303d205f9fd4e83cf164.1920x1080.jpg?t=1790187113",
+      "kind": "primary_official_screenshot",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée."
+    },
+    {
+      "id": "portal2_factory_capture08_c",
+      "title": "Valve / Steam — chaîne de fabrication, capture 08",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0e16bceacb6616a5ca4bc4ba4d28c7a0d06b671c.1920x1080.jpg?t=1790187113",
+      "kind": "primary_official_screenshot",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée."
+    },
+    {
+      "id": "portal2_factory_capture09_c",
+      "title": "Valve / Steam — chaîne de fabrication, capture 09",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_d8f172249d6e89999c3692bf2c380921f197fd82.1920x1080.jpg?t=1790187113",
+      "kind": "primary_official_screenshot",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée."
+    },
+    {
+      "id": "deskjob_grady_capture01_c",
+      "title": "Valve / Steam — Grady, capture 01",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1902490/ss_4b8b8d6ab04d3c42584abb31b5b4d7d534478d1d.1920x1080.jpg?t=1745368564",
+      "kind": "primary_official_screenshot",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée."
+    },
+    {
+      "id": "portal2_atlas_model_c",
+      "title": "Portal Wiki — modèle retail ATLAS",
+      "url": "https://i1.theportalwiki.net/img/0/04/Atlas.png",
+      "kind": "secondary_hosted_game_model",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée."
+    },
+    {
+      "id": "portal2_pbody_model_c",
+      "title": "Portal Wiki — modèle retail P-body",
+      "url": "https://i1.theportalwiki.net/img/7/74/P-body.png",
+      "kind": "secondary_hosted_game_model",
+      "checked_on": "2026-11-20",
+      "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée."
     }
   ],
   "targets": [
@@ -1362,15 +1434,31 @@
       "identity_lock": "Tenue et appareil de Portal 1; ne pas mélanger supports de jambe et bottes de Portal 2.",
       "source_ids": [
         "portal_story",
-        "portal_chars"
+        "portal_chars",
+        "portal1_chell_model_c"
       ],
-      "reference_capture": null,
-      "visual_reference_status": "capture_required",
-      "generation_status": "not_started",
+      "reference_capture": {
+        "reference_filename": "wiki_Portal_Chell.png",
+        "sha256": "00be97f29b36e43c7e3c09ec8973f5eaac79fb58375d9547af01bdc937a3210c",
+        "width": 239,
+        "height": 861,
+        "visually_inspected": true,
+        "source_id": "portal1_chell_model_c",
+        "title": "Portal Wiki — modèle retail Chell Portal",
+        "source_url": "https://i1.theportalwiki.net/img/8/81/Portal_Chell.png",
+        "provenance": "secondary_hosted_game_model",
+        "role": "visual_identity_reference"
+      },
+      "visual_reference_status": "bitmap_inspected_generation_comparison_pending",
+      "generation_status": "candidate_generated",
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "implementation_status": "catalogued_not_implemented",
-      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+      "implementation_status": "detailed_design_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée.",
+      "generated_asset_ids": [
+        "chell_portal1_idle_c"
+      ],
+      "design_profile_path": "docs/resonance/data/aperture_combat_design_20261120.json"
     },
     {
       "id": "atlas_portal2",
@@ -1383,15 +1471,28 @@
       "priority": "P1",
       "identity_lock": "Robot compact à œil bleu; proportions et appareil propres au coop. Un seul robot par fichier.",
       "source_ids": [
-        "coop"
+        "coop",
+        "portal2_atlas_model_c"
       ],
-      "reference_capture": null,
-      "visual_reference_status": "capture_required",
-      "generation_status": "not_started",
+      "reference_capture": {
+        "source_id": "portal2_atlas_model_c",
+        "source_url": "https://i1.theportalwiki.net/img/0/04/Atlas.png",
+        "sha256": "bdecd308ddb015d437e5e42bf362983ac950c5c3f5d5c6098be81b368bffbd5c",
+        "width": 778,
+        "height": 1762,
+        "provenance": "Capture de modèle Portal 2 attribuée à Valve Corporation par la page de fichier Portal Wiki; hébergement secondaire."
+      },
+      "visual_reference_status": "bitmap_inspected_generation_comparison_pending",
+      "generation_status": "generation_blocked",
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "implementation_status": "catalogued_not_implemented",
-      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+      "implementation_status": "detailed_design_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée.",
+      "generated_asset_ids": [],
+      "failed_request_ids": [
+        "atlas_portal2_idle_c"
+      ],
+      "design_profile_path": "docs/resonance/data/aperture_combat_design_20261120.json"
     },
     {
       "id": "pbody_portal2",
@@ -1404,15 +1505,28 @@
       "priority": "P1",
       "identity_lock": "Robot élancé à œil orange; silhouette distincte d’ATLAS. Un seul robot par fichier.",
       "source_ids": [
-        "coop"
+        "coop",
+        "portal2_pbody_model_c"
       ],
-      "reference_capture": null,
-      "visual_reference_status": "capture_required",
-      "generation_status": "not_started",
+      "reference_capture": {
+        "source_id": "portal2_pbody_model_c",
+        "source_url": "https://i1.theportalwiki.net/img/7/74/P-body.png",
+        "sha256": "b021bb9c3d18664dd4f19ca5a7c94cf8fce9c74e9db4577da39bc87818942c49",
+        "width": 753,
+        "height": 1415,
+        "provenance": "Capture de modèle Portal 2 attribuée à Valve Corporation par la page de fichier Portal Wiki; hébergement secondaire."
+      },
+      "visual_reference_status": "bitmap_inspected_generation_comparison_pending",
+      "generation_status": "generation_blocked",
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "implementation_status": "catalogued_not_implemented",
-      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+      "implementation_status": "detailed_design_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée.",
+      "generated_asset_ids": [],
+      "failed_request_ids": [
+        "pbody_portal2_idle_c"
+      ],
+      "design_profile_path": "docs/resonance/data/aperture_combat_design_20261120.json"
     },
     {
       "id": "wheatley_core_portal2",
@@ -1426,15 +1540,32 @@
       "identity_lock": "Noyau autonome, distinct de Wheatley installé dans le corps central déjà catalogué comme boss.",
       "source_ids": [
         "cores",
-        "portal2_story"
+        "portal2_story",
+        "portal2_wheatley_capture_c"
       ],
-      "reference_capture": null,
-      "visual_reference_status": "capture_required",
-      "generation_status": "not_started",
+      "reference_capture": {
+        "reference_filename": "steam_620_02.jpg",
+        "sha256": "0773e4664dac8a6a05a0faa0a723022baf5dd912c7cd53c0c78ba3d80b95bb4d",
+        "width": 1920,
+        "height": 1080,
+        "visually_inspected": true,
+        "source_id": "portal2_wheatley_capture_c",
+        "title": "Valve / Steam — Wheatley, capture 02",
+        "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0cdd90fafc160b52d08b303d205f9fd4e83cf164.1920x1080.jpg?t=1790187113",
+        "provenance": "primary_official_screenshot",
+        "role": "visual_identity_reference"
+      },
+      "visual_reference_status": "bitmap_inspected_generation_comparison_pending",
+      "generation_status": "generation_blocked",
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "implementation_status": "catalogued_not_implemented",
-      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+      "implementation_status": "detailed_design_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée.",
+      "generated_asset_ids": [],
+      "failed_request_ids": [
+        "wheatley_core_portal2_idle_c"
+      ],
+      "design_profile_path": "docs/resonance/data/aperture_combat_design_20261120.json"
     },
     {
       "id": "doug_rattmann_labrat",
@@ -1469,15 +1600,30 @@
       "identity_lock": "Noyau avec bras et support de Desk Job; continuité alternative distincte. Ne pas fusionner avec Gary de HLA.",
       "source_ids": [
         "grady",
-        "deskjob"
+        "deskjob",
+        "deskjob_grady_capture01_c"
       ],
-      "reference_capture": null,
-      "visual_reference_status": "capture_required",
-      "generation_status": "not_started",
+      "reference_capture": {
+        "reference_filename": "steam_1902490_01.jpg",
+        "sha256": "dc6222601c0a30347e306f15865de293f68c5c7e2040f3642d54115cbb95ef8f",
+        "width": 1920,
+        "height": 1080,
+        "visually_inspected": true,
+        "source_id": "deskjob_grady_capture01_c",
+        "title": "Valve / Steam — Grady, capture 01",
+        "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1902490/ss_4b8b8d6ab04d3c42584abb31b5b4d7d534478d1d.1920x1080.jpg?t=1745368564",
+        "provenance": "primary_official_screenshot",
+        "role": "visual_identity_reference"
+      },
+      "visual_reference_status": "bitmap_inspected_generation_comparison_pending",
+      "generation_status": "candidate_generated",
       "runtime_enabled": false,
       "certified_one_to_one": false,
       "implementation_status": "catalogued_not_implemented",
-      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée.",
+      "generated_asset_ids": [
+        "grady_deskjob_core_idle_c"
+      ]
     },
     {
       "id": "frankenturret_portal2",
@@ -1640,15 +1786,31 @@
       "identity_lock": "Modèle Portal 2, combinaison à la taille et Long Fall Boots; aucune fusion avec la tenue Portal 1.",
       "source_ids": [
         "portal2_story",
-        "portal_chars"
+        "portal_chars",
+        "portal2_chell_model_c"
       ],
-      "reference_capture": null,
-      "visual_reference_status": "capture_required",
-      "generation_status": "not_started",
+      "reference_capture": {
+        "reference_filename": "wiki_Chell.png",
+        "sha256": "bd4290fdcb2490ceb50fe203febed0a140c0d129f9df91f0b9ca16a3a8b295fc",
+        "width": 200,
+        "height": 580,
+        "visually_inspected": true,
+        "source_id": "portal2_chell_model_c",
+        "title": "Portal Wiki — modèle retail Chell Portal 2",
+        "source_url": "https://i1.theportalwiki.net/img/4/40/Chell.png",
+        "provenance": "secondary_hosted_game_model",
+        "role": "visual_identity_reference"
+      },
+      "visual_reference_status": "bitmap_inspected_generation_comparison_pending",
+      "generation_status": "candidate_generated",
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "implementation_status": "catalogued_not_implemented",
-      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+      "implementation_status": "detailed_design_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée.",
+      "generated_asset_ids": [
+        "costume_chell_portal2_idle_c"
+      ],
+      "design_profile_path": "docs/resonance/data/aperture_combat_design_20261120.json"
     },
     {
       "id": "costume_gman_hl1",
@@ -2304,8 +2466,9 @@
       "generation_status": "not_started",
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "implementation_status": "catalogued_not_implemented",
-      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+      "implementation_status": "detailed_design_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée.",
+      "design_profile_path": "docs/resonance/data/aperture_combat_design_20261120.json"
     },
     {
       "id": "STG_EXT_PORTAL2_TURRET_FACTORY",
@@ -2316,17 +2479,72 @@
       "content_class": "released_reference",
       "proposed_role": "arena_candidate",
       "priority": "P1",
-      "identity_lock": "Décor de The Escape; tourelles et tapis roulants distincts de la voie de collision future.",
+      "identity_lock": "Secteur industriel de fabrication Portal 2, captures officielles Steam 08 et 09: bras orange, tapis et puits mécanique. Projection latérale recomposée et explicitement adaptée, sans confusion avec une chambre blanche ni le hub coop.",
       "source_ids": [
-        "portal2_story"
+        "portal2_story",
+        "portal2_factory_capture08_c",
+        "portal2_factory_capture09_c"
       ],
-      "reference_capture": null,
-      "visual_reference_status": "capture_required",
-      "generation_status": "not_started",
+      "reference_capture": {
+        "reference_filename": "steam_620_08.jpg",
+        "sha256": "557a184ce2292a2b3821c48ac0090d9e7573c16b229cca86dab8e99dfac16ba1",
+        "width": 1920,
+        "height": 1080,
+        "visually_inspected": true,
+        "source_id": "portal2_factory_capture08_c",
+        "title": "Valve / Steam — chaîne de fabrication, capture 08",
+        "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0e16bceacb6616a5ca4bc4ba4d28c7a0d06b671c.1920x1080.jpg?t=1790187113",
+        "provenance": "primary_official_screenshot",
+        "role": "visual_identity_reference"
+      },
+      "visual_reference_status": "bitmap_inspected_generation_comparison_pending",
+      "generation_status": "candidate_generated",
       "runtime_enabled": false,
       "certified_one_to_one": false,
       "implementation_status": "catalogued_not_implemented",
-      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée.",
+      "generated_asset_ids": [
+        "layer_portal2_turret_factory_floor_c",
+        "stage_portal2_turret_factory_master_c"
+      ],
+      "layers": [
+        {
+          "id": "L1",
+          "name_fr": "Atmosphère du puits",
+          "parallax": 0,
+          "production_status": "planned_not_generated"
+        },
+        {
+          "id": "L2",
+          "name_fr": "Charpentes et passerelles lointaines",
+          "parallax": 0.12,
+          "production_status": "planned_not_generated"
+        },
+        {
+          "id": "L3",
+          "name_fr": "Parois industrielles",
+          "parallax": 0.3,
+          "production_status": "planned_not_generated"
+        },
+        {
+          "id": "L4",
+          "name_fr": "Chaîne et bras en arrière-plan",
+          "parallax": 0.55,
+          "production_status": "planned_not_generated"
+        },
+        {
+          "id": "L5",
+          "name_fr": "Sol de combat",
+          "parallax": 1,
+          "production_status": "candidate_present"
+        },
+        {
+          "id": "L6",
+          "name_fr": "Bordure de premier plan",
+          "parallax": 1.1,
+          "production_status": "planned_not_generated"
+        }
+      ]
     },
     {
       "id": "STG_EXT_PORTAL2_COOP_HUB",
@@ -2347,8 +2565,9 @@
       "generation_status": "not_started",
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "implementation_status": "catalogued_not_implemented",
-      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+      "implementation_status": "detailed_design_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée.",
+      "design_profile_path": "docs/resonance/data/aperture_combat_design_20261120.json"
     },
     {
       "id": "STG_EXT_PORTAL2_COOP_VAULT",
@@ -2468,15 +2687,32 @@
       "identity_lock": "Tourelle fixe de Portal; rencontre de redirection par portails, pas une machine mobile géante.",
       "source_ids": [
         "rocket_turret",
-        "portal_story"
+        "portal_story",
+        "portal1_rocket_model_c"
       ],
-      "reference_capture": null,
-      "visual_reference_status": "capture_required",
-      "generation_status": "not_started",
+      "reference_capture": {
+        "reference_filename": "portal1_rocket_turret_model.png",
+        "sha256": "df2f749f815f199267ab171de0612d102234d7f9f134e296dcb9ed76485307a8",
+        "width": 467,
+        "height": 654,
+        "visually_inspected": true,
+        "source_id": "portal1_rocket_model_c",
+        "title": "Portal Wiki — modèle props_bts/rocket_sentry de Portal",
+        "source_url": "https://i1.theportalwiki.net/img/d/d5/Portal_Rocket_Turret.png",
+        "provenance": "secondary_hosted_game_model",
+        "role": "visual_identity_reference"
+      },
+      "visual_reference_status": "bitmap_inspected_generation_comparison_pending",
+      "generation_status": "candidate_generated",
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "implementation_status": "catalogued_not_implemented",
-      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+      "implementation_status": "detailed_design_not_implemented",
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée.",
+      "generated_asset_ids": [
+        "rocket_turret_portal1_idle_left_c",
+        "rocket_turret_portal1_idle_left_v2_c"
+      ],
+      "design_profile_path": "docs/resonance/data/aperture_combat_design_20261120.json"
     },
     {
       "id": "cave_head_deskjob",
