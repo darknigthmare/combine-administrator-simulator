@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.0.0",
+  "mode_id": "boss_battle",
+  "runtime_rules_version": "boss-battle-prototype-1",
+  "title": "Boss Battle",
+  "status": "playable_mechanics_prototype",
+  "simulation_hz": 60,
+  "entry": {
+    "menu": "Half Life Resonance · Boss Battle",
+    "query": "?module=resonance-boss-battle",
+    "module": "src/features/resonance/bossBattle"
+  },
+  "separate_from_management": true,
+  "separate_from_standard_duel": true,
+  "reference_approach": "CQC Boss & Machines: operations, distinct objectives, targetable parts where source supports them, telegraphs, resources, results.",
+  "modes": [
+    {
+      "id": "single",
+      "label": "Opération libre",
+      "status": "implemented",
+      "description": "Choisir un pilote, une rencontre et une difficulté."
+    },
+    {
+      "id": "rush",
+      "label": "Boss Rush",
+      "status": "implemented",
+      "description": "Enchaînement réel des quatre rencontres; bilan de chaque étape et résultat final."
+    },
+    {
+      "id": "training",
+      "label": "Entraînement boss",
+      "status": "implemented",
+      "description": "Apprentissage des contre mesures; résultats exclus des records."
+    },
+    {
+      "id": "chronicle",
+      "label": "Chroniques par jeu",
+      "status": "specified_not_implemented",
+      "description": "Parcours narratifs rattachés à une version source."
+    },
+    {
+      "id": "relay",
+      "label": "Relais trois personnages",
+      "status": "specified_not_implemented",
+      "description": "Relève à la défaite ou au checkpoint, jamais changement arbitraire pendant une capture."
+    },
+    {
+      "id": "coop",
+      "label": "Coopération deux joueurs",
+      "status": "specified_not_implemented",
+      "description": "Rôles complémentaires et caméra partagée; aucune connectivité prétendue."
+    },
+    {
+      "id": "custom",
+      "label": "Opération personnalisée",
+      "status": "specified_not_implemented",
+      "description": "Suite de rencontres et règles affichées avant départ."
+    }
+  ],
+  "runtime_fighter_ids": [
+    "gordon_hl2",
+    "alyx_hl2",
+    "barney_hl2",
+    "shephard_op4",
+    "vortigaunt_hl2",
+    "combine_elite_hl2"
+  ],
+  "roster_target": "all_24_documented_fighters_and_expansions_after_equipment_and_animation_adapters",
+  "runtime_boss_ids": [
+    "strider_hl2",
+    "dropship_hl2",
+    "gunship_hl2",
+    "gargantua_hl1"
+  ],
+  "victory_conditions": [
+    "activate_toxic_waste_system",
+    "core_transfer_then_lunar_portal",
+    "cores_and_incinerator",
+    "crystals_then_head_core",
+    "defend_target",
+    "destroy_boss",
+    "destroy_boss_with_returned_bombs",
+    "destroy_cargo_and_clear_reinforcements",
+    "destroy_turret",
+    "environmental_kill",
+    "escape_or_rescue_original_scenario",
+    "escape_with_objective",
+    "eyes_then_abdominal_cavity",
+    "neutralize_tank_emplacement",
+    "reach_mounted_gun_then_destroy",
+    "research_before_design",
+    "restore_three_systems_then_ignite",
+    "trap_then_escape"
+  ],
+  "canonical_guards": {
+    "dropship_hull_invulnerable": true,
+    "strider_legs_not_destructible": true,
+    "gargantua_eye_not_weak_point": true,
+    "guardian_tunnel_variant_not_killable": true,
+    "jeff_not_killable_by_weapon_damage": true,
+    "pit_worm_eye_interrupts_only": true,
+    "advisor_standard_damage_boss_not_claimed_canon": true,
+    "portal_finales_keep_environmental_objectives": true
+  },
+  "accessibility": {
+    "telegraphs_not_color_only": true,
+    "keyboard_and_touch": true,
+    "pause_on_focus_loss": true,
+    "reduced_motion_target": true,
+    "no_required_rapid_qte": true
+  },
+  "production": {
+    "single_subject_per_image": true,
+    "individual_frames": true,
+    "reference_required_per_game_variant": true,
+    "certified_one_to_one": false,
+    "stage_layers": [
+      "L00_ambience",
+      "L01_far",
+      "L02_mid",
+      "L03_near",
+      "L04_ground",
+      "L05_foreground"
+    ],
+    "frame_groups": [
+      "arrival",
+      "idle",
+      "locomotion",
+      "attack_anticipation",
+      "attack_active",
+      "attack_recovery",
+      "valid_hit",
+      "immune_hit",
+      "phase_transition",
+      "defeat_or_departure"
+    ],
+    "runtime_visuals": "schematic_working_render_with_existing_candidate_backgrounds"
+  }
+}

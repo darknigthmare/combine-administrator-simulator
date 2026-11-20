@@ -1,0 +1,218 @@
+{
+  "sequences": [
+    {
+      "id": "idle",
+      "drawings": 12
+    },
+    {
+      "id": "walk_forward",
+      "drawings": 12
+    },
+    {
+      "id": "walk_back",
+      "drawings": 12
+    },
+    {
+      "id": "dash_forward",
+      "drawings": 8
+    },
+    {
+      "id": "dash_back",
+      "drawings": 8
+    },
+    {
+      "id": "crouch_enter",
+      "drawings": 3
+    },
+    {
+      "id": "crouch_hold",
+      "drawings": 1
+    },
+    {
+      "id": "crouch_exit",
+      "drawings": 3
+    },
+    {
+      "id": "jump_start",
+      "drawings": 4
+    },
+    {
+      "id": "jump_rise",
+      "drawings": 4
+    },
+    {
+      "id": "jump_apex",
+      "drawings": 2
+    },
+    {
+      "id": "jump_fall",
+      "drawings": 4
+    },
+    {
+      "id": "jump_land",
+      "drawings": 4
+    },
+    {
+      "id": "turn",
+      "drawings": 4
+    },
+    {
+      "id": "guard_high",
+      "drawings": 6
+    },
+    {
+      "id": "guard_low",
+      "drawings": 6
+    },
+    {
+      "id": "block_high",
+      "drawings": 3
+    },
+    {
+      "id": "block_low",
+      "drawings": 3
+    },
+    {
+      "id": "hit_high",
+      "drawings": 4
+    },
+    {
+      "id": "hit_mid",
+      "drawings": 4
+    },
+    {
+      "id": "hit_low",
+      "drawings": 4
+    },
+    {
+      "id": "hit_air",
+      "drawings": 4
+    },
+    {
+      "id": "knockdown",
+      "drawings": 8
+    },
+    {
+      "id": "grounded",
+      "drawings": 2
+    },
+    {
+      "id": "getup",
+      "drawings": 8
+    },
+    {
+      "id": "throw_forward",
+      "drawings": 14
+    },
+    {
+      "id": "throw_back",
+      "drawings": 14
+    },
+    {
+      "id": "thrown",
+      "drawings": 12
+    },
+    {
+      "id": "throw_break",
+      "drawings": 8
+    },
+    {
+      "id": "normal_5L",
+      "drawings": 6
+    },
+    {
+      "id": "normal_5M",
+      "drawings": 8
+    },
+    {
+      "id": "normal_5H",
+      "drawings": 10
+    },
+    {
+      "id": "normal_2L",
+      "drawings": 6
+    },
+    {
+      "id": "normal_2M",
+      "drawings": 8
+    },
+    {
+      "id": "normal_2H",
+      "drawings": 10
+    },
+    {
+      "id": "normal_jL",
+      "drawings": 6
+    },
+    {
+      "id": "normal_jM",
+      "drawings": 8
+    },
+    {
+      "id": "normal_jH",
+      "drawings": 10
+    },
+    {
+      "id": "command_6H",
+      "drawings": 10
+    },
+    {
+      "id": "guard_air",
+      "drawings": 10
+    },
+    {
+      "id": "special_01",
+      "drawings": 16
+    },
+    {
+      "id": "special_02",
+      "drawings": 16
+    },
+    {
+      "id": "special_03",
+      "drawings": 16
+    },
+    {
+      "id": "special_04",
+      "drawings": 16
+    },
+    {
+      "id": "special_05",
+      "drawings": 16
+    },
+    {
+      "id": "super",
+      "drawings": 28
+    },
+    {
+      "id": "ultimate",
+      "drawings": 28
+    },
+    {
+      "id": "intro",
+      "drawings": 24
+    },
+    {
+      "id": "taunt",
+      "drawings": 16
+    },
+    {
+      "id": "victory",
+      "drawings": 24
+    },
+    {
+      "id": "defeat",
+      "drawings": 10
+    },
+    {
+      "id": "fatality",
+      "drawings": 40
+    },
+    {
+      "id": "mercy",
+      "drawings": 24
+    }
+  ],
+  "total_drawings_per_fighter_one_facing": 547,
+  "sequence_count": 53
+}

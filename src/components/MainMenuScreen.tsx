@@ -17,6 +17,7 @@ type Props = {
   settings: AtmosphereSettings;
   continueCampaign: () => void;
   createCampaign: () => void;
+  launchBossBattle?: () => void;
   updateSettings: (patch: Partial<AtmosphereSettings>) => void;
 };
 
@@ -29,6 +30,7 @@ export function MainMenuScreen({
   settings,
   continueCampaign,
   createCampaign,
+  launchBossBattle,
   updateSettings,
 }: Props) {
   const [panel, setPanel] = useState<MenuPanel>(null);
@@ -95,6 +97,9 @@ export function MainMenuScreen({
         <button className={hasCampaign ? 'secondary' : 'primary'} onClick={createCampaign}>
           <Plus size={18} /> Nouvelle campagne
         </button>
+        {launchBossBattle && <button className="secondary" onClick={launchBossBattle}>
+          <Play size={18} /> Half Life Resonance · Boss Battle
+        </button>}
       </div>
       <div className="main-menu-utility-actions">
         <button onClick={() => setPanel('settings')}><Settings size={17} /> Réglages</button>

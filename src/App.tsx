@@ -351,7 +351,7 @@ const primaryNavIcons: Partial<Record<TabId, LucideIcon>> = {
 
 const canonicalNewGameConfig = doctrineToConfig('canonical_city17', '17');
 
-function App() {
+function App({ onLaunchBossBattle }: { onLaunchBossBattle?: () => void } = {}) {
   const [game, setGame] = useState<GameState>(() => {
     const playerPreferences = readPlayerPreferences();
     const saved = localStorage.getItem(AUTOSAVE_STORAGE_KEY);
@@ -1931,6 +1931,7 @@ function App() {
           settings={game.atmosphereSettings}
           continueCampaign={continueCampaign}
           createCampaign={openNewCampaign}
+          launchBossBattle={onLaunchBossBattle}
           updateSettings={updateAtmosphereSettings}
         />}
         {game.tab === 'new_game' && <NewGameIntakeScreen

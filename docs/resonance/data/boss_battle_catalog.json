@@ -1,0 +1,1692 @@
+{
+  "schema_version": "1.0.0",
+  "title": "Half Life Resonance Boss Battle",
+  "source_date": "2026-11-19",
+  "status": "four_playable_mechanics_prototypes_plus_documented_expansion",
+  "notice": "Les identités et comportements sont référencés. Les rencontres 2D, seuils, phases et valeurs sont des adaptations originales. Aucun sprite ou animation n’est certifié 1:1.",
+  "main_encounter_count": 24,
+  "archive_count": 1,
+  "runtime_boss_ids": [
+    "strider_hl2",
+    "dropship_hl2",
+    "gunship_hl2",
+    "gargantua_hl1"
+  ],
+  "sources": [
+    {
+      "id": "strider",
+      "title": "Strider et variantes",
+      "url": "https://www.combineoverwiki.net/wiki/Strider",
+      "kind": "reference_secondaire",
+      "accessed": "2026-11-19",
+      "note": "Vérification visuelle directe du jeu encore requise."
+    },
+    {
+      "id": "ep2_commentary",
+      "title": "Commentaires Valve Episode Two",
+      "url": "https://combineoverwiki.net/wiki/Developer_commentary/Half-Life_2:_Episode_Two",
+      "kind": "transcription_source_primaire",
+      "accessed": "2026-11-19",
+      "note": "Vérification visuelle directe du jeu encore requise."
+    },
+    {
+      "id": "alyx_commentary",
+      "title": "Commentaires Valve Half-Life Alyx",
+      "url": "https://combineoverwiki.net/wiki/Developer_commentary/Half-Life:_Alyx",
+      "kind": "transcription_source_primaire",
+      "accessed": "2026-11-19",
+      "note": "Vérification visuelle directe du jeu encore requise."
+    },
+    {
+      "id": "dropship_code",
+      "title": "Valve Source SDK Dropship",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/npc_combinedropship.cpp",
+      "kind": "code_valve",
+      "accessed": "2026-11-19",
+      "note": "Vérification visuelle directe du jeu encore requise."
+    },
+    {
+      "id": "dropship",
+      "title": "Dropship et nacelle",
+      "url": "https://www.combineoverwiki.net/wiki/Combine_Dropship",
+      "kind": "reference_secondaire",
+      "accessed": "2026-11-19",
+      "note": "Vérification visuelle directe du jeu encore requise."
+    },
+    {
+      "id": "gunship",
+      "title": "Gunship",
+      "url": "https://www.combineoverwiki.net/wiki/Combine_Gunship",
+      "kind": "reference_secondaire",
+      "accessed": "2026-11-19",
+      "note": "Vérification visuelle directe du jeu encore requise."
+    },
+    {
+      "id": "chopper",
+      "title": "Hunter Chopper",
+      "url": "https://www.combineoverwiki.net/wiki/Hunter-Chopper",
+      "kind": "reference_secondaire",
+      "accessed": "2026-11-19",
+      "note": "Vérification visuelle directe du jeu encore requise."
+    },
+    {
+      "id": "apc",
+      "title": "APC du Cartel",
+      "url": "https://www.combineoverwiki.net/wiki/Armored_Personnel_Carrier",
+      "kind": "reference_secondaire",
+      "accessed": "2026-11-19",
+      "note": "Vérification visuelle directe du jeu encore requise."
+    },
+    {
+      "id": "garg_code",
+      "title": "Valve Half Life Gargantua",
+      "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/gargantua.cpp",
+      "kind": "code_valve",
+      "accessed": "2026-11-19",
+      "note": "Vérification visuelle directe du jeu encore requise."
+    },
+    {
+      "id": "garg",
+      "title": "Gargantua et rencontres",
+      "url": "https://www.combineoverwiki.net/wiki/Gargantua",
+      "kind": "reference_secondaire",
+      "accessed": "2026-11-19",
+      "note": "Vérification visuelle directe du jeu encore requise."
+    },
+    {
+      "id": "gonarch",
+      "title": "Gonarch",
+      "url": "https://www.combineoverwiki.net/wiki/Gonarch",
+      "kind": "reference_secondaire",
+      "accessed": "2026-11-19",
+      "note": "Vérification visuelle directe du jeu encore requise."
+    },
+    {
+      "id": "nihilanth",
+      "title": "Nihilanth",
+      "url": "https://www.combineoverwiki.net/wiki/Nihilanth",
+      "kind": "reference_secondaire",
+      "accessed": "2026-11-19",
+      "note": "Vérification visuelle directe du jeu encore requise."
+    },
+    {
+      "id": "nihilanth_code",
+      "title": "Valve Half Life Nihilanth",
+      "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/nihilanth.cpp",
+      "kind": "code_valve",
+      "accessed": "2026-11-19",
+      "note": "Vérification visuelle directe du jeu encore requise."
+    },
+    {
+      "id": "tentacle",
+      "title": "Tentacles et Blast Pit",
+      "url": "https://www.combineoverwiki.net/wiki/Tentacle",
+      "kind": "reference_secondaire",
+      "accessed": "2026-11-19",
+      "note": "Vérification visuelle directe du jeu encore requise."
+    },
+    {
+      "id": "pitworm",
+      "title": "Pit Worm",
+      "url": "https://combineoverwiki.net/wiki/Pit_Worm",
+      "kind": "reference_secondaire",
+      "accessed": "2026-11-19",
+      "note": "Vérification visuelle directe du jeu encore requise."
+    },
+    {
+      "id": "geneworm",
+      "title": "Gene Worm",
+      "url": "https://combineoverwiki.net/wiki/Gene_Worm",
+      "kind": "reference_secondaire",
+      "accessed": "2026-11-19",
+      "note": "Vérification visuelle directe du jeu encore requise."
+    },
+    {
+      "id": "guard",
+      "title": "Antlion Guard",
+      "url": "https://www.combineoverwiki.net/wiki/Antlion_Guard",
+      "kind": "reference_secondaire",
+      "accessed": "2026-11-19",
+      "note": "Vérification visuelle directe du jeu encore requise."
+    },
+    {
+      "id": "guardian",
+      "title": "Antlion Guardian",
+      "url": "https://combineoverwiki.net/wiki/Antlion_Guardian",
+      "kind": "reference_secondaire",
+      "accessed": "2026-11-19",
+      "note": "Vérification visuelle directe du jeu encore requise."
+    },
+    {
+      "id": "jeff",
+      "title": "Jeff",
+      "url": "https://combineoverwiki.net/wiki/Jeff",
+      "kind": "reference_secondaire",
+      "accessed": "2026-11-19",
+      "note": "Vérification visuelle directe du jeu encore requise."
+    },
+    {
+      "id": "apache",
+      "title": "AH 64 Apache",
+      "url": "https://www.combineoverwiki.net/wiki/AH-64_Apache",
+      "kind": "reference_secondaire",
+      "accessed": "2026-11-19",
+      "note": "Vérification visuelle directe du jeu encore requise."
+    },
+    {
+      "id": "advisor",
+      "title": "Advisor",
+      "url": "https://combineoverwiki.net/wiki/Advisor",
+      "kind": "reference_secondaire",
+      "accessed": "2026-11-19",
+      "note": "Vérification visuelle directe du jeu encore requise."
+    },
+    {
+      "id": "glados",
+      "title": "GLaDOS",
+      "url": "https://theportalwiki.com/wiki/GLaDOS",
+      "kind": "reference_secondaire",
+      "accessed": "2026-11-19",
+      "note": "Vérification visuelle directe du jeu encore requise."
+    },
+    {
+      "id": "wheatley",
+      "title": "Wheatley",
+      "url": "https://theportalwiki.com/wiki/Wheatley",
+      "kind": "reference_secondaire",
+      "accessed": "2026-11-19",
+      "note": "Vérification visuelle directe du jeu encore requise."
+    },
+    {
+      "id": "abrams",
+      "title": "M1A1 Abrams",
+      "url": "https://combineoverwiki.net/wiki/M1A1_Abrams",
+      "kind": "reference_secondaire",
+      "accessed": "2026-11-19",
+      "note": "Vérification visuelle directe du jeu encore requise."
+    },
+    {
+      "id": "bradley",
+      "title": "M2A3 Bradley",
+      "url": "https://combineoverwiki.net/wiki/M2A3_Bradley",
+      "kind": "reference_secondaire",
+      "accessed": "2026-11-19",
+      "note": "Vérification visuelle directe du jeu encore requise."
+    },
+    {
+      "id": "hydra",
+      "title": "Hydra cut content",
+      "url": "https://combineoverwiki.net/wiki/Hydra",
+      "kind": "reference_secondaire",
+      "accessed": "2026-11-19",
+      "note": "Vérification visuelle directe du jeu encore requise."
+    },
+    {
+      "id": "portal_chamber",
+      "title": "Finale de Portal escape_02",
+      "url": "https://theportalwiki.com/wiki/Portal_GLaDOS%27_Chamber",
+      "kind": "reference_secondaire",
+      "accessed": "2026-11-19",
+      "note": "Guide de la carte de la version publiée; capture directe à conserver pour validation finale."
+    },
+    {
+      "id": "portal2_commentary",
+      "title": "Commentaires Valve Portal 2",
+      "url": "https://theportalwiki.com/wiki/Portal_2_developer_commentary",
+      "kind": "transcription_source_primaire",
+      "accessed": "2026-11-19",
+      "note": "Phases retirées à exclure de la version publiée."
+    },
+    {
+      "id": "hl2_anniversary",
+      "title": "Valve Half Life 2 vingtième anniversaire",
+      "url": "https://www.half-life.com/fr/halflife2/20th/",
+      "kind": "site_officiel",
+      "accessed": "2026-11-19",
+      "note": "Accès aux démonstrations restaurées et au documentaire officiel."
+    }
+  ],
+  "bosses": [
+    {
+      "id": "strider_hl2",
+      "name": "Strider de Cité 17",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "category": "synth_terrestre",
+      "status": "playable_mechanics_prototype",
+      "priority": "P0",
+      "arena_id": "BBA_STRIDER_HL2",
+      "arena_name": "Boulevard en ruines",
+      "base_stage_id": "STG_11_HL2_STATION",
+      "victory_condition": "destroy_boss",
+      "canonical_behavior": "Synth tripode, tir de suppression, canon à distorsion et coups de pattes. Les armes lourdes atteignent le corps.",
+      "forbidden_shortcut": "Ne pas ajouter de genoux rouges, de jambes arrachables ou de faiblesse aux coups de poing.",
+      "required_countermeasure": "RPG de terrain et réserves récupérables sous couverture.",
+      "equipment_origin": "terrain",
+      "phases": [
+        {
+          "index": 1,
+          "label": "Contact",
+          "trigger_or_goal": "Rejoindre le poste de tir",
+          "player_counterplay": "Lire la rafale, utiliser le couvert et changer de position.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 2,
+          "label": "Contre attaque",
+          "trigger_or_goal": "Atteindre le corps au RPG",
+          "player_counterplay": "Sortir du couvert pendant la récupération du boss.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 3,
+          "label": "Pression finale",
+          "trigger_or_goal": "Détruire le Strider",
+          "player_counterplay": "Alterner ravitaillement et tir sous les frappes plus rapprochées.",
+          "status": "original_2d_design"
+        }
+      ],
+      "conclusion": "Chute du tripode, retour aux commandes, confirmation de la zone sécurisée.",
+      "visual_invariants": [
+        "Trois longues pattes articulées",
+        "Carapace brune organique et mécanique",
+        "Canon sous le corps",
+        "Gabarit supérieur au combattant"
+      ],
+      "source_ids": [
+        "strider"
+      ],
+      "source_urls": [
+        "https://www.combineoverwiki.net/wiki/Strider"
+      ],
+      "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
+      "visual_status": "reference_and_animation_validation_required",
+      "certified_one_to_one": false,
+      "runtime_enabled": true
+    },
+    {
+      "id": "dropship_hl2",
+      "name": "Dropship et nacelle de débarquement",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "category": "transport_aerien",
+      "status": "playable_mechanics_prototype",
+      "priority": "P0",
+      "arena_id": "BBA_DROPSHIP_HL2",
+      "arena_name": "Zone de débarquement Combine",
+      "base_stage_id": "STG_15_HL2_NOVA",
+      "victory_condition": "destroy_cargo_and_clear_reinforcements",
+      "canonical_behavior": "Le transporteur et la nacelle sont deux entités distinctes. Le corps aérien est invulnérable aux armes du joueur; le canon appartient à la nacelle.",
+      "forbidden_shortcut": "Aucune mort du transporteur par dégâts normaux; aucune jauge de moteur vulnérable inventée.",
+      "required_countermeasure": "Tirs lourds sur la nacelle; arsenal personnel contre les renforts débarqués.",
+      "equipment_origin": "terrain",
+      "phases": [
+        {
+          "index": 1,
+          "label": "Approche",
+          "trigger_or_goal": "Lire les passes de la nacelle",
+          "player_counterplay": "Changer de couvert avant la rafale.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 2,
+          "label": "Interception",
+          "trigger_or_goal": "Neutraliser la nacelle",
+          "player_counterplay": "Sélectionner explicitement la cargaison et gérer les unités débarquées.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 3,
+          "label": "Sécurisation",
+          "trigger_or_goal": "Éliminer les renforts restants",
+          "player_counterplay": "Laisser le transporteur repartir puis confirmer la zone sûre.",
+          "status": "original_2d_design"
+        }
+      ],
+      "conclusion": "Départ du Dropship. Résultat nommé Interception réussie, jamais Dropship abattu.",
+      "visual_invariants": [
+        "Transporteur organique volant distinct du Gunship",
+        "Nacelle militaire ventrale indépendante",
+        "Canon fixé à la nacelle",
+        "Déploiement au sol clairement visible"
+      ],
+      "source_ids": [
+        "dropship_code",
+        "dropship"
+      ],
+      "source_urls": [
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/npc_combinedropship.cpp",
+        "https://www.combineoverwiki.net/wiki/Combine_Dropship"
+      ],
+      "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
+      "visual_status": "reference_and_animation_validation_required",
+      "certified_one_to_one": false,
+      "runtime_enabled": true
+    },
+    {
+      "id": "gunship_hl2",
+      "name": "Gunship du Cartel",
+      "source_game": "Half-Life 2 et Episode One",
+      "content_class": "released_reference",
+      "category": "synth_aerien",
+      "status": "playable_mechanics_prototype",
+      "priority": "P0",
+      "arena_id": "BBA_GUNSHIP_HL2",
+      "arena_name": "Ligne côtière fortifiée",
+      "base_stage_id": "STG_15_HL2_NOVA",
+      "victory_condition": "destroy_boss",
+      "canonical_behavior": "Aéronef synthétique résistant aux petites armes. Il cherche à intercepter les roquettes; les projectiles lourds constituent le contre principal.",
+      "forbidden_shortcut": "Ne pas le traiter comme le Hunter Chopper; pas de bombes ou de canon ventral de campagne ajoutés par défaut.",
+      "required_countermeasure": "RPG, munitions et espace de tir dégagé; guidage libre prévu après prototype.",
+      "equipment_origin": "terrain",
+      "phases": [
+        {
+          "index": 1,
+          "label": "Repérage",
+          "trigger_or_goal": "Observer la passe de suppression",
+          "player_counterplay": "Rester protégé pendant le suivi de tir.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 2,
+          "label": "Interception",
+          "trigger_or_goal": "Faire parvenir une roquette",
+          "player_counterplay": "Attaquer au repositionnement; le prototype simplifie la trajectoire.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 3,
+          "label": "Dernière passe",
+          "trigger_or_goal": "Confirmer la destruction",
+          "player_counterplay": "Changer de poste et éviter la dernière rafale.",
+          "status": "original_2d_design"
+        }
+      ],
+      "conclusion": "Chute et explosion à distance, sans modifier le résultat après sa validation.",
+      "visual_invariants": [
+        "Silhouette synthétique aérodynamique",
+        "Propulsion sous le corps et ventilateur arrière",
+        "Canon frontal distinct de la nacelle Dropship",
+        "Pas de rotor central de Hunter Chopper"
+      ],
+      "source_ids": [
+        "gunship"
+      ],
+      "source_urls": [
+        "https://www.combineoverwiki.net/wiki/Combine_Gunship"
+      ],
+      "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
+      "visual_status": "reference_and_animation_validation_required",
+      "certified_one_to_one": false,
+      "runtime_enabled": true
+    },
+    {
+      "id": "gargantua_hl1",
+      "name": "Gargantua de Power Up",
+      "source_game": "Half-Life 1998",
+      "content_class": "released_reference",
+      "category": "creature_geante",
+      "status": "playable_mechanics_prototype",
+      "priority": "P0",
+      "arena_id": "BBA_GARGANTUA_HL1",
+      "arena_name": "Centrale électrique de Black Mesa",
+      "base_stage_id": "STG_04_HL1_LAMBDA",
+      "victory_condition": "environmental_kill",
+      "canonical_behavior": "Carapace qui fait ricocher les balles, flammes des bras, coup rapproché et onde de piétinement. Power Up enseigne une solution électrique.",
+      "forbidden_shortcut": "L’œil lumineux ne devient pas une cible de dégâts. Ne pas réutiliser le modèle du remake Black Mesa comme modèle 1998.",
+      "required_countermeasure": "Commandes électriques et zone de décharge accessibles à chaque combattant.",
+      "equipment_origin": "terrain",
+      "phases": [
+        {
+          "index": 1,
+          "label": "Alimentation",
+          "trigger_or_goal": "Activer les circuits nécessaires",
+          "player_counterplay": "Exploiter les récupérations du monstre pour interagir.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 2,
+          "label": "Placement",
+          "trigger_or_goal": "Préparer le piège électrique",
+          "player_counterplay": "Éviter les flammes et maintenir une issue sûre.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 3,
+          "label": "Décharge",
+          "trigger_or_goal": "Déclencher le mécanisme",
+          "player_counterplay": "Le prototype utilise des cycles de charge répétables; la chorégraphie du piège complet reste à produire.",
+          "status": "original_2d_design"
+        }
+      ],
+      "conclusion": "Décharge et chute; version effets réduits avec extinction de l’œil et écran conservant la lecture.",
+      "visual_invariants": [
+        "Carapace bleue du modèle original",
+        "Œil unique",
+        "Bras terminés par les émetteurs de flammes",
+        "Silhouette massive à deux jambes"
+      ],
+      "source_ids": [
+        "garg_code",
+        "garg"
+      ],
+      "source_urls": [
+        "https://github.com/ValveSoftware/halflife/blob/master/dlls/gargantua.cpp",
+        "https://www.combineoverwiki.net/wiki/Gargantua"
+      ],
+      "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
+      "visual_status": "reference_and_animation_validation_required",
+      "certified_one_to_one": false,
+      "runtime_enabled": true
+    },
+    {
+      "id": "strider_whiteforest_ep2",
+      "name": "Striders de White Forest",
+      "source_game": "Half-Life 2 Episode Two",
+      "content_class": "released_reference",
+      "category": "defense_synth",
+      "status": "documented_not_implemented",
+      "priority": "P1",
+      "arena_id": "BBA_STRIDER_WHITEFOREST_EP2",
+      "arena_name": "Périmètre du silo de White Forest",
+      "base_stage_id": "STG_20_EP2_WHITEFOREST",
+      "victory_condition": "defend_target",
+      "canonical_behavior": "Les dispositifs Magnusson se fixent sur un Strider avant d’être déclenchés par un tir. Les Hunters de l’escorte menacent les dispositifs.",
+      "forbidden_shortcut": "Ne pas transformer les dispositifs Magnusson en grenade de poche universelle; distinguer défense du silo et duel urbain.",
+      "required_countermeasure": "Stations Magnusson et projecteur physique de terrain dans le mode libre; Gravity Gun pour Gordon dans la reconstitution.",
+      "equipment_origin": "terrain",
+      "phases": [
+        {
+          "index": 1,
+          "label": "Escorte",
+          "trigger_or_goal": "Ouvrir la route vers le Strider",
+          "player_counterplay": "Contrôler les Hunters avant de transporter le dispositif.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 2,
+          "label": "Fixation",
+          "trigger_or_goal": "Poser puis déclencher le Magnusson",
+          "player_counterplay": "Préparer une ligne de tir et éviter la destruction prématurée.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 3,
+          "label": "Défense",
+          "trigger_or_goal": "Intercepter le groupe suivant",
+          "player_counterplay": "Protéger l’intégrité du silo et choisir la menace prioritaire.",
+          "status": "original_2d_design"
+        }
+      ],
+      "conclusion": "Silo préservé, compte rendu des unités interceptées et des dommages à l’objectif.",
+      "visual_invariants": [
+        "Strider Episode Two",
+        "Dispositif Magnusson attaché au corps",
+        "Hunters d’escorte à échelle distincte",
+        "Environnement forestier White Forest"
+      ],
+      "source_ids": [
+        "strider",
+        "ep2_commentary"
+      ],
+      "source_urls": [
+        "https://www.combineoverwiki.net/wiki/Strider",
+        "https://combineoverwiki.net/wiki/Developer_commentary/Half-Life_2:_Episode_Two"
+      ],
+      "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
+      "visual_status": "reference_and_animation_validation_required",
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "id": "strider_hla",
+      "name": "Strider du parking",
+      "source_game": "Half-Life Alyx",
+      "content_class": "released_reference",
+      "category": "poursuite_synth",
+      "status": "documented_not_implemented",
+      "priority": "P1",
+      "arena_id": "BBA_STRIDER_HLA",
+      "arena_name": "Parking et chantier vers le Vault",
+      "base_stage_id": "STG_24_HLA_VAULT",
+      "victory_condition": "reach_mounted_gun_then_destroy",
+      "canonical_behavior": "L’arsenal porté par Alyx ne détruit pas le Strider. La rencontre utilise finalement une arme montée trouvée dans l’environnement.",
+      "forbidden_shortcut": "Ne pas remplacer cette séquence par le RPG de Gordon ni mélanger le modèle HL2 avec celui d’Alyx.",
+      "required_countermeasure": "Canon lourd monté; traversée de couverts avant son utilisation.",
+      "equipment_origin": "terrain",
+      "phases": [
+        {
+          "index": 1,
+          "label": "Traque",
+          "trigger_or_goal": "Traverser le parking",
+          "player_counterplay": "Suivre les signaux de repérage et changer d’abri.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 2,
+          "label": "Percée",
+          "trigger_or_goal": "Atteindre le véhicule armé",
+          "player_counterplay": "Franchir une succession de couverts lisibles.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 3,
+          "label": "Riposte",
+          "trigger_or_goal": "Utiliser le canon monté",
+          "player_counterplay": "Tirer durant les ouvertures, se protéger entre les salves.",
+          "status": "original_2d_design"
+        }
+      ],
+      "conclusion": "Destruction du Strider puis progression vers le Vault.",
+      "visual_invariants": [
+        "Modèle et proportions propres à Alyx",
+        "Détails articulations et équipement de cette édition",
+        "Canon de terrain distinct",
+        "Décor du parking identifié"
+      ],
+      "source_ids": [
+        "alyx_commentary",
+        "strider"
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/Developer_commentary/Half-Life:_Alyx",
+        "https://www.combineoverwiki.net/wiki/Strider"
+      ],
+      "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
+      "visual_status": "reference_and_animation_validation_required",
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "id": "hunter_chopper_hl2",
+      "name": "Hunter Chopper des canaux",
+      "source_game": "Half-Life 2 Water Hazard",
+      "content_class": "released_reference",
+      "category": "helicoptere",
+      "status": "documented_not_implemented",
+      "priority": "P1",
+      "arena_id": "BBA_HUNTER_CHOPPER_HL2",
+      "arena_name": "Bassin et canal industriel",
+      "base_stage_id": "STG_12_HL2_CANALS",
+      "victory_condition": "destroy_boss",
+      "canonical_behavior": "Poursuite aérienne, rafales et bombes; le canon monté de l’airboat permet la riposte de la confrontation.",
+      "forbidden_shortcut": "Ne pas lui donner le ventilateur arrière du Gunship ou un largage aléatoire sans annonce.",
+      "required_countermeasure": "Canon d’airboat ou poste fixe adapté au plan 2D.",
+      "equipment_origin": "terrain",
+      "phases": [
+        {
+          "index": 1,
+          "label": "Poursuite",
+          "trigger_or_goal": "Gagner le poste de riposte",
+          "player_counterplay": "Se déplacer sous couvert pendant les rafales.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 2,
+          "label": "Riposte",
+          "trigger_or_goal": "Endommager l’appareil",
+          "player_counterplay": "Lire son passage et maintenir le tir sur sa trajectoire.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 3,
+          "label": "Bombardement",
+          "trigger_or_goal": "Survivre à la passe finale",
+          "player_counterplay": "Traverser les intervalles entre les bombes puis terminer le combat.",
+          "status": "original_2d_design"
+        }
+      ],
+      "conclusion": "Crash hors de la piste et ouverture du canal.",
+      "visual_invariants": [
+        "Rotor et fuselage Hunter Chopper",
+        "Lanceur de bombes sous le fuselage",
+        "Armement Combine",
+        "Pas de nacelle de soldats"
+      ],
+      "source_ids": [
+        "chopper"
+      ],
+      "source_urls": [
+        "https://www.combineoverwiki.net/wiki/Hunter-Chopper"
+      ],
+      "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
+      "visual_status": "reference_and_animation_validation_required",
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "id": "hunter_chopper_ep2",
+      "name": "Hunter Chopper de Station 21",
+      "source_game": "Half-Life 2 Episode Two",
+      "content_class": "released_reference",
+      "category": "helicoptere",
+      "status": "documented_not_implemented",
+      "priority": "P1",
+      "arena_id": "BBA_HUNTER_CHOPPER_EP2",
+      "arena_name": "Cour de Station 21",
+      "base_stage_id": "STG_20_EP2_WHITEFOREST",
+      "victory_condition": "destroy_boss_with_returned_bombs",
+      "canonical_behavior": "Le Gravity Gun renvoie les bombes larguées par le Hunter Chopper.",
+      "forbidden_shortcut": "Ne pas fusionner silencieusement la solution airboat de Half-Life 2 avec le renvoi de bombes d’Episode Two.",
+      "required_countermeasure": "Bombes renvoyées au Gravity Gun ou par un équipement de terrain clairement déclaré adaptation.",
+      "equipment_origin": "terrain",
+      "phases": [
+        {
+          "index": 1,
+          "label": "Pression",
+          "trigger_or_goal": "Repérer la bombe exploitable",
+          "player_counterplay": "Éviter la rafale et préparer une position de capture.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 2,
+          "label": "Renvoi",
+          "trigger_or_goal": "Retourner une bombe",
+          "player_counterplay": "Respecter la distance et la temporisation d’explosion.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 3,
+          "label": "Répétition",
+          "trigger_or_goal": "Détruire l’appareil",
+          "player_counterplay": "Gérer plusieurs dangers sans conserver une bombe hors délai.",
+          "status": "original_2d_design"
+        }
+      ],
+      "conclusion": "Explosion du Chopper et reprise du trajet.",
+      "visual_invariants": [
+        "Variante Episode Two",
+        "Bombes distinctes de roquettes",
+        "Cour et abris Station 21"
+      ],
+      "source_ids": [
+        "chopper"
+      ],
+      "source_urls": [
+        "https://www.combineoverwiki.net/wiki/Hunter-Chopper"
+      ],
+      "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
+      "visual_status": "reference_and_animation_validation_required",
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "id": "apc_hl2",
+      "name": "APC du Cartel",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "category": "vehicule_blinde",
+      "status": "documented_not_implemented",
+      "priority": "P1",
+      "arena_id": "BBA_APC_HL2",
+      "arena_name": "Barrage des canaux",
+      "base_stage_id": "STG_12_HL2_CANALS",
+      "victory_condition": "destroy_boss",
+      "canonical_behavior": "Véhicule blindé avec canon et missiles; explosifs, RPG et canon d’airboat permettent la destruction.",
+      "forbidden_shortcut": "Aucun réacteur rouge à l’arrière ou canon détachable déclaré canonique sans référence.",
+      "required_countermeasure": "Explosifs d’arène, lanceur ou canon monté.",
+      "equipment_origin": "terrain",
+      "phases": [
+        {
+          "index": 1,
+          "label": "Barrage",
+          "trigger_or_goal": "Passer la salve de missiles",
+          "player_counterplay": "Se mettre à couvert puis sortir après le verrouillage.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 2,
+          "label": "Ouverture",
+          "trigger_or_goal": "Placer les dégâts lourds",
+          "player_counterplay": "Utiliser la récupération de la tourelle.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 3,
+          "label": "Neutralisation",
+          "trigger_or_goal": "Détruire le véhicule",
+          "player_counterplay": "Préserver une réserve et éviter le dernier tir.",
+          "status": "original_2d_design"
+        }
+      ],
+      "conclusion": "Épave immobilisée et voie dégagée.",
+      "visual_invariants": [
+        "Coque blindée Combine",
+        "Roues et tourelle à référence verrouillée",
+        "Missiles distincts du tir de canon"
+      ],
+      "source_ids": [
+        "apc"
+      ],
+      "source_urls": [
+        "https://www.combineoverwiki.net/wiki/Armored_Personnel_Carrier"
+      ],
+      "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
+      "visual_status": "reference_and_animation_validation_required",
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "id": "gonarch_hl1",
+      "name": "Gonarch",
+      "source_game": "Half-Life 1998",
+      "content_class": "released_reference",
+      "category": "creature_geante",
+      "status": "documented_not_implemented",
+      "priority": "P1",
+      "arena_id": "BBA_GONARCH_HL1",
+      "arena_name": "Antre de Gonarch",
+      "base_stage_id": "STG_05_HL1_XEN",
+      "victory_condition": "destroy_boss",
+      "canonical_behavior": "Sac abdominal vulnérable protégé par la carapace; attaques acides, pattes et petits Headcrabs. La rencontre progresse entre zones.",
+      "forbidden_shortcut": "Ne pas reprendre l’acide, la poursuite et le modèle du remake comme si tous appartenaient à la version 1998.",
+      "required_countermeasure": "Armes à distance, angles sur le sac et passages entre zones.",
+      "equipment_origin": "terrain",
+      "phases": [
+        {
+          "index": 1,
+          "label": "Exposition",
+          "trigger_or_goal": "Atteindre le sac",
+          "player_counterplay": "Se décaler après la préparation du mortier acide.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 2,
+          "label": "Repli",
+          "trigger_or_goal": "Suivre Gonarch",
+          "player_counterplay": "Traverser sans perdre la lecture des petits Headcrabs.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 3,
+          "label": "Dernière fosse",
+          "trigger_or_goal": "Terminer l’affrontement",
+          "player_counterplay": "Garder un angle sur le sac et une voie d’esquive.",
+          "status": "original_2d_design"
+        }
+      ],
+      "conclusion": "Effondrement final et ouverture du passage Xen.",
+      "visual_invariants": [
+        "Sac abdominal",
+        "Quatre pattes et carapace",
+        "Taille des petits Headcrabs",
+        "Palette Xen originale"
+      ],
+      "source_ids": [
+        "gonarch"
+      ],
+      "source_urls": [
+        "https://www.combineoverwiki.net/wiki/Gonarch"
+      ],
+      "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
+      "visual_status": "reference_and_animation_validation_required",
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "id": "nihilanth_hl1",
+      "name": "Nihilanth",
+      "source_game": "Half-Life 1998",
+      "content_class": "released_reference",
+      "category": "entite_geante",
+      "status": "documented_not_implemented",
+      "priority": "P1",
+      "arena_id": "BBA_NIHILANTH_HL1",
+      "arena_name": "Chambre du Nihilanth",
+      "base_stage_id": "STG_05_HL1_XEN",
+      "victory_condition": "crystals_then_head_core",
+      "canonical_behavior": "Cristaux de recharge, sphères de protection et téléportation; l’ouverture du crâne donne accès à la cible finale.",
+      "forbidden_shortcut": "Pas de dégâts de pied de biche à travers le crâne fermé ni d’addition de phases tirées de Black Mesa.",
+      "required_countermeasure": "Armes à distance, déplacements verticaux et accès en hauteur aux derniers tirs.",
+      "equipment_origin": "terrain",
+      "phases": [
+        {
+          "index": 1,
+          "label": "Recharge",
+          "trigger_or_goal": "Détruire les cristaux",
+          "player_counterplay": "Choisir sa cible et éviter les projectiles de téléportation.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 2,
+          "label": "Protection",
+          "trigger_or_goal": "Épuiser les sphères restantes",
+          "player_counterplay": "Maintenir le tir et gérer les ennemis invoqués.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 3,
+          "label": "Crâne ouvert",
+          "trigger_or_goal": "Atteindre l’intérieur du crâne",
+          "player_counterplay": "Utiliser le dispositif de montée et tirer depuis l’angle correct.",
+          "status": "original_2d_design"
+        }
+      ],
+      "conclusion": "Effondrement énergétique puis sortie narrative du parcours.",
+      "visual_invariants": [
+        "Crâne ouvrant",
+        "Troisième bras",
+        "Bracelets et attaches",
+        "Cristaux et sphères à échelle correcte"
+      ],
+      "source_ids": [
+        "nihilanth",
+        "nihilanth_code"
+      ],
+      "source_urls": [
+        "https://www.combineoverwiki.net/wiki/Nihilanth",
+        "https://github.com/ValveSoftware/halflife/blob/master/dlls/nihilanth.cpp"
+      ],
+      "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
+      "visual_status": "reference_and_animation_validation_required",
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "id": "tentacles_blastpit_hl1",
+      "name": "Tentacules de Blast Pit",
+      "source_game": "Half-Life 1998",
+      "content_class": "released_reference",
+      "category": "danger_biologique",
+      "status": "documented_not_implemented",
+      "priority": "P1",
+      "arena_id": "BBA_TENTACLES_BLASTPIT_HL1",
+      "arena_name": "Silo du moteur de fusée",
+      "base_stage_id": "STG_03_HL1_BLAST_PIT",
+      "victory_condition": "restore_three_systems_then_ignite",
+      "canonical_behavior": "Les tentacules réagissent au bruit et aux vibrations. Oxygène, carburant et électricité permettent l’allumage qui résout la rencontre.",
+      "forbidden_shortcut": "Ne pas transformer trois tentacules en trois barres de vie à vider; une blessure de diversion ne vaut pas victoire.",
+      "required_countermeasure": "Leurres sonores, voies silencieuses et commandes oxygène/carburant/électricité.",
+      "equipment_origin": "terrain",
+      "phases": [
+        {
+          "index": 1,
+          "label": "Repérage sonore",
+          "trigger_or_goal": "Atteindre les accès latéraux",
+          "player_counterplay": "Utiliser un leurre loin de la route suivie.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 2,
+          "label": "Circuits",
+          "trigger_or_goal": "Rétablir les trois systèmes",
+          "player_counterplay": "Choisir l’ordre des détours et revenir par une voie sûre.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 3,
+          "label": "Allumage",
+          "trigger_or_goal": "Rejoindre la console",
+          "player_counterplay": "Déclencher le moteur après vérification des circuits.",
+          "status": "original_2d_design"
+        }
+      ],
+      "conclusion": "Flamme du moteur et accès ouvert; succès d’objectif sans jauge HP fictive.",
+      "visual_invariants": [
+        "Trois appendices à bec",
+        "Silo vertical",
+        "Passerelles en anneaux",
+        "Console d’allumage"
+      ],
+      "source_ids": [
+        "tentacle"
+      ],
+      "source_urls": [
+        "https://www.combineoverwiki.net/wiki/Tentacle"
+      ],
+      "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
+      "visual_status": "reference_and_animation_validation_required",
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "id": "pit_worm_op4",
+      "name": "Pit Worm",
+      "source_game": "Half-Life Opposing Force",
+      "content_class": "released_reference",
+      "category": "creature_geante",
+      "status": "documented_not_implemented",
+      "priority": "P1",
+      "arena_id": "BBA_PIT_WORM_OP4",
+      "arena_name": "Traitement des déchets de Black Mesa",
+      "base_stage_id": "STG_06_OP4_CARGO",
+      "victory_condition": "activate_toxic_waste_system",
+      "canonical_behavior": "Le rayon part du grand œil; un tir oculaire interrompt la créature mais la solution passe par le dispositif de déchets toxiques.",
+      "forbidden_shortcut": "L’œil ne doit pas devenir une barre de vie qui permet de tuer le boss au fusil.",
+      "required_countermeasure": "Arme d’interruption et commandes industrielles du bassin.",
+      "equipment_origin": "terrain",
+      "phases": [
+        {
+          "index": 1,
+          "label": "Observation",
+          "trigger_or_goal": "Identifier le rayon",
+          "player_counterplay": "Utiliser une protection solide puis interrompre l’œil.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 2,
+          "label": "Réseau",
+          "trigger_or_goal": "Activer les commandes",
+          "player_counterplay": "Profiter de la rétraction du monstre pour traverser.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 3,
+          "label": "Traitement",
+          "trigger_or_goal": "Déclencher le déversement",
+          "player_counterplay": "Rejoindre la commande finale et garder une sortie libre.",
+          "status": "original_2d_design"
+        }
+      ],
+      "conclusion": "Neutralisation par le système du bassin.",
+      "visual_invariants": [
+        "Œil unique à paupières verticales",
+        "Corps segmenté",
+        "Griffes antérieures",
+        "Bassin industriel de la version Opposing Force"
+      ],
+      "source_ids": [
+        "pitworm"
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/Pit_Worm"
+      ],
+      "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
+      "visual_status": "reference_and_animation_validation_required",
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "id": "gene_worm_op4",
+      "name": "Gene Worm",
+      "source_game": "Half-Life Opposing Force",
+      "content_class": "released_reference",
+      "category": "entite_geante",
+      "status": "documented_not_implemented",
+      "priority": "P1",
+      "arena_id": "BBA_GENE_WORM_OP4",
+      "arena_name": "Portail de Race X",
+      "base_stage_id": "STG_07_OP4_GENE_WORM",
+      "victory_condition": "eyes_then_abdominal_cavity",
+      "canonical_behavior": "Les canons laser fixes neutralisent les yeux. La cavité abdominale s’ouvre ensuite; les dégâts visent son fond et non l’orbe de portail.",
+      "forbidden_shortcut": "Ne pas exposer un cœur permanent ni confondre l’orbe visible avec la surface qui reçoit les dégâts.",
+      "required_countermeasure": "Deux postes laser et arme utilisable pendant l’ouverture abdominale.",
+      "equipment_origin": "terrain",
+      "phases": [
+        {
+          "index": 1,
+          "label": "Yeux",
+          "trigger_or_goal": "Actionner les deux lasers",
+          "player_counterplay": "Changer de côté après le balayage des tentacules.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 2,
+          "label": "Cavité",
+          "trigger_or_goal": "Tirer à l’intérieur",
+          "player_counterplay": "Exploiter l’ouverture sans viser seulement l’orbe.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 3,
+          "label": "Renforts",
+          "trigger_or_goal": "Répéter le cycle",
+          "player_counterplay": "Traiter les Shock Troopers et rétablir une ligne vers les lasers.",
+          "status": "original_2d_design"
+        }
+      ],
+      "conclusion": "Fermeture du portail et résultat de confinement.",
+      "visual_invariants": [
+        "Deux yeux",
+        "Tentacules latéraux",
+        "Cavité abdominale ouvrante",
+        "Portail et Shock Troopers à part"
+      ],
+      "source_ids": [
+        "geneworm"
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/Gene_Worm"
+      ],
+      "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
+      "visual_status": "reference_and_animation_validation_required",
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "id": "antlion_guard_hl2",
+      "name": "Antlion Guard",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "category": "grande_creature",
+      "status": "documented_not_implemented",
+      "priority": "P1",
+      "arena_id": "BBA_ANTLION_GUARD_HL2",
+      "arena_name": "Cour de Nova Prospekt",
+      "base_stage_id": "STG_15_HL2_NOVA",
+      "victory_condition": "destroy_boss",
+      "canonical_behavior": "Charges, coups et projection d’objets; il peut être tué. Le Bugbait ne le commande pas comme les fourmilions ordinaires.",
+      "forbidden_shortcut": "Pas de contrôle gratuit par le Bugbait ni de transformation en Guardian luminescent.",
+      "required_countermeasure": "Esquives, explosifs et objets physiques de l’arène.",
+      "equipment_origin": "terrain",
+      "phases": [
+        {
+          "index": 1,
+          "label": "Charge",
+          "trigger_or_goal": "Dévier la course",
+          "player_counterplay": "Attendre l’engagement avant de changer de côté.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 2,
+          "label": "Réponse",
+          "trigger_or_goal": "Exploiter la récupération",
+          "player_counterplay": "Viser après la charge et surveiller les objets projetés.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 3,
+          "label": "Pression",
+          "trigger_or_goal": "Gérer les renforts",
+          "player_counterplay": "Conserver un couloir d’esquive et achever le Guard.",
+          "status": "original_2d_design"
+        }
+      ],
+      "conclusion": "Guard vaincu et zone de progression libérée.",
+      "visual_invariants": [
+        "Carapace du Guard HL2",
+        "Grand front de charge",
+        "Pattes et pinces",
+        "Aucune luminescence de Guardian par défaut"
+      ],
+      "source_ids": [
+        "guard"
+      ],
+      "source_urls": [
+        "https://www.combineoverwiki.net/wiki/Antlion_Guard"
+      ],
+      "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
+      "visual_status": "reference_and_animation_validation_required",
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "id": "guardian_tunnels_ep2",
+      "name": "Antlion Guardian des tunnels",
+      "source_game": "Half-Life 2 Episode Two",
+      "content_class": "released_reference",
+      "category": "poursuite_creature",
+      "status": "documented_not_implemented",
+      "priority": "P1",
+      "arena_id": "BBA_GUARDIAN_TUNNELS_EP2",
+      "arena_name": "Galeries profondes",
+      "base_stage_id": "STG_19_EP2_ANTLION",
+      "victory_condition": "escape_with_objective",
+      "canonical_behavior": "Le Guardian souterrain est invulnérable pendant la poursuite. Les petits passages permettent d’échapper à son gabarit.",
+      "forbidden_shortcut": "Ne pas proposer de victoire par dégâts dans cette version de la rencontre.",
+      "required_countermeasure": "Refuges, écoute des charges et route vers l’extrait.",
+      "equipment_origin": "terrain",
+      "phases": [
+        {
+          "index": 1,
+          "label": "Réveil",
+          "trigger_or_goal": "Identifier un refuge",
+          "player_counterplay": "Laisser le Guardian engager sa course.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 2,
+          "label": "Poursuite",
+          "trigger_or_goal": "Traverser entre passages étroits",
+          "player_counterplay": "Observer sa position avant de sortir.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 3,
+          "label": "Extraction",
+          "trigger_or_goal": "Sortir avec l’objectif",
+          "player_counterplay": "Rejoindre le point sûr, sans exiger sa mort.",
+          "status": "original_2d_design"
+        }
+      ],
+      "conclusion": "Objectif récupéré et poursuite interrompue au passage sûr.",
+      "visual_invariants": [
+        "Luminescence propre au Guardian",
+        "Gabarit bloqué par les refuges",
+        "Galeries Episode Two",
+        "Différence explicite avec Antlion Guard"
+      ],
+      "source_ids": [
+        "guardian"
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/Antlion_Guardian"
+      ],
+      "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
+      "visual_status": "reference_and_animation_validation_required",
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "id": "jeff_hla",
+      "name": "Jeff",
+      "source_game": "Half-Life Alyx",
+      "content_class": "released_reference",
+      "category": "poursuite_creature",
+      "status": "documented_not_implemented",
+      "priority": "P1",
+      "arena_id": "BBA_JEFF_HLA",
+      "arena_name": "Distillerie de la zone de quarantaine",
+      "base_stage_id": "STG_23_HLA_DISTILLERY",
+      "victory_condition": "trap_then_escape",
+      "canonical_behavior": "Jeff est aveugle, repère le bruit et résiste aux tirs. Les objets sonores, les interactions et le compacteur structurent la rencontre.",
+      "forbidden_shortcut": "Pas de duel conventionnel gagné en vidant des points de vie; ne pas obliger à tuer Jeff pour le même résultat.",
+      "required_countermeasure": "Bouteilles, leurres, gestion des spores et commande du compacteur.",
+      "equipment_origin": "terrain",
+      "phases": [
+        {
+          "index": 1,
+          "label": "Distraction",
+          "trigger_or_goal": "Créer une fenêtre de passage",
+          "player_counterplay": "Lancer un objet loin de l’objectif.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 2,
+          "label": "Manœuvre",
+          "trigger_or_goal": "Accomplir les interactions",
+          "player_counterplay": "Maîtriser le bruit et les spores pendant la traversée.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 3,
+          "label": "Piège",
+          "trigger_or_goal": "Enfermer Jeff",
+          "player_counterplay": "Quitter la salle; compactage facultatif et récompense équivalente.",
+          "status": "original_2d_design"
+        }
+      ],
+      "conclusion": "Jeff enfermé ou compacté au choix; sortie réussie dans les deux cas.",
+      "visual_invariants": [
+        "Anatomie et excroissances du modèle Alyx",
+        "Réaction orientée vers les sons",
+        "Distillerie et compacteur",
+        "Aucun masque de zombie générique"
+      ],
+      "source_ids": [
+        "alyx_commentary",
+        "jeff"
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/Developer_commentary/Half-Life:_Alyx",
+        "https://combineoverwiki.net/wiki/Jeff"
+      ],
+      "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
+      "visual_status": "reference_and_animation_validation_required",
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "id": "apache_hl1",
+      "name": "AH 64 Apache HECU",
+      "source_game": "Half-Life 1998 Surface Tension",
+      "content_class": "released_reference",
+      "category": "helicoptere",
+      "status": "documented_not_implemented",
+      "priority": "P1",
+      "arena_id": "BBA_APACHE_HL1",
+      "arena_name": "Falaise de Surface Tension",
+      "base_stage_id": "STG_04_HL1_LAMBDA",
+      "victory_condition": "destroy_boss",
+      "canonical_behavior": "Hélicoptère militaire HECU. Le RPG et le Tau Cannon chargé sont des réponses pertinentes; sa résistance ne doit pas être copiée automatiquement du Gunship.",
+      "forbidden_shortcut": "Ne pas lui ajouter la biologie des Synths ou déclarer toutes les petites armes absolument inefficaces sans contrôle de version.",
+      "required_countermeasure": "RPG ou canon Tau selon le personnage; poste d’armement pour les autres.",
+      "equipment_origin": "terrain",
+      "phases": [
+        {
+          "index": 1,
+          "label": "Survol",
+          "trigger_or_goal": "Rejoindre un couvert",
+          "player_counterplay": "Anticiper la ligne d’approche.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 2,
+          "label": "Tir lourd",
+          "trigger_or_goal": "Suivre l’appareil",
+          "player_counterplay": "Garder la trajectoire du RPG lisible.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 3,
+          "label": "Destruction",
+          "trigger_or_goal": "Achever l’hélicoptère",
+          "player_counterplay": "Changer d’abri pendant la riposte.",
+          "status": "original_2d_design"
+        }
+      ],
+      "conclusion": "Crash de l’appareil puis reprise du passage.",
+      "visual_invariants": [
+        "Hélicoptère HECU réaliste",
+        "Rotor principal",
+        "Armement et livrée de la version HL1",
+        "Pas de modèle Half-Life 2"
+      ],
+      "source_ids": [
+        "apache"
+      ],
+      "source_urls": [
+        "https://www.combineoverwiki.net/wiki/AH-64_Apache"
+      ],
+      "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
+      "visual_status": "reference_and_animation_validation_required",
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "id": "guardian_surface_ep2",
+      "name": "Antlion Guardian en surface",
+      "source_game": "Half-Life 2 Episode Two",
+      "content_class": "released_reference",
+      "category": "grande_creature",
+      "status": "documented_not_implemented",
+      "priority": "P1",
+      "arena_id": "BBA_GUARDIAN_SURFACE_EP2",
+      "arena_name": "Sortie des mines",
+      "base_stage_id": "STG_19_EP2_ANTLION",
+      "victory_condition": "destroy_boss",
+      "canonical_behavior": "La rencontre de surface de Freeman Pontifex permet de vaincre le Guardian, accompagné d’un Antlion Guard. Elle se distingue de la poursuite invulnérable et de son poison dans les tunnels.",
+      "forbidden_shortcut": "Ne pas réutiliser la condition de fuite ou l’invulnérabilité de la version souterraine.",
+      "required_countermeasure": "Armes et objets physiques accessibles sur le terrain.",
+      "equipment_origin": "terrain",
+      "phases": [
+        {
+          "index": 1,
+          "label": "Sortie",
+          "trigger_or_goal": "Repérer les angles de charge",
+          "player_counterplay": "Se placer avec un espace de recul.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 2,
+          "label": "Affrontement",
+          "trigger_or_goal": "Gérer les deux créatures et les objets projetés",
+          "player_counterplay": "Éviter les charges et utiliser les objets lourds.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 3,
+          "label": "Passage sûr",
+          "trigger_or_goal": "Vaincre la menace",
+          "player_counterplay": "Confirmer l’ouverture du trajet après le combat.",
+          "status": "original_2d_design"
+        }
+      ],
+      "conclusion": "Passage de surface sécurisé.",
+      "visual_invariants": [
+        "Guardian Episode Two",
+        "Lumière de surface",
+        "Arène ouverte distincte des galeries"
+      ],
+      "source_ids": [
+        "guardian",
+        "ep2_commentary"
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/Antlion_Guardian",
+        "https://combineoverwiki.net/wiki/Developer_commentary/Half-Life_2:_Episode_Two"
+      ],
+      "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
+      "visual_status": "reference_and_animation_validation_required",
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "id": "advisor_extraction_ep2",
+      "name": "Advisor et extraction",
+      "source_game": "Half-Life 2 Episode Two",
+      "content_class": "original_encounter_from_released_identity",
+      "category": "rencontre_narrative",
+      "status": "documented_not_implemented",
+      "priority": "P1",
+      "arena_id": "BBA_ADVISOR_EXTRACTION_EP2",
+      "arena_name": "Dépôt sous contrôle du Cartel",
+      "base_stage_id": "STG_20_EP2_WHITEFOREST",
+      "victory_condition": "escape_or_rescue_original_scenario",
+      "canonical_behavior": "Télékinésie et capture sont des signatures de l’Advisor. Les séquences publiées ne constituent pas un duel standard à points faibles démontrés.",
+      "forbidden_shortcut": "Aucune jauge de cœur, phase d’armure ou possibilité de tuer déclarée canonique.",
+      "required_countermeasure": "Rupture de ligne de vue et sortie scénarisée; mécanismes précis à concevoir.",
+      "equipment_origin": "terrain",
+      "phases": [
+        {
+          "index": 1,
+          "label": "Présence",
+          "trigger_or_goal": "Identifier la zone de capture",
+          "player_counterplay": "Se déplacer vers les protections prévues par la mission.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 2,
+          "label": "Interruption",
+          "trigger_or_goal": "Ouvrir une fenêtre de sortie",
+          "player_counterplay": "Interaction conçue pour Resonance, affichée comme adaptation.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 3,
+          "label": "Extraction",
+          "trigger_or_goal": "Atteindre la sortie",
+          "player_counterplay": "Protéger l’objectif et quitter la zone.",
+          "status": "original_2d_design"
+        }
+      ],
+      "conclusion": "Extraction réussie; le sort de l’Advisor reste celui du scénario original du mode.",
+      "visual_invariants": [
+        "Corps larvaire",
+        "Appareillage Combine",
+        "Échelle et langue selon version",
+        "Aucun corps humanoïde ajouté"
+      ],
+      "source_ids": [
+        "advisor"
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/Advisor"
+      ],
+      "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
+      "visual_status": "reference_and_animation_validation_required",
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "id": "glados_portal1",
+      "name": "GLaDOS de Portal",
+      "source_game": "Portal",
+      "content_class": "released_reference",
+      "category": "installation_robotique",
+      "status": "documented_not_implemented",
+      "priority": "P1",
+      "arena_id": "BBA_GLADOS_PORTAL1",
+      "arena_name": "Chambre de GLaDOS",
+      "base_stage_id": null,
+      "victory_condition": "cores_and_incinerator",
+      "canonical_behavior": "Le premier cœur détaché est incinéré; les roquettes redirigées par portails détachent les trois suivants. Les quatre cœurs doivent être incinérés sous contrainte de neurotoxine et de temps.",
+      "forbidden_shortcut": "Ne pas mélanger son corps Portal 1 avec Portal 2; ne pas attribuer le Portal Gun à tout le roster sans explication.",
+      "required_countermeasure": "Surfaces portalisables et commande de redirection de terrain adaptée aux personnages non équipés.",
+      "equipment_origin": "terrain",
+      "phases": [
+        {
+          "index": 1,
+          "label": "Découverte",
+          "trigger_or_goal": "Traiter le premier cœur",
+          "player_counterplay": "Identifier l’incinérateur et l’action de dépôt.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 2,
+          "label": "Redirection",
+          "trigger_or_goal": "Diriger les roquettes",
+          "player_counterplay": "Utiliser les portails puis récupérer le cœur détaché.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 3,
+          "label": "Dernier cœur",
+          "trigger_or_goal": "Terminer avant le délai",
+          "player_counterplay": "Achever le cycle d’incinération en gérant la menace.",
+          "status": "original_2d_design"
+        }
+      ],
+      "conclusion": "Conclusion inspirée du démantèlement; mise en scène propre à Resonance et non récit canonique supplémentaire.",
+      "visual_invariants": [
+        "Corps de GLaDOS Portal 1",
+        "Cœurs identifiés séparément",
+        "Tourelle à roquettes",
+        "Chambre et incinérateur dédiés"
+      ],
+      "source_ids": [
+        "glados",
+        "portal_chamber"
+      ],
+      "source_urls": [
+        "https://theportalwiki.com/wiki/GLaDOS",
+        "https://theportalwiki.com/wiki/Portal_GLaDOS%27_Chamber"
+      ],
+      "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
+      "visual_status": "reference_and_animation_validation_required",
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "id": "wheatley_portal2",
+      "name": "Wheatley dans le corps central",
+      "source_game": "Portal 2",
+      "content_class": "released_reference",
+      "category": "installation_robotique",
+      "status": "documented_not_implemented",
+      "priority": "P1",
+      "arena_id": "BBA_WHEATLEY_PORTAL2",
+      "arena_name": "Chambre de contrôle d’Aperture",
+      "base_stage_id": null,
+      "victory_condition": "core_transfer_then_lunar_portal",
+      "canonical_behavior": "Bombes sur la conduite de gel de conversion, portails et bombes redirigées, trois cœurs corrompus fixés, transfert, bouton piégé puis portail lunaire. Wheatley est éjecté dans l’espace, pas tué.",
+      "forbidden_shortcut": "Ne pas traiter Wheatley comme un gros robot à détruire à coups de poing; ne pas lui attribuer les cœurs de Portal 1.",
+      "required_countermeasure": "Surfaces et portails, cœurs corrompus, bouton de transfert; interaction de terrain pour le mode libre.",
+      "equipment_origin": "terrain",
+      "phases": [
+        {
+          "index": 1,
+          "label": "Bombes",
+          "trigger_or_goal": "Atteindre le corps central",
+          "player_counterplay": "Rediriger la trajectoire par portails.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 2,
+          "label": "Cœurs",
+          "trigger_or_goal": "Installer les cœurs corrompus",
+          "player_counterplay": "Atteindre chaque point de pose pendant la fenêtre.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 3,
+          "label": "Transfert",
+          "trigger_or_goal": "Résoudre la séquence finale",
+          "player_counterplay": "Interaction guidée et portail lunaire comme conclusion scénarisée.",
+          "status": "original_2d_design"
+        }
+      ],
+      "conclusion": "Séquence d’éjection et retour au résultat; les nouveaux combattants constituent une adaptation de simulation.",
+      "visual_invariants": [
+        "Wheatley Portal 2",
+        "Corps central endommagé de cette finale",
+        "Trois cœurs corrompus distincts",
+        "Gels et surfaces sans mélange Portal 1"
+      ],
+      "source_ids": [
+        "wheatley",
+        "portal2_commentary"
+      ],
+      "source_urls": [
+        "https://theportalwiki.com/wiki/Wheatley",
+        "https://theportalwiki.com/wiki/Portal_2_developer_commentary"
+      ],
+      "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
+      "visual_status": "reference_and_animation_validation_required",
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "id": "abrams_hl1",
+      "name": "M1A1 Abrams HECU",
+      "source_game": "Half-Life 1998",
+      "content_class": "released_reference",
+      "category": "char",
+      "status": "documented_not_implemented",
+      "priority": "P1",
+      "arena_id": "BBA_ABRAMS_HL1",
+      "arena_name": "Barrage militaire de Black Mesa",
+      "base_stage_id": "STG_04_HL1_LAMBDA",
+      "victory_condition": "neutralize_tank_emplacement",
+      "canonical_behavior": "M1A1 Abrams HECU immobile, construit dans la géométrie du niveau, avec tourelle orientable, canon et parfois mitrailleuse. Le profil exact des dégâts dépend des entités de la carte.",
+      "forbidden_shortcut": "Ne pas ajouter une charge roulante ou une poursuite de char. Ne pas imposer une immunité totale aux balles sans vérifier la carte source.",
+      "required_countermeasure": "Armes lourdes et couverts adaptés; valeurs exactes à vérifier sur capture de référence.",
+      "equipment_origin": "terrain",
+      "phases": [
+        {
+          "index": 1,
+          "label": "Barrage",
+          "trigger_or_goal": "Lire la rotation et la mise à feu",
+          "player_counterplay": "Passer entre les tirs.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 2,
+          "label": "Position de riposte",
+          "trigger_or_goal": "Neutraliser l’armement ou la tourelle selon la variante vérifiée",
+          "player_counterplay": "Exploiter le couvert sans se bloquer contre la coque.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 3,
+          "label": "Neutralisation",
+          "trigger_or_goal": "Sécuriser le passage après neutralisation",
+          "player_counterplay": "Placer les dégâts lourds pendant la récupération.",
+          "status": "original_2d_design"
+        }
+      ],
+      "conclusion": "Véhicule neutralisé et barrière ouverte.",
+      "visual_invariants": [
+        "Chenilles",
+        "Tourelle et canon du modèle HL1",
+        "Livrée HECU",
+        "Gabarit de char non réduit au roster"
+      ],
+      "source_ids": [
+        "abrams"
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/M1A1_Abrams"
+      ],
+      "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
+      "visual_status": "reference_and_animation_validation_required",
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "id": "bradley_hl1",
+      "name": "M2A3 Bradley HECU",
+      "source_game": "Half-Life 1998",
+      "content_class": "released_reference",
+      "category": "vehicule_blinde",
+      "status": "documented_not_implemented",
+      "priority": "P1",
+      "arena_id": "BBA_BRADLEY_HL1",
+      "arena_name": "Route occupée de Black Mesa",
+      "base_stage_id": "STG_06_OP4_CARGO",
+      "victory_condition": "destroy_turret",
+      "canonical_behavior": "M2A3 Bradley HECU. Variantes à canon de 25 mm ou lanceur de missiles; tourelle destructible. La variante missile et le laser du RPG permettent un contre spécifique. Le corps à corps sur la tourelle est possible.",
+      "forbidden_shortcut": "Choisir une variante d’armement par configuration. Ne pas cumuler canon et missiles, ni imposer les explosifs comme seule solution; ne pas en faire une recoloration d’APC Combine.",
+      "required_countermeasure": "Atteindre ou viser la tourelle; explosifs, approche de proximité ou contre aux missiles suivant la variante.",
+      "equipment_origin": "terrain",
+      "phases": [
+        {
+          "index": 1,
+          "label": "Interdiction",
+          "trigger_or_goal": "Repérer la ligne de tir",
+          "player_counterplay": "Utiliser les obstacles de béton.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 2,
+          "label": "Manœuvre",
+          "trigger_or_goal": "Atteindre la tourelle ou retourner la trajectoire des missiles de la variante correspondante",
+          "player_counterplay": "Se déplacer après l’annonce de la salve.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 3,
+          "label": "Destruction",
+          "trigger_or_goal": "Détruire la tourelle et sécuriser la route",
+          "player_counterplay": "Gérer les munitions et sécuriser la route.",
+          "status": "original_2d_design"
+        }
+      ],
+      "conclusion": "Blindé hors service et point de contrôle repris.",
+      "visual_invariants": [
+        "Châssis chenillé Bradley",
+        "Tourelle propre au modèle",
+        "HECU Half-Life 1998",
+        "Silhouette distincte du char Abrams"
+      ],
+      "source_ids": [
+        "bradley"
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/M2A3_Bradley"
+      ],
+      "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
+      "visual_status": "reference_and_animation_validation_required",
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "id": "hydra_hl2_cut",
+      "name": "Hydra des versions abandonnées",
+      "source_game": "Half-Life 2 contenu coupé",
+      "content_class": "cut_content_archive",
+      "category": "archive_creature",
+      "status": "documented_not_implemented",
+      "priority": "P2",
+      "arena_id": "BBA_HYDRA_HL2_CUT",
+      "arena_name": "Démonstration de l’Hydra",
+      "base_stage_id": null,
+      "victory_condition": "research_before_design",
+      "canonical_behavior": "Créature du contenu coupé, documentée par du code, des prototypes et des démonstrations E3. Aucun affrontement complet livré dans Half-Life 2 ne sert de référence de boss finalisée.",
+      "forbidden_shortcut": "Aucune phase originale présentée comme canonique et aucune entrée dans le Boss Rush officiel avant validation des références.",
+      "required_countermeasure": "Aucun équipement validé; recherche préalable.",
+      "equipment_origin": "terrain",
+      "phases": [
+        {
+          "index": 1,
+          "label": "Références",
+          "trigger_or_goal": "Identifier la version montrée",
+          "player_counterplay": "Relever la silhouette, les mouvements visibles et les limites documentées.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 2,
+          "label": "Prototype isolé",
+          "trigger_or_goal": "Définir un contre jeu original",
+          "player_counterplay": "Afficher le statut cut content et le caractère reconstruit.",
+          "status": "original_2d_design"
+        },
+        {
+          "index": 3,
+          "label": "Validation",
+          "trigger_or_goal": "Évaluer séparément",
+          "player_counterplay": "Ne pas mélanger l’archive avec les rencontres des jeux publiés.",
+          "status": "original_2d_design"
+        }
+      ],
+      "conclusion": "Pas de conclusion canonique inventée; fiche d’archive désactivée.",
+      "visual_invariants": [
+        "Translucidité et forme vues dans la référence",
+        "Pas de reskin Tentacle",
+        "Version et provenance des captures obligatoires"
+      ],
+      "source_ids": [
+        "hydra",
+        "hl2_anniversary"
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/Hydra",
+        "https://www.half-life.com/fr/halflife2/20th/"
+      ],
+      "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
+      "visual_status": "reference_and_animation_validation_required",
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    }
+  ]
+}

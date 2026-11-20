@@ -15,6 +15,12 @@ Jeu de gestion stratégique non officiel dans lequel le joueur administre une Ci
 - Sauvegardes locales, export/import, Codex lore et paramètres d'accessibilité disponibles avant la campagne.
 - Musique originale adaptative et effets synthétiques sans audio propriétaire de Half-Life.
 
+## Half Life Resonance Boss Battle
+
+Le menu principal propose un premier mode annexe jouable : six pilotes affrontent le Strider, le Dropship et sa nacelle, le Gunship ou Gargantua. Opération libre, Boss Rush et entraînement utilisent une simulation distincte de la gestion, avec objectifs propres aux boss, équipements d'arène, commandes clavier/tactiles et records locaux. Le paramètre `?module=resonance-boss-battle` ouvre directement sa sélection.
+
+La [bible Boss Battle](docs/resonance/BOSS_BATTLE.md) détaille 24 rencontres et une archive de contenu coupé. Le module actuel est un prototype mécanique ; les sprites et animations définitifs en fidélité 1:1 restent à produire et à valider. Les vingt rencontres supplémentaires et la coopération sont documentées, pas encore jouables.
+
 ## Installation
 
 Prérequis : Node.js 22 et npm.
