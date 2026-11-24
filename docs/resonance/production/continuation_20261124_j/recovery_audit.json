@@ -1,0 +1,4419 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "continuation_20261124_j",
+  "audit_date": "2026-11-24",
+  "repository": "darknigthmare/combine-administrator-simulator",
+  "pull_request": 7,
+  "comparison_commit": "8891c3cd2e9fa3c11b45e28de1ebfac83d978296",
+  "comparison_tree": "2f749aefc04a4cf4ed81086ba6651e1b8ff505aa",
+  "scope": "Historical local project asset/docs/scripts copies and raw generated PNG against the retained remote baseline tree; not a full machine filesystem proof",
+  "git_hash_algorithm": "Git blob SHA-1",
+  "checkout_comparisons": {
+    "/workspace/scratch/684967c2474e/resonance": {
+      "files": 196,
+      "identical": 181,
+      "different": [
+        "docs/resonance/README.md",
+        "docs/resonance/BIBLE.md",
+        "docs/resonance/production/asset_audit.json",
+        "docs/resonance/production/asset_audit.md",
+        "docs/resonance/production/MISSING_TARGETS.md",
+        "docs/resonance/data/production_queue.json",
+        "docs/resonance/data/generated_art_register.json",
+        "docs/resonance/data/boss_battle_catalog.json",
+        "docs/resonance/data/stages.json",
+        "docs/resonance/data/catalogue_extension_20261120.json",
+        "docs/resonance/data/roster.json",
+        "docs/resonance/data/projectile_catalog_20261124.json",
+        "docs/resonance/production/continuation_20261124_h/README.md",
+        "scripts/sync-resonance-production.mjs",
+        "scripts/validate-resonance-design.mjs"
+      ],
+      "absent": []
+    },
+    "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator": {
+      "files": 155,
+      "identical": 143,
+      "different": [
+        "docs/resonance/README.md",
+        "docs/resonance/BIBLE.md",
+        "docs/resonance/chapters/projectiles_production_20261124.md",
+        "docs/resonance/production/asset_audit.json",
+        "docs/resonance/production/asset_audit.md",
+        "docs/resonance/production/MISSING_TARGETS.md",
+        "docs/resonance/data/production_queue.json",
+        "docs/resonance/data/generated_art_register.json",
+        "docs/resonance/data/catalogue_extension_20261120.json",
+        "docs/resonance/data/projectile_catalog_20261124.json",
+        "scripts/sync-resonance-production.mjs",
+        "scripts/validate-resonance-design.mjs"
+      ],
+      "absent": []
+    },
+    "/tmp/resonance-edbb": {
+      "files": 261,
+      "identical": 261,
+      "different": [],
+      "absent": []
+    }
+  },
+  "local_project_file_occurrences": 612,
+  "project_files_absent_from_remote_paths": 0,
+  "latest_checkout_files_byte_identical": 261,
+  "prior_index_note": "Latest old checkout /tmp/resonance-edbb had 156 staged paths over b7f7eb8, but its inspected asset/docs/scripts bytes already matched published PR baseline. Staged status was not treated as unpublished evidence.",
+  "older_differences_note": "15 H and 12 F differing files are superseded docs, registries, catalogues or scripts; no missing project path found. Do not replace current baseline with old versions.",
+  "raw_outputs_inspected": 108,
+  "raw_outputs_absent_from_remote_tree": 17,
+  "nonempty_missing_raw": 13,
+  "empty_placeholders": 4,
+  "known_nonretained_iterations_excluded": 12,
+  "newly_recovered_orphans": 1,
+  "raw_missing_details": [
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-b048230c-f265-4dd5-b334-69a8e11d951e.png",
+      "sha": "395b68255d45a61adb00ab265e56fb09be46405f",
+      "size": 2055918,
+      "classification": "historical_iteration_not_retained",
+      "action": "preserve_historical_exclusion"
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-8c1a6783-b25e-47f7-a690-d95de9bf0bf9.png",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "classification": "empty_placeholder",
+      "action": "exclude_empty"
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-7cd03c36-72f5-4eae-bf5d-d5cba4c75b96.png",
+      "sha": "4e468c4fd2a1b971e0587bc798bbc8ded94845a5",
+      "size": 978685,
+      "classification": "historical_iteration_not_retained",
+      "action": "preserve_historical_exclusion"
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-e2e23228-5820-4a96-8062-4da2e2c9ce6a.png",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "classification": "empty_placeholder",
+      "action": "exclude_empty"
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-86f841e8-9abb-47ed-84f9-ccbffd7f38e2.png",
+      "sha": "6d40eb6a4b174dcfd7b84cdc21713cc90a68e2c0",
+      "size": 2306767,
+      "classification": "recovered_unregistered_candidate",
+      "action": "recover_original_bytes_into_lot_j"
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-de965fef-06ee-4d36-8d17-85b8e1fe74f4.png",
+      "sha": "083eee56fb06ae1318149cc6b67042dc88e5fc7f",
+      "size": 1734918,
+      "classification": "historical_iteration_not_retained",
+      "action": "preserve_historical_exclusion"
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-8f5f65d8-2625-4ffb-9d6d-53c23ec9f6c5.png",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "classification": "empty_placeholder",
+      "action": "exclude_empty"
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-747e7643-47da-46d9-a075-0972b38de7cb.png",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "classification": "empty_placeholder",
+      "action": "exclude_empty"
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-399ea105-b704-4975-895c-fb7945f3de53.png",
+      "sha": "b77c2f26265235c1e935a6227b2688fe56ea8cd5",
+      "size": 2339114,
+      "classification": "historical_iteration_not_retained",
+      "action": "preserve_historical_exclusion"
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-e555f973-05d9-4b85-8ba6-734e1af1dbb1.png",
+      "sha": "517003546efb2bd411fc0ffb0019ebef2d2459d4",
+      "size": 233043,
+      "classification": "historical_iteration_not_retained",
+      "action": "preserve_historical_exclusion"
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-4f13ae54-95c6-4de9-bc09-0ea0dc365f2a.png",
+      "sha": "5d2d4481d404ed7fd9a8ea341aff9db9e529e530",
+      "size": 1263199,
+      "classification": "historical_iteration_not_retained",
+      "action": "preserve_historical_exclusion"
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-c09e4d2c-81c2-4c42-9fca-b321e206fc3f.png",
+      "sha": "6c32d0d7a245c1bb19297afa746f29ce139e61b3",
+      "size": 776733,
+      "classification": "historical_iteration_not_retained",
+      "action": "preserve_historical_exclusion"
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-5af9368b-b2b1-4341-a576-d9153e7c30d9.png",
+      "sha": "e4dce0fba83f226ec22fb5f356ae81fd99f160ad",
+      "size": 1772870,
+      "classification": "historical_iteration_not_retained",
+      "action": "preserve_historical_exclusion"
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-2d133a3f-82a6-4556-b601-bb4ee510db21.png",
+      "sha": "84511c24a7a8063efb8cec227a9bc3216dcf7546",
+      "size": 1715106,
+      "classification": "historical_iteration_not_retained",
+      "action": "preserve_historical_exclusion"
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-c6f244bc-c8d7-4feb-83e5-5cca676be194.png",
+      "sha": "d192deaf680a2411d26de496394e8aca541911f4",
+      "size": 1419375,
+      "classification": "historical_iteration_not_retained",
+      "action": "preserve_historical_exclusion"
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-9ac82bb9-b301-49eb-aa56-a6f9dd8dd980.png",
+      "sha": "ade3abf837fb9539ed506597fa1b08510a2b640f",
+      "size": 172262,
+      "classification": "historical_iteration_not_retained",
+      "action": "preserve_historical_exclusion"
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-a3f47b33-260a-4562-8f60-210742e1ded7.png",
+      "sha": "29eb33a671b4d474659746f7041163dbef4d6895",
+      "size": 1073466,
+      "classification": "historical_iteration_not_retained",
+      "action": "preserve_historical_exclusion"
+    }
+  ],
+  "local_project_snapshot": [
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/README.md",
+      "sha": "16742e4926b28c2b4706b4cc6a0dfceadd4ee9f9",
+      "size": 2510
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/stage_black_mesa_testchamber_master.png",
+      "sha": "239daa83964baf5ddb15afad97cc98be2666e3a3",
+      "size": 2408365
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/combine_elite_hl2_idle_left.png",
+      "sha": "bf91e440700db2c8bcde598feb82898655a556de",
+      "size": 1095642
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/stage_city17_station_master.png",
+      "sha": "d7eca305c123f124565e4cd166a65a631f128487",
+      "size": 2803658
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/layer_city17_distant_skyline.png",
+      "sha": "e8e214d9d841e8a754432655b4c6dd1b6a3852fb",
+      "size": 1545440
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/layer_black_mesa_floor.png",
+      "sha": "8471a0f81456691c466f67dc40ab872630b66a90",
+      "size": 641901
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/prop_hev_suit_charger.png",
+      "sha": "a9d7114f8783605ee86567355a02cccfabe1717d",
+      "size": 2691794
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_c/rocket_turret_portal1_idle_left_v2_c.png",
+      "sha": "cd01739111da686043ac96159cacead94f7db5bf",
+      "size": 1379728
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_c/rocket_turret_portal1_idle_left_c.png",
+      "sha": "bf9b730bc879eddfb43e224d581f76d27d38a201",
+      "size": 1658002
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_c/stage_portal2_turret_factory_master_c.png",
+      "sha": "f67319920496889e66c1bda37be2fe155b6cae85",
+      "size": 1902840
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_c/costume_chell_portal2_idle_c.png",
+      "sha": "9f077bdf9478f980b726495b8a31f108c07b3554",
+      "size": 1491548
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_c/grady_deskjob_core_idle_c.png",
+      "sha": "5b76855c24ceb51c8935f761782c8bd0f06b39f2",
+      "size": 1291991
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_c/chell_portal1_idle_c.png",
+      "sha": "9112b7505ead159b1c47c38894bb41e0c8f68f5d",
+      "size": 1427826
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_c/layer_portal2_turret_factory_floor_c.png",
+      "sha": "db4f036ee345a7528923b0ff262de580cdce00fc",
+      "size": 580863
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_d/layer_canals_floor_d.png",
+      "sha": "e129bf7b333b1263d4a7d05ec7546f6708616290",
+      "size": 732214
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_d/stage_ravenholm_master_d.png",
+      "sha": "0268f1a52fd2079b25d224ef807b431b87b45c34",
+      "size": 2679945
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_d/stage_canals_master_d.png",
+      "sha": "e89532623a90a0b8fd769bcadd05ab1409f93452",
+      "size": 3197487
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_d/antlion_hl2_idle_d.png",
+      "sha": "0ba34b9b72cacca801b08b5905480f66e3883b55",
+      "size": 1279083
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_d/zombine_ep1_idle_d.png",
+      "sha": "3670bdd1df14c464d83e35bc6a9ce8570d68a364",
+      "size": 1143085
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_d/overwatch_soldier_hl2_idle_left_d.png",
+      "sha": "e44fab286017fe5a6660db2e74144a1cac20df24",
+      "size": 1363467
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_d/strider_whiteforest_ep2_idle_left_d.png",
+      "sha": "48a05b3c1be6a31ca86b76ae966443586cf7d004",
+      "size": 474464
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_d/advisor_extraction_ep2_idle_right_d.png",
+      "sha": "829153de4c218eaec17f224e1feb854eb60cdb9d",
+      "size": 1377294
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_b/colette_decay_idle_right.png",
+      "sha": "e9405935f41dafb8872ecee1c60bae8ef3f3ad25",
+      "size": 1732456
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_b/stage_whiteforest_ep2_hangar_master.png",
+      "sha": "5a9aca072b4ee3b56751607cc5bafa794409d01c",
+      "size": 2888943
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_b/gman_hl2_idle_right.png",
+      "sha": "e30ff6200661ca7d868c99499c8c313bb9b15278",
+      "size": 1509587
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_b/stage_whiteforest_ep2_hangar_master_v2.png",
+      "sha": "c7f69f3454c3376dd352e8764a7d9aba58d19463",
+      "size": 2561525
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_b/abrams_hl1_idle_left.png",
+      "sha": "40dc2eea2f9cb17d87db3080c552148bca2b9eb6",
+      "size": 1462551
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_b/apache_hecu_hl1_hover_left.png",
+      "sha": "d706040a2cfc310e16a9be019f7e5b3b397c5c9b",
+      "size": 1045538
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_e/layer_ravenholm_floor_e.png",
+      "sha": "a647f5d28fad82ebd893d61c3bd9a193bab8cf18",
+      "size": 506677
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_e/antlion_worker_ep2_idle_e.png",
+      "sha": "dbd1f378d05a9f57b7416c06253f44eb25037b95",
+      "size": 1878983
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_mid_structure_e.png",
+      "sha": "8bab9628547197d3bc9438fae83b20d8d84741b9",
+      "size": 1950267
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_mid_structure_v2_e.png",
+      "sha": "f5a857ad56287dce292de3ce254b3e3dff35a8a7",
+      "size": 1942184
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_e/costume_hecu_beret_hl1_guard_right_e.png",
+      "sha": "44bacab3ef3384b103838dcf949b4adc92a39133",
+      "size": 943278
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_e/hunter_ep2_idle_e.png",
+      "sha": "bc67b42fe1bddb5d5b7e20678f9c17f229ffb4ea",
+      "size": 830063
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_e/dog_hl2_idle_e.png",
+      "sha": "cd4af59d3816a5d92c726f26c90c7b56515705d8",
+      "size": 1889988
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_e/boss_gargantua_hl1_rear_threequarter_e.png",
+      "sha": "78c8098cd3988e1722ab813a37a29b0fa9c332a3",
+      "size": 1307540
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_near_water_e.png",
+      "sha": "1b6765b63c9c4f49c8eaa04e902d63457efd4bde",
+      "size": 983823
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_sky_e.png",
+      "sha": "401c2aafb220afe66dec530eaeef9a6209829f34",
+      "size": 1579557
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_e/layer_ravenholm_sky_e.png",
+      "sha": "f16e708b8a457031dd63a2824a198ff6fff07bf1",
+      "size": 1448558
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_far_city_e.png",
+      "sha": "fde46b0ff5a990985d7471f61b90a691f2b717a3",
+      "size": 535444
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_portal_blue_portal1_h.png",
+      "sha": "3513906372499ac4fc9b4b2265fda50f0f180a27",
+      "size": 1518362
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_hunter_flechette_ep2_h.png",
+      "sha": "858500916dd8767f8004b2ee6f18533a062c8fb3",
+      "size": 291720
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_ar2_energy_ball_hl2_h.png",
+      "sha": "04c497fd364c0790404215c2513e32bb9286ea10",
+      "size": 1180068
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_hand_grenade_hl2_h.png",
+      "sha": "da57b3788b7d29996edfa6bda1dee38a5e9332ed",
+      "size": 1245530
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_snark_hl1_h.png",
+      "sha": "4db4133ac3026638a4048722ec97ac98701fa9fe",
+      "size": 578013
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_thermal_beam_portal2_h.png",
+      "sha": "373a92b47ef7252f6ab03d86a2b72aaacedd03ef",
+      "size": 313047
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_helicopter_bomb_hl2_h.png",
+      "sha": "c8fe065a9ddc8b73bcf74c4345fcd1844e4b0f5d",
+      "size": 1737714
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_houndeye_sonic_ring_hl1_h.png",
+      "sha": "ef1646bca774221477c5f1685468e5d4eaa63732",
+      "size": 972735
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_propulsion_gel_portal2_h.png",
+      "sha": "43145158f9e7218803fa6438b5359687734c0db1",
+      "size": 1445064
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_crossbow_bolt_hl1_h.png",
+      "sha": "e9e5b8d7859e9607163f0b6e2588c0212f73d6cb",
+      "size": 413662
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_vortigaunt_zap_hl1_h.png",
+      "sha": "9105362e244e43569280acdb1e544347a4536908",
+      "size": 539431
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_bullsquid_spit_hl1_h.png",
+      "sha": "cdf094498f34bbafecd7164cdef04a7ce0fe394b",
+      "size": 317782
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_rpg_rocket_hl1_h.png",
+      "sha": "d3d68b96586cb4fd42c85c245ed034319fed0ca8",
+      "size": 911260
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_pit_drone_spine_opfor_h.png",
+      "sha": "582e7b1e6f5295dcc0bc3a7a837af84b16b3e7c6",
+      "size": 406021
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_energy_pellet_portal1_h.png",
+      "sha": "cc4d6ca8f2cdda0b93d398b9ef60cb126a9221a4",
+      "size": 1343524
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_controller_orb_hl1_h.png",
+      "sha": "a1fc624ad22d90e3ebbdee004af1ac3ff75e0fff",
+      "size": 1024076
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_hornet_hl1_h.png",
+      "sha": "0e9b3ee87722ec2b76a72a4430833915360f7b58",
+      "size": 672200
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_spore_opfor_h.png",
+      "sha": "43814c018c8feb0546dea470f80771e8d7cd11b7",
+      "size": 1141895
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_gonarch_mortar_hl1_h.png",
+      "sha": "b768c73af8255c1985a7cc2b93046f085e2993e5",
+      "size": 1119459
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_conversion_gel_portal2_h.png",
+      "sha": "2d8f64fa8b3b9f1f7198a2a4d90a1c869dfdc926",
+      "size": 1268223
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_repulsion_gel_portal2_h.png",
+      "sha": "24c084468f088b79e7dee9f7bcb834f3ec77cc46",
+      "size": 1132618
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_crossbow_bolt_hl2_h.png",
+      "sha": "fa0d185067f9fc391707582fd012bc474d3675d1",
+      "size": 550012
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_thermal_beam_portal2_v2_h.png",
+      "sha": "82a784a020615bbf282dbf62083838bf32db6903",
+      "size": 698290
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_hand_grenade_hl1_h.png",
+      "sha": "5abf94539b2f467e7e28a1b8fdbfff7d66dea6b6",
+      "size": 1292290
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_hard_light_bridge_portal2_h.png",
+      "sha": "9dbcd72eb3b72f642b87761dfd6b6bb1bac56aa2",
+      "size": 262371
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_rust_mill_hl25_master_h.png",
+      "sha": "c4342faa59608ed59c00ce5ff790c2f53d5cfc4e",
+      "size": 2341168
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_contamination_hl25_master_h.png",
+      "sha": "730f03dc8590339519261b95dbfac07c6178868a",
+      "size": 2900782
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_blastpit_hl1_master_h.png",
+      "sha": "f53a4f2ea1e16b4468bcefd7f2938fb684e2b0fd",
+      "size": 2972162
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_disposal_hl25_master_h.png",
+      "sha": "1e632abe33c1bd3cc2bf7282fd82955884b6123c",
+      "size": 2631948
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_xen_hl1_master_h.png",
+      "sha": "2b367e088907a1fe67854e382c7f13be72053129",
+      "size": 1879837
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_xen_dm_hl25_master_h.png",
+      "sha": "b19658bcba1000450e25b972dffdd69fac4c8663",
+      "size": 2402580
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_lambda_hl1_master_h.png",
+      "sha": "a48995bce340e7c43c96ce261f48f818b05398fd",
+      "size": 2694099
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_pool_party_hl25_master_h.png",
+      "sha": "3e3750dc9e4f609020b8ed47d2488aafac79c528",
+      "size": 2631944
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_double_cross_hl25_master_h.png",
+      "sha": "d6f518a9c71e63889eb202f092b35543b964486a",
+      "size": 2251280
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_rocket_frenzy_hl25_master_h.png",
+      "sha": "4d82f7e36ebcf7f61f6ba741715cb6c4ca993c6a",
+      "size": 2724529
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/machines/bradley_hl1_idle_h.png",
+      "sha": "584c0261b49479c197595e6f6b9b3b0213e2b360",
+      "size": 1124376
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/machines/osprey_hl1_hover_h.png",
+      "sha": "a6b6cc1a81660f51babedc408b963bdd3ec10649",
+      "size": 741898
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/characters/houndeye_hl1_idle_v2_h.png",
+      "sha": "f544169580ae8b8822b4d88373c08ba60c547c08",
+      "size": 2067721
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/characters/alien_controller_hl1_hover_h.png",
+      "sha": "22e5630f3ebaefecbe260add3dd2bce3acf09483",
+      "size": 1062098
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/characters/gonome_op4_idle_h.png",
+      "sha": "fc1184610390b00e88ae78118ac5f22c7fa7e527",
+      "size": 1014170
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/characters/alien_grunt_hl1_idle_h.png",
+      "sha": "80cc5d175bdf01fe1f0197633af3402e591f85a3",
+      "size": 1469656
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/characters/headcrab_hl1_idle_v2_h.png",
+      "sha": "fe57f7b8d5ee54cc23ac5c81d7030f9abfdccef2",
+      "size": 1705935
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/characters/scientist_slick_hl1_idle_h.png",
+      "sha": "16eac58cdc511951f46d197303e8dde76f038917",
+      "size": 1553287
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/characters/manhack_hl2_hover_v2_h.png",
+      "sha": "c563ce1adb4d0a288785451e57f9a363107a119d",
+      "size": 791066
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/characters/shock_trooper_op4_idle_h.png",
+      "sha": "dd879e6015351d1e7df0fded19054623119b4db5",
+      "size": 1910243
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/characters/bullsquid_hl1_idle_h.png",
+      "sha": "5368f997bafc22855634eb9201a54c8fdd7ec92a",
+      "size": 1267390
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/heroes/barney_hl2_idle_h.png",
+      "sha": "0e4a601dc22f1b7c6a4fbf48fc5c2c535ceb141f",
+      "size": 1114409
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/heroes/vortigaunt_hl2_idle_h.png",
+      "sha": "d0d465d1364818a39701103ae5637856dab58fc0",
+      "size": 1124509
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/heroes/alyx_hl2_idle_h.png",
+      "sha": "463fe340a5e0c1425a3b2a1a29adce0c358d2970",
+      "size": 1770075
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/heroes/gordon_hl2_idle_h.png",
+      "sha": "2d59793bd719a9766ed2a152fb4847b3b7c49d47",
+      "size": 973665
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/heroes/breen_hl2_idle_h.png",
+      "sha": "b81c750f06e19e52a71fc502b82b1e306883f2eb",
+      "size": 1226368
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/heroes/eli_hl2_idle_h.png",
+      "sha": "b762e29d96f85294f7985953f3962273d81d3d8a",
+      "size": 1711288
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/heroes/shephard_op4_idle_h.png",
+      "sha": "7371c634fc68174929f79ccb1fd67c9b021b1e0a",
+      "size": 793526
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/heroes/grigori_hl2_idle_h.png",
+      "sha": "54ca1226a8dfdc0d6de597b498a40bae69df8bca",
+      "size": 982194
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/costumes/ivan_hl25_multiplayer_idle_h.png",
+      "sha": "e7360b2487a0ee6c98146d04d935f4d304c89975",
+      "size": 1701210
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/costumes/proto_barney_hl25_multiplayer_idle_h.png",
+      "sha": "d91652d8f9d30282d960a24cb275c29e72c768bc",
+      "size": 1412321
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/costumes/costume_scientist_glasses_hl1_idle_h.png",
+      "sha": "6407372ea9945d2b26e86e8c3c2c8cd8664b041b",
+      "size": 1516753
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/costumes/costume_scientist_luther_hl1_idle_h.png",
+      "sha": "ed664c26a79bdd3824d69f6ef70221c8a0e28a30",
+      "size": 1535888
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/costumes/costume_scientist_einstein_hl1_idle_h.png",
+      "sha": "cb86bf0bd2dcdd2c757739c600c92bed8aa9bdea",
+      "size": 1583003
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/bosses/gonarch_hl1_idle_h.png",
+      "sha": "fd74ec71b99063ebda03fe2ed10827be0c46eab1",
+      "size": 1746091
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/bosses/nihilanth_hl1_idle_h.png",
+      "sha": "76b1ac8045e437337e55e616edc5a164812e765d",
+      "size": 795228
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/bosses/tentacle_blastpit_hl1_idle_h.png",
+      "sha": "ad5d1e1207f3fe55d187cc999fc0709ed2b05e03",
+      "size": 767824
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "assets/resonance/candidates/continuation_20261124_h/bosses/gonarch_hl1_idle_h_v2.png",
+      "sha": "be288198c896d8ceaf9c475baaa4c86e7dcf3c94",
+      "size": 1949723
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/README.md",
+      "sha": "d7a74d2a1ae702652a446a37b8dfaa758fddb3e8",
+      "size": 11488
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/BIBLE.md",
+      "sha": "3c03cb1e71616c104db7cbaa1cfec562379e943a",
+      "size": 443026
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/BOSS_BATTLE.md",
+      "sha": "af3b0c0301a18047cd052d33c10f88100748dad0",
+      "size": 36048
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/chapters/roster_narration.md",
+      "sha": "943267718cffb158dc580ba55745ee1403023b20",
+      "size": 68994
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/chapters/arenes_production.md",
+      "sha": "fdff5a6a39fed02c66920003cd336fd53957ea32",
+      "size": 24991
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/chapters/aperture_combat_design_20261120.md",
+      "sha": "624716de141bf13c251b24999745bdf0e4a339bc",
+      "size": 57296
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/chapters/frame_data_pilote.md",
+      "sha": "73decb296218d02d2b7e17a2fb8f2b45b727147d",
+      "size": 14852
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/chapters/audit_et_sources.md",
+      "sha": "47da96f3907a63544fb7d2eb38d51d15c94c2f42",
+      "size": 6090
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/chapters/catalogue_extension_20261120.md",
+      "sha": "ff0793e19fe5497f21d061df6ebba94fcb39a5f3",
+      "size": 53672
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/chapters/vision_editoriale.md",
+      "sha": "1779aad3d6441e2a62f05d0ca7cbba20cf58a53b",
+      "size": 13469
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/chapters/systemes_combat.md",
+      "sha": "ff9122f50a9d977f89184bc021ecfbd795026ec8",
+      "size": 32781
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/chapters/archive_reference_contracts_20261120.md",
+      "sha": "8a21046a5b2f66c3378f1685531d4434b33b2937",
+      "size": 57480
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/chapters/combine_encounter_design_20261120.md",
+      "sha": "1994fc91ce59c32b5fe1abe1111927d6b493112c",
+      "size": 74618
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/asset_audit.json",
+      "sha": "a6876c956500b8e5b459bc02efe2eb28fddbcb08",
+      "size": 86875
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/asset_audit.md",
+      "sha": "bd01c4903321f060116d537e07b4d5e7a6087593",
+      "size": 13051
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/MISSING_TARGETS.md",
+      "sha": "7d5aebbb5a89827c08ac711d5fbe8bcbf2cc9578",
+      "size": 134157
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/data/boss_battle_production.json",
+      "sha": "2469627722cbfb13540fd672b32eaec14ab857af",
+      "size": 27069
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/data/production_queue.json",
+      "sha": "c7a06c1177ffa122e0ae2eb2ee7be49128d8d08e",
+      "size": 791606
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/data/generated_art_register.json",
+      "sha": "8a7f0bfe4ea46d44f16ac9d1b325af633fd1197e",
+      "size": 486811
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/data/animation_budget.json",
+      "sha": "9debea789e6d3228985603a208bdf62b541ace0a",
+      "size": 3175
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/data/combat_rules.json",
+      "sha": "82dd089764772a0b4e4728cedb93740c8a219278",
+      "size": 8413
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/data/boss_battle_catalog.json",
+      "sha": "03cbe065f302a85d4fa580b2e9b1c5023933f948",
+      "size": 77709
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/data/combine_encounter_design_20261120.json",
+      "sha": "efbcc53751f9c0f601584242c3c1106accdd0ad4",
+      "size": 200330
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/data/aperture_combat_design_20261120.json",
+      "sha": "f71bc5f9aa4c17b9635ab922fbdf58d982629269",
+      "size": 154251
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/data/stages.json",
+      "sha": "a7f0aff7d1b90d82375a64a2cf4aee8c3fdadb7f",
+      "size": 99514
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/data/asset_backlog.json",
+      "sha": "73223c342024083598931771264841f838ec5df7",
+      "size": 244691
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/data/catalogue_extension_20261120.json",
+      "sha": "7fadd66336ec9db2a6bbffdad890f445b5e30094",
+      "size": 139364
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/data/animation_inventory.json",
+      "sha": "04bd77cc43b91050ebc0e871d2cee4dfd76d9dbf",
+      "size": 3665
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/data/frame_data_pilote.json",
+      "sha": "515e5450ec009784e122242ffcfc923b049de74f",
+      "size": 256110
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/data/existing_visual_inventory.json",
+      "sha": "912c716a45e028b7a2500a9b9a433fb0f2ce66f1",
+      "size": 10254
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/data/catalogue_extension_20261124.json",
+      "sha": "c8d8b6ddfc310b53e2ec6e509a0a72dd07eee5b4",
+      "size": 6965
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/data/asset_backlog.csv",
+      "sha": "0de4e3025ede3825ac8662df43c582186b972aff",
+      "size": 111444
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/data/roster.json",
+      "sha": "e18a0797c9248351deabc879398676f27521d0d5",
+      "size": 139887
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/data/projectile_catalog_20261124.json",
+      "sha": "cdcdd34ad7db94bccf395085fe36efc64fddc886",
+      "size": 146029
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/data/archive_reference_contracts_20261120.json",
+      "sha": "5f83e27cd83646734b1e7770aaacabcb889ec214",
+      "size": 122199
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/data/boss_battle_rules.json",
+      "sha": "1306105ffc642cf5beeb57523ff83cff05debf42",
+      "size": 4292
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/technical/BOSS_BATTLE_VALIDATION.md",
+      "sha": "85e5c33d8e26bfbd95f9fcca87988b4b2b915933",
+      "size": 5531
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/technical/resonance_contracts.ts",
+      "sha": "49f8273ac120fa8d8ed0a9fdeb1bb032e2577386",
+      "size": 21346
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/deliverables/Half_Life_Resonance_Production_v1.xlsx",
+      "sha": "52e1d581065f07dd9d8ef001b69ba0f58a2fb908",
+      "size": 118546
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/deliverables/Half_Life_Resonance_Bible_v1.docx",
+      "sha": "cadd91633c924749f4e08fa211958d22ba73af65",
+      "size": 10738508
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261120_c/validation_summary.json",
+      "sha": "19d9f12029af753a0784e6b24482260bf62f1bec",
+      "size": 3953
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261120_c/coop_character_generation.json",
+      "sha": "bfe86c800c5d40ef30a8f52401aede77c19410ba",
+      "size": 9402
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261120_c/README.md",
+      "sha": "56087edb86f4249377a1d147cc9b62bb29b267a6",
+      "size": 9096
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261120_c/generation_register.json",
+      "sha": "730378914b0b60dbc956c6a1a0437f9257fe781f",
+      "size": 43771
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261120_d/machine_stage_generation.json",
+      "sha": "8d538b45e8653cdc67c54cd7662426119901f9f5",
+      "size": 27934
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261120_d/validation_summary.json",
+      "sha": "8f8d8849c4589285b4e36ce33f588dc7cdd5a936",
+      "size": 11228
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261120_d/character_generation.json",
+      "sha": "e4535adc78e193f56c96c003e0f9874c9a56268d",
+      "size": 23375
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261120_d/README.md",
+      "sha": "d1aefbbdb9a671b78ad7fca4b5131a4b9ba574ae",
+      "size": 14589
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261120_d/generation_register.json",
+      "sha": "223b0a8100fcca1346b06b08b6389b97f29da26b",
+      "size": 54724
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261120_b/RECOVERY_STATUS.md",
+      "sha": "d0ceb7300282a8982e5c39009da004bce7ca8fdb",
+      "size": 3432
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261120_b/stage_revision.json",
+      "sha": "e22c8b29d54a2eb1dda16026658a0901fca4d4a8",
+      "size": 3490
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261120_b/character_generation.json",
+      "sha": "6265fb80afe8f82b509e9cf81624422b42a12459",
+      "size": 21792
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261120_b/boss_generation.json",
+      "sha": "9d97865037468e753ad64e7235a5fa3bae3599c7",
+      "size": 13290
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261120_b/README.md",
+      "sha": "49e5edd0cab615621b4444473760a193d3f7c07c",
+      "size": 6115
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261124_h/PROJECTILES.md",
+      "sha": "861d782e540013968459cbe876edbd0bfe863566",
+      "size": 27800
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261124_h/visual_qa_h.json",
+      "sha": "757eb2bf255dd6047bc2514494c3162d2ae14f73",
+      "size": 4806
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261124_h/hero_generation.json",
+      "sha": "f8cf12a8e09ae304ba835ec68ae8735390bb0b40",
+      "size": 42902
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261124_h/STAGES.md",
+      "sha": "a5d3b29fa82bf9e27a5eb1a816b47f6124c43cc6",
+      "size": 4795
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261124_h/baseline_missing_inventory.json",
+      "sha": "69a632bcc0628038a14df07513bcd6e9c138456d",
+      "size": 346751
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261124_h/stage_generation.json",
+      "sha": "74c518efecb3020cb446a55e7fb04d072c0c8dcf",
+      "size": 53364
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261124_h/root_generation.json",
+      "sha": "1d23e02b4fd24558272576de7ddd722e7a7ecb96",
+      "size": 53662
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261124_h/MISSING_BASELINE.md",
+      "sha": "975b1a5d64d1be4d1f3789f58878ada70be6f721",
+      "size": 17984
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261124_h/projectile_generation.json",
+      "sha": "9aec6297ff6f4ce7e19eb150bf546acfff7447ab",
+      "size": 121699
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261124_h/boss_generation.json",
+      "sha": "df6d6bd3b73224d5fd460edb30e80ac8e8dd1358",
+      "size": 12861
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261124_h/README.md",
+      "sha": "db835d75d9f1a051c82f6ab33638cf53c74b38ee",
+      "size": 12786
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261124_h/GALLERY.md",
+      "sha": "6f4ad286f676a536289fe68d6a8a81fb434c2827",
+      "size": 24663
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261124_h/stage_prompts.json",
+      "sha": "1893b96fe9ebde72b795b5e0555d728ee74d8e14",
+      "size": 40710
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261120_e/stage_generation.json",
+      "sha": "9f0c838af44c396de7265ef02cc71b2452173554",
+      "size": 32789
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261120_e/alpha_review_previous_assets.json",
+      "sha": "77dc5ff75d5800ddd3294ed85a8883d9b6f8ee4c",
+      "size": 2391
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261120_e/validation_summary.json",
+      "sha": "5967831354c3660f5edef6b61e95cc99e2774259",
+      "size": 11547
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261120_e/stage_layer_review.json",
+      "sha": "498195a0b9a2db0b5dd0c13064fb9d27dd52228d",
+      "size": 2918
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261120_e/character_generation.json",
+      "sha": "628efa338fbb0c5dc847dd31e6339819064f257f",
+      "size": 29099
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261120_e/costume_boss_generation.json",
+      "sha": "9f7e2541ee4aeca2d1b578382826749e936f0f9e",
+      "size": 18923
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261120_e/README.md",
+      "sha": "6895c2607207533cde5e590c579209cc4b39dafa",
+      "size": 18331
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "docs/resonance/production/continuation_20261120_e/generation_register.json",
+      "sha": "a317a6e9fbdbdf24229e827a088cd7cba8c878e5",
+      "size": 76600
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "scripts/generate-original-score.mjs",
+      "sha": "d30c54a2072f18a5cc3f36977707dafe8cf48c21",
+      "size": 3411
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "scripts/coan-onboarding-audit.mjs",
+      "sha": "aca589880d047bd71515ddc29c1fd95a8dbf3f72",
+      "size": 2035
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "scripts/coan-ux-polish-audit.mjs",
+      "sha": "0ad424ee1f41e00cf36d44a053abad408fb01d25",
+      "size": 1628
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "scripts/coan-tauri-build-windows.ps1",
+      "sha": "f214c4dfba5db6f596cda8967c402435806b07bc",
+      "size": 1384
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "scripts/coan-release-notes.mjs",
+      "sha": "a1e25ede9631008f9545e10f80c6ef5ed04f7f4c",
+      "size": 2748
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "scripts/apply-tauri-package-patch.mjs",
+      "sha": "ddf22bdc3e607b89ec2c9e66cc03d805160f192d",
+      "size": 1019
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "scripts/coan-balance-audit.mjs",
+      "sha": "0006d239b3a8921b61ae34def3b7119a226f2ff9",
+      "size": 1748
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "scripts/audit-upgrade-pack.mjs",
+      "sha": "c9adf33c09c670b70f6203a4c67714ba72d4f6ee",
+      "size": 5054
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "scripts/sync-resonance-production.mjs",
+      "sha": "1e038934e442b6df5793b03f2c960d7de91aae17",
+      "size": 32659
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "scripts/coan-new-game-audit.mjs",
+      "sha": "f4af0ef616eed55b59370ff2165b3f9cb656baf6",
+      "size": 1499
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "scripts/coan-tauri-build-windows.cmd",
+      "sha": "f71fc4ec7b820b3811f13d5d2664024110f5299c",
+      "size": 90
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "scripts/audit-resonance-production.mjs",
+      "sha": "337fb2c0bfd11ca9b174917c0b81887118aae7cf",
+      "size": 16336
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "scripts/validate-resonance-design.mjs",
+      "sha": "58593d624bafb2f2a1e9a660d4fe74195db992a3",
+      "size": 13013
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "scripts/validate-resonance-boss-design.mjs",
+      "sha": "1c28f09bec90c79acd18c820e492b123af2d44cd",
+      "size": 4604
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "scripts/coan-tauri-packaging-audit.mjs",
+      "sha": "cb731ce457c8a481af34b6b90a74a93de72d4b64",
+      "size": 4463
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "scripts/coan-long-run-simulation.mjs",
+      "sha": "06f3818c7e22973c0798a10f46182aae1a0492ef",
+      "size": 819
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "scripts/coan-session-flow-audit.mjs",
+      "sha": "78c771f8a75241a17e1aad43fe3fdadd57c1f18e",
+      "size": 3306
+    },
+    {
+      "root": "/workspace/scratch/684967c2474e/resonance",
+      "path": "scripts/coan-pre-release-matrix.mjs",
+      "sha": "c6efb1ea6d208b62413237a6d48cd9c233049cbd",
+      "size": 736
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/README.md",
+      "sha": "16742e4926b28c2b4706b4cc6a0dfceadd4ee9f9",
+      "size": 2510
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/stage_black_mesa_testchamber_master.png",
+      "sha": "239daa83964baf5ddb15afad97cc98be2666e3a3",
+      "size": 2408365
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/combine_elite_hl2_idle_left.png",
+      "sha": "bf91e440700db2c8bcde598feb82898655a556de",
+      "size": 1095642
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/stage_city17_station_master.png",
+      "sha": "d7eca305c123f124565e4cd166a65a631f128487",
+      "size": 2803658
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/layer_city17_distant_skyline.png",
+      "sha": "e8e214d9d841e8a754432655b4c6dd1b6a3852fb",
+      "size": 1545440
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/layer_black_mesa_floor.png",
+      "sha": "8471a0f81456691c466f67dc40ab872630b66a90",
+      "size": 641901
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/prop_hev_suit_charger.png",
+      "sha": "a9d7114f8783605ee86567355a02cccfabe1717d",
+      "size": 2691794
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_c/rocket_turret_portal1_idle_left_v2_c.png",
+      "sha": "cd01739111da686043ac96159cacead94f7db5bf",
+      "size": 1379728
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_c/rocket_turret_portal1_idle_left_c.png",
+      "sha": "bf9b730bc879eddfb43e224d581f76d27d38a201",
+      "size": 1658002
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_c/stage_portal2_turret_factory_master_c.png",
+      "sha": "f67319920496889e66c1bda37be2fe155b6cae85",
+      "size": 1902840
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_c/costume_chell_portal2_idle_c.png",
+      "sha": "9f077bdf9478f980b726495b8a31f108c07b3554",
+      "size": 1491548
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_c/grady_deskjob_core_idle_c.png",
+      "sha": "5b76855c24ceb51c8935f761782c8bd0f06b39f2",
+      "size": 1291991
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_c/chell_portal1_idle_c.png",
+      "sha": "9112b7505ead159b1c47c38894bb41e0c8f68f5d",
+      "size": 1427826
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_c/layer_portal2_turret_factory_floor_c.png",
+      "sha": "db4f036ee345a7528923b0ff262de580cdce00fc",
+      "size": 580863
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/shephard_op4_guard_f.png",
+      "sha": "7075f67148298c2563bf52c1ac881d50e5db0b23",
+      "size": 511778
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/projectile_hunter_flechette_f.png",
+      "sha": "acd64049a83112cafbd73a625447587f010eb540",
+      "size": 138931
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/stage_nova_courtyard_hl2_master_f.png",
+      "sha": "a5653c3ef6d4f50823db1d3598c1f2897b0b3f2b",
+      "size": 2046546
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/costume_shotgun_soldier_ep2_guard_left_f.png",
+      "sha": "30c40b28d9f3c93e2bc5a2b93af0229aeca28ccd",
+      "size": 1121428
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/stage_xen_hl1_master_f.png",
+      "sha": "524bae8497f7e068e714f6d6b496bfe02f57e9ce",
+      "size": 1743588
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/hunter_chopper_hl2_hover_left_f.png",
+      "sha": "33c8f0014731e86fa161ed13eb1837332bba9719",
+      "size": 1190079
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/antlion_guard_hl2_idle_left_f.png",
+      "sha": "9d761b5b34d85a81dcfb6cdb33bab94ec04df26b",
+      "size": 1223238
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/grigori_hl2_guard_f.png",
+      "sha": "b596011e1f2a36120da6ec307e57b00166c9ae7a",
+      "size": 1058047
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/costume_nova_guard_hl2_guard_left_f.png",
+      "sha": "75995206d4cf88f820efad8542df1c7aa74c6906",
+      "size": 1133144
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/layer_ravenholm_foreground_f.png",
+      "sha": "d88a0fcbd8f22f21304ac23c0d9579d6871e9556",
+      "size": 211604
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/layer_ravenholm_mid_f.png",
+      "sha": "1878f769bc54769553c1ccd9d17049b17635bca4",
+      "size": 1234847
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/projectile_ar2_ball_f.png",
+      "sha": "eb146541d3e4db1a58e6b74b22646c34ab1b729c",
+      "size": 1408274
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/layer_ravenholm_near_f.png",
+      "sha": "103f631cd2afdb155a4b104d782caf95a4d198c3",
+      "size": 788856
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/stage_hldm_pool_party_master_f.png",
+      "sha": "5d133b15c3aa26d812d2ae8bc35be01329dbc0b4",
+      "size": 2542560
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/stage_blastpit_hl1_master_f.png",
+      "sha": "5bcc9d484a9453199004eb3f9a76c6bf4cf83e20",
+      "size": 2494602
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/projectile_crossbow_bolt_hl2_f.png",
+      "sha": "8e4329f6b39fc4c70e986d288a7fc6567ad7acfe",
+      "size": 111374
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/apc_hl2_idle_left_f.png",
+      "sha": "e279ff006e85d374aeeb7e577671f962c09242e8",
+      "size": 1099380
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/shock_trooper_op4_guard_f.png",
+      "sha": "76fe8eae46032293e2c9e41d9f9c1bc70dececf3",
+      "size": 852892
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/stage_lostcoast_monastery_master_f.png",
+      "sha": "35fa169a4d4e8ef661944c4528b53a76cccddd23",
+      "size": 2513007
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/layer_ravenholm_far_f.png",
+      "sha": "38439633450b8fe566dafac86e624dddadce2281",
+      "size": 604844
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/layer_canals_foreground_f.png",
+      "sha": "6503e4ecdb3feb0f562c8747d71093db92371a62",
+      "size": 168160
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/projectile_smg1_grenade_hl2_f.png",
+      "sha": "f59093f768797d30cc93eb030a06ff9c421d750c",
+      "size": 468571
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/costume_hecu_gasmask_hl1_guard_left_f.png",
+      "sha": "577f390beb0a22c51f6024f71ad256c98ce38748",
+      "size": 771790
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/dropship_container_hl2_hover_right_f.png",
+      "sha": "c136e95927c29f83c9f92ee03dece262ffb0906e",
+      "size": 1705070
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/bullsquid_hl1_idle_left_f.png",
+      "sha": "eaeb8093bc0014a0dbdf969b41a7a6673ed7d5be",
+      "size": 1327387
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/stage_old_aperture_portal2_master_f.png",
+      "sha": "37edcf84ca6c4d4df8704cb654956c6df3918fce",
+      "size": 2296317
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/gina_decay_guard_f.png",
+      "sha": "fbdc1943b3f88e095e1a26f061e813ba04e447b8",
+      "size": 1400677
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/gunship_hl2_hover_left_f.png",
+      "sha": "3d4d2440914b5f4c37be5b505fd41143e917c226",
+      "size": 1442668
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/houndeye_hl1_idle_left_f.png",
+      "sha": "e156f4c0090bc48e69ab1b0d13076ae14639af80",
+      "size": 1553107
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/pit_drone_op4_guard_f.png",
+      "sha": "b4b8714fd8e3b870b28d09384a438c06b58d5e10",
+      "size": 789903
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261124_f/stage_hldm_rocket_frenzy_master_f.png",
+      "sha": "4d72be876771f12517e82dc38f3504c07d06db76",
+      "size": 2882323
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_d/layer_canals_floor_d.png",
+      "sha": "e129bf7b333b1263d4a7d05ec7546f6708616290",
+      "size": 732214
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_d/stage_ravenholm_master_d.png",
+      "sha": "0268f1a52fd2079b25d224ef807b431b87b45c34",
+      "size": 2679945
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_d/stage_canals_master_d.png",
+      "sha": "e89532623a90a0b8fd769bcadd05ab1409f93452",
+      "size": 3197487
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_d/antlion_hl2_idle_d.png",
+      "sha": "0ba34b9b72cacca801b08b5905480f66e3883b55",
+      "size": 1279083
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_d/zombine_ep1_idle_d.png",
+      "sha": "3670bdd1df14c464d83e35bc6a9ce8570d68a364",
+      "size": 1143085
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_d/overwatch_soldier_hl2_idle_left_d.png",
+      "sha": "e44fab286017fe5a6660db2e74144a1cac20df24",
+      "size": 1363467
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_d/strider_whiteforest_ep2_idle_left_d.png",
+      "sha": "48a05b3c1be6a31ca86b76ae966443586cf7d004",
+      "size": 474464
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_d/advisor_extraction_ep2_idle_right_d.png",
+      "sha": "829153de4c218eaec17f224e1feb854eb60cdb9d",
+      "size": 1377294
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_b/colette_decay_idle_right.png",
+      "sha": "e9405935f41dafb8872ecee1c60bae8ef3f3ad25",
+      "size": 1732456
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_b/stage_whiteforest_ep2_hangar_master.png",
+      "sha": "5a9aca072b4ee3b56751607cc5bafa794409d01c",
+      "size": 2888943
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_b/gman_hl2_idle_right.png",
+      "sha": "e30ff6200661ca7d868c99499c8c313bb9b15278",
+      "size": 1509587
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_b/stage_whiteforest_ep2_hangar_master_v2.png",
+      "sha": "c7f69f3454c3376dd352e8764a7d9aba58d19463",
+      "size": 2561525
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_b/abrams_hl1_idle_left.png",
+      "sha": "40dc2eea2f9cb17d87db3080c552148bca2b9eb6",
+      "size": 1462551
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_b/apache_hecu_hl1_hover_left.png",
+      "sha": "d706040a2cfc310e16a9be019f7e5b3b397c5c9b",
+      "size": 1045538
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_e/layer_ravenholm_floor_e.png",
+      "sha": "a647f5d28fad82ebd893d61c3bd9a193bab8cf18",
+      "size": 506677
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_e/antlion_worker_ep2_idle_e.png",
+      "sha": "dbd1f378d05a9f57b7416c06253f44eb25037b95",
+      "size": 1878983
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_mid_structure_e.png",
+      "sha": "8bab9628547197d3bc9438fae83b20d8d84741b9",
+      "size": 1950267
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_mid_structure_v2_e.png",
+      "sha": "f5a857ad56287dce292de3ce254b3e3dff35a8a7",
+      "size": 1942184
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_e/costume_hecu_beret_hl1_guard_right_e.png",
+      "sha": "44bacab3ef3384b103838dcf949b4adc92a39133",
+      "size": 943278
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_e/hunter_ep2_idle_e.png",
+      "sha": "bc67b42fe1bddb5d5b7e20678f9c17f229ffb4ea",
+      "size": 830063
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_e/dog_hl2_idle_e.png",
+      "sha": "cd4af59d3816a5d92c726f26c90c7b56515705d8",
+      "size": 1889988
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_e/boss_gargantua_hl1_rear_threequarter_e.png",
+      "sha": "78c8098cd3988e1722ab813a37a29b0fa9c332a3",
+      "size": 1307540
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_near_water_e.png",
+      "sha": "1b6765b63c9c4f49c8eaa04e902d63457efd4bde",
+      "size": 983823
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_sky_e.png",
+      "sha": "401c2aafb220afe66dec530eaeef9a6209829f34",
+      "size": 1579557
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_e/layer_ravenholm_sky_e.png",
+      "sha": "f16e708b8a457031dd63a2824a198ff6fff07bf1",
+      "size": 1448558
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_far_city_e.png",
+      "sha": "fde46b0ff5a990985d7471f61b90a691f2b717a3",
+      "size": 535444
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/README.md",
+      "sha": "d7a74d2a1ae702652a446a37b8dfaa758fddb3e8",
+      "size": 11488
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/BIBLE.md",
+      "sha": "3c03cb1e71616c104db7cbaa1cfec562379e943a",
+      "size": 443026
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/BOSS_BATTLE.md",
+      "sha": "af3b0c0301a18047cd052d33c10f88100748dad0",
+      "size": 36048
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/chapters/roster_narration.md",
+      "sha": "943267718cffb158dc580ba55745ee1403023b20",
+      "size": 68994
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/chapters/arenes_production.md",
+      "sha": "fdff5a6a39fed02c66920003cd336fd53957ea32",
+      "size": 24991
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/chapters/aperture_combat_design_20261120.md",
+      "sha": "624716de141bf13c251b24999745bdf0e4a339bc",
+      "size": 57296
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/chapters/frame_data_pilote.md",
+      "sha": "73decb296218d02d2b7e17a2fb8f2b45b727147d",
+      "size": 14852
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/chapters/audit_et_sources.md",
+      "sha": "47da96f3907a63544fb7d2eb38d51d15c94c2f42",
+      "size": 6090
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/chapters/catalogue_extension_20261120.md",
+      "sha": "ff0793e19fe5497f21d061df6ebba94fcb39a5f3",
+      "size": 53672
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/chapters/vision_editoriale.md",
+      "sha": "1779aad3d6441e2a62f05d0ca7cbba20cf58a53b",
+      "size": 13469
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/chapters/systemes_combat.md",
+      "sha": "ff9122f50a9d977f89184bc021ecfbd795026ec8",
+      "size": 32781
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/chapters/archive_reference_contracts_20261120.md",
+      "sha": "8a21046a5b2f66c3378f1685531d4434b33b2937",
+      "size": 57480
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/chapters/projectiles_production_20261124.md",
+      "sha": "d13ef77f884d9184d38a7d3f9931979d8ab7cf2f",
+      "size": 18804
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/chapters/combine_encounter_design_20261120.md",
+      "sha": "1994fc91ce59c32b5fe1abe1111927d6b493112c",
+      "size": 74618
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/production/asset_audit.json",
+      "sha": "f6239d1966dd8bfdd7fb4f8dfb9da5e5ea9498d9",
+      "size": 38075
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/production/asset_audit.md",
+      "sha": "9037541aaaf2fe5558723ef171e7e35f32e96b6c",
+      "size": 5890
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/production/MISSING_TARGETS.md",
+      "sha": "b33723c42d9e3d7afe420fb03492e9edb88b0217",
+      "size": 105528
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/data/boss_battle_production.json",
+      "sha": "2469627722cbfb13540fd672b32eaec14ab857af",
+      "size": 27069
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/data/production_queue.json",
+      "sha": "c58a9be613179a638e3a8df64966454f2a0c8390",
+      "size": 652677
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/data/generated_art_register.json",
+      "sha": "79a29d39368c9fb3c5d14183cbfbd9293e6b85e1",
+      "size": 500358
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/data/animation_budget.json",
+      "sha": "9debea789e6d3228985603a208bdf62b541ace0a",
+      "size": 3175
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/data/combat_rules.json",
+      "sha": "82dd089764772a0b4e4728cedb93740c8a219278",
+      "size": 8413
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/data/boss_battle_catalog.json",
+      "sha": "1351e6a012878c49057865105ea58ae4687bae06",
+      "size": 81516
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/data/combine_encounter_design_20261120.json",
+      "sha": "efbcc53751f9c0f601584242c3c1106accdd0ad4",
+      "size": 200330
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/data/aperture_combat_design_20261120.json",
+      "sha": "f71bc5f9aa4c17b9635ab922fbdf58d982629269",
+      "size": 154251
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/data/stages.json",
+      "sha": "fb191045f3b4b683f2d85e185e89977f916e107c",
+      "size": 104229
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/data/asset_backlog.json",
+      "sha": "73223c342024083598931771264841f838ec5df7",
+      "size": 244691
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/data/catalogue_extension_20261120.json",
+      "sha": "c3169f1a35ca5901e23f7dd3ae12be7c9361dfdf",
+      "size": 145124
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/data/animation_inventory.json",
+      "sha": "04bd77cc43b91050ebc0e871d2cee4dfd76d9dbf",
+      "size": 3665
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/data/frame_data_pilote.json",
+      "sha": "515e5450ec009784e122242ffcfc923b049de74f",
+      "size": 256110
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/data/existing_visual_inventory.json",
+      "sha": "912c716a45e028b7a2500a9b9a433fb0f2ce66f1",
+      "size": 10254
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/data/asset_backlog.csv",
+      "sha": "0de4e3025ede3825ac8662df43c582186b972aff",
+      "size": 111444
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/data/roster.json",
+      "sha": "6126d67fc64231c0b4f346e8219858cb00d2f823",
+      "size": 146095
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/data/projectile_catalog_20261124.json",
+      "sha": "954a1c1cefdd1b3577d712f9e07342844e2a0ca0",
+      "size": 112590
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/data/archive_reference_contracts_20261120.json",
+      "sha": "5f83e27cd83646734b1e7770aaacabcb889ec214",
+      "size": 122199
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/data/boss_battle_rules.json",
+      "sha": "1306105ffc642cf5beeb57523ff83cff05debf42",
+      "size": 4292
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/technical/BOSS_BATTLE_VALIDATION.md",
+      "sha": "85e5c33d8e26bfbd95f9fcca87988b4b2b915933",
+      "size": 5531
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/technical/resonance_contracts.ts",
+      "sha": "49f8273ac120fa8d8ed0a9fdeb1bb032e2577386",
+      "size": 21346
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/deliverables/Half_Life_Resonance_Production_v1.xlsx",
+      "sha": "52e1d581065f07dd9d8ef001b69ba0f58a2fb908",
+      "size": 118546
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/deliverables/Half_Life_Resonance_Bible_v1.docx",
+      "sha": "cadd91633c924749f4e08fa211958d22ba73af65",
+      "size": 10738508
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/production/continuation_20261120_c/validation_summary.json",
+      "sha": "19d9f12029af753a0784e6b24482260bf62f1bec",
+      "size": 3953
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/production/continuation_20261120_c/coop_character_generation.json",
+      "sha": "bfe86c800c5d40ef30a8f52401aede77c19410ba",
+      "size": 9402
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/production/continuation_20261120_c/README.md",
+      "sha": "56087edb86f4249377a1d147cc9b62bb29b267a6",
+      "size": 9096
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/production/continuation_20261120_c/generation_register.json",
+      "sha": "730378914b0b60dbc956c6a1a0437f9257fe781f",
+      "size": 43771
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/production/continuation_20261124_f/source_reference_manifest.json",
+      "sha": "26910de3b6ea1c2cc44317d5b7143e135ede026c",
+      "size": 29950
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/production/continuation_20261124_f/stage_layer_review.json",
+      "sha": "5ff8ce183c0931e6658cbc871273593344dc6368",
+      "size": 11121
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/production/continuation_20261124_f/stage_layer_review.md",
+      "sha": "74962683871c8e57fcdebb1325a84145c79df9b0",
+      "size": 3707
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/production/continuation_20261124_f/generation_register.json",
+      "sha": "317577a6d8a323326518ff6ddbe1892cf41df3e5",
+      "size": 269812
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/production/continuation_20261120_d/machine_stage_generation.json",
+      "sha": "8d538b45e8653cdc67c54cd7662426119901f9f5",
+      "size": 27934
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/production/continuation_20261120_d/validation_summary.json",
+      "sha": "8f8d8849c4589285b4e36ce33f588dc7cdd5a936",
+      "size": 11228
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/production/continuation_20261120_d/character_generation.json",
+      "sha": "e4535adc78e193f56c96c003e0f9874c9a56268d",
+      "size": 23375
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/production/continuation_20261120_d/README.md",
+      "sha": "d1aefbbdb9a671b78ad7fca4b5131a4b9ba574ae",
+      "size": 14589
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/production/continuation_20261120_d/generation_register.json",
+      "sha": "223b0a8100fcca1346b06b08b6389b97f29da26b",
+      "size": 54724
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/production/continuation_20261120_b/RECOVERY_STATUS.md",
+      "sha": "d0ceb7300282a8982e5c39009da004bce7ca8fdb",
+      "size": 3432
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/production/continuation_20261120_b/stage_revision.json",
+      "sha": "e22c8b29d54a2eb1dda16026658a0901fca4d4a8",
+      "size": 3490
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/production/continuation_20261120_b/character_generation.json",
+      "sha": "6265fb80afe8f82b509e9cf81624422b42a12459",
+      "size": 21792
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/production/continuation_20261120_b/boss_generation.json",
+      "sha": "9d97865037468e753ad64e7235a5fa3bae3599c7",
+      "size": 13290
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/production/continuation_20261120_b/README.md",
+      "sha": "49e5edd0cab615621b4444473760a193d3f7c07c",
+      "size": 6115
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/production/continuation_20261120_e/stage_generation.json",
+      "sha": "9f0c838af44c396de7265ef02cc71b2452173554",
+      "size": 32789
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/production/continuation_20261120_e/alpha_review_previous_assets.json",
+      "sha": "77dc5ff75d5800ddd3294ed85a8883d9b6f8ee4c",
+      "size": 2391
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/production/continuation_20261120_e/validation_summary.json",
+      "sha": "5967831354c3660f5edef6b61e95cc99e2774259",
+      "size": 11547
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/production/continuation_20261120_e/stage_layer_review.json",
+      "sha": "498195a0b9a2db0b5dd0c13064fb9d27dd52228d",
+      "size": 2918
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/production/continuation_20261120_e/character_generation.json",
+      "sha": "628efa338fbb0c5dc847dd31e6339819064f257f",
+      "size": 29099
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/production/continuation_20261120_e/costume_boss_generation.json",
+      "sha": "9f7e2541ee4aeca2d1b578382826749e936f0f9e",
+      "size": 18923
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/production/continuation_20261120_e/README.md",
+      "sha": "6895c2607207533cde5e590c579209cc4b39dafa",
+      "size": 18331
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "docs/resonance/production/continuation_20261120_e/generation_register.json",
+      "sha": "a317a6e9fbdbdf24229e827a088cd7cba8c878e5",
+      "size": 76600
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "scripts/generate-original-score.mjs",
+      "sha": "d30c54a2072f18a5cc3f36977707dafe8cf48c21",
+      "size": 3411
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "scripts/coan-onboarding-audit.mjs",
+      "sha": "aca589880d047bd71515ddc29c1fd95a8dbf3f72",
+      "size": 2035
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "scripts/coan-ux-polish-audit.mjs",
+      "sha": "0ad424ee1f41e00cf36d44a053abad408fb01d25",
+      "size": 1628
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "scripts/coan-tauri-build-windows.ps1",
+      "sha": "f214c4dfba5db6f596cda8967c402435806b07bc",
+      "size": 1384
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "scripts/coan-release-notes.mjs",
+      "sha": "a1e25ede9631008f9545e10f80c6ef5ed04f7f4c",
+      "size": 2748
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "scripts/apply-tauri-package-patch.mjs",
+      "sha": "ddf22bdc3e607b89ec2c9e66cc03d805160f192d",
+      "size": 1019
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "scripts/coan-balance-audit.mjs",
+      "sha": "0006d239b3a8921b61ae34def3b7119a226f2ff9",
+      "size": 1748
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "scripts/audit-upgrade-pack.mjs",
+      "sha": "c9adf33c09c670b70f6203a4c67714ba72d4f6ee",
+      "size": 5054
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "scripts/sync-resonance-production.mjs",
+      "sha": "f322f4555f0a285e8265a0ce1ce38823671aac54",
+      "size": 30238
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "scripts/coan-new-game-audit.mjs",
+      "sha": "f4af0ef616eed55b59370ff2165b3f9cb656baf6",
+      "size": 1499
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "scripts/coan-tauri-build-windows.cmd",
+      "sha": "f71fc4ec7b820b3811f13d5d2664024110f5299c",
+      "size": 90
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "scripts/audit-resonance-production.mjs",
+      "sha": "337fb2c0bfd11ca9b174917c0b81887118aae7cf",
+      "size": 16336
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "scripts/validate-resonance-design.mjs",
+      "sha": "fe43413fe9bd6d4c11c8279ef5620387c27850ef",
+      "size": 15236
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "scripts/validate-resonance-boss-design.mjs",
+      "sha": "1c28f09bec90c79acd18c820e492b123af2d44cd",
+      "size": 4604
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "scripts/coan-tauri-packaging-audit.mjs",
+      "sha": "cb731ce457c8a481af34b6b90a74a93de72d4b64",
+      "size": 4463
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "scripts/coan-long-run-simulation.mjs",
+      "sha": "06f3818c7e22973c0798a10f46182aae1a0492ef",
+      "size": 819
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "scripts/coan-session-flow-audit.mjs",
+      "sha": "78c771f8a75241a17e1aad43fe3fdadd57c1f18e",
+      "size": 3306
+    },
+    {
+      "root": "/workspace/scratch/9e9f7b53022e/combine-administrator-simulator",
+      "path": "scripts/coan-pre-release-matrix.mjs",
+      "sha": "c6efb1ea6d208b62413237a6d48cd9c233049cbd",
+      "size": 736
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/README.md",
+      "sha": "16742e4926b28c2b4706b4cc6a0dfceadd4ee9f9",
+      "size": 2510
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/stage_city17_station_master.png",
+      "sha": "d7eca305c123f124565e4cd166a65a631f128487",
+      "size": 2803658
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/stage_black_mesa_testchamber_master.png",
+      "sha": "239daa83964baf5ddb15afad97cc98be2666e3a3",
+      "size": 2408365
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/prop_hev_suit_charger.png",
+      "sha": "a9d7114f8783605ee86567355a02cccfabe1717d",
+      "size": 2691794
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/layer_city17_distant_skyline.png",
+      "sha": "e8e214d9d841e8a754432655b4c6dd1b6a3852fb",
+      "size": 1545440
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/layer_black_mesa_floor.png",
+      "sha": "8471a0f81456691c466f67dc40ab872630b66a90",
+      "size": 641901
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/combine_elite_hl2_idle_left.png",
+      "sha": "bf91e440700db2c8bcde598feb82898655a556de",
+      "size": 1095642
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/stage_xen_hl1_master_f.png",
+      "sha": "524bae8497f7e068e714f6d6b496bfe02f57e9ce",
+      "size": 1743588
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/stage_old_aperture_portal2_master_f.png",
+      "sha": "37edcf84ca6c4d4df8704cb654956c6df3918fce",
+      "size": 2296317
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/stage_nova_courtyard_hl2_master_f.png",
+      "sha": "a5653c3ef6d4f50823db1d3598c1f2897b0b3f2b",
+      "size": 2046546
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/stage_lostcoast_monastery_master_f.png",
+      "sha": "35fa169a4d4e8ef661944c4528b53a76cccddd23",
+      "size": 2513007
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/stage_hldm_rocket_frenzy_master_f.png",
+      "sha": "4d72be876771f12517e82dc38f3504c07d06db76",
+      "size": 2882323
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/stage_hldm_pool_party_master_f.png",
+      "sha": "5d133b15c3aa26d812d2ae8bc35be01329dbc0b4",
+      "size": 2542560
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/stage_blastpit_hl1_master_f.png",
+      "sha": "5bcc9d484a9453199004eb3f9a76c6bf4cf83e20",
+      "size": 2494602
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/shock_trooper_op4_guard_f.png",
+      "sha": "76fe8eae46032293e2c9e41d9f9c1bc70dececf3",
+      "size": 852892
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/shephard_op4_guard_f.png",
+      "sha": "7075f67148298c2563bf52c1ac881d50e5db0b23",
+      "size": 511778
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/projectile_smg1_grenade_hl2_f.png",
+      "sha": "f59093f768797d30cc93eb030a06ff9c421d750c",
+      "size": 468571
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/projectile_hunter_flechette_f.png",
+      "sha": "acd64049a83112cafbd73a625447587f010eb540",
+      "size": 138931
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/projectile_crossbow_bolt_hl2_f.png",
+      "sha": "8e4329f6b39fc4c70e986d288a7fc6567ad7acfe",
+      "size": 111374
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/projectile_ar2_ball_f.png",
+      "sha": "eb146541d3e4db1a58e6b74b22646c34ab1b729c",
+      "size": 1408274
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/pit_drone_op4_guard_f.png",
+      "sha": "b4b8714fd8e3b870b28d09384a438c06b58d5e10",
+      "size": 789903
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/layer_ravenholm_near_f.png",
+      "sha": "103f631cd2afdb155a4b104d782caf95a4d198c3",
+      "size": 788856
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/layer_ravenholm_mid_f.png",
+      "sha": "1878f769bc54769553c1ccd9d17049b17635bca4",
+      "size": 1234847
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/layer_ravenholm_foreground_f.png",
+      "sha": "d88a0fcbd8f22f21304ac23c0d9579d6871e9556",
+      "size": 211604
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/layer_ravenholm_far_f.png",
+      "sha": "38439633450b8fe566dafac86e624dddadce2281",
+      "size": 604844
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/layer_canals_foreground_f.png",
+      "sha": "6503e4ecdb3feb0f562c8747d71093db92371a62",
+      "size": 168160
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/hunter_chopper_hl2_hover_left_f.png",
+      "sha": "33c8f0014731e86fa161ed13eb1837332bba9719",
+      "size": 1190079
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/houndeye_hl1_idle_left_f.png",
+      "sha": "e156f4c0090bc48e69ab1b0d13076ae14639af80",
+      "size": 1553107
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/gunship_hl2_hover_left_f.png",
+      "sha": "3d4d2440914b5f4c37be5b505fd41143e917c226",
+      "size": 1442668
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/grigori_hl2_guard_f.png",
+      "sha": "b596011e1f2a36120da6ec307e57b00166c9ae7a",
+      "size": 1058047
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/gina_decay_guard_f.png",
+      "sha": "fbdc1943b3f88e095e1a26f061e813ba04e447b8",
+      "size": 1400677
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/dropship_container_hl2_hover_right_f.png",
+      "sha": "c136e95927c29f83c9f92ee03dece262ffb0906e",
+      "size": 1705070
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/costume_shotgun_soldier_ep2_guard_left_f.png",
+      "sha": "30c40b28d9f3c93e2bc5a2b93af0229aeca28ccd",
+      "size": 1121428
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/costume_nova_guard_hl2_guard_left_f.png",
+      "sha": "75995206d4cf88f820efad8542df1c7aa74c6906",
+      "size": 1133144
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/costume_hecu_gasmask_hl1_guard_left_f.png",
+      "sha": "577f390beb0a22c51f6024f71ad256c98ce38748",
+      "size": 771790
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/bullsquid_hl1_idle_left_f.png",
+      "sha": "eaeb8093bc0014a0dbdf969b41a7a6673ed7d5be",
+      "size": 1327387
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/apc_hl2_idle_left_f.png",
+      "sha": "e279ff006e85d374aeeb7e577671f962c09242e8",
+      "size": 1099380
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_f/antlion_guard_hl2_idle_left_f.png",
+      "sha": "9d761b5b34d85a81dcfb6cdb33bab94ec04df26b",
+      "size": 1223238
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_e/layer_ravenholm_sky_e.png",
+      "sha": "f16e708b8a457031dd63a2824a198ff6fff07bf1",
+      "size": 1448558
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_e/layer_ravenholm_floor_e.png",
+      "sha": "a647f5d28fad82ebd893d61c3bd9a193bab8cf18",
+      "size": 506677
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_sky_e.png",
+      "sha": "401c2aafb220afe66dec530eaeef9a6209829f34",
+      "size": 1579557
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_near_water_e.png",
+      "sha": "1b6765b63c9c4f49c8eaa04e902d63457efd4bde",
+      "size": 983823
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_mid_structure_v2_e.png",
+      "sha": "f5a857ad56287dce292de3ce254b3e3dff35a8a7",
+      "size": 1942184
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_mid_structure_e.png",
+      "sha": "8bab9628547197d3bc9438fae83b20d8d84741b9",
+      "size": 1950267
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_far_city_e.png",
+      "sha": "fde46b0ff5a990985d7471f61b90a691f2b717a3",
+      "size": 535444
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_e/hunter_ep2_idle_e.png",
+      "sha": "bc67b42fe1bddb5d5b7e20678f9c17f229ffb4ea",
+      "size": 830063
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_e/dog_hl2_idle_e.png",
+      "sha": "cd4af59d3816a5d92c726f26c90c7b56515705d8",
+      "size": 1889988
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_e/costume_hecu_beret_hl1_guard_right_e.png",
+      "sha": "44bacab3ef3384b103838dcf949b4adc92a39133",
+      "size": 943278
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_e/boss_gargantua_hl1_rear_threequarter_e.png",
+      "sha": "78c8098cd3988e1722ab813a37a29b0fa9c332a3",
+      "size": 1307540
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_e/antlion_worker_ep2_idle_e.png",
+      "sha": "dbd1f378d05a9f57b7416c06253f44eb25037b95",
+      "size": 1878983
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_d/zombine_ep1_idle_d.png",
+      "sha": "3670bdd1df14c464d83e35bc6a9ce8570d68a364",
+      "size": 1143085
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_d/strider_whiteforest_ep2_idle_left_d.png",
+      "sha": "48a05b3c1be6a31ca86b76ae966443586cf7d004",
+      "size": 474464
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_d/stage_ravenholm_master_d.png",
+      "sha": "0268f1a52fd2079b25d224ef807b431b87b45c34",
+      "size": 2679945
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_d/stage_canals_master_d.png",
+      "sha": "e89532623a90a0b8fd769bcadd05ab1409f93452",
+      "size": 3197487
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_d/overwatch_soldier_hl2_idle_left_d.png",
+      "sha": "e44fab286017fe5a6660db2e74144a1cac20df24",
+      "size": 1363467
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_d/layer_canals_floor_d.png",
+      "sha": "e129bf7b333b1263d4a7d05ec7546f6708616290",
+      "size": 732214
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_d/antlion_hl2_idle_d.png",
+      "sha": "0ba34b9b72cacca801b08b5905480f66e3883b55",
+      "size": 1279083
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_d/advisor_extraction_ep2_idle_right_d.png",
+      "sha": "829153de4c218eaec17f224e1feb854eb60cdb9d",
+      "size": 1377294
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_c/stage_portal2_turret_factory_master_c.png",
+      "sha": "f67319920496889e66c1bda37be2fe155b6cae85",
+      "size": 1902840
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_c/rocket_turret_portal1_idle_left_v2_c.png",
+      "sha": "cd01739111da686043ac96159cacead94f7db5bf",
+      "size": 1379728
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_c/rocket_turret_portal1_idle_left_c.png",
+      "sha": "bf9b730bc879eddfb43e224d581f76d27d38a201",
+      "size": 1658002
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_c/layer_portal2_turret_factory_floor_c.png",
+      "sha": "db4f036ee345a7528923b0ff262de580cdce00fc",
+      "size": 580863
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_c/grady_deskjob_core_idle_c.png",
+      "sha": "5b76855c24ceb51c8935f761782c8bd0f06b39f2",
+      "size": 1291991
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_c/costume_chell_portal2_idle_c.png",
+      "sha": "9f077bdf9478f980b726495b8a31f108c07b3554",
+      "size": 1491548
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_c/chell_portal1_idle_c.png",
+      "sha": "9112b7505ead159b1c47c38894bb41e0c8f68f5d",
+      "size": 1427826
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_b/stage_whiteforest_ep2_hangar_master_v2.png",
+      "sha": "c7f69f3454c3376dd352e8764a7d9aba58d19463",
+      "size": 2561525
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_b/stage_whiteforest_ep2_hangar_master.png",
+      "sha": "5a9aca072b4ee3b56751607cc5bafa794409d01c",
+      "size": 2888943
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_b/gman_hl2_idle_right.png",
+      "sha": "e30ff6200661ca7d868c99499c8c313bb9b15278",
+      "size": 1509587
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_b/colette_decay_idle_right.png",
+      "sha": "e9405935f41dafb8872ecee1c60bae8ef3f3ad25",
+      "size": 1732456
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_b/apache_hecu_hl1_hover_left.png",
+      "sha": "d706040a2cfc310e16a9be019f7e5b3b397c5c9b",
+      "size": 1045538
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261120_b/abrams_hl1_idle_left.png",
+      "sha": "40dc2eea2f9cb17d87db3080c552148bca2b9eb6",
+      "size": 1462551
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_xen_hl1_master_h.png",
+      "sha": "2b367e088907a1fe67854e382c7f13be72053129",
+      "size": 1879837
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_xen_dm_hl25_master_h.png",
+      "sha": "b19658bcba1000450e25b972dffdd69fac4c8663",
+      "size": 2402580
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_rust_mill_hl25_master_h.png",
+      "sha": "c4342faa59608ed59c00ce5ff790c2f53d5cfc4e",
+      "size": 2341168
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_rocket_frenzy_hl25_master_h.png",
+      "sha": "4d82f7e36ebcf7f61f6ba741715cb6c4ca993c6a",
+      "size": 2724529
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_pool_party_hl25_master_h.png",
+      "sha": "3e3750dc9e4f609020b8ed47d2488aafac79c528",
+      "size": 2631944
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_lambda_hl1_master_h.png",
+      "sha": "a48995bce340e7c43c96ce261f48f818b05398fd",
+      "size": 2694099
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_double_cross_hl25_master_h.png",
+      "sha": "d6f518a9c71e63889eb202f092b35543b964486a",
+      "size": 2251280
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_disposal_hl25_master_h.png",
+      "sha": "1e632abe33c1bd3cc2bf7282fd82955884b6123c",
+      "size": 2631948
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_contamination_hl25_master_h.png",
+      "sha": "730f03dc8590339519261b95dbfac07c6178868a",
+      "size": 2900782
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_blastpit_hl1_master_h.png",
+      "sha": "f53a4f2ea1e16b4468bcefd7f2938fb684e2b0fd",
+      "size": 2972162
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_spore_opfor_h.png",
+      "sha": "43814c018c8feb0546dea470f80771e8d7cd11b7",
+      "size": 1141895
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_snark_hl1_h.png",
+      "sha": "4db4133ac3026638a4048722ec97ac98701fa9fe",
+      "size": 578013
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_rpg_rocket_hl1_h.png",
+      "sha": "d3d68b96586cb4fd42c85c245ed034319fed0ca8",
+      "size": 911260
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_repulsion_gel_portal2_h.png",
+      "sha": "24c084468f088b79e7dee9f7bcb834f3ec77cc46",
+      "size": 1132618
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_propulsion_gel_portal2_h.png",
+      "sha": "43145158f9e7218803fa6438b5359687734c0db1",
+      "size": 1445064
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_pit_drone_spine_opfor_h.png",
+      "sha": "582e7b1e6f5295dcc0bc3a7a837af84b16b3e7c6",
+      "size": 406021
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_hunter_flechette_ep2_h.png",
+      "sha": "858500916dd8767f8004b2ee6f18533a062c8fb3",
+      "size": 291720
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_hornet_hl1_h.png",
+      "sha": "0e9b3ee87722ec2b76a72a4430833915360f7b58",
+      "size": 672200
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_helicopter_bomb_hl2_h.png",
+      "sha": "c8fe065a9ddc8b73bcf74c4345fcd1844e4b0f5d",
+      "size": 1737714
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_hand_grenade_hl2_h.png",
+      "sha": "da57b3788b7d29996edfa6bda1dee38a5e9332ed",
+      "size": 1245530
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_hand_grenade_hl1_h.png",
+      "sha": "5abf94539b2f467e7e28a1b8fdbfff7d66dea6b6",
+      "size": 1292290
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_gonarch_mortar_hl1_h.png",
+      "sha": "b768c73af8255c1985a7cc2b93046f085e2993e5",
+      "size": 1119459
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_energy_pellet_portal1_h.png",
+      "sha": "cc4d6ca8f2cdda0b93d398b9ef60cb126a9221a4",
+      "size": 1343524
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_crossbow_bolt_hl2_h.png",
+      "sha": "fa0d185067f9fc391707582fd012bc474d3675d1",
+      "size": 550012
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_crossbow_bolt_hl1_h.png",
+      "sha": "e9e5b8d7859e9607163f0b6e2588c0212f73d6cb",
+      "size": 413662
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_conversion_gel_portal2_h.png",
+      "sha": "2d8f64fa8b3b9f1f7198a2a4d90a1c869dfdc926",
+      "size": 1268223
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_controller_orb_hl1_h.png",
+      "sha": "a1fc624ad22d90e3ebbdee004af1ac3ff75e0fff",
+      "size": 1024076
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_bullsquid_spit_hl1_h.png",
+      "sha": "cdf094498f34bbafecd7164cdef04a7ce0fe394b",
+      "size": 317782
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_ar2_energy_ball_hl2_h.png",
+      "sha": "04c497fd364c0790404215c2513e32bb9286ea10",
+      "size": 1180068
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_vortigaunt_zap_hl1_h.png",
+      "sha": "9105362e244e43569280acdb1e544347a4536908",
+      "size": 539431
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_thermal_beam_portal2_v2_h.png",
+      "sha": "82a784a020615bbf282dbf62083838bf32db6903",
+      "size": 698290
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_thermal_beam_portal2_h.png",
+      "sha": "373a92b47ef7252f6ab03d86a2b72aaacedd03ef",
+      "size": 313047
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_portal_blue_portal1_h.png",
+      "sha": "3513906372499ac4fc9b4b2265fda50f0f180a27",
+      "size": 1518362
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_houndeye_sonic_ring_hl1_h.png",
+      "sha": "ef1646bca774221477c5f1685468e5d4eaa63732",
+      "size": 972735
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_hard_light_bridge_portal2_h.png",
+      "sha": "9dbcd72eb3b72f642b87761dfd6b6bb1bac56aa2",
+      "size": 262371
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/machines/osprey_hl1_hover_h.png",
+      "sha": "a6b6cc1a81660f51babedc408b963bdd3ec10649",
+      "size": 741898
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/machines/bradley_hl1_idle_h.png",
+      "sha": "584c0261b49479c197595e6f6b9b3b0213e2b360",
+      "size": 1124376
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/heroes/vortigaunt_hl2_idle_h.png",
+      "sha": "d0d465d1364818a39701103ae5637856dab58fc0",
+      "size": 1124509
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/heroes/shephard_op4_idle_h.png",
+      "sha": "7371c634fc68174929f79ccb1fd67c9b021b1e0a",
+      "size": 793526
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/heroes/grigori_hl2_idle_h.png",
+      "sha": "54ca1226a8dfdc0d6de597b498a40bae69df8bca",
+      "size": 982194
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/heroes/gordon_hl2_idle_h.png",
+      "sha": "2d59793bd719a9766ed2a152fb4847b3b7c49d47",
+      "size": 973665
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/heroes/eli_hl2_idle_h.png",
+      "sha": "b762e29d96f85294f7985953f3962273d81d3d8a",
+      "size": 1711288
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/heroes/breen_hl2_idle_h.png",
+      "sha": "b81c750f06e19e52a71fc502b82b1e306883f2eb",
+      "size": 1226368
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/heroes/barney_hl2_idle_h.png",
+      "sha": "0e4a601dc22f1b7c6a4fbf48fc5c2c535ceb141f",
+      "size": 1114409
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/heroes/alyx_hl2_idle_h.png",
+      "sha": "463fe340a5e0c1425a3b2a1a29adce0c358d2970",
+      "size": 1770075
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/costumes/proto_barney_hl25_multiplayer_idle_h.png",
+      "sha": "d91652d8f9d30282d960a24cb275c29e72c768bc",
+      "size": 1412321
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/costumes/ivan_hl25_multiplayer_idle_h.png",
+      "sha": "e7360b2487a0ee6c98146d04d935f4d304c89975",
+      "size": 1701210
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/costumes/costume_scientist_luther_hl1_idle_h.png",
+      "sha": "ed664c26a79bdd3824d69f6ef70221c8a0e28a30",
+      "size": 1535888
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/costumes/costume_scientist_glasses_hl1_idle_h.png",
+      "sha": "6407372ea9945d2b26e86e8c3c2c8cd8664b041b",
+      "size": 1516753
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/costumes/costume_scientist_einstein_hl1_idle_h.png",
+      "sha": "cb86bf0bd2dcdd2c757739c600c92bed8aa9bdea",
+      "size": 1583003
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/characters/shock_trooper_op4_idle_h.png",
+      "sha": "dd879e6015351d1e7df0fded19054623119b4db5",
+      "size": 1910243
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/characters/scientist_slick_hl1_idle_h.png",
+      "sha": "16eac58cdc511951f46d197303e8dde76f038917",
+      "size": 1553287
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/characters/manhack_hl2_hover_v2_h.png",
+      "sha": "c563ce1adb4d0a288785451e57f9a363107a119d",
+      "size": 791066
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/characters/houndeye_hl1_idle_v2_h.png",
+      "sha": "f544169580ae8b8822b4d88373c08ba60c547c08",
+      "size": 2067721
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/characters/headcrab_hl1_idle_v2_h.png",
+      "sha": "fe57f7b8d5ee54cc23ac5c81d7030f9abfdccef2",
+      "size": 1705935
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/characters/gonome_op4_idle_h.png",
+      "sha": "fc1184610390b00e88ae78118ac5f22c7fa7e527",
+      "size": 1014170
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/characters/bullsquid_hl1_idle_h.png",
+      "sha": "5368f997bafc22855634eb9201a54c8fdd7ec92a",
+      "size": 1267390
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/characters/alien_grunt_hl1_idle_h.png",
+      "sha": "80cc5d175bdf01fe1f0197633af3402e591f85a3",
+      "size": 1469656
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/characters/alien_controller_hl1_hover_h.png",
+      "sha": "22e5630f3ebaefecbe260add3dd2bce3acf09483",
+      "size": 1062098
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/bosses/tentacle_blastpit_hl1_idle_h.png",
+      "sha": "ad5d1e1207f3fe55d187cc999fc0709ed2b05e03",
+      "size": 767824
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/bosses/nihilanth_hl1_idle_h.png",
+      "sha": "76b1ac8045e437337e55e616edc5a164812e765d",
+      "size": 795228
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/bosses/gonarch_hl1_idle_h_v2.png",
+      "sha": "be288198c896d8ceaf9c475baaa4c86e7dcf3c94",
+      "size": 1949723
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_h/bosses/gonarch_hl1_idle_h.png",
+      "sha": "fd74ec71b99063ebda03fe2ed10827be0c46eab1",
+      "size": 1746091
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_i/characters/civil_protection_hl2_guard_i.png",
+      "sha": "366561d318db75ee976e05cbefdd46ab66dc1965",
+      "size": 998525
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_i/effects/fx_portal_orange_active_rim_portal1_i.png",
+      "sha": "96bcea412749bf8bd44de623fd971c79132e8747",
+      "size": 1692184
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_i/effects/fx_gauss_primary_hl1_i.png",
+      "sha": "66a05c678e6c329b0d6fba38a1566975d913c832",
+      "size": 182623
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_i/costumes/costume_gman_hl1_idle_i.png",
+      "sha": "475598354d0a211c411184b4e74b1894956b0008",
+      "size": 1263090
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_i/bosses/gene_worm_op4_idle_i.png",
+      "sha": "40ed20039b4e83b02aefa3b3429e308e95f5f3ce",
+      "size": 1848219
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_i/bosses/pit_worm_op4_idle_i.png",
+      "sha": "505d36e4f1f76b146f1ade9f82126c7856d8f9b6",
+      "size": 1427445
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_i/stages/stage_relaxation_vault_portal1_master_i.png",
+      "sha": "c4e0376cd55d45cd68cc4a97e18d8947705e147f",
+      "size": 2299168
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_i/stages/stage_tram_hl1_master_i.png",
+      "sha": "bf645a39a5f8ffc6370e1c70a3378f3a3b093a48",
+      "size": 2231631
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_i/stages/stage_black_mesa_east_hl2_master_i.png",
+      "sha": "be50d1f1f29c33d33851b05cf03622cb55e2b630",
+      "size": 3086279
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_i/supplement/combine_grunt_hla_idle_i.png",
+      "sha": "c6bb97153d01f2b32e92d48c1576164ab1de4d65",
+      "size": 1621197
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_i/supplement/combine_charger_hla_idle_i.png",
+      "sha": "ab429e02b9993a1756aec352d3a08d116c050aad",
+      "size": 2248920
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_i/supplement/combine_suppressor_hla_idle_i.png",
+      "sha": "68c8c875b7091bed01be715a799765ac658795a6",
+      "size": 2091304
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_i/machines/city_scanner_hl2_idle_i.png",
+      "sha": "2415544693eddc54af49a1d264346f86710cb66b",
+      "size": 1700926
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "assets/resonance/candidates/continuation_20261124_i/machines/rollermine_hl2_active_i.png",
+      "sha": "95a7d57a89a6ffd8336c44edc9fc393731ffcbc8",
+      "size": 1831779
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/README.md",
+      "sha": "6e4bab83e23f36ff25e2d4f6b93a9e3bad14428d",
+      "size": 12501
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/BOSS_BATTLE.md",
+      "sha": "af3b0c0301a18047cd052d33c10f88100748dad0",
+      "size": 36048
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/BIBLE.md",
+      "sha": "27460fa0162f655bb95c2a8dd206b1f85eaa7f1e",
+      "size": 444433
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/technical/resonance_contracts.ts",
+      "sha": "49f8273ac120fa8d8ed0a9fdeb1bb032e2577386",
+      "size": 21346
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/technical/BOSS_BATTLE_VALIDATION.md",
+      "sha": "85e5c33d8e26bfbd95f9fcca87988b4b2b915933",
+      "size": 5531
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/asset_audit.md",
+      "sha": "531d9813cbe24e44a905321153e7921d692b33ee",
+      "size": 19242
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/asset_audit.json",
+      "sha": "f21758aefef2b8da5206bde76e15a0fc25a42fbe",
+      "size": 133669
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/MISSING_TARGETS.md",
+      "sha": "0ef8c09ed377d2ff9909cf7d990862c2f01c116c",
+      "size": 145079
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/deliverables/Half_Life_Resonance_Production_v1.xlsx",
+      "sha": "52e1d581065f07dd9d8ef001b69ba0f58a2fb908",
+      "size": 118546
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/deliverables/Half_Life_Resonance_Bible_v1.docx",
+      "sha": "cadd91633c924749f4e08fa211958d22ba73af65",
+      "size": 10738508
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/data/projectile_catalog_20261124.json",
+      "sha": "8a7e1dd8d8f8a9820cc7b335fd6e1c7e78ddbfbd",
+      "size": 312615
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/data/catalogue_extension_20261124.json",
+      "sha": "c8d8b6ddfc310b53e2ec6e509a0a72dd07eee5b4",
+      "size": 6965
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/data/stages.json",
+      "sha": "fb191045f3b4b683f2d85e185e89977f916e107c",
+      "size": 104229
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/data/roster.json",
+      "sha": "6126d67fc64231c0b4f346e8219858cb00d2f823",
+      "size": 146095
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/data/production_queue.json",
+      "sha": "a29f57882e7cef7f452eb4d885321853e33591fd",
+      "size": 992228
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/data/generated_art_register.json",
+      "sha": "f44447c271799da625bb65de3ee32f8ae1223b5d",
+      "size": 900216
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/data/frame_data_pilote.json",
+      "sha": "515e5450ec009784e122242ffcfc923b049de74f",
+      "size": 256110
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/data/existing_visual_inventory.json",
+      "sha": "912c716a45e028b7a2500a9b9a433fb0f2ce66f1",
+      "size": 10254
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/data/combine_encounter_design_20261120.json",
+      "sha": "efbcc53751f9c0f601584242c3c1106accdd0ad4",
+      "size": 200330
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/data/combat_rules.json",
+      "sha": "82dd089764772a0b4e4728cedb93740c8a219278",
+      "size": 8413
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/data/catalogue_extension_20261120.json",
+      "sha": "f50d7b3e25712c74855ccb271eec13d258de1681",
+      "size": 145325
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/data/boss_battle_rules.json",
+      "sha": "1306105ffc642cf5beeb57523ff83cff05debf42",
+      "size": 4292
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/data/boss_battle_production.json",
+      "sha": "2469627722cbfb13540fd672b32eaec14ab857af",
+      "size": 27069
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/data/boss_battle_catalog.json",
+      "sha": "1351e6a012878c49057865105ea58ae4687bae06",
+      "size": 81516
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/data/asset_backlog.json",
+      "sha": "73223c342024083598931771264841f838ec5df7",
+      "size": 244691
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/data/asset_backlog.csv",
+      "sha": "0de4e3025ede3825ac8662df43c582186b972aff",
+      "size": 111444
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/data/archive_reference_contracts_20261120.json",
+      "sha": "5f83e27cd83646734b1e7770aaacabcb889ec214",
+      "size": 122199
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/data/aperture_combat_design_20261120.json",
+      "sha": "f71bc5f9aa4c17b9635ab922fbdf58d982629269",
+      "size": 154251
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/data/animation_inventory.json",
+      "sha": "04bd77cc43b91050ebc0e871d2cee4dfd76d9dbf",
+      "size": 3665
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/data/animation_budget.json",
+      "sha": "9debea789e6d3228985603a208bdf62b541ace0a",
+      "size": 3175
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/chapters/projectiles_production_20261124.md",
+      "sha": "af4a006c7dc5542101a75e4ed447955505653ccc",
+      "size": 19131
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/chapters/vision_editoriale.md",
+      "sha": "1779aad3d6441e2a62f05d0ca7cbba20cf58a53b",
+      "size": 13469
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/chapters/systemes_combat.md",
+      "sha": "ff9122f50a9d977f89184bc021ecfbd795026ec8",
+      "size": 32781
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/chapters/roster_narration.md",
+      "sha": "943267718cffb158dc580ba55745ee1403023b20",
+      "size": 68994
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/chapters/frame_data_pilote.md",
+      "sha": "73decb296218d02d2b7e17a2fb8f2b45b727147d",
+      "size": 14852
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/chapters/combine_encounter_design_20261120.md",
+      "sha": "1994fc91ce59c32b5fe1abe1111927d6b493112c",
+      "size": 74618
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/chapters/catalogue_extension_20261120.md",
+      "sha": "ff0793e19fe5497f21d061df6ebba94fcb39a5f3",
+      "size": 53672
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/chapters/audit_et_sources.md",
+      "sha": "47da96f3907a63544fb7d2eb38d51d15c94c2f42",
+      "size": 6090
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/chapters/arenes_production.md",
+      "sha": "fdff5a6a39fed02c66920003cd336fd53957ea32",
+      "size": 24991
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/chapters/archive_reference_contracts_20261120.md",
+      "sha": "8a21046a5b2f66c3378f1685531d4434b33b2937",
+      "size": 57480
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/chapters/aperture_combat_design_20261120.md",
+      "sha": "624716de141bf13c251b24999745bdf0e4a339bc",
+      "size": 57296
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/recovery_20261124/GALLERY.md",
+      "sha": "e1a5d7adcf29c871abcaab9781819e89289e1667",
+      "size": 16950
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/recovery_20261124/README.md",
+      "sha": "54e03cc7b3ebdc85dba2620969b092d2b5ddd4ce",
+      "size": 7629
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/recovery_20261124/checkpoint_asset_audit.md",
+      "sha": "a5f2ae62d17d5e372fdef9ea01927ca6c4a675b4",
+      "size": 17469
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/recovery_20261124/checkpoint_asset_audit.json",
+      "sha": "1b5d0ce27d4aec58ddf3b1440f52cca4c4607ac3",
+      "size": 120694
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/recovery_20261124/recovery_manifest.json",
+      "sha": "cdda7cf613bf0c0b664cd1761ea78dfdda53c301",
+      "size": 68729
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/recovery_20261124/projectile_catalog_merge.json",
+      "sha": "2d26d419aba9eac80b499977135ee59023bb69c3",
+      "size": 8501
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261124_h/projectile_catalog_original.json",
+      "sha": "cdcdd34ad7db94bccf395085fe36efc64fddc886",
+      "size": 146029
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261124_h/visual_qa_h.json",
+      "sha": "757eb2bf255dd6047bc2514494c3162d2ae14f73",
+      "size": 4806
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261124_h/stage_prompts.json",
+      "sha": "1893b96fe9ebde72b795b5e0555d728ee74d8e14",
+      "size": 40710
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261124_h/stage_generation.json",
+      "sha": "74c518efecb3020cb446a55e7fb04d072c0c8dcf",
+      "size": 53364
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261124_h/root_generation.json",
+      "sha": "1d23e02b4fd24558272576de7ddd722e7a7ecb96",
+      "size": 53662
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261124_h/projectile_generation.json",
+      "sha": "9aec6297ff6f4ce7e19eb150bf546acfff7447ab",
+      "size": 121699
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261124_h/hero_generation.json",
+      "sha": "f8cf12a8e09ae304ba835ec68ae8735390bb0b40",
+      "size": 42902
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261124_h/boss_generation.json",
+      "sha": "df6d6bd3b73224d5fd460edb30e80ac8e8dd1358",
+      "size": 12861
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261124_h/baseline_missing_inventory.json",
+      "sha": "69a632bcc0628038a14df07513bcd6e9c138456d",
+      "size": 346751
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261124_h/STAGES.md",
+      "sha": "a5d3b29fa82bf9e27a5eb1a816b47f6124c43cc6",
+      "size": 4795
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261124_h/README.md",
+      "sha": "7b329ebfbca294409e85503cba8546c75742e019",
+      "size": 13123
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261124_h/PROJECTILES.md",
+      "sha": "861d782e540013968459cbe876edbd0bfe863566",
+      "size": 27800
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261124_h/MISSING_BASELINE.md",
+      "sha": "975b1a5d64d1be4d1f3789f58878ada70be6f721",
+      "size": 17984
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261124_h/GALLERY.md",
+      "sha": "6f4ad286f676a536289fe68d6a8a81fb434c2827",
+      "size": 24663
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261124_f/projectile_catalog_original.json",
+      "sha": "954a1c1cefdd1b3577d712f9e07342844e2a0ca0",
+      "size": 112590
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261124_f/stage_layer_review.md",
+      "sha": "74962683871c8e57fcdebb1325a84145c79df9b0",
+      "size": 3707
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261124_f/stage_layer_review.json",
+      "sha": "5ff8ce183c0931e6658cbc871273593344dc6368",
+      "size": 11121
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261124_f/source_reference_manifest.json",
+      "sha": "26910de3b6ea1c2cc44317d5b7143e135ede026c",
+      "size": 29950
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261124_f/generation_register.json",
+      "sha": "317577a6d8a323326518ff6ddbe1892cf41df3e5",
+      "size": 269812
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261124_i/README.md",
+      "sha": "58aa13edde4643c8b30b1a7d3a35872535eef391",
+      "size": 7715
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261124_i/GALLERY.md",
+      "sha": "8ec40c40741fd533c0088c39816beda1a08c9ff9",
+      "size": 6868
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261124_i/generation_register.json",
+      "sha": "57de0d64f992364dad4c7dcfd38ca478d4a344b2",
+      "size": 96288
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261124_i/effects_generation.json",
+      "sha": "69eea4307c4824ede7e98317b76ed7e41e084040",
+      "size": 13963
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261124_i/root_generation.json",
+      "sha": "85c6d9e67ad2abc90a9db0a932d92c3853714f80",
+      "size": 28693
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261124_i/stage_generation.json",
+      "sha": "f82c6c45129955ac297cce6e920fe522cd53d7a2",
+      "size": 18658
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261124_i/supplement_generation.json",
+      "sha": "81be35d1db3545dc51dc4aedc65fc8cfe6fbf794",
+      "size": 36511
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261120_e/validation_summary.json",
+      "sha": "5967831354c3660f5edef6b61e95cc99e2774259",
+      "size": 11547
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261120_e/stage_layer_review.json",
+      "sha": "498195a0b9a2db0b5dd0c13064fb9d27dd52228d",
+      "size": 2918
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261120_e/stage_generation.json",
+      "sha": "9f0c838af44c396de7265ef02cc71b2452173554",
+      "size": 32789
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261120_e/generation_register.json",
+      "sha": "a317a6e9fbdbdf24229e827a088cd7cba8c878e5",
+      "size": 76600
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261120_e/costume_boss_generation.json",
+      "sha": "9f7e2541ee4aeca2d1b578382826749e936f0f9e",
+      "size": 18923
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261120_e/character_generation.json",
+      "sha": "628efa338fbb0c5dc847dd31e6339819064f257f",
+      "size": 29099
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261120_e/alpha_review_previous_assets.json",
+      "sha": "77dc5ff75d5800ddd3294ed85a8883d9b6f8ee4c",
+      "size": 2391
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261120_e/README.md",
+      "sha": "6895c2607207533cde5e590c579209cc4b39dafa",
+      "size": 18331
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261120_d/validation_summary.json",
+      "sha": "8f8d8849c4589285b4e36ce33f588dc7cdd5a936",
+      "size": 11228
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261120_d/machine_stage_generation.json",
+      "sha": "8d538b45e8653cdc67c54cd7662426119901f9f5",
+      "size": 27934
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261120_d/generation_register.json",
+      "sha": "223b0a8100fcca1346b06b08b6389b97f29da26b",
+      "size": 54724
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261120_d/character_generation.json",
+      "sha": "e4535adc78e193f56c96c003e0f9874c9a56268d",
+      "size": 23375
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261120_d/README.md",
+      "sha": "d1aefbbdb9a671b78ad7fca4b5131a4b9ba574ae",
+      "size": 14589
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261120_c/validation_summary.json",
+      "sha": "19d9f12029af753a0784e6b24482260bf62f1bec",
+      "size": 3953
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261120_c/generation_register.json",
+      "sha": "730378914b0b60dbc956c6a1a0437f9257fe781f",
+      "size": 43771
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261120_c/coop_character_generation.json",
+      "sha": "bfe86c800c5d40ef30a8f52401aede77c19410ba",
+      "size": 9402
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261120_c/README.md",
+      "sha": "56087edb86f4249377a1d147cc9b62bb29b267a6",
+      "size": 9096
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261120_b/stage_revision.json",
+      "sha": "e22c8b29d54a2eb1dda16026658a0901fca4d4a8",
+      "size": 3490
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261120_b/character_generation.json",
+      "sha": "6265fb80afe8f82b509e9cf81624422b42a12459",
+      "size": 21792
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261120_b/boss_generation.json",
+      "sha": "9d97865037468e753ad64e7235a5fa3bae3599c7",
+      "size": 13290
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261120_b/RECOVERY_STATUS.md",
+      "sha": "d0ceb7300282a8982e5c39009da004bce7ca8fdb",
+      "size": 3432
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "docs/resonance/production/continuation_20261120_b/README.md",
+      "sha": "49e5edd0cab615621b4444473760a193d3f7c07c",
+      "size": 6115
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "scripts/validate-resonance-design.mjs",
+      "sha": "d8a215bfa5395e3b6934a621c314fae04fc9839f",
+      "size": 15399
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "scripts/validate-resonance-boss-design.mjs",
+      "sha": "1c28f09bec90c79acd18c820e492b123af2d44cd",
+      "size": 4604
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "scripts/sync-resonance-production.mjs",
+      "sha": "33ebf430b877b6f552e03d95baf315b51275439d",
+      "size": 34464
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "scripts/generate-original-score.mjs",
+      "sha": "d30c54a2072f18a5cc3f36977707dafe8cf48c21",
+      "size": 3411
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "scripts/coan-ux-polish-audit.mjs",
+      "sha": "0ad424ee1f41e00cf36d44a053abad408fb01d25",
+      "size": 1628
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "scripts/coan-tauri-packaging-audit.mjs",
+      "sha": "cb731ce457c8a481af34b6b90a74a93de72d4b64",
+      "size": 4463
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "scripts/coan-tauri-build-windows.ps1",
+      "sha": "f214c4dfba5db6f596cda8967c402435806b07bc",
+      "size": 1384
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "scripts/coan-tauri-build-windows.cmd",
+      "sha": "f71fc4ec7b820b3811f13d5d2664024110f5299c",
+      "size": 90
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "scripts/coan-session-flow-audit.mjs",
+      "sha": "78c771f8a75241a17e1aad43fe3fdadd57c1f18e",
+      "size": 3306
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "scripts/coan-release-notes.mjs",
+      "sha": "a1e25ede9631008f9545e10f80c6ef5ed04f7f4c",
+      "size": 2748
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "scripts/coan-pre-release-matrix.mjs",
+      "sha": "c6efb1ea6d208b62413237a6d48cd9c233049cbd",
+      "size": 736
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "scripts/coan-onboarding-audit.mjs",
+      "sha": "aca589880d047bd71515ddc29c1fd95a8dbf3f72",
+      "size": 2035
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "scripts/coan-new-game-audit.mjs",
+      "sha": "f4af0ef616eed55b59370ff2165b3f9cb656baf6",
+      "size": 1499
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "scripts/coan-long-run-simulation.mjs",
+      "sha": "06f3818c7e22973c0798a10f46182aae1a0492ef",
+      "size": 819
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "scripts/coan-balance-audit.mjs",
+      "sha": "0006d239b3a8921b61ae34def3b7119a226f2ff9",
+      "size": 1748
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "scripts/audit-upgrade-pack.mjs",
+      "sha": "c9adf33c09c670b70f6203a4c67714ba72d4f6ee",
+      "size": 5054
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "scripts/audit-resonance-production.mjs",
+      "sha": "337fb2c0bfd11ca9b174917c0b81887118aae7cf",
+      "size": 16336
+    },
+    {
+      "root": "/tmp/resonance-edbb",
+      "path": "scripts/apply-tauri-package-patch.mjs",
+      "sha": "ddf22bdc3e607b89ec2c9e66cc03d805160f192d",
+      "size": 1019
+    }
+  ],
+  "raw_output_snapshot": [
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-f918bc9d-bb15-420b-8bdb-2cefc4ff2fa5.png",
+      "sha": "a1fc624ad22d90e3ebbdee004af1ac3ff75e0fff",
+      "size": 1024076
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-b048230c-f265-4dd5-b334-69a8e11d951e.png",
+      "sha": "395b68255d45a61adb00ab265e56fb09be46405f",
+      "size": 2055918
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-158ec94e-a251-46bf-bad7-839871609e6a.png",
+      "sha": "dd879e6015351d1e7df0fded19054623119b4db5",
+      "size": 1910243
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-613ca0ff-a83c-47a3-8708-7bee14882ec6.png",
+      "sha": "b762e29d96f85294f7985953f3962273d81d3d8a",
+      "size": 1711288
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-8271567d-7afd-4df0-8b2c-2870bd6eadd8.png",
+      "sha": "43145158f9e7218803fa6438b5359687734c0db1",
+      "size": 1445064
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-ee230c16-70dc-434c-88cc-2a3fd9216f97.png",
+      "sha": "4d82f7e36ebcf7f61f6ba741715cb6c4ca993c6a",
+      "size": 2724529
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-62d9b209-14de-4180-a4e0-7cbbc023d6cd.png",
+      "sha": "584c0261b49479c197595e6f6b9b3b0213e2b360",
+      "size": 1124376
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-73adbdd9-c515-4418-a371-f67c97a30d6e.png",
+      "sha": "373a92b47ef7252f6ab03d86a2b72aaacedd03ef",
+      "size": 313047
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-41e0f8ac-b6d5-42bb-b774-7a236eacee59.png",
+      "sha": "80cc5d175bdf01fe1f0197633af3402e591f85a3",
+      "size": 1469656
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-797e265d-3bf2-47c4-9f99-4ddc0d1f4a86.png",
+      "sha": "d91652d8f9d30282d960a24cb275c29e72c768bc",
+      "size": 1412321
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-d2db05ac-8963-41fb-8bdb-0e6c9c307e69.png",
+      "sha": "a6b6cc1a81660f51babedc408b963bdd3ec10649",
+      "size": 741898
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-9d01a5d5-8b18-4310-843a-21e0a224b9f8.png",
+      "sha": "858500916dd8767f8004b2ee6f18533a062c8fb3",
+      "size": 291720
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-f48188ff-5ce5-47f1-9673-f1f8b1baa4bf.png",
+      "sha": "5368f997bafc22855634eb9201a54c8fdd7ec92a",
+      "size": 1267390
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-8c1a6783-b25e-47f7-a690-d95de9bf0bf9.png",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-5a9c60a9-e10e-4e24-9422-10ddbd82be0e.png",
+      "sha": "fc1184610390b00e88ae78118ac5f22c7fa7e527",
+      "size": 1014170
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-f5bdcd3a-95d0-4f06-b3d3-2fe0d5033286.png",
+      "sha": "f53a4f2ea1e16b4468bcefd7f2938fb684e2b0fd",
+      "size": 2972162
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-3840bd3d-1d74-412e-80d6-cffd95971928.png",
+      "sha": "d0d465d1364818a39701103ae5637856dab58fc0",
+      "size": 1124509
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-510f390b-fc72-4571-9a8c-fd31b5b3a32d.png",
+      "sha": "ed664c26a79bdd3824d69f6ef70221c8a0e28a30",
+      "size": 1535888
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-55b7fdf6-4333-425a-9d29-9b5954a5f629.png",
+      "sha": "54ca1226a8dfdc0d6de597b498a40bae69df8bca",
+      "size": 982194
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-ac39c9aa-1912-40da-b532-7b639d2a084d.png",
+      "sha": "2d59793bd719a9766ed2a152fb4847b3b7c49d47",
+      "size": 973665
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-a45c831f-54bc-47c8-ae17-96f3eb358470.png",
+      "sha": "a48995bce340e7c43c96ce261f48f818b05398fd",
+      "size": 2694099
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-878c5abf-5be2-48e0-88ec-c5ac0367b6c0.png",
+      "sha": "fd74ec71b99063ebda03fe2ed10827be0c46eab1",
+      "size": 1746091
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-311a90e8-5724-4a7a-9b78-7a424e313c6f.png",
+      "sha": "6407372ea9945d2b26e86e8c3c2c8cd8664b041b",
+      "size": 1516753
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-8f35960c-126d-4afc-a4c3-93ee72f88d83.png",
+      "sha": "0e4a601dc22f1b7c6a4fbf48fc5c2c535ceb141f",
+      "size": 1114409
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-5e53d2f9-2182-4208-8768-9b506bd03894.png",
+      "sha": "4db4133ac3026638a4048722ec97ac98701fa9fe",
+      "size": 578013
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-7cd03c36-72f5-4eae-bf5d-d5cba4c75b96.png",
+      "sha": "4e468c4fd2a1b971e0587bc798bbc8ded94845a5",
+      "size": 978685
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-66ee3ed1-e31d-42bc-9250-404e7ad907d3.png",
+      "sha": "fa0d185067f9fc391707582fd012bc474d3675d1",
+      "size": 550012
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-c4e7a627-ffa8-4eb5-8fd4-294ff4979602.png",
+      "sha": "b81c750f06e19e52a71fc502b82b1e306883f2eb",
+      "size": 1226368
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-e6b427ae-3b62-494d-a65f-12dcbaa843d0.png",
+      "sha": "3e3750dc9e4f609020b8ed47d2488aafac79c528",
+      "size": 2631944
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-6e9ff0ca-a03e-4f8c-848e-18c9f692c82e.png",
+      "sha": "463fe340a5e0c1425a3b2a1a29adce0c358d2970",
+      "size": 1770075
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-f2e4d6c3-d66c-4d02-be7d-03d7986f8127.png",
+      "sha": "43814c018c8feb0546dea470f80771e8d7cd11b7",
+      "size": 1141895
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-112a4e02-ec7b-4d20-9480-18566b1385b8.png",
+      "sha": "5abf94539b2f467e7e28a1b8fdbfff7d66dea6b6",
+      "size": 1292290
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-b8e43d99-94de-4160-9b28-cda7835369ee.png",
+      "sha": "1e632abe33c1bd3cc2bf7282fd82955884b6123c",
+      "size": 2631948
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-c7a02bea-8e4c-4c7c-84a0-e099e41f3aad.png",
+      "sha": "04c497fd364c0790404215c2513e32bb9286ea10",
+      "size": 1180068
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-296bb214-93df-445d-9f69-83d55688c35a.png",
+      "sha": "e9e5b8d7859e9607163f0b6e2588c0212f73d6cb",
+      "size": 413662
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-d99cbb8e-ee02-4a20-a1ab-e9adf0fa2e97.png",
+      "sha": "730f03dc8590339519261b95dbfac07c6178868a",
+      "size": 2900782
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-c7370c63-5c09-40de-89fe-f73ebefa3b11.png",
+      "sha": "2d8f64fa8b3b9f1f7198a2a4d90a1c869dfdc926",
+      "size": 1268223
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-b50a762a-13e5-4891-8bd6-f0b42c52d383.png",
+      "sha": "d6f518a9c71e63889eb202f092b35543b964486a",
+      "size": 2251280
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-42081f5b-4ae4-4dcd-ba67-0b8153cf946f.png",
+      "sha": "e7360b2487a0ee6c98146d04d935f4d304c89975",
+      "size": 1701210
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-d85f9151-d441-4a68-9aeb-5b1f07154a45.png",
+      "sha": "76b1ac8045e437337e55e616edc5a164812e765d",
+      "size": 795228
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-19e53821-0334-46da-9220-72059eafb18e.png",
+      "sha": "9105362e244e43569280acdb1e544347a4536908",
+      "size": 539431
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-ff45c925-fcf2-4137-b9d9-406916c2d800.png",
+      "sha": "cdf094498f34bbafecd7164cdef04a7ce0fe394b",
+      "size": 317782
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-2ec88f1e-f618-46d5-b50c-102087a59ec9.png",
+      "sha": "ef1646bca774221477c5f1685468e5d4eaa63732",
+      "size": 972735
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-9d6c9704-a9ce-43d3-af9c-abeed0c4bb8a.png",
+      "sha": "c4342faa59608ed59c00ce5ff790c2f53d5cfc4e",
+      "size": 2341168
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-e2e23228-5820-4a96-8062-4da2e2c9ce6a.png",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-86f841e8-9abb-47ed-84f9-ccbffd7f38e2.png",
+      "sha": "6d40eb6a4b174dcfd7b84cdc21713cc90a68e2c0",
+      "size": 2306767
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-7a70015d-d4f7-4656-bd43-34939876579e.png",
+      "sha": "c8fe065a9ddc8b73bcf74c4345fcd1844e4b0f5d",
+      "size": 1737714
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-0ba2ad3f-bb5c-4432-a2a9-986ac8802da7.png",
+      "sha": "d3d68b96586cb4fd42c85c245ed034319fed0ca8",
+      "size": 911260
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-de965fef-06ee-4d36-8d17-85b8e1fe74f4.png",
+      "sha": "083eee56fb06ae1318149cc6b67042dc88e5fc7f",
+      "size": 1734918
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-b1568e45-0d56-4089-b0d8-e12d6c0639cd.png",
+      "sha": "582e7b1e6f5295dcc0bc3a7a837af84b16b3e7c6",
+      "size": 406021
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-0614b12d-101a-4c25-803a-8d80aef33284.png",
+      "sha": "24c084468f088b79e7dee9f7bcb834f3ec77cc46",
+      "size": 1132618
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-dfd46776-90c3-48ec-b073-23aed8f45d3f.png",
+      "sha": "16eac58cdc511951f46d197303e8dde76f038917",
+      "size": 1553287
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-f798918f-f655-4e81-969c-a9c1dbd7c5ee.png",
+      "sha": "ad5d1e1207f3fe55d187cc999fc0709ed2b05e03",
+      "size": 767824
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-15998ce6-4b25-4950-b062-d13e5eb4719c.png",
+      "sha": "82a784a020615bbf282dbf62083838bf32db6903",
+      "size": 698290
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-777eec07-70b4-4a7a-ad60-ef4d809121a6.png",
+      "sha": "fe57f7b8d5ee54cc23ac5c81d7030f9abfdccef2",
+      "size": 1705935
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-8eae02ee-7af4-4bb9-aef6-8db9326946ea.png",
+      "sha": "3513906372499ac4fc9b4b2265fda50f0f180a27",
+      "size": 1518362
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-8f5f65d8-2625-4ffb-9d6d-53c23ec9f6c5.png",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-e4200806-58e3-4907-b0c6-28cab268aa90.png",
+      "sha": "b768c73af8255c1985a7cc2b93046f085e2993e5",
+      "size": 1119459
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-747e7643-47da-46d9-a075-0972b38de7cb.png",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-44ce78cc-026e-438a-ac3d-658e831ea843.png",
+      "sha": "2b367e088907a1fe67854e382c7f13be72053129",
+      "size": 1879837
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-14abafbd-3da5-40a9-95d2-76ca057a7075.png",
+      "sha": "b19658bcba1000450e25b972dffdd69fac4c8663",
+      "size": 2402580
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-bd7c952e-1b54-41d5-a6ea-3fc892a086a4.png",
+      "sha": "7371c634fc68174929f79ccb1fd67c9b021b1e0a",
+      "size": 793526
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-cdb851c2-4e98-4200-a597-4f765ccb4c52.png",
+      "sha": "22e5630f3ebaefecbe260add3dd2bce3acf09483",
+      "size": 1062098
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-bde120c7-3d19-4c1b-8dcb-580da79b6361.png",
+      "sha": "cb86bf0bd2dcdd2c757739c600c92bed8aa9bdea",
+      "size": 1583003
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-9549f8cc-528f-404b-9894-bd2d4ffa1cb3.png",
+      "sha": "da57b3788b7d29996edfa6bda1dee38a5e9332ed",
+      "size": 1245530
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-5eab0ddc-3bd5-4eec-8bcd-496ccefe8c55.png",
+      "sha": "cc4d6ca8f2cdda0b93d398b9ef60cb126a9221a4",
+      "size": 1343524
+    },
+    {
+      "path": "/workspace/scratch/684967c2474e/generated_images/exec-4d9d66a5-87a0-4720-a6ff-75f055ea3f93.png",
+      "sha": "0e9b3ee87722ec2b76a72a4430833915360f7b58",
+      "size": 672200
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-ceaa7901-6677-41c1-8dfa-2c5b19b98e9b.png",
+      "sha": "38439633450b8fe566dafac86e624dddadce2281",
+      "size": 604844
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-d7bafcec-698c-4597-990b-41bdf15c89bc.png",
+      "sha": "75995206d4cf88f820efad8542df1c7aa74c6906",
+      "size": 1133144
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-399ea105-b704-4975-895c-fb7945f3de53.png",
+      "sha": "b77c2f26265235c1e935a6227b2688fe56ea8cd5",
+      "size": 2339114
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-22511612-2afe-43fc-a7e7-8fb8439ac67a.png",
+      "sha": "eaeb8093bc0014a0dbdf969b41a7a6673ed7d5be",
+      "size": 1327387
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-ea2eba06-1acf-4c1d-9bd3-4634a93c269b.png",
+      "sha": "eb146541d3e4db1a58e6b74b22646c34ab1b729c",
+      "size": 1408274
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-e2fea9e1-b200-4cf6-9f8e-e2024d8e1f6b.png",
+      "sha": "5bcc9d484a9453199004eb3f9a76c6bf4cf83e20",
+      "size": 2494602
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-e555f973-05d9-4b85-8ba6-734e1af1dbb1.png",
+      "sha": "517003546efb2bd411fc0ffb0019ebef2d2459d4",
+      "size": 233043
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-23761d76-3674-4b4d-a5da-aa91ba1981c9.png",
+      "sha": "37edcf84ca6c4d4df8704cb654956c6df3918fce",
+      "size": 2296317
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-4cda2d7a-1c29-4e03-8808-660e4387e0d1.png",
+      "sha": "b596011e1f2a36120da6ec307e57b00166c9ae7a",
+      "size": 1058047
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-5ea846fe-57a9-4b64-bc03-12282497274e.png",
+      "sha": "f59093f768797d30cc93eb030a06ff9c421d750c",
+      "size": 468571
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-5f776e67-e91a-43c9-a200-63749b7aae72.png",
+      "sha": "1878f769bc54769553c1ccd9d17049b17635bca4",
+      "size": 1234847
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-bc073f59-237b-4157-a449-c53e1e35b1ea.png",
+      "sha": "8e4329f6b39fc4c70e986d288a7fc6567ad7acfe",
+      "size": 111374
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-236b32dc-6897-4807-86c6-41a0afac0147.png",
+      "sha": "76fe8eae46032293e2c9e41d9f9c1bc70dececf3",
+      "size": 852892
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-1f6014d5-15b4-4e57-b0e1-e58f81eef521.png",
+      "sha": "5d133b15c3aa26d812d2ae8bc35be01329dbc0b4",
+      "size": 2542560
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-e65679e0-b420-4dce-b5f1-cb8089f7670f.png",
+      "sha": "524bae8497f7e068e714f6d6b496bfe02f57e9ce",
+      "size": 1743588
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-52869ab3-71ce-4acc-88a3-48b4e0f94bc0.png",
+      "sha": "c136e95927c29f83c9f92ee03dece262ffb0906e",
+      "size": 1705070
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-072e7a36-06aa-4cda-9587-21572a5405e8.png",
+      "sha": "577f390beb0a22c51f6024f71ad256c98ce38748",
+      "size": 771790
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-4f13ae54-95c6-4de9-bc09-0ea0dc365f2a.png",
+      "sha": "5d2d4481d404ed7fd9a8ea341aff9db9e529e530",
+      "size": 1263199
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-fdb365ee-6346-41e0-a015-4b9d67d96b79.png",
+      "sha": "fbdc1943b3f88e095e1a26f061e813ba04e447b8",
+      "size": 1400677
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-5be02f14-5823-48cd-9144-294ffd710918.png",
+      "sha": "e156f4c0090bc48e69ab1b0d13076ae14639af80",
+      "size": 1553107
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-1f7ce248-c0d1-4005-8fec-7a355fa729f8.png",
+      "sha": "4d72be876771f12517e82dc38f3504c07d06db76",
+      "size": 2882323
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-32848b34-a52b-4872-a543-1fcfa010d392.png",
+      "sha": "3d4d2440914b5f4c37be5b505fd41143e917c226",
+      "size": 1442668
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-aad43ab0-551a-4670-a9ac-9f8456d6b482.png",
+      "sha": "7075f67148298c2563bf52c1ac881d50e5db0b23",
+      "size": 511778
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-8ceb638c-5ab0-42a4-bdc1-e57085a8df3a.png",
+      "sha": "6503e4ecdb3feb0f562c8747d71093db92371a62",
+      "size": 168160
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-48cbff8f-2094-47cc-94b2-6b17ffea9694.png",
+      "sha": "103f631cd2afdb155a4b104d782caf95a4d198c3",
+      "size": 788856
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-c09e4d2c-81c2-4c42-9fca-b321e206fc3f.png",
+      "sha": "6c32d0d7a245c1bb19297afa746f29ce139e61b3",
+      "size": 776733
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-210468f7-6069-4f76-b38a-c25d0f50ccc1.png",
+      "sha": "e279ff006e85d374aeeb7e577671f962c09242e8",
+      "size": 1099380
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-13d0c5bf-6a8a-4c8b-9068-d9244a40e3af.png",
+      "sha": "30c40b28d9f3c93e2bc5a2b93af0229aeca28ccd",
+      "size": 1121428
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-5af9368b-b2b1-4341-a576-d9153e7c30d9.png",
+      "sha": "e4dce0fba83f226ec22fb5f356ae81fd99f160ad",
+      "size": 1772870
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-be307081-9423-47d0-a93e-24f4b87fb620.png",
+      "sha": "a5653c3ef6d4f50823db1d3598c1f2897b0b3f2b",
+      "size": 2046546
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-93211a0a-5767-43cc-a357-c8655ab76cb6.png",
+      "sha": "33c8f0014731e86fa161ed13eb1837332bba9719",
+      "size": 1190079
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-2d133a3f-82a6-4556-b601-bb4ee510db21.png",
+      "sha": "84511c24a7a8063efb8cec227a9bc3216dcf7546",
+      "size": 1715106
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-c6f244bc-c8d7-4feb-83e5-5cca676be194.png",
+      "sha": "d192deaf680a2411d26de496394e8aca541911f4",
+      "size": 1419375
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-d9028beb-0760-4dbd-8a7e-f634932d50e9.png",
+      "sha": "35fa169a4d4e8ef661944c4528b53a76cccddd23",
+      "size": 2513007
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-0a8bc273-2484-4543-9107-4c92d80c746d.png",
+      "sha": "b4b8714fd8e3b870b28d09384a438c06b58d5e10",
+      "size": 789903
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-9ac82bb9-b301-49eb-aa56-a6f9dd8dd980.png",
+      "sha": "ade3abf837fb9539ed506597fa1b08510a2b640f",
+      "size": 172262
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-f1cf6f63-3ff6-471d-a774-63ea9e0c9bb9.png",
+      "sha": "acd64049a83112cafbd73a625447587f010eb540",
+      "size": 138931
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-7c073b48-f5db-4dfb-a59c-03e159dea3e8.png",
+      "sha": "9d761b5b34d85a81dcfb6cdb33bab94ec04df26b",
+      "size": 1223238
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-a3f47b33-260a-4562-8f60-210742e1ded7.png",
+      "sha": "29eb33a671b4d474659746f7041163dbef4d6895",
+      "size": 1073466
+    },
+    {
+      "path": "/workspace/scratch/9e9f7b53022e/generated_images/exec-a398b7cf-2205-49b4-8d89-30b049b9fdcf.png",
+      "sha": "d88a0fcbd8f22f21304ac23c0d9579d6871e9556",
+      "size": 211604
+    },
+    {
+      "path": "/tmp/resonance-generated-edbb/exec-ed62499e-ee9b-4265-b9a1-c986b575869b.png",
+      "sha": "95a7d57a89a6ffd8336c44edc9fc393731ffcbc8",
+      "size": 1831779
+    }
+  ],
+  "historical_discard_evidence": [
+    "docs/resonance/production/continuation_20261124_f/generation_register.json#iterations_not_retained (9 F originals)",
+    "docs/resonance/production/continuation_20261124_h/root_generation.json (correction input references and prior audit of 3 H originals)"
+  ],
+  "limits": [
+    "No original prompt for the newly found Questionable Ethics PNG.",
+    "A file modification timestamp does not prove generation time.",
+    "Disconnection interrupted local publication; 9 new originals were retained in functions memory and secured as GitHub blobs, and the historical source was reverified after reconnection.",
+    "An absent filename alone was not sufficient to include a discarded iteration."
+  ],
+  "result": "One historical PNG recovered; 9 new machine/creature/boss PNG generated in 10 calls with 1 unknown tool error; no global register edits made by audit worker."
+}

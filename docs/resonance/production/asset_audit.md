@@ -1,26 +1,29 @@
 # Audit des fichiers de production — Half Life Resonance
 
-Exécuté le 2026-11-24T16:50:37.557Z. Résultat : **réussi**.
+Exécuté le 2026-11-24T17:47:29.462Z. Résultat : **réussi**.
 
 Le comptage porte sur les fichiers présents dans le dépôt au moment du contrôle. Les déclarations des anciennes conversations ne créent aucune entrée ni aucun fichier.
 
 | Mesure | Nombre |
 |---|---:|
-| actual_png_files | 147 |
-| valid_png_headers | 147 |
-| distinct_png_contents | 147 |
-| requests | 172 |
-| generated_requests | 147 |
-| generated_requests_with_verified_file | 147 |
+| actual_png_files | 191 |
+| valid_png_headers | 191 |
+| distinct_png_contents | 191 |
+| requests | 229 |
+| generated_requests | 191 |
+| generated_requests_with_verified_file | 191 |
 | blocked_requests | 25 |
-| unproduced_requests | 25 |
+| tool_error_requests | 1 |
+| output_unavailable_requests | 12 |
+| unproduced_requests | 26 |
 | unclassified_requests | 0 |
-| requests_with_files | 147 |
-| registered_png_files | 147 |
+| requests_with_files | 191 |
+| requests_without_files | 38 |
+| registered_png_files | 191 |
 | unregistered_png_files | 0 |
 | certified_one_to_one_declared | 0 |
 | certified_one_to_one_with_verified_file | 0 |
-| integrated_in_game_declared | 2 |
+| integrated_in_game_declared | 9 |
 | completed_animation_clips_declared | 0 |
 
 ## Portée du contrôle
@@ -173,6 +176,50 @@ Présence, SHA-256, taille et en-tête PNG sont vérifiés. Le script ne décode
 | assets/resonance/candidates/continuation_20261124_i/supplement/combine_charger_hla_idle_i.png | 1024 × 1536 | 2248920 | oui |
 | assets/resonance/candidates/continuation_20261124_i/supplement/combine_grunt_hla_idle_i.png | 906 × 1736 | 1621197 | oui |
 | assets/resonance/candidates/continuation_20261124_i/supplement/combine_suppressor_hla_idle_i.png | 1024 × 1536 | 2091304 | oui |
+| assets/resonance/candidates/continuation_20261124_j/characters/barney_blueshift_idle_j.png | 1024 × 1536 | 1481757 | oui |
+| assets/resonance/candidates/continuation_20261124_j/characters/black_ops_hl1_idle_j.png | 1024 × 1536 | 1331733 | oui |
+| assets/resonance/candidates/continuation_20261124_j/characters/costume_eli_hla_idle_j.png | 1024 × 1536 | 1754457 | oui |
+| assets/resonance/candidates/continuation_20261124_j/characters/gordon_hl1_idle_j.png | 1199 × 1312 | 745612 | oui |
+| assets/resonance/candidates/continuation_20261124_j/characters/griggs_ep2_idle_j.png | 1024 × 1536 | 1839409 | oui |
+| assets/resonance/candidates/continuation_20261124_j/characters/hecu_engineer_op4_idle_j.png | 887 × 1774 | 1379724 | oui |
+| assets/resonance/candidates/continuation_20261124_j/characters/hecu_hl1_idle_j.png | 1199 × 1312 | 810129 | oui |
+| assets/resonance/candidates/continuation_20261124_j/characters/hecu_medic_op4_idle_j.png | 1024 × 1536 | 1883970 | oui |
+| assets/resonance/candidates/continuation_20261124_j/characters/otis_op4_idle_j.png | 1024 × 1536 | 1782079 | oui |
+| assets/resonance/candidates/continuation_20261124_j/characters/rosenberg_blueshift_idle_j.png | 1024 × 1536 | 1521743 | oui |
+| assets/resonance/candidates/continuation_20261124_j/characters/sheckley_ep2_idle_j.png | 1024 × 1536 | 1824802 | oui |
+| assets/resonance/candidates/continuation_20261124_j/characters/uriah_ep2_idle_framed_j.png | 846 × 1858 | 928634 | oui |
+| assets/resonance/candidates/continuation_20261124_j/characters/uriah_ep2_idle_j.png | 925 × 1701 | 1527429 | oui |
+| assets/resonance/candidates/continuation_20261124_j/effects/device_tripmine_hl1_body_resumed_j.png | 1697 × 927 | 1722467 | oui |
+| assets/resonance/candidates/continuation_20261124_j/effects/fx_excursion_funnel_portal2_normal_resumed_j.png | 2172 × 724 | 1018797 | oui |
+| assets/resonance/candidates/continuation_20261124_j/effects/fx_excursion_funnel_portal2_reverse_resumed_j.png | 2172 × 724 | 1048746 | oui |
+| assets/resonance/candidates/continuation_20261124_j/effects/fx_gluon_beam_hl1_beam_resumed_j.png | 2172 × 724 | 403286 | oui |
+| assets/resonance/candidates/continuation_20261124_j/effects/fx_tripmine_laser_hl1_beam_resumed_j.png | 2172 × 724 | 155931 | oui |
+| assets/resonance/candidates/continuation_20261124_j/effects/proj_aperture_bomb_portal2_body_resumed_j.png | 1254 × 1254 | 1944611 | oui |
+| assets/resonance/candidates/continuation_20261124_j/effects/proj_bugbait_hl2_body_resumed_j.png | 1319 × 1192 | 1749772 | oui |
+| assets/resonance/candidates/continuation_20261124_j/effects/proj_headcrab_canister_hl2_opening_resumed_j.png | 1612 × 976 | 1039733 | oui |
+| assets/resonance/candidates/continuation_20261124_j/effects/proj_magnusson_device_ep2_held_resumed_j.png | 1294 × 1216 | 2158418 | oui |
+| assets/resonance/candidates/continuation_20261124_j/effects/proj_shock_bolt_opfor_body_resumed_j.png | 1774 × 887 | 266795 | oui |
+| assets/resonance/candidates/continuation_20261124_j/machines/baby_voltigore_op4_idle_j.png | 1372 × 1147 | 1176768 | oui |
+| assets/resonance/candidates/continuation_20261124_j/machines/barnacle_hl1_idle_j.png | 1024 × 1536 | 1340617 | oui |
+| assets/resonance/candidates/continuation_20261124_j/machines/frankenturret_portal2_idle_j.png | 1312 × 1199 | 1122829 | oui |
+| assets/resonance/candidates/continuation_20261124_j/machines/guardian_tunnels_ep2_idle_j.png | 1312 × 1199 | 1195118 | oui |
+| assets/resonance/candidates/continuation_20261124_j/machines/ichthyosaur_hl1_idle_j.png | 1774 × 887 | 1065194 | oui |
+| assets/resonance/candidates/continuation_20261124_j/machines/jeff_hla_idle_j.png | 1254 × 1254 | 1072410 | oui |
+| assets/resonance/candidates/continuation_20261124_j/machines/shield_scanner_hl2_idle_j.png | 1466 × 1073 | 2143422 | oui |
+| assets/resonance/candidates/continuation_20261124_j/machines/stalker_hl2_idle_j.png | 1024 × 1536 | 1587437 | oui |
+| assets/resonance/candidates/continuation_20261124_j/machines/voltigore_op4_idle_j.png | 1448 × 1086 | 1373715 | oui |
+| assets/resonance/candidates/continuation_20261124_j/recovered/stage_questionable_ethics_hl1_master_h_recovered.png | 2172 × 724 | 2306767 | oui |
+| assets/resonance/candidates/continuation_20261124_j/stages/stage_antlion_gallery_ep2_master_j.png | 1672 × 941 | 2302473 | oui |
+| assets/resonance/candidates/continuation_20261124_j/stages/stage_balcony_hla_master_j.png | 1672 × 941 | 2993532 | oui |
+| assets/resonance/candidates/continuation_20261124_j/stages/stage_citadel_hl2_master_j.png | 1672 × 941 | 2210234 | oui |
+| assets/resonance/candidates/continuation_20261124_j/stages/stage_core_ep1_master_j.png | 1672 × 941 | 2560221 | oui |
+| assets/resonance/candidates/continuation_20261124_j/stages/stage_freight_blueshift_master_j.png | 1672 × 941 | 3067962 | oui |
+| assets/resonance/candidates/continuation_20261124_j/stages/stage_northern_star_hla_master_j.png | 1672 × 941 | 2470980 | oui |
+| assets/resonance/candidates/continuation_20261124_j/stages/stage_relaxation_portal2_master_j.png | 1672 × 941 | 2306350 | oui |
+| assets/resonance/candidates/continuation_20261124_j/stages/stage_rosenberg_blueshift_master_j.png | 1672 × 941 | 2461416 | oui |
+| assets/resonance/candidates/continuation_20261124_j/stages/stage_surface_dam_hl1_master_j_v2.png | 1672 × 941 | 2369551 | oui |
+| assets/resonance/candidates/continuation_20261124_j/stages/stage_surface_dam_hl1_master_j.png | 1672 × 941 | 2453788 | oui |
+| assets/resonance/candidates/continuation_20261124_j/stages/stage_test17_portal1_master_j.png | 1672 × 941 | 2491973 | oui |
 | assets/resonance/candidates/layer_black_mesa_floor.png | 2172 × 724 | 641901 | oui |
 | assets/resonance/candidates/layer_city17_distant_skyline.png | 1774 × 887 | 1545440 | oui |
 | assets/resonance/candidates/prop_hev_suit_charger.png | 1024 × 1536 | 2691794 | oui |

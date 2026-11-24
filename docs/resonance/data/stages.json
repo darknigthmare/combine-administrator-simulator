@@ -982,7 +982,24 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "reference_capture": {
+        "reference_filename": "BS_FreightYard04.jpg",
+        "source_url": "https://combineoverwiki.net/images/b/b0/BS_FreightYard04.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:BS_FreightYard04.jpg",
+        "sha256": "4fc94f5356f451848715b573db605ae82802bfbf045f7ce9b8d46450211ea9bc",
+        "source_game": "Half-Life: Blue Shift",
+        "provenance": "original_game_imagery_hosted_on_community_wiki",
+        "hosting": "community_wiki_not_official_Valve_hosting",
+        "role": "original_game_capture_reference",
+        "visually_inspected": true,
+        "checked_on": "2026-11-24",
+        "inspection_record": "docs/resonance/production/continuation_20261124_j/stage_generation.json",
+        "review_record": "docs/resonance/production/continuation_20261124_j/stage_source_review.md",
+        "scope_note": "Capture BS_FreightYard04 de Blue Shift. Cour, plaque tournante et voies adaptées à une vue latérale; agencement exact et couches restent à comparer.",
+        "certifies_generated_asset_one_to_one": false
+      },
+      "visual_reference_status": "community_bitmap_inspected_layout_adaptation_not_certified"
     },
     {
       "id": "STG_09_BS_ROSENBERG",
@@ -1100,7 +1117,24 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "reference_capture": {
+        "reference_filename": "Rosenberg_is_pleased.jpg",
+        "source_url": "https://combineoverwiki.net/images/8/85/Rosenberg_is_pleased.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Rosenberg_is_pleased.jpg",
+        "sha256": "037ea61388378e3ea97cba8b043330be05ba33fb0e031d0c2132d0926f9a5da6",
+        "source_game": "Half-Life: Blue Shift",
+        "provenance": "original_game_imagery_hosted_on_community_wiki",
+        "hosting": "community_wiki_not_official_Valve_hosting",
+        "role": "original_game_capture_reference",
+        "visually_inspected": true,
+        "checked_on": "2026-11-24",
+        "inspection_record": "docs/resonance/production/continuation_20261124_j/stage_generation.json",
+        "review_record": "docs/resonance/production/continuation_20261124_j/stage_source_review.md",
+        "scope_note": "Capture Rosenberg_is_pleased du laboratoire Blue Shift. Téléporteur inactif dans le candidat; agencement latéral et proportions de ba_teleport1 à vérifier.",
+        "certifies_generated_asset_one_to_one": false
+      },
+      "visual_reference_status": "community_bitmap_inspected_layout_adaptation_not_certified"
     },
     {
       "id": "STG_10_DECAY_GAMMA",
@@ -2052,7 +2086,24 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "reference_capture": {
+        "reference_filename": "Citadel_menu_background.jpg",
+        "source_url": "https://combineoverwiki.net/images/b/b7/Citadel_menu_background.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Citadel_menu_background.jpg",
+        "sha256": "b3e91f40b57c67c3bb26e14e94b28330c7a002b956adcea8f570ad6e8bd7d2d9",
+        "source_game": "Half-Life 2",
+        "provenance": "original_game_imagery_hosted_on_community_wiki",
+        "hosting": "community_wiki_not_official_Valve_hosting",
+        "role": "original_game_capture_reference",
+        "visually_inspected": true,
+        "checked_on": "2026-11-24",
+        "inspection_record": "docs/resonance/production/continuation_20261124_j/stage_generation.json",
+        "review_record": "docs/resonance/production/continuation_20261124_j/stage_source_review.md",
+        "scope_note": "Capture Citadel_menu_background du jeu source. Point de vue tourné vers le haut adapté latéralement; emplacement de plateforme et raccords ne sont pas une reproduction 1:1 du niveau.",
+        "certifies_generated_asset_one_to_one": false
+      },
+      "visual_reference_status": "community_bitmap_inspected_layout_adaptation_not_certified"
     },
     {
       "id": "STG_17_EP1_CORE",
@@ -2170,7 +2221,40 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "reference_capture": {
+        "reference_filename": "Ep1_citadel_030004.JPG",
+        "source_url": "https://combineoverwiki.net/images/7/7a/Ep1_citadel_030004.JPG",
+        "source_page": "https://combineoverwiki.net/wiki/File:Ep1_citadel_030004.JPG",
+        "sha256": "4731bd147cfed416e929955f14d836c0d0886398dd94084483691e89b079101c",
+        "source_game": "Half-Life 2: Episode One",
+        "provenance": "original_game_imagery_hosted_on_community_wiki",
+        "hosting": "community_wiki_not_official_Valve_hosting",
+        "role": "original_game_capture_reference",
+        "visually_inspected": true,
+        "checked_on": "2026-11-24",
+        "inspection_record": "docs/resonance/production/continuation_20261124_j/stage_generation.json",
+        "review_record": "docs/resonance/production/continuation_20261124_j/stage_source_review.md",
+        "scope_note": "Deux captures Episode One du cœur de la Citadelle; lumière et machinerie servent de références. Vue latérale, détails extrapolés et animation du cœur ne sont pas certifiés.",
+        "certifies_generated_asset_one_to_one": false,
+        "additional_captures": [
+          {
+            "reference_filename": "Citadel_core_drop.jpg",
+            "source_url": "https://combineoverwiki.net/images/1/18/Citadel_core_drop.jpg",
+            "source_page": "https://combineoverwiki.net/wiki/File:Citadel_core_drop.jpg",
+            "sha256": "ddef650335d3f74bf3a68dddab980fbe9008dbc475a35810cd19115d1aaa1568",
+            "source_game": "Half-Life 2: Episode One",
+            "provenance": "original_game_imagery_hosted_on_community_wiki",
+            "hosting": "community_wiki_not_official_Valve_hosting",
+            "role": "original_game_capture_reference",
+            "visually_inspected": true,
+            "checked_on": "2026-11-24",
+            "inspection_record": "docs/resonance/production/continuation_20261124_j/stage_generation.json",
+            "review_record": "docs/resonance/production/continuation_20261124_j/stage_source_review.md"
+          }
+        ]
+      },
+      "visual_reference_status": "community_bitmap_inspected_layout_adaptation_not_certified"
     },
     {
       "id": "STG_18_EP1_EVAC",
@@ -2406,7 +2490,24 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "reference_capture": {
+        "reference_filename": "Antlionnest.jpg",
+        "source_url": "https://combineoverwiki.net/images/8/87/Antlionnest.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Antlionnest.jpg",
+        "sha256": "83b151ebb13967ddf002c9c381aa5d36f3c8f596e5e9c6f9569e2c428f66c17a",
+        "source_game": "Half-Life 2: Episode Two",
+        "provenance": "original_game_imagery_hosted_on_community_wiki",
+        "hosting": "community_wiki_not_official_Valve_hosting",
+        "role": "original_game_capture_reference",
+        "visually_inspected": true,
+        "checked_on": "2026-11-24",
+        "inspection_record": "docs/resonance/production/continuation_20261124_j/stage_generation.json",
+        "review_record": "docs/resonance/production/continuation_20261124_j/stage_source_review.md",
+        "scope_note": "Capture Antlionnest d’Episode Two. Distribution des nids, rochers et passage frontal extrapolée dans la vue latérale; échelle et couches non validées.",
+        "certifies_generated_asset_one_to_one": false
+      },
+      "visual_reference_status": "community_bitmap_inspected_layout_adaptation_not_certified"
     },
     {
       "id": "STG_20_EP2_WHITEFOREST",
@@ -2642,7 +2743,24 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "reference_capture": {
+        "reference_filename": "HLA_AlyxHideout01.jpg",
+        "source_url": "https://combineoverwiki.net/images/5/5c/HLA_AlyxHideout01.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:HLA_AlyxHideout01.jpg",
+        "sha256": "c3c2891343b81f5a6d3d837b0f993519db13d9c7ba08cb044315b96d1fc1f1d8",
+        "source_game": "Half-Life: Alyx",
+        "provenance": "original_game_imagery_hosted_on_community_wiki",
+        "hosting": "community_wiki_not_official_Valve_hosting",
+        "role": "original_game_capture_reference",
+        "visually_inspected": true,
+        "checked_on": "2026-11-24",
+        "inspection_record": "docs/resonance/production/continuation_20261124_j/stage_generation.json",
+        "review_record": "docs/resonance/production/continuation_20261124_j/stage_source_review.md",
+        "scope_note": "Capture HLA_AlyxHideout01. Le balcon du candidat est élargi et le garde-corps déplacé derrière la ligne de combat; cette géométrie reste une adaptation.",
+        "certifies_generated_asset_one_to_one": false
+      },
+      "visual_reference_status": "community_bitmap_inspected_layout_adaptation_not_certified"
     },
     {
       "id": "STG_22_HLA_QUARANTINE",

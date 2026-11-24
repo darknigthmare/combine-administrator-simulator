@@ -342,7 +342,23 @@
       "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
       "visual_status": "reference_and_animation_validation_required",
       "certified_one_to_one": false,
-      "runtime_enabled": true
+      "runtime_enabled": true,
+      "reference_capture": {
+        "reference_filename": "strider_hl2.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Strider_secret.jpg",
+        "sha256": "2f8110eb6aad4b0646c2d6b6f97772737e9d3d541cd93e32756902264752b432",
+        "source_game": "Half-Life 2",
+        "provenance": "original_game_imagery_hosted_on_community_wiki",
+        "hosting": "community_wiki_not_official_Valve_hosting",
+        "role": "promotional_game_model_reference",
+        "visually_inspected": true,
+        "checked_on": "2026-11-24",
+        "inspection_record": "docs/resonance/production/continuation_20261124_j/machine_generation.json",
+        "review_record": "docs/resonance/production/continuation_20261124_j/MACHINE_SOURCE_REVIEW.md",
+        "scope_note": "Image promotionnelle du Strider documentée dans la revue J, consultée via un miroir communautaire. La référence a été inspectée mais l’appel de génération J n’a retourné aucun fichier; aucune réussite ni fidélité ne s’en déduit.",
+        "certifies_generated_asset_one_to_one": false
+      },
+      "visual_reference_status": "community_hosted_promo_bitmap_inspected_generation_pending"
     },
     {
       "id": "dropship_hl2",
@@ -1321,7 +1337,23 @@
       "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
       "visual_status": "reference_and_animation_validation_required",
       "certified_one_to_one": false,
-      "runtime_enabled": false
+      "runtime_enabled": false,
+      "reference_capture": {
+        "reference_filename": "guardian_tunnels_ep2.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Antlion_guardian.jpg",
+        "sha256": "758d007ad6a48e30929f265a2a971adf42b2f1ed20cd2872e240a23a4d940763",
+        "source_game": "Half-Life 2: Episode Two",
+        "provenance": "original_game_imagery_hosted_on_community_wiki",
+        "hosting": "community_wiki_not_official_Valve_hosting",
+        "role": "original_retail_game_model_capture",
+        "visually_inspected": true,
+        "checked_on": "2026-11-24",
+        "inspection_record": "docs/resonance/production/continuation_20261124_j/machine_generation.json",
+        "review_record": "docs/resonance/production/continuation_20261124_j/MACHINE_SOURCE_REVIEW.md",
+        "scope_note": "Modèle Guardian des tunnels Episode Two, bioluminescence verte. Référence d’apparence, pas preuve de toutes les faces, animations ou d’un combat canonique.",
+        "certifies_generated_asset_one_to_one": false
+      },
+      "visual_reference_status": "community_bitmap_inspected_candidate_not_certified"
     },
     {
       "id": "jeff_hla",
@@ -1380,7 +1412,23 @@
       "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
       "visual_status": "reference_and_animation_validation_required",
       "certified_one_to_one": false,
-      "runtime_enabled": false
+      "runtime_enabled": false,
+      "reference_capture": {
+        "reference_filename": "jeff_hla.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:HLA_Jeff01.jpg",
+        "sha256": "630bc5833ea4042183a117094f715999f0afd65b4614d7bab5b09d12981c3d4e",
+        "source_game": "Half-Life: Alyx",
+        "provenance": "original_game_imagery_hosted_on_community_wiki",
+        "hosting": "community_wiki_not_official_Valve_hosting",
+        "role": "original_retail_game_screenshot",
+        "visually_inspected": true,
+        "checked_on": "2026-11-24",
+        "inspection_record": "docs/resonance/production/continuation_20261124_j/machine_generation.json",
+        "review_record": "docs/resonance/production/continuation_20261124_j/MACHINE_SOURCE_REVIEW.md",
+        "scope_note": "Capture retail HLA_Jeff01 utilisée seule à la génération. Le rendu préparatoire consulté séparément n’est pas rattaché comme référence de la sortie. Morphologie fongique et appuis restent à comparer.",
+        "certifies_generated_asset_one_to_one": false
+      },
+      "visual_reference_status": "community_bitmap_inspected_candidate_not_certified"
     },
     {
       "id": "apache_hl1",

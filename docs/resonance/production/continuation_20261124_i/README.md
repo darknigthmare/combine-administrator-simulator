@@ -1,5 +1,7 @@
 # Half-Life Resonance — reprise, récupération F/H et nouveau lot I
 
+> Instantané historique du lot I, antérieur au lot J. [État courant et poursuite](../continuation_20261124_j/README.md).
+
 24 novembre 2026. **108 PNG ajoutés à la branche principale proposée : 94 récupérés et 14 nouvellement générés.** Le dépôt compte désormais **147 PNG distincts enregistrés**, issus de 172 demandes retenues au journal, dont 25 refus sans fichier. Les 13 itérations générées puis non retenues restent tracées séparément.
 
 ## Résultat du nouveau lot I

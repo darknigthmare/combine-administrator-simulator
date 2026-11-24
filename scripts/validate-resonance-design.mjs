@@ -144,13 +144,57 @@ for (const move of moves) {
   }
 }
 
+const prototypeBackgroundIds = new Set(['stage_black_mesa_testchamber_master', 'stage_city17_station_master']);
+const prototypeSpriteScope = 'boss_battle_static_candidate_sprite';
+const prototypeSpriteAssets = new Map([
+  ['gordon_hl2_idle_h', { ownerId: 'gordon_hl2', ownerType: 'fighter', path: 'assets/resonance/candidates/continuation_20261124_h/heroes/gordon_hl2_idle_h.png' }],
+  ['alyx_hl2_idle_h', { ownerId: 'alyx_hl2', ownerType: 'fighter', path: 'assets/resonance/candidates/continuation_20261124_h/heroes/alyx_hl2_idle_h.png' }],
+  ['barney_hl2_idle_h', { ownerId: 'barney_hl2', ownerType: 'fighter', path: 'assets/resonance/candidates/continuation_20261124_h/heroes/barney_hl2_idle_h.png' }],
+  ['shephard_op4_idle_h', { ownerId: 'shephard_op4', ownerType: 'fighter', path: 'assets/resonance/candidates/continuation_20261124_h/heroes/shephard_op4_idle_h.png' }],
+  ['vortigaunt_hl2_idle_h', { ownerId: 'vortigaunt_hl2', ownerType: 'fighter', path: 'assets/resonance/candidates/continuation_20261124_h/heroes/vortigaunt_hl2_idle_h.png' }],
+  ['combine_elite_hl2_idle_left', { ownerId: 'combine_elite_hl2', ownerType: 'fighter', path: 'assets/resonance/candidates/combine_elite_hl2_idle_left.png' }],
+  ['gunship_hl2_hover_left_f', { ownerId: 'gunship_hl2', ownerType: 'boss', path: 'assets/resonance/candidates/continuation_20261124_f/gunship_hl2_hover_left_f.png' }],
+]);
+const spriteModulePath = resolve(root, 'src/features/resonance/bossBattle/spriteAssets.ts');
+const spriteModule = readFileSync(spriteModulePath, 'utf8');
+const rendererModule = readFileSync(resolve(root, 'src/features/resonance/bossBattle/renderer.ts'), 'utf8');
+const spriteImports = new Map([...spriteModule.matchAll(/import\s+(\w+)\s+from\s+'([^']+\.png)'/g)]
+  .map(match => [match[1], resolve(dirname(spriteModulePath), match[2])]));
+const spriteBindings = [...spriteModule.matchAll(/^  (\w+): \{\r?\n([\s\S]*?)^  \},?$/gm)].map(match => ({
+  runtimeId: match[1],
+  assetId: match[2].match(/assetId:\s*'([^']+)'/)?.[1],
+  repositoryPath: match[2].match(/repositoryPath:\s*'([^']+)'/)?.[1],
+  importName: match[2].match(/\burl:\s*(\w+)/)?.[1],
+}));
+unique(spriteBindings.map(binding => binding.assetId), 'prototype sprite bindings');
+check(spriteBindings.length === prototypeSpriteAssets.size && spriteImports.size === prototypeSpriteAssets.size, 'Prototype sprite imports must remain the seven audited static poses');
+check(/drawSprite\(ctx,\s*FIGHTER_SPRITES\[state\.fighterId\]/.test(rendererModule), 'Fighter sprite bindings are not consumed by the renderer');
+check(/drawSprite\(ctx,\s*BOSS_SPRITES\.gunship_hl2/.test(rendererModule), 'Gunship sprite binding is not consumed by the renderer');
+for (const binding of spriteBindings) {
+  const expected = prototypeSpriteAssets.get(binding.assetId);
+  check(Boolean(expected), `${binding.assetId}: unaudited runtime sprite binding`);
+  if (!expected) continue;
+  check(binding.runtimeId === expected.ownerId && binding.repositoryPath === expected.path, `${binding.assetId}: runtime sprite owner/path mismatch`);
+  check(spriteImports.get(binding.importName) === resolve(root, expected.path), `${binding.assetId}: runtime import differs from the registered image`);
+}
+for (const [assetId, expected] of prototypeSpriteAssets) {
+  const asset = art.assets.find(candidate => candidate.asset_id === assetId);
+  check(Boolean(asset), `${assetId}: missing static runtime sprite registration`);
+  if (!asset) continue;
+  check(asset.integrated_in_game === true && asset.runtime_enabled === true && asset.integration_scope === prototypeSpriteScope, `${assetId}: incomplete static prototype integration scope`);
+  check(asset.repository_path === expected.path && asset.owner_id === expected.ownerId && asset.owner_type === expected.ownerType, `${assetId}: static prototype image identity mismatch`);
+  check(asset.generation_status === 'généré' && asset.animation_clip_complete === false, `${assetId}: static candidate integration cannot claim an animation clip`);
+}
+
 let generated = 0;
 for (const asset of art.assets) {
   check(asset.certified_one_to_one === false, `${asset.asset_id}: unsupported fidelity claim`);
   if (asset.integrated_in_game) {
-    check(['stage_black_mesa_testchamber_master', 'stage_city17_station_master'].includes(asset.asset_id), `${asset.asset_id}: unexpected prototype integration`);
-    check(asset.integration_scope === 'boss_battle_prototype_background', `${asset.asset_id}: unspecified prototype integration scope`);
+    const isBackground = prototypeBackgroundIds.has(asset.asset_id);
+    check(isBackground || prototypeSpriteAssets.has(asset.asset_id), `${asset.asset_id}: unexpected prototype integration`);
+    check(asset.integration_scope === (isBackground ? 'boss_battle_prototype_background' : prototypeSpriteScope), `${asset.asset_id}: unspecified prototype integration scope`);
   }
+  if (asset.runtime_enabled === true) check(asset.integrated_in_game === true, `${asset.asset_id}: runtime-enabled artwork must declare its precise integration`);
   if (asset.owner_type === 'fighter') check(fighterIds.has(asset.owner_id), `${asset.asset_id}: unknown fighter owner`);
   if (asset.owner_type === 'reserve_character') check(reserveIds.has(asset.owner_id), `${asset.asset_id}: unknown reserve owner`);
   if (asset.owner_type === 'stage') check(assetStageIds.has(asset.owner_id), `${asset.asset_id}: unknown stage owner`);
@@ -185,5 +229,5 @@ if (errors.length) {
   console.error(errors.map(error => `FAIL ${error}`).join('\n'));
   process.exitCode = 1;
 } else {
-  console.log(JSON.stringify({ status: 'passed', fighters: fighters.length, storyChapters: roster.story_chapters.length, specialTechniques: specials.length, exVariants: exVariants.length, stages: stages.length, productionGroups: backlog.length, animationSequencesPerPilot: animation.sequences.length, drawingsPerPilotOneFacing: 547, pilotMoves: moves.length, generatedImages: generated, prototypeBackgrounds: art.assets.filter(asset => asset.integrated_in_game).length, certifiedOneToOne: 0, note: 'Design data and image provenance validated. The Boss Battle simulation has its own tests; no network implementation or final visual fidelity is asserted.' }, null, 2));
+  console.log(JSON.stringify({ status: 'passed', fighters: fighters.length, storyChapters: roster.story_chapters.length, specialTechniques: specials.length, exVariants: exVariants.length, stages: stages.length, productionGroups: backlog.length, animationSequencesPerPilot: animation.sequences.length, drawingsPerPilotOneFacing: 547, pilotMoves: moves.length, generatedImages: generated, prototypeBackgrounds: art.assets.filter(asset => asset.integrated_in_game && prototypeBackgroundIds.has(asset.asset_id)).length, prototypeStaticSprites: art.assets.filter(asset => asset.integrated_in_game && prototypeSpriteAssets.has(asset.asset_id)).length, certifiedOneToOne: 0, note: 'Design data, image provenance and seven static candidate sprite bindings validated. The Boss Battle simulation has its own tests; no animation clip, network implementation or final visual fidelity is asserted.' }, null, 2));
 }

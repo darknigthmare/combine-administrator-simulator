@@ -1,0 +1,119 @@
+{
+  "partial_counts": {
+    "character_generation.json": 13,
+    "stage_generation.json": 11,
+    "machine_generation.json": 10,
+    "recovery_generation.json": 1,
+    "lost_effect_outputs.json": 12,
+    "effects_agent_resumed_generation.json": 4,
+    "effects_root_resumed_generation.json": 6
+  },
+  "partial_entries": 57,
+  "new_global_entries": 57,
+  "partial_global_id_sets_match": true,
+  "partial_global_critical_differences": [],
+  "original_global_entries": 172,
+  "baseline_critical_differences": [],
+  "baseline_changes": [
+    {
+      "id": "combine_elite_hl2_idle_left",
+      "fields": [
+        "integration_scope",
+        "runtime_enabled",
+        "integration_note",
+        "integrated_in_game"
+      ]
+    },
+    {
+      "id": "gordon_hl2_idle_h",
+      "fields": [
+        "integration_scope",
+        "runtime_enabled",
+        "integration_note",
+        "integrated_in_game"
+      ]
+    },
+    {
+      "id": "alyx_hl2_idle_h",
+      "fields": [
+        "integration_scope",
+        "runtime_enabled",
+        "integration_note",
+        "integrated_in_game"
+      ]
+    },
+    {
+      "id": "barney_hl2_idle_h",
+      "fields": [
+        "integration_scope",
+        "runtime_enabled",
+        "integration_note",
+        "integrated_in_game"
+      ]
+    },
+    {
+      "id": "shephard_op4_idle_h",
+      "fields": [
+        "integration_scope",
+        "runtime_enabled",
+        "integration_note",
+        "integrated_in_game"
+      ]
+    },
+    {
+      "id": "vortigaunt_hl2_idle_h",
+      "fields": [
+        "integration_scope",
+        "runtime_enabled",
+        "integration_note",
+        "integrated_in_game"
+      ]
+    },
+    {
+      "id": "gunship_hl2_hover_left_f",
+      "fields": [
+        "integration_scope",
+        "runtime_enabled",
+        "integration_note",
+        "integrated_in_game"
+      ]
+    }
+  ],
+  "missing_batch_ids": [],
+  "actual_png": 191,
+  "distinct_png": 191,
+  "registered_file_paths": 191,
+  "unregistered_png": [],
+  "file_errors": [],
+  "statuses": {
+    "refus automatique": 25,
+    "généré": 191,
+    "erreur outil": 1,
+    "sortie indisponible après interruption": 12
+  },
+  "new_statuses": {
+    "généré": 44,
+    "erreur outil": 1,
+    "sortie indisponible après interruption": 12
+  },
+  "lost_output_records": 12,
+  "lost_metadata_present": 12,
+  "targets": 259,
+  "targets_with_files": 155,
+  "targets_without_files": 104,
+  "unresolved_file_targets": [],
+  "lot_j_entries_by_batch_id": 57,
+  "batch_id_correction_review": {
+    "checked_at": "2026-11-24T17:47:41.153417+00:00",
+    "scope": "Only the four previously absent batch_id values and the global J batch count were rechecked; all earlier integrity findings retain their original review scope.",
+    "asset_ids": [
+      "fx_excursion_funnel_portal2_normal_resumed_j",
+      "fx_excursion_funnel_portal2_reverse_resumed_j",
+      "fx_gluon_beam_hl1_beam_resumed_j",
+      "proj_shock_bolt_opfor_body_resumed_j"
+    ],
+    "partial_register": "effects_agent_resumed_generation.json",
+    "global_and_partial_batch_ids_match": true,
+    "status": "passed"
+  }
+}

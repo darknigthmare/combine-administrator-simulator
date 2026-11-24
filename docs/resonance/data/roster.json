@@ -1274,7 +1274,23 @@
         "resonance_cost": 300
       },
       "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
-      "ex_variants": []
+      "ex_variants": [],
+      "reference_capture": {
+        "source_url": "https://combineoverwiki.net/images/7/7c/Hgrunt_hl03.png",
+        "source_page": "https://combineoverwiki.net/wiki/List_of_Hazardous_Environment_Combat_Unit_models",
+        "reference_filename": "Hgrunt_hl03.png",
+        "source_game": "Half-Life",
+        "provenance": "original_game_imagery_hosted_on_community_wiki",
+        "hosting": "community_wiki_not_official_Valve_hosting",
+        "role": "Original game model render hosted on a community wiki",
+        "visually_inspected": true,
+        "checked_on": "2026-11-24",
+        "inspection_record": "docs/resonance/production/continuation_20261124_j/character_generation.json",
+        "review_record": "docs/resonance/production/continuation_20261124_j/character_reference_review.md",
+        "scope_note": "Variante originale Hgrunt_hl03 à cagoule et lunettes; la capture ne désigne pas les variantes béret ou masque à gaz.",
+        "certifies_generated_asset_one_to_one": false
+      },
+      "visual_reference_status": "community_bitmap_inspected_candidate_not_certified"
     },
     {
       "id": "black_ops_hl1",
@@ -1383,7 +1399,23 @@
         "resonance_cost": 300
       },
       "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
-      "ex_variants": []
+      "ex_variants": [],
+      "reference_capture": {
+        "source_url": "https://combineoverwiki.net/images/5/58/Hl_assassin.png",
+        "source_page": "https://combineoverwiki.net/wiki/Black_Ops",
+        "reference_filename": "Hl_assassin.png",
+        "source_game": "Half-Life",
+        "provenance": "original_game_imagery_hosted_on_community_wiki",
+        "hosting": "community_wiki_not_official_Valve_hosting",
+        "role": "Original game model render hosted on a community wiki",
+        "visually_inspected": true,
+        "checked_on": "2026-11-24",
+        "inspection_record": "docs/resonance/production/continuation_20261124_j/character_generation.json",
+        "review_record": "docs/resonance/production/continuation_20261124_j/character_reference_review.md",
+        "scope_note": "Assassin féminin Half-Life original; tenue noire et lunettes rouges. Une seule vue ne certifie ni proportions de la pose adaptée ni animations.",
+        "certifies_generated_asset_one_to_one": false
+      },
+      "visual_reference_status": "community_bitmap_inspected_candidate_not_certified"
     },
     {
       "id": "alien_grunt_hl1",
@@ -1941,7 +1973,23 @@
         "resonance_cost": 300
       },
       "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
-      "ex_variants": []
+      "ex_variants": [],
+      "reference_capture": {
+        "source_url": "https://combineoverwiki.net/images/b/b2/Player_hl01.png",
+        "source_page": "https://combineoverwiki.net/wiki/Gordon_Freeman",
+        "reference_filename": "Player_hl01.png",
+        "source_game": "Half-Life",
+        "provenance": "original_game_imagery_hosted_on_community_wiki",
+        "hosting": "community_wiki_not_official_Valve_hosting",
+        "role": "Original game model render hosted on a community wiki",
+        "visually_inspected": true,
+        "checked_on": "2026-11-24",
+        "inspection_record": "docs/resonance/production/continuation_20261124_j/character_generation.json",
+        "review_record": "docs/resonance/production/continuation_20261124_j/character_reference_review.md",
+        "scope_note": "Modèle original LD player_hl01 sans lunettes visibles, HEV Mark IV. Ne certifie ni pose adaptée ni visage, dos ou animations.",
+        "certifies_generated_asset_one_to_one": false
+      },
+      "visual_reference_status": "community_bitmap_inspected_candidate_not_certified"
     },
     {
       "id": "barney_blueshift",
@@ -2050,7 +2098,23 @@
         "resonance_cost": 300
       },
       "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
-      "ex_variants": []
+      "ex_variants": [],
+      "reference_capture": {
+        "source_url": "https://combineoverwiki.net/images/6/6c/Barney.png",
+        "source_page": "https://combineoverwiki.net/wiki/List_of_Black_Mesa_Security_Force_models",
+        "reference_filename": "Barney.png",
+        "source_game": "Half-Life Blue Shift",
+        "provenance": "original_game_imagery_hosted_on_community_wiki",
+        "hosting": "community_wiki_not_official_Valve_hosting",
+        "role": "Original game model render hosted on a community wiki",
+        "visually_inspected": true,
+        "checked_on": "2026-11-24",
+        "inspection_record": "docs/resonance/production/continuation_20261124_j/character_generation.json",
+        "review_record": "docs/resonance/production/continuation_20261124_j/character_reference_review.md",
+        "scope_note": "Modèle standard LD du garde de sécurité utilisé dans Blue Shift, partagé avec Half-Life; pas le modèle HD ni Barney HL2.",
+        "certifies_generated_asset_one_to_one": false
+      },
+      "visual_reference_status": "community_bitmap_inspected_candidate_not_certified"
     },
     {
       "id": "alyx_hla",

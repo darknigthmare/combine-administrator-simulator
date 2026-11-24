@@ -1,6 +1,7 @@
 import cityBackgroundUrl from '../../../../assets/resonance/candidates/stage_city17_station_master.png';
 import labBackgroundUrl from '../../../../assets/resonance/candidates/stage_black_mesa_testchamber_master.png';
 import { ARENA_WIDTH, getBoss, getFighter } from './catalog';
+import { BOSS_SPRITES, drawSprite, FIGHTER_SPRITES, getSpriteImage, spriteSourcePoint } from './spriteAssets';
 import type { BattleState, BossId } from './types';
 
 export const SCENE_HEIGHT = 650;
@@ -144,6 +145,7 @@ function drawFighter(ctx: CanvasRenderingContext2D, state: BattleState) {
   ctx.save();
   if (player.hp <= 0) ctx.globalAlpha = .5;
   ctx.translate(x, y);
+  const spriteDrawn = drawSprite(ctx, FIGHTER_SPRITES[state.fighterId], 0, 0, player.facing, player.action === 'dodge' ? .78 : 1);
   ctx.scale(player.facing, 1);
   const stride = player.action === 'walk' ? Math.sin(state.tick / 4) * 10 : 4;
   const duck = player.action === 'dodge' ? 22 : 0;
@@ -151,38 +153,49 @@ function drawFighter(ctx: CanvasRenderingContext2D, state: BattleState) {
     oval(ctx, 0, -39, 35, 45, '#bedb7c20');
     ctx.strokeStyle = '#c2e9ab'; ctx.lineWidth = 1; ctx.strokeRect(-30, -88, 60, 92);
   }
-  ctx.translate(0, duck);
-  line(ctx, [[-7, -36], [-12 - stride, -16], [-13 - stride, 0]], '#152320', 12);
-  line(ctx, [[7, -36], [9 + stride, -18], [13 + stride, 0]], '#152320', 12);
-  line(ctx, [[-7, -36], [-12 - stride, -16], [-13 - stride, 0]], '#829280', 5);
-  line(ctx, [[7, -36], [9 + stride, -18], [13 + stride, 0]], '#788672', 5);
-  polygon(ctx, [[-14, -67], [10, -70], [17, -38], [-12, -35]], fighter.color, '#c3cba777');
-  oval(ctx, 0, -79, 10, 12, state.fighterId === 'vortigaunt_hl2' ? '#8b9270' : '#c1ac8d');
-  if (state.fighterId === 'gordon_hl2') {
-    line(ctx, [[3, -81], [12, -80]], '#253d36', 3);
-    polygon(ctx, [[1, -71], [8, -74], [5, -68]], '#34392c');
-    ctx.fillStyle = '#fff1ba'; ctx.font = 'bold 14px Arial'; ctx.fillText('λ', -6, -50);
-  } else if (state.fighterId === 'combine_elite_hl2') {
-    oval(ctx, 0, -79, 12, 14, '#dfdfcf');
-    oval(ctx, 7, -80, 4, 3, '#e46e57');
-  } else if (state.fighterId === 'vortigaunt_hl2') {
-    oval(ctx, 6, -80, 4, 3, '#e18146');
-    line(ctx, [[0, -53], [14, -48], [23, -51]], '#9dad7a', 5);
-  } else if (state.fighterId === 'shephard_op4') {
-    oval(ctx, 0, -85, 13, 7, '#72805b');
-    oval(ctx, 6, -77, 7, 8, '#37443b');
-    oval(ctx, 9, -81, 4, 3, '#b3c9ad');
-  } else if (state.fighterId === 'alyx_hl2') {
-    oval(ctx, -2, -87, 11, 5, '#373d2c');
-    ctx.fillStyle = '#a88c77'; ctx.fillRect(-10, -85, 19, 3);
+  if (!spriteDrawn) {
+    ctx.translate(0, duck);
+    line(ctx, [[-7, -36], [-12 - stride, -16], [-13 - stride, 0]], '#152320', 12);
+    line(ctx, [[7, -36], [9 + stride, -18], [13 + stride, 0]], '#152320', 12);
+    line(ctx, [[-7, -36], [-12 - stride, -16], [-13 - stride, 0]], '#829280', 5);
+    line(ctx, [[7, -36], [9 + stride, -18], [13 + stride, 0]], '#788672', 5);
+    polygon(ctx, [[-14, -67], [10, -70], [17, -38], [-12, -35]], fighter.color, '#c3cba777');
+    oval(ctx, 0, -79, 10, 12, state.fighterId === 'vortigaunt_hl2' ? '#8b9270' : '#c1ac8d');
+    if (state.fighterId === 'gordon_hl2') {
+      line(ctx, [[3, -81], [12, -80]], '#253d36', 3);
+      polygon(ctx, [[1, -71], [8, -74], [5, -68]], '#34392c');
+      ctx.fillStyle = '#fff1ba'; ctx.font = 'bold 14px Arial'; ctx.fillText('λ', -6, -50);
+    } else if (state.fighterId === 'combine_elite_hl2') {
+      oval(ctx, 0, -79, 12, 14, '#dfdfcf');
+      oval(ctx, 7, -80, 4, 3, '#e46e57');
+    } else if (state.fighterId === 'vortigaunt_hl2') {
+      oval(ctx, 6, -80, 4, 3, '#e18146');
+      line(ctx, [[0, -53], [14, -48], [23, -51]], '#9dad7a', 5);
+    } else if (state.fighterId === 'shephard_op4') {
+      oval(ctx, 0, -85, 13, 7, '#72805b');
+      oval(ctx, 6, -77, 7, 8, '#37443b');
+      oval(ctx, 9, -81, 4, 3, '#b3c9ad');
+    } else if (state.fighterId === 'alyx_hl2') {
+      oval(ctx, -2, -87, 11, 5, '#373d2c');
+      ctx.fillStyle = '#a88c77'; ctx.fillRect(-10, -85, 19, 3);
+    }
+    const isAttack = ['light', 'ranged', 'special'].includes(player.action);
+    line(ctx, [[8, -62], [20, -52], [isAttack ? 43 : 29, -56]], '#26372d', 10);
+    line(ctx, [[8, -62], [20, -52], [isAttack ? 43 : 29, -56]], fighter.color, 5);
+    if (state.fighterId !== 'vortigaunt_hl2') {
+      line(ctx, [[28, -57], [isAttack ? 58 : 43, -57]], '#b9bfaa', 5);
+      if (player.action === 'light' && state.fighterId === 'gordon_hl2') line(ctx, [[42, -55], [68, -88], [76, -84]], '#ae483e', 4);
+    } else if (isAttack) oval(ctx, 44, -56, 8, 8, '#cff27f');
+  } else if (['light', 'ranged', 'special'].includes(player.action)) {
+    // A timing cue accompanies the fixed pose; this is not a limb animation.
+    ctx.strokeStyle = player.action === 'special' ? '#cff27f' : '#f6d890';
+    ctx.lineWidth = player.action === 'special' ? 4 : 2;
+    ctx.beginPath();
+    if (player.action === 'light') ctx.arc(27, -56, 26, -1.3, 1.1);
+    else { ctx.moveTo(33, -56); ctx.lineTo(57, -56); }
+    ctx.stroke();
+    if (player.action !== 'light') oval(ctx, 44, -56, 6, 6, player.action === 'special' ? '#cff27f' : '#f6d890');
   }
-  const isAttack = ['light', 'ranged', 'special'].includes(player.action);
-  line(ctx, [[8, -62], [20, -52], [isAttack ? 43 : 29, -56]], '#26372d', 10);
-  line(ctx, [[8, -62], [20, -52], [isAttack ? 43 : 29, -56]], fighter.color, 5);
-  if (state.fighterId !== 'vortigaunt_hl2') {
-    line(ctx, [[28, -57], [isAttack ? 58 : 43, -57]], '#b9bfaa', 5);
-    if (player.action === 'light' && state.fighterId === 'gordon_hl2') line(ctx, [[42, -55], [68, -88], [76, -84]], '#ae483e', 4);
-  } else if (isAttack) oval(ctx, 44, -56, 8, 8, '#cff27f');
   ctx.restore();
   ctx.fillStyle = '#f6d890'; ctx.font = '10px ui-monospace, monospace'; ctx.textAlign = 'center';
   ctx.fillText('VOUS', x, y - 104);
@@ -205,7 +218,7 @@ export function renderBattle(canvas: HTMLCanvasElement, state: BattleState, opti
     ctx.drawImage(img, (ARENA_WIDTH - img.width * imageScale) / 2, FLOOR_Y - img.height * imageScale, img.width * imageScale, img.height * imageScale);
     ctx.restore();
   }
-  // The schematic silhouettes below communicate combat timing, not finished source-accurate sprite art.
+  // Static candidate sprites and vector fallbacks share the same combat coordinates.
   ctx.fillStyle = '#233a3166';
   for (let i = 0; i < 13; i++) ctx.fillRect(i * 111 - 31, 200 + (i * 59) % 140, 60 + (i * 13) % 37, 350);
   line(ctx, [[0, 356], [ARENA_WIDTH, 356]], '#9fbb9566', 1);
@@ -252,6 +265,10 @@ export function renderBattle(canvas: HTMLCanvasElement, state: BattleState, opti
     ctx.textAlign = 'left';
   }
 
+  const gunshipPose = BOSS_SPRITES.gunship_hl2;
+  const gunshipMuzzle = state.bossId === 'gunship_hl2' && getSpriteImage(gunshipPose)
+    ? spriteSourcePoint(gunshipPose, gunshipPose.muzzleSource, state.boss.x, FLOOR_Y - state.boss.y + Math.sin(frame / 52) * 4, -1)
+    : null;
   const attack = state.boss.attack;
   if (attack) {
     const ready = attack.telegraphTicks <= 0;
@@ -264,7 +281,7 @@ export function renderBattle(canvas: HTMLCanvasElement, state: BattleState, opti
       if (attack.kind === 'cannon') line(ctx, [[state.boss.x - 70, FLOOR_Y - state.boss.y + 22], [attack.x, FLOOR_Y]], '#d0f5ed', 12);
       else if (attack.kind === 'flame') polygon(ctx, [[state.boss.x - 90, FLOOR_Y - 115], [attack.x - attack.width / 2, FLOOR_Y], [attack.x + attack.width / 2, FLOOR_Y]], '#edaa4844');
       else if (attack.kind === 'strafe') {
-        const ox = state.boss.x - 69, oy = FLOOR_Y - state.boss.y + 57;
+        const [ox, oy] = gunshipMuzzle ?? [state.boss.x - 69, FLOOR_Y - state.boss.y + 57];
         for (let j = 0; j < 7; j++) {
           const progress = ((frame * .075 + j * .14) % 1);
           const tx = attack.x - attack.width / 2 + (j % 4) * attack.width / 3;
@@ -274,7 +291,7 @@ export function renderBattle(canvas: HTMLCanvasElement, state: BattleState, opti
           oval(ctx, ox + dx * progress, oy + dy * progress, 3, 3, '#ddf7dd');
         }
       }
-      else if (attack.kind === 'burst') for (let j = 0; j < 4; j++) line(ctx, [[state.boss.x - 50, FLOOR_Y - state.boss.y], [attack.x - attack.width / 2 + j * attack.width / 3, FLOOR_Y]], '#d8d4a550', 2);
+      else if (attack.kind === 'burst') for (let j = 0; j < 4; j++) line(ctx, [gunshipMuzzle ?? [state.boss.x - 50, FLOOR_Y - state.boss.y], [attack.x - attack.width / 2 + j * attack.width / 3, FLOOR_Y]], '#d8d4a550', 2);
       else if (attack.kind === 'shock') oval(ctx, attack.x, FLOOR_Y - 12, attack.width / 2, 16, '#f2b66977');
       else oval(ctx, attack.x, FLOOR_Y - 32, attack.width / 2, 40, '#d9904c66');
     }
@@ -286,7 +303,9 @@ export function renderBattle(canvas: HTMLCanvasElement, state: BattleState, opti
   switch (state.bossId as BossId) {
     case 'strider_hl2': drawStrider(ctx, bx, by, frame); break;
     case 'dropship_hl2': drawDropship(ctx, bx, by, frame, state.boss.parts.find((part) => !part.immune)?.hp ?? state.boss.hp); break;
-    case 'gunship_hl2': drawGunship(ctx, bx, by, frame); break;
+    case 'gunship_hl2':
+      if (!drawSprite(ctx, BOSS_SPRITES.gunship_hl2, bx, by + Math.sin(frame / 52) * 4, -1)) drawGunship(ctx, bx, by, frame);
+      break;
     case 'gargantua_hl1': drawGargantua(ctx, bx, frame, state.boss.hp <= 0); break;
   }
   ctx.restore();

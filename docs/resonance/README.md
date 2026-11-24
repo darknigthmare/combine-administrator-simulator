@@ -2,7 +2,15 @@
 
 Bible, production graphique et premier module Boss Battle jouable du mode annexe de combat 2D de Half Life Administrator.
 
-## Reprise du 24 novembre — bible 1.6, récupération F/H et lot I
+## Reprise du 24 novembre — bible 1.7 et lot J
+
+**44 PNG supplémentaires : 43 nouvelles images conservées et un décor historique récupéré.** Le [rapport du lot J](production/continuation_20261124_j/README.md) et sa [galerie](production/continuation_20261124_j/GALLERY.md) portent l’inventaire à **191 PNG distincts, 229 entrées, 25 refus antérieurs, 1 erreur outil et 12 sorties perdues tracées**. **155 des 259 cibles** ont un fichier associé; **104 restent sans PNG**.
+
+Le prototype Boss Battle utilise désormais **six sprites fixes de combattants et celui du Gunship**, en plus des deux panoramas déjà intégrés. Le rendu de secours et les signaux de combat restent actifs. Les dix effets recréés après l’interruption sont de nouvelles sorties, explicitement reliées aux versions perdues. Aucune animation complète, arène à six couches ou fidélité 1:1 n’est certifiée.
+
+[Inventaire complet](production/MISSING_TARGETS.md) · [Audit](production/asset_audit.md) · [Intégration et vérifications](production/continuation_20261124_j/runtime_integration.md). Les exports Word/Excel v1 restent historiques.
+
+## Lot I — état historique avant le lot J
 
 **108 PNG ajoutés : 94 récupérés et 14 nouveaux.** Le [rapport courant et la galerie du lot I](production/continuation_20261124_i/README.md) portent l’inventaire à **147 PNG distincts, 172 demandes et 25 refus**, couvrant **114 des 259 cibles**. **145 cibles restent sans fichier associé.** [Inventaire complet](production/MISSING_TARGETS.md) · [Audit des fichiers](production/asset_audit.md) · [Récupération des 94 PNG](production/recovery_20261124/README.md).
 
@@ -53,7 +61,7 @@ Les exports Word/Excel v1 ci-dessous restent des instantanés historiques. Les s
 
 Le menu principal ouvre désormais **Half Life Resonance · Boss Battle**, également accessible avec `?module=resonance-boss-battle`. Six profils pilotes affrontent quatre boss dans une simulation à 60 Hz : Strider, Dropship et sa nacelle, Gunship, Gargantua. Opération libre, Boss Rush de quatre rencontres et entraînement fonctionnent, avec trois difficultés, commandes clavier/tactiles, interactions d'arène, pause, résultats et records locaux séparés de la gestion.
 
-Le [chapitre Boss Battle](BOSS_BATTLE.md), repris dans la bible complète, documente 24 rencontres et une archive Hydra désactivée. Les vingt rencontres supplémentaires, les chroniques narratives, le relais et la coopération restent à implémenter. Le rendu actuel utilise des silhouettes schématiques et deux panoramas candidats : aucune animation de boss ni fidélité 1:1 n'est déclarée achevée.
+Le [chapitre Boss Battle](BOSS_BATTLE.md), repris dans la bible complète, documente 24 rencontres et une archive Hydra désactivée. Les vingt rencontres supplémentaires, les chroniques narratives, le relais et la coopération restent à implémenter. Le rendu utilise sept poses fixes candidates, des représentations vectorielles de secours et deux panoramas candidats; aucune animation de boss ni fidélité 1:1 n’est déclarée achevée.
 
 - `data/boss_battle_catalog.json` : identités, sources, contre-jeu, objectifs et trois phases de conception par rencontre.
 - `data/boss_battle_rules.json` : périmètre réel et extensions prévues.

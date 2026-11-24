@@ -1,12 +1,23 @@
 # Half Life Resonance
 
-Bible du mode annexe de combat 2D — version 1.6 — 24 novembre 2026
+Bible du mode annexe de combat 2D — version 1.7 — 24 novembre 2026
 
 
-<!-- CURRENT_CONTINUATION_20261124_I -->
+<!-- CURRENT_CONTINUATION_20261124_J -->
+## Reprise du 24 novembre — bible 1.7 et lot J
+
+**44 PNG supplémentaires : 43 nouvelles images conservées et un décor historique récupéré.** Le [rapport du lot J](production/continuation_20261124_j/README.md) et sa [galerie](production/continuation_20261124_j/GALLERY.md) portent l’inventaire à **191 PNG distincts, 229 entrées, 25 refus antérieurs, 1 erreur outil et 12 sorties perdues tracées**. **155 des 259 cibles** ont un fichier associé; **104 restent sans PNG**.
+
+Le prototype Boss Battle utilise désormais **six sprites fixes de combattants et celui du Gunship**, en plus des deux panoramas déjà intégrés. Le rendu de secours et les signaux de combat restent actifs. Les dix effets recréés après l’interruption sont de nouvelles sorties, explicitement reliées aux versions perdues. Aucune animation complète, arène à six couches ou fidélité 1:1 n’est certifiée.
+
+[Inventaire complet](production/MISSING_TARGETS.md) · [Audit](production/asset_audit.md) · [Intégration et vérifications](production/continuation_20261124_j/runtime_integration.md). Les exports Word/Excel v1 restent historiques.
+
+<!-- END_CURRENT_CONTINUATION_20261124_J -->
+
+<!-- HISTORICAL_CONTINUATION_20261124_I -->
 ## Mise à jour du 24 novembre — récupération F/H et lot I
 
-L’état de production courant est de **147 PNG, 172 demandes et 25 refus sans fichier**, pour **259 cibles, dont 114 illustrées et 145 sans fichier**. Cette reprise conserve les 39 PNG historiques, récupère 94 PNG des lots F/H et ajoute 14 nouveaux fichiers du lot I. Le [rapport complet](production/continuation_20261124_i/README.md), [l’inventaire par cible](production/MISSING_TARGETS.md) et [la galerie](production/continuation_20261124_i/GALLERY.md) font foi pour la production actuelle.
+À l’issue du lot I, l’état de production était de **147 PNG, 172 demandes et 25 refus sans fichier**, pour **259 cibles, dont 114 illustrées et 145 sans fichier**. Cette reprise conserve les 39 PNG historiques, récupère 94 PNG des lots F/H et ajoute 14 nouveaux fichiers du lot I. Le [rapport complet](production/continuation_20261124_i/README.md), [l’inventaire par cible](production/MISSING_TARGETS.md) et [la galerie](production/continuation_20261124_i/GALLERY.md) documentent ce checkpoint antérieur.
 
 La fusion des catalogues porte les projectiles/effets à 66 familles et conserve 81 références. Les six cibles HL25 supplémentaires, les états visuels et les révisions ne sont pas assimilés à de nouveaux combattants jouables. Les quatorze images du lot I sont des poses, deux portions de boss, trois masters de stages et deux effets de base, sans clips animés ni nouvelle intégration moteur. Les détails, orientations, collisions et parallaxes demandent encore une validation ; aucune image n’est certifiée 1:1.
 
@@ -1803,7 +1814,7 @@ Boss Battle permet au personnage choisi d’affronter une menace hors du format 
 
 Le premier module fonctionne avec **six pilotes, quatre rencontres et trois formats** : Opération libre, Boss Rush et Entraînement boss. Les quatre opérations sont Strider de Half-Life 2, Dropship et nacelle, Gunship et Gargantua de Half-Life 1998. Le catalogue complet documente **24 rencontres**, auxquelles s’ajoute **une archive Hydra désactivée**. Les vingt autres rencontres principales sont spécifiées, sans moteur de rencontre livré. Les versions Portal décrites plus bas ne sont donc pas jouables dans ce lot.
 
-Le rendu schématique actuel utilise des décors candidats pour vérifier déplacements, immunités, objectifs et transitions. **Aucun sprite, décor ou cycle animé de boss n’est certifié fidèle 1:1.** Les dégâts, les trois phases d’une opération, les positions des équipements et les parcours transversaux sont des créations pour Resonance.
+Le rendu du lot J utilise sept images fixes candidates — les six pilotes et le Gunship — avec des représentations vectorielles de secours et deux panoramas candidats. Les déplacements, immunités, objectifs et transitions restent ceux du prototype; les poses fixes ne constituent pas des clips animés. **Aucun sprite, décor ou cycle animé de boss n’est certifié fidèle 1:1.** Les dégâts, les trois phases d’une opération, les positions des équipements et les parcours transversaux sont des créations pour Resonance.
 
 Les fichiers associés sont `data/boss_battle_catalog.json` pour les références, `data/boss_battle_rules.json` pour les règles et `data/boss_battle_production.json` pour les travaux visuels.
 

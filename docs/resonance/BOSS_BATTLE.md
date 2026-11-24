@@ -8,7 +8,7 @@ Boss Battle permet au personnage choisi d’affronter une menace hors du format 
 
 Le premier module fonctionne avec **six pilotes, quatre rencontres et trois formats** : Opération libre, Boss Rush et Entraînement boss. Les quatre opérations sont Strider de Half-Life 2, Dropship et nacelle, Gunship et Gargantua de Half-Life 1998. Le catalogue complet documente **24 rencontres**, auxquelles s’ajoute **une archive Hydra désactivée**. Les vingt autres rencontres principales sont spécifiées, sans moteur de rencontre livré. Les versions Portal décrites plus bas ne sont donc pas jouables dans ce lot.
 
-Le rendu schématique actuel utilise des décors candidats pour vérifier déplacements, immunités, objectifs et transitions. **Aucun sprite, décor ou cycle animé de boss n’est certifié fidèle 1:1.** Les dégâts, les trois phases d’une opération, les positions des équipements et les parcours transversaux sont des créations pour Resonance.
+Le rendu du lot J utilise sept images fixes candidates — les six pilotes et le Gunship — avec des représentations vectorielles de secours et deux panoramas candidats. Les déplacements, immunités, objectifs et transitions restent ceux du prototype; les poses fixes ne constituent pas des clips animés. **Aucun sprite, décor ou cycle animé de boss n’est certifié fidèle 1:1.** Les dégâts, les trois phases d’une opération, les positions des équipements et les parcours transversaux sont des créations pour Resonance.
 
 Les fichiers associés sont `data/boss_battle_catalog.json` pour les références, `data/boss_battle_rules.json` pour les règles et `data/boss_battle_production.json` pour les travaux visuels.
 

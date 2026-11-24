@@ -2241,7 +2241,24 @@
         }
       ],
       "reference_status": "code_contract_visual_pending",
-      "reference_capture": null,
+      "reference_capture": {
+        "reference_filename": "Tripmine_wall.jpg",
+        "source_url": "https://combineoverwiki.net/images/5/5e/Tripmine_wall.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/Laser_Trip_Mine_(Half-Life)",
+        "visual_state_id": "beam",
+        "source_game": "Half-Life (1998)",
+        "provenance": "original_game_imagery_hosted_on_community_wiki",
+        "hosting": "community_wiki_not_official_Valve_hosting",
+        "role": "retail_game_model_or_effect_reference",
+        "visually_inspected": true,
+        "checked_on": "2026-11-24",
+        "inspection_note": "Bitmap de référence de la reprise J directement inspecté avant rattachement au catalogue; ne prouve pas la réussite d’une génération.",
+        "sha256": "d2456797f4503b4d43be55eb72a433c4d342ab8a619753a6ed324da5794cbda3",
+        "width": 578,
+        "height": 299,
+        "scope_note": "Capture de la mine HL1 posée sur un mur avec rayon turquoise. Couleur et aspect du rayon en perspective; segment latéral, intensité et rendu runtime restent à comparer.",
+        "certifies_generated_asset_one_to_one": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
       "generation_status": "not_generated_at_catalog_creation",
@@ -2281,7 +2298,8 @@
           ],
           "required_variants": []
         }
-      ]
+      ],
+      "visual_reference_status": "community_bitmap_inspected_candidate_not_certified"
     },
     {
       "id": "fx_gauss_beam_hl1",
@@ -2426,7 +2444,24 @@
         }
       ],
       "reference_status": "code_contract_visual_pending",
-      "reference_capture": null,
+      "reference_capture": {
+        "reference_filename": "Egon_color01.png",
+        "source_url": "https://combineoverwiki.net/images/9/9d/Egon_color01.png",
+        "source_page": "https://combineoverwiki.net/wiki/Gluon_Gun",
+        "visual_state_id": "beam",
+        "source_game": "Half-Life (1998)",
+        "provenance": "original_game_imagery_hosted_on_community_wiki",
+        "hosting": "community_wiki_not_official_Valve_hosting",
+        "role": "retail_game_model_or_effect_reference",
+        "visually_inspected": true,
+        "checked_on": "2026-11-24",
+        "inspection_note": "Bitmap de référence de la reprise J directement inspecté avant rattachement au catalogue; ne prouve pas la réussite d’une génération.",
+        "sha256": "cf1cb466eba6515dea4c5870de61ac9e61993258965730f742872e55a6a152c9",
+        "width": 1024,
+        "height": 768,
+        "scope_note": "Capture Egon_color01 du faisceau en perspective; couleur et texture de référence. Le segment latéral généré ne certifie ni amplitude, largeur, dynamique ni flare de contact. Tip et fade restent des états distincts.",
+        "certifies_generated_asset_one_to_one": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
       "generation_status": "not_generated_at_catalog_creation",
@@ -2471,7 +2506,8 @@
       ],
       "projectile_class": "continuous_beam",
       "requires_travel_sprite": false,
-      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending"
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "community_bitmap_inspected_candidate_not_certified"
     },
     {
       "id": "fx_vortigaunt_zap_hl1",
@@ -2801,7 +2837,24 @@
         }
       ],
       "reference_status": "exact_visual_reference_pending",
-      "reference_capture": null,
+      "reference_capture": {
+        "reference_filename": "Shock_Trooper_first.jpg",
+        "source_url": "https://combineoverwiki.net/images/2/2a/Shock_Trooper_first.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/Shock_Roach",
+        "visual_state_id": "body",
+        "source_game": "Half-Life: Opposing Force",
+        "provenance": "original_game_imagery_hosted_on_community_wiki",
+        "hosting": "community_wiki_not_official_Valve_hosting",
+        "role": "retail_game_model_or_effect_reference",
+        "visually_inspected": true,
+        "checked_on": "2026-11-24",
+        "inspection_note": "Bitmap de référence de la reprise J directement inspecté avant rattachement au catalogue; ne prouve pas la réussite d’une génération.",
+        "sha256": "e313ad26b4e697881f5f1cdfe8dd0e843e979db884083d2030afa15052613c04",
+        "width": 665,
+        "height": 487,
+        "scope_note": "Capture Shock_Trooper_first montrant une décharge cyan au contact d’une cible. Elle documente couleur et contour local, pas le sprite exact du projectile en vol. Le trajet isolé et son animation restent à capturer et vérifier; le candidat body demeure non certifié.",
+        "certifies_generated_asset_one_to_one": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
       "generation_status": "not_generated_at_catalog_creation",
@@ -2842,7 +2895,8 @@
       ],
       "projectile_class": "moving_projectile",
       "requires_travel_sprite": true,
-      "primary_evidence_status": "primary_context_only_specific_capture_required"
+      "primary_evidence_status": "primary_context_only_specific_capture_required",
+      "visual_reference_status": "contact_capture_inspected_exact_travel_reference_pending"
     },
     {
       "id": "proj_spore_opfor",
@@ -3856,7 +3910,24 @@
         }
       ],
       "reference_status": "code_contract_visual_pending",
-      "reference_capture": null,
+      "reference_capture": {
+        "reference_filename": "Bugbait.jpg",
+        "source_url": "https://combineoverwiki.net/images/4/45/Bugbait.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/Bugbait",
+        "visual_state_id": "body",
+        "source_game": "Half-Life 2",
+        "provenance": "original_game_imagery_hosted_on_community_wiki",
+        "hosting": "community_wiki_not_official_Valve_hosting",
+        "role": "retail_game_model_or_effect_reference",
+        "visually_inspected": true,
+        "checked_on": "2026-11-24",
+        "inspection_note": "Bitmap de référence de la reprise J directement inspecté avant rattachement au catalogue; ne prouve pas la réussite d’une génération.",
+        "sha256": "eae8afa006f9ede73f66c1536be68703dbd30847fc871c4a8e96c86e4070b55a",
+        "width": 448,
+        "height": 405,
+        "scope_note": "Rendu du worldmodel du phéropode HL2; chair brun/violet et extrémités cyan. Corps seulement, sans preuve de nuage, impact ou trajectoire.",
+        "certifies_generated_asset_one_to_one": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
       "generation_status": "not_generated_at_catalog_creation",
@@ -3899,7 +3970,8 @@
       ],
       "projectile_class": "thrown_device",
       "requires_travel_sprite": true,
-      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending"
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "community_bitmap_inspected_candidate_not_certified"
     },
     {
       "id": "proj_apc_missile_hl2",
@@ -4379,7 +4451,24 @@
         }
       ],
       "reference_status": "code_contract_visual_pending",
-      "reference_capture": null,
+      "reference_capture": {
+        "reference_filename": "Magnade.jpg",
+        "source_url": "https://combineoverwiki.net/images/f/fe/Magnade.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/Magnusson_Device",
+        "visual_state_id": "held",
+        "source_game": "Half-Life 2: Episode Two",
+        "provenance": "original_game_imagery_hosted_on_community_wiki",
+        "hosting": "community_wiki_not_official_Valve_hosting",
+        "role": "retail_game_model_or_effect_reference",
+        "visually_inspected": true,
+        "checked_on": "2026-11-24",
+        "inspection_note": "Bitmap de référence de la reprise J directement inspecté avant rattachement au catalogue; ne prouve pas la réussite d’une génération.",
+        "sha256": "a9f97c3d8a786a86937632ece97aa8b4cc433f77b5925cb61c3d8d19cd9ed6a2",
+        "width": 496,
+        "height": 466,
+        "scope_note": "Rendu du modèle Magnusson au repos; silhouette, bande rouge, pointes et barres cyan. Ne documente pas l’attachement, l’explosion ni tous les états de la famille.",
+        "certifies_generated_asset_one_to_one": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
       "generation_status": "not_generated_at_catalog_creation",
@@ -4425,7 +4514,8 @@
       ],
       "projectile_class": "thrown_device",
       "requires_travel_sprite": true,
-      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending"
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "community_bitmap_inspected_candidate_not_certified"
     },
     {
       "id": "fx_ar2_tracer_hl2",
@@ -5385,7 +5475,42 @@
         }
       ],
       "reference_status": "exact_visual_reference_pending",
-      "reference_capture": null,
+      "reference_capture": {
+        "reference_filename": "Excursion_Funnel_Forward.png",
+        "source_url": "https://i1.theportalwiki.net/img/c/ce/Excursion_Funnel_Forward.png",
+        "source_page": "https://theportalwiki.com/wiki/Excursion_Funnel",
+        "visual_state_id": "normal",
+        "source_game": "Portal 2",
+        "provenance": "original_game_imagery_hosted_on_community_wiki",
+        "hosting": "community_wiki_not_official_Valve_hosting",
+        "role": "retail_game_model_or_effect_reference",
+        "visually_inspected": true,
+        "checked_on": "2026-11-24",
+        "inspection_note": "Bitmap de référence de la reprise J directement inspecté avant rattachement au catalogue; ne prouve pas la réussite d’une génération.",
+        "sha256": "b8d741d5f7faa79886b3f1876c6db6c1b739713629fdafcf62905c6b633bca55",
+        "width": 1680,
+        "height": 1050,
+        "scope_note": "Deux captures distinctes du tunnel normal bleu et inversé orange, conservées avec leurs états. Références de couleur et filaments; le mouvement, le sens d’animation et le compositing en jeu restent à valider.",
+        "certifies_generated_asset_one_to_one": false,
+        "additional_captures": [
+          {
+            "reference_filename": "Excursion_Funnel_Reverse.png",
+            "source_url": "https://i1.theportalwiki.net/img/5/52/Excursion_Funnel_Reverse.png",
+            "source_page": "https://theportalwiki.com/wiki/Excursion_Funnel",
+            "visual_state_id": "reverse",
+            "source_game": "Portal 2",
+            "provenance": "original_game_imagery_hosted_on_community_wiki",
+            "hosting": "community_wiki_not_official_Valve_hosting",
+            "role": "retail_game_model_or_effect_reference",
+            "visually_inspected": true,
+            "checked_on": "2026-11-24",
+            "inspection_note": "Bitmap de référence de la reprise J directement inspecté avant rattachement au catalogue; ne prouve pas la réussite d’une génération.",
+            "sha256": "ba8b87447d90f064b9137b01bc5d1683eda00517f3d809eb55befbb08ddf3d00",
+            "width": 1680,
+            "height": 1050
+          }
+        ]
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
       "generation_status": "not_generated_at_catalog_creation",
@@ -5399,7 +5524,8 @@
         "allowed_artifact_status": "candidate_until_visual_review"
       },
       "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
-      "effect_kind_provisional": true
+      "effect_kind_provisional": true,
+      "visual_reference_status": "community_bitmap_inspected_candidate_not_certified"
     },
     {
       "id": "proj_repulsion_gel_portal2",
@@ -5736,7 +5862,24 @@
         }
       ],
       "reference_status": "exact_visual_reference_pending",
-      "reference_capture": null,
+      "reference_capture": {
+        "reference_filename": "Portal_2_Bomb.png",
+        "source_url": "https://i1.theportalwiki.net/img/b/b1/Portal_2_Bomb.png",
+        "source_page": "https://theportalwiki.com/wiki/Bombs",
+        "visual_state_id": "body",
+        "source_game": "Portal 2",
+        "provenance": "original_game_imagery_hosted_on_community_wiki",
+        "hosting": "community_wiki_not_official_Valve_hosting",
+        "role": "retail_game_model_or_effect_reference",
+        "visually_inspected": true,
+        "checked_on": "2026-11-24",
+        "inspection_note": "Bitmap de référence de la reprise J directement inspecté avant rattachement au catalogue; ne prouve pas la réussite d’une génération.",
+        "sha256": "734be13cb21ef1d9526c323ce463c5aad517669d7c6dd192aaef82e3116395d0",
+        "width": 721,
+        "height": 733,
+        "scope_note": "Rendu de la bombe retail Portal 2, corps gris/rouge et lentille orange-rouge. Ne désigne pas Wheatley ni une bombe de contenu coupé; détonation et animation restent distinctes.",
+        "certifies_generated_asset_one_to_one": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
       "generation_status": "not_generated_at_catalog_creation",
@@ -5777,7 +5920,8 @@
       ],
       "projectile_class": "moving_projectile",
       "requires_travel_sprite": true,
-      "primary_evidence_status": "primary_context_only_specific_capture_required"
+      "primary_evidence_status": "primary_context_only_specific_capture_required",
+      "visual_reference_status": "community_bitmap_inspected_candidate_not_certified"
     },
     {
       "id": "proj_combine_grenade_hla",
@@ -6181,7 +6325,24 @@
         }
       ],
       "reference_status": "exact_visual_capture_required",
-      "reference_capture": null,
+      "reference_capture": {
+        "reference_filename": "Tripmine_world.jpg",
+        "source_url": "https://combineoverwiki.net/images/8/84/Tripmine_world.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/Laser_Trip_Mine_(Half-Life)",
+        "visual_state_id": "body",
+        "source_game": "Half-Life (1998)",
+        "provenance": "original_game_imagery_hosted_on_community_wiki",
+        "hosting": "community_wiki_not_official_Valve_hosting",
+        "role": "retail_game_model_or_effect_reference",
+        "visually_inspected": true,
+        "checked_on": "2026-11-24",
+        "inspection_note": "Bitmap de référence de la reprise J directement inspecté avant rattachement au catalogue; ne prouve pas la réussite d’une génération.",
+        "sha256": "920928a9f49d4a1690b91d29700b2123387cfb0397408b89aa6313ec5c0ffb48",
+        "width": 346,
+        "height": 189,
+        "scope_note": "Rendu du boîtier original HL1 olive et optique centrale. Le rayon de détection est documenté sur une autre cible; activation et animation restent à vérifier.",
+        "certifies_generated_asset_one_to_one": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
       "generation_status": "not_generated_at_catalog_creation",
@@ -6221,7 +6382,8 @@
           ],
           "required_variants": []
         }
-      ]
+      ],
+      "visual_reference_status": "community_bitmap_inspected_candidate_not_certified"
     },
     {
       "id": "proj_headcrab_canister_hl2",
@@ -6262,7 +6424,24 @@
         }
       ],
       "reference_status": "exact_visual_capture_required",
-      "reference_capture": null,
+      "reference_capture": {
+        "reference_filename": "HeadcrabShell_side.jpg",
+        "source_url": "https://combineoverwiki.net/images/4/45/HeadcrabShell_side.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/Headcrab_Shell",
+        "visual_state_id": "opening",
+        "source_game": "Half-Life 2",
+        "provenance": "original_game_imagery_hosted_on_community_wiki",
+        "hosting": "community_wiki_not_official_Valve_hosting",
+        "role": "retail_game_model_or_effect_reference",
+        "visually_inspected": true,
+        "checked_on": "2026-11-24",
+        "inspection_note": "Bitmap de référence de la reprise J directement inspecté avant rattachement au catalogue; ne prouve pas la réussite d’une génération.",
+        "sha256": "ef941bf09ae17cc1c6c1621b2c0550c1f657d24dfd63658a4feffe1525d06439",
+        "width": 865,
+        "height": 524,
+        "scope_note": "Rendu de la capsule déjà ouverte, coque et panneaux déployés. Documente opening seulement, pas la coque fermée en vol, la traînée ou les créatures libérées.",
+        "certifies_generated_asset_one_to_one": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
       "generation_status": "not_generated_at_catalog_creation",
@@ -6308,7 +6487,8 @@
       ],
       "projectile_class": "moving_projectile",
       "requires_travel_sprite": true,
-      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending"
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "community_bitmap_inspected_candidate_not_certified"
     },
     {
       "id": "fx_pistol_fire_hl2",
