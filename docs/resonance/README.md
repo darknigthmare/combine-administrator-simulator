@@ -2,13 +2,20 @@
 
 Bible, production graphique et premier module Boss Battle jouable du mode annexe de combat 2D de Half Life Administrator.
 
-## Suite du 20 novembre — lot E
+## Reprise du 24 novembre — bible 1.6, récupération F/H et lot I
+
+**108 PNG ajoutés : 94 récupérés et 14 nouveaux.** Le [rapport courant et la galerie du lot I](production/continuation_20261124_i/README.md) portent l’inventaire à **147 PNG distincts, 172 demandes et 25 refus**, couvrant **114 des 259 cibles**. **145 cibles restent sans fichier associé.** [Inventaire complet](production/MISSING_TARGETS.md) · [Audit des fichiers](production/asset_audit.md) · [Récupération des 94 PNG](production/recovery_20261124/README.md).
+
+Le nouveau lot apporte Protection Civile, City Scanner, Rollermine, Grunt/Charger/Suppressor d’Alyx, costume G-Man HL1, Pit Worm, Gene Worm, trois masters de stages, portail orange Portal 1 et rayon Tau primaire HL1. Les fichiers restent des candidats ; aucun nouveau contenu n’est intégré au moteur et aucune fidélité 1:1 ou animation n’est déclarée certifiée. Les exports Word/Excel v1 restent historiques.
+
+## Lot E — état historique du 20 novembre
+
 
 La bible Markdown passe en **version 1.5**. Le [dossier des archives](chapters/archive_reference_contracts_20261120.md) développe huit contrats de référence pour le contenu abandonné et suit les trois autres archives dont les preuves restent à compléter. Les modèles, concepts, prototypes et adaptations proposées sont distingués ; aucun personnage inédit n’est présenté comme une apparence officielle finale.
 
 Le [lot E et sa galerie](production/continuation_20261120_e/README.md) ajoutent **douze PNG pour sept cibles** : Dog, Hunter, Fourmilion ouvrier, costume HECU au béret, Gargantua vu de dos, cinq fichiers de couches des Canaux et deux de Ravenholm. La révision du mur central des Canaux remplace la v1 pour la prochaine revue. Les Canaux ont cinq plans candidats sur six ; Ravenholm en a deux.
 
-L’état courant vérifié est de **39 PNG distincts, 51 demandes et 12 refus**, pour **187 cibles dont 25 avec fichier et 162 sans fichier**. Aucun nouveau refus n’a été enregistré dans ce lot. Les onze fichiers de couches couvrent neuf couples stage/plan identifiés ; le fichier historique de Cité 17 reste sans ID. Aucun stage complet, clip animé ni contrôle de fidélité 1:1 n’est déclaré terminé.
+Au point de contrôle du 20 novembre, l’état vérifié était de **39 PNG distincts, 51 demandes et 12 refus**, pour **187 cibles dont 25 avec fichier et 162 sans fichier**. Aucun nouveau refus n’a été enregistré dans ce lot. Les onze fichiers de couches couvrent neuf couples stage/plan identifiés ; le fichier historique de Cité 17 reste sans ID. Aucun stage complet, clip animé ni contrôle de fidélité 1:1 n’est déclaré terminé.
 
 La [relecture alpha du lot D](production/continuation_20261120_e/alpha_review_previous_assets.json) corrige le diagnostic de franges rouges nettes pour trois sprites sur les fonds testés. Les PNG et le refus historique de la correction Strider sont conservés. Les nouveaux fichiers restent candidats ; les exports Word/Excel v1 restent historiques.
 

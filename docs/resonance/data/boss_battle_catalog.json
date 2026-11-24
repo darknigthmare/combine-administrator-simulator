@@ -401,7 +401,20 @@
       "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
       "visual_status": "reference_and_animation_validation_required",
       "certified_one_to_one": false,
-      "runtime_enabled": true
+      "runtime_enabled": true,
+      "reference_capture": {
+        "reference_filename": "dropship_hl2.jpg",
+        "sha256": "8f8bb65b16f24484133100588d232e49c3c718145724fa527e9205e01e63cfae",
+        "width": 1086,
+        "height": 817,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/3/3f/Combine_Dropship.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Combine_Dropship.jpg",
+        "source_game": "Half-Life 2",
+        "provenance": "official_game_model_capture_hosted_on_secondary_wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      }
     },
     {
       "id": "gunship_hl2",
@@ -458,7 +471,20 @@
       "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
       "visual_status": "reference_and_animation_validation_required",
       "certified_one_to_one": false,
-      "runtime_enabled": true
+      "runtime_enabled": true,
+      "reference_capture": {
+        "reference_filename": "gunship_hl2.jpg",
+        "sha256": "8465addfbce29f99a7a1b8e4923bb5026e1395685e383de2626cc1d03a42bddd",
+        "width": 2357,
+        "height": 1786,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/4/4b/Combine_Gunship.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Combine_Gunship.jpg",
+        "source_game": "Half-Life 2 et Episode One",
+        "provenance": "official_game_model_capture_hosted_on_secondary_wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      }
     },
     {
       "id": "gargantua_hl1",
@@ -743,7 +769,20 @@
       "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
       "visual_status": "reference_and_animation_validation_required",
       "certified_one_to_one": false,
-      "runtime_enabled": false
+      "runtime_enabled": false,
+      "reference_capture": {
+        "reference_filename": "hunter_chopper_hl2.jpg",
+        "sha256": "e08b8a25c1af04c908f9eaba8c7c3ff914d90eac29bbabe8284c9e01134ad7b8",
+        "width": 2910,
+        "height": 1258,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/a/a8/Hunter-Chopper.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Hunter-Chopper.jpg",
+        "source_game": "Half-Life 2 Water Hazard",
+        "provenance": "official_game_model_capture_hosted_on_secondary_wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      }
     },
     {
       "id": "hunter_chopper_ep2",
@@ -855,7 +894,20 @@
       "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
       "visual_status": "reference_and_animation_validation_required",
       "certified_one_to_one": false,
-      "runtime_enabled": false
+      "runtime_enabled": false,
+      "reference_capture": {
+        "reference_filename": "apc_hl2.jpg",
+        "sha256": "fe6b858aad22d75ca78e893b1e7aa363eeb77d00775217a5e82fc77a71e6b5a1",
+        "width": 1573,
+        "height": 1379,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/6/62/APC.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:APC.jpg",
+        "source_game": "Half-Life 2",
+        "provenance": "official_game_model_capture_hosted_on_secondary_wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      }
     },
     {
       "id": "gonarch_hl1",
@@ -1199,7 +1251,20 @@
       "canon_status": "identity_and_source_behaviors_referenced_2d_encounter_original",
       "visual_status": "reference_and_animation_validation_required",
       "certified_one_to_one": false,
-      "runtime_enabled": false
+      "runtime_enabled": false,
+      "reference_capture": {
+        "reference_filename": "antlion_guard_hl2.jpg",
+        "sha256": "fe734a8c9bb6aa9337790e60f68c3f39f96046b2d1a3594d9c1eabe39d66253d",
+        "width": 512,
+        "height": 592,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/a/a2/Antlion_guard.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Antlion_guard.jpg",
+        "source_game": "Half-Life 2",
+        "provenance": "official_game_model_capture_hosted_on_secondary_wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      }
     },
     {
       "id": "guardian_tunnels_ep2",

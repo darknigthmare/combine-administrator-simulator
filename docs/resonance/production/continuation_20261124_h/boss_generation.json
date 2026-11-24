@@ -1,0 +1,204 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-11-24",
+  "generator": "image_gen built-in",
+  "reference_policy": "GoldSrc 1998 Half-Life original model captures, not Black Mesa remake. Source captures reviewed visually. Generated adaptations remain candidates.",
+  "prompts": [
+    {
+      "id": "nihilanth_hl1",
+      "filename": "nihilanth_hl1_idle_h.png",
+      "ref": "Nihilanth_model.jpg",
+      "prompt": "Use case: stylized-concept. Asset type: one standalone high resolution 2D fighting game boss sprite. The attached image is an exact visual reference of the ORIGINAL 1998 Half-Life Nihilanth model. Reproduce this character faithfully as a detailed painted sprite, preserving its distinctive enormous tall closed pale gray cranium, small dark inset eyes, tiny open mouth, small wrinkled torso, exactly two long outer arms and one slender third arm emerging from the center of the chest, three elongated fingers, wrist bands, very reduced legs and angular dark machinery hanging below the torso. Preserve the proportions, silhouette and grey-olive palette in the reference. Neutral hovering combat idle pose seen from a slightly three-quarter SIDE VIEW facing RIGHT, full character, all long hanging lower details and fingertips inside the canvas with generous empty margins. Readable limbs and crisp game-ready outline; painterly UHD surface treatment preserving model design, without redesign or extra anatomy. One character only, no attack effect, no arena, no floor, no cast shadow, no text, no labels, no border, no montage. Genuine transparent RGBA background. This is a faithful 2D adaptation of the referenced HL1 model; do not use the Black Mesa remake design."
+    },
+    {
+      "id": "tentacles_blastpit_hl1",
+      "filename": "tentacle_blastpit_hl1_idle_h.png",
+      "ref": "Tentacle.jpg",
+      "prompt": "Use case: stylized-concept. Asset type: one standalone high resolution 2D fighting game environmental boss appendage sprite. The attached reference is the ORIGINAL 1998 Half-Life Tentacle model. Reproduce ONE single fully visible tentacle faithfully as a detailed painted sprite: long thick dark green segmented stalk with broad armored knuckles and small side spines; curved upper neck ending in the distinctive long hard black pointed blade-like beak, a small red sensory spot, dark gray ridged crest and two small gray gripping feelers below the beak. Match the original model's precise silhouette, segment placement, green/black palette and proportions. Turn the pose to face RIGHT in a strict readable side view, base vertical at bottom, hooked beak pointing down-right at the top; the entire stalk including its clean flat base within image with 8 percent transparent safety margin. No new root, no mouth full of teeth, no eyes beyond the referenced small red spot, no serpentine redesign. One appendage only, designed to be placed three times independently for the Blast Pit boss. Genuine transparent RGBA background; no floor, pit, scenery, shadows, frame, text, label, watermark or sprite sheet. UHD painted sprite detail without changing the HL1 reference anatomy."
+    },
+    {
+      "id": "gonarch_hl1",
+      "filename": "gonarch_hl1_idle_h.png",
+      "ref": "Hl_gonarch_model.png",
+      "prompt": "Use case: stylized-concept. Asset type: one standalone high resolution 2D fighting game boss sprite. Use the attached image only as the exact ORIGINAL 1998 Half-Life Gonarch model reference. Reproduce the same creature faithfully in detailed painted 2D sprite form: broad low flattened dark brown chitin carapace, exactly FOUR thick articulated long pointed legs with the original small spikes, a large rounded mottled brown organic brood sac hanging under the center. Match the silhouette, proportions, muted brown/olive palette and arrangement in the reference. No added face, no jaws, no visible eyes, no horns, no extra legs, no spiders' web. Full creature in a slightly three-quarter SIDE VIEW facing RIGHT, stable idle stance with all four feet visible and whole body fully inside the canvas, generous transparent margin around every pointed leg. UHD hand-painted sprite finish, crisp outline, grounded leg contact alignment, no photorealistic scene. Genuine transparent RGBA background, no floor, no detached shadow, no environment, no text, no label, no frame, no montage, no offspring, one creature only. Faithful HL1 model adaptation; do not use the Black Mesa remake design."
+    }
+  ],
+  "cleanup_prompt": "Use case: background-extraction. Edit the supplied generated Gonarch sprite ONLY to remove all surrounding brown haze, soft halo, vignette and black atmosphere. Keep the creature's exact anatomy, four legs, carapace, hanging brood sac, colors, size, painted texture and pose unchanged. The opaque body must have clean sharp silhouette edges with genuine transparent alpha immediately outside them, including between all legs and around the pointed feet. No ground plane, cast shadow, atmosphere, glow, fringe or background pixels. Entire creature inside the canvas. Produce a true transparent RGBA cutout suitable for placing over a bright game background. This is just background cleanup, no redesign.",
+  "assets": [
+    {
+      "asset_id": "nihilanth_hl1_idle_h",
+      "owner_id": "nihilanth_hl1",
+      "target_ids": [
+        "nihilanth_hl1"
+      ],
+      "category": "boss_key_pose",
+      "generation_status": "generated",
+      "selected_candidate": true,
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/bosses/nihilanth_hl1_idle_h.png",
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/bosses/nihilanth_hl1_idle_h.png",
+      "source_game": "Half-Life 1998",
+      "content_class": "released_reference",
+      "reference_image": {
+        "url": "https://combineoverwiki.net/images/b/b9/Nihilanth_model.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Nihilanth_model.jpg",
+        "provenance": "Capture/rendu du modèle original du jeu Valve, hébergé sur Combine OverWiki; référence visuelle examinée."
+      },
+      "qa_status": "candidate_visual_review_done",
+      "alpha_check": "true_alpha_composite_checked_on_neutral_gray",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "target_completed": false,
+      "notes": "Proportions, grand crâne, troisième bras, bracelets et implant inférieur concordent avec le modèle HL1 consulté. Vue trois-quarts encore proche de face; profil de combat et phases à produire.",
+      "width": 1114,
+      "height": 1412,
+      "color_mode": "RGBA",
+      "sha256": "eb541ac4b69eff45fbe3f6ba859efc315c5a1481ac88b773762e9a1f2543089c",
+      "size_bytes": 795228,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "fully_transparent_pixels": 1228148,
+      "alpha_at_least_240_pixels": 300157,
+      "alpha_bbox_at_240": [
+        46,
+        10,
+        1082,
+        1371
+      ]
+    },
+    {
+      "asset_id": "tentacle_blastpit_hl1_idle_h",
+      "owner_id": "tentacles_blastpit_hl1",
+      "target_ids": [
+        "tentacles_blastpit_hl1"
+      ],
+      "category": "boss_appendage",
+      "generation_status": "generated",
+      "selected_candidate": true,
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/bosses/tentacle_blastpit_hl1_idle_h.png",
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/bosses/tentacle_blastpit_hl1_idle_h.png",
+      "source_game": "Half-Life 1998",
+      "content_class": "released_reference",
+      "reference_image": {
+        "url": "https://combineoverwiki.net/images/e/e5/Tentacle.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Tentacle.jpg",
+        "provenance": "Capture/rendu du modèle original du jeu Valve, hébergé sur Combine OverWiki; référence visuelle examinée."
+      },
+      "qa_status": "candidate_visual_review_done",
+      "alpha_check": "true_alpha_composite_checked_on_neutral_gray",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "target_completed": false,
+      "notes": "Appendice individuel fidèle aux marqueurs HL1 : bec noir, spot rouge, crête grise, deux préhenseurs, tige segmentée verte. Composition finale des trois tentacules et arène non produites par ce fichier.",
+      "width": 1031,
+      "height": 1526,
+      "color_mode": "RGBA",
+      "sha256": "5ec6a37e5a8f8e8201870610403ce0dcb1717900febf9ae5353ae58ff0d235c8",
+      "size_bytes": 767824,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "fully_transparent_pixels": 1242641,
+      "alpha_at_least_240_pixels": 282103,
+      "alpha_bbox_at_240": [
+        99,
+        48,
+        953,
+        1478
+      ],
+      "coverage_scope": "one_reusable_appendage_of_three"
+    },
+    {
+      "asset_id": "gonarch_hl1_idle_h",
+      "owner_id": "gonarch_hl1",
+      "target_ids": [
+        "gonarch_hl1"
+      ],
+      "category": "boss_key_pose",
+      "generation_status": "generated",
+      "selected_candidate": false,
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/bosses/gonarch_hl1_idle_h.png",
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/bosses/gonarch_hl1_idle_h.png",
+      "source_game": "Half-Life 1998",
+      "content_class": "released_reference",
+      "reference_image": {
+        "url": "https://combineoverwiki.net/images/3/35/Hl_gonarch_model.png",
+        "source_page": "https://combineoverwiki.net/wiki/File:Hl_gonarch_model.png",
+        "provenance": "Capture/rendu du modèle original du jeu Valve, hébergé sur Combine OverWiki; référence visuelle examinée."
+      },
+      "qa_status": "candidate_visual_review_done",
+      "alpha_check": "true_alpha_composite_checked_on_neutral_gray",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "target_completed": false,
+      "notes": "Première itération. Quatre pattes, carapace et sac conformes aux marqueurs du modèle; détouré propre sur composite réel. V2 préférée pour lisibilité. Vue frontale trois-quarts, profil combat à compléter.",
+      "width": 1536,
+      "height": 1024,
+      "color_mode": "RGBA",
+      "sha256": "520f62c976517cf9514d79fcaff5a25ebd282557610dc62cc5fa88fd7174bca1",
+      "size_bytes": 1746091,
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "fully_transparent_pixels": 983614,
+      "alpha_at_least_240_pixels": 518010,
+      "alpha_bbox_at_240": [
+        134,
+        44,
+        1401,
+        993
+      ]
+    },
+    {
+      "asset_id": "gonarch_hl1_idle_h_v2",
+      "owner_id": "gonarch_hl1",
+      "target_ids": [
+        "gonarch_hl1"
+      ],
+      "category": "boss_key_pose",
+      "generation_status": "generated",
+      "selected_candidate": true,
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/bosses/gonarch_hl1_idle_h_v2.png",
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/bosses/gonarch_hl1_idle_h_v2.png",
+      "source_game": "Half-Life 1998",
+      "content_class": "released_reference",
+      "reference_image": {
+        "url": "https://combineoverwiki.net/images/3/35/Hl_gonarch_model.png",
+        "source_page": "https://combineoverwiki.net/wiki/File:Hl_gonarch_model.png",
+        "provenance": "Capture/rendu du modèle original du jeu Valve, hébergé sur Combine OverWiki; référence visuelle examinée."
+      },
+      "qa_status": "candidate_visual_review_done",
+      "alpha_check": "true_alpha_composite_checked_on_neutral_gray",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "target_completed": false,
+      "notes": "Retouche dédiée au détourage. Le halo RGB affiché en aperçu brut disparaît sur composition alpha correcte. Anatomie principale et quatre pattes maintenues; vue frontale trois-quarts à compléter par profil combat.",
+      "width": 1536,
+      "height": 1024,
+      "color_mode": "RGBA",
+      "sha256": "5c546b78eccadf53d995ae9a1e18578bb2201935bb4a79be1e87fa9d9a95c6aa",
+      "size_bytes": 1949723,
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "fully_transparent_pixels": 1009689,
+      "alpha_at_least_240_pixels": 526488,
+      "alpha_bbox_at_240": [
+        131,
+        35,
+        1405,
+        999
+      ]
+    }
+  ],
+  "counts": {
+    "generation_calls": 4,
+    "physical_png_files": 4,
+    "distinct_targets": 3,
+    "selected_candidates": 3,
+    "certified_one_to_one": 0,
+    "integrated_in_game": 0,
+    "completed_animation_clips": 0
+  },
+  "qa_method": "PNG decode and SHA256; alpha histogram and composition over neutral gray (185,185,185), manually inspected. Raw RGB display can expose invisible colors under zero alpha; not treated as an opaque halo."
+}

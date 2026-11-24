@@ -1,0 +1,235 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "continuation_20261124_i",
+  "created_at": "2026-11-24",
+  "scope": "Deux effets manquants, un état par PNG transparent.",
+  "counts": {
+    "requests": 2,
+    "generated_png": 2,
+    "refused": 0,
+    "targets_with_new_file": 2,
+    "certified_one_to_one": 0
+  },
+  "assets": [
+    {
+      "asset_id": "fx_gauss_primary_hl1_i",
+      "name_fr": "Rayon primaire Tau/Gauss — Half-Life",
+      "owner_id": "fx_gauss_beam_hl1",
+      "target_id": "fx_gauss_beam_hl1",
+      "target_ids": [
+        "fx_gauss_beam_hl1"
+      ],
+      "owner_type": "projectile_effect",
+      "category": "vfx_key_frame",
+      "catalogue": "projectile_catalog_20261124.targets",
+      "source_game": "Half-Life (1998)",
+      "content_class": "released_reference",
+      "batch_id": "continuation_20261124_i",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: stylized-concept. Generate ONE isolated alpha-transparent raster game effect for Half-Life Resonance: the primary instantaneous beam of the Tau/Gauss Cannon from original Half-Life (1998), not the charged white beam and not the HL2 buggy weapon. Use the official EV_FireGauss rendering contract: narrow straight beam, smoke.spr softly mottled translucent texture, primary tint RGB 255,128,0, low noise amplitude 0, primary width1 (charged width2.5 is NOT this asset). Visually present one long, very narrow, straight amber-orange horizontal streak at center, with a soft narrow halo and faint internal smoky texture; a continuous beam segment, not a projectile or a flame. Landscape canvas approximately3:1; beam occupies about75percent width and no more than4percent height including halo, with ample totally empty transparent margin at ALL edges. The segment stops cleanly well within the margins. Both endpoints have only a faint natural light falloff, no flare, no separate orb, no impact, no branching lightning, no explosion, no dense particle spray, no launch burst, no weapon, no hand, no background, no floor, no text or panel. All pixels outside the subtle luminous streak truly alpha transparent, not black-painted or white-painted backing. This is one single static primary-beam candidate guided by the official code; exact retail sprite texture remains to validate. Do not draw labels or descriptions. Render the highest-quality clean isolated 2D game VFX consistent with this intentionally simple original effect.",
+      "source_urls": [
+        "https://github.com/ValveSoftware/halflife/blob/master/cl_dll/ev_hldm.cpp",
+        "https://github.com/ValveSoftware/halflife/blob/master/dlls/gauss.cpp"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "ev_hldm.cpp",
+          "source_url": "https://github.com/ValveSoftware/halflife/blob/master/cl_dll/ev_hldm.cpp",
+          "role": "official_source_code",
+          "sha256": "c85ab7d6c2a0e913e7e94d89ae0a76513f12db7241866abf93e9e6b7cfd5bba0",
+          "visually_inspected": false,
+          "evidence_scope": "EV_FireGauss primaire RGB 255/128/0, largeur 1 contre 2,5 chargé blanc, smoke.spr et hotglow.spr. Ne prouve pas les pixels de la texture retail."
+        },
+        {
+          "reference_filename": "gauss.cpp",
+          "source_url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/gauss.cpp",
+          "role": "official_source_code",
+          "sha256": "fd5ebfb39cc041dfe8a6771fdc32da0eac198456d2e839def808b489b284218c",
+          "visually_inspected": false,
+          "evidence_scope": "EV_FireGauss primaire RGB 255/128/0, largeur 1 contre 2,5 chargé blanc, smoke.spr et hotglow.spr. Ne prouve pas les pixels de la texture retail."
+        }
+      ],
+      "reference_paths": [],
+      "reference_bitmap_loaded": false,
+      "reference_bitmap_role": "none_code_contract_only",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261124_i/effects/fx_gauss_primary_hl1_i.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_i/effects/fx_gauss_primary_hl1_i.png",
+      "visual_state_id": "primary",
+      "variant": "primary",
+      "visual_state_complete": false,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "selected_for_next_review": true,
+      "transparent_background": true,
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 182623,
+      "sha256": "7beed7e39242fd7079a3655dc32953fcb07861e70386026a62730f28b414cc77",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "save_method": "PNG bytes returned in image_url decoded directly without pixel edit; no output_hint was provided.",
+      "alpha_check": "Canal alpha, compositing blanc/noir et bornes utiles inspectés; pas de matte blanche/noire visible.",
+      "alpha_stats": {
+        "transparent_pixels": 1478759,
+        "partial_pixels": 93769,
+        "opaque_pixels": 0,
+        "alpha_range": [
+          0,
+          253
+        ],
+        "bbox_alpha_nonzero": [
+          55,
+          44,
+          2144,
+          692
+        ],
+        "bbox_alpha_at_least_16": [
+          236,
+          342,
+          1932,
+          381
+        ],
+        "transparent_fraction": 0.9403705371223915,
+        "center_alpha": 250,
+        "edge_alpha_max": 0
+      },
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "result": "Effet isolé lisible sur les deux fonds, pas de pollution de matte visible; petites valeurs alpha résiduelles hors bordure utile consignées.",
+        "review_path": "/tmp/resonance-stage-i/effects/fx_gauss_primary_hl1_i_alpha_review.jpg"
+      },
+      "qa_notes": "Rayon primaire étroit et instantané, guidé par EV_FireGauss; distinguer le chargé blanc. Aucune capture retail du rayon chargée, donc texture de smoke.spr encore à comparer. La bande ne représente ni projectile mobile, ni impact, ni animation complète.",
+      "notes": "Rayon primaire étroit et instantané, guidé par EV_FireGauss; distinguer le chargé blanc. Aucune capture retail du rayon chargée, donc texture de smoke.spr encore à comparer. La bande ne représente ni projectile mobile, ni impact, ni animation complète.",
+      "completed_six_layer_stage": false,
+      "source_partial_register": "docs/resonance/production/continuation_20261124_i/effects_generation.json"
+    },
+    {
+      "asset_id": "fx_portal_orange_active_rim_portal1_i",
+      "name_fr": "Portail orange actif — Portal",
+      "owner_id": "fx_portal_orange_portal1",
+      "target_id": "fx_portal_orange_portal1",
+      "target_ids": [
+        "fx_portal_orange_portal1"
+      ],
+      "owner_type": "projectile_effect",
+      "category": "vfx_key_frame",
+      "catalogue": "projectile_catalog_20261124.targets",
+      "source_game": "Portal",
+      "content_class": "released_reference",
+      "batch_id": "continuation_20261124_i",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: stylized-concept. Produce ONE isolated high-resolution 2D alpha-transparent VFX frame for Half-Life Resonance: the ACTIVE ORANGE PORTAL RIM from ORIGINAL PORTAL (2007), faithfully guided by the orange portals visible in the TWO supplied official Valve Steam screenshots. Use these as strict color, rim thickness and edge-texture references; ignore all other image content. Exactly one tall vertical elliptical orange aperture outline, seen straight on without perspective tilt. Preserve the original warm golden-yellow inner glow grading to saturated orange outer edge, its subtle flame-like wisps flickering locally along the ring, and the smooth ellipse. The bottom edge can be slightly brighter as in the screenshots. No ornate frame, no thick plasma torus, no sparks spray, no blue or purple material. The CENTER OF THE OVAL MUST BE ENTIRELY TRANSPARENT, because the game renderer supplies the live destination image; outside the ring also true alpha transparency. Do not draw the room or portal destination inside. No gun, no cube, no wall, no stripes, no switch/button, no grey panel, no mechanical portal spawner, no floor, no human, no scenery, no lettering or HUD. Portrait canvas: entire ellipse with every wisp contained within generous10percent empty margins on ALL four sides. Fine controlled soft glow that fades into fully transparent pixels, no opaque black backing and no opaque white backing. Only this single active orange rim, one state in one image, no panels, collage or additional effects.",
+      "source_urls": [
+        "https://store.steampowered.com/app/400/Portal/",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/400/ss_15c08be59046abbd785ab8e7e8857ba8633f292b.1920x1080.jpg?t=1745368554",
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/400/ss_5d9a2b799aaaa6f8992128c126e68b7e8d718715.1920x1080.jpg?t=1745368554"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "portal_steam_8_full.jpg",
+          "source_page": "https://store.steampowered.com/app/400/Portal/",
+          "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/400/ss_15c08be59046abbd785ab8e7e8857ba8633f292b.1920x1080.jpg?t=1745368554",
+          "role": "official_steam_game_screenshot_reference",
+          "visually_inspected": true,
+          "sha256": "73ae3cfe1bfeb25b43ed3215f9f9ec5c8b373e525581923fd608b7d9aaf8dee0"
+        },
+        {
+          "reference_filename": "portal_steam_9_full.jpg",
+          "source_page": "https://store.steampowered.com/app/400/Portal/",
+          "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/400/ss_5d9a2b799aaaa6f8992128c126e68b7e8d718715.1920x1080.jpg?t=1745368554",
+          "role": "official_steam_game_screenshot_reference",
+          "visually_inspected": true,
+          "sha256": "bbec51ca212b85ccc48766f6213770043f21603c6b5819170c0aae561803c3d3"
+        }
+      ],
+      "reference_paths": [
+        "/tmp/resonance-stage-i/effects/portal_steam_8_full.jpg",
+        "/tmp/resonance-stage-i/effects/portal_steam_9_full.jpg"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "official_steam_game_screenshot_reference",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261124_i/effects/fx_portal_orange_active_rim_portal1_i.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_i/effects/fx_portal_orange_active_rim_portal1_i.png",
+      "visual_state_id": "active_rim",
+      "variant": "active_rim",
+      "visual_state_complete": false,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "selected_for_next_review": true,
+      "transparent_background": true,
+      "width": 1024,
+      "height": 1536,
+      "color_mode": "RGBA",
+      "byte_size": 1692184,
+      "sha256": "eb8c9910a8e85fbd0b6e0404a7248b4d7b9a83125abf37b22bb02d5d61fe45a8",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "save_method": "PNG bytes returned in image_url decoded directly without pixel edit; no output_hint was provided.",
+      "alpha_check": "Canal alpha, compositing blanc/noir et bornes utiles inspectés; pas de matte blanche/noire visible.",
+      "alpha_stats": {
+        "transparent_pixels": 823614,
+        "partial_pixels": 749250,
+        "opaque_pixels": 0,
+        "alpha_range": [
+          0,
+          253
+        ],
+        "bbox_alpha_nonzero": [
+          0,
+          0,
+          1023,
+          1536
+        ],
+        "bbox_alpha_at_least_16": [
+          55,
+          67,
+          952,
+          1482
+        ],
+        "transparent_fraction": 0.5236396789550781,
+        "center_alpha": 0,
+        "edge_alpha_max": 2
+      },
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "result": "Effet isolé lisible sur les deux fonds, pas de pollution de matte visible; petites valeurs alpha résiduelles hors bordure utile consignées.",
+        "review_path": "/tmp/resonance-stage-i/effects/fx_portal_orange_active_rim_portal1_i_alpha_review.jpg"
+      },
+      "qa_notes": "Contour orange guidé par deux captures officielles Steam de Portal 1, non par recoloration du bleu H. Centre transparent pour la destination rendue par moteur. Des filaments/halo sont plus étendus que dans la capture et la rotation frontale est adaptée; une frame ne valide pas la boucle.",
+      "notes": "Contour orange guidé par deux captures officielles Steam de Portal 1, non par recoloration du bleu H. Centre transparent pour la destination rendue par moteur. Des filaments/halo sont plus étendus que dans la capture et la rotation frontale est adaptée; une frame ne valide pas la boucle.",
+      "completed_six_layer_stage": false,
+      "source_partial_register": "docs/resonance/production/continuation_20261124_i/effects_generation.json"
+    }
+  ],
+  "deferred_targets": [
+    {
+      "target_id": "proj_shock_bolt_opfor",
+      "visual_state_id": "body",
+      "generation_attempted": false,
+      "reason": "La capture exacte recherchée de la décharge Gearbox na pas pu être récupérée; les captures officielles de produit disponibles ne suffisent pas à isoler sa forme. Aucun Vortigaunt ou effet inventé substitué."
+    }
+  ]
+}

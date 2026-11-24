@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-11-24",
+  "scope": "Independent visual and alpha inspection of four root character candidates; no delivery PNG modified.",
+  "method": "Composited original RGBA over neutral gray for inspection; compared all four candidates to original HL1/HL2 model captures.",
+  "certification_note": "This review confirms candidate usability and visible identity markers, not exact 1:1 certification, runtime integration or animation completion.",
+  "assets": [
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/houndeye_hl1_idle_v2_h.png",
+      "width": 1536,
+      "height": 1024,
+      "color_mode": "RGBA",
+      "sha256": "b5f4bb4aa8874aa82a19aaecc832b97873cff1abe1aeff56f3b882c21311a634",
+      "size_bytes": 2067721,
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "fully_transparent_pixels": 998212,
+      "alpha_at_least_240_pixels": 547122,
+      "alpha_bbox_at_240": [
+        238,
+        41,
+        1300,
+        1003
+      ],
+      "alpha_composite": "pass_no_opaque_background_or_visible_colored_halo",
+      "candidate_visual_result": "pass_with_notes",
+      "notes": "Trois pattes visibles, œil composé sombre, rayures cyan et volume corporel HL1 conservés. Pose de profil adaptée au combat. Détourage propre dans le composite.",
+      "certified_one_to_one": false,
+      "reference": "https://combineoverwiki.net/images/c/c5/Houndeye_hl1.png",
+      "reference_page": "https://combineoverwiki.net/wiki/File:Houndeye_hl1.png"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/alien_controller_hl1_hover_h.png",
+      "width": 1183,
+      "height": 1330,
+      "color_mode": "RGBA",
+      "sha256": "eb19d9cf2fba38f0aeb6ef805beb65fb23407c3db1c9efc8b1e2d657611c56f1",
+      "size_bytes": 1062098,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "fully_transparent_pixels": 1108173,
+      "alpha_at_least_240_pixels": 377074,
+      "alpha_bbox_at_240": [
+        28,
+        28,
+        1143,
+        1290
+      ],
+      "alpha_composite": "pass_no_opaque_background_or_visible_colored_halo",
+      "candidate_visual_result": "pass_with_notes",
+      "notes": "Crâne rouge/noir, corps fin, troisième bras ventral, pagne rouge et extrémités pointues concordent avec le modèle HL1. Pose encore proche de face; vue de profil à compléter.",
+      "certified_one_to_one": false,
+      "reference": "https://combineoverwiki.net/images/9/97/Alien_Controller2.jpg",
+      "reference_page": "https://combineoverwiki.net/wiki/File:Alien_Controller2.jpg"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/headcrab_hl1_idle_v2_h.png",
+      "width": 1536,
+      "height": 1024,
+      "color_mode": "RGBA",
+      "sha256": "db34a5954c67faa4315a3455a1eade13962643e3370d94d7ee07695611e3a64f",
+      "size_bytes": 1705935,
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "fully_transparent_pixels": 1172172,
+      "alpha_at_least_240_pixels": 383336,
+      "alpha_bbox_at_240": [
+        144,
+        42,
+        1392,
+        1000
+      ],
+      "alpha_composite": "pass_no_opaque_background_or_visible_colored_halo",
+      "candidate_visual_result": "pass_with_notes",
+      "notes": "Enveloppe beige, longs appendices avant rouge brun et silhouette HL1 conservés. Pattes arrière partiellement masquées par la perspective : vérifier quatre points d’articulation dans une seconde vue avant certification.",
+      "certified_one_to_one": false,
+      "reference": "https://combineoverwiki.net/images/1/10/Hl_headcrab.png",
+      "reference_page": "https://combineoverwiki.net/wiki/File:Hl_headcrab.png"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/manhack_hl2_hover_v2_h.png",
+      "width": 1360,
+      "height": 1157,
+      "color_mode": "RGBA",
+      "sha256": "0a903fd143e03cb8f7af080c9307af31e0db07233558237006e91df1793f5a97",
+      "size_bytes": 791066,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "fully_transparent_pixels": 1222684,
+      "alpha_at_least_240_pixels": 277576,
+      "alpha_bbox_at_240": [
+        62,
+        20,
+        1297,
+        1135
+      ],
+      "alpha_composite": "pass_no_opaque_background_or_visible_colored_halo",
+      "candidate_visual_result": "pass_with_notes",
+      "notes": "Détourage propre, corps métallique noir/rouge et cyan oxydé, œil rouge et lames conformes aux repères visibles du modèle Manhack HL2 fourni. Léger flou de rotation. Comparaison bitmap faite après le premier relevé alpha; fidélité 1:1 toujours non certifiée.",
+      "certified_one_to_one": false,
+      "reference_local_path": "/workspace/scratch/684967c2474e/references-h/Manhack.jpg"
+    }
+  ]
+}

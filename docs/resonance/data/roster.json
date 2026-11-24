@@ -443,7 +443,20 @@
           "description": "Portée verticale accrue avec récupération au sol conservée.",
           "status": "design_only"
         }
-      ]
+      ],
+      "reference_capture": {
+        "reference_filename": "barney_hl2.jpg",
+        "sha256": "82153457a56ad1164150d5fc5f3eb9288461f7bd84c639ba69908977d62f6a07",
+        "width": 689,
+        "height": 1734,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/0/0b/Barney_hl2.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Barney_hl2.jpg",
+        "source_game": "Half-Life 2",
+        "provenance": "official_game_model_capture_hosted_on_secondary_wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      }
     },
     {
       "id": "shephard_op4",
@@ -590,7 +603,20 @@
           "description": "Le coup soulève légèrement après impact confirmé; toute conversion doit être vérifiée.",
           "status": "design_only"
         }
-      ]
+      ],
+      "reference_capture": {
+        "reference_filename": "shephard_op4_retail.png",
+        "sha256": "add96b26560050205a7c1660bb9c0862b43020b881ec0e8fe5d619b0c6f3565e",
+        "width": 1100,
+        "height": 1100,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/1/12/Dm_shephard.png",
+        "source_page": "https://combineoverwiki.net/wiki/File:Dm_shephard.png",
+        "source_game": "Half-Life Opposing Force",
+        "provenance": "official retail game model capture hosted by secondary community wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      }
     },
     {
       "id": "vortigaunt_hl2",
@@ -993,7 +1019,20 @@
         "resonance_cost": 300
       },
       "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
-      "ex_variants": []
+      "ex_variants": [],
+      "reference_capture": {
+        "reference_filename": "grigori_hl2_retail.jpg",
+        "sha256": "054f5aa85cd8060b48dab9a4cc8c45ffd4c5f90f74ff999be3bfc7ef6e9427d9",
+        "width": 1271,
+        "height": 1678,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/9/9c/Monk_model.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Monk_model.jpg",
+        "source_game": "Half-Life 2",
+        "provenance": "official retail game model capture hosted by secondary community wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      }
     },
     {
       "id": "dog_hl2",
@@ -1671,7 +1710,20 @@
         "resonance_cost": 300
       },
       "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
-      "ex_variants": []
+      "ex_variants": [],
+      "reference_capture": {
+        "reference_filename": "gina_decay_ps2.png",
+        "sha256": "abab920286f4116f2893d0984811154e1b1569a4483d5cee60368ea5bc918a33",
+        "width": 1100,
+        "height": 1100,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/5/5f/Ps2_gina_decay.png",
+        "source_page": "https://combineoverwiki.net/wiki/File:Ps2_gina_decay.png",
+        "source_game": "Half-Life Decay PlayStation 2",
+        "provenance": "official retail game model capture hosted by secondary community wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      }
     },
     {
       "id": "colette_decay",
@@ -2918,7 +2970,20 @@
         "resonance_cost": 300
       },
       "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
-      "ex_variants": []
+      "ex_variants": [],
+      "reference_capture": {
+        "reference_filename": "pit_drone_op4_retail.jpg",
+        "sha256": "066f3251725f8ab34d3de5bdc6f87dd7d13ff8f2a356c5986787030b0e2f3095",
+        "width": 431,
+        "height": 673,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/3/3c/Pit_Drone_model.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Pit_Drone_model.jpg",
+        "source_game": "Half-Life Opposing Force",
+        "provenance": "official retail game model capture hosted by secondary community wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      }
     }
   ],
   "rules": {
@@ -3275,6 +3340,19 @@
           "RS07"
         ],
         "scope": "Identification du jeu source uniquement; aucune validation visuelle ou activation runtime."
+      },
+      "reference_capture": {
+        "reference_filename": "bullsquid_hl1.png",
+        "sha256": "f30a69d01b9bad0617ebb2193d0d82a8bc210d9ca8787381c2a4be1418fe827a",
+        "width": 900,
+        "height": 470,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/8/85/Bullsquid_hl.png",
+        "source_page": "https://combineoverwiki.net/wiki/File:Bullsquid_hl.png",
+        "source_game": "Half-Life",
+        "provenance": "official_game_model_capture_hosted_on_secondary_wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
       }
     },
     {
@@ -3294,6 +3372,19 @@
           "RS08"
         ],
         "scope": "Identification du jeu source uniquement; aucune validation visuelle ou activation runtime."
+      },
+      "reference_capture": {
+        "reference_filename": "houndeye_hl1.png",
+        "sha256": "80da516d9761ccfb6f5ce30af92e4d4b2b35248a77d945e6e3af952d8f3c1328",
+        "width": 1100,
+        "height": 1100,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/c/c5/Houndeye_hl1.png",
+        "source_page": "https://combineoverwiki.net/wiki/File:Houndeye_hl1.png",
+        "source_game": "Half-Life",
+        "provenance": "official_game_model_capture_hosted_on_secondary_wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
       }
     },
     {
@@ -3314,6 +3405,19 @@
           "RS14"
         ],
         "scope": "Identification du jeu source uniquement; aucune validation visuelle ou activation runtime."
+      },
+      "reference_capture": {
+        "reference_filename": "shock_trooper_op4_retail.png",
+        "sha256": "289351a05b17d22570811ee1fe985c53e1fab03f9ab3a7643d8ddbd5aaff084a",
+        "width": 320,
+        "height": 520,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/9/9b/Shock_trooper.png",
+        "source_page": "https://combineoverwiki.net/wiki/File:Shock_trooper.png",
+        "source_game": "Half-Life: Opposing Force",
+        "provenance": "official retail game model capture hosted by secondary community wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
       }
     },
     {

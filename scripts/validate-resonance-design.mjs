@@ -20,10 +20,18 @@ const backlog = read('asset_backlog.json').rows;
 const animation = read('animation_budget.json');
 const art = read('generated_art_register.json');
 const extension = read('catalogue_extension_20261120.json');
-const extensionIds = new Set(extension.targets.map(target => target.id));
+const extension20261124 = read('catalogue_extension_20261124.json');
+const extensionTargets = [...extension.targets, ...extension20261124.targets];
+const extensionIds = new Set(extensionTargets.map(target => target.id));
+const projectileCatalog = read('projectile_catalog_20261124.json');
+const projectileTargets = projectileCatalog.targets;
+check(Array.isArray(projectileTargets), 'Projectile catalogue must expose targets[]');
+if (!Array.isArray(projectileTargets)) throw new Error(errors.join('\n'));
+const projectileIds = new Set(projectileTargets.map(target => target.id));
+const projectileSourceIds = new Set(projectileCatalog.sources.map(source => source.id));
 const bossIds = new Set([
   ...read('boss_battle_catalog.json').bosses.map(boss => boss.id),
-  ...extension.targets.filter(target => target.category === 'boss').map(target => target.id),
+  ...extensionTargets.filter(target => target.category === 'boss').map(target => target.id),
 ]);
 const frameData = read('frame_data_pilote.json');
 const fighters = roster.fighters;
@@ -36,8 +44,25 @@ const stageIds = new Set(stages.map(stage => stage.id));
 // 24-stage production budget below remains scoped to the original catalogue.
 const assetStageIds = new Set([
   ...stageIds,
-  ...extension.targets.filter(target => target.category === 'stage').map(target => target.id),
+  ...extensionTargets.filter(target => target.category === 'stage').map(target => target.id),
 ]);
+unique(extensionTargets.map(target => target.id), 'extension targets');
+unique(projectileTargets.map(target => target.id), 'projectile/FX targets');
+unique(projectileCatalog.sources.map(source => source.id), 'projectile/FX sources');
+check(projectileCatalog.counts.targets === projectileTargets.length, 'Projectile catalogue target count mismatch');
+for (const [field, key] of [['by_effect_kind', 'effect_kind'], ['by_source_game', 'source_game']]) {
+  const actual = Object.fromEntries([...new Set(projectileTargets.map(target => target[key]))].sort().map(value => [value, projectileTargets.filter(target => target[key] === value).length]));
+  const declared = projectileCatalog.counts[field];
+  check(declared && Object.keys(declared).length === Object.keys(actual).length && Object.entries(actual).every(([value, count]) => declared[value] === count), `Projectile catalogue ${field} mismatch`);
+}
+for (const target of projectileTargets) {
+  check(!extensionIds.has(target.id) && !fighterIds.has(target.id) && !reserveIds.has(target.id) && !assetStageIds.has(target.id) && !bossIds.has(target.id), `${target.id}: projectile/FX target collides with another catalogue`);
+  check(target.category === 'projectile' && target.runtime_enabled === false, `${target.id}: projectile/FX catalogue must remain documentary`);
+  check(target.owner_id === target.id && target.certified_one_to_one === false, `${target.id}: invalid projectile identity or fidelity claim`);
+  check(Array.isArray(target.source_ids) && target.source_ids.length > 0 && target.source_ids.every(id => projectileSourceIds.has(id)), `${target.id}: unresolved projectile reference`);
+  check(['projectile', 'throwable', 'instant_trace', 'beam', 'impact', 'area', 'portal', 'device', 'weapon_fire'].includes(target.effect_kind), `${target.id}: unknown projectile/FX behavior`);
+  check(Array.isArray(target.variants_required) && target.variants_required.length > 0 && target.variants_required.every(id => typeof id === 'string' && id.trim()) && new Set(target.variants_required).size === target.variants_required.length, `${target.id}: invalid visual state contract`);
+}
 unique([...fighters.map(fighter => fighter.id)], 'fighters');
 unique(stages.map(stage => stage.id), 'stages');
 unique(backlog.map(asset => asset.asset_id), 'production groups');
@@ -131,7 +156,14 @@ for (const asset of art.assets) {
   if (asset.owner_type === 'stage') check(assetStageIds.has(asset.owner_id), `${asset.asset_id}: unknown stage owner`);
   if (asset.owner_type === 'boss') check(bossIds.has(asset.owner_id), `${asset.asset_id}: unknown boss owner`);
   if (['support_character', 'support_machine'].includes(asset.owner_type)) check(extensionIds.has(asset.owner_id), `${asset.asset_id}: unknown extension owner`);
-  check(['fighter', 'reserve_character', 'stage', 'boss', 'support_character', 'support_machine', 'shared_collection'].includes(asset.owner_type), `${asset.asset_id}: unknown owner type`);
+  if (asset.owner_type === 'projectile_effect') {
+    check(projectileIds.has(asset.owner_id), `${asset.asset_id}: unknown projectile/FX owner`);
+    const targets = asset.target_ids ?? (asset.target_id != null ? [asset.target_id] : []);
+    check(Array.isArray(targets) && targets.includes(asset.owner_id), `${asset.asset_id}: projectile/FX artwork needs an explicit owner target`);
+    if (asset.target_id != null) check(asset.target_id === asset.owner_id, `${asset.asset_id}: conflicting projectile target alias`);
+  }
+  if (projectileIds.has(asset.owner_id)) check(asset.owner_type === 'projectile_effect', `${asset.asset_id}: wrong projectile/FX owner type`);
+  check(['fighter', 'reserve_character', 'stage', 'boss', 'support_character', 'support_machine', 'projectile_effect', 'shared_collection'].includes(asset.owner_type), `${asset.asset_id}: unknown owner type`);
   if (asset.generation_status !== 'généré') {
     check(asset.file_path === null && asset.repository_path === null, `${asset.asset_id}: failed request has an asset path`);
     continue;

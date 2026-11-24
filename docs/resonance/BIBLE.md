@@ -1,12 +1,22 @@
 # Half Life Resonance
 
-Bible du mode annexe de combat 2D — version 1.5 — 20 novembre 2026
+Bible du mode annexe de combat 2D — version 1.6 — 24 novembre 2026
 
+
+<!-- CURRENT_CONTINUATION_20261124_I -->
+## Mise à jour du 24 novembre — récupération F/H et lot I
+
+L’état de production courant est de **147 PNG, 172 demandes et 25 refus sans fichier**, pour **259 cibles, dont 114 illustrées et 145 sans fichier**. Cette reprise conserve les 39 PNG historiques, récupère 94 PNG des lots F/H et ajoute 14 nouveaux fichiers du lot I. Le [rapport complet](production/continuation_20261124_i/README.md), [l’inventaire par cible](production/MISSING_TARGETS.md) et [la galerie](production/continuation_20261124_i/GALLERY.md) font foi pour la production actuelle.
+
+La fusion des catalogues porte les projectiles/effets à 66 familles et conserve 81 références. Les six cibles HL25 supplémentaires, les états visuels et les révisions ne sont pas assimilés à de nouveaux combattants jouables. Les quatorze images du lot I sont des poses, deux portions de boss, trois masters de stages et deux effets de base, sans clips animés ni nouvelle intégration moteur. Les détails, orientations, collisions et parallaxes demandent encore une validation ; aucune image n’est certifiée 1:1.
+
+Le récit, les kits et les modes décrits ci-dessous gardent leur périmètre d’implémentation documenté. Les exports Word/Excel v1 demeurent historiques. Les bilans datés du 20 novembre ci-dessous sont conservés comme checkpoints antérieurs.
+<!-- END_CURRENT_CONTINUATION_20261124_I -->
 
 <!-- CURRENT_CONTINUATION_20261120_E -->
 ## Mise à jour du 20 novembre — lot E et archives
 
-Le [lot E](production/continuation_20261120_e/README.md) livre douze PNG candidats pour sept cibles existantes : Dog, Hunter, Fourmilion ouvrier, costume HECU au béret, Gargantua, Canaux et Ravenholm. Le [registre consolidé](data/generated_art_register.json) compte désormais **39 PNG, 51 demandes et 12 refus**, sans nouveau refus dans ce lot. Le catalogue conserve **187 cibles : 25 avec fichier, 162 sans fichier**.
+Le [lot E](production/continuation_20261120_e/README.md) livre douze PNG candidats pour sept cibles existantes : Dog, Hunter, Fourmilion ouvrier, costume HECU au béret, Gargantua, Canaux et Ravenholm. À ce point historique, le registre consolidé comptait **39 PNG, 51 demandes et 12 refus**, sans nouveau refus dans ce lot. Le catalogue conserve **187 cibles : 25 avec fichier, 162 sans fichier**.
 
 Les Canaux disposent de cinq plans candidats sur six et Ravenholm de deux. La v2 du mur central des Canaux remplace la v1 pour la prochaine revue ; les raccords et les parties cachées en parallaxe restent à terminer. Les cinq nouveaux sujets sont des poses uniques, sans clips animés ni intégration moteur. Aucun candidat n’est certifié 1:1 et aucun stage complet à six couches n’est déclaré terminé.
 

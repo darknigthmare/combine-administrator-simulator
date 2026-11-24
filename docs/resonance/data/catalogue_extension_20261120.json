@@ -748,7 +748,19 @@
       "source_ids": [
         "mossman"
       ],
-      "reference_capture": null,
+      "reference_capture": {
+        "reference_filename": "mossman_hl2_retail.jpg",
+        "sha256": "43d45ebd9e59cba089ca9dc36ee423b26514ebdf664343bdfd6fa333dd7c85c0",
+        "width": 553,
+        "height": 1720,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/8/87/Mossman_model.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Mossman_model.jpg",
+        "source_game": "Half-Life 2",
+        "provenance": "official retail game model capture hosted by secondary community wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      },
       "visual_reference_status": "capture_required",
       "generation_status": "not_started",
       "runtime_enabled": false,
@@ -1989,7 +2001,19 @@
       "source_ids": [
         "hecu_models"
       ],
-      "reference_capture": null,
+      "reference_capture": {
+        "reference_filename": "hecu_gasmask_hl1.png",
+        "sha256": "8d9d2222d6f1a321b6dafa437cfc0774bca2e7831b18aae302cf6f32aa0795a2",
+        "width": 768,
+        "height": 768,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/b/bc/Hgrunt_hl01.png",
+        "source_page": "https://combineoverwiki.net/wiki/File:Hgrunt_hl01.png",
+        "source_game": "Half-Life",
+        "provenance": "official_game_model_capture_hosted_on_secondary_wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      },
       "visual_reference_status": "capture_required",
       "generation_status": "not_started",
       "runtime_enabled": false,
@@ -2011,7 +2035,19 @@
         "soldier",
         "combine_markings"
       ],
-      "reference_capture": null,
+      "reference_capture": {
+        "reference_filename": "nova_guard_hl2.jpg",
+        "sha256": "32d695b540a7fb6b8c596343933a1ee9a84534feb827f130600e26498cee0ac1",
+        "width": 417,
+        "height": 569,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/0/08/Combine_prison_guard.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Combine_prison_guard.jpg",
+        "source_game": "Half-Life 2",
+        "provenance": "official_game_model_capture_hosted_on_secondary_wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      },
       "visual_reference_status": "capture_required",
       "generation_status": "not_started",
       "runtime_enabled": false,
@@ -2032,7 +2068,19 @@
       "source_ids": [
         "soldier"
       ],
-      "reference_capture": null,
+      "reference_capture": {
+        "reference_filename": "shotgun_soldier_ep2.jpg",
+        "sha256": "e7feacedcbbac31ad96c65f69c699aaa27ecc5eb71b329cde4b402e94b5ebcec",
+        "width": 421,
+        "height": 677,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/e/ea/Combine_shotgun_soldier.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Combine_shotgun_soldier.jpg",
+        "source_game": "Half-Life 2: Episode Two",
+        "provenance": "official_game_model_capture_hosted_on_secondary_wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      },
       "visual_reference_status": "capture_required",
       "generation_status": "not_started",
       "runtime_enabled": false,
@@ -2084,14 +2132,14 @@
     },
     {
       "id": "costume_scientist_luther_hl1",
-      "name_fr": "Scientifique HL1 — Luther",
+      "name_fr": "Scientifique générique HL1 — HEAD_LUTHER",
       "source_game": "Half-Life",
       "category": "costume",
       "owner_id": "scientist_slick_hl1",
       "content_class": "released_reference",
       "proposed_role": "appearance_variant",
       "priority": "P1",
-      "identity_lock": "Tête HEAD_LUTHER avec les mains correspondant au modèle. Ne pas transformer toutes ses instances en Eli.",
+      "identity_lock": "Tête technique HEAD_LUTHER du modèle de scientifique générique HL1, avec ses mains correspondantes. Cette variante ne constitue pas une identification automatique à Eli Vance.",
       "source_ids": [
         "scientist_sdk"
       ],
@@ -2101,7 +2149,7 @@
       "runtime_enabled": false,
       "certified_one_to_one": false,
       "implementation_status": "catalogued_not_implemented",
-      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+      "design_note": "HEAD_LUTHER est un identifiant de variante visuelle du scientifique générique; aucune nouvelle biographie ni identité Eli Vance ne lui est attribuée. La fonction de costume dans Resonance reste une adaptation originale."
     },
     {
       "id": "costume_colette_headtohead_ps2",
@@ -2263,7 +2311,19 @@
       "source_ids": [
         "hl25"
       ],
-      "reference_capture": null,
+      "reference_capture": {
+        "reference_filename": "map_pool_party.jpg",
+        "sha256": "c34eb04361aa2169a88cbd3e760e7e48c990dd022bfa03066efa1362020f8088",
+        "width": 2560,
+        "height": 1600,
+        "visually_inspected": true,
+        "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/map_pool_party.jpg",
+        "source_page": "https://www.half-life.com/en/halflife/25th",
+        "source_game": "Half-Life Deathmatch — 25th Anniversary",
+        "provenance": "official_anniversary_image",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      },
       "visual_reference_status": "capture_required",
       "generation_status": "not_started",
       "runtime_enabled": false,
@@ -2284,7 +2344,19 @@
       "source_ids": [
         "hl25"
       ],
-      "reference_capture": null,
+      "reference_capture": {
+        "reference_filename": "map_rocket_frenzy.jpg",
+        "sha256": "46559a56cbf526bad4b257bbbe16e180f7d72a6ec3db670c366fc6b98193984b",
+        "width": 2560,
+        "height": 1600,
+        "visually_inspected": true,
+        "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/map_rocket_frenzy.jpg",
+        "source_page": "https://www.half-life.com/en/halflife/25th",
+        "source_game": "Half-Life Deathmatch — 25th Anniversary",
+        "provenance": "official_anniversary_image",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      },
       "visual_reference_status": "capture_required",
       "generation_status": "not_started",
       "runtime_enabled": false,
@@ -2350,7 +2422,19 @@
         "hl220",
         "locations"
       ],
-      "reference_capture": null,
+      "reference_capture": {
+        "reference_filename": "cow-LC_MonasteryExterior.jpg",
+        "sha256": "3bb855f483d260baeccaea745502d90e1bdb58f38969e9f1bbcced49e48d970c",
+        "width": 1920,
+        "height": 1080,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/c/ce/LC_MonasteryExterior.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:LC_MonasteryExterior.jpg",
+        "source_game": "Half-Life 2: Lost Coast",
+        "provenance": "game_screenshot_mirrored_by_wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      },
       "visual_reference_status": "capture_required",
       "generation_status": "not_started",
       "runtime_enabled": false,
@@ -2497,7 +2581,19 @@
       "source_ids": [
         "portal2_story"
       ],
-      "reference_capture": null,
+      "reference_capture": {
+        "reference_filename": "cow-Portal2_2011-05-27_21-41-35-29.jpg",
+        "sha256": "9aef46ce9e7222cb2c2b3f778a0147dcb4c7e2bad70f7379aed70e3102366f7b",
+        "width": 1280,
+        "height": 1024,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/c/c3/Portal2_2011-05-27_21-41-35-29.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Portal2_2011-05-27_21-41-35-29.jpg",
+        "source_game": "Portal 2",
+        "provenance": "game_screenshot_mirrored_by_wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      },
       "visual_reference_status": "capture_required",
       "generation_status": "not_started",
       "runtime_enabled": false,

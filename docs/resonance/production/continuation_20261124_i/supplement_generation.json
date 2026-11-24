@@ -1,0 +1,477 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-11-24",
+  "batch": "continuation_20261124_i",
+  "sub_batch": "supplement",
+  "generator": "image_gen.imagegen",
+  "scope": "GLaDOS Portal 1 and four Half-Life Alyx Combine classes; distinct missing base sprites.",
+  "reference_policy": "Inspected screenshots of original Valve game assets hosted by community wikis; no fan model replacements. Exact source attribution and limitations retained.",
+  "assets": [
+    {
+      "asset_id": "glados_portal1_idle_i",
+      "owner_id": "glados_portal1",
+      "target_id": "glados_portal1",
+      "category": "boss",
+      "catalogue": "boss_battle_catalog",
+      "source_game": "Portal",
+      "content_class": "released_reference",
+      "generation_status": "refus automatique",
+      "status": "refus automatique",
+      "selected_candidate": false,
+      "repository_path": null,
+      "path": null,
+      "generated_original_path": null,
+      "reference_paths": [
+        "/workspace/scratch/edbb3a863a20/reference-review/glados_portal1_model_wiki.png"
+      ],
+      "reference_url": "https://i1.theportalwiki.net/img/2/20/GLaDOS_P1.png",
+      "reference_page": "https://theportalwiki.com/wiki/File:GLaDOS_P1.png",
+      "source_attribution": {
+        "source": "Portal (2007) game screenshot",
+        "author": "Valve",
+        "host": "Portal Wiki"
+      },
+      "prompt": "Use case: identity-preserve. Asset type: a single high-resolution painted 2D fighting-game boss base sprite for Half-Life Resonance. Reference image is the original GLaDOS model screenshot from Portal (2007), not Portal 2. Recreate ONLY the suspended GLaDOS machine from that reference on a truly transparent background. Preserve the long vertical hanging mechanical chassis, original narrow angular black-and-white head with small yellow eye pointing downward-right, large dark rounded ribbed central components, white curved structural shells, thin dark suspending cables and the four spherical personality cores attached around the body, with their original individual colored eyes and dark circular mounting rims. Follow the source geometry closely; do not substitute the smoother Portal 2 head or body and do not turn GLaDOS into a humanoid or a generic robot. One intact machine assembly, one pose, clearly readable three-quarter side view facing right, entire machine within the canvas with breathing room. The upper hanging connector and cables terminate cleanly within the sprite. Detailed realistic raster game art with crisp contours, restrained shading, visible original material divisions and wear. Remove the room, ceiling truss, walls, monitors, all signage and all environmental objects from the reference. No extra character, no room, no floor, no separate shadow, no glow cloud, no text, no montage, no separate views, no borders. Preserve genuine alpha in all open gaps between cables and parts.",
+      "tool_error": "image generation failed: http 400 Bad Request: Some(\"{\\n  \\\"error\\\": {\\n    \\\"message\\\": \\\"Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID 8d371304-83ec-4cc7-87e8-3cd4f1554d3a.\\\",\\n    \\\"type\\\": \\\"image_generation_user_error\\\",\\n    \\\"param\\\": null,\\n    \\\"code\\\": \\\"moderation_blocked\\\",\\n    \\\"moderation_details\\\": {\\n      \\\"moderation_stage\\\": \\\"output\\\",\\n      \\\"categories\\\": [\\n        \\\"other\\\"\\n      ]\\n    }\\n  }\\n}\")",
+      "retried_after_rejection": false,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "target_completed": false,
+      "qa_notes": "No image returned. No retry attempted. Source screenshot was visually inspected; Portal 1 hanging chassis and attached personality cores.",
+      "source_refs": [
+        {
+          "local_path": "/workspace/scratch/edbb3a863a20/reference-review/glados_portal1_model_wiki.png",
+          "filename": "glados_portal1_model_wiki.png",
+          "sha256": "1592687176d889d28cde8f66e4187adbde6404f002c9778cba44c7f49d0a31a6",
+          "size_bytes": 541224,
+          "url": "https://i1.theportalwiki.net/img/2/20/GLaDOS_P1.png",
+          "source_page": "https://theportalwiki.com/wiki/File:GLaDOS_P1.png",
+          "visual_inspection_before_generation": true,
+          "source_attribution": "Portal (2007) screenshot, copyright Valve; hosted by Portal Wiki."
+        }
+      ],
+      "target_ids": [
+        "glados_portal1"
+      ],
+      "owner_type": "boss",
+      "batch_id": "continuation_20261124_i",
+      "created_at": "2026-11-24",
+      "name_fr": "GLaDOS — Portal 1",
+      "generator": "image_gen built-in",
+      "original_generation_status": "refused_no_image",
+      "file_path": null,
+      "selected_for_next_review": false,
+      "runtime_enabled": false,
+      "completed_six_layer_stage": false,
+      "source_partial_register": "docs/resonance/production/continuation_20261124_i/supplement_generation.json",
+      "source_references": [
+        {
+          "local_path": "/workspace/scratch/edbb3a863a20/reference-review/glados_portal1_model_wiki.png",
+          "filename": "glados_portal1_model_wiki.png",
+          "sha256": "1592687176d889d28cde8f66e4187adbde6404f002c9778cba44c7f49d0a31a6",
+          "size_bytes": 541224,
+          "url": "https://i1.theportalwiki.net/img/2/20/GLaDOS_P1.png",
+          "source_page": "https://theportalwiki.com/wiki/File:GLaDOS_P1.png",
+          "visual_inspection_before_generation": true,
+          "source_attribution": "Portal (2007) screenshot, copyright Valve; hosted by Portal Wiki."
+        }
+      ]
+    },
+    {
+      "asset_id": "combine_grunt_hla_idle_i",
+      "owner_id": "combine_grunt_hla",
+      "target_id": "combine_grunt_hla",
+      "category": "character",
+      "catalogue": "roster",
+      "source_game": "Half-Life: Alyx",
+      "content_class": "released_reference",
+      "generation_status": "généré",
+      "status": "généré",
+      "selected_candidate": true,
+      "repository_path": "assets/resonance/candidates/continuation_20261124_i/supplement/combine_grunt_hla_idle_i.png",
+      "path": "assets/resonance/candidates/continuation_20261124_i/supplement/combine_grunt_hla_idle_i.png",
+      "generated_original_path": "/tmp/resonance-edbb/assets/resonance/candidates/continuation_20261124_i/supplement/combine_grunt_hla_idle_i.png",
+      "reference_paths": [
+        "/tmp/resonance-i-reference/HLA_Combine_Grunt_SMG.jpg"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: one single high-resolution hand-painted 2D fighting-game BASE sprite. Use the attached original Half-Life: Alyx retail game reference as the exact visual guide: preserve body proportions, silhouette, specific helmet geometry, armor panel layout, material colors, equipment and identifying details. Convert to detailed raster game art with crisp readable contours and restrained realistic shading. One character, one relaxed ready pose, whole body and every held object fully within the canvas with generous transparent margins. Truly transparent RGBA background, including the gaps between limbs and equipment. No scene, no floor, no separate cast shadow, no aura, no haze, no border, no title, no labels, no collage, no multiple poses. Subject: Combine Grunt, quarantine-zone version, facing LEFT in the same readable three-quarter side orientation as the reference. Preserve the off-white work suit with dark sleeves and lower legs, cream rounded mask with two teal eye lenses, black round respirator and its offset round filter, dark chest harness, three black straps on each upper leg, gray lace-up boots, black gloves, and the gray backpack with pale horizontal gas tank and conspicuous red valve assembly. Preserve the small rusty-orange insignia panels. Hold the same compact Half-Life Alyx SMG in a lowered two-handed ready position. This is the retail Grunt model with tank and filter, not the HL2 Soldier or Elite and not the early yellow prototype. Keep the character, mask, tank and gun geometry of the source without adding equipment.",
+      "tool_error": null,
+      "retried_after_rejection": false,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "target_completed": false,
+      "qa_notes": "Cream mask, teal lenses, gray backpack, red tank valve, off-white/dark suit, thigh straps and compact Alyx SMG checked against the original retail model. Full-body silhouette intact; small source insignia and rear anatomy are not certified pixel-exact.",
+      "review_method": "Original delivered PNG bytes unchanged. Alpha and complete subject framing measured; separate white/gray composite images used only for visual QA.",
+      "source_refs": [
+        {
+          "local_path": "/tmp/resonance-i-reference/HLA_Combine_Grunt_SMG.jpg",
+          "filename": "HLA_Combine_Grunt_SMG.jpg",
+          "sha256": "8c0a01d3c1e9d9bc800041c4c51f03552ba753734c1df0d317c7f3f198cd7513",
+          "size_bytes": 357832,
+          "url": "https://combineoverwiki.net/images/7/71/HLA_Combine_Grunt_SMG.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/File:HLA_Combine_Grunt_SMG.jpg",
+          "visual_inspection_before_generation": true,
+          "source_attribution": "{{Information\n|attention=\n|description=[[Combine Grunt]].\n|location=\n|source=''[[Half-Life: Alyx]]''\n|author=\n|filespecs=\n|model name=\n|original name=\n|licensing={{Gamescreenshot}}\n|other versions=\n|cat artist=\n|cat subject=[[Category:Combine Grunt images]][[Category:SMG (Half-Life: Alyx) images]]\n|cat type=[[Category:Half-Life: Alyx model images]]\n}}"
+        }
+      ],
+      "qa": {
+        "width": 906,
+        "height": 1736,
+        "color_mode": "RGBA",
+        "size_bytes": 1621197,
+        "sha256": "06a05b21f94bcaa20e0b668be8cf39d75a8028efc9c2a8cd526ce68f7bfa36ee",
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "fully_transparent_pixels": 896757,
+        "partially_transparent_pixels_below_240": 43080,
+        "alpha_at_least_240_pixels": 632979,
+        "alpha_bbox_at_240": [
+          63,
+          33,
+          832,
+          1720
+        ],
+        "alpha_composite": "pass_no_opaque_background_or_visible_colored_halo_on_white_and_gray",
+        "visual_result": "candidate_with_documented_remaining_checks",
+        "delivered_png_modified_after_generation": false
+      },
+      "target_ids": [
+        "combine_grunt_hla"
+      ],
+      "owner_type": "fighter",
+      "batch_id": "continuation_20261124_i",
+      "created_at": "2026-11-24",
+      "name_fr": "Combine Grunt — Alyx",
+      "generator": "image_gen built-in",
+      "original_generation_status": "generated_candidate",
+      "file_path": "assets/resonance/candidates/continuation_20261124_i/supplement/combine_grunt_hla_idle_i.png",
+      "selected_for_next_review": true,
+      "runtime_enabled": false,
+      "completed_six_layer_stage": false,
+      "source_partial_register": "docs/resonance/production/continuation_20261124_i/supplement_generation.json",
+      "source_references": [
+        {
+          "local_path": "/tmp/resonance-i-reference/HLA_Combine_Grunt_SMG.jpg",
+          "filename": "HLA_Combine_Grunt_SMG.jpg",
+          "sha256": "8c0a01d3c1e9d9bc800041c4c51f03552ba753734c1df0d317c7f3f198cd7513",
+          "size_bytes": 357832,
+          "url": "https://combineoverwiki.net/images/7/71/HLA_Combine_Grunt_SMG.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/File:HLA_Combine_Grunt_SMG.jpg",
+          "visual_inspection_before_generation": true,
+          "source_attribution": "{{Information\n|attention=\n|description=[[Combine Grunt]].\n|location=\n|source=''[[Half-Life: Alyx]]''\n|author=\n|filespecs=\n|model name=\n|original name=\n|licensing={{Gamescreenshot}}\n|other versions=\n|cat artist=\n|cat subject=[[Category:Combine Grunt images]][[Category:SMG (Half-Life: Alyx) images]]\n|cat type=[[Category:Half-Life: Alyx model images]]\n}}"
+        }
+      ],
+      "width": 906,
+      "height": 1736,
+      "color_mode": "RGBA",
+      "byte_size": 1621197,
+      "sha256": "06a05b21f94bcaa20e0b668be8cf39d75a8028efc9c2a8cd526ce68f7bfa36ee",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false
+    },
+    {
+      "asset_id": "combine_ordinal_hla_idle_i",
+      "owner_id": "combine_ordinal_hla",
+      "target_id": "combine_ordinal_hla",
+      "category": "character",
+      "catalogue": "roster",
+      "source_game": "Half-Life: Alyx",
+      "content_class": "released_reference",
+      "generation_status": "refus automatique",
+      "status": "refus automatique",
+      "selected_candidate": false,
+      "repository_path": null,
+      "path": null,
+      "generated_original_path": null,
+      "reference_paths": [
+        "/tmp/resonance-i-reference/HLA_CombineOrdinal01.jpg"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: one single high-resolution hand-painted 2D fighting-game BASE sprite. Use the attached original Half-Life: Alyx retail game reference as the exact visual guide: preserve body proportions, silhouette, specific helmet geometry, armor panel layout, material colors, equipment and identifying details. Convert to detailed raster game art with crisp readable contours and restrained realistic shading. One character, one relaxed ready pose, whole body and every held object fully within the canvas with generous transparent margins. Truly transparent RGBA background, including the gaps between limbs and equipment. No scene, no floor, no separate cast shadow, no aura, no haze, no border, no title, no labels, no collage, no multiple poses. Subject: Combine Ordinal from Half-Life Alyx, one whole-body three-quarter side ready stance facing RIGHT. Preserve the black/dark-navy gas-mask helmet with yellow crown marking, two luminous cyan eye lenses, black round breathing unit and side filter, slate blue-gray armored uniform, dark armored chest, distinctive bright yellow shoulder insignia and yellow neck strip, radio pack, dark gloves, separate knee pads and tall lace-up boots. Hold the same long black predecessor pulse rifle diagonally downward-right across the torso, matching its source proportions. Keep the source shoulder, helmet and limb armor divisions; do not substitute the bulky Charger body, pale Grunt suit, orange-eyed Suppressor mask, or HL2 Elite. Remove the entire street, car, statue, pavement and all other objects in the source. Neutral illumination must preserve the dark navy/slate colors, avoiding the warm environment's yellow cast.",
+      "tool_error": "image generation failed: http 400 Bad Request: Some(\"{\\n  \\\"error\\\": {\\n    \\\"message\\\": \\\"Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID c115e746-f9b1-4723-8234-a268674dd999.\\\",\\n    \\\"type\\\": \\\"image_generation_user_error\\\",\\n    \\\"param\\\": null,\\n    \\\"code\\\": \\\"moderation_blocked\\\",\\n    \\\"moderation_details\\\": {\\n      \\\"moderation_stage\\\": \\\"output\\\",\\n      \\\"categories\\\": [\\n        \\\"other\\\"\\n      ]\\n    }\\n  }\\n}\")",
+      "retried_after_rejection": false,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "target_completed": false,
+      "qa_notes": "No PNG returned; refusal recorded and not retried.",
+      "review_method": "Original delivered PNG bytes unchanged. Alpha and complete subject framing measured; separate white/gray composite images used only for visual QA.",
+      "source_refs": [
+        {
+          "local_path": "/tmp/resonance-i-reference/HLA_CombineOrdinal01.jpg",
+          "filename": "HLA_CombineOrdinal01.jpg",
+          "sha256": "33e4e14742b1e0fa9531e68cded434c370d83afb03f0cd5bf101bc8a9f90e6db",
+          "size_bytes": 442127,
+          "url": "https://combineoverwiki.net/images/8/89/HLA_CombineOrdinal01.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/File:HLA_CombineOrdinal01.jpg",
+          "visual_inspection_before_generation": true,
+          "source_attribution": "{{Information\n|attention=\n|description=[[Combine Ordinal]].\n|location=<code>a3_hotel_street</code>\n|source=''[[Half-Life: Alyx]]''\n|author=\n|filespecs=\n|model name=\n|original name=\n|licensing={{Gamescreenshot}}\n|other versions=\n|cat artist=\n|cat subject=[[Category:Combine Ordinal images]][[Category:Northern Star images]][[Category:Overwatch Standard Issue Pulse Rifle images]]\n|cat type=[[Category:Half-Life: Alyx screenshots]]\n}}"
+        }
+      ],
+      "target_ids": [
+        "combine_ordinal_hla"
+      ],
+      "owner_type": "fighter",
+      "batch_id": "continuation_20261124_i",
+      "created_at": "2026-11-24",
+      "name_fr": "Combine Ordinal — Alyx",
+      "generator": "image_gen built-in",
+      "original_generation_status": "refused_no_image",
+      "file_path": null,
+      "selected_for_next_review": false,
+      "runtime_enabled": false,
+      "completed_six_layer_stage": false,
+      "source_partial_register": "docs/resonance/production/continuation_20261124_i/supplement_generation.json",
+      "source_references": [
+        {
+          "local_path": "/tmp/resonance-i-reference/HLA_CombineOrdinal01.jpg",
+          "filename": "HLA_CombineOrdinal01.jpg",
+          "sha256": "33e4e14742b1e0fa9531e68cded434c370d83afb03f0cd5bf101bc8a9f90e6db",
+          "size_bytes": 442127,
+          "url": "https://combineoverwiki.net/images/8/89/HLA_CombineOrdinal01.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/File:HLA_CombineOrdinal01.jpg",
+          "visual_inspection_before_generation": true,
+          "source_attribution": "{{Information\n|attention=\n|description=[[Combine Ordinal]].\n|location=<code>a3_hotel_street</code>\n|source=''[[Half-Life: Alyx]]''\n|author=\n|filespecs=\n|model name=\n|original name=\n|licensing={{Gamescreenshot}}\n|other versions=\n|cat artist=\n|cat subject=[[Category:Combine Ordinal images]][[Category:Northern Star images]][[Category:Overwatch Standard Issue Pulse Rifle images]]\n|cat type=[[Category:Half-Life: Alyx screenshots]]\n}}"
+        }
+      ]
+    },
+    {
+      "asset_id": "combine_charger_hla_idle_i",
+      "owner_id": "combine_charger_hla",
+      "target_id": "combine_charger_hla",
+      "category": "character",
+      "catalogue": "roster",
+      "source_game": "Half-Life: Alyx",
+      "content_class": "released_reference",
+      "generation_status": "généré",
+      "status": "généré",
+      "selected_candidate": true,
+      "repository_path": "assets/resonance/candidates/continuation_20261124_i/supplement/combine_charger_hla_idle_i.png",
+      "path": "assets/resonance/candidates/continuation_20261124_i/supplement/combine_charger_hla_idle_i.png",
+      "generated_original_path": "/tmp/resonance-edbb/assets/resonance/candidates/continuation_20261124_i/supplement/combine_charger_hla_idle_i.png",
+      "reference_paths": [
+        "/tmp/resonance-i-reference/HLA_Combine_Charger.png",
+        "/tmp/resonance-i-reference/HLA_CombineCharger01.jpg"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: one single high-resolution hand-painted 2D fighting-game BASE sprite. Use the attached original Half-Life: Alyx retail game reference as the exact visual guide: preserve body proportions, silhouette, specific helmet geometry, armor panel layout, material colors, equipment and identifying details. Convert to detailed raster game art with crisp readable contours and restrained realistic shading. One character, one relaxed ready pose, whole body and every held object fully within the canvas with generous transparent margins. Truly transparent RGBA background, including the gaps between limbs and equipment. No scene, no floor, no separate cast shadow, no aura, no haze, no border, no title, no labels, no collage, no multiple poses. Subject: Combine Charger, retail Half-Life Alyx model, facing LEFT in a stable three-quarter side ready stance. Image 1 is the full-body model silhouette and primary material guide; image 2 confirms the heavy-shotgun details. Preserve the massive stocky proportions, rounded black mask with cyan goggle lenses and cyan crown stripe, tall rigid dark neck gorget, enormous pale gray padded shoulder and chest armor, curved outer black shoulder plates, heavy thigh pads, dark knee joints and black lace-up boots. Preserve the shield-generator device mounted on the character's LEFT forearm in its folded inactive form. Hold the exact bulky Half-Life Alyx heavy shotgun across the body, including the square ammunition housing and stacked muzzle shape visible in the reference. Shield stays inactive for this base sprite. Preserve the original material and panel divisions; no soldier-class mixing, no new armor, no extra weapon, no energy effect.",
+      "tool_error": null,
+      "retried_after_rejection": false,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "target_completed": false,
+      "qa_notes": "Rounded cyan-lens mask, cyan crown stripe, rigid high gorget, bulky padded shoulders/thighs, inactive forearm shield device and heavy shotgun checked against retail references. Full body and both boots intact. Small insignia and weapon microgeometry still require strict 1:1 review.",
+      "review_method": "Original delivered PNG bytes unchanged. Alpha and complete subject framing measured; separate white/gray composite images used only for visual QA.",
+      "source_refs": [
+        {
+          "local_path": "/tmp/resonance-i-reference/HLA_Combine_Charger.png",
+          "filename": "HLA_Combine_Charger.png",
+          "sha256": "b888adf47bc8faca0f7f17fb1be321c099d9f58f091ef47fe599cf3a5d7eb4b0",
+          "size_bytes": 475822,
+          "url": "https://combineoverwiki.net/images/7/70/HLA_Combine_Charger.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:HLA_Combine_Charger.png",
+          "visual_inspection_before_generation": true,
+          "source_attribution": "{{Information\n|attention=\n|description=[[Combine Charger]].\n|location=\n|source=''[[Half-Life: Alyx]]''\n|author=\n|filespecs=\n|model name=\n|original name=\n|licensing={{Fairuse}}\n|other versions=\n|cat artist=\n|cat subject=[[Category:Combine Charger images]][[Category:Heavy Shotgun images]][[Category:Northern Star images]]\n|cat type=[[Category:Half-Life: Alyx screenshots]]\n}}"
+        },
+        {
+          "local_path": "/tmp/resonance-i-reference/HLA_CombineCharger01.jpg",
+          "filename": "HLA_CombineCharger01.jpg",
+          "sha256": "bdc970f149f0a48bb309494ed8c91504cfba2246d12bacfb00c4283b8ee79b96",
+          "size_bytes": 483207,
+          "url": "https://combineoverwiki.net/images/8/82/HLA_CombineCharger01.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/File:HLA_CombineCharger01.jpg",
+          "visual_inspection_before_generation": true,
+          "source_attribution": "{{Information\n|attention=\n|description=[[Combine Charger]].\n|location=\n|source=''[[Half-Life: Alyx]]''\n|author=\n|filespecs=\n|model name=\n|original name=\n|licensing={{Gamescreenshot}}\n|other versions=\n|cat artist=\n|cat subject=[[Category:Combine Charger images]][[Category:Heavy Shotgun images]][[Category:Terminal Gardens images]]\n|cat type=[[Category:Half-Life: Alyx screenshots]]\n}}"
+        }
+      ],
+      "qa": {
+        "width": 1024,
+        "height": 1536,
+        "color_mode": "RGBA",
+        "size_bytes": 2248920,
+        "sha256": "801d80fa373c6875694d6f05e67fcbfc1e7be7ac7b9be6b70aecef7c7e4f71fb",
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_pixels": 862307,
+        "partially_transparent_pixels_below_240": 30302,
+        "alpha_at_least_240_pixels": 680255,
+        "alpha_bbox_at_240": [
+          120,
+          41,
+          909,
+          1513
+        ],
+        "alpha_composite": "pass_no_opaque_background_or_visible_colored_halo_on_white_and_gray",
+        "visual_result": "candidate_with_documented_remaining_checks",
+        "delivered_png_modified_after_generation": false
+      },
+      "target_ids": [
+        "combine_charger_hla"
+      ],
+      "owner_type": "fighter",
+      "batch_id": "continuation_20261124_i",
+      "created_at": "2026-11-24",
+      "name_fr": "Combine Charger — Alyx",
+      "generator": "image_gen built-in",
+      "original_generation_status": "generated_candidate",
+      "file_path": "assets/resonance/candidates/continuation_20261124_i/supplement/combine_charger_hla_idle_i.png",
+      "selected_for_next_review": true,
+      "runtime_enabled": false,
+      "completed_six_layer_stage": false,
+      "source_partial_register": "docs/resonance/production/continuation_20261124_i/supplement_generation.json",
+      "source_references": [
+        {
+          "local_path": "/tmp/resonance-i-reference/HLA_Combine_Charger.png",
+          "filename": "HLA_Combine_Charger.png",
+          "sha256": "b888adf47bc8faca0f7f17fb1be321c099d9f58f091ef47fe599cf3a5d7eb4b0",
+          "size_bytes": 475822,
+          "url": "https://combineoverwiki.net/images/7/70/HLA_Combine_Charger.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:HLA_Combine_Charger.png",
+          "visual_inspection_before_generation": true,
+          "source_attribution": "{{Information\n|attention=\n|description=[[Combine Charger]].\n|location=\n|source=''[[Half-Life: Alyx]]''\n|author=\n|filespecs=\n|model name=\n|original name=\n|licensing={{Fairuse}}\n|other versions=\n|cat artist=\n|cat subject=[[Category:Combine Charger images]][[Category:Heavy Shotgun images]][[Category:Northern Star images]]\n|cat type=[[Category:Half-Life: Alyx screenshots]]\n}}"
+        },
+        {
+          "local_path": "/tmp/resonance-i-reference/HLA_CombineCharger01.jpg",
+          "filename": "HLA_CombineCharger01.jpg",
+          "sha256": "bdc970f149f0a48bb309494ed8c91504cfba2246d12bacfb00c4283b8ee79b96",
+          "size_bytes": 483207,
+          "url": "https://combineoverwiki.net/images/8/82/HLA_CombineCharger01.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/File:HLA_CombineCharger01.jpg",
+          "visual_inspection_before_generation": true,
+          "source_attribution": "{{Information\n|attention=\n|description=[[Combine Charger]].\n|location=\n|source=''[[Half-Life: Alyx]]''\n|author=\n|filespecs=\n|model name=\n|original name=\n|licensing={{Gamescreenshot}}\n|other versions=\n|cat artist=\n|cat subject=[[Category:Combine Charger images]][[Category:Heavy Shotgun images]][[Category:Terminal Gardens images]]\n|cat type=[[Category:Half-Life: Alyx screenshots]]\n}}"
+        }
+      ],
+      "width": 1024,
+      "height": 1536,
+      "color_mode": "RGBA",
+      "byte_size": 2248920,
+      "sha256": "801d80fa373c6875694d6f05e67fcbfc1e7be7ac7b9be6b70aecef7c7e4f71fb",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false
+    },
+    {
+      "asset_id": "combine_suppressor_hla_idle_i",
+      "owner_id": "combine_suppressor_hla",
+      "target_id": "combine_suppressor_hla",
+      "category": "character",
+      "catalogue": "roster",
+      "source_game": "Half-Life: Alyx",
+      "content_class": "released_reference",
+      "generation_status": "généré",
+      "status": "généré",
+      "selected_candidate": true,
+      "repository_path": "assets/resonance/candidates/continuation_20261124_i/supplement/combine_suppressor_hla_idle_i.png",
+      "path": "assets/resonance/candidates/continuation_20261124_i/supplement/combine_suppressor_hla_idle_i.png",
+      "generated_original_path": "/tmp/resonance-edbb/assets/resonance/candidates/continuation_20261124_i/supplement/combine_suppressor_hla_idle_i.png",
+      "reference_paths": [
+        "/tmp/resonance-i-reference/HLA_Combine_Suppressor.png",
+        "/tmp/resonance-i-reference/HLA_CombineSuppressor01.jpg"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: one single high-resolution hand-painted 2D fighting-game BASE sprite. Use the attached original Half-Life: Alyx retail game reference as the exact visual guide: preserve body proportions, silhouette, specific helmet geometry, armor panel layout, material colors, equipment and identifying details. Convert to detailed raster game art with crisp readable contours and restrained realistic shading. One character, one relaxed ready pose, whole body and every held object fully within the canvas with generous transparent margins. Truly transparent RGBA background, including the gaps between limbs and equipment. No scene, no floor, no separate cast shadow, no aura, no haze, no border, no title, no labels, no collage, no multiple poses. Subject: Combine Suppressor, retail Half-Life Alyx model, facing LEFT in a stable three-quarter side ready stance. Image 1 is the primary full-body shape and surface guide; image 2 confirms the machine-gun shape. Preserve its distinctive long cream-white respirator mask and two small bright ORANGE round eyes, yellow stripe along the top of the mask, two dark round cheek filters and downward breathing snout; broad white padded collar and shoulder padding; dark olive-gray heavy armored vest and upper-arm plates; gray protective suit, black gloves, high dark boots with asymmetric ankle/shin armor, yellow/orange insignia. Hold its large black futuristic heavy machine gun low across the waist, faithfully matching the long cylindrical barrel and orange-lit mechanism. This is the Suppressor, not the blue-eyed Charger or a real-world soldier. No firing, no flash, no shells, no separate effect; just the original complete equipped character as a base sprite.",
+      "tool_error": null,
+      "retried_after_rejection": false,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "target_completed": false,
+      "qa_notes": "Long white snout mask, orange eyes, yellow stripe and insignia, broad padded collar, dark vest, asymmetric lower-leg armor and heavy machine gun checked against retail references. Full silhouette intact. Gun small geometry and surfaces not directly shown by references remain review items.",
+      "review_method": "Original delivered PNG bytes unchanged. Alpha and complete subject framing measured; separate white/gray composite images used only for visual QA.",
+      "source_refs": [
+        {
+          "local_path": "/tmp/resonance-i-reference/HLA_Combine_Suppressor.png",
+          "filename": "HLA_Combine_Suppressor.png",
+          "sha256": "c0d85dc4d9af7b872b7c89b16a1569a262442db4d99c4dd6d8f4a5e8194e4342",
+          "size_bytes": 442231,
+          "url": "https://combineoverwiki.net/images/d/de/HLA_Combine_Suppressor.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:HLA_Combine_Suppressor.png",
+          "visual_inspection_before_generation": true,
+          "source_attribution": "{{Information\n|attention=\n|description=[[Combine Suppressor]].\n|location=\n|source=''[[Half-Life: Alyx]]''\n|author=\n|filespecs=\n|model name=\n|original name=\n|licensing={{Fairuse}}\n|other versions=\n|cat artist=\n|cat subject=[[Category:Combine Suppressor images]][[Category:Heavy Machine Gun (Half-Life: Alyx) images]]\n|cat type=[[Category:Half-Life: Alyx screenshots]]\n}}"
+        },
+        {
+          "local_path": "/tmp/resonance-i-reference/HLA_CombineSuppressor01.jpg",
+          "filename": "HLA_CombineSuppressor01.jpg",
+          "sha256": "fa3bbaa66cdb0cf6b20d24ed864f6c3fad3a686dfd80dcb293cfa16870eeb0d9",
+          "size_bytes": 438375,
+          "url": "https://combineoverwiki.net/images/e/e5/HLA_CombineSuppressor01.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/File:HLA_CombineSuppressor01.jpg",
+          "visual_inspection_before_generation": true,
+          "source_attribution": "{{Information\n|attention=\n|description=[[Combine Suppressor]].\n|location=<code>a3_c17_processing_plant</code>\n|source=''[[Half-Life: Alyx]]''\n|author=\n|filespecs=\n|model name=\n|original name=\n|licensing={{Gamescreenshot}}\n|other versions=\n|cat artist=\n|cat subject=[[Category:Combine Suppressor images]][[Category:Heavy Machine Gun (Half-Life: Alyx) images]][[Category:Golden Lion Distillery images]][[Category:Holden Company Processing Plant images]]\n|cat type=[[Category:Half-Life: Alyx screenshots]]\n}}"
+        }
+      ],
+      "qa": {
+        "width": 1024,
+        "height": 1536,
+        "color_mode": "RGBA",
+        "size_bytes": 2091304,
+        "sha256": "28cc9f165aac79c850760f52d22ca342f589c55a78941aa47a5fd0e576fa383f",
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_pixels": 1009954,
+        "partially_transparent_pixels_below_240": 25405,
+        "alpha_at_least_240_pixels": 537505,
+        "alpha_bbox_at_240": [
+          149,
+          24,
+          921,
+          1516
+        ],
+        "alpha_composite": "pass_no_opaque_background_or_visible_colored_halo_on_white_and_gray",
+        "visual_result": "candidate_with_documented_remaining_checks",
+        "delivered_png_modified_after_generation": false
+      },
+      "target_ids": [
+        "combine_suppressor_hla"
+      ],
+      "owner_type": "fighter",
+      "batch_id": "continuation_20261124_i",
+      "created_at": "2026-11-24",
+      "name_fr": "Combine Suppressor — Alyx",
+      "generator": "image_gen built-in",
+      "original_generation_status": "generated_candidate",
+      "file_path": "assets/resonance/candidates/continuation_20261124_i/supplement/combine_suppressor_hla_idle_i.png",
+      "selected_for_next_review": true,
+      "runtime_enabled": false,
+      "completed_six_layer_stage": false,
+      "source_partial_register": "docs/resonance/production/continuation_20261124_i/supplement_generation.json",
+      "source_references": [
+        {
+          "local_path": "/tmp/resonance-i-reference/HLA_Combine_Suppressor.png",
+          "filename": "HLA_Combine_Suppressor.png",
+          "sha256": "c0d85dc4d9af7b872b7c89b16a1569a262442db4d99c4dd6d8f4a5e8194e4342",
+          "size_bytes": 442231,
+          "url": "https://combineoverwiki.net/images/d/de/HLA_Combine_Suppressor.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:HLA_Combine_Suppressor.png",
+          "visual_inspection_before_generation": true,
+          "source_attribution": "{{Information\n|attention=\n|description=[[Combine Suppressor]].\n|location=\n|source=''[[Half-Life: Alyx]]''\n|author=\n|filespecs=\n|model name=\n|original name=\n|licensing={{Fairuse}}\n|other versions=\n|cat artist=\n|cat subject=[[Category:Combine Suppressor images]][[Category:Heavy Machine Gun (Half-Life: Alyx) images]]\n|cat type=[[Category:Half-Life: Alyx screenshots]]\n}}"
+        },
+        {
+          "local_path": "/tmp/resonance-i-reference/HLA_CombineSuppressor01.jpg",
+          "filename": "HLA_CombineSuppressor01.jpg",
+          "sha256": "fa3bbaa66cdb0cf6b20d24ed864f6c3fad3a686dfd80dcb293cfa16870eeb0d9",
+          "size_bytes": 438375,
+          "url": "https://combineoverwiki.net/images/e/e5/HLA_CombineSuppressor01.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/File:HLA_CombineSuppressor01.jpg",
+          "visual_inspection_before_generation": true,
+          "source_attribution": "{{Information\n|attention=\n|description=[[Combine Suppressor]].\n|location=<code>a3_c17_processing_plant</code>\n|source=''[[Half-Life: Alyx]]''\n|author=\n|filespecs=\n|model name=\n|original name=\n|licensing={{Gamescreenshot}}\n|other versions=\n|cat artist=\n|cat subject=[[Category:Combine Suppressor images]][[Category:Heavy Machine Gun (Half-Life: Alyx) images]][[Category:Golden Lion Distillery images]][[Category:Holden Company Processing Plant images]]\n|cat type=[[Category:Half-Life: Alyx screenshots]]\n}}"
+        }
+      ],
+      "width": 1024,
+      "height": 1536,
+      "color_mode": "RGBA",
+      "byte_size": 2091304,
+      "sha256": "28cc9f165aac79c850760f52d22ca342f589c55a78941aa47a5fd0e576fa383f",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false
+    }
+  ],
+  "summary": {
+    "generation_calls": 5,
+    "successful_images": 3,
+    "refusals": 2,
+    "distinct_targets": 5,
+    "selected_candidates": 3,
+    "completed_targets": 0,
+    "certified_one_to_one_assets": 0
+  }
+}

@@ -1,0 +1,258 @@
+{
+  "batch_id": "continuation_20261124_h",
+  "created_at": "2026-11-24",
+  "assets": [
+    {
+      "asset_id": "stage_xen_hl1_master_h",
+      "owner_id": "STG_05_HL1_XEN",
+      "name_fr": "Xen — îles et aiguilles",
+      "reference_paths": [
+        "/workspace/scratch/684967c2474e/references-h/Xen_islands_1.jpg"
+      ],
+      "reference_urls": [
+        "https://combineoverwiki.net/images/f/f4/Xen_islands_1.jpg"
+      ],
+      "reference_pages": [
+        "https://combineoverwiki.net/wiki/File:Xen_islands_1.jpg"
+      ],
+      "prompt": "Use case: stylized-concept. Asset: ONE high-definition painted 2D side-view fighting-game stage master panorama for Half-Life Resonance. A single landscape canvas EXACTLY 3:1 width:height, preferably 3072x1024. The attached original-game screenshot is the strict identity reference for materials, architectural shapes and palette. Translate its known features into crisp detailed 2D game art without redesign. One coherent scene; no collage, characters, creatures, bosses, weapons, pickups, HUD, writing, labels or frame. Level camera, stable horizontal horizon, orthographic side-on gameplay composition. A FLAT UNBROKEN HORIZONTAL PLAYABLE STRIP occupies the bottom approximately16 percent, spanning the entire width at one elevation. Its top is a straight horizontal line at y=84 percent. No converging foreground paving, foreground ramp, foreground pit or diagonal route into the distance. Background structures have modest depth BEHIND the strip. Readable central area and space for fighters. Natural worn source-faithful textures, restrained lighting, no generic sci-fi additions. This is a candidate flat master with geometry adapted from3D to2D, not separate parallax layers. Opaque background.\nEnvironment: Xen from original Half-Life1998, ONLY the attached floating-island scene. Preserve hazy green-teal alien sky with broad peach-orange cloud streaks; irregular flattened brown-green floating islands; extremely tall narrow tapered stone-organic spires with dark horizontal ridged bands; thin cyan luminous rings around sections of the spires; mottled yellow-green wet-looking biological stone surface. Several small islands suspended across the middle and far background; two or three recognizable tall ridged spires silhouetted behind the play area. The continuous foreground strip is the side elevation of ONE broad flat-topped Xen island, its mottled alien crust above a dark organic underside, covering bottom16 percent. Level and uninterrupted; no gaps, slopes, trees or obstructing spires on it. Distant islands remain distinct from playable floor. No water, terrestrial ruins, buildings or giant mushroom forest. No figures. Original Half-Life Xen atmosphere, not the Black Mesa remake."
+    },
+    {
+      "asset_id": "stage_lambda_hl1_master_h",
+      "owner_id": "STG_04_HL1_LAMBDA",
+      "name_fr": "Lambda — salle du téléporteur final",
+      "reference_paths": [
+        "/workspace/scratch/684967c2474e/references-h/Sector_F_teleport.jpg"
+      ],
+      "reference_urls": [
+        "https://combineoverwiki.net/images/f/f3/Sector_F_teleport.jpg"
+      ],
+      "reference_pages": [
+        "https://combineoverwiki.net/wiki/File:Sector_F_teleport.jpg"
+      ],
+      "prompt": "Use case: stylized-concept. Asset: ONE high-definition painted 2D side-view fighting-game stage master panorama for Half-Life Resonance. A single landscape canvas EXACTLY 3:1 width:height, preferably 3072x1024. The attached original-game screenshot is the strict identity reference for materials, architectural shapes and palette. Translate its known features into crisp detailed 2D game art without redesign. One coherent scene; no collage, characters, creatures, bosses, weapons, pickups, HUD, writing, labels or frame. Level camera, stable horizontal horizon, orthographic side-on gameplay composition. A FLAT UNBROKEN HORIZONTAL PLAYABLE STRIP occupies the bottom approximately16 percent, spanning the entire width at one elevation. Its top is a straight horizontal line at y=84 percent. No converging foreground paving, foreground ramp, foreground pit or diagonal route into the distance. Background structures have modest depth BEHIND the strip. Readable central area and space for fighters. Natural worn source-faithful textures, restrained lighting, no generic sci-fi additions. This is a candidate flat master with geometry adapted from3D to2D, not separate parallax layers. Opaque background.\nEnvironment: Lambda Complex FINAL TELEPORTER CHAMBER, original Half-Life1998, precisely the attached Sector_F_teleport screenshot. Preserve central yellow industrial teleport apparatus; distinctive broad green-gray concrete arch/ramp structure curving over and around its yellow cylindrical core; dark broad circular ceiling emitter directly aligned above; yellow-brown square ceiling framework; surrounding blue-gray ribbed metal wall panels, inset control-panel recesses, tall yellow-brown rectangular support columns, thin red catwalk rails and red ladder; narrow cool white-blue base lights. Central apparatus occupies the central half entirely BEHIND the unobstructed front walkway. Portal INACTIVE as in reference; no invented glowing ring or reactor-ball. Do not combine this room with the separate deep rotating teleporter shaft. In front, one straight dark graphite diamond-plate platform spans the entire width at y=84 percent. Apparatus ramps remain background shapes and do not interrupt that play strip. No scientists or enemies. Muted gray, mustard and desaturated green with subtle cool light."
+    },
+    {
+      "asset_id": "stage_blastpit_hl1_master_h",
+      "owner_id": "STG_03_HL1_BLAST_PIT",
+      "name_fr": "Blast Pit — chambre de test vide",
+      "reference_paths": [
+        "/workspace/scratch/684967c2474e/references-h/Tentacle_pit.jpg"
+      ],
+      "reference_urls": [
+        "https://combineoverwiki.net/images/d/de/Tentacle_pit.jpg"
+      ],
+      "reference_pages": [
+        "https://combineoverwiki.net/wiki/File:Tentacle_pit.jpg"
+      ],
+      "prompt": "Use case: stylized-concept. Asset: ONE high-definition painted 2D side-view fighting-game stage master panorama for Half-Life Resonance. A single landscape canvas EXACTLY 3:1 width:height, preferably 3072x1024. The attached original-game screenshot is the strict identity reference for materials, architectural shapes and palette. Translate its known features into crisp detailed 2D game art without redesign. One coherent scene; no collage, characters, creatures, bosses, weapons, pickups, HUD, writing, labels or frame. Level camera, stable horizontal horizon, orthographic side-on gameplay composition. A FLAT UNBROKEN HORIZONTAL PLAYABLE STRIP occupies the bottom approximately16 percent, spanning the entire width at one elevation. Its top is a straight horizontal line at y=84 percent. No converging foreground paving, foreground ramp, foreground pit or diagonal route into the distance. Background structures have modest depth BEHIND the strip. Readable central area and space for fighters. Natural worn source-faithful textures, restrained lighting, no generic sci-fi additions. This is a candidate flat master with geometry adapted from3D to2D, not separate parallax layers. Opaque background.\nEnvironment: Blast Pit rocket-engine test silo, original Half-Life1998. Use supplied capture for architecture ONLY. REMOVE all three green tentacle monsters entirely: they are separate boss assets. Preserve broad side elevation of cylindrical industrial shaft; rusty brown and green-stained riveted rectangular steel wall panels; three stacked dark steel catwalk levels with thick riveted beams; yellow-black warning stripes at catwalk edges; white rectangular fluorescent lights beneath catwalks; distinctive red vertical ladder at left; thick red and blue service pipes near upper-right ceiling; small square industrial access openings. Dark central test opening with yellow-black hazard rim is recessed BACKGROUND scenery behind the foreground walkway, never a hole through the play strip. Bottom16 percent is one straight dark worn diamond-plate front maintenance platform across the entire width. Level side-on framing, not the screenshot's upward-looking perspective. Cold industrial light, mottled rusty metal. No tentacles, heads, organic stalks, monsters, flames, rocket exhaust, characters or weapons."
+    },
+    {
+      "asset_id": "stage_disposal_hl25_master_h",
+      "owner_id": "STG_EXT_HLDM_DISPOSAL",
+      "name_fr": "Disposal — Processing Area3",
+      "reference_paths": [
+        "/workspace/scratch/684967c2474e/references-h/map_disposal.jpg"
+      ],
+      "reference_urls": [
+        "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/map_disposal.jpg"
+      ],
+      "reference_pages": [
+        "https://www.half-life.com/en/halflife/25th/"
+      ],
+      "prompt": "Use case: stylized-concept. Asset: ONE high-definition painted 2D side-view fighting-game stage master panorama for Half-Life Resonance. A single landscape canvas EXACTLY 3:1 width:height, preferably 3072x1024. The attached original-game screenshot is the strict identity reference for materials, architectural shapes and palette. Translate its known features into crisp detailed 2D game art without redesign. One coherent scene; no collage, characters, creatures, bosses, weapons, pickups, HUD, writing, labels or frame. Level camera, stable horizontal horizon, orthographic side-on gameplay composition. A FLAT UNBROKEN HORIZONTAL PLAYABLE STRIP occupies the bottom approximately16 percent, spanning the entire width at one elevation. Its top is a straight horizontal line at y=84 percent. No converging foreground paving, foreground ramp, foreground pit or diagonal route into the distance. Background structures have modest depth BEHIND the strip. Readable central area and space for fighters. Natural worn source-faithful textures, restrained lighting, no generic sci-fi additions. This is a candidate flat master with geometry adapted from3D to2D, not separate parallax layers. Opaque background.\nEnvironment: Disposal / Processing Area3, official Half-Life Deathmatch25th Anniversary map, exactly anchored to attached Valve screenshot. Preserve huge olive-brown radioactive processing hall; angled concrete buttresses; high faceted grimy wall panels; luminous yellow-green toxic channels casting light on lower walls; dark steel grates over those channels; chains with small yellow hoist blocks; suspended cylindrical barrels with TWO red bands; low yellow-brown equipment boxes with small square red lamps; central tall rectangular processing tower with tiny blue-green console grids and a barred opening; heavy ribbed wall ducts. Recompose as wide LEVEL side elevation. Grating and toxic channels are BEHIND the foreground strip, never a vanishing-perspective path toward the viewer. Central tower and suspended barrels remain background landmarks. One uninterrupted horizontal dark steel maintenance ledge covers entire bottom16 percent, no holes, ramps or obstructions. Source's vivid sickly green light illuminates legible dark brown silhouettes. No players, weapons, ammo pickups, invented logos/signs or unrelated machinery. Faithful GoldSrc architecture translated into detailed painted textures, no futuristic redesign."
+    },
+    {
+      "asset_id": "stage_contamination_hl25_master_h",
+      "owner_id": "STG_EXT_HLDM_CONTAMINATION",
+      "name_fr": "Contamination — installation extérieure",
+      "reference_paths": [
+        "/workspace/scratch/684967c2474e/references-h/map_contamination.jpg"
+      ],
+      "reference_urls": [
+        "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/map_contamination.jpg"
+      ],
+      "reference_pages": [
+        "https://www.half-life.com/en/halflife/25th/"
+      ],
+      "prompt": "Use case: stylized-concept. Create ONE individual high-definition painted 2D fighting-game stage master, exact panorama ratio 3:1. Use attached ORIGINAL GAME SCREENSHOT as strict visual identity reference. Preserve the distinctive architecture, colors, materials and recognizable landmarks; detailed game-art translation, no redesign. Level orthographic SIDE VIEW. Entire BOTTOM 16 percent must be an unbroken flat horizontal walkable strip at a constant elevation, top edge at y=84 percent, clear from left to right. This strip is seen in side elevation, NOT a receding perspective floor; no foreground ramps, pits or obstacles. Background landmarks are behind the strip. One coherent environment, opaque RGB artwork. No people, creatures, bosses, weapons, pickups, user-interface, captions, HUD text or border. All geometry rearrangement is a 2D gameplay adaptation; this is one flat candidate master and NOT separate parallax layers.\nCONTAMINATION, Half-Life Deathmatch 25th Anniversary, shown in the attached official screenshot. Sunset mauve-peach sky, bare reddish canyon cliffs, weathered pale concrete buildings, orange-brown metal tower with black corner rivets, tall buttressed bridge structure with narrow horizontal openings exposing rusty red trusses, rounded tall concrete tower at center-right with a large vertically stacked metal hatch, red tubular guardrails and high metal catwalks, warm square lamps, subtle cyan-green doorway lights. Recompose this distinct courtyard as a straight side elevation without copying the low upward camera. Retain background stairs behind the continuous foreground gray concrete play strip, never let stairs or railings interrupt play. No toxic green interior hall: that is a different map. Remove all loose pickups.",
+      "qa_observation": "Béton et tours, passerelles à garde-corps rouges, ciel couchant et falaises préservés."
+    },
+    {
+      "asset_id": "stage_pool_party_hl25_master_h",
+      "owner_id": "STG_EXT_HLDM_POOL_PARTY",
+      "name_fr": "Pool Party — piscines de Xen",
+      "reference_paths": [
+        "/workspace/scratch/684967c2474e/references-h/map_pool_party.jpg"
+      ],
+      "reference_urls": [
+        "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/map_pool_party.jpg"
+      ],
+      "reference_pages": [
+        "https://www.half-life.com/en/halflife/25th/"
+      ],
+      "prompt": "Use case: stylized-concept. Create ONE individual high-definition painted 2D fighting-game stage master, exact panorama ratio 3:1. Use attached ORIGINAL GAME SCREENSHOT as strict visual identity reference. Preserve the distinctive architecture, colors, materials and recognizable landmarks; detailed game-art translation, no redesign. Level orthographic SIDE VIEW. Entire BOTTOM 16 percent must be an unbroken flat horizontal walkable strip at a constant elevation, top edge at y=84 percent, clear from left to right. This strip is seen in side elevation, NOT a receding perspective floor; no foreground ramps, pits or obstacles. Background landmarks are behind the strip. One coherent environment, opaque RGB artwork. No people, creatures, bosses, weapons, pickups, user-interface, captions, HUD text or border. All geometry rearrangement is a 2D gameplay adaptation; this is one flat candidate master and NOT separate parallax layers.\nPOOL PARTY, Half-Life Deathmatch 25th Anniversary, from the attached official screenshot. Orange-yellow framed industrial outpost on Xen with gray-brown slab walls, large copper and dark-green pipes at left, cyan-lit narrow doorways, small grated yellow platforms and short ladders, and THREE irregular bright turquoise healing pools embedded in dark reddish organic stone. Purple violet alien void and small floating rocks visible between buildings. Recompose source from steep overhead view to a level side elevation: healing pools stay behind the playable strip as readable narrow cyan basin surfaces, outpost facades flank them. The bottom16 percent is ONE continuous level organic-rock-and-metal maintenance ledge, not water or holes. Preserve specific pool-outpost look, distinct from generic Xen needle islands. Remove guns, explosives, health pickups and loose crates from fighting strip.",
+      "qa_observation": "Avant-poste jaune, trois bassins turquoise, roche organique et vide violet conservés."
+    },
+    {
+      "asset_id": "stage_rocket_frenzy_hl25_master_h",
+      "owner_id": "STG_EXT_HLDM_ROCKET_FRENZY",
+      "name_fr": "Rocket Frenzy — silo de lancement",
+      "reference_paths": [
+        "/workspace/scratch/684967c2474e/references-h/map_rocket_frenzy.jpg"
+      ],
+      "reference_urls": [
+        "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/map_rocket_frenzy.jpg"
+      ],
+      "reference_pages": [
+        "https://www.half-life.com/en/halflife/25th/"
+      ],
+      "prompt": "Use case: stylized-concept. Create ONE individual high-definition painted 2D fighting-game stage master, exact panorama ratio 3:1. Use attached ORIGINAL GAME SCREENSHOT as strict visual identity reference. Preserve the distinctive architecture, colors, materials and recognizable landmarks; detailed game-art translation, no redesign. Level orthographic SIDE VIEW. Entire BOTTOM 16 percent must be an unbroken flat horizontal walkable strip at a constant elevation, top edge at y=84 percent, clear from left to right. This strip is seen in side elevation, NOT a receding perspective floor; no foreground ramps, pits or obstacles. Background landmarks are behind the strip. One coherent environment, opaque RGB artwork. No people, creatures, bosses, weapons, pickups, user-interface, captions, HUD text or border. All geometry rearrangement is a 2D gameplay adaptation; this is one flat candidate master and NOT separate parallax layers.\nROCKET FRENZY, official Half-Life Deathmatch 25th Anniversary map, exactly the supplied screenshot. Large central orange-red and white rocket cylinder supported by dark gray lower tube, small US flag and the original large black A mark on white band if naturally legible; surrounding rusty pale blue steel pillars, cyan fluorescent edge tubes, vertical white fluorescent panels, yellow-black hazard stripes on structural beams, brown side pipes, mesh floor and curved metal ceiling. Industrial rocket silhouette stays behind the straight foreground platform. Level side elevation of lower silo, not upward perspective. Keep rocket shape distinct from Blast Pit; no monsters, fire or exhaust. Remove all hand grenades, ammunition and health items. The entire lower16 percent is a flat dark steel maintenance deck with a straight top edge.",
+      "qa_observation": "Fusée orange et blanche, piliers rouillés, éclairage cyan, rayures de danger et conduites conservés."
+    },
+    {
+      "asset_id": "stage_double_cross_hl25_master_h",
+      "owner_id": "STG_EXT_HLDM_DOUBLE_CROSS",
+      "name_fr": "Double Cross — façade du complexe",
+      "reference_paths": [
+        "/workspace/scratch/684967c2474e/references-h/further_data_map_1.jpg"
+      ],
+      "reference_urls": [
+        "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/further_data_map_1.jpg"
+      ],
+      "reference_pages": [
+        "https://www.half-life.com/en/halflife/25th/"
+      ],
+      "prompt": "Use case: stylized-concept. Create ONE individual high-definition painted 2D fighting-game stage master, exact panorama ratio 3:1. Use attached ORIGINAL GAME SCREENSHOT as strict visual identity reference. Preserve the distinctive architecture, colors, materials and recognizable landmarks; detailed game-art translation, no redesign. Level orthographic SIDE VIEW. Entire BOTTOM 16 percent must be an unbroken flat horizontal walkable strip at a constant elevation, top edge at y=84 percent, clear from left to right. This strip is seen in side elevation, NOT a receding perspective floor; no foreground ramps, pits or obstacles. Background landmarks are behind the strip. One coherent environment, opaque RGB artwork. No people, creatures, bosses, weapons, pickups, user-interface, captions, HUD text or border. All geometry rearrangement is a 2D gameplay adaptation; this is one flat candidate master and NOT separate parallax layers.\nDOUBLE CROSS, Half-Life Further Data multiplayer map restored in 25th Anniversary, supplied official screenshot. Large brown-gray concrete bunker facade with rounded corner mass, two projecting angular metal observation/emplacement bays high on wall, horizontal slit windows on lower parapet, slender yellow ladders, orange-black Lambda Reactor Complex sign only in its original position if legible; bright blue sky with white wispy clouds and distant red mesa rock. Adapt architecture to a level side elevation. The gun barrels in the source are separate interactive machinery: omit barrels but preserve the structural recesses; no mounted guns or weapons in this background. Remove diagnostic text from top of source entirely. Continuous flat concrete foreground strip, bottom16 percent. Do not invent a second bunker or change to Crossfire.",
+      "qa_observation": "Façade en béton, deux baies en saillie, échelles jaunes, ciel bleu et mesas conservés; canons séparés du décor."
+    },
+    {
+      "asset_id": "stage_rust_mill_hl25_master_h",
+      "owner_id": "STG_EXT_HLDM_RUST_MILL",
+      "name_fr": "Rust Mill — hall des colonnes",
+      "reference_paths": [
+        "/workspace/scratch/684967c2474e/references-h/further_data_map_2.jpg"
+      ],
+      "reference_urls": [
+        "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/further_data_map_2.jpg"
+      ],
+      "reference_pages": [
+        "https://www.half-life.com/en/halflife/25th/"
+      ],
+      "prompt": "Use case: stylized-concept. Create ONE individual high-definition painted 2D fighting-game stage master, exact panorama ratio 3:1. Use attached ORIGINAL GAME SCREENSHOT as strict visual identity reference. Preserve the distinctive architecture, colors, materials and recognizable landmarks; detailed game-art translation, no redesign. Level orthographic SIDE VIEW. Entire BOTTOM 16 percent must be an unbroken flat horizontal walkable strip at a constant elevation, top edge at y=84 percent, clear from left to right. This strip is seen in side elevation, NOT a receding perspective floor; no foreground ramps, pits or obstacles. Background landmarks are behind the strip. One coherent environment, opaque RGB artwork. No people, creatures, bosses, weapons, pickups, user-interface, captions, HUD text or border. All geometry rearrangement is a 2D gameplay adaptation; this is one flat candidate master and NOT separate parallax layers.\nRUST MILL, Half-Life Further Data map restored in25th Anniversary, exactly the attached official screenshot. Dark industrial open-roof hall, THREE tall octagonal cylindrical columns with broad horizontal red-brown rust and pale gray banding, high corrugated brown metal panels and cross-bracing, clear blue sky through rectangular roof opening, dark suspended catwalks with yellow-black striped edges, rectangular cyan wall light at right, soiled dark concrete walls. Recompose as level side elevation so the three columns sit behind a clear continuous front floor, not obstructing it. Increase readability only enough to reveal the source's worn textures, preserve dark tone. Foreground lower16 percent flat gray-brown concrete, no perspective vanishing point. Not a timber sawmill.",
+      "qa_observation": "Trois colonnes rayées rouille, coursives sombres, structure métallique et ouverture de toiture conservées."
+    },
+    {
+      "asset_id": "stage_xen_dm_hl25_master_h",
+      "owner_id": "STG_EXT_HLDM_XEN_DM",
+      "name_fr": "Xen DM — tour organique",
+      "reference_paths": [
+        "/workspace/scratch/684967c2474e/references-h/further_data_map_3.jpg"
+      ],
+      "reference_urls": [
+        "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/further_data_map_3.jpg"
+      ],
+      "reference_pages": [
+        "https://www.half-life.com/en/halflife/25th/"
+      ],
+      "prompt": "Use case: stylized-concept. Create ONE individual high-definition painted 2D fighting-game stage master, exact panorama ratio 3:1. Use attached ORIGINAL GAME SCREENSHOT as strict visual identity reference. Preserve the distinctive architecture, colors, materials and recognizable landmarks; detailed game-art translation, no redesign. Level orthographic SIDE VIEW. Entire BOTTOM 16 percent must be an unbroken flat horizontal walkable strip at a constant elevation, top edge at y=84 percent, clear from left to right. This strip is seen in side elevation, NOT a receding perspective floor; no foreground ramps, pits or obstacles. Background landmarks are behind the strip. One coherent environment, opaque RGB artwork. No people, creatures, bosses, weapons, pickups, user-interface, captions, HUD text or border. All geometry rearrangement is a 2D gameplay adaptation; this is one flat candidate master and NOT separate parallax layers.\nXEN DM, Half-Life Further Data map restored in25th Anniversary, exactly the supplied official screenshot. A massive stepped geometric tower made from green-brown ribbed alien organic stone, angular horizontal ledges wrapped around it, open rectangular passages, slanted stepped supports and smaller floating platforms; dark teal-olive cloudy sky with a pale yellow hazy sun at left. Keep this chunky architectural tower distinct from the thin-spire Xen singleplayer arena. Recompose level side elevation of tower and surrounding ledges, not an upward view. Remove the crossbow, other pickups and all user-interface. The bottom16 percent is a single broad horizontal flat-topped slab of that same ribbed alien stone, continuous and clear. Source tower behind it, no added alien creatures, vegetation or human buildings.",
+      "qa_observation": "Tour organique massive à ressauts, texture striée, ouvertures angulaires et ciel olive conservés."
+    },
+    {
+      "asset_id": "stage_tram_hl1_master_h",
+      "owner_id": "STG_01_HL1_TRAM",
+      "name_fr": "Terminus du tram — Sector C",
+      "reference_paths": [
+        "/workspace/scratch/684967c2474e/references-h/C0a0e_tram.jpg"
+      ],
+      "reference_urls": [
+        "https://combineoverwiki.net/images/f/f9/C0a0e_tram.jpg"
+      ],
+      "reference_pages": [
+        "https://combineoverwiki.net/wiki/File:C0a0e_tram.jpg"
+      ],
+      "prompt": "Use case: stylized-concept. Create ONE individual high-definition painted 2D fighting-game stage master, exact panorama ratio 3:1. Use attached ORIGINAL GAME SCREENSHOT as strict visual identity reference. Preserve the distinctive architecture, colors, materials and recognizable landmarks; detailed game-art translation, no redesign. Level orthographic SIDE VIEW. Entire BOTTOM 16 percent must be an unbroken flat horizontal walkable strip at a constant elevation, top edge at y=84 percent, clear from left to right. This strip is seen in side elevation, NOT a receding perspective floor; no foreground ramps, pits or obstacles. Background landmarks are behind the strip. One coherent environment, opaque RGB artwork. No people, creatures, bosses, weapons, pickups, user-interface, captions, HUD text or border. All geometry rearrangement is a 2D gameplay adaptation; this is one flat candidate master and NOT separate parallax layers.\nHalf-Life1998, Black Mesa Inbound c0a0e TRAM TERMINUS. Preserve the original small dark industrial arrival platform: dark gray concrete wall panels, black mesh ceiling, white rectangular ceiling lamps, boxy gray tram carriage at rear with three dark front windows and roof vents, suspended metal-grating platform, pale blue-gray tubular railings with small green marker lamps, yellow-black hazard-striped gantry posts and horizontal beam, thick dark suspension cables. Recompose this front-on vanishing-point screenshot into a LEVEL SIDE ELEVATION of the arrival platform, tram kept in the rear behind the fighters. The continuous foreground strip is opaque dark steel with a visible grating top and a solid side, top line at y84%. Do not put a perspective bridge across it. No giant modern train, no orange subway, no people.",
+      "qa_observation": "Gare c0a0e : rame grise, gantries rayés, plafond sombre, passerelles grillagées et voyants verts conservés."
+    },
+    {
+      "asset_id": "stage_surface_dam_hl1_master_h",
+      "owner_id": "STG_EXT_HL1_SURFACE_DAM",
+      "name_fr": "Barrage — Surface Tension",
+      "reference_paths": [
+        "/workspace/scratch/684967c2474e/references-h/C2a5_dam02.jpg"
+      ],
+      "reference_urls": [
+        "https://combineoverwiki.net/images/f/f9/C2a5_dam02.jpg"
+      ],
+      "reference_pages": [
+        "https://combineoverwiki.net/wiki/File:C2a5_dam02.jpg"
+      ],
+      "prompt": "Use case: stylized-concept. Create ONE individual high-definition painted 2D fighting-game stage master, exact panorama ratio 3:1. Use attached ORIGINAL GAME SCREENSHOT as strict visual identity reference. Preserve the distinctive architecture, colors, materials and recognizable landmarks; detailed game-art translation, no redesign. Level orthographic SIDE VIEW. Entire BOTTOM 16 percent must be an unbroken flat horizontal walkable strip at a constant elevation, top edge at y=84 percent, clear from left to right. This strip is seen in side elevation, NOT a receding perspective floor; no foreground ramps, pits or obstacles. Background landmarks are behind the strip. One coherent environment, opaque RGB artwork. No people, creatures, bosses, weapons, pickups, user-interface, captions, HUD text or border. All geometry rearrangement is a 2D gameplay adaptation; this is one flat candidate master and NOT separate parallax layers.\nOriginal Half-Life1998 HYDRO-ELECTRIC DAM, Surface Tension c2a5; exact supplied original GoldSrc capture, not the Black Mesa remake. Preserve broad curved pale-gray concrete dam wall with horizontal seams, road on its crest with thin gray guardrails, square industrial building at upper left with tall narrow ribbed wall panels and a recessed door, small octagonal windowed control tower reached by a narrow bridge, brown reservoir behind, layered reddish bare canyon cliffs and dusty muted sky. Recompose as a broad side elevation with dam across background. In front, add only the necessary simple horizontal concrete maintenance ledge occupying bottom16%, continuous across frame; all source roads, gaps and bridge stay behind this play plane. No water cascade, hydro turbines, forest, helicopters, humans or alien fish. Strong recognizable original dam silhouette.",
+      "qa_observation": "Barrage c2a5 original : paroi de béton courbe, route de crête, tour de commande et falaises rouges conservées."
+    },
+    {
+      "asset_id": "stage_questionable_ethics_hl1_master_h",
+      "owner_id": "STG_EXT_HL1_QUESTIONABLE_ETHICS",
+      "name_fr": "Questionable Ethics — laboratoire laser",
+      "reference_paths": [
+        "/workspace/scratch/684967c2474e/references-h/C2a4f_laser.jpg"
+      ],
+      "reference_urls": [
+        "https://combineoverwiki.net/images/2/22/C2a4f_laser.jpg"
+      ],
+      "reference_pages": [
+        "https://combineoverwiki.net/wiki/File:C2a4f_laser.jpg"
+      ],
+      "prompt": "Use case: stylized-concept. Create ONE individual high-definition painted 2D fighting-game stage master, exact panorama ratio 3:1. Use attached ORIGINAL GAME SCREENSHOT as strict visual identity reference. Preserve the distinctive architecture, colors, materials and recognizable landmarks; detailed game-art translation, no redesign. Level orthographic SIDE VIEW. Entire BOTTOM 16 percent must be an unbroken flat horizontal walkable strip at a constant elevation, top edge at y=84 percent, clear from left to right. This strip is seen in side elevation, NOT a receding perspective floor; no foreground ramps, pits or obstacles. Background landmarks are behind the strip. One coherent environment, opaque RGB artwork. No people, creatures, bosses, weapons, pickups, user-interface, captions, HUD text or border. All geometry rearrangement is a 2D gameplay adaptation; this is one flat candidate master and NOT separate parallax layers.\nOriginal Half-Life1998 QUESTIONABLE ETHICS, exact laser laboratory c2a4f shown. Preserve pale blue-gray rectangular wall panels, dark grated ceiling and catwalk, hanging square amber ceiling lamp, gray waist-high wraparound sloped console banks with dense tiny green/yellow indicator dots and central round amber control, blue-framed tall equipment racks at left, blocky pale-gray laboratory emitter in midground, large jagged opening through the right back wall with thick angular broken panels, louvered vents. Show an INACTIVE safe state: remove cyan beams, red laser line and any live energy effects; laser effects are separate assets. No spectrometer, no yellow Lambda teleporter, no creatures or scientists. Level side view across the laboratory with these console banks fully behind a clear flat gray tiled foreground floor. Bottom16% is the straight uninterrupted floor; no perspective tabletop in the player's space. Preserve recognizable source arrangement, no added lab equipment.",
+      "qa_observation": "Laboratoire c2a4f, consoles vertes, armoires bleues, panneau brisé et plafond grillagé conservés; faisceaux séparés."
+    },
+    {
+      "asset_id": "stage_black_mesa_east_master_h",
+      "owner_id": "STG_13_HL2_BME",
+      "name_fr": "Cour de Black Mesa East",
+      "reference_paths": [
+        "/workspace/scratch/684967c2474e/references-h/Bme_scrapyard.jpg"
+      ],
+      "reference_urls": [
+        "https://combineoverwiki.net/images/4/4c/Bme_scrapyard.jpg"
+      ],
+      "reference_pages": [
+        "https://combineoverwiki.net/wiki/File:Bme_scrapyard.jpg"
+      ],
+      "prompt": "Use case: stylized-concept. Create ONE individual high-definition painted 2D fighting-game stage master, exact panorama ratio 3:1. Use attached ORIGINAL GAME SCREENSHOT as strict visual identity reference. Preserve the distinctive architecture, colors, materials and recognizable landmarks; detailed game-art translation, no redesign. Level orthographic SIDE VIEW. Entire BOTTOM 16 percent must be an unbroken flat horizontal walkable strip at a constant elevation, top edge at y=84 percent, clear from left to right. This strip is seen in side elevation, NOT a receding perspective floor; no foreground ramps, pits or obstacles. Background landmarks are behind the strip. One coherent environment, opaque RGB artwork. No people, creatures, bosses, weapons, pickups, user-interface, captions, HUD text or border. All geometry rearrangement is a 2D gameplay adaptation; this is one flat candidate master and NOT separate parallax layers.\nHALF-LIFE2 BLACK MESA EAST SCRAPYARD d1_eli_02, exact supplied retail capture. REMOVE the large robot Dog and Alyx completely, and any loose held rock. Preserve cliff-enclosed outdoor scrapyard, rough tall gray rock faces with sparse leafless tree silhouettes on the ridge, pale weathered concrete retaining wall at right with TWO very large circular ventilation openings, basketball backboard and hoop mounted high on that wall, cool cyan floodlights casting downward cones, dark steel gantry on left, corrugated sheet-metal sheds, red and pale green shipping containers at back, sparse yellowed weeds. Dusky gray-blue sky, yellow-brown packed earth. Recompose to a level side-view stage, not vanishing-point view. Background objects stay behind continuous flat dirt/concrete foreground bottom16%; no movable crates or hoops blocking fight. No robot, woman, people or creatures anywhere.",
+      "qa_observation": "Cour d1_eli_02 : paroi à deux conduits circulaires, panier, containers, tôle et éclairage froid conservés; Alyx et Dog retirés."
+    },
+    {
+      "asset_id": "stage_nova_prospekt_master_h",
+      "owner_id": "STG_15_HL2_NOVA",
+      "name_fr": "Cour de Nova Prospekt",
+      "reference_paths": [
+        "/workspace/scratch/684967c2474e/references-h/Nova_Prospekt_first.jpg"
+      ],
+      "reference_urls": [
+        "https://combineoverwiki.net/images/1/18/Nova_Prospekt_first.jpg"
+      ],
+      "reference_pages": [
+        "https://combineoverwiki.net/wiki/File:Nova_Prospekt_first.jpg"
+      ],
+      "prompt": "Use case: stylized-concept. Create ONE individual high-definition painted 2D fighting-game stage master, exact panorama ratio 3:1. Use attached ORIGINAL GAME SCREENSHOT as strict visual identity reference. Preserve the distinctive architecture, colors, materials and recognizable landmarks; detailed game-art translation, no redesign. Level orthographic SIDE VIEW. Entire BOTTOM 16 percent must be an unbroken flat horizontal walkable strip at a constant elevation, top edge at y=84 percent, clear from left to right. This strip is seen in side elevation, NOT a receding perspective floor; no foreground ramps, pits or obstacles. Background landmarks are behind the strip. One coherent environment, opaque RGB artwork. No people, creatures, bosses, weapons, pickups, user-interface, captions, HUD text or border. All geometry rearrangement is a 2D gameplay adaptation; this is one flat candidate master and NOT separate parallax layers.\nHALF-LIFE2 NOVA PROSPEKT EXTERIOR COURTYARD from supplied exact original screenshot. Remove every soldier and mounted gun. Preserve cold blue-gray night/late-evening sky, grim pale concrete prison blocks with rows of narrow barred windows, dark reddish low-pitched roofs, low watchtower with lit yellow windows, a tall thin smokestack, looming massive dark industrial Combine structure beyond the back prison, barbed chainlink fences and dark blue containers BEHIND the play plane. Cool floodlight beams sweep through haze from fixed searchlights, sparse leafless trees. Recompose architecture into readable side elevation without aerial perspective; foreground is one level unbroken gray concrete prison courtyard strip occupying bottom16%. No railings across that playable strip, no stairs or pits, no Antlions, guards, gunships or weapons. Preserve the precise source-era prison appearance.",
+      "qa_observation": "Extérieur retail de Nova Prospekt : bâtiments pénitentiaires, mirador, cheminée et projecteurs froids conservés; soldats et arme retirés."
+    },
+    {
+      "asset_id": "stage_citadel_hl2_master_h",
+      "owner_id": "STG_16_HL2_CITADEL",
+      "name_fr": "Citadelle — puits des conduites",
+      "reference_paths": [
+        "/workspace/scratch/684967c2474e/references-h/Citadel_menu_background.jpg"
+      ],
+      "reference_urls": [
+        "https://combineoverwiki.net/images/b/b7/Citadel_menu_background.jpg"
+      ],
+      "reference_pages": [
+        "https://combineoverwiki.net/wiki/File:Citadel_menu_background.jpg"
+      ],
+      "prompt": "Use case: stylized-concept. Create ONE individual high-definition painted 2D fighting-game stage master, exact panorama ratio 3:1. Use attached ORIGINAL GAME SCREENSHOT as strict visual identity reference. Preserve the distinctive architecture, colors, materials and recognizable landmarks; detailed game-art translation, no redesign. Level orthographic SIDE VIEW. Entire BOTTOM 16 percent must be an unbroken flat horizontal walkable strip at a constant elevation, top edge at y=84 percent, clear from left to right. This strip is seen in side elevation, NOT a receding perspective floor; no foreground ramps, pits or obstacles. Background landmarks are behind the strip. One coherent environment, opaque RGB artwork. No people, creatures, bosses, weapons, pickups, user-interface, captions, HUD text or border. All geometry rearrangement is a 2D gameplay adaptation; this is one flat candidate master and NOT separate parallax layers.\nHALF-LIFE2 CITADEL INTERIOR from exact original background07 capture. Vast dark vertical industrial shaft, charcoal-blue metal wall grids, long pale olive-yellow bundles of parallel thick cables/tubes flowing around angular overhead bends, colossal straight steel ribs with sparse blue-cyan edges, layered narrow platforms and deep black recesses. Preserve this specific wall/tube design, not a generic sci-fi bridge or glowing reactor. Level side elevation through the monumental shaft; cable bundles and shaft depth in background. Necessary foreground playing strip: a simple solid charcoal-blue metal maintenance platform spanning width, straight flat top at y84%, bottom16% visible as side section, all supports behind. Remove every small Stalker, Scanner or moving actor. No portal, orb, purple vortex, decorative neon patterns or human architecture. Moody but readable cool industrial light.",
+      "qa_observation": "Puits background07 : gaines olive, nervures bleu sombre et profondeur industrielle conservées; acteurs exclus."
+    }
+  ]
+}

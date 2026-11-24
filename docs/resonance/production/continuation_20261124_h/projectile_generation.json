@@ -1,0 +1,2048 @@
+{
+  "schema_version": "1.0",
+  "module": "Half Life Resonance",
+  "batch_id": "continuation_20261124_h",
+  "created_at": "2026-11-24",
+  "counts": {
+    "requests": 26,
+    "generated": 25,
+    "blocked": 1,
+    "certified_one_to_one": 0,
+    "integrated_in_game": 0,
+    "completed_animation_clips": 0,
+    "total_png_bytes": 22375367,
+    "unique_targets_with_candidate": 24
+  },
+  "scope_note": "Fichiers candidats individuels. Les anneaux, portails, faisceaux et pont de lumière sont des effets. Un PNG ne clôt pas animation ou certification 1:1.",
+  "assets": [
+    {
+      "asset_id": "proj_ar2_energy_ball_hl2_h",
+      "owner_id": "proj_ar2_energy_ball_hl2",
+      "name_fr": "Orbe énergétique secondaire AR2 — Half-Life 2",
+      "prompt": "Use case: stylized-concept. Asset type: individual transparent 2D fighting-game visual effect for Half-Life Resonance. Create ONE faithful candidate of the AR2 secondary-fire Combine energy ball from the released Half-Life 2 game. Single compact spherical white-hot yellow-white energy core, softly translucent golden-yellow corona and faint thin energetic filaments that wrap the sphere. The complete sphere and its subtle halo must fit within the canvas with wide fully transparent margins. No weapon, no shooter, no scenery, no impact, no multiple balls, no sprite sheet, no letters or labels, no huge blue electrical storm. Match the restrained small bright energy-ball identity from Half-Life 2 rather than an original redesign. High-resolution clean 2D game VFX, true alpha background; preserve soft partially transparent glow. The only visible subject is this one airborne orb, centered, neutral frame without long travel trail.",
+      "source_path": "/workspace/scratch/684967c2474e/generated_images/exec-c7a02bea-8e4c-4c7c-84a0-e099e41f3aad.png",
+      "source_urls": [
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/prop_combine_ball.cpp"
+      ],
+      "source_note": "Source primaire consultée avec GitHub fetch : modèle models/effects/combineball.mdl, traînée sprites/combineball_trail_black_1.vmt. Aucun bitmap du jeu en entrée.",
+      "qa_notes": "Silhouette orb lumineuse cohérente; la couronne et ses filaments restent à comparer avec capture du jeu. Pas de certification 1:1.",
+      "owner_type": "projectile_effect",
+      "category": "projectile_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "target_ids": [
+        "proj_ar2_energy_ball_hl2"
+      ],
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "pixel_modification_after_generation": false,
+      "copy_identical_to_generator": true,
+      "reference_bitmap_loaded": false,
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_ar2_energy_ball_hl2_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_ar2_energy_ball_hl2_h.png",
+      "width": 1536,
+      "height": 1024,
+      "color_mode": "RGBA",
+      "byte_size": 1180068,
+      "sha256": "67178509681e40f75e0e8b2e80b35a8d1bd0f73595c6f141c29edaf7c78e2bbc",
+      "alpha_check": "canal alpha présent; pixels transparents et semi-transparents vérifiés",
+      "alpha_stats": {
+        "transparent_pixels": 1268525,
+        "partial_pixels": 304339,
+        "opaque_pixels": 0,
+        "alpha_range": [
+          0,
+          254
+        ],
+        "bbox_alpha_nonzero": [
+          0,
+          0,
+          1516,
+          1024
+        ],
+        "bbox_alpha_at_least_16": [
+          499,
+          245,
+          1013,
+          760
+        ],
+        "transparent_fraction": 0.8065064748128256
+      },
+      "notes": "Silhouette orb lumineuse cohérente; la couronne et ses filaments restent à comparer avec capture du jeu. Pas de certification 1:1.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#e1e1e1",
+          "#282828"
+        ],
+        "original_pixels_modified": false,
+        "result": "sujet et transparence lisibles sur les deux fonds; référence canonique et animation restent à valider"
+      },
+      "tool_output_hint": "Generated images are saved to /workspace/scratch/684967c2474e/generated_images as /workspace/scratch/684967c2474e/generated_images/exec-c7a02bea-8e4c-4c7c-84a0-e099e41f3aad.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "result_capture": "PNG returned by image_gen preserved byte-for-byte; displayed with generatedImage(result)",
+      "variant": "body",
+      "visual_state_id": "body",
+      "visual_state_complete": false
+    },
+    {
+      "asset_id": "proj_hunter_flechette_ep2_h",
+      "owner_id": "proj_hunter_flechette_ep2",
+      "name_fr": "Fléchette Hunter — Episode Two",
+      "prompt": "Use case: stylized-concept. Asset type: ONE individual alpha-transparent 2D projectile sprite for a Half-Life 2 Episode Two fighting-game adaptation. Subject: the Hunter synth's distinctive flechette, airborne before impact. Faithfully retain the small thin needle-like shard identity from the released Episode Two game, an elongated slender dark metallic/biomechanical dart with a cool cyan-blue luminous tip/energy streak, pointing horizontally to the RIGHT. A narrow pointed shaft, compact proportions, no bomb, no rocket fins, no bullet casing, no sphere, no firearm. Show just one complete flechette and a very restrained short cyan trail behind it; generous transparent margin. Crisp detailed high-resolution 2D raster game sprite with true alpha, no scenery, no floor, no text, no grid, no border, no duplicate objects, no explosion. Reference candidate preserving the game's identity, not a new weapon design.",
+      "source_path": "/workspace/scratch/684967c2474e/generated_images/exec-9d01a5d5-8b18-4310-843a-21e0a224b9f8.png",
+      "source_urls": [
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/episodic/npc_hunter.cpp"
+      ],
+      "source_note": "Sources techniques primaires consultées pour les types d'effet; pas de bitmap du jeu chargé en entrée.",
+      "qa_notes": "Candidat allongé cyan, détail mécanique surdimensionné possible. Revue sur modèle source nécessaire.",
+      "owner_type": "projectile_effect",
+      "category": "projectile_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "target_ids": [
+        "proj_hunter_flechette_ep2"
+      ],
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "pixel_modification_after_generation": false,
+      "copy_identical_to_generator": true,
+      "reference_bitmap_loaded": false,
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_hunter_flechette_ep2_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_hunter_flechette_ep2_h.png",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 291720,
+      "sha256": "840e3a72b75ef8d025d147a0c6a20025a094a61ccebe2eeb0a81da003d6852e3",
+      "alpha_check": "canal alpha présent; pixels transparents et semi-transparents vérifiés",
+      "alpha_stats": {
+        "transparent_pixels": 1437208,
+        "partial_pixels": 135293,
+        "opaque_pixels": 27,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "bbox_alpha_nonzero": [
+          33,
+          23,
+          2134,
+          705
+        ],
+        "bbox_alpha_at_least_16": [
+          334,
+          307,
+          1821,
+          416
+        ],
+        "transparent_fraction": 0.9139474782007061
+      },
+      "notes": "Candidat allongé cyan, détail mécanique surdimensionné possible. Revue sur modèle source nécessaire.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#e1e1e1",
+          "#282828"
+        ],
+        "original_pixels_modified": false,
+        "result": "sujet et transparence lisibles sur les deux fonds; référence canonique et animation restent à valider"
+      },
+      "tool_output_hint": "Generated images are saved to /workspace/scratch/684967c2474e/generated_images as /workspace/scratch/684967c2474e/generated_images/exec-9d01a5d5-8b18-4310-843a-21e0a224b9f8.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "result_capture": "PNG returned by image_gen preserved byte-for-byte; displayed with generatedImage(result)",
+      "variant": "body",
+      "visual_state_id": "body",
+      "visual_state_complete": false
+    },
+    {
+      "asset_id": "proj_bullsquid_spit_hl1_h",
+      "owner_id": "proj_bullsquid_spit_hl1",
+      "name_fr": "Crachat de Bullsquid — Half-Life original",
+      "prompt": "Use case: stylized-concept. Asset type: ONE transparent 2D game projectile frame. Create the Bullsquid spit projectile from the original 1998 Half-Life, faithful to its green-yellow acidic bigspit.spr visual identity, for a 2D fighting-game adaptation. ONE small irregular viscous acid glob traveling to screen right, bright yellow-green soft core with olive/lime semitransparent edges and two tiny attached trailing droplets behind, simple readable silhouette. Slight squash in travel direction, no glass or solid shell. Isolated airborne projectile only, no Bullsquid creature, no gun, no character, no environment, no explosion, no large splash, no glowing spherical energy ball, no text or sprite sheet. High resolution clean raster game VFX, true transparent alpha background and generous empty transparent border. Keep restrained source-game appearance rather than ornate fantasy acid magic.",
+      "source_path": "/workspace/scratch/684967c2474e/generated_images/exec-ff45c925-fcf2-4137-b9d9-406916c2d800.png",
+      "source_urls": [
+        "https://github.com/ValveSoftware/halflife/blob/master/dlls/bullsquid.cpp"
+      ],
+      "source_note": "Sources techniques primaires consultées pour les types d'effet; pas de bitmap du jeu chargé en entrée.",
+      "qa_notes": "Globule jaune-vert; silhouette nettement plus allongée que le sprite source potentiel. À comparer sur capture exacte.",
+      "owner_type": "projectile_effect",
+      "category": "projectile_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "target_ids": [
+        "proj_bullsquid_spit_hl1"
+      ],
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "pixel_modification_after_generation": false,
+      "copy_identical_to_generator": true,
+      "reference_bitmap_loaded": false,
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_bullsquid_spit_hl1_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_bullsquid_spit_hl1_h.png",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 317782,
+      "sha256": "638f99a10f1278683bd5fa705bdd93909c5110edeba455c3b1c0ed54306d3535",
+      "alpha_check": "canal alpha présent; pixels transparents et semi-transparents vérifiés",
+      "alpha_stats": {
+        "transparent_pixels": 1381361,
+        "partial_pixels": 191167,
+        "opaque_pixels": 0,
+        "alpha_range": [
+          0,
+          253
+        ],
+        "bbox_alpha_nonzero": [
+          63,
+          0,
+          2171,
+          706
+        ],
+        "bbox_alpha_at_least_16": [
+          540,
+          214,
+          1635,
+          495
+        ],
+        "transparent_fraction": 0.8784333251935736
+      },
+      "notes": "Globule jaune-vert; silhouette nettement plus allongée que le sprite source potentiel. À comparer sur capture exacte.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#e1e1e1",
+          "#282828"
+        ],
+        "original_pixels_modified": false,
+        "result": "sujet et transparence lisibles sur les deux fonds; référence canonique et animation restent à valider"
+      },
+      "tool_output_hint": "Generated images are saved to /workspace/scratch/684967c2474e/generated_images as /workspace/scratch/684967c2474e/generated_images/exec-ff45c925-fcf2-4137-b9d9-406916c2d800.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "result_capture": "PNG returned by image_gen preserved byte-for-byte; displayed with generatedImage(result)",
+      "variant": "body",
+      "visual_state_id": "body",
+      "visual_state_complete": false
+    },
+    {
+      "asset_id": "fx_houndeye_sonic_ring_hl1_h",
+      "owner_id": "fx_houndeye_sonic_ring_hl1",
+      "name_fr": "Onde sonique de Houndeye — Half-Life original",
+      "prompt": "Use case: stylized-concept. Asset type: ONE alpha-transparent 2D game area-effect frame. Reproduce a reference candidate for the Houndeye sonic area attack from original Half-Life, which consists of two concentric expanding beam-cylinder rings. Render ONE combined frame of two thin horizontally flattened elliptical light-blue-white shockwave rings, centered together at the same origin, outer ring twice inner ring diameter. Pale cool blue (near RGB 188,220,255), smooth simple translucent bands and restrained soft glow, transparent inside and outside the rings. Camera suited to side-on 2D fighting game, slight downward view solely so the ground-aligned rings are readable. No ground texture, no creature, no target, no vertical circular portal, no orb, no lightning bolts, no fiery explosion, no labels, no diagram, no multiple panels. Entire two-ring effect contained with broad transparent margins; a single frame on true transparent alpha. This is an area effect, not a flying projectile.",
+      "source_path": "/workspace/scratch/684967c2474e/generated_images/exec-2ec88f1e-f618-46d5-b50c-102087a59ec9.png",
+      "source_urls": [
+        "https://github.com/ValveSoftware/halflife/blob/master/dlls/houndeye.cpp"
+      ],
+      "source_note": "Sources techniques primaires consultées pour les types d'effet; pas de bitmap du jeu chargé en entrée.",
+      "qa_notes": "Deux anneaux concentriques présents, composite alpha sur gris clair et foncé vérifié sans nuage opaque interne. Épaisseur, cadence et taille source à valider.",
+      "owner_type": "projectile_effect",
+      "category": "vfx_key_frame",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "target_ids": [
+        "fx_houndeye_sonic_ring_hl1"
+      ],
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "pixel_modification_after_generation": false,
+      "copy_identical_to_generator": true,
+      "reference_bitmap_loaded": false,
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_houndeye_sonic_ring_hl1_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_houndeye_sonic_ring_hl1_h.png",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 972735,
+      "sha256": "f444405cd2e96e34e0f7f2b3c402439090b7750976df2ee68643e6e1909d2785",
+      "alpha_check": "canal alpha présent; pixels transparents et semi-transparents vérifiés",
+      "alpha_stats": {
+        "transparent_pixels": 872812,
+        "partial_pixels": 699716,
+        "opaque_pixels": 0,
+        "alpha_range": [
+          0,
+          252
+        ],
+        "bbox_alpha_nonzero": [
+          23,
+          0,
+          2171,
+          724
+        ],
+        "bbox_alpha_at_least_16": [
+          158,
+          196,
+          2009,
+          537
+        ],
+        "transparent_fraction": 0.5550374937679965
+      },
+      "notes": "Deux anneaux concentriques présents, composite alpha sur gris clair et foncé vérifié sans nuage opaque interne. Épaisseur, cadence et taille source à valider.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#e1e1e1",
+          "#282828"
+        ],
+        "original_pixels_modified": false,
+        "result": "sujet et transparence lisibles sur les deux fonds; référence canonique et animation restent à valider"
+      },
+      "tool_output_hint": "Generated images are saved to /workspace/scratch/684967c2474e/generated_images as /workspace/scratch/684967c2474e/generated_images/exec-2ec88f1e-f618-46d5-b50c-102087a59ec9.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "result_capture": "PNG returned by image_gen preserved byte-for-byte; displayed with generatedImage(result)",
+      "variant": "solo_ring",
+      "visual_state_id": "solo_ring",
+      "visual_state_complete": false
+    },
+    {
+      "asset_id": "proj_energy_pellet_portal1_h",
+      "owner_id": "proj_energy_pellet_portal1",
+      "name_fr": "Pastille à haute énergie — Portal",
+      "prompt": "Use case: stylized-concept. Asset type: ONE transparent raster 2D game projectile. Subject: a single High Energy Pellet from the original Portal (2007), the small luminous bouncing sphere launched by Aperture test-chamber energy launchers. Preserve its recognizable white-hot center, compact pale yellow/golden glow, slightly turbulent rounded energy shell, tiny sparse sparks, and crisp circular silhouette. Single stationary mid-flight key frame, no long comet trail. The whole glowing orb and small halo fit comfortably inside generous transparent margins. True alpha background with soft translucent glow; no scenery, launcher, character, capture device, portal doorway, UI, words, multiple frames or multiple spheres. High-resolution game VFX candidate faithfully based on Portal 1; do not turn it into a blue Portal 2 laser or add fantasy symbols.",
+      "source_path": "/workspace/scratch/684967c2474e/generated_images/exec-5eab0ddc-3bd5-4eec-8bcd-496ccefe8c55.png",
+      "source_urls": [
+        "https://store.steampowered.com/app/400/Portal/"
+      ],
+      "source_note": "Page officielle de produit / média consultée; pas de bitmap exact de la frame en entrée.",
+      "qa_notes": "Pastille lumineuse blanche/dorée cohérente comme candidat; turbulence et dimensions à comparer au shader du jeu.",
+      "owner_type": "projectile_effect",
+      "category": "projectile_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "target_ids": [
+        "proj_energy_pellet_portal1"
+      ],
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "pixel_modification_after_generation": false,
+      "copy_identical_to_generator": true,
+      "reference_bitmap_loaded": false,
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_energy_pellet_portal1_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_energy_pellet_portal1_h.png",
+      "width": 1536,
+      "height": 1024,
+      "color_mode": "RGBA",
+      "byte_size": 1343524,
+      "sha256": "985bc557be4182f714757fa86668edd2804240aa41099be9433038357720f500",
+      "alpha_check": "canal alpha présent; pixels transparents et semi-transparents vérifiés",
+      "alpha_stats": {
+        "transparent_pixels": 983885,
+        "partial_pixels": 588979,
+        "opaque_pixels": 0,
+        "alpha_range": [
+          0,
+          254
+        ],
+        "bbox_alpha_nonzero": [
+          0,
+          0,
+          1522,
+          1024
+        ],
+        "bbox_alpha_at_least_16": [
+          423,
+          167,
+          1105,
+          860
+        ],
+        "transparent_fraction": 0.6255372365315756
+      },
+      "notes": "Pastille lumineuse blanche/dorée cohérente comme candidat; turbulence et dimensions à comparer au shader du jeu.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#e1e1e1",
+          "#282828"
+        ],
+        "original_pixels_modified": false,
+        "result": "sujet et transparence lisibles sur les deux fonds; référence canonique et animation restent à valider"
+      },
+      "tool_output_hint": "Generated images are saved to /workspace/scratch/684967c2474e/generated_images as /workspace/scratch/684967c2474e/generated_images/exec-5eab0ddc-3bd5-4eec-8bcd-496ccefe8c55.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "result_capture": "PNG returned by image_gen preserved byte-for-byte; displayed with generatedImage(result)",
+      "variant": "body",
+      "visual_state_id": "body",
+      "visual_state_complete": false
+    },
+    {
+      "asset_id": "fx_hard_light_bridge_portal2_h",
+      "owner_id": "fx_hard_light_bridge_portal2",
+      "name_fr": "Pont de lumière tangible — Portal 2",
+      "prompt": "Use case: stylized-concept. Asset type: ONE standalone transparent 2D stage effect, Hard Light Bridge from released Portal 2. Render one flat long horizontal bridge of hard light seen from a side-on fighting game camera with slight top surface visible: thin rectangular translucent sky-blue energy sheet, clean straight parallel long edges, narrow brighter cyan-blue borders, subtle flowing fine white-blue luminous streaks along its length. An environmental solid-light surface, NOT a laser beam or portal. The bridge is one continuous flat panel with no curve, supports, railings, floor, generator, room or characters. Keep every edge fully visible within generous transparent margins. True transparent alpha through the faint luminous surface and around it. Clean high-resolution 2D raster game art matching the restrained clinical Portal 2 visual language. No words, logos, UI, grid, multiple panels, explosion, clouds or fantasy magic.",
+      "source_path": "/home/agent/resonance-projectile-recovery/hard_light_bridge_returned_bytes.png",
+      "source_urls": [
+        "https://store.steampowered.com/app/620/Portal_2/",
+        "https://developer.valvesoftware.com/wiki/Prop_wall_projector"
+      ],
+      "source_note": "Page Steam officielle utilisée comme référence de produit; lien de l'entité Valve Developer Community non lisible (403). Pas de bitmap direct utilisé.",
+      "qa_notes": "Bande bleue horizontale cohérente; profondeur/perspective et aspect des bandes de lumière à confronter à une capture.",
+      "owner_type": "projectile_effect",
+      "category": "vfx_key_frame",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "target_ids": [
+        "fx_hard_light_bridge_portal2"
+      ],
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "pixel_modification_after_generation": false,
+      "copy_identical_to_generator": true,
+      "reference_bitmap_loaded": false,
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_hard_light_bridge_portal2_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_hard_light_bridge_portal2_h.png",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 262371,
+      "sha256": "b3f69d030bb1f76d6e4ff5c663eb120ac7bfa79c1314de61833820a5ac2c4bd7",
+      "alpha_check": "canal alpha présent; pixels transparents et semi-transparents vérifiés",
+      "alpha_stats": {
+        "transparent_pixels": 1396066,
+        "partial_pixels": 176461,
+        "opaque_pixels": 1,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "bbox_alpha_nonzero": [
+          25,
+          87,
+          2140,
+          668
+        ],
+        "bbox_alpha_at_least_16": [
+          39,
+          323,
+          2133,
+          398
+        ],
+        "transparent_fraction": 0.8877845100373412
+      },
+      "notes": "Bande bleue horizontale cohérente; profondeur/perspective et aspect des bandes de lumière à confronter à une capture.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#e1e1e1",
+          "#282828"
+        ],
+        "original_pixels_modified": false,
+        "result": "sujet et transparence lisibles sur les deux fonds; référence canonique et animation restent à valider"
+      },
+      "tool_output_hint": null,
+      "result_capture": "PNG returned by image_gen preserved byte-for-byte; displayed with generatedImage(result)",
+      "variant": "surface",
+      "visual_state_id": "surface",
+      "visual_state_complete": false
+    },
+    {
+      "asset_id": "proj_repulsion_gel_portal2_h",
+      "owner_id": "proj_repulsion_gel_portal2",
+      "name_fr": "Goutte de gel répulsif — Portal 2",
+      "prompt": "Use case: stylized-concept. Asset type: ONE individual alpha-transparent 2D projectile/environment sprite. Subject: one airborne blob of Repulsion Gel from the released Portal 2 game. A single rounded irregular viscous blue paint glob, saturated medium sky blue and darker blue thickness, wet glossy highlights, simple compact organic lobed shape, one tiny attached drop on its lower side. It must look like liquid blue gel/paint, not a glass marble, electricity, a glowing energy ball or slime creature. Side-view falling mid-air key frame, fully contained in generous transparent margins. True alpha transparency outside; gel body mostly opaque blue, natural wet specular shine. No pipe, bucket, splash pool, ground, scene, character, text, labels, logo, sprite sheet or multiple independent blobs. High-resolution clean 2D game sprite reference candidate preserving Portal 2 material appearance.",
+      "source_path": "/workspace/scratch/684967c2474e/generated_images/exec-0614b12d-101a-4c25-803a-8d80aef33284.png",
+      "source_urls": [
+        "https://www.thinkwithportals.com/media.php"
+      ],
+      "source_note": "Page officielle de produit / média consultée; pas de bitmap exact de la frame en entrée.",
+      "qa_notes": "Goutte bleue humide lisible. Composite alpha sur gris clair et foncé vérifié : le halo apparent dans le rendu RGB ne se voit pas sur fond opaque. Aucun défaut de halo confirmé. Matière et profil restent candidats, pas certifiés 1:1.",
+      "owner_type": "projectile_effect",
+      "category": "projectile_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "target_ids": [
+        "proj_repulsion_gel_portal2"
+      ],
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "pixel_modification_after_generation": false,
+      "copy_identical_to_generator": true,
+      "reference_bitmap_loaded": false,
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_repulsion_gel_portal2_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_repulsion_gel_portal2_h.png",
+      "width": 1536,
+      "height": 1024,
+      "color_mode": "RGBA",
+      "byte_size": 1132618,
+      "sha256": "1886aa48a6a77dae01d4c435a1f1c94a2487ded1d25b6b5ff38ebcaae38360a6",
+      "alpha_check": "canal alpha présent; pixels transparents et semi-transparents vérifiés",
+      "alpha_stats": {
+        "transparent_pixels": 1291707,
+        "partial_pixels": 281157,
+        "opaque_pixels": 0,
+        "alpha_range": [
+          0,
+          254
+        ],
+        "bbox_alpha_nonzero": [
+          0,
+          29,
+          1514,
+          1024
+        ],
+        "bbox_alpha_at_least_16": [
+          433,
+          225,
+          1104,
+          801
+        ],
+        "transparent_fraction": 0.8212451934814453
+      },
+      "notes": "Goutte bleue humide lisible. Composite alpha sur gris clair et foncé vérifié : le halo apparent dans le rendu RGB ne se voit pas sur fond opaque. Aucun défaut de halo confirmé. Matière et profil restent candidats, pas certifiés 1:1.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#e1e1e1",
+          "#282828"
+        ],
+        "original_pixels_modified": false,
+        "result": "sujet et transparence lisibles sur les deux fonds; référence canonique et animation restent à valider"
+      },
+      "tool_output_hint": "Generated images are saved to /workspace/scratch/684967c2474e/generated_images as /workspace/scratch/684967c2474e/generated_images/exec-0614b12d-101a-4c25-803a-8d80aef33284.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "result_capture": "PNG returned by image_gen preserved byte-for-byte; displayed with generatedImage(result)",
+      "variant": "droplet",
+      "visual_state_id": "droplet",
+      "visual_state_complete": false
+    },
+    {
+      "asset_id": "proj_hornet_hl1_h",
+      "owner_id": "proj_hornet_hl1",
+      "name_fr": "Hornet — projectile de la Hivehand, Half-Life original",
+      "prompt": "Use case: style-transfer. Asset type: ONE individual transparent 2D game projectile sprite. The attached image is a reference of the ORIGINAL VALVE HALF-LIFE GOLDSRC hornet.mdl projectile. Use that exact reference silhouette, not a realistic bee, wasp or a Black Mesa remake. Produce one clean detailed 2D sprite of this same small red-brown living alien dart, pointing LEFT as in the reference: a very long sharp tapered front, angular flattened dark red chitin body broadening toward the rear, a small muted ochre oval visible near the rear body, angular two triangular rudder-like fins floating/attached at the very rear as the source model represents them. Preserve the reference geometry, number of fins, proportions, triangular outline, red/brown/black palette and bands; only turn the low resolution texture into a clean high-resolution hand-painted sprite without changing identity. Entire subject visible, broad transparent margins. True alpha background. Remove white backdrop. No firearm, no hand, no human, no text, no labels, no invented eyes, legs, insect wings or realistic wasp anatomy, no added trail, no multiple darts or sprite sheet. This is a single faithful reference candidate for a 2D fighting-game asset.",
+      "source_path": "/workspace/scratch/684967c2474e/generated_images/exec-4d9d66a5-87a0-4720-a6ff-75f055ea3f93.png",
+      "source_urls": [
+        "https://github.com/ValveSoftware/halflife/blob/master/dlls/hornet.cpp",
+        "https://combineoverwiki.net/wiki/File:Hivehand_projectile.jpg",
+        "https://combineoverwiki.net/images/6/68/Hivehand_projectile.jpg"
+      ],
+      "source_note": "Image du modèle Valve GoldSrc hébergée par Combine OverWiki, téléchargée et inspectée avant génération; entrée de référence imagegen. Orientation gauche et silhouette triangulaire retenues.",
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "released_model_screenshot_hosted_by_community",
+      "reference_path": "/workspace/scratch/684967c2474e/reference_images/hivehand_projectile_original.jpg",
+      "qa_notes": "Silhouette et deux appendices triangulaires postérieurs proches de la référence inspectée. Retexturation haute résolution reste adaptation; taille et animation non validées.",
+      "owner_type": "projectile_effect",
+      "category": "projectile_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "target_ids": [
+        "proj_hornet_hl1"
+      ],
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "pixel_modification_after_generation": false,
+      "copy_identical_to_generator": true,
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_hornet_hl1_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_hornet_hl1_h.png",
+      "width": 1973,
+      "height": 797,
+      "color_mode": "RGBA",
+      "byte_size": 672200,
+      "sha256": "118096d6f2a580d9753911f4bb0c1650b6650ae229b9d8630478d6385993cff6",
+      "alpha_check": "canal alpha présent; pixels transparents et semi-transparents vérifiés",
+      "alpha_stats": {
+        "transparent_pixels": 1176311,
+        "partial_pixels": 395681,
+        "opaque_pixels": 489,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "bbox_alpha_nonzero": [
+          107,
+          17,
+          1953,
+          782
+        ],
+        "bbox_alpha_at_least_16": [
+          111,
+          72,
+          1886,
+          705
+        ],
+        "transparent_fraction": 0.7480605489032935
+      },
+      "notes": "Silhouette et deux appendices triangulaires postérieurs proches de la référence inspectée. Retexturation haute résolution reste adaptation; taille et animation non validées.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#e1e1e1",
+          "#282828"
+        ],
+        "original_pixels_modified": false,
+        "result": "sujet et transparence lisibles sur les deux fonds; référence canonique et animation restent à valider"
+      },
+      "tool_output_hint": "Generated images are saved to /workspace/scratch/684967c2474e/generated_images as /workspace/scratch/684967c2474e/generated_images/exec-4d9d66a5-87a0-4720-a6ff-75f055ea3f93.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "result_capture": "PNG returned by image_gen preserved byte-for-byte; displayed with generatedImage(result)",
+      "variant": "red_type",
+      "visual_state_id": "red_type",
+      "visual_state_complete": false,
+      "visual_state_note": "Candidat du corps partagé hornet.mdl affecté au type rouge pour la première revue. La traînée rouge et le type orange restent à produire; ce seul fichier ne couvre pas deux types."
+    },
+    {
+      "asset_id": "proj_propulsion_gel_portal2_h",
+      "owner_id": "proj_propulsion_gel_portal2",
+      "name_fr": "Goutte de gel propulsif — Portal 2",
+      "variant": "droplet",
+      "prompt": "Use case: stylized-concept. Asset type: ONE isolated transparent 2D game sprite. Create one airborne blob of PROPULSION GEL from the original released Portal 2 game: thick saturated orange paint-like liquid with wet glossy white highlights, rounded irregular compact lobed glob shape and one attached tiny droplet. Preserve orange gel identity and viscous material, no electricity or orange fire. A single falling mid-air key frame, viewed side-on, all liquid contained inside ample transparent margin. Opaque orange material with genuinely transparent surroundings, no glow or aura outside the liquid, no scene, no pipe, no ground, no shadow, no bucket, no launcher, no character, no words, no multiple detached blobs, no sprite sheet. High-resolution clean hand-painted raster 2D sprite suitable for gameplay, faithful candidate of Portal 2 gel without changing its material.",
+      "source_path": "/workspace/scratch/684967c2474e/generated_images/exec-8271567d-7afd-4df0-8b2c-2870bd6eadd8.png",
+      "source_urls": [
+        "https://www.thinkwithportals.com/media.php"
+      ],
+      "source_note": "Référence de produit/média officiel; aucune capture bitmap exacte chargée pour cette première proposition.",
+      "owner_type": "projectile_effect",
+      "category": "projectile_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "target_ids": [
+        "proj_propulsion_gel_portal2"
+      ],
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "pixel_modification_after_generation": false,
+      "copy_identical_to_generator": true,
+      "reference_bitmap_loaded": false,
+      "notes": "Première image candidate; couleur, contour et animation demandent comparaison avec une frame exacte du jeu.",
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_propulsion_gel_portal2_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_propulsion_gel_portal2_h.png",
+      "width": 1536,
+      "height": 1024,
+      "color_mode": "RGBA",
+      "byte_size": 1445064,
+      "sha256": "eeac30a80a63301919799121940db26b96746b536d22e008074d8e7a5951b574",
+      "alpha_check": "canal alpha présent; pixels transparents et semi-transparents vérifiés",
+      "alpha_stats": {
+        "transparent_pixels": 1052677,
+        "partial_pixels": 520187,
+        "opaque_pixels": 0,
+        "alpha_range": [
+          0,
+          254
+        ],
+        "bbox_alpha_nonzero": [
+          53,
+          9,
+          1520,
+          1024
+        ],
+        "bbox_alpha_at_least_16": [
+          222,
+          109,
+          1225,
+          924
+        ],
+        "transparent_fraction": 0.6692740122477213
+      },
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#e1e1e1",
+          "#282828"
+        ],
+        "original_pixels_modified": false,
+        "result": "sujet et transparence lisibles sur les deux fonds; référence canonique et animation restent à valider"
+      },
+      "tool_output_hint": "Generated images are saved to /workspace/scratch/684967c2474e/generated_images as /workspace/scratch/684967c2474e/generated_images/exec-8271567d-7afd-4df0-8b2c-2870bd6eadd8.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "result_capture": "PNG returned by image_gen preserved byte-for-byte; displayed with generatedImage(result)",
+      "visual_state_id": "droplet",
+      "visual_state_complete": false
+    },
+    {
+      "asset_id": "proj_conversion_gel_portal2_h",
+      "owner_id": "proj_conversion_gel_portal2",
+      "name_fr": "Goutte de gel de conversion — Portal 2",
+      "variant": "droplet",
+      "prompt": "Use case: stylized-concept. Asset type: ONE isolated transparent 2D game sprite. Create one airborne blob of CONVERSION GEL from the released Portal 2 game, the thick white lunar-dust paint-like testing gel. Single rounded irregular opaque milky-white viscous glob with subtle light gray volume shading and wet glossy highlights, a simple asymmetrical lobed shape with one small attached drop. Side-on mid-fall key frame, generous transparent margins, no ground or cast shadow. Preserve white gel identity: no blue tint, no orange tint, no clear glass, no metallic mercury, no snow or foam. True alpha-transparent surroundings, no aura or luminous halo outside the liquid, no environment, machine, character, text, labels, UI, multiple blobs or sheet. Clean detailed high-resolution 2D raster game asset, faithful reference candidate for Portal 2.",
+      "source_path": "/workspace/scratch/684967c2474e/generated_images/exec-c7370c63-5c09-40de-89fe-f73ebefa3b11.png",
+      "source_urls": [
+        "https://store.steampowered.com/app/620/Portal_2/"
+      ],
+      "source_note": "Référence de produit/média officiel; aucune capture bitmap exacte chargée pour cette première proposition.",
+      "owner_type": "projectile_effect",
+      "category": "projectile_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "target_ids": [
+        "proj_conversion_gel_portal2"
+      ],
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "pixel_modification_after_generation": false,
+      "copy_identical_to_generator": true,
+      "reference_bitmap_loaded": false,
+      "notes": "Première image candidate; couleur, contour et animation demandent comparaison avec une frame exacte du jeu.",
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_conversion_gel_portal2_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_conversion_gel_portal2_h.png",
+      "width": 1536,
+      "height": 1024,
+      "color_mode": "RGBA",
+      "byte_size": 1268223,
+      "sha256": "6c141ae2cd951cf90ab7d380c6d26a96cfd89ce169e6e0799f7f9d235a91ebb3",
+      "alpha_check": "canal alpha présent; pixels transparents et semi-transparents vérifiés",
+      "alpha_stats": {
+        "transparent_pixels": 1036503,
+        "partial_pixels": 536361,
+        "opaque_pixels": 0,
+        "alpha_range": [
+          0,
+          254
+        ],
+        "bbox_alpha_nonzero": [
+          71,
+          7,
+          1506,
+          992
+        ],
+        "bbox_alpha_at_least_16": [
+          244,
+          89,
+          1300,
+          950
+        ],
+        "transparent_fraction": 0.6589908599853516
+      },
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#e1e1e1",
+          "#282828"
+        ],
+        "original_pixels_modified": false,
+        "result": "sujet et transparence lisibles sur les deux fonds; référence canonique et animation restent à valider"
+      },
+      "tool_output_hint": "Generated images are saved to /workspace/scratch/684967c2474e/generated_images as /workspace/scratch/684967c2474e/generated_images/exec-c7370c63-5c09-40de-89fe-f73ebefa3b11.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "result_capture": "PNG returned by image_gen preserved byte-for-byte; displayed with generatedImage(result)",
+      "visual_state_id": "droplet",
+      "visual_state_complete": false
+    },
+    {
+      "asset_id": "fx_thermal_beam_portal2_h",
+      "owner_id": "fx_thermal_beam_portal2",
+      "name_fr": "Faisceau de découragement thermique — Portal 2",
+      "variant": "beam",
+      "prompt": "Use case: stylized-concept. Asset type: ONE transparent 2D continuous beam effect. Create a straight HORIZONTAL red Thermal Discouragement Beam from the released Portal 2 test chambers. This is only one free-standing beam segment without source or impact: thin bright red-white central line, narrow saturated red glow fading smoothly through alpha, perfectly straight, constant thickness along almost all its length, restrained optical scattering. Single long beam fully visible, wide empty transparent margins above and below; soft ends for compositing, no explosive bulb or sphere. True transparent background. No launcher, wall, chamber, character, target, laser sight dot, portal, lightning branch, ribbon, text, grid, multiple rays or sprite sheet. Crisp high-resolution raster VFX matching Portal 2's clinical continuous red test laser, no fantasy ornament.",
+      "source_path": "/workspace/scratch/684967c2474e/generated_images/exec-73adbdd9-c515-4418-a371-f67c97a30d6e.png",
+      "source_urls": [
+        "https://www.thinkwithportals.com/media_04.html",
+        "https://www.thinkwithportals.com/media.php"
+      ],
+      "source_note": "Référence de produit/média officiel; aucune capture bitmap exacte chargée pour cette première proposition.",
+      "owner_type": "projectile_effect",
+      "category": "vfx_key_frame",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "target_ids": [
+        "fx_thermal_beam_portal2"
+      ],
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à corriger",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "selected_for_next_review": false,
+      "pixel_modification_after_generation": false,
+      "copy_identical_to_generator": true,
+      "reference_bitmap_loaded": false,
+      "notes": "Bande blanche verticale parasite au bord gauche confirmée sur composite alpha; remplacé pour prochaine revue par v2, historique conservé.",
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_thermal_beam_portal2_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_thermal_beam_portal2_h.png",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 313047,
+      "sha256": "3f8755bf236d668eeef9f84e575b50cc1fac75166e84db97c3e0f43494b99199",
+      "alpha_check": "canal alpha présent; pixels transparents et semi-transparents vérifiés",
+      "alpha_stats": {
+        "transparent_pixels": 1327593,
+        "partial_pixels": 244935,
+        "opaque_pixels": 0,
+        "alpha_range": [
+          0,
+          253
+        ],
+        "bbox_alpha_nonzero": [
+          0,
+          0,
+          2172,
+          724
+        ],
+        "bbox_alpha_at_least_16": [
+          0,
+          0,
+          2143,
+          724
+        ],
+        "transparent_fraction": 0.844241247214676
+      },
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#e1e1e1",
+          "#282828"
+        ],
+        "original_pixels_modified": false,
+        "result": "défaut de bande blanche à gauche; remplacé pour prochaine revue par v2"
+      },
+      "tool_output_hint": "Generated images are saved to /workspace/scratch/684967c2474e/generated_images as /workspace/scratch/684967c2474e/generated_images/exec-73adbdd9-c515-4418-a371-f67c97a30d6e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "result_capture": "PNG returned by image_gen preserved byte-for-byte; displayed with generatedImage(result)",
+      "visual_state_id": "beam",
+      "visual_state_complete": false
+    },
+    {
+      "asset_id": "fx_portal_blue_portal1_h",
+      "owner_id": "fx_portal_blue_portal1",
+      "name_fr": "Contour actif de portail bleu — Portal",
+      "variant": "active_rim",
+      "prompt": "Use case: stylized-concept. Asset type: ONE alpha-transparent 2D compositing effect. Create the ACTIVE BLUE PORTAL RIM from the original Portal 2007 game, viewed face-on: one tall vertical oval opening, a narrow brilliant cyan-blue inner rim surrounded by small wavering electric-blue brushlike wisps directed around the elliptical edge. Preserve recognizable Portal blue rim design, a consistent smooth tall ellipse with subtle local fluctuations, no science-fiction metal frame. The CENTER OF THE OVAL MUST BE FULLY TRANSPARENT so the game can render the destination dynamically; outside also truly alpha transparent. No scenery or galaxy inside, no flat black/blue fill, no wall, no floor, no character, no portal gun, no sparks shower, no additional portal, no text or logo, no diagram or sheet. Entire ellipse contained within broad clear margins, high-resolution clean game VFX candidate. One portal frame per image.",
+      "source_path": "/workspace/scratch/684967c2474e/generated_images/exec-8eae02ee-7af4-4bb9-aef6-8db9326946ea.png",
+      "source_urls": [
+        "https://store.steampowered.com/app/400/Portal/"
+      ],
+      "source_note": "Référence de produit/média officiel; aucune capture bitmap exacte chargée pour cette première proposition.",
+      "owner_type": "projectile_effect",
+      "category": "vfx_key_frame",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "target_ids": [
+        "fx_portal_blue_portal1"
+      ],
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "pixel_modification_after_generation": false,
+      "copy_identical_to_generator": true,
+      "reference_bitmap_loaded": false,
+      "notes": "Première image candidate; couleur, contour et animation demandent comparaison avec une frame exacte du jeu.",
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_portal_blue_portal1_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_portal_blue_portal1_h.png",
+      "width": 1024,
+      "height": 1536,
+      "color_mode": "RGBA",
+      "byte_size": 1518362,
+      "sha256": "a2dc71bc11f9c1299d5fc3957af4d38a6a13ae967878a944863503ab5783f04a",
+      "alpha_check": "canal alpha présent; pixels transparents et semi-transparents vérifiés",
+      "alpha_stats": {
+        "transparent_pixels": 1094626,
+        "partial_pixels": 478238,
+        "opaque_pixels": 0,
+        "alpha_range": [
+          0,
+          253
+        ],
+        "bbox_alpha_nonzero": [
+          0,
+          0,
+          1018,
+          1536
+        ],
+        "bbox_alpha_at_least_16": [
+          104,
+          39,
+          896,
+          1489
+        ],
+        "transparent_fraction": 0.6959444681803385,
+        "center_alpha": 0
+      },
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#e1e1e1",
+          "#282828"
+        ],
+        "original_pixels_modified": false,
+        "result": "sujet et transparence lisibles sur les deux fonds; référence canonique et animation restent à valider"
+      },
+      "qa_notes": "Cadre ovale bleu isolé; centre pleinement transparent confirmé au pixel central et sur composites alpha. Intérieur volontairement vide pour la vue runtime, sans paysage inventé. Non certifié 1:1.",
+      "tool_output_hint": "Generated images are saved to /workspace/scratch/684967c2474e/generated_images as /workspace/scratch/684967c2474e/generated_images/exec-8eae02ee-7af4-4bb9-aef6-8db9326946ea.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "result_capture": "PNG returned by image_gen preserved byte-for-byte; displayed with generatedImage(result)",
+      "visual_state_id": "active_rim",
+      "visual_state_complete": false
+    },
+    {
+      "asset_id": "proj_controller_orb_hl1_h",
+      "owner_id": "proj_controller_orb_hl1",
+      "name_fr": "Orbe rapide d’Alien Controller — Half-Life",
+      "variant": "energy_ball",
+      "prompt": "Use case: style-transfer. Asset type: ONE individual transparent 2D projectile sprite. The supplied original Half-Life game screenshot is a VISUAL REFERENCE ONLY. Recreate ONE of the small airborne Alien Controller orange-yellow energy shots seen in the screenshot, not the creatures or scenery. Single compact irregular white-hot center, saturated yellow close glow and ragged orange luminous perimeter, a soft simple slightly uneven sprite-like circular blob. Match the original xspark4.spr appearance in that screenshot. Do not copy the faint SQUARE sprite background rectangle from the old renderer; outside the glowing projectile is true alpha transparency. High resolution raster game VFX preserving original simple proportions and color relationship; no glossy shell, no detailed sun surface, no rings, no blue electricity, no large fireball tail. One complete small orb with generous transparent margins. No creature, ground, scenery, text, HUD, second orb or sprite sheet. This selected variation represents controller_energy_ball, not a hand charge or a multi-orb attack.",
+      "source_path": "/workspace/scratch/684967c2474e/generated_images/exec-f918bc9d-bb15-420b-8bdb-2cefc4ff2fa5.png",
+      "source_urls": [
+        "https://github.com/ValveSoftware/halflife/blob/master/dlls/controller.cpp",
+        "https://combineoverwiki.net/images/b/bf/Alien_Controller_attack.jpg"
+      ],
+      "source_note": "Capture du jeu original publiée sur Combine OverWiki, inspectée puis utilisée comme référence bitmap.",
+      "owner_type": "projectile_effect",
+      "category": "projectile_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "target_ids": [
+        "proj_controller_orb_hl1"
+      ],
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "pixel_modification_after_generation": false,
+      "copy_identical_to_generator": true,
+      "reference_bitmap_loaded": true,
+      "reference_paths": [
+        "/workspace/scratch/684967c2474e/references-h/Alien_Controller_attack.jpg"
+      ],
+      "notes": "Couleur et type d'effet verrouillés aux références citées. Frame et cadence restent candidates; aucun clip complet.",
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_controller_orb_hl1_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_controller_orb_hl1_h.png",
+      "width": 1536,
+      "height": 1024,
+      "color_mode": "RGBA",
+      "byte_size": 1024076,
+      "sha256": "6e48e3d12435ebf7a4678c09bd8a5f19e5eb1376b8dde03644a82a60f9fef84c",
+      "alpha_check": "canal alpha présent; pixels transparents et semi-transparents vérifiés",
+      "alpha_stats": {
+        "transparent_pixels": 1370376,
+        "partial_pixels": 202488,
+        "opaque_pixels": 0,
+        "alpha_range": [
+          0,
+          254
+        ],
+        "bbox_alpha_nonzero": [
+          0,
+          17,
+          1520,
+          1001
+        ],
+        "bbox_alpha_at_least_16": [
+          536,
+          278,
+          990,
+          719
+        ],
+        "transparent_fraction": 0.8712615966796875
+      },
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#e1e1e1",
+          "#282828"
+        ],
+        "original_pixels_modified": false,
+        "result": "sujet et transparence lisibles sur les deux fonds; référence canonique et animation restent à valider"
+      },
+      "tool_output_hint": "Generated images are saved to /workspace/scratch/684967c2474e/generated_images as /workspace/scratch/684967c2474e/generated_images/exec-f918bc9d-bb15-420b-8bdb-2cefc4ff2fa5.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "result_capture": "PNG returned by image_gen preserved byte-for-byte; displayed with generatedImage(result)",
+      "visual_state_id": "energy_ball",
+      "visual_state_complete": false
+    },
+    {
+      "asset_id": "proj_gonarch_mortar_hl1_h",
+      "owner_id": "proj_gonarch_mortar_hl1",
+      "name_fr": "Mortier organique Gonarch — Half-Life",
+      "variant": "body",
+      "prompt": "Use case: style-transfer. Asset type: ONE individual transparent 2D game projectile. The provided original Half-Life Gonarch battle screenshot is a visual reference. Extract the APPEARANCE of ONE pale whitish-cyan mortar spittle cloud visible high above Gonarch, and redraw it as a single separate high-resolution raster sprite with true alpha. A compact small soft irregular whitish-blue frothy chemical glob / puff, mottled cloudlike lobes, brighter white core, faint cool cyan translucent edges, matching the screenshot's original mommaspit.spr projectile. No vivid green acid, no orange fire, no dark organic rock, no energy orb rings or lightning. Show one airborne pre-impact mortar body only, with generous transparent margins all around. The only subject is one projectile, not the monster, tiny headcrabs, rock walls, sky, screenshot, or several projectiles. Preserve the simple source visual identity while cleaning resolution, no labels, HUD, text or sheet. No long trail or large impact splash.",
+      "source_path": "/workspace/scratch/684967c2474e/generated_images/exec-e4200806-58e3-4907-b0c6-28cab268aa90.png",
+      "source_urls": [
+        "https://github.com/ValveSoftware/halflife/blob/master/dlls/bigmomma.cpp",
+        "https://combineoverwiki.net/images/a/aa/Gonarch_2nd_chemicals.jpg"
+      ],
+      "source_note": "Capture du jeu original publiée sur Combine OverWiki, inspectée puis utilisée comme référence bitmap.",
+      "owner_type": "projectile_effect",
+      "category": "projectile_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "target_ids": [
+        "proj_gonarch_mortar_hl1"
+      ],
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "pixel_modification_after_generation": false,
+      "copy_identical_to_generator": true,
+      "reference_bitmap_loaded": true,
+      "reference_paths": [
+        "/workspace/scratch/684967c2474e/references-h/Gonarch_2nd_chemicals.jpg"
+      ],
+      "notes": "Couleur et type d'effet verrouillés aux références citées. Frame et cadence restent candidates; aucun clip complet.",
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_gonarch_mortar_hl1_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_gonarch_mortar_hl1_h.png",
+      "width": 1536,
+      "height": 1024,
+      "color_mode": "RGBA",
+      "byte_size": 1119459,
+      "sha256": "36e0bedd4f514cb6e6e14d2dc6e8b51ac960c4e697e55137fa018dec429c83ee",
+      "alpha_check": "canal alpha présent; pixels transparents et semi-transparents vérifiés",
+      "alpha_stats": {
+        "transparent_pixels": 1101952,
+        "partial_pixels": 470912,
+        "opaque_pixels": 0,
+        "alpha_range": [
+          0,
+          253
+        ],
+        "bbox_alpha_nonzero": [
+          0,
+          21,
+          1474,
+          1024
+        ],
+        "bbox_alpha_at_least_16": [
+          447,
+          287,
+          1076,
+          740
+        ],
+        "transparent_fraction": 0.7006022135416666
+      },
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#e1e1e1",
+          "#282828"
+        ],
+        "original_pixels_modified": false,
+        "result": "sujet et transparence lisibles sur les deux fonds; référence canonique et animation restent à valider"
+      },
+      "tool_output_hint": "Generated images are saved to /workspace/scratch/684967c2474e/generated_images as /workspace/scratch/684967c2474e/generated_images/exec-e4200806-58e3-4907-b0c6-28cab268aa90.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "result_capture": "PNG returned by image_gen preserved byte-for-byte; displayed with generatedImage(result)",
+      "visual_state_id": "body",
+      "visual_state_complete": false
+    },
+    {
+      "asset_id": "fx_vortigaunt_zap_hl1_h",
+      "owner_id": "fx_vortigaunt_zap_hl1",
+      "name_fr": "Décharge Vortigaunt — Half-Life original",
+      "variant": "zap",
+      "prompt": "Use case: stylized-concept. Asset type: ONE alpha-transparent 2D game beam effect. Create one Vortigaunt electrical ZAP beam from the original Half-Life 1998. A thin jagged branching pale yellow-green electrical bolt running mainly horizontally from LEFT to RIGHT, luminous near-white-lime center, restrained yellow-green glow, short sparse angular branches. Preserve the GoldSrc lgtning.spr identity; bright zap color based on RGB 180,255,96 from the original Valve code, not dark charge color. One connected discharge, no character or hands, no separate orb, no plasma ball, no impact explosion, no blue lightning, no thick laser tube. Complete bolt with both ends visible and generous clear border, true alpha outside and partially transparent glow. High-resolution clean 2D raster VFX reference candidate, readable when reduced. No environment, no text, no border, no grid, no sprite sheet or disconnected extra attacks.",
+      "source_path": "/workspace/scratch/684967c2474e/generated_images/exec-19e53821-0334-46da-9220-72059eafb18e.png",
+      "source_urls": [
+        "https://github.com/ValveSoftware/halflife/blob/master/dlls/islave.cpp"
+      ],
+      "source_note": "Code Valve consulté pour lgtning.spr et couleur de décharge 180,255,96. Capture exacte encore à compléter.",
+      "owner_type": "projectile_effect",
+      "category": "vfx_key_frame",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "target_ids": [
+        "fx_vortigaunt_zap_hl1"
+      ],
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "pixel_modification_after_generation": false,
+      "copy_identical_to_generator": true,
+      "reference_bitmap_loaded": false,
+      "reference_paths": [],
+      "notes": "Couleur et type d'effet verrouillés aux références citées. Frame et cadence restent candidates; aucun clip complet.",
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_vortigaunt_zap_hl1_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_vortigaunt_zap_hl1_h.png",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 539431,
+      "sha256": "47b14ddb62707a3d64ef7c153259c0b52a9a9c45a3562c2b3366a3c8e621c988",
+      "alpha_check": "canal alpha présent; pixels transparents et semi-transparents vérifiés",
+      "alpha_stats": {
+        "transparent_pixels": 1312635,
+        "partial_pixels": 259893,
+        "opaque_pixels": 0,
+        "alpha_range": [
+          0,
+          252
+        ],
+        "bbox_alpha_nonzero": [
+          0,
+          29,
+          2159,
+          706
+        ],
+        "bbox_alpha_at_least_16": [
+          29,
+          231,
+          2143,
+          491
+        ],
+        "transparent_fraction": 0.8347291749336101
+      },
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#e1e1e1",
+          "#282828"
+        ],
+        "original_pixels_modified": false,
+        "result": "sujet et transparence lisibles sur les deux fonds; référence canonique et animation restent à valider"
+      },
+      "tool_output_hint": "Generated images are saved to /workspace/scratch/684967c2474e/generated_images as /workspace/scratch/684967c2474e/generated_images/exec-19e53821-0334-46da-9220-72059eafb18e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "result_capture": "PNG returned by image_gen preserved byte-for-byte; displayed with generatedImage(result)",
+      "visual_state_id": "zap",
+      "visual_state_complete": false
+    },
+    {
+      "asset_id": "fx_thermal_beam_portal2_v2_h",
+      "owner_id": "fx_thermal_beam_portal2",
+      "name_fr": "Faisceau thermique — correction du bord gauche",
+      "variant": "beam",
+      "prompt": "Use case: precise-object-edit. Edit this exact transparent game VFX image. Fix ONE defect only: remove the thin bright WHITE VERTICAL LINE running down the entire LEFT EDGE of the canvas. All pixels belonging to this accidental vertical white stripe and any adjacent white specks become fully alpha transparent. KEEP the existing single horizontal red laser beam, its original position at mid-height, width, brightness, soft red glow, both end tapers and all other pixels unchanged as closely as possible. Same full canvas, no cropping, resizing, zooming, movement or recentering. Transparent areas remain transparent; no black or white backdrop. Output only the corrected individual laser segment on true transparent alpha. No new effects, no border, text or grid. The task is removing the left-edge white stripe, not redesigning the laser.",
+      "source_path": "/workspace/scratch/684967c2474e/generated_images/exec-15998ce6-4b25-4950-b062-d13e5eb4719c.png",
+      "source_urls": [
+        "https://www.thinkwithportals.com/media_04.html"
+      ],
+      "source_note": "Édition du candidat v1 du lot, défaut de bande verticale blanche observé sur composite alpha.",
+      "owner_type": "projectile_effect",
+      "category": "vfx_key_frame",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "target_ids": [
+        "fx_thermal_beam_portal2"
+      ],
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "pixel_modification_after_generation": false,
+      "copy_identical_to_generator": true,
+      "reference_bitmap_loaded": true,
+      "reference_paths": [
+        "/workspace/scratch/684967c2474e/resonance/assets/resonance/candidates/continuation_20261124_h/projectiles/fx_thermal_beam_portal2_h.png"
+      ],
+      "notes": "Révision conservée pour éliminer la bande blanche verticale; une révision ne couvre pas une cible supplémentaire.",
+      "revision_of": "fx_thermal_beam_portal2_h",
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_thermal_beam_portal2_v2_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_thermal_beam_portal2_v2_h.png",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 698290,
+      "sha256": "3cb5269a7625b4a3b81dbe06f3e13083f6f4942b6b07610a298f9038f56cc463",
+      "alpha_check": "canal alpha présent; pixels transparents et semi-transparents vérifiés",
+      "alpha_stats": {
+        "transparent_pixels": 790647,
+        "partial_pixels": 781881,
+        "opaque_pixels": 0,
+        "alpha_range": [
+          0,
+          251
+        ],
+        "bbox_alpha_nonzero": [
+          0,
+          0,
+          2172,
+          724
+        ],
+        "bbox_alpha_at_least_16": [
+          23,
+          321,
+          2156,
+          401
+        ],
+        "transparent_fraction": 0.502787231769482
+      },
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#e1e1e1",
+          "#282828"
+        ],
+        "original_pixels_modified": false,
+        "result": "sujet et transparence lisibles sur les deux fonds; référence canonique et animation restent à valider"
+      },
+      "qa_notes": "La bande verticale blanche du premier candidat est supprimée. Composite alpha clair/sombre contrôlé, le rayon rouge horizontal reste isolé. Non certifié 1:1.",
+      "tool_output_hint": "Generated images are saved to /workspace/scratch/684967c2474e/generated_images as /workspace/scratch/684967c2474e/generated_images/exec-15998ce6-4b25-4950-b062-d13e5eb4719c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "result_capture": "PNG returned by image_gen preserved byte-for-byte; displayed with generatedImage(result)",
+      "visual_state_id": "beam",
+      "visual_state_complete": false
+    },
+    {
+      "asset_id": "proj_rpg_rocket_hl1_h",
+      "owner_id": "proj_rpg_rocket_hl1",
+      "name_fr": "Roquette RPG — corps du modèle Half-Life",
+      "variant": "body",
+      "visual_state_id": "body",
+      "visual_state_complete": false,
+      "prompt": "Use case: game-asset reference reconstruction. Create ONE individual transparent-background 2D sprite candidate of the original 1998 Half-Life RPG rocket body, using the supplied retail model screenshot as the exact visual reference. Preserve this specific old GoldSrc model identity, silhouette, proportions, colors and visible facets: pointed dull-red nose facing left, narrow pale band with dark borders just behind the red nose, broad pale gray off-white faceted tapered warhead, narrower metallic gray rear section, thin angular tail fins, gray polygonal nozzle at the far right. Maintain the same slightly elevated three-quarter angle as the supplied image so the whole complete rocket is visible. Keep all parts together and unchanged in relative position. Preserve the simple worn, low-poly game texture rather than adding modern machinery or realistic internal detail. Isolate only the complete flying game prop, centered with generous alpha-transparent margins. No launcher, hand, smoke, exhaust flame, explosion, scene, text, diagram, labels, extra copies or sprite sheet. Render a clean readable asset with real transparent alpha, no floor, no drop shadow, no white matte; this is a single visual game sprite.",
+      "source_path": "/workspace/scratch/684967c2474e/generated_images/exec-0ba2ad3f-bb5c-4432-a2a9-986ac8802da7.png",
+      "source_urls": [
+        "https://github.com/ValveSoftware/halflife/blob/master/dlls/rpg.cpp",
+        "https://combineoverwiki.net/wiki/File:Rpg_rocket.jpg",
+        "https://combineoverwiki.net/images/7/7e/Rpg_rocket.jpg"
+      ],
+      "source_note": "Code primaire Valve rpg.cpp : models/rpgrocket.mdl. Capture du modèle retail d'origine Rpg_rocket.jpg consultée et fournie en référence ; version HD exclue.",
+      "tool_output_hint": "Generated images are saved to /workspace/scratch/684967c2474e/generated_images as /workspace/scratch/684967c2474e/generated_images/exec-0ba2ad3f-bb5c-4432-a2a9-986ac8802da7.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "result_capture": "PNG returned by image_gen preserved byte-for-byte; displayed with generatedImage(result)",
+      "owner_type": "projectile_effect",
+      "category": "projectile_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "target_ids": [
+        "proj_rpg_rocket_hl1"
+      ],
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "pixel_modification_after_generation": false,
+      "copy_identical_to_generator": true,
+      "reference_bitmap_loaded": true,
+      "reference_paths": [
+        "/home/agent/resonance-projectile-recovery/Rpg_rocket.jpg"
+      ],
+      "reference_sha256": {
+        "/home/agent/resonance-projectile-recovery/Rpg_rocket.jpg": "e89b8954074ca5d1728b17a3d9d7fcbfdb41fa9c8f74d176875f38bf9195d67c"
+      },
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_rpg_rocket_hl1_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_rpg_rocket_hl1_h.png",
+      "width": 1905,
+      "height": 826,
+      "color_mode": "RGBA",
+      "byte_size": 911260,
+      "sha256": "94ec0b83ab0bca394e54033eb0f980403dc4a5a92b4dc2fd69e37298e17cf0c1",
+      "alpha_check": "canal alpha présent; pixels transparents et semi-transparents vérifiés",
+      "alpha_stats": {
+        "transparent_pixels": 942887,
+        "partial_pixels": 629585,
+        "opaque_pixels": 1058,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "bbox_alpha_nonzero": [
+          43,
+          22,
+          1885,
+          810
+        ],
+        "bbox_alpha_at_least_16": [
+          90,
+          58,
+          1848,
+          767
+        ],
+        "transparent_fraction": 0.5992176825354458
+      },
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#e1e1e1",
+          "#282828"
+        ],
+        "original_pixels_modified": false,
+        "result": "sujet complet isolé; lisible sur les deux fonds; fidélité et animation à valider"
+      },
+      "qa_notes": "Silhouette, orientation et matériaux comparés à la capture retail fournie en entrée. Alpha composite clair/sombre contrôlé. Les textures ont été interprétées par le générateur : pas de certification 1:1."
+    },
+    {
+      "asset_id": "proj_hand_grenade_hl2_h",
+      "owner_id": "proj_hand_grenade_hl2",
+      "name_fr": "Grenade à fragmentation — corps HL2",
+      "variant": "body",
+      "visual_state_id": "body",
+      "visual_state_complete": false,
+      "prompt": "Use case: game-asset reference reconstruction. Create ONE transparent-background 2D game sprite of the complete Half-Life 2 fragmentation grenade world model shown in the supplied screenshot. Reproduce the specific visible game-model silhouette and proportions closely: tall worn olive-green cylindrical canister with polygonal rounded end, broad faded light gray band around the lower-middle body, dark thick ring around the top, small dark olive/brass-colored top cap and the single long narrow angular safety lever running down the right side. Keep the original model's oblique leaning pose and original subdued weathered texture. Preserve the visible details that are in the reference and do not invent text, extra mechanics or ornamentation. The whole intact prop, including lever and top, must fit centered with generous fully transparent margins. It is a single static visual inventory/gameplay sprite, body state. No person, hand, scenery, explosion, flames, diagram, instructions, separated parts, labels or extra copies. True alpha transparency, no white background and no floor or cast shadow. Clean asset for a fighting-game roster effect library.",
+      "source_path": "/workspace/scratch/684967c2474e/generated_images/exec-9549f8cc-528f-404b-9894-bd2d4ffa1cb3.png",
+      "source_urls": [
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/grenade_frag.cpp",
+        "https://combineoverwiki.net/wiki/File:MK3A2_Grenade.jpg",
+        "https://combineoverwiki.net/images/e/eb/MK3A2_Grenade.jpg"
+      ],
+      "source_note": "Code primaire Valve grenade_frag.cpp : models/Weapons/w_grenade.mdl. Capture du modèle retail MK3A2_Grenade.jpg consultée et fournie en référence.",
+      "tool_output_hint": "Generated images are saved to /workspace/scratch/684967c2474e/generated_images as /workspace/scratch/684967c2474e/generated_images/exec-9549f8cc-528f-404b-9894-bd2d4ffa1cb3.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "result_capture": "PNG returned by image_gen preserved byte-for-byte; displayed with generatedImage(result)",
+      "owner_type": "projectile_effect",
+      "category": "projectile_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "target_ids": [
+        "proj_hand_grenade_hl2"
+      ],
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "pixel_modification_after_generation": false,
+      "copy_identical_to_generator": true,
+      "reference_bitmap_loaded": true,
+      "reference_paths": [
+        "/home/agent/resonance-projectile-recovery/MK3A2_Grenade.jpg"
+      ],
+      "reference_sha256": {
+        "/home/agent/resonance-projectile-recovery/MK3A2_Grenade.jpg": "56d05e31731344bb11c4f817f989fb80eb5ada94b0c8d9c29bf5e01910666de9"
+      },
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_hand_grenade_hl2_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_hand_grenade_hl2_h.png",
+      "width": 1124,
+      "height": 1399,
+      "color_mode": "RGBA",
+      "byte_size": 1245530,
+      "sha256": "64e4bac916d867a931b67ac9bc5f48c8aa919260146e4d6c674428d9d3b6e032",
+      "alpha_check": "canal alpha présent; pixels transparents et semi-transparents vérifiés",
+      "alpha_stats": {
+        "transparent_pixels": 834611,
+        "partial_pixels": 737255,
+        "opaque_pixels": 610,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "bbox_alpha_nonzero": [
+          0,
+          0,
+          1086,
+          1377
+        ],
+        "bbox_alpha_at_least_16": [
+          68,
+          30,
+          1081,
+          1351
+        ],
+        "transparent_fraction": 0.5307623137014492
+      },
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#e1e1e1",
+          "#282828"
+        ],
+        "original_pixels_modified": false,
+        "result": "sujet complet isolé; lisible sur les deux fonds; fidélité et animation à valider"
+      },
+      "qa_notes": "Silhouette, orientation et matériaux comparés à la capture retail fournie en entrée. Alpha composite clair/sombre contrôlé. Les textures ont été interprétées par le générateur : pas de certification 1:1."
+    },
+    {
+      "asset_id": "proj_crossbow_bolt_hl2_h",
+      "owner_id": "proj_crossbow_bolt_hl2",
+      "name_fr": "Carreau incandescent — corps HL2",
+      "variant": "body",
+      "visual_state_id": "body",
+      "visual_state_complete": false,
+      "prompt": "Use case: game-asset reference reconstruction. Create ONE individual transparent 2D sprite of the Half-Life 2 crossbow bolt in its heated glowing body state. Reference image 1 defines the exact simple straight rebar projectile geometry: a long slender rusty steel reinforcing bar, constant narrow thickness, blunt flat-cut ends and rough diagonal metal ridges; it has NO arrowhead and NO fins or feather fletching. Reference image 2 is supplied only to establish the original retail game's vivid orange-red heated appearance of the loaded bar: reproduce that incandescent orange metal with darker red ribbed texture, retaining readable solid metallic geometry rather than turning it into a laser. Isolate ONLY ONE complete bar, horizontal left-to-right, strict readable side view, centered with transparent margins, about eight-tenths of the canvas width. A restrained local orange luminosity may hug the bar but no long travel trail, sparks, flames or explosion. Do not include the crossbow, its wires or sight, a hand, scenery, extra rods, text or labels. Clean high-resolution 2D fighting-game projectile candidate on true transparent alpha; no floor, cast shadow, opaque matte or background.",
+      "source_path": "/workspace/scratch/684967c2474e/generated_images/exec-66ee3ed1-e31d-42bc-9250-404e7ad907d3.png",
+      "source_urls": [
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/weapon_crossbow.cpp",
+        "https://combineoverwiki.net/wiki/File:Crossbow_bolt.jpg",
+        "https://combineoverwiki.net/images/2/20/Crossbow_bolt.jpg",
+        "https://combineoverwiki.net/wiki/File:Crossbow_2.png",
+        "https://combineoverwiki.net/images/0/01/Crossbow_2.png"
+      ],
+      "source_note": "Code primaire Valve weapon_crossbow.cpp : Spawn définit models/crossbow_bolt.mdl et BOLT_SKIN_GLOW. Référence1 : modèle du carreau en barre métallique. Référence2 : modèle arbalète chargé confirmant l'orange incandescent ; seule la tige est le sujet.",
+      "tool_output_hint": "Generated images are saved to /workspace/scratch/684967c2474e/generated_images as /workspace/scratch/684967c2474e/generated_images/exec-66ee3ed1-e31d-42bc-9250-404e7ad907d3.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "result_capture": "PNG returned by image_gen preserved byte-for-byte; displayed with generatedImage(result)",
+      "owner_type": "projectile_effect",
+      "category": "projectile_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "target_ids": [
+        "proj_crossbow_bolt_hl2"
+      ],
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "pixel_modification_after_generation": false,
+      "copy_identical_to_generator": true,
+      "reference_bitmap_loaded": true,
+      "reference_paths": [
+        "/home/agent/resonance-projectile-recovery/Crossbow_bolt.jpg",
+        "/home/agent/resonance-projectile-recovery/Crossbow_2.png"
+      ],
+      "reference_sha256": {
+        "/home/agent/resonance-projectile-recovery/Crossbow_bolt.jpg": "dc0ff787c08d6e5193265de19f01efc3a947c6cdaccceb618e49cf27335c39dd",
+        "/home/agent/resonance-projectile-recovery/Crossbow_2.png": "1d524ef1b540e589121446561827d1bf58b961c6d48d50b30b6c51868fc98246"
+      },
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_crossbow_bolt_hl2_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_crossbow_bolt_hl2_h.png",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 550012,
+      "sha256": "287776bf4442e1b6e41cb63fa041d09a737ef7378679be119dc79d217fad1aa5",
+      "alpha_check": "canal alpha présent; pixels transparents et semi-transparents vérifiés",
+      "alpha_stats": {
+        "transparent_pixels": 1288712,
+        "partial_pixels": 283789,
+        "opaque_pixels": 27,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "bbox_alpha_nonzero": [
+          41,
+          54,
+          2105,
+          644
+        ],
+        "bbox_alpha_at_least_16": [
+          112,
+          308,
+          2061,
+          419
+        ],
+        "transparent_fraction": 0.8195160912874048
+      },
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#e1e1e1",
+          "#282828"
+        ],
+        "original_pixels_modified": false,
+        "result": "sujet complet isolé; lisible sur les deux fonds; fidélité et animation à valider"
+      },
+      "qa_notes": "Silhouette, orientation et matériaux comparés à la capture retail fournie en entrée. Alpha composite clair/sombre contrôlé. Les textures ont été interprétées par le générateur : pas de certification 1:1."
+    },
+    {
+      "asset_id": "proj_helicopter_bomb_hl2_h",
+      "owner_id": "proj_helicopter_bomb_hl2",
+      "name_fr": "Bombe Hunter-Chopper — corps HL2",
+      "variant": "body",
+      "visual_state_id": "body",
+      "visual_state_complete": false,
+      "prompt": "Use case: game-asset reference reconstruction. Create ONE individual transparent-background 2D sprite of the Half-Life 2 Hunter-Chopper bomb model shown in the supplied retail game screenshot. Closely preserve this exact complete squat faceted spherical metallic casing and the same three-quarter orientation: dark weathered gunmetal panels, subtle teal-blue oxidized seams, a large recessed round red glowing disc near the upper-left/front with its faint internal circular pattern, narrow red inset slots around the lower and right rim, and the original asymmetrical panel layout and small worn marking patch. Keep the model closed and intact; no opened parts or added mechanics. Match the reference proportions and polygonal identity rather than redesigning it as a smooth sci-fi orb. The entire object must be isolated and centered with generous transparent margins, no cropping. This is one static game prop sprite, body state. No helicopter, person, landscape, ground shadow, smoke, detonation, text labels, diagram, new logos, extra objects or contact sheet. Clean readable production candidate with true alpha transparency, no white matte and no background.",
+      "source_path": "/workspace/scratch/684967c2474e/generated_images/exec-7a70015d-d4f7-4656-bd43-34939876579e.png",
+      "source_urls": [
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/npc_attackchopper.cpp",
+        "https://combineoverwiki.net/wiki/File:Hunter-chopper_bomb.jpg",
+        "https://combineoverwiki.net/images/4/46/Hunter-chopper_bomb.jpg"
+      ],
+      "source_note": "Code primaire Valve npc_attackchopper.cpp : models/combine_helicopter/helicopter_bomb01.mdl. Capture du modèle retail Hunter-chopper_bomb.jpg consultée et fournie en référence.",
+      "tool_output_hint": "Generated images are saved to /workspace/scratch/684967c2474e/generated_images as /workspace/scratch/684967c2474e/generated_images/exec-7a70015d-d4f7-4656-bd43-34939876579e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "result_capture": "PNG returned by image_gen preserved byte-for-byte; displayed with generatedImage(result)",
+      "owner_type": "projectile_effect",
+      "category": "projectile_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "target_ids": [
+        "proj_helicopter_bomb_hl2"
+      ],
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "pixel_modification_after_generation": false,
+      "copy_identical_to_generator": true,
+      "reference_bitmap_loaded": true,
+      "reference_paths": [
+        "/home/agent/resonance-projectile-recovery/Hunter-chopper_bomb.jpg"
+      ],
+      "reference_sha256": {
+        "/home/agent/resonance-projectile-recovery/Hunter-chopper_bomb.jpg": "9afe2f3b1e9cb9fad4e12aff7d50878a20b190bd778795f000b8cb57ab09e5a5"
+      },
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_helicopter_bomb_hl2_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_helicopter_bomb_hl2_h.png",
+      "width": 1275,
+      "height": 1233,
+      "color_mode": "RGBA",
+      "byte_size": 1737714,
+      "sha256": "9c823b8334730ff837b8358b2f27515134d64efba205892f54cae80a244c255c",
+      "alpha_check": "canal alpha présent; pixels transparents et semi-transparents vérifiés",
+      "alpha_stats": {
+        "transparent_pixels": 578911,
+        "partial_pixels": 992937,
+        "opaque_pixels": 227,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "bbox_alpha_nonzero": [
+          49,
+          19,
+          1257,
+          1209
+        ],
+        "bbox_alpha_at_least_16": [
+          75,
+          49,
+          1203,
+          1189
+        ],
+        "transparent_fraction": 0.3682464259020721
+      },
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#e1e1e1",
+          "#282828"
+        ],
+        "original_pixels_modified": false,
+        "result": "sujet complet isolé; lisible sur les deux fonds; fidélité et animation à valider"
+      },
+      "qa_notes": "Silhouette, orientation et matériaux comparés à la capture retail fournie en entrée. Alpha composite clair/sombre contrôlé. Les textures ont été interprétées par le générateur : pas de certification 1:1."
+    },
+    {
+      "asset_id": "proj_hand_grenade_hl1_h",
+      "owner_id": "proj_hand_grenade_hl1",
+      "name_fr": "Grenade à main — modèle HL1 lancé",
+      "variant": "thrown",
+      "visual_state_id": "thrown",
+      "visual_state_complete": false,
+      "prompt": "Use case: reference-based 2D game sprite. Create exactly ONE complete original Half-Life 1998 hand grenade using the supplied retail worldmodel screenshot as the visual identity lock. Keep its compact dark olive-green faceted egg/pineapple body, the deep dark rectangular segmentation visible in the original texture, flat angular dark green top and bent dark safety lever running along the right side. Preserve the original screenshot's model proportions, subdued palette, worn simple low-poly texture and three-quarter orientation. This is the thrown-body key pose, suspended in empty transparent space, not an exploded grenade. Every part must remain attached and entirely within the frame. One centered game prop, generous alpha margins. Do not modernize it, change it to the tall Half-Life 2 grenade, add metal loops absent in the reference, or invent markings. No launcher, hand, person, floor, shadow, smoke, fire, blast, diagrams, text, labels, duplicate objects or sprite sheet. True transparent alpha background; only the original game-object appearance is visible.",
+      "source_path": "/workspace/scratch/684967c2474e/generated_images/exec-112a4e02-ec7b-4d20-9480-18566b1385b8.png",
+      "source_urls": [
+        "https://github.com/ValveSoftware/halflife/blob/master/dlls/ggrenade.cpp",
+        "https://combineoverwiki.net/wiki/Fragmentation_Grenade_(Half-Life)",
+        "https://combineoverwiki.net/wiki/File:Grenade_1.png",
+        "https://combineoverwiki.net/images/a/a0/Grenade_1.png"
+      ],
+      "source_note": "Référence worldmodel retail original, version HD/early exclue. ggrenade.cpp ShootTimed assigne models/w_grenade.mdl. Pose aérienne candidate sans animation.",
+      "tool_output_hint": "Generated images are saved to /workspace/scratch/684967c2474e/generated_images as /workspace/scratch/684967c2474e/generated_images/exec-112a4e02-ec7b-4d20-9480-18566b1385b8.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "result_capture": "PNG returned by image_gen preserved byte-for-byte; displayed with generatedImage(result)",
+      "owner_type": "projectile_effect",
+      "category": "projectile_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "target_ids": [
+        "proj_hand_grenade_hl1"
+      ],
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "pixel_modification_after_generation": false,
+      "copy_identical_to_generator": true,
+      "reference_bitmap_loaded": true,
+      "reference_paths": [
+        "/home/agent/resonance-projectile-recovery/Grenade_1.png"
+      ],
+      "reference_sha256": {
+        "/home/agent/resonance-projectile-recovery/Grenade_1.png": "1eaa3c87632c8c0baf5b0732b94fd177a8e607ed614924d22a557b3009652b35"
+      },
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_hand_grenade_hl1_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_hand_grenade_hl1_h.png",
+      "width": 1046,
+      "height": 1504,
+      "color_mode": "RGBA",
+      "byte_size": 1292290,
+      "sha256": "0becb4df074013b0cdef8325ef72a654800cab677af924cdf5163b8f1d209e6d",
+      "alpha_check": "canal alpha présent; pixels transparents et semi-transparents vérifiés",
+      "alpha_stats": {
+        "transparent_pixels": 574828,
+        "partial_pixels": 998060,
+        "opaque_pixels": 296,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "bbox_alpha_nonzero": [
+          21,
+          0,
+          1032,
+          1504
+        ],
+        "bbox_alpha_at_least_16": [
+          69,
+          62,
+          984,
+          1447
+        ],
+        "transparent_fraction": 0.3653914608844229
+      },
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#e1e1e1",
+          "#282828"
+        ],
+        "original_pixels_modified": false,
+        "result": "silhouette complète et alpha lisibles sur les deux fonds; certification canonique et animation en attente"
+      },
+      "qa_notes": "Revue visuelle de la capture source et des composites alpha effectuée. Modèle original reconnaissable, détails interprétés par génération; non certifié 1:1."
+    },
+    {
+      "asset_id": "proj_crossbow_bolt_hl1_h",
+      "owner_id": "proj_crossbow_bolt_hl1",
+      "name_fr": "Carreau d’arbalète — corps HL1",
+      "variant": "body",
+      "visual_state_id": "body",
+      "visual_state_complete": false,
+      "prompt": "Use case: reference-based 2D game sprite. Produce exactly ONE individual original Half-Life 1998 crossbow bolt, faithfully matching the complete supplied retail GoldSrc bolt model screenshot. Keep the long slender dark-gray metal shaft, the short steel pointed spear tip at the left end, the brown band around the front third, and the small angular dark brown rear fins at the right end. Preserve the original model's straight proportions, simple faceted silhouette and worn gray-brown low-poly material identity. Show the whole bolt in the same readable slightly diagonal side/three-quarter angle as the reference; centered with generous transparent padding. No red-hot glow, no Half-Life 2 rusty rebar replacement, no ornamental fantasy arrowhead or feather fletching. No bow, shooter, hands, extra bolts, flight trails, impact, blood, scenery, text, labels or sprite sheet. Output a clean single 2D game projectile candidate on true alpha transparency with no floor or shadow.",
+      "source_path": "/workspace/scratch/684967c2474e/generated_images/exec-296bb214-93df-445d-9f69-83d55688c35a.png",
+      "source_urls": [
+        "https://github.com/ValveSoftware/halflife/blob/master/dlls/crossbow.cpp",
+        "https://combineoverwiki.net/wiki/Crossbow_(Half-Life)",
+        "https://combineoverwiki.net/wiki/File:BM_crossbow_bolt.png",
+        "https://combineoverwiki.net/images/9/91/BM_crossbow_bolt.png"
+      ],
+      "source_note": "Galerie Crossbow (Half-Life) : Bolt worldmodel BM_crossbow_bolt.png, modèle retail GoldSrc, pas le remake Black Mesa malgré nom BM. Référence consultée et fournie.",
+      "tool_output_hint": "Generated images are saved to /workspace/scratch/684967c2474e/generated_images as /workspace/scratch/684967c2474e/generated_images/exec-296bb214-93df-445d-9f69-83d55688c35a.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "result_capture": "PNG returned by image_gen preserved byte-for-byte; displayed with generatedImage(result)",
+      "owner_type": "projectile_effect",
+      "category": "projectile_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "target_ids": [
+        "proj_crossbow_bolt_hl1"
+      ],
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "pixel_modification_after_generation": false,
+      "copy_identical_to_generator": true,
+      "reference_bitmap_loaded": true,
+      "reference_paths": [
+        "/home/agent/resonance-projectile-recovery/BM_crossbow_bolt.png"
+      ],
+      "reference_sha256": {
+        "/home/agent/resonance-projectile-recovery/BM_crossbow_bolt.png": "5a2b4866f5723ee6605def533ee8c8353bc2a764e735c76b6da072b3029aa36f"
+      },
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_crossbow_bolt_hl1_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_crossbow_bolt_hl1_h.png",
+      "width": 1944,
+      "height": 809,
+      "color_mode": "RGBA",
+      "byte_size": 413662,
+      "sha256": "ab445bfac9c8b3112209b0991ee4f677487c192c43549a9ff2f8f91bb94c7786",
+      "alpha_check": "canal alpha présent; pixels transparents et semi-transparents vérifiés",
+      "alpha_stats": {
+        "transparent_pixels": 1325268,
+        "partial_pixels": 246981,
+        "opaque_pixels": 447,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "bbox_alpha_nonzero": [
+          32,
+          47,
+          1930,
+          791
+        ],
+        "bbox_alpha_at_least_16": [
+          33,
+          49,
+          1918,
+          763
+        ],
+        "transparent_fraction": 0.8426727097926109
+      },
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#e1e1e1",
+          "#282828"
+        ],
+        "original_pixels_modified": false,
+        "result": "silhouette complète et alpha lisibles sur les deux fonds; certification canonique et animation en attente"
+      },
+      "qa_notes": "Revue visuelle de la capture source et des composites alpha effectuée. Modèle original reconnaissable, détails interprétés par génération; non certifié 1:1."
+    },
+    {
+      "asset_id": "proj_snark_hl1_h",
+      "owner_id": "proj_snark_hl1",
+      "name_fr": "Snark — pose de projectile lancé HL1",
+      "variant": "thrown",
+      "visual_state_id": "thrown",
+      "visual_state_complete": false,
+      "prompt": "Use case: reference-based creature game sprite. Create ONE original Half-Life 1998 Snark in a compact airborne thrown key pose. Use the supplied retail Snark worldmodel image as the strict visual reference: small round faceted beetle-like creature, red-orange and dark maroon-black shell with the original angular banded pattern, one luminous green circular eye at the front, short angular brown-maroon pointed legs. Preserve its original compact silhouette, eye position, limb count and proportions; do not replace it with a realistic insect or redesign it in the Half-Life Alyx style. Show the complete body and all visible limbs from the same front-left three-quarter view as the reference, floating in true empty transparent space, not standing on a surface. Center one Snark with generous margins. Clean detailed 2D fighting-game asset retaining the GoldSrc identity and material colors. No hand, nest, container, other creatures, gore, impact, smoke, scenery, label, text or sprite sheet. No ground plane or cast shadow; real transparent alpha.",
+      "source_path": "/workspace/scratch/684967c2474e/generated_images/exec-5e53d2f9-2182-4208-8768-9b506bd03894.png",
+      "source_urls": [
+        "https://github.com/ValveSoftware/halflife/blob/master/dlls/squeakgrenade.cpp",
+        "https://combineoverwiki.net/wiki/Snark",
+        "https://combineoverwiki.net/wiki/File:Snark_w.jpg",
+        "https://combineoverwiki.net/images/6/62/Snark_w.jpg"
+      ],
+      "source_note": "Modèle worldmodel retail Snark_w.jpg original GoldSrc inspecté. Un seul Snark isolé en pose aérienne ; pas un nid, pas version HLA/HD.",
+      "tool_output_hint": "Generated images are saved to /workspace/scratch/684967c2474e/generated_images as /workspace/scratch/684967c2474e/generated_images/exec-5e53d2f9-2182-4208-8768-9b506bd03894.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "result_capture": "PNG returned by image_gen preserved byte-for-byte; displayed with generatedImage(result)",
+      "owner_type": "projectile_effect",
+      "category": "projectile_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "target_ids": [
+        "proj_snark_hl1",
+        "snark_hl1"
+      ],
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "pixel_modification_after_generation": false,
+      "copy_identical_to_generator": true,
+      "reference_bitmap_loaded": true,
+      "reference_paths": [
+        "/home/agent/resonance-projectile-recovery/Snark_w.jpg"
+      ],
+      "reference_sha256": {
+        "/home/agent/resonance-projectile-recovery/Snark_w.jpg": "9e041e7cc134acdad2f29c0c1717d6a078f8b2d93fde2a680a46b0f238ff43a8"
+      },
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_snark_hl1_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_snark_hl1_h.png",
+      "width": 1312,
+      "height": 1199,
+      "color_mode": "RGBA",
+      "byte_size": 578013,
+      "sha256": "400b220625f2693c927ce54a21b621d3460879ce29867aa4186c8aa67777c20a",
+      "alpha_check": "canal alpha présent; pixels transparents et semi-transparents vérifiés",
+      "alpha_stats": {
+        "transparent_pixels": 1264889,
+        "partial_pixels": 307978,
+        "opaque_pixels": 221,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "bbox_alpha_nonzero": [
+          49,
+          117,
+          1288,
+          1094
+        ],
+        "bbox_alpha_at_least_16": [
+          294,
+          176,
+          1038,
+          1047
+        ],
+        "transparent_fraction": 0.8040802548872028
+      },
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#e1e1e1",
+          "#282828"
+        ],
+        "original_pixels_modified": false,
+        "result": "silhouette complète et alpha lisibles sur les deux fonds; certification canonique et animation en attente"
+      },
+      "qa_notes": "Revue visuelle de la capture source et des composites alpha effectuée. Modèle original reconnaissable, détails interprétés par génération; non certifié 1:1.",
+      "secondary_target_note": "Modèle entier associé aussi à la cible personnage snark_hl1, comme référence de corps candidat. Une seule image physique comptée; ni pose idle ni clip animation certifié."
+    },
+    {
+      "asset_id": "proj_spore_opfor_h",
+      "owner_id": "proj_spore_opfor",
+      "name_fr": "Spore — projectile direct Opposing Force",
+      "variant": "direct",
+      "visual_state_id": "direct",
+      "visual_state_complete": false,
+      "prompt": "Use case: reference-based game sprite. Produce ONE individual spore projectile from Half-Life Opposing Force, closely matching the supplied original retail projectile-model screenshot. Preserve the nearly spherical but distinctly low-poly faceted silhouette, the saturated lime-green organic surface, darker moss-green mottling and lighter yellow-green translucency visible in the source, and the subtle pale reflection on the right face. Retain this specific simple GoldSrc model identity, not a redesigned glossy liquid droplet or alien egg. The whole intact spore is centered, airborne, in the same three-quarter orientation, with wide fully transparent margins. One direct-flight body key pose only. No plant, launcher, hands, tendrils, impact splash, explosion, trail, scene, floor shadow, labels, extra spheres or sprite sheet. True transparent alpha, clean cutout with the original game colors and proportions.",
+      "source_path": "/workspace/scratch/684967c2474e/generated_images/exec-f2e4d6c3-d66c-4d02-be7d-03d7986f8127.png",
+      "source_urls": [
+        "https://store.steampowered.com/app/50/HalfLife_Opposing_Force/",
+        "https://combineoverwiki.net/wiki/Spore_Launcher",
+        "https://combineoverwiki.net/wiki/File:Spore.jpg",
+        "https://combineoverwiki.net/images/8/84/Spore.jpg"
+      ],
+      "source_note": "Modèle de spore retail Gearbox/Valve montré dans la galerie Spore Launcher. Capture du seul projectile Spore.jpg consultée et fournie en référence.",
+      "tool_output_hint": "Generated images are saved to /workspace/scratch/684967c2474e/generated_images as /workspace/scratch/684967c2474e/generated_images/exec-f2e4d6c3-d66c-4d02-be7d-03d7986f8127.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "result_capture": "PNG returned by image_gen preserved byte-for-byte; displayed with generatedImage(result)",
+      "owner_type": "projectile_effect",
+      "category": "projectile_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "target_ids": [
+        "proj_spore_opfor"
+      ],
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "pixel_modification_after_generation": false,
+      "copy_identical_to_generator": true,
+      "reference_bitmap_loaded": true,
+      "reference_paths": [
+        "/home/agent/resonance-projectile-recovery/Spore.jpg"
+      ],
+      "reference_sha256": {
+        "/home/agent/resonance-projectile-recovery/Spore.jpg": "c4d4eb116f430eebf92049c67a08408c707fe597cab37aa8b110ee66889cce9b"
+      },
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_spore_opfor_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_spore_opfor_h.png",
+      "width": 1372,
+      "height": 1147,
+      "color_mode": "RGBA",
+      "byte_size": 1141895,
+      "sha256": "8b9ca53568e5ca2bc0fa0396e6d0a593bac1d92f217aa19e34fd285613312d64",
+      "alpha_check": "canal alpha présent; pixels transparents et semi-transparents vérifiés",
+      "alpha_stats": {
+        "transparent_pixels": 638465,
+        "partial_pixels": 934966,
+        "opaque_pixels": 253,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "bbox_alpha_nonzero": [
+          0,
+          15,
+          1371,
+          1147
+        ],
+        "bbox_alpha_at_least_16": [
+          61,
+          63,
+          1324,
+          1092
+        ],
+        "transparent_fraction": 0.4057135994265685
+      }
+    },
+    {
+      "asset_id": "proj_pit_drone_spine_opfor_h",
+      "owner_id": "proj_pit_drone_spine_opfor",
+      "name_fr": "Épine du Pit Drone — corps Opposing Force",
+      "variant": "body",
+      "visual_state_id": "body",
+      "visual_state_complete": false,
+      "prompt": "Use case: reference-based 2D game sprite. Create exactly ONE Pit Drone spine projectile from the original Half-Life Opposing Force. Match the supplied retail spike model precisely in its simple silhouette and proportion: a long tapered triangular/conical tan-brown horn pointing to the left, broad flat polygonal base at the right, angular low-poly facets, subtle mottled ochre-brown organic texture. Preserve the same oblique side view and complete shape. It is a simple bone-like spike, with NO metallic arrow shaft, no fins, no glowing energy, no added spikes or fantasy ornament. Center the whole single projectile with generous empty transparent padding. No Pit Drone, body part, hand, environment, impact, blood, smoke, trail, text, labels, diagram or extra instances. Clean isolated 2D fighting-game projectile candidate, true transparent alpha, no floor or cast shadow, no white matte.",
+      "source_path": "/workspace/scratch/684967c2474e/generated_images/exec-b1568e45-0d56-4089-b0d8-e12d6c0639cd.png",
+      "source_urls": [
+        "https://store.steampowered.com/app/50/HalfLife_Opposing_Force/",
+        "https://combineoverwiki.net/wiki/Pit_Drone",
+        "https://combineoverwiki.net/wiki/File:Pit_drone_spike.jpg",
+        "https://combineoverwiki.net/images/4/40/Pit_drone_spike.jpg"
+      ],
+      "source_note": "Modèle de projectile distinct Pit_drone_spike.jpg fourni par la galerie Pit Drone, capture du jeu Opposing Force inspectée.",
+      "tool_output_hint": "Generated images are saved to /workspace/scratch/684967c2474e/generated_images as /workspace/scratch/684967c2474e/generated_images/exec-b1568e45-0d56-4089-b0d8-e12d6c0639cd.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "result_capture": "PNG returned by image_gen preserved byte-for-byte; displayed with generatedImage(result)",
+      "owner_type": "projectile_effect",
+      "category": "projectile_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "target_ids": [
+        "proj_pit_drone_spine_opfor"
+      ],
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "pixel_modification_after_generation": false,
+      "copy_identical_to_generator": true,
+      "reference_bitmap_loaded": true,
+      "reference_paths": [
+        "/home/agent/resonance-projectile-recovery/Pit_drone_spike.jpg"
+      ],
+      "reference_sha256": {
+        "/home/agent/resonance-projectile-recovery/Pit_drone_spike.jpg": "60638201cc27113678aff52e51538709ea4b46d570f5e84af4af00541457f921"
+      },
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_pit_drone_spine_opfor_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_pit_drone_spine_opfor_h.png",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 406021,
+      "sha256": "cc65b1a1aae6cde4635bcce978ade78600265078345ce97c6c402f3be9916d4c",
+      "alpha_check": "canal alpha présent; pixels transparents et semi-transparents vérifiés",
+      "alpha_stats": {
+        "transparent_pixels": 1332607,
+        "partial_pixels": 239083,
+        "opaque_pixels": 838,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "bbox_alpha_nonzero": [
+          33,
+          61,
+          2138,
+          708
+        ],
+        "bbox_alpha_at_least_16": [
+          384,
+          114,
+          1828,
+          633
+        ],
+        "transparent_fraction": 0.8474297436993172
+      }
+    }
+  ],
+  "deferred_targets": [
+    {
+      "owner_id": "proj_nihilanth_teleport_hl1",
+      "reason": "Ressource exit1.spr identifiée dans nihilanth.cpp, mais aucune capture vérifiée du projectile mobile. Les satellites orange de recharge et un point vert dans une salle destination ne prouvent ni sa forme ni sa couleur exacte. Génération non tentée pour éviter une apparence inventée.",
+      "generation_attempted": false,
+      "certified_one_to_one": false,
+      "source_urls": [
+        "https://github.com/ValveSoftware/halflife/blob/master/dlls/nihilanth.cpp"
+      ]
+    }
+  ],
+  "failures": [
+    {
+      "owner_id": "proj_satchel_hl1",
+      "name_fr": "Charge télécommandée — corps lancé HL1",
+      "visual_state_id": "thrown",
+      "prompt": "Use case: reference-based game asset. Create ONE complete original Half-Life 1998 satchel charge body as a single transparent 2D game sprite. The supplied retail GoldSrc worldmodel screenshot is the strict visual reference: chunky rectangular dark forest-green fabric bag, angular squared soft edges, broad darker vertical retaining straps and small rectangular buckles, a second pocket-like form on the left face, a small dark receiver block on top left with its thin straight black antenna, and the small worn yellow tag hanging at the right. Keep the same three-quarter orientation and simple original low-poly proportions and weathered texture. Preserve every visible part, but do not invent readable text, electronics, wires or internal parts. The object is closed, intact and suspended in empty space as one thrown-body key pose. No separate remote control, person, hand, scenery, ground shadow, glow, smoke, explosion, diagram, labels or extra copy. Complete centered silhouette, generous transparent margins, true alpha background; eliminate the reference's gray backdrop.",
+      "source_urls": [
+        "https://github.com/ValveSoftware/halflife/blob/master/dlls/satchel.cpp",
+        "https://combineoverwiki.net/wiki/Satchel_Charge",
+        "https://combineoverwiki.net/wiki/File:Hl_satchel_world.png",
+        "https://combineoverwiki.net/images/4/4a/Hl_satchel_world.png"
+      ],
+      "reference_paths": [
+        "/home/agent/resonance-projectile-recovery/Hl_satchel_world.png"
+      ],
+      "error": "image generation failed: http 400 Bad Request: Some(\"{\\n  \\\"error\\\": {\\n    \\\"message\\\": \\\"Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID 4fa63cf9-0fc6-49a0-ac6a-62bcd6eb6438. safety_violations=[illicit].\\\",\\n    \\\"type\\\": \\\"image_generation_user_error\\\",\\n    \\\"param\\\": null,\\n    \\\"code\\\": \\\"moderation_blocked\\\",\\n    \\\"moderation_details\\\": {\\n      \\\"moderation_stage\\\": \\\"output\\\",\\n      \\\"categories\\\": [\\n        \\\"illicit\\\"\\n      ]\\n    }\\n  }\\n}\")",
+      "generation_attempted": true,
+      "generation_status": "bloqué",
+      "generator": "image_gen built-in",
+      "retried_after_rejection": false,
+      "certified_one_to_one": false,
+      "file_path": null
+    }
+  ]
+}

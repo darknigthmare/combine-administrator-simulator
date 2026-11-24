@@ -1,0 +1,325 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-11-24",
+  "scope": "Les sept premiers PNG du lot F: deux maîtres HLDM et cinq couches Canaux/Ravenholm; aucune revue des sprites suivants.",
+  "images_modified": false,
+  "repo_modified": false,
+  "new_files_checked": 7,
+  "integrity": {
+    "result": "passed",
+    "png_decode": "7/7 décodés entièrement avec Pillow, vérification structurelle puis chargement des pixels",
+    "dimensions": "7/7: 2172x724 identiques au cadre des lots D/E",
+    "stage_masters_rgb": 2,
+    "stage_layers_rgba": 5,
+    "duplicate_new_sha256": false
+  },
+  "files": [
+    {
+      "file": "assets/resonance/candidates/continuation_20261124_f/layer_ravenholm_foreground_f.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGBA",
+      "sha256": "10e62178a1d15df0fe12967a8cf331e8b8337a78af59b7913ed57d18c5cdbd76",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pct": 96.122,
+      "opaque_pct": 0.004,
+      "bbox_any_alpha": [
+        0,
+        407,
+        2172,
+        724
+      ],
+      "bbox_alpha_gt16": [
+        0,
+        580,
+        2172,
+        720
+      ],
+      "edges_nontransparent_pixels": {
+        "top": 0,
+        "bottom": 876,
+        "left": 51,
+        "right": 31
+      }
+    },
+    {
+      "file": "assets/resonance/candidates/continuation_20261124_f/layer_ravenholm_mid_f.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGBA",
+      "sha256": "36042bb373e5f17aba295bc82df39fc168a9b15b0e8764559af89180a3f04389",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pct": 63.998,
+      "opaque_pct": 0.08,
+      "bbox_any_alpha": [
+        363,
+        44,
+        2027,
+        724
+      ],
+      "bbox_alpha_gt16": [
+        544,
+        79,
+        1783,
+        624
+      ],
+      "edges_nontransparent_pixels": {
+        "top": 0,
+        "bottom": 6,
+        "left": 0,
+        "right": 0
+      }
+    },
+    {
+      "file": "assets/resonance/candidates/continuation_20261124_f/layer_ravenholm_near_f.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGBA",
+      "sha256": "2ade5f3faf104c99ed5c1da8a9cfbe0865a2a50ff5112d2e94c3e3607afffd4b",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pct": 80.045,
+      "opaque_pct": 0.048,
+      "bbox_any_alpha": [
+        0,
+        0,
+        2172,
+        684
+      ],
+      "bbox_alpha_gt16": [
+        0,
+        0,
+        2172,
+        636
+      ],
+      "edges_nontransparent_pixels": {
+        "top": 220,
+        "bottom": 0,
+        "left": 637,
+        "right": 641
+      }
+    },
+    {
+      "file": "assets/resonance/candidates/continuation_20261124_f/stage_hldm_pool_party_master_f.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "sha256": "36768d2b1c9b9a45abfe4140f708f49169a647c44087b9f02a23f8965af8f6a2"
+    },
+    {
+      "file": "assets/resonance/candidates/continuation_20261124_f/layer_ravenholm_far_f.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGBA",
+      "sha256": "17f38239af7b52faecab3142fe7d53d7c6816add65c4669db9f6d593f06ca7b1",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pct": 75.134,
+      "opaque_pct": 0.023,
+      "bbox_any_alpha": [
+        0,
+        15,
+        2172,
+        724
+      ],
+      "bbox_alpha_gt16": [
+        0,
+        183,
+        2172,
+        665
+      ],
+      "edges_nontransparent_pixels": {
+        "top": 0,
+        "bottom": 27,
+        "left": 136,
+        "right": 296
+      }
+    },
+    {
+      "file": "assets/resonance/candidates/continuation_20261124_f/layer_canals_foreground_f.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGBA",
+      "sha256": "7ff48ddd34392443b6bb5f87034f88cc7c153942fa1472c0b669d635b2def583",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pct": 97.324,
+      "opaque_pct": 0.004,
+      "bbox_any_alpha": [
+        9,
+        537,
+        2166,
+        709
+      ],
+      "bbox_alpha_gt16": [
+        13,
+        595,
+        2158,
+        703
+      ],
+      "edges_nontransparent_pixels": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      }
+    },
+    {
+      "file": "assets/resonance/candidates/continuation_20261124_f/stage_hldm_rocket_frenzy_master_f.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGB",
+      "sha256": "38450610b6e0747260c39147a75e26635c2aef5d65d34b77e868c001b8cc449b"
+    }
+  ],
+  "composition_method": {
+    "type": "diagnostic_alpha_composite_of_unchanged_source_pixels",
+    "origin": [
+      0,
+      0
+    ],
+    "dimensions": [
+      2172,
+      724
+    ],
+    "resampling": false,
+    "layer_order": "L00,L01,L02,L03,L04,L05",
+    "runtime_rendering_tested": false,
+    "browser_attempt": "Chromium local bloqué: socket() Operation not permitted. Aucun contournement; HTML de QA conservé, captures navigateur non obtenues.",
+    "html": "audit_work/qa_layers_f.html",
+    "diagnostics": [
+      "audit_work/qa_canals_six_layers_f.png",
+      "audit_work/qa_ravenholm_six_layers_f.png"
+    ]
+  },
+  "stage_reviews": [
+    {
+      "stage_id": "STG_12_HL2_CANALS",
+      "fixed_camera_composition": "candidate_usable_with_validation_remaining",
+      "layers": 6,
+      "selected_mid": "layer_canals_mid_structure_v2_e",
+      "finding": "Les six PNG se superposent sans bande de fond opaque introduite par L05. Le tuyau et les herbes restent aux coins inférieurs; la partie centrale du couloir reste libre. Aucun décalage de canevas entre fichiers.",
+      "new_foreground_action_region": {
+        "rectangle_source_pixels": [
+          325,
+          144,
+          1846,
+          589
+        ],
+        "pixels_alpha_gt64": 0,
+        "meaning": "Le nouveau L05 ne masque pas cette région centrale; ce masque ne remplace pas un test avec les vrais combattants."
+      },
+      "floor_top_alpha128_central_80_percent": {
+        "min_y": 577,
+        "median_y": 577,
+        "max_y": 577
+      },
+      "remaining": [
+        "Le bord avant du sol et la ligne de contact des pieds sont distincts; fixer la ligne de marche dans le transform du moteur.",
+        "Les bâtiments/murs sont coupés aux bords du canevas : vérifier couverture et raccords pendant parallaxe.",
+        "Aucun test dynamique, certification 1:1 ou animation de stage complétée."
+      ]
+    },
+    {
+      "stage_id": "STG_14_HL2_RAVENHOLM",
+      "fixed_camera_composition": "candidate_usable_with_floor_mapping_issue",
+      "layers": 6,
+      "finding": "L01/L02/L03/L05 complètent les six plans candidats; les façades restent derrière le sol et les débris du L05 restent aux angles. La façade centrale et les bâtiments proches se lisent dans la superposition statique.",
+      "new_foreground_action_region": {
+        "rectangle_source_pixels": [
+          325,
+          144,
+          1846,
+          589
+        ],
+        "pixels_alpha_gt64": 0
+      },
+      "near_layer_action_region": {
+        "pixels_alpha_gt64": 16728,
+        "percent": 2.4715,
+        "meaning": "Recouvrement limité au bord gauche intérieur, correspondant au réservoir du décor derrière les combattants; ne pas dessiner ce plan devant les personnages."
+      },
+      "floor_top_alpha128_central_80_percent": {
+        "min_y": 622,
+        "median_y": 622,
+        "max_y": 624
+      },
+      "ground_mapping_issue": {
+        "contract_y": 880,
+        "contract_viewport_height": 1080,
+        "image_height": 724,
+        "uniform_vertical_mapping_y": 589.9259259259259,
+        "delta_source_pixels_approximately": 32,
+        "delta_logical_pixels_approximately": 48,
+        "status": "blocking_for_claim_of_runtime_ground_alignment",
+        "note": "Si les PNG sont ajustés uniformément en hauteur à1080, des pieds à880 seraient environ48px au-dessus du sol visible. Le dépôt ne définit pas encore ce transform pour ces six plans. Ne pas modifier automatiquement les PNG."
+      },
+      "recommendation": "Définir un ancrage sol explicite par stage (ligne contact source vers y logique), puis tester. Conserver generated/verified=false jusqu’au contrôle du rendu."
+    }
+  ],
+  "alpha_review": {
+    "result": "real_alpha_present",
+    "observation": "Les bornes à alpha>16 sont plus fiables que le premier pixel non nul : faibles pixels d’alpha sont présents au-delà des motifs. Le très faible pourcentage exactement alpha255 ne signifie pas que les plans sont translucides : beaucoup de pixels intérieurs sont entre241 et254. Les compositions ne montrent pas de damier ou fond coloré brûlé.",
+    "foreground_margins": "Canaux L05 entièrement à l’intérieur du cadre; Ravenholm L05 touche gauche/droite/bas car c’est un cadre de décor, pas un sprite à détourer. L03 Ravenholm touche haut/gauche/droite, normal pour les façades cadrées, mais sans marge de défilement garantie."
+  },
+  "master_reviews": [
+    {
+      "file": "stage_hldm_pool_party_master_f.png",
+      "reference": "research_reference_images/map_pool_party.jpg",
+      "result": "faithful_motifs_candidate_2d_adaptation",
+      "preserved": [
+        "Architecture jaune industrielle",
+        "Ciel violet de Xen",
+        "Roches organiques et eau turquoise",
+        "Portes cyan et balcons"
+      ],
+      "limits": [
+        "La plateforme de combat frontale est ajoutée par la composition 2D.",
+        "La capture source montre plusieurs bassins en perspective; le maître en montre deux derrière la piste. Topologie et nombre complet de bassins non reproduits à1:1.",
+        "Un seul maître RGB, aucune couche isolée pour ce stage."
+      ]
+    },
+    {
+      "file": "stage_hldm_rocket_frenzy_master_f.png",
+      "reference": "research_reference_images/map_rocket_frenzy.jpg",
+      "result": "faithful_motifs_candidate_2d_adaptation",
+      "preserved": [
+        "Fusée centrale rouge/blanche",
+        "Piliers rouillés",
+        "Rayures de danger jaunes/noires",
+        "Éclairages cyan",
+        "Drapeau et grandes lettres A"
+      ],
+      "limits": [
+        "La profondeur et le sol circulaire de la capture deviennent une piste latérale plane.",
+        "Les petits marquages rouges sur la bande blanche de la fusée sont déformés; contrôler leur forme exacte sur texture source avant certification.",
+        "Un seul maître RGB, aucune couche isolée pour ce stage."
+      ]
+    }
+  ],
+  "conclusion": {
+    "technical_candidate_acceptance": true,
+    "six_plane_candidates_present_for_canals_and_ravenholm": true,
+    "six_layer_stages_completed": false,
+    "one_to_one_certified": false,
+    "runtime_integrated": false,
+    "next_actions": [
+      "Enregistrer les cinq fichiers avec les layer_id corrects sans leur attribuer de validation1:1.",
+      "Fixer le transform et l’ancrage de sol Ravenholm avant intégration.",
+      "Contrôler les bords et la parallaxe au déplacement; les plans actuels ne garantissent pas de marge extérieure.",
+      "Conserver les deux nouveaux stages comme maîtres de composition, couches encore manquantes."
+    ]
+  }
+}

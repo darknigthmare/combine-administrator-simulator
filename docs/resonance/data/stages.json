@@ -252,14 +252,14 @@
       "source_code": "HL1",
       "priority": "P1",
       "reference_location": "Installation industrielle autour du silo de Blast Pit",
-      "reference_status": "à vérifier sur captures du jeu source",
+      "reference_status": "captures retail consultées; adaptation latérale candidate, non certifiée1:1",
       "evidence": {
         "title": "Half-Life",
         "url": "https://www.half-life.com/en/halflife",
         "checked_scope": "Incident de Black Mesa, expérience et invasion; les détails de chaque salle exigent des captures en jeu."
       },
       "creative_status": "adaptation 2D originale non canonique",
-      "asset_status": "spécifié",
+      "asset_status": "panorama maître candidat présent; six couches et validation à produire",
       "competitive": {
         "flat_ground": true,
         "ground_y_logical_px": 880,
@@ -360,7 +360,23 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "generated_asset_ids": [
+        "stage_blastpit_hl1_master_f"
+      ],
+      "reference_capture": {
+        "reference_filename": "cow-Tentacle_pit.jpg",
+        "sha256": "f64f83b260dcdea78590dd6f6caadb5bef913a36bbbf82f624842cba82a7949d",
+        "width": 900,
+        "height": 720,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/d/de/Tentacle_pit.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Tentacle_pit.jpg",
+        "source_game": "Half-Life",
+        "provenance": "game_screenshot_mirrored_by_wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      }
     },
     {
       "id": "STG_04_HL1_LAMBDA",
@@ -488,14 +504,14 @@
       "source_code": "HL1",
       "priority": "P0",
       "reference_location": "Îles rocheuses flottantes et biologie de Xen selon Half-Life original",
-      "reference_status": "à vérifier sur captures du jeu source",
+      "reference_status": "captures retail consultées; adaptation latérale candidate, non certifiée1:1",
       "evidence": {
         "title": "Half-Life",
         "url": "https://www.half-life.com/en/halflife",
         "checked_scope": "Incident de Black Mesa, expérience et invasion; les détails de chaque salle exigent des captures en jeu."
       },
       "creative_status": "adaptation 2D originale non canonique",
-      "asset_status": "spécifié",
+      "asset_status": "panorama maître candidat présent; six couches et validation à produire",
       "competitive": {
         "flat_ground": true,
         "ground_y_logical_px": 880,
@@ -596,7 +612,23 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "generated_asset_ids": [
+        "stage_xen_hl1_master_f"
+      ],
+      "reference_capture": {
+        "reference_filename": "cow-Xen_first_island.jpg",
+        "sha256": "97114aa36638717e42ff7459cf443840d53081b5481874ba247b28e5016f7c5c",
+        "width": 1280,
+        "height": 1024,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/e/e9/Xen_first_island.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Xen_first_island.jpg",
+        "source_game": "Half-Life",
+        "provenance": "game_screenshot_mirrored_by_wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      }
     },
     {
       "id": "STG_06_OP4_CARGO",
@@ -1321,7 +1353,7 @@
         "checked_scope": "Référence visuelle effectivement chargée. Projection latérale recomposée pour le combat; ni topologie ni fichiers générés certifiés 1:1."
       },
       "creative_status": "adaptation 2D originale non canonique",
-      "asset_status": "maître et cinq plans candidats présents; L05, raccords et parallaxe à terminer",
+      "asset_status": "maître et six plans candidats présents; raccords, calage et parallaxe à valider",
       "competitive": {
         "flat_ground": true,
         "ground_y_logical_px": 880,
@@ -1406,7 +1438,12 @@
           "content": "herbes et tuyaux aux bords",
           "separate_image": true,
           "generated": false,
-          "verified": false
+          "verified": false,
+          "candidate_asset_ids": [
+            "layer_canals_foreground_f"
+          ],
+          "selected_candidate_asset_id": "layer_canals_foreground_f",
+          "candidate_note": "Fichier candidat présent et composition statique contrôlée; raccords, calage et parallaxe restent à valider."
         }
       ],
       "separate_props": [
@@ -1465,13 +1502,14 @@
       "generated_asset_ids": [
         "layer_canals_far_city_e",
         "layer_canals_floor_d",
+        "layer_canals_foreground_f",
         "layer_canals_mid_structure_e",
         "layer_canals_mid_structure_v2_e",
         "layer_canals_near_water_e",
         "layer_canals_sky_e",
         "stage_canals_master_d"
       ],
-      "layer_review_report": "docs/resonance/production/continuation_20261120_e/stage_layer_review.json"
+      "layer_review_report": "docs/resonance/production/continuation_20261124_f/stage_layer_review.json"
     },
     {
       "id": "STG_13_HL2_BME",
@@ -1606,7 +1644,7 @@
         "checked_scope": "Référence visuelle effectivement chargée. Projection latérale recomposée pour le combat; ni topologie ni fichiers générés certifiés 1:1."
       },
       "creative_status": "adaptation 2D originale non canonique",
-      "asset_status": "maître, ciel et sol candidats présents; quatre plans et raccords à terminer",
+      "asset_status": "maître et six plans candidats présents; raccords, calage et parallaxe à valider",
       "competitive": {
         "flat_ground": true,
         "ground_y_logical_px": 880,
@@ -1639,7 +1677,12 @@
           "content": "silhouettes de toits et cheminée",
           "separate_image": true,
           "generated": false,
-          "verified": false
+          "verified": false,
+          "candidate_asset_ids": [
+            "layer_ravenholm_far_f"
+          ],
+          "selected_candidate_asset_id": "layer_ravenholm_far_f",
+          "candidate_note": "Fichier candidat présent et composition statique contrôlée; raccords, calage et parallaxe restent à valider."
         },
         {
           "id": "L02_mid",
@@ -1647,7 +1690,12 @@
           "content": "façades lointaines",
           "separate_image": true,
           "generated": false,
-          "verified": false
+          "verified": false,
+          "candidate_asset_ids": [
+            "layer_ravenholm_mid_f"
+          ],
+          "selected_candidate_asset_id": "layer_ravenholm_mid_f",
+          "candidate_note": "Fichier candidat présent et composition statique contrôlée; raccords, calage et parallaxe restent à valider."
         },
         {
           "id": "L03_near",
@@ -1655,7 +1703,12 @@
           "content": "façades proches et atelier",
           "separate_image": true,
           "generated": false,
-          "verified": false
+          "verified": false,
+          "candidate_asset_ids": [
+            "layer_ravenholm_near_f"
+          ],
+          "selected_candidate_asset_id": "layer_ravenholm_near_f",
+          "candidate_note": "Fichier candidat présent et composition statique contrôlée; raccords, calage et parallaxe restent à valider."
         },
         {
           "id": "L04_ground",
@@ -1676,7 +1729,12 @@
           "content": "grillage brisé et débris aux coins",
           "separate_image": true,
           "generated": false,
-          "verified": false
+          "verified": false,
+          "candidate_asset_ids": [
+            "layer_ravenholm_foreground_f"
+          ],
+          "selected_candidate_asset_id": "layer_ravenholm_foreground_f",
+          "candidate_note": "Fichier candidat présent et composition statique contrôlée; raccords, calage et parallaxe restent à valider."
         }
       ],
       "separate_props": [
@@ -1733,11 +1791,16 @@
         "role": "visual_identity_reference"
       },
       "generated_asset_ids": [
+        "layer_ravenholm_far_f",
         "layer_ravenholm_floor_e",
+        "layer_ravenholm_foreground_f",
+        "layer_ravenholm_mid_f",
+        "layer_ravenholm_near_f",
         "layer_ravenholm_sky_e",
         "stage_ravenholm_master_d"
       ],
-      "layer_review_report": "docs/resonance/production/continuation_20261120_e/stage_layer_review.json"
+      "layer_review_report": "docs/resonance/production/continuation_20261124_f/stage_layer_review.json",
+      "candidate_alignment_note": "Le sol visuel est estimé à y622–624/724, contre environ590/724 pour le contrat logique880/1080. Décalage d’environ32–34px source (48–51px logiques) à résoudre avant intégration; contrat moteur inchangé."
     },
     {
       "id": "STG_15_HL2_NOVA",
@@ -1747,14 +1810,14 @@
       "source_code": "HL2",
       "priority": "P0",
       "reference_location": "Prison de Nova Prospekt et greffe architecturale Combine",
-      "reference_status": "à vérifier sur captures du jeu source",
+      "reference_status": "captures retail consultées; adaptation latérale candidate, non certifiée1:1",
       "evidence": {
         "title": "Half-Life 2",
         "url": "https://www.half-life.com/en/halflife2",
         "checked_scope": "Cité 17, occupation et résistance, Gordon et Alyx; détails architecturaux à vérifier en jeu."
       },
       "creative_status": "adaptation 2D originale non canonique",
-      "asset_status": "spécifié",
+      "asset_status": "panorama maître candidat présent; six couches et validation à produire",
       "competitive": {
         "flat_ground": true,
         "ground_y_logical_px": 880,
@@ -1855,7 +1918,23 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "generated_asset_ids": [
+        "stage_nova_courtyard_hl2_master_f"
+      ],
+      "reference_capture": {
+        "reference_filename": "cow-Nova_Prospekt_first.jpg",
+        "sha256": "9c2c718b2095c6f85b33c30d8a5572106c99e4f7b4ffaa6c2e2168ebf13d54c4",
+        "width": 1280,
+        "height": 720,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/1/18/Nova_Prospekt_first.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Nova_Prospekt_first.jpg",
+        "source_game": "Half-Life 2",
+        "provenance": "game_screenshot_mirrored_by_wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      }
     },
     {
       "id": "STG_16_HL2_CITADEL",

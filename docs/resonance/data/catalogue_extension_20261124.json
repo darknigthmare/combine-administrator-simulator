@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0",
+  "module": "Half Life Resonance",
+  "created_on": "2026-11-24",
+  "scope": "Six omissions documentaires vérifiées dans l’annonce officielle du 25e anniversaire. Ajout séparé aux catalogues existants.",
+  "counts": {
+    "targets": 6,
+    "by_category": {
+      "stage": 4,
+      "costume": 2
+    },
+    "new_generated_images": 0,
+    "new_playable_fighters": 0,
+    "certified_one_to_one": 0
+  },
+  "sources": [
+    {
+      "id": "hl25_official",
+      "title": "Valve — Half-Life 25th Anniversary Update",
+      "url": "https://www.half-life.com/en/halflife/25th/",
+      "kind": "official_announcement",
+      "checked_on": "2026-11-24",
+      "checked_scope": "Annonce consultée : disposal est une nouvelle carte; doublecross, rust_mill et xen_dm viennent de Further Data; Skeleton et Too Much Coffee Man sont des modèles multijoueur publiés. Les captures exactes de chaque cible restent requises.",
+      "reference_status": "official_release_identity_verified_visual_capture_pending"
+    }
+  ],
+  "targets": [
+    {
+      "id": "STG_EXT_HLDM_DISPOSAL",
+      "name_fr": "Disposal",
+      "source_game": "Half-Life Deathmatch — 25th Anniversary",
+      "category": "stage",
+      "owner_id": "STG_EXT_HLDM_DISPOSAL",
+      "content_class": "released_reference",
+      "proposed_role": "arena_candidate",
+      "priority": "P1",
+      "identity_lock": "Installation radioactive de Processing Area 3; relever la carte officielle. Le plan latéral de combat reste une adaptation.",
+      "source_ids": [
+        "hl25_official"
+      ],
+      "official_map_name": "disposal",
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "Ajout documentaire. Aucune nouvelle entrée au roster jouable; aucune animation ni arène complète déclarée."
+    },
+    {
+      "id": "STG_EXT_HLDM_DOUBLE_CROSS",
+      "name_fr": "Double Cross",
+      "source_game": "Half-Life Deathmatch — 25th Anniversary / Further Data",
+      "category": "stage",
+      "owner_id": "STG_EXT_HLDM_DOUBLE_CROSS",
+      "content_class": "released_reference",
+      "proposed_role": "arena_candidate",
+      "priority": "P1",
+      "identity_lock": "Carte Further Data republiée; préserver sa géométrie de référence. Ne pas la confondre avec Crossfire.",
+      "source_ids": [
+        "hl25_official"
+      ],
+      "official_map_name": "doublecross",
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "Ajout documentaire. Aucune nouvelle entrée au roster jouable; aucune animation ni arène complète déclarée."
+    },
+    {
+      "id": "STG_EXT_HLDM_RUST_MILL",
+      "name_fr": "Rust Mill",
+      "source_game": "Half-Life Deathmatch — 25th Anniversary / Further Data",
+      "category": "stage",
+      "owner_id": "STG_EXT_HLDM_RUST_MILL",
+      "content_class": "released_reference",
+      "proposed_role": "arena_candidate",
+      "priority": "P1",
+      "identity_lock": "Carte Further Data republiée; capturer le secteur choisi avant adaptation latérale.",
+      "source_ids": [
+        "hl25_official"
+      ],
+      "official_map_name": "rust_mill",
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "Ajout documentaire. Aucune nouvelle entrée au roster jouable; aucune animation ni arène complète déclarée."
+    },
+    {
+      "id": "STG_EXT_HLDM_XEN_DM",
+      "name_fr": "Xen DM",
+      "source_game": "Half-Life Deathmatch — 25th Anniversary / Further Data",
+      "category": "stage",
+      "owner_id": "STG_EXT_HLDM_XEN_DM",
+      "content_class": "released_reference",
+      "proposed_role": "arena_candidate",
+      "priority": "P1",
+      "identity_lock": "Carte Further Data republiée; ne pas la remplacer par Pool Party ou l’îlot campagne de Xen.",
+      "source_ids": [
+        "hl25_official"
+      ],
+      "official_map_name": "xen_dm",
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "Ajout documentaire. Aucune nouvelle entrée au roster jouable; aucune animation ni arène complète déclarée."
+    },
+    {
+      "id": "skeleton_hl25_multiplayer",
+      "name_fr": "Skeleton — modèle multijoueur publié",
+      "source_game": "Half-Life Deathmatch — 25th Anniversary / Further Data",
+      "category": "costume",
+      "owner_id": "skeleton_hl25_multiplayer",
+      "content_class": "released_multiplayer_variant",
+      "proposed_role": "official_multiplayer_skin",
+      "priority": "P1",
+      "identity_lock": "Modèle multijoueur officiel, avec yeux teintables; conserver sa silhouette publiée, sans armure inventée.",
+      "source_ids": [
+        "hl25_official"
+      ],
+      "official_map_name": null,
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "Ajout documentaire. Aucune nouvelle entrée au roster jouable; aucune animation ni arène complète déclarée."
+    },
+    {
+      "id": "too_much_coffee_man_hl25_multiplayer",
+      "name_fr": "Too Much Coffee Man — modèle multijoueur publié",
+      "source_game": "Half-Life Deathmatch — 25th Anniversary / Further Data",
+      "category": "costume",
+      "owner_id": "too_much_coffee_man_hl25_multiplayer",
+      "content_class": "released_multiplayer_variant",
+      "proposed_role": "official_multiplayer_skin",
+      "priority": "P1",
+      "identity_lock": "Reproduire le modèle multijoueur publié; ne pas substituer une illustration du comic à sa géométrie GoldSrc.",
+      "source_ids": [
+        "hl25_official"
+      ],
+      "official_map_name": null,
+      "reference_capture": null,
+      "visual_reference_status": "capture_required",
+      "generation_status": "not_started",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "implementation_status": "catalogued_not_implemented",
+      "design_note": "Ajout documentaire. Aucune nouvelle entrée au roster jouable; aucune animation ni arène complète déclarée."
+    }
+  ]
+}

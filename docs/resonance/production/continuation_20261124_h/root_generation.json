@@ -1,0 +1,885 @@
+{
+  "batch_id": "continuation_20261124_h",
+  "assets": [
+    {
+      "asset_id": "alien_controller_hl1_hover_h",
+      "name_fr": "Alien Controller",
+      "owner_id": "alien_controller_hl1",
+      "owner_type": "reserve_character",
+      "target_ids": [
+        "alien_controller_hl1"
+      ],
+      "category": "reserve_character_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: stylized-concept. Asset type: ONE individual high-definition painted 2D fighting-game key-pose sprite, for Half-Life Resonance. The supplied reference image shows the ORIGINAL VALVE game model and is the identity reference. Faithfully preserve its anatomy, color pattern, proportions, distinctive details and number of limbs, while translating low polygon surfaces to crisp detailed 2D game art. Do not redesign or add elements. Entire subject fully visible, ample clear space on all sides, true transparent background with no scenery, ground, frame, writing, HUD, labels, duplicates or contact sheet. Upper-left lighting, consistent naturally muted game palette. Not a completed animation.\nSubject: Alien Controller from original Half-Life 1998. Preserve enormous rounded brown-orange head with original dark patterned crown, small thin body, TWO long outward held main arms, the additional small central chest arm, thin bent floating legs, and the red triangular cloth at the pelvis exactly as shown. Hovering idle pose, facing screen RIGHT with a readable three-quarter chest, toes and long fingers fully visible. No fireball or glow in this sprite; projectiles are separate. Do not convert it into a human or Nihilanth, and do not add extra armor.",
+      "source_references": [
+        {
+          "reference_filename": "Alien_Controller2.jpg",
+          "source_url": "https://combineoverwiki.net/images/9/97/Alien_Controller2.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/File:Alien_Controller2.jpg",
+          "role": "original_game_model_reference",
+          "visually_inspected": true,
+          "sha256": "3221739b71b7df67da3186a6262e91e7bcd2d2d174287eb4f6f4fc2ffcb43d8c"
+        }
+      ],
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/characters/alien_controller_hl1_hover_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/alien_controller_hl1_hover_h.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "transparent_background": true,
+      "width": 1183,
+      "height": 1330,
+      "color_mode": "RGBA",
+      "byte_size": 1062098,
+      "sha256": "eb19d9cf2fba38f0aeb6ef805beb65fb23407c3db1c9efc8b1e2d657611c56f1",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "alpha_check": "RGBA contrôlé; transparent hors silhouette, composite QA indépendant pour les quatre créatures/drones",
+      "alpha_stats": {
+        "transparent_pixels": 1108173,
+        "low_alpha_1_15": 73188,
+        "partial_alpha_16_239": 14955,
+        "near_opaque_240_255": 377074,
+        "alpha_range": [
+          0,
+          255
+        ]
+      },
+      "notes": "Pose isolée; les proportions du modèle source sont traduites en illustration 2D détaillée. Orientation de référence conservée; pas une animation ou certification visuelle exhaustive."
+    },
+    {
+      "asset_id": "houndeye_hl1_idle_v2_h",
+      "name_fr": "Houndeye",
+      "owner_id": "houndeye_hl1",
+      "owner_type": "reserve_character",
+      "target_ids": [
+        "houndeye_hl1"
+      ],
+      "category": "reserve_character_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "prompt": "Edit image1 using image2 ONLY as anatomy reference. Correct the Houndeye to exactly THREE LEGS: keep the two front legs framing the giant compound eye, keep ONE rear leg, and completely remove the extra small leg currently hanging at the middle underneath the belly (the small foot near x800 y850). There must be only three visible feet total. Preserve the creature's whole body, eye, turquoise stripes, textures, framing, colors and other three legs. Also remove ALL diffuse colored glow/haze/backdrop outside its outline, replacing it with true zero-alpha transparency. The creature does not emit light. Clean cutout with natural antialiased edges, no fringe or floor shadow, no added or rearranged parts, no extra feet. ONE entire creature, no sheet, no words. Return transparent PNG.",
+      "source_references": [
+        {
+          "reference_filename": "exec-b048230c-f265-4dd5-b334-69a8e11d951e.png",
+          "source_url": null,
+          "source_page": null,
+          "role": "generated_candidate_edit_target",
+          "visually_inspected": true,
+          "sha256": "6fe0a7f107ad2b99fa292cebf118ba151d1582b7419edb75dd2f0ea3f0930e88"
+        },
+        {
+          "reference_filename": "Houndeye_hl1.png",
+          "source_url": "https://combineoverwiki.net/images/c/c5/Houndeye_hl1.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:Houndeye_hl1.png",
+          "role": "original_game_model_reference",
+          "visually_inspected": true,
+          "sha256": "80da516d9761ccfb6f5ce30af92e4d4b2b35248a77d945e6e3af952d8f3c1328"
+        }
+      ],
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/characters/houndeye_hl1_idle_v2_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/houndeye_hl1_idle_v2_h.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "transparent_background": true,
+      "width": 1536,
+      "height": 1024,
+      "color_mode": "RGBA",
+      "byte_size": 2067721,
+      "sha256": "b5f4bb4aa8874aa82a19aaecc832b97873cff1abe1aeff56f3b882c21311a634",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "alpha_check": "RGBA contrôlé; transparent hors silhouette, composite QA indépendant pour les quatre créatures/drones",
+      "alpha_stats": {
+        "transparent_pixels": 998212,
+        "low_alpha_1_15": 20518,
+        "partial_alpha_16_239": 7012,
+        "near_opaque_240_255": 547122,
+        "alpha_range": [
+          0,
+          254
+        ]
+      },
+      "notes": "Pose isolée; les proportions du modèle source sont traduites en illustration 2D détaillée. Orientation de référence conservée; pas une animation ou certification visuelle exhaustive. Correction anatomique: trois pattes. La première version à quatre pattes est écartée."
+    },
+    {
+      "asset_id": "headcrab_hl1_idle_v2_h",
+      "name_fr": "Headcrab",
+      "owner_id": "headcrab_hl1",
+      "owner_type": "reserve_character",
+      "target_ids": [
+        "headcrab_hl1"
+      ],
+      "category": "reserve_character_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: background-extraction. Remove ONLY the entire diffuse brown/red/cream haze around the Headcrab in this image. Replace every pixel outside the four-legged creature silhouette with true fully transparent alpha. Keep the creature itself exactly unchanged: its complete body and all four legs, shape, pose, orientation, colors, size, position, details, lighting, texture. No new shadow, no colored glow, no black or white background, no floor or pedestal. Clean naturally antialiased cutout edges. Preserve the full original canvas with empty transparent margins. One image, same creature, no text.",
+      "source_references": [
+        {
+          "reference_filename": "exec-de965fef-06ee-4d36-8d17-85b8e1fe74f4.png",
+          "source_url": null,
+          "source_page": null,
+          "role": "generated_candidate_edit_target",
+          "visually_inspected": true,
+          "sha256": "b0c038f9fe8ea5c46b3ac79027b732da64b01e4588968e1d69d6d238cdece94c"
+        }
+      ],
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/characters/headcrab_hl1_idle_v2_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/headcrab_hl1_idle_v2_h.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "transparent_background": true,
+      "width": 1536,
+      "height": 1024,
+      "color_mode": "RGBA",
+      "byte_size": 1705935,
+      "sha256": "db34a5954c67faa4315a3455a1eade13962643e3370d94d7ee07695611e3a64f",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "alpha_check": "RGBA contrôlé; transparent hors silhouette, composite QA indépendant pour les quatre créatures/drones",
+      "alpha_stats": {
+        "transparent_pixels": 1172172,
+        "low_alpha_1_15": 10949,
+        "partial_alpha_16_239": 6407,
+        "near_opaque_240_255": 383336,
+        "alpha_range": [
+          0,
+          254
+        ]
+      },
+      "notes": "Pose isolée; les proportions du modèle source sont traduites en illustration 2D détaillée. Orientation de référence conservée; pas une animation ou certification visuelle exhaustive."
+    },
+    {
+      "asset_id": "manhack_hl2_hover_v2_h",
+      "name_fr": "Manhack",
+      "owner_id": "manhack_hl2",
+      "owner_type": "support_machine",
+      "target_ids": [
+        "manhack_hl2"
+      ],
+      "category": "character_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: style-transfer. Faithfully translate this exact original Valve Half-Life 2 Manhack model reference into one crisp detailed painted 2D game sprite on true transparent background. Preserve its exact silhouette, proportions, component layout and same three-quarter orientation: compact VERTICAL assembly with dark grey upper housing, green oxidized internal metal, small lower red sensor housing, thin long horizontal rotor blades through the middle, angular protrusion above and below. The reference itself is the authority. Do not create a quadcopter. Do not add circular saws. Do not invent four separate motors. No additional parts. Keep EVERY mechanical part visible, same geometry and restrained palette, modest upper-left light, no background or cast floor shadow. Remove the white background, keep soft rotor blur only close to the actual rotor, no giant glow. Generous transparent padding around the complete drone. Single sprite, no text, no labels, no contact sheet.",
+      "source_references": [
+        {
+          "reference_filename": "Manhack.jpg",
+          "source_url": "https://combineoverwiki.net/images/4/4b/Manhack.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/File:Manhack.jpg",
+          "role": "original_game_model_reference",
+          "visually_inspected": true,
+          "sha256": "a237e3c27c1ca4dbf64bb2b71602a7fe255a39e1bc2df41adfc9d86634694ddc"
+        }
+      ],
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/characters/manhack_hl2_hover_v2_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/manhack_hl2_hover_v2_h.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "transparent_background": true,
+      "width": 1360,
+      "height": 1157,
+      "color_mode": "RGBA",
+      "byte_size": 791066,
+      "sha256": "0a903fd143e03cb8f7af080c9307af31e0db07233558237006e91df1793f5a97",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "alpha_check": "RGBA contrôlé; transparent hors silhouette, composite QA indépendant pour les quatre créatures/drones",
+      "alpha_stats": {
+        "transparent_pixels": 1222684,
+        "low_alpha_1_15": 37628,
+        "partial_alpha_16_239": 35632,
+        "near_opaque_240_255": 277576,
+        "alpha_range": [
+          0,
+          255
+        ]
+      },
+      "notes": "Pose isolée; les proportions du modèle source sont traduites en illustration 2D détaillée. Orientation de référence conservée; pas une animation ou certification visuelle exhaustive. Nouvelle référence visuelle utilisée après rejet QA de la première interprétation en drone à scies."
+    },
+    {
+      "asset_id": "costume_scientist_glasses_hl1_idle_h",
+      "name_fr": "Scientifique HL1 — Glasses",
+      "owner_id": "scientist_slick_hl1",
+      "owner_type": "support_character",
+      "target_ids": [
+        "costume_scientist_glasses_hl1"
+      ],
+      "category": "costume_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "prompt": "Create ONE individual full-body 2D painted game sprite for Half-Life Resonance from the provided original Valve model reference. Faithful identity translation, realistic human proportions, crisp detailed high-definition art, readable silhouette, entire head hands and shoes included. Neutral cautious standing pose, slight three-quarter view facing screen right, feet on one baseline. Keep original game clothing shapes and colors without inventing accessories or armor. True transparent background, no scene, no ground plate, no glow, no words, no labels, no second person, no lineup or contact sheet. One character only. Generous transparent margins.\nThe reference is a lineup used ONLY to identify the FIRST person from the left. Render ONLY this first original HL1 Glasses scientist: thin pale elderly man, mostly bald head, square black glasses, no moustache, white lab coat open over muted blue shirt and dark red/black striped tie, light grey trousers, brown leather shoes. Respect the first model's face, keep his hands light-skinned, do not copy other people in lineup. No guns or crowbar.",
+      "source_references": [
+        {
+          "reference_filename": "Scientist_models.png",
+          "source_url": "https://combineoverwiki.net/images/9/9e/Scientist_models.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:Scientist_models.png",
+          "role": "original_game_model_reference",
+          "visually_inspected": true,
+          "sha256": "4fb3302a1b082c2fbadec3b036e00bd6817b9cb61fa31246874dec15d52642be"
+        }
+      ],
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/costumes/costume_scientist_glasses_hl1_idle_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/costumes/costume_scientist_glasses_hl1_idle_h.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "transparent_background": true,
+      "width": 1024,
+      "height": 1536,
+      "color_mode": "RGBA",
+      "byte_size": 1516753,
+      "sha256": "eff876fb627851322c2e30e83843a16fd920b6dce203b8e264ff38e0ccee87e6",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "alpha_check": "RGBA contrôlé; transparent hors silhouette, composite QA indépendant pour les quatre créatures/drones",
+      "alpha_stats": {
+        "transparent_pixels": 1168625,
+        "low_alpha_1_15": 20236,
+        "partial_alpha_16_239": 9335,
+        "near_opaque_240_255": 374668,
+        "alpha_range": [
+          0,
+          254
+        ]
+      },
+      "notes": "Pose isolée; les proportions du modèle source sont traduites en illustration 2D détaillée. Orientation de référence conservée; pas une animation ou certification visuelle exhaustive."
+    },
+    {
+      "asset_id": "costume_scientist_einstein_hl1_idle_h",
+      "name_fr": "Scientifique HL1 — Einstein",
+      "owner_id": "scientist_slick_hl1",
+      "owner_type": "support_character",
+      "target_ids": [
+        "costume_scientist_einstein_hl1"
+      ],
+      "category": "costume_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "prompt": "Create ONE individual full-body 2D painted game sprite for Half-Life Resonance from the provided original Valve model reference. Faithful identity translation, realistic human proportions, crisp detailed high-definition art, readable silhouette, entire head hands and shoes included. Neutral cautious standing pose, slight three-quarter view facing screen right, feet on one baseline. Keep original game clothing shapes and colors without inventing accessories or armor. True transparent background, no scene, no ground plate, no glow, no words, no labels, no second person, no lineup or contact sheet. One character only. Generous transparent margins.\nThe reference is a lineup used ONLY to identify the SECOND person from the left. Render ONLY this second original HL1 Einstein scientist: pale elderly man, balding top with broad bushy grey hair on the sides, thick grey moustache, thick eyebrows, no glasses, white lab coat open over muted blue shirt and dark red/black striped tie, light grey trousers, brown shoes. Preserve his distinctive face and hairstyle from the second model, not a celebrity caricature. No guns or crowbar.",
+      "source_references": [
+        {
+          "reference_filename": "Scientist_models.png",
+          "source_url": "https://combineoverwiki.net/images/9/9e/Scientist_models.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:Scientist_models.png",
+          "role": "original_game_model_reference",
+          "visually_inspected": true,
+          "sha256": "4fb3302a1b082c2fbadec3b036e00bd6817b9cb61fa31246874dec15d52642be"
+        }
+      ],
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/costumes/costume_scientist_einstein_hl1_idle_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/costumes/costume_scientist_einstein_hl1_idle_h.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "transparent_background": true,
+      "width": 1024,
+      "height": 1536,
+      "color_mode": "RGBA",
+      "byte_size": 1583003,
+      "sha256": "f5591f2d4feaa44414e6523f4b54b4934cb951b79c058ed1fcc2a22b417bfd2c",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "alpha_check": "RGBA contrôlé; transparent hors silhouette, composite QA indépendant pour les quatre créatures/drones",
+      "alpha_stats": {
+        "transparent_pixels": 1146414,
+        "low_alpha_1_15": 17223,
+        "partial_alpha_16_239": 9801,
+        "near_opaque_240_255": 399426,
+        "alpha_range": [
+          0,
+          254
+        ]
+      },
+      "notes": "Pose isolée; les proportions du modèle source sont traduites en illustration 2D détaillée. Orientation de référence conservée; pas une animation ou certification visuelle exhaustive."
+    },
+    {
+      "asset_id": "costume_scientist_luther_hl1_idle_h",
+      "name_fr": "Scientifique HL1 — Luther",
+      "owner_id": "scientist_slick_hl1",
+      "owner_type": "support_character",
+      "target_ids": [
+        "costume_scientist_luther_hl1"
+      ],
+      "category": "costume_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "prompt": "Create ONE individual full-body 2D painted game sprite for Half-Life Resonance from the provided original Valve model reference. Faithful identity translation, realistic human proportions, crisp detailed high-definition art, readable silhouette, entire head hands and shoes included. Neutral cautious standing pose, slight three-quarter view facing screen right, feet on one baseline. Keep original game clothing shapes and colors without inventing accessories or armor. True transparent background, no scene, no ground plate, no glow, no words, no labels, no second person, no lineup or contact sheet. One character only. Generous transparent margins.\nThe reference is a lineup used ONLY to identify the THIRD person from the left. Render ONLY the original HL1 Luther scientist: medium-dark brown skin, short dark hair, no moustache, no glasses, white lab coat open over muted blue shirt and dark red/black striped tie, light grey trousers, brown shoes. Keep the third model's face and matching dark-skinned hands. This is the HL1 generic scientist variant, with TWO ordinary intact legs: do not turn him into Half-Life 2 Eli Vance or give him a prosthetic. No weapons.",
+      "source_references": [
+        {
+          "reference_filename": "Scientist_models.png",
+          "source_url": "https://combineoverwiki.net/images/9/9e/Scientist_models.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:Scientist_models.png",
+          "role": "original_game_model_reference",
+          "visually_inspected": true,
+          "sha256": "4fb3302a1b082c2fbadec3b036e00bd6817b9cb61fa31246874dec15d52642be"
+        }
+      ],
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/costumes/costume_scientist_luther_hl1_idle_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/costumes/costume_scientist_luther_hl1_idle_h.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "transparent_background": true,
+      "width": 1024,
+      "height": 1536,
+      "color_mode": "RGBA",
+      "byte_size": 1535888,
+      "sha256": "109fd3a75b8a2df717b5b52d4dadac677f8ea08ac2ceb222ca165210544e3f03",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "alpha_check": "RGBA contrôlé; transparent hors silhouette, composite QA indépendant pour les quatre créatures/drones",
+      "alpha_stats": {
+        "transparent_pixels": 1138017,
+        "low_alpha_1_15": 17679,
+        "partial_alpha_16_239": 8920,
+        "near_opaque_240_255": 408248,
+        "alpha_range": [
+          0,
+          254
+        ]
+      },
+      "notes": "Pose isolée; les proportions du modèle source sont traduites en illustration 2D détaillée. Orientation de référence conservée; pas une animation ou certification visuelle exhaustive."
+    },
+    {
+      "asset_id": "ivan_hl25_multiplayer_idle_h",
+      "name_fr": "Ivan the Space Biker — skin publié",
+      "owner_id": "ivan_hl25_multiplayer",
+      "owner_type": "support_character",
+      "target_ids": [
+        "ivan_hl25_multiplayer"
+      ],
+      "category": "costume_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "prompt": "Create ONE individual full-body 2D painted game sprite for Half-Life Resonance from the provided original Valve model reference. Faithful identity translation, realistic human proportions, crisp detailed high-definition art, readable silhouette, entire head hands and shoes included. Neutral cautious standing pose, slight three-quarter view facing screen right, feet on one baseline. Keep original game clothing shapes and colors without inventing accessories or armor. True transparent background, no scene, no ground plate, no glow, no words, no labels, no second person, no lineup or contact sheet. One character only. Generous transparent margins.\nRender Ivan the Space Biker, the Half-Life 25th Anniversary released multiplayer skin shown in the reference. Keep this exact tall brown-haired man with long bushy brown beard, stern brows and tan/ochre original prototype environmental suit: high grey collar, rectangular dark chest control panel, dark ribbed joints, large dark gloves, distinctive tan shin panels and dark boots. Original brown/tan armor scheme, no orange HEV Mark IV or V, no glasses, no helmet, no new lambda icon. Neutral empty-handed stance, only Ivan. Preserve model-specific suit construction and beard, no superhero redesign.",
+      "source_references": [
+        {
+          "reference_filename": "Dm_ivan.png",
+          "source_url": "https://combineoverwiki.net/images/2/24/Dm_ivan.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:Dm_ivan.png",
+          "role": "original_game_model_reference",
+          "visually_inspected": true,
+          "sha256": "eaf4cdc5767569d612f71006d35e8ac13fb4a3f369f9fc155cf03c4177d4f4a3"
+        }
+      ],
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/costumes/ivan_hl25_multiplayer_idle_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/costumes/ivan_hl25_multiplayer_idle_h.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "transparent_background": true,
+      "width": 1024,
+      "height": 1536,
+      "color_mode": "RGBA",
+      "byte_size": 1701210,
+      "sha256": "200850e1810f6b8e920960db5758dafdf351c99fea53a78d67d85a27a784f2ce",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "alpha_check": "RGBA contrôlé; transparent hors silhouette, composite QA indépendant pour les quatre créatures/drones",
+      "alpha_stats": {
+        "transparent_pixels": 1099672,
+        "low_alpha_1_15": 21434,
+        "partial_alpha_16_239": 11211,
+        "near_opaque_240_255": 440547,
+        "alpha_range": [
+          0,
+          254
+        ]
+      },
+      "notes": "Pose isolée; les proportions du modèle source sont traduites en illustration 2D détaillée. Orientation de référence conservée; pas une animation ou certification visuelle exhaustive."
+    },
+    {
+      "asset_id": "scientist_slick_hl1_idle_h",
+      "owner_id": "scientist_slick_hl1",
+      "owner_type": "support_character",
+      "target_ids": [
+        "scientist_slick_hl1"
+      ],
+      "category": "support_character_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: stylized-concept. Produce ONE full-body 2D game sprite of the original Half-Life 1998 scientist variant named Slick, precisely the FOURTH person from the LEFT in this reference lineup. The other five models are reference context only and MUST NOT be included. Preserve the fourth man's pale skin, severe thin face, short slick dark hair, no beard or moustache, NO glasses, blue shirt, dark red/black diagonally striped tie, white open lab coat, light grey trousers and brown shoes. Translate his original Valve model into crisp detailed hand-painted 2D art with realistic human proportions, mild upper-left light, restrained original color palette. Cautious neutral standing pose looking toward screen right, slight three-quarter torso, both entire shoes on same baseline, both hands fully visible and empty. The sole person head-to-feet, generous transparent margins, no glow, no scene or ground, true transparent background. No extra accessories, weapons, names, texts or interface. Individual key pose, no sprite sheet.",
+      "source_references": [
+        {
+          "reference_filename": "Scientist_models.png",
+          "source_url": "https://combineoverwiki.net/images/9/9e/Scientist_models.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:Scientist_models.png",
+          "sha256": "4fb3302a1b082c2fbadec3b036e00bd6817b9cb61fa31246874dec15d52642be",
+          "role": "original_game_model_reference",
+          "visually_inspected": true
+        }
+      ],
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "alpha_check": "RGBA alpha min/max contrôlé; silhouette examinée",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/scientist_slick_hl1_idle_h.png",
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/characters/scientist_slick_hl1_idle_h.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "transparent_background": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "notes": "Reconstruction candidate fondée sur le modèle du jeu; pose isolée, proportions et vue à vérifier avant animation et intégration.",
+      "width": 1024,
+      "height": 1536,
+      "color_mode": "RGBA",
+      "alpha_stats": {
+        "alpha_range": [
+          0,
+          254
+        ],
+        "transparent_pixels": 1150133,
+        "low_alpha_1_15": 19305,
+        "partial_alpha_16_239": 8179,
+        "near_opaque_240_255": 395247
+      },
+      "byte_size": 1553287,
+      "sha256": "4ddf7b285927243dc11c7eba43384e28cc36eff619f9ec0c7656b7f4b6565dac"
+    },
+    {
+      "asset_id": "proto_barney_hl25_multiplayer_idle_h",
+      "owner_id": "proto_barney_hl25_multiplayer",
+      "owner_type": "support_character",
+      "target_ids": [
+        "proto_barney_hl25_multiplayer"
+      ],
+      "category": "costume_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: stylized-concept. Produce ONE full-body 2D game sprite of Proto-Barney, the Half-Life 25th Anniversary multiplayer skin shown in the supplied original Valve model image. Preserve THIS exact character and outfit: white-grey angular MP helmet with black MP letters, lean pale nervous-looking man with wide blue eyes, blue long-sleeved uniform shirt, dark black protective vest, bright military-green trousers tucked into black knee-high boots, belt and simple holster. Keep original model palette and proportions. Do not replace him with Barney from HL2 or Blue Shift, do not add gas mask, orange HEV, extra armor or invented weapons. Crisp detailed painted 2D game art, restrained natural materials, neutral cautious pose facing screen right, slight three-quarter torso, entire head helmet hands legs and boots visible, ample transparent margins, feet aligned to flat baseline. One character only, true transparent background, no floor, no scene, no dramatic glow, no text except the two original helmet letters MP. No contact sheet or duplicate.",
+      "source_references": [
+        {
+          "reference_filename": "Dm_bbbbarney.png",
+          "source_url": "https://combineoverwiki.net/images/c/ce/Dm_bbbbarney.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:Dm_bbbbarney.png",
+          "sha256": "7c0b68629f93c6b8fcc3b0c3c7e2bb8d6e7c739e4d590b9bf5dab7a13106d4fa",
+          "role": "original_game_model_reference",
+          "visually_inspected": true
+        }
+      ],
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "alpha_check": "RGBA alpha min/max contrôlé; silhouette examinée",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/costumes/proto_barney_hl25_multiplayer_idle_h.png",
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/costumes/proto_barney_hl25_multiplayer_idle_h.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "transparent_background": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "notes": "Reconstruction candidate fondée sur le modèle du jeu; pose isolée, proportions et vue à vérifier avant animation et intégration.",
+      "width": 1024,
+      "height": 1536,
+      "color_mode": "RGBA",
+      "alpha_stats": {
+        "alpha_range": [
+          0,
+          254
+        ],
+        "transparent_pixels": 1178523,
+        "low_alpha_1_15": 18702,
+        "partial_alpha_16_239": 8379,
+        "near_opaque_240_255": 367260
+      },
+      "byte_size": 1412321,
+      "sha256": "c6d59a8b560d35b0a3cf4908273022e53304ee8428f4f2f16ec1a40865e8a8b9"
+    },
+    {
+      "asset_id": "osprey_hl1_hover_h",
+      "owner_id": "osprey_hl1",
+      "owner_type": "boss",
+      "target_ids": [
+        "osprey_hl1"
+      ],
+      "category": "boss_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "prompt": "Create ONE isolated game-art asset of the HECU Osprey from the original Valve Half-Life (1998), using the attached actual original in-game model render as the strict visual reference. Match that original fictional game machine 1:1 in identifiable design: chunky low-polygon tan/olive-brown camouflage transport fuselage, the exact black angular cockpit windows, broad straight wings, two tall upright nacelles with the original three long black rotor blades on each end, original texture-color organization and small tail. Preserve the reference's original game silhouette and proportions, do not substitute a modern V-22 photograph or redesign equipment. One full vehicle in hovering idle pose, facing left in a readable shallow three-quarter side view for a 2D fighting-game asset. Render like a clean high-resolution faithful reconstruction of the original GoldSrc game model, subtly faceted original textures; keep every rotor tip fully inside canvas with generous clear margins. True transparent alpha background. No background, ground, shadow, frame, labels, people, projectiles, fire or effects. One vehicle only.",
+      "source_references": [
+        {
+          "reference_filename": "Osprey_model.jpg",
+          "source_url": "https://combineoverwiki.net/images/1/15/Osprey_model.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/File:Osprey_model.jpg",
+          "sha256": "fe5dd4ab9d9d4298d7672e3e83f7490940ec3c1ce78628a15e7da7e03fa05fa5",
+          "role": "original_game_model_reference",
+          "visually_inspected": true
+        }
+      ],
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "alpha_check": "RGBA alpha min/max contrôlé; silhouette examinée",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/machines/osprey_hl1_hover_h.png",
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/machines/osprey_hl1_hover_h.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "transparent_background": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "notes": "Reconstruction candidate fondée sur le modèle du jeu; pose isolée, proportions et vue à vérifier avant animation et intégration.",
+      "width": 1891,
+      "height": 832,
+      "color_mode": "RGBA",
+      "alpha_stats": {
+        "alpha_range": [
+          0,
+          255
+        ],
+        "transparent_pixels": 1188511,
+        "low_alpha_1_15": 26522,
+        "partial_alpha_16_239": 13441,
+        "near_opaque_240_255": 344838
+      },
+      "byte_size": 741898,
+      "sha256": "9217b6fab3886180dcd33cfa2051f664241297afe768bd6f5e88d30bb8033250"
+    },
+    {
+      "asset_id": "bradley_hl1_idle_h",
+      "owner_id": "bradley_hl1",
+      "owner_type": "boss",
+      "target_ids": [
+        "bradley_hl1"
+      ],
+      "category": "boss_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "prompt": "Create ONE isolated game-art asset of the HECU Bradley APC from the original Valve Half-Life (1998), using the attached actual original in-game model render as the strict visual reference. Match that original game model's design and proportions, not a photorealistic modern real-world Bradley: tan desert low-polygon sloped tracked hull, small boxy turret, thin black barrel, slender rear antenna, dark inset viewing slots, exact round side-port arrangement, weathered original tan/brown diffuse texture organization, two front circular headlights and dark track/wheel silhouette. Clean faithful high-resolution reconstruction of the original GoldSrc game asset with modest visible planar geometry. One vehicle facing left, shallow three-quarter side view to read as a 2D fighting-game boss idle asset; entire antenna, barrel, track and hull fully inside canvas, generous margins. True transparent alpha background; no environment, ground, shadow, explosion, projectile, humans, text, frame or extra vehicle. No redesign, no extra armor, no exaggerated gun.",
+      "source_references": [
+        {
+          "reference_filename": "Bradley_common.jpg",
+          "source_url": "https://combineoverwiki.net/images/9/9f/Bradley_common.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/File:Bradley_common.jpg",
+          "sha256": "fb1282df7c276e8057f2e2c3493e178960b00a814b924d875a46a3138698f28b",
+          "role": "original_game_model_reference",
+          "visually_inspected": true
+        }
+      ],
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "alpha_check": "RGBA alpha min/max contrôlé; silhouette examinée",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/machines/bradley_hl1_idle_h.png",
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/machines/bradley_hl1_idle_h.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "transparent_background": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "notes": "Reconstruction candidate fondée sur le modèle du jeu; pose isolée, proportions et vue à vérifier avant animation et intégration.",
+      "width": 1774,
+      "height": 887,
+      "color_mode": "RGBA",
+      "alpha_stats": {
+        "alpha_range": [
+          0,
+          255
+        ],
+        "transparent_pixels": 1000206,
+        "low_alpha_1_15": 13112,
+        "partial_alpha_16_239": 6868,
+        "near_opaque_240_255": 553352
+      },
+      "byte_size": 1124376,
+      "sha256": "8be5ab3223c923de53fed6b1866e2e0204c6119a0271aaae1530b8d8632c7965"
+    },
+    {
+      "asset_id": "alien_grunt_hl1_idle_h",
+      "owner_id": "alien_grunt_hl1",
+      "owner_type": "fighter",
+      "target_ids": [
+        "alien_grunt_hl1"
+      ],
+      "category": "support_character_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "prompt": "Create ONE isolated full-body game sprite for Half-Life Resonance. The attached image is a render of the original released game model and is the strict identity reference. Reconstruct its exact distinctive silhouette, relative proportions, anatomy, original texture colors and equipment as crisp detailed high-resolution painted game art. Do not redesign, add parts, substitute remake assets or change versions. A readable shallow three-quarter idle facing right, complete body and every limb entirely within the canvas, generous clear margins. True transparent alpha background, no scenery, ground, shadow plate, writing, label, extra figure, montage or projectiles. Single static candidate pose.\nOriginal Half-Life 1998 Alien Grunt: stocky grey-brown torso, glossy nearly black purple angular shoulder/head/hip/foot plates, small red eyes, exact organic hornet hivehand on one forearm and thick opposite clawed fist. Keep original two arms and two legs.",
+      "source_references": [
+        {
+          "reference_filename": "Hl_agrunt01_2.png",
+          "source_url": "https://combineoverwiki.net/images/e/e9/Hl_agrunt01_2.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:Hl_agrunt01_2.png",
+          "sha256": "fd0e919a5093793b580d82a7e552244572b68b4b2c771bd17207f582d2546f29",
+          "role": "original_game_model_reference",
+          "visually_inspected": true
+        }
+      ],
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "alpha_check": "RGBA alpha min/max contrôlé; silhouette examinée",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/alien_grunt_hl1_idle_h.png",
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/characters/alien_grunt_hl1_idle_h.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "transparent_background": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "notes": "Reconstruction candidate fondée sur le modèle du jeu; pose isolée, proportions et vue à vérifier avant animation et intégration.",
+      "width": 1229,
+      "height": 1280,
+      "color_mode": "RGBA",
+      "alpha_stats": {
+        "alpha_range": [
+          0,
+          255
+        ],
+        "transparent_pixels": 853977,
+        "low_alpha_1_15": 31551,
+        "partial_alpha_16_239": 12378,
+        "near_opaque_240_255": 675214
+      },
+      "byte_size": 1469656,
+      "sha256": "eac50869b8254787306641d2c43938d867adbf623591c36bf486b9e9a8ca4404"
+    },
+    {
+      "asset_id": "bullsquid_hl1_idle_h",
+      "owner_id": "bullsquid_hl1",
+      "owner_type": "reserve_character",
+      "target_ids": [
+        "bullsquid_hl1"
+      ],
+      "category": "support_character_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "prompt": "Create ONE isolated full-body game sprite for Half-Life Resonance. The attached image is a render of the original released game model and is the strict identity reference. Reconstruct its exact distinctive silhouette, relative proportions, anatomy, original texture colors and equipment as crisp detailed high-resolution painted game art. Do not redesign, add parts, substitute remake assets or change versions. A readable shallow three-quarter idle facing right, complete body and every limb entirely within the canvas, generous clear margins. True transparent alpha background, no scenery, ground, shadow plate, writing, label, extra figure, montage or projectiles. Single static candidate pose.\nOriginal Half-Life 1998 Bullsquid: yellow ochre thick low body with original black and reddish leopard spotting, broad flattened tapering tail, exactly TWO hind legs and NO forelegs, red thick facial tentacles around central toothy mouth. Preserve exact source tentacle count and shape, eye placement and proportions. Idle crouch, no spit.",
+      "source_references": [
+        {
+          "reference_filename": "Bullsquid_hl.png",
+          "source_url": "https://combineoverwiki.net/images/8/85/Bullsquid_hl.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:Bullsquid_hl.png",
+          "sha256": "f30a69d01b9bad0617ebb2193d0d82a8bc210d9ca8787381c2a4be1418fe827a",
+          "role": "original_game_model_reference",
+          "visually_inspected": true
+        }
+      ],
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "alpha_check": "RGBA alpha min/max contrôlé; silhouette examinée",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/bullsquid_hl1_idle_h.png",
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/characters/bullsquid_hl1_idle_h.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "transparent_background": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "notes": "Reconstruction candidate fondée sur le modèle du jeu; pose isolée, proportions et vue à vérifier avant animation et intégration.",
+      "width": 1774,
+      "height": 887,
+      "color_mode": "RGBA",
+      "alpha_stats": {
+        "alpha_range": [
+          0,
+          255
+        ],
+        "transparent_pixels": 1002749,
+        "low_alpha_1_15": 24816,
+        "partial_alpha_16_239": 12088,
+        "near_opaque_240_255": 533885
+      },
+      "byte_size": 1267390,
+      "sha256": "d29d1aac129490d053153d78a609fbb72e787284ee1bae49d802a1ae57156213"
+    },
+    {
+      "asset_id": "shock_trooper_op4_idle_h",
+      "owner_id": "shock_trooper_op4",
+      "owner_type": "reserve_character",
+      "target_ids": [
+        "shock_trooper_op4"
+      ],
+      "category": "support_character_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "prompt": "Create ONE isolated full-body game sprite for Half-Life Resonance. The attached image is a render of the original released game model and is the strict identity reference. Reconstruct its exact distinctive silhouette, relative proportions, anatomy, original texture colors and equipment as crisp detailed high-resolution painted game art. Do not redesign, add parts, substitute remake assets or change versions. A readable shallow three-quarter idle facing right, complete body and every limb entirely within the canvas, generous clear margins. True transparent alpha background, no scenery, ground, shadow plate, writing, label, extra figure, montage or projectiles. Single static candidate pose.\nReleased Half-Life Opposing Force Shock Trooper: green mottled exoskeleton, large single orange red eye, small facial feelers, exactly FOUR arms, two bent long hind legs, spikes along back. Two forward hands hold the small exact blue-green Shock Roach organic weapon shown, other pair rests naturally. Match the reference, not an HL2 cut Alien Assassin.",
+      "source_references": [
+        {
+          "reference_filename": "Shock_trooper.png",
+          "source_url": "https://combineoverwiki.net/images/9/9b/Shock_trooper.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:Shock_trooper.png",
+          "sha256": "289351a05b17d22570811ee1fe985c53e1fab03f9ab3a7643d8ddbd5aaff084a",
+          "role": "original_game_model_reference",
+          "visually_inspected": true
+        }
+      ],
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "alpha_check": "RGBA alpha min/max contrôlé; silhouette examinée",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/shock_trooper_op4_idle_h.png",
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/characters/shock_trooper_op4_idle_h.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "transparent_background": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "notes": "Reconstruction candidate fondée sur le modèle du jeu; pose isolée, proportions et vue à vérifier avant animation et intégration.",
+      "width": 1024,
+      "height": 1536,
+      "color_mode": "RGBA",
+      "alpha_stats": {
+        "alpha_range": [
+          0,
+          254
+        ],
+        "transparent_pixels": 1006921,
+        "low_alpha_1_15": 40039,
+        "partial_alpha_16_239": 14820,
+        "near_opaque_240_255": 511084
+      },
+      "byte_size": 1910243,
+      "sha256": "017bfe3f11317b34e0736c1d0ef7711cba85180bc6981a2022221db64d378778"
+    },
+    {
+      "asset_id": "gonome_op4_idle_h",
+      "owner_id": "gonome_op4",
+      "owner_type": "reserve_character",
+      "target_ids": [
+        "gonome_op4"
+      ],
+      "category": "support_character_key_pose",
+      "batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "prompt": "Create ONE isolated full-body game sprite for Half-Life Resonance. The attached image is a render of the original released game model and is the strict identity reference. Reconstruct its exact distinctive silhouette, relative proportions, anatomy, original texture colors and equipment as crisp detailed high-resolution painted game art. Do not redesign, add parts, substitute remake assets or change versions. A readable shallow three-quarter idle facing right, complete body and every limb entirely within the canvas, generous clear margins. True transparent alpha background, no scenery, ground, shadow plate, writing, label, extra figure, montage or projectiles. Single static candidate pose.\nReleased Half-Life Opposing Force Gonome, matching attached original model: bulky mutated humanoid with pale Headcrab covering the head, chest shape and dark triangular teeth openings as in original, elongated brown claws, torn grey-red clothing legs, brown-green original torso textures. Preserve anatomy and texture detail at the same non-graphic stylized game level as reference; do not add blood splashes, severed parts, exposed organs or additional gore. Neutral upright hunched idle.",
+      "source_references": [
+        {
+          "reference_filename": "Gonome.png",
+          "source_url": "https://combineoverwiki.net/images/a/a6/Gonome.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:Gonome.png",
+          "sha256": "f01150a9d6e18b48d5e66d734750c30b42e08df1019654cf8334ed1faeeeabac",
+          "role": "original_game_model_reference",
+          "visually_inspected": true
+        }
+      ],
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "alpha_check": "RGBA alpha min/max contrôlé; silhouette examinée",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/gonome_op4_idle_h.png",
+      "file_path": "assets/resonance/candidates/continuation_20261124_h/characters/gonome_op4_idle_h.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "transparent_background": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "notes": "Reconstruction candidate fondée sur le modèle du jeu; pose isolée, proportions et vue à vérifier avant animation et intégration.",
+      "width": 1199,
+      "height": 1312,
+      "color_mode": "RGBA",
+      "alpha_stats": {
+        "alpha_range": [
+          0,
+          255
+        ],
+        "transparent_pixels": 1109861,
+        "low_alpha_1_15": 33634,
+        "partial_alpha_16_239": 13689,
+        "near_opaque_240_255": 415904
+      },
+      "byte_size": 1014170,
+      "sha256": "8cafc1a13666cae5c399b530c286cc5af2824603097705f77e44295db43fe952"
+    }
+  ]
+}
