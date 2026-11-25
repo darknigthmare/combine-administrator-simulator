@@ -3119,5 +3119,108 @@
     "new_archive_candidate_pngs": 7,
     "runtime_entries_added": 0,
     "certified_one_to_one": 0
+  },
+  "production_followup_20261125_l": {
+    "date": "2026-11-25",
+    "document": "docs/resonance/production/continuation_20261125_l/archive_reference_review.md",
+    "historical_snapshot_preserved": true,
+    "note": "Les contrats historiques restent datés. Les quatre études candidates ci-dessous ne certifient ni apparence finale, ni opacité, ni timecode exact des copies secondaires; les correspondances avec les échantillons officiels sont explicitement bornées.",
+    "targets": [
+      {
+        "target_id": "archive_air_exchange_hl2",
+        "name": "Air Exchange",
+        "category": "archive",
+        "source_game": "Half-Life 2 — développement",
+        "source_file": "docs/resonance/data/catalogue_extension_20261120.json",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "archive_air_exchange_hl2_concept_rtb2004_master_l"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_l/archives/archive_air_exchange_hl2_concept_rtb2004_master_l.png"
+        ],
+        "new_generation_call_count": 1,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      {
+        "target_id": "archive_blob_ep3",
+        "name": "Blob",
+        "category": "archive",
+        "source_game": "Half-Life 2: Episode Three — prototype",
+        "source_file": "docs/resonance/data/catalogue_extension_20261120.json",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "archive_blob_ep3_envelope_pose_l"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_l/archives/archive_blob_ep3_envelope_pose_l.png"
+        ],
+        "new_generation_call_count": 1,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      {
+        "target_id": "archive_icegun_ep3",
+        "name": "Ice Gun — effet prototype",
+        "category": "archive",
+        "source_game": "Half-Life 2: Episode Three — prototype",
+        "source_file": "docs/resonance/data/catalogue_extension_20261120.json",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "archive_icegun_ep3_ice_mass_l"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_l/archives/archive_icegun_ep3_ice_mass_l.png"
+        ],
+        "new_generation_call_count": 1,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      {
+        "target_id": "archive_arctic_ep3",
+        "name": "Environnement arctique du prototype",
+        "category": "archive",
+        "source_game": "Half-Life 2: Episode Three — prototype",
+        "source_file": "docs/resonance/data/catalogue_extension_20261120.json",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "archive_arctic_ep3_concept05_master_l"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_l/archives/archive_arctic_ep3_concept05_master_l.png"
+        ],
+        "new_generation_call_count": 1,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      }
+    ],
+    "new_archive_candidate_pngs": 4,
+    "runtime_entries_added": 0,
+    "certified_one_to_one": 0
   }
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.2",
-  "generated_at": "2026-11-25T06:29:25.771Z",
+  "generated_at": "2026-11-25T07:11:25.789Z",
   "module": "Half Life Resonance",
   "status": "passed",
   "input_files": [
@@ -52,27 +52,27 @@
       "released_reference": 174,
       "unspecified": 60
     },
-    "targets_with_files": 231,
-    "targets_without_files": 28,
+    "targets_with_files": 241,
+    "targets_without_files": 18,
     "targets_with_refusals": 29,
-    "selected_candidate_files": 227,
+    "selected_candidate_files": 242,
     "costume_targets_with_exactly_associated_files": 18,
-    "generation_requests": 323,
-    "generated_requests": 271,
+    "generation_requests": 338,
+    "generated_requests": 286,
     "refused_requests": 36,
     "tool_error_requests": 4,
     "output_unavailable_requests": 12,
     "requests_without_files": 52,
-    "distinct_registered_png_files_present": 271,
+    "distinct_registered_png_files_present": 286,
     "requests_outside_target_queue": 1,
-    "stage_layer_candidate_files": 16,
-    "stage_layer_candidate_ids": 14,
+    "stage_layer_candidate_files": 21,
+    "stage_layer_candidate_ids": 19,
     "stage_layer_files_without_id": 1,
-    "stage_layer_missing_ids_in_known_contracts": 136,
+    "stage_layer_missing_ids_in_known_contracts": 131,
     "stages_without_layer_contract": 25,
     "projectile_targets": 66,
-    "projectile_targets_with_files": 51,
-    "projectile_targets_without_files": 15,
+    "projectile_targets_with_files": 57,
+    "projectile_targets_without_files": 9,
     "projectile_targets_by_effect_kind": {
       "area": 4,
       "beam": 10,
@@ -84,9 +84,9 @@
       "throwable": 8,
       "weapon_fire": 1
     },
-    "projectile_visual_state_candidate_ids": 56,
-    "projectile_visual_state_missing_ids": 139,
-    "projectile_files_without_visual_state_id": 0,
+    "projectile_visual_state_candidate_ids": 61,
+    "projectile_visual_state_missing_ids": 134,
+    "projectile_files_without_visual_state_id": 1,
     "archives": 11,
     "archives_runtime_enabled": 0,
     "targets_automatically_completed": 0
@@ -17499,38 +17499,132 @@
           "animation_clip_complete_declared": false,
           "integrated_in_game_declared": false,
           "association": "explicit_target_id"
+        },
+        {
+          "asset_id": "layer_portal2_turret_factory_assembly_line_l",
+          "repository_path": "assets/resonance/candidates/continuation_20261125_l/layers/layer_portal2_turret_factory_assembly_line_l.png",
+          "byte_size_actual": 972654,
+          "category": "stage_layer_candidate",
+          "layer_id": "L4",
+          "visual_state_id": null,
+          "visual_state": null,
+          "selected_for_next_review": true,
+          "revision_of": null,
+          "superseded_by": null,
+          "qa_status": "candidat à vérifier",
+          "certified_one_to_one_declared": false,
+          "animation_clip_complete_declared": false,
+          "integrated_in_game_declared": false,
+          "association": "explicit_target_id"
+        },
+        {
+          "asset_id": "layer_portal2_turret_factory_atmosphere_l",
+          "repository_path": "assets/resonance/candidates/continuation_20261125_l/layers/layer_portal2_turret_factory_atmosphere_l.png",
+          "byte_size_actual": 1400304,
+          "category": "stage_layer_candidate",
+          "layer_id": "L1",
+          "visual_state_id": null,
+          "visual_state": null,
+          "selected_for_next_review": true,
+          "revision_of": null,
+          "superseded_by": null,
+          "qa_status": "candidat à vérifier",
+          "certified_one_to_one_declared": false,
+          "animation_clip_complete_declared": false,
+          "integrated_in_game_declared": false,
+          "association": "explicit_target_id"
+        },
+        {
+          "asset_id": "layer_portal2_turret_factory_distant_trusses_l",
+          "repository_path": "assets/resonance/candidates/continuation_20261125_l/layers/layer_portal2_turret_factory_distant_trusses_l.png",
+          "byte_size_actual": 384175,
+          "category": "stage_layer_candidate",
+          "layer_id": "L2",
+          "visual_state_id": null,
+          "visual_state": null,
+          "selected_for_next_review": true,
+          "revision_of": null,
+          "superseded_by": null,
+          "qa_status": "candidat à vérifier",
+          "certified_one_to_one_declared": false,
+          "animation_clip_complete_declared": false,
+          "integrated_in_game_declared": false,
+          "association": "explicit_target_id"
+        },
+        {
+          "asset_id": "layer_portal2_turret_factory_foreground_edge_l",
+          "repository_path": "assets/resonance/candidates/continuation_20261125_l/layers/layer_portal2_turret_factory_foreground_edge_l.png",
+          "byte_size_actual": 269201,
+          "category": "stage_layer_candidate",
+          "layer_id": "L6",
+          "visual_state_id": null,
+          "visual_state": null,
+          "selected_for_next_review": true,
+          "revision_of": null,
+          "superseded_by": null,
+          "qa_status": "candidat à vérifier",
+          "certified_one_to_one_declared": false,
+          "animation_clip_complete_declared": false,
+          "integrated_in_game_declared": false,
+          "association": "explicit_target_id"
+        },
+        {
+          "asset_id": "layer_portal2_turret_factory_industrial_walls_l",
+          "repository_path": "assets/resonance/candidates/continuation_20261125_l/layers/layer_portal2_turret_factory_industrial_walls_l.png",
+          "byte_size_actual": 1213381,
+          "category": "stage_layer_candidate",
+          "layer_id": "L3",
+          "visual_state_id": null,
+          "visual_state": null,
+          "selected_for_next_review": true,
+          "revision_of": null,
+          "superseded_by": null,
+          "qa_status": "candidat à vérifier",
+          "certified_one_to_one_declared": false,
+          "animation_clip_complete_declared": false,
+          "integrated_in_game_declared": false,
+          "association": "explicit_target_id"
         }
       ],
       "refused_requests": [],
       "tool_error_requests": [],
       "output_unavailable_requests": [],
       "other_unproduced_requests": [],
-      "actual_file_count": 2,
-      "selected_candidate_file_count": 2,
+      "actual_file_count": 7,
+      "selected_candidate_file_count": 7,
       "selected_candidate_asset_ids": [
         "stage_portal2_turret_factory_master_c",
-        "layer_portal2_turret_factory_floor_c"
+        "layer_portal2_turret_factory_floor_c",
+        "layer_portal2_turret_factory_assembly_line_l",
+        "layer_portal2_turret_factory_atmosphere_l",
+        "layer_portal2_turret_factory_distant_trusses_l",
+        "layer_portal2_turret_factory_foreground_edge_l",
+        "layer_portal2_turret_factory_industrial_walls_l"
       ],
       "master_candidate_count": 1,
       "selected_master_candidate_count": 1,
-      "layer_candidate_count": 1,
+      "layer_candidate_count": 6,
       "layer_contract_known": true,
       "layer_candidate_ids": [
-        "L5"
-      ],
-      "layer_candidate_id_count": 1,
-      "selected_layer_candidate_ids": [
-        "L5"
-      ],
-      "layer_candidate_files_without_id_count": 0,
-      "missing_layer_ids": [
         "L1",
         "L2",
         "L3",
         "L4",
+        "L5",
         "L6"
       ],
-      "missing_layer_id_count": 5,
+      "layer_candidate_id_count": 6,
+      "selected_layer_candidate_ids": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6"
+      ],
+      "layer_candidate_files_without_id_count": 0,
+      "missing_layer_ids": [],
+      "missing_layer_id_count": 0,
       "certified_asset_count_declared": 0,
       "production_status": "candidate_files_present_work_remaining",
       "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
@@ -19032,8 +19126,38 @@
           "reference_status": null
         }
       ],
-      "reference_capture": null,
-      "reference_status": "capture_required",
+      "reference_capture": {
+        "batch_id": "continuation_20261125_l",
+        "checked_on": "2026-11-25",
+        "reference_images": [
+          {
+            "id": "airex_reactor_rtb2004",
+            "url": "https://combineoverwiki.net/images/6/6a/Airex_reactor.jpg",
+            "source_url": "https://combineoverwiki.net/images/6/6a/Airex_reactor.jpg",
+            "kind": "secondary_hosted_concept_image",
+            "reference_role": "Single complete Air Exchange reactor concept. Publication version fixed to Raising the Bar 2004, not a development-map screenshot.",
+            "local_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/stages/refs/Airex_reactor.jpg",
+            "byte_size": 571748,
+            "sha256": "415fdc27851be730308368bb583a369ffb3a7da8bdbfbc053ccafaa17f190cf3",
+            "visually_inspected": true,
+            "width": 800,
+            "height": 517,
+            "color_mode": "RGB",
+            "source_page": "https://combineoverwiki.net/wiki/File:Airex_reactor.jpg",
+            "attribution": "Viktor Antonov, as recorded on the image page",
+            "publication_year": 2004,
+            "creation_date": null,
+            "printed_page_directly_inspected": false,
+            "printed_page_note": "Air Exchange article cites p.174 generally; exact placement of this illustration not directly checked.",
+            "reused_from_batch": "continuation_20261125_k"
+          }
+        ],
+        "source_type": "identified_external_reference_or_resource_preview",
+        "scope": "Références inspectées; version, rôle, degré d’attribution et limites dans le registre. Des prévisualisations locales de ressources miroir et des concepts publiés peuvent servir à une étude candidate sans certifier la version retail ou une apparence finale.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "reference_status": "reference_images_inspected_candidate_unvalidated",
       "effect_kind": null,
       "effect_kind_provisional": false,
       "projectile_class": null,
@@ -19045,24 +19169,43 @@
       "runtime_enabled_declared": false,
       "target_certified_one_to_one_declared": false,
       "required_layer_ids": [],
-      "actual_assets": [],
+      "actual_assets": [
+        {
+          "asset_id": "archive_air_exchange_hl2_concept_rtb2004_master_l",
+          "repository_path": "assets/resonance/candidates/continuation_20261125_l/archives/archive_air_exchange_hl2_concept_rtb2004_master_l.png",
+          "byte_size_actual": 1871736,
+          "category": "stage_master",
+          "layer_id": null,
+          "visual_state_id": null,
+          "visual_state": null,
+          "selected_for_next_review": true,
+          "revision_of": null,
+          "superseded_by": null,
+          "qa_status": "candidat à vérifier",
+          "certified_one_to_one_declared": false,
+          "animation_clip_complete_declared": false,
+          "integrated_in_game_declared": false,
+          "association": "explicit_target_id"
+        }
+      ],
       "refused_requests": [],
       "tool_error_requests": [],
       "output_unavailable_requests": [],
       "other_unproduced_requests": [],
-      "actual_file_count": 0,
-      "selected_candidate_file_count": 0,
-      "selected_candidate_asset_ids": [],
-      "master_candidate_count": 0,
-      "selected_master_candidate_count": 0,
+      "actual_file_count": 1,
+      "selected_candidate_file_count": 1,
+      "selected_candidate_asset_ids": [
+        "archive_air_exchange_hl2_concept_rtb2004_master_l"
+      ],
+      "master_candidate_count": 1,
+      "selected_master_candidate_count": 1,
       "layer_candidate_count": 0,
       "certified_asset_count_declared": 0,
-      "production_status": "no_file",
+      "production_status": "candidate_files_present_work_remaining",
       "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
       "next_work": [
         "Identifier la révision et les captures d’archive; conserver runtime_enabled=false.",
-        "Ajouter des captures du modèle ou du lieu exact et vérifier les invariants visuels.",
-        "Produire une première image candidate individuelle après fixation des références."
+        "Comparer chaque candidat aux références et corriger les écarts avant validation 1:1."
       ]
     },
     {
@@ -19199,8 +19342,83 @@
           "reference_status": null
         }
       ],
-      "reference_capture": null,
-      "reference_status": "capture_required",
+      "reference_capture": {
+        "batch_id": "continuation_20261125_l",
+        "checked_on": "2026-11-25",
+        "reference_images": [
+          {
+            "id": "blob_grate_documentary_frame",
+            "url": "https://combineoverwiki.net/images/1/16/BlobGratePass.jpg",
+            "source_url": "https://combineoverwiki.net/images/1/16/BlobGratePass.jpg",
+            "kind": "secondary_hosted_documentary_frame",
+            "reference_role": "Full published 16:9 documentary-frame copy, source HUD retained in reference. Inspected against official storyboard scene; not an exact frame match.",
+            "local_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_blob_ep3_grate.jpg",
+            "byte_size": 958744,
+            "sha256": "847ad4a5848688323b31c02a7b70d0593c26c3e9b47116556f90015cd3a3c9c5",
+            "visually_inspected": true,
+            "width": 3840,
+            "height": 2160,
+            "color_mode": "RGB",
+            "source_page": "https://combineoverwiki.net/wiki/File:BlobGratePass.jpg",
+            "frame_correspondence": "same_demo_scene_not_exact_frame",
+            "exact_frame_extraction_time_verified": false,
+            "native_game_resolution_verified": false,
+            "primary_original_bytes_verified": false,
+            "reused_from_batch": "continuation_20261125_k"
+          },
+          {
+            "id": "blob_documentary_frame",
+            "url": "https://combineoverwiki.net/images/7/79/BlobCinderNom.jpg",
+            "source_url": "https://combineoverwiki.net/images/7/79/BlobCinderNom.jpg",
+            "kind": "secondary_hosted_documentary_frame",
+            "reference_role": "Full published 16:9 documentary-frame copy, source HUD retained in reference. Inspected against official storyboard scene; not an exact frame match.",
+            "local_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_blob_ep3.jpg",
+            "byte_size": 970400,
+            "sha256": "f1d3da5f71c39a0b08b75cca238124a3c6155afda660089661e31455e75b3fc8",
+            "visually_inspected": true,
+            "width": 3840,
+            "height": 2160,
+            "color_mode": "RGB",
+            "source_page": "https://combineoverwiki.net/wiki/File:BlobCinderNom.jpg",
+            "frame_correspondence": "same_demo_scene_not_exact_frame",
+            "exact_frame_extraction_time_verified": false,
+            "native_game_resolution_verified": false,
+            "primary_original_bytes_verified": false,
+            "reused_from_batch": "continuation_20261125_k"
+          },
+          {
+            "id": "official_storyboard_76",
+            "url": "https://i.ytimg.com/sb/YCjNT9qGjh4/storyboard3_L3/M76.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCJLb3rkG&sigh=rs$AOn4CLA_Lh59Vw_RYGWmTop34CZjIuiEJg",
+            "source_url": "https://i.ytimg.com/sb/YCjNT9qGjh4/storyboard3_L3/M76.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCJLb3rkG&sigh=rs$AOn4CLA_Lh59Vw_RYGWmTop34CZjIuiEJg",
+            "kind": "primary_official_storyboard",
+            "reference_role": "Visual scene correspondence and 10-second navigation samples only.",
+            "local_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/YCjNT9qGjh4_storyboard_76.jpg",
+            "byte_size": 48884,
+            "sha256": "2fff2f65446579aa5f1841156a3cf91fd103fd1c8052456af4a475b715c012f3",
+            "visually_inspected": true,
+            "width": 960,
+            "height": 540,
+            "color_mode": "RGB",
+            "sheet_number": 76,
+            "grid": [
+              3,
+              3
+            ],
+            "tile_pixels": [
+              320,
+              180
+            ],
+            "sampling_interval_seconds": 10,
+            "same_sha256_as_20261120_contract": true,
+            "exact_frame_extraction_time_verified": false
+          }
+        ],
+        "source_type": "identified_external_reference_or_resource_preview",
+        "scope": "Références inspectées; version, rôle, degré d’attribution et limites dans le registre. Des prévisualisations locales de ressources miroir et des concepts publiés peuvent servir à une étude candidate sans certifier la version retail ou une apparence finale.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "reference_status": "reference_images_inspected_candidate_unvalidated",
       "effect_kind": null,
       "effect_kind_provisional": false,
       "projectile_class": null,
@@ -19212,24 +19430,43 @@
       "runtime_enabled_declared": false,
       "target_certified_one_to_one_declared": false,
       "required_layer_ids": [],
-      "actual_assets": [],
+      "actual_assets": [
+        {
+          "asset_id": "archive_blob_ep3_envelope_pose_l",
+          "repository_path": "assets/resonance/candidates/continuation_20261125_l/archives/archive_blob_ep3_envelope_pose_l.png",
+          "byte_size_actual": 1443047,
+          "category": "archive_character_key_pose",
+          "layer_id": null,
+          "visual_state_id": null,
+          "visual_state": null,
+          "selected_for_next_review": true,
+          "revision_of": null,
+          "superseded_by": null,
+          "qa_status": "candidat à vérifier",
+          "certified_one_to_one_declared": false,
+          "animation_clip_complete_declared": false,
+          "integrated_in_game_declared": false,
+          "association": "explicit_target_id"
+        }
+      ],
       "refused_requests": [],
       "tool_error_requests": [],
       "output_unavailable_requests": [],
       "other_unproduced_requests": [],
-      "actual_file_count": 0,
-      "selected_candidate_file_count": 0,
-      "selected_candidate_asset_ids": [],
+      "actual_file_count": 1,
+      "selected_candidate_file_count": 1,
+      "selected_candidate_asset_ids": [
+        "archive_blob_ep3_envelope_pose_l"
+      ],
       "master_candidate_count": 0,
       "selected_master_candidate_count": 0,
       "layer_candidate_count": 0,
       "certified_asset_count_declared": 0,
-      "production_status": "no_file",
+      "production_status": "candidate_files_present_work_remaining",
       "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
       "next_work": [
         "Identifier la révision et les captures d’archive; conserver runtime_enabled=false.",
-        "Ajouter des captures du modèle ou du lieu exact et vérifier les invariants visuels.",
-        "Produire une première image candidate individuelle après fixation des références."
+        "Comparer chaque candidat aux références et corriger les écarts avant validation 1:1."
       ]
     },
     {
@@ -19264,8 +19501,109 @@
           "reference_status": null
         }
       ],
-      "reference_capture": null,
-      "reference_status": "capture_required",
+      "reference_capture": {
+        "batch_id": "continuation_20261125_l",
+        "checked_on": "2026-11-25",
+        "reference_images": [
+          {
+            "id": "ice_documentary_frame",
+            "url": "https://combineoverwiki.net/images/c/cd/IceGunInAction.jpg",
+            "source_url": "https://combineoverwiki.net/images/c/cd/IceGunInAction.jpg",
+            "kind": "secondary_hosted_documentary_frame",
+            "reference_role": "Full published 16:9 documentary-frame copy, source HUD retained in reference. Inspected against official storyboard scene; not an exact frame match.",
+            "local_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_icegun_ep3.jpg",
+            "byte_size": 926378,
+            "sha256": "33497d19e7e1b17714598ff693c6bf972db36604f898f0c09aeb383c0f0cc5eb",
+            "visually_inspected": true,
+            "width": 3840,
+            "height": 2160,
+            "color_mode": "RGB",
+            "source_page": "https://combineoverwiki.net/wiki/File:IceGunInAction.jpg",
+            "frame_correspondence": "same_demo_scene_not_exact_frame",
+            "exact_frame_extraction_time_verified": false,
+            "native_game_resolution_verified": false,
+            "primary_original_bytes_verified": false,
+            "reused_from_batch": "continuation_20261125_k"
+          },
+          {
+            "id": "ice_ramp_documentary_frame",
+            "url": "https://combineoverwiki.net/images/b/ba/IceGunRamp.jpg",
+            "source_url": "https://combineoverwiki.net/images/b/ba/IceGunRamp.jpg",
+            "kind": "secondary_hosted_documentary_frame",
+            "reference_role": "Full published 16:9 documentary-frame copy, source HUD retained in reference. Inspected against official storyboard scene; not an exact frame match.",
+            "local_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_icegun_ep3_ramp.jpg",
+            "byte_size": 1012928,
+            "sha256": "45e2d7b8744b81e4a01a46e30617d5408edd4fe44d571b56f727f3e496a107e5",
+            "visually_inspected": true,
+            "width": 3840,
+            "height": 2160,
+            "color_mode": "RGB",
+            "source_page": "https://combineoverwiki.net/wiki/File:IceGunRamp.jpg",
+            "frame_correspondence": "same_demo_scene_not_exact_frame",
+            "exact_frame_extraction_time_verified": false,
+            "native_game_resolution_verified": false,
+            "primary_original_bytes_verified": false,
+            "reused_from_batch": "continuation_20261125_k"
+          },
+          {
+            "id": "official_storyboard_75",
+            "url": "https://i.ytimg.com/sb/YCjNT9qGjh4/storyboard3_L3/M75.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCJLb3rkG&sigh=rs$AOn4CLA_Lh59Vw_RYGWmTop34CZjIuiEJg",
+            "source_url": "https://i.ytimg.com/sb/YCjNT9qGjh4/storyboard3_L3/M75.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCJLb3rkG&sigh=rs$AOn4CLA_Lh59Vw_RYGWmTop34CZjIuiEJg",
+            "kind": "primary_official_storyboard",
+            "reference_role": "Visual scene correspondence and 10-second navigation samples only.",
+            "local_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/YCjNT9qGjh4_storyboard_75.jpg",
+            "byte_size": 51380,
+            "sha256": "c409169b14a125eed5758045a52e53ecc426ea5918a8508dcea5091ce8956005",
+            "visually_inspected": true,
+            "width": 960,
+            "height": 540,
+            "color_mode": "RGB",
+            "sheet_number": 75,
+            "grid": [
+              3,
+              3
+            ],
+            "tile_pixels": [
+              320,
+              180
+            ],
+            "sampling_interval_seconds": 10,
+            "same_sha256_as_20261120_contract": true,
+            "exact_frame_extraction_time_verified": false
+          },
+          {
+            "id": "official_storyboard_76",
+            "url": "https://i.ytimg.com/sb/YCjNT9qGjh4/storyboard3_L3/M76.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCJLb3rkG&sigh=rs$AOn4CLA_Lh59Vw_RYGWmTop34CZjIuiEJg",
+            "source_url": "https://i.ytimg.com/sb/YCjNT9qGjh4/storyboard3_L3/M76.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCJLb3rkG&sigh=rs$AOn4CLA_Lh59Vw_RYGWmTop34CZjIuiEJg",
+            "kind": "primary_official_storyboard",
+            "reference_role": "Visual scene correspondence and 10-second navigation samples only.",
+            "local_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/YCjNT9qGjh4_storyboard_76.jpg",
+            "byte_size": 48884,
+            "sha256": "2fff2f65446579aa5f1841156a3cf91fd103fd1c8052456af4a475b715c012f3",
+            "visually_inspected": true,
+            "width": 960,
+            "height": 540,
+            "color_mode": "RGB",
+            "sheet_number": 76,
+            "grid": [
+              3,
+              3
+            ],
+            "tile_pixels": [
+              320,
+              180
+            ],
+            "sampling_interval_seconds": 10,
+            "same_sha256_as_20261120_contract": true,
+            "exact_frame_extraction_time_verified": false
+          }
+        ],
+        "source_type": "identified_external_reference_or_resource_preview",
+        "scope": "Références inspectées; version, rôle, degré d’attribution et limites dans le registre. Des prévisualisations locales de ressources miroir et des concepts publiés peuvent servir à une étude candidate sans certifier la version retail ou une apparence finale.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "reference_status": "reference_images_inspected_candidate_unvalidated",
       "effect_kind": null,
       "effect_kind_provisional": false,
       "projectile_class": null,
@@ -19277,24 +19615,43 @@
       "runtime_enabled_declared": false,
       "target_certified_one_to_one_declared": false,
       "required_layer_ids": [],
-      "actual_assets": [],
+      "actual_assets": [
+        {
+          "asset_id": "archive_icegun_ep3_ice_mass_l",
+          "repository_path": "assets/resonance/candidates/continuation_20261125_l/archives/archive_icegun_ep3_ice_mass_l.png",
+          "byte_size_actual": 1552826,
+          "category": "archive_effect_key_frame",
+          "layer_id": null,
+          "visual_state_id": "ice_mass",
+          "visual_state": null,
+          "selected_for_next_review": true,
+          "revision_of": null,
+          "superseded_by": null,
+          "qa_status": "candidat à vérifier",
+          "certified_one_to_one_declared": false,
+          "animation_clip_complete_declared": false,
+          "integrated_in_game_declared": false,
+          "association": "explicit_target_id"
+        }
+      ],
       "refused_requests": [],
       "tool_error_requests": [],
       "output_unavailable_requests": [],
       "other_unproduced_requests": [],
-      "actual_file_count": 0,
-      "selected_candidate_file_count": 0,
-      "selected_candidate_asset_ids": [],
+      "actual_file_count": 1,
+      "selected_candidate_file_count": 1,
+      "selected_candidate_asset_ids": [
+        "archive_icegun_ep3_ice_mass_l"
+      ],
       "master_candidate_count": 0,
       "selected_master_candidate_count": 0,
       "layer_candidate_count": 0,
       "certified_asset_count_declared": 0,
-      "production_status": "no_file",
+      "production_status": "candidate_files_present_work_remaining",
       "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
       "next_work": [
         "Identifier la révision et les captures d’archive; conserver runtime_enabled=false.",
-        "Ajouter des captures du modèle ou du lieu exact et vérifier les invariants visuels.",
-        "Produire une première image candidate individuelle après fixation des références."
+        "Comparer chaque candidat aux références et corriger les écarts avant validation 1:1."
       ]
     },
     {
@@ -19329,8 +19686,72 @@
           "reference_status": null
         }
       ],
-      "reference_capture": null,
-      "reference_status": "capture_required",
+      "reference_capture": {
+        "batch_id": "continuation_20261125_l",
+        "checked_on": "2026-11-25",
+        "reference_images": [
+          {
+            "id": "arctic_concept05",
+            "url": "https://combineoverwiki.net/images/4/46/HL2Doc_Ep3_Concept05.jpg",
+            "source_url": "https://combineoverwiki.net/images/4/46/HL2Doc_Ep3_Concept05.jpg",
+            "kind": "secondary_hosted_concept_image",
+            "reference_role": "Entire visible concept crop, matched to official storyboard sample 6800 s; not the whole encoded documentary frame.",
+            "local_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/HL2Doc_Ep3_Concept05.jpg",
+            "byte_size": 857509,
+            "sha256": "ce3be1d021d4613276952561fe30a0939e3a543b5b6172a09ffc779e13e42517",
+            "visually_inspected": true,
+            "width": 2669,
+            "height": 1674,
+            "color_mode": "RGB",
+            "source_page": "https://combineoverwiki.net/wiki/File:HL2Doc_Ep3_Concept05.jpg",
+            "concept_signature_visible": true,
+            "secondary_signature_transcription": "GBabbar 08.17.05",
+            "secondary_author_attribution": "Gautam Babbar",
+            "secondary_page_revision": 477708,
+            "whole_documentary_frame": false,
+            "full_concept_content_visible": true,
+            "primary_original_bytes_verified": false,
+            "exact_frame_extraction_time_verified": false,
+            "storyboard_sample_seconds": 6800,
+            "storyboard_sample_precision_seconds": 10,
+            "scene_context_window_seconds": [
+              6790,
+              6810
+            ]
+          },
+          {
+            "id": "official_storyboard_75",
+            "url": "https://i.ytimg.com/sb/YCjNT9qGjh4/storyboard3_L3/M75.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCJLb3rkG&sigh=rs$AOn4CLA_Lh59Vw_RYGWmTop34CZjIuiEJg",
+            "source_url": "https://i.ytimg.com/sb/YCjNT9qGjh4/storyboard3_L3/M75.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCJLb3rkG&sigh=rs$AOn4CLA_Lh59Vw_RYGWmTop34CZjIuiEJg",
+            "kind": "primary_official_storyboard",
+            "reference_role": "Visual scene correspondence and 10-second navigation samples only.",
+            "local_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/YCjNT9qGjh4_storyboard_75.jpg",
+            "byte_size": 51380,
+            "sha256": "c409169b14a125eed5758045a52e53ecc426ea5918a8508dcea5091ce8956005",
+            "visually_inspected": true,
+            "width": 960,
+            "height": 540,
+            "color_mode": "RGB",
+            "sheet_number": 75,
+            "grid": [
+              3,
+              3
+            ],
+            "tile_pixels": [
+              320,
+              180
+            ],
+            "sampling_interval_seconds": 10,
+            "same_sha256_as_20261120_contract": true,
+            "exact_frame_extraction_time_verified": false
+          }
+        ],
+        "source_type": "identified_external_reference_or_resource_preview",
+        "scope": "Références inspectées; version, rôle, degré d’attribution et limites dans le registre. Des prévisualisations locales de ressources miroir et des concepts publiés peuvent servir à une étude candidate sans certifier la version retail ou une apparence finale.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "reference_status": "reference_images_inspected_candidate_unvalidated",
       "effect_kind": null,
       "effect_kind_provisional": false,
       "projectile_class": null,
@@ -19342,24 +19763,43 @@
       "runtime_enabled_declared": false,
       "target_certified_one_to_one_declared": false,
       "required_layer_ids": [],
-      "actual_assets": [],
+      "actual_assets": [
+        {
+          "asset_id": "archive_arctic_ep3_concept05_master_l",
+          "repository_path": "assets/resonance/candidates/continuation_20261125_l/archives/archive_arctic_ep3_concept05_master_l.png",
+          "byte_size_actual": 2148810,
+          "category": "stage_master",
+          "layer_id": null,
+          "visual_state_id": null,
+          "visual_state": null,
+          "selected_for_next_review": true,
+          "revision_of": null,
+          "superseded_by": null,
+          "qa_status": "candidat à vérifier",
+          "certified_one_to_one_declared": false,
+          "animation_clip_complete_declared": false,
+          "integrated_in_game_declared": false,
+          "association": "explicit_target_id"
+        }
+      ],
       "refused_requests": [],
       "tool_error_requests": [],
       "output_unavailable_requests": [],
       "other_unproduced_requests": [],
-      "actual_file_count": 0,
-      "selected_candidate_file_count": 0,
-      "selected_candidate_asset_ids": [],
-      "master_candidate_count": 0,
-      "selected_master_candidate_count": 0,
+      "actual_file_count": 1,
+      "selected_candidate_file_count": 1,
+      "selected_candidate_asset_ids": [
+        "archive_arctic_ep3_concept05_master_l"
+      ],
+      "master_candidate_count": 1,
+      "selected_master_candidate_count": 1,
       "layer_candidate_count": 0,
       "certified_asset_count_declared": 0,
-      "production_status": "no_file",
+      "production_status": "candidate_files_present_work_remaining",
       "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
       "next_work": [
         "Identifier la révision et les captures d’archive; conserver runtime_enabled=false.",
-        "Ajouter des captures du modèle ou du lieu exact et vérifier les invariants visuels.",
-        "Produire une première image candidate individuelle après fixation des références."
+        "Comparer chaque candidat aux références et corriger les écarts avant validation 1:1."
       ]
     },
     {
@@ -20347,8 +20787,47 @@
           "reference_status": null
         }
       ],
-      "reference_capture": null,
-      "reference_status": "code_contract_visual_pending",
+      "reference_capture": {
+        "batch_id": "continuation_20261125_l",
+        "checked_on": "2026-11-25",
+        "reference_images": [
+          {
+            "reference_filename": "uplink_grenade_side_preview.png",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/goldsrc/references/uplink_grenade_side_preview.png",
+            "source_url": "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+            "source_page": "https://github.com/x8BitRain/webXash",
+            "source_kind": "uplink_demo_resource_from_community_mirror",
+            "source_resource": "valve/models/grenade.mdl",
+            "source_resource_sha256": "bc6126523037ed6442fdd44c0ed9f69e2b024bdcc8e2a60dbcc39f97bd847ec9",
+            "reference_conversion": "Inspection-only orthographic software rasterization of the actual MDL rigid mesh and original indexed texture palettes using Valve studio.h format. Triangle strips/fans decoded, original UVs sampled nearest, simple directional shading. Bind-space viewing orientation; not an in-game capture or retail binary equivalence proof.",
+            "sha256": "6214173dbf62701277088f9f18e90dc214018d43187a7581d8546cfda331192b",
+            "width": 512,
+            "height": 512,
+            "visually_inspected": true,
+            "scope": "Actual MDL geometry and texture UV preview. Uplink demo file; retail HL1 binary equivalence unverified."
+          },
+          {
+            "reference_filename": "uplink_grenade_threequarter_preview.png",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/goldsrc/references/uplink_grenade_threequarter_preview.png",
+            "source_url": "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+            "source_page": "https://github.com/x8BitRain/webXash",
+            "source_kind": "uplink_demo_resource_from_community_mirror",
+            "source_resource": "valve/models/grenade.mdl",
+            "source_resource_sha256": "bc6126523037ed6442fdd44c0ed9f69e2b024bdcc8e2a60dbcc39f97bd847ec9",
+            "reference_conversion": "Inspection-only orthographic software rasterization of the actual MDL rigid mesh and original indexed texture palettes using Valve studio.h format. Triangle strips/fans decoded, original UVs sampled nearest, simple directional shading. Bind-space viewing orientation; not an in-game capture or retail binary equivalence proof.",
+            "sha256": "43be36015043f9b3572c058435ed4ec00d880ee089c36901bd161a36c17c750a",
+            "width": 512,
+            "height": 512,
+            "visually_inspected": true,
+            "scope": "Actual MDL geometry and texture UV preview. Uplink demo file; retail HL1 binary equivalence unverified."
+          }
+        ],
+        "source_type": "identified_external_reference_or_resource_preview",
+        "scope": "Références inspectées; version, rôle, degré d’attribution et limites dans le registre. Des prévisualisations locales de ressources miroir et des concepts publiés peuvent servir à une étude candidate sans certifier la version retail ou une apparence finale.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "reference_status": "reference_images_inspected_candidate_unvalidated",
       "effect_kind": "projectile",
       "effect_kind_provisional": false,
       "projectile_class": "moving_projectile",
@@ -20389,30 +20868,52 @@
       "runtime_enabled_declared": false,
       "target_certified_one_to_one_declared": false,
       "required_layer_ids": [],
-      "actual_assets": [],
+      "actual_assets": [
+        {
+          "asset_id": "proj_mp5_grenade_hl1_body_l",
+          "repository_path": "assets/resonance/candidates/continuation_20261125_l/goldsrc/proj_mp5_grenade_hl1_body_l.png",
+          "byte_size_actual": 848234,
+          "category": "projectile_key_frame",
+          "layer_id": null,
+          "visual_state_id": "body",
+          "visual_state": null,
+          "selected_for_next_review": true,
+          "revision_of": null,
+          "superseded_by": null,
+          "qa_status": "candidat à vérifier",
+          "certified_one_to_one_declared": false,
+          "animation_clip_complete_declared": false,
+          "integrated_in_game_declared": false,
+          "association": "explicit_target_id"
+        }
+      ],
       "refused_requests": [],
       "tool_error_requests": [],
       "output_unavailable_requests": [],
       "other_unproduced_requests": [],
-      "actual_file_count": 0,
-      "selected_candidate_file_count": 0,
-      "selected_candidate_asset_ids": [],
+      "actual_file_count": 1,
+      "selected_candidate_file_count": 1,
+      "selected_candidate_asset_ids": [
+        "proj_mp5_grenade_hl1_body_l"
+      ],
       "master_candidate_count": 0,
       "selected_master_candidate_count": 0,
       "layer_candidate_count": 0,
-      "candidate_visual_state_ids": [],
-      "selected_visual_state_ids": [],
+      "candidate_visual_state_ids": [
+        "body"
+      ],
+      "selected_visual_state_ids": [
+        "body"
+      ],
       "missing_visual_state_ids": [
-        "body",
         "impact"
       ],
       "visual_state_files_without_id_count": 0,
       "certified_asset_count_declared": 0,
-      "production_status": "no_file",
+      "production_status": "candidate_files_present_work_remaining",
       "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
       "next_work": [
-        "Ajouter des captures du modèle ou du lieu exact et vérifier les invariants visuels.",
-        "Produire une première image candidate individuelle après fixation des références.",
+        "Comparer chaque candidat aux références et corriger les écarts avant validation 1:1.",
         "Produire séparément corps, traînée, impact et variantes indiquées; attribuer un visual_state_id exact à chaque fichier.",
         "Vérifier alpha, couleurs, durée, orientation et interaction avant intégration; une image ne termine pas une famille."
       ]
@@ -20957,8 +21458,32 @@
           "reference_status": "code_resource_verified"
         }
       ],
-      "reference_capture": null,
-      "reference_status": "code_contract_visual_pending",
+      "reference_capture": {
+        "batch_id": "continuation_20261125_l",
+        "checked_on": "2026-11-25",
+        "reference_images": [
+          {
+            "reference_filename": "uplink_spit1_gradient_preview.png",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/goldsrc/references/uplink_spit1_gradient_preview.png",
+            "source_url": "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+            "source_page": "https://github.com/x8BitRain/webXash",
+            "source_kind": "uplink_demo_resource_from_community_mirror",
+            "source_resource": "valve/decals.wad::{SPIT1",
+            "source_resource_sha256": "17726e8174729011c7ea4e1e37b4ccfe7a9aa4abb82c2aaca87872cbe0c106d0",
+            "sha256": "e0cd060fdd68b60c4e9d1589182509c3e618ec257e74a3aa346374f2e2afbc2c",
+            "width": 32,
+            "height": 32,
+            "reference_conversion": "Gradient decal inspection: palette entry 255 supplies RGB, pixel index supplies alpha; index 255 cleared. Follows community Xash img_wad.c and img_utils.c; not an in-game retail screenshot.",
+            "visually_inspected": true,
+            "scope": "One persistent impact decal; palette RGB 204,228,40, indexed alpha."
+          }
+        ],
+        "source_type": "identified_external_reference_or_resource_preview",
+        "scope": "Références inspectées; version, rôle, degré d’attribution et limites dans le registre. Des prévisualisations locales de ressources miroir et des concepts publiés peuvent servir à une étude candidate sans certifier la version retail ou une apparence finale.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "reference_status": "reference_images_inspected_candidate_unvalidated",
       "effect_kind": "impact",
       "effect_kind_provisional": false,
       "projectile_class": null,
@@ -20973,14 +21498,34 @@
       "runtime_enabled_declared": false,
       "target_certified_one_to_one_declared": false,
       "required_layer_ids": [],
-      "actual_assets": [],
+      "actual_assets": [
+        {
+          "asset_id": "fx_bullsquid_spit_impact_hl1_impact_decal_spit1_l",
+          "repository_path": "assets/resonance/candidates/continuation_20261125_l/goldsrc/fx_bullsquid_spit_impact_hl1_impact_decal_spit1_l.png",
+          "byte_size_actual": 1355347,
+          "category": "projectile_key_frame",
+          "layer_id": null,
+          "visual_state_id": null,
+          "visual_state": null,
+          "selected_for_next_review": true,
+          "revision_of": null,
+          "superseded_by": null,
+          "qa_status": "candidat à vérifier",
+          "certified_one_to_one_declared": false,
+          "animation_clip_complete_declared": false,
+          "integrated_in_game_declared": false,
+          "association": "explicit_target_id"
+        }
+      ],
       "refused_requests": [],
       "tool_error_requests": [],
       "output_unavailable_requests": [],
       "other_unproduced_requests": [],
-      "actual_file_count": 0,
-      "selected_candidate_file_count": 0,
-      "selected_candidate_asset_ids": [],
+      "actual_file_count": 1,
+      "selected_candidate_file_count": 1,
+      "selected_candidate_asset_ids": [
+        "fx_bullsquid_spit_impact_hl1_impact_decal_spit1_l"
+      ],
       "master_candidate_count": 0,
       "selected_master_candidate_count": 0,
       "layer_candidate_count": 0,
@@ -20990,13 +21535,12 @@
         "impact_start",
         "impact_end"
       ],
-      "visual_state_files_without_id_count": 0,
+      "visual_state_files_without_id_count": 1,
       "certified_asset_count_declared": 0,
-      "production_status": "no_file",
+      "production_status": "candidate_files_present_work_remaining",
       "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
       "next_work": [
-        "Ajouter des captures du modèle ou du lieu exact et vérifier les invariants visuels.",
-        "Produire une première image candidate individuelle après fixation des références.",
+        "Comparer chaque candidat aux références et corriger les écarts avant validation 1:1.",
         "Produire séparément corps, traînée, impact et variantes indiquées; attribuer un visual_state_id exact à chaque fichier.",
         "Vérifier alpha, couleurs, durée, orientation et interaction avant intégration; une image ne termine pas une famille."
       ]
@@ -23037,8 +23581,32 @@
           "reference_status": null
         }
       ],
-      "reference_capture": null,
-      "reference_status": "exact_visual_reference_pending",
+      "reference_capture": {
+        "batch_id": "continuation_20261125_l",
+        "checked_on": "2026-11-25",
+        "reference_images": [
+          {
+            "reference_filename": "uplink_exit1_frame0.png",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/goldsrc/references/uplink_exit1_frame0.png",
+            "source_url": "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+            "source_page": "https://github.com/x8BitRain/webXash",
+            "source_kind": "uplink_demo_resource_from_community_mirror",
+            "source_resource": "sprites/exit1.spr",
+            "source_resource_sha256": "057e9ed2a9fcef4c9b71b56614ec172402771012440472a9551332bdc796538f",
+            "sha256": "7d28e90f2db1ae8b6cd1271c8dcdd215f22813ed6026cb7a412b72af52420bca",
+            "width": 80,
+            "height": 80,
+            "visually_inspected": true,
+            "reference_conversion": "Frame 0 decoded from IDSP version 2 sprite. Original palette retained. Index-alpha uses palette entry 255 RGB and pixel index alpha; additive sprites are previewed on their original black background, not mistaken for a gameplay backdrop.",
+            "scope": "Original demo resource preview; community reference implementation maps the same resource name to the OP4 target. Retail binary identity, exact tint/compositing and temporal state not certified."
+          }
+        ],
+        "source_type": "identified_external_reference_or_resource_preview",
+        "scope": "Références inspectées; version, rôle, degré d’attribution et limites dans le registre. Des prévisualisations locales de ressources miroir et des concepts publiés peuvent servir à une étude candidate sans certifier la version retail ou une apparence finale.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "reference_status": "reference_images_inspected_candidate_unvalidated",
       "effect_kind": "projectile",
       "effect_kind_provisional": true,
       "projectile_class": "moving_projectile",
@@ -23075,30 +23643,52 @@
       "runtime_enabled_declared": false,
       "target_certified_one_to_one_declared": false,
       "required_layer_ids": [],
-      "actual_assets": [],
+      "actual_assets": [
+        {
+          "asset_id": "proj_displacer_orb_opfor_body_resource_study_l",
+          "repository_path": "assets/resonance/candidates/continuation_20261125_l/goldsrc/proj_displacer_orb_opfor_body_resource_study_l.png",
+          "byte_size_actual": 933764,
+          "category": "projectile_key_frame",
+          "layer_id": null,
+          "visual_state_id": "body",
+          "visual_state": null,
+          "selected_for_next_review": true,
+          "revision_of": null,
+          "superseded_by": null,
+          "qa_status": "candidat à vérifier",
+          "certified_one_to_one_declared": false,
+          "animation_clip_complete_declared": false,
+          "integrated_in_game_declared": false,
+          "association": "explicit_target_id"
+        }
+      ],
       "refused_requests": [],
       "tool_error_requests": [],
       "output_unavailable_requests": [],
       "other_unproduced_requests": [],
-      "actual_file_count": 0,
-      "selected_candidate_file_count": 0,
-      "selected_candidate_asset_ids": [],
+      "actual_file_count": 1,
+      "selected_candidate_file_count": 1,
+      "selected_candidate_asset_ids": [
+        "proj_displacer_orb_opfor_body_resource_study_l"
+      ],
       "master_candidate_count": 0,
       "selected_master_candidate_count": 0,
       "layer_candidate_count": 0,
-      "candidate_visual_state_ids": [],
-      "selected_visual_state_ids": [],
+      "candidate_visual_state_ids": [
+        "body"
+      ],
+      "selected_visual_state_ids": [
+        "body"
+      ],
       "missing_visual_state_ids": [
-        "body",
         "displacement"
       ],
       "visual_state_files_without_id_count": 0,
       "certified_asset_count_declared": 0,
-      "production_status": "no_file",
+      "production_status": "candidate_files_present_work_remaining",
       "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
       "next_work": [
-        "Ajouter des captures du modèle ou du lieu exact et vérifier les invariants visuels.",
-        "Produire une première image candidate individuelle après fixation des références.",
+        "Comparer chaque candidat aux références et corriger les écarts avant validation 1:1.",
         "Produire séparément corps, traînée, impact et variantes indiquées; attribuer un visual_state_id exact à chaque fichier.",
         "La page produit confirme seulement le contexte; obtenir une capture primaire spécifique de cet effet.",
         "Vérifier le type d’effet et sa séquence dans le jeu source avant de fixer le contrat visuel.",
@@ -23454,8 +24044,32 @@
           "reference_status": "context_only_visual_capture_required"
         }
       ],
-      "reference_capture": null,
-      "reference_status": "exact_visual_reference_pending",
+      "reference_capture": {
+        "batch_id": "continuation_20261125_l",
+        "checked_on": "2026-11-25",
+        "reference_images": [
+          {
+            "reference_filename": "uplink_ballsmoke_frame0.png",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/goldsrc/references/uplink_ballsmoke_frame0.png",
+            "source_url": "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+            "source_page": "https://github.com/x8BitRain/webXash",
+            "source_kind": "uplink_demo_resource_from_community_mirror",
+            "source_resource": "sprites/ballsmoke.spr",
+            "source_resource_sha256": "5a3df03849babcf7cb0eee2f94d9981f32709c096c2515597ab7f9ef78dfaec7",
+            "sha256": "1effe171e6452d474110a148317d9ba4c6803a0c6400224870d495e82acc21b0",
+            "width": 64,
+            "height": 64,
+            "visually_inspected": true,
+            "reference_conversion": "Frame 0 decoded from IDSP version 2 sprite. Original palette retained. Index-alpha uses palette entry 255 RGB and pixel index alpha; additive sprites are previewed on their original black background, not mistaken for a gameplay backdrop.",
+            "scope": "Original demo resource preview; community reference implementation maps the same resource name to the OP4 target. Retail binary identity, exact tint/compositing and temporal state not certified."
+          }
+        ],
+        "source_type": "identified_external_reference_or_resource_preview",
+        "scope": "Références inspectées; version, rôle, degré d’attribution et limites dans le registre. Des prévisualisations locales de ressources miroir et des concepts publiés peuvent servir à une étude candidate sans certifier la version retail ou une apparence finale.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "reference_status": "reference_images_inspected_candidate_unvalidated",
       "effect_kind": "projectile",
       "effect_kind_provisional": true,
       "projectile_class": null,
@@ -23470,30 +24084,52 @@
       "runtime_enabled_declared": false,
       "target_certified_one_to_one_declared": false,
       "required_layer_ids": [],
-      "actual_assets": [],
+      "actual_assets": [
+        {
+          "asset_id": "proj_gene_worm_spit_opfor_cloud_resource_study_l",
+          "repository_path": "assets/resonance/candidates/continuation_20261125_l/goldsrc/proj_gene_worm_spit_opfor_cloud_resource_study_l.png",
+          "byte_size_actual": 523615,
+          "category": "projectile_key_frame",
+          "layer_id": null,
+          "visual_state_id": "body",
+          "visual_state": null,
+          "selected_for_next_review": true,
+          "revision_of": null,
+          "superseded_by": null,
+          "qa_status": "candidat à vérifier",
+          "certified_one_to_one_declared": false,
+          "animation_clip_complete_declared": false,
+          "integrated_in_game_declared": false,
+          "association": "explicit_target_id"
+        }
+      ],
       "refused_requests": [],
       "tool_error_requests": [],
       "output_unavailable_requests": [],
       "other_unproduced_requests": [],
-      "actual_file_count": 0,
-      "selected_candidate_file_count": 0,
-      "selected_candidate_asset_ids": [],
+      "actual_file_count": 1,
+      "selected_candidate_file_count": 1,
+      "selected_candidate_asset_ids": [
+        "proj_gene_worm_spit_opfor_cloud_resource_study_l"
+      ],
       "master_candidate_count": 0,
       "selected_master_candidate_count": 0,
       "layer_candidate_count": 0,
-      "candidate_visual_state_ids": [],
-      "selected_visual_state_ids": [],
+      "candidate_visual_state_ids": [
+        "body"
+      ],
+      "selected_visual_state_ids": [
+        "body"
+      ],
       "missing_visual_state_ids": [
-        "body",
         "impact"
       ],
       "visual_state_files_without_id_count": 0,
       "certified_asset_count_declared": 0,
-      "production_status": "no_file",
+      "production_status": "candidate_files_present_work_remaining",
       "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
       "next_work": [
-        "Ajouter des captures du modèle ou du lieu exact et vérifier les invariants visuels.",
-        "Produire une première image candidate individuelle après fixation des références.",
+        "Comparer chaque candidat aux références et corriger les écarts avant validation 1:1.",
         "Produire séparément corps, traînée, impact et variantes indiquées; attribuer un visual_state_id exact à chaque fichier.",
         "Vérifier le type d’effet et sa séquence dans le jeu source avant de fixer le contrat visuel.",
         "Vérifier alpha, couleurs, durée, orientation et interaction avant intégration; une image ne termine pas une famille."
@@ -27759,8 +28395,30 @@
           "reference_status": "context_only_visual_capture_required"
         }
       ],
-      "reference_capture": null,
-      "reference_status": "exact_visual_reference_pending",
+      "reference_capture": {
+        "batch_id": "continuation_20261125_l",
+        "checked_on": "2026-11-25",
+        "reference_images": [
+          {
+            "source_page": "https://combineoverwiki.net/wiki/File:HLA_NorthernStar02.jpg.jpg",
+            "source_url": "https://combineoverwiki.net/images/3/34/HLA_NorthernStar02.jpg.jpg",
+            "local_reference_path": "/tmp/resonance-l-source-fx/refs/reviver_northernstar.jpg",
+            "sha256": "702dff699d94aa6afc13fd9f241d592d4e6b3fe98314e46cc7aea43e45b9bd4b",
+            "width": 1920,
+            "height": 1080,
+            "visually_inspected": true,
+            "source_game": "Half-Life: Alyx",
+            "map": "a3_hotel_lobby_basement",
+            "kind": "community_hosted_original_game_capture",
+            "inspection_notes": "Reviver libre suspendu dans la cage d’ascenseur, arcs cyan/blanc visibles autour de lui et le long de la grille. Aucun zombie hôte. La scène documente une décharge environnementale de l’introduction; elle ne prouve pas un rayon offensif dirigé. Métadonnées du fichier : Photoshop CC 2019, aucune certification de framebuffer brut."
+          }
+        ],
+        "source_type": "identified_external_reference_or_resource_preview",
+        "scope": "Références inspectées; version, rôle, degré d’attribution et limites dans le registre. Des prévisualisations locales de ressources miroir et des concepts publiés peuvent servir à une étude candidate sans certifier la version retail ou une apparence finale.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "reference_status": "reference_images_inspected_candidate_unvalidated",
       "effect_kind": "beam",
       "effect_kind_provisional": true,
       "projectile_class": null,
@@ -27776,31 +28434,53 @@
       "runtime_enabled_declared": false,
       "target_certified_one_to_one_declared": false,
       "required_layer_ids": [],
-      "actual_assets": [],
+      "actual_assets": [
+        {
+          "asset_id": "fx_reviver_discharge_hla_discharge_l",
+          "repository_path": "assets/resonance/candidates/continuation_20261125_l/source_fx/fx_reviver_discharge_hla_discharge_l.png",
+          "byte_size_actual": 315218,
+          "category": "projectile_key_frame",
+          "layer_id": null,
+          "visual_state_id": "discharge",
+          "visual_state": null,
+          "selected_for_next_review": true,
+          "revision_of": null,
+          "superseded_by": null,
+          "qa_status": "candidat inspecté, fidélité à valider",
+          "certified_one_to_one_declared": false,
+          "animation_clip_complete_declared": false,
+          "integrated_in_game_declared": false,
+          "association": "explicit_target_id"
+        }
+      ],
       "refused_requests": [],
       "tool_error_requests": [],
       "output_unavailable_requests": [],
       "other_unproduced_requests": [],
-      "actual_file_count": 0,
-      "selected_candidate_file_count": 0,
-      "selected_candidate_asset_ids": [],
+      "actual_file_count": 1,
+      "selected_candidate_file_count": 1,
+      "selected_candidate_asset_ids": [
+        "fx_reviver_discharge_hla_discharge_l"
+      ],
       "master_candidate_count": 0,
       "selected_master_candidate_count": 0,
       "layer_candidate_count": 0,
-      "candidate_visual_state_ids": [],
-      "selected_visual_state_ids": [],
+      "candidate_visual_state_ids": [
+        "discharge"
+      ],
+      "selected_visual_state_ids": [
+        "discharge"
+      ],
       "missing_visual_state_ids": [
         "charge",
-        "discharge",
         "impact"
       ],
       "visual_state_files_without_id_count": 0,
       "certified_asset_count_declared": 0,
-      "production_status": "no_file",
+      "production_status": "candidate_files_present_work_remaining",
       "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
       "next_work": [
-        "Ajouter des captures du modèle ou du lieu exact et vérifier les invariants visuels.",
-        "Produire une première image candidate individuelle après fixation des références.",
+        "Comparer chaque candidat aux références et corriger les écarts avant validation 1:1.",
         "Produire séparément corps, traînée, impact et variantes indiquées; attribuer un visual_state_id exact à chaque fichier.",
         "Vérifier le type d’effet et sa séquence dans le jeu source avant de fixer le contrat visuel.",
         "Respecter le faisceau ou la zone; un effet continu ne devient pas une boule mobile.",
@@ -28346,8 +29026,29 @@
           "reference_status": null
         }
       ],
-      "reference_capture": null,
-      "reference_status": "exact_visual_capture_required",
+      "reference_capture": {
+        "batch_id": "continuation_20261125_l",
+        "checked_on": "2026-11-25",
+        "reference_images": [
+          {
+            "source_page": "https://www.patricklipo.com/2008/06/19/weapons-of-awesome-power-and-some-less-so/",
+            "source_url": "https://www.patricklipo.com/wp-content/uploads/2008/06/hl2-pistol.jpg",
+            "local_reference_path": "/tmp/resonance-l-source-fx/refs/pistol_lipo.jpg",
+            "sha256": "42a651c0e2747224f60b68cc2487c2fda67fb8d96f9cc3c2015df619c6b77666",
+            "width": 256,
+            "height": 170,
+            "visually_inspected": true,
+            "source_game": "Half-Life 2",
+            "kind": "author_captured_retail_gameplay_frame",
+            "inspection_notes": "Capture personnelle de gameplay publiée en 2008 par Patrick Lipo, article précisant Half-Life 2 PC (2004). Pistolet reconnaissable au premier plan et flash blanc-jaune/orange au bout du canon. Image native 256×170 : couleurs et grandes masses visibles seulement; détails fins, alpha exact et chronologie non fixés."
+          }
+        ],
+        "source_type": "identified_external_reference_or_resource_preview",
+        "scope": "Références inspectées; version, rôle, degré d’attribution et limites dans le registre. Des prévisualisations locales de ressources miroir et des concepts publiés peuvent servir à une étude candidate sans certifier la version retail ou une apparence finale.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "reference_status": "reference_images_inspected_candidate_unvalidated",
       "effect_kind": "instant_trace",
       "effect_kind_provisional": false,
       "projectile_class": "hitscan_trace",
@@ -28387,32 +29088,54 @@
       "runtime_enabled_declared": false,
       "target_certified_one_to_one_declared": false,
       "required_layer_ids": [],
-      "actual_assets": [],
+      "actual_assets": [
+        {
+          "asset_id": "fx_pistol_fire_hl2_muzzle_l",
+          "repository_path": "assets/resonance/candidates/continuation_20261125_l/source_fx/fx_pistol_fire_hl2_muzzle_l.png",
+          "byte_size_actual": 1260524,
+          "category": "projectile_key_frame",
+          "layer_id": null,
+          "visual_state_id": "muzzle",
+          "visual_state": null,
+          "selected_for_next_review": true,
+          "revision_of": null,
+          "superseded_by": null,
+          "qa_status": "candidat inspecté, fidélité à valider",
+          "certified_one_to_one_declared": false,
+          "animation_clip_complete_declared": false,
+          "integrated_in_game_declared": false,
+          "association": "explicit_target_id"
+        }
+      ],
       "refused_requests": [],
       "tool_error_requests": [],
       "output_unavailable_requests": [],
       "other_unproduced_requests": [],
-      "actual_file_count": 0,
-      "selected_candidate_file_count": 0,
-      "selected_candidate_asset_ids": [],
+      "actual_file_count": 1,
+      "selected_candidate_file_count": 1,
+      "selected_candidate_asset_ids": [
+        "fx_pistol_fire_hl2_muzzle_l"
+      ],
       "master_candidate_count": 0,
       "selected_master_candidate_count": 0,
       "layer_candidate_count": 0,
-      "candidate_visual_state_ids": [],
-      "selected_visual_state_ids": [],
+      "candidate_visual_state_ids": [
+        "muzzle"
+      ],
+      "selected_visual_state_ids": [
+        "muzzle"
+      ],
       "missing_visual_state_ids": [
-        "muzzle",
         "trace_if_visible_in_reference",
         "impact",
         "fade"
       ],
       "visual_state_files_without_id_count": 0,
       "certified_asset_count_declared": 0,
-      "production_status": "no_file",
+      "production_status": "candidate_files_present_work_remaining",
       "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
       "next_work": [
-        "Ajouter des captures du modèle ou du lieu exact et vérifier les invariants visuels.",
-        "Produire une première image candidate individuelle après fixation des références.",
+        "Comparer chaque candidat aux références et corriger les écarts avant validation 1:1.",
         "Produire séparément corps, traînée, impact et variantes indiquées; attribuer un visual_state_id exact à chaque fichier.",
         "Conserver un tir instantané; le traceur visuel ne devient pas un projectile lent.",
         "Vérifier alpha, couleurs, durée, orientation et interaction avant intégration; une image ne termine pas une famille."

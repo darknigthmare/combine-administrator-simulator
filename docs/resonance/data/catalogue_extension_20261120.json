@@ -1294,6 +1294,23 @@
         "certified_one_to_one": false,
         "completed_animation": false,
         "runtime_added": false
+      },
+      "production_review_20261125_l": {
+        "target_id": "fisherman_lostcoast",
+        "outcome": "retained_historical_refusal",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "new_generation_call_count": 0,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [
+          "fisherman_lostcoast_idle_k"
+        ],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
       }
     },
     {
@@ -2476,6 +2493,24 @@
         "certified_one_to_one": false,
         "completed_animation": false,
         "runtime_added": false
+      },
+      "production_review_20261125_l": {
+        "target_id": "atlas_portal2",
+        "outcome": "retained_historical_refusal",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "new_generation_call_count": 0,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [
+          "atlas_portal2_idle_c",
+          "atlas_portal2_idle_k"
+        ],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
       }
     },
     {
@@ -2538,6 +2573,24 @@
           "pbody_portal2_idle_k"
         ],
         "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "production_review_20261125_l": {
+        "target_id": "pbody_portal2",
+        "outcome": "retained_historical_refusal",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "new_generation_call_count": 0,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [
+          "pbody_portal2_idle_c",
+          "pbody_portal2_idle_k"
+        ],
         "deferred": null,
         "certified_one_to_one": false,
         "completed_animation": false,
@@ -2605,6 +2658,24 @@
           "wheatley_core_portal2_idle_k"
         ],
         "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "production_review_20261125_l": {
+        "target_id": "wheatley_core_portal2",
+        "outcome": "retained_historical_refusal",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "new_generation_call_count": 0,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [
+          "wheatley_core_portal2_idle_c",
+          "wheatley_core_portal2_idle_k"
+        ],
         "deferred": null,
         "certified_one_to_one": false,
         "completed_animation": false,
@@ -2881,6 +2952,23 @@
         "certified_one_to_one": false,
         "completed_animation": false,
         "runtime_added": false
+      },
+      "production_review_20261125_l": {
+        "target_id": "armored_headcrab_hla",
+        "outcome": "retained_historical_refusal",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "new_generation_call_count": 0,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [
+          "armored_headcrab_hla_idle_k"
+        ],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
       }
     },
     {
@@ -2937,6 +3025,23 @@
           "space_core_portal2_idle_k"
         ],
         "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "production_review_20261125_l": {
+        "target_id": "space_core_portal2",
+        "outcome": "retained_historical_refusal",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "new_generation_call_count": 0,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [
+          "space_core_portal2_idle_k"
+        ],
         "deferred": null,
         "certified_one_to_one": false,
         "completed_animation": false,
@@ -3059,6 +3164,23 @@
           "fact_core_portal2_idle_k"
         ],
         "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "production_review_20261125_l": {
+        "target_id": "fact_core_portal2",
+        "outcome": "retained_historical_refusal",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "new_generation_call_count": 0,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [
+          "fact_core_portal2_idle_k"
+        ],
         "deferred": null,
         "certified_one_to_one": false,
         "completed_animation": false,
@@ -4477,7 +4599,37 @@
           "parallax": 1.1,
           "production_status": "planned_not_generated"
         }
-      ]
+      ],
+      "layer_production_review_20261125_l": {
+        "target_id": "STG_EXT_PORTAL2_TURRET_FACTORY",
+        "batch_id": "continuation_20261125_l",
+        "new_asset_ids": [
+          "layer_portal2_turret_factory_assembly_line_l",
+          "layer_portal2_turret_factory_atmosphere_l",
+          "layer_portal2_turret_factory_distant_trusses_l",
+          "layer_portal2_turret_factory_foreground_edge_l",
+          "layer_portal2_turret_factory_industrial_walls_l"
+        ],
+        "new_candidate_layer_ids": [
+          "L1",
+          "L2",
+          "L3",
+          "L4",
+          "L6"
+        ],
+        "existing_candidate_layer_ids": [
+          "L5"
+        ],
+        "all_six_candidate_ids_present": true,
+        "completed_six_layer_stage": false,
+        "runtime_enabled": false,
+        "review_document": "docs/resonance/production/continuation_20261125_l/layer_reference_review.md",
+        "remaining_work": [
+          "Corriger les détails perdus du puits droit.",
+          "Séparer les câbles et la façade L5/L6 avant parallaxe.",
+          "Harmoniser le maître, puis vérifier raccords et mouvement."
+        ]
+      }
     },
     {
       "id": "STG_EXT_PORTAL2_COOP_HUB",
@@ -4892,6 +5044,23 @@
           "cave_head_deskjob_idle_k"
         ],
         "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "production_review_20261125_l": {
+        "target_id": "cave_head_deskjob",
+        "outcome": "retained_historical_refusal",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "new_generation_call_count": 0,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [
+          "cave_head_deskjob_idle_k"
+        ],
         "deferred": null,
         "certified_one_to_one": false,
         "completed_animation": false,
@@ -5354,9 +5523,39 @@
       "source_ids": [
         "hl2_dev"
       ],
-      "reference_capture": null,
-      "visual_reference_status": "capture_required",
-      "generation_status": "deferred_reference_or_generation_gate",
+      "reference_capture": {
+        "batch_id": "continuation_20261125_l",
+        "checked_on": "2026-11-25",
+        "reference_images": [
+          {
+            "id": "airex_reactor_rtb2004",
+            "url": "https://combineoverwiki.net/images/6/6a/Airex_reactor.jpg",
+            "source_url": "https://combineoverwiki.net/images/6/6a/Airex_reactor.jpg",
+            "kind": "secondary_hosted_concept_image",
+            "reference_role": "Single complete Air Exchange reactor concept. Publication version fixed to Raising the Bar 2004, not a development-map screenshot.",
+            "local_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/stages/refs/Airex_reactor.jpg",
+            "byte_size": 571748,
+            "sha256": "415fdc27851be730308368bb583a369ffb3a7da8bdbfbc053ccafaa17f190cf3",
+            "visually_inspected": true,
+            "width": 800,
+            "height": 517,
+            "color_mode": "RGB",
+            "source_page": "https://combineoverwiki.net/wiki/File:Airex_reactor.jpg",
+            "attribution": "Viktor Antonov, as recorded on the image page",
+            "publication_year": 2004,
+            "creation_date": null,
+            "printed_page_directly_inspected": false,
+            "printed_page_note": "Air Exchange article cites p.174 generally; exact placement of this illustration not directly checked.",
+            "reused_from_batch": "continuation_20261125_k"
+          }
+        ],
+        "source_type": "identified_external_reference_or_resource_preview",
+        "scope": "Références inspectées; version, rôle, degré d’attribution et limites dans le registre. Des prévisualisations locales de ressources miroir et des concepts publiés peuvent servir à une étude candidate sans certifier la version retail ou une apparence finale.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated",
+      "generation_status": "candidate_pngs_present",
       "runtime_enabled": false,
       "certified_one_to_one": false,
       "implementation_status": "catalogued_not_implemented",
@@ -5367,8 +5566,9 @@
         "target_id": "archive_air_exchange_hl2",
         "scope": "deferred_evidence_dossier",
         "native_reference_capture_acquired": false,
-        "new_archive_candidate_produced": false,
-        "review_note": "Contrat documentaire; aucune capture de référence approuvée, apparence certifiée ou activation moteur déduite de cette fiche."
+        "new_archive_candidate_produced": true,
+        "review_note": "Lot L : étude statique candidate ajoutée, version et plage documentaire explicites. Repères échantillonnés distingués des timecodes exacts; les animations, l’opacité fidèle et l’intégration restent à valider.",
+        "external_reference_images_inspected": true
       },
       "production_review_20261125_k": {
         "target_id": "archive_air_exchange_hl2",
@@ -5421,6 +5621,25 @@
           "source_partial_register": "docs/resonance/production/continuation_20261125_k/stage_generation.json",
           "batch_id": "continuation_20261125_k"
         },
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "production_review_20261125_l": {
+        "target_id": "archive_air_exchange_hl2",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "archive_air_exchange_hl2_concept_rtb2004_master_l"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_l/archives/archive_air_exchange_hl2_concept_rtb2004_master_l.png"
+        ],
+        "new_generation_call_count": 1,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [],
+        "deferred": null,
         "certified_one_to_one": false,
         "completed_animation": false,
         "runtime_added": false
@@ -5508,9 +5727,84 @@
         "blob",
         "hl2doc"
       ],
-      "reference_capture": null,
-      "visual_reference_status": "capture_required",
-      "generation_status": "deferred_reference_or_generation_gate",
+      "reference_capture": {
+        "batch_id": "continuation_20261125_l",
+        "checked_on": "2026-11-25",
+        "reference_images": [
+          {
+            "id": "blob_grate_documentary_frame",
+            "url": "https://combineoverwiki.net/images/1/16/BlobGratePass.jpg",
+            "source_url": "https://combineoverwiki.net/images/1/16/BlobGratePass.jpg",
+            "kind": "secondary_hosted_documentary_frame",
+            "reference_role": "Full published 16:9 documentary-frame copy, source HUD retained in reference. Inspected against official storyboard scene; not an exact frame match.",
+            "local_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_blob_ep3_grate.jpg",
+            "byte_size": 958744,
+            "sha256": "847ad4a5848688323b31c02a7b70d0593c26c3e9b47116556f90015cd3a3c9c5",
+            "visually_inspected": true,
+            "width": 3840,
+            "height": 2160,
+            "color_mode": "RGB",
+            "source_page": "https://combineoverwiki.net/wiki/File:BlobGratePass.jpg",
+            "frame_correspondence": "same_demo_scene_not_exact_frame",
+            "exact_frame_extraction_time_verified": false,
+            "native_game_resolution_verified": false,
+            "primary_original_bytes_verified": false,
+            "reused_from_batch": "continuation_20261125_k"
+          },
+          {
+            "id": "blob_documentary_frame",
+            "url": "https://combineoverwiki.net/images/7/79/BlobCinderNom.jpg",
+            "source_url": "https://combineoverwiki.net/images/7/79/BlobCinderNom.jpg",
+            "kind": "secondary_hosted_documentary_frame",
+            "reference_role": "Full published 16:9 documentary-frame copy, source HUD retained in reference. Inspected against official storyboard scene; not an exact frame match.",
+            "local_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_blob_ep3.jpg",
+            "byte_size": 970400,
+            "sha256": "f1d3da5f71c39a0b08b75cca238124a3c6155afda660089661e31455e75b3fc8",
+            "visually_inspected": true,
+            "width": 3840,
+            "height": 2160,
+            "color_mode": "RGB",
+            "source_page": "https://combineoverwiki.net/wiki/File:BlobCinderNom.jpg",
+            "frame_correspondence": "same_demo_scene_not_exact_frame",
+            "exact_frame_extraction_time_verified": false,
+            "native_game_resolution_verified": false,
+            "primary_original_bytes_verified": false,
+            "reused_from_batch": "continuation_20261125_k"
+          },
+          {
+            "id": "official_storyboard_76",
+            "url": "https://i.ytimg.com/sb/YCjNT9qGjh4/storyboard3_L3/M76.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCJLb3rkG&sigh=rs$AOn4CLA_Lh59Vw_RYGWmTop34CZjIuiEJg",
+            "source_url": "https://i.ytimg.com/sb/YCjNT9qGjh4/storyboard3_L3/M76.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCJLb3rkG&sigh=rs$AOn4CLA_Lh59Vw_RYGWmTop34CZjIuiEJg",
+            "kind": "primary_official_storyboard",
+            "reference_role": "Visual scene correspondence and 10-second navigation samples only.",
+            "local_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/YCjNT9qGjh4_storyboard_76.jpg",
+            "byte_size": 48884,
+            "sha256": "2fff2f65446579aa5f1841156a3cf91fd103fd1c8052456af4a475b715c012f3",
+            "visually_inspected": true,
+            "width": 960,
+            "height": 540,
+            "color_mode": "RGB",
+            "sheet_number": 76,
+            "grid": [
+              3,
+              3
+            ],
+            "tile_pixels": [
+              320,
+              180
+            ],
+            "sampling_interval_seconds": 10,
+            "same_sha256_as_20261120_contract": true,
+            "exact_frame_extraction_time_verified": false
+          }
+        ],
+        "source_type": "identified_external_reference_or_resource_preview",
+        "scope": "Références inspectées; version, rôle, degré d’attribution et limites dans le registre. Des prévisualisations locales de ressources miroir et des concepts publiés peuvent servir à une étude candidate sans certifier la version retail ou une apparence finale.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated",
+      "generation_status": "candidate_pngs_present",
       "runtime_enabled": false,
       "certified_one_to_one": false,
       "implementation_status": "documentary_contract_not_implemented",
@@ -5521,8 +5815,9 @@
         "target_id": "archive_blob_ep3",
         "scope": "detailed_profile",
         "native_reference_capture_acquired": false,
-        "new_archive_candidate_produced": false,
-        "review_note": "Contrat documentaire; aucune capture de référence approuvée, apparence certifiée ou activation moteur déduite de cette fiche."
+        "new_archive_candidate_produced": true,
+        "review_note": "Lot L : étude statique candidate ajoutée, version et plage documentaire explicites. Repères échantillonnés distingués des timecodes exacts; les animations, l’opacité fidèle et l’intégration restent à valider.",
+        "external_reference_images_inspected": true
       },
       "design_profile_path": "docs/resonance/data/archive_reference_contracts_20261120.json",
       "production_review_20261125_k": {
@@ -5604,6 +5899,25 @@
         "certified_one_to_one": false,
         "completed_animation": false,
         "runtime_added": false
+      },
+      "production_review_20261125_l": {
+        "target_id": "archive_blob_ep3",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "archive_blob_ep3_envelope_pose_l"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_l/archives/archive_blob_ep3_envelope_pose_l.png"
+        ],
+        "new_generation_call_count": 1,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
       }
     },
     {
@@ -5620,9 +5934,110 @@
         "icegun",
         "hl2doc"
       ],
-      "reference_capture": null,
-      "visual_reference_status": "capture_required",
-      "generation_status": "deferred_reference_or_generation_gate",
+      "reference_capture": {
+        "batch_id": "continuation_20261125_l",
+        "checked_on": "2026-11-25",
+        "reference_images": [
+          {
+            "id": "ice_documentary_frame",
+            "url": "https://combineoverwiki.net/images/c/cd/IceGunInAction.jpg",
+            "source_url": "https://combineoverwiki.net/images/c/cd/IceGunInAction.jpg",
+            "kind": "secondary_hosted_documentary_frame",
+            "reference_role": "Full published 16:9 documentary-frame copy, source HUD retained in reference. Inspected against official storyboard scene; not an exact frame match.",
+            "local_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_icegun_ep3.jpg",
+            "byte_size": 926378,
+            "sha256": "33497d19e7e1b17714598ff693c6bf972db36604f898f0c09aeb383c0f0cc5eb",
+            "visually_inspected": true,
+            "width": 3840,
+            "height": 2160,
+            "color_mode": "RGB",
+            "source_page": "https://combineoverwiki.net/wiki/File:IceGunInAction.jpg",
+            "frame_correspondence": "same_demo_scene_not_exact_frame",
+            "exact_frame_extraction_time_verified": false,
+            "native_game_resolution_verified": false,
+            "primary_original_bytes_verified": false,
+            "reused_from_batch": "continuation_20261125_k"
+          },
+          {
+            "id": "ice_ramp_documentary_frame",
+            "url": "https://combineoverwiki.net/images/b/ba/IceGunRamp.jpg",
+            "source_url": "https://combineoverwiki.net/images/b/ba/IceGunRamp.jpg",
+            "kind": "secondary_hosted_documentary_frame",
+            "reference_role": "Full published 16:9 documentary-frame copy, source HUD retained in reference. Inspected against official storyboard scene; not an exact frame match.",
+            "local_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_icegun_ep3_ramp.jpg",
+            "byte_size": 1012928,
+            "sha256": "45e2d7b8744b81e4a01a46e30617d5408edd4fe44d571b56f727f3e496a107e5",
+            "visually_inspected": true,
+            "width": 3840,
+            "height": 2160,
+            "color_mode": "RGB",
+            "source_page": "https://combineoverwiki.net/wiki/File:IceGunRamp.jpg",
+            "frame_correspondence": "same_demo_scene_not_exact_frame",
+            "exact_frame_extraction_time_verified": false,
+            "native_game_resolution_verified": false,
+            "primary_original_bytes_verified": false,
+            "reused_from_batch": "continuation_20261125_k"
+          },
+          {
+            "id": "official_storyboard_75",
+            "url": "https://i.ytimg.com/sb/YCjNT9qGjh4/storyboard3_L3/M75.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCJLb3rkG&sigh=rs$AOn4CLA_Lh59Vw_RYGWmTop34CZjIuiEJg",
+            "source_url": "https://i.ytimg.com/sb/YCjNT9qGjh4/storyboard3_L3/M75.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCJLb3rkG&sigh=rs$AOn4CLA_Lh59Vw_RYGWmTop34CZjIuiEJg",
+            "kind": "primary_official_storyboard",
+            "reference_role": "Visual scene correspondence and 10-second navigation samples only.",
+            "local_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/YCjNT9qGjh4_storyboard_75.jpg",
+            "byte_size": 51380,
+            "sha256": "c409169b14a125eed5758045a52e53ecc426ea5918a8508dcea5091ce8956005",
+            "visually_inspected": true,
+            "width": 960,
+            "height": 540,
+            "color_mode": "RGB",
+            "sheet_number": 75,
+            "grid": [
+              3,
+              3
+            ],
+            "tile_pixels": [
+              320,
+              180
+            ],
+            "sampling_interval_seconds": 10,
+            "same_sha256_as_20261120_contract": true,
+            "exact_frame_extraction_time_verified": false
+          },
+          {
+            "id": "official_storyboard_76",
+            "url": "https://i.ytimg.com/sb/YCjNT9qGjh4/storyboard3_L3/M76.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCJLb3rkG&sigh=rs$AOn4CLA_Lh59Vw_RYGWmTop34CZjIuiEJg",
+            "source_url": "https://i.ytimg.com/sb/YCjNT9qGjh4/storyboard3_L3/M76.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCJLb3rkG&sigh=rs$AOn4CLA_Lh59Vw_RYGWmTop34CZjIuiEJg",
+            "kind": "primary_official_storyboard",
+            "reference_role": "Visual scene correspondence and 10-second navigation samples only.",
+            "local_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/YCjNT9qGjh4_storyboard_76.jpg",
+            "byte_size": 48884,
+            "sha256": "2fff2f65446579aa5f1841156a3cf91fd103fd1c8052456af4a475b715c012f3",
+            "visually_inspected": true,
+            "width": 960,
+            "height": 540,
+            "color_mode": "RGB",
+            "sheet_number": 76,
+            "grid": [
+              3,
+              3
+            ],
+            "tile_pixels": [
+              320,
+              180
+            ],
+            "sampling_interval_seconds": 10,
+            "same_sha256_as_20261120_contract": true,
+            "exact_frame_extraction_time_verified": false
+          }
+        ],
+        "source_type": "identified_external_reference_or_resource_preview",
+        "scope": "Références inspectées; version, rôle, degré d’attribution et limites dans le registre. Des prévisualisations locales de ressources miroir et des concepts publiés peuvent servir à une étude candidate sans certifier la version retail ou une apparence finale.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated",
+      "generation_status": "candidate_pngs_present",
       "runtime_enabled": false,
       "certified_one_to_one": false,
       "implementation_status": "documentary_contract_not_implemented",
@@ -5633,8 +6048,9 @@
         "target_id": "archive_icegun_ep3",
         "scope": "detailed_profile",
         "native_reference_capture_acquired": false,
-        "new_archive_candidate_produced": false,
-        "review_note": "Contrat documentaire; aucune capture de référence approuvée, apparence certifiée ou activation moteur déduite de cette fiche."
+        "new_archive_candidate_produced": true,
+        "review_note": "Lot L : étude statique candidate ajoutée, version et plage documentaire explicites. Repères échantillonnés distingués des timecodes exacts; les animations, l’opacité fidèle et l’intégration restent à valider.",
+        "external_reference_images_inspected": true
       },
       "design_profile_path": "docs/resonance/data/archive_reference_contracts_20261120.json",
       "production_review_20261125_k": {
@@ -5716,6 +6132,25 @@
         "certified_one_to_one": false,
         "completed_animation": false,
         "runtime_added": false
+      },
+      "production_review_20261125_l": {
+        "target_id": "archive_icegun_ep3",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "archive_icegun_ep3_ice_mass_l"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_l/archives/archive_icegun_ep3_ice_mass_l.png"
+        ],
+        "new_generation_call_count": 1,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
       }
     },
     {
@@ -5732,9 +6167,73 @@
         "hl2doc",
         "hl220"
       ],
-      "reference_capture": null,
-      "visual_reference_status": "capture_required",
-      "generation_status": "deferred_reference_or_generation_gate",
+      "reference_capture": {
+        "batch_id": "continuation_20261125_l",
+        "checked_on": "2026-11-25",
+        "reference_images": [
+          {
+            "id": "arctic_concept05",
+            "url": "https://combineoverwiki.net/images/4/46/HL2Doc_Ep3_Concept05.jpg",
+            "source_url": "https://combineoverwiki.net/images/4/46/HL2Doc_Ep3_Concept05.jpg",
+            "kind": "secondary_hosted_concept_image",
+            "reference_role": "Entire visible concept crop, matched to official storyboard sample 6800 s; not the whole encoded documentary frame.",
+            "local_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/HL2Doc_Ep3_Concept05.jpg",
+            "byte_size": 857509,
+            "sha256": "ce3be1d021d4613276952561fe30a0939e3a543b5b6172a09ffc779e13e42517",
+            "visually_inspected": true,
+            "width": 2669,
+            "height": 1674,
+            "color_mode": "RGB",
+            "source_page": "https://combineoverwiki.net/wiki/File:HL2Doc_Ep3_Concept05.jpg",
+            "concept_signature_visible": true,
+            "secondary_signature_transcription": "GBabbar 08.17.05",
+            "secondary_author_attribution": "Gautam Babbar",
+            "secondary_page_revision": 477708,
+            "whole_documentary_frame": false,
+            "full_concept_content_visible": true,
+            "primary_original_bytes_verified": false,
+            "exact_frame_extraction_time_verified": false,
+            "storyboard_sample_seconds": 6800,
+            "storyboard_sample_precision_seconds": 10,
+            "scene_context_window_seconds": [
+              6790,
+              6810
+            ]
+          },
+          {
+            "id": "official_storyboard_75",
+            "url": "https://i.ytimg.com/sb/YCjNT9qGjh4/storyboard3_L3/M75.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCJLb3rkG&sigh=rs$AOn4CLA_Lh59Vw_RYGWmTop34CZjIuiEJg",
+            "source_url": "https://i.ytimg.com/sb/YCjNT9qGjh4/storyboard3_L3/M75.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCJLb3rkG&sigh=rs$AOn4CLA_Lh59Vw_RYGWmTop34CZjIuiEJg",
+            "kind": "primary_official_storyboard",
+            "reference_role": "Visual scene correspondence and 10-second navigation samples only.",
+            "local_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/YCjNT9qGjh4_storyboard_75.jpg",
+            "byte_size": 51380,
+            "sha256": "c409169b14a125eed5758045a52e53ecc426ea5918a8508dcea5091ce8956005",
+            "visually_inspected": true,
+            "width": 960,
+            "height": 540,
+            "color_mode": "RGB",
+            "sheet_number": 75,
+            "grid": [
+              3,
+              3
+            ],
+            "tile_pixels": [
+              320,
+              180
+            ],
+            "sampling_interval_seconds": 10,
+            "same_sha256_as_20261120_contract": true,
+            "exact_frame_extraction_time_verified": false
+          }
+        ],
+        "source_type": "identified_external_reference_or_resource_preview",
+        "scope": "Références inspectées; version, rôle, degré d’attribution et limites dans le registre. Des prévisualisations locales de ressources miroir et des concepts publiés peuvent servir à une étude candidate sans certifier la version retail ou une apparence finale.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated",
+      "generation_status": "candidate_pngs_present",
       "runtime_enabled": false,
       "certified_one_to_one": false,
       "implementation_status": "documentary_contract_not_implemented",
@@ -5745,8 +6244,9 @@
         "target_id": "archive_arctic_ep3",
         "scope": "detailed_profile",
         "native_reference_capture_acquired": false,
-        "new_archive_candidate_produced": false,
-        "review_note": "Contrat documentaire; aucune capture de référence approuvée, apparence certifiée ou activation moteur déduite de cette fiche."
+        "new_archive_candidate_produced": true,
+        "review_note": "Lot L : étude statique candidate ajoutée, version et plage documentaire explicites. Repères échantillonnés distingués des timecodes exacts; les animations, l’opacité fidèle et l’intégration restent à valider.",
+        "external_reference_images_inspected": true
       },
       "design_profile_path": "docs/resonance/data/archive_reference_contracts_20261120.json",
       "production_review_20261125_k": {
@@ -5796,6 +6296,25 @@
           "source_partial_register": "docs/resonance/production/continuation_20261125_k/stage_generation.json",
           "batch_id": "continuation_20261125_k"
         },
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "production_review_20261125_l": {
+        "target_id": "archive_arctic_ep3",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "archive_arctic_ep3_concept05_master_l"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_l/archives/archive_arctic_ep3_concept05_master_l.png"
+        ],
+        "new_generation_call_count": 1,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [],
+        "deferred": null,
         "certified_one_to_one": false,
         "completed_animation": false,
         "runtime_added": false

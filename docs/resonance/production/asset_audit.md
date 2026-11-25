@@ -1,25 +1,25 @@
 # Audit des fichiers de production — Half Life Resonance
 
-Exécuté le 2026-11-25T06:29:27.115Z. Résultat : **réussi**.
+Exécuté le 2026-11-25T07:11:25.643Z. Résultat : **réussi**.
 
 Le comptage porte sur les fichiers présents dans le dépôt au moment du contrôle. Les déclarations des anciennes conversations ne créent aucune entrée ni aucun fichier.
 
 | Mesure | Nombre |
 |---|---:|
-| actual_png_files | 271 |
-| valid_png_headers | 271 |
-| distinct_png_contents | 271 |
-| requests | 323 |
-| generated_requests | 271 |
-| generated_requests_with_verified_file | 271 |
+| actual_png_files | 286 |
+| valid_png_headers | 286 |
+| distinct_png_contents | 286 |
+| requests | 338 |
+| generated_requests | 286 |
+| generated_requests_with_verified_file | 286 |
 | blocked_requests | 36 |
 | tool_error_requests | 4 |
 | output_unavailable_requests | 12 |
 | unproduced_requests | 40 |
 | unclassified_requests | 0 |
-| requests_with_files | 271 |
+| requests_with_files | 286 |
 | requests_without_files | 52 |
-| registered_png_files | 271 |
+| registered_png_files | 286 |
 | unregistered_png_files | 0 |
 | certified_one_to_one_declared | 0 |
 | certified_one_to_one_with_verified_file | 0 |
@@ -300,6 +300,21 @@ Présence, SHA-256, taille et en-tête PNG sont vérifiés. Le script ne décode
 | assets/resonance/candidates/continuation_20261125_k/stages/stage_portal2_human_vault_master_k.png | 1672 × 941 | 2168305 | oui |
 | assets/resonance/candidates/continuation_20261125_k/stages/stage_portal2_peer_review_chamber4_master_k.png | 1672 × 941 | 2405418 | oui |
 | assets/resonance/candidates/continuation_20261125_k/stages/stage_uplink_communications_master_k.png | 1672 × 941 | 2262928 | oui |
+| assets/resonance/candidates/continuation_20261125_l/archives/archive_air_exchange_hl2_concept_rtb2004_master_l.png | 1672 × 941 | 1871736 | oui |
+| assets/resonance/candidates/continuation_20261125_l/archives/archive_arctic_ep3_concept05_master_l.png | 1672 × 941 | 2148810 | oui |
+| assets/resonance/candidates/continuation_20261125_l/archives/archive_blob_ep3_envelope_pose_l.png | 1448 × 1086 | 1443047 | oui |
+| assets/resonance/candidates/continuation_20261125_l/archives/archive_icegun_ep3_ice_mass_l.png | 1774 × 887 | 1552826 | oui |
+| assets/resonance/candidates/continuation_20261125_l/goldsrc/fx_bullsquid_spit_impact_hl1_impact_decal_spit1_l.png | 1536 × 1024 | 1355347 | oui |
+| assets/resonance/candidates/continuation_20261125_l/goldsrc/proj_displacer_orb_opfor_body_resource_study_l.png | 1254 × 1254 | 933764 | oui |
+| assets/resonance/candidates/continuation_20261125_l/goldsrc/proj_gene_worm_spit_opfor_cloud_resource_study_l.png | 1254 × 1254 | 523615 | oui |
+| assets/resonance/candidates/continuation_20261125_l/goldsrc/proj_mp5_grenade_hl1_body_l.png | 1774 × 887 | 848234 | oui |
+| assets/resonance/candidates/continuation_20261125_l/layers/layer_portal2_turret_factory_assembly_line_l.png | 2172 × 724 | 972654 | oui |
+| assets/resonance/candidates/continuation_20261125_l/layers/layer_portal2_turret_factory_atmosphere_l.png | 2172 × 724 | 1400304 | oui |
+| assets/resonance/candidates/continuation_20261125_l/layers/layer_portal2_turret_factory_distant_trusses_l.png | 2172 × 724 | 384175 | oui |
+| assets/resonance/candidates/continuation_20261125_l/layers/layer_portal2_turret_factory_foreground_edge_l.png | 2172 × 724 | 269201 | oui |
+| assets/resonance/candidates/continuation_20261125_l/layers/layer_portal2_turret_factory_industrial_walls_l.png | 2172 × 724 | 1213381 | oui |
+| assets/resonance/candidates/continuation_20261125_l/source_fx/fx_pistol_fire_hl2_muzzle_l.png | 1536 × 1024 | 1260524 | oui |
+| assets/resonance/candidates/continuation_20261125_l/source_fx/fx_reviver_discharge_hla_discharge_l.png | 1199 × 1312 | 315218 | oui |
 | assets/resonance/candidates/layer_black_mesa_floor.png | 2172 × 724 | 641901 | oui |
 | assets/resonance/candidates/layer_city17_distant_skyline.png | 1774 × 887 | 1545440 | oui |
 | assets/resonance/candidates/prop_hev_suit_charger.png | 1024 × 1536 | 2691794 | oui |

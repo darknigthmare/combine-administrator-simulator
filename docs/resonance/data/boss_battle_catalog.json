@@ -2003,7 +2003,24 @@
         "local_player_capture_claimed": false
       },
       "visual_reference_status": "reference_images_inspected_candidate_unvalidated",
-      "generation_status": "refusal_recorded_no_png"
+      "generation_status": "refusal_recorded_no_png",
+      "production_review_20261125_l": {
+        "target_id": "wheatley_portal2",
+        "outcome": "retained_historical_refusal",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "new_generation_call_count": 0,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [
+          "wheatley_portal2_idle_k"
+        ],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      }
     },
     {
       "id": "abrams_hl1",

@@ -2,7 +2,17 @@
 
 Bible, production graphique et premier module Boss Battle jouable du mode annexe de combat 2D de Half Life Administrator.
 
-## Reprise du 25 novembre — bible 1.8 et lot K
+## Reprise du 25 novembre — bible 1.9 et lot L
+
+**15 nouveaux PNG : 10 cibles jusque-là sans fichier reçoivent un premier candidat, et cinq couches sont ajoutées à l’usine à tourelles de Portal 2.** Les 28 cibles initialement manquantes ont toutes une issue documentée.
+
+L’inventaire atteint **286 PNG distincts**, **338 entrées**, **36 refus**, **4 erreurs outil** et **12 sorties historiques perdues**. **241 des 259 cibles ont un PNG; 18 restent sans PNG.**
+
+[Rapport du lot L](production/continuation_20261125_l/README.md) · [Galerie](production/continuation_20261125_l/GALLERY.md) · [Revue des 28 cibles](production/continuation_20261125_l/TARGET_REVIEW.md) · [Inventaire complet](production/MISSING_TARGETS.md)
+
+Les quatre archives ont une première étude, avec leurs limites de version et de matière. Les six identifiants de couches Factory disposent de candidats, mais raccords et séparation L5/L6 restent ouverts. Les refus historiques et reports sont distincts des nouvelles générations. Les neuf images déjà utilisées dans Boss Battle restent les seules intégrations; aucune fidélité 1:1, animation complète ou arène à six couches n’est certifiée. Les exports Word/Excel v1 restent historiques.
+
+## Lot K — état historique avant le lot L
 
 **80 nouveaux PNG couvrant 76 cibles jusque-là sans fichier.** Les 104 cibles manquantes au début du lot ont une issue explicite : 76 reçoivent un candidat, 11 ont un refus de génération confirmé et 17 sont reportées sans appel avec le blocage documenté.
 

@@ -1193,10 +1193,49 @@
         }
       ],
       "reference_status": "code_contract_visual_pending",
-      "reference_capture": null,
+      "reference_capture": {
+        "batch_id": "continuation_20261125_l",
+        "checked_on": "2026-11-25",
+        "reference_images": [
+          {
+            "reference_filename": "uplink_grenade_side_preview.png",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/goldsrc/references/uplink_grenade_side_preview.png",
+            "source_url": "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+            "source_page": "https://github.com/x8BitRain/webXash",
+            "source_kind": "uplink_demo_resource_from_community_mirror",
+            "source_resource": "valve/models/grenade.mdl",
+            "source_resource_sha256": "bc6126523037ed6442fdd44c0ed9f69e2b024bdcc8e2a60dbcc39f97bd847ec9",
+            "reference_conversion": "Inspection-only orthographic software rasterization of the actual MDL rigid mesh and original indexed texture palettes using Valve studio.h format. Triangle strips/fans decoded, original UVs sampled nearest, simple directional shading. Bind-space viewing orientation; not an in-game capture or retail binary equivalence proof.",
+            "sha256": "6214173dbf62701277088f9f18e90dc214018d43187a7581d8546cfda331192b",
+            "width": 512,
+            "height": 512,
+            "visually_inspected": true,
+            "scope": "Actual MDL geometry and texture UV preview. Uplink demo file; retail HL1 binary equivalence unverified."
+          },
+          {
+            "reference_filename": "uplink_grenade_threequarter_preview.png",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/goldsrc/references/uplink_grenade_threequarter_preview.png",
+            "source_url": "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+            "source_page": "https://github.com/x8BitRain/webXash",
+            "source_kind": "uplink_demo_resource_from_community_mirror",
+            "source_resource": "valve/models/grenade.mdl",
+            "source_resource_sha256": "bc6126523037ed6442fdd44c0ed9f69e2b024bdcc8e2a60dbcc39f97bd847ec9",
+            "reference_conversion": "Inspection-only orthographic software rasterization of the actual MDL rigid mesh and original indexed texture palettes using Valve studio.h format. Triangle strips/fans decoded, original UVs sampled nearest, simple directional shading. Bind-space viewing orientation; not an in-game capture or retail binary equivalence proof.",
+            "sha256": "43be36015043f9b3572c058435ed4ec00d880ee089c36901bd161a36c17c750a",
+            "width": 512,
+            "height": 512,
+            "visually_inspected": true,
+            "scope": "Actual MDL geometry and texture UV preview. Uplink demo file; retail HL1 binary equivalence unverified."
+          }
+        ],
+        "source_type": "identified_external_reference_or_resource_preview",
+        "scope": "Références inspectées; version, rôle, degré d’attribution et limites dans le registre. Des prévisualisations locales de ressources miroir et des concepts publiés peuvent servir à une étude candidate sans certifier la version retail ou une apparence finale.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "deferred_reference_or_generation_gate",
+      "generation_status": "candidate_pngs_present",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -1268,7 +1307,27 @@
         "certified_one_to_one": false,
         "completed_animation": false,
         "runtime_added": false
-      }
+      },
+      "production_review_20261125_l": {
+        "target_id": "proj_mp5_grenade_hl1",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "proj_mp5_grenade_hl1_body_l"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_l/goldsrc/proj_mp5_grenade_hl1_body_l.png"
+        ],
+        "new_generation_call_count": 1,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated"
     },
     {
       "id": "proj_hand_grenade_hl1",
@@ -1704,10 +1763,34 @@
         }
       ],
       "reference_status": "code_contract_visual_pending",
-      "reference_capture": null,
+      "reference_capture": {
+        "batch_id": "continuation_20261125_l",
+        "checked_on": "2026-11-25",
+        "reference_images": [
+          {
+            "reference_filename": "uplink_spit1_gradient_preview.png",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/goldsrc/references/uplink_spit1_gradient_preview.png",
+            "source_url": "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+            "source_page": "https://github.com/x8BitRain/webXash",
+            "source_kind": "uplink_demo_resource_from_community_mirror",
+            "source_resource": "valve/decals.wad::{SPIT1",
+            "source_resource_sha256": "17726e8174729011c7ea4e1e37b4ccfe7a9aa4abb82c2aaca87872cbe0c106d0",
+            "sha256": "e0cd060fdd68b60c4e9d1589182509c3e618ec257e74a3aa346374f2e2afbc2c",
+            "width": 32,
+            "height": 32,
+            "reference_conversion": "Gradient decal inspection: palette entry 255 supplies RGB, pixel index supplies alpha; index 255 cleared. Follows community Xash img_wad.c and img_utils.c; not an in-game retail screenshot.",
+            "visually_inspected": true,
+            "scope": "One persistent impact decal; palette RGB 204,228,40, indexed alpha."
+          }
+        ],
+        "source_type": "identified_external_reference_or_resource_preview",
+        "scope": "Références inspectées; version, rôle, degré d’attribution et limites dans le registre. Des prévisualisations locales de ressources miroir et des concepts publiés peuvent servir à une étude candidate sans certifier la version retail ou une apparence finale.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "deferred_reference_or_generation_gate",
+      "generation_status": "candidate_pngs_present",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -1747,7 +1830,27 @@
         "certified_one_to_one": false,
         "completed_animation": false,
         "runtime_added": false
-      }
+      },
+      "production_review_20261125_l": {
+        "target_id": "fx_bullsquid_spit_impact_hl1",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "fx_bullsquid_spit_impact_hl1_impact_decal_spit1_l"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_l/goldsrc/fx_bullsquid_spit_impact_hl1_impact_decal_spit1_l.png"
+        ],
+        "new_generation_call_count": 1,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated"
     },
     {
       "id": "proj_controller_orb_hl1",
@@ -2381,7 +2484,25 @@
         "completed_animation": false,
         "runtime_added": false
       },
-      "visual_reference_status": "reference_images_inspected_candidate_unvalidated"
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated",
+      "production_review_20261125_l": {
+        "target_id": "proj_satchel_hl1",
+        "outcome": "retained_historical_refusal",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "new_generation_call_count": 0,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [
+          "proj_satchel_hl1_h_refused",
+          "proj_satchel_hl1_landed_k"
+        ],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      }
     },
     {
       "id": "fx_tripmine_laser_hl1",
@@ -3100,6 +3221,64 @@
         "certified_one_to_one": false,
         "completed_animation": false,
         "runtime_added": false
+      },
+      "production_review_20261125_l": {
+        "target_id": "fx_bullet_tracer_hl1",
+        "outcome": "deferred_without_generation",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "new_generation_call_count": 0,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [],
+        "deferred": {
+          "batch_id": "continuation_20261125_l",
+          "created_at": "2026-11-25",
+          "owner_type": "projectile_effect",
+          "category": "projectile_key_frame",
+          "status": "différé",
+          "generation_status": "différé — référence insuffisante",
+          "generation_call_count": 0,
+          "image_generation_attempted": false,
+          "repository_path": null,
+          "asset_id": null,
+          "certified_one_to_one": false,
+          "integrated_in_game": false,
+          "runtime_enabled": false,
+          "selected_for_next_review": false,
+          "source_partial_register": "docs/resonance/production/continuation_20261125_l/goldsrc_generation.json",
+          "target_id": "fx_bullet_tracer_hl1",
+          "target_ids": [
+            "fx_bullet_tracer_hl1"
+          ],
+          "owner_id": "fx_bullet_tracer_hl1",
+          "source_game": "Half-Life (1998)",
+          "reason": "La distinction entre tir instantané et traceur visuel optionnel est documentée, mais aucun bitmap du traceur GoldSrc retail n’a été inspecté avec une résolution suffisante pour fixer couleur, épaisseur et état. Les métadonnées du showcase Classic/HD ont été obtenues; aucune frame de ce showcase n’est déclarée inspectée. Une forme générique ou issue d’un mod ne constituerait pas une référence fidèle.",
+          "needed_evidence": "Frame et court segment d’un tir de la version GoldSrc retail, avec version, configuration visuelle et phase du traceur identifiées. Ne pas représenter une balle lente.",
+          "source_references": [
+            {
+              "source_kind": "prior_production_review",
+              "repository_path": "docs/resonance/production/continuation_20261125_k/effects_reference_review.md",
+              "scope": "Exclusion K conservée : aucun bitmap de tracer retail inspecté."
+            },
+            {
+              "source_kind": "video_metadata_only",
+              "source_url": "https://www.youtube.com/watch?v=obS5RitWxoY",
+              "title": "Half Life | Weapons Showcase (Classic and HD Models)",
+              "uploader": "Dat Mental Gamer",
+              "metadata_sha256": "b24cabfae10a14c0dccf0e93fdc07c81dcb8b12b5f5ae8e12103e35f9036d0af",
+              "visually_inspected": false,
+              "scope": "Métadonnées obtenues seulement. Sections Classic et HD distinctes; aucune capture de tracer admissible retenue."
+            }
+          ],
+          "source_urls": [
+            "https://www.youtube.com/watch?v=obS5RitWxoY"
+          ]
+        },
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
       }
     },
     {
@@ -3336,10 +3515,34 @@
         }
       ],
       "reference_status": "exact_visual_reference_pending",
-      "reference_capture": null,
+      "reference_capture": {
+        "batch_id": "continuation_20261125_l",
+        "checked_on": "2026-11-25",
+        "reference_images": [
+          {
+            "reference_filename": "uplink_exit1_frame0.png",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/goldsrc/references/uplink_exit1_frame0.png",
+            "source_url": "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+            "source_page": "https://github.com/x8BitRain/webXash",
+            "source_kind": "uplink_demo_resource_from_community_mirror",
+            "source_resource": "sprites/exit1.spr",
+            "source_resource_sha256": "057e9ed2a9fcef4c9b71b56614ec172402771012440472a9551332bdc796538f",
+            "sha256": "7d28e90f2db1ae8b6cd1271c8dcdd215f22813ed6026cb7a412b72af52420bca",
+            "width": 80,
+            "height": 80,
+            "visually_inspected": true,
+            "reference_conversion": "Frame 0 decoded from IDSP version 2 sprite. Original palette retained. Index-alpha uses palette entry 255 RGB and pixel index alpha; additive sprites are previewed on their original black background, not mistaken for a gameplay backdrop.",
+            "scope": "Original demo resource preview; community reference implementation maps the same resource name to the OP4 target. Retail binary identity, exact tint/compositing and temporal state not certified."
+          }
+        ],
+        "source_type": "identified_external_reference_or_resource_preview",
+        "scope": "Références inspectées; version, rôle, degré d’attribution et limites dans le registre. Des prévisualisations locales de ressources miroir et des concepts publiés peuvent servir à une étude candidate sans certifier la version retail ou une apparence finale.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "deferred_reference_or_generation_gate",
+      "generation_status": "candidate_pngs_present",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -3407,7 +3610,27 @@
         "certified_one_to_one": false,
         "completed_animation": false,
         "runtime_added": false
-      }
+      },
+      "production_review_20261125_l": {
+        "target_id": "proj_displacer_orb_opfor",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "proj_displacer_orb_opfor_body_resource_study_l"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_l/goldsrc/proj_displacer_orb_opfor_body_resource_study_l.png"
+        ],
+        "new_generation_call_count": 1,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated"
     },
     {
       "id": "proj_pit_drone_spine_opfor",
@@ -3669,10 +3892,34 @@
         }
       ],
       "reference_status": "exact_visual_reference_pending",
-      "reference_capture": null,
+      "reference_capture": {
+        "batch_id": "continuation_20261125_l",
+        "checked_on": "2026-11-25",
+        "reference_images": [
+          {
+            "reference_filename": "uplink_ballsmoke_frame0.png",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/goldsrc/references/uplink_ballsmoke_frame0.png",
+            "source_url": "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+            "source_page": "https://github.com/x8BitRain/webXash",
+            "source_kind": "uplink_demo_resource_from_community_mirror",
+            "source_resource": "sprites/ballsmoke.spr",
+            "source_resource_sha256": "5a3df03849babcf7cb0eee2f94d9981f32709c096c2515597ab7f9ef78dfaec7",
+            "sha256": "1effe171e6452d474110a148317d9ba4c6803a0c6400224870d495e82acc21b0",
+            "width": 64,
+            "height": 64,
+            "visually_inspected": true,
+            "reference_conversion": "Frame 0 decoded from IDSP version 2 sprite. Original palette retained. Index-alpha uses palette entry 255 RGB and pixel index alpha; additive sprites are previewed on their original black background, not mistaken for a gameplay backdrop.",
+            "scope": "Original demo resource preview; community reference implementation maps the same resource name to the OP4 target. Retail binary identity, exact tint/compositing and temporal state not certified."
+          }
+        ],
+        "source_type": "identified_external_reference_or_resource_preview",
+        "scope": "Références inspectées; version, rôle, degré d’attribution et limites dans le registre. Des prévisualisations locales de ressources miroir et des concepts publiés peuvent servir à une étude candidate sans certifier la version retail ou une apparence finale.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "deferred_reference_or_generation_gate",
+      "generation_status": "candidate_pngs_present",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -3712,7 +3959,27 @@
         "certified_one_to_one": false,
         "completed_animation": false,
         "runtime_added": false
-      }
+      },
+      "production_review_20261125_l": {
+        "target_id": "proj_gene_worm_spit_opfor",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "proj_gene_worm_spit_opfor_cloud_resource_study_l"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_l/goldsrc/proj_gene_worm_spit_opfor_cloud_resource_study_l.png"
+        ],
+        "new_generation_call_count": 1,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated"
     },
     {
       "id": "proj_gonome_gut_opfor",
@@ -3784,6 +4051,165 @@
           "runtime_enabled": false,
           "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
           "batch_id": "continuation_20261125_k"
+        },
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "production_review_20261125_l": {
+        "target_id": "proj_gonome_gut_opfor",
+        "outcome": "deferred_without_generation",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "new_generation_call_count": 0,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [],
+        "deferred": {
+          "batch_id": "continuation_20261125_l",
+          "created_at": "2026-11-25",
+          "owner_type": "projectile_effect",
+          "category": "projectile_key_frame",
+          "status": "différé",
+          "generation_status": "différé — référence insuffisante",
+          "generation_call_count": 0,
+          "image_generation_attempted": false,
+          "repository_path": null,
+          "asset_id": null,
+          "certified_one_to_one": false,
+          "integrated_in_game": false,
+          "runtime_enabled": false,
+          "selected_for_next_review": false,
+          "source_partial_register": "docs/resonance/production/continuation_20261125_l/goldsrc_generation.json",
+          "target_id": "proj_gonome_gut_opfor",
+          "target_ids": [
+            "proj_gonome_gut_opfor"
+          ],
+          "owner_id": "proj_gonome_gut_opfor",
+          "source_game": "Half-Life: Opposing Force",
+          "reason": "La ressource bigspit.spr est identifiée dans l’implémentation communautaire, et sa frame Uplink a été inspectée. Elle ne résout pas le rendu retail du gut : le code consulté écrit trois fois rendercolor.x, avec un TODO explicite, donc la séquence 128,32,128 ne prouve pas une teinte RGB violette. Les sept storyboards du gameplay consulté restent trop petits/sombres pour isoler sûrement le projectile. Le texte du vidéaste évoquant du vert ne remplace pas une capture nette.",
+          "needed_evidence": "Capture retail Opposing Force nette du gut en main puis en vol, configuration/locale précisées, avec confirmation de palette et de compositing. Écarter modèle du monstre, sang, explosions et projectiles du joueur.",
+          "source_references": [
+            {
+              "source_kind": "community_reference_implementation",
+              "source_url": "https://github.com/twhl-community/halflife-op4-updated/blob/master/dlls/gonome.cpp",
+              "sha256": "dacea3ddd5031902c2aa6a35bec08a210e6774c96c41c8fde48ca1b63dd7d292",
+              "visually_inspected": false,
+              "text_inspected": true,
+              "scope": "COFGonomeGuts::Spawn utilise bigspit.spr; affectations de couleur ambiguës, référence communautaire et non source officielle Gearbox."
+            },
+            {
+              "source_kind": "uplink_demo_resource_from_community_mirror",
+              "source_url": "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+              "source_resource": "valve/sprites/bigspit.spr",
+              "source_resource_sha256": "33c06d26d3af340b5211320e817d2227091df5930b1fa45e764e7b7d24d7231e",
+              "reference_filename": "uplink_bigspit_frame0.png",
+              "filename": "references/uplink_bigspit_frame0.png",
+              "sha256": "574c5ebb1b150168e19d0888b0736987ff18bfa6d89459088f42833799283b9e",
+              "byte_size": 854,
+              "width": 32,
+              "height": 32,
+              "visually_inspected": true,
+              "scope": "Composant Uplink, palette RGB 123,138,1; ne fixe pas le rendu retail du gut OP4."
+            },
+            {
+              "filename": "references/gonome_storyboard_0.jpg",
+              "sha256": "01c826fd826203be4fa96ee49b609b1e5c92122ea5de7763c1b36ba25871d63b",
+              "byte_size": 16184,
+              "width": 800,
+              "height": 450,
+              "source_kind": "public_gameplay_storyboard",
+              "source_url": "https://www.youtube.com/watch?v=nxD66_quaA8",
+              "title": "Half Life:Opposing Force Ep.4-WTF IS A GONOME!",
+              "uploader": "Gameraiders101",
+              "visually_inspected": true,
+              "scope": "Storyboard réellement inspecté; résolution et scènes insuffisantes pour une identité visuelle du projectile."
+            },
+            {
+              "filename": "references/gonome_storyboard_1.jpg",
+              "sha256": "5cf874e4cac327ef8a95f9cc514620a8b16316d9f2b6df10de890233f2a59111",
+              "byte_size": 16156,
+              "width": 800,
+              "height": 450,
+              "source_kind": "public_gameplay_storyboard",
+              "source_url": "https://www.youtube.com/watch?v=nxD66_quaA8",
+              "title": "Half Life:Opposing Force Ep.4-WTF IS A GONOME!",
+              "uploader": "Gameraiders101",
+              "visually_inspected": true,
+              "scope": "Storyboard réellement inspecté; résolution et scènes insuffisantes pour une identité visuelle du projectile."
+            },
+            {
+              "filename": "references/gonome_storyboard_2.jpg",
+              "sha256": "e1532eac6b3e859a0682be11934b90a94dee0fc43657cc2649950ede7722eda9",
+              "byte_size": 13506,
+              "width": 800,
+              "height": 450,
+              "source_kind": "public_gameplay_storyboard",
+              "source_url": "https://www.youtube.com/watch?v=nxD66_quaA8",
+              "title": "Half Life:Opposing Force Ep.4-WTF IS A GONOME!",
+              "uploader": "Gameraiders101",
+              "visually_inspected": true,
+              "scope": "Storyboard réellement inspecté; résolution et scènes insuffisantes pour une identité visuelle du projectile."
+            },
+            {
+              "filename": "references/gonome_storyboard_3.jpg",
+              "sha256": "caff2f719300334687928b1fa72e00e954c0e80558b896ede26b3279e1685111",
+              "byte_size": 20140,
+              "width": 800,
+              "height": 450,
+              "source_kind": "public_gameplay_storyboard",
+              "source_url": "https://www.youtube.com/watch?v=nxD66_quaA8",
+              "title": "Half Life:Opposing Force Ep.4-WTF IS A GONOME!",
+              "uploader": "Gameraiders101",
+              "visually_inspected": true,
+              "scope": "Storyboard réellement inspecté; résolution et scènes insuffisantes pour une identité visuelle du projectile."
+            },
+            {
+              "filename": "references/gonome_storyboard_4.jpg",
+              "sha256": "eddec79b63730fd4cb556934f60698311e216a9687be7e480fecebb68161044c",
+              "byte_size": 17270,
+              "width": 800,
+              "height": 450,
+              "source_kind": "public_gameplay_storyboard",
+              "source_url": "https://www.youtube.com/watch?v=nxD66_quaA8",
+              "title": "Half Life:Opposing Force Ep.4-WTF IS A GONOME!",
+              "uploader": "Gameraiders101",
+              "visually_inspected": true,
+              "scope": "Storyboard réellement inspecté; résolution et scènes insuffisantes pour une identité visuelle du projectile."
+            },
+            {
+              "filename": "references/gonome_storyboard_5.jpg",
+              "sha256": "fac59e38a181a3f1fe6d93e0d56285ab8392ad1bb148b2ac214c7cabcdfc0710",
+              "byte_size": 17310,
+              "width": 800,
+              "height": 450,
+              "source_kind": "public_gameplay_storyboard",
+              "source_url": "https://www.youtube.com/watch?v=nxD66_quaA8",
+              "title": "Half Life:Opposing Force Ep.4-WTF IS A GONOME!",
+              "uploader": "Gameraiders101",
+              "visually_inspected": true,
+              "scope": "Storyboard réellement inspecté; résolution et scènes insuffisantes pour une identité visuelle du projectile."
+            },
+            {
+              "filename": "references/gonome_storyboard_6.jpg",
+              "sha256": "d368d55a535ee31fe66db833e4ca656fa240a5b11be697ddc85edb740978093b",
+              "byte_size": 11046,
+              "width": 800,
+              "height": 270,
+              "source_kind": "public_gameplay_storyboard",
+              "source_url": "https://www.youtube.com/watch?v=nxD66_quaA8",
+              "title": "Half Life:Opposing Force Ep.4-WTF IS A GONOME!",
+              "uploader": "Gameraiders101",
+              "visually_inspected": true,
+              "scope": "Storyboard réellement inspecté; résolution et scènes insuffisantes pour une identité visuelle du projectile."
+            }
+          ],
+          "source_urls": [
+            "https://github.com/twhl-community/halflife-op4-updated/blob/master/dlls/gonome.cpp",
+            "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+            "https://www.youtube.com/watch?v=nxD66_quaA8"
+          ]
         },
         "certified_one_to_one": false,
         "completed_animation": false,
@@ -3927,7 +4353,25 @@
         "completed_animation": false,
         "runtime_added": false
       },
-      "visual_reference_status": "reference_images_inspected_candidate_unvalidated"
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated",
+      "production_review_20261125_l": {
+        "target_id": "proj_rpg_rocket_hl2",
+        "outcome": "retained_historical_refusal",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "new_generation_call_count": 0,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [
+          "projectile_rpg_hl2_f",
+          "proj_rpg_rocket_hl2_flight_k"
+        ],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      }
     },
     {
       "id": "proj_smg_grenade_hl2",
@@ -4637,6 +5081,40 @@
         "certified_one_to_one": false,
         "completed_animation": false,
         "runtime_added": false
+      },
+      "production_review_20261125_l": {
+        "target_id": "proj_apc_missile_hl2",
+        "outcome": "deferred_without_generation",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "new_generation_call_count": 0,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [],
+        "deferred": {
+          "target_id": "proj_apc_missile_hl2",
+          "owner_id": "proj_apc_missile_hl2",
+          "source_game": "Half-Life 2",
+          "status": "deferred_without_generation",
+          "reason_code": "shared_resource_with_refused_request",
+          "reason": "Report conservé : le modèle de vol du missile APC est le même w_missile.mdl que le RPG refusé au lot K; aucun nouvel appel sous une autre étiquette.",
+          "next_step": "Conserver le blocage; une référence distincte ne doit pas servir à contourner le refus du même sujet.",
+          "generation_call_count": 0,
+          "source_urls": [
+            "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/weapon_rpg.cpp",
+            "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/vehicle_apc.cpp",
+            "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/weapon_rpg.cpp"
+          ],
+          "certified_one_to_one": false,
+          "runtime_enabled": false,
+          "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+          "batch_id": "continuation_20261125_l",
+          "historical_evidence": "docs/resonance/production/continuation_20261125_k/effects_reference_review.md"
+        },
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
       }
     },
     {
@@ -4979,6 +5457,59 @@
           "runtime_enabled": false,
           "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
           "batch_id": "continuation_20261125_k"
+        },
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "production_review_20261125_l": {
+        "target_id": "proj_antlion_worker_spit_ep2",
+        "outcome": "deferred_without_generation",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "new_generation_call_count": 0,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [],
+        "deferred": {
+          "target_id": "proj_antlion_worker_spit_ep2",
+          "owner_id": "proj_antlion_worker_spit_ep2",
+          "owner_type": "projectile_effect",
+          "source_game": "Half-Life 2: Episode Two",
+          "batch_id": "continuation_20261125_l",
+          "content_class": "released_reference",
+          "status": "deferred_without_generation",
+          "reason_code": "phase_reference_ambiguous",
+          "reason": "Le modèle et la famille grenade_spit du Worker Episode Two sont identifiés par le SDK. La capture retail Ep2_outland_01a0023.jpg déjà inspectée en K ne distingue pas grand/moyen/petit, traînée ou impact. Les nouvelles pages de gameplay ne fournissent pas de bitmap inspectable d’une phase isolée : images du guide Portforward HTTP 403, guide IGN PDF inaccessible. Aucun visuel d’Antlion standard, de HLA ou de HL1 ne remplace cette référence.",
+          "next_step": "Obtenir une capture retail Episode Two identifiant séparément models/spitball_large.mdl, spitball_medium.mdl, spitball_small.mdl et antlion_spit_trail, avec état et instant documentés.",
+          "generation_call_count": 0,
+          "new_generation_call": false,
+          "source_urls": [
+            "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/grenade_spit.cpp",
+            "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_antlion.cpp",
+            "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/grenade_spit.cpp",
+            "https://portforward.com/games/walkthroughs/Half-Life-2-Episode-Two/This-Vortal-Coil.htm",
+            "https://valvearchive.com/Games/Half-Life%202%20Episode%202/Documents/mb-ign_half_life_2_episode_2_pc.pdf",
+            "https://www.youtube.com/watch?v=oiWAkSqdupo"
+          ],
+          "source_references": [],
+          "prompt": null,
+          "visual_state_id": null,
+          "file_path": null,
+          "repository_path": null,
+          "sha256": null,
+          "width": null,
+          "height": null,
+          "refusal": false,
+          "tool_error": null,
+          "certified_one_to_one": false,
+          "runtime_enabled": false,
+          "integrated_in_game": false,
+          "animation_clip_complete": false,
+          "visual_state_complete": false,
+          "target_completed": false,
+          "source_partial_register": "docs/resonance/production/continuation_20261125_l/source_fx_generation.json"
         },
         "certified_one_to_one": false,
         "completed_animation": false,
@@ -5365,6 +5896,58 @@
         "certified_one_to_one": false,
         "completed_animation": false,
         "runtime_added": false
+      },
+      "production_review_20261125_l": {
+        "target_id": "fx_strider_warp_hl2",
+        "outcome": "deferred_without_generation",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "new_generation_call_count": 0,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [],
+        "deferred": {
+          "target_id": "fx_strider_warp_hl2",
+          "owner_id": "fx_strider_warp_hl2",
+          "owner_type": "projectile_effect",
+          "source_game": "Half-Life 2",
+          "batch_id": "continuation_20261125_l",
+          "content_class": "released_reference",
+          "status": "deferred_without_generation",
+          "reason_code": "retail_warp_frame_unavailable",
+          "reason": "Les captures déjà exclues en K restent exclues : Strider_fire.jpg = minigun; Warp_Cannon et Strider_Firing_Pulse_Cannon = Alyx; Strider_Immolator_Firing = restauration d’un contenu coupé. Une vidéo intitulée Half Life 2 - Strider Warp Cannon Tutorial a été identifiée, mais ses médias publics retournent HTTP 403 et aucune frame n’a été vue. Les captures de canon sans décharge et les images de versions prerelease ne fixent pas le tir retail.",
+          "next_step": "Obtenir une frame publiquement accessible du canon lourd dans Half-Life 2 retail, avec charge, shot ou impact explicitement localisé; documenter map, séquence et timecode. Ne pas substituer minigun, Alyx, bêta ou MMod.",
+          "generation_call_count": 0,
+          "new_generation_call": false,
+          "source_urls": [
+            "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/npc_strider.cpp",
+            "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_strider.cpp",
+            "https://www.youtube.com/watch?v=NlppLarRErA",
+            "https://combineoverwiki.net/wiki/Strider",
+            "https://combineoverwiki.net/wiki/Category:Strider_images"
+          ],
+          "source_references": [],
+          "prompt": null,
+          "visual_state_id": null,
+          "file_path": null,
+          "repository_path": null,
+          "sha256": null,
+          "width": null,
+          "height": null,
+          "refusal": false,
+          "tool_error": null,
+          "certified_one_to_one": false,
+          "runtime_enabled": false,
+          "integrated_in_game": false,
+          "animation_clip_complete": false,
+          "visual_state_complete": false,
+          "target_completed": false,
+          "source_partial_register": "docs/resonance/production/continuation_20261125_l/source_fx_generation.json"
+        },
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
       }
     },
     {
@@ -5531,6 +6114,59 @@
           "runtime_enabled": false,
           "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
           "batch_id": "continuation_20261125_k"
+        },
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "production_review_20261125_l": {
+        "target_id": "fx_vortigaunt_zap_hl2",
+        "outcome": "deferred_without_generation",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "new_generation_call_count": 0,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [],
+        "deferred": {
+          "target_id": "fx_vortigaunt_zap_hl2",
+          "owner_id": "fx_vortigaunt_zap_hl2",
+          "owner_type": "projectile_effect",
+          "source_game": "Half-Life 2: épisodes",
+          "batch_id": "continuation_20261125_l",
+          "content_class": "released_reference",
+          "status": "deferred_without_generation",
+          "reason_code": "offensive_beam_reference_not_observed",
+          "reason": "Griggs_support.jpg (Episode Two retail) a été téléchargé et inspecté : combat avec armes et antlions, mais aucun faisceau attribuable sans ambiguïté au Vortigaunt; le nuage vert peut être sang/impact. Vortigaunt_mines.jpg montre le personnage sans charge ni décharge. Worker_vort_in_the_mines.jpg est classé prerelease. Les captures de soin d’Alyx et de larve déjà exclues en K ne sont pas des zaps offensifs. Les frames offensives signalées par des guides restent inaccessibles (HTTP 403), donc non inspectées.",
+          "next_step": "Obtenir dans Episode One ou Episode Two retail une capture lisible du Vortigaunt émettant un rayon vers un ennemi; attribuer ensuite une seule phase charge, beam ou impact.",
+          "generation_call_count": 0,
+          "new_generation_call": false,
+          "source_urls": [
+            "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/npc_vortigaunt_episodic.cpp",
+            "https://combineoverwiki.net/wiki/File:Griggs_support.jpg",
+            "https://combineoverwiki.net/wiki/File:Vortigaunt_mines.jpg",
+            "https://combineoverwiki.net/wiki/File:Worker_vort_in_the_mines.jpg",
+            "https://portforward.com/games/walkthroughs/Half-Life-2-Episode-Two/This-Vortal-Coil.htm",
+            "https://valvearchive.com/Games/Half-Life%202%20Episode%202/Documents/mb-ign_half_life_2_episode_2_pc.pdf"
+          ],
+          "source_references": [],
+          "prompt": null,
+          "visual_state_id": null,
+          "file_path": null,
+          "repository_path": null,
+          "sha256": null,
+          "width": null,
+          "height": null,
+          "refusal": false,
+          "tool_error": null,
+          "certified_one_to_one": false,
+          "runtime_enabled": false,
+          "integrated_in_game": false,
+          "animation_clip_complete": false,
+          "visual_state_complete": false,
+          "target_completed": false,
+          "source_partial_register": "docs/resonance/production/continuation_20261125_l/source_fx_generation.json"
         },
         "certified_one_to_one": false,
         "completed_animation": false,
@@ -7099,10 +7735,32 @@
         }
       ],
       "reference_status": "exact_visual_reference_pending",
-      "reference_capture": null,
+      "reference_capture": {
+        "batch_id": "continuation_20261125_l",
+        "checked_on": "2026-11-25",
+        "reference_images": [
+          {
+            "source_page": "https://combineoverwiki.net/wiki/File:HLA_NorthernStar02.jpg.jpg",
+            "source_url": "https://combineoverwiki.net/images/3/34/HLA_NorthernStar02.jpg.jpg",
+            "local_reference_path": "/tmp/resonance-l-source-fx/refs/reviver_northernstar.jpg",
+            "sha256": "702dff699d94aa6afc13fd9f241d592d4e6b3fe98314e46cc7aea43e45b9bd4b",
+            "width": 1920,
+            "height": 1080,
+            "visually_inspected": true,
+            "source_game": "Half-Life: Alyx",
+            "map": "a3_hotel_lobby_basement",
+            "kind": "community_hosted_original_game_capture",
+            "inspection_notes": "Reviver libre suspendu dans la cage d’ascenseur, arcs cyan/blanc visibles autour de lui et le long de la grille. Aucun zombie hôte. La scène documente une décharge environnementale de l’introduction; elle ne prouve pas un rayon offensif dirigé. Métadonnées du fichier : Photoshop CC 2019, aucune certification de framebuffer brut."
+          }
+        ],
+        "source_type": "identified_external_reference_or_resource_preview",
+        "scope": "Références inspectées; version, rôle, degré d’attribution et limites dans le registre. Des prévisualisations locales de ressources miroir et des concepts publiés peuvent servir à une étude candidate sans certifier la version retail ou une apparence finale.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "deferred_reference_or_generation_gate",
+      "generation_status": "candidate_pngs_present",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -7142,7 +7800,27 @@
         "certified_one_to_one": false,
         "completed_animation": false,
         "runtime_added": false
-      }
+      },
+      "production_review_20261125_l": {
+        "target_id": "fx_reviver_discharge_hla",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "fx_reviver_discharge_hla_discharge_l"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_l/source_fx/fx_reviver_discharge_hla_discharge_l.png"
+        ],
+        "new_generation_call_count": 1,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated"
     },
     {
       "id": "proj_antlion_spit_hla",
@@ -7215,6 +7893,57 @@
           "runtime_enabled": false,
           "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
           "batch_id": "continuation_20261125_k"
+        },
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "production_review_20261125_l": {
+        "target_id": "proj_antlion_spit_hla",
+        "outcome": "deferred_without_generation",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "new_generation_call_count": 0,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [],
+        "deferred": {
+          "target_id": "proj_antlion_spit_hla",
+          "owner_id": "proj_antlion_spit_hla",
+          "owner_type": "projectile_effect",
+          "source_game": "Half-Life: Alyx",
+          "batch_id": "continuation_20261125_l",
+          "content_class": "released_reference",
+          "status": "deferred_without_generation",
+          "reason_code": "exact_projectile_capture_missing",
+          "reason": "La variante Antlion Spitter HLA et son contexte sont identifiés, mais les sources consultées n’offrent aucune frame du corps de projectile, de sa traînée ou de son impact qui ait pu être inspectée. Le repère 11:10 d’une vidéo de Revelations identifie un chapitre Leggy Spitters, pas l’instant vérifié d’un tir. Les modèles, descriptions de bile bleue, conversions GMod/HL2 et rendus communautaires ne fixent pas l’effet retail.",
+          "next_step": "Obtenir une frame HLA retail de la variante Spitter dans Revelations ou Breaking and Entering, en notant le timecode exact du tir, puis choisir séparément body, trail ou impact. Aucune copie du crachat Episode Two.",
+          "generation_call_count": 0,
+          "new_generation_call": false,
+          "source_urls": [
+            "https://www.half-life.com/en/alyx",
+            "https://combineoverwiki.net/wiki/Antlion_Spitter",
+            "https://www.youtube.com/watch?v=kKDsmlV9tdg",
+            "https://www.jeuxvideo.com/wikis-soluce-astuces/1205408/chapitre-9-revelations.htm"
+          ],
+          "source_references": [],
+          "prompt": null,
+          "visual_state_id": null,
+          "file_path": null,
+          "repository_path": null,
+          "sha256": null,
+          "width": null,
+          "height": null,
+          "refusal": false,
+          "tool_error": null,
+          "certified_one_to_one": false,
+          "runtime_enabled": false,
+          "integrated_in_game": false,
+          "animation_clip_complete": false,
+          "visual_state_complete": false,
+          "target_completed": false,
+          "source_partial_register": "docs/resonance/production/continuation_20261125_l/source_fx_generation.json"
         },
         "certified_one_to_one": false,
         "completed_animation": false,
@@ -7602,10 +8331,31 @@
         }
       ],
       "reference_status": "exact_visual_capture_required",
-      "reference_capture": null,
+      "reference_capture": {
+        "batch_id": "continuation_20261125_l",
+        "checked_on": "2026-11-25",
+        "reference_images": [
+          {
+            "source_page": "https://www.patricklipo.com/2008/06/19/weapons-of-awesome-power-and-some-less-so/",
+            "source_url": "https://www.patricklipo.com/wp-content/uploads/2008/06/hl2-pistol.jpg",
+            "local_reference_path": "/tmp/resonance-l-source-fx/refs/pistol_lipo.jpg",
+            "sha256": "42a651c0e2747224f60b68cc2487c2fda67fb8d96f9cc3c2015df619c6b77666",
+            "width": 256,
+            "height": 170,
+            "visually_inspected": true,
+            "source_game": "Half-Life 2",
+            "kind": "author_captured_retail_gameplay_frame",
+            "inspection_notes": "Capture personnelle de gameplay publiée en 2008 par Patrick Lipo, article précisant Half-Life 2 PC (2004). Pistolet reconnaissable au premier plan et flash blanc-jaune/orange au bout du canon. Image native 256×170 : couleurs et grandes masses visibles seulement; détails fins, alpha exact et chronologie non fixés."
+          }
+        ],
+        "source_type": "identified_external_reference_or_resource_preview",
+        "scope": "Références inspectées; version, rôle, degré d’attribution et limites dans le registre. Des prévisualisations locales de ressources miroir et des concepts publiés peuvent servir à une étude candidate sans certifier la version retail ou une apparence finale.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "deferred_reference_or_generation_gate",
+      "generation_status": "candidate_pngs_present",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -7673,7 +8423,27 @@
         "certified_one_to_one": false,
         "completed_animation": false,
         "runtime_added": false
-      }
+      },
+      "production_review_20261125_l": {
+        "target_id": "fx_pistol_fire_hl2",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "fx_pistol_fire_hl2_muzzle_l"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_l/source_fx/fx_pistol_fire_hl2_muzzle_l.png"
+        ],
+        "new_generation_call_count": 1,
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "historical_refusal_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated"
     },
     {
       "id": "fx_portals_solo_portal2",
