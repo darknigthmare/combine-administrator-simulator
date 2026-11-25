@@ -1633,7 +1633,51 @@
         "resonance_cost": 300
       },
       "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
-      "ex_variants": []
+      "ex_variants": [],
+      "production_review_20261125_k": {
+        "target_id": "zombie_hl2",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "zombie_hl2_idle_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/characters/zombie_hl2_idle_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "target_id": "zombie_hl2",
+            "reference_filename": "Zombie_HL2.jpg",
+            "source_url": "https://combineoverwiki.net/images/8/83/Zombie_HL2.jpg",
+            "source_page": "https://combineoverwiki.net/wiki/File:Zombie_HL2.jpg",
+            "context_page": "https://combineoverwiki.net/wiki/Classic_Zombie",
+            "caption": "Idle Zombie.",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/characters/references/Zombie_HL2.jpg",
+            "width": 240,
+            "height": 638,
+            "sha256": "ce4e2857ab58835379f21cd0b332e24e7fdde5b9b1709168136ac97787b8a6ff",
+            "visually_inspected": true,
+            "source_kind": "community_wiki_game_model_render",
+            "scope": "Exact released Half-Life 2 variant; source image inspected before generation."
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated",
+      "generation_status": "candidate_pngs_present"
     },
     {
       "id": "gina_decay",
@@ -2223,7 +2267,81 @@
         "resonance_cost": 300
       },
       "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
-      "ex_variants": []
+      "ex_variants": [],
+      "production_review_20261125_k": {
+        "target_id": "alyx_hla",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "alyx_hla_idle_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/characters/alyx_hla_idle_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "target_id": "alyx_hla",
+            "reference_filename": "HLA_Alyx.png",
+            "source_url": "https://combineoverwiki.net/images/8/83/HLA_Alyx.png",
+            "source_page": "https://combineoverwiki.net/wiki/File:HLA_Alyx.png",
+            "context_page": "https://combineoverwiki.net/wiki/Alyx_Vance",
+            "caption": "Half-Life: Alyx  model.",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/characters/references/HLA_Alyx.png",
+            "width": 920,
+            "height": 920,
+            "sha256": "0a83cfd68adf0e6ccfcc95b75e90cc3559e34bac0b69f85dcdf187f2120a6075",
+            "visually_inspected": true,
+            "source_kind": "community_wiki_game_model_or_trailer_capture",
+            "scope": "HLA cinematic full body, no Russells present in this model render."
+          },
+          {
+            "target_id": "alyx_hla",
+            "reference_filename": "GRAVITY_GLOVES_4K.png",
+            "source_url": "https://combineoverwiki.net/images/5/5b/GRAVITY_GLOVES_4K.png",
+            "source_page": "https://combineoverwiki.net/wiki/Gravity_Gloves_(Half-Life:_Alyx)",
+            "context_page": "https://combineoverwiki.net/wiki/Gravity_Gloves_(Half-Life:_Alyx)",
+            "caption": "Official game screenshot hosted by community wiki",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/characters/references/GRAVITY_GLOVES_4K.png",
+            "width": 3840,
+            "height": 2160,
+            "sha256": "7a34b5090f6b177d8e9041f3e3ad9c82216f30d85b58adf5e61a313b7f8e7875",
+            "visually_inspected": true,
+            "source_kind": "official_game_screenshot_hosted_by_community_wiki",
+            "scope": "Separate HLA Gravity Gloves reference, no whole body captured."
+          },
+          {
+            "target_id": "alyx_hla",
+            "reference_filename": "Gravity_Gloves_trailer_1.jpg",
+            "source_url": "https://combineoverwiki.net/images/d/d9/Gravity_Gloves_trailer_1.jpg",
+            "source_page": "https://combineoverwiki.net/wiki/Gravity_Gloves_(Half-Life:_Alyx)",
+            "context_page": "https://combineoverwiki.net/wiki/Gravity_Gloves_(Half-Life:_Alyx)",
+            "caption": "Official game screenshot hosted by community wiki",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/characters/references/Gravity_Gloves_trailer_1.jpg",
+            "width": 1920,
+            "height": 1080,
+            "sha256": "ff083392976cd006f292b18388f5c112f0f52188b525d24de647259f3117d1ee",
+            "visually_inspected": true,
+            "source_kind": "community_wiki_game_model_or_trailer_capture",
+            "scope": "Separate HLA Gravity Gloves reference, no whole body captured."
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated",
+      "generation_status": "candidate_pngs_present"
     },
     {
       "id": "combine_grunt_hla",
@@ -2441,7 +2559,51 @@
         "resonance_cost": 300
       },
       "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
-      "ex_variants": []
+      "ex_variants": [],
+      "production_review_20261125_k": {
+        "target_id": "combine_ordinal_hla",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "combine_ordinal_hla_idle_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/characters/combine_ordinal_hla_idle_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "target_id": "combine_ordinal_hla",
+            "reference_filename": "CombineOrdinal.png",
+            "source_url": "https://combineoverwiki.net/images/4/4a/CombineOrdinal.png",
+            "source_page": "https://combineoverwiki.net/wiki/File:CombineOrdinal.png",
+            "context_page": "https://combineoverwiki.net/wiki/Combine_Ordinal",
+            "caption": "",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/characters/references/CombineOrdinal.png",
+            "width": 604,
+            "height": 1099,
+            "sha256": "f02025e783a8d335afe00e969fe9a7f3fa5c8f70f059aa3463a456e25d8886b8",
+            "visually_inspected": true,
+            "source_kind": "community_wiki_game_model_or_trailer_capture",
+            "scope": "Exact retail game model."
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated",
+      "generation_status": "candidate_pngs_present"
     },
     {
       "id": "combine_charger_hla",
@@ -3319,7 +3481,51 @@
           "CB07"
         ],
         "scope": "Identification du jeu source uniquement; aucune validation visuelle ou activation runtime."
-      }
+      },
+      "production_review_20261125_k": {
+        "target_id": "fast_zombie_hl2",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "fast_zombie_hl2_idle_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/characters/fast_zombie_hl2_idle_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "target_id": "fast_zombie_hl2",
+            "reference_filename": "Fast_zombie.jpg",
+            "source_url": "https://combineoverwiki.net/images/0/00/Fast_zombie.jpg",
+            "source_page": "https://combineoverwiki.net/wiki/File:Fast_zombie.jpg",
+            "context_page": "https://combineoverwiki.net/wiki/Fast_Zombie",
+            "caption": "Fast Zombie.",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/characters/references/Fast_zombie.jpg",
+            "width": 377,
+            "height": 617,
+            "sha256": "939018bc6b1dda7f5e7ac0b37f8ff244e5d68486c96cf3421065b435ea616b37",
+            "visually_inspected": true,
+            "source_kind": "community_wiki_game_model_render",
+            "scope": "Exact released Half-Life 2 variant; source image inspected before generation."
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated",
+      "generation_status": "candidate_pngs_present"
     },
     {
       "id": "poison_zombie_hl2",
@@ -3339,7 +3545,51 @@
           "CB07"
         ],
         "scope": "Identification du jeu source uniquement; aucune validation visuelle ou activation runtime."
-      }
+      },
+      "production_review_20261125_k": {
+        "target_id": "poison_zombie_hl2",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "poison_zombie_hl2_idle_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/characters/poison_zombie_hl2_idle_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "target_id": "poison_zombie_hl2",
+            "reference_filename": "Poison_zombie.jpg",
+            "source_url": "https://combineoverwiki.net/images/0/06/Poison_zombie.jpg",
+            "source_page": "https://combineoverwiki.net/wiki/File:Poison_zombie.jpg",
+            "context_page": "https://combineoverwiki.net/wiki/Poison_Zombie",
+            "caption": "Poison Zombie.",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/characters/references/Poison_zombie.jpg",
+            "width": 445,
+            "height": 601,
+            "sha256": "0f0034827c5aabface80bfe81bca2dc36ddb0105a19ca18c091ca6984ed76533",
+            "visually_inspected": true,
+            "source_kind": "community_wiki_game_model_render",
+            "scope": "Exact released Half-Life 2 variant; source image inspected before generation."
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated",
+      "generation_status": "candidate_pngs_present"
     },
     {
       "id": "zombine_ep1",
@@ -3587,5 +3837,6 @@
         "antlion_hl2_idle_d"
       ]
     }
-  ]
+  ],
+  "updated_on": "2026-11-25"
 }

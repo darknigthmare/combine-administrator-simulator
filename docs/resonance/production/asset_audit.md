@@ -1,25 +1,25 @@
 # Audit des fichiers de production — Half Life Resonance
 
-Exécuté le 2026-11-24T17:47:29.462Z. Résultat : **réussi**.
+Exécuté le 2026-11-25T06:29:27.115Z. Résultat : **réussi**.
 
 Le comptage porte sur les fichiers présents dans le dépôt au moment du contrôle. Les déclarations des anciennes conversations ne créent aucune entrée ni aucun fichier.
 
 | Mesure | Nombre |
 |---|---:|
-| actual_png_files | 191 |
-| valid_png_headers | 191 |
-| distinct_png_contents | 191 |
-| requests | 229 |
-| generated_requests | 191 |
-| generated_requests_with_verified_file | 191 |
-| blocked_requests | 25 |
-| tool_error_requests | 1 |
+| actual_png_files | 271 |
+| valid_png_headers | 271 |
+| distinct_png_contents | 271 |
+| requests | 323 |
+| generated_requests | 271 |
+| generated_requests_with_verified_file | 271 |
+| blocked_requests | 36 |
+| tool_error_requests | 4 |
 | output_unavailable_requests | 12 |
-| unproduced_requests | 26 |
+| unproduced_requests | 40 |
 | unclassified_requests | 0 |
-| requests_with_files | 191 |
-| requests_without_files | 38 |
-| registered_png_files | 191 |
+| requests_with_files | 271 |
+| requests_without_files | 52 |
+| registered_png_files | 271 |
 | unregistered_png_files | 0 |
 | certified_one_to_one_declared | 0 |
 | certified_one_to_one_with_verified_file | 0 |
@@ -220,6 +220,86 @@ Présence, SHA-256, taille et en-tête PNG sont vérifiés. Le script ne décode
 | assets/resonance/candidates/continuation_20261124_j/stages/stage_surface_dam_hl1_master_j_v2.png | 1672 × 941 | 2369551 | oui |
 | assets/resonance/candidates/continuation_20261124_j/stages/stage_surface_dam_hl1_master_j.png | 1672 × 941 | 2453788 | oui |
 | assets/resonance/candidates/continuation_20261124_j/stages/stage_test17_portal1_master_j.png | 1672 × 941 | 2491973 | oui |
+| assets/resonance/candidates/continuation_20261125_k/archive_stages/archive_borealis_hl2_e3_2002_master_k.png | 1672 × 941 | 2121796 | oui |
+| assets/resonance/candidates/continuation_20261125_k/archives/archive_alien_assassin_hl2_2002_idle_k.png | 1312 × 1199 | 1036923 | oui |
+| assets/resonance/candidates/continuation_20261125_k/archives/archive_cremator_hl2_2002_idle_k.png | 1024 × 1536 | 1835584 | oui |
+| assets/resonance/candidates/continuation_20261125_k/archives/archive_kingpin_hl1_idle_k.png | 1061 × 1483 | 1162393 | oui |
+| assets/resonance/candidates/continuation_20261125_k/archives/archive_mr_friendly_hl1_idle_k.png | 1317 × 1194 | 1150062 | oui |
+| assets/resonance/candidates/continuation_20261125_k/archives/archive_odell_hl2_idle_k.png | 1024 × 1536 | 1675915 | oui |
+| assets/resonance/candidates/continuation_20261125_k/archives/hydra_hl2_cut_idle_k.png | 1153 × 1364 | 650783 | oui |
+| assets/resonance/candidates/continuation_20261125_k/characters/alyx_hla_idle_k.png | 1199 × 1312 | 709998 | oui |
+| assets/resonance/candidates/continuation_20261125_k/characters/bendy_peti_idle_k.png | 1001 × 1572 | 279161 | oui |
+| assets/resonance/candidates/continuation_20261125_k/characters/black_ops_male_op4_idle_k.png | 887 × 1774 | 968803 | oui |
+| assets/resonance/candidates/continuation_20261125_k/characters/combine_ordinal_hla_idle_k.png | 932 × 1688 | 1381760 | oui |
+| assets/resonance/candidates/continuation_20261125_k/characters/doug_rattmann_labrat_idle_k.png | 1024 × 1536 | 1899272 | oui |
+| assets/resonance/candidates/continuation_20261125_k/characters/fast_zombie_hl2_idle_k.png | 980 × 1605 | 1518306 | oui |
+| assets/resonance/candidates/continuation_20261125_k/characters/gary_hla_idle_k.png | 1199 × 1312 | 944546 | oui |
+| assets/resonance/candidates/continuation_20261125_k/characters/kleiner_hl2_idle_k.png | 807 × 1949 | 1381750 | oui |
+| assets/resonance/candidates/continuation_20261125_k/characters/lamarr_hl2_idle_k.png | 1312 × 1199 | 1061979 | oui |
+| assets/resonance/candidates/continuation_20261125_k/characters/larry_hla_idle_k.png | 1145 × 1374 | 911243 | oui |
+| assets/resonance/candidates/continuation_20261125_k/characters/magnusson_ep2_idle_k.png | 778 × 2022 | 1395372 | oui |
+| assets/resonance/candidates/continuation_20261125_k/characters/mossman_hl2_idle_k.png | 725 × 2170 | 1408828 | oui |
+| assets/resonance/candidates/continuation_20261125_k/characters/odessa_hl2_idle_k.png | 757 × 2078 | 1552481 | oui |
+| assets/resonance/candidates/continuation_20261125_k/characters/poison_zombie_hl2_idle_k.png | 1079 × 1457 | 1768188 | oui |
+| assets/resonance/candidates/continuation_20261125_k/characters/richard_keller_decay_idle_k.png | 1254 × 1254 | 1017356 | oui |
+| assets/resonance/candidates/continuation_20261125_k/characters/russell_hla_idle_k.png | 1145 × 1374 | 1025329 | oui |
+| assets/resonance/candidates/continuation_20261125_k/characters/shock_roach_op4_idle_k.png | 1316 × 1195 | 751636 | oui |
+| assets/resonance/candidates/continuation_20261125_k/characters/simmons_blueshift_idle_k.png | 1002 × 1570 | 880161 | oui |
+| assets/resonance/candidates/continuation_20261125_k/characters/snark_hl1_idle_k.png | 1312 × 1199 | 768491 | oui |
+| assets/resonance/candidates/continuation_20261125_k/characters/walter_bennet_blueshift_idle_k.png | 979 × 1606 | 798899 | oui |
+| assets/resonance/candidates/continuation_20261125_k/characters/zombie_hl2_idle_k.png | 769 × 2045 | 1829811 | oui |
+| assets/resonance/candidates/continuation_20261125_k/costumes/costume_barney_cp_helmet_idle_k.png | 790 × 1989 | 1417318 | oui |
+| assets/resonance/candidates/continuation_20261125_k/costumes/costume_colette_headtohead_ps2_idle_k.png | 1024 × 1536 | 1577269 | oui |
+| assets/resonance/candidates/continuation_20261125_k/costumes/costume_gman_hla_idle_k.png | 1199 × 1312 | 609726 | oui |
+| assets/resonance/candidates/continuation_20261125_k/costumes/costume_mossman_arctic_idle_k.png | 731 × 2152 | 1250088 | oui |
+| assets/resonance/candidates/continuation_20261125_k/costumes/skeleton_hl25_multiplayer_idle_k.png | 1199 × 1312 | 471516 | oui |
+| assets/resonance/candidates/continuation_20261125_k/costumes/too_much_coffee_man_hl25_multiplayer_idle_k.png | 1199 × 1312 | 516736 | oui |
+| assets/resonance/candidates/continuation_20261125_k/effects/fx_ar2_tracer_hl2_trace_k.png | 2172 × 724 | 1021749 | oui |
+| assets/resonance/candidates/continuation_20261125_k/effects/fx_deskjob_turret_tracer_muzzle_k.png | 1536 × 1024 | 1178629 | oui |
+| assets/resonance/candidates/continuation_20261125_k/effects/fx_gargantua_flame_hl1_flame_sustain_k.png | 2172 × 724 | 810520 | oui |
+| assets/resonance/candidates/continuation_20261125_k/effects/fx_gargantua_stomp_hl1_ground_wave_particle_k.png | 1278 × 1230 | 542615 | oui |
+| assets/resonance/candidates/continuation_20261125_k/effects/fx_gunship_tracer_hl2_trace_k.png | 2172 × 724 | 246841 | oui |
+| assets/resonance/candidates/continuation_20261125_k/effects/fx_pit_worm_beam_opfor_beam_k.png | 2172 × 724 | 413734 | oui |
+| assets/resonance/candidates/continuation_20261125_k/effects/fx_portals_coop_portal2_atlas_blue_k.png | 1066 × 1476 | 637273 | oui |
+| assets/resonance/candidates/continuation_20261125_k/effects/fx_portals_coop_portal2_atlas_purple_k.png | 1070 × 1470 | 567108 | oui |
+| assets/resonance/candidates/continuation_20261125_k/effects/fx_portals_coop_portal2_pbody_red_k.png | 1070 × 1470 | 605098 | oui |
+| assets/resonance/candidates/continuation_20261125_k/effects/fx_portals_coop_portal2_pbody_yellow_k.png | 1070 × 1470 | 808888 | oui |
+| assets/resonance/candidates/continuation_20261125_k/effects/fx_portals_solo_portal2_blue_k.png | 1086 × 1448 | 537936 | oui |
+| assets/resonance/candidates/continuation_20261125_k/effects/fx_portals_solo_portal2_orange_k.png | 1072 × 1467 | 569990 | oui |
+| assets/resonance/candidates/continuation_20261125_k/effects/fx_strider_tracer_hl2_trace_k.png | 2172 × 724 | 199311 | oui |
+| assets/resonance/candidates/continuation_20261125_k/effects/proj_combine_grenade_hla_body_k.png | 1374 × 1145 | 2066439 | oui |
+| assets/resonance/candidates/continuation_20261125_k/effects/proj_nihilanth_energy_hl1_body_k.png | 1288 × 1221 | 1133869 | oui |
+| assets/resonance/candidates/continuation_20261125_k/effects/proj_nihilanth_teleport_hl1_body_k.png | 1271 × 1238 | 1493874 | oui |
+| assets/resonance/candidates/continuation_20261125_k/effects/proj_rocket_turret_missile_portal1_body_k.png | 2172 × 724 | 876491 | oui |
+| assets/resonance/candidates/continuation_20261125_k/effects/proj_voltigore_orb_opfor_charge_k.png | 2172 × 724 | 511541 | oui |
+| assets/resonance/candidates/continuation_20261125_k/effects/proj_xen_grenade_hla_body_k.png | 1289 × 1221 | 2184010 | oui |
+| assets/resonance/candidates/continuation_20261125_k/machines/adventure_core_portal2_idle_k.png | 1312 × 1199 | 1658372 | oui |
+| assets/resonance/candidates/continuation_20261125_k/machines/appliance_turret_deskjob_idle_k.png | 1312 × 1199 | 1565973 | oui |
+| assets/resonance/candidates/continuation_20261125_k/machines/defective_turret_portal2_idle_k.png | 1068 × 1473 | 1138193 | oui |
+| assets/resonance/candidates/continuation_20261125_k/machines/glados_portal1_idle_k.png | 1124 × 1399 | 1327374 | oui |
+| assets/resonance/candidates/continuation_20261125_k/machines/guardian_surface_ep2_idle_k.png | 1312 × 1199 | 1292856 | oui |
+| assets/resonance/candidates/continuation_20261125_k/machines/hunter_chopper_ep2_idle_k.png | 1774 × 887 | 1334672 | oui |
+| assets/resonance/candidates/continuation_20261125_k/machines/reviver_hla_idle_k.png | 1254 × 1254 | 903457 | oui |
+| assets/resonance/candidates/continuation_20261125_k/machines/sentry_turret_portal2_idle_k.png | 1024 × 1536 | 1578273 | oui |
+| assets/resonance/candidates/continuation_20261125_k/machines/strider_hl2_idle_k.png | 1086 × 1448 | 576442 | oui |
+| assets/resonance/candidates/continuation_20261125_k/machines/strider_hla_idle_k.png | 1457 × 1080 | 660110 | oui |
+| assets/resonance/candidates/continuation_20261125_k/stages/stage_bs_xen_focal_point_master_k.png | 1672 × 941 | 2630370 | oui |
+| assets/resonance/candidates/continuation_20261125_k/stages/stage_decay_dormitories_ps2_master_k.png | 1672 × 941 | 2213346 | oui |
+| assets/resonance/candidates/continuation_20261125_k/stages/stage_decay_gamma_ps2_master_k.png | 1672 × 941 | 2558431 | oui |
+| assets/resonance/candidates/continuation_20261125_k/stages/stage_deskjob_cave_office_master_k.png | 1672 × 941 | 1906239 | oui |
+| assets/resonance/candidates/continuation_20261125_k/stages/stage_deskjob_factory_master_k.png | 1672 × 941 | 2262844 | oui |
+| assets/resonance/candidates/continuation_20261125_k/stages/stage_ep1_evac_platform_master_k.png | 1672 × 941 | 2600075 | oui |
+| assets/resonance/candidates/continuation_20261125_k/stages/stage_hla_distillery_master_k.png | 1672 × 941 | 2533242 | oui |
+| assets/resonance/candidates/continuation_20261125_k/stages/stage_hla_quarantine_street_master_k.png | 1672 × 941 | 2392218 | oui |
+| assets/resonance/candidates/continuation_20261125_k/stages/stage_hla_vault_apartment_master_k.png | 1672 × 941 | 2155080 | oui |
+| assets/resonance/candidates/continuation_20261125_k/stages/stage_hla_zoo_captivity_master_k.png | 1672 × 941 | 2488179 | oui |
+| assets/resonance/candidates/continuation_20261125_k/stages/stage_op4_cargo_master_k.png | 1672 × 941 | 2258013 | oui |
+| assets/resonance/candidates/continuation_20261125_k/stages/stage_op4_gene_worm_chamber_master_k.png | 1672 × 941 | 2877825 | oui |
+| assets/resonance/candidates/continuation_20261125_k/stages/stage_portal1_maintenance_master_k.png | 1672 × 941 | 2514371 | oui |
+| assets/resonance/candidates/continuation_20261125_k/stages/stage_portal2_coop_hub_master_k.png | 1672 × 941 | 2227993 | oui |
+| assets/resonance/candidates/continuation_20261125_k/stages/stage_portal2_human_vault_master_k.png | 1672 × 941 | 2168305 | oui |
+| assets/resonance/candidates/continuation_20261125_k/stages/stage_portal2_peer_review_chamber4_master_k.png | 1672 × 941 | 2405418 | oui |
+| assets/resonance/candidates/continuation_20261125_k/stages/stage_uplink_communications_master_k.png | 1672 × 941 | 2262928 | oui |
 | assets/resonance/candidates/layer_black_mesa_floor.png | 2172 × 724 | 641901 | oui |
 | assets/resonance/candidates/layer_city17_distant_skyline.png | 1774 × 887 | 1545440 | oui |
 | assets/resonance/candidates/prop_hev_suit_charger.png | 1024 × 1536 | 2691794 | oui |

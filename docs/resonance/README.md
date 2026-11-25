@@ -2,7 +2,17 @@
 
 Bible, production graphique et premier module Boss Battle jouable du mode annexe de combat 2D de Half Life Administrator.
 
-## Reprise du 24 novembre — bible 1.7 et lot J
+## Reprise du 25 novembre — bible 1.8 et lot K
+
+**80 nouveaux PNG couvrant 76 cibles jusque-là sans fichier.** Les 104 cibles manquantes au début du lot ont une issue explicite : 76 reçoivent un candidat, 11 ont un refus de génération confirmé et 17 sont reportées sans appel avec le blocage documenté.
+
+L’inventaire atteint **271 PNG distincts**, **323 entrées**, **36 refus**, **4 erreurs outil** et **12 sorties historiques perdues**. **231 des 259 cibles ont un PNG; 28 restent sans PNG.**
+
+[Rapport du lot K](production/continuation_20261125_k/README.md) · [Galerie](production/continuation_20261125_k/GALLERY.md) · [Revue des 104 cibles](production/continuation_20261125_k/TARGET_REVIEW.md) · [Inventaire complet](production/MISSING_TARGETS.md)
+
+Les références, refus explicites et reports sont conservés séparément. Les nouveaux fichiers restent des poses, effets statiques ou panoramas candidats. Les neuf images déjà utilisées dans Boss Battle restent les seules intégrations déclarées; aucune animation complète, arène à six couches ou fidélité 1:1 n’est certifiée. Les exports Word/Excel v1 restent historiques.
+
+## Lot J — état historique du 24 novembre
 
 **44 PNG supplémentaires : 43 nouvelles images conservées et un décor historique récupéré.** Le [rapport du lot J](production/continuation_20261124_j/README.md) et sa [galerie](production/continuation_20261124_j/GALLERY.md) portent l’inventaire à **191 PNG distincts, 229 entrées, 25 refus antérieurs, 1 erreur outil et 12 sorties perdues tracées**. **155 des 259 cibles** ont un fichier associé; **104 restent sans PNG**.
 

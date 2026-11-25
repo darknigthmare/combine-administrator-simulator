@@ -746,7 +746,45 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "production_review_20261125_k": {
+        "target_id": "STG_06_OP4_CARGO",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "stage_op4_cargo_master_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/stages/stage_op4_cargo_master_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "Friendly_Fire4.jpg",
+            "source_page": "https://combineoverwiki.net/wiki/File:Friendly_Fire4.jpg",
+            "source_url": "https://combineoverwiki.net/images/b/b3/Friendly_Fire4.jpg",
+            "sha256": "ffd2b6df502409f1b98a8ada11388ff4e8c1288b78dcbd5e0eece04883938dc9",
+            "role": "original_game_capture_reference",
+            "visually_inspected": true,
+            "source_metadata_excerpt": "Description A nuclear missile. Source Half-Life: Opposing Force Licensing This is a screenshot of a copyrighted video game graphic. It is believed that screenshots may be exhibited on the Combine OverWiki under the fair use provision of United States copyright law . File history Click on a date/time to view the file as it appeared at that time. Date/Time Thumbnail Dimensions User Comment current 15:20, 13 November 2015 1,280 × 960 (136 KB) Barnz ( talk | contribs ) 13:04, 27 December 2011 1,000 × 546 (407 KB) Klow ( talk | contribs ) You cannot"
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated",
+      "generation_status": "candidate_pngs_present"
     },
     {
       "id": "STG_07_OP4_GENE_WORM",
@@ -864,7 +902,54 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "production_review_20261125_k": {
+        "target_id": "STG_07_OP4_GENE_WORM",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "stage_op4_gene_worm_chamber_master_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/stages/stage_op4_gene_worm_chamber_master_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "Gene_Worm_defeated.jpg",
+            "source_page": "https://combineoverwiki.net/wiki/File:Gene_Worm_defeated.jpg",
+            "source_url": "https://combineoverwiki.net/images/9/9b/Gene_Worm_defeated.jpg",
+            "sha256": "af91b1776317b20d6cf566ed11cd0b743e74556b9ea444f37bedc96e3c490175",
+            "role": "original_game_capture_reference",
+            "visually_inspected": true,
+            "source_metadata_excerpt": "Description The Gene Worm is defeated. Source Half-Life: Opposing Force Licensing This is a screenshot of a copyrighted video game graphic. It is believed that screenshots may be exhibited on the Combine OverWiki under the fair use provision of United States copyright law . File history Click on a date/time to view the file as it appeared at that time. Date/Time Thumbnail Dimensions User Comment current 13:23, 27 December 2011 1,041 × 800 (717 KB) Klow ( talk | contribs ) You cannot overwrite this file. File usage The following 7 pages use this"
+          },
+          {
+            "reference_filename": "Gene_Worm_enters.jpg",
+            "source_page": "https://combineoverwiki.net/wiki/File:Gene_Worm_enters.jpg",
+            "source_url": "https://combineoverwiki.net/images/4/4a/Gene_Worm_enters.jpg",
+            "sha256": "4f1b622f2d1bce3a562cbc64ec9901cc5a05a30465e2674567087269ee0942f8",
+            "role": "original_game_capture_reference",
+            "visually_inspected": true,
+            "source_metadata_excerpt": "Description The Gene Worm emerging from its portal. Source Half-Life: Opposing Force Licensing This is a screenshot of a copyrighted video game graphic. It is believed that screenshots may be exhibited on the Combine OverWiki under the fair use provision of United States copyright law . File history Click on a date/time to view the file as it appeared at that time. Date/Time Thumbnail Dimensions User Comment current 13:14, 27 December 2011 1,045 × 800 (627 KB) Klow ( talk | contribs ) You cannot overwrite this file. File usage The following 7 p"
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated",
+      "generation_status": "candidate_pngs_present"
     },
     {
       "id": "STG_08_BS_FREIGHT",
@@ -1252,7 +1337,45 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "production_review_20261125_k": {
+        "target_id": "STG_10_DECAY_GAMMA",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "stage_decay_gamma_ps2_master_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/stages/stage_decay_gamma_ps2_master_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "Decay_PS2_blog_24.jpg",
+            "source_page": "https://ticketdorado.blogspot.com/2021/11/el-dr-freeman-esta-llegando-tardede.html",
+            "source_url": "https://blogger.googleusercontent.com/img/a/AVvXsEis6URoyTnxCyAdNMs4TGx0817wgiIOggDpWtqCOtF34oy9CeMj1sR4yk3Mfu0EJsSAQW91vY221mhrEYSMt4ZVY6BkSRHKSF4vqRMUMYZah57BU4rI2HNivxz7xqHXB4eaK8Z6Ygu-73vNkKdd0zbdsXFtUhTW73Xib_Mhyq9ZrHWPy6R8_1kYcfhSPw=w640-h350",
+            "sha256": "15af7d8811ccb1969e95734d3698bd8e3db6383fa17be3ac3f1a65ac7355be45",
+            "role": "original_game_capture_reference",
+            "visually_inspected": true,
+            "source_metadata_excerpt": "Original PlayStation 2 captures expressly identified by Ticket Dorado review (2021-11); white HUD for Cross / orange for Green. Gamma Labs displacement beacon exterior; captions: El faro de desplazamiento / El faro activado y liberando energía."
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated",
+      "generation_status": "candidate_pngs_present"
     },
     {
       "id": "STG_11_HL2_STATION",
@@ -2372,7 +2495,45 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "production_review_20261125_k": {
+        "target_id": "STG_18_EP1_EVAC",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "stage_ep1_evac_platform_master_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/stages/stage_ep1_evac_platform_master_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "Ep1_trainstation2.jpg",
+            "source_page": "https://combineoverwiki.net/wiki/File:Ep1_trainstation2.jpg",
+            "source_url": "https://combineoverwiki.net/images/b/b7/Ep1_trainstation2.jpg",
+            "sha256": "49c1489b6bd86a14ab8fdc62987fa1e3838ec2815da3a6402cebd43c197f07b3",
+            "role": "original_game_capture_reference",
+            "visually_inspected": true,
+            "source_metadata_excerpt": "Description Trains and platforms in the Technical Trainstation. Location ep1_c17_06 , Technical Trainstation Source Half-Life 2: Episode One , Exit 17 Licensing This is a screenshot of a copyrighted video game graphic. It is believed that screenshots may be exhibited on the Combine OverWiki under the fair use provision of United States copyright law . File history Click on a date/time to view the file as it appeared at that time. Date/Time Thumbnail Dimensions User Comment current 12:58, 27 December 2011 900 × 720 (346 KB) Klow ( talk | contrib"
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated",
+      "generation_status": "candidate_pngs_present"
     },
     {
       "id": "STG_19_EP2_ANTLION",
@@ -2878,7 +3039,45 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "production_review_20261125_k": {
+        "target_id": "STG_22_HLA_QUARANTINE",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "stage_hla_quarantine_street_master_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/stages/stage_hla_quarantine_street_master_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "QuarantineZone.jpg",
+            "source_page": "https://combineoverwiki.net/wiki/File:QuarantineZone.jpg",
+            "source_url": "https://combineoverwiki.net/images/c/ca/QuarantineZone.jpg",
+            "sha256": "6175a4b56862895e77152ec1563fe6bf69f8b894282bf97648d7fe3439639490",
+            "role": "original_game_capture_reference",
+            "visually_inspected": true,
+            "source_metadata_excerpt": "Description Entrance to the Quarantine Zone . Location a2_quarantine_entrance , Quarantine Zone Source Half-Life: Alyx , The Quarantine Zone Licensing This is a screenshot of a copyrighted video game graphic. It is believed that screenshots may be exhibited on the Combine OverWiki under the fair use provision of United States copyright law . File h"
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated",
+      "generation_status": "candidate_pngs_present"
     },
     {
       "id": "STG_23_HLA_DISTILLERY",
@@ -2996,7 +3195,45 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "production_review_20261125_k": {
+        "target_id": "STG_23_HLA_DISTILLERY",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "stage_hla_distillery_master_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/stages/stage_hla_distillery_master_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "HLA_Distillery03.jpg",
+            "source_page": "https://combineoverwiki.net/wiki/File:HLA_Distillery03.jpg",
+            "source_url": "https://combineoverwiki.net/images/a/a9/HLA_Distillery03.jpg",
+            "sha256": "9b1507f781c0270d44f66924c385d0217afbb4c3b9b274a3c5f6d8b9c33b7f85",
+            "role": "original_game_capture_reference",
+            "visually_inspected": true,
+            "source_metadata_excerpt": "Description The stills in the Golden Lion Distillery . Location a3_distillery , Golden Lion Distillery] Source Half-Life: Alyx , Jeff Licensing This is a screenshot of a copyrighted video game graphic. It is believed that screenshots may be exhibited on the Combine OverWiki under the fair use provision of United States copyright law . File history "
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated",
+      "generation_status": "candidate_pngs_present"
     },
     {
       "id": "STG_24_HLA_VAULT",
@@ -3114,7 +3351,46 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "production_review_20261125_k": {
+        "target_id": "STG_24_HLA_VAULT",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "stage_hla_vault_apartment_master_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/stages/stage_hla_vault_apartment_master_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "Vault_Apartment_Hallway.jpg",
+            "source_page": "https://combineoverwiki.net/wiki/File:Vault_Apartment_Hallway.jpg",
+            "source_url": "https://combineoverwiki.net/images/2/2d/Vault_Apartment_Hallway.jpg",
+            "sha256": "9003904bafa1024b606ca1e9813490cbc52db955f5d48d73f5f5894ca56d8a4d",
+            "role": "original_game_capture_reference",
+            "visually_inspected": true,
+            "source_metadata_excerpt": "Description A hallway in the contained apartment inside the Vault . Location a5_vault Source Half-Life: Alyx Licensing This is a screenshot of a copyrighted video game graphic. It is believed that screenshots may be exhibited on the Combine OverWiki under the fair use provision of United States copyright law . File history Click on a date/time to view the file as it appeared at that time. Date/Time Thumbnail Dimensions User Comment current 03:54, 9 May 2020 1,920 × 1,080 (875 KB) Hawke ( talk | contribs ) {{Information |attention= |description="
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated",
+      "generation_status": "candidate_pngs_present"
     }
-  ]
+  ],
+  "updated_on": "2026-11-25"
 }

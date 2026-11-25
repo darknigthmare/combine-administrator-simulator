@@ -1,0 +1,2458 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "continuation_20261125_k",
+  "created_at": "2026-11-25",
+  "counts": {
+    "assigned_targets": 30,
+    "assessed_targets": 30,
+    "generated_png": 19,
+    "targets_with_new_png": 15,
+    "confirmed_refusals": 2,
+    "parameter_validation_errors": 3,
+    "actual_generation_calls": 21,
+    "deferred_targets": 13
+  },
+  "assets": [
+    {
+      "asset_id": "fx_ar2_tracer_hl2_trace_k",
+      "target_id": "fx_ar2_tracer_hl2",
+      "name_fr": "Traceur primaire AR2 HL2",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "visual_state_id": "trace",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_ar2_tracer_hl2_trace_k.png",
+      "reference_paths": [
+        "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/D2_coast_080049.JPG"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "D2_coast_080049.JPG",
+          "source_url": "https://combineoverwiki.net/images/7/72/D2_coast_080049.JPG",
+          "source_page": "https://combineoverwiki.net/wiki/File:D2_coast_080049.JPG",
+          "article_url": "https://combineoverwiki.net/wiki/Combine_Gunship",
+          "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/D2_coast_080049.JPG",
+          "sha256": "2e4a347eda6193790275f28635e801a86a0fadd8244d3700bcf75f3c4a1a7a64",
+          "byte_size": 291817,
+          "dimensions": [
+            800,
+            535
+          ],
+          "caption": "Gunship firing at Gordon after the Bridge Point Force Fields are deactivated.",
+          "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/Combine_Gunship",
+        "https://combineoverwiki.net/wiki/File:D2_coast_080049.JPG",
+        "https://combineoverwiki.net/images/7/72/D2_coast_080049.JPG",
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/client/hl2/fx_hl2_tracers.cpp"
+      ],
+      "reference_scope": "Gameplay capture of Gunship tracer plus official SDK shared effects/gunshiptracer material for FX_AR2Tracer. Random width 0.5–1.5 in FX_AR2Tracer; the separate FX_PlayerAR2Tracer path uses width 6–12. This candidate does not certify the player tracer, pixel metrics or temporal behavior.",
+      "prompt": "Create one isolated horizontal 2D VFX tracer sprite for Traceur primaire AR2 HL2. The attached original Half-Life 2 screenshot shows the exact shared effects/gunshiptracer material as a flying light streak at the LEFT of the gunship. Valve's source code uses that same material for FX_AR2Tracer. Match the observed narrow WHITE to pale lemon luminous core with a very restrained CYAN/ice-blue outer halo and soft pointed ends. Render one extremely thin luminous streak, length-to-width about 100:1, directed horizontally from RIGHT to LEFT. This is one single straight streak key-frame of a fleeting bullet-tracer effect, a clean elongated sliver, with no round orb or visible physical bullet. Retain restrained Source-engine softness; high-resolution VFX only. Whole streak contained with generous clear margin, true transparent alpha and soft translucent edge. No gunship, weapon, muzzle starburst, black bullet marks, metal, smoke, impact, lightning, scenery, text, sheet, duplicated streak or filled background.",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 1021749,
+      "sha256": "1e65eb279216e1d90b7619ba55bce607b56908b9ee81aa6a4f7e6be2c39a2cdd",
+      "git_blob_sha": "4619e2bb3c72f63429fd75be5e9e170f9760319f",
+      "alpha": {
+        "minimum": 0,
+        "maximum": 253,
+        "transparent_pixels": 364466,
+        "opaque_pixels": 0,
+        "partial_pixels": 1208062,
+        "nonzero_bbox": [
+          0,
+          15,
+          2172,
+          724
+        ],
+        "mean": 9.106866777570891,
+        "bbox_alpha_gt_8": [
+          79,
+          260,
+          2043,
+          472
+        ]
+      },
+      "original_png_bytes_preserved": true,
+      "owner_id": "fx_ar2_tracer_hl2",
+      "owner_type": "projectile_effect",
+      "target_ids": [
+        "fx_ar2_tracer_hl2"
+      ],
+      "category": "projectile_key_frame",
+      "batch_id": "continuation_20261125_k",
+      "created_at": "2026-11-25",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_ar2_tracer_hl2_trace_k.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "save_method": "Original image_gen PNG bytes stored in an immutable GitHub blob before local copy; Git blob hash verified.",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+      "qa_notes": "Trait blanc-jaune fin et halo cyan; référence Gunship justifiée par le matériau effects/gunshiptracer partagé dans le SDK. FX_AR2Tracer varie sa largeur entre 0,5 et 1,5; le chemin joueur FX_PlayerAR2Tracer emploie 6 à 12. Ce candidat fin ne certifie pas le tir du joueur. Une capture directe du contexte AR2 retenu reste requise. PNG original conservé sans retouche; aucune certification 1:1.",
+      "notes": "Trait blanc-jaune fin et halo cyan; référence Gunship justifiée par le matériau effects/gunshiptracer partagé dans le SDK. FX_AR2Tracer varie sa largeur entre 0,5 et 1,5; le chemin joueur FX_PlayerAR2Tracer emploie 6 à 12. Ce candidat fin ne certifie pas le tir du joueur. Une capture directe du contexte AR2 retenu reste requise. PNG original conservé sans retouche; aucune certification 1:1.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "result": "Trait blanc-jaune fin et halo cyan; référence Gunship justifiée par le matériau effects/gunshiptracer partagé dans le SDK. FX_AR2Tracer varie sa largeur entre 0,5 et 1,5; le chemin joueur FX_PlayerAR2Tracer emploie 6 à 12. Ce candidat fin ne certifie pas le tir du joueur. Une capture directe du contexte AR2 retenu reste requise."
+      },
+      "reference_scope_at_generation": "Gameplay capture of Gunship tracer plus official SDK shared effects/gunshiptracer material for FX_AR2Tracer. Width 1 in the client code; exact temporal behavior not represented by this single sprite.",
+      "reference_scope_correction": "Post-generation source review: the initial annotation Width 1 was an approximation, not the literal SDK range. Prompt and PNG remain unchanged."
+    },
+    {
+      "asset_id": "fx_ar2_tracer_hl2_trace_k_parameter_error",
+      "target_id": "fx_ar2_tracer_hl2",
+      "name_fr": "Traceur primaire AR2 HL2",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "visual_state_id": "trace",
+      "repository_path": null,
+      "reference_paths": [],
+      "source_references": [],
+      "source_urls": [
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/client/hl2/fx_hl2_tracers.cpp"
+      ],
+      "reference_scope": "Gameplay capture of Gunship tracer plus official SDK shared effects/gunshiptracer material for FX_AR2Tracer. Random width 0.5–1.5 in FX_AR2Tracer; the separate FX_PlayerAR2Tracer path uses width 6–12. This candidate does not certify the player tracer, pixel metrics or temporal behavior.",
+      "prompt": "Create one isolated horizontal 2D VFX tracer sprite for Traceur primaire AR2 HL2. The attached original Half-Life 2 screenshot shows the exact shared effects/gunshiptracer material as a flying light streak at the LEFT of the gunship. Valve's source code uses that same material for FX_AR2Tracer. Match the observed narrow WHITE to pale lemon luminous core with a very restrained CYAN/ice-blue outer halo and soft pointed ends. Render one extremely thin luminous streak, length-to-width about 100:1, directed horizontally from RIGHT to LEFT. This is one single straight streak key-frame of a fleeting bullet-tracer effect, a clean elongated sliver, with no round orb or visible physical bullet. Retain restrained Source-engine softness; high-resolution VFX only. Whole streak contained with generous clear margin, true transparent alpha and soft translucent edge. No gunship, weapon, muzzle starburst, black bullet marks, metal, smoke, impact, lightning, scenery, text, sheet, duplicated streak or filled background.",
+      "generation_status": "erreur outil",
+      "status": "erreur outil",
+      "file_path": null,
+      "error": "invalid type: null, expected path string at line 1 column 1088",
+      "error_classification": "tool_parameter_validation_error",
+      "generation_call_count": 0,
+      "batch_id": "continuation_20261125_k",
+      "new_generation_call": false,
+      "image_generation_started": false,
+      "tool_invocation_count": 1,
+      "notes": "Appel rejeté avant génération : chemin de référence nul issu du manifeste incomplet. Paramètres corrigés pour une nouvelle invocation.",
+      "owner_id": "fx_ar2_tracer_hl2",
+      "owner_type": "projectile_effect",
+      "target_ids": [
+        "fx_ar2_tracer_hl2"
+      ],
+      "category": "projectile_key_frame",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "selected_for_next_review": false,
+      "created_at": "2026-11-25",
+      "generator": "image_gen built-in",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "reference_bitmap_loaded": false,
+      "reference_scope_at_generation": "Gameplay capture of Gunship tracer plus official SDK shared effects/gunshiptracer material for FX_AR2Tracer. Width 1 in the client code; exact temporal behavior not represented by this single sprite.",
+      "reference_scope_correction": "Post-generation source review: the initial annotation Width 1 was an approximation, not the literal SDK range. Prompt and PNG remain unchanged."
+    },
+    {
+      "asset_id": "fx_deskjob_turret_tracer_muzzle_k",
+      "target_id": "fx_deskjob_turret_tracer",
+      "name_fr": "Tourelle électroménagère — flash de tir",
+      "source_game": "Aperture Desk Job",
+      "visual_state_id": "muzzle",
+      "ref": "ADJ_HousewaresTurret02.jpg",
+      "prompt": "Create one isolated compact muzzle-flash VFX sprite matching the golden firing flashes seen on the appliance turrets in the attached released Aperture Desk Job gameplay screenshot. Use the front-left and middle appliances' actual small warm gold/orange flashes as the color and shape reference: very small white-yellow hot center, short soft yellow-gold flare and orange rim, localized restrained bloom. Render a single side-facing short muzzle flare originating on the RIGHT and projecting LEFT, compact shape with a few short irregular tongues. A clean detailed high-resolution 2D game VFX key-frame, preserving the restrained in-game flash rather than a large fireball. True RGBA transparent background, semi-transparent falloff, generous clear margin. Only one muzzle flash, no appliance, barrel, tracer line, material bullet, explosion cloud, smoke plume, room, props, text, diagram or sheet.",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_deskjob_turret_tracer_muzzle_k.png",
+      "reference_paths": [
+        "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/ADJ_HousewaresTurret02.jpg"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "ADJ_HousewaresTurret02.jpg",
+          "source_url": "https://combineoverwiki.net/images/a/a6/ADJ_HousewaresTurret02.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/File:ADJ_HousewaresTurret02.jpg",
+          "article_url": "https://combineoverwiki.net/wiki/Aperture_Desk_Job",
+          "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/ADJ_HousewaresTurret02.jpg",
+          "sha256": "dad03390199035c3087c3f698ac5ceb221331c4ec12fe9886e02fb47892eee36",
+          "byte_size": 411006,
+          "dimensions": [
+            1920,
+            1080
+          ],
+          "caption": "Housewares Department appliances as turrets firing on the player.",
+          "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/Aperture_Desk_Job",
+        "https://combineoverwiki.net/wiki/File:ADJ_HousewaresTurret02.jpg",
+        "https://combineoverwiki.net/images/a/a6/ADJ_HousewaresTurret02.jpg"
+      ],
+      "content_class": "official_alternate_continuity",
+      "width": 1536,
+      "height": 1024,
+      "color_mode": "RGBA",
+      "byte_size": 1178629,
+      "sha256": "5362533a9d61f99a9545b6322b43680a54f76a1c87634fefaee0c6a5891f01a2",
+      "git_blob_sha": "78f3446433de87948900e96cec6de64498610dca",
+      "alpha": {
+        "minimum": 0,
+        "maximum": 253,
+        "transparent_pixels": 1242966,
+        "opaque_pixels": 0,
+        "partial_pixels": 329898,
+        "nonzero_bbox": [
+          0,
+          0,
+          1536,
+          1024
+        ],
+        "mean": 4.949342091878255,
+        "bbox_alpha_gt_8": [
+          559,
+          385,
+          945,
+          628
+        ]
+      },
+      "original_png_bytes_preserved": true,
+      "owner_id": "fx_deskjob_turret_tracer",
+      "owner_type": "projectile_effect",
+      "target_ids": [
+        "fx_deskjob_turret_tracer"
+      ],
+      "category": "projectile_key_frame",
+      "batch_id": "continuation_20261125_k",
+      "created_at": "2026-11-25",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_deskjob_turret_tracer_muzzle_k.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "save_method": "Original image_gen PNG bytes stored in an immutable GitHub blob before local copy; Git blob hash verified.",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+      "qa_notes": "Un flash de bouche doré à cœur clair, vu sur blanc/noir. Le canal alpha est réel (minimum 0), sans rectangle noir opaque; de très faibles résidus alpha étendent la boîte non nulle. Ne représente pas le trajet du tir. PNG original conservé sans retouche; aucune certification 1:1.",
+      "notes": "Un flash de bouche doré à cœur clair, vu sur blanc/noir. Le canal alpha est réel (minimum 0), sans rectangle noir opaque; de très faibles résidus alpha étendent la boîte non nulle. Ne représente pas le trajet du tir. PNG original conservé sans retouche; aucune certification 1:1.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "result": "Un flash de bouche doré à cœur clair, vu sur blanc/noir. Le canal alpha est réel (minimum 0), sans rectangle noir opaque; de très faibles résidus alpha étendent la boîte non nulle. Ne représente pas le trajet du tir."
+      }
+    },
+    {
+      "asset_id": "fx_gargantua_flame_hl1_flame_sustain_k",
+      "target_id": "fx_gargantua_flame_hl1",
+      "name_fr": "Gargantua — jet de flamme maintenu",
+      "source_game": "Half-Life (1998)",
+      "visual_state_id": "flame_sustain",
+      "ref": "Hldemo10000.jpg",
+      "prompt": "Generate exactly one transparent 2D game effect sprite of ONE Gargantua flamethrower stream from original Half-Life / Uplink, directly using the supplied original gameplay screenshot for color, soft structure and taper. Isolate a single sustained narrow flame jet: compact blue-white/violet hot origin at the RIGHT, soft salmon-orange wispy incandescent flame extending LEFT with a feathered irregular fading end. Valve's original effect layers orange RGB255,130,90 with a narrower blue RGB0,120,255 inner beam; reflect this reference palette, muted atmospheric wisps and soft semi-transparent edge. The original reference is a short softly textured stream, not an enormous exploding fireball. One horizontal single connected plume centered with generous transparent margins and true alpha transparency throughout; no monster hand, no second stream, no character, no floor, no background, no labels, no diagram, no added ash or debris. Detailed game VFX with a restrained source-faithful shape.",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_gargantua_flame_hl1_flame_sustain_k.png",
+      "reference_paths": [
+        "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Hldemo10000.jpg"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "Hldemo10000.jpg",
+          "source_url": "https://combineoverwiki.net/images/9/95/Hldemo10000.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/File:Hldemo10000.jpg",
+          "article_url": "https://combineoverwiki.net/wiki/Gargantua",
+          "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Hldemo10000.jpg",
+          "sha256": "e5c29636c8f8e4b22bdc2659e8811c15e6d901409e1fd275c0fc9596e34220ea",
+          "byte_size": 265076,
+          "dimensions": [
+            773,
+            485
+          ],
+          "caption": "The Gargantua killing a scientist at the end of Uplink.",
+          "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/Gargantua",
+        "https://combineoverwiki.net/wiki/File:Hldemo10000.jpg",
+        "https://combineoverwiki.net/images/9/95/Hldemo10000.jpg",
+        "https://github.com/ValveSoftware/halflife/blob/master/dlls/gargantua.cpp"
+      ],
+      "content_class": "released_reference",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 810520,
+      "sha256": "fdd63db096d5ce6f317ac735c181b0f3a301dd246a691c3120b58416ac98a634",
+      "git_blob_sha": "e39aa5200195469e960ca569a145ef162fe22be4",
+      "alpha": {
+        "minimum": 0,
+        "maximum": 254,
+        "transparent_pixels": 1093973,
+        "opaque_pixels": 0,
+        "partial_pixels": 478555,
+        "nonzero_bbox": [
+          33,
+          15,
+          2156,
+          724
+        ],
+        "mean": 28.77957848763265,
+        "bbox_alpha_gt_8": [
+          266,
+          206,
+          1826,
+          546
+        ]
+      },
+      "original_png_bytes_preserved": true,
+      "owner_id": "fx_gargantua_flame_hl1",
+      "owner_type": "projectile_effect",
+      "target_ids": [
+        "fx_gargantua_flame_hl1"
+      ],
+      "category": "projectile_key_frame",
+      "batch_id": "continuation_20261125_k",
+      "created_at": "2026-11-25",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_gargantua_flame_hl1_flame_sustain_k.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "save_method": "Original image_gen PNG bytes stored in an immutable GitHub blob before local copy; Git blob hash verified.",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+      "qa_notes": "Jet unique orange-saumon avec origine bleu-violet à droite. La capture et les couleurs du SDK sont cohérentes; le double faisceau et son évolution temporelle ne sont pas reproduits par cette image. PNG original conservé sans retouche; aucune certification 1:1.",
+      "notes": "Jet unique orange-saumon avec origine bleu-violet à droite. La capture et les couleurs du SDK sont cohérentes; le double faisceau et son évolution temporelle ne sont pas reproduits par cette image. PNG original conservé sans retouche; aucune certification 1:1.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "result": "Jet unique orange-saumon avec origine bleu-violet à droite. La capture et les couleurs du SDK sont cohérentes; le double faisceau et son évolution temporelle ne sont pas reproduits par cette image."
+      }
+    },
+    {
+      "asset_id": "fx_gargantua_stomp_hl1_ground_wave_particle_k",
+      "target_id": "fx_gargantua_stomp_hl1",
+      "name_fr": "Gargantua — particule de l’onde au sol",
+      "source_game": "Half-Life (1998)",
+      "visual_state_id": "ground_wave",
+      "ref": "gargeye1_reference_frame0.png",
+      "code": "gargantua.cpp",
+      "reference_scope": "One gargeye1.spr glow particle used by CStomp::Think; this file is a component of the ground_wave, not a complete simulated ground wave or animation.",
+      "prompt": "Create ONE individual transparent red glow particle sprite matching original Half-Life's gargeye1.spr reference. The official Gargantua CStomp effect spawns this same sprite repeatedly along its ground wave. This asset is just one particle: a small roughly round soft RED glow, brightest vivid red at its slightly irregular center, dark crimson smooth outer falloff. Match the supplied very small source's simple subtle radial glow and slight mottled structure; keep the source red monochrome palette, do not add a white-hot center, yellow flame, blue electricity or rings. A clean high-resolution 2D VFX candidate translating this tiny original red glow. Center it with large empty margin, remove every bit of black backing into true transparent alpha, smoothly translucent outer edge. One glow only, no ground, rocks, crater, monster, shockwave ring, multiple dots, labels, border or sprite sheet.",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_gargantua_stomp_hl1_ground_wave_particle_k.png",
+      "reference_paths": [
+        "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/gargeye1_reference_frame0.png"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "gargeye1_reference_frame0.png",
+          "source_url": "https://arquivo.mataleone.com/tut/sprites/gargeye1.gif",
+          "source_page": "https://arquivo.mataleone.com/php/main.php?cat=ref&id=7&lang=en&page=tut",
+          "article_url": "https://arquivo.mataleone.com/php/main.php?cat=ref&id=7&lang=en&page=tut",
+          "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/gargeye1_reference_frame0.png",
+          "sha256": "642798c1e1388f43053d96fadab123e82ff9d50bb7c6c571b82997474110c35c",
+          "source_sha256": "b2e4218acc394d4b2b6a811af33a34754d06a6d73b95ad52cae0fb428594d66f",
+          "source_format": "GIF",
+          "source_frames": 1,
+          "reference_conversion": "First GIF frame decoded to lossless PNG for inspection and image_gen input; no retouching. Not a generated deliverable.",
+          "dimensions": [
+            26,
+            25
+          ],
+          "role": "community_hosted_Half_Life_sprite_reference_matched_to_Valve_SDK_resource_name",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://arquivo.mataleone.com/php/main.php?cat=ref&id=7&lang=en&page=tut",
+        "https://arquivo.mataleone.com/tut/sprites/gargeye1.gif",
+        "https://github.com/ValveSoftware/halflife/blob/master/dlls/gargantua.cpp"
+      ],
+      "content_class": "released_reference",
+      "width": 1278,
+      "height": 1230,
+      "color_mode": "RGBA",
+      "byte_size": 542615,
+      "sha256": "d27136b91c914616a75ecd56d2032189941ac7abccd8bbc19d05e26f3a022be6",
+      "git_blob_sha": "8c6761ace4ee3bae06cd6d0c98735933ee2ac124",
+      "alpha": {
+        "minimum": 0,
+        "maximum": 253,
+        "transparent_pixels": 1185796,
+        "opaque_pixels": 0,
+        "partial_pixels": 386144,
+        "nonzero_bbox": [
+          0,
+          0,
+          1254,
+          1214
+        ],
+        "mean": 20.17761364937593,
+        "bbox_alpha_gt_8": [
+          335,
+          319,
+          930,
+          906
+        ]
+      },
+      "original_png_bytes_preserved": true,
+      "owner_id": "fx_gargantua_stomp_hl1",
+      "owner_type": "projectile_effect",
+      "target_ids": [
+        "fx_gargantua_stomp_hl1"
+      ],
+      "category": "projectile_key_frame",
+      "batch_id": "continuation_20261125_k",
+      "created_at": "2026-11-25",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_gargantua_stomp_hl1_ground_wave_particle_k.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "save_method": "Original image_gen PNG bytes stored in an immutable GitHub blob before local copy; Git blob hash verified.",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+      "qa_notes": "Petite particule rouge à contour diffus, référence gargeye1. C’est un composant de la vague au sol décrit par CStomp::Think, pas la vague entière, son déplacement ni sa collision. PNG original conservé sans retouche; aucune certification 1:1.",
+      "notes": "Petite particule rouge à contour diffus, référence gargeye1. C’est un composant de la vague au sol décrit par CStomp::Think, pas la vague entière, son déplacement ni sa collision. PNG original conservé sans retouche; aucune certification 1:1.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "result": "Petite particule rouge à contour diffus, référence gargeye1. C’est un composant de la vague au sol décrit par CStomp::Think, pas la vague entière, son déplacement ni sa collision."
+      }
+    },
+    {
+      "asset_id": "fx_gunship_tracer_hl2_trace_k",
+      "target_id": "fx_gunship_tracer_hl2",
+      "name_fr": "Traceur du Gunship HL2",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "visual_state_id": "trace",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_gunship_tracer_hl2_trace_k.png",
+      "reference_paths": [
+        "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/D2_coast_080049.JPG"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "D2_coast_080049.JPG",
+          "source_url": "https://combineoverwiki.net/images/7/72/D2_coast_080049.JPG",
+          "source_page": "https://combineoverwiki.net/wiki/File:D2_coast_080049.JPG",
+          "article_url": "https://combineoverwiki.net/wiki/Combine_Gunship",
+          "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/D2_coast_080049.JPG",
+          "sha256": "2e4a347eda6193790275f28635e801a86a0fadd8244d3700bcf75f3c4a1a7a64",
+          "byte_size": 291817,
+          "dimensions": [
+            800,
+            535
+          ],
+          "caption": "Gunship firing at Gordon after the Bridge Point Force Fields are deactivated.",
+          "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/Combine_Gunship",
+        "https://combineoverwiki.net/wiki/File:D2_coast_080049.JPG",
+        "https://combineoverwiki.net/images/7/72/D2_coast_080049.JPG",
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/client/fx.cpp"
+      ],
+      "reference_scope": "Gameplay capture of Gunship tracer plus official SDK shared effects/gunshiptracer material for FX_GunshipTracer. Width 5 in the client code; exact temporal behavior not represented by this single sprite.",
+      "prompt": "Create one isolated horizontal 2D VFX tracer sprite for Traceur du Gunship HL2. The attached original Half-Life 2 screenshot shows the exact shared effects/gunshiptracer material as a flying light streak at the LEFT of the gunship. Valve's source code uses that same material for FX_GunshipTracer. Match the observed narrow WHITE to pale lemon luminous core with a very restrained CYAN/ice-blue outer halo and soft pointed ends. Render one medium-thin luminous streak, length-to-width about 40:1, directed horizontally from RIGHT to LEFT. This is one single straight streak key-frame of a fleeting bullet-tracer effect, a clean elongated sliver, with no round orb or visible physical bullet. Retain restrained Source-engine softness; high-resolution VFX only. Whole streak contained with generous clear margin, true transparent alpha and soft translucent edge. No gunship, weapon, muzzle starburst, black bullet marks, metal, smoke, impact, lightning, scenery, text, sheet, duplicated streak or filled background.",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 246841,
+      "sha256": "9b3c0c389719df8bc6955b21b3f7fb429ae1a9a425bce20df0cc127e9a8e4e13",
+      "git_blob_sha": "ead41824aa3fece30bf3197844e4d951e3e928c1",
+      "alpha": {
+        "minimum": 0,
+        "maximum": 253,
+        "transparent_pixels": 1419906,
+        "opaque_pixels": 0,
+        "partial_pixels": 152622,
+        "nonzero_bbox": [
+          25,
+          20,
+          2144,
+          700
+        ],
+        "mean": 7.169244681175789,
+        "bbox_alpha_gt_8": [
+          224,
+          327,
+          1991,
+          394
+        ]
+      },
+      "original_png_bytes_preserved": true,
+      "owner_id": "fx_gunship_tracer_hl2",
+      "owner_type": "projectile_effect",
+      "target_ids": [
+        "fx_gunship_tracer_hl2"
+      ],
+      "category": "projectile_key_frame",
+      "batch_id": "continuation_20261125_k",
+      "created_at": "2026-11-25",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_gunship_tracer_hl2_trace_k.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "save_method": "Original image_gen PNG bytes stored in an immutable GitHub blob before local copy; Git blob hash verified.",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+      "qa_notes": "Trait blanc-jaune très fin, halo cyan retenu sur compositions noir/blanc. Le RGB caché ne doit pas être lu comme un fond opaque. Longueur, largeur et vitesse devront être pilotées par le moteur. PNG original conservé sans retouche; aucune certification 1:1.",
+      "notes": "Trait blanc-jaune très fin, halo cyan retenu sur compositions noir/blanc. Le RGB caché ne doit pas être lu comme un fond opaque. Longueur, largeur et vitesse devront être pilotées par le moteur. PNG original conservé sans retouche; aucune certification 1:1.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "result": "Trait blanc-jaune très fin, halo cyan retenu sur compositions noir/blanc. Le RGB caché ne doit pas être lu comme un fond opaque. Longueur, largeur et vitesse devront être pilotées par le moteur."
+      }
+    },
+    {
+      "asset_id": "fx_gunship_tracer_hl2_trace_k_parameter_error",
+      "target_id": "fx_gunship_tracer_hl2",
+      "name_fr": "Traceur du Gunship HL2",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "visual_state_id": "trace",
+      "repository_path": null,
+      "reference_paths": [],
+      "source_references": [],
+      "source_urls": [
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/client/fx.cpp"
+      ],
+      "reference_scope": "Gameplay capture of Gunship tracer plus official SDK shared effects/gunshiptracer material for FX_GunshipTracer. Width 5 in the client code; exact temporal behavior not represented by this single sprite.",
+      "prompt": "Create one isolated horizontal 2D VFX tracer sprite for Traceur du Gunship HL2. The attached original Half-Life 2 screenshot shows the exact shared effects/gunshiptracer material as a flying light streak at the LEFT of the gunship. Valve's source code uses that same material for FX_GunshipTracer. Match the observed narrow WHITE to pale lemon luminous core with a very restrained CYAN/ice-blue outer halo and soft pointed ends. Render one medium-thin luminous streak, length-to-width about 40:1, directed horizontally from RIGHT to LEFT. This is one single straight streak key-frame of a fleeting bullet-tracer effect, a clean elongated sliver, with no round orb or visible physical bullet. Retain restrained Source-engine softness; high-resolution VFX only. Whole streak contained with generous clear margin, true transparent alpha and soft translucent edge. No gunship, weapon, muzzle starburst, black bullet marks, metal, smoke, impact, lightning, scenery, text, sheet, duplicated streak or filled background.",
+      "generation_status": "erreur outil",
+      "status": "erreur outil",
+      "file_path": null,
+      "error": "invalid type: null, expected path string at line 1 column 1086",
+      "error_classification": "tool_parameter_validation_error",
+      "generation_call_count": 0,
+      "batch_id": "continuation_20261125_k",
+      "new_generation_call": false,
+      "image_generation_started": false,
+      "tool_invocation_count": 1,
+      "notes": "Appel rejeté avant génération : chemin de référence nul issu du manifeste incomplet. Paramètres corrigés pour une nouvelle invocation.",
+      "owner_id": "fx_gunship_tracer_hl2",
+      "owner_type": "projectile_effect",
+      "target_ids": [
+        "fx_gunship_tracer_hl2"
+      ],
+      "category": "projectile_key_frame",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "selected_for_next_review": false,
+      "created_at": "2026-11-25",
+      "generator": "image_gen built-in",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "reference_bitmap_loaded": false
+    },
+    {
+      "asset_id": "fx_pit_worm_beam_opfor_beam_k",
+      "target_id": "fx_pit_worm_beam_opfor",
+      "name_fr": "Pit Worm — rayon continu",
+      "source_game": "Half-Life: Opposing Force",
+      "visual_state_id": "beam",
+      "ref": "Pit_worm_laser.jpg",
+      "prompt": "Generate exactly ONE isolated horizontal green energy beam VFX sprite matching the Pit Worm eye laser from original Half-Life Opposing Force in the supplied gameplay screenshot. Extract the reference's slim continuous translucent vivid GREEN shaft with a subtly brighter lime-green center and soft glowing green falloff, with slight straight fine streaking inside it. The beam runs horizontally from LEFT toward RIGHT, continuous across its central length, with short softly tapering ends contained within generous transparent margins. Make a clean detailed 2D game effect, retain the original restrained GoldSrc appearance rather than an elaborate fantasy plasma beam. This frame is only the beam segment; the source eye flare and contact flare are separate assets. True transparent alpha and translucent glow; no eye, monster, laser cannon, architecture, background, endpoint sphere, arcs, sparks, text, sprite sheet or second beam.",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_pit_worm_beam_opfor_beam_k.png",
+      "reference_paths": [
+        "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Pit_worm_laser.jpg"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "Pit_worm_laser.jpg",
+          "source_url": "https://combineoverwiki.net/images/2/25/Pit_worm_laser.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/File:Pit_worm_laser.jpg",
+          "article_url": "https://combineoverwiki.net/wiki/Pit_Worm",
+          "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Pit_worm_laser.jpg",
+          "sha256": "f27107929eaa9976bce47281a352746e7806cb9332f9bf1fd67ccd71f1ec065e",
+          "byte_size": 472800,
+          "dimensions": [
+            900,
+            644
+          ],
+          "caption": "The Pit Worm firing its eye laser.",
+          "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/Pit_Worm",
+        "https://combineoverwiki.net/wiki/File:Pit_worm_laser.jpg",
+        "https://combineoverwiki.net/images/2/25/Pit_worm_laser.jpg"
+      ],
+      "content_class": "released_reference",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 413734,
+      "sha256": "4bdf9f2f5ba26b3f11e7d04ca392893b80d4b6a2d7131bdbb493a0c5294c5206",
+      "git_blob_sha": "57eab4a936c37a49b44810c01c202dad10539ebd",
+      "alpha": {
+        "minimum": 0,
+        "maximum": 253,
+        "transparent_pixels": 1260122,
+        "opaque_pixels": 0,
+        "partial_pixels": 312406,
+        "nonzero_bbox": [
+          0,
+          21,
+          2171,
+          682
+        ],
+        "mean": 16.4791882879033,
+        "bbox_alpha_gt_8": [
+          51,
+          305,
+          2119,
+          417
+        ]
+      },
+      "original_png_bytes_preserved": true,
+      "owner_id": "fx_pit_worm_beam_opfor",
+      "owner_type": "projectile_effect",
+      "target_ids": [
+        "fx_pit_worm_beam_opfor"
+      ],
+      "category": "projectile_key_frame",
+      "batch_id": "continuation_20261125_k",
+      "created_at": "2026-11-25",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_pit_worm_beam_opfor_beam_k.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "save_method": "Original image_gen PNG bytes stored in an immutable GitHub blob before local copy; Git blob hash verified.",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+      "qa_notes": "Segment continu vert sur fond transparent, sans corps ni œil du monstre. Épaisseur et profil lumineux adaptés au sprite 2D; extrémités, impact et durée restent à produire. PNG original conservé sans retouche; aucune certification 1:1.",
+      "notes": "Segment continu vert sur fond transparent, sans corps ni œil du monstre. Épaisseur et profil lumineux adaptés au sprite 2D; extrémités, impact et durée restent à produire. PNG original conservé sans retouche; aucune certification 1:1.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "result": "Segment continu vert sur fond transparent, sans corps ni œil du monstre. Épaisseur et profil lumineux adaptés au sprite 2D; extrémités, impact et durée restent à produire."
+      }
+    },
+    {
+      "asset_id": "fx_portals_coop_portal2_atlas_blue_k",
+      "target_id": "fx_portals_coop_portal2",
+      "name_fr": "Portail coop — ATLAS primaire cyan",
+      "source_game": "Portal 2 — coopération",
+      "content_class": "released_reference",
+      "visual_state_id": "atlas_blue",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_portals_coop_portal2_atlas_blue_k.png",
+      "reference_paths": [
+        "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Atlas_both_portal.png"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "Atlas_both_portal.png",
+          "source_url": "https://i1.theportalwiki.net/img/8/82/Atlas_both_portal.png",
+          "source_page": "https://theportalwiki.com/wiki/File:Atlas_both_portal.png",
+          "article_url": "https://theportalwiki.com/wiki/Portals",
+          "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Atlas_both_portal.png",
+          "sha256": "0951d6279e5344139d552e90138b4a6a95ae4c55175d76a7d9cc54f25a638f9b",
+          "byte_size": 1333070,
+          "dimensions": [
+            1680,
+            1050
+          ],
+          "caption": "A",
+          "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://theportalwiki.com/wiki/Portals",
+        "https://theportalwiki.com/wiki/File:Atlas_both_portal.png",
+        "https://i1.theportalwiki.net/img/8/82/Atlas_both_portal.png"
+      ],
+      "prompt": "Create ONE isolated 2D VFX sprite of a single OPEN portal rim from the released Portal 2 co-op game, matching the CYAN portal on the RIGHT in the reference; pale icy cyan light, sky-blue midtones, dark blue-cyan at the upper rim. Use the actual gameplay reference for the restrained wispy rippling edge, the upright ellipse proportions, rim width and exact color family. Front-facing vertical oval, width roughly 58 percent of height, simple smooth outer oval with soft flame-like inward wisps. Keep the glow close to the narrow rim as in the reference, no sparks or elaborate ornament. Only the colored annular rim belongs in the asset: the entire large interior opening must be completely transparent alpha=0, and all the exterior must also be transparent. The game will render the destination dynamically. Remove every pixel of the wall, room, destination, other portal and environment. One whole rim only centered with 12 percent clear margin, clean detailed game VFX, true alpha PNG, no filled center, no grey or black disk, no star field, no portal gun, no text, no checkerboard, no frame, no second portal, no sheet. Preserve this specific character's portal palette; this is a single static open-state candidate.",
+      "width": 1066,
+      "height": 1476,
+      "color_mode": "RGBA",
+      "byte_size": 637273,
+      "sha256": "dabf7c65c3dad09f366ed3e6be9b1f35ec968311739511c18eca4088505e79a6",
+      "git_blob_sha": "56fc12c5770d1328dc452feabcb711745719f2b6",
+      "alpha": {
+        "minimum": 0,
+        "maximum": 254,
+        "transparent_pixels": 1264969,
+        "opaque_pixels": 0,
+        "partial_pixels": 308447,
+        "nonzero_bbox": [
+          17,
+          17,
+          1062,
+          1476
+        ],
+        "mean": 22.90635407292159,
+        "bbox_alpha_gt_8": [
+          144,
+          77,
+          916,
+          1389
+        ]
+      },
+      "original_png_bytes_preserved": true,
+      "owner_id": "fx_portals_coop_portal2",
+      "owner_type": "projectile_effect",
+      "target_ids": [
+        "fx_portals_coop_portal2"
+      ],
+      "category": "projectile_key_frame",
+      "batch_id": "continuation_20261125_k",
+      "created_at": "2026-11-25",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_portals_coop_portal2_atlas_blue_k.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "save_method": "Original image_gen PNG bytes stored in an immutable GitHub blob before local copy; Git blob hash verified.",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+      "qa_notes": "Anneau unique de la variante atlas_blue; centre transparent (alpha central 0, quelques valeurs 1 dans la zone intérieure mesurée). Palette vérifiée sur les portails appairés de Portal 2. Des résidus alpha très faibles et la texture du bord restent à nettoyer/contrôler avant intégration; aucun aperçu du monde de destination ni animation. PNG original conservé sans retouche; aucune certification 1:1.",
+      "notes": "Anneau unique de la variante atlas_blue; centre transparent (alpha central 0, quelques valeurs 1 dans la zone intérieure mesurée). Palette vérifiée sur les portails appairés de Portal 2. Des résidus alpha très faibles et la texture du bord restent à nettoyer/contrôler avant intégration; aucun aperçu du monde de destination ni animation. PNG original conservé sans retouche; aucune certification 1:1.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "result": "Anneau unique de la variante atlas_blue; centre transparent (alpha central 0, quelques valeurs 1 dans la zone intérieure mesurée). Palette vérifiée sur les portails appairés de Portal 2. Des résidus alpha très faibles et la texture du bord restent à nettoyer/contrôler avant intégration; aucun aperçu du monde de destination ni animation."
+      }
+    },
+    {
+      "asset_id": "fx_portals_coop_portal2_atlas_purple_k",
+      "target_id": "fx_portals_coop_portal2",
+      "name_fr": "Portail coop — ATLAS secondaire indigo",
+      "source_game": "Portal 2 — coopération",
+      "content_class": "released_reference",
+      "visual_state_id": "atlas_purple",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_portals_coop_portal2_atlas_purple_k.png",
+      "reference_paths": [
+        "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Atlas_both_portal.png"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "Atlas_both_portal.png",
+          "source_url": "https://i1.theportalwiki.net/img/8/82/Atlas_both_portal.png",
+          "source_page": "https://theportalwiki.com/wiki/File:Atlas_both_portal.png",
+          "article_url": "https://theportalwiki.com/wiki/Portals",
+          "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Atlas_both_portal.png",
+          "sha256": "0951d6279e5344139d552e90138b4a6a95ae4c55175d76a7d9cc54f25a638f9b",
+          "byte_size": 1333070,
+          "dimensions": [
+            1680,
+            1050
+          ],
+          "caption": "A",
+          "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://theportalwiki.com/wiki/Portals",
+        "https://theportalwiki.com/wiki/File:Atlas_both_portal.png",
+        "https://i1.theportalwiki.net/img/8/82/Atlas_both_portal.png"
+      ],
+      "prompt": "Create ONE isolated 2D VFX sprite of a single OPEN portal rim from the released Portal 2 co-op game, matching the INDIGO/PURPLE portal on the LEFT in the reference; deep saturated blue-violet with brighter violet at the lower rim. Use the actual gameplay reference for the restrained wispy rippling edge, the upright ellipse proportions, rim width and exact color family. Front-facing vertical oval, width roughly 58 percent of height, simple smooth outer oval with soft flame-like inward wisps. Keep the glow close to the narrow rim as in the reference, no sparks or elaborate ornament. Only the colored annular rim belongs in the asset: the entire large interior opening must be completely transparent alpha=0, and all the exterior must also be transparent. The game will render the destination dynamically. Remove every pixel of the wall, room, destination, other portal and environment. One whole rim only centered with 12 percent clear margin, clean detailed game VFX, true alpha PNG, no filled center, no grey or black disk, no star field, no portal gun, no text, no checkerboard, no frame, no second portal, no sheet. Preserve this specific character's portal palette; this is a single static open-state candidate.",
+      "width": 1070,
+      "height": 1470,
+      "color_mode": "RGBA",
+      "byte_size": 567108,
+      "sha256": "9bd53691acd012cf351263bf857a47b2d4a99c8c232e5bda8942dfa9f0cc06c0",
+      "git_blob_sha": "72630effea66089a1352fc3453fdb1235041cc0d",
+      "alpha": {
+        "minimum": 0,
+        "maximum": 254,
+        "transparent_pixels": 1258519,
+        "opaque_pixels": 0,
+        "partial_pixels": 314381,
+        "nonzero_bbox": [
+          0,
+          22,
+          1054,
+          1470
+        ],
+        "mean": 20.168348909657322,
+        "bbox_alpha_gt_8": [
+          167,
+          99,
+          899,
+          1376
+        ]
+      },
+      "original_png_bytes_preserved": true,
+      "owner_id": "fx_portals_coop_portal2",
+      "owner_type": "projectile_effect",
+      "target_ids": [
+        "fx_portals_coop_portal2"
+      ],
+      "category": "projectile_key_frame",
+      "batch_id": "continuation_20261125_k",
+      "created_at": "2026-11-25",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_portals_coop_portal2_atlas_purple_k.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "save_method": "Original image_gen PNG bytes stored in an immutable GitHub blob before local copy; Git blob hash verified.",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+      "qa_notes": "Anneau unique de la variante atlas_purple; centre transparent (alpha central 0, quelques valeurs 1 dans la zone intérieure mesurée). Palette vérifiée sur les portails appairés de Portal 2. Des résidus alpha très faibles et la texture du bord restent à nettoyer/contrôler avant intégration; aucun aperçu du monde de destination ni animation. PNG original conservé sans retouche; aucune certification 1:1.",
+      "notes": "Anneau unique de la variante atlas_purple; centre transparent (alpha central 0, quelques valeurs 1 dans la zone intérieure mesurée). Palette vérifiée sur les portails appairés de Portal 2. Des résidus alpha très faibles et la texture du bord restent à nettoyer/contrôler avant intégration; aucun aperçu du monde de destination ni animation. PNG original conservé sans retouche; aucune certification 1:1.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "result": "Anneau unique de la variante atlas_purple; centre transparent (alpha central 0, quelques valeurs 1 dans la zone intérieure mesurée). Palette vérifiée sur les portails appairés de Portal 2. Des résidus alpha très faibles et la texture du bord restent à nettoyer/contrôler avant intégration; aucun aperçu du monde de destination ni animation."
+      }
+    },
+    {
+      "asset_id": "fx_portals_coop_portal2_pbody_red_k",
+      "target_id": "fx_portals_coop_portal2",
+      "name_fr": "Portail — P-body secondaire rouge",
+      "source_game": "Portal 2 — coopération",
+      "content_class": "released_reference",
+      "visual_state_id": "pbody_red",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_portals_coop_portal2_pbody_red_k.png",
+      "reference_paths": [
+        "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/P-body_both_portal.png"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "P-body_both_portal.png",
+          "source_url": "https://i1.theportalwiki.net/img/1/18/P-body_both_portal.png",
+          "source_page": "https://theportalwiki.com/wiki/File:P-body_both_portal.png",
+          "article_url": "https://theportalwiki.com/wiki/Portals",
+          "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/P-body_both_portal.png",
+          "sha256": "a20a4e03a04541fa9b481c48481dc6f96719fe6c6fe0f3bebd56cf63f65d2c08",
+          "byte_size": 1302859,
+          "dimensions": [
+            1680,
+            1050
+          ],
+          "caption": "P",
+          "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://theportalwiki.com/wiki/Portals",
+        "https://theportalwiki.com/wiki/File:P-body_both_portal.png",
+        "https://i1.theportalwiki.net/img/1/18/P-body_both_portal.png"
+      ],
+      "prompt": "Create ONE isolated 2D VFX sprite of a single OPEN portal rim from released Portal 2, matching the RED portal on the RIGHT in the reference; dark blood-red upper edge, deep red side rim and brighter crimson bottom, no orange or magenta. Use the actual gameplay reference for the restrained rippling edge, upright ellipse proportions, rim width and exact color family. Front-facing vertical oval, width roughly 58 percent of height, simple smooth outer oval with soft flame-like inward wisps. Keep the glow close to the rim as in the reference. Only the colored annular rim belongs in the asset: the entire large interior opening must be completely transparent alpha=0, and all exterior must also be transparent. The game will render the destination dynamically. Remove every pixel of wall, room, destination, other portal and environment. One whole rim only centered with 12 percent clear margin on all sides, detailed clean game VFX, true alpha PNG, no filled center, no grey or black disk, no galaxy, no gun, no text, no checkerboard, no metal frame, no second portal, no sheet. Preserve this specific character's portal palette; one static open-state candidate.",
+      "width": 1070,
+      "height": 1470,
+      "color_mode": "RGBA",
+      "byte_size": 605098,
+      "sha256": "19f6e4f7bc91b54554669fbb83c29149b1b34c1cae469cd7f988ac9ba7c23bfa",
+      "git_blob_sha": "209d1bd7bdf5395eae6774598fa37bc7ebf49a93",
+      "alpha": {
+        "minimum": 0,
+        "maximum": 254,
+        "transparent_pixels": 1270328,
+        "opaque_pixels": 0,
+        "partial_pixels": 302572,
+        "nonzero_bbox": [
+          0,
+          21,
+          1056,
+          1429
+        ],
+        "mean": 24.12607794519677,
+        "bbox_alpha_gt_8": [
+          144,
+          85,
+          915,
+          1390
+        ]
+      },
+      "original_png_bytes_preserved": true,
+      "owner_id": "fx_portals_coop_portal2",
+      "owner_type": "projectile_effect",
+      "target_ids": [
+        "fx_portals_coop_portal2"
+      ],
+      "category": "projectile_key_frame",
+      "batch_id": "continuation_20261125_k",
+      "created_at": "2026-11-25",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_portals_coop_portal2_pbody_red_k.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "save_method": "Original image_gen PNG bytes stored in an immutable GitHub blob before local copy; Git blob hash verified.",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+      "qa_notes": "Anneau unique de la variante pbody_red; centre transparent (alpha central 0, quelques valeurs 1 dans la zone intérieure mesurée). Palette vérifiée sur les portails appairés de Portal 2. Des résidus alpha très faibles et la texture du bord restent à nettoyer/contrôler avant intégration; aucun aperçu du monde de destination ni animation. PNG original conservé sans retouche; aucune certification 1:1.",
+      "notes": "Anneau unique de la variante pbody_red; centre transparent (alpha central 0, quelques valeurs 1 dans la zone intérieure mesurée). Palette vérifiée sur les portails appairés de Portal 2. Des résidus alpha très faibles et la texture du bord restent à nettoyer/contrôler avant intégration; aucun aperçu du monde de destination ni animation. PNG original conservé sans retouche; aucune certification 1:1.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "result": "Anneau unique de la variante pbody_red; centre transparent (alpha central 0, quelques valeurs 1 dans la zone intérieure mesurée). Palette vérifiée sur les portails appairés de Portal 2. Des résidus alpha très faibles et la texture du bord restent à nettoyer/contrôler avant intégration; aucun aperçu du monde de destination ni animation."
+      }
+    },
+    {
+      "asset_id": "fx_portals_coop_portal2_pbody_yellow_k",
+      "target_id": "fx_portals_coop_portal2",
+      "name_fr": "Portail coop — P-body primaire jaune",
+      "source_game": "Portal 2 — coopération",
+      "content_class": "released_reference",
+      "visual_state_id": "pbody_yellow",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_portals_coop_portal2_pbody_yellow_k.png",
+      "reference_paths": [
+        "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/P-body_both_portal.png"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "P-body_both_portal.png",
+          "source_url": "https://i1.theportalwiki.net/img/1/18/P-body_both_portal.png",
+          "source_page": "https://theportalwiki.com/wiki/File:P-body_both_portal.png",
+          "article_url": "https://theportalwiki.com/wiki/Portals",
+          "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/P-body_both_portal.png",
+          "sha256": "a20a4e03a04541fa9b481c48481dc6f96719fe6c6fe0f3bebd56cf63f65d2c08",
+          "byte_size": 1302859,
+          "dimensions": [
+            1680,
+            1050
+          ],
+          "caption": "P",
+          "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://theportalwiki.com/wiki/Portals",
+        "https://theportalwiki.com/wiki/File:P-body_both_portal.png",
+        "https://i1.theportalwiki.net/img/1/18/P-body_both_portal.png"
+      ],
+      "prompt": "Create ONE isolated 2D VFX sprite of a single OPEN portal rim from the released Portal 2 co-op game, matching the YELLOW portal on the LEFT in the reference; golden yellow with bright lemon-yellow along the lower rim and darker muted yellow at the top. Use the actual gameplay reference for the restrained wispy rippling edge, the upright ellipse proportions, rim width and exact color family. Front-facing vertical oval, width roughly 58 percent of height, simple smooth outer oval with soft flame-like inward wisps. Keep the glow close to the narrow rim as in the reference, no sparks or elaborate ornament. Only the colored annular rim belongs in the asset: the entire large interior opening must be completely transparent alpha=0, and all the exterior must also be transparent. The game will render the destination dynamically. Remove every pixel of the wall, room, destination, other portal and environment. One whole rim only centered with 12 percent clear margin, clean detailed game VFX, true alpha PNG, no filled center, no grey or black disk, no star field, no portal gun, no text, no checkerboard, no frame, no second portal, no sheet. Preserve this specific character's portal palette; this is a single static open-state candidate.",
+      "width": 1070,
+      "height": 1470,
+      "color_mode": "RGBA",
+      "byte_size": 808888,
+      "sha256": "33d7d9d23ee8d74de3df57d4f168ce4bebc0443ac104322eb4606915b80ab3dd",
+      "git_blob_sha": "e4354658535403eb9f96149985144168db0c4232",
+      "alpha": {
+        "minimum": 0,
+        "maximum": 254,
+        "transparent_pixels": 1038879,
+        "opaque_pixels": 0,
+        "partial_pixels": 534021,
+        "nonzero_bbox": [
+          0,
+          0,
+          1069,
+          1470
+        ],
+        "mean": 32.558207769088945,
+        "bbox_alpha_gt_8": [
+          131,
+          82,
+          927,
+          1372
+        ]
+      },
+      "original_png_bytes_preserved": true,
+      "owner_id": "fx_portals_coop_portal2",
+      "owner_type": "projectile_effect",
+      "target_ids": [
+        "fx_portals_coop_portal2"
+      ],
+      "category": "projectile_key_frame",
+      "batch_id": "continuation_20261125_k",
+      "created_at": "2026-11-25",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_portals_coop_portal2_pbody_yellow_k.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "save_method": "Original image_gen PNG bytes stored in an immutable GitHub blob before local copy; Git blob hash verified.",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+      "qa_notes": "Anneau unique de la variante pbody_yellow; centre transparent (alpha central 0, quelques valeurs 1 dans la zone intérieure mesurée). Palette vérifiée sur les portails appairés de Portal 2. Des résidus alpha très faibles et la texture du bord restent à nettoyer/contrôler avant intégration; aucun aperçu du monde de destination ni animation. PNG original conservé sans retouche; aucune certification 1:1.",
+      "notes": "Anneau unique de la variante pbody_yellow; centre transparent (alpha central 0, quelques valeurs 1 dans la zone intérieure mesurée). Palette vérifiée sur les portails appairés de Portal 2. Des résidus alpha très faibles et la texture du bord restent à nettoyer/contrôler avant intégration; aucun aperçu du monde de destination ni animation. PNG original conservé sans retouche; aucune certification 1:1.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "result": "Anneau unique de la variante pbody_yellow; centre transparent (alpha central 0, quelques valeurs 1 dans la zone intérieure mesurée). Palette vérifiée sur les portails appairés de Portal 2. Des résidus alpha très faibles et la texture du bord restent à nettoyer/contrôler avant intégration; aucun aperçu du monde de destination ni animation."
+      }
+    },
+    {
+      "asset_id": "fx_portals_solo_portal2_blue_k",
+      "target_id": "fx_portals_solo_portal2",
+      "name_fr": "Portail — Chell primaire bleu",
+      "source_game": "Portal 2",
+      "content_class": "released_reference",
+      "visual_state_id": "blue",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_portals_solo_portal2_blue_k.png",
+      "reference_paths": [
+        "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Chell_both_portal.png"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "Chell_both_portal.png",
+          "source_url": "https://i1.theportalwiki.net/img/7/74/Chell_both_portal.png",
+          "source_page": "https://theportalwiki.com/wiki/File:Chell_both_portal.png",
+          "article_url": "https://theportalwiki.com/wiki/Portals",
+          "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Chell_both_portal.png",
+          "sha256": "6351c77c02011d985c3c26d3fdc9aa9592a2ea92ae29e37ea8671c7f220f0768",
+          "byte_size": 498875,
+          "dimensions": [
+            675,
+            606
+          ],
+          "caption": "C",
+          "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://theportalwiki.com/wiki/Portals",
+        "https://theportalwiki.com/wiki/File:Chell_both_portal.png",
+        "https://i1.theportalwiki.net/img/7/74/Chell_both_portal.png"
+      ],
+      "prompt": "Create ONE isolated 2D VFX sprite of a single OPEN portal rim from released Portal 2, matching the BLUE portal on the LEFT in the reference; saturated royal blue rim with bright cyan flame wisps along the bottom. Use the actual gameplay reference for the restrained rippling edge, upright ellipse proportions, rim width and exact color family. Front-facing vertical oval, width roughly 58 percent of height, simple smooth outer oval with soft flame-like inward wisps. Keep the glow close to the rim as in the reference. Only the colored annular rim belongs in the asset: the entire large interior opening must be completely transparent alpha=0, and all exterior must also be transparent. The game will render the destination dynamically. Remove every pixel of wall, room, destination, other portal and environment. One whole rim only centered with 12 percent clear margin on all sides, detailed clean game VFX, true alpha PNG, no filled center, no grey or black disk, no galaxy, no gun, no text, no checkerboard, no metal frame, no second portal, no sheet. Preserve this specific character's portal palette; one static open-state candidate.",
+      "width": 1086,
+      "height": 1448,
+      "color_mode": "RGBA",
+      "byte_size": 537936,
+      "sha256": "5a96fea2614fc1b1b5b1f6fdde450791c20f2736ff36bbc4efc2bc6040ff1d9a",
+      "git_blob_sha": "99535666ab13f0848caaf1682caff6a89d019be1",
+      "alpha": {
+        "minimum": 0,
+        "maximum": 254,
+        "transparent_pixels": 1260238,
+        "opaque_pixels": 0,
+        "partial_pixels": 312290,
+        "nonzero_bbox": [
+          37,
+          21,
+          1056,
+          1370
+        ],
+        "mean": 32.56611964937985,
+        "bbox_alpha_gt_8": [
+          135,
+          103,
+          939,
+          1365
+        ]
+      },
+      "original_png_bytes_preserved": true,
+      "owner_id": "fx_portals_solo_portal2",
+      "owner_type": "projectile_effect",
+      "target_ids": [
+        "fx_portals_solo_portal2"
+      ],
+      "category": "projectile_key_frame",
+      "batch_id": "continuation_20261125_k",
+      "created_at": "2026-11-25",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_portals_solo_portal2_blue_k.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "save_method": "Original image_gen PNG bytes stored in an immutable GitHub blob before local copy; Git blob hash verified.",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+      "qa_notes": "Anneau unique de la variante blue; centre transparent (alpha central 0, quelques valeurs 1 dans la zone intérieure mesurée). Palette vérifiée sur les portails appairés de Portal 2. Des résidus alpha très faibles et la texture du bord restent à nettoyer/contrôler avant intégration; aucun aperçu du monde de destination ni animation. PNG original conservé sans retouche; aucune certification 1:1.",
+      "notes": "Anneau unique de la variante blue; centre transparent (alpha central 0, quelques valeurs 1 dans la zone intérieure mesurée). Palette vérifiée sur les portails appairés de Portal 2. Des résidus alpha très faibles et la texture du bord restent à nettoyer/contrôler avant intégration; aucun aperçu du monde de destination ni animation. PNG original conservé sans retouche; aucune certification 1:1.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "result": "Anneau unique de la variante blue; centre transparent (alpha central 0, quelques valeurs 1 dans la zone intérieure mesurée). Palette vérifiée sur les portails appairés de Portal 2. Des résidus alpha très faibles et la texture du bord restent à nettoyer/contrôler avant intégration; aucun aperçu du monde de destination ni animation."
+      }
+    },
+    {
+      "asset_id": "fx_portals_solo_portal2_orange_k",
+      "target_id": "fx_portals_solo_portal2",
+      "name_fr": "Portail — Chell secondaire orange",
+      "source_game": "Portal 2",
+      "content_class": "released_reference",
+      "visual_state_id": "orange",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_portals_solo_portal2_orange_k.png",
+      "reference_paths": [
+        "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Chell_both_portal.png"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "Chell_both_portal.png",
+          "source_url": "https://i1.theportalwiki.net/img/7/74/Chell_both_portal.png",
+          "source_page": "https://theportalwiki.com/wiki/File:Chell_both_portal.png",
+          "article_url": "https://theportalwiki.com/wiki/Portals",
+          "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Chell_both_portal.png",
+          "sha256": "6351c77c02011d985c3c26d3fdc9aa9592a2ea92ae29e37ea8671c7f220f0768",
+          "byte_size": 498875,
+          "dimensions": [
+            675,
+            606
+          ],
+          "caption": "C",
+          "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://theportalwiki.com/wiki/Portals",
+        "https://theportalwiki.com/wiki/File:Chell_both_portal.png",
+        "https://i1.theportalwiki.net/img/7/74/Chell_both_portal.png"
+      ],
+      "prompt": "Create ONE isolated 2D VFX sprite of a single OPEN portal rim from released Portal 2, matching the ORANGE portal on the RIGHT in the reference; amber-orange upper rim, bright orange sides, yellow-orange bottom wisps. Use the actual gameplay reference for the restrained rippling edge, upright ellipse proportions, rim width and exact color family. Front-facing vertical oval, width roughly 58 percent of height, simple smooth outer oval with soft flame-like inward wisps. Keep the glow close to the rim as in the reference. Only the colored annular rim belongs in the asset: the entire large interior opening must be completely transparent alpha=0, and all exterior must also be transparent. The game will render the destination dynamically. Remove every pixel of wall, room, destination, other portal and environment. One whole rim only centered with 12 percent clear margin on all sides, detailed clean game VFX, true alpha PNG, no filled center, no grey or black disk, no galaxy, no gun, no text, no checkerboard, no metal frame, no second portal, no sheet. Preserve this specific character's portal palette; one static open-state candidate.",
+      "width": 1072,
+      "height": 1467,
+      "color_mode": "RGBA",
+      "byte_size": 569990,
+      "sha256": "02bd9c09e56cdde79ca023993cb4bbd60cf9950de3af734196dc9675ccc26719",
+      "git_blob_sha": "8cd189d174e5777b20eaca6efdd46d05b39815f7",
+      "alpha": {
+        "minimum": 0,
+        "maximum": 254,
+        "transparent_pixels": 1259597,
+        "opaque_pixels": 0,
+        "partial_pixels": 313027,
+        "nonzero_bbox": [
+          0,
+          23,
+          1056,
+          1467
+        ],
+        "mean": 23.594401458962853,
+        "bbox_alpha_gt_8": [
+          171,
+          111,
+          885,
+          1338
+        ]
+      },
+      "original_png_bytes_preserved": true,
+      "owner_id": "fx_portals_solo_portal2",
+      "owner_type": "projectile_effect",
+      "target_ids": [
+        "fx_portals_solo_portal2"
+      ],
+      "category": "projectile_key_frame",
+      "batch_id": "continuation_20261125_k",
+      "created_at": "2026-11-25",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_portals_solo_portal2_orange_k.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "save_method": "Original image_gen PNG bytes stored in an immutable GitHub blob before local copy; Git blob hash verified.",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+      "qa_notes": "Anneau unique de la variante orange; centre transparent (alpha central 0, quelques valeurs 1 dans la zone intérieure mesurée). Palette vérifiée sur les portails appairés de Portal 2. Des résidus alpha très faibles et la texture du bord restent à nettoyer/contrôler avant intégration; aucun aperçu du monde de destination ni animation. PNG original conservé sans retouche; aucune certification 1:1.",
+      "notes": "Anneau unique de la variante orange; centre transparent (alpha central 0, quelques valeurs 1 dans la zone intérieure mesurée). Palette vérifiée sur les portails appairés de Portal 2. Des résidus alpha très faibles et la texture du bord restent à nettoyer/contrôler avant intégration; aucun aperçu du monde de destination ni animation. PNG original conservé sans retouche; aucune certification 1:1.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "result": "Anneau unique de la variante orange; centre transparent (alpha central 0, quelques valeurs 1 dans la zone intérieure mesurée). Palette vérifiée sur les portails appairés de Portal 2. Des résidus alpha très faibles et la texture du bord restent à nettoyer/contrôler avant intégration; aucun aperçu du monde de destination ni animation."
+      }
+    },
+    {
+      "asset_id": "fx_strider_tracer_hl2_trace_k",
+      "target_id": "fx_strider_tracer_hl2",
+      "name_fr": "Traceur de mitrailleuse Strider HL2",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "visual_state_id": "trace",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_strider_tracer_hl2_trace_k.png",
+      "reference_paths": [
+        "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/D2_coast_080049.JPG"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "D2_coast_080049.JPG",
+          "source_url": "https://combineoverwiki.net/images/7/72/D2_coast_080049.JPG",
+          "source_page": "https://combineoverwiki.net/wiki/File:D2_coast_080049.JPG",
+          "article_url": "https://combineoverwiki.net/wiki/Combine_Gunship",
+          "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/D2_coast_080049.JPG",
+          "sha256": "2e4a347eda6193790275f28635e801a86a0fadd8244d3700bcf75f3c4a1a7a64",
+          "byte_size": 291817,
+          "dimensions": [
+            800,
+            535
+          ],
+          "caption": "Gunship firing at Gordon after the Bridge Point Force Fields are deactivated.",
+          "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/Combine_Gunship",
+        "https://combineoverwiki.net/wiki/File:D2_coast_080049.JPG",
+        "https://combineoverwiki.net/images/7/72/D2_coast_080049.JPG",
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/client/fx.cpp"
+      ],
+      "reference_scope": "Gameplay capture of Gunship tracer plus official SDK shared effects/gunshiptracer material for FX_StriderTracer. Width 2.5 in the client code; exact temporal behavior not represented by this single sprite.",
+      "prompt": "Create one isolated horizontal 2D VFX tracer sprite for Traceur de mitrailleuse Strider HL2. The attached original Half-Life 2 screenshot shows the exact shared effects/gunshiptracer material as a flying light streak at the LEFT of the gunship. Valve's source code uses that same material for FX_StriderTracer. Match the observed narrow WHITE to pale lemon luminous core with a very restrained CYAN/ice-blue outer halo and soft pointed ends. Render one thin short luminous streak, length-to-width about 45:1, directed horizontally from RIGHT to LEFT. This is one single straight streak key-frame of a fleeting bullet-tracer effect, a clean elongated sliver, with no round orb or visible physical bullet. Retain restrained Source-engine softness; high-resolution VFX only. Whole streak contained with generous clear margin, true transparent alpha and soft translucent edge. No gunship, weapon, muzzle starburst, black bullet marks, metal, smoke, impact, lightning, scenery, text, sheet, duplicated streak or filled background.",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 199311,
+      "sha256": "e3ebc4c6e2c5748ed5c3f19dea5bca288a99131f369922bd77ff3fa42d884abd",
+      "git_blob_sha": "26a1bab86337fb8328ef389a7a1e40ccbf79913d",
+      "alpha": {
+        "minimum": 0,
+        "maximum": 253,
+        "transparent_pixels": 1458913,
+        "opaque_pixels": 0,
+        "partial_pixels": 113615,
+        "nonzero_bbox": [
+          65,
+          39,
+          2045,
+          682
+        ],
+        "mean": 5.604607358342745,
+        "bbox_alpha_gt_8": [
+          380,
+          324,
+          1787,
+          394
+        ]
+      },
+      "original_png_bytes_preserved": true,
+      "owner_id": "fx_strider_tracer_hl2",
+      "owner_type": "projectile_effect",
+      "target_ids": [
+        "fx_strider_tracer_hl2"
+      ],
+      "category": "projectile_key_frame",
+      "batch_id": "continuation_20261125_k",
+      "created_at": "2026-11-25",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_strider_tracer_hl2_trace_k.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "save_method": "Original image_gen PNG bytes stored in an immutable GitHub blob before local copy; Git blob hash verified.",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+      "qa_notes": "Trait clair à halo cyan, distinct du canon à distorsion. Le SDK partage le matériau du Gunship avec une largeur différente; comparer la taille et la durée dans une séquence Strider retail. PNG original conservé sans retouche; aucune certification 1:1.",
+      "notes": "Trait clair à halo cyan, distinct du canon à distorsion. Le SDK partage le matériau du Gunship avec une largeur différente; comparer la taille et la durée dans une séquence Strider retail. PNG original conservé sans retouche; aucune certification 1:1.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "result": "Trait clair à halo cyan, distinct du canon à distorsion. Le SDK partage le matériau du Gunship avec une largeur différente; comparer la taille et la durée dans une séquence Strider retail."
+      }
+    },
+    {
+      "asset_id": "fx_strider_tracer_hl2_trace_k_parameter_error",
+      "target_id": "fx_strider_tracer_hl2",
+      "name_fr": "Traceur de mitrailleuse Strider HL2",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "visual_state_id": "trace",
+      "repository_path": null,
+      "reference_paths": [],
+      "source_references": [],
+      "source_urls": [
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/client/fx.cpp"
+      ],
+      "reference_scope": "Gameplay capture of Gunship tracer plus official SDK shared effects/gunshiptracer material for FX_StriderTracer. Width 2.5 in the client code; exact temporal behavior not represented by this single sprite.",
+      "prompt": "Create one isolated horizontal 2D VFX tracer sprite for Traceur de mitrailleuse Strider HL2. The attached original Half-Life 2 screenshot shows the exact shared effects/gunshiptracer material as a flying light streak at the LEFT of the gunship. Valve's source code uses that same material for FX_StriderTracer. Match the observed narrow WHITE to pale lemon luminous core with a very restrained CYAN/ice-blue outer halo and soft pointed ends. Render one thin short luminous streak, length-to-width about 45:1, directed horizontally from RIGHT to LEFT. This is one single straight streak key-frame of a fleeting bullet-tracer effect, a clean elongated sliver, with no round orb or visible physical bullet. Retain restrained Source-engine softness; high-resolution VFX only. Whole streak contained with generous clear margin, true transparent alpha and soft translucent edge. No gunship, weapon, muzzle starburst, black bullet marks, metal, smoke, impact, lightning, scenery, text, sheet, duplicated streak or filled background.",
+      "generation_status": "erreur outil",
+      "status": "erreur outil",
+      "file_path": null,
+      "error": "invalid type: null, expected path string at line 1 column 1098",
+      "error_classification": "tool_parameter_validation_error",
+      "generation_call_count": 0,
+      "batch_id": "continuation_20261125_k",
+      "new_generation_call": false,
+      "image_generation_started": false,
+      "tool_invocation_count": 1,
+      "notes": "Appel rejeté avant génération : chemin de référence nul issu du manifeste incomplet. Paramètres corrigés pour une nouvelle invocation.",
+      "owner_id": "fx_strider_tracer_hl2",
+      "owner_type": "projectile_effect",
+      "target_ids": [
+        "fx_strider_tracer_hl2"
+      ],
+      "category": "projectile_key_frame",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "selected_for_next_review": false,
+      "created_at": "2026-11-25",
+      "generator": "image_gen built-in",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "reference_bitmap_loaded": false
+    },
+    {
+      "asset_id": "proj_combine_grenade_hla_body_k",
+      "target_id": "proj_combine_grenade_hla",
+      "name_fr": "Grenade du Cartel Alyx — corps désarmé",
+      "source_game": "Half-Life: Alyx",
+      "visual_state_id": "body",
+      "ref": "HLA_Grenade_Unarmed.png",
+      "prompt": "Create one isolated high-resolution 2D game sprite of the unarmed Combine grenade from the released Half-Life: Alyx game. Match the supplied actual game model closely: round squat mustard-yellow metal shell, five dark circular mechanical discs arranged around a central softly glowing orange pentagonal area, narrow curved orange light slits in the shell, black broad top handle with a circular opening, chipped paint and dark seam recesses. Preserve the exact silhouette, proportions, geometry, counts and arrangement seen in the reference and the same three-quarter orientation. Render as detailed crisp hand-painted game art with restrained highlights, no redesign. One complete object, unarmed and compact, centered with generous transparent margins. Remove the reference white backdrop. True transparent RGBA background; no floor, no cast shadow plane, no smoke or explosion, no hand, no labels, no additional objects, no sprite sheet.",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/proj_combine_grenade_hla_body_k.png",
+      "reference_paths": [
+        "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/HLA_Grenade_Unarmed.png"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "HLA_Grenade_Unarmed.png",
+          "source_url": "https://combineoverwiki.net/images/a/a7/HLA_Grenade_Unarmed.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:HLA_Grenade_Unarmed.png",
+          "article_url": "https://combineoverwiki.net/wiki/Grenade_(Half-Life:_Alyx)",
+          "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/HLA_Grenade_Unarmed.png",
+          "sha256": "60d79bc0f992020d05483c904cd681af6d4abb267e2f78056c75081ec481d880",
+          "byte_size": 680251,
+          "dimensions": [
+            960,
+            800
+          ],
+          "caption": "",
+          "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/Grenade_(Half-Life:_Alyx)",
+        "https://combineoverwiki.net/wiki/File:HLA_Grenade_Unarmed.png",
+        "https://combineoverwiki.net/images/a/a7/HLA_Grenade_Unarmed.png"
+      ],
+      "content_class": "released_reference",
+      "width": 1374,
+      "height": 1145,
+      "color_mode": "RGBA",
+      "byte_size": 2066439,
+      "sha256": "5a351d837099dac03a1465fb7bbcba33edeeb9797aced1256876770c8c38afc4",
+      "git_blob_sha": "d317006f5388a44bafac897a8fcf0c3b2bfae6f0",
+      "alpha": {
+        "minimum": 0,
+        "maximum": 255,
+        "transparent_pixels": 604617,
+        "opaque_pixels": 181,
+        "partial_pixels": 968432,
+        "nonzero_bbox": [
+          0,
+          0,
+          1336,
+          1132
+        ],
+        "mean": 151.8360900821876,
+        "bbox_alpha_gt_8": [
+          178,
+          11,
+          1191,
+          1127
+        ]
+      },
+      "original_png_bytes_preserved": true,
+      "owner_id": "proj_combine_grenade_hla",
+      "owner_type": "projectile_effect",
+      "target_ids": [
+        "proj_combine_grenade_hla"
+      ],
+      "category": "projectile_key_frame",
+      "batch_id": "continuation_20261125_k",
+      "created_at": "2026-11-25",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261125_k/effects/proj_combine_grenade_hla_body_k.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "save_method": "Original image_gen PNG bytes stored in an immutable GitHub blob before local copy; Git blob hash verified.",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+      "qa_notes": "Corps jaune moutarde, disques noirs et centre orange lisibles sur noir/blanc; anse et profondeur réinterprétées. Un seul corps non armé, sans trajectoire ni explosion. PNG original conservé sans retouche; aucune certification 1:1.",
+      "notes": "Corps jaune moutarde, disques noirs et centre orange lisibles sur noir/blanc; anse et profondeur réinterprétées. Un seul corps non armé, sans trajectoire ni explosion. PNG original conservé sans retouche; aucune certification 1:1.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "result": "Corps jaune moutarde, disques noirs et centre orange lisibles sur noir/blanc; anse et profondeur réinterprétées. Un seul corps non armé, sans trajectoire ni explosion."
+      }
+    },
+    {
+      "asset_id": "proj_nihilanth_energy_hl1_body_k",
+      "target_id": "proj_nihilanth_energy_hl1",
+      "name_fr": "Nihilanth — énergie offensive",
+      "source_game": "Half-Life (1998)",
+      "visual_state_id": "body",
+      "ref": "nhth1_reference_frame0.png",
+      "code": "nihilanth.cpp",
+      "reference_scope": "Tiny community preview named nhth1.spr matched to CNihilanthHVR::ZapInit in official Valve SDK. Original sprite preview 58×55; high-resolution detail remains interpretation.",
+      "prompt": "Create one isolated high-resolution 2D VFX sprite of the original Half-Life Nihilanth attack energy ball, carefully matching the supplied nhth1.spr preview. Preserve the small bright white/very pale CYAN irregular round core and the many fine radial dusty pink-violet rays around it, with a few subtle dark blue-violet outer tips. Original compact starburst silhouette, not a green teleport orb. Keep the center fairly compact, visible radial rays thin and irregular, restrained glow and no ornamental details. The provided source is tiny; faithfully translate its actual colors and simple structure into a smooth detailed game VFX candidate, without inventing rings, electricity webs or solid glass surfaces. One static body frame only, centered with ample transparent margins. Remove the black backing completely, make dark empty space fully transparent and rays softly translucent. True RGBA alpha; no background, nebula, space scene, hand, creature, text, sheet or multiple objects.",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/proj_nihilanth_energy_hl1_body_k.png",
+      "reference_paths": [
+        "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/nhth1_reference_frame0.png"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "nhth1_reference_frame0.png",
+          "source_url": "https://arquivo.mataleone.com/tut/sprites/nhth1.gif",
+          "source_page": "https://arquivo.mataleone.com/php/main.php?cat=ref&id=7&lang=en&page=tut",
+          "article_url": "https://arquivo.mataleone.com/php/main.php?cat=ref&id=7&lang=en&page=tut",
+          "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/nhth1_reference_frame0.png",
+          "sha256": "219d8bd2d9094eae2e9b59cc1e03f4db0cb530a46823eb8ff17293417ea2c8ab",
+          "source_sha256": "c5c3d8e7b5cb4bd73750765ec3b1ca43ba951ee80ef247de7667f6c88e55f118",
+          "source_format": "GIF",
+          "source_frames": 1,
+          "reference_conversion": "First GIF frame decoded to lossless PNG for inspection and image_gen input; no retouching. Not a generated deliverable.",
+          "dimensions": [
+            58,
+            55
+          ],
+          "role": "community_hosted_Half_Life_sprite_reference_matched_to_Valve_SDK_resource_name",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://arquivo.mataleone.com/php/main.php?cat=ref&id=7&lang=en&page=tut",
+        "https://arquivo.mataleone.com/tut/sprites/nhth1.gif",
+        "https://github.com/ValveSoftware/halflife/blob/master/dlls/nihilanth.cpp"
+      ],
+      "content_class": "released_reference",
+      "width": 1288,
+      "height": 1221,
+      "color_mode": "RGBA",
+      "byte_size": 1133869,
+      "sha256": "4a4f164d9f775756ecaee610f63cd9e218c99548522eb94102b36a121cbc5250",
+      "git_blob_sha": "a4bdce51f8802095b02301f78bce1b4645351cdb",
+      "alpha": {
+        "minimum": 0,
+        "maximum": 253,
+        "transparent_pixels": 972299,
+        "opaque_pixels": 0,
+        "partial_pixels": 600349,
+        "nonzero_bbox": [
+          0,
+          0,
+          1274,
+          1221
+        ],
+        "mean": 29.12237385606951,
+        "bbox_alpha_gt_8": [
+          241,
+          164,
+          1047,
+          1016
+        ]
+      },
+      "original_png_bytes_preserved": true,
+      "owner_id": "proj_nihilanth_energy_hl1",
+      "owner_type": "projectile_effect",
+      "target_ids": [
+        "proj_nihilanth_energy_hl1"
+      ],
+      "category": "projectile_key_frame",
+      "batch_id": "continuation_20261125_k",
+      "created_at": "2026-11-25",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261125_k/effects/proj_nihilanth_energy_hl1_body_k.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "save_method": "Original image_gen PNG bytes stored in an immutable GitHub blob before local copy; Git blob hash verified.",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+      "qa_notes": "Centre blanc-cyan et rayons violets/rosés visibles sur blanc/noir, guidés par le preview nhth1. Les rayons ont été redessinés; ce n’est pas une extraction du sprite du jeu ni un orbe orange de recharge. PNG original conservé sans retouche; aucune certification 1:1.",
+      "notes": "Centre blanc-cyan et rayons violets/rosés visibles sur blanc/noir, guidés par le preview nhth1. Les rayons ont été redessinés; ce n’est pas une extraction du sprite du jeu ni un orbe orange de recharge. PNG original conservé sans retouche; aucune certification 1:1.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "result": "Centre blanc-cyan et rayons violets/rosés visibles sur blanc/noir, guidés par le preview nhth1. Les rayons ont été redessinés; ce n’est pas une extraction du sprite du jeu ni un orbe orange de recharge."
+      }
+    },
+    {
+      "asset_id": "proj_nihilanth_teleport_hl1_body_k",
+      "target_id": "proj_nihilanth_teleport_hl1",
+      "name_fr": "Nihilanth — projectile de téléportation",
+      "source_game": "Half-Life (1998)",
+      "visual_state_id": "body",
+      "ref": "exit1_reference_frame0.png",
+      "code": "nihilanth.cpp",
+      "reference_scope": "Tiny community preview named exit1.spr matched to CNihilanthHVR::TeleportInit in official Valve SDK. Original preview 78×76; one candidate body, not teleport-arrival animation.",
+      "prompt": "Create one isolated high-resolution 2D VFX sprite of original Half-Life's Nihilanth teleport projectile, directly matching this supplied exit1.spr preview. Keep a round cloudy soft-edged energy sphere: tiny pale-yellow luminous center, broad warm YELLOW/ORANGE mottled inner glow, surrounded by a clearly distinct textured vivid GREEN outer halo. Preserve the roughly circular irregular cloudy shape and the reference color layout. Smooth the tiny reference into high-resolution game VFX, but retain simple speckled smoky texture and restrained radial falloff. This is a single soft billboard glow, no hard glass or shell, no violet lightning, no portal ring, no extra objects. True transparent alpha in place of all black backing, translucent outer halo, whole effect centered with generous clear margin. One static body frame only; no background, scene, creature, text, diagrams or sheet.",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/proj_nihilanth_teleport_hl1_body_k.png",
+      "reference_paths": [
+        "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/exit1_reference_frame0.png"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "exit1_reference_frame0.png",
+          "source_url": "https://arquivo.mataleone.com/tut/sprites/exit1.gif",
+          "source_page": "https://arquivo.mataleone.com/php/main.php?cat=ref&id=7&lang=en&page=tut",
+          "article_url": "https://arquivo.mataleone.com/php/main.php?cat=ref&id=7&lang=en&page=tut",
+          "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/exit1_reference_frame0.png",
+          "sha256": "9d651f4d992df188558f24e1f65c0f372d368f294683047505346753afe1dc30",
+          "source_sha256": "faceaaecc8cacbe8a0a07562777c1fe74fc173c85f50cea5521cba0be903d4ea",
+          "source_format": "GIF",
+          "source_frames": 1,
+          "reference_conversion": "First GIF frame decoded to lossless PNG for inspection and image_gen input; no retouching. Not a generated deliverable.",
+          "dimensions": [
+            78,
+            76
+          ],
+          "role": "community_hosted_Half_Life_sprite_reference_matched_to_Valve_SDK_resource_name",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://arquivo.mataleone.com/php/main.php?cat=ref&id=7&lang=en&page=tut",
+        "https://arquivo.mataleone.com/tut/sprites/exit1.gif",
+        "https://github.com/ValveSoftware/halflife/blob/master/dlls/nihilanth.cpp"
+      ],
+      "content_class": "released_reference",
+      "width": 1271,
+      "height": 1238,
+      "color_mode": "RGBA",
+      "byte_size": 1493874,
+      "sha256": "52881350821bf40f27194fffe0524a411f33502dd724e9a4885095a9f9274552",
+      "git_blob_sha": "78807773c3713a0b660eec70a336a4565fa7bb4f",
+      "alpha": {
+        "minimum": 0,
+        "maximum": 254,
+        "transparent_pixels": 677206,
+        "opaque_pixels": 0,
+        "partial_pixels": 896292,
+        "nonzero_bbox": [
+          0,
+          0,
+          1271,
+          1238
+        ],
+        "mean": 105.20803776045473,
+        "bbox_alpha_gt_8": [
+          122,
+          81,
+          1132,
+          1126
+        ]
+      },
+      "original_png_bytes_preserved": true,
+      "owner_id": "proj_nihilanth_teleport_hl1",
+      "owner_type": "projectile_effect",
+      "target_ids": [
+        "proj_nihilanth_teleport_hl1"
+      ],
+      "category": "projectile_key_frame",
+      "batch_id": "continuation_20261125_k",
+      "created_at": "2026-11-25",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261125_k/effects/proj_nihilanth_teleport_hl1_body_k.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "save_method": "Original image_gen PNG bytes stored in an immutable GitHub blob before local copy; Git blob hash verified.",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+      "qa_notes": "Centre jaune pâle, couronne orange et halo vert granuleux, guidés par exit1. Texture redessinée; seule une frame candidate, sans séquence de téléportation complète. PNG original conservé sans retouche; aucune certification 1:1.",
+      "notes": "Centre jaune pâle, couronne orange et halo vert granuleux, guidés par exit1. Texture redessinée; seule une frame candidate, sans séquence de téléportation complète. PNG original conservé sans retouche; aucune certification 1:1.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "result": "Centre jaune pâle, couronne orange et halo vert granuleux, guidés par exit1. Texture redessinée; seule une frame candidate, sans séquence de téléportation complète."
+      }
+    },
+    {
+      "asset_id": "proj_rocket_turret_missile_portal1_body_k",
+      "target_id": "proj_rocket_turret_missile_portal1",
+      "name_fr": "Missile de la tourelle Portal — corps",
+      "source_game": "Portal",
+      "visual_state_id": "body",
+      "ref": "Rocket_Sentry_rocket.jpg",
+      "prompt": "Create one isolated high-resolution 2D side-view game sprite of the Rocket Turret missile from original released Portal (2007), precisely matching the supplied game model. Keep the dark desaturated blue-green body, broad tapered pointed front with a tiny RED nose cap, narrow neck leading to a straight rear cylindrical section, and the dull light grey polygonal rings and collar arrangement of the reference. Preserve the compact low-poly underlying geometry, no extra fins. Orient horizontally with red nose pointing screen LEFT; rear at right. Detailed hand-painted 2D game sprite, clean readable bevels and restrained wear with the exact game palette. Whole single missile within 12 percent transparent margin on every side. True transparent alpha, no white matte, no smoke trail or flames for this body-only asset, no explosion, no labels, no schematics, no extra views, no sprite sheet.",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/proj_rocket_turret_missile_portal1_body_k.png",
+      "reference_paths": [
+        "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Rocket_Sentry_rocket.jpg"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "Rocket_Sentry_rocket.jpg",
+          "source_url": "https://combineoverwiki.net/images/6/69/Rocket_Sentry_rocket.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/File:Rocket_Sentry_rocket.jpg",
+          "article_url": "https://combineoverwiki.net/wiki/Rocket_Turret",
+          "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Rocket_Sentry_rocket.jpg",
+          "sha256": "20b59d82936eac93453f7cd109033770e3b18c09148b6c58179a495dc710f0c7",
+          "byte_size": 52114,
+          "dimensions": [
+            509,
+            254
+          ],
+          "caption": "Rocket model.",
+          "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/Rocket_Turret",
+        "https://combineoverwiki.net/wiki/File:Rocket_Sentry_rocket.jpg",
+        "https://combineoverwiki.net/images/6/69/Rocket_Sentry_rocket.jpg"
+      ],
+      "content_class": "released_reference",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 876491,
+      "sha256": "fc644315cc94a55747b2186482f64b8fdd7c31307b784c8d5b8f986f794e82b9",
+      "git_blob_sha": "b4b866c53fc86c1387c9fcde13c567ca558d63dc",
+      "alpha": {
+        "minimum": 0,
+        "maximum": 255,
+        "transparent_pixels": 992963,
+        "opaque_pixels": 710,
+        "partial_pixels": 578855,
+        "nonzero_bbox": [
+          15,
+          0,
+          2160,
+          724
+        ],
+        "mean": 82.83238454259639,
+        "bbox_alpha_gt_8": [
+          109,
+          148,
+          2068,
+          589
+        ]
+      },
+      "original_png_bytes_preserved": true,
+      "owner_id": "proj_rocket_turret_missile_portal1",
+      "owner_type": "projectile_effect",
+      "target_ids": [
+        "proj_rocket_turret_missile_portal1"
+      ],
+      "category": "projectile_key_frame",
+      "batch_id": "continuation_20261125_k",
+      "created_at": "2026-11-25",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261125_k/effects/proj_rocket_turret_missile_portal1_body_k.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "save_method": "Original image_gen PNG bytes stored in an immutable GitHub blob before local copy; Git blob hash verified.",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+      "qa_notes": "Objet unique horizontal, nez rouge, corps bleu-vert sombre et anneaux gris; silhouette contenue. Détails de profil et proportions à comparer au modèle Portal original. PNG original conservé sans retouche; aucune certification 1:1.",
+      "notes": "Objet unique horizontal, nez rouge, corps bleu-vert sombre et anneaux gris; silhouette contenue. Détails de profil et proportions à comparer au modèle Portal original. PNG original conservé sans retouche; aucune certification 1:1.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "result": "Objet unique horizontal, nez rouge, corps bleu-vert sombre et anneaux gris; silhouette contenue. Détails de profil et proportions à comparer au modèle Portal original."
+      }
+    },
+    {
+      "asset_id": "proj_rpg_rocket_hl2_flight_k",
+      "target_id": "proj_rpg_rocket_hl2",
+      "name_fr": "Roquette RPG HL2 — corps en vol",
+      "source_game": "Half-Life 2",
+      "visual_state_id": "flight",
+      "ref": "RPG_rocket_fly.jpg",
+      "prompt": "Create ONE isolated high-resolution 2D game sprite of the in-flight RPG rocket from original Half-Life 2 using the attached actual retail flying model as strict reference. Preserve its long tapered gray metallic nose, orange main casing with dark bands near the rear end, slim pale silver slotted cylindrical tail stem, dark rear hub and all long thin unfolded radial tail fins in the same arrangement as the reference, including the tiny orange markings on their tips. This is the released game rocket model with deployed tail, complete from pointed tip to the furthest fin. Rotate to a horizontal left-facing side/three-quarter view: nose points LEFT. Detailed painted game art, restrained realistic wear, source-faithful silhouette and proportions, no extra decoration. Whole single object centered with generous transparent margin including all fins; true transparent alpha background. Body-only flight frame: no smoke, flame trail, explosion, launcher, hand, labels, diagram, separate parts or sheet.",
+      "repository_path": null,
+      "reference_paths": [
+        "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/RPG_rocket_fly.jpg"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "RPG_rocket_fly.jpg",
+          "source_url": "https://combineoverwiki.net/images/6/6b/RPG_rocket_fly.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/File:RPG_rocket_fly.jpg",
+          "article_url": "https://combineoverwiki.net/wiki/Rocket-Propelled_Grenade_Launcher_(Half-Life_2)",
+          "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/RPG_rocket_fly.jpg",
+          "sha256": "d8419e4af3bbf70f9a0db2fdb4d82a919619187b6416d9d55f4836e22a3c89f2",
+          "byte_size": 119503,
+          "dimensions": [
+            1054,
+            341
+          ],
+          "caption": "Rocket model, in flying mode.",
+          "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/Rocket-Propelled_Grenade_Launcher_(Half-Life_2)",
+        "https://combineoverwiki.net/wiki/File:RPG_rocket_fly.jpg",
+        "https://combineoverwiki.net/images/6/6b/RPG_rocket_fly.jpg"
+      ],
+      "content_class": "released_reference",
+      "generation_status": "refusé par le système de sécurité",
+      "status": "refusé",
+      "file_path": null,
+      "error": "image generation failed: http 400 Bad Request: Some(\"{\\n  \\\"error\\\": {\\n    \\\"message\\\": \\\"Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID 3133ad3f-7a48-4c14-94d4-8d8228effcc3. safety_violations=[illicit].\\\",\\n    \\\"type\\\": \\\"image_generation_user_error\\\",\\n    \\\"param\\\": null,\\n    \\\"code\\\": \\\"moderation_blocked\\\",\\n    \\\"moderation_details\\\": {\\n      \\\"moderation_stage\\\": \\\"output\\\",\\n      \\\"categories\\\": [\\n        \\\"illicit\\\"\\n      ]\\n    }\\n  }\\n}\")",
+      "error_classification": "confirmed_safety_refusal",
+      "generation_call_count": 1,
+      "batch_id": "continuation_20261125_k",
+      "safety_refusal_confirmed": true,
+      "new_generation_call": true,
+      "notes": "Refus explicite de sortie par le système de sécurité; aucune nouvelle tentative de cette cible dans ce lot.",
+      "owner_id": "proj_rpg_rocket_hl2",
+      "owner_type": "projectile_effect",
+      "target_ids": [
+        "proj_rpg_rocket_hl2"
+      ],
+      "category": "projectile_key_frame",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "selected_for_next_review": false,
+      "created_at": "2026-11-25",
+      "generator": "image_gen built-in",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "reference_bitmap_loaded": true
+    },
+    {
+      "asset_id": "proj_satchel_hl1_landed_k",
+      "target_id": "proj_satchel_hl1",
+      "name_fr": "Charge Satchel HL1 — modèle posé",
+      "source_game": "Half-Life (1998)",
+      "visual_state_id": "landed",
+      "ref": "Hl_satchel_world.png",
+      "prompt": "Create one isolated high-resolution 2D game sprite of the satchel charge worldmodel from original Half-Life (1998), strictly matching the supplied original low-definition game model. Preserve the squat dark olive-green fabric pack with blocky rectangular folded panels, its flat rectangular top, the small dark grey attached device at the upper corner with its thin upright black antenna, the dark vertical straps and the yellow hanging side tag. Match the reference arrangement, original compact proportions and worn military fabric colors in the same three-quarter view. It is a closed fictional game prop resting upright, whole pack and antenna visible. Detailed crisp hand-painted game art, no internal components or technical cutaway, no reinterpretation. True transparent RGBA background with generous empty margins, no ground plane, floor shadow, separate hand-held remote, hand, character, explosion, diagram, instructions, captions or sprite sheet. One whole individual object only.",
+      "repository_path": null,
+      "reference_paths": [
+        "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Hl_satchel_world.png"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "Hl_satchel_world.png",
+          "source_url": "https://combineoverwiki.net/images/4/4a/Hl_satchel_world.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:Hl_satchel_world.png",
+          "article_url": "https://combineoverwiki.net/wiki/Satchel_Charge",
+          "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Hl_satchel_world.png",
+          "sha256": "b1ab75d83d0cdd213dd55a987e8b49ae8a99cadb73da1dca4377e1fc6d165ca8",
+          "byte_size": 131926,
+          "dimensions": [
+            500,
+            780
+          ],
+          "caption": "",
+          "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/Satchel_Charge",
+        "https://combineoverwiki.net/wiki/File:Hl_satchel_world.png",
+        "https://combineoverwiki.net/images/4/4a/Hl_satchel_world.png"
+      ],
+      "content_class": "released_reference",
+      "generation_status": "refusé par le système de sécurité",
+      "status": "refusé",
+      "file_path": null,
+      "error": "image generation failed: http 400 Bad Request: Some(\"{\\n  \\\"error\\\": {\\n    \\\"message\\\": \\\"Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID bb4ac512-7d33-4221-8def-66e6c3251ed9. safety_violations=[illicit].\\\",\\n    \\\"type\\\": \\\"image_generation_user_error\\\",\\n    \\\"param\\\": null,\\n    \\\"code\\\": \\\"moderation_blocked\\\",\\n    \\\"moderation_details\\\": {\\n      \\\"moderation_stage\\\": \\\"output\\\",\\n      \\\"categories\\\": [\\n        \\\"illicit\\\"\\n      ]\\n    }\\n  }\\n}\")",
+      "error_classification": "confirmed_safety_refusal",
+      "generation_call_count": 1,
+      "batch_id": "continuation_20261125_k",
+      "safety_refusal_confirmed": true,
+      "new_generation_call": true,
+      "notes": "Refus explicite de sortie par le système de sécurité; aucune nouvelle tentative de cette cible dans ce lot.",
+      "owner_id": "proj_satchel_hl1",
+      "owner_type": "projectile_effect",
+      "target_ids": [
+        "proj_satchel_hl1"
+      ],
+      "category": "projectile_key_frame",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "selected_for_next_review": false,
+      "created_at": "2026-11-25",
+      "generator": "image_gen built-in",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "reference_bitmap_loaded": true
+    },
+    {
+      "asset_id": "proj_voltigore_orb_opfor_charge_k",
+      "target_id": "proj_voltigore_orb_opfor",
+      "name_fr": "Voltigore Opposing Force — charge électrique",
+      "source_game": "Half-Life: Opposing Force",
+      "visual_state_id": "charge",
+      "ref": "Volt_attack.jpg",
+      "prompt": "Generate one transparent game VFX sprite of the Voltigore electrical charge from original Half-Life Opposing Force. Use the supplied original gameplay screenshot as exact color and structure reference for the visible electrical attack, but isolate only the energy: a small intensely white-lilac central point, with several thin irregular purple-violet lightning branches extending laterally around it. The reference shows very thin bright lavender angular filaments with a subtle purple halo. Keep these narrow jagged branched lines and the compact central white core, readable at game scale. This is one single static charge key-frame for a 2D game, not a sequence. Centered composition elongated horizontally, margins generous so each filament terminates inside the canvas. True alpha transparency including all negative space between branches; no landscape, monster, grass, human, weapon, border, text, background cloud or material sphere. Avoid a thick blue fantasy orb or decorative rings.",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/proj_voltigore_orb_opfor_charge_k.png",
+      "reference_paths": [
+        "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Volt_attack.jpg"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "Volt_attack.jpg",
+          "source_url": "https://combineoverwiki.net/images/d/d2/Volt_attack.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/File:Volt_attack.jpg",
+          "article_url": "https://combineoverwiki.net/wiki/Voltigore",
+          "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Volt_attack.jpg",
+          "sha256": "4c924f84560340d8f1d607c18de007a8c4de0b1979dfae9affe2d8fe80f82f01",
+          "byte_size": 551253,
+          "dimensions": [
+            1320,
+            960
+          ],
+          "caption": "The Voltigore launching its attack.",
+          "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/Voltigore",
+        "https://combineoverwiki.net/wiki/File:Volt_attack.jpg",
+        "https://combineoverwiki.net/images/d/d2/Volt_attack.jpg"
+      ],
+      "content_class": "released_reference",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 511541,
+      "sha256": "f4cf77ba0b4132932cbbc6ea4cb4846927a8d8749bd373a5e742b7a223821cd5",
+      "git_blob_sha": "2b9dc179938dfdcff90085033037d5cd389d6ed3",
+      "alpha": {
+        "minimum": 0,
+        "maximum": 253,
+        "transparent_pixels": 1305407,
+        "opaque_pixels": 0,
+        "partial_pixels": 267121,
+        "nonzero_bbox": [
+          87,
+          9,
+          2082,
+          724
+        ],
+        "mean": 4.29823316341585,
+        "bbox_alpha_gt_8": [
+          370,
+          143,
+          1814,
+          640
+        ]
+      },
+      "original_png_bytes_preserved": true,
+      "owner_id": "proj_voltigore_orb_opfor",
+      "owner_type": "projectile_effect",
+      "target_ids": [
+        "proj_voltigore_orb_opfor"
+      ],
+      "category": "projectile_key_frame",
+      "batch_id": "continuation_20261125_k",
+      "created_at": "2026-11-25",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261125_k/effects/proj_voltigore_orb_opfor_charge_k.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "save_method": "Original image_gen PNG bytes stored in an immutable GitHub blob before local copy; Git blob hash verified.",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+      "qa_notes": "Charge violette à centre clair et branches anguleuses fines. La capture documente une charge dans les mains du Voltigore; ce fichier ne prouve pas la forme de l’orbe en vol. PNG original conservé sans retouche; aucune certification 1:1.",
+      "notes": "Charge violette à centre clair et branches anguleuses fines. La capture documente une charge dans les mains du Voltigore; ce fichier ne prouve pas la forme de l’orbe en vol. PNG original conservé sans retouche; aucune certification 1:1.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "result": "Charge violette à centre clair et branches anguleuses fines. La capture documente une charge dans les mains du Voltigore; ce fichier ne prouve pas la forme de l’orbe en vol."
+      }
+    },
+    {
+      "asset_id": "proj_xen_grenade_hla_body_k",
+      "target_id": "proj_xen_grenade_hla",
+      "name_fr": "Grenade Xen Alyx — corps au repos",
+      "source_game": "Half-Life: Alyx",
+      "visual_state_id": "body",
+      "ref": "HLA_XenGrenade_01.png",
+      "prompt": "Create one isolated high-resolution 2D game sprite of the unarmed Xen grenade from released Half-Life: Alyx, strictly using this supplied actual model as the identity and color reference. Preserve the roughly round but deeply wrinkled and angular pale ivory/tan fleshy body with multiple deep sunken depressions, dark plum-brown tissue around vivid luminous green organic nodes. The main visible three green depressions, peripheral smaller nodes, ridged connecting folds and irregular faceted silhouette should follow the reference. Detailed painted 2D game art, organic moist wrinkled tissue, restrained tiny highlights, same three-quarter view. This is one compact uninflated organic object at rest. One whole object centered within generous transparent margin, true transparent RGBA background, no scene, no background plant, no hand, no text, no sheet, no explosion, no added spikes or metal.",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/proj_xen_grenade_hla_body_k.png",
+      "reference_paths": [
+        "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/HLA_XenGrenade_01.png"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "HLA_XenGrenade_01.png",
+          "source_url": "https://combineoverwiki.net/images/3/39/HLA_XenGrenade_01.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:HLA_XenGrenade_01.png",
+          "article_url": "https://combineoverwiki.net/wiki/Xen_Grenade",
+          "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/HLA_XenGrenade_01.png",
+          "sha256": "498e382cc452392324207a9f7a22e6b2dc2336485886233338321dfaf421943d",
+          "byte_size": 760443,
+          "dimensions": [
+            840,
+            820
+          ],
+          "caption": "",
+          "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+          "visually_inspected": true
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/Xen_Grenade",
+        "https://combineoverwiki.net/wiki/File:HLA_XenGrenade_01.png",
+        "https://combineoverwiki.net/images/3/39/HLA_XenGrenade_01.png"
+      ],
+      "content_class": "released_reference",
+      "width": 1289,
+      "height": 1221,
+      "color_mode": "RGBA",
+      "byte_size": 2184010,
+      "sha256": "52b944cced192c633a49610806b98b028d6c81ec9dc1420dfedf237b6972fb90",
+      "git_blob_sha": "22c99e90a912beb26903d2f18ae83d62bf4d9c1f",
+      "alpha": {
+        "minimum": 0,
+        "maximum": 255,
+        "transparent_pixels": 597829,
+        "opaque_pixels": 197,
+        "partial_pixels": 975843,
+        "nonzero_bbox": [
+          0,
+          9,
+          1279,
+          1221
+        ],
+        "mean": 151.5542316418965,
+        "bbox_alpha_gt_8": [
+          61,
+          30,
+          1204,
+          1189
+        ]
+      },
+      "original_png_bytes_preserved": true,
+      "owner_id": "proj_xen_grenade_hla",
+      "owner_type": "projectile_effect",
+      "target_ids": [
+        "proj_xen_grenade_hla"
+      ],
+      "category": "projectile_key_frame",
+      "batch_id": "continuation_20261125_k",
+      "created_at": "2026-11-25",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261125_k/effects/proj_xen_grenade_hla_body_k.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "save_method": "Original image_gen PNG bytes stored in an immutable GitHub blob before local copy; Git blob hash verified.",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+      "qa_notes": "Chair ivoire plissée et cavités vertes conformes aux grandes masses de la référence HLA; reliefs et répartition des cavités reconstruits. Vérifier le modèle sous plusieurs angles. PNG original conservé sans retouche; aucune certification 1:1.",
+      "notes": "Chair ivoire plissée et cavités vertes conformes aux grandes masses de la référence HLA; reliefs et répartition des cavités reconstruits. Vérifier le modèle sous plusieurs angles. PNG original conservé sans retouche; aucune certification 1:1.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "result": "Chair ivoire plissée et cavités vertes conformes aux grandes masses de la référence HLA; reliefs et répartition des cavités reconstruits. Vérifier le modèle sous plusieurs angles."
+      }
+    }
+  ],
+  "deferred_targets": [
+    {
+      "target_id": "proj_mp5_grenade_hl1",
+      "owner_id": "proj_mp5_grenade_hl1",
+      "source_game": "Half-Life (1998)",
+      "status": "deferred_without_generation",
+      "reason_code": "exact_model_capture_missing",
+      "reason": "Le SDK fixe models/grenade.mdl pour ShootContact. Argrenade_1.png représente le paquet de munitions w_ARgrenade.mdl; cette image ne fixe pas le modèle tiré.",
+      "next_step": "Capturer le modèle grenade.mdl de Half-Life retail, de côté et en vol.",
+      "generation_call_count": 0,
+      "source_urls": [
+        "https://github.com/ValveSoftware/halflife/blob/master/dlls/mp5.cpp",
+        "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/mp5.cpp"
+      ],
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "target_id": "fx_bullsquid_spit_impact_hl1",
+      "owner_id": "fx_bullsquid_spit_impact_hl1",
+      "source_game": "Half-Life (1998)",
+      "status": "deferred_without_generation",
+      "reason_code": "exact_impact_capture_missing",
+      "reason": "Bullsquid_headcrab_attack2.jpg montre des crachats jaunes/verts, sans isoler l’impact demandé. Le preview bigspit est le corps; tinyspit.spr et les marques DECAL_SPIT1/2 de CSquidSpit::Touch restent non inspectés.",
+      "next_step": "Capturer tinyspit.spr et les decals du contact dans Half-Life retail, avec leur chronologie.",
+      "generation_call_count": 0,
+      "source_urls": [
+        "https://github.com/ValveSoftware/halflife/blob/master/dlls/bullsquid.cpp"
+      ],
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "target_id": "fx_bullet_tracer_hl1",
+      "owner_id": "fx_bullet_tracer_hl1",
+      "source_game": "Half-Life (1998)",
+      "status": "deferred_without_generation",
+      "reason_code": "exact_tracer_capture_missing",
+      "reason": "Le code confirme un tir instantané avec traceur visuel optionnel. Aucun bitmap de traceur GoldSrc retail inspecté ne permet ici d’en fixer couleur, épaisseur et durée.",
+      "next_step": "Obtenir une séquence de tir GoldSrc et une frame de traceur identifiable; ne pas ajouter une balle lente.",
+      "generation_call_count": 0,
+      "source_urls": [
+        "https://github.com/ValveSoftware/halflife/blob/master/dlls/combat.cpp"
+      ],
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "target_id": "proj_displacer_orb_opfor",
+      "owner_id": "proj_displacer_orb_opfor",
+      "source_game": "Half-Life: Opposing Force",
+      "status": "deferred_without_generation",
+      "reason_code": "exact_projectile_capture_missing",
+      "reason": "Les modèles de l’arme et la page produit ne montrent pas l’orbe offensif isolé. Le trajet, le contact et le déplacement du porteur doivent rester distincts.",
+      "next_step": "Capturer l’orbe offensif du Displacer dans Opposing Force, avec frame en vol et contact.",
+      "generation_call_count": 0,
+      "source_urls": [
+        "https://store.steampowered.com/app/50/HalfLife_Opposing_Force/",
+        "https://store.steampowered.com/app/50/HalfLife_Opposing_Force/"
+      ],
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "target_id": "proj_gene_worm_spit_opfor",
+      "owner_id": "proj_gene_worm_spit_opfor",
+      "source_game": "Half-Life: Opposing Force",
+      "status": "deferred_without_generation",
+      "reason_code": "exact_projectile_capture_missing",
+      "reason": "Gene_Worm_enters.jpg montre le boss et son portail, pas son crachat. L’apparence du projectile ne peut pas être déduite de celle du boss.",
+      "next_step": "Capturer le crachat du Gene Worm dans la version commerciale d’Opposing Force.",
+      "generation_call_count": 0,
+      "source_urls": [
+        "https://store.steampowered.com/app/50/HalfLife_Opposing_Force/"
+      ],
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "target_id": "proj_gonome_gut_opfor",
+      "owner_id": "proj_gonome_gut_opfor",
+      "source_game": "Half-Life: Opposing Force",
+      "status": "deferred_without_generation",
+      "reason_code": "exact_projectile_capture_missing",
+      "reason": "Les rendus du Gonome consultés fixent le monstre, pas le projectile lancé. Aucun gut en vol inspecté pour cette passe.",
+      "next_step": "Capturer séparément le projectile en main, en vol et à l’impact dans Opposing Force.",
+      "generation_call_count": 0,
+      "source_urls": [
+        "https://store.steampowered.com/app/50/HalfLife_Opposing_Force/"
+      ],
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "target_id": "proj_apc_missile_hl2",
+      "owner_id": "proj_apc_missile_hl2",
+      "source_game": "Half-Life 2",
+      "status": "deferred_without_generation",
+      "reason_code": "shared_resource_with_refused_request",
+      "reason": "CAPCMissile::Init emploie models/weapons/w_missile.mdl, le même modèle de vol que le RPG. L’appel RPG du lot K a été explicitement refusé; aucun nouvel appel au même corps sous un autre nom.",
+      "next_step": "Conserver le refus RPG et le contrat APC séparément; reprendre cette cible seulement avec une voie de production admissible et un périmètre distinct validé.",
+      "generation_call_count": 0,
+      "source_urls": [
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/weapon_rpg.cpp",
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/vehicle_apc.cpp",
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/weapon_rpg.cpp"
+      ],
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "target_id": "proj_antlion_worker_spit_ep2",
+      "owner_id": "proj_antlion_worker_spit_ep2",
+      "source_game": "Half-Life 2: Episode Two",
+      "status": "deferred_without_generation",
+      "reason_code": "phase_reference_ambiguous",
+      "reason": "Ep2_outland_01a0023.jpg est bien une capture de tir du Worker retail. Le petit nuage vert ne permet pas d’isoler avec certitude large/medium/small, trail ou impact; la capture de modèle AcidAntlion ne remplit pas ce manque.",
+      "next_step": "Capturer les modèles spitball_large/medium/small et le système antlion_spit_trail au bon instant dans Episode Two.",
+      "generation_call_count": 0,
+      "source_urls": [
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/grenade_spit.cpp",
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_antlion.cpp",
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/grenade_spit.cpp"
+      ],
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "target_id": "fx_strider_warp_hl2",
+      "owner_id": "fx_strider_warp_hl2",
+      "source_game": "Half-Life 2",
+      "status": "deferred_without_generation",
+      "reason_code": "wrong_version_or_attack_excluded",
+      "reason": "Strider_fire.jpg montre la mitrailleuse; Warp_Cannon et Strider_Firing_Pulse_Cannon montrent Alyx. Strider_Immolator_Firing.jpg est explicitement une restauration par fans d’une attaque coupée, exclue du canon retail HL2.",
+      "next_step": "Capturer charge, tir et impact du canon à distorsion dans Half-Life 2 commercial, sans utiliser la version Alyx ni l’Immolator coupé.",
+      "generation_call_count": 0,
+      "source_urls": [
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/npc_strider.cpp",
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_strider.cpp"
+      ],
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "target_id": "fx_vortigaunt_zap_hl2",
+      "owner_id": "fx_vortigaunt_zap_hl2",
+      "source_game": "Half-Life 2: épisodes",
+      "status": "deferred_without_generation",
+      "reason_code": "wrong_sequence_excluded",
+      "reason": "Le SDK des épisodes fixe la décharge. Les captures Ep2_outland_020008/020011/020037/04002 inspectées montrent le soin d’Alyx ou la larve d’antlion; elles ne valident pas un rayon offensif.",
+      "next_step": "Obtenir une capture du rayon offensif vortigaunt dans les épisodes, puis comparer charge, faisceau et impact séparément.",
+      "generation_call_count": 0,
+      "source_urls": [
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/npc_vortigaunt_episodic.cpp"
+      ],
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "target_id": "fx_reviver_discharge_hla",
+      "owner_id": "fx_reviver_discharge_hla",
+      "source_game": "Half-Life: Alyx",
+      "status": "deferred_without_generation",
+      "reason_code": "wrong_subject_excluded",
+      "reason": "Half_life_alyx_lightning_dog_zombie.png montre les arcs d’un Revived Zombie possédé. Cette capture IGN ne fixe pas une séquence de décharge propre au Reviver libre; les modèles/organes ne la remplacent pas.",
+      "next_step": "Capturer une séquence du Reviver libre et documenter la relation avec les arcs des zombies possédés avant de choisir l’état.",
+      "generation_call_count": 0,
+      "source_urls": [
+        "https://www.half-life.com/en/alyx"
+      ],
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "target_id": "proj_antlion_spit_hla",
+      "owner_id": "proj_antlion_spit_hla",
+      "source_game": "Half-Life: Alyx",
+      "status": "deferred_without_generation",
+      "reason_code": "exact_projectile_capture_missing",
+      "reason": "Les références HLA consultées montrent l’Antlion Spitter et décrivent sa bile, sans frame exploitable du projectile isolé. Aucune copie du crachat Episode Two.",
+      "next_step": "Capturer corps, traînée et impact du projectile de la variante HLA.",
+      "generation_call_count": 0,
+      "source_urls": [
+        "https://www.half-life.com/en/alyx"
+      ],
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    },
+    {
+      "target_id": "fx_pistol_fire_hl2",
+      "owner_id": "fx_pistol_fire_hl2",
+      "source_game": "Half-Life 2",
+      "status": "deferred_without_generation",
+      "reason_code": "exact_muzzle_capture_missing",
+      "reason": "D1_trainstation_060005.jpg ne montre pas un flash de bouche lisible. Le SDK confirme FireBullets mais ne suffit pas à fixer les pixels du flash ou une traînée éventuelle.",
+      "next_step": "Capturer le flash de bouche et un impact du pistolet HL2; ne produire une trace que si elle apparaît dans la référence.",
+      "generation_call_count": 0,
+      "source_urls": [
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/weapon_pistol.cpp"
+      ],
+      "certified_one_to_one": false,
+      "runtime_enabled": false
+    }
+  ],
+  "limits": [
+    "Une frame candidate ne clôt ni la famille ni son état visuel. Aucun clip complet, aucune certification 1:1, aucune intégration moteur dans ce lot.",
+    "Trois appels ont échoué à la validation des paramètres avant génération; les trois appels corrigés ont produit des PNG. Aucun refus de sécurité réessayé.",
+    "Le composant gargeye1 ne constitue pas une vague de stomp entière. Les six portails restent des anneaux sans vue de destination.",
+    "Les références bitmap sont hébergées par des communautés; le code Valve fixe les ressources mais ne certifie pas la reconstruction graphique."
+  ]
+}

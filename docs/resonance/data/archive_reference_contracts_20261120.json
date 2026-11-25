@@ -2679,5 +2679,445 @@
     "limits": [
       "No gameplay test, no native-resolution visual fidelity approval, no motion review, no compilation of the SDK."
     ]
+  },
+  "production_followup_20261125_k": {
+    "date": "2026-11-25",
+    "document": "docs/resonance/production/continuation_20261125_k/README.md",
+    "historical_snapshot_preserved": true,
+    "note": "Les compteurs et décisions du document du 20 novembre restent leur instantané daté. Les résultats réels du lot K sont ci-dessous; ils ne valident pas les animations ou versions finales.",
+    "targets": [
+      {
+        "target_id": "hydra_hl2_cut",
+        "name": "Hydra des versions abandonnées",
+        "category": "archive",
+        "source_game": "Half-Life 2 contenu coupé",
+        "source_file": "docs/resonance/data/boss_battle_catalog.json",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "hydra_hl2_cut_idle_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/archives/hydra_hl2_cut_idle_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      {
+        "target_id": "archive_kingpin_hl1",
+        "name": "Kingpin",
+        "category": "archive",
+        "source_game": "Half-Life — développement",
+        "source_file": "docs/resonance/data/catalogue_extension_20261120.json",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "archive_kingpin_hl1_idle_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/archives/archive_kingpin_hl1_idle_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      {
+        "target_id": "archive_mr_friendly_hl1",
+        "name": "Mr. Friendly",
+        "category": "archive",
+        "source_game": "Half-Life — développement",
+        "source_file": "docs/resonance/data/catalogue_extension_20261120.json",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "archive_mr_friendly_hl1_idle_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/archives/archive_mr_friendly_hl1_idle_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      {
+        "target_id": "archive_cremator_hl2_2002",
+        "name": "Cremator — révision HL2 2002",
+        "category": "archive",
+        "source_game": "Half-Life 2 — développement",
+        "source_file": "docs/resonance/data/catalogue_extension_20261120.json",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "archive_cremator_hl2_2002_idle_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/archives/archive_cremator_hl2_2002_idle_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      {
+        "target_id": "archive_alien_assassin_hl2_2002",
+        "name": "Alien Assassin — révision HL2 2002",
+        "category": "archive",
+        "source_game": "Half-Life 2 — développement",
+        "source_file": "docs/resonance/data/catalogue_extension_20261120.json",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "archive_alien_assassin_hl2_2002_idle_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/archives/archive_alien_assassin_hl2_2002_idle_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      {
+        "target_id": "archive_odell_hl2",
+        "name": "Odell",
+        "category": "archive",
+        "source_game": "Half-Life 2 — développement",
+        "source_file": "docs/resonance/data/catalogue_extension_20261120.json",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "archive_odell_hl2_idle_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/archives/archive_odell_hl2_idle_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      {
+        "target_id": "archive_air_exchange_hl2",
+        "name": "Air Exchange",
+        "category": "archive",
+        "source_game": "Half-Life 2 — développement",
+        "source_file": "docs/resonance/data/catalogue_extension_20261120.json",
+        "outcome": "deferred_without_generation",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": {
+          "target_id": "archive_air_exchange_hl2",
+          "owner_id": "archive_air_exchange_hl2",
+          "owner_type": "support_character",
+          "category": "stage_master",
+          "catalogue": "catalogue_extension_20261120.targets",
+          "source_game": "Half-Life 2 development",
+          "content_class": "documented_cut_content",
+          "generation_status": "différé sans appel",
+          "generation_call_count": 0,
+          "new_generation_call": false,
+          "runtime_enabled": false,
+          "certified_one_to_one": false,
+          "animation_clip_complete": false,
+          "completed_six_layer_stage": false,
+          "reason": "Le verrou exige une carte ou un concept daté. La version dave/temp3 est datée de février 2002 par l’article, mais la capture disponible porte la catégorie Images with fan-made modifications ; la portée de ces modifications n’est pas établie. Le concept de Viktor Antonov provenant de Raising the Bar est authentiquement attribué mais sa date de création n’est pas attestée par la fiche. Aucun maître produit en mélangeant ces versions.",
+          "source_references": [
+            {
+              "source_page": "https://combineoverwiki.net/wiki/File:Temp3_airex_01.jpg",
+              "source_url": "https://combineoverwiki.net/images/1/16/Temp3_airex_01.jpg",
+              "sha256": "e53c12dfe3d732597f63f06448702f99244a9e6ba15eaad5cf696cf0e4f7cdf4",
+              "visually_inspected": true,
+              "role": "rejected_primary_appearance_reference",
+              "limitation": "Map dave/temp3; source explicitly categorized Images with fan-made modifications."
+            },
+            {
+              "source_page": "https://combineoverwiki.net/wiki/File:Airex_reactor.jpg",
+              "source_url": "https://combineoverwiki.net/images/6/6a/Airex_reactor.jpg",
+              "sha256": "415fdc27851be730308368bb583a369ffb3a7da8bdbfbc053ccafaa17f190cf3",
+              "visually_inspected": true,
+              "role": "secondary_development_concept",
+              "limitation": "Viktor Antonov, Raising the Bar; concept creation date not established."
+            },
+            {
+              "source_page": "https://combineoverwiki.net/wiki/Air_Exchange",
+              "role": "secondary_revision_history",
+              "checked_scope": "dave/temp3 last modified February 2002; distinguishes other variants."
+            }
+          ],
+          "next_evidence_required": "Capture non modifiée d’une version datée, ou concept dont la date de production est établie avec la source.",
+          "source_partial_register": "docs/resonance/production/continuation_20261125_k/stage_generation.json",
+          "batch_id": "continuation_20261125_k"
+        },
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      {
+        "target_id": "archive_borealis_hl2_cut",
+        "name": "Borealis — chapitre abandonné HL2",
+        "category": "archive",
+        "source_game": "Half-Life 2 — développement",
+        "source_file": "docs/resonance/data/catalogue_extension_20261120.json",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "archive_borealis_hl2_e3_2002_master_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/archive_stages/archive_borealis_hl2_e3_2002_master_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      {
+        "target_id": "archive_blob_ep3",
+        "name": "Blob",
+        "category": "archive",
+        "source_game": "Half-Life 2: Episode Three — prototype",
+        "source_file": "docs/resonance/data/catalogue_extension_20261120.json",
+        "outcome": "deferred_without_generation",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": {
+          "owner_id": "archive_blob_ep3",
+          "target_id": "archive_blob_ep3",
+          "owner_type": "support_character",
+          "name_fr": "Blob",
+          "source_game": "Half-Life 2: Episode Three — prototype",
+          "batch_id": "continuation_20261125_k",
+          "status": "différé — timecode documentaire non établi",
+          "generation_call_count": 0,
+          "new_generation_call": false,
+          "prompt": null,
+          "file_path": null,
+          "repository_path": null,
+          "sha256": null,
+          "width": null,
+          "height": null,
+          "refusal": false,
+          "tool_error": false,
+          "archive_only": true,
+          "runtime_enabled": false,
+          "certified_one_to_one": false,
+          "animation_clip_complete": false,
+          "target_completed": false,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=YCjNT9qGjh4",
+            "https://www.half-life.com/en/halflife2/20th/",
+            "https://combineoverwiki.net/wiki/File:BlobCinderNom.jpg",
+            "https://combineoverwiki.net/wiki/File:BlobGratePass.jpg"
+          ],
+          "source_references": [
+            {
+              "target_id": "archive_blob_ep3",
+              "source_page": "https://combineoverwiki.net/wiki/File:BlobCinderNom.jpg",
+              "source_url": "https://combineoverwiki.net/images/7/79/BlobCinderNom.jpg",
+              "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_blob_ep3.jpg",
+              "sha256": "f1d3da5f71c39a0b08b75cca238124a3c6155afda660089661e31455e75b3fc8",
+              "width": 3840,
+              "height": 2160,
+              "byte_size": 970400,
+              "metadata_excerpt": "",
+              "visually_inspected": true,
+              "role": "documentary_prototype_frame",
+              "hosting": "community wiki mirror of Valve documentary"
+            },
+            {
+              "target_id": "archive_blob_ep3_grate",
+              "source_page": "https://combineoverwiki.net/wiki/File:BlobGratePass.jpg",
+              "source_url": "https://combineoverwiki.net/images/1/16/BlobGratePass.jpg",
+              "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_blob_ep3_grate.jpg",
+              "sha256": "847ad4a5848688323b31c02a7b70d0593c26c3e9b47116556f90015cd3a3c9c5",
+              "width": 3840,
+              "height": 2160,
+              "byte_size": 958744,
+              "metadata_excerpt": "",
+              "visually_inspected": true,
+              "role": "documentary_prototype_frame",
+              "hosting": "community wiki mirror of Valve documentary"
+            }
+          ],
+          "documentary_timecode": null,
+          "source_identity_verified_at_frame_level": true,
+          "reason": "Les deux cadres inspectés montrent la masse translucide, le noyau rouge et des ramifications internes. Leur provenance est attribuée au documentaire officiel Valve, mais aucun timecode exact et vérifié du cadre n'a été établi. Le contrat d'archive demande image et timecode avant génération; cible différée sans appel. La tentative de consultation d'un miroir documentaire public a répondu HTTP 403 et n'a pas été contournée. Aucune espèce finale Episode Three ou HL3 n'est inventée.",
+          "next_action": "Fixer un timecode exact sur le documentaire officiel et vérifier le même cadre; conserver le statut prototype documenté.",
+          "documentary_timecode_verified": false,
+          "reference_bitmap_visually_inspected": true,
+          "source_revision_confirmed_against_video": false,
+          "source_partial_register": "docs/resonance/production/continuation_20261125_k/machine_generation.json"
+        },
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      {
+        "target_id": "archive_icegun_ep3",
+        "name": "Ice Gun — effet prototype",
+        "category": "archive",
+        "source_game": "Half-Life 2: Episode Three — prototype",
+        "source_file": "docs/resonance/data/catalogue_extension_20261120.json",
+        "outcome": "deferred_without_generation",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": {
+          "owner_id": "archive_icegun_ep3",
+          "target_id": "archive_icegun_ep3",
+          "owner_type": "support_machine",
+          "name_fr": "Ice Gun — effet prototype",
+          "source_game": "Half-Life 2: Episode Three — prototype",
+          "batch_id": "continuation_20261125_k",
+          "status": "différé — timecode documentaire non établi",
+          "generation_call_count": 0,
+          "new_generation_call": false,
+          "prompt": null,
+          "file_path": null,
+          "repository_path": null,
+          "sha256": null,
+          "width": null,
+          "height": null,
+          "refusal": false,
+          "tool_error": false,
+          "archive_only": true,
+          "runtime_enabled": false,
+          "certified_one_to_one": false,
+          "animation_clip_complete": false,
+          "target_completed": false,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=YCjNT9qGjh4",
+            "https://www.half-life.com/en/halflife2/20th/",
+            "https://combineoverwiki.net/wiki/File:IceGunInAction.jpg",
+            "https://combineoverwiki.net/wiki/File:IceGunRamp.jpg"
+          ],
+          "source_references": [
+            {
+              "target_id": "archive_icegun_ep3",
+              "source_page": "https://combineoverwiki.net/wiki/File:IceGunInAction.jpg",
+              "source_url": "https://combineoverwiki.net/images/c/cd/IceGunInAction.jpg",
+              "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_icegun_ep3.jpg",
+              "sha256": "33497d19e7e1b17714598ff693c6bf972db36604f898f0c09aeb383c0f0cc5eb",
+              "width": 3840,
+              "height": 2160,
+              "byte_size": 926378,
+              "metadata_excerpt": "",
+              "visually_inspected": true,
+              "role": "documentary_prototype_frame",
+              "hosting": "community wiki mirror of Valve documentary"
+            },
+            {
+              "target_id": "archive_icegun_ep3_ramp",
+              "source_page": "https://combineoverwiki.net/wiki/File:IceGunRamp.jpg",
+              "source_url": "https://combineoverwiki.net/images/b/ba/IceGunRamp.jpg",
+              "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_icegun_ep3_ramp.jpg",
+              "sha256": "45e2d7b8744b81e4a01a46e30617d5408edd4fe44d571b56f727f3e496a107e5",
+              "width": 3840,
+              "height": 2160,
+              "byte_size": 1012928,
+              "metadata_excerpt": "",
+              "visually_inspected": true,
+              "role": "documentary_prototype_frame",
+              "hosting": "community wiki mirror of Valve documentary"
+            }
+          ],
+          "documentary_timecode": null,
+          "source_identity_verified_at_frame_level": true,
+          "reason": "Les cadres inspectés montrent un rayon cyan créant une paroi/rampe de glace; des modèles temporaires SMG et Pulse Rifle sont visibles, aucun fusil Ice Gun final unique. Aucun timecode exact et vérifié n'a été établi. Le contrat d'archive demande image et timecode avant génération; cible différée sans appel. Le miroir documentaire public a répondu HTTP 403 et n'a pas été contourné. Une éventuelle reprise devra représenter uniquement l'effet prototype observé, jamais inventer un fusil final.",
+          "next_action": "Fixer un timecode exact sur le documentaire officiel et vérifier le même cadre; conserver le statut prototype documenté.",
+          "documentary_timecode_verified": false,
+          "reference_bitmap_visually_inspected": true,
+          "source_revision_confirmed_against_video": false,
+          "source_partial_register": "docs/resonance/production/continuation_20261125_k/machine_generation.json"
+        },
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      {
+        "target_id": "archive_arctic_ep3",
+        "name": "Environnement arctique du prototype",
+        "category": "archive",
+        "source_game": "Half-Life 2: Episode Three — prototype",
+        "source_file": "docs/resonance/data/catalogue_extension_20261120.json",
+        "outcome": "deferred_without_generation",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": {
+          "target_id": "archive_arctic_ep3",
+          "owner_id": "archive_arctic_ep3",
+          "owner_type": "support_character",
+          "category": "stage_master",
+          "catalogue": "catalogue_extension_20261120.targets",
+          "source_game": "Half-Life 2 Episode Three prototype",
+          "content_class": "documented_prototype",
+          "generation_status": "différé sans appel",
+          "generation_call_count": 0,
+          "new_generation_call": false,
+          "runtime_enabled": false,
+          "certified_one_to_one": false,
+          "animation_clip_complete": false,
+          "completed_six_layer_stage": false,
+          "reason": "Le documentaire officiel et les expériences Episode Three sont identifiés, mais aucune image de scène arctique n’a été inspectée et reliée à un timecode exact. Les concepts reproduits sur le wiki ne satisfont pas à eux seuls le verrou scène + timecode ; le repère approximatif 1:53 ne sert pas de preuve visuelle. Aucun appel image_gen et aucune apparence finale HL3 inventée.",
+          "source_references": [
+            {
+              "source_page": "https://www.youtube.com/watch?v=YCjNT9qGjh4",
+              "title": "Valve — Half-Life 2: 20th Anniversary Documentary",
+              "role": "primary_official_documentary",
+              "published_at": "2024-11-15",
+              "checked_scope": "Documentary identified; epilogue chapter begins 1:46:23. No exact arctic frame/timecode inspected."
+            },
+            {
+              "source_page": "https://www.half-life.com/en/halflife2/20th",
+              "role": "primary_official_overview",
+              "checked_scope": "Official overview of anniversary archives and Episode Three experiments."
+            },
+            {
+              "source_page": "https://combineoverwiki.net/wiki/Episode_Three",
+              "role": "secondary_reference_index",
+              "checked_scope": "Concept gallery reviewed as index only, not substituted for a timestamped prototype scene."
+            }
+          ],
+          "next_evidence_required": "Une capture inspectable de la scène révélée dans le documentaire officiel, avec son timecode exact et séparation explicite entre concept art et prototype.",
+          "source_partial_register": "docs/resonance/production/continuation_20261125_k/stage_generation.json",
+          "batch_id": "continuation_20261125_k"
+        },
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      }
+    ],
+    "new_archive_candidate_pngs": 7,
+    "runtime_entries_added": 0,
+    "certified_one_to_one": 0
   }
 }

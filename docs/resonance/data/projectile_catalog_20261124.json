@@ -1196,7 +1196,7 @@
       "reference_capture": null,
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "deferred_reference_or_generation_gate",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -1238,7 +1238,37 @@
       ],
       "projectile_class": "moving_projectile",
       "requires_travel_sprite": true,
-      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending"
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "production_review_20261125_k": {
+        "target_id": "proj_mp5_grenade_hl1",
+        "outcome": "deferred_without_generation",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": {
+          "target_id": "proj_mp5_grenade_hl1",
+          "owner_id": "proj_mp5_grenade_hl1",
+          "source_game": "Half-Life (1998)",
+          "status": "deferred_without_generation",
+          "reason_code": "exact_model_capture_missing",
+          "reason": "Le SDK fixe models/grenade.mdl pour ShootContact. Argrenade_1.png représente le paquet de munitions w_ARgrenade.mdl; cette image ne fixe pas le modèle tiré.",
+          "next_step": "Capturer le modèle grenade.mdl de Half-Life retail, de côté et en vol.",
+          "generation_call_count": 0,
+          "source_urls": [
+            "https://github.com/ValveSoftware/halflife/blob/master/dlls/mp5.cpp",
+            "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/mp5.cpp"
+          ],
+          "certified_one_to_one": false,
+          "runtime_enabled": false,
+          "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+          "batch_id": "continuation_20261125_k"
+        },
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      }
     },
     {
       "id": "proj_hand_grenade_hl1",
@@ -1677,7 +1707,7 @@
       "reference_capture": null,
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "deferred_reference_or_generation_gate",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -1688,7 +1718,36 @@
         "allowed_artifact_status": "candidate_until_visual_review"
       },
       "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
-      "effect_kind_provisional": false
+      "effect_kind_provisional": false,
+      "production_review_20261125_k": {
+        "target_id": "fx_bullsquid_spit_impact_hl1",
+        "outcome": "deferred_without_generation",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": {
+          "target_id": "fx_bullsquid_spit_impact_hl1",
+          "owner_id": "fx_bullsquid_spit_impact_hl1",
+          "source_game": "Half-Life (1998)",
+          "status": "deferred_without_generation",
+          "reason_code": "exact_impact_capture_missing",
+          "reason": "Bullsquid_headcrab_attack2.jpg montre des crachats jaunes/verts, sans isoler l’impact demandé. Le preview bigspit est le corps; tinyspit.spr et les marques DECAL_SPIT1/2 de CSquidSpit::Touch restent non inspectés.",
+          "next_step": "Capturer tinyspit.spr et les decals du contact dans Half-Life retail, avec leur chronologie.",
+          "generation_call_count": 0,
+          "source_urls": [
+            "https://github.com/ValveSoftware/halflife/blob/master/dlls/bullsquid.cpp"
+          ],
+          "certified_one_to_one": false,
+          "runtime_enabled": false,
+          "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+          "batch_id": "continuation_20261125_k"
+        },
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      }
     },
     {
       "id": "proj_controller_orb_hl1",
@@ -1858,10 +1917,37 @@
         }
       ],
       "reference_status": "code_contract_visual_pending",
-      "reference_capture": null,
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "nhth1_reference_frame0.png",
+            "source_url": "https://arquivo.mataleone.com/tut/sprites/nhth1.gif",
+            "source_page": "https://arquivo.mataleone.com/php/main.php?cat=ref&id=7&lang=en&page=tut",
+            "article_url": "https://arquivo.mataleone.com/php/main.php?cat=ref&id=7&lang=en&page=tut",
+            "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/nhth1_reference_frame0.png",
+            "sha256": "219d8bd2d9094eae2e9b59cc1e03f4db0cb530a46823eb8ff17293417ea2c8ab",
+            "source_sha256": "c5c3d8e7b5cb4bd73750765ec3b1ca43ba951ee80ef247de7667f6c88e55f118",
+            "source_format": "GIF",
+            "source_frames": 1,
+            "reference_conversion": "First GIF frame decoded to lossless PNG for inspection and image_gen input; no retouching. Not a generated deliverable.",
+            "dimensions": [
+              58,
+              55
+            ],
+            "role": "community_hosted_Half_Life_sprite_reference_matched_to_Valve_SDK_resource_name",
+            "visually_inspected": true
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "candidate_pngs_present",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -1904,7 +1990,25 @@
       ],
       "projectile_class": "moving_projectile",
       "requires_travel_sprite": true,
-      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending"
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "production_review_20261125_k": {
+        "target_id": "proj_nihilanth_energy_hl1",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "proj_nihilanth_energy_hl1_body_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/effects/proj_nihilanth_energy_hl1_body_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated"
     },
     {
       "id": "proj_nihilanth_teleport_hl1",
@@ -1954,10 +2058,37 @@
         }
       ],
       "reference_status": "code_contract_visual_pending",
-      "reference_capture": null,
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "exit1_reference_frame0.png",
+            "source_url": "https://arquivo.mataleone.com/tut/sprites/exit1.gif",
+            "source_page": "https://arquivo.mataleone.com/php/main.php?cat=ref&id=7&lang=en&page=tut",
+            "article_url": "https://arquivo.mataleone.com/php/main.php?cat=ref&id=7&lang=en&page=tut",
+            "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/exit1_reference_frame0.png",
+            "sha256": "9d651f4d992df188558f24e1f65c0f372d368f294683047505346753afe1dc30",
+            "source_sha256": "faceaaecc8cacbe8a0a07562777c1fe74fc173c85f50cea5521cba0be903d4ea",
+            "source_format": "GIF",
+            "source_frames": 1,
+            "reference_conversion": "First GIF frame decoded to lossless PNG for inspection and image_gen input; no retouching. Not a generated deliverable.",
+            "dimensions": [
+              78,
+              76
+            ],
+            "role": "community_hosted_Half_Life_sprite_reference_matched_to_Valve_SDK_resource_name",
+            "visually_inspected": true
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "candidate_pngs_present",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -2000,7 +2131,25 @@
       ],
       "projectile_class": "moving_projectile",
       "requires_travel_sprite": true,
-      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending"
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "production_review_20261125_k": {
+        "target_id": "proj_nihilanth_teleport_hl1",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "proj_nihilanth_teleport_hl1_body_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/effects/proj_nihilanth_teleport_hl1_body_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated"
     },
     {
       "id": "proj_gonarch_mortar_hl1",
@@ -2146,10 +2295,35 @@
         }
       ],
       "reference_status": "code_contract_visual_pending",
-      "reference_capture": null,
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "Hl_satchel_world.png",
+            "source_url": "https://combineoverwiki.net/images/4/4a/Hl_satchel_world.png",
+            "source_page": "https://combineoverwiki.net/wiki/File:Hl_satchel_world.png",
+            "article_url": "https://combineoverwiki.net/wiki/Satchel_Charge",
+            "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Hl_satchel_world.png",
+            "sha256": "b1ab75d83d0cdd213dd55a987e8b49ae8a99cadb73da1dca4377e1fc6d165ca8",
+            "byte_size": 131926,
+            "dimensions": [
+              500,
+              780
+            ],
+            "caption": "",
+            "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+            "visually_inspected": true
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "refusal_recorded_no_png",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -2191,7 +2365,23 @@
       ],
       "projectile_class": "thrown_device",
       "requires_travel_sprite": true,
-      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending"
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "production_review_20261125_k": {
+        "target_id": "proj_satchel_hl1",
+        "outcome": "confirmed_refusal",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "refusal_asset_ids": [
+          "proj_satchel_hl1_landed_k"
+        ],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated"
     },
     {
       "id": "fx_tripmine_laser_hl1",
@@ -2685,10 +2875,35 @@
         }
       ],
       "reference_status": "code_contract_visual_pending",
-      "reference_capture": null,
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "Hldemo10000.jpg",
+            "source_url": "https://combineoverwiki.net/images/9/95/Hldemo10000.jpg",
+            "source_page": "https://combineoverwiki.net/wiki/File:Hldemo10000.jpg",
+            "article_url": "https://combineoverwiki.net/wiki/Gargantua",
+            "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Hldemo10000.jpg",
+            "sha256": "e5c29636c8f8e4b22bdc2659e8811c15e6d901409e1fd275c0fc9596e34220ea",
+            "byte_size": 265076,
+            "dimensions": [
+              773,
+              485
+            ],
+            "caption": "The Gargantua killing a scientist at the end of Uplink.",
+            "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+            "visually_inspected": true
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "candidate_pngs_present",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -2699,7 +2914,25 @@
         "allowed_artifact_status": "candidate_until_visual_review"
       },
       "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
-      "effect_kind_provisional": false
+      "effect_kind_provisional": false,
+      "production_review_20261125_k": {
+        "target_id": "fx_gargantua_flame_hl1",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "fx_gargantua_flame_hl1_flame_sustain_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/effects/fx_gargantua_flame_hl1_flame_sustain_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated"
     },
     {
       "id": "fx_gargantua_stomp_hl1",
@@ -2732,10 +2965,37 @@
         }
       ],
       "reference_status": "code_contract_visual_pending",
-      "reference_capture": null,
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "gargeye1_reference_frame0.png",
+            "source_url": "https://arquivo.mataleone.com/tut/sprites/gargeye1.gif",
+            "source_page": "https://arquivo.mataleone.com/php/main.php?cat=ref&id=7&lang=en&page=tut",
+            "article_url": "https://arquivo.mataleone.com/php/main.php?cat=ref&id=7&lang=en&page=tut",
+            "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/gargeye1_reference_frame0.png",
+            "sha256": "642798c1e1388f43053d96fadab123e82ff9d50bb7c6c571b82997474110c35c",
+            "source_sha256": "b2e4218acc394d4b2b6a811af33a34754d06a6d73b95ad52cae0fb428594d66f",
+            "source_format": "GIF",
+            "source_frames": 1,
+            "reference_conversion": "First GIF frame decoded to lossless PNG for inspection and image_gen input; no retouching. Not a generated deliverable.",
+            "dimensions": [
+              26,
+              25
+            ],
+            "role": "community_hosted_Half_Life_sprite_reference_matched_to_Valve_SDK_resource_name",
+            "visually_inspected": true
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "candidate_pngs_present",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -2746,7 +3006,25 @@
         "allowed_artifact_status": "candidate_until_visual_review"
       },
       "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
-      "effect_kind_provisional": false
+      "effect_kind_provisional": false,
+      "production_review_20261125_k": {
+        "target_id": "fx_gargantua_stomp_hl1",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "fx_gargantua_stomp_hl1_ground_wave_particle_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/effects/fx_gargantua_stomp_hl1_ground_wave_particle_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated"
     },
     {
       "id": "fx_bullet_tracer_hl1",
@@ -2782,7 +3060,7 @@
       "reference_capture": null,
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "deferred_reference_or_generation_gate",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -2793,7 +3071,36 @@
         "allowed_artifact_status": "candidate_until_visual_review"
       },
       "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
-      "effect_kind_provisional": false
+      "effect_kind_provisional": false,
+      "production_review_20261125_k": {
+        "target_id": "fx_bullet_tracer_hl1",
+        "outcome": "deferred_without_generation",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": {
+          "target_id": "fx_bullet_tracer_hl1",
+          "owner_id": "fx_bullet_tracer_hl1",
+          "source_game": "Half-Life (1998)",
+          "status": "deferred_without_generation",
+          "reason_code": "exact_tracer_capture_missing",
+          "reason": "Le code confirme un tir instantané avec traceur visuel optionnel. Aucun bitmap de traceur GoldSrc retail inspecté ne permet ici d’en fixer couleur, épaisseur et durée.",
+          "next_step": "Obtenir une séquence de tir GoldSrc et une frame de traceur identifiable; ne pas ajouter une balle lente.",
+          "generation_call_count": 0,
+          "source_urls": [
+            "https://github.com/ValveSoftware/halflife/blob/master/dlls/combat.cpp"
+          ],
+          "certified_one_to_one": false,
+          "runtime_enabled": false,
+          "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+          "batch_id": "continuation_20261125_k"
+        },
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      }
     },
     {
       "id": "proj_shock_bolt_opfor",
@@ -3032,7 +3339,7 @@
       "reference_capture": null,
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "deferred_reference_or_generation_gate",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -3070,7 +3377,37 @@
       ],
       "projectile_class": "moving_projectile",
       "requires_travel_sprite": true,
-      "primary_evidence_status": "primary_context_only_specific_capture_required"
+      "primary_evidence_status": "primary_context_only_specific_capture_required",
+      "production_review_20261125_k": {
+        "target_id": "proj_displacer_orb_opfor",
+        "outcome": "deferred_without_generation",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": {
+          "target_id": "proj_displacer_orb_opfor",
+          "owner_id": "proj_displacer_orb_opfor",
+          "source_game": "Half-Life: Opposing Force",
+          "status": "deferred_without_generation",
+          "reason_code": "exact_projectile_capture_missing",
+          "reason": "Les modèles de l’arme et la page produit ne montrent pas l’orbe offensif isolé. Le trajet, le contact et le déplacement du porteur doivent rester distincts.",
+          "next_step": "Capturer l’orbe offensif du Displacer dans Opposing Force, avec frame en vol et contact.",
+          "generation_call_count": 0,
+          "source_urls": [
+            "https://store.steampowered.com/app/50/HalfLife_Opposing_Force/",
+            "https://store.steampowered.com/app/50/HalfLife_Opposing_Force/"
+          ],
+          "certified_one_to_one": false,
+          "runtime_enabled": false,
+          "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+          "batch_id": "continuation_20261125_k"
+        },
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      }
     },
     {
       "id": "proj_pit_drone_spine_opfor",
@@ -3151,10 +3488,35 @@
         }
       ],
       "reference_status": "exact_visual_reference_pending",
-      "reference_capture": null,
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "Volt_attack.jpg",
+            "source_url": "https://combineoverwiki.net/images/d/d2/Volt_attack.jpg",
+            "source_page": "https://combineoverwiki.net/wiki/File:Volt_attack.jpg",
+            "article_url": "https://combineoverwiki.net/wiki/Voltigore",
+            "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Volt_attack.jpg",
+            "sha256": "4c924f84560340d8f1d607c18de007a8c4de0b1979dfae9affe2d8fe80f82f01",
+            "byte_size": 551253,
+            "dimensions": [
+              1320,
+              960
+            ],
+            "caption": "The Voltigore launching its attack.",
+            "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+            "visually_inspected": true
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "candidate_pngs_present",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -3165,7 +3527,25 @@
         "allowed_artifact_status": "candidate_until_visual_review"
       },
       "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
-      "effect_kind_provisional": true
+      "effect_kind_provisional": true,
+      "production_review_20261125_k": {
+        "target_id": "proj_voltigore_orb_opfor",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "proj_voltigore_orb_opfor_charge_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/effects/proj_voltigore_orb_opfor_charge_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated"
     },
     {
       "id": "fx_pit_worm_beam_opfor",
@@ -3199,10 +3579,35 @@
         }
       ],
       "reference_status": "exact_visual_reference_pending",
-      "reference_capture": null,
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "Pit_worm_laser.jpg",
+            "source_url": "https://combineoverwiki.net/images/2/25/Pit_worm_laser.jpg",
+            "source_page": "https://combineoverwiki.net/wiki/File:Pit_worm_laser.jpg",
+            "article_url": "https://combineoverwiki.net/wiki/Pit_Worm",
+            "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Pit_worm_laser.jpg",
+            "sha256": "f27107929eaa9976bce47281a352746e7806cb9332f9bf1fd67ccd71f1ec065e",
+            "byte_size": 472800,
+            "dimensions": [
+              900,
+              644
+            ],
+            "caption": "The Pit Worm firing its eye laser.",
+            "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+            "visually_inspected": true
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "candidate_pngs_present",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -3213,7 +3618,25 @@
         "allowed_artifact_status": "candidate_until_visual_review"
       },
       "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
-      "effect_kind_provisional": true
+      "effect_kind_provisional": true,
+      "production_review_20261125_k": {
+        "target_id": "fx_pit_worm_beam_opfor",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "fx_pit_worm_beam_opfor_beam_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/effects/fx_pit_worm_beam_opfor_beam_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated"
     },
     {
       "id": "proj_gene_worm_spit_opfor",
@@ -3249,7 +3672,7 @@
       "reference_capture": null,
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "deferred_reference_or_generation_gate",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -3260,7 +3683,36 @@
         "allowed_artifact_status": "candidate_until_visual_review"
       },
       "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
-      "effect_kind_provisional": true
+      "effect_kind_provisional": true,
+      "production_review_20261125_k": {
+        "target_id": "proj_gene_worm_spit_opfor",
+        "outcome": "deferred_without_generation",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": {
+          "target_id": "proj_gene_worm_spit_opfor",
+          "owner_id": "proj_gene_worm_spit_opfor",
+          "source_game": "Half-Life: Opposing Force",
+          "status": "deferred_without_generation",
+          "reason_code": "exact_projectile_capture_missing",
+          "reason": "Gene_Worm_enters.jpg montre le boss et son portail, pas son crachat. L’apparence du projectile ne peut pas être déduite de celle du boss.",
+          "next_step": "Capturer le crachat du Gene Worm dans la version commerciale d’Opposing Force.",
+          "generation_call_count": 0,
+          "source_urls": [
+            "https://store.steampowered.com/app/50/HalfLife_Opposing_Force/"
+          ],
+          "certified_one_to_one": false,
+          "runtime_enabled": false,
+          "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+          "batch_id": "continuation_20261125_k"
+        },
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      }
     },
     {
       "id": "proj_gonome_gut_opfor",
@@ -3296,7 +3748,7 @@
       "reference_capture": null,
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "deferred_reference_or_generation_gate",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -3307,7 +3759,36 @@
         "allowed_artifact_status": "candidate_until_visual_review"
       },
       "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
-      "effect_kind_provisional": true
+      "effect_kind_provisional": true,
+      "production_review_20261125_k": {
+        "target_id": "proj_gonome_gut_opfor",
+        "outcome": "deferred_without_generation",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": {
+          "target_id": "proj_gonome_gut_opfor",
+          "owner_id": "proj_gonome_gut_opfor",
+          "source_game": "Half-Life: Opposing Force",
+          "status": "deferred_without_generation",
+          "reason_code": "exact_projectile_capture_missing",
+          "reason": "Les rendus du Gonome consultés fixent le monstre, pas le projectile lancé. Aucun gut en vol inspecté pour cette passe.",
+          "next_step": "Capturer séparément le projectile en main, en vol et à l’impact dans Opposing Force.",
+          "generation_call_count": 0,
+          "source_urls": [
+            "https://store.steampowered.com/app/50/HalfLife_Opposing_Force/"
+          ],
+          "certified_one_to_one": false,
+          "runtime_enabled": false,
+          "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+          "batch_id": "continuation_20261125_k"
+        },
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      }
     },
     {
       "id": "proj_rpg_rocket_hl2",
@@ -3359,10 +3840,35 @@
         }
       ],
       "reference_status": "code_contract_visual_pending",
-      "reference_capture": null,
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "RPG_rocket_fly.jpg",
+            "source_url": "https://combineoverwiki.net/images/6/6b/RPG_rocket_fly.jpg",
+            "source_page": "https://combineoverwiki.net/wiki/File:RPG_rocket_fly.jpg",
+            "article_url": "https://combineoverwiki.net/wiki/Rocket-Propelled_Grenade_Launcher_(Half-Life_2)",
+            "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/RPG_rocket_fly.jpg",
+            "sha256": "d8419e4af3bbf70f9a0db2fdb4d82a919619187b6416d9d55f4836e22a3c89f2",
+            "byte_size": 119503,
+            "dimensions": [
+              1054,
+              341
+            ],
+            "caption": "Rocket model, in flying mode.",
+            "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+            "visually_inspected": true
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "refusal_recorded_no_png",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -3405,7 +3911,23 @@
       ],
       "projectile_class": "moving_projectile",
       "requires_travel_sprite": true,
-      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending"
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "production_review_20261125_k": {
+        "target_id": "proj_rpg_rocket_hl2",
+        "outcome": "confirmed_refusal",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "refusal_asset_ids": [
+          "proj_rpg_rocket_hl2_flight_k"
+        ],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated"
     },
     {
       "id": "proj_smg_grenade_hl2",
@@ -4042,7 +4564,7 @@
       "reference_capture": null,
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "deferred_reference_or_generation_gate",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -4084,7 +4606,38 @@
       ],
       "projectile_class": "moving_projectile",
       "requires_travel_sprite": true,
-      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending"
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "production_review_20261125_k": {
+        "target_id": "proj_apc_missile_hl2",
+        "outcome": "deferred_without_generation",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": {
+          "target_id": "proj_apc_missile_hl2",
+          "owner_id": "proj_apc_missile_hl2",
+          "source_game": "Half-Life 2",
+          "status": "deferred_without_generation",
+          "reason_code": "shared_resource_with_refused_request",
+          "reason": "CAPCMissile::Init emploie models/weapons/w_missile.mdl, le même modèle de vol que le RPG. L’appel RPG du lot K a été explicitement refusé; aucun nouvel appel au même corps sous un autre nom.",
+          "next_step": "Conserver le refus RPG et le contrat APC séparément; reprendre cette cible seulement avec une voie de production admissible et un périmètre distinct validé.",
+          "generation_call_count": 0,
+          "source_urls": [
+            "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/weapon_rpg.cpp",
+            "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/vehicle_apc.cpp",
+            "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/weapon_rpg.cpp"
+          ],
+          "certified_one_to_one": false,
+          "runtime_enabled": false,
+          "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+          "batch_id": "continuation_20261125_k"
+        },
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      }
     },
     {
       "id": "proj_helicopter_bomb_hl2",
@@ -4351,7 +4904,7 @@
       "reference_capture": null,
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "deferred_reference_or_generation_gate",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -4399,7 +4952,38 @@
       ],
       "projectile_class": "moving_projectile",
       "requires_travel_sprite": true,
-      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending"
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "production_review_20261125_k": {
+        "target_id": "proj_antlion_worker_spit_ep2",
+        "outcome": "deferred_without_generation",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": {
+          "target_id": "proj_antlion_worker_spit_ep2",
+          "owner_id": "proj_antlion_worker_spit_ep2",
+          "source_game": "Half-Life 2: Episode Two",
+          "status": "deferred_without_generation",
+          "reason_code": "phase_reference_ambiguous",
+          "reason": "Ep2_outland_01a0023.jpg est bien une capture de tir du Worker retail. Le petit nuage vert ne permet pas d’isoler avec certitude large/medium/small, trail ou impact; la capture de modèle AcidAntlion ne remplit pas ce manque.",
+          "next_step": "Capturer les modèles spitball_large/medium/small et le système antlion_spit_trail au bon instant dans Episode Two.",
+          "generation_call_count": 0,
+          "source_urls": [
+            "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/grenade_spit.cpp",
+            "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_antlion.cpp",
+            "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/grenade_spit.cpp"
+          ],
+          "certified_one_to_one": false,
+          "runtime_enabled": false,
+          "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+          "batch_id": "continuation_20261125_k"
+        },
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      }
     },
     {
       "id": "proj_magnusson_device_ep2",
@@ -4566,10 +5150,35 @@
         }
       ],
       "reference_status": "code_contract_visual_pending",
-      "reference_capture": null,
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "D2_coast_080049.JPG",
+            "source_url": "https://combineoverwiki.net/images/7/72/D2_coast_080049.JPG",
+            "source_page": "https://combineoverwiki.net/wiki/File:D2_coast_080049.JPG",
+            "article_url": "https://combineoverwiki.net/wiki/Combine_Gunship",
+            "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/D2_coast_080049.JPG",
+            "sha256": "2e4a347eda6193790275f28635e801a86a0fadd8244d3700bcf75f3c4a1a7a64",
+            "byte_size": 291817,
+            "dimensions": [
+              800,
+              535
+            ],
+            "caption": "Gunship firing at Gordon after the Bridge Point Force Fields are deactivated.",
+            "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+            "visually_inspected": true
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "candidate_pngs_present",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -4608,7 +5217,27 @@
       ],
       "projectile_class": "hitscan_trace",
       "requires_travel_sprite": false,
-      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending"
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "production_review_20261125_k": {
+        "target_id": "fx_ar2_tracer_hl2",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "fx_ar2_tracer_hl2_trace_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/effects/fx_ar2_tracer_hl2_trace_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [
+          "fx_ar2_tracer_hl2_trace_k_parameter_error"
+        ],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated"
     },
     {
       "id": "fx_strider_warp_hl2",
@@ -4662,7 +5291,7 @@
       "reference_capture": null,
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "deferred_reference_or_generation_gate",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -4706,7 +5335,37 @@
       ],
       "projectile_class": "instant_beam",
       "requires_travel_sprite": false,
-      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending"
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "production_review_20261125_k": {
+        "target_id": "fx_strider_warp_hl2",
+        "outcome": "deferred_without_generation",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": {
+          "target_id": "fx_strider_warp_hl2",
+          "owner_id": "fx_strider_warp_hl2",
+          "source_game": "Half-Life 2",
+          "status": "deferred_without_generation",
+          "reason_code": "wrong_version_or_attack_excluded",
+          "reason": "Strider_fire.jpg montre la mitrailleuse; Warp_Cannon et Strider_Firing_Pulse_Cannon montrent Alyx. Strider_Immolator_Firing.jpg est explicitement une restauration par fans d’une attaque coupée, exclue du canon retail HL2.",
+          "next_step": "Capturer charge, tir et impact du canon à distorsion dans Half-Life 2 commercial, sans utiliser la version Alyx ni l’Immolator coupé.",
+          "generation_call_count": 0,
+          "source_urls": [
+            "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/npc_strider.cpp",
+            "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_strider.cpp"
+          ],
+          "certified_one_to_one": false,
+          "runtime_enabled": false,
+          "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+          "batch_id": "continuation_20261125_k"
+        },
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      }
     },
     {
       "id": "fx_gunship_tracer_hl2",
@@ -4740,10 +5399,35 @@
         }
       ],
       "reference_status": "code_contract_visual_pending",
-      "reference_capture": null,
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "D2_coast_080049.JPG",
+            "source_url": "https://combineoverwiki.net/images/7/72/D2_coast_080049.JPG",
+            "source_page": "https://combineoverwiki.net/wiki/File:D2_coast_080049.JPG",
+            "article_url": "https://combineoverwiki.net/wiki/Combine_Gunship",
+            "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/D2_coast_080049.JPG",
+            "sha256": "2e4a347eda6193790275f28635e801a86a0fadd8244d3700bcf75f3c4a1a7a64",
+            "byte_size": 291817,
+            "dimensions": [
+              800,
+              535
+            ],
+            "caption": "Gunship firing at Gordon after the Bridge Point Force Fields are deactivated.",
+            "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+            "visually_inspected": true
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "candidate_pngs_present",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -4754,7 +5438,27 @@
         "allowed_artifact_status": "candidate_until_visual_review"
       },
       "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
-      "effect_kind_provisional": false
+      "effect_kind_provisional": false,
+      "production_review_20261125_k": {
+        "target_id": "fx_gunship_tracer_hl2",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "fx_gunship_tracer_hl2_trace_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/effects/fx_gunship_tracer_hl2_trace_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [
+          "fx_gunship_tracer_hl2_trace_k_parameter_error"
+        ],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated"
     },
     {
       "id": "fx_vortigaunt_zap_hl2",
@@ -4791,7 +5495,7 @@
       "reference_capture": null,
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "deferred_reference_or_generation_gate",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -4802,7 +5506,36 @@
         "allowed_artifact_status": "candidate_until_visual_review"
       },
       "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
-      "effect_kind_provisional": false
+      "effect_kind_provisional": false,
+      "production_review_20261125_k": {
+        "target_id": "fx_vortigaunt_zap_hl2",
+        "outcome": "deferred_without_generation",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": {
+          "target_id": "fx_vortigaunt_zap_hl2",
+          "owner_id": "fx_vortigaunt_zap_hl2",
+          "source_game": "Half-Life 2: épisodes",
+          "status": "deferred_without_generation",
+          "reason_code": "wrong_sequence_excluded",
+          "reason": "Le SDK des épisodes fixe la décharge. Les captures Ep2_outland_020008/020011/020037/04002 inspectées montrent le soin d’Alyx ou la larve d’antlion; elles ne valident pas un rayon offensif.",
+          "next_step": "Obtenir une capture du rayon offensif vortigaunt dans les épisodes, puis comparer charge, faisceau et impact séparément.",
+          "generation_call_count": 0,
+          "source_urls": [
+            "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/npc_vortigaunt_episodic.cpp"
+          ],
+          "certified_one_to_one": false,
+          "runtime_enabled": false,
+          "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+          "batch_id": "continuation_20261125_k"
+        },
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      }
     },
     {
       "id": "fx_strider_tracer_hl2",
@@ -4835,10 +5568,35 @@
         }
       ],
       "reference_status": "code_contract_visual_pending",
-      "reference_capture": null,
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "D2_coast_080049.JPG",
+            "source_url": "https://combineoverwiki.net/images/7/72/D2_coast_080049.JPG",
+            "source_page": "https://combineoverwiki.net/wiki/File:D2_coast_080049.JPG",
+            "article_url": "https://combineoverwiki.net/wiki/Combine_Gunship",
+            "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/D2_coast_080049.JPG",
+            "sha256": "2e4a347eda6193790275f28635e801a86a0fadd8244d3700bcf75f3c4a1a7a64",
+            "byte_size": 291817,
+            "dimensions": [
+              800,
+              535
+            ],
+            "caption": "Gunship firing at Gordon after the Bridge Point Force Fields are deactivated.",
+            "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+            "visually_inspected": true
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "candidate_pngs_present",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -4849,7 +5607,27 @@
         "allowed_artifact_status": "candidate_until_visual_review"
       },
       "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
-      "effect_kind_provisional": false
+      "effect_kind_provisional": false,
+      "production_review_20261125_k": {
+        "target_id": "fx_strider_tracer_hl2",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "fx_strider_tracer_hl2_trace_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/effects/fx_strider_tracer_hl2_trace_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [
+          "fx_strider_tracer_hl2_trace_k_parameter_error"
+        ],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated"
     },
     {
       "id": "proj_energy_pellet_portal1",
@@ -4981,10 +5759,35 @@
         }
       ],
       "reference_status": "exact_visual_reference_pending",
-      "reference_capture": null,
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "Rocket_Sentry_rocket.jpg",
+            "source_url": "https://combineoverwiki.net/images/6/69/Rocket_Sentry_rocket.jpg",
+            "source_page": "https://combineoverwiki.net/wiki/File:Rocket_Sentry_rocket.jpg",
+            "article_url": "https://combineoverwiki.net/wiki/Rocket_Turret",
+            "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Rocket_Sentry_rocket.jpg",
+            "sha256": "20b59d82936eac93453f7cd109033770e3b18c09148b6c58179a495dc710f0c7",
+            "byte_size": 52114,
+            "dimensions": [
+              509,
+              254
+            ],
+            "caption": "Rocket model.",
+            "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+            "visually_inspected": true
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "candidate_pngs_present",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -5022,7 +5825,25 @@
       ],
       "projectile_class": "moving_projectile",
       "requires_travel_sprite": true,
-      "primary_evidence_status": "primary_context_only_specific_capture_required"
+      "primary_evidence_status": "primary_context_only_specific_capture_required",
+      "production_review_20261125_k": {
+        "target_id": "proj_rocket_turret_missile_portal1",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "proj_rocket_turret_missile_portal1_body_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/effects/proj_rocket_turret_missile_portal1_body_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated"
     },
     {
       "id": "fx_portal_blue_portal1",
@@ -5240,10 +6061,51 @@
         }
       ],
       "reference_status": "exact_visual_reference_pending",
-      "reference_capture": null,
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "Atlas_both_portal.png",
+            "source_url": "https://i1.theportalwiki.net/img/8/82/Atlas_both_portal.png",
+            "source_page": "https://theportalwiki.com/wiki/File:Atlas_both_portal.png",
+            "article_url": "https://theportalwiki.com/wiki/Portals",
+            "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Atlas_both_portal.png",
+            "sha256": "0951d6279e5344139d552e90138b4a6a95ae4c55175d76a7d9cc54f25a638f9b",
+            "byte_size": 1333070,
+            "dimensions": [
+              1680,
+              1050
+            ],
+            "caption": "A",
+            "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+            "visually_inspected": true
+          },
+          {
+            "reference_filename": "P-body_both_portal.png",
+            "source_url": "https://i1.theportalwiki.net/img/1/18/P-body_both_portal.png",
+            "source_page": "https://theportalwiki.com/wiki/File:P-body_both_portal.png",
+            "article_url": "https://theportalwiki.com/wiki/Portals",
+            "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/P-body_both_portal.png",
+            "sha256": "a20a4e03a04541fa9b481c48481dc6f96719fe6c6fe0f3bebd56cf63f65d2c08",
+            "byte_size": 1302859,
+            "dimensions": [
+              1680,
+              1050
+            ],
+            "caption": "P",
+            "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+            "visually_inspected": true
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "candidate_pngs_present",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -5285,7 +6147,31 @@
             "P-body secondaire"
           ]
         }
-      ]
+      ],
+      "production_review_20261125_k": {
+        "target_id": "fx_portals_coop_portal2",
+        "outcome": "new_candidate_png",
+        "new_png_count": 4,
+        "new_asset_ids": [
+          "fx_portals_coop_portal2_atlas_blue_k",
+          "fx_portals_coop_portal2_atlas_purple_k",
+          "fx_portals_coop_portal2_pbody_red_k",
+          "fx_portals_coop_portal2_pbody_yellow_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/effects/fx_portals_coop_portal2_atlas_blue_k.png",
+          "assets/resonance/candidates/continuation_20261125_k/effects/fx_portals_coop_portal2_atlas_purple_k.png",
+          "assets/resonance/candidates/continuation_20261125_k/effects/fx_portals_coop_portal2_pbody_red_k.png",
+          "assets/resonance/candidates/continuation_20261125_k/effects/fx_portals_coop_portal2_pbody_yellow_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated"
     },
     {
       "id": "fx_thermal_beam_portal2",
@@ -5966,10 +6852,35 @@
         }
       ],
       "reference_status": "exact_visual_reference_pending",
-      "reference_capture": null,
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "HLA_Grenade_Unarmed.png",
+            "source_url": "https://combineoverwiki.net/images/a/a7/HLA_Grenade_Unarmed.png",
+            "source_page": "https://combineoverwiki.net/wiki/File:HLA_Grenade_Unarmed.png",
+            "article_url": "https://combineoverwiki.net/wiki/Grenade_(Half-Life:_Alyx)",
+            "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/HLA_Grenade_Unarmed.png",
+            "sha256": "60d79bc0f992020d05483c904cd681af6d4abb267e2f78056c75081ec481d880",
+            "byte_size": 680251,
+            "dimensions": [
+              960,
+              800
+            ],
+            "caption": "",
+            "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+            "visually_inspected": true
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "candidate_pngs_present",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -6007,7 +6918,25 @@
       ],
       "projectile_class": "thrown_device",
       "requires_travel_sprite": true,
-      "primary_evidence_status": "primary_context_only_specific_capture_required"
+      "primary_evidence_status": "primary_context_only_specific_capture_required",
+      "production_review_20261125_k": {
+        "target_id": "proj_combine_grenade_hla",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "proj_combine_grenade_hla_body_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/effects/proj_combine_grenade_hla_body_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated"
     },
     {
       "id": "proj_xen_grenade_hla",
@@ -6052,10 +6981,35 @@
         }
       ],
       "reference_status": "exact_visual_reference_pending",
-      "reference_capture": null,
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "HLA_XenGrenade_01.png",
+            "source_url": "https://combineoverwiki.net/images/3/39/HLA_XenGrenade_01.png",
+            "source_page": "https://combineoverwiki.net/wiki/File:HLA_XenGrenade_01.png",
+            "article_url": "https://combineoverwiki.net/wiki/Xen_Grenade",
+            "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/HLA_XenGrenade_01.png",
+            "sha256": "498e382cc452392324207a9f7a22e6b2dc2336485886233338321dfaf421943d",
+            "byte_size": 760443,
+            "dimensions": [
+              840,
+              820
+            ],
+            "caption": "",
+            "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+            "visually_inspected": true
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "candidate_pngs_present",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -6093,7 +7047,25 @@
       ],
       "projectile_class": "thrown_device",
       "requires_travel_sprite": true,
-      "primary_evidence_status": "primary_context_only_specific_capture_required"
+      "primary_evidence_status": "primary_context_only_specific_capture_required",
+      "production_review_20261125_k": {
+        "target_id": "proj_xen_grenade_hla",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "proj_xen_grenade_hla_body_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/effects/proj_xen_grenade_hla_body_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated"
     },
     {
       "id": "fx_reviver_discharge_hla",
@@ -6130,7 +7102,7 @@
       "reference_capture": null,
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "deferred_reference_or_generation_gate",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -6141,7 +7113,36 @@
         "allowed_artifact_status": "candidate_until_visual_review"
       },
       "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
-      "effect_kind_provisional": true
+      "effect_kind_provisional": true,
+      "production_review_20261125_k": {
+        "target_id": "fx_reviver_discharge_hla",
+        "outcome": "deferred_without_generation",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": {
+          "target_id": "fx_reviver_discharge_hla",
+          "owner_id": "fx_reviver_discharge_hla",
+          "source_game": "Half-Life: Alyx",
+          "status": "deferred_without_generation",
+          "reason_code": "wrong_subject_excluded",
+          "reason": "Half_life_alyx_lightning_dog_zombie.png montre les arcs d’un Revived Zombie possédé. Cette capture IGN ne fixe pas une séquence de décharge propre au Reviver libre; les modèles/organes ne la remplacent pas.",
+          "next_step": "Capturer une séquence du Reviver libre et documenter la relation avec les arcs des zombies possédés avant de choisir l’état.",
+          "generation_call_count": 0,
+          "source_urls": [
+            "https://www.half-life.com/en/alyx"
+          ],
+          "certified_one_to_one": false,
+          "runtime_enabled": false,
+          "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+          "batch_id": "continuation_20261125_k"
+        },
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      }
     },
     {
       "id": "proj_antlion_spit_hla",
@@ -6178,7 +7179,7 @@
       "reference_capture": null,
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "deferred_reference_or_generation_gate",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -6189,7 +7190,36 @@
         "allowed_artifact_status": "candidate_until_visual_review"
       },
       "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
-      "effect_kind_provisional": true
+      "effect_kind_provisional": true,
+      "production_review_20261125_k": {
+        "target_id": "proj_antlion_spit_hla",
+        "outcome": "deferred_without_generation",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": {
+          "target_id": "proj_antlion_spit_hla",
+          "owner_id": "proj_antlion_spit_hla",
+          "source_game": "Half-Life: Alyx",
+          "status": "deferred_without_generation",
+          "reason_code": "exact_projectile_capture_missing",
+          "reason": "Les références HLA consultées montrent l’Antlion Spitter et décrivent sa bile, sans frame exploitable du projectile isolé. Aucune copie du crachat Episode Two.",
+          "next_step": "Capturer corps, traînée et impact du projectile de la variante HLA.",
+          "generation_call_count": 0,
+          "source_urls": [
+            "https://www.half-life.com/en/alyx"
+          ],
+          "certified_one_to_one": false,
+          "runtime_enabled": false,
+          "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+          "batch_id": "continuation_20261125_k"
+        },
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      }
     },
     {
       "id": "fx_deskjob_turret_tracer",
@@ -6245,10 +7275,35 @@
         }
       ],
       "reference_status": "exact_visual_reference_pending",
-      "reference_capture": null,
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "ADJ_HousewaresTurret02.jpg",
+            "source_url": "https://combineoverwiki.net/images/a/a6/ADJ_HousewaresTurret02.jpg",
+            "source_page": "https://combineoverwiki.net/wiki/File:ADJ_HousewaresTurret02.jpg",
+            "article_url": "https://combineoverwiki.net/wiki/Aperture_Desk_Job",
+            "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/ADJ_HousewaresTurret02.jpg",
+            "sha256": "dad03390199035c3087c3f698ac5ceb221331c4ec12fe9886e02fb47892eee36",
+            "byte_size": 411006,
+            "dimensions": [
+              1920,
+              1080
+            ],
+            "caption": "Housewares Department appliances as turrets firing on the player.",
+            "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+            "visually_inspected": true
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "candidate_pngs_present",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -6283,7 +7338,25 @@
       ],
       "projectile_class": "weapon_fire_effect",
       "requires_travel_sprite": false,
-      "primary_evidence_status": "primary_context_only_specific_capture_required"
+      "primary_evidence_status": "primary_context_only_specific_capture_required",
+      "production_review_20261125_k": {
+        "target_id": "fx_deskjob_turret_tracer",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "fx_deskjob_turret_tracer_muzzle_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/effects/fx_deskjob_turret_tracer_muzzle_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated"
     },
     {
       "id": "device_tripmine_hl1",
@@ -6532,7 +7605,7 @@
       "reference_capture": null,
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "deferred_reference_or_generation_gate",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -6571,7 +7644,36 @@
       ],
       "projectile_class": "hitscan_trace",
       "requires_travel_sprite": false,
-      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending"
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "production_review_20261125_k": {
+        "target_id": "fx_pistol_fire_hl2",
+        "outcome": "deferred_without_generation",
+        "new_png_count": 0,
+        "new_asset_ids": [],
+        "new_repository_paths": [],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": {
+          "target_id": "fx_pistol_fire_hl2",
+          "owner_id": "fx_pistol_fire_hl2",
+          "source_game": "Half-Life 2",
+          "status": "deferred_without_generation",
+          "reason_code": "exact_muzzle_capture_missing",
+          "reason": "D1_trainstation_060005.jpg ne montre pas un flash de bouche lisible. Le SDK confirme FireBullets mais ne suffit pas à fixer les pixels du flash ou une traînée éventuelle.",
+          "next_step": "Capturer le flash de bouche et un impact du pistolet HL2; ne produire une trace que si elle apparaît dans la référence.",
+          "generation_call_count": 0,
+          "source_urls": [
+            "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/weapon_pistol.cpp"
+          ],
+          "certified_one_to_one": false,
+          "runtime_enabled": false,
+          "source_partial_register": "docs/resonance/production/continuation_20261125_k/effects_generation.json",
+          "batch_id": "continuation_20261125_k"
+        },
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      }
     },
     {
       "id": "fx_portals_solo_portal2",
@@ -6608,10 +7710,35 @@
         }
       ],
       "reference_status": "exact_visual_capture_required",
-      "reference_capture": null,
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "Chell_both_portal.png",
+            "source_url": "https://i1.theportalwiki.net/img/7/74/Chell_both_portal.png",
+            "source_page": "https://theportalwiki.com/wiki/File:Chell_both_portal.png",
+            "article_url": "https://theportalwiki.com/wiki/Portals",
+            "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Chell_both_portal.png",
+            "sha256": "6351c77c02011d985c3c26d3fdc9aa9592a2ea92ae29e37ea8671c7f220f0768",
+            "byte_size": 498875,
+            "dimensions": [
+              675,
+              606
+            ],
+            "caption": "C",
+            "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+            "visually_inspected": true
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "candidate_pngs_present",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -6653,7 +7780,27 @@
             "P-body secondaire"
           ]
         }
-      ]
+      ],
+      "production_review_20261125_k": {
+        "target_id": "fx_portals_solo_portal2",
+        "outcome": "new_candidate_png",
+        "new_png_count": 2,
+        "new_asset_ids": [
+          "fx_portals_solo_portal2_blue_k",
+          "fx_portals_solo_portal2_orange_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/effects/fx_portals_solo_portal2_blue_k.png",
+          "assets/resonance/candidates/continuation_20261125_k/effects/fx_portals_solo_portal2_orange_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated"
     }
   ],
   "integration_notes": [
@@ -6664,6 +7811,6 @@
     "Les portails exigent une surface moteur dynamique; seul le contour peut être un sprite fixe.",
     "Les flux continus et hitscan exigent une logique adaptée; un PNG ne les rend pas jouables."
   ],
-  "updated_on": "2026-11-24",
+  "updated_on": "2026-11-25",
   "recovery_note": "Fusion des contrats F et H sans addition naïve de leurs cibles. Les 45 groupes F sont reliés à 66 familles actives H étendues. Deux orbes Controller restent deux variantes d’une famille; corps/rayon de mine et variantes de portails sont explicitement distingués."
 }

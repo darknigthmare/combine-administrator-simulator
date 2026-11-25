@@ -1,0 +1,853 @@
+{
+  "batch_id": "continuation_20261125_k",
+  "bitmap_references": [
+    {
+      "reference_filename": "HLA_Grenade_Unarmed.png",
+      "source_url": "https://combineoverwiki.net/images/a/a7/HLA_Grenade_Unarmed.png",
+      "source_page": "https://combineoverwiki.net/wiki/File:HLA_Grenade_Unarmed.png",
+      "article_url": "https://combineoverwiki.net/wiki/Grenade_(Half-Life:_Alyx)",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/HLA_Grenade_Unarmed.png",
+      "sha256": "60d79bc0f992020d05483c904cd681af6d4abb267e2f78056c75081ec481d880",
+      "byte_size": 680251,
+      "dimensions": [
+        960,
+        800
+      ],
+      "caption": "",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": true,
+      "used_as_generation_reference": true
+    },
+    {
+      "reference_filename": "HLA_XenGrenade_01.png",
+      "source_url": "https://combineoverwiki.net/images/3/39/HLA_XenGrenade_01.png",
+      "source_page": "https://combineoverwiki.net/wiki/File:HLA_XenGrenade_01.png",
+      "article_url": "https://combineoverwiki.net/wiki/Xen_Grenade",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/HLA_XenGrenade_01.png",
+      "sha256": "498e382cc452392324207a9f7a22e6b2dc2336485886233338321dfaf421943d",
+      "byte_size": 760443,
+      "dimensions": [
+        840,
+        820
+      ],
+      "caption": "",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": true,
+      "used_as_generation_reference": true
+    },
+    {
+      "reference_filename": "Rocket_Sentry_rocket.jpg",
+      "source_url": "https://combineoverwiki.net/images/6/69/Rocket_Sentry_rocket.jpg",
+      "source_page": "https://combineoverwiki.net/wiki/File:Rocket_Sentry_rocket.jpg",
+      "article_url": "https://combineoverwiki.net/wiki/Rocket_Turret",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Rocket_Sentry_rocket.jpg",
+      "sha256": "20b59d82936eac93453f7cd109033770e3b18c09148b6c58179a495dc710f0c7",
+      "byte_size": 52114,
+      "dimensions": [
+        509,
+        254
+      ],
+      "caption": "Rocket model.",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": true,
+      "used_as_generation_reference": true
+    },
+    {
+      "reference_filename": "Volt_attack.jpg",
+      "source_url": "https://combineoverwiki.net/images/d/d2/Volt_attack.jpg",
+      "source_page": "https://combineoverwiki.net/wiki/File:Volt_attack.jpg",
+      "article_url": "https://combineoverwiki.net/wiki/Voltigore",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Volt_attack.jpg",
+      "sha256": "4c924f84560340d8f1d607c18de007a8c4de0b1979dfae9affe2d8fe80f82f01",
+      "byte_size": 551253,
+      "dimensions": [
+        1320,
+        960
+      ],
+      "caption": "The Voltigore launching its attack.",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": true,
+      "used_as_generation_reference": true
+    },
+    {
+      "reference_filename": "Pit_worm_laser.jpg",
+      "source_url": "https://combineoverwiki.net/images/2/25/Pit_worm_laser.jpg",
+      "source_page": "https://combineoverwiki.net/wiki/File:Pit_worm_laser.jpg",
+      "article_url": "https://combineoverwiki.net/wiki/Pit_Worm",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Pit_worm_laser.jpg",
+      "sha256": "f27107929eaa9976bce47281a352746e7806cb9332f9bf1fd67ccd71f1ec065e",
+      "byte_size": 472800,
+      "dimensions": [
+        900,
+        644
+      ],
+      "caption": "The Pit Worm firing its eye laser.",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": true,
+      "used_as_generation_reference": true
+    },
+    {
+      "reference_filename": "C4a3_nihilanth01.jpg",
+      "source_url": "https://combineoverwiki.net/images/0/0f/C4a3_nihilanth01.jpg",
+      "source_page": "https://combineoverwiki.net/wiki/File:C4a3_nihilanth01.jpg",
+      "article_url": "https://combineoverwiki.net/wiki/Nihilanth",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/C4a3_nihilanth01.jpg",
+      "sha256": "d640ac7d0fb870862c7f19343cfbddc04828d2c049d1441da973bb3956f57533",
+      "byte_size": 194014,
+      "dimensions": [
+        1280,
+        960
+      ],
+      "caption": "The Nihilanth.",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": false,
+      "used_as_generation_reference": false
+    },
+    {
+      "reference_filename": "Hl_nihilanthprong.jpg",
+      "source_url": "https://combineoverwiki.net/images/3/32/Hl_nihilanthprong.jpg",
+      "source_page": "https://combineoverwiki.net/wiki/File:Hl_nihilanthprong.jpg",
+      "article_url": "https://combineoverwiki.net/wiki/Nihilanth",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Hl_nihilanthprong.jpg",
+      "sha256": "e85b71c7c1a0e6e14f016d8aeb07852d14ff9c789a77014f9853a93205a0d86b",
+      "byte_size": 313113,
+      "dimensions": [
+        1550,
+        900
+      ],
+      "caption": "The revealed energy sphere inside its head.",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": false,
+      "used_as_generation_reference": false
+    },
+    {
+      "reference_filename": "Hldemo10000.jpg",
+      "source_url": "https://combineoverwiki.net/images/9/95/Hldemo10000.jpg",
+      "source_page": "https://combineoverwiki.net/wiki/File:Hldemo10000.jpg",
+      "article_url": "https://combineoverwiki.net/wiki/Gargantua",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Hldemo10000.jpg",
+      "sha256": "e5c29636c8f8e4b22bdc2659e8811c15e6d901409e1fd275c0fc9596e34220ea",
+      "byte_size": 265076,
+      "dimensions": [
+        773,
+        485
+      ],
+      "caption": "The Gargantua killing a scientist at the end of Uplink.",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": true,
+      "used_as_generation_reference": true
+    },
+    {
+      "reference_filename": "C2a1_garg.jpg",
+      "source_url": "https://combineoverwiki.net/images/8/8c/C2a1_garg.jpg",
+      "source_page": "https://combineoverwiki.net/wiki/File:C2a1_garg.jpg",
+      "article_url": "https://combineoverwiki.net/wiki/Gargantua",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/C2a1_garg.jpg",
+      "sha256": "110b5e2f1dccc4706a6b9905d2b5541f5beca1034a57a3a3cb6f33ce9c60dafa",
+      "byte_size": 157313,
+      "dimensions": [
+        1280,
+        960
+      ],
+      "caption": "",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": false,
+      "used_as_generation_reference": false
+    },
+    {
+      "reference_filename": "Worker_vort_in_the_mines.jpg",
+      "source_url": "https://combineoverwiki.net/images/2/2e/Worker_vort_in_the_mines.jpg",
+      "source_page": "https://combineoverwiki.net/wiki/File:Worker_vort_in_the_mines.jpg",
+      "article_url": "https://combineoverwiki.net/wiki/Antlion_Worker",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Worker_vort_in_the_mines.jpg",
+      "sha256": "1b5fcb03f210dc7ce7c14541a3c09125ff20b22aff834ca4e3a21fd88afff4b9",
+      "byte_size": 188388,
+      "dimensions": [
+        1483,
+        834
+      ],
+      "caption": "",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": true,
+      "used_as_generation_reference": false
+    },
+    {
+      "reference_filename": "RPG_rocket_fly.jpg",
+      "source_url": "https://combineoverwiki.net/images/6/6b/RPG_rocket_fly.jpg",
+      "source_page": "https://combineoverwiki.net/wiki/File:RPG_rocket_fly.jpg",
+      "article_url": "https://combineoverwiki.net/wiki/Rocket-Propelled_Grenade_Launcher_(Half-Life_2)",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/RPG_rocket_fly.jpg",
+      "sha256": "d8419e4af3bbf70f9a0db2fdb4d82a919619187b6416d9d55f4836e22a3c89f2",
+      "byte_size": 119503,
+      "dimensions": [
+        1054,
+        341
+      ],
+      "caption": "Rocket model, in flying mode.",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": true,
+      "used_as_generation_reference": true
+    },
+    {
+      "reference_filename": "Argrenade_1.png",
+      "source_url": "https://combineoverwiki.net/images/c/c6/Argrenade_1.png",
+      "source_page": "https://combineoverwiki.net/wiki/File:Argrenade_1.png",
+      "article_url": "https://combineoverwiki.net/wiki/Submachine_Gun_(Half-Life)",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Argrenade_1.png",
+      "sha256": "a0af6547894e7c4bdc44e23e7b0499f27d27ea4ae82c46ab1932550fc5a35f76",
+      "byte_size": 17861,
+      "dimensions": [
+        170,
+        182
+      ],
+      "caption": "Grenades model.",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": false,
+      "used_as_generation_reference": false
+    },
+    {
+      "reference_filename": "Atlas_lmb_portal.png",
+      "source_url": "https://i1.theportalwiki.net/img/a/a1/Atlas_lmb_portal.png",
+      "source_page": "https://theportalwiki.com/wiki/File:Atlas_lmb_portal.png",
+      "article_url": "https://theportalwiki.com/wiki/Portals",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Atlas_lmb_portal.png",
+      "sha256": "f6471e892a81ebf0023df1457a20fdb28aeedee8656eac1f12fe3f52b03d12b7",
+      "byte_size": 1443628,
+      "dimensions": [
+        1680,
+        1050
+      ],
+      "caption": "A",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": false,
+      "used_as_generation_reference": false
+    },
+    {
+      "reference_filename": "Atlas_rmb_portal.png",
+      "source_url": "https://i1.theportalwiki.net/img/1/11/Atlas_rmb_portal.png",
+      "source_page": "https://theportalwiki.com/wiki/File:Atlas_rmb_portal.png",
+      "article_url": "https://theportalwiki.com/wiki/Portals",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Atlas_rmb_portal.png",
+      "sha256": "0303f2722a6ccc65d26066c16d202560a0fe7d31d6e021cc423bd58410873023",
+      "byte_size": 1385373,
+      "dimensions": [
+        1680,
+        1050
+      ],
+      "caption": "A",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": false,
+      "used_as_generation_reference": false
+    },
+    {
+      "reference_filename": "P-body_lmb_portal.png",
+      "source_url": "https://i1.theportalwiki.net/img/6/65/P-body_lmb_portal.png",
+      "source_page": "https://theportalwiki.com/wiki/File:P-body_lmb_portal.png",
+      "article_url": "https://theportalwiki.com/wiki/Portals",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/P-body_lmb_portal.png",
+      "sha256": "d3a6b43518a9a52fd41496640ad92b468fd16ebfcd0aaa46936628a475711cd3",
+      "byte_size": 1446264,
+      "dimensions": [
+        1680,
+        1050
+      ],
+      "caption": "P",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": false,
+      "used_as_generation_reference": false
+    },
+    {
+      "reference_filename": "P-body_rmb_portal.png",
+      "source_url": "https://i1.theportalwiki.net/img/e/e3/P-body_rmb_portal.png",
+      "source_page": "https://theportalwiki.com/wiki/File:P-body_rmb_portal.png",
+      "article_url": "https://theportalwiki.com/wiki/Portals",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/P-body_rmb_portal.png",
+      "sha256": "560bf4be55e42024f82407650847267b54a34043b827bf6005f47fa0e265258e",
+      "byte_size": 1340971,
+      "dimensions": [
+        1680,
+        1050
+      ],
+      "caption": "P",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": false,
+      "used_as_generation_reference": false
+    },
+    {
+      "reference_filename": "Chell_lmb_portal.png",
+      "source_url": "https://i1.theportalwiki.net/img/0/06/Chell_lmb_portal.png",
+      "source_page": "https://theportalwiki.com/wiki/File:Chell_lmb_portal.png",
+      "article_url": "https://theportalwiki.com/wiki/Portals",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Chell_lmb_portal.png",
+      "sha256": "966766f3067b7bd903d84a1e150c811e4a0958cd5c81c76b0963cce5f553757c",
+      "byte_size": 470208,
+      "dimensions": [
+        686,
+        609
+      ],
+      "caption": "C",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": false,
+      "used_as_generation_reference": false
+    },
+    {
+      "reference_filename": "Chell_rmb_portal.png",
+      "source_url": "https://i1.theportalwiki.net/img/d/d5/Chell_rmb_portal.png",
+      "source_page": "https://theportalwiki.com/wiki/File:Chell_rmb_portal.png",
+      "article_url": "https://theportalwiki.com/wiki/Portals",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Chell_rmb_portal.png",
+      "sha256": "8395767ba5792c0808df8269900b8d6e1f5aee06e030a8c0ffd6a0f02d14d65a",
+      "byte_size": 462985,
+      "dimensions": [
+        691,
+        613
+      ],
+      "caption": "C",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": false,
+      "used_as_generation_reference": false
+    },
+    {
+      "reference_filename": "ADJ_HousewaresTurret02.jpg",
+      "source_url": "https://combineoverwiki.net/images/a/a6/ADJ_HousewaresTurret02.jpg",
+      "source_page": "https://combineoverwiki.net/wiki/File:ADJ_HousewaresTurret02.jpg",
+      "article_url": "https://combineoverwiki.net/wiki/Aperture_Desk_Job",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/ADJ_HousewaresTurret02.jpg",
+      "sha256": "dad03390199035c3087c3f698ac5ceb221331c4ec12fe9886e02fb47892eee36",
+      "byte_size": 411006,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "caption": "Housewares Department appliances as turrets firing on the player.",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": true,
+      "used_as_generation_reference": true
+    },
+    {
+      "reference_filename": "ADJ_screenshot_11.jpg",
+      "source_url": "https://combineoverwiki.net/images/4/48/ADJ_screenshot_11.jpg",
+      "source_page": "https://combineoverwiki.net/wiki/File:ADJ_screenshot_11.jpg",
+      "article_url": "https://combineoverwiki.net/wiki/Aperture_Desk_Job",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/ADJ_screenshot_11.jpg",
+      "sha256": "518f20c53a0929f2f879231a940d960fc981ca5f8a0bde876affd4aba453655d",
+      "byte_size": 668458,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "caption": "The player destroying a warehouse with the toilet turret.",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": false,
+      "used_as_generation_reference": false
+    },
+    {
+      "reference_filename": "Atlas_both_portal.png",
+      "source_url": "https://i1.theportalwiki.net/img/8/82/Atlas_both_portal.png",
+      "source_page": "https://theportalwiki.com/wiki/File:Atlas_both_portal.png",
+      "article_url": "https://theportalwiki.com/wiki/Portals",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Atlas_both_portal.png",
+      "sha256": "0951d6279e5344139d552e90138b4a6a95ae4c55175d76a7d9cc54f25a638f9b",
+      "byte_size": 1333070,
+      "dimensions": [
+        1680,
+        1050
+      ],
+      "caption": "A",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": true,
+      "used_as_generation_reference": true
+    },
+    {
+      "reference_filename": "P-body_both_portal.png",
+      "source_url": "https://i1.theportalwiki.net/img/1/18/P-body_both_portal.png",
+      "source_page": "https://theportalwiki.com/wiki/File:P-body_both_portal.png",
+      "article_url": "https://theportalwiki.com/wiki/Portals",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/P-body_both_portal.png",
+      "sha256": "a20a4e03a04541fa9b481c48481dc6f96719fe6c6fe0f3bebd56cf63f65d2c08",
+      "byte_size": 1302859,
+      "dimensions": [
+        1680,
+        1050
+      ],
+      "caption": "P",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": true,
+      "used_as_generation_reference": true
+    },
+    {
+      "reference_filename": "Chell_both_portal.png",
+      "source_url": "https://i1.theportalwiki.net/img/7/74/Chell_both_portal.png",
+      "source_page": "https://theportalwiki.com/wiki/File:Chell_both_portal.png",
+      "article_url": "https://theportalwiki.com/wiki/Portals",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Chell_both_portal.png",
+      "sha256": "6351c77c02011d985c3c26d3fdc9aa9592a2ea92ae29e37ea8671c7f220f0768",
+      "byte_size": 498875,
+      "dimensions": [
+        675,
+        606
+      ],
+      "caption": "C",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": true,
+      "used_as_generation_reference": true
+    },
+    {
+      "reference_filename": "Hl_satchel_world.png",
+      "source_url": "https://combineoverwiki.net/images/4/4a/Hl_satchel_world.png",
+      "source_page": "https://combineoverwiki.net/wiki/File:Hl_satchel_world.png",
+      "article_url": "https://combineoverwiki.net/wiki/Satchel_Charge",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Hl_satchel_world.png",
+      "sha256": "b1ab75d83d0cdd213dd55a987e8b49ae8a99cadb73da1dca4377e1fc6d165ca8",
+      "byte_size": 131926,
+      "dimensions": [
+        500,
+        780
+      ],
+      "caption": "",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": true,
+      "used_as_generation_reference": true
+    },
+    {
+      "reference_filename": "D2_coast_080049.JPG",
+      "source_url": "https://combineoverwiki.net/images/7/72/D2_coast_080049.JPG",
+      "source_page": "https://combineoverwiki.net/wiki/File:D2_coast_080049.JPG",
+      "article_url": "https://combineoverwiki.net/wiki/Combine_Gunship",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/D2_coast_080049.JPG",
+      "sha256": "2e4a347eda6193790275f28635e801a86a0fadd8244d3700bcf75f3c4a1a7a64",
+      "byte_size": 291817,
+      "dimensions": [
+        800,
+        535
+      ],
+      "caption": "Gunship firing at Gordon after the Bridge Point Force Fields are deactivated.",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": true,
+      "used_as_generation_reference": true
+    },
+    {
+      "reference_filename": "Strider_fire.jpg",
+      "source_url": "https://combineoverwiki.net/images/3/32/Strider_fire.jpg",
+      "source_page": "https://combineoverwiki.net/wiki/File:Strider_fire.jpg",
+      "article_url": "https://combineoverwiki.net/wiki/Strider",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Strider_fire.jpg",
+      "sha256": "c6e5bec17b4d64b6aff7ec3a28c73bfdbee239ada95ac7bc92df5ce1e305e863",
+      "byte_size": 145016,
+      "dimensions": [
+        1000,
+        563
+      ],
+      "caption": "Strider firing.",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": true,
+      "used_as_generation_reference": false
+    },
+    {
+      "reference_filename": "HL2_Strider04.jpg",
+      "source_url": "https://combineoverwiki.net/images/c/c7/HL2_Strider04.jpg",
+      "source_page": "https://combineoverwiki.net/wiki/File:HL2_Strider04.jpg",
+      "article_url": "https://combineoverwiki.net/wiki/Strider",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/HL2_Strider04.jpg",
+      "sha256": "ee1ab08f00c5446045938cf582c860d0ce0836dafe18489291d3efb059052f99",
+      "byte_size": 1275194,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "caption": "A Strider firing at Rebels.",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": false,
+      "used_as_generation_reference": false
+    },
+    {
+      "reference_filename": "D2_coast_070069.JPG",
+      "source_url": "https://combineoverwiki.net/images/d/dd/D2_coast_070069.JPG",
+      "source_page": "https://combineoverwiki.net/wiki/File:D2_coast_070069.JPG",
+      "article_url": "https://combineoverwiki.net/wiki/Overwatch_Standard_Issue_Pulse_Rifle",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/D2_coast_070069.JPG",
+      "sha256": "5cd3da9fc55b7101ad1bb8bd09abca52844d7b471771168d32086a2614874c3b",
+      "byte_size": 550698,
+      "dimensions": [
+        1000,
+        563
+      ],
+      "caption": "Combine Soldier firing at Gordon with his Pulse Rifle at Bridge Point.",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": false,
+      "used_as_generation_reference": false
+    },
+    {
+      "reference_filename": "D1_trainstation_060005.jpg",
+      "source_url": "https://combineoverwiki.net/images/c/cf/D1_trainstation_060005.jpg",
+      "source_page": "https://combineoverwiki.net/wiki/File:D1_trainstation_060005.jpg",
+      "article_url": "https://combineoverwiki.net/wiki/Pistol_(Half-Life_2)",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/D1_trainstation_060005.jpg",
+      "sha256": "627bfed46450b33727fc4e619234fc64df1d1a2d8a8e6ed68fb47e210d5b38aa",
+      "byte_size": 189614,
+      "dimensions": [
+        1000,
+        563
+      ],
+      "caption": "Metrocops shooting at Gordon Freeman at the back of the City 17 Trainstation.",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": true,
+      "used_as_generation_reference": false
+    },
+    {
+      "reference_filename": "nhth1_reference_frame0.png",
+      "source_url": "https://arquivo.mataleone.com/tut/sprites/nhth1.gif",
+      "source_page": "https://arquivo.mataleone.com/php/main.php?cat=ref&id=7&lang=en&page=tut",
+      "article_url": "https://arquivo.mataleone.com/php/main.php?cat=ref&id=7&lang=en&page=tut",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/nhth1_reference_frame0.png",
+      "sha256": "219d8bd2d9094eae2e9b59cc1e03f4db0cb530a46823eb8ff17293417ea2c8ab",
+      "source_sha256": "c5c3d8e7b5cb4bd73750765ec3b1ca43ba951ee80ef247de7667f6c88e55f118",
+      "source_format": "GIF",
+      "source_frames": 1,
+      "reference_conversion": "First GIF frame decoded to lossless PNG for inspection and image_gen input; no retouching. Not a generated deliverable.",
+      "dimensions": [
+        58,
+        55
+      ],
+      "role": "community_hosted_Half_Life_sprite_reference_matched_to_Valve_SDK_resource_name",
+      "visually_inspected": true,
+      "used_as_generation_reference": true
+    },
+    {
+      "reference_filename": "exit1_reference_frame0.png",
+      "source_url": "https://arquivo.mataleone.com/tut/sprites/exit1.gif",
+      "source_page": "https://arquivo.mataleone.com/php/main.php?cat=ref&id=7&lang=en&page=tut",
+      "article_url": "https://arquivo.mataleone.com/php/main.php?cat=ref&id=7&lang=en&page=tut",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/exit1_reference_frame0.png",
+      "sha256": "9d651f4d992df188558f24e1f65c0f372d368f294683047505346753afe1dc30",
+      "source_sha256": "faceaaecc8cacbe8a0a07562777c1fe74fc173c85f50cea5521cba0be903d4ea",
+      "source_format": "GIF",
+      "source_frames": 1,
+      "reference_conversion": "First GIF frame decoded to lossless PNG for inspection and image_gen input; no retouching. Not a generated deliverable.",
+      "dimensions": [
+        78,
+        76
+      ],
+      "role": "community_hosted_Half_Life_sprite_reference_matched_to_Valve_SDK_resource_name",
+      "visually_inspected": true,
+      "used_as_generation_reference": true
+    },
+    {
+      "reference_filename": "gargeye1_reference_frame0.png",
+      "source_url": "https://arquivo.mataleone.com/tut/sprites/gargeye1.gif",
+      "source_page": "https://arquivo.mataleone.com/php/main.php?cat=ref&id=7&lang=en&page=tut",
+      "article_url": "https://arquivo.mataleone.com/php/main.php?cat=ref&id=7&lang=en&page=tut",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/gargeye1_reference_frame0.png",
+      "sha256": "642798c1e1388f43053d96fadab123e82ff9d50bb7c6c571b82997474110c35c",
+      "source_sha256": "b2e4218acc394d4b2b6a811af33a34754d06a6d73b95ad52cae0fb428594d66f",
+      "source_format": "GIF",
+      "source_frames": 1,
+      "reference_conversion": "First GIF frame decoded to lossless PNG for inspection and image_gen input; no retouching. Not a generated deliverable.",
+      "dimensions": [
+        26,
+        25
+      ],
+      "role": "community_hosted_Half_Life_sprite_reference_matched_to_Valve_SDK_resource_name",
+      "visually_inspected": true,
+      "used_as_generation_reference": true
+    },
+    {
+      "reference_filename": "bigspit_reference_frame0.png",
+      "source_url": "https://arquivo.mataleone.com/tut/sprites/bigspit.gif",
+      "source_page": "https://arquivo.mataleone.com/php/main.php?cat=ref&id=7&lang=en&page=tut",
+      "article_url": "https://arquivo.mataleone.com/php/main.php?cat=ref&id=7&lang=en&page=tut",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/bigspit_reference_frame0.png",
+      "sha256": "90332e4034c7fdd5805c76b9984511f556382a25efbc4f233c0a563245651118",
+      "source_sha256": "4101741f7e61f9d51e3c72704ff7a0b9c4e308deee591ab351b8b6e244a44b1e",
+      "source_format": "GIF",
+      "source_frames": 1,
+      "reference_conversion": "First GIF frame decoded to lossless PNG for inspection and image_gen input; no retouching. Not a generated deliverable.",
+      "dimensions": [
+        28,
+        26
+      ],
+      "role": "community_hosted_Half_Life_sprite_reference_matched_to_Valve_SDK_resource_name",
+      "visually_inspected": false,
+      "used_as_generation_reference": false
+    },
+    {
+      "reference_filename": "Strider_Immolator_Firing.jpg",
+      "source_url": "https://combineoverwiki.net/images/4/4a/Strider_Immolator_Firing.jpg",
+      "source_page": "https://combineoverwiki.net/wiki/File:Strider_Immolator_Firing.jpg",
+      "article_url": "https://combineoverwiki.net/wiki/Category:Strider_images",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Strider_Immolator_Firing.jpg",
+      "sha256": "3c4de84f985df06844ca4268032f77b8cfe9b44807d26ce0f11c6d9c2e488b12",
+      "byte_size": 648685,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "caption": "",
+      "role": "rejected_fan_modified_restoration_of_cut_attack",
+      "visually_inspected": true,
+      "used_as_generation_reference": false,
+      "exclusion_reason": "Metadata explicitly labels fan-made restoration of the cut Immolator attack; not a retail Half-Life 2 warp-cannon reference."
+    },
+    {
+      "reference_filename": "Ep2_outland_01a0023.jpg",
+      "source_url": "https://combineoverwiki.net/images/e/ed/Ep2_outland_01a0023.jpg",
+      "source_page": "https://combineoverwiki.net/wiki/File:Ep2_outland_01a0023.jpg",
+      "article_url": "https://combineoverwiki.net/wiki/Category:Antlion_Worker_images",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Ep2_outland_01a0023.jpg",
+      "sha256": "91c518d6b4c41781e4d181a6db5d85b3a83418f1c420adbe2e8e93eaa05a7440",
+      "byte_size": 371841,
+      "dimensions": [
+        1000,
+        563
+      ],
+      "caption": "",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": true,
+      "used_as_generation_reference": false
+    },
+    {
+      "reference_filename": "AcidAntlion.jpg",
+      "source_url": "https://combineoverwiki.net/images/3/3e/AcidAntlion.jpg",
+      "source_page": "https://combineoverwiki.net/wiki/File:AcidAntlion.jpg",
+      "article_url": "https://combineoverwiki.net/wiki/Antlion_Worker",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/AcidAntlion.jpg",
+      "sha256": "643530bee0329cd2af0cd5be943e841a919598eaff97972e0dc1186e25405a75",
+      "byte_size": 45256,
+      "dimensions": [
+        640,
+        338
+      ],
+      "caption": "",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": true,
+      "used_as_generation_reference": false
+    },
+    {
+      "reference_filename": "Bullsquid_headcrab_attack2.jpg",
+      "source_url": "https://combineoverwiki.net/images/9/97/Bullsquid_headcrab_attack2.jpg",
+      "source_page": "https://combineoverwiki.net/wiki/File:Bullsquid_headcrab_attack2.jpg",
+      "article_url": "https://combineoverwiki.net/wiki/Bullsquid",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Bullsquid_headcrab_attack2.jpg",
+      "sha256": "cfe3f94f6d80e9f6959f169f40bc8f2985454dca663ae01c5365323ee725bffc",
+      "byte_size": 587228,
+      "dimensions": [
+        750,
+        775
+      ],
+      "caption": "Bullsquid spitting on a Headcrab.",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": true,
+      "used_as_generation_reference": false
+    },
+    {
+      "reference_filename": "Gene_Worm_enters.jpg",
+      "source_url": "https://combineoverwiki.net/images/4/4a/Gene_Worm_enters.jpg",
+      "source_page": "https://combineoverwiki.net/wiki/File:Gene_Worm_enters.jpg",
+      "article_url": "https://combineoverwiki.net/wiki/Gene_Worm",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Gene_Worm_enters.jpg",
+      "sha256": "4f1b622f2d1bce3a562cbc64ec9901cc5a05a30465e2674567087269ee0942f8",
+      "byte_size": 642023,
+      "dimensions": [
+        1045,
+        800
+      ],
+      "caption": "The Gene Worm being targeted by Shephard.",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": true,
+      "used_as_generation_reference": false
+    },
+    {
+      "reference_filename": "Half_life_alyx_lightning_dog_zombie.png",
+      "source_url": "https://combineoverwiki.net/images/6/6e/Half_life_alyx_lightning_dog_zombie.png",
+      "source_page": "https://combineoverwiki.net/wiki/File:Half_life_alyx_lightning_dog_zombie.png",
+      "article_url": "https://combineoverwiki.net/wiki/File:Half_life_alyx_lightning_dog_zombie.png",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Half_life_alyx_lightning_dog_zombie.png",
+      "sha256": "16318b26d6745c17391cfb1252820445e83a965cf34e3d1112ea8b27ccc2758f",
+      "byte_size": 1455404,
+      "dimensions": [
+        1600,
+        900
+      ],
+      "caption": "Source file metadata inspected separately",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": true,
+      "used_as_generation_reference": false
+    },
+    {
+      "reference_filename": "Ep2_outland_020008.JPG",
+      "source_url": "https://combineoverwiki.net/images/0/02/Ep2_outland_020008.JPG",
+      "source_page": "https://combineoverwiki.net/wiki/File:Ep2_outland_020008.JPG",
+      "article_url": "https://combineoverwiki.net/wiki/Vortigaunt",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Ep2_outland_020008.JPG",
+      "sha256": "b260b70f8dffcf3d7b01111f49adb4e4b5db27425cd3a24e8019546de73d17a3",
+      "byte_size": 463786,
+      "dimensions": [
+        1000,
+        563
+      ],
+      "caption": "",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": true,
+      "used_as_generation_reference": false
+    },
+    {
+      "reference_filename": "Ep2_outland_020011.JPG",
+      "source_url": "https://combineoverwiki.net/images/4/41/Ep2_outland_020011.JPG",
+      "source_page": "https://combineoverwiki.net/wiki/File:Ep2_outland_020011.JPG",
+      "article_url": "https://combineoverwiki.net/wiki/Category:Vortigaunt_images",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Ep2_outland_020011.JPG",
+      "sha256": "feaadc6dca22d3f14b8660eac63d4009e3df184ba2df0da4bda23b134b721fca",
+      "byte_size": 240887,
+      "dimensions": [
+        1000,
+        563
+      ],
+      "caption": "",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": true,
+      "used_as_generation_reference": false
+    },
+    {
+      "reference_filename": "Ep2_outland_020037.JPG",
+      "source_url": "https://combineoverwiki.net/images/5/5a/Ep2_outland_020037.JPG",
+      "source_page": "https://combineoverwiki.net/wiki/File:Ep2_outland_020037.JPG",
+      "article_url": "https://combineoverwiki.net/wiki/Category:Vortigaunt_images",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Ep2_outland_020037.JPG",
+      "sha256": "3b6bef0cfcfb9412972eb3f8b76b610415a59370a7a145dab526d3872b308194",
+      "byte_size": 525218,
+      "dimensions": [
+        1000,
+        563
+      ],
+      "caption": "",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": true,
+      "used_as_generation_reference": false
+    },
+    {
+      "reference_filename": "Ep2_outland_04002.JPG",
+      "source_url": "https://combineoverwiki.net/images/2/22/Ep2_outland_04002.JPG",
+      "source_page": "https://combineoverwiki.net/wiki/File:Ep2_outland_04002.JPG",
+      "article_url": "https://combineoverwiki.net/wiki/Vortigaunt",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Ep2_outland_04002.JPG",
+      "sha256": "dd69c288e126c98dc8211cbf82a048dd6eb3dd9a17765594ff13af8a5e219760",
+      "byte_size": 166242,
+      "dimensions": [
+        1280,
+        960
+      ],
+      "caption": "The Lone Vort holding the Antlion extract.",
+      "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+      "visually_inspected": true,
+      "used_as_generation_reference": false
+    }
+  ],
+  "official_code_references": [
+    {
+      "source_url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/mp5.cpp",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/code/mp5.cpp",
+      "sha256": "9306375ddb6dd2e0da5066d56c50520fca6ab54cca3b9f1a036fb5798ba48c51",
+      "byte_size": 8661
+    },
+    {
+      "source_url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/bullsquid.cpp",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/code/bullsquid.cpp",
+      "sha256": "6b570a37c6dc81e241496d26cc5847737bdfa6c088fbbf678d2299088ac5efaa",
+      "byte_size": 35055
+    },
+    {
+      "source_url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/nihilanth.cpp",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/code/nihilanth.cpp",
+      "sha256": "0ef1b9685beadb20ac71e88bb52a0ea7d977a7ae4135ad2362b11e283688f375",
+      "byte_size": 46532
+    },
+    {
+      "source_url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/satchel.cpp",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/code/satchel.cpp",
+      "sha256": "9811f5c7a21921fa5316f001470b1b1c23abdcd5125c7943bc7783ed63f855d3",
+      "byte_size": 11951
+    },
+    {
+      "source_url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/gargantua.cpp",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/code/gargantua.cpp",
+      "sha256": "caa34a2b3345d1fe59eceeb43e4a3e5fa66b79f3f699d8e30b115efe5f184553",
+      "byte_size": 35806
+    },
+    {
+      "source_url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/combat.cpp",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/code/combat.cpp",
+      "sha256": "e07383b31dbacd4af469f160cfccfc3ed494dc6f19853035aef0dea274037a93",
+      "byte_size": 43448
+    },
+    {
+      "source_url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/weapon_rpg.cpp",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/code/weapon_rpg.cpp",
+      "sha256": "ecc59a36170497ea175ba2d9bf30463d52c9d80a2e78fb060c91c10eb7917f95",
+      "byte_size": 66337
+    },
+    {
+      "source_url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/grenade_spit.cpp",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/code/grenade_spit.cpp",
+      "sha256": "cbe9f603e1c0490e9157fe98145253ee15faab9897934573c345872607e27e0a",
+      "byte_size": 7868
+    },
+    {
+      "source_url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/weapon_ar2.cpp",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/code/weapon_ar2.cpp",
+      "sha256": "b0b9ad5be1fb6b07c4f32974c5f718c7a37fdd197c6503b3f20be2e587749d4f",
+      "byte_size": 15201
+    },
+    {
+      "source_url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/npc_strider.cpp",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/code/npc_strider.cpp",
+      "sha256": "7d95fb47b3e3f2dd88d2f6a27127e32ed768ba6eb98e392af4cb4d8835b1f721",
+      "byte_size": 167255
+    },
+    {
+      "source_url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/npc_combinegunship.cpp",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/code/npc_combinegunship.cpp",
+      "sha256": "09b5a6a53a1fd1570e6855f4f90010f08ecc91bb88442bab18648cdb848e0966",
+      "byte_size": 95772
+    },
+    {
+      "source_url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/npc_vortigaunt_episodic.cpp",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/code/npc_vortigaunt_episodic.cpp",
+      "sha256": "595fa1e92f868529e128a9be99fd0bf0c7da41fc9e96703a2089f08d68c8c5ed",
+      "byte_size": 102679
+    },
+    {
+      "source_url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/ggrenade.cpp",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/code/ggrenade.cpp",
+      "sha256": "2cd1e57462c341ec0ff1411cf2a15bf5309b2f895d04fc6e7b9a80f0820094db",
+      "byte_size": 12773
+    },
+    {
+      "source_url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/client/hl2/fx_hl2_tracers.cpp",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/code/fx_hl2_tracers.cpp",
+      "sha256": "4fc1779c7ba9a42d305a9d774c85bfc2e6d39ce7280926e1bb2f2b5c926c0475",
+      "byte_size": 21653
+    },
+    {
+      "source_url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/client/fx_tracer.cpp",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/code/fx_tracer.cpp",
+      "sha256": "6f9cf5824ad2299bb5664dd9c433797a6175b4a01b8e03d1f0257f1c4c958a11",
+      "byte_size": 5393
+    },
+    {
+      "source_url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/client/fx.cpp",
+      "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/code/fx.cpp",
+      "sha256": "dc10e8f1bc648b24722203c6be370739a934849c7c4503551b707e13e53b69c4",
+      "byte_size": 40323
+    }
+  ],
+  "access_limitations": [
+    {
+      "url": "https://valvearchive.com/Games/Half-Life%202%20Episode%202/Documents/mb-ign_half_life_2_episode_2_pc.pdf",
+      "result": "HTTP 403 via direct download; PDF not retrieved, no page inspection claimed"
+    },
+    {
+      "url": "https://half-life.fandom.com/wiki/Reviver",
+      "result": "HTTP 402; no page inspection claimed"
+    }
+  ]
+}

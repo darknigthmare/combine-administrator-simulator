@@ -127,13 +127,69 @@
         "hl25_official"
       ],
       "official_map_name": null,
-      "reference_capture": null,
-      "visual_reference_status": "capture_required",
-      "generation_status": "not_started",
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "target_id": "skeleton_hl25_multiplayer",
+            "reference_filename": "Dm_skeleton_25upd.png",
+            "source_url": "https://combineoverwiki.net/images/0/02/Dm_skeleton_25upd.png",
+            "source_page": "https://combineoverwiki.net/wiki/File:Dm_skeleton_25upd.png",
+            "context_page": "https://combineoverwiki.net/wiki/Half-Life_(multiplayer)",
+            "caption": "Skeleton.",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/characters/references/Dm_skeleton_25upd.png",
+            "width": 1100,
+            "height": 1100,
+            "sha256": "e1391022ebf4ddb8e6b5bb01ab17fd5f852231beaabc96fce5b5a7a6cae437f2",
+            "visually_inspected": true,
+            "source_kind": "community_wiki_game_render_or_capture",
+            "scope": "Released multiplayer model/25th Anniversary selection reference. Primary Valve update description separately checked; community hosting retained."
+          },
+          {
+            "target_id": "skeleton_hl25_multiplayer",
+            "reference_filename": "Dm_skeleton_preview_25upd.png",
+            "source_url": "https://combineoverwiki.net/images/7/7e/Dm_skeleton_preview_25upd.png",
+            "source_page": "https://combineoverwiki.net/wiki/File:Dm_skeleton_preview_25upd.png",
+            "context_page": "https://combineoverwiki.net/wiki/Half-Life_(multiplayer)",
+            "caption": "Preview image.",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/characters/references/Dm_skeleton_preview_25upd.png",
+            "width": 160,
+            "height": 200,
+            "sha256": "bc65bbee652330fa245a2d3c78989ee7bd210ff3784ff7cd2ea4ba17e8f03b17",
+            "visually_inspected": true,
+            "source_kind": "community_wiki_game_render_or_capture",
+            "scope": "Released multiplayer model/25th Anniversary selection reference. Primary Valve update description separately checked; community hosting retained."
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated",
+      "generation_status": "candidate_pngs_present",
       "runtime_enabled": false,
       "certified_one_to_one": false,
       "implementation_status": "catalogued_not_implemented",
-      "design_note": "Ajout documentaire. Aucune nouvelle entrée au roster jouable; aucune animation ni arène complète déclarée."
+      "design_note": "Ajout documentaire. Aucune nouvelle entrée au roster jouable; aucune animation ni arène complète déclarée.",
+      "production_review_20261125_k": {
+        "target_id": "skeleton_hl25_multiplayer",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "skeleton_hl25_multiplayer_idle_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/costumes/skeleton_hl25_multiplayer_idle_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      }
     },
     {
       "id": "too_much_coffee_man_hl25_multiplayer",
@@ -149,13 +205,85 @@
         "hl25_official"
       ],
       "official_map_name": null,
-      "reference_capture": null,
-      "visual_reference_status": "capture_required",
-      "generation_status": "not_started",
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "target_id": "too_much_coffee_man_hl25_multiplayer",
+            "reference_filename": "Dm_tmcm.png",
+            "source_url": "https://combineoverwiki.net/images/4/44/Dm_tmcm.png",
+            "source_page": "https://combineoverwiki.net/wiki/File:Dm_tmcm.png",
+            "context_page": "https://combineoverwiki.net/wiki/Half-Life_(multiplayer)",
+            "caption": "Too Much Coffee Man by Steve Theodore.[22]",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/characters/references/Dm_tmcm.png",
+            "width": 1100,
+            "height": 1100,
+            "sha256": "334bd8191aa4ee0cfa1955393cf72859ad82a4513772b220d038e626467e1c11",
+            "visually_inspected": true,
+            "source_kind": "community_wiki_game_render_or_capture",
+            "scope": "Released multiplayer model/25th Anniversary selection reference. Primary Valve update description separately checked; community hosting retained."
+          },
+          {
+            "target_id": "too_much_coffee_man_hl25_multiplayer",
+            "reference_filename": "Dm_tmcm_preview_25upd.png",
+            "source_url": "https://combineoverwiki.net/images/a/ad/Dm_tmcm_preview_25upd.png",
+            "source_page": "https://combineoverwiki.net/wiki/File:Dm_tmcm_preview_25upd.png",
+            "context_page": "https://combineoverwiki.net/wiki/Half-Life_(multiplayer)",
+            "caption": "Too Much Coffee Man, preview image.",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/characters/references/Dm_tmcm_preview_25upd.png",
+            "width": 164,
+            "height": 200,
+            "sha256": "b622b87fdae1a4cbd8853bb1be3091ac5a35eb25c7ac2d3de3df197d659a4429",
+            "visually_inspected": true,
+            "source_kind": "community_wiki_game_render_or_capture",
+            "scope": "Released multiplayer model/25th Anniversary selection reference. Primary Valve update description separately checked; community hosting retained."
+          },
+          {
+            "target_id": "too_much_coffee_man_hl25_multiplayer",
+            "reference_filename": "HL1_25th_Anniversary_Promo_Playermodels.jpg",
+            "source_url": "https://combineoverwiki.net/images/f/f3/HL1_25th_Anniversary_Promo_Playermodels.jpg",
+            "source_page": "https://combineoverwiki.net/wiki/File:HL1_25th_Anniversary_Promo_Playermodels.jpg",
+            "context_page": "https://combineoverwiki.net/wiki/Half-Life_(multiplayer)",
+            "caption": "Ditto, for the Skeleton and Too Much Coffee Man.",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/characters/references/HL1_25th_Anniversary_Promo_Playermodels.jpg",
+            "width": 2560,
+            "height": 1600,
+            "sha256": "283fb5e970dddf12c05283021b9f295e03ec0a87705d231cda529c084ddacc16",
+            "visually_inspected": true,
+            "source_kind": "community_wiki_game_render_or_capture",
+            "scope": "Released multiplayer model/25th Anniversary selection reference. Primary Valve update description separately checked; community hosting retained."
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated",
+      "generation_status": "candidate_pngs_present",
       "runtime_enabled": false,
       "certified_one_to_one": false,
       "implementation_status": "catalogued_not_implemented",
-      "design_note": "Ajout documentaire. Aucune nouvelle entrée au roster jouable; aucune animation ni arène complète déclarée."
+      "design_note": "Ajout documentaire. Aucune nouvelle entrée au roster jouable; aucune animation ni arène complète déclarée.",
+      "production_review_20261125_k": {
+        "target_id": "too_much_coffee_man_hl25_multiplayer",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "too_much_coffee_man_hl25_multiplayer_idle_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/costumes/too_much_coffee_man_hl25_multiplayer_idle_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      }
     }
-  ]
+  ],
+  "updated_on": "2026-11-25"
 }
