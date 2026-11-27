@@ -2,6 +2,12 @@
 
 État vérifié le 19 novembre 2026, package `0.47.0`.
 
+## Mise à jour du 27 novembre 2026
+
+Le périmètre et les résultats du 19 novembre ci-dessous sont conservés comme historique. La [CI du commit `4ae2ee9dcf1a2acedff4b628c70ee70a736553a0`](https://github.com/darknigthmare/combine-administrator-simulator/actions/runs/45948747638) a depuis réussi : **60 tests unitaires, 10 tests de parcours navigateur, 252 configurations de la matrice de gestion, lint et compilation TypeScript/Vite**. Le blocage d’accès au navigateur décrit pour le premier lot ne représente donc plus l’état des tests automatisés de parcours.
+
+Cette preuve ne certifie ni les nouvelles images, ni leur fidélité, ni les animations ou la qualité de parallaxe. Le [lot O](../production/continuation_20261127_o/README.md) ne modifie aucun fichier du runtime et maintient les nouveaux assets au statut candidat. Les parcours supplémentaires et l’équilibrage non couverts par ces tests gardent leurs limites propres.
+
 ## Périmètre livré
 
 Le module `src/features/resonance/bossBattle` contient une simulation déterministe à 60 Hz, six profils pilotes et quatre rencontres : Strider HL2, Dropship et nacelle, Gunship HL2 et Gargantua HL1. Opération libre, Boss Rush et Entraînement sont implémentés. Le menu principal et le paramètre `?module=resonance-boss-battle` ouvrent le module.

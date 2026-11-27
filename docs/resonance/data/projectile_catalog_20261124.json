@@ -2664,7 +2664,7 @@
       "reference_capture": null,
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "candidate_generated",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -2704,7 +2704,33 @@
       ],
       "projectile_class": "instant_beam",
       "requires_travel_sprite": false,
-      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending"
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "production_review_20261127_o": {
+        "batch_id": "continuation_20261127_o",
+        "new_png_count": 3,
+        "new_generation_call_count": 3,
+        "new_asset_ids": [
+          "fx_gauss_beam_hl1_charged_o",
+          "fx_gauss_beam_hl1_impact_hotglow_o",
+          "fx_gauss_beam_hl1_charged_v2_o"
+        ],
+        "candidate_visual_state_ids": [
+          "charged",
+          "impact"
+        ],
+        "selected_asset_ids": [
+          "fx_gauss_beam_hl1_impact_hotglow_o",
+          "fx_gauss_beam_hl1_charged_v2_o"
+        ],
+        "partial_registers": [
+          "docs/resonance/production/continuation_20261127_o/fx_generation.json"
+        ],
+        "visual_state_complete": false,
+        "completed_animation": false,
+        "runtime_added": false,
+        "certified_one_to_one": false,
+        "scope": "Composants ou instants candidats; la présence d’un PNG ne termine pas un état visuel ni une animation."
+      }
     },
     {
       "id": "fx_gluon_beam_hl1",
@@ -2775,7 +2801,7 @@
       },
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "candidate_generated",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -2818,7 +2844,32 @@
       "projectile_class": "continuous_beam",
       "requires_travel_sprite": false,
       "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
-      "visual_reference_status": "community_bitmap_inspected_candidate_not_certified"
+      "visual_reference_status": "community_bitmap_inspected_candidate_not_certified",
+      "production_review_20261127_o": {
+        "batch_id": "continuation_20261127_o",
+        "new_png_count": 2,
+        "new_generation_call_count": 2,
+        "new_asset_ids": [
+          "fx_gluon_beam_hl1_tip_xspark1_o",
+          "fx_gluon_beam_hl1_fade_flare_o"
+        ],
+        "candidate_visual_state_ids": [
+          "fade",
+          "tip"
+        ],
+        "selected_asset_ids": [
+          "fx_gluon_beam_hl1_tip_xspark1_o",
+          "fx_gluon_beam_hl1_fade_flare_o"
+        ],
+        "partial_registers": [
+          "docs/resonance/production/continuation_20261127_o/fx_generation.json"
+        ],
+        "visual_state_complete": false,
+        "completed_animation": false,
+        "runtime_added": false,
+        "certified_one_to_one": false,
+        "scope": "Composants ou instants candidats; la présence d’un PNG ne termine pas un état visuel ni une animation."
+      }
     },
     {
       "id": "fx_vortigaunt_zap_hl1",
@@ -2951,7 +3002,7 @@
       "reference_capture": null,
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "not_generated_at_catalog_creation",
+      "generation_status": "candidate_generated",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -2962,7 +3013,32 @@
         "allowed_artifact_status": "candidate_until_visual_review"
       },
       "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
-      "effect_kind_provisional": false
+      "effect_kind_provisional": false,
+      "production_review_20261127_o": {
+        "batch_id": "continuation_20261127_o",
+        "new_png_count": 3,
+        "new_generation_call_count": 3,
+        "new_asset_ids": [
+          "fx_houndeye_sonic_ring_hl1_pack2_o",
+          "fx_houndeye_sonic_ring_hl1_pack4_o",
+          "fx_houndeye_sonic_ring_hl1_pack4_v2_o"
+        ],
+        "candidate_visual_state_ids": [
+          "pack_color_variants"
+        ],
+        "selected_asset_ids": [
+          "fx_houndeye_sonic_ring_hl1_pack2_o",
+          "fx_houndeye_sonic_ring_hl1_pack4_v2_o"
+        ],
+        "partial_registers": [
+          "docs/resonance/production/continuation_20261127_o/fx_generation.json"
+        ],
+        "visual_state_complete": false,
+        "completed_animation": false,
+        "runtime_added": false,
+        "certified_one_to_one": false,
+        "scope": "Composants ou instants candidats; la présence d’un PNG ne termine pas un état visuel ni une animation."
+      }
     },
     {
       "id": "fx_gargantua_flame_hl1",
@@ -6074,11 +6150,35 @@
           "download_sha256": "595fa1e92f868529e128a9be99fd0bf0c7da41fc9e96703a2089f08d68c8c5ed"
         }
       ],
-      "reference_status": "code_contract_visual_pending",
-      "reference_capture": null,
+      "reference_status": "offensive_beam_frame_observed_charge_impact_pending",
+      "reference_capture": {
+        "id": "asthalis_ep2_offensive_beam_p5_xref381",
+        "source_page": "https://asthalis.fr/fichiers/pc/hl2e2/hl2e2_solution.pdf",
+        "source_url": "https://asthalis.fr/fichiers/pc/hl2e2/hl2e2_solution.pdf",
+        "local_reference_path": "/workspace/scratch/892354ae3802/continuation_o_phase_refs/asthalis_p5_15.png",
+        "kind": "secondary_hosted_retail_gameplay_capture",
+        "provenance": "Capture de gameplay publiée dans le guide personnel Asthalis, Half-Life 2: Episode Two, révision du 30/12/2017. L’auteur dit p.2 avoir construit son guide à partir de son expérience personnelle. Hébergement non Valve; version binaire et réglages exacts non certifiés.",
+        "source_game": "Half-Life 2: Episode Two",
+        "chapter": "This Vortal Coil / La condition vortelle, 02-01 Base souterraine",
+        "map": "ep2_outland_02",
+        "map_identification": "Identification contextuelle par la salle de défense, les tunnels 12/36 et la table d’Alyx; le PDF ne donne pas l’ID de map.",
+        "pdf_printed_page": 5,
+        "pdf_zero_based_page": 4,
+        "pdf_image_xref": 381,
+        "pdf_sha256": "67c3338f417dbb0e830e0a49619fd4391b5e6506996d4d6ce9ebee9f6548b61f",
+        "sha256": "5e78886d4deef3f149ab0491bc46e0405f8fc4f88493bcb08ac663c4c5c48f43",
+        "width": 320,
+        "height": 240,
+        "byte_size": 51553,
+        "extraction": "PyMuPDF extract_image(381), pixels natifs sans redimensionnement ni correction.",
+        "visually_inspected": true,
+        "provided_to_generation": true,
+        "role": "visual_identity_reference",
+        "inspection_notes": "Le Vortigaunt de droite, penché vers la gauche, émet un faisceau blanc/vert pâle de ses mains vers un flash jaune-vert au-dessus de la table. Le Vortigaunt à gauche soigne Alyx: cet effet est exclu. Le flash terminal chevauche le combat; il n’autorise pas un impact autonome. Cette référence atteste seulement un instant offensif; aucun cycle complet ni framebuffer brut certifié."
+      },
       "runtime_enabled": false,
       "certified_one_to_one": false,
-      "generation_status": "deferred_reference_or_generation_gate",
+      "generation_status": "candidate_generated",
       "actual_assets": [],
       "production_contract": {
         "one_asset_per_image": true,
@@ -6171,7 +6271,33 @@
         "certified_one_to_one": false,
         "completed_animation": false,
         "runtime_added": false
-      }
+      },
+      "production_review_20261127_o": {
+        "batch_id": "continuation_20261127_o",
+        "new_png_count": 1,
+        "new_generation_call_count": 1,
+        "new_asset_ids": [
+          "fx_vortigaunt_zap_episodic_beam_o"
+        ],
+        "candidate_visual_state_ids": [
+          "beam"
+        ],
+        "selected_asset_ids": [
+          "fx_vortigaunt_zap_episodic_beam_o"
+        ],
+        "partial_registers": [
+          "docs/resonance/production/continuation_20261127_o/vortigaunt_beam_generation.json"
+        ],
+        "visual_state_complete": false,
+        "completed_animation": false,
+        "runtime_added": false,
+        "certified_one_to_one": false,
+        "scope": "Composants ou instants candidats; la présence d’un PNG ne termine pas un état visuel ni une animation."
+      },
+      "remaining_reference_gates": [
+        "charge",
+        "impact"
+      ]
     },
     {
       "id": "fx_strider_tracer_hl2",
@@ -8581,6 +8707,6 @@
     "Les portails exigent une surface moteur dynamique; seul le contour peut être un sprite fixe.",
     "Les flux continus et hitscan exigent une logique adaptée; un PNG ne les rend pas jouables."
   ],
-  "updated_on": "2026-11-25",
+  "updated_on": "2026-11-27",
   "recovery_note": "Fusion des contrats F et H sans addition naïve de leurs cibles. Les 45 groupes F sont reliés à 66 familles actives H étendues. Deux orbes Controller restent deux variantes d’une famille; corps/rayon de mine et variantes de portails sont explicitement distingués."
 }

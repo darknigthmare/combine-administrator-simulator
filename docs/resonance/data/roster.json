@@ -1799,6 +1799,16 @@
         "provenance": "official retail game model capture hosted by secondary community wiki",
         "role": "visual_identity_reference",
         "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      },
+      "presentation_production_20261127_o": {
+        "document": "docs/resonance/production/continuation_20261127_o/presentation_states.json",
+        "candidate_asset_ids": [
+          "gina_decay_selected_o",
+          "gina_decay_taunt_o",
+          "gina_decay_deselected_o_v2"
+        ],
+        "animation_clip_complete": false,
+        "runtime_enabled": false
       }
     },
     {
@@ -1908,7 +1918,29 @@
         "resonance_cost": 300
       },
       "ex_policy": "EX non encore spécifiés pour ce personnage; ex_available=false. Aucun EX implicite et aucun coût appliqué tant que sa variante n’est pas conçue et validée.",
-      "ex_variants": []
+      "ex_variants": [],
+      "presentation_production_20261127_o": {
+        "document": "docs/resonance/production/continuation_20261127_o/presentation_states.json",
+        "candidate_asset_ids": [
+          "colette_decay_guard_o",
+          "colette_decay_selected_o",
+          "colette_decay_deselected_o",
+          "colette_decay_taunt_o"
+        ],
+        "animation_clip_complete": false,
+        "runtime_enabled": false
+      },
+      "reference_capture": {
+        "sha256": "76d043ab9a2646fd19d6adab188827a110d80c666fee54fd30e11480df87e1a5",
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/1/18/Ps2_colette_decay.png",
+        "source_page": "https://combineoverwiki.net/wiki/File:Ps2_colette_decay.png",
+        "provenance": "retail_game_model_capture_on_secondary_community_host",
+        "role": "canonical_campaign_identity_reference",
+        "width": 1100,
+        "height": 1100
+      },
+      "reference_status": "campaign_model_bitmap_inspected_candidate_comparison_pending"
     },
     {
       "id": "gordon_hl1",
@@ -3838,5 +3870,5 @@
       ]
     }
   ],
-  "updated_on": "2026-11-25"
+  "updated_on": "2026-11-27"
 }

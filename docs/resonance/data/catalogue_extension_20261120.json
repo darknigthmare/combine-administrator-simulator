@@ -4028,13 +4028,137 @@
       "source_ids": [
         "hl25"
       ],
-      "reference_capture": null,
-      "visual_reference_status": "capture_required",
-      "generation_status": "not_started",
+      "reference_capture": {
+        "source_page": "https://www.half-life.com/en/halflife/25th/",
+        "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/map_contamination.jpg",
+        "sha256": "ff57e6909e48c9e4f2e403c6ed4ed2827b6e4fb5348d790bbbc8064675a79167",
+        "width": 2560,
+        "height": 1600,
+        "provenance": "primary_official_released_map_screenshot",
+        "role": "visual_identity_reference",
+        "visually_inspected": true,
+        "reference_filename": "map_contamination_official.jpg"
+      },
+      "visual_reference_status": "bitmap_inspected_generation_comparison_pending",
+      "generation_status": "candidate_generated",
       "runtime_enabled": false,
       "certified_one_to_one": false,
       "implementation_status": "catalogued_not_implemented",
-      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée."
+      "design_note": "La fonction proposée dans Resonance est une adaptation originale; aucune jouabilité nouvelle n’est annoncée.",
+      "layers": [
+        {
+          "id": "L00_ambience",
+          "name_fr": "Ciel mauve et pêche",
+          "parallax": 0,
+          "production_status": "candidate_present",
+          "selected_asset_id": "layer_contamination_hl25_sky_o"
+        },
+        {
+          "id": "L01_far",
+          "name_fr": "Falaises du canyon",
+          "parallax": 0.12,
+          "production_status": "candidate_present",
+          "selected_asset_id": "layer_contamination_hl25_canyon_o"
+        },
+        {
+          "id": "L02_mid",
+          "name_fr": "Bâtiments industriels principaux",
+          "parallax": 0.3,
+          "production_status": "candidate_present",
+          "selected_asset_id": "layer_contamination_hl25_buildings_o"
+        },
+        {
+          "id": "L03_near",
+          "name_fr": "Passerelles proches et garde-corps",
+          "parallax": 0.55,
+          "production_status": "candidate_present",
+          "selected_asset_id": "layer_contamination_hl25_catwalks_rails_v2_o"
+        },
+        {
+          "id": "L04_ground",
+          "name_fr": "Sol de combat",
+          "parallax": 1.0,
+          "production_status": "candidate_present",
+          "selected_asset_id": "layer_contamination_hl25_floor_o"
+        },
+        {
+          "id": "L05_foreground",
+          "name_fr": "Liseré inférieur du premier plan",
+          "parallax": 1.1,
+          "production_status": "candidate_present",
+          "selected_asset_id": "layer_contamination_hl25_front_edge_v2_o"
+        }
+      ],
+      "generated_asset_ids": [
+        "stage_contamination_hl25_master_h",
+        "layer_contamination_hl25_sky_o",
+        "layer_contamination_hl25_canyon_o",
+        "layer_contamination_hl25_buildings_o",
+        "layer_contamination_hl25_catwalks_rails_o",
+        "layer_contamination_hl25_catwalks_rails_v2_o",
+        "layer_contamination_hl25_floor_o",
+        "layer_contamination_hl25_front_edge_o",
+        "layer_contamination_hl25_front_edge_v2_o"
+      ],
+      "layer_production_review_20261127_o": {
+        "batch_id": "continuation_20261127_o",
+        "new_contract_ids": [
+          "L00_ambience",
+          "L01_far",
+          "L02_mid",
+          "L03_near",
+          "L04_ground",
+          "L05_foreground"
+        ],
+        "new_png_count_including_revisions": 8,
+        "selected_layer_count": 6,
+        "all_six_candidate_ids_present": true,
+        "baseline_131_missing_ids_reduction": 0,
+        "contract_path": "docs/resonance/production/continuation_20261127_o/contamination_layer_contract.json",
+        "review_document": "docs/resonance/production/continuation_20261127_o/layers_review.md",
+        "proposed_renderer_read_rectangles": {
+          "status": "proposed_configuration_not_integrated",
+          "runtime_enabled": false,
+          "source_pngs_modified": false,
+          "initial_proposed_cut_y": 714,
+          "selected_cut_y": 713,
+          "reason_for_one_pixel_adjustment": "L04 row713 has alpha min74/median130; use L05 row713 alpha min251 to prevent a faint seam.",
+          "L04_ground": {
+            "source_rect": {
+              "x": 0,
+              "y": 0,
+              "width": 2172,
+              "height": 713
+            },
+            "destination_rect": {
+              "x": 0,
+              "y": 0,
+              "width": 2172,
+              "height": 713
+            }
+          },
+          "L05_foreground": {
+            "source_rect": {
+              "x": 0,
+              "y": 713,
+              "width": 2172,
+              "height": 11
+            },
+            "destination_rect": {
+              "x": 0,
+              "y": 713,
+              "width": 2172,
+              "height": 11
+            }
+          },
+          "transform_order": "Read the stated source rectangle at the same canvas coordinates, then apply each layer camera transform. No texture rescale.",
+          "horizontal_margins": "The original canvas has no overscan; horizontal camera motion remains unverified."
+        },
+        "runtime_enabled": false,
+        "parallax_ready": false,
+        "completed_six_layer_stage": false,
+        "certified_one_to_one": false
+      }
     },
     {
       "id": "STG_EXT_HLDM_POOL_PARTY",
@@ -6455,5 +6579,5 @@
       }
     }
   ],
-  "updated_on": "2026-11-25"
+  "updated_on": "2026-11-27"
 }

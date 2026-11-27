@@ -1,10 +1,24 @@
 # Half Life Resonance
 
-Bible du mode annexe de combat 2D — version 1.11 — 27 novembre 2026
+Bible du mode annexe de combat 2D — version 1.12 — 27 novembre 2026
 
+
+<!-- CURRENT_CONTINUATION_20261127_O -->
+## Reprise du 27 novembre — bible 1.12 et lot O
+
+**25 nouveaux PNG : sept candidats de personnages retenus, six plans candidats de Contamination et sept candidats FX, avec cinq premières versions conservées.** Les six poses de sélection, désélection et taunt de Gina/Colette sont reliées aux fiches du guide. La base Colette a été corrigée d’après le modèle campagne Decay PS2 ; l’ancien candidat reste disponible et n’est plus sélectionné.
+
+L’inventaire atteint **318 PNG distincts et 370 entrées**. **242 des 259 cibles ont au moins une image ; 17 restent sans PNG.** Le rayon Vortigaunt d’Episode Two fournit la seule première image de cible de ce lot. La charge, l’impact et la variante HL2 de base ne sont pas déclarés couverts. Les 293 anciens PNG sont inchangés.
+
+[Rapport du lot O](production/continuation_20261127_o/README.md) · [Galerie](production/continuation_20261127_o/GALLERY.md) · [Revue des manquants](production/continuation_20261127_o/TARGET_REVIEW.md) · [Inventaire courant](production/MISSING_TARGETS.md)
+
+Les fichiers FX couvrent six nouveaux couples famille/état : **128 états restent sans candidat**. Le contrat Contamination ajoute six plans identifiés ; **131 plans des contrats connus restent sans image et 24 stages sans contrat**. Les rectangles de lecture du sol sont proposés et contrôlés sur un composite, sans intégration au jeu ni validation de caméra. Les silhouettes, proportions fines, transitions, pivots et raccords restent à vérifier. **Aucune fidélité 1:1, animation complète ni arène complète n’est certifiée.** Les douze images déjà déclarées intégrées au runtime restent les seules intégrations.
+
+Les trois fichiers originaux du guide et de ses deux extensions sont conservés sans modification ; leur édition d’intégration reste 1.11. La version 1.12 identifie ce nouveau point de production. Les 36 refus, quatre erreurs outil et douze sorties perdues historiques sont conservés ; le lot M non récupéré n’est pas ajouté aux comptes.
+<!-- END_CURRENT_CONTINUATION_20261127_O -->
 
 <!-- CURRENT_GUIDE_INTEGRATION_20261127 -->
-## Reprise du 27 novembre — bible 1.11, guide commun et deux extensions
+## Historique du 27 novembre — bible 1.11, guide commun et deux extensions
 
 Les **trois fichiers originaux du guide de combat** sont désormais [intégrés sans modification](guides/README.md), avec provenance et SHA-256. La [matrice des 68 sections](guides/COVERAGE_68.md) donne une décision, un état réel et un fichier d’application pour chaque rubrique.
 
@@ -12,7 +26,7 @@ Le [chapitre d’intégration](chapters/guide_integration_20261127.md), l’[ext
 
 **Aucun PNG ni clip animé n’est créé par cette intégration.** Le checkpoint graphique repris est le lot L (286 PNG) ; le [lot N produit en parallèle](production/continuation_20261127_n/README.md) porte l’inventaire à **293 PNG, dont sept nouveaux fichiers et six poses retenues pour la prochaine revue**, toujours 18 cibles sans PNG. Le lot M / la version 1.10 annoncés dans l’historique n’ont pas été récupérés ; 1.11 identifie ce nouveau travail sans les déclarer livrés. Les six profils et quatre boss déjà jouables ne deviennent pas des kits complets de duel.
 
-Le lot adjacent intègre le modèle d’accès à quatre dimensions et quatre dossiers de terrain du Boss Battle, vérifiés par smoke tests Node ; sa validation navigateur reste ouverte. Les taunts animés, le tag, les assistances, les supers, QTE, bonus et espace exploratoire restent conçus ; les services de soutien restent différés. Les sources, adaptations et limites de fidélité sont explicites. ATLAS/P-body restent en conception avec leurs refus historiques conservés. Les exports Word/Excel v1 restent historiques.
+Le lot adjacent intègre le modèle d’accès à quatre dimensions et quatre dossiers de terrain du Boss Battle. La [CI du commit `4ae2ee9`](https://github.com/darknigthmare/combine-administrator-simulator/actions/runs/45948747638) a ensuite validé 60 tests unitaires, 10 tests de parcours navigateur, la matrice de 252 configurations et la compilation. Cette validation technique ne certifie pas la fidélité visuelle des candidats. Les taunts animés, le tag, les assistances, les supers, QTE, bonus et espace exploratoire restent conçus ; les services de soutien restent différés. Les sources, adaptations et limites de fidélité sont explicites. ATLAS/P-body restent en conception avec leurs refus historiques conservés. Les exports Word/Excel v1 restent historiques.
 
 Vérification documentaire : `node scripts/validate-resonance-guides.mjs`.
 <!-- END_CURRENT_GUIDE_INTEGRATION_20261127 -->

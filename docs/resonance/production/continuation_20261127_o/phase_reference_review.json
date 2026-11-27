@@ -1,0 +1,311 @@
+{
+  "schema_version": "1.0",
+  "review_date": "2026-11-27",
+  "base_commit": "4ae2ee9dcf1a2acedff4b628c70ee70a736553a0",
+  "scope": "Recherche ciblée des phases retail pour les six reports sans PNG, priorité Vortigaunt épisodes / Strider HL2. Aucun refus relancé.",
+  "base_audit": "/workspace/scratch/892354ae3802/continuation_o_audit.json",
+  "result": {
+    "target_id": "fx_vortigaunt_zap_hl2",
+    "observed_visual_state": "beam",
+    "new_reference": "asthalis_ep2_offensive_beam_p5_xref381",
+    "decision": "one_beam_candidate_generated_after_parent_visual_review",
+    "new_generation_calls": 1,
+    "new_candidate_png": 1,
+    "charge": "deferred",
+    "impact": "deferred",
+    "completed_family": false,
+    "certified_one_to_one": false,
+    "production_manifest": "docs/resonance/production/continuation_20261127_o/vortigaunt_beam_generation.json"
+  },
+  "accepted_reference": {
+    "id": "asthalis_ep2_offensive_beam_p5_xref381",
+    "source_page": "https://asthalis.fr/fichiers/pc/hl2e2/hl2e2_solution.pdf",
+    "source_url": "https://asthalis.fr/fichiers/pc/hl2e2/hl2e2_solution.pdf",
+    "local_reference_path": "/workspace/scratch/892354ae3802/continuation_o_phase_refs/asthalis_p5_15.png",
+    "kind": "secondary_hosted_retail_gameplay_capture",
+    "provenance": "Capture de gameplay publiée dans le guide personnel Asthalis, Half-Life 2: Episode Two, révision du 30/12/2017. L’auteur dit p.2 avoir construit son guide à partir de son expérience personnelle. Hébergement non Valve; version binaire et réglages exacts non certifiés.",
+    "source_game": "Half-Life 2: Episode Two",
+    "chapter": "This Vortal Coil / La condition vortelle, 02-01 Base souterraine",
+    "map": "ep2_outland_02",
+    "map_identification": "Identification contextuelle par la salle de défense, les tunnels 12/36 et la table d’Alyx; le PDF ne donne pas l’ID de map.",
+    "pdf_printed_page": 5,
+    "pdf_zero_based_page": 4,
+    "pdf_image_xref": 381,
+    "pdf_sha256": "67c3338f417dbb0e830e0a49619fd4391b5e6506996d4d6ce9ebee9f6548b61f",
+    "sha256": "5e78886d4deef3f149ab0491bc46e0405f8fc4f88493bcb08ac663c4c5c48f43",
+    "width": 320,
+    "height": 240,
+    "byte_size": 51553,
+    "extraction": "PyMuPDF extract_image(381), pixels natifs sans redimensionnement ni correction.",
+    "visually_inspected": true,
+    "provided_to_generation": true,
+    "role": "visual_identity_reference",
+    "inspection_notes": "Le Vortigaunt de droite, penché vers la gauche, émet un faisceau blanc/vert pâle de ses mains vers un flash jaune-vert au-dessus de la table. Le Vortigaunt à gauche soigne Alyx: cet effet est exclu. Le flash terminal chevauche le combat; il n’autorise pas un impact autonome. Cette référence atteste seulement un instant offensif; aucun cycle complet ni framebuffer brut certifié."
+  },
+  "official_code_contract": {
+    "id": "hl2_npc_vortigaunt_episodic",
+    "source_page": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/npc_vortigaunt_episodic.cpp",
+    "source_url": "https://raw.githubusercontent.com/ValveSoftware/source-sdk-2013/master/src/game/server/hl2/npc_vortigaunt_episodic.cpp",
+    "local_reference_path": "/workspace/scratch/892354ae3802/continuation_o_phase_refs/npc_vortigaunt_episodic.cpp",
+    "kind": "official_source_code",
+    "provenance": "ValveSoftware/source-sdk-2013, code primaire officiel; source à la même empreinte que le catalogue de projectiles contrôlé le 24/11.",
+    "sha256": "595fa1e92f868529e128a9be99fd0bf0c7da41fc9e96703a2089f08d68c8c5ed",
+    "byte_size": 102679,
+    "checked_on": "2026-11-27",
+    "role": "state_identity_contract",
+    "provided_to_generation_as": "Textual constraints and source hash, not as a reference image.",
+    "evidence_scope": "AE_VORTIGAUNT_ZAP_SHOOT appelle ZapBeam(HAND_LEFT/HAND_RIGHT); les ressources vortigaunt_beam, vortigaunt_beam_charge et les événements de soin sont distincts. Le code établit l’identité de l’état; il ne valide pas la palette ni les pixels.",
+    "relevant_symbols": [
+      "AE_VORTIGAUNT_ZAP_SHOOT",
+      "ZapBeam",
+      "vortigaunt_beam",
+      "vortigaunt_beam_charge",
+      "AE_VORTIGAUNT_HEAL_STARTGLOW"
+    ]
+  },
+  "inspections": [
+    {
+      "file": {
+        "path": "/workspace/scratch/892354ae3802/continuation_o_phase_refs/HL2_Strider04.jpg",
+        "bytes": 1275194,
+        "sha256": "ee1ab08f00c5446045938cf582c860d0ce0836dafe18489291d3efb059052f99",
+        "width": 1920,
+        "height": 1080
+      },
+      "source_url": "https://combineoverwiki.net/images/c/c7/HL2_Strider04.jpg",
+      "source_page": "https://combineoverwiki.net/wiki/File:HL2_Strider04.jpg",
+      "map": "d3_c17_11",
+      "visually_inspected": true,
+      "decision": "excluded_wrong_weapon",
+      "notes": "Flash de minigun à l’avant et traceur visible; ce n’est pas le canon lourd warp."
+    },
+    {
+      "file": {
+        "path": "/workspace/scratch/892354ae3802/continuation_o_phase_refs/HL2_Strider05.jpg",
+        "bytes": 1348789,
+        "sha256": "cc83e0bda3a056c6e621cc696bae4f9bf3e73f7a4f77cb92a80d741506097dcb",
+        "width": 1920,
+        "height": 1080
+      },
+      "source_url": "https://combineoverwiki.net/images/d/d4/HL2_Strider05.jpg",
+      "source_page": "https://combineoverwiki.net/wiki/File:HL2_Strider05.jpg",
+      "map": "d3_c17_12b",
+      "visually_inspected": true,
+      "decision": "excluded_wrong_weapon",
+      "notes": "Strider dans un passage inférieur, flash frontal de minigun avec traceur; aucun état du canon lourd validé."
+    },
+    {
+      "file": {
+        "path": "/workspace/scratch/892354ae3802/continuation_o_phase_refs/alteredgamer_arrive.jpg",
+        "bytes": 48103,
+        "sha256": "b911ebd960e0d12e23ca024d1513468c4efdba9bee2bd177f2f03b71af0fe31b",
+        "width": 600,
+        "height": 386
+      },
+      "source_url": "https://img.bhs4.com/f1/7/f176cb4f33bd6c2f9b17be15d26e31666bbeddc6_large.jpg",
+      "source_page": "https://www.alteredgamer.com/half-life/57740-half-life-2-episode-2-walkthrough-this-vortal-coil-antlion-defense/",
+      "visually_inspected": true,
+      "decision": "excluded_no_offensive_beam",
+      "notes": "Arrivée de trois Vortigaunts; aucune charge ou décharge offensive visible."
+    },
+    {
+      "file": {
+        "path": "/workspace/scratch/892354ae3802/continuation_o_phase_refs/alteredgamer_strider_platform.jpg",
+        "bytes": 41320,
+        "sha256": "e34202d9b7b8a5aa668f98df7f4da61b7962f8d99639ecb658ce556ce9164793",
+        "width": 600,
+        "height": 386
+      },
+      "source_url": "https://img.bhs4.com/62/9/6291E4823B0C364B7A075AB0E75A033B0B61B726_large.jpg",
+      "source_page": "https://www.alteredgamer.com/half-life/47114-half-life-2-walkthrough-chapter-11-follow-freeman-to-the-horse/",
+      "visually_inspected": true,
+      "decision": "excluded_no_cannon_phase",
+      "notes": "Strider au-dessus de bâtiments détruits; aucune charge, ligne de tir ou phase d’impact du canon lourd dans ce bitmap."
+    },
+    {
+      "file": {
+        "path": "/workspace/scratch/892354ae3802/continuation_o_phase_refs/asthalis_p5_15.png",
+        "bytes": 51553,
+        "sha256": "5e78886d4deef3f149ab0491bc46e0405f8fc4f88493bcb08ac663c4c5c48f43",
+        "width": 320,
+        "height": 240
+      },
+      "source_url": "https://asthalis.fr/fichiers/pc/hl2e2/hl2e2_solution.pdf",
+      "visually_inspected": true,
+      "decision": "accepted_only_for_beam_candidate",
+      "notes": "Faisceau offensif du Vort de droite, distinguable du soin du Vort de gauche. Capture native modeste 320×240. Le flash terminal est exclu; aucune charge déduite."
+    }
+  ],
+  "secondary_video_evidence": {
+    "source_url": "https://www.youtube.com/watch?v=e2MkUf33vcQ",
+    "title": "Half Life 2: Episode Two Walkthrough #02 - This Vortal Coil | No commentary | Hard",
+    "author": "Vyptyde",
+    "role": "locator_only_not_production_reference",
+    "video_stream_status": "HTTP403 lors du téléchargement normal du seul extrait 11:35–11:45 via yt-dlp et ffmpeg; pas de nouveau contournement essayé.",
+    "full_resolution_frames_inspected": false,
+    "storyboard_files": [
+      {
+        "path": "/workspace/scratch/892354ae3802/continuation_o_phase_refs/vort_gameplay_board_2.jpg",
+        "bytes": 47816,
+        "sha256": "b3636effb49153039d9835dd00321781fa2c1b88695d64648bbfdd493cd5d86e",
+        "width": 800,
+        "height": 450
+      },
+      {
+        "path": "/workspace/scratch/892354ae3802/continuation_o_phase_refs/vort_gameplay_board_3.jpg",
+        "bytes": 41531,
+        "sha256": "e736e72271869fd82b5340ad2629b71d4678e9964b15ffd41a871415c4b06350",
+        "width": 800,
+        "height": 450
+      },
+      {
+        "path": "/workspace/scratch/892354ae3802/continuation_o_phase_refs/vort_gameplay_board_4.jpg",
+        "bytes": 38956,
+        "sha256": "6deba5182084bc48c3f38313bba1759b649ec55d08829c87340d001669c0f711",
+        "width": 800,
+        "height": 450
+      }
+    ],
+    "storyboard_grid": {
+      "columns": 5,
+      "rows": 5,
+      "tile_width": 160,
+      "tile_height": 90,
+      "interval_seconds": 10
+    },
+    "inspected": true,
+    "notes": "Les vignettes à partir de 11:40 environ montrent des tirs des Vorts; résolution 160×90 insuffisante pour isoler fidèlement une phase. Les vignettes de soin ultérieures sont exclues. Aucun timing exact d’attaque n’a été certifié par lecture du flux vidéo."
+  },
+  "inaccessible_leads": [
+    {
+      "source_url": "https://valvearchive.com/Games/Half-Life%202%20Episode%202/Documents/mb-ign_half_life_2_episode_2_pc.pdf",
+      "page_printed": 11,
+      "status": "indexed_text_available_bitmap_HTTP403",
+      "notes": "Description indexée de deux tirs offensifs p.11; PDF direct et captures de page refusés403. Aucune image de ce PDF déclarée inspectée."
+    },
+    {
+      "source_url": "https://www.gamepressure.com/halflife2episodetwo/this-vortal-coil-p-i/z9e1c",
+      "bitmap_urls": [
+        "https://www.gamepressure.com/halflife2episodetwo/gfx/word/-1979938906.jpg",
+        "https://www.gamepressure.com/halflife2episodetwo/gfx/word/-1979938859.jpg"
+      ],
+      "status": "bitmap_HTTP403",
+      "notes": "Texte du guide lisible; bitmaps non récupérés, donc aucun état validé."
+    },
+    {
+      "source_url": "https://www.mobygames.com/game/30617/half-life-2-episode-two/screenshots/windows/",
+      "status": "HTTP403",
+      "notes": "Les légendes « A Vortigaunt helps defending the position » et « The Vortigaunts have powerful attacks » indexent des pistes, pas des pixels inspectés."
+    },
+    {
+      "source_url": "https://www.gamespot.com/articles/half-life-2-walkthrough/1100-6113893/",
+      "status": "web_tool_restricted",
+      "notes": "Aucun bitmap validé."
+    }
+  ],
+  "remaining_reference_deferred_targets": [
+    {
+      "target_id": "fx_bullet_tracer_hl1",
+      "decision": "deferred",
+      "reason": "Aucune nouvelle capture GoldSrc de phase suffisante dans cette recherche ciblée."
+    },
+    {
+      "target_id": "proj_gonome_gut_opfor",
+      "decision": "deferred",
+      "reason": "Aucune nouvelle capture retail OP4 en main/vol/contact; les pièges bigspit.spr et rendu communautaire sont déjà consignés dans l’audit."
+    },
+    {
+      "target_id": "proj_antlion_worker_spit_ep2",
+      "decision": "deferred",
+      "reason": "Pas de nouvelle phase de taille/projetile isolable récupérée."
+    },
+    {
+      "target_id": "fx_strider_warp_hl2",
+      "decision": "deferred",
+      "reason": "Trois nouvelles images inspectées, deux montrent la mauvaise arme et une aucun tir. Les références beta/Alyx/MMod et l’ancien minigun restent exclues."
+    },
+    {
+      "target_id": "proj_antlion_spit_hla",
+      "decision": "deferred",
+      "reason": "Aucune nouvelle capture retail HLA du projectile/de sa traînée/de son impact."
+    }
+  ],
+  "no_retry_boundary": "Les 11 cibles avec refus explicite et le missile APC lié au modèle RPG refusé restent exclus de tout nouvel appel. Cette génération de Vortigaunt est la première sur cette famille et ne fait suite à aucun refus.",
+  "source_file_metadata": {
+    "HL2_Strider04.jpg": {
+      "path": "/workspace/scratch/892354ae3802/continuation_o_phase_refs/HL2_Strider04.jpg",
+      "bytes": 1275194,
+      "sha256": "ee1ab08f00c5446045938cf582c860d0ce0836dafe18489291d3efb059052f99",
+      "width": 1920,
+      "height": 1080
+    },
+    "HL2_Strider05.jpg": {
+      "path": "/workspace/scratch/892354ae3802/continuation_o_phase_refs/HL2_Strider05.jpg",
+      "bytes": 1348789,
+      "sha256": "cc83e0bda3a056c6e621cc696bae4f9bf3e73f7a4f77cb92a80d741506097dcb",
+      "width": 1920,
+      "height": 1080
+    },
+    "alteredgamer_arrive.jpg": {
+      "path": "/workspace/scratch/892354ae3802/continuation_o_phase_refs/alteredgamer_arrive.jpg",
+      "bytes": 48103,
+      "sha256": "b911ebd960e0d12e23ca024d1513468c4efdba9bee2bd177f2f03b71af0fe31b",
+      "width": 600,
+      "height": 386
+    },
+    "alteredgamer_strider_platform.jpg": {
+      "path": "/workspace/scratch/892354ae3802/continuation_o_phase_refs/alteredgamer_strider_platform.jpg",
+      "bytes": 41320,
+      "sha256": "e34202d9b7b8a5aa668f98df7f4da61b7962f8d99639ecb658ce556ce9164793",
+      "width": 600,
+      "height": 386
+    },
+    "vort_gameplay_board_2.jpg": {
+      "path": "/workspace/scratch/892354ae3802/continuation_o_phase_refs/vort_gameplay_board_2.jpg",
+      "bytes": 47816,
+      "sha256": "b3636effb49153039d9835dd00321781fa2c1b88695d64648bbfdd493cd5d86e",
+      "width": 800,
+      "height": 450
+    },
+    "vort_gameplay_board_3.jpg": {
+      "path": "/workspace/scratch/892354ae3802/continuation_o_phase_refs/vort_gameplay_board_3.jpg",
+      "bytes": 41531,
+      "sha256": "e736e72271869fd82b5340ad2629b71d4678e9964b15ffd41a871415c4b06350",
+      "width": 800,
+      "height": 450
+    },
+    "vort_gameplay_board_4.jpg": {
+      "path": "/workspace/scratch/892354ae3802/continuation_o_phase_refs/vort_gameplay_board_4.jpg",
+      "bytes": 38956,
+      "sha256": "6deba5182084bc48c3f38313bba1759b649ec55d08829c87340d001669c0f711",
+      "width": 800,
+      "height": 450
+    },
+    "asthalis_hl2e2_solution.pdf": {
+      "path": "/workspace/scratch/892354ae3802/continuation_o_phase_refs/asthalis_hl2e2_solution.pdf",
+      "bytes": 1698625,
+      "sha256": "67c3338f417dbb0e830e0a49619fd4391b5e6506996d4d6ce9ebee9f6548b61f"
+    },
+    "asthalis_p5_15.png": {
+      "path": "/workspace/scratch/892354ae3802/continuation_o_phase_refs/asthalis_p5_15.png",
+      "bytes": 51553,
+      "sha256": "5e78886d4deef3f149ab0491bc46e0405f8fc4f88493bcb08ac663c4c5c48f43",
+      "width": 320,
+      "height": 240
+    },
+    "npc_vortigaunt_episodic.cpp": {
+      "path": "/workspace/scratch/892354ae3802/continuation_o_phase_refs/npc_vortigaunt_episodic.cpp",
+      "bytes": 102679,
+      "sha256": "595fa1e92f868529e128a9be99fd0bf0c7da41fc9e96703a2089f08d68c8c5ed"
+    }
+  },
+  "generated_asset": {
+    "asset_id": "fx_vortigaunt_zap_episodic_beam_o",
+    "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_vortigaunt_zap_episodic_beam_o.png",
+    "sha256": "045d699893a3c0b8eaa12b27de3010115f4b360a9ea1c38d33ce8aa75b686a5c",
+    "bytes": 237235,
+    "width": 1774,
+    "height": 887
+  },
+  "global_register_mutations": false
+}

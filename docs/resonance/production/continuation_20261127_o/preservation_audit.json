@@ -1,0 +1,28 @@
+{
+  "base_commit": "4ae2ee9dcf1a2acedff4b628c70ee70a736553a0",
+  "batch_id": "continuation_20261127_o",
+  "historical_png_count": 293,
+  "historical_png_unchanged_sha256": 293,
+  "historical_registry_entries": 345,
+  "unchanged_historical_registry_entries": 344,
+  "metadata_changes": [
+    {
+      "asset_id": "colette_decay_idle_right_b",
+      "changed_fields": [
+        "review_20261127_o",
+        "selected_for_next_review",
+        "superseded_by"
+      ]
+    }
+  ],
+  "historical_refusals_preserved": 36,
+  "historical_tool_errors_preserved": 4,
+  "historical_unavailable_outputs_preserved": 12,
+  "new_png_count": 25,
+  "new_generation_calls": 25,
+  "new_refusals": 0,
+  "new_tool_errors": 0,
+  "new_selected_candidates": 20,
+  "new_historical_iterations_retained": 5,
+  "runtime_files_changed": false
+}

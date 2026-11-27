@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "continuation_20261127_o",
+  "guide_integration_edition": "1.11",
+  "current_bible_version": "1.12",
+  "selected_presentation_states": 6,
+  "corrected_base_candidate": "colette_decay_guard_o",
+  "completed_animation_clips": 0,
+  "states": [
+    {
+      "actor_id": "gina_decay",
+      "state": "selected",
+      "selected_asset_id": "gina_decay_selected_o",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/characters/gina_decay_selected_o.png",
+      "guide_profile_id": "GUIDE_SELECT_gina_decay",
+      "tool_hand_continuity": "Main à droite de l’image dans ces vues; côté anatomique gauche.",
+      "status": "static_key_pose_candidate",
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "remaining_work": [
+        "Harmoniser échelle, canevas, pivot et contour alpha.",
+        "Produire entrée, maintien et sortie.",
+        "Vérifier le retour à la garde et les interruptions."
+      ]
+    },
+    {
+      "actor_id": "gina_decay",
+      "state": "deselected",
+      "selected_asset_id": "gina_decay_deselected_o_v2",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/characters/gina_decay_deselected_o_v2.png",
+      "guide_profile_id": "GUIDE_SELECT_gina_decay",
+      "tool_hand_continuity": "Main à droite de l’image dans ces vues; côté anatomique gauche.",
+      "status": "static_key_pose_candidate",
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "remaining_work": [
+        "Harmoniser échelle, canevas, pivot et contour alpha.",
+        "Produire entrée, maintien et sortie.",
+        "Vérifier le retour à la garde et les interruptions."
+      ]
+    },
+    {
+      "actor_id": "gina_decay",
+      "state": "taunt",
+      "selected_asset_id": "gina_decay_taunt_o",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/characters/gina_decay_taunt_o.png",
+      "guide_profile_id": "GUIDE_TAUNT_gina_decay",
+      "tool_hand_continuity": "Main à droite de l’image dans ces vues; côté anatomique gauche.",
+      "status": "static_key_pose_candidate",
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "remaining_work": [
+        "Harmoniser échelle, canevas, pivot et contour alpha.",
+        "Produire entrée, maintien et sortie.",
+        "Vérifier le retour à la garde et les interruptions."
+      ]
+    },
+    {
+      "actor_id": "colette_decay",
+      "state": "selected",
+      "selected_asset_id": "colette_decay_selected_o",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/characters/colette_decay_selected_o.png",
+      "guide_profile_id": "GUIDE_SELECT_colette_decay",
+      "tool_hand_continuity": "Main à droite de l’image dans ces vues; côté anatomique gauche.",
+      "status": "static_key_pose_candidate",
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "remaining_work": [
+        "Harmoniser échelle, canevas, pivot et contour alpha.",
+        "Produire entrée, maintien et sortie.",
+        "Vérifier le retour à la garde et les interruptions."
+      ]
+    },
+    {
+      "actor_id": "colette_decay",
+      "state": "deselected",
+      "selected_asset_id": "colette_decay_deselected_o",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/characters/colette_decay_deselected_o.png",
+      "guide_profile_id": "GUIDE_SELECT_colette_decay",
+      "tool_hand_continuity": "Main à droite de l’image dans ces vues; côté anatomique gauche.",
+      "status": "static_key_pose_candidate",
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "remaining_work": [
+        "Harmoniser échelle, canevas, pivot et contour alpha.",
+        "Produire entrée, maintien et sortie.",
+        "Vérifier le retour à la garde et les interruptions."
+      ]
+    },
+    {
+      "actor_id": "colette_decay",
+      "state": "taunt",
+      "selected_asset_id": "colette_decay_taunt_o",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/characters/colette_decay_taunt_o.png",
+      "guide_profile_id": "GUIDE_TAUNT_colette_decay",
+      "tool_hand_continuity": "Main à droite de l’image dans ces vues; côté anatomique gauche.",
+      "status": "static_key_pose_candidate",
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "remaining_work": [
+        "Harmoniser échelle, canevas, pivot et contour alpha.",
+        "Produire entrée, maintien et sortie.",
+        "Vérifier le retour à la garde et les interruptions."
+      ]
+    }
+  ]
+}

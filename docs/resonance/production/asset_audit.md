@@ -1,25 +1,25 @@
 # Audit des fichiers de production — Half Life Resonance
 
-Exécuté le 2026-11-27T05:40:05.562Z. Résultat : **réussi**.
+Exécuté le 2026-11-27T08:35:59.879Z. Résultat : **réussi**.
 
 Le comptage porte sur les fichiers présents dans le dépôt au moment du contrôle. Les déclarations des anciennes conversations ne créent aucune entrée ni aucun fichier.
 
 | Mesure | Nombre |
 |---|---:|
-| actual_png_files | 293 |
-| valid_png_headers | 293 |
-| distinct_png_contents | 293 |
-| requests | 345 |
-| generated_requests | 293 |
-| generated_requests_with_verified_file | 293 |
+| actual_png_files | 318 |
+| valid_png_headers | 318 |
+| distinct_png_contents | 318 |
+| requests | 370 |
+| generated_requests | 318 |
+| generated_requests_with_verified_file | 318 |
 | blocked_requests | 36 |
 | tool_error_requests | 4 |
 | output_unavailable_requests | 12 |
 | unproduced_requests | 40 |
 | unclassified_requests | 0 |
-| requests_with_files | 293 |
+| requests_with_files | 318 |
 | requests_without_files | 52 |
-| registered_png_files | 293 |
+| registered_png_files | 318 |
 | unregistered_png_files | 0 |
 | certified_one_to_one_declared | 0 |
 | certified_one_to_one_with_verified_file | 0 |
@@ -322,6 +322,31 @@ Présence, SHA-256, taille et en-tête PNG sont vérifiés. Le script ne décode
 | assets/resonance/candidates/continuation_20261127_n/characters/shephard_op4_deselected_n.png | 1086 × 1448 | 734143 | oui |
 | assets/resonance/candidates/continuation_20261127_n/characters/shephard_op4_selected_n.png | 1086 × 1448 | 765193 | oui |
 | assets/resonance/candidates/continuation_20261127_n/characters/shephard_op4_taunt_n.png | 1086 × 1448 | 867501 | oui |
+| assets/resonance/candidates/continuation_20261127_o/characters/colette_decay_deselected_o.png | 1060 × 1484 | 812145 | oui |
+| assets/resonance/candidates/continuation_20261127_o/characters/colette_decay_guard_o.png | 1060 × 1484 | 810263 | oui |
+| assets/resonance/candidates/continuation_20261127_o/characters/colette_decay_selected_o.png | 1024 × 1536 | 1638671 | oui |
+| assets/resonance/candidates/continuation_20261127_o/characters/colette_decay_taunt_o.png | 1060 × 1484 | 904116 | oui |
+| assets/resonance/candidates/continuation_20261127_o/characters/gina_decay_deselected_o_v2.png | 1024 × 1536 | 1669142 | oui |
+| assets/resonance/candidates/continuation_20261127_o/characters/gina_decay_deselected_o.png | 1024 × 1536 | 1647969 | oui |
+| assets/resonance/candidates/continuation_20261127_o/characters/gina_decay_selected_o.png | 1024 × 1536 | 1648341 | oui |
+| assets/resonance/candidates/continuation_20261127_o/characters/gina_decay_taunt_o.png | 1024 × 1536 | 1742214 | oui |
+| assets/resonance/candidates/continuation_20261127_o/fx/fx_gauss_beam_hl1_charged_o.png | 2172 × 724 | 626649 | oui |
+| assets/resonance/candidates/continuation_20261127_o/fx/fx_gauss_beam_hl1_charged_v2_o.png | 2172 × 724 | 338760 | oui |
+| assets/resonance/candidates/continuation_20261127_o/fx/fx_gauss_beam_hl1_impact_hotglow_o.png | 1254 × 1254 | 575750 | oui |
+| assets/resonance/candidates/continuation_20261127_o/fx/fx_gluon_beam_hl1_fade_flare_o.png | 1254 × 1254 | 549752 | oui |
+| assets/resonance/candidates/continuation_20261127_o/fx/fx_gluon_beam_hl1_tip_xspark1_o.png | 1254 × 1254 | 147863 | oui |
+| assets/resonance/candidates/continuation_20261127_o/fx/fx_houndeye_sonic_ring_hl1_pack2_o.png | 2172 × 724 | 1367514 | oui |
+| assets/resonance/candidates/continuation_20261127_o/fx/fx_houndeye_sonic_ring_hl1_pack4_o.png | 2172 × 724 | 1224043 | oui |
+| assets/resonance/candidates/continuation_20261127_o/fx/fx_houndeye_sonic_ring_hl1_pack4_v2_o.png | 2172 × 724 | 1130987 | oui |
+| assets/resonance/candidates/continuation_20261127_o/fx/fx_vortigaunt_zap_episodic_beam_o.png | 1774 × 887 | 237235 | oui |
+| assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_buildings_o.png | 2172 × 724 | 1813039 | oui |
+| assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_canyon_o.png | 2172 × 724 | 834007 | oui |
+| assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_catwalks_rails_o.png | 2172 × 724 | 655650 | oui |
+| assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_catwalks_rails_v2_o.png | 2172 × 724 | 607018 | oui |
+| assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_floor_o.png | 2172 × 724 | 383036 | oui |
+| assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_front_edge_o.png | 2172 × 724 | 140532 | oui |
+| assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_front_edge_v2_o.png | 2172 × 724 | 124514 | oui |
+| assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_sky_o.png | 2172 × 724 | 1627295 | oui |
 | assets/resonance/candidates/layer_black_mesa_floor.png | 2172 × 724 | 641901 | oui |
 | assets/resonance/candidates/layer_city17_distant_skyline.png | 1774 × 887 | 1545440 | oui |
 | assets/resonance/candidates/prop_hev_suit_charger.png | 1024 × 1536 | 2691794 | oui |
