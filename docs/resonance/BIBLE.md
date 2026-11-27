@@ -1,7 +1,21 @@
 # Half Life Resonance
 
-Bible du mode annexe de combat 2D — version 1.9 — 25 novembre 2026
+Bible du mode annexe de combat 2D — version 1.11 — 27 novembre 2026
 
+
+<!-- CURRENT_GUIDE_INTEGRATION_20261127 -->
+## Reprise du 27 novembre — bible 1.11, guide commun et deux extensions
+
+Les **trois fichiers originaux du guide de combat** sont désormais [intégrés sans modification](guides/README.md), avec provenance et SHA-256. La [matrice des 68 sections](guides/COVERAGE_68.md) donne une décision, un état réel et un fichier d’application pour chaque rubrique.
+
+Le [chapitre d’intégration](chapters/guide_integration_20261127.md), l’[extension 01](chapters/guide_extension_01_20261127.md) et l’[extension 02](chapters/guide_extension_02_20261127.md) ajoutent **63 fiches de production** : six taunts, six cycles de sélection, trois duos, six assistances, neuf techniques/conclusions d’équipe, trois clashes, quatre entités, cinq bonus, un espace d’archives, treize slots/modes, six règles de déblocage et une politique de soutien. Les [données JSON](data/combat_extensions_20261127.json) restent des contrats de conception, reliés aux identifiants du catalogue.
+
+**Aucun PNG ni clip animé n’est créé par cette intégration.** Le checkpoint graphique repris est le lot L (286 PNG) ; le [lot N produit en parallèle](production/continuation_20261127_n/README.md) porte l’inventaire à **293 PNG, dont sept nouveaux fichiers et six poses retenues pour la prochaine revue**, toujours 18 cibles sans PNG. Le lot M / la version 1.10 annoncés dans l’historique n’ont pas été récupérés ; 1.11 identifie ce nouveau travail sans les déclarer livrés. Les six profils et quatre boss déjà jouables ne deviennent pas des kits complets de duel.
+
+Le lot adjacent intègre le modèle d’accès à quatre dimensions et quatre dossiers de terrain du Boss Battle, vérifiés par smoke tests Node ; sa validation navigateur reste ouverte. Les taunts animés, le tag, les assistances, les supers, QTE, bonus et espace exploratoire restent conçus ; les services de soutien restent différés. Les sources, adaptations et limites de fidélité sont explicites. ATLAS/P-body restent en conception avec leurs refus historiques conservés. Les exports Word/Excel v1 restent historiques.
+
+Vérification documentaire : `node scripts/validate-resonance-guides.mjs`.
+<!-- END_CURRENT_GUIDE_INTEGRATION_20261127 -->
 
 <!-- CURRENT_CONTINUATION_20261125_L -->
 ## Reprise du 25 novembre — bible 1.9 et lot L

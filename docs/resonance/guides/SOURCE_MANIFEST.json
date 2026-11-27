@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "retrieved_on": "2026-11-27",
+  "preservation": "Unmodified original UTF-8 bytes; no normalization, translation or excerpt substituted for the source.",
+  "sources": [
+    {
+      "id": "CG-GENERAL-1.0",
+      "file_name": "Combat_Games_Guide_General_v1.0.txt",
+      "repository_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "version": "1.0",
+      "document_date": "2026-11-25",
+      "drive_id": "14o_RrgXucs8Km-x1LQJtMK7rol6mENKy",
+      "source_url": "https://drive.google.com/file/d/14o_RrgXucs8Km-x1LQJtMK7rol6mENKy/view?usp=drivesdk",
+      "provider_created_at": "2026-11-26T20:11:25.156Z",
+      "provider_modified_at": "2026-11-26T20:11:25.156Z",
+      "size_bytes": 55172,
+      "sha256": "4844584616072ac0d52d37c2fab4365e1ec489240f17a721ee216e223b0355b7",
+      "integrated_on": "2026-11-27",
+      "integration_status": "original_file_preserved"
+    },
+    {
+      "id": "CG-EXT01-1.0",
+      "file_name": "Combat_Games_Extension_01_Tag_Taunts_Bonus_v1.0.txt",
+      "repository_path": "docs/resonance/guides/Combat_Games_Extension_01_Tag_Taunts_Bonus_v1.0.txt",
+      "version": "1.0",
+      "document_date": "2026-11-26",
+      "drive_id": "1rYxKLIbz67L1sstmJWsga76uK7cX2mXF",
+      "source_url": "https://drive.google.com/file/d/1rYxKLIbz67L1sstmJWsga76uK7cX2mXF/view?usp=drivesdk",
+      "provider_created_at": "2026-11-26T20:09:23.674Z",
+      "provider_modified_at": "2026-11-26T20:09:23.674Z",
+      "size_bytes": 60589,
+      "sha256": "330fb7485a7a52b2a20f855646c940aaac0fcd9510032bc84b2e17c518edd25f",
+      "integrated_on": "2026-11-27",
+      "integration_status": "original_file_preserved"
+    },
+    {
+      "id": "CG-EXT02-1.0",
+      "file_name": "Combat_Games_Extension_02_Slots_Verrouilles_Deblocages_Abonnes_v1.0.txt",
+      "repository_path": "docs/resonance/guides/Combat_Games_Extension_02_Slots_Verrouilles_Deblocages_Abonnes_v1.0.txt",
+      "version": "1.0",
+      "document_date": "2026-11-27",
+      "drive_id": "1qr8hgvvjFqdWzcGaf1DPeKromk75bBn0",
+      "source_url": "https://drive.google.com/file/d/1qr8hgvvjFqdWzcGaf1DPeKromk75bBn0/view?usp=drivesdk",
+      "provider_created_at": "2026-11-26T23:18:10.426Z",
+      "provider_modified_at": "2026-11-26T23:18:10.426Z",
+      "size_bytes": 47334,
+      "sha256": "08b57ea542e83c487fef3276997a612d4657f2ee9ed4f8e46b0bf65a2778038b",
+      "integrated_on": "2026-11-27",
+      "integration_status": "original_file_preserved"
+    }
+  ]
+}

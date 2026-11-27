@@ -1,8 +1,8 @@
 # Cibles à poursuivre — Half Life Resonance
 
-État calculé le 2026-11-25T07:11:25.789Z depuis les catalogues et les chemins PNG existants.
+État calculé le 2026-11-27T05:40:05.755Z depuis les catalogues et les chemins PNG existants.
 
-**259 cibles documentées** : 241 avec au moins un fichier candidat associé et 18 sans fichier associé. 286 PNG distincts par chemin sont présents dans le registre; les accessoires partagés peuvent se trouver hors de cette file de cibles.
+**259 cibles documentées** : 241 avec au moins un fichier candidat associé et 18 sans fichier associé. 293 PNG distincts par chemin sont présents dans le registre; les accessoires partagés peuvent se trouver hors de cette file de cibles.
 
 36 refus, 4 erreurs d’outil et 12 sorties historiques indisponibles sont suivis séparément; ces entrées ne fournissent aucun fichier.
 
@@ -40,10 +40,10 @@ Une cible ne représente pas nécessairement un combattant jouable. Les costumes
 | `gordon_hl2` — Gordon Freeman | character · Half-Life 2 · à documenter | 1 / 1 | Ajouter des captures du modèle ou du lieu exact et vérifier les invariants visuels. Comparer chaque candidat aux références et corriger les écarts avant validation 1:1. Produire et vérifier les poses, transitions et animations prévues; une pose isolée ne termine pas le personnage ou le costume. |
 | `alyx_hl2` — Alyx Vance | character · Half-Life 2 et épisodes · à documenter | 1 / 1 | Ajouter des captures du modèle ou du lieu exact et vérifier les invariants visuels. Comparer chaque candidat aux références et corriger les écarts avant validation 1:1. Produire et vérifier les poses, transitions et animations prévues; une pose isolée ne termine pas le personnage ou le costume. |
 | `barney_hl2` — Barney Calhoun | character · Half-Life 2 · à documenter | 1 / 1 | Comparer chaque candidat aux références et corriger les écarts avant validation 1:1. Produire et vérifier les poses, transitions et animations prévues; une pose isolée ne termine pas le personnage ou le costume. |
-| `shephard_op4` — Adrian Shephard | character · Half-Life Opposing Force · à documenter | 2 / 0 | Comparer chaque candidat aux références et corriger les écarts avant validation 1:1. Produire et vérifier les poses, transitions et animations prévues; une pose isolée ne termine pas le personnage ou le costume. |
+| `shephard_op4` — Adrian Shephard | character · Half-Life Opposing Force · à documenter | 5 / 0 | Comparer chaque candidat aux références et corriger les écarts avant validation 1:1. Produire et vérifier les poses, transitions et animations prévues; une pose isolée ne termine pas le personnage ou le costume. |
 | `vortigaunt_hl2` — Vortigaunt | character · Half-Life 2 · à documenter | 1 / 1 | Ajouter des captures du modèle ou du lieu exact et vérifier les invariants visuels. Comparer chaque candidat aux références et corriger les écarts avant validation 1:1. Produire et vérifier les poses, transitions et animations prévues; une pose isolée ne termine pas le personnage ou le costume. |
 | `combine_elite_hl2` — Combine Elite | character · Half-Life 2 · à documenter | 1 / 0 | Ajouter des captures du modèle ou du lieu exact et vérifier les invariants visuels. Comparer chaque candidat aux références et corriger les écarts avant validation 1:1. Produire et vérifier les poses, transitions et animations prévues; une pose isolée ne termine pas le personnage ou le costume. |
-| `grigori_hl2` — Père Grigori | character · Half-Life 2 · à documenter | 2 / 0 | Comparer chaque candidat aux références et corriger les écarts avant validation 1:1. Produire et vérifier les poses, transitions et animations prévues; une pose isolée ne termine pas le personnage ou le costume. |
+| `grigori_hl2` — Père Grigori | character · Half-Life 2 · à documenter | 6 / 0 | Comparer chaque candidat aux références et corriger les écarts avant validation 1:1. Produire et vérifier les poses, transitions et animations prévues; une pose isolée ne termine pas le personnage ou le costume. |
 | `dog_hl2` — Dog | character · Half-Life 2 · à documenter | 1 / 0 | Comparer chaque candidat aux références et corriger les écarts avant validation 1:1. Produire et vérifier les poses, transitions et animations prévues; une pose isolée ne termine pas le personnage ou le costume. |
 | `hecu_hl1` — Soldat HECU | character · Half-Life · à documenter | 1 / 0 | Comparer chaque candidat aux références et corriger les écarts avant validation 1:1. Produire et vérifier les poses, transitions et animations prévues; une pose isolée ne termine pas le personnage ou le costume. |
 | `black_ops_hl1` — Assassin Black Ops | character · Half-Life · à documenter | 1 / 0 | Comparer chaque candidat aux références et corriger les écarts avant validation 1:1. Produire et vérifier les poses, transitions et animations prévues; une pose isolée ne termine pas le personnage ou le costume. |
@@ -336,10 +336,17 @@ Une cible ne représente pas nécessairement un combattant jouable. Les costumes
 | `barney_hl2` | `assets/resonance/candidates/continuation_20261124_h/heroes/barney_hl2_idle_h.png` | non identifié / retenu pour revue | candidat à vérifier |
 | `shephard_op4` | `assets/resonance/candidates/continuation_20261124_h/heroes/shephard_op4_idle_h.png` | non identifié / retenu pour revue | candidat à vérifier |
 | `shephard_op4` | `assets/resonance/candidates/continuation_20261124_f/shephard_op4_guard_f.png` | non identifié / non précisé | candidat à valider |
+| `shephard_op4` | `assets/resonance/candidates/continuation_20261127_n/characters/shephard_op4_deselected_n.png` | non identifié / retenu pour revue | candidat à vérifier |
+| `shephard_op4` | `assets/resonance/candidates/continuation_20261127_n/characters/shephard_op4_selected_n.png` | non identifié / retenu pour revue | candidat à vérifier |
+| `shephard_op4` | `assets/resonance/candidates/continuation_20261127_n/characters/shephard_op4_taunt_n.png` | non identifié / retenu pour revue | candidat à vérifier |
 | `vortigaunt_hl2` | `assets/resonance/candidates/continuation_20261124_h/heroes/vortigaunt_hl2_idle_h.png` | non identifié / retenu pour revue | candidat à vérifier |
 | `combine_elite_hl2` | `assets/resonance/candidates/combine_elite_hl2_idle_left.png` | non identifié / non précisé | candidat à vérifier |
 | `grigori_hl2` | `assets/resonance/candidates/continuation_20261124_h/heroes/grigori_hl2_idle_h.png` | non identifié / retenu pour revue | candidat à vérifier |
 | `grigori_hl2` | `assets/resonance/candidates/continuation_20261124_f/grigori_hl2_guard_f.png` | non identifié / non précisé | candidat à valider |
+| `grigori_hl2` | `assets/resonance/candidates/continuation_20261127_n/characters/grigori_hl2_deselected_n.png` | non identifié / retenu pour revue | candidat à vérifier |
+| `grigori_hl2` | `assets/resonance/candidates/continuation_20261127_n/characters/grigori_hl2_selected_n.png` | non identifié / non retenu | candidat à vérifier |
+| `grigori_hl2` | `assets/resonance/candidates/continuation_20261127_n/characters/grigori_hl2_selected_n_v2.png` | non identifié / retenu pour revue | candidat à vérifier |
+| `grigori_hl2` | `assets/resonance/candidates/continuation_20261127_n/characters/grigori_hl2_taunt_n.png` | non identifié / retenu pour revue | candidat à vérifier |
 | `dog_hl2` | `assets/resonance/candidates/continuation_20261120_e/dog_hl2_idle_e.png` | non identifié / retenu pour revue | candidat à corriger |
 | `hecu_hl1` | `assets/resonance/candidates/continuation_20261124_j/characters/hecu_hl1_idle_j.png` | non identifié / retenu pour revue | candidat à vérifier |
 | `black_ops_hl1` | `assets/resonance/candidates/continuation_20261124_j/characters/black_ops_hl1_idle_j.png` | non identifié / retenu pour revue | candidat à vérifier |

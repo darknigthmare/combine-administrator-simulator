@@ -1,29 +1,29 @@
 # Audit des fichiers de production — Half Life Resonance
 
-Exécuté le 2026-11-25T07:11:25.643Z. Résultat : **réussi**.
+Exécuté le 2026-11-27T05:40:05.562Z. Résultat : **réussi**.
 
 Le comptage porte sur les fichiers présents dans le dépôt au moment du contrôle. Les déclarations des anciennes conversations ne créent aucune entrée ni aucun fichier.
 
 | Mesure | Nombre |
 |---|---:|
-| actual_png_files | 286 |
-| valid_png_headers | 286 |
-| distinct_png_contents | 286 |
-| requests | 338 |
-| generated_requests | 286 |
-| generated_requests_with_verified_file | 286 |
+| actual_png_files | 293 |
+| valid_png_headers | 293 |
+| distinct_png_contents | 293 |
+| requests | 345 |
+| generated_requests | 293 |
+| generated_requests_with_verified_file | 293 |
 | blocked_requests | 36 |
 | tool_error_requests | 4 |
 | output_unavailable_requests | 12 |
 | unproduced_requests | 40 |
 | unclassified_requests | 0 |
-| requests_with_files | 286 |
+| requests_with_files | 293 |
 | requests_without_files | 52 |
-| registered_png_files | 286 |
+| registered_png_files | 293 |
 | unregistered_png_files | 0 |
 | certified_one_to_one_declared | 0 |
 | certified_one_to_one_with_verified_file | 0 |
-| integrated_in_game_declared | 9 |
+| integrated_in_game_declared | 12 |
 | completed_animation_clips_declared | 0 |
 
 ## Portée du contrôle
@@ -315,6 +315,13 @@ Présence, SHA-256, taille et en-tête PNG sont vérifiés. Le script ne décode
 | assets/resonance/candidates/continuation_20261125_l/layers/layer_portal2_turret_factory_industrial_walls_l.png | 2172 × 724 | 1213381 | oui |
 | assets/resonance/candidates/continuation_20261125_l/source_fx/fx_pistol_fire_hl2_muzzle_l.png | 1536 × 1024 | 1260524 | oui |
 | assets/resonance/candidates/continuation_20261125_l/source_fx/fx_reviver_discharge_hla_discharge_l.png | 1199 × 1312 | 315218 | oui |
+| assets/resonance/candidates/continuation_20261127_n/characters/grigori_hl2_deselected_n.png | 1091 × 1441 | 1089169 | oui |
+| assets/resonance/candidates/continuation_20261127_n/characters/grigori_hl2_selected_n_v2.png | 1091 × 1441 | 779174 | oui |
+| assets/resonance/candidates/continuation_20261127_n/characters/grigori_hl2_selected_n.png | 1091 × 1441 | 1053522 | oui |
+| assets/resonance/candidates/continuation_20261127_n/characters/grigori_hl2_taunt_n.png | 1091 × 1441 | 1234005 | oui |
+| assets/resonance/candidates/continuation_20261127_n/characters/shephard_op4_deselected_n.png | 1086 × 1448 | 734143 | oui |
+| assets/resonance/candidates/continuation_20261127_n/characters/shephard_op4_selected_n.png | 1086 × 1448 | 765193 | oui |
+| assets/resonance/candidates/continuation_20261127_n/characters/shephard_op4_taunt_n.png | 1086 × 1448 | 867501 | oui |
 | assets/resonance/candidates/layer_black_mesa_floor.png | 2172 × 724 | 641901 | oui |
 | assets/resonance/candidates/layer_city17_distant_skyline.png | 1774 × 887 | 1545440 | oui |
 | assets/resonance/candidates/prop_hev_suit_charger.png | 1024 × 1536 | 2691794 | oui |

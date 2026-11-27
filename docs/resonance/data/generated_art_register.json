@@ -4,15 +4,15 @@
   "module": "Half Life Resonance",
   "generator": "image_gen built-in",
   "counts": {
-    "requests": 338,
-    "generated": 286,
+    "requests": 345,
+    "generated": 293,
     "blocked": 36,
     "certified_one_to_one": 0,
-    "integrated_in_game": 9,
+    "integrated_in_game": 12,
     "completed_animation_clips": 0,
     "completed_six_layer_stages": 0,
     "discarded_generated_iterations": 13,
-    "generation_calls_including_discarded_iterations": 347,
+    "generation_calls_including_discarded_iterations": 354,
     "tool_error_requests": 4,
     "output_unavailable_requests": 12
   },
@@ -2769,8 +2769,8 @@
       "qa_status": "révision requise",
       "candidate_status": "generated_pending_reference_cleanup",
       "certified_one_to_one": false,
-      "integrated_in_game": false,
-      "runtime_enabled": false,
+      "integrated_in_game": true,
+      "runtime_enabled": true,
       "animation_clip_complete": false,
       "completed_six_layer_stage": false,
       "transparent_background": true,
@@ -2878,7 +2878,12 @@
         "observation": "Aucune frange saturée nette ni halo coloré visible sur les composites inspectés. L’affichage RGBA brut ne suffit pas à établir un défaut de détourage.",
         "remaining_gate": "Fidélité à la référence, proportions et détails de l’équipement ou de l’anatomie restent à valider; aucun changement de statut 1:1 ou runtime."
       },
-      "pixel_modification_after_generation": false
+      "pixel_modification_after_generation": false,
+      "runtime_usages": [
+        "boss_battle_unlock_dossier_gallery"
+      ],
+      "integration_scope": "boss_battle_unlock_dossier_gallery",
+      "gallery_integration_note": "Illustration de dossier de collection; aucun changement du rendu de combat, des collisions ni certification visuelle."
     },
     {
       "asset_id": "layer_canals_sky_e",
@@ -8467,7 +8472,12 @@
       "source_generated_filename": "exec-32848b34-a52b-4872-a543-1fcfa010d392.png",
       "recovery_source_manifest": "docs/resonance/production/continuation_20261124_f/generation_register.json",
       "integration_scope": "boss_battle_static_candidate_sprite",
-      "integration_note": "Image fixe candidate affichée dans le prototype Boss Battle; cadrage et orientation gérés au rendu, fallback vectoriel conservé. Aucun clip animé ni changement de simulation/collision."
+      "integration_note": "Image fixe candidate affichée dans le prototype Boss Battle; cadrage et orientation gérés au rendu, fallback vectoriel conservé. Aucun clip animé ni changement de simulation/collision.",
+      "runtime_usages": [
+        "boss_battle_static_candidate_sprite",
+        "boss_battle_unlock_dossier_gallery"
+      ],
+      "gallery_integration_note": "Illustration de dossier de collection; aucun changement du rendu de combat, des collisions ni certification visuelle."
     },
     {
       "asset_id": "dropship_container_hl2_hover_right_f",
@@ -8524,8 +8534,8 @@
       "file_path": "assets/resonance/candidates/continuation_20261124_f/dropship_container_hl2_hover_right_f.png",
       "repository_path": "assets/resonance/candidates/continuation_20261124_f/dropship_container_hl2_hover_right_f.png",
       "certified_one_to_one": false,
-      "integrated_in_game": false,
-      "runtime_enabled": false,
+      "integrated_in_game": true,
+      "runtime_enabled": true,
       "animation_clip_complete": false,
       "completed_six_layer_stage": false,
       "transparent_background": true,
@@ -8562,7 +8572,12 @@
       "copy_identical_to_generator": true,
       "pixel_modification_after_generation": false,
       "source_generated_filename": "exec-52869ab3-71ce-4acc-88a3-48b4e0f94bc0.png",
-      "recovery_source_manifest": "docs/resonance/production/continuation_20261124_f/generation_register.json"
+      "recovery_source_manifest": "docs/resonance/production/continuation_20261124_f/generation_register.json",
+      "runtime_usages": [
+        "boss_battle_unlock_dossier_gallery"
+      ],
+      "integration_scope": "boss_battle_unlock_dossier_gallery",
+      "gallery_integration_note": "Illustration de dossier de collection; aucun changement du rendu de combat, des collisions ni certification visuelle."
     },
     {
       "asset_id": "stage_xen_hl1_master_f",
@@ -25505,8 +25520,8 @@
       ],
       "reference_bitmap_loaded": true,
       "certified_one_to_one": false,
-      "integrated_in_game": false,
-      "runtime_enabled": false,
+      "integrated_in_game": true,
+      "runtime_enabled": true,
       "animation_clip_complete": false,
       "completed_six_layer_stage": false,
       "target_completed": false,
@@ -25569,7 +25584,12 @@
       "source_partial_register": "docs/resonance/production/continuation_20261125_k/machine_generation.json",
       "content_class": "released_reference",
       "git_blob_sha": "121a970e01b5f45f83709ed3a20c892fa753f643",
-      "original_png_bytes_preserved": true
+      "original_png_bytes_preserved": true,
+      "runtime_usages": [
+        "boss_battle_unlock_dossier_gallery"
+      ],
+      "integration_scope": "boss_battle_unlock_dossier_gallery",
+      "gallery_integration_note": "Illustration de dossier de collection; aucun changement du rendu de combat, des collisions ni certification visuelle."
     },
     {
       "owner_id": "strider_hla",
@@ -28365,9 +28385,585 @@
         }
       ],
       "name_fr": "Grenade secondaire MP5"
+    },
+    {
+      "asset_id": "grigori_hl2_deselected_n",
+      "target_id": "grigori_hl2",
+      "target_ids": [
+        "grigori_hl2"
+      ],
+      "owner_id": "grigori_hl2",
+      "owner_type": "fighter",
+      "category": "fighter_key_pose",
+      "batch_id": "continuation_20261127_n",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "pose_class": "original_playable_adaptation",
+      "presentation_state_id": "deselected",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "prompt": "Use case: precise-object-edit. Create ONE separate full-body 2D fighting-game key pose of Father Grigori, specifically Half-Life 2 retail Ravenholm. Input1 is the existing GENERATED project sprite: keep its clean detailed hand-painted rendering style, readable scale and proportions. Input2 is the RETAIL model capture: authority for identity, face, outfit and weapon. Bald middle-aged man with short dark beard, dark worn blue-grey embroidered jacket, patterned dark undershirt, white collar with red/gold trim, thin gold chain with small cross, worn grey trousers and RED canvas shoes with white toe caps and laces. Preserve these exact wardrobe markers and natural human proportions; no robe, cassock, hat, modern armor, supernatural effects, extra symbols, change of age, or modern shoes. Annabelle is the long brown wooden-stock LEVER-ACTION weapon from the reference: ONE barrel above its lower magazine tube and visible trigger/lever loop, never side-by-side double-barrel shotgun or pump shotgun; no extra gun. Full head and shoes visible, side-view toward SCREEN RIGHT, modest three-quarter torso, consistent horizontal foot baseline, wide clear transparent margins, upper-left lighting. Only change pose for a distinct CHARACTER DESELECTION EXIT: lower Annabelle to relaxed two-handed low carry across his hips, muzzle angled diagonally DOWN toward screen right; shoulders turn slightly away, head glances downward and one foot begins a short backward step. Arms below chest and no hand touching chest, no prayer gesture; expression settles, a calm retreat from the menu spotlight. Keep muzzle and butt uncropped; no firing. True transparent background, no floor, no ground shadow, no scenery, no particles, no text, no border, no UI, no other person, no collage, ONE pose in one image. This is a candidate static key pose for an original fan-game presentation, not a canonical cutscene or a completed animation.",
+      "source_references": [
+        {
+          "repository_path": "assets/resonance/candidates/continuation_20261124_f/grigori_hl2_guard_f.png",
+          "sha256": "ae332c9df071104a4f14db00548ade093b3d871957d06518bab29417a0d28e56",
+          "provenance": "generated_project_candidate",
+          "role": "rendering_style_edit_target",
+          "visually_inspected": true
+        },
+        {
+          "source_url": "https://combineoverwiki.net/images/9/9c/Monk_model.jpg",
+          "sha256": "054f5aa85cd8060b48dab9a4cc8c45ffd4c5f90f74ff999be3bfc7ef6e9427d9",
+          "scope": "Modèle Monk retail Half-Life 2, hébergement communautaire; autorité visuelle pour tenue et silhouette Annabelle.",
+          "provenance": "retail_model_capture_on_community_host",
+          "role": "identity_reference",
+          "visually_inspected": true,
+          "provided_to_generation": true
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/images/9/9c/Monk_model.jpg"
+      ],
+      "repository_path": "assets/resonance/candidates/continuation_20261127_n/characters/grigori_hl2_deselected_n.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_n/characters/grigori_hl2_deselected_n.png",
+      "width": 1091,
+      "height": 1441,
+      "color_mode": "RGBA",
+      "byte_size": 1089169,
+      "sha256": "15d3e47e232986e168cff023cf534e460f247320adfdd8f08d18c314f4a91527",
+      "original_png_bytes_preserved": true,
+      "transparent_background": true,
+      "alpha_check": "présent, résidus faibles à contrôler",
+      "alpha_stats": {
+        "transparent_pixels": 1101747,
+        "opaque_pixels": 713,
+        "partial_pixels": 469671,
+        "bbox_alpha_1": [
+          0,
+          11,
+          1071,
+          1441
+        ],
+        "bbox_alpha_16": [
+          100,
+          35,
+          1014,
+          1399
+        ],
+        "bbox_alpha_128": [
+          101,
+          37,
+          1013,
+          1398
+        ]
+      },
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "generation_call_count": 1,
+      "notes": "Pose originale adaptée pour présentation du personnage, identité issue du jeu de référence; aucun geste présenté comme animation officielle. Mains, visage, proportions et détails du matériel restent à valider sur modèles; alpha faible résiduel à contrôler au rendu. Annabelle conserve levier et relation canon/tube-magasin; géométrie fine de bouche non certifiée. Baskets rouges et petit pendentif conservés."
+    },
+    {
+      "asset_id": "grigori_hl2_selected_n",
+      "target_id": "grigori_hl2",
+      "target_ids": [
+        "grigori_hl2"
+      ],
+      "owner_id": "grigori_hl2",
+      "owner_type": "fighter",
+      "category": "fighter_key_pose",
+      "batch_id": "continuation_20261127_n",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "pose_class": "original_playable_adaptation",
+      "presentation_state_id": "selected",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "prompt": "Use case: precise-object-edit. Create ONE separate full-body 2D fighting-game key pose of Father Grigori, specifically Half-Life 2 retail Ravenholm. Input1 is the existing GENERATED project sprite: keep its clean detailed hand-painted rendering style, readable scale and proportions. Input2 is the RETAIL model capture: authority for identity, face, outfit and weapon. Bald middle-aged man with short dark beard, dark worn blue-grey embroidered jacket, patterned dark undershirt, white collar with red/gold trim, thin gold chain with small cross, worn grey trousers and RED canvas shoes with white toe caps and laces. Preserve these exact wardrobe markers and natural human proportions; no robe, cassock, hat, modern armor, supernatural effects, extra symbols, change of age, or modern shoes. Annabelle is the long brown wooden-stock LEVER-ACTION weapon from the reference: ONE barrel above its lower magazine tube and visible trigger/lever loop, never side-by-side double-barrel shotgun or pump shotgun; no extra gun. Full head and shoes visible, side-view toward SCREEN RIGHT, modest three-quarter torso, consistent horizontal foot baseline, wide clear transparent margins, upper-left lighting. Only change pose for CHARACTER SELECTION CONFIRMATION: straighten slightly from combat crouch; lift Annabelle upright alongside his RIGHT shoulder, wood stock down beside hip and muzzle upward safely visible within image; one hand firmly supports stock/lever, his free left hand touches his own upper chest briefly in a welcoming acknowledgement. Focused friendly half-smile, look toward screen right, feet planted. No firing. True transparent background, no floor, no ground shadow, no scenery, no particles, no text, no border, no UI, no other person, no collage, ONE pose in one image. This is a candidate static key pose for an original fan-game presentation, not a canonical cutscene or a completed animation.",
+      "source_references": [
+        {
+          "repository_path": "assets/resonance/candidates/continuation_20261124_f/grigori_hl2_guard_f.png",
+          "sha256": "ae332c9df071104a4f14db00548ade093b3d871957d06518bab29417a0d28e56",
+          "provenance": "generated_project_candidate",
+          "role": "rendering_style_edit_target",
+          "visually_inspected": true
+        },
+        {
+          "source_url": "https://combineoverwiki.net/images/9/9c/Monk_model.jpg",
+          "sha256": "054f5aa85cd8060b48dab9a4cc8c45ffd4c5f90f74ff999be3bfc7ef6e9427d9",
+          "scope": "Modèle Monk retail Half-Life 2, hébergement communautaire; autorité visuelle pour tenue et silhouette Annabelle.",
+          "provenance": "retail_model_capture_on_community_host",
+          "role": "identity_reference",
+          "visually_inspected": true,
+          "provided_to_generation": true
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/images/9/9c/Monk_model.jpg"
+      ],
+      "repository_path": "assets/resonance/candidates/continuation_20261127_n/characters/grigori_hl2_selected_n.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_n/characters/grigori_hl2_selected_n.png",
+      "width": 1091,
+      "height": 1441,
+      "color_mode": "RGBA",
+      "byte_size": 1053522,
+      "sha256": "5336b5e7cd3fa9e78071c56d9f31c502c89562eba100b82148499441fa9c896b",
+      "original_png_bytes_preserved": true,
+      "transparent_background": true,
+      "alpha_check": "présent, résidus faibles à contrôler",
+      "alpha_stats": {
+        "transparent_pixels": 1112197,
+        "opaque_pixels": 422,
+        "partial_pixels": 459512,
+        "bbox_alpha_1": [
+          25,
+          0,
+          1073,
+          1425
+        ],
+        "bbox_alpha_16": [
+          179,
+          8,
+          776,
+          1416
+        ],
+        "bbox_alpha_128": [
+          180,
+          9,
+          775,
+          1415
+        ]
+      },
+      "selected_for_next_review": false,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "generation_call_count": 1,
+      "notes": "Pose originale adaptée pour présentation du personnage, identité issue du jeu de référence; aucun geste présenté comme animation officielle. Mains, visage, proportions et détails du matériel restent à valider sur modèles; alpha faible résiduel à contrôler au rendu. Annabelle conserve levier et relation canon/tube-magasin; géométrie fine de bouche non certifiée. Baskets rouges et petit pendentif conservés. Première version conservée, marge supérieure de 9 px au seuil alpha128, remplacée pour prochaine revue par v2.",
+      "superseded_by": "grigori_hl2_selected_n_v2"
+    },
+    {
+      "asset_id": "grigori_hl2_selected_n_v2",
+      "target_id": "grigori_hl2",
+      "target_ids": [
+        "grigori_hl2"
+      ],
+      "owner_id": "grigori_hl2",
+      "owner_type": "fighter",
+      "category": "fighter_key_pose",
+      "batch_id": "continuation_20261127_n",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "pose_class": "original_playable_adaptation",
+      "presentation_state_id": "selected",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "prompt": "Use case: precise-object-edit. Correct ONLY the framing of this supplied transparent full-body Grigori selection pose. Preserve the exact character identity, exact pose, facial expression, hairstyle, beard, worn embroidered jacket, pendant, red canvas shoes, colors, proportions, weapon wood/metal, ONE barrel and its magazine tube and lever, and lighting. The long gun muzzle almost touches the top edge: put this SAME COMPLETE figure and weapon smaller in the canvas so that an unmistakable empty transparent margin of at least 80 pixels is visible ABOVE the entire muzzle and below the soles, with 80 pixels or more left and right. Preserve the current whole body, without stretching or changing the pose. Reconstruct only any tiny missing upper muzzle tip if needed to make the barrel complete; no other redrawing. Keep one full-body pose and one gun. True transparent background; no shadows, floor, effects, labels, text or extra objects. No cropping anywhere. Portrait canvas, generous empty padding.",
+      "source_references": [
+        {
+          "repository_path": "assets/resonance/candidates/continuation_20261127_n/characters/grigori_hl2_selected_n.png",
+          "sha256": "5336b5e7cd3fa9e78071c56d9f31c502c89562eba100b82148499441fa9c896b",
+          "provenance": "generated_project_candidate",
+          "role": "framing_edit_target",
+          "visually_inspected": true
+        },
+        {
+          "source_url": "https://combineoverwiki.net/images/9/9c/Monk_model.jpg",
+          "sha256": "054f5aa85cd8060b48dab9a4cc8c45ffd4c5f90f74ff999be3bfc7ef6e9427d9",
+          "scope": "Modèle Monk retail Half-Life 2, hébergement communautaire; autorité visuelle pour tenue et silhouette Annabelle.",
+          "provenance": "retail_model_capture_on_community_host",
+          "role": "identity_reference",
+          "visually_inspected": true,
+          "provided_to_generation": false
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/images/9/9c/Monk_model.jpg"
+      ],
+      "repository_path": "assets/resonance/candidates/continuation_20261127_n/characters/grigori_hl2_selected_n_v2.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_n/characters/grigori_hl2_selected_n_v2.png",
+      "width": 1091,
+      "height": 1441,
+      "color_mode": "RGBA",
+      "byte_size": 779174,
+      "sha256": "d1f0a3008ccd32ef659fc8836eb949eee5ec0cc20b01c7e007425d3f5995165c",
+      "original_png_bytes_preserved": true,
+      "transparent_background": true,
+      "alpha_check": "présent, résidus faibles à contrôler",
+      "alpha_stats": {
+        "transparent_pixels": 1242630,
+        "opaque_pixels": 653,
+        "partial_pixels": 328848,
+        "bbox_alpha_1": [
+          0,
+          0,
+          1077,
+          1417
+        ],
+        "bbox_alpha_16": [
+          257,
+          139,
+          753,
+          1325
+        ],
+        "bbox_alpha_128": [
+          258,
+          140,
+          753,
+          1324
+        ]
+      },
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "generation_call_count": 1,
+      "notes": "Pose originale adaptée pour présentation du personnage, identité issue du jeu de référence; aucun geste présenté comme animation officielle. Mains, visage, proportions et détails du matériel restent à valider sur modèles; alpha faible résiduel à contrôler au rendu. Annabelle conserve levier et relation canon/tube-magasin; géométrie fine de bouche non certifiée. Baskets rouges et petit pendentif conservés. Correction de cadrage retenue; aucune retouche de pixels par script.",
+      "revision_of": "grigori_hl2_selected_n"
+    },
+    {
+      "asset_id": "grigori_hl2_taunt_n",
+      "target_id": "grigori_hl2",
+      "target_ids": [
+        "grigori_hl2"
+      ],
+      "owner_id": "grigori_hl2",
+      "owner_type": "fighter",
+      "category": "fighter_key_pose",
+      "batch_id": "continuation_20261127_n",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "pose_class": "original_playable_adaptation",
+      "presentation_state_id": "taunt",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "prompt": "Use case: precise-object-edit. Create ONE separate full-body 2D fighting-game key pose of Father Grigori, specifically Half-Life 2 retail Ravenholm. Input1 is the existing GENERATED project sprite: keep its clean detailed hand-painted rendering style, readable scale and proportions. Input2 is the RETAIL model capture: authority for identity, face, outfit and weapon. Bald middle-aged man with short dark beard, dark worn blue-grey embroidered jacket, patterned dark undershirt, white collar with red/gold trim, thin gold chain with small cross, worn grey trousers and RED canvas shoes with white toe caps and laces. Preserve these exact wardrobe markers and natural human proportions; no robe, cassock, hat, modern armor, supernatural effects, extra symbols, change of age, or modern shoes. Annabelle is the long brown wooden-stock LEVER-ACTION weapon from the reference: ONE barrel above its lower magazine tube and visible trigger/lever loop, never side-by-side double-barrel shotgun or pump shotgun; no extra gun. Full head and shoes visible, side-view toward SCREEN RIGHT, modest three-quarter torso, consistent horizontal foot baseline, wide clear transparent margins, upper-left lighting. Only change pose for a brief TAUNT admonition: a stable stance toward screen right; Annabelle held one-handed by the stock/lever low by his hip, muzzle angled down and away; FREE hand raised at chest height, index finger pointing upward in a firm sermon-like admonition toward an offscreen opponent. Brow lifted and restrained wry smile, mouth slightly open, no visible speech. His gold cross remains small jewelry only. No spells, halos, or blessed-projectile effects. Preserve full weapon length and shoes. True transparent background, no floor, no ground shadow, no scenery, no particles, no text, no border, no UI, no other person, no collage, ONE pose in one image. This is a candidate static key pose for an original fan-game presentation, not a canonical cutscene or a completed animation.",
+      "source_references": [
+        {
+          "repository_path": "assets/resonance/candidates/continuation_20261124_f/grigori_hl2_guard_f.png",
+          "sha256": "ae332c9df071104a4f14db00548ade093b3d871957d06518bab29417a0d28e56",
+          "provenance": "generated_project_candidate",
+          "role": "rendering_style_edit_target",
+          "visually_inspected": true
+        },
+        {
+          "source_url": "https://combineoverwiki.net/images/9/9c/Monk_model.jpg",
+          "sha256": "054f5aa85cd8060b48dab9a4cc8c45ffd4c5f90f74ff999be3bfc7ef6e9427d9",
+          "scope": "Modèle Monk retail Half-Life 2, hébergement communautaire; autorité visuelle pour tenue et silhouette Annabelle.",
+          "provenance": "retail_model_capture_on_community_host",
+          "role": "identity_reference",
+          "visually_inspected": true,
+          "provided_to_generation": true
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/images/9/9c/Monk_model.jpg"
+      ],
+      "repository_path": "assets/resonance/candidates/continuation_20261127_n/characters/grigori_hl2_taunt_n.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_n/characters/grigori_hl2_taunt_n.png",
+      "width": 1091,
+      "height": 1441,
+      "color_mode": "RGBA",
+      "byte_size": 1234005,
+      "sha256": "ed3e13ef6050166182559aef21d61d7da5f0acff049374a529e331561bada935",
+      "original_png_bytes_preserved": true,
+      "transparent_background": true,
+      "alpha_check": "présent, résidus faibles à contrôler",
+      "alpha_stats": {
+        "transparent_pixels": 1047200,
+        "opaque_pixels": 722,
+        "partial_pixels": 524209,
+        "bbox_alpha_1": [
+          0,
+          0,
+          1057,
+          1427
+        ],
+        "bbox_alpha_16": [
+          72,
+          32,
+          859,
+          1418
+        ],
+        "bbox_alpha_128": [
+          73,
+          33,
+          858,
+          1417
+        ]
+      },
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "generation_call_count": 1,
+      "notes": "Pose originale adaptée pour présentation du personnage, identité issue du jeu de référence; aucun geste présenté comme animation officielle. Mains, visage, proportions et détails du matériel restent à valider sur modèles; alpha faible résiduel à contrôler au rendu. Annabelle conserve levier et relation canon/tube-magasin; géométrie fine de bouche non certifiée. Baskets rouges et petit pendentif conservés."
+    },
+    {
+      "asset_id": "shephard_op4_deselected_n",
+      "target_id": "shephard_op4",
+      "target_ids": [
+        "shephard_op4"
+      ],
+      "owner_id": "shephard_op4",
+      "owner_type": "fighter",
+      "category": "fighter_key_pose",
+      "batch_id": "continuation_20261127_n",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life: Opposing Force",
+      "content_class": "released_reference",
+      "pose_class": "original_playable_adaptation",
+      "presentation_state_id": "deselected",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "prompt": "Use case: precise-object-edit. ONE full-body static key pose for a 2D fighting-game sprite of Adrian Shephard, classic Half-Life Opposing Force. Input1 is the existing generated sprite to match for rendering style, proportions, palette and sharp clean hand-painted edges. Input2 is a capture of the retail player model, the authority for costume identity: rounded olive camouflage helmet; gas mask with two green glass lenses, circular front perforations and a circular side filter; black PCV torso armor with olive webbing and pouches; short-sleeved grey/white/black urban camouflage, black fingerless gloves and black lace-up boots. Do not copy the low-poly geometry or white backdrop of input2; do not redesign gear. View: full head-to-soles, facing screen RIGHT, torso-height camera with 2D side-view and modest three-quarter torso, enough transparent margin around every extremity. Ground baseline horizontal. No weapon or added prop. Change only the body pose to a true DESELECTION EXIT keyframe: he lowers both hands loosely to belt height after relaxing his combat guard, turns his shoulders subtly AWAY from the screen-right opponent while keeping his masked head glancing right, weight shifts back over his rear leg as he begins to step backward. Both hands stay below chest height and neither touches the vest straps or mask. Feet stay visible and do not cross. Restrained professional disengagement. Clearly different from a selection acknowledgement or combat guard. True transparent background, no backdrop, no floor, no pedestal, no text, no portrait frame, no UI, no effects, no duplicate, no sheet, one character and one pose only. Keep the entire figure and both feet visible. This is a static pose adapted for the fan-game, not a claimed official animation.",
+      "source_references": [
+        {
+          "repository_path": "assets/resonance/candidates/continuation_20261124_f/shephard_op4_guard_f.png",
+          "sha256": "5618e0141d418676f3c0dcc1a4eba99586bffe6898ba08506f7465759a874a71",
+          "provenance": "generated_project_candidate",
+          "role": "rendering_style_edit_target",
+          "visually_inspected": true
+        },
+        {
+          "source_url": "https://combineoverwiki.net/images/8/89/Player_hlof.png",
+          "sha256": "748d93b687b60b861ca92d29709d7e08f4f7549cc51d72592d3d2b84062d821a",
+          "scope": "Modèle Player_hlof retail Opposing Force, hébergement communautaire; pas une publication directe Valve.",
+          "provenance": "retail_model_capture_on_community_host",
+          "role": "identity_reference",
+          "visually_inspected": true,
+          "provided_to_generation": true
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/images/8/89/Player_hlof.png"
+      ],
+      "repository_path": "assets/resonance/candidates/continuation_20261127_n/characters/shephard_op4_deselected_n.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_n/characters/shephard_op4_deselected_n.png",
+      "width": 1086,
+      "height": 1448,
+      "color_mode": "RGBA",
+      "byte_size": 734143,
+      "sha256": "35ff900721f2566a6610a24b1fe1517b3f955a1f130445496333986d6730f75e",
+      "original_png_bytes_preserved": true,
+      "transparent_background": true,
+      "alpha_check": "présent, résidus faibles à contrôler",
+      "alpha_stats": {
+        "transparent_pixels": 1250949,
+        "opaque_pixels": 112,
+        "partial_pixels": 321467,
+        "bbox_alpha_1": [
+          66,
+          21,
+          1066,
+          1448
+        ],
+        "bbox_alpha_16": [
+          276,
+          153,
+          807,
+          1324
+        ],
+        "bbox_alpha_128": [
+          277,
+          154,
+          806,
+          1323
+        ]
+      },
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "generation_call_count": 1,
+      "notes": "Pose originale adaptée pour présentation du personnage, identité issue du jeu de référence; aucun geste présenté comme animation officielle. Mains, visage, proportions et détails du matériel restent à valider sur modèles; alpha faible résiduel à contrôler au rendu."
+    },
+    {
+      "asset_id": "shephard_op4_selected_n",
+      "target_id": "shephard_op4",
+      "target_ids": [
+        "shephard_op4"
+      ],
+      "owner_id": "shephard_op4",
+      "owner_type": "fighter",
+      "category": "fighter_key_pose",
+      "batch_id": "continuation_20261127_n",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life: Opposing Force",
+      "content_class": "released_reference",
+      "pose_class": "original_playable_adaptation",
+      "presentation_state_id": "selected",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "prompt": "Use case: precise-object-edit. Asset type: one full-body 2D fighting-game character selection key pose for Half-Life Resonance. Input image 1 is the existing generated Adrian Shephard (Half-Life Opposing Force) sprite and is the edit target and visual continuity reference. Preserve his complete identity and existing classic Opposing Force wardrobe: camouflage-covered rounded helmet, dark military respirator with TWO round green goggle lenses and front/side filters, olive PCV tactical vest and ammo pouches, grey/white/black urban camouflage short sleeves and trousers, fingerless black gloves, black lace-up military boots, proportions and material treatment. Do not modernize or add armor, symbols, weapons or accessories. Change ONLY the pose to the peak of a character-SELECTION CONFIRMATION: he turns his chest a little toward the opponent at screen right, left hand adjusts/tugs one existing vest shoulder strap, right fist held low ready, feet clearly planted on the same horizontal baseline. Restrained silent military acknowledgement, no saluting, no speech, no magical effects. Keep face masked; keep head to soles fully visible. Camera at torso height, 2D side-view fighting game with modest three-quarter torso, facing SCREEN RIGHT. Same clean detailed hand-painted 2D realism and crisp readable edges, subtle upper-left lighting. ONE pose, ONE character, ONE image, true transparent background, generous transparent padding all four sides, no floor, no ground shadow, no text, no labels, no UI, no frame, no weapon, no sheet. This is one candidate static key pose, not a completed animation. Save the entire original transparent output.",
+      "source_references": [
+        {
+          "repository_path": "assets/resonance/candidates/continuation_20261124_f/shephard_op4_guard_f.png",
+          "sha256": "5618e0141d418676f3c0dcc1a4eba99586bffe6898ba08506f7465759a874a71",
+          "provenance": "generated_project_candidate",
+          "role": "rendering_style_edit_target",
+          "visually_inspected": true
+        },
+        {
+          "source_url": "https://combineoverwiki.net/images/8/89/Player_hlof.png",
+          "sha256": "748d93b687b60b861ca92d29709d7e08f4f7549cc51d72592d3d2b84062d821a",
+          "scope": "Modèle Player_hlof retail Opposing Force, hébergement communautaire; pas une publication directe Valve.",
+          "provenance": "retail_model_capture_on_community_host",
+          "role": "identity_reference",
+          "visually_inspected": true,
+          "provided_to_generation": false
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/images/8/89/Player_hlof.png"
+      ],
+      "repository_path": "assets/resonance/candidates/continuation_20261127_n/characters/shephard_op4_selected_n.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_n/characters/shephard_op4_selected_n.png",
+      "width": 1086,
+      "height": 1448,
+      "color_mode": "RGBA",
+      "byte_size": 765193,
+      "sha256": "e22c9e5b0e927f0acba156ca8b9625088b58444485ff78095eff9e9ce3fffa19",
+      "original_png_bytes_preserved": true,
+      "transparent_background": true,
+      "alpha_check": "présent, résidus faibles à contrôler",
+      "alpha_stats": {
+        "transparent_pixels": 1234214,
+        "opaque_pixels": 435,
+        "partial_pixels": 337879,
+        "bbox_alpha_1": [
+          0,
+          0,
+          1039,
+          1392
+        ],
+        "bbox_alpha_16": [
+          261,
+          136,
+          827,
+          1327
+        ],
+        "bbox_alpha_128": [
+          262,
+          137,
+          826,
+          1326
+        ]
+      },
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "generation_call_count": 1,
+      "notes": "Pose originale adaptée pour présentation du personnage, identité issue du jeu de référence; aucun geste présenté comme animation officielle. Mains, visage, proportions et détails du matériel restent à valider sur modèles; alpha faible résiduel à contrôler au rendu."
+    },
+    {
+      "asset_id": "shephard_op4_taunt_n",
+      "target_id": "shephard_op4",
+      "target_ids": [
+        "shephard_op4"
+      ],
+      "owner_id": "shephard_op4",
+      "owner_type": "fighter",
+      "category": "fighter_key_pose",
+      "batch_id": "continuation_20261127_n",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life: Opposing Force",
+      "content_class": "released_reference",
+      "pose_class": "original_playable_adaptation",
+      "presentation_state_id": "taunt",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "prompt": "Use case: precise-object-edit. ONE full-body static key pose for a 2D fighting-game sprite of Adrian Shephard, classic Half-Life Opposing Force. Input1 is the existing generated sprite to match for rendering style, proportions, palette and sharp clean hand-painted edges. Input2 is a capture of the retail player model, the authority for costume identity: rounded olive camouflage helmet; gas mask with two green glass lenses, circular front perforations and a circular side filter; black PCV torso armor with olive webbing and pouches; short-sleeved grey/white/black urban camouflage, black fingerless gloves and black lace-up boots. Do not copy the low-poly geometry or white backdrop of input2; do not redesign gear. View: full head-to-soles, facing screen RIGHT, torso-height camera with 2D side-view and modest three-quarter torso, enough transparent margin around every extremity. Ground baseline horizontal. No weapon or added prop. Change only the pose to the peak of a brief silent TAUNT: Shephard stands firmly with knees slightly flexed, one gloved hand held at chest height with an open palm facing upward and index/middle fingers curling in a small beckoning 'come on' challenge, the other fist resting LOW beside his own belt. Masked head tilted very slightly toward the opponent on screen right. No aggression toward camera, no middle-finger gesture, no speech. Preserve restrained military personality and full body. True transparent background, no backdrop, no floor, no pedestal, no text, no portrait frame, no UI, no effects, no duplicate, no sheet, one character and one pose only. Keep the entire figure and both feet visible. This is a static pose adapted for the fan-game, not a claimed official animation.",
+      "source_references": [
+        {
+          "repository_path": "assets/resonance/candidates/continuation_20261124_f/shephard_op4_guard_f.png",
+          "sha256": "5618e0141d418676f3c0dcc1a4eba99586bffe6898ba08506f7465759a874a71",
+          "provenance": "generated_project_candidate",
+          "role": "rendering_style_edit_target",
+          "visually_inspected": true
+        },
+        {
+          "source_url": "https://combineoverwiki.net/images/8/89/Player_hlof.png",
+          "sha256": "748d93b687b60b861ca92d29709d7e08f4f7549cc51d72592d3d2b84062d821a",
+          "scope": "Modèle Player_hlof retail Opposing Force, hébergement communautaire; pas une publication directe Valve.",
+          "provenance": "retail_model_capture_on_community_host",
+          "role": "identity_reference",
+          "visually_inspected": true,
+          "provided_to_generation": true
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/images/8/89/Player_hlof.png"
+      ],
+      "repository_path": "assets/resonance/candidates/continuation_20261127_n/characters/shephard_op4_taunt_n.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_n/characters/shephard_op4_taunt_n.png",
+      "width": 1086,
+      "height": 1448,
+      "color_mode": "RGBA",
+      "byte_size": 867501,
+      "sha256": "353e8962b4150676addb39b8e02c91d503ff192ae1eb6780872635c03ba32c2e",
+      "original_png_bytes_preserved": true,
+      "transparent_background": true,
+      "alpha_check": "présent, résidus faibles à contrôler",
+      "alpha_stats": {
+        "transparent_pixels": 1169080,
+        "opaque_pixels": 461,
+        "partial_pixels": 402987,
+        "bbox_alpha_1": [
+          33,
+          65,
+          1073,
+          1448
+        ],
+        "bbox_alpha_16": [
+          249,
+          150,
+          920,
+          1333
+        ],
+        "bbox_alpha_128": [
+          250,
+          151,
+          919,
+          1332
+        ]
+      },
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "generation_call_count": 1,
+      "notes": "Pose originale adaptée pour présentation du personnage, identité issue du jeu de référence; aucun geste présenté comme animation officielle. Mains, visage, proportions et détails du matériel restent à valider sur modèles; alpha faible résiduel à contrôler au rendu."
     }
   ],
-  "updated_at": "2026-11-25",
+  "updated_at": "2026-11-27",
   "iterations_not_retained": [
     {
       "iteration_id": "colette_background_edit_b",
@@ -28509,9 +29105,9 @@
     "prior_semantics": "assets[] recense les demandes et versions conservées. Une révision, une couche ou un costume ne crée pas un nouveau personnage; les poses de référence ne sont pas des animations prêtes pour le moteur.",
     "output_unavailable_requests": "Sorties produites puis perdues lors de la réinitialisation du disque temporaire; aucun fichier publié sous ces identifiants. Les recréations sont des demandes distinctes.",
     "tool_error_requests": "Erreurs outil sans PNG, distinctes des refus confirmés. Le lot K ajoute trois échecs de validation de paramètres avant génération; leurs generation_call_count valent 0.",
-    "generation_calls_including_discarded_iterations": "332 appels au checkpoint K + 15 appels réels du lot L. Les 7 reports et 11 cibles avec refus historiques conservés n’ajoutent aucun appel. Les 13 itérations historiques écartées et 12 sorties perdues restent tracées.",
+    "generation_calls_including_discarded_iterations": "347 appels au checkpoint L + 7 appels réels du lot N. Le lot M annoncé sans fichiers retrouvés ne crée ni appels vérifiés ni entrées nouvelles. La première sélection Grigori est conservée et comptée comme PNG, sa v2 est retenue pour prochaine revue.",
     "requests": "Entrées du registre : sorties conservées, refus, erreurs outil et sorties perdues. Ce nombre est distinct des appels de génération réellement démarrés et des cibles du catalogue."
   },
   "recovery_report": "docs/resonance/production/recovery_20261124/README.md",
-  "latest_batch": "continuation_20261125_l"
+  "latest_batch": "continuation_20261127_n"
 }

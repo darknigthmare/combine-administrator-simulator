@@ -186,13 +186,40 @@ for (const [assetId, expected] of prototypeSpriteAssets) {
   check(asset.generation_status === 'généré' && asset.animation_clip_complete === false, `${assetId}: static candidate integration cannot claim an animation clip`);
 }
 
+// The collection reuses four existing candidates independently of combat rendering.
+const dossierScope = 'boss_battle_unlock_dossier_gallery';
+const dossierAssets = new Map([
+  ['strider_hl2_idle_k', { ownerId: 'strider_hl2', importName: 'striderUrl', path: 'assets/resonance/candidates/continuation_20261125_k/machines/strider_hl2_idle_k.png' }],
+  ['dropship_container_hl2_hover_right_f', { ownerId: 'dropship_hl2', importName: 'dropshipUrl', path: 'assets/resonance/candidates/continuation_20261124_f/dropship_container_hl2_hover_right_f.png' }],
+  ['gunship_hl2_hover_left_f', { ownerId: 'gunship_hl2', importName: 'gunshipUrl', path: 'assets/resonance/candidates/continuation_20261124_f/gunship_hl2_hover_left_f.png' }],
+  ['boss_gargantua_hl1_rear_threequarter_e', { ownerId: 'gargantua_hl1', importName: 'gargantuaUrl', path: 'assets/resonance/candidates/continuation_20261120_e/boss_gargantua_hl1_rear_threequarter_e.png' }],
+]);
+const dossierModulePath = resolve(root, 'src/features/resonance/progression/FieldDossiers.tsx');
+const dossierModule = readFileSync(dossierModulePath, 'utf8');
+const dossierImports = new Map([...dossierModule.matchAll(/import\s+(\w+)\s+from\s+'([^']+\.png)'/g)]
+  .map(match => [match[1], resolve(dirname(dossierModulePath), match[2])]));
+check(dossierImports.size === dossierAssets.size, 'Dossier gallery must use the four audited illustrations');
+for (const [assetId, expected] of dossierAssets) {
+  const asset = art.assets.find(candidate => candidate.asset_id === assetId);
+  check(Boolean(asset), `${assetId}: missing dossier illustration registration`);
+  if (!asset) continue;
+  check(asset.integrated_in_game === true && asset.runtime_enabled === true && asset.runtime_usages?.includes(dossierScope), `${assetId}: missing dossier usage`);
+  check(asset.repository_path === expected.path && asset.owner_id === expected.ownerId && asset.owner_type === 'boss', `${assetId}: dossier identity mismatch`);
+  check(dossierImports.get(expected.importName) === resolve(root, expected.path), `${assetId}: dossier import differs from registered image`);
+  check(dossierModule.includes(`${expected.ownerId}: ${expected.importName}`), `${assetId}: dossier binding missing`);
+  check(asset.animation_clip_complete === false, `${assetId}: a gallery illustration cannot declare an animation`);
+}
+
 let generated = 0;
 for (const asset of art.assets) {
   check(asset.certified_one_to_one === false, `${asset.asset_id}: unsupported fidelity claim`);
   if (asset.integrated_in_game) {
     const isBackground = prototypeBackgroundIds.has(asset.asset_id);
-    check(isBackground || prototypeSpriteAssets.has(asset.asset_id), `${asset.asset_id}: unexpected prototype integration`);
-    check(asset.integration_scope === (isBackground ? 'boss_battle_prototype_background' : prototypeSpriteScope), `${asset.asset_id}: unspecified prototype integration scope`);
+    const isBattleSprite = prototypeSpriteAssets.has(asset.asset_id);
+    const isDossier = dossierAssets.has(asset.asset_id);
+    check(isBackground || isBattleSprite || isDossier, `${asset.asset_id}: unexpected prototype integration`);
+    const expectedScope = isBackground ? 'boss_battle_prototype_background' : isBattleSprite ? prototypeSpriteScope : dossierScope;
+    check(asset.integration_scope === expectedScope, `${asset.asset_id}: unspecified prototype integration scope`);
   }
   if (asset.runtime_enabled === true) check(asset.integrated_in_game === true, `${asset.asset_id}: runtime-enabled artwork must declare its precise integration`);
   if (asset.owner_type === 'fighter') check(fighterIds.has(asset.owner_id), `${asset.asset_id}: unknown fighter owner`);
@@ -229,5 +256,5 @@ if (errors.length) {
   console.error(errors.map(error => `FAIL ${error}`).join('\n'));
   process.exitCode = 1;
 } else {
-  console.log(JSON.stringify({ status: 'passed', fighters: fighters.length, storyChapters: roster.story_chapters.length, specialTechniques: specials.length, exVariants: exVariants.length, stages: stages.length, productionGroups: backlog.length, animationSequencesPerPilot: animation.sequences.length, drawingsPerPilotOneFacing: 547, pilotMoves: moves.length, generatedImages: generated, prototypeBackgrounds: art.assets.filter(asset => asset.integrated_in_game && prototypeBackgroundIds.has(asset.asset_id)).length, prototypeStaticSprites: art.assets.filter(asset => asset.integrated_in_game && prototypeSpriteAssets.has(asset.asset_id)).length, certifiedOneToOne: 0, note: 'Design data, image provenance and seven static candidate sprite bindings validated. The Boss Battle simulation has its own tests; no animation clip, network implementation or final visual fidelity is asserted.' }, null, 2));
+  console.log(JSON.stringify({ status: 'passed', fighters: fighters.length, storyChapters: roster.story_chapters.length, specialTechniques: specials.length, exVariants: exVariants.length, stages: stages.length, productionGroups: backlog.length, animationSequencesPerPilot: animation.sequences.length, drawingsPerPilotOneFacing: 547, pilotMoves: moves.length, generatedImages: generated, prototypeBackgrounds: art.assets.filter(asset => asset.integrated_in_game && prototypeBackgroundIds.has(asset.asset_id)).length, prototypeStaticSprites: art.assets.filter(asset => asset.integrated_in_game && prototypeSpriteAssets.has(asset.asset_id)).length, dossierIllustrations: dossierAssets.size, distinctRuntimeImages: art.counts.integrated_in_game, certifiedOneToOne: 0, note: 'Design data, image provenance, seven static combat sprites and four dossier illustrations validated. Gunship is shared between scopes. The Boss Battle simulation has its own tests; no animation clip, network implementation or final visual fidelity is asserted.' }, null, 2));
 }

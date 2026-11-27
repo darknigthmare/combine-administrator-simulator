@@ -17,6 +17,13 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Validate Resonance guides and production
+        run: |
+          node scripts/validate-resonance-design.mjs
+          node scripts/validate-resonance-boss-design.mjs
+          node scripts/validate-resonance-guides.mjs
+          node scripts/audit-resonance-production.mjs
+          node scripts/sync-resonance-production.mjs
       - run: npm run quality
 
   campaign-flow:
