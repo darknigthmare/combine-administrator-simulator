@@ -116,10 +116,11 @@ export function loadDossierProgress(storage: DossierStorage | null): LoadedDossi
     if (!saved || typeof saved !== 'object' || Array.isArray(saved) || !('version' in saved)) return { progress: empty, writable: true, warning: 'invalid' };
     if (saved.version !== 1) return { progress: empty, writable: false, warning: 'unsupported_version' };
     if (!('permanent' in saved) || !saved.permanent || typeof saved.permanent !== 'object' || Array.isArray(saved.permanent)) return { progress: empty, writable: true, warning: 'invalid' };
+    const savedGrants = saved.permanent as Record<string, unknown>;
     // Only known earned local dossiers are accepted, not arbitrary content or external grants.
     for (const dossier of FIELD_DOSSIERS) {
-      if (!Object.hasOwn(saved.permanent, dossier.id)) continue;
-      const grant: unknown = saved.permanent[dossier.id];
+      if (!Object.hasOwn(savedGrants, dossier.id)) continue;
+      const grant = savedGrants[dossier.id];
       if (!grant || typeof grant !== 'object' || !('ruleId' in grant) || grant.ruleId !== dossier.ruleId
         || !('source' in grant) || (grant.source !== 'boss_battle_victory' && grant.source !== 'legacy_record')
         || !('acquiredAt' in grant) || !(grant.acquiredAt === null || typeof grant.acquiredAt === 'number' && Number.isFinite(grant.acquiredAt) && grant.acquiredAt >= 0)) continue;
