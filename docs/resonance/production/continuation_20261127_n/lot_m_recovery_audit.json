@@ -1,0 +1,45 @@
+{
+  "project": "Half-Life Administrator / Half-Life Resonance",
+  "repository": "darknigthmare/combine-administrator-simulator",
+  "checked_on": "2026-11-27",
+  "remote_baseline": {
+    "pr": 7,
+    "branch": "feat/resonance-recovery-production-20261124",
+    "head": "f77c4a797cc4201a2b52921e44fd1a5b767a6b5b",
+    "png_count_reported_by_parent": 286,
+    "last_lot": "L"
+  },
+  "historical_claim_to_recover": {
+    "lot": "M",
+    "date": "2026-11-25",
+    "claimed_new_png": 24,
+    "claimed_total_png": 310,
+    "claimed_bible_version": "1.10",
+    "source": "Personal Context result obtained by the root; not independently available to this subagent"
+  },
+  "searches": [
+    {
+      "provider": "ChatGPT Library",
+      "scope": "Accessible files, title and content searches",
+      "queries": ["continuation_20261125_m", "Half_Life_Resonance v1.10", "Half-Life Resonance 310", "Half_Life_Resonance", "Resonance", "Half", "HL_Resonance", "Half Life Resonance", "Half life Administrator", "Gonarch", "Gordon", "Aperture"],
+      "matched_lot_m_files": 0,
+      "date_window": "2026-11-25T00:00:00Z to 2026-11-26T00:00:00Z",
+      "date_window_files": 0,
+      "newest_accessible_file_created_at": "2026-11-19T11:31:23.971985+00:00",
+      "limitation": "The visible Library inventory does not expose files created after 19 November; this is not proof that historical files never existed."
+    },
+    {
+      "provider": "Google Drive",
+      "scope": "Accessible files, keyword and exact-name substring searches",
+      "queries": ["Resonance", "Half-Life", "HL_RESONANCE", "name contains Half/half/continuation_20261125_m", "name contains combine/Resonance/RESONANCE/HALF", "createdTime 2026-11-25", "name contains 20261125/2026-11-25"],
+      "matched_lot_m_files": 0,
+      "incidental_results": ["November 26 global project dashboard index.html", "Older HL2 configuration and resource files", "Unrelated project files"],
+      "limitation": "No lot M archive, art image, production register or Bible v1.10 was identified; unrelated matches were not treated as production evidence."
+    }
+  ],
+  "recovered_assets": [],
+  "recovered_png_count": 0,
+  "recovery_status": "not_found_in_accessible_sources",
+  "safe_resume_baseline": "Use verified PR #7 lot L; do not count the historical 24 PNG claim as recovered.",
+  "next_possible_evidence": "An exact prior output path or persisted file/Drive URL from the root's Personal Context may permit a targeted follow-up."
+}

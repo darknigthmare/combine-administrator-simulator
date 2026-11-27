@@ -2,13 +2,88 @@
 
 Bible, production graphique et premier module Boss Battle jouable du mode annexe de combat 2D de Half Life Administrator.
 
-## Suite du 20 novembre — lot E
+<!-- CURRENT_CUT_CONTENT_20261127_P -->
+## Reprise du 27 novembre — bible 1.13, focus contenu coupé
+
+**81 nouvelles fiches d’archives, 80 notices sources, 694 tâches de production et neuf PNG pour huit cibles.** Les onze archives antérieures sont reliées sans doublon : le catalogue comprend désormais **92 archives**, toutes désactivées dans le jeu.
+
+Le lot P ajoute Panther Eye rouge et bleu, Archer, Combine Assassin, Combine Guard Synth, Bullsquid HL2, Houndeye HL2 frontal et l’étude non texturée du Combine Guard Gun. La première version bleue est conservée avec sa correction ; Stukabat et le Sniper Rifle ont un refus tracé sans fichier. Les références de versions et les limites de détail sont explicites.
+
+L’inventaire consolidé atteint **327 PNG, 381 demandes et 340 cibles : 250 avec une image, 90 sans PNG**. Les 318 images du checkpoint O et les trois sources du guide/extensions restent intactes. L’augmentation des manquants traduit 81 omissions recensées, dont 73 encore sans image. Une pose ne termine ni une animation ni un kit de combat ; aucune fidélité 1:1 n’est certifiée.
+
+[Rapport et contrôles du lot P](production/continuation_20261127_p/README.md) · [Galerie](production/continuation_20261127_p/GALLERY.md) · [Chapitre contenu coupé](chapters/cut_content_20261127.md) · [81 fiches et tâches](data/cut_content_catalog_20261127.json) · [File des archives](production/continuation_20261127_p/CUT_CONTENT_QUEUE.md)
+<!-- END_CURRENT_CUT_CONTENT_20261127_P -->
+
+<!-- CURRENT_CONTINUATION_20261127_O -->
+## Historique du 27 novembre — bible 1.12 et lot O
+
+**25 nouveaux PNG : sept candidats de personnages retenus, six plans candidats de Contamination et sept candidats FX, avec cinq premières versions conservées.** Les six poses de sélection, désélection et taunt de Gina/Colette sont reliées aux fiches du guide. La base Colette a été corrigée d’après le modèle campagne Decay PS2 ; l’ancien candidat reste disponible et n’est plus sélectionné.
+
+L’inventaire atteint **318 PNG distincts et 370 entrées**. **242 des 259 cibles ont au moins une image ; 17 restent sans PNG.** Le rayon Vortigaunt d’Episode Two fournit la seule première image de cible de ce lot. La charge, l’impact et la variante HL2 de base ne sont pas déclarés couverts. Les 293 anciens PNG sont inchangés.
+
+[Rapport du lot O](production/continuation_20261127_o/README.md) · [Galerie](production/continuation_20261127_o/GALLERY.md) · [Revue des manquants](production/continuation_20261127_o/TARGET_REVIEW.md) · [Inventaire courant](production/MISSING_TARGETS.md)
+
+Les fichiers FX couvrent six nouveaux couples famille/état : **128 états restent sans candidat**. Le contrat Contamination ajoute six plans identifiés ; **131 plans des contrats connus restent sans image et 24 stages sans contrat**. Les rectangles de lecture du sol sont proposés et contrôlés sur un composite, sans intégration au jeu ni validation de caméra. Les silhouettes, proportions fines, transitions, pivots et raccords restent à vérifier. **Aucune fidélité 1:1, animation complète ni arène complète n’est certifiée.** Les douze images déjà déclarées intégrées au runtime restent les seules intégrations.
+
+Les trois fichiers originaux du guide et de ses deux extensions sont conservés sans modification ; leur édition d’intégration reste 1.11. La version 1.12 identifie ce nouveau point de production. Les 36 refus, quatre erreurs outil et douze sorties perdues historiques sont conservés ; le lot M non récupéré n’est pas ajouté aux comptes.
+<!-- END_CURRENT_CONTINUATION_20261127_O -->
+
+<!-- CURRENT_GUIDE_INTEGRATION_20261127 -->
+## Historique du 27 novembre — bible 1.11, guide commun et deux extensions
+
+Les **trois fichiers originaux du guide de combat** sont désormais [intégrés sans modification](guides/README.md), avec provenance et SHA-256. La [matrice des 68 sections](guides/COVERAGE_68.md) donne une décision, un état réel et un fichier d’application pour chaque rubrique.
+
+Le [chapitre d’intégration](chapters/guide_integration_20261127.md), l’[extension 01](chapters/guide_extension_01_20261127.md) et l’[extension 02](chapters/guide_extension_02_20261127.md) ajoutent **63 fiches de production** : six taunts, six cycles de sélection, trois duos, six assistances, neuf techniques/conclusions d’équipe, trois clashes, quatre entités, cinq bonus, un espace d’archives, treize slots/modes, six règles de déblocage et une politique de soutien. Les [données JSON](data/combat_extensions_20261127.json) restent des contrats de conception, reliés aux identifiants du catalogue.
+
+**Aucun PNG ni clip animé n’est créé par cette intégration.** Le checkpoint graphique repris est le lot L (286 PNG) ; le [lot N produit en parallèle](production/continuation_20261127_n/README.md) porte l’inventaire à **293 PNG, dont sept nouveaux fichiers et six poses retenues pour la prochaine revue**, toujours 18 cibles sans PNG. Le lot M / la version 1.10 annoncés dans l’historique n’ont pas été récupérés ; 1.11 identifie ce nouveau travail sans les déclarer livrés. Les six profils et quatre boss déjà jouables ne deviennent pas des kits complets de duel.
+
+Le lot adjacent intègre le modèle d’accès à quatre dimensions et quatre dossiers de terrain du Boss Battle. La [CI du commit `4ae2ee9`](https://github.com/darknigthmare/combine-administrator-simulator/actions/runs/45948747638) a ensuite validé 60 tests unitaires, 10 tests de parcours navigateur, la matrice de 252 configurations et la compilation. Cette validation technique ne certifie pas la fidélité visuelle des candidats. Les taunts animés, le tag, les assistances, les supers, QTE, bonus et espace exploratoire restent conçus ; les services de soutien restent différés. Les sources, adaptations et limites de fidélité sont explicites. ATLAS/P-body restent en conception avec leurs refus historiques conservés. Les exports Word/Excel v1 restent historiques.
+
+Vérification documentaire : `node scripts/validate-resonance-guides.mjs`.
+<!-- END_CURRENT_GUIDE_INTEGRATION_20261127 -->
+
+## Reprise du 25 novembre — bible 1.9 et lot L
+
+**15 nouveaux PNG : 10 cibles jusque-là sans fichier reçoivent un premier candidat, et cinq couches sont ajoutées à l’usine à tourelles de Portal 2.** Les 28 cibles initialement manquantes ont toutes une issue documentée.
+
+L’inventaire atteint **286 PNG distincts**, **338 entrées**, **36 refus**, **4 erreurs outil** et **12 sorties historiques perdues**. **241 des 259 cibles ont un PNG; 18 restent sans PNG.**
+
+[Rapport du lot L](production/continuation_20261125_l/README.md) · [Galerie](production/continuation_20261125_l/GALLERY.md) · [Revue des 28 cibles](production/continuation_20261125_l/TARGET_REVIEW.md) · [Inventaire complet](production/MISSING_TARGETS.md)
+
+Les quatre archives ont une première étude, avec leurs limites de version et de matière. Les six identifiants de couches Factory disposent de candidats, mais raccords et séparation L5/L6 restent ouverts. Les refus historiques et reports sont distincts des nouvelles générations. Les neuf images déjà utilisées dans Boss Battle restent les seules intégrations; aucune fidélité 1:1, animation complète ou arène à six couches n’est certifiée. Les exports Word/Excel v1 restent historiques.
+
+## Lot K — état historique avant le lot L
+
+**80 nouveaux PNG couvrant 76 cibles jusque-là sans fichier.** Les 104 cibles manquantes au début du lot ont une issue explicite : 76 reçoivent un candidat, 11 ont un refus de génération confirmé et 17 sont reportées sans appel avec le blocage documenté.
+
+L’inventaire atteint **271 PNG distincts**, **323 entrées**, **36 refus**, **4 erreurs outil** et **12 sorties historiques perdues**. **231 des 259 cibles ont un PNG; 28 restent sans PNG.**
+
+[Rapport du lot K](production/continuation_20261125_k/README.md) · [Galerie](production/continuation_20261125_k/GALLERY.md) · [Revue des 104 cibles](production/continuation_20261125_k/TARGET_REVIEW.md) · [Inventaire complet](production/MISSING_TARGETS.md)
+
+Les références, refus explicites et reports sont conservés séparément. Les nouveaux fichiers restent des poses, effets statiques ou panoramas candidats. Les neuf images déjà utilisées dans Boss Battle restent les seules intégrations déclarées; aucune animation complète, arène à six couches ou fidélité 1:1 n’est certifiée. Les exports Word/Excel v1 restent historiques.
+
+## Lot J — état historique du 24 novembre
+
+**44 PNG supplémentaires : 43 nouvelles images conservées et un décor historique récupéré.** Le [rapport du lot J](production/continuation_20261124_j/README.md) et sa [galerie](production/continuation_20261124_j/GALLERY.md) portent l’inventaire à **191 PNG distincts, 229 entrées, 25 refus antérieurs, 1 erreur outil et 12 sorties perdues tracées**. **155 des 259 cibles** ont un fichier associé; **104 restent sans PNG**.
+
+Le prototype Boss Battle utilise désormais **six sprites fixes de combattants et celui du Gunship**, en plus des deux panoramas déjà intégrés. Le rendu de secours et les signaux de combat restent actifs. Les dix effets recréés après l’interruption sont de nouvelles sorties, explicitement reliées aux versions perdues. Aucune animation complète, arène à six couches ou fidélité 1:1 n’est certifiée.
+
+[Inventaire complet](production/MISSING_TARGETS.md) · [Audit](production/asset_audit.md) · [Intégration et vérifications](production/continuation_20261124_j/runtime_integration.md). Les exports Word/Excel v1 restent historiques.
+
+## Lot I — état historique avant le lot J
+
+**108 PNG ajoutés : 94 récupérés et 14 nouveaux.** Le [rapport courant et la galerie du lot I](production/continuation_20261124_i/README.md) portent l’inventaire à **147 PNG distincts, 172 demandes et 25 refus**, couvrant **114 des 259 cibles**. **145 cibles restent sans fichier associé.** [Inventaire complet](production/MISSING_TARGETS.md) · [Audit des fichiers](production/asset_audit.md) · [Récupération des 94 PNG](production/recovery_20261124/README.md).
+
+Le nouveau lot apporte Protection Civile, City Scanner, Rollermine, Grunt/Charger/Suppressor d’Alyx, costume G-Man HL1, Pit Worm, Gene Worm, trois masters de stages, portail orange Portal 1 et rayon Tau primaire HL1. Les fichiers restent des candidats ; aucun nouveau contenu n’est intégré au moteur et aucune fidélité 1:1 ou animation n’est déclarée certifiée. Les exports Word/Excel v1 restent historiques.
+
+## Lot E — état historique du 20 novembre
+
 
 La bible Markdown passe en **version 1.5**. Le [dossier des archives](chapters/archive_reference_contracts_20261120.md) développe huit contrats de référence pour le contenu abandonné et suit les trois autres archives dont les preuves restent à compléter. Les modèles, concepts, prototypes et adaptations proposées sont distingués ; aucun personnage inédit n’est présenté comme une apparence officielle finale.
 
 Le [lot E et sa galerie](production/continuation_20261120_e/README.md) ajoutent **douze PNG pour sept cibles** : Dog, Hunter, Fourmilion ouvrier, costume HECU au béret, Gargantua vu de dos, cinq fichiers de couches des Canaux et deux de Ravenholm. La révision du mur central des Canaux remplace la v1 pour la prochaine revue. Les Canaux ont cinq plans candidats sur six ; Ravenholm en a deux.
 
-L’état courant vérifié est de **39 PNG distincts, 51 demandes et 12 refus**, pour **187 cibles dont 25 avec fichier et 162 sans fichier**. Aucun nouveau refus n’a été enregistré dans ce lot. Les onze fichiers de couches couvrent neuf couples stage/plan identifiés ; le fichier historique de Cité 17 reste sans ID. Aucun stage complet, clip animé ni contrôle de fidélité 1:1 n’est déclaré terminé.
+Au point de contrôle du 20 novembre, l’état vérifié était de **39 PNG distincts, 51 demandes et 12 refus**, pour **187 cibles dont 25 avec fichier et 162 sans fichier**. Aucun nouveau refus n’a été enregistré dans ce lot. Les onze fichiers de couches couvrent neuf couples stage/plan identifiés ; le fichier historique de Cité 17 reste sans ID. Aucun stage complet, clip animé ni contrôle de fidélité 1:1 n’est déclaré terminé.
 
 La [relecture alpha du lot D](production/continuation_20261120_e/alpha_review_previous_assets.json) corrige le diagnostic de franges rouges nettes pour trois sprites sur les fonds testés. Les PNG et le refus historique de la correction Strider sont conservés. Les nouveaux fichiers restent candidats ; les exports Word/Excel v1 restent historiques.
 
@@ -46,7 +121,7 @@ Les exports Word/Excel v1 ci-dessous restent des instantanés historiques. Les s
 
 Le menu principal ouvre désormais **Half Life Resonance · Boss Battle**, également accessible avec `?module=resonance-boss-battle`. Six profils pilotes affrontent quatre boss dans une simulation à 60 Hz : Strider, Dropship et sa nacelle, Gunship, Gargantua. Opération libre, Boss Rush de quatre rencontres et entraînement fonctionnent, avec trois difficultés, commandes clavier/tactiles, interactions d'arène, pause, résultats et records locaux séparés de la gestion.
 
-Le [chapitre Boss Battle](BOSS_BATTLE.md), repris dans la bible complète, documente 24 rencontres et une archive Hydra désactivée. Les vingt rencontres supplémentaires, les chroniques narratives, le relais et la coopération restent à implémenter. Le rendu actuel utilise des silhouettes schématiques et deux panoramas candidats : aucune animation de boss ni fidélité 1:1 n'est déclarée achevée.
+Le [chapitre Boss Battle](BOSS_BATTLE.md), repris dans la bible complète, documente 24 rencontres et une archive Hydra désactivée. Les vingt rencontres supplémentaires, les chroniques narratives, le relais et la coopération restent à implémenter. Le registre courant déclare douze images intégrées au runtime, avec des représentations vectorielles de secours ; aucune animation de boss ni fidélité 1:1 n’est déclarée achevée.
 
 - `data/boss_battle_catalog.json` : identités, sources, contre-jeu, objectifs et trois phases de conception par rencontre.
 - `data/boss_battle_rules.json` : périmètre réel et extensions prévues.
@@ -97,7 +172,7 @@ node scripts/sync-resonance-production.mjs --write
 npm run quality
 ```
 
-Les validateurs documentaires portent sur les catalogues, identifiants, coûts, comptes de production, références d’assets et cohérence mathématique de la frame data. La commande `quality` ajoute le lint, les tests du moteur, la matrice de gestion et la compilation. Ces contrôles ne mesurent ni performances d’affichage ni gameplay réseau. Les six images candidates du premier lot ont fait l’objet d’une inspection de format et de transparence ; le parcours visuel et interactif Boss Battle n’a pas pu être validé dans le navigateur disponible, comme indiqué dans le rapport de validation.
+Les validateurs documentaires portent sur les catalogues, identifiants, coûts, comptes de production, références d’assets et cohérence mathématique de la frame data. La commande `quality` ajoute le lint, les tests du moteur, la matrice de gestion et la compilation. Ces contrôles ne mesurent ni performances d’affichage ni gameplay réseau. Les inspections de PNG et de transparence restent distinctes des tests de navigateur. Le blocage navigateur du premier lot est historique : la CI du commit `4ae2ee9` a depuis réussi dix tests de parcours. La fidélité des nouveaux assets et leur animation restent à vérifier, comme précisé dans les rapports de production.
 
 ## Base de référence
 

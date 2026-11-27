@@ -1,0 +1,1800 @@
+{
+  "recovered_on": "2026-11-27",
+  "recovery_batch": "continuation_20261127_p",
+  "basis": "production_queue checkpoint O before loading cut-content catalogue",
+  "checkpoint_counts": {
+    "targets": 259,
+    "by_source_bucket": {
+      "boss_battle_catalog.bosses": 25,
+      "catalogue_extension_20261120.targets": 102,
+      "catalogue_extension_20261124.targets": 6,
+      "projectile_catalog_20261124.targets": 66,
+      "roster.fighters": 24,
+      "roster.reserves": 12,
+      "stages.stages": 24
+    },
+    "by_category": {
+      "archive": 11,
+      "boss": 28,
+      "character": 86,
+      "costume": 18,
+      "projectile": 66,
+      "stage": 50
+    },
+    "by_content_class": {
+      "cut_content_archive": 1,
+      "documented_cut_content": 10,
+      "official_alternate_continuity": 7,
+      "official_demo_reference": 2,
+      "original_encounter_from_released_identity": 1,
+      "released_multiplayer_variant": 4,
+      "released_reference": 174,
+      "unspecified": 60
+    },
+    "targets_with_files": 242,
+    "targets_without_files": 17,
+    "targets_with_refusals": 29,
+    "selected_candidate_files": 267,
+    "costume_targets_with_exactly_associated_files": 18,
+    "generation_requests": 370,
+    "generated_requests": 318,
+    "refused_requests": 36,
+    "tool_error_requests": 4,
+    "output_unavailable_requests": 12,
+    "requests_without_files": 52,
+    "distinct_registered_png_files_present": 318,
+    "requests_outside_target_queue": 1,
+    "stage_layer_candidate_files": 29,
+    "stage_layer_candidate_ids": 25,
+    "stage_layer_files_without_id": 1,
+    "stage_layer_missing_ids_in_known_contracts": 131,
+    "stages_without_layer_contract": 24,
+    "projectile_targets": 66,
+    "projectile_targets_with_files": 58,
+    "projectile_targets_without_files": 8,
+    "projectile_targets_by_effect_kind": {
+      "area": 4,
+      "beam": 10,
+      "device": 1,
+      "impact": 1,
+      "instant_trace": 5,
+      "portal": 4,
+      "projectile": 32,
+      "throwable": 8,
+      "weapon_fire": 1
+    },
+    "projectile_visual_state_candidate_ids": 67,
+    "projectile_visual_state_missing_ids": 128,
+    "projectile_files_without_visual_state_id": 1,
+    "archives": 11,
+    "archives_runtime_enabled": 0,
+    "targets_automatically_completed": 0
+  },
+  "missing_targets": [
+    {
+      "target_id": "wheatley_portal2",
+      "source_bucket": "boss_battle_catalog.bosses",
+      "source_file": "docs/resonance/data/boss_battle_catalog.json",
+      "category": "boss",
+      "source_category": "installation_robotique",
+      "owner_id": "wheatley_portal2",
+      "name": "Wheatley dans le corps central",
+      "source_game": "Portal 2",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": [
+        "Wheatley Portal 2",
+        "Corps central endommagé de cette finale",
+        "Trois cœurs corrompus distincts",
+        "Gels et surfaces sans mélange Portal 1"
+      ],
+      "source_refs": [
+        {
+          "namespace": "boss_battle_catalog",
+          "source_id": "wheatley",
+          "title": "Wheatley",
+          "url": "https://theportalwiki.com/wiki/Wheatley",
+          "kind": "reference_secondaire",
+          "checked_scope": "Vérification visuelle directe du jeu encore requise.",
+          "reference_status": null
+        },
+        {
+          "namespace": "boss_battle_catalog",
+          "source_id": "portal2_commentary",
+          "title": "Commentaires Valve Portal 2",
+          "url": "https://theportalwiki.com/wiki/Portal_2_developer_commentary",
+          "kind": "transcription_source_primaire",
+          "checked_scope": "Phases retirées à exclure de la version publiée.",
+          "reference_status": null
+        }
+      ],
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "target_id": "wheatley_portal2",
+            "source_page": "https://theportalwiki.com/wiki/File:Portal2_Wheatley_Boss.png",
+            "source_url": "https://i1.theportalwiki.net/img/b/b0/Portal2_Wheatley_Boss.png",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/wheatley_portal2.png",
+            "sha256": "41f306859fc4cfeae79a6dd6b83cbb9d2e54e36c5518f3bd63fa306f43d25bcb",
+            "width": 452,
+            "height": 771,
+            "byte_size": 308152,
+            "metadata_excerpt": "",
+            "visually_inspected": true,
+            "role": "source_game_model_or_scene_reference",
+            "hosting": "community wiki mirror of original game imagery",
+            "inspection_notes": "Référence modèle Portal 2 du corps central inspectée : petit noyau bleu en façade, corps noir suspendu et indicateurs rouges; sommet du support partiellement hors référence, terminaison candidate non certifiée."
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "reference_status": "reference_images_inspected_candidate_unvalidated",
+      "effect_kind": null,
+      "effect_kind_provisional": false,
+      "projectile_class": null,
+      "requires_travel_sprite": null,
+      "primary_evidence_status": null,
+      "legacy_target_ids": [],
+      "legacy_reference_contracts": [],
+      "required_visual_state_ids": [],
+      "runtime_enabled_declared": false,
+      "target_certified_one_to_one_declared": false,
+      "required_layer_ids": [],
+      "actual_assets": [],
+      "refused_requests": [
+        {
+          "asset_id": "wheatley_portal2_idle_k",
+          "owner_id": "wheatley_portal2",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": null
+        }
+      ],
+      "tool_error_requests": [],
+      "output_unavailable_requests": [],
+      "other_unproduced_requests": [],
+      "actual_file_count": 0,
+      "selected_candidate_file_count": 0,
+      "selected_candidate_asset_ids": [],
+      "master_candidate_count": 0,
+      "selected_master_candidate_count": 0,
+      "layer_candidate_count": 0,
+      "certified_asset_count_declared": 0,
+      "production_status": "no_file_refusal_recorded",
+      "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
+      "next_work": [
+        "Conserver les refus enregistrés; la première image candidate reste à produire.",
+        "Produire les poses et animations du boss puis valider ses phases, son échelle et ses interactions."
+      ]
+    },
+    {
+      "target_id": "fisherman_lostcoast",
+      "source_bucket": "catalogue_extension_20261120.targets",
+      "source_file": "docs/resonance/data/catalogue_extension_20261120.json",
+      "category": "character",
+      "source_category": "character",
+      "owner_id": "fisherman_lostcoast",
+      "name": "Le Pêcheur",
+      "source_game": "Half-Life 2: Lost Coast",
+      "content_class": "official_demo_reference",
+      "priority": "P1",
+      "identity_lock": "Apparence propre à la démo officielle Lost Coast; ne pas inventer une identité de campagne HL2.",
+      "source_refs": [
+        {
+          "namespace": "catalogue_extension_20261120",
+          "source_id": "fisherman",
+          "title": "Le Pêcheur — Lost Coast",
+          "url": "https://www.combineoverwiki.net/wiki/The_Fisherman",
+          "kind": "secondary_reference",
+          "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire.",
+          "reference_status": null
+        },
+        {
+          "namespace": "catalogue_extension_20261120",
+          "source_id": "hl220",
+          "title": "Valve — Half-Life 2 20th Anniversary",
+          "url": "https://www.half-life.com/en/halflife2/20th",
+          "kind": "primary_official",
+          "checked_scope": "Lost Coast; archives vidéo E3 2002/2003; expériences Episode Three; correction du reflet des yeux du G-Man.",
+          "reference_status": null
+        }
+      ],
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "target_id": "fisherman_lostcoast",
+            "reference_filename": "Fisherman.jpg",
+            "source_url": "https://combineoverwiki.net/images/a/ac/Fisherman.jpg",
+            "source_page": "https://combineoverwiki.net/wiki/File:Fisherman.jpg",
+            "context_page": "https://combineoverwiki.net/wiki/Fisherman",
+            "caption": "The Fisherman's model.",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/characters/references/Fisherman.jpg",
+            "width": 909,
+            "height": 1764,
+            "sha256": "46bd97e5dc4353572425b67a7089d99493b223b568cb76521471fcf3a2919874",
+            "visually_inspected": true,
+            "source_kind": "community_wiki_game_model_render",
+            "scope": "Exact released model and outfit; source bitmaps inspected before generation."
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "reference_status": "reference_images_inspected_candidate_unvalidated",
+      "effect_kind": null,
+      "effect_kind_provisional": false,
+      "projectile_class": null,
+      "requires_travel_sprite": null,
+      "primary_evidence_status": null,
+      "legacy_target_ids": [],
+      "legacy_reference_contracts": [],
+      "required_visual_state_ids": [],
+      "runtime_enabled_declared": false,
+      "target_certified_one_to_one_declared": false,
+      "required_layer_ids": [],
+      "actual_assets": [],
+      "refused_requests": [
+        {
+          "asset_id": "fisherman_lostcoast_idle_k",
+          "owner_id": "fisherman_lostcoast",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": null
+        }
+      ],
+      "tool_error_requests": [],
+      "output_unavailable_requests": [],
+      "other_unproduced_requests": [],
+      "actual_file_count": 0,
+      "selected_candidate_file_count": 0,
+      "selected_candidate_asset_ids": [],
+      "master_candidate_count": 0,
+      "selected_master_candidate_count": 0,
+      "layer_candidate_count": 0,
+      "certified_asset_count_declared": 0,
+      "production_status": "no_file_refusal_recorded",
+      "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
+      "next_work": [
+        "Conserver les refus enregistrés; la première image candidate reste à produire.",
+        "Produire et vérifier les poses, transitions et animations prévues; une pose isolée ne termine pas le personnage ou le costume."
+      ]
+    },
+    {
+      "target_id": "atlas_portal2",
+      "source_bucket": "catalogue_extension_20261120.targets",
+      "source_file": "docs/resonance/data/catalogue_extension_20261120.json",
+      "category": "character",
+      "source_category": "character",
+      "owner_id": "atlas_portal2",
+      "name": "ATLAS",
+      "source_game": "Portal 2 — coopération",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Robot compact à œil bleu; proportions et appareil propres au coop. Un seul robot par fichier.",
+      "source_refs": [
+        {
+          "namespace": "catalogue_extension_20261120",
+          "source_id": "coop",
+          "title": "ATLAS and P-body",
+          "url": "https://combineoverwiki.net/wiki/ATLAS_and_P-body",
+          "kind": "secondary_reference",
+          "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire.",
+          "reference_status": null
+        },
+        {
+          "namespace": "catalogue_extension_20261120",
+          "source_id": "portal2_atlas_model_c",
+          "title": "Portal Wiki — modèle retail ATLAS",
+          "url": "https://i1.theportalwiki.net/img/0/04/Atlas.png",
+          "kind": "secondary_hosted_game_model",
+          "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée.",
+          "reference_status": null
+        }
+      ],
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "target_id": "atlas_portal2",
+            "source_page": "https://theportalwiki.com/wiki/File:Atlas.png",
+            "source_url": "https://i1.theportalwiki.net/img/0/04/Atlas.png",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/atlas_portal2.png",
+            "sha256": "bdecd308ddb015d437e5e42bf362983ac950c5c3f5d5c6098be81b368bffbd5c",
+            "width": 778,
+            "height": 1762,
+            "byte_size": 173881,
+            "metadata_excerpt": "",
+            "visually_inspected": true,
+            "role": "original_retail_game_model_capture",
+            "hosting": "community wiki mirror of original game imagery",
+            "inspection_notes": "Modèle officiel Portal 2 Atlas inspecté; changement demandé limité à une pose de base relâchée, proportions sphériques et œil bleu conservés."
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "reference_status": "reference_images_inspected_candidate_unvalidated",
+      "effect_kind": null,
+      "effect_kind_provisional": false,
+      "projectile_class": null,
+      "requires_travel_sprite": null,
+      "primary_evidence_status": null,
+      "legacy_target_ids": [],
+      "legacy_reference_contracts": [],
+      "required_visual_state_ids": [],
+      "runtime_enabled_declared": false,
+      "target_certified_one_to_one_declared": false,
+      "required_layer_ids": [],
+      "actual_assets": [],
+      "refused_requests": [
+        {
+          "asset_id": "atlas_portal2_idle_c",
+          "owner_id": "atlas_portal2",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": "Aucun fichier candidat produit. Le refus automatique ne fournit pas de justification plus précise que « other ». Aucune relance, conversion, retouche ou certification n'a été effectuée; la cible reste à produire."
+        },
+        {
+          "asset_id": "atlas_portal2_idle_k",
+          "owner_id": "atlas_portal2",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": null
+        }
+      ],
+      "tool_error_requests": [],
+      "output_unavailable_requests": [],
+      "other_unproduced_requests": [],
+      "actual_file_count": 0,
+      "selected_candidate_file_count": 0,
+      "selected_candidate_asset_ids": [],
+      "master_candidate_count": 0,
+      "selected_master_candidate_count": 0,
+      "layer_candidate_count": 0,
+      "certified_asset_count_declared": 0,
+      "production_status": "no_file_refusal_recorded",
+      "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
+      "next_work": [
+        "Conserver les refus enregistrés; la première image candidate reste à produire.",
+        "Produire et vérifier les poses, transitions et animations prévues; une pose isolée ne termine pas le personnage ou le costume."
+      ]
+    },
+    {
+      "target_id": "pbody_portal2",
+      "source_bucket": "catalogue_extension_20261120.targets",
+      "source_file": "docs/resonance/data/catalogue_extension_20261120.json",
+      "category": "character",
+      "source_category": "character",
+      "owner_id": "pbody_portal2",
+      "name": "P-body",
+      "source_game": "Portal 2 — coopération",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Robot élancé à œil orange; silhouette distincte d’ATLAS. Un seul robot par fichier.",
+      "source_refs": [
+        {
+          "namespace": "catalogue_extension_20261120",
+          "source_id": "coop",
+          "title": "ATLAS and P-body",
+          "url": "https://combineoverwiki.net/wiki/ATLAS_and_P-body",
+          "kind": "secondary_reference",
+          "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire.",
+          "reference_status": null
+        },
+        {
+          "namespace": "catalogue_extension_20261120",
+          "source_id": "portal2_pbody_model_c",
+          "title": "Portal Wiki — modèle retail P-body",
+          "url": "https://i1.theportalwiki.net/img/7/74/P-body.png",
+          "kind": "secondary_hosted_game_model",
+          "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée.",
+          "reference_status": null
+        }
+      ],
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "target_id": "pbody_portal2",
+            "source_page": "https://theportalwiki.com/wiki/File:P-body.png",
+            "source_url": "https://i1.theportalwiki.net/img/7/74/P-body.png",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/pbody_portal2.png",
+            "sha256": "b021bb9c3d18664dd4f19ca5a7c94cf8fce9c74e9db4577da39bc87818942c49",
+            "width": 753,
+            "height": 1415,
+            "byte_size": 178194,
+            "metadata_excerpt": "",
+            "visually_inspected": true,
+            "role": "original_retail_game_model_capture",
+            "hosting": "community wiki mirror of original game imagery",
+            "inspection_notes": "Modèle officiel Portal 2 P-body inspecté; œil orange, très longues jambes et coque étroite ovale, silhouette distincte d'Atlas."
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "reference_status": "reference_images_inspected_candidate_unvalidated",
+      "effect_kind": null,
+      "effect_kind_provisional": false,
+      "projectile_class": null,
+      "requires_travel_sprite": null,
+      "primary_evidence_status": null,
+      "legacy_target_ids": [],
+      "legacy_reference_contracts": [],
+      "required_visual_state_ids": [],
+      "runtime_enabled_declared": false,
+      "target_certified_one_to_one_declared": false,
+      "required_layer_ids": [],
+      "actual_assets": [],
+      "refused_requests": [
+        {
+          "asset_id": "pbody_portal2_idle_c",
+          "owner_id": "pbody_portal2",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": "Aucun fichier candidat produit. Le refus automatique ne fournit pas de justification plus précise que « other ». Aucune relance, conversion, retouche ou certification n'a été effectuée; la cible reste à produire."
+        },
+        {
+          "asset_id": "pbody_portal2_idle_k",
+          "owner_id": "pbody_portal2",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": null
+        }
+      ],
+      "tool_error_requests": [],
+      "output_unavailable_requests": [],
+      "other_unproduced_requests": [],
+      "actual_file_count": 0,
+      "selected_candidate_file_count": 0,
+      "selected_candidate_asset_ids": [],
+      "master_candidate_count": 0,
+      "selected_master_candidate_count": 0,
+      "layer_candidate_count": 0,
+      "certified_asset_count_declared": 0,
+      "production_status": "no_file_refusal_recorded",
+      "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
+      "next_work": [
+        "Conserver les refus enregistrés; la première image candidate reste à produire.",
+        "Produire et vérifier les poses, transitions et animations prévues; une pose isolée ne termine pas le personnage ou le costume."
+      ]
+    },
+    {
+      "target_id": "wheatley_core_portal2",
+      "source_bucket": "catalogue_extension_20261120.targets",
+      "source_file": "docs/resonance/data/catalogue_extension_20261120.json",
+      "category": "character",
+      "source_category": "character",
+      "owner_id": "wheatley_core_portal2",
+      "name": "Wheatley — noyau mobile",
+      "source_game": "Portal 2",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Noyau autonome, distinct de Wheatley installé dans le corps central déjà catalogué comme boss.",
+      "source_refs": [
+        {
+          "namespace": "catalogue_extension_20261120",
+          "source_id": "cores",
+          "title": "Portal — Cores",
+          "url": "https://theportalwiki.com/wiki/Cores",
+          "kind": "secondary_reference",
+          "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire.",
+          "reference_status": null
+        },
+        {
+          "namespace": "catalogue_extension_20261120",
+          "source_id": "portal2_story",
+          "title": "Portal 2 — storyline",
+          "url": "https://combineoverwiki.net/wiki/Portal_2_storyline",
+          "kind": "secondary_reference",
+          "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire.",
+          "reference_status": null
+        },
+        {
+          "namespace": "catalogue_extension_20261120",
+          "source_id": "portal2_wheatley_capture_c",
+          "title": "Valve / Steam — Wheatley, capture 02",
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0cdd90fafc160b52d08b303d205f9fd4e83cf164.1920x1080.jpg?t=1790187113",
+          "kind": "primary_official_screenshot",
+          "checked_scope": "Bitmap effectivement chargé, inspecté et utilisé pour la demande du lot C. Identité visuelle de la référence; aucune certification automatique de la sortie générée.",
+          "reference_status": null
+        }
+      ],
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "target_id": "wheatley_core_portal2",
+            "source_page": "https://theportalwiki.com/wiki/File:Wheatley.png",
+            "source_url": "https://i1.theportalwiki.net/img/9/94/Wheatley.png",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/wheatley_core_portal2.png",
+            "sha256": "4e58a1c2f179619d505c6b1fe38a21fd63856fa69771f7bee99b730582960eab",
+            "width": 420,
+            "height": 430,
+            "byte_size": 236718,
+            "metadata_excerpt": "",
+            "visually_inspected": true,
+            "role": "original_retail_game_model_capture",
+            "hosting": "community wiki mirror of original game imagery",
+            "inspection_notes": "Reference bitmap inspected: scratched off-white spherical portable core with blue dotted eye, dark circular side recess and grey handles above/below. This is the mobile Wheatley identity, separate from Wheatley attached to the central facility chassis."
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "reference_status": "reference_images_inspected_candidate_unvalidated",
+      "effect_kind": null,
+      "effect_kind_provisional": false,
+      "projectile_class": null,
+      "requires_travel_sprite": null,
+      "primary_evidence_status": null,
+      "legacy_target_ids": [],
+      "legacy_reference_contracts": [],
+      "required_visual_state_ids": [],
+      "runtime_enabled_declared": false,
+      "target_certified_one_to_one_declared": false,
+      "required_layer_ids": [],
+      "actual_assets": [],
+      "refused_requests": [
+        {
+          "asset_id": "wheatley_core_portal2_idle_c",
+          "owner_id": "wheatley_core_portal2",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": "Refus automatique à la sortie (moderation_blocked); aucun PNG produit et aucune relance."
+        },
+        {
+          "asset_id": "wheatley_core_portal2_idle_k",
+          "owner_id": "wheatley_core_portal2",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": null
+        }
+      ],
+      "tool_error_requests": [],
+      "output_unavailable_requests": [],
+      "other_unproduced_requests": [],
+      "actual_file_count": 0,
+      "selected_candidate_file_count": 0,
+      "selected_candidate_asset_ids": [],
+      "master_candidate_count": 0,
+      "selected_master_candidate_count": 0,
+      "layer_candidate_count": 0,
+      "certified_asset_count_declared": 0,
+      "production_status": "no_file_refusal_recorded",
+      "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
+      "next_work": [
+        "Conserver les refus enregistrés; la première image candidate reste à produire.",
+        "Produire et vérifier les poses, transitions et animations prévues; une pose isolée ne termine pas le personnage ou le costume."
+      ]
+    },
+    {
+      "target_id": "armored_headcrab_hla",
+      "source_bucket": "catalogue_extension_20261120.targets",
+      "source_file": "docs/resonance/data/catalogue_extension_20261120.json",
+      "category": "character",
+      "source_category": "character",
+      "owner_id": "armored_headcrab_hla",
+      "name": "Crabe de tête cuirassé",
+      "source_game": "Half-Life: Alyx",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Carapace source HLA; différencier carapace entière et état retourné au stade animation.",
+      "source_refs": [
+        {
+          "namespace": "catalogue_extension_20261120",
+          "source_id": "armored_headcrab",
+          "title": "Armored Headcrab",
+          "url": "https://combineoverwiki.net/wiki/Armored_Headcrab",
+          "kind": "secondary_reference",
+          "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire.",
+          "reference_status": null
+        }
+      ],
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "target_id": "armored_headcrab_hla",
+            "source_page": "https://combineoverwiki.net/wiki/File:HLA_ArmoredHeadcrab.png",
+            "source_url": "https://combineoverwiki.net/images/1/1c/HLA_ArmoredHeadcrab.png",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/armored_headcrab_hla.png",
+            "sha256": "ea8cd804ca7503b6d88a336ba0ba8df416d8cf27e226997e6fca781712717c78",
+            "width": 1300,
+            "height": 930,
+            "byte_size": 497577,
+            "metadata_excerpt": "",
+            "visually_inspected": true,
+            "role": "original_retail_game_model_capture",
+            "hosting": "community wiki mirror of original game imagery",
+            "inspection_notes": "Modèle retail avec carapace sombre et pointes rouges; concept rose exclu."
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "reference_status": "reference_images_inspected_candidate_unvalidated",
+      "effect_kind": null,
+      "effect_kind_provisional": false,
+      "projectile_class": null,
+      "requires_travel_sprite": null,
+      "primary_evidence_status": null,
+      "legacy_target_ids": [],
+      "legacy_reference_contracts": [],
+      "required_visual_state_ids": [],
+      "runtime_enabled_declared": false,
+      "target_certified_one_to_one_declared": false,
+      "required_layer_ids": [],
+      "actual_assets": [],
+      "refused_requests": [
+        {
+          "asset_id": "armored_headcrab_hla_idle_k",
+          "owner_id": "armored_headcrab_hla",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": null
+        }
+      ],
+      "tool_error_requests": [],
+      "output_unavailable_requests": [],
+      "other_unproduced_requests": [],
+      "actual_file_count": 0,
+      "selected_candidate_file_count": 0,
+      "selected_candidate_asset_ids": [],
+      "master_candidate_count": 0,
+      "selected_master_candidate_count": 0,
+      "layer_candidate_count": 0,
+      "certified_asset_count_declared": 0,
+      "production_status": "no_file_refusal_recorded",
+      "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
+      "next_work": [
+        "Conserver les refus enregistrés; la première image candidate reste à produire.",
+        "Produire et vérifier les poses, transitions et animations prévues; une pose isolée ne termine pas le personnage ou le costume."
+      ]
+    },
+    {
+      "target_id": "space_core_portal2",
+      "source_bucket": "catalogue_extension_20261120.targets",
+      "source_file": "docs/resonance/data/catalogue_extension_20261120.json",
+      "category": "character",
+      "source_category": "character",
+      "owner_id": "space_core_portal2",
+      "name": "Space Core",
+      "source_game": "Portal 2",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Noyau corrompu de Portal 2; iris et capot de sa référence, image isolée sans autres noyaux.",
+      "source_refs": [
+        {
+          "namespace": "catalogue_extension_20261120",
+          "source_id": "cores",
+          "title": "Portal — Cores",
+          "url": "https://theportalwiki.com/wiki/Cores",
+          "kind": "secondary_reference",
+          "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire.",
+          "reference_status": null
+        }
+      ],
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "target_id": "space_core_portal2",
+            "source_page": "https://theportalwiki.com/wiki/File:SpaceCore.png",
+            "source_url": "https://i1.theportalwiki.net/img/b/bc/SpaceCore.png",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/space_core_portal2.png",
+            "sha256": "216590c5968c934769669900f9ad2fd12eb8d08ad7b40b39184523a47a4e8ba5",
+            "width": 794,
+            "height": 747,
+            "byte_size": 156136,
+            "metadata_excerpt": "",
+            "visually_inspected": true,
+            "role": "original_retail_game_model_capture",
+            "hosting": "community wiki mirror of original game imagery",
+            "inspection_notes": "Original Portal 2 model reference inspected; preserve individual iris and shutter geometry."
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "reference_status": "reference_images_inspected_candidate_unvalidated",
+      "effect_kind": null,
+      "effect_kind_provisional": false,
+      "projectile_class": null,
+      "requires_travel_sprite": null,
+      "primary_evidence_status": null,
+      "legacy_target_ids": [],
+      "legacy_reference_contracts": [],
+      "required_visual_state_ids": [],
+      "runtime_enabled_declared": false,
+      "target_certified_one_to_one_declared": false,
+      "required_layer_ids": [],
+      "actual_assets": [],
+      "refused_requests": [
+        {
+          "asset_id": "space_core_portal2_idle_k",
+          "owner_id": "space_core_portal2",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": null
+        }
+      ],
+      "tool_error_requests": [],
+      "output_unavailable_requests": [],
+      "other_unproduced_requests": [],
+      "actual_file_count": 0,
+      "selected_candidate_file_count": 0,
+      "selected_candidate_asset_ids": [],
+      "master_candidate_count": 0,
+      "selected_master_candidate_count": 0,
+      "layer_candidate_count": 0,
+      "certified_asset_count_declared": 0,
+      "production_status": "no_file_refusal_recorded",
+      "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
+      "next_work": [
+        "Conserver les refus enregistrés; la première image candidate reste à produire.",
+        "Produire et vérifier les poses, transitions et animations prévues; une pose isolée ne termine pas le personnage ou le costume."
+      ]
+    },
+    {
+      "target_id": "fact_core_portal2",
+      "source_bucket": "catalogue_extension_20261120.targets",
+      "source_file": "docs/resonance/data/catalogue_extension_20261120.json",
+      "category": "character",
+      "source_category": "character",
+      "owner_id": "fact_core_portal2",
+      "name": "Fact Core",
+      "source_game": "Portal 2",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Noyau corrompu de Portal 2; œil et motifs exacts à relever avant génération.",
+      "source_refs": [
+        {
+          "namespace": "catalogue_extension_20261120",
+          "source_id": "cores",
+          "title": "Portal — Cores",
+          "url": "https://theportalwiki.com/wiki/Cores",
+          "kind": "secondary_reference",
+          "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire.",
+          "reference_status": null
+        }
+      ],
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "target_id": "fact_core_portal2",
+            "source_page": "https://theportalwiki.com/wiki/File:FactCore.png",
+            "source_url": "https://i1.theportalwiki.net/img/5/55/FactCore.png",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/fact_core_portal2.png",
+            "sha256": "df01d7310b49aa57a8793e43977de7c10ff96c023b0f5df3dbff4e932a5b2276",
+            "width": 420,
+            "height": 430,
+            "byte_size": 204547,
+            "metadata_excerpt": "",
+            "visually_inspected": true,
+            "role": "original_retail_game_model_capture",
+            "hosting": "community wiki mirror of original game imagery",
+            "inspection_notes": "Original Portal 2 model reference inspected; preserve individual iris and shutter geometry."
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "reference_status": "reference_images_inspected_candidate_unvalidated",
+      "effect_kind": null,
+      "effect_kind_provisional": false,
+      "projectile_class": null,
+      "requires_travel_sprite": null,
+      "primary_evidence_status": null,
+      "legacy_target_ids": [],
+      "legacy_reference_contracts": [],
+      "required_visual_state_ids": [],
+      "runtime_enabled_declared": false,
+      "target_certified_one_to_one_declared": false,
+      "required_layer_ids": [],
+      "actual_assets": [],
+      "refused_requests": [
+        {
+          "asset_id": "fact_core_portal2_idle_k",
+          "owner_id": "fact_core_portal2",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": null
+        }
+      ],
+      "tool_error_requests": [],
+      "output_unavailable_requests": [],
+      "other_unproduced_requests": [],
+      "actual_file_count": 0,
+      "selected_candidate_file_count": 0,
+      "selected_candidate_asset_ids": [],
+      "master_candidate_count": 0,
+      "selected_master_candidate_count": 0,
+      "layer_candidate_count": 0,
+      "certified_asset_count_declared": 0,
+      "production_status": "no_file_refusal_recorded",
+      "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
+      "next_work": [
+        "Conserver les refus enregistrés; la première image candidate reste à produire.",
+        "Produire et vérifier les poses, transitions et animations prévues; une pose isolée ne termine pas le personnage ou le costume."
+      ]
+    },
+    {
+      "target_id": "cave_head_deskjob",
+      "source_bucket": "catalogue_extension_20261120.targets",
+      "source_file": "docs/resonance/data/catalogue_extension_20261120.json",
+      "category": "boss",
+      "source_category": "boss",
+      "owner_id": "cave_head_deskjob",
+      "name": "Cave Johnson — tête informatique",
+      "source_game": "Aperture Desk Job",
+      "content_class": "official_alternate_continuity",
+      "priority": "P1",
+      "identity_lock": "Tête géante et structure interne du jeu; résultat narratif à respecter, aucune mort canonique garantie par dégâts simples.",
+      "source_refs": [
+        {
+          "namespace": "catalogue_extension_20261120",
+          "source_id": "deskjob_story",
+          "title": "Aperture Desk Job — storyline",
+          "url": "https://www.combineoverwiki.net/wiki/Aperture_Desk_Job_storyline",
+          "kind": "secondary_reference",
+          "checked_scope": "Identité et présence documentées; capture du modèle ou du lieu encore nécessaire.",
+          "reference_status": null
+        },
+        {
+          "namespace": "catalogue_extension_20261120",
+          "source_id": "deskjob",
+          "title": "Valve — Aperture Desk Job",
+          "url": "https://store.steampowered.com/app/1902490/",
+          "kind": "primary_official",
+          "checked_scope": "Jeu court officiel situé dans l’univers Portal; produit distinct de Portal 3. La continuité est conservée séparément.",
+          "reference_status": null
+        }
+      ],
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "target_id": "cave_head_deskjob",
+            "source_page": "https://combineoverwiki.net/wiki/File:ADJ_Cave_Metal.jpg",
+            "source_url": "https://combineoverwiki.net/images/1/1c/ADJ_Cave_Metal.jpg",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/cave_head_deskjob.jpg",
+            "sha256": "3b92d0d13498a5120b21fc865ceee4f53fad23ddcabc8b594d61d0d389cccf91",
+            "width": 1292,
+            "height": 969,
+            "byte_size": 515661,
+            "metadata_excerpt": "",
+            "visually_inspected": true,
+            "role": "source_game_model_or_scene_reference",
+            "hosting": "community wiki mirror of original game imagery",
+            "inspection_notes": "Deux captures retail Desk Job inspectées; choix explicite de la tête métallique révélée. Capture de tête en argile utilisée seulement pour silhouette complète. Continuité officielle alternative, pas un boss de la campagne Half-Life."
+          },
+          {
+            "target_id": "cave_head_deskjob_clay",
+            "source_page": "https://combineoverwiki.net/wiki/File:ADJ_Cave_Clay.jpg",
+            "source_url": "https://combineoverwiki.net/images/c/c0/ADJ_Cave_Clay.jpg",
+            "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/cave_head_deskjob_clay.jpg",
+            "sha256": "4707f6fbe3e26bb5e57e417f62e84dea2b9018d89360fe4c339cf91e1cdb456b",
+            "width": 1920,
+            "height": 1080,
+            "byte_size": 626811,
+            "metadata_excerpt": "",
+            "visually_inspected": true,
+            "role": "source_game_model_or_scene_reference",
+            "hosting": "community wiki mirror of original game imagery",
+            "inspection_notes": "Deux captures retail Desk Job inspectées; choix explicite de la tête métallique révélée. Capture de tête en argile utilisée seulement pour silhouette complète. Continuité officielle alternative, pas un boss de la campagne Half-Life."
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "reference_status": "reference_images_inspected_candidate_unvalidated",
+      "effect_kind": null,
+      "effect_kind_provisional": false,
+      "projectile_class": null,
+      "requires_travel_sprite": null,
+      "primary_evidence_status": null,
+      "legacy_target_ids": [],
+      "legacy_reference_contracts": [],
+      "required_visual_state_ids": [],
+      "runtime_enabled_declared": false,
+      "target_certified_one_to_one_declared": false,
+      "required_layer_ids": [],
+      "actual_assets": [],
+      "refused_requests": [
+        {
+          "asset_id": "cave_head_deskjob_idle_k",
+          "owner_id": "cave_head_deskjob",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": null
+        }
+      ],
+      "tool_error_requests": [],
+      "output_unavailable_requests": [],
+      "other_unproduced_requests": [],
+      "actual_file_count": 0,
+      "selected_candidate_file_count": 0,
+      "selected_candidate_asset_ids": [],
+      "master_candidate_count": 0,
+      "selected_master_candidate_count": 0,
+      "layer_candidate_count": 0,
+      "certified_asset_count_declared": 0,
+      "production_status": "no_file_refusal_recorded",
+      "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
+      "next_work": [
+        "Conserver les refus enregistrés; la première image candidate reste à produire.",
+        "Produire les poses et animations du boss puis valider ses phases, son échelle et ses interactions."
+      ]
+    },
+    {
+      "target_id": "proj_satchel_hl1",
+      "source_bucket": "projectile_catalog_20261124.targets",
+      "source_file": "docs/resonance/data/projectile_catalog_20261124.json",
+      "category": "projectile",
+      "source_category": "projectile",
+      "owner_id": "proj_satchel_hl1",
+      "name": "Charge télécommandée lancée",
+      "source_game": "Half-Life (1998)",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Charge w_satchel.mdl; ne pas dessiner la télécommande comme projectile.",
+      "source_refs": [
+        {
+          "namespace": "projectile_catalog_20261124",
+          "source_id": "hl1_satchel",
+          "title": "satchel.cpp",
+          "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/satchel.cpp",
+          "kind": "official_source_code",
+          "checked_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified"
+        },
+        {
+          "namespace": "projectile_catalog_20261124",
+          "source_id": "legacy_f__PJ_HL1_SATCHEL",
+          "title": "Valve — satchel.cpp",
+          "url": "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/satchel.cpp",
+          "kind": "primary_official_source_code",
+          "checked_scope": "CSatchelCharge et monster_satchel; charge physique lancée et déclenchement séparé.",
+          "reference_status": null
+        }
+      ],
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "Hl_satchel_world.png",
+            "source_url": "https://combineoverwiki.net/images/4/4a/Hl_satchel_world.png",
+            "source_page": "https://combineoverwiki.net/wiki/File:Hl_satchel_world.png",
+            "article_url": "https://combineoverwiki.net/wiki/Satchel_Charge",
+            "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/Hl_satchel_world.png",
+            "sha256": "b1ab75d83d0cdd213dd55a987e8b49ae8a99cadb73da1dca4377e1fc6d165ca8",
+            "byte_size": 131926,
+            "dimensions": [
+              500,
+              780
+            ],
+            "caption": "",
+            "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+            "visually_inspected": true
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "reference_status": "reference_images_inspected_candidate_unvalidated",
+      "effect_kind": "throwable",
+      "effect_kind_provisional": false,
+      "projectile_class": "thrown_device",
+      "requires_travel_sprite": true,
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "legacy_target_ids": [
+        "PRJ_HL1_SATCHEL_CHARGE"
+      ],
+      "legacy_reference_contracts": [
+        {
+          "catalogue": "docs/resonance/production/continuation_20261124_f/projectile_catalog_original.json",
+          "target_id": "PRJ_HL1_SATCHEL_CHARGE",
+          "relation": "same_family",
+          "identity_lock": "Charge physique et radiocommande sont deux objets différents; ne pas dessiner la radio comme projectile.",
+          "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+          "projectile_class": "thrown_device",
+          "requires_travel_sprite": true,
+          "source_entities": [
+            "monster_satchel"
+          ],
+          "source_resource_names": [
+            "models/w_satchel.mdl"
+          ],
+          "required_states": [
+            "held_or_resting",
+            "in_flight",
+            "contact_or_bounce",
+            "armed_if_applicable",
+            "detonation_or_activation"
+          ],
+          "required_variants": []
+        }
+      ],
+      "required_visual_state_ids": [
+        "thrown",
+        "landed",
+        "detonation"
+      ],
+      "runtime_enabled_declared": false,
+      "target_certified_one_to_one_declared": false,
+      "required_layer_ids": [],
+      "actual_assets": [],
+      "refused_requests": [
+        {
+          "asset_id": "proj_satchel_hl1_h_refused",
+          "owner_id": "proj_satchel_hl1",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": "Refus historique récupéré; aucun fichier associé et aucune nouvelle tentative pendant la récupération."
+        },
+        {
+          "asset_id": "proj_satchel_hl1_landed_k",
+          "owner_id": "proj_satchel_hl1",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": "Refus explicite de sortie par le système de sécurité; aucune nouvelle tentative de cette cible dans ce lot."
+        }
+      ],
+      "tool_error_requests": [],
+      "output_unavailable_requests": [],
+      "other_unproduced_requests": [],
+      "actual_file_count": 0,
+      "selected_candidate_file_count": 0,
+      "selected_candidate_asset_ids": [],
+      "master_candidate_count": 0,
+      "selected_master_candidate_count": 0,
+      "layer_candidate_count": 0,
+      "candidate_visual_state_ids": [],
+      "selected_visual_state_ids": [],
+      "missing_visual_state_ids": [
+        "thrown",
+        "landed",
+        "detonation"
+      ],
+      "visual_state_files_without_id_count": 0,
+      "certified_asset_count_declared": 0,
+      "production_status": "no_file_refusal_recorded",
+      "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
+      "next_work": [
+        "Conserver les refus enregistrés; la première image candidate reste à produire.",
+        "Produire séparément corps, traînée, impact et variantes indiquées; attribuer un visual_state_id exact à chaque fichier.",
+        "Vérifier alpha, couleurs, durée, orientation et interaction avant intégration; une image ne termine pas une famille."
+      ]
+    },
+    {
+      "target_id": "fx_bullet_tracer_hl1",
+      "source_bucket": "projectile_catalog_20261124.targets",
+      "source_file": "docs/resonance/data/projectile_catalog_20261124.json",
+      "category": "projectile",
+      "source_category": "projectile",
+      "owner_id": "fx_bullet_tracer_hl1",
+      "name": "Traceur balistique GoldSrc",
+      "source_game": "Half-Life (1998)",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Le tir de balle se résout par trace; tracer optionnel visuel, aucune lente ogive physique.",
+      "source_refs": [
+        {
+          "namespace": "projectile_catalog_20261124",
+          "source_id": "hl1_combat",
+          "title": "combat.cpp",
+          "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/combat.cpp",
+          "kind": "official_source_code",
+          "checked_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified"
+        }
+      ],
+      "reference_capture": null,
+      "reference_status": "code_contract_visual_pending",
+      "effect_kind": "instant_trace",
+      "effect_kind_provisional": false,
+      "projectile_class": null,
+      "requires_travel_sprite": null,
+      "primary_evidence_status": null,
+      "legacy_target_ids": [],
+      "legacy_reference_contracts": [],
+      "required_visual_state_ids": [
+        "trace",
+        "wall_impact"
+      ],
+      "runtime_enabled_declared": false,
+      "target_certified_one_to_one_declared": false,
+      "required_layer_ids": [],
+      "actual_assets": [],
+      "refused_requests": [],
+      "tool_error_requests": [],
+      "output_unavailable_requests": [],
+      "other_unproduced_requests": [],
+      "actual_file_count": 0,
+      "selected_candidate_file_count": 0,
+      "selected_candidate_asset_ids": [],
+      "master_candidate_count": 0,
+      "selected_master_candidate_count": 0,
+      "layer_candidate_count": 0,
+      "candidate_visual_state_ids": [],
+      "selected_visual_state_ids": [],
+      "missing_visual_state_ids": [
+        "trace",
+        "wall_impact"
+      ],
+      "visual_state_files_without_id_count": 0,
+      "certified_asset_count_declared": 0,
+      "production_status": "no_file",
+      "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
+      "next_work": [
+        "Ajouter des captures du modèle ou du lieu exact et vérifier les invariants visuels.",
+        "Produire une première image candidate individuelle après fixation des références.",
+        "Produire séparément corps, traînée, impact et variantes indiquées; attribuer un visual_state_id exact à chaque fichier.",
+        "Conserver un tir instantané; le traceur visuel ne devient pas un projectile lent.",
+        "Vérifier alpha, couleurs, durée, orientation et interaction avant intégration; une image ne termine pas une famille."
+      ]
+    },
+    {
+      "target_id": "proj_gonome_gut_opfor",
+      "source_bucket": "projectile_catalog_20261124.targets",
+      "source_file": "docs/resonance/data/projectile_catalog_20261124.json",
+      "category": "projectile",
+      "source_category": "projectile",
+      "owner_id": "proj_gonome_gut_opfor",
+      "name": "Projectile organique Gonome",
+      "source_game": "Half-Life: Opposing Force",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Projectile lancé par le Gonome, distinct du crachat Bullsquid.",
+      "source_refs": [
+        {
+          "namespace": "projectile_catalog_20261124",
+          "source_id": "opfor_release",
+          "title": "Valve/Gearbox — Opposing Force",
+          "url": "https://store.steampowered.com/app/50/HalfLife_Opposing_Force/",
+          "kind": "official_game_media_or_product",
+          "checked_scope": "Contexte du jeu seulement. Le code de Half-Life 1 ne prouve pas les attaques ajoutées par Gearbox; références d’armes et de monstres à capturer dans Opposing Force.",
+          "reference_status": "context_only_visual_capture_required"
+        }
+      ],
+      "reference_capture": null,
+      "reference_status": "exact_visual_reference_pending",
+      "effect_kind": "projectile",
+      "effect_kind_provisional": true,
+      "projectile_class": null,
+      "requires_travel_sprite": null,
+      "primary_evidence_status": null,
+      "legacy_target_ids": [],
+      "legacy_reference_contracts": [],
+      "required_visual_state_ids": [
+        "body",
+        "impact"
+      ],
+      "runtime_enabled_declared": false,
+      "target_certified_one_to_one_declared": false,
+      "required_layer_ids": [],
+      "actual_assets": [],
+      "refused_requests": [],
+      "tool_error_requests": [],
+      "output_unavailable_requests": [],
+      "other_unproduced_requests": [],
+      "actual_file_count": 0,
+      "selected_candidate_file_count": 0,
+      "selected_candidate_asset_ids": [],
+      "master_candidate_count": 0,
+      "selected_master_candidate_count": 0,
+      "layer_candidate_count": 0,
+      "candidate_visual_state_ids": [],
+      "selected_visual_state_ids": [],
+      "missing_visual_state_ids": [
+        "body",
+        "impact"
+      ],
+      "visual_state_files_without_id_count": 0,
+      "certified_asset_count_declared": 0,
+      "production_status": "no_file",
+      "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
+      "next_work": [
+        "Ajouter des captures du modèle ou du lieu exact et vérifier les invariants visuels.",
+        "Produire une première image candidate individuelle après fixation des références.",
+        "Produire séparément corps, traînée, impact et variantes indiquées; attribuer un visual_state_id exact à chaque fichier.",
+        "Vérifier le type d’effet et sa séquence dans le jeu source avant de fixer le contrat visuel.",
+        "Vérifier alpha, couleurs, durée, orientation et interaction avant intégration; une image ne termine pas une famille."
+      ]
+    },
+    {
+      "target_id": "proj_rpg_rocket_hl2",
+      "source_bucket": "projectile_catalog_20261124.targets",
+      "source_file": "docs/resonance/data/projectile_catalog_20261124.json",
+      "category": "projectile",
+      "source_category": "projectile",
+      "owner_id": "proj_rpg_rocket_hl2",
+      "name": "Missile RPG — modèle HL2",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "w_missile_launch puis w_missile en vol; fumée et moteur séparés.",
+      "source_refs": [
+        {
+          "namespace": "projectile_catalog_20261124",
+          "source_id": "hl2_weapon_rpg",
+          "title": "weapon_rpg.cpp",
+          "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/weapon_rpg.cpp",
+          "kind": "official_source_code",
+          "checked_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified"
+        },
+        {
+          "namespace": "projectile_catalog_20261124",
+          "source_id": "legacy_f__PJ_HL2_WEAPON_RPG",
+          "title": "Valve — weapon_rpg.cpp",
+          "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/weapon_rpg.cpp",
+          "kind": "primary_official_source_code",
+          "checked_scope": "CMissile/rpg_missile et CAPCMissile/apc_missile sont séparés; variantes w_missile_launch, w_missile et w_missile_closed référencées.",
+          "reference_status": null
+        }
+      ],
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "RPG_rocket_fly.jpg",
+            "source_url": "https://combineoverwiki.net/images/6/6b/RPG_rocket_fly.jpg",
+            "source_page": "https://combineoverwiki.net/wiki/File:RPG_rocket_fly.jpg",
+            "article_url": "https://combineoverwiki.net/wiki/Rocket-Propelled_Grenade_Launcher_(Half-Life_2)",
+            "path": "/workspace/scratch/d4619ad792f3/resonance-k-work/effects/references/RPG_rocket_fly.jpg",
+            "sha256": "d8419e4af3bbf70f9a0db2fdb4d82a919619187b6416d9d55f4836e22a3c89f2",
+            "byte_size": 119503,
+            "dimensions": [
+              1054,
+              341
+            ],
+            "caption": "Rocket model, in flying mode.",
+            "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+            "visually_inspected": true
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "reference_status": "reference_images_inspected_candidate_unvalidated",
+      "effect_kind": "projectile",
+      "effect_kind_provisional": false,
+      "projectile_class": "moving_projectile",
+      "requires_travel_sprite": true,
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "legacy_target_ids": [
+        "PRJ_HL2_RPG_MISSILE"
+      ],
+      "legacy_reference_contracts": [
+        {
+          "catalogue": "docs/resonance/production/continuation_20261124_f/projectile_catalog_original.json",
+          "target_id": "PRJ_HL2_RPG_MISSILE",
+          "relation": "same_family",
+          "identity_lock": "RPG HL2: états de sortie du tube et de vol à distinguer; conserver le modèle retail de chaque état et le guidage laser séparé.",
+          "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+          "projectile_class": "moving_projectile",
+          "requires_travel_sprite": true,
+          "source_entities": [
+            "rpg_missile"
+          ],
+          "source_resource_names": [
+            "models/weapons/w_missile_launch.mdl",
+            "models/weapons/w_missile.mdl"
+          ],
+          "required_states": [
+            "flight_key",
+            "flight_loop",
+            "trail_if_present_in_source",
+            "contact",
+            "expiry_or_detonation_if_present_in_source"
+          ],
+          "required_variants": []
+        }
+      ],
+      "required_visual_state_ids": [
+        "launch",
+        "flight",
+        "trail",
+        "impact"
+      ],
+      "runtime_enabled_declared": false,
+      "target_certified_one_to_one_declared": false,
+      "required_layer_ids": [],
+      "actual_assets": [],
+      "refused_requests": [
+        {
+          "asset_id": "projectile_rpg_hl2_f",
+          "owner_id": "proj_rpg_rocket_hl2",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": "Génération refusée; aucun fichier et aucune relance."
+        },
+        {
+          "asset_id": "proj_rpg_rocket_hl2_flight_k",
+          "owner_id": "proj_rpg_rocket_hl2",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": "Refus explicite de sortie par le système de sécurité; aucune nouvelle tentative de cette cible dans ce lot."
+        }
+      ],
+      "tool_error_requests": [],
+      "output_unavailable_requests": [],
+      "other_unproduced_requests": [],
+      "actual_file_count": 0,
+      "selected_candidate_file_count": 0,
+      "selected_candidate_asset_ids": [],
+      "master_candidate_count": 0,
+      "selected_master_candidate_count": 0,
+      "layer_candidate_count": 0,
+      "candidate_visual_state_ids": [],
+      "selected_visual_state_ids": [],
+      "missing_visual_state_ids": [
+        "launch",
+        "flight",
+        "trail",
+        "impact"
+      ],
+      "visual_state_files_without_id_count": 0,
+      "certified_asset_count_declared": 0,
+      "production_status": "no_file_refusal_recorded",
+      "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
+      "next_work": [
+        "Conserver les refus enregistrés; la première image candidate reste à produire.",
+        "Produire séparément corps, traînée, impact et variantes indiquées; attribuer un visual_state_id exact à chaque fichier.",
+        "Vérifier alpha, couleurs, durée, orientation et interaction avant intégration; une image ne termine pas une famille."
+      ]
+    },
+    {
+      "target_id": "proj_apc_missile_hl2",
+      "source_bucket": "projectile_catalog_20261124.targets",
+      "source_file": "docs/resonance/data/projectile_catalog_20261124.json",
+      "category": "projectile",
+      "source_category": "projectile",
+      "owner_id": "proj_apc_missile_hl2",
+      "name": "Missile APC",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Classe CAPCMissile du code RPG; trajectoire guidée et fumée; pas une orbe AR2.",
+      "source_refs": [
+        {
+          "namespace": "projectile_catalog_20261124",
+          "source_id": "hl2_weapon_rpg",
+          "title": "weapon_rpg.cpp",
+          "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/weapon_rpg.cpp",
+          "kind": "official_source_code",
+          "checked_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified"
+        },
+        {
+          "namespace": "projectile_catalog_20261124",
+          "source_id": "legacy_f__PJ_HL2_VEHICLE_APC",
+          "title": "Valve — vehicle_apc.cpp",
+          "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/vehicle_apc.cpp",
+          "kind": "primary_official_source_code",
+          "checked_scope": "CPropAPC::FireRocket utilise CAPCMissile; le canon de bord utilise un autre chemin FireBullets.",
+          "reference_status": null
+        },
+        {
+          "namespace": "projectile_catalog_20261124",
+          "source_id": "legacy_f__PJ_HL2_WEAPON_RPG",
+          "title": "Valve — weapon_rpg.cpp",
+          "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/weapon_rpg.cpp",
+          "kind": "primary_official_source_code",
+          "checked_scope": "CMissile/rpg_missile et CAPCMissile/apc_missile sont séparés; variantes w_missile_launch, w_missile et w_missile_closed référencées.",
+          "reference_status": null
+        }
+      ],
+      "reference_capture": null,
+      "reference_status": "code_contract_visual_pending",
+      "effect_kind": "projectile",
+      "effect_kind_provisional": false,
+      "projectile_class": "moving_projectile",
+      "requires_travel_sprite": true,
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "legacy_target_ids": [
+        "PRJ_HL2_APC_MISSILE"
+      ],
+      "legacy_reference_contracts": [
+        {
+          "catalogue": "docs/resonance/production/continuation_20261124_f/projectile_catalog_original.json",
+          "target_id": "PRJ_HL2_APC_MISSILE",
+          "relation": "same_family",
+          "identity_lock": "Missile lancé par le blindé; cible distincte du RPG du joueur et du tir du canon de bord.",
+          "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+          "projectile_class": "moving_projectile",
+          "requires_travel_sprite": true,
+          "source_entities": [
+            "apc_missile"
+          ],
+          "source_resource_names": [
+            "models/weapons/w_missile.mdl"
+          ],
+          "required_states": [
+            "flight_key",
+            "flight_loop",
+            "trail_if_present_in_source",
+            "contact",
+            "expiry_or_detonation_if_present_in_source"
+          ],
+          "required_variants": []
+        }
+      ],
+      "required_visual_state_ids": [
+        "body",
+        "trail",
+        "impact"
+      ],
+      "runtime_enabled_declared": false,
+      "target_certified_one_to_one_declared": false,
+      "required_layer_ids": [],
+      "actual_assets": [],
+      "refused_requests": [],
+      "tool_error_requests": [],
+      "output_unavailable_requests": [],
+      "other_unproduced_requests": [],
+      "actual_file_count": 0,
+      "selected_candidate_file_count": 0,
+      "selected_candidate_asset_ids": [],
+      "master_candidate_count": 0,
+      "selected_master_candidate_count": 0,
+      "layer_candidate_count": 0,
+      "candidate_visual_state_ids": [],
+      "selected_visual_state_ids": [],
+      "missing_visual_state_ids": [
+        "body",
+        "trail",
+        "impact"
+      ],
+      "visual_state_files_without_id_count": 0,
+      "certified_asset_count_declared": 0,
+      "production_status": "no_file",
+      "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
+      "next_work": [
+        "Ajouter des captures du modèle ou du lieu exact et vérifier les invariants visuels.",
+        "Produire une première image candidate individuelle après fixation des références.",
+        "Produire séparément corps, traînée, impact et variantes indiquées; attribuer un visual_state_id exact à chaque fichier.",
+        "Vérifier alpha, couleurs, durée, orientation et interaction avant intégration; une image ne termine pas une famille."
+      ]
+    },
+    {
+      "target_id": "proj_antlion_worker_spit_ep2",
+      "source_bucket": "projectile_catalog_20261124.targets",
+      "source_file": "docs/resonance/data/projectile_catalog_20261124.json",
+      "category": "projectile",
+      "source_category": "projectile",
+      "owner_id": "proj_antlion_worker_spit_ep2",
+      "name": "Crachat de Fourmilion ouvrier",
+      "source_game": "Half-Life 2: Episode Two",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "spitball_large/medium/small.mdl et antlion_spit_trail; pas le bigspit HL1.",
+      "source_refs": [
+        {
+          "namespace": "projectile_catalog_20261124",
+          "source_id": "hl2_grenade_spit",
+          "title": "grenade_spit.cpp",
+          "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/grenade_spit.cpp",
+          "kind": "official_source_code",
+          "checked_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified"
+        },
+        {
+          "namespace": "projectile_catalog_20261124",
+          "source_id": "legacy_f__PJ_HL2_NPC_ANTLION",
+          "title": "Valve — npc_antlion.cpp",
+          "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_antlion.cpp",
+          "kind": "primary_official_source_code",
+          "checked_scope": "La branche ouvrier crée grenade_spit; ne pas attribuer ce tir au fourmilion standard.",
+          "reference_status": null
+        },
+        {
+          "namespace": "projectile_catalog_20261124",
+          "source_id": "legacy_f__PJ_HL2_GRENADE_SPIT",
+          "title": "Valve — grenade_spit.cpp",
+          "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/grenade_spit.cpp",
+          "kind": "primary_official_source_code",
+          "checked_scope": "CGrenadeSpit/grenade_spit et modèles spitball_large/medium/small; contact et effet acide distincts.",
+          "reference_status": null
+        }
+      ],
+      "reference_capture": null,
+      "reference_status": "code_contract_visual_pending",
+      "effect_kind": "projectile",
+      "effect_kind_provisional": false,
+      "projectile_class": "moving_projectile",
+      "requires_travel_sprite": true,
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "legacy_target_ids": [
+        "PRJ_EP2_ANTLION_WORKER_SPIT"
+      ],
+      "legacy_reference_contracts": [
+        {
+          "catalogue": "docs/resonance/production/continuation_20261124_f/projectile_catalog_original.json",
+          "target_id": "PRJ_EP2_ANTLION_WORKER_SPIT",
+          "relation": "same_family",
+          "identity_lock": "Attaque du modèle ouvrier; conserver les volumes grand/moyen/petit comme variantes du crachat. Ne pas la donner au fourmilion standard.",
+          "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+          "projectile_class": "moving_projectile",
+          "requires_travel_sprite": true,
+          "source_entities": [
+            "grenade_spit"
+          ],
+          "source_resource_names": [
+            "models/spitball_large.mdl",
+            "models/spitball_medium.mdl",
+            "models/spitball_small.mdl"
+          ],
+          "required_states": [
+            "flight_key",
+            "flight_loop",
+            "trail_if_present_in_source",
+            "contact",
+            "expiry_or_detonation_if_present_in_source"
+          ],
+          "required_variants": [
+            "grand",
+            "moyen",
+            "petit"
+          ]
+        }
+      ],
+      "required_visual_state_ids": [
+        "large",
+        "medium",
+        "small",
+        "trail",
+        "impact"
+      ],
+      "runtime_enabled_declared": false,
+      "target_certified_one_to_one_declared": false,
+      "required_layer_ids": [],
+      "actual_assets": [],
+      "refused_requests": [],
+      "tool_error_requests": [],
+      "output_unavailable_requests": [],
+      "other_unproduced_requests": [],
+      "actual_file_count": 0,
+      "selected_candidate_file_count": 0,
+      "selected_candidate_asset_ids": [],
+      "master_candidate_count": 0,
+      "selected_master_candidate_count": 0,
+      "layer_candidate_count": 0,
+      "candidate_visual_state_ids": [],
+      "selected_visual_state_ids": [],
+      "missing_visual_state_ids": [
+        "large",
+        "medium",
+        "small",
+        "trail",
+        "impact"
+      ],
+      "visual_state_files_without_id_count": 0,
+      "certified_asset_count_declared": 0,
+      "production_status": "no_file",
+      "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
+      "next_work": [
+        "Ajouter des captures du modèle ou du lieu exact et vérifier les invariants visuels.",
+        "Produire une première image candidate individuelle après fixation des références.",
+        "Produire séparément corps, traînée, impact et variantes indiquées; attribuer un visual_state_id exact à chaque fichier.",
+        "Vérifier alpha, couleurs, durée, orientation et interaction avant intégration; une image ne termine pas une famille."
+      ]
+    },
+    {
+      "target_id": "fx_strider_warp_hl2",
+      "source_bucket": "projectile_catalog_20261124.targets",
+      "source_file": "docs/resonance/data/projectile_catalog_20261124.json",
+      "category": "projectile",
+      "source_category": "projectile",
+      "owner_id": "fx_strider_warp_hl2",
+      "name": "Canon lourd Strider",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Charge, distorsion, tir lourd et blast de contact; pas l’orbe AR2.",
+      "source_refs": [
+        {
+          "namespace": "projectile_catalog_20261124",
+          "source_id": "hl2_npc_strider",
+          "title": "npc_strider.cpp",
+          "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/npc_strider.cpp",
+          "kind": "official_source_code",
+          "checked_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified"
+        },
+        {
+          "namespace": "projectile_catalog_20261124",
+          "source_id": "legacy_f__PJ_HL2_NPC_STRIDER",
+          "title": "Valve — npc_strider.cpp",
+          "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_strider.cpp",
+          "kind": "primary_official_source_code",
+          "checked_scope": "CNPC_Strider::FireCannon/CannonHitThink et matériaux de canon; ne pas confondre le rayon du canon avec les balles de MiniGun.",
+          "reference_status": null
+        }
+      ],
+      "reference_capture": null,
+      "reference_status": "code_contract_visual_pending",
+      "effect_kind": "beam",
+      "effect_kind_provisional": false,
+      "projectile_class": "instant_beam",
+      "requires_travel_sprite": false,
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "legacy_target_ids": [
+        "PRJ_HL2_STRIDER_CANNON"
+      ],
+      "legacy_reference_contracts": [
+        {
+          "catalogue": "docs/resonance/production/continuation_20261124_f/projectile_catalog_original.json",
+          "target_id": "PRJ_HL2_STRIDER_CANNON",
+          "relation": "same_family",
+          "identity_lock": "Grand canon et effet de distorsion; séparer préparation, rayon et impact. Le MiniGun utilise un autre chemin de tir.",
+          "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+          "projectile_class": "instant_beam",
+          "requires_travel_sprite": false,
+          "source_entities": [
+            "CNPC_Strider::FireCannon",
+            "CNPC_Strider::CannonHitThink"
+          ],
+          "source_resource_names": [
+            "effects/blueblacklargebeam",
+            "effects/strider_muzzle"
+          ],
+          "required_states": [
+            "charge_if_present",
+            "emission",
+            "origin_to_contact",
+            "contact",
+            "fade"
+          ],
+          "required_variants": []
+        }
+      ],
+      "required_visual_state_ids": [
+        "charge",
+        "shot",
+        "impact"
+      ],
+      "runtime_enabled_declared": false,
+      "target_certified_one_to_one_declared": false,
+      "required_layer_ids": [],
+      "actual_assets": [],
+      "refused_requests": [],
+      "tool_error_requests": [],
+      "output_unavailable_requests": [],
+      "other_unproduced_requests": [],
+      "actual_file_count": 0,
+      "selected_candidate_file_count": 0,
+      "selected_candidate_asset_ids": [],
+      "master_candidate_count": 0,
+      "selected_master_candidate_count": 0,
+      "layer_candidate_count": 0,
+      "candidate_visual_state_ids": [],
+      "selected_visual_state_ids": [],
+      "missing_visual_state_ids": [
+        "charge",
+        "shot",
+        "impact"
+      ],
+      "visual_state_files_without_id_count": 0,
+      "certified_asset_count_declared": 0,
+      "production_status": "no_file",
+      "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
+      "next_work": [
+        "Ajouter des captures du modèle ou du lieu exact et vérifier les invariants visuels.",
+        "Produire une première image candidate individuelle après fixation des références.",
+        "Produire séparément corps, traînée, impact et variantes indiquées; attribuer un visual_state_id exact à chaque fichier.",
+        "Respecter le faisceau ou la zone; un effet continu ne devient pas une boule mobile.",
+        "Vérifier alpha, couleurs, durée, orientation et interaction avant intégration; une image ne termine pas une famille."
+      ]
+    },
+    {
+      "target_id": "proj_antlion_spit_hla",
+      "source_bucket": "projectile_catalog_20261124.targets",
+      "source_file": "docs/resonance/data/projectile_catalog_20261124.json",
+      "category": "projectile",
+      "source_category": "projectile",
+      "owner_id": "proj_antlion_spit_hla",
+      "name": "Projectile de Fourmilion HLA",
+      "source_game": "Half-Life: Alyx",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Variante biologique HLA à identifier sur capture avant production; pas de copie automatique Episode Two.",
+      "source_refs": [
+        {
+          "namespace": "projectile_catalog_20261124",
+          "source_id": "alyx_release",
+          "title": "Valve — Half-Life: Alyx",
+          "url": "https://www.half-life.com/en/alyx",
+          "kind": "official_game_media_or_product",
+          "checked_scope": "Jeu et contexte officiels. Captures de grenades et de leurs effets nécessaires; ne pas substituer les modèles HL2.",
+          "reference_status": "context_only_visual_capture_required"
+        }
+      ],
+      "reference_capture": null,
+      "reference_status": "exact_visual_reference_pending",
+      "effect_kind": "projectile",
+      "effect_kind_provisional": true,
+      "projectile_class": null,
+      "requires_travel_sprite": null,
+      "primary_evidence_status": null,
+      "legacy_target_ids": [],
+      "legacy_reference_contracts": [],
+      "required_visual_state_ids": [
+        "body",
+        "trail",
+        "impact"
+      ],
+      "runtime_enabled_declared": false,
+      "target_certified_one_to_one_declared": false,
+      "required_layer_ids": [],
+      "actual_assets": [],
+      "refused_requests": [],
+      "tool_error_requests": [],
+      "output_unavailable_requests": [],
+      "other_unproduced_requests": [],
+      "actual_file_count": 0,
+      "selected_candidate_file_count": 0,
+      "selected_candidate_asset_ids": [],
+      "master_candidate_count": 0,
+      "selected_master_candidate_count": 0,
+      "layer_candidate_count": 0,
+      "candidate_visual_state_ids": [],
+      "selected_visual_state_ids": [],
+      "missing_visual_state_ids": [
+        "body",
+        "trail",
+        "impact"
+      ],
+      "visual_state_files_without_id_count": 0,
+      "certified_asset_count_declared": 0,
+      "production_status": "no_file",
+      "completion_note": "No target, animation, visual-fidelity review or six-layer stage is closed by this queue.",
+      "next_work": [
+        "Ajouter des captures du modèle ou du lieu exact et vérifier les invariants visuels.",
+        "Produire une première image candidate individuelle après fixation des références.",
+        "Produire séparément corps, traînée, impact et variantes indiquées; attribuer un visual_state_id exact à chaque fichier.",
+        "Vérifier le type d’effet et sa séquence dans le jeu source avant de fixer le contrat visuel.",
+        "Vérifier alpha, couleurs, durée, orientation et interaction avant intégration; une image ne termine pas une famille."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "continuation_20261124_i",
+  "created_at": "2026-11-24",
+  "scope": "Trois premiers masters de stages manquants, générations guidées par captures retail inspectées; sans personnages.",
+  "counts": {
+    "requests": 3,
+    "generated_png": 3,
+    "refused": 0,
+    "targets_with_new_file": 3,
+    "certified_one_to_one": 0,
+    "completed_six_layer_stages": 0
+  },
+  "assets": [
+    {
+      "asset_id": "stage_tram_hl1_master_i",
+      "name_fr": "Terminus du tram de Black Mesa",
+      "owner_id": "STG_01_HL1_TRAM",
+      "target_id": "STG_01_HL1_TRAM",
+      "target_ids": [
+        "STG_01_HL1_TRAM"
+      ],
+      "owner_type": "stage",
+      "category": "stage_master",
+      "catalogue": "stages.stages",
+      "source_game": "Half-Life",
+      "content_class": "released_reference",
+      "batch_id": "continuation_20261124_i",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "generation_mode": "reference-guided generation",
+      "prompt": "Use case: stylized-concept. Create ONE detailed 2D fighting-game environment panorama for Half-Life Resonance, using the attached authentic original Half-Life screenshot of the Black Mesa Inbound tram platform map c0a0e as the strict architectural/material reference. This is the original 1998 game location, not Black Mesa remake. Depict the tram terminal before the incident: heavy grey-green concrete tunnel walls, low dark industrial ceiling with sparse square fluorescent lights, paired black-and-yellow hazard-striped gantry supports, black suspension cables, dark grated metal platform and blue-grey railings, small turquoise platform marker lights, and the exact small boxy grey windowed tram stopped farther back. Translate into rich, crisp, detailed hand-painted 2D game background art, preserving the restrained dark cyan/grey palette and the proportions of the utilitarian geometry. Compose a wide 16:9 lateral arena: straight horizontal continuous grated combat platform across the lower 18 percent of the image, with the tram, supports, receding bridge and tunnel behind the fighter plane. Straight-on side-scrolling camera, very restrained depth, no fisheye. The frontal composition is an explicit game adaptation using the same reference elements. Keep center and side silhouettes unobstructed. One complete master scene, NOT separate panels or a spritesheet. No people, no guards, no aliens, no weapons, no HUD, no readable lettering, no logos, no overlays. No flames, rubble, plants or damage. Opaque background. High resolution and textured detail.",
+      "source_references": [
+        {
+          "reference_filename": "C0a0e_tram.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/File:C0a0e_tram.jpg",
+          "role": "original_game_capture_reference",
+          "visually_inspected": true,
+          "sha256": "41f112b7470e6175b700c37356b815f18c783b6f2639bc99e122eab76e7ec973",
+          "source_url": "https://combineoverwiki.net/images/f/f9/C0a0e_tram.jpg"
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/File:C0a0e_tram.jpg",
+        "https://www.half-life.com/en/halflife",
+        "https://combineoverwiki.net/images/f/f9/C0a0e_tram.jpg"
+      ],
+      "reference_paths": [
+        "/workspace/scratch/684967c2474e/references-h/C0a0e_tram.jpg"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "original_game_capture_reference",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261124_i/stages/stage_tram_hl1_master_i.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_i/stages/stage_tram_hl1_master_i.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "transparent_background": false,
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": "approximately 16:9",
+      "color_mode": "RGB",
+      "byte_size": 2231631,
+      "sha256": "8b72d5cd487eb66e3699adc451c171500f82c374f16df43b1587b3c907552ed7",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "save_method": "PNG octets returned by image_gen image_url decoded directly; no post-generation pixel edit. No output_hint or automatic file was provided for this call.",
+      "alpha_check": "Panorama maître RGB opaque, canal alpha absent.",
+      "visual_qa": {
+        "inspected": true,
+        "one_stage_per_image": true,
+        "no_visible_characters_or_bosses": true,
+        "continuous_walkable_foreground": true,
+        "continuous_horizontal_foreground_strip": true,
+        "floor_top_y_approx": 800,
+        "source_identity_observed": "Poutres jaune/noir, passerelle grillagée, rails bleutés, petites lampes cyan, tunnel sombre et petite rame grise à quatre fenêtres conservés; aucun personnage.",
+        "geometry_status": "adaptation_2d_candidate",
+        "remaining_review": "La passerelle en profondeur de la capture est placée derrière un nouveau quai de combat horizontal. Le niveau 3D a donc une géométrie adaptée; les gardes-corps et la profondeur doivent être vérifiés avec les combattants. La ligne frontale du quai est vers 85% de la hauteur, soit plus bas que les 82% demandés."
+      },
+      "notes": "Poutres jaune/noir, passerelle grillagée, rails bleutés, petites lampes cyan, tunnel sombre et petite rame grise à quatre fenêtres conservés; aucun personnage. La passerelle en profondeur de la capture est placée derrière un nouveau quai de combat horizontal. Le niveau 3D a donc une géométrie adaptée; les gardes-corps et la profondeur doivent être vérifiés avec les combattants. La ligne frontale du quai est vers 85% de la hauteur, soit plus bas que les 82% demandés. Master unique aplati; pas de couches séparées, animation ou intégration runtime, aucune certification 1:1.",
+      "source_partial_register": "docs/resonance/production/continuation_20261124_i/stage_generation.json"
+    },
+    {
+      "asset_id": "stage_black_mesa_east_hl2_master_i",
+      "name_fr": "Cour de Black Mesa East",
+      "owner_id": "STG_13_HL2_BME",
+      "target_id": "STG_13_HL2_BME",
+      "target_ids": [
+        "STG_13_HL2_BME"
+      ],
+      "owner_type": "stage",
+      "category": "stage_master",
+      "catalogue": "stages.stages",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "batch_id": "continuation_20261124_i",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "generation_mode": "reference-guided generation",
+      "prompt": "Use case: stylized-concept. Create ONE high-resolution 2D fighting-game environment master panorama for Half-Life Resonance. The attached original Half-Life 2 retail screenshot shows the Black Mesa East scrapyard, map d1_eli_02, during the Gravity Gun training. Use it as the strict source of architectural materials, color, scale, recognisable landmarks and atmosphere. Depict this SAME outdoor enclosed scrapyard completely empty of characters: tall rough grey rock and concrete retaining walls, narrow strip of dark blue-grey overcast sky above, bare tree silhouettes on the rim, rusty steel uprights on the left, corrugated sheet-metal sheds and dull red/grey cargo containers against the rear, two large round dark ventilation openings high on the right wall, small cyan-white industrial wall lamps casting hazy light, weathered wire fence to the right, small restrained scrap stacks against the edges. Remove Alyx, Dog and every other person/robot from the environment. Preserve the earthy ochre-grey gravel, sparse dead grass, weathered utilitarian construction and muted cyan industrial illumination. Detailed painted 2D game art, believable materials, no futuristic redesign. Compose as a wide 16:9 frontal side-on fighting arena with an unbroken level gravel ground strip spanning the full width at 82 percent image height and the courtyard architecture behind it. Keep the lower foreground empty for two fighters; put all barrels and scrap behind or beyond that plane. The layout is a lateral adaptation, not a new location. No city skyline, no Citadel, no explosions, no dramatic beams, no weapon, no NPC, no Dog, no Alyx, no readable lettering, no UI, no labels, no watermark, no collage. One opaque master image, not separate layers.",
+      "source_references": [
+        {
+          "reference_filename": "Bme_scrapyard.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/File:Bme_scrapyard.jpg",
+          "role": "original_game_capture_reference",
+          "visually_inspected": true,
+          "sha256": "e494e1408694c8f03d4f1a9070fc4c810e55922cb0e4af79186e1fb73cc531b9",
+          "source_url": "https://combineoverwiki.net/images/4/4c/Bme_scrapyard.jpg"
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/File:Bme_scrapyard.jpg",
+        "https://combineoverwiki.net/wiki/Black_Mesa_East",
+        "https://combineoverwiki.net/images/4/4c/Bme_scrapyard.jpg"
+      ],
+      "reference_paths": [
+        "/workspace/scratch/684967c2474e/references-h/Bme_scrapyard.jpg"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "original_game_capture_reference",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261124_i/stages/stage_black_mesa_east_hl2_master_i.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_i/stages/stage_black_mesa_east_hl2_master_i.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "transparent_background": false,
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": "approximately 16:9",
+      "color_mode": "RGB",
+      "byte_size": 3086279,
+      "sha256": "9755a4ecb4edf5cab917aae9863d0bc7d07bcaa8b6f6356fe95ba67c174f9117",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "save_method": "PNG octets returned by image_gen image_url decoded directly; no post-generation pixel edit. No output_hint or automatic file was provided for this call.",
+      "alpha_check": "Panorama maître RGB opaque, canal alpha absent.",
+      "visual_qa": {
+        "inspected": true,
+        "one_stage_per_image": true,
+        "no_visible_characters_or_bosses": true,
+        "continuous_walkable_foreground": true,
+        "continuous_horizontal_foreground_strip": false,
+        "floor_top_y_approx": null,
+        "source_identity_observed": "Parois rocheuses/concrètes hautes, deux grandes ouvertures rondes, sheds et containers de récupération, montants rouillés, arbres nus, gravier ochre et éclairage cyan conservés; Alyx et Dog absents.",
+        "geometry_status": "adaptation_2d_candidate",
+        "remaining_review": "Le sol est continu et dégagé mais reste un plan de cour en perspective sans bord horizontal unique de collision. La ligne de combat doit être fixée et contrôlée au runtime; distribution des containers et éléments occultés extrapolée depuis la capture."
+      },
+      "notes": "Parois rocheuses/concrètes hautes, deux grandes ouvertures rondes, sheds et containers de récupération, montants rouillés, arbres nus, gravier ochre et éclairage cyan conservés; Alyx et Dog absents. Le sol est continu et dégagé mais reste un plan de cour en perspective sans bord horizontal unique de collision. La ligne de combat doit être fixée et contrôlée au runtime; distribution des containers et éléments occultés extrapolée depuis la capture. Master unique aplati; pas de couches séparées, animation ou intégration runtime, aucune certification 1:1.",
+      "source_partial_register": "docs/resonance/production/continuation_20261124_i/stage_generation.json"
+    },
+    {
+      "asset_id": "stage_relaxation_vault_portal1_master_i",
+      "name_fr": "Relaxation Vault — Portal",
+      "owner_id": "STG_EXT_PORTAL1_RELAXATION",
+      "target_id": "STG_EXT_PORTAL1_RELAXATION",
+      "target_ids": [
+        "STG_EXT_PORTAL1_RELAXATION"
+      ],
+      "owner_type": "stage",
+      "category": "stage_master",
+      "catalogue": "catalogue_extension_20261120.targets",
+      "source_game": "Portal",
+      "content_class": "released_reference",
+      "batch_id": "continuation_20261124_i",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "generation_mode": "reference-guided generation",
+      "prompt": "Use case: stylized-concept. Produce ONE high-quality 2D side-view fighting-game environment master panorama of the intact Relaxation Vault in the original Portal (2007), using the attached retail game screenshot as the strict source of the room design. Preserve the sterile enclosed glass-walled vault inside Test Chamber 00: thin dark aluminium glass frames, low solid grey roof, cool blue-grey rectangular tiled floor and pale panelled walls, strong cool vertical fluorescent light panels, the distinctive white oval stasis bed with transparent clamshell cover and a cyan horizontal vent/light at its foot, two small gas cylinders behind the bed, the original small rounded white table with one radio and a small cup, and the compact white lavatory bowl. All furnishings remain INSIDE the glass enclosure. No open door in the glass enclosure; the vault is sealed. Camera outside the glass vault, level and nearly straight-on rather than overhead; show the front glass panel and a small sliver of its side, enough to read the stasis bed and minimal furnishings. Compose a wide 16:9 continuous arena panorama: the vault occupies the central background, clean surrounding walls on both sides, a simple uninterrupted flat tiled floor strip across the lower 18 percent for lateral combat, all furniture behind the fighter plane. Detailed textured hand-painted 2D game environment art, recognizable original-game materials, restrained cyan clinical light and sparse industrial architecture, not a modern luxury hospital. No person in the bed, no Chell, no character, no robot, no weapon, no portal effects, no vegetation, no debris, no damaged panels, no decay, no giant decorative aperture logos, no readable text, no timer numerals, no UI, no collage or divided panels. Opaque full environment. This is an explicit frontal composition adaptation for a fan-game stage; retain the iconic source room details as faithfully as possible.",
+      "source_references": [
+        {
+          "reference_filename": "relaxationvault_portal1.png",
+          "source_page": "https://theportalwiki.com/wiki/File:Relaxationvault.png",
+          "role": "original_game_capture_reference",
+          "visually_inspected": true,
+          "sha256": "f940ac4d4050d63bc5d3b00d9ebb38411a9d97b2f40dd159bac441917acc784d",
+          "source_url": "https://i1.theportalwiki.net/img/6/6c/Relaxationvault.png"
+        }
+      ],
+      "source_urls": [
+        "https://theportalwiki.com/wiki/File:Relaxationvault.png",
+        "https://i1.theportalwiki.net/img/6/6c/Relaxationvault.png",
+        "https://theportalwiki.com/wiki/Relaxation_Vault",
+        "https://store.steampowered.com/app/400/Portal/"
+      ],
+      "reference_paths": [
+        "/tmp/resonance-stage-i/relaxationvault_portal1.png"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "original_game_capture_reference",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261124_i/stages/stage_relaxation_vault_portal1_master_i.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_i/stages/stage_relaxation_vault_portal1_master_i.png",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "transparent_background": false,
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": "approximately 16:9",
+      "color_mode": "RGB",
+      "byte_size": 2299168,
+      "sha256": "1e81472e83aa40b29ca3501bac4d61e6d3ddaefe2b708f4a30d04ee4dd0a47f6",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "save_method": "PNG octets returned by image_gen image_url decoded directly; no post-generation pixel edit. No output_hint or automatic file was provided for this call.",
+      "alpha_check": "Panorama maître RGB opaque, canal alpha absent.",
+      "visual_qa": {
+        "inspected": true,
+        "one_stage_per_image": true,
+        "no_visible_characters_or_bosses": true,
+        "continuous_walkable_foreground": true,
+        "continuous_horizontal_foreground_strip": false,
+        "floor_top_y_approx": 745,
+        "source_identity_observed": "Vault vitrée intacte, cadres métalliques, lit ovale avec capot transparent et lumière cyan, deux bouteilles, table blanche/radio/tasse, lavatory et panneaux lumineux conservés; aucun occupant.",
+        "geometry_status": "adaptation_2d_candidate",
+        "remaining_review": "Caméra abaissée et adaptée en vue frontale; mobilier et proportions de la boîte vitrée à comparer en jeu. Le panneau droit est laissé vide pour ne pas inventer de texte ou compteur. Le carrelage du foreground reste en perspective, sa ligne de combat doit être définie."
+      },
+      "notes": "Vault vitrée intacte, cadres métalliques, lit ovale avec capot transparent et lumière cyan, deux bouteilles, table blanche/radio/tasse, lavatory et panneaux lumineux conservés; aucun occupant. Caméra abaissée et adaptée en vue frontale; mobilier et proportions de la boîte vitrée à comparer en jeu. Le panneau droit est laissé vide pour ne pas inventer de texte ou compteur. Le carrelage du foreground reste en perspective, sa ligne de combat doit être définie. Master unique aplati; pas de couches séparées, animation ou intégration runtime, aucune certification 1:1.",
+      "source_partial_register": "docs/resonance/production/continuation_20261124_i/stage_generation.json"
+    }
+  ]
+}

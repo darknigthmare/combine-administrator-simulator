@@ -1,0 +1,1215 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-11-24",
+  "repository": "darknigthmare/combine-administrator-simulator",
+  "baseline_commit": "b7f7eb8d469d0e336579c32401afeeb6761c81e9",
+  "scope": "Recovery of historical locally generated F and H batches, before new batch I. No PNG pixel modification, regeneration or runtime integration.",
+  "counts": {
+    "baseline_requests": 51,
+    "baseline_png": 39,
+    "baseline_refusals": 12,
+    "f_requests": 36,
+    "f_png": 31,
+    "f_refusals": 5,
+    "h_requests": 68,
+    "h_png": 63,
+    "h_refusals": 5,
+    "recovered_png": 94,
+    "total_requests_before_i": 155,
+    "total_png_before_i": 133,
+    "total_refusals_before_i": 22
+  },
+  "png_validation": "All 94 recovered PNGs decoded and verified with Pillow during read-only audit. Copied bytes rechecked by SHA-256. Visual fidelity is not certified.",
+  "previously_omitted_h_entries": [
+    {
+      "asset_id": "eli_hl2_idle_h",
+      "outcome": "généré",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/heroes/eli_hl2_idle_h.png",
+      "source_manifest": "docs/resonance/production/continuation_20261124_h/hero_generation.json"
+    },
+    {
+      "asset_id": "mossman_hl2_idle_h",
+      "outcome": "refus automatique",
+      "repository_path": null,
+      "source_manifest": "docs/resonance/production/continuation_20261124_h/hero_generation.json"
+    },
+    {
+      "asset_id": "magnusson_ep2_idle_h",
+      "outcome": "refus automatique",
+      "repository_path": null,
+      "source_manifest": "docs/resonance/production/continuation_20261124_h/hero_generation.json"
+    },
+    {
+      "asset_id": "proj_spore_opfor_h",
+      "outcome": "généré",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_spore_opfor_h.png",
+      "source_manifest": "docs/resonance/production/continuation_20261124_h/projectile_generation.json"
+    },
+    {
+      "asset_id": "proj_pit_drone_spine_opfor_h",
+      "outcome": "généré",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_pit_drone_spine_opfor_h.png",
+      "source_manifest": "docs/resonance/production/continuation_20261124_h/projectile_generation.json"
+    },
+    {
+      "asset_id": "proj_satchel_hl1_h_refused",
+      "outcome": "refus automatique",
+      "repository_path": null,
+      "source_manifest": "docs/resonance/production/continuation_20261124_h/projectile_generation.json"
+    },
+    {
+      "asset_id": "stage_double_cross_hl25_master_h",
+      "outcome": "généré",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_double_cross_hl25_master_h.png",
+      "source_manifest": "docs/resonance/production/continuation_20261124_h/stage_generation.json"
+    },
+    {
+      "asset_id": "stage_rust_mill_hl25_master_h",
+      "outcome": "généré",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_rust_mill_hl25_master_h.png",
+      "source_manifest": "docs/resonance/production/continuation_20261124_h/stage_generation.json"
+    },
+    {
+      "asset_id": "stage_xen_dm_hl25_master_h",
+      "outcome": "généré",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_xen_dm_hl25_master_h.png",
+      "source_manifest": "docs/resonance/production/continuation_20261124_h/stage_generation.json"
+    }
+  ],
+  "copied_files": [
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/antlion_guard_hl2_idle_left_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/antlion_guard_hl2_idle_left_f.png",
+      "byte_size": 1223238,
+      "source_sha256": "e3cc5168676138c00cd12be0ede7faf293a135e8da2831a25e740943d6d60368",
+      "repository_sha256_after_recovery": "e3cc5168676138c00cd12be0ede7faf293a135e8da2831a25e740943d6d60368",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/apc_hl2_idle_left_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/apc_hl2_idle_left_f.png",
+      "byte_size": 1099380,
+      "source_sha256": "c4bc021cd0e480f5c1c165febb9b992cace8e66d3dfce2981e8336699ce08775",
+      "repository_sha256_after_recovery": "c4bc021cd0e480f5c1c165febb9b992cace8e66d3dfce2981e8336699ce08775",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/bullsquid_hl1_idle_left_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/bullsquid_hl1_idle_left_f.png",
+      "byte_size": 1327387,
+      "source_sha256": "ae68624d0d57cef2b3bbaefad28df6f411c3ce340324b73fc889eb5808964f53",
+      "repository_sha256_after_recovery": "ae68624d0d57cef2b3bbaefad28df6f411c3ce340324b73fc889eb5808964f53",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/costume_hecu_gasmask_hl1_guard_left_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/costume_hecu_gasmask_hl1_guard_left_f.png",
+      "byte_size": 771790,
+      "source_sha256": "c746453dd340715c2112290c98e26a806cb1d7b39544025065b8eb0844b3a061",
+      "repository_sha256_after_recovery": "c746453dd340715c2112290c98e26a806cb1d7b39544025065b8eb0844b3a061",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/costume_nova_guard_hl2_guard_left_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/costume_nova_guard_hl2_guard_left_f.png",
+      "byte_size": 1133144,
+      "source_sha256": "d47198a3e2c6f3dcf0d5254efc2ff5f570a0bbda5981a63b77d31ef9ef89f98f",
+      "repository_sha256_after_recovery": "d47198a3e2c6f3dcf0d5254efc2ff5f570a0bbda5981a63b77d31ef9ef89f98f",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/costume_shotgun_soldier_ep2_guard_left_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/costume_shotgun_soldier_ep2_guard_left_f.png",
+      "byte_size": 1121428,
+      "source_sha256": "33a2c1a831775da895252cd275b042b386cf8b98559ce0a8a3c24f9d72bb3b90",
+      "repository_sha256_after_recovery": "33a2c1a831775da895252cd275b042b386cf8b98559ce0a8a3c24f9d72bb3b90",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/dropship_container_hl2_hover_right_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/dropship_container_hl2_hover_right_f.png",
+      "byte_size": 1705070,
+      "source_sha256": "ecd9f4aa3c81e0f15c7c8b188111933c111c7ee9a67bb5a8e95ae050f4a17781",
+      "repository_sha256_after_recovery": "ecd9f4aa3c81e0f15c7c8b188111933c111c7ee9a67bb5a8e95ae050f4a17781",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/gina_decay_guard_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/gina_decay_guard_f.png",
+      "byte_size": 1400677,
+      "source_sha256": "03f3f72779f5b7bd20d4d71d83be578ff4e53e79cc8fd260d51f0a7c82295999",
+      "repository_sha256_after_recovery": "03f3f72779f5b7bd20d4d71d83be578ff4e53e79cc8fd260d51f0a7c82295999",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/grigori_hl2_guard_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/grigori_hl2_guard_f.png",
+      "byte_size": 1058047,
+      "source_sha256": "ae332c9df071104a4f14db00548ade093b3d871957d06518bab29417a0d28e56",
+      "repository_sha256_after_recovery": "ae332c9df071104a4f14db00548ade093b3d871957d06518bab29417a0d28e56",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/gunship_hl2_hover_left_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/gunship_hl2_hover_left_f.png",
+      "byte_size": 1442668,
+      "source_sha256": "b617c1b1127a7f959e053ad4cc24237cce55e563e8d047b499e55672c8b32573",
+      "repository_sha256_after_recovery": "b617c1b1127a7f959e053ad4cc24237cce55e563e8d047b499e55672c8b32573",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/houndeye_hl1_idle_left_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/houndeye_hl1_idle_left_f.png",
+      "byte_size": 1553107,
+      "source_sha256": "3728b95c7703a9ea9b47e3d719f2d2af406c231d049dfe27dd5f574a9da67f1c",
+      "repository_sha256_after_recovery": "3728b95c7703a9ea9b47e3d719f2d2af406c231d049dfe27dd5f574a9da67f1c",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/hunter_chopper_hl2_hover_left_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/hunter_chopper_hl2_hover_left_f.png",
+      "byte_size": 1190079,
+      "source_sha256": "70110700325881014987914050efa779eea05adb6f3e0e91365d561badcc24aa",
+      "repository_sha256_after_recovery": "70110700325881014987914050efa779eea05adb6f3e0e91365d561badcc24aa",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/layer_canals_foreground_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/layer_canals_foreground_f.png",
+      "byte_size": 168160,
+      "source_sha256": "7ff48ddd34392443b6bb5f87034f88cc7c153942fa1472c0b669d635b2def583",
+      "repository_sha256_after_recovery": "7ff48ddd34392443b6bb5f87034f88cc7c153942fa1472c0b669d635b2def583",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/layer_ravenholm_far_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/layer_ravenholm_far_f.png",
+      "byte_size": 604844,
+      "source_sha256": "17f38239af7b52faecab3142fe7d53d7c6816add65c4669db9f6d593f06ca7b1",
+      "repository_sha256_after_recovery": "17f38239af7b52faecab3142fe7d53d7c6816add65c4669db9f6d593f06ca7b1",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/layer_ravenholm_foreground_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/layer_ravenholm_foreground_f.png",
+      "byte_size": 211604,
+      "source_sha256": "10e62178a1d15df0fe12967a8cf331e8b8337a78af59b7913ed57d18c5cdbd76",
+      "repository_sha256_after_recovery": "10e62178a1d15df0fe12967a8cf331e8b8337a78af59b7913ed57d18c5cdbd76",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/layer_ravenholm_mid_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/layer_ravenholm_mid_f.png",
+      "byte_size": 1234847,
+      "source_sha256": "36042bb373e5f17aba295bc82df39fc168a9b15b0e8764559af89180a3f04389",
+      "repository_sha256_after_recovery": "36042bb373e5f17aba295bc82df39fc168a9b15b0e8764559af89180a3f04389",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/layer_ravenholm_near_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/layer_ravenholm_near_f.png",
+      "byte_size": 788856,
+      "source_sha256": "2ade5f3faf104c99ed5c1da8a9cfbe0865a2a50ff5112d2e94c3e3607afffd4b",
+      "repository_sha256_after_recovery": "2ade5f3faf104c99ed5c1da8a9cfbe0865a2a50ff5112d2e94c3e3607afffd4b",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/pit_drone_op4_guard_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/pit_drone_op4_guard_f.png",
+      "byte_size": 789903,
+      "source_sha256": "817211be3d2f2d5d5bc739d794ea907dbbabf4d3c666752bf8b6aa5d74d63cd3",
+      "repository_sha256_after_recovery": "817211be3d2f2d5d5bc739d794ea907dbbabf4d3c666752bf8b6aa5d74d63cd3",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/projectile_ar2_ball_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/projectile_ar2_ball_f.png",
+      "byte_size": 1408274,
+      "source_sha256": "0555b394f0a58a5f7c5a03302ed2f0b3e5241f7b9deee8d9316de2bccb47b957",
+      "repository_sha256_after_recovery": "0555b394f0a58a5f7c5a03302ed2f0b3e5241f7b9deee8d9316de2bccb47b957",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/projectile_crossbow_bolt_hl2_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/projectile_crossbow_bolt_hl2_f.png",
+      "byte_size": 111374,
+      "source_sha256": "a13eb0444f6c86de3ac174add957828e8567533ecf8d2d77868063ba4f7fa3fa",
+      "repository_sha256_after_recovery": "a13eb0444f6c86de3ac174add957828e8567533ecf8d2d77868063ba4f7fa3fa",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/projectile_hunter_flechette_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/projectile_hunter_flechette_f.png",
+      "byte_size": 138931,
+      "source_sha256": "a04ffef889196ecd74cf5b8878c24f7070786ac4ee43110c3bec8dd93d4b775b",
+      "repository_sha256_after_recovery": "a04ffef889196ecd74cf5b8878c24f7070786ac4ee43110c3bec8dd93d4b775b",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/projectile_smg1_grenade_hl2_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/projectile_smg1_grenade_hl2_f.png",
+      "byte_size": 468571,
+      "source_sha256": "81dd26fc604f9d988305243300f5a0744956fff972c7085498c50901963f86f7",
+      "repository_sha256_after_recovery": "81dd26fc604f9d988305243300f5a0744956fff972c7085498c50901963f86f7",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/shephard_op4_guard_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/shephard_op4_guard_f.png",
+      "byte_size": 511778,
+      "source_sha256": "5618e0141d418676f3c0dcc1a4eba99586bffe6898ba08506f7465759a874a71",
+      "repository_sha256_after_recovery": "5618e0141d418676f3c0dcc1a4eba99586bffe6898ba08506f7465759a874a71",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/shock_trooper_op4_guard_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/shock_trooper_op4_guard_f.png",
+      "byte_size": 852892,
+      "source_sha256": "7fc895ad4c5e5ef87cb4c7ea85d726a0cb1047f7bed836bdecb0475a854ff6b9",
+      "repository_sha256_after_recovery": "7fc895ad4c5e5ef87cb4c7ea85d726a0cb1047f7bed836bdecb0475a854ff6b9",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/stage_blastpit_hl1_master_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/stage_blastpit_hl1_master_f.png",
+      "byte_size": 2494602,
+      "source_sha256": "1de96dc54e873e01e8a3766f3ccf0265855f80d8b58b8d46529585883ed75009",
+      "repository_sha256_after_recovery": "1de96dc54e873e01e8a3766f3ccf0265855f80d8b58b8d46529585883ed75009",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/stage_hldm_pool_party_master_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/stage_hldm_pool_party_master_f.png",
+      "byte_size": 2542560,
+      "source_sha256": "36768d2b1c9b9a45abfe4140f708f49169a647c44087b9f02a23f8965af8f6a2",
+      "repository_sha256_after_recovery": "36768d2b1c9b9a45abfe4140f708f49169a647c44087b9f02a23f8965af8f6a2",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/stage_hldm_rocket_frenzy_master_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/stage_hldm_rocket_frenzy_master_f.png",
+      "byte_size": 2882323,
+      "source_sha256": "38450610b6e0747260c39147a75e26635c2aef5d65d34b77e868c001b8cc449b",
+      "repository_sha256_after_recovery": "38450610b6e0747260c39147a75e26635c2aef5d65d34b77e868c001b8cc449b",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/stage_lostcoast_monastery_master_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/stage_lostcoast_monastery_master_f.png",
+      "byte_size": 2513007,
+      "source_sha256": "b03c046b612ebe24e8ef85a3ea6d16c334b902df13ef076c215935874a7f8d1a",
+      "repository_sha256_after_recovery": "b03c046b612ebe24e8ef85a3ea6d16c334b902df13ef076c215935874a7f8d1a",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/stage_nova_courtyard_hl2_master_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/stage_nova_courtyard_hl2_master_f.png",
+      "byte_size": 2046546,
+      "source_sha256": "da4962ad39609db1e9b8b1152aa4e4bf33b84c74ed482a42176c9cafd1a0cb15",
+      "repository_sha256_after_recovery": "da4962ad39609db1e9b8b1152aa4e4bf33b84c74ed482a42176c9cafd1a0cb15",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/stage_old_aperture_portal2_master_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/stage_old_aperture_portal2_master_f.png",
+      "byte_size": 2296317,
+      "source_sha256": "f585aa42bfbf865cf9ccd89ea277a77ebe91b2e62bd07f1054007631ed7bef11",
+      "repository_sha256_after_recovery": "f585aa42bfbf865cf9ccd89ea277a77ebe91b2e62bd07f1054007631ed7bef11",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "assets/resonance/candidates/continuation_20261124_f/stage_xen_hl1_master_f.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/stage_xen_hl1_master_f.png",
+      "byte_size": 1743588,
+      "source_sha256": "cf337db6ed9c0a5f1ef97127a96dad28204d0a646ad3f022500c84884a3400f3",
+      "repository_sha256_after_recovery": "cf337db6ed9c0a5f1ef97127a96dad28204d0a646ad3f022500c84884a3400f3",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "docs/resonance/production/continuation_20261124_f/generation_register.json",
+      "repository_path": "docs/resonance/production/continuation_20261124_f/generation_register.json",
+      "byte_size": 269812,
+      "source_sha256": "e607bceb09858a7dc435a7fbfa5c684240c33ee34e972e752bf2f4187d94a861",
+      "repository_sha256_after_recovery": "e607bceb09858a7dc435a7fbfa5c684240c33ee34e972e752bf2f4187d94a861",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "docs/resonance/production/continuation_20261124_f/source_reference_manifest.json",
+      "repository_path": "docs/resonance/production/continuation_20261124_f/source_reference_manifest.json",
+      "byte_size": 29950,
+      "source_sha256": "264ac6a301e3569bde0476665d1302c720ee926d5cdd11b8496c6136dad6d656",
+      "repository_sha256_after_recovery": "264ac6a301e3569bde0476665d1302c720ee926d5cdd11b8496c6136dad6d656",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "docs/resonance/production/continuation_20261124_f/stage_layer_review.json",
+      "repository_path": "docs/resonance/production/continuation_20261124_f/stage_layer_review.json",
+      "byte_size": 11121,
+      "source_sha256": "a5c26d26492201b53d30481e271c7a7b9b951e754bc3aa0a20f072aed92bb75b",
+      "repository_sha256_after_recovery": "a5c26d26492201b53d30481e271c7a7b9b951e754bc3aa0a20f072aed92bb75b",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "docs/resonance/production/continuation_20261124_f/stage_layer_review.md",
+      "repository_path": "docs/resonance/production/continuation_20261124_f/stage_layer_review.md",
+      "byte_size": 3707,
+      "source_sha256": "c618031fa786a073bdfc2d9f7f38454911b075bf3638d64be64f45664a8746d4",
+      "repository_sha256_after_recovery": "c618031fa786a073bdfc2d9f7f38454911b075bf3638d64be64f45664a8746d4",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/bosses/gonarch_hl1_idle_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/bosses/gonarch_hl1_idle_h.png",
+      "byte_size": 1746091,
+      "source_sha256": "520f62c976517cf9514d79fcaff5a25ebd282557610dc62cc5fa88fd7174bca1",
+      "repository_sha256_after_recovery": "520f62c976517cf9514d79fcaff5a25ebd282557610dc62cc5fa88fd7174bca1",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/bosses/gonarch_hl1_idle_h_v2.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/bosses/gonarch_hl1_idle_h_v2.png",
+      "byte_size": 1949723,
+      "source_sha256": "5c546b78eccadf53d995ae9a1e18578bb2201935bb4a79be1e87fa9d9a95c6aa",
+      "repository_sha256_after_recovery": "5c546b78eccadf53d995ae9a1e18578bb2201935bb4a79be1e87fa9d9a95c6aa",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/bosses/nihilanth_hl1_idle_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/bosses/nihilanth_hl1_idle_h.png",
+      "byte_size": 795228,
+      "source_sha256": "eb541ac4b69eff45fbe3f6ba859efc315c5a1481ac88b773762e9a1f2543089c",
+      "repository_sha256_after_recovery": "eb541ac4b69eff45fbe3f6ba859efc315c5a1481ac88b773762e9a1f2543089c",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/bosses/tentacle_blastpit_hl1_idle_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/bosses/tentacle_blastpit_hl1_idle_h.png",
+      "byte_size": 767824,
+      "source_sha256": "5ec6a37e5a8f8e8201870610403ce0dcb1717900febf9ae5353ae58ff0d235c8",
+      "repository_sha256_after_recovery": "5ec6a37e5a8f8e8201870610403ce0dcb1717900febf9ae5353ae58ff0d235c8",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/characters/alien_controller_hl1_hover_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/alien_controller_hl1_hover_h.png",
+      "byte_size": 1062098,
+      "source_sha256": "eb19d9cf2fba38f0aeb6ef805beb65fb23407c3db1c9efc8b1e2d657611c56f1",
+      "repository_sha256_after_recovery": "eb19d9cf2fba38f0aeb6ef805beb65fb23407c3db1c9efc8b1e2d657611c56f1",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/characters/alien_grunt_hl1_idle_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/alien_grunt_hl1_idle_h.png",
+      "byte_size": 1469656,
+      "source_sha256": "eac50869b8254787306641d2c43938d867adbf623591c36bf486b9e9a8ca4404",
+      "repository_sha256_after_recovery": "eac50869b8254787306641d2c43938d867adbf623591c36bf486b9e9a8ca4404",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/characters/bullsquid_hl1_idle_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/bullsquid_hl1_idle_h.png",
+      "byte_size": 1267390,
+      "source_sha256": "d29d1aac129490d053153d78a609fbb72e787284ee1bae49d802a1ae57156213",
+      "repository_sha256_after_recovery": "d29d1aac129490d053153d78a609fbb72e787284ee1bae49d802a1ae57156213",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/characters/gonome_op4_idle_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/gonome_op4_idle_h.png",
+      "byte_size": 1014170,
+      "source_sha256": "8cafc1a13666cae5c399b530c286cc5af2824603097705f77e44295db43fe952",
+      "repository_sha256_after_recovery": "8cafc1a13666cae5c399b530c286cc5af2824603097705f77e44295db43fe952",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/characters/headcrab_hl1_idle_v2_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/headcrab_hl1_idle_v2_h.png",
+      "byte_size": 1705935,
+      "source_sha256": "db34a5954c67faa4315a3455a1eade13962643e3370d94d7ee07695611e3a64f",
+      "repository_sha256_after_recovery": "db34a5954c67faa4315a3455a1eade13962643e3370d94d7ee07695611e3a64f",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/characters/houndeye_hl1_idle_v2_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/houndeye_hl1_idle_v2_h.png",
+      "byte_size": 2067721,
+      "source_sha256": "b5f4bb4aa8874aa82a19aaecc832b97873cff1abe1aeff56f3b882c21311a634",
+      "repository_sha256_after_recovery": "b5f4bb4aa8874aa82a19aaecc832b97873cff1abe1aeff56f3b882c21311a634",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/characters/manhack_hl2_hover_v2_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/manhack_hl2_hover_v2_h.png",
+      "byte_size": 791066,
+      "source_sha256": "0a903fd143e03cb8f7af080c9307af31e0db07233558237006e91df1793f5a97",
+      "repository_sha256_after_recovery": "0a903fd143e03cb8f7af080c9307af31e0db07233558237006e91df1793f5a97",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/characters/scientist_slick_hl1_idle_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/scientist_slick_hl1_idle_h.png",
+      "byte_size": 1553287,
+      "source_sha256": "4ddf7b285927243dc11c7eba43384e28cc36eff619f9ec0c7656b7f4b6565dac",
+      "repository_sha256_after_recovery": "4ddf7b285927243dc11c7eba43384e28cc36eff619f9ec0c7656b7f4b6565dac",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/characters/shock_trooper_op4_idle_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/shock_trooper_op4_idle_h.png",
+      "byte_size": 1910243,
+      "source_sha256": "017bfe3f11317b34e0736c1d0ef7711cba85180bc6981a2022221db64d378778",
+      "repository_sha256_after_recovery": "017bfe3f11317b34e0736c1d0ef7711cba85180bc6981a2022221db64d378778",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/costumes/costume_scientist_einstein_hl1_idle_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/costumes/costume_scientist_einstein_hl1_idle_h.png",
+      "byte_size": 1583003,
+      "source_sha256": "f5591f2d4feaa44414e6523f4b54b4934cb951b79c058ed1fcc2a22b417bfd2c",
+      "repository_sha256_after_recovery": "f5591f2d4feaa44414e6523f4b54b4934cb951b79c058ed1fcc2a22b417bfd2c",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/costumes/costume_scientist_glasses_hl1_idle_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/costumes/costume_scientist_glasses_hl1_idle_h.png",
+      "byte_size": 1516753,
+      "source_sha256": "eff876fb627851322c2e30e83843a16fd920b6dce203b8e264ff38e0ccee87e6",
+      "repository_sha256_after_recovery": "eff876fb627851322c2e30e83843a16fd920b6dce203b8e264ff38e0ccee87e6",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/costumes/costume_scientist_luther_hl1_idle_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/costumes/costume_scientist_luther_hl1_idle_h.png",
+      "byte_size": 1535888,
+      "source_sha256": "109fd3a75b8a2df717b5b52d4dadac677f8ea08ac2ceb222ca165210544e3f03",
+      "repository_sha256_after_recovery": "109fd3a75b8a2df717b5b52d4dadac677f8ea08ac2ceb222ca165210544e3f03",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/costumes/ivan_hl25_multiplayer_idle_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/costumes/ivan_hl25_multiplayer_idle_h.png",
+      "byte_size": 1701210,
+      "source_sha256": "200850e1810f6b8e920960db5758dafdf351c99fea53a78d67d85a27a784f2ce",
+      "repository_sha256_after_recovery": "200850e1810f6b8e920960db5758dafdf351c99fea53a78d67d85a27a784f2ce",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/costumes/proto_barney_hl25_multiplayer_idle_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/costumes/proto_barney_hl25_multiplayer_idle_h.png",
+      "byte_size": 1412321,
+      "source_sha256": "c6d59a8b560d35b0a3cf4908273022e53304ee8428f4f2f16ec1a40865e8a8b9",
+      "repository_sha256_after_recovery": "c6d59a8b560d35b0a3cf4908273022e53304ee8428f4f2f16ec1a40865e8a8b9",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/heroes/alyx_hl2_idle_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/heroes/alyx_hl2_idle_h.png",
+      "byte_size": 1770075,
+      "source_sha256": "0a2736364f99c616e3a13c35b41e362f87c768b2ad56e8899a2a0683e46b961d",
+      "repository_sha256_after_recovery": "0a2736364f99c616e3a13c35b41e362f87c768b2ad56e8899a2a0683e46b961d",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/heroes/barney_hl2_idle_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/heroes/barney_hl2_idle_h.png",
+      "byte_size": 1114409,
+      "source_sha256": "7b580e4dd4335355709a55bef28173ffa9c6843c858c1a9d17bc7e3bca0dc11f",
+      "repository_sha256_after_recovery": "7b580e4dd4335355709a55bef28173ffa9c6843c858c1a9d17bc7e3bca0dc11f",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/heroes/breen_hl2_idle_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/heroes/breen_hl2_idle_h.png",
+      "byte_size": 1226368,
+      "source_sha256": "e15914f8ca91a865549643f812f4e6b23255a36c5791d1b3658afff0d8efd307",
+      "repository_sha256_after_recovery": "e15914f8ca91a865549643f812f4e6b23255a36c5791d1b3658afff0d8efd307",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/heroes/eli_hl2_idle_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/heroes/eli_hl2_idle_h.png",
+      "byte_size": 1711288,
+      "source_sha256": "ec759eeb3a692a399e8098efd62a4ae17b52698430e23afd5b91f85ef6bc3061",
+      "repository_sha256_after_recovery": "ec759eeb3a692a399e8098efd62a4ae17b52698430e23afd5b91f85ef6bc3061",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/heroes/gordon_hl2_idle_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/heroes/gordon_hl2_idle_h.png",
+      "byte_size": 973665,
+      "source_sha256": "b953888a750fdc654e395b5ee7b3c7fde2b63c5651fb8e8d86cca435dfa961da",
+      "repository_sha256_after_recovery": "b953888a750fdc654e395b5ee7b3c7fde2b63c5651fb8e8d86cca435dfa961da",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/heroes/grigori_hl2_idle_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/heroes/grigori_hl2_idle_h.png",
+      "byte_size": 982194,
+      "source_sha256": "4f8964b977b6a814003c6cecfb8091418152c41f37fbd5427533421ad5090008",
+      "repository_sha256_after_recovery": "4f8964b977b6a814003c6cecfb8091418152c41f37fbd5427533421ad5090008",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/heroes/shephard_op4_idle_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/heroes/shephard_op4_idle_h.png",
+      "byte_size": 793526,
+      "source_sha256": "05cdb05214cba5b3a40db5814f9cc5ed0b1f47f4a21bbd6ca3d30a5139ca0e90",
+      "repository_sha256_after_recovery": "05cdb05214cba5b3a40db5814f9cc5ed0b1f47f4a21bbd6ca3d30a5139ca0e90",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/heroes/vortigaunt_hl2_idle_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/heroes/vortigaunt_hl2_idle_h.png",
+      "byte_size": 1124509,
+      "source_sha256": "bd35117839975685f0666ec39cdf10c0fb49809926996aa23a28a1850358a3f2",
+      "repository_sha256_after_recovery": "bd35117839975685f0666ec39cdf10c0fb49809926996aa23a28a1850358a3f2",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/machines/bradley_hl1_idle_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/machines/bradley_hl1_idle_h.png",
+      "byte_size": 1124376,
+      "source_sha256": "8be5ab3223c923de53fed6b1866e2e0204c6119a0271aaae1530b8d8632c7965",
+      "repository_sha256_after_recovery": "8be5ab3223c923de53fed6b1866e2e0204c6119a0271aaae1530b8d8632c7965",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/machines/osprey_hl1_hover_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/machines/osprey_hl1_hover_h.png",
+      "byte_size": 741898,
+      "source_sha256": "9217b6fab3886180dcd33cfa2051f664241297afe768bd6f5e88d30bb8033250",
+      "repository_sha256_after_recovery": "9217b6fab3886180dcd33cfa2051f664241297afe768bd6f5e88d30bb8033250",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_hard_light_bridge_portal2_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_hard_light_bridge_portal2_h.png",
+      "byte_size": 262371,
+      "source_sha256": "b3f69d030bb1f76d6e4ff5c663eb120ac7bfa79c1314de61833820a5ac2c4bd7",
+      "repository_sha256_after_recovery": "b3f69d030bb1f76d6e4ff5c663eb120ac7bfa79c1314de61833820a5ac2c4bd7",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_houndeye_sonic_ring_hl1_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_houndeye_sonic_ring_hl1_h.png",
+      "byte_size": 972735,
+      "source_sha256": "f444405cd2e96e34e0f7f2b3c402439090b7750976df2ee68643e6e1909d2785",
+      "repository_sha256_after_recovery": "f444405cd2e96e34e0f7f2b3c402439090b7750976df2ee68643e6e1909d2785",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_portal_blue_portal1_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_portal_blue_portal1_h.png",
+      "byte_size": 1518362,
+      "source_sha256": "a2dc71bc11f9c1299d5fc3957af4d38a6a13ae967878a944863503ab5783f04a",
+      "repository_sha256_after_recovery": "a2dc71bc11f9c1299d5fc3957af4d38a6a13ae967878a944863503ab5783f04a",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_thermal_beam_portal2_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_thermal_beam_portal2_h.png",
+      "byte_size": 313047,
+      "source_sha256": "3f8755bf236d668eeef9f84e575b50cc1fac75166e84db97c3e0f43494b99199",
+      "repository_sha256_after_recovery": "3f8755bf236d668eeef9f84e575b50cc1fac75166e84db97c3e0f43494b99199",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_thermal_beam_portal2_v2_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_thermal_beam_portal2_v2_h.png",
+      "byte_size": 698290,
+      "source_sha256": "3cb5269a7625b4a3b81dbe06f3e13083f6f4942b6b07610a298f9038f56cc463",
+      "repository_sha256_after_recovery": "3cb5269a7625b4a3b81dbe06f3e13083f6f4942b6b07610a298f9038f56cc463",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_vortigaunt_zap_hl1_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_vortigaunt_zap_hl1_h.png",
+      "byte_size": 539431,
+      "source_sha256": "47b14ddb62707a3d64ef7c153259c0b52a9a9c45a3562c2b3366a3c8e621c988",
+      "repository_sha256_after_recovery": "47b14ddb62707a3d64ef7c153259c0b52a9a9c45a3562c2b3366a3c8e621c988",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_ar2_energy_ball_hl2_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_ar2_energy_ball_hl2_h.png",
+      "byte_size": 1180068,
+      "source_sha256": "67178509681e40f75e0e8b2e80b35a8d1bd0f73595c6f141c29edaf7c78e2bbc",
+      "repository_sha256_after_recovery": "67178509681e40f75e0e8b2e80b35a8d1bd0f73595c6f141c29edaf7c78e2bbc",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_bullsquid_spit_hl1_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_bullsquid_spit_hl1_h.png",
+      "byte_size": 317782,
+      "source_sha256": "638f99a10f1278683bd5fa705bdd93909c5110edeba455c3b1c0ed54306d3535",
+      "repository_sha256_after_recovery": "638f99a10f1278683bd5fa705bdd93909c5110edeba455c3b1c0ed54306d3535",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_controller_orb_hl1_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_controller_orb_hl1_h.png",
+      "byte_size": 1024076,
+      "source_sha256": "6e48e3d12435ebf7a4678c09bd8a5f19e5eb1376b8dde03644a82a60f9fef84c",
+      "repository_sha256_after_recovery": "6e48e3d12435ebf7a4678c09bd8a5f19e5eb1376b8dde03644a82a60f9fef84c",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_conversion_gel_portal2_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_conversion_gel_portal2_h.png",
+      "byte_size": 1268223,
+      "source_sha256": "6c141ae2cd951cf90ab7d380c6d26a96cfd89ce169e6e0799f7f9d235a91ebb3",
+      "repository_sha256_after_recovery": "6c141ae2cd951cf90ab7d380c6d26a96cfd89ce169e6e0799f7f9d235a91ebb3",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_crossbow_bolt_hl1_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_crossbow_bolt_hl1_h.png",
+      "byte_size": 413662,
+      "source_sha256": "ab445bfac9c8b3112209b0991ee4f677487c192c43549a9ff2f8f91bb94c7786",
+      "repository_sha256_after_recovery": "ab445bfac9c8b3112209b0991ee4f677487c192c43549a9ff2f8f91bb94c7786",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_crossbow_bolt_hl2_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_crossbow_bolt_hl2_h.png",
+      "byte_size": 550012,
+      "source_sha256": "287776bf4442e1b6e41cb63fa041d09a737ef7378679be119dc79d217fad1aa5",
+      "repository_sha256_after_recovery": "287776bf4442e1b6e41cb63fa041d09a737ef7378679be119dc79d217fad1aa5",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_energy_pellet_portal1_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_energy_pellet_portal1_h.png",
+      "byte_size": 1343524,
+      "source_sha256": "985bc557be4182f714757fa86668edd2804240aa41099be9433038357720f500",
+      "repository_sha256_after_recovery": "985bc557be4182f714757fa86668edd2804240aa41099be9433038357720f500",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_gonarch_mortar_hl1_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_gonarch_mortar_hl1_h.png",
+      "byte_size": 1119459,
+      "source_sha256": "36e0bedd4f514cb6e6e14d2dc6e8b51ac960c4e697e55137fa018dec429c83ee",
+      "repository_sha256_after_recovery": "36e0bedd4f514cb6e6e14d2dc6e8b51ac960c4e697e55137fa018dec429c83ee",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_hand_grenade_hl1_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_hand_grenade_hl1_h.png",
+      "byte_size": 1292290,
+      "source_sha256": "0becb4df074013b0cdef8325ef72a654800cab677af924cdf5163b8f1d209e6d",
+      "repository_sha256_after_recovery": "0becb4df074013b0cdef8325ef72a654800cab677af924cdf5163b8f1d209e6d",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_hand_grenade_hl2_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_hand_grenade_hl2_h.png",
+      "byte_size": 1245530,
+      "source_sha256": "64e4bac916d867a931b67ac9bc5f48c8aa919260146e4d6c674428d9d3b6e032",
+      "repository_sha256_after_recovery": "64e4bac916d867a931b67ac9bc5f48c8aa919260146e4d6c674428d9d3b6e032",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_helicopter_bomb_hl2_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_helicopter_bomb_hl2_h.png",
+      "byte_size": 1737714,
+      "source_sha256": "9c823b8334730ff837b8358b2f27515134d64efba205892f54cae80a244c255c",
+      "repository_sha256_after_recovery": "9c823b8334730ff837b8358b2f27515134d64efba205892f54cae80a244c255c",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_hornet_hl1_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_hornet_hl1_h.png",
+      "byte_size": 672200,
+      "source_sha256": "118096d6f2a580d9753911f4bb0c1650b6650ae229b9d8630478d6385993cff6",
+      "repository_sha256_after_recovery": "118096d6f2a580d9753911f4bb0c1650b6650ae229b9d8630478d6385993cff6",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_hunter_flechette_ep2_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_hunter_flechette_ep2_h.png",
+      "byte_size": 291720,
+      "source_sha256": "840e3a72b75ef8d025d147a0c6a20025a094a61ccebe2eeb0a81da003d6852e3",
+      "repository_sha256_after_recovery": "840e3a72b75ef8d025d147a0c6a20025a094a61ccebe2eeb0a81da003d6852e3",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_pit_drone_spine_opfor_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_pit_drone_spine_opfor_h.png",
+      "byte_size": 406021,
+      "source_sha256": "cc65b1a1aae6cde4635bcce978ade78600265078345ce97c6c402f3be9916d4c",
+      "repository_sha256_after_recovery": "cc65b1a1aae6cde4635bcce978ade78600265078345ce97c6c402f3be9916d4c",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_propulsion_gel_portal2_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_propulsion_gel_portal2_h.png",
+      "byte_size": 1445064,
+      "source_sha256": "eeac30a80a63301919799121940db26b96746b536d22e008074d8e7a5951b574",
+      "repository_sha256_after_recovery": "eeac30a80a63301919799121940db26b96746b536d22e008074d8e7a5951b574",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_repulsion_gel_portal2_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_repulsion_gel_portal2_h.png",
+      "byte_size": 1132618,
+      "source_sha256": "1886aa48a6a77dae01d4c435a1f1c94a2487ded1d25b6b5ff38ebcaae38360a6",
+      "repository_sha256_after_recovery": "1886aa48a6a77dae01d4c435a1f1c94a2487ded1d25b6b5ff38ebcaae38360a6",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_rpg_rocket_hl1_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_rpg_rocket_hl1_h.png",
+      "byte_size": 911260,
+      "source_sha256": "94ec0b83ab0bca394e54033eb0f980403dc4a5a92b4dc2fd69e37298e17cf0c1",
+      "repository_sha256_after_recovery": "94ec0b83ab0bca394e54033eb0f980403dc4a5a92b4dc2fd69e37298e17cf0c1",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_snark_hl1_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_snark_hl1_h.png",
+      "byte_size": 578013,
+      "source_sha256": "400b220625f2693c927ce54a21b621d3460879ce29867aa4186c8aa67777c20a",
+      "repository_sha256_after_recovery": "400b220625f2693c927ce54a21b621d3460879ce29867aa4186c8aa67777c20a",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_spore_opfor_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_spore_opfor_h.png",
+      "byte_size": 1141895,
+      "source_sha256": "8b9ca53568e5ca2bc0fa0396e6d0a593bac1d92f217aa19e34fd285613312d64",
+      "repository_sha256_after_recovery": "8b9ca53568e5ca2bc0fa0396e6d0a593bac1d92f217aa19e34fd285613312d64",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_blastpit_hl1_master_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_blastpit_hl1_master_h.png",
+      "byte_size": 2972162,
+      "source_sha256": "e3c985cbf37fbff967377a4cca62116e3e014cdf4a9487f0fd657d910cebe19a",
+      "repository_sha256_after_recovery": "e3c985cbf37fbff967377a4cca62116e3e014cdf4a9487f0fd657d910cebe19a",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_contamination_hl25_master_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_contamination_hl25_master_h.png",
+      "byte_size": 2900782,
+      "source_sha256": "891062e6c7aa98bf8e5086f7deb8774f215709467d13cb9f7003ebeeda65c4c5",
+      "repository_sha256_after_recovery": "891062e6c7aa98bf8e5086f7deb8774f215709467d13cb9f7003ebeeda65c4c5",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_disposal_hl25_master_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_disposal_hl25_master_h.png",
+      "byte_size": 2631948,
+      "source_sha256": "628d3ba1021c149bf0264bca0c1a3cfa4abc00a0b735c4bf2347ce924cf1e97e",
+      "repository_sha256_after_recovery": "628d3ba1021c149bf0264bca0c1a3cfa4abc00a0b735c4bf2347ce924cf1e97e",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_double_cross_hl25_master_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_double_cross_hl25_master_h.png",
+      "byte_size": 2251280,
+      "source_sha256": "03d5db925c2274054441ab52bd1a6c40f745490d7424d8492b9e9a306936b9f0",
+      "repository_sha256_after_recovery": "03d5db925c2274054441ab52bd1a6c40f745490d7424d8492b9e9a306936b9f0",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_lambda_hl1_master_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_lambda_hl1_master_h.png",
+      "byte_size": 2694099,
+      "source_sha256": "03db906a52aeca31ada7821533e18c5f2a0792648f396b926f0a7f6acfc9ba5e",
+      "repository_sha256_after_recovery": "03db906a52aeca31ada7821533e18c5f2a0792648f396b926f0a7f6acfc9ba5e",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_pool_party_hl25_master_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_pool_party_hl25_master_h.png",
+      "byte_size": 2631944,
+      "source_sha256": "ca5285fb96889dc651908412fa136a4255bfc3491401d3bd2ae524490402674f",
+      "repository_sha256_after_recovery": "ca5285fb96889dc651908412fa136a4255bfc3491401d3bd2ae524490402674f",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_rocket_frenzy_hl25_master_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_rocket_frenzy_hl25_master_h.png",
+      "byte_size": 2724529,
+      "source_sha256": "3858269c3a00be9b65f97b7442338919b9a5760d023c0200ae998e0f32125b0b",
+      "repository_sha256_after_recovery": "3858269c3a00be9b65f97b7442338919b9a5760d023c0200ae998e0f32125b0b",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_rust_mill_hl25_master_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_rust_mill_hl25_master_h.png",
+      "byte_size": 2341168,
+      "source_sha256": "bde15893f5feada03607031b697c332e04f00ca118f7b09781d86a01d9edc5c6",
+      "repository_sha256_after_recovery": "bde15893f5feada03607031b697c332e04f00ca118f7b09781d86a01d9edc5c6",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_xen_dm_hl25_master_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_xen_dm_hl25_master_h.png",
+      "byte_size": 2402580,
+      "source_sha256": "9cd86477b555d917ea901edfb2d2de384ea043b61920a1422b83a138b7ac702c",
+      "repository_sha256_after_recovery": "9cd86477b555d917ea901edfb2d2de384ea043b61920a1422b83a138b7ac702c",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_xen_hl1_master_h.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_xen_hl1_master_h.png",
+      "byte_size": 1879837,
+      "source_sha256": "ba158e22ee6b79247f16a642b0b52128787d6576c4c96ba1d5339e007efc27b4",
+      "repository_sha256_after_recovery": "ba158e22ee6b79247f16a642b0b52128787d6576c4c96ba1d5339e007efc27b4",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "docs/resonance/production/continuation_20261124_h/GALLERY.md",
+      "repository_path": "docs/resonance/production/continuation_20261124_h/GALLERY.md",
+      "byte_size": 24663,
+      "source_sha256": "eb37b164168a0407a67628027c0e4ebbe3cd19bfc9cde5c6246c3b73ee898455",
+      "repository_sha256_after_recovery": "eb37b164168a0407a67628027c0e4ebbe3cd19bfc9cde5c6246c3b73ee898455",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "docs/resonance/production/continuation_20261124_h/MISSING_BASELINE.md",
+      "repository_path": "docs/resonance/production/continuation_20261124_h/MISSING_BASELINE.md",
+      "byte_size": 17984,
+      "source_sha256": "f775a0667bf00c62b05d098ea2391262e3bcf6557220e725790ca0f973c956c4",
+      "repository_sha256_after_recovery": "f775a0667bf00c62b05d098ea2391262e3bcf6557220e725790ca0f973c956c4",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "docs/resonance/production/continuation_20261124_h/PROJECTILES.md",
+      "repository_path": "docs/resonance/production/continuation_20261124_h/PROJECTILES.md",
+      "byte_size": 27800,
+      "source_sha256": "51b88e5e48ad74bf0f00ab8427cea06dd65a29529202798f935fd0946bbb0bac",
+      "repository_sha256_after_recovery": "51b88e5e48ad74bf0f00ab8427cea06dd65a29529202798f935fd0946bbb0bac",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "docs/resonance/production/continuation_20261124_h/README.md",
+      "repository_path": "docs/resonance/production/continuation_20261124_h/README.md",
+      "byte_size": 12786,
+      "source_sha256": "d14f2d0d31f5c9abb5e1b98dc331e6e48fd4ea97e369d6a0bb6d25f8c7fb31fe",
+      "repository_sha256_after_recovery": "0d56bbcb8693572177c02071fa8ae9a8632e627db1b06189e1ed3143f80977ec",
+      "edited_after_recovery": true
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "docs/resonance/production/continuation_20261124_h/STAGES.md",
+      "repository_path": "docs/resonance/production/continuation_20261124_h/STAGES.md",
+      "byte_size": 4795,
+      "source_sha256": "5829e6f2b5ee2a95e0e4245fc172ab79d9236fcc17232821c682ae11f6258286",
+      "repository_sha256_after_recovery": "5829e6f2b5ee2a95e0e4245fc172ab79d9236fcc17232821c682ae11f6258286",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "docs/resonance/production/continuation_20261124_h/baseline_missing_inventory.json",
+      "repository_path": "docs/resonance/production/continuation_20261124_h/baseline_missing_inventory.json",
+      "byte_size": 346751,
+      "source_sha256": "60db750d1cad976c288c186fd49f55ab94e559302fadb65062369fe1773f8a43",
+      "repository_sha256_after_recovery": "60db750d1cad976c288c186fd49f55ab94e559302fadb65062369fe1773f8a43",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "docs/resonance/production/continuation_20261124_h/boss_generation.json",
+      "repository_path": "docs/resonance/production/continuation_20261124_h/boss_generation.json",
+      "byte_size": 12861,
+      "source_sha256": "7bbe9bfa1e1c2093fa18bdf3fa965e4ed9b2821822bb5d0c321b73ac5d0a56ec",
+      "repository_sha256_after_recovery": "7bbe9bfa1e1c2093fa18bdf3fa965e4ed9b2821822bb5d0c321b73ac5d0a56ec",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "docs/resonance/production/continuation_20261124_h/hero_generation.json",
+      "repository_path": "docs/resonance/production/continuation_20261124_h/hero_generation.json",
+      "byte_size": 42902,
+      "source_sha256": "23dd4060c4dfd39b8f736329b67620fdc6877c267c7c45f77d4868b66b5e5bbf",
+      "repository_sha256_after_recovery": "23dd4060c4dfd39b8f736329b67620fdc6877c267c7c45f77d4868b66b5e5bbf",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "docs/resonance/production/continuation_20261124_h/projectile_generation.json",
+      "repository_path": "docs/resonance/production/continuation_20261124_h/projectile_generation.json",
+      "byte_size": 121699,
+      "source_sha256": "b14cc554b566bc5160678229e45f384339eb06e484ca3796c35abdfd88fe4456",
+      "repository_sha256_after_recovery": "b14cc554b566bc5160678229e45f384339eb06e484ca3796c35abdfd88fe4456",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "docs/resonance/production/continuation_20261124_h/root_generation.json",
+      "repository_path": "docs/resonance/production/continuation_20261124_h/root_generation.json",
+      "byte_size": 53662,
+      "source_sha256": "c95a8f1b2d9e9d231cbe6e18eaeabcb811e8147dfa2662d2b7199bcdadf2836b",
+      "repository_sha256_after_recovery": "c95a8f1b2d9e9d231cbe6e18eaeabcb811e8147dfa2662d2b7199bcdadf2836b",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "docs/resonance/production/continuation_20261124_h/stage_generation.json",
+      "repository_path": "docs/resonance/production/continuation_20261124_h/stage_generation.json",
+      "byte_size": 53364,
+      "source_sha256": "33d9798896bdd47b909c40ed5441aeda15c24c5aa6b25812907ea0d5524cbf64",
+      "repository_sha256_after_recovery": "33d9798896bdd47b909c40ed5441aeda15c24c5aa6b25812907ea0d5524cbf64",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "docs/resonance/production/continuation_20261124_h/stage_prompts.json",
+      "repository_path": "docs/resonance/production/continuation_20261124_h/stage_prompts.json",
+      "byte_size": 40710,
+      "source_sha256": "af3bcdbe0199eef15651680b685eacae40690daa13c14aac260fb5124768afd9",
+      "repository_sha256_after_recovery": "af3bcdbe0199eef15651680b685eacae40690daa13c14aac260fb5124768afd9",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "docs/resonance/production/continuation_20261124_h/visual_qa_h.json",
+      "repository_path": "docs/resonance/production/continuation_20261124_h/visual_qa_h.json",
+      "byte_size": 4806,
+      "source_sha256": "ef58867e72da800c7cf6f608fb20e8f045976d384d467f538a08f4f829a429d3",
+      "repository_sha256_after_recovery": "ef58867e72da800c7cf6f608fb20e8f045976d384d467f538a08f4f829a429d3",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "docs/resonance/data/roster.json",
+      "repository_path": "docs/resonance/data/roster.json",
+      "byte_size": 146095,
+      "source_sha256": "7936249785b0c5a5effe627d6eb9987b6fbc041d39ee1976159c30bd64426b26",
+      "repository_sha256_after_recovery": "7936249785b0c5a5effe627d6eb9987b6fbc041d39ee1976159c30bd64426b26",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "docs/resonance/data/stages.json",
+      "repository_path": "docs/resonance/data/stages.json",
+      "byte_size": 104229,
+      "source_sha256": "0b0145872bfabf84d7ee5a2a9e1e067a29a99e49d273063d6af322a6d1c9d483",
+      "repository_sha256_after_recovery": "0b0145872bfabf84d7ee5a2a9e1e067a29a99e49d273063d6af322a6d1c9d483",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "docs/resonance/data/boss_battle_catalog.json",
+      "repository_path": "docs/resonance/data/boss_battle_catalog.json",
+      "byte_size": 81516,
+      "source_sha256": "bf6d6bc1d7999bc6b3168c8185e51529673d86e07f2db50cd8e62de531ed44cf",
+      "repository_sha256_after_recovery": "bf6d6bc1d7999bc6b3168c8185e51529673d86e07f2db50cd8e62de531ed44cf",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "docs/resonance/data/catalogue_extension_20261120.json",
+      "repository_path": "docs/resonance/data/catalogue_extension_20261120.json",
+      "byte_size": 145124,
+      "source_sha256": "88a4e00be9afc04c5da912a5ccee7ecccd929e8b1296a5120f24a08c4258d88a",
+      "repository_sha256_after_recovery": "d63a13029969195bbeb442a386ae68ec379cb24d1348cb3be33acc5edf689e7a",
+      "edited_after_recovery": true
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "docs/resonance/data/catalogue_extension_20261124.json",
+      "repository_path": "docs/resonance/data/catalogue_extension_20261124.json",
+      "byte_size": 6965,
+      "source_sha256": "f09608ae307ccf108926b94876e4c56f4b0409e48724a499b2245dc23ed5c422",
+      "repository_sha256_after_recovery": "f09608ae307ccf108926b94876e4c56f4b0409e48724a499b2245dc23ed5c422",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "docs/resonance/chapters/projectiles_production_20261124.md",
+      "repository_path": "docs/resonance/chapters/projectiles_production_20261124.md",
+      "byte_size": 18804,
+      "source_sha256": "2de1bf1beabb71c258545c015f839936c77c6b152be4d941f8ee309c01d9fb7d",
+      "repository_sha256_after_recovery": "191c3caf47031858105bb28951a83306a6939c97ee403d693391ef5f651cdc85",
+      "edited_after_recovery": true
+    },
+    {
+      "source_workspace": "F",
+      "source_path": "docs/resonance/data/projectile_catalog_20261124.json",
+      "repository_path": "docs/resonance/production/continuation_20261124_f/projectile_catalog_original.json",
+      "byte_size": 112590,
+      "source_sha256": "7019a74d94eaf77deb086c75a4757754e8f8c56be530bd816ad943920937c432",
+      "repository_sha256_after_recovery": "7019a74d94eaf77deb086c75a4757754e8f8c56be530bd816ad943920937c432",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "docs/resonance/data/projectile_catalog_20261124.json",
+      "repository_path": "docs/resonance/production/continuation_20261124_h/projectile_catalog_original.json",
+      "byte_size": 146029,
+      "source_sha256": "1100e7b4acb45eeec37bb0f3fdba53240c1a61dbfa7978ecb9c226a35da77deb",
+      "repository_sha256_after_recovery": "1100e7b4acb45eeec37bb0f3fdba53240c1a61dbfa7978ecb9c226a35da77deb",
+      "edited_after_recovery": false
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "scripts/sync-resonance-production.mjs",
+      "repository_path": "scripts/sync-resonance-production.mjs",
+      "byte_size": 32659,
+      "source_sha256": "f42f89327fe16cd9898b5a54110e3634608cecdee0323fe40c240f72e44e5a4f",
+      "repository_sha256_after_recovery": "ad6383d16b0c05be01c9b2e999dcba57c86f859af5ee8d75255ec47d237d485a",
+      "edited_after_recovery": true
+    },
+    {
+      "source_workspace": "H",
+      "source_path": "scripts/validate-resonance-design.mjs",
+      "repository_path": "scripts/validate-resonance-design.mjs",
+      "byte_size": 13013,
+      "source_sha256": "b1c5f9ce715feb9775612491f7d4e72fa27cf78d10a562d3f92f011456da3c4c",
+      "repository_sha256_after_recovery": "bd43557551f814f9d64d80fc8913662ea427fe23dd2f57d2e59bedc8a2bc482d",
+      "edited_after_recovery": true
+    }
+  ],
+  "validation": {
+    "design": "passed",
+    "boss_design": "passed",
+    "sync": "passed_with_one_legacy_layer_id_warning",
+    "checkpoint_audit": "passed",
+    "checkpoint_audit_counts": {
+      "png": 133,
+      "requests": 155,
+      "refusals": 22,
+      "errors": 0,
+      "warnings": 0
+    },
+    "checkpoint_audit_scope": "Frozen registered baseline+F+H only; new batch I excluded by using a separate snapshot, not by disabling the auditor. Full working-tree audit must be rerun after I registration.",
+    "diff_check": "passed",
+    "canonical_targets": 259,
+    "targets_with_files": 100,
+    "targets_without_files": 159,
+    "projectile_families": 66
+  },
+  "additional_partial_metadata_recovered": [
+    {
+      "asset_id": "breen_hl2_idle_h",
+      "fields": [
+        "qa"
+      ],
+      "source_manifest": "continuation_20261124_h/hero_generation.json"
+    },
+    {
+      "asset_ids": [
+        "proj_hand_grenade_hl1_h",
+        "proj_crossbow_bolt_hl1_h",
+        "proj_snark_hl1_h"
+      ],
+      "fields": [
+        "alpha_composite_review",
+        "qa_notes"
+      ],
+      "source_manifest": "continuation_20261124_h/projectile_generation.json"
+    },
+    {
+      "asset_id": "proj_snark_hl1_h",
+      "reference_only_target_id": "snark_hl1",
+      "note": "Late partial proposes the launched body as a reference for the creature. Preserved as reference_only_target_ids, without claiming an idle pose or bypassing explicit owner association."
+    }
+  ]
+}

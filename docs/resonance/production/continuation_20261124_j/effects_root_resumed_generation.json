@@ -1,0 +1,632 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "continuation_20261124_j",
+  "created_at": "2026-11-24",
+  "counts": {
+    "requests": 6,
+    "generated": 6,
+    "blocked": 0,
+    "new_generation_calls": 6,
+    "targets_covered": 6
+  },
+  "assets": [
+    {
+      "asset_id": "proj_magnusson_device_ep2_held_resumed_j",
+      "target_id": "proj_magnusson_device_ep2",
+      "name_fr": "Dispositif Magnusson — corps au repos",
+      "category": "projectile_key_frame",
+      "source_game": "Half-Life 2: Episode Two",
+      "content_class": "released_reference",
+      "visual_state_id": "held",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/effects/proj_magnusson_device_ep2_held_resumed_j.png",
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/Magnusson_Device",
+        "https://combineoverwiki.net/images/f/fe/Magnade.jpg",
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/episodic/weapon_striderbuster.cpp"
+      ],
+      "reference_paths": [
+        "/tmp/effects-j-recovery/Magnade.jpg"
+      ],
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. ONE individual transparent high-resolution 2D game sprite, the Magnusson Device from original Half-Life 2 Episode Two, directly matching the supplied retail model reference. Faithfully retain the squat rugby-ball/barrel body, silvery worn metal, one central RED paint stripe curving around the mid-body, black short pointed spikes in two rings, small flat CYAN metal/glowing bars at the positions in the reference, dark graphite end caps and the recessed small black handle. Preserve the reference geometry and arrangement, no reinterpretation, no added parts. Same three-quarter side orientation as the source, horizontal long axis, isolated object at rest in midair with no holder. Hand-painted detailed game art, sharp readable material edges, physically restrained wear and tiny highlights, suitable for 2D fighting game object. Whole single object inside generous transparent margins, true alpha background, no scene, no floor, no cast shadow plane, no hand, no gravity gun, no explosion, no words or labels, no cutaway, no diagram, no sprite sheet, no second object. The reference has white backing: remove all of that background while retaining the complete object.",
+      "replaces_lost_asset_id": "proj_magnusson_device_ep2_held_j",
+      "recreated_after_environment_loss": true,
+      "new_generation_call": true,
+      "owner_id": "proj_magnusson_device_ep2",
+      "owner_type": "projectile_effect",
+      "target_ids": [
+        "proj_magnusson_device_ep2"
+      ],
+      "catalogue": "projectile_catalog_20261124.targets",
+      "batch_id": "continuation_20261124_j",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261124_j/effects/proj_magnusson_device_ep2_held_resumed_j.png",
+      "width": 1294,
+      "height": 1216,
+      "color_mode": "RGBA",
+      "byte_size": 2158418,
+      "sha256": "a0904c9fb037b86760a1fa69fd6d23dd5f5ebbf4a1385dde89db6d160c6e360a",
+      "git_blob_sha": "32d48d5bc8ee543129797b9e8e48b4fa0b713a0a",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "generation_call_count": 1,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "recovered_after_environment_loss": true,
+      "save_method": "Octets PNG originaux du résultat image_gen; blob GitHub sauvegardé et hash vérifié avant décodage local. Nouvelle génération après perte de la version antérieure, pas une récupération de ses octets.",
+      "source_references": [
+        {
+          "reference_filename": "Magnade.jpg",
+          "source_url": "https://combineoverwiki.net/images/f/fe/Magnade.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/Magnusson_Device",
+          "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+          "visually_inspected": true,
+          "sha256": "a9f97c3d8a786a86937632ece97aa8b4cc433f77b5925cb61c3d8d19cd9ed6a2"
+        }
+      ],
+      "alpha_stats": {
+        "transparent_pixels": 603991,
+        "partial_pixels": 969256,
+        "opaque_pixels": 257,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "bbox_alpha_nonzero": [
+          0,
+          0,
+          1284,
+          1216
+        ],
+        "bbox_alpha_at_least_16": [
+          30,
+          22,
+          1260,
+          1194
+        ],
+        "transparent_fraction": 0.3838509466769706,
+        "center_alpha": 253,
+        "edge_alpha_max": 1
+      },
+      "alpha_check": "Alpha réel; composition blanc/noir inspectée. Aucun fond opaque ni frange de matte visible; faible bruit alpha extérieur consigné.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "review_path": "/tmp/effects-j-recovery/proj_magnusson_device_ep2_held_resumed_j_alpha_review.jpg",
+        "result": "Objet ou rayon lisible sur les deux fonds, pas de matte opaque; aucun pixel original modifié."
+      },
+      "qa_notes": "Forme, bande rouge, pointes et barrettes cyan de la référence conservées; détails et reliefs interprétés en haute résolution. Marges plus serrées que la consigne, objet complet. Pose isolée, pas de vol ou explosion.",
+      "notes": "Forme, bande rouge, pointes et barrettes cyan de la référence conservées; détails et reliefs interprétés en haute résolution. Marges plus serrées que la consigne, objet complet. Pose isolée, pas de vol ou explosion.",
+      "source_partial_register": "docs/resonance/production/continuation_20261124_j/effects_root_resumed_generation.json"
+    },
+    {
+      "asset_id": "proj_bugbait_hl2_body_resumed_j",
+      "target_id": "proj_bugbait_hl2",
+      "name_fr": "Phéropode HL2 — corps lancé",
+      "category": "projectile_key_frame",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "visual_state_id": "body",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/effects/proj_bugbait_hl2_body_resumed_j.png",
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/Bugbait",
+        "https://combineoverwiki.net/images/4/45/Bugbait.jpg",
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/grenade_bugbait.cpp"
+      ],
+      "reference_paths": [
+        "/tmp/effects-j-recovery/Bugbait.jpg"
+      ],
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. One isolated high-resolution 2D game sprite of the original Half-Life 2 BUGBAIT / PHEROPOD worldmodel, using the supplied actual retail worldmodel as strict identity reference. Retain this small irregular roughly spherical organic gland with a mottled fleshy brown/tan/purple surface, exactly the same chunky asymmetric lobes and short torn-off pointed tissue protrusions with vivid CYAN/TURQUOISE ends. NOT yellow, not orange, not lime green. Preserve the general angular silhouette and the cyan tip locations, fleshy leathery material not metal or rock. Same three-quarter view and proportions as the reference, additional subtle high-resolution skin detail only. ONE complete object centered with 12 percent empty transparent margin on all sides, suspended without floor or hand. Neutral state before impact, no smoke trail, splatter or cloud. Detailed hand-painted 2D sprite suitable for Half-Life fighting game, no stylistic redesign, no background, no checkerboard, no labels, no captions, no borders, no other objects. True RGBA transparent background.",
+      "replaces_lost_asset_id": "proj_bugbait_hl2_body_j",
+      "recreated_after_environment_loss": true,
+      "new_generation_call": true,
+      "owner_id": "proj_bugbait_hl2",
+      "owner_type": "projectile_effect",
+      "target_ids": [
+        "proj_bugbait_hl2"
+      ],
+      "catalogue": "projectile_catalog_20261124.targets",
+      "batch_id": "continuation_20261124_j",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261124_j/effects/proj_bugbait_hl2_body_resumed_j.png",
+      "width": 1319,
+      "height": 1192,
+      "color_mode": "RGBA",
+      "byte_size": 1749772,
+      "sha256": "5b343e1a12b2b1c5f2ea56c75bf8120e9eb9f090f7eec7802a26356c84779347",
+      "git_blob_sha": "e48d77eb9005710ea2088457749beb9892b6870a",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "generation_call_count": 1,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "recovered_after_environment_loss": true,
+      "save_method": "Octets PNG originaux du résultat image_gen; blob GitHub sauvegardé et hash vérifié avant décodage local. Nouvelle génération après perte de la version antérieure, pas une récupération de ses octets.",
+      "source_references": [
+        {
+          "reference_filename": "Bugbait.jpg",
+          "source_url": "https://combineoverwiki.net/images/4/45/Bugbait.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/Bugbait",
+          "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+          "visually_inspected": true,
+          "sha256": "eae8afa006f9ede73f66c1536be68703dbd30847fc871c4a8e96c86e4070b55a"
+        }
+      ],
+      "alpha_stats": {
+        "transparent_pixels": 679386,
+        "partial_pixels": 892147,
+        "opaque_pixels": 715,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "bbox_alpha_nonzero": [
+          0,
+          31,
+          1305,
+          1166
+        ],
+        "bbox_alpha_at_least_16": [
+          67,
+          60,
+          1266,
+          1135
+        ],
+        "transparent_fraction": 0.43211121909520633,
+        "center_alpha": 252,
+        "edge_alpha_max": 1
+      },
+      "alpha_check": "Alpha réel; composition blanc/noir inspectée. Aucun fond opaque ni frange de matte visible; faible bruit alpha extérieur consigné.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "review_path": "/tmp/effects-j-recovery/proj_bugbait_hl2_body_resumed_j_alpha_review.jpg",
+        "result": "Objet ou rayon lisible sur les deux fonds, pas de matte opaque; aucun pixel original modifié."
+      },
+      "qa_notes": "Référence du worldmodel brun/violet à pointes cyan, différente du modèle tenu orange. Surface plus détaillée, proportions et pointes à comparer finement; aucune animation ou dispersion.",
+      "notes": "Référence du worldmodel brun/violet à pointes cyan, différente du modèle tenu orange. Surface plus détaillée, proportions et pointes à comparer finement; aucune animation ou dispersion.",
+      "source_partial_register": "docs/resonance/production/continuation_20261124_j/effects_root_resumed_generation.json"
+    },
+    {
+      "asset_id": "proj_aperture_bomb_portal2_body_resumed_j",
+      "target_id": "proj_aperture_bomb_portal2",
+      "name_fr": "Bombe Aperture — corps Portal 2",
+      "category": "projectile_key_frame",
+      "source_game": "Portal 2",
+      "content_class": "released_reference",
+      "visual_state_id": "body",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/effects/proj_aperture_bomb_portal2_body_resumed_j.png",
+      "source_urls": [
+        "https://theportalwiki.com/wiki/Bombs",
+        "https://i1.theportalwiki.net/img/b/b1/Portal_2_Bomb.png",
+        "https://store.steampowered.com/app/620/Portal_2/"
+      ],
+      "reference_paths": [
+        "/tmp/effects-j-recovery/Portal_2_Bomb.png"
+      ],
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE isolated high-resolution 2D sprite of the APERTURE BOMB from the final Wheatley encounter in the released Portal 2 game. Strictly match the provided retail model image: squat spherical charcoal grey metal body, broad worn RED paint bands encircling it, white segmented circular eye socket, central convex orange-red glowing honeycomb glass lens, recessed mechanical ring and dark back shell. Same three-quarter orientation with the single lens facing somewhat screen left. Keep the exact model's body proportions, white ring segments and unornamented panel divisions. This is the BOMB from Portal 2, not Wheatley himself and not a blue-eyed core; no handles, no spikes, no fuse, no glass football cut-content shape. Clean high-resolution painted sprite with restrained surface wear and reflections, only one complete object fully visible within 12 percent empty margin, true transparent alpha, no ground shadow, no scenery, no smoke, no explosion, no text, no label, no diagram, no second view, no sprite sheet.",
+      "replaces_lost_asset_id": "proj_aperture_bomb_portal2_body_j",
+      "recreated_after_environment_loss": true,
+      "new_generation_call": true,
+      "owner_id": "proj_aperture_bomb_portal2",
+      "owner_type": "projectile_effect",
+      "target_ids": [
+        "proj_aperture_bomb_portal2"
+      ],
+      "catalogue": "projectile_catalog_20261124.targets",
+      "batch_id": "continuation_20261124_j",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261124_j/effects/proj_aperture_bomb_portal2_body_resumed_j.png",
+      "width": 1254,
+      "height": 1254,
+      "color_mode": "RGBA",
+      "byte_size": 1944611,
+      "sha256": "949079c729a00e3010ab1a92276741b4031d77869a386a5d039234d7e4e3fe08",
+      "git_blob_sha": "2a31a903b7a486f40a54337799d3c23f59a07774",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "generation_call_count": 1,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "recovered_after_environment_loss": true,
+      "save_method": "Octets PNG originaux du résultat image_gen; blob GitHub sauvegardé et hash vérifié avant décodage local. Nouvelle génération après perte de la version antérieure, pas une récupération de ses octets.",
+      "source_references": [
+        {
+          "reference_filename": "Portal_2_Bomb.png",
+          "source_url": "https://i1.theportalwiki.net/img/b/b1/Portal_2_Bomb.png",
+          "source_page": "https://theportalwiki.com/wiki/Bombs",
+          "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+          "visually_inspected": true,
+          "sha256": "734be13cb21ef1d9526c323ce463c5aad517669d7c6dd192aaef82e3116395d0"
+        }
+      ],
+      "alpha_stats": {
+        "transparent_pixels": 438022,
+        "partial_pixels": 1133895,
+        "opaque_pixels": 599,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "bbox_alpha_nonzero": [
+          0,
+          0,
+          1238,
+          1240
+        ],
+        "bbox_alpha_at_least_16": [
+          34,
+          20,
+          1218,
+          1238
+        ],
+        "transparent_fraction": 0.27854851715340256,
+        "center_alpha": 253,
+        "edge_alpha_max": 1
+      },
+      "alpha_check": "Alpha réel; composition blanc/noir inspectée. Aucun fond opaque ni frange de matte visible; faible bruit alpha extérieur consigné.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "review_path": "/tmp/effects-j-recovery/proj_aperture_bomb_portal2_body_resumed_j_alpha_review.jpg",
+        "result": "Objet ou rayon lisible sur les deux fonds, pas de matte opaque; aucun pixel original modifié."
+      },
+      "qa_notes": "Bombe sombre à bandes rouges, couronne blanche segmentée et lentille orange/rouge. Silhouette complète mais marge inférieure étroite; usure et reflets interprétés. Aucune explosion.",
+      "notes": "Bombe sombre à bandes rouges, couronne blanche segmentée et lentille orange/rouge. Silhouette complète mais marge inférieure étroite; usure et reflets interprétés. Aucune explosion.",
+      "source_partial_register": "docs/resonance/production/continuation_20261124_j/effects_root_resumed_generation.json"
+    },
+    {
+      "asset_id": "proj_headcrab_canister_hl2_opening_resumed_j",
+      "target_id": "proj_headcrab_canister_hl2",
+      "name_fr": "Capsule de headcrabs — coque ouverte",
+      "category": "projectile_key_frame",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "visual_state_id": "opening",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/effects/proj_headcrab_canister_hl2_opening_resumed_j.png",
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/Headcrab_Shell",
+        "https://combineoverwiki.net/images/4/45/HeadcrabShell_side.jpg",
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/env_headcrabcanister.cpp"
+      ],
+      "reference_paths": [
+        "/tmp/effects-j-recovery/HeadcrabShell_side.jpg"
+      ],
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. ONE isolated high-resolution 2D game sprite of the Half-Life 2 HEADCRAB CANISTER, specifically the already OPENED shell shown in the provided retail model reference. Copy its exact mechanical silhouette, long dark grey cylindrical body at screen right, split/beaked nose, rust near the seam, skeletal inner shell and three long splayed dark metal panels extending to screen left as visible. Same three-quarter side perspective as reference and same orientation nose to lower right. Faithfully preserve proportions, flat tapering long metal panels, dull grey-black worn industrial material and the small rods; avoid futuristic redesign or added lights. Large landscape canvas that contains the entire complete shell including all panel tips with at least 8 percent fully empty margins. Render crisp refined hand-painted 2D detail while preserving model identity. No live creature, no projectile trail, no flames, no debris, no scene, no ground, no hand, no text or diagrams, no duplicate object. True alpha transparent background. The white source backing is not part of the asset. This is one opening-state sprite only.",
+      "replaces_lost_asset_id": "proj_headcrab_canister_hl2_opening_j",
+      "recreated_after_environment_loss": true,
+      "new_generation_call": true,
+      "owner_id": "proj_headcrab_canister_hl2",
+      "owner_type": "projectile_effect",
+      "target_ids": [
+        "proj_headcrab_canister_hl2"
+      ],
+      "catalogue": "projectile_catalog_20261124.targets",
+      "batch_id": "continuation_20261124_j",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261124_j/effects/proj_headcrab_canister_hl2_opening_resumed_j.png",
+      "width": 1612,
+      "height": 976,
+      "color_mode": "RGBA",
+      "byte_size": 1039733,
+      "sha256": "a9c37ad56378f4dbb297f0b486093ad097df92a5cd7ec3044df99a2f5439b506",
+      "git_blob_sha": "4b96d3daf6543d0f71b9c38f442c517ac62f95f5",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "generation_call_count": 1,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "recovered_after_environment_loss": true,
+      "save_method": "Octets PNG originaux du résultat image_gen; blob GitHub sauvegardé et hash vérifié avant décodage local. Nouvelle génération après perte de la version antérieure, pas une récupération de ses octets.",
+      "source_references": [
+        {
+          "reference_filename": "HeadcrabShell_side.jpg",
+          "source_url": "https://combineoverwiki.net/images/4/45/HeadcrabShell_side.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/Headcrab_Shell",
+          "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+          "visually_inspected": true,
+          "sha256": "ef941bf09ae17cc1c6c1621b2c0550c1f657d24dfd63658a4feffe1525d06439"
+        }
+      ],
+      "alpha_stats": {
+        "transparent_pixels": 1018963,
+        "partial_pixels": 554252,
+        "opaque_pixels": 97,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "bbox_alpha_nonzero": [
+          0,
+          14,
+          1584,
+          976
+        ],
+        "bbox_alpha_at_least_16": [
+          27,
+          17,
+          1581,
+          960
+        ],
+        "transparent_fraction": 0.6476547563356791,
+        "center_alpha": 253,
+        "edge_alpha_max": 1
+      },
+      "alpha_check": "Alpha réel; composition blanc/noir inspectée. Aucun fond opaque ni frange de matte visible; faible bruit alpha extérieur consigné.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "review_path": "/tmp/effects-j-recovery/proj_headcrab_canister_hl2_opening_resumed_j_alpha_review.jpg",
+        "result": "Objet ou rayon lisible sur les deux fonds, pas de matte opaque; aucun pixel original modifié."
+      },
+      "qa_notes": "Coque ouverte guidée par le modèle retail, trois panneaux allongés et nez orienté à droite. Le cadrage est serré mais les pointes sont présentes; géométrie et textures à comparer. État opening seulement, aucun vol ni headcrab.",
+      "notes": "Coque ouverte guidée par le modèle retail, trois panneaux allongés et nez orienté à droite. Le cadrage est serré mais les pointes sont présentes; géométrie et textures à comparer. État opening seulement, aucun vol ni headcrab.",
+      "source_partial_register": "docs/resonance/production/continuation_20261124_j/effects_root_resumed_generation.json"
+    },
+    {
+      "asset_id": "device_tripmine_hl1_body_resumed_j",
+      "target_id": "device_tripmine_hl1",
+      "name_fr": "Mine laser HL1 — boîtier",
+      "category": "projectile_key_frame",
+      "source_game": "Half-Life (1998)",
+      "content_class": "released_reference",
+      "visual_state_id": "body",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/effects/device_tripmine_hl1_body_resumed_j.png",
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/Laser_Trip_Mine_(Half-Life)",
+        "https://combineoverwiki.net/images/8/84/Tripmine_world.jpg",
+        "https://github.com/ValveSoftware/halflife/blob/master/dlls/tripmine.cpp"
+      ],
+      "reference_paths": [
+        "/tmp/effects-j-recovery/Tripmine_world.jpg"
+      ],
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. One isolated high-resolution 2D sprite of the ORIGINAL HALF-LIFE 1998 laser tripmine body, carefully matching the supplied original retail worldmodel. Keep its short broad OLIVE DRAB rectangular housing with angled outer ends, dark grid of raised rectangular cells at left and right, four round silver bolt heads on the bottom front edge, large recessed round black CENTRAL OPTICAL LENS with faint blue-violet reflective highlights, low carrying/arming bridge on the top with small red inset. Same shallow three-quarter front view as reference. No blue HL2 Combine casing, no yellow strip, no futuristic redesign. This frame contains ONLY THE DEVICE BODY, no emitted laser, no wires, no diagram, no cutaway, no instructions, no characters. Refined detailed painted game sprite, same shape and panel arrangement, entire housing contained with 12 percent transparent margins, true RGBA alpha background, no white rectangle or ground shadow. One object, no labels, no collage.",
+      "replaces_lost_asset_id": "device_tripmine_hl1_body_j",
+      "recreated_after_environment_loss": true,
+      "new_generation_call": true,
+      "owner_id": "device_tripmine_hl1",
+      "owner_type": "projectile_effect",
+      "target_ids": [
+        "device_tripmine_hl1"
+      ],
+      "catalogue": "projectile_catalog_20261124.targets",
+      "batch_id": "continuation_20261124_j",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261124_j/effects/device_tripmine_hl1_body_resumed_j.png",
+      "width": 1697,
+      "height": 927,
+      "color_mode": "RGBA",
+      "byte_size": 1722467,
+      "sha256": "268d49325f3d18050147ec480edb63bc65086f15c7314225b19e057003f82b98",
+      "git_blob_sha": "0e4d49052f4a49c25c2b81eba14a362dc581f629",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "generation_call_count": 1,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "recovered_after_environment_loss": true,
+      "save_method": "Octets PNG originaux du résultat image_gen; blob GitHub sauvegardé et hash vérifié avant décodage local. Nouvelle génération après perte de la version antérieure, pas une récupération de ses octets.",
+      "source_references": [
+        {
+          "reference_filename": "Tripmine_world.jpg",
+          "source_url": "https://combineoverwiki.net/images/8/84/Tripmine_world.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/Laser_Trip_Mine_(Half-Life)",
+          "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+          "visually_inspected": true,
+          "sha256": "920928a9f49d4a1690b91d29700b2123387cfb0397408b89aa6313ec5c0ffb48"
+        }
+      ],
+      "alpha_stats": {
+        "transparent_pixels": 590247,
+        "partial_pixels": 982425,
+        "opaque_pixels": 447,
+        "alpha_range": [
+          0,
+          255
+        ],
+        "bbox_alpha_nonzero": [
+          0,
+          0,
+          1683,
+          927
+        ],
+        "bbox_alpha_at_least_16": [
+          76,
+          86,
+          1620,
+          846
+        ],
+        "transparent_fraction": 0.37520810568049845,
+        "center_alpha": 253,
+        "edge_alpha_max": 1
+      },
+      "alpha_check": "Alpha réel; composition blanc/noir inspectée. Aucun fond opaque ni frange de matte visible; faible bruit alpha extérieur consigné.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "review_path": "/tmp/effects-j-recovery/device_tripmine_hl1_body_resumed_j_alpha_review.jpg",
+        "result": "Objet ou rayon lisible sur les deux fonds, pas de matte opaque; aucun pixel original modifié."
+      },
+      "qa_notes": "Boîtier olive original HL1, lentille centrale, cellules latérales et quatre boulons. Détails du dessus simplifiés et grille à comparer; aucune détection intégrée.",
+      "notes": "Boîtier olive original HL1, lentille centrale, cellules latérales et quatre boulons. Détails du dessus simplifiés et grille à comparer; aucune détection intégrée.",
+      "source_partial_register": "docs/resonance/production/continuation_20261124_j/effects_root_resumed_generation.json"
+    },
+    {
+      "asset_id": "fx_tripmine_laser_hl1_beam_resumed_j",
+      "target_id": "fx_tripmine_laser_hl1",
+      "name_fr": "Mine laser HL1 — rayon de détection",
+      "category": "vfx_key_frame",
+      "source_game": "Half-Life (1998)",
+      "content_class": "released_reference",
+      "visual_state_id": "beam",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/effects/fx_tripmine_laser_hl1_beam_resumed_j.png",
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/Laser_Trip_Mine_(Half-Life)",
+        "https://combineoverwiki.net/images/5/5e/Tripmine_wall.jpg",
+        "https://github.com/ValveSoftware/halflife/blob/master/dlls/tripmine.cpp"
+      ],
+      "reference_paths": [
+        "/tmp/effects-j-recovery/Tripmine_wall.jpg"
+      ],
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. ONE isolated alpha-transparent 2D VFX frame for the stationary laser TRIPMINE DETECTION BEAM in original Half-Life 1998. Use the provided original in-game screenshot for the exact restrained translucent teal/turquoise beam color (official code nominal RGB 0,214,198 low brightness). Only the thin perfectly straight horizontal teal beam from this source, side-on, no perspective enlargement. Uniform narrow stripe with faint close soft edge, no hard white core, no electric zigzag, no ball, no sparks, no thick neon sci-fi glow. Left and right endpoints are slightly tapered into transparent pixels so this is usable as a scalable render layer. Beam occupies central 75 percent of 3:1 landscape canvas width, 1.5 to 2 percent height, large fully transparent margins on all sides. Do not draw the mine housing, walls, screenshot environment or ground. True RGBA transparency everywhere outside the beam, no dark backing, no labels, no panels, no additional state.",
+      "replaces_lost_asset_id": "fx_tripmine_laser_hl1_beam_j",
+      "recreated_after_environment_loss": true,
+      "new_generation_call": true,
+      "owner_id": "fx_tripmine_laser_hl1",
+      "owner_type": "projectile_effect",
+      "target_ids": [
+        "fx_tripmine_laser_hl1"
+      ],
+      "catalogue": "projectile_catalog_20261124.targets",
+      "batch_id": "continuation_20261124_j",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "file_path": "assets/resonance/candidates/continuation_20261124_j/effects/fx_tripmine_laser_hl1_beam_resumed_j.png",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 155931,
+      "sha256": "acbcc332876a46a5e9cde21c4427b2b3aaafe3e87ae87d286256d81d1ff32fae",
+      "git_blob_sha": "8e678cba83c464f131d04dde765bcd3a2d30d907",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "generation_call_count": 1,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "recovered_after_environment_loss": true,
+      "save_method": "Octets PNG originaux du résultat image_gen; blob GitHub sauvegardé et hash vérifié avant décodage local. Nouvelle génération après perte de la version antérieure, pas une récupération de ses octets.",
+      "source_references": [
+        {
+          "reference_filename": "Tripmine_wall.jpg",
+          "source_url": "https://combineoverwiki.net/images/5/5e/Tripmine_wall.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/Laser_Trip_Mine_(Half-Life)",
+          "role": "retail_model_or_game_screenshot_reference_hosted_by_community_wiki",
+          "visually_inspected": true,
+          "sha256": "d2456797f4503b4d43be55eb72a433c4d342ab8a619753a6ed324da5794cbda3"
+        }
+      ],
+      "alpha_stats": {
+        "transparent_pixels": 1482953,
+        "partial_pixels": 89575,
+        "opaque_pixels": 0,
+        "alpha_range": [
+          0,
+          183
+        ],
+        "bbox_alpha_nonzero": [
+          41,
+          22,
+          2132,
+          684
+        ],
+        "bbox_alpha_at_least_16": [
+          297,
+          349,
+          1885,
+          374
+        ],
+        "transparent_fraction": 0.943037580252943,
+        "center_alpha": 170,
+        "edge_alpha_max": 0
+      },
+      "alpha_check": "Alpha réel; composition blanc/noir inspectée. Aucun fond opaque ni frange de matte visible; faible bruit alpha extérieur consigné.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "review_path": "/tmp/effects-j-recovery/fx_tripmine_laser_hl1_beam_resumed_j_alpha_review.jpg",
+        "result": "Objet ou rayon lisible sur les deux fonds, pas de matte opaque; aucun pixel original modifié."
+      },
+      "qa_notes": "Rayon horizontal turquoise translucide de détection, distinct du boîtier. Le compositing révèle un trait fin et régulier; luminosité, largeur et durée restent à comparer dans le jeu. Image fixe, pas une simulation de rayon.",
+      "notes": "Rayon horizontal turquoise translucide de détection, distinct du boîtier. Le compositing révèle un trait fin et régulier; luminosité, largeur et durée restent à comparer dans le jeu. Image fixe, pas une simulation de rayon.",
+      "source_partial_register": "docs/resonance/production/continuation_20261124_j/effects_root_resumed_generation.json"
+    }
+  ]
+}

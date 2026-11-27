@@ -1,0 +1,86 @@
+[
+  {
+    "asset_id": "archive_combine_assassin_hl2_guard_p",
+    "target_id": "archive_combine_assassin_hl2",
+    "path": "assets/resonance/candidates/continuation_20261127_p/hl2/archive_combine_assassin_hl2_guard_p.png",
+    "prompt": "Use case: style-transfer. Asset type: one high-resolution 2D fighting-game archival character key pose. Input image 1 is the ONLY identity and costume reference: the original Half-Life 2 cut Combine Assassin fassassin.mdl model render. Image 2 is a DIFFERENT enemy and must not influence this image. Reproduce the first reference as faithfully as possible in crisp detailed hand-painted 2D sprite rendering, with no redesign. Keep exactly her lean narrow proportions, light grey smooth full helmet, single RED circular optic, round front respirator under it, pale white-grey camouflage torso vest, dark grey fitted sleeves and gloves, very pale trousers with thigh seam/strap pattern, black hip utility pouch, white boots and long curved heel springs. Preserve the two compact dark pistols held low in separate hands. The same crouched guard stance, same head angle, same front-left three-quarter view facing toward screen left; both complete feet and heel springs visible. Do not invent a rear view, do not make the optic blue, do not use the alternate repository texture or Survivor model, no exposed face or hair, no high heels. Full body centered with modest empty margins, no cropping, no duplicate, exactly one character and one pose. True transparent background, no white field, no floor or shadow plane, no border, no text, no UI, no effects. Neutral readable lighting, preserve original restrained grey/white/black palette with one red optic. This is an archival sprite interpretation of a historical model, not an official shipped character or certified reconstruction.",
+    "refIndex": 0,
+    "source_reference": {
+      "source_url": "https://combineoverwiki.net/images/c/c6/CombineAssassinLeak_Idle.png",
+      "provenance_url": "https://combineoverwiki.net/wiki/File:CombineAssassinLeak_Idle.png",
+      "sha256": "fa983caca43485beaa6d5914bf8fa8b296fb0b7ad3792667e13ec9a9fb507255",
+      "visually_inspected": true,
+      "provided_to_generation": true,
+      "provenance": "Valve historical model capture hosted by community",
+      "inspection_method": "original media downloaded and visually inspected"
+    },
+    "generation_status": "généré",
+    "generator": "image_gen built-in",
+    "runtime_enabled": false,
+    "certified_one_to_one": false,
+    "integrated_in_game": false
+  },
+  {
+    "asset_id": "archive_combine_guard_synth_hl2_guard_p",
+    "target_id": "archive_combine_guard_synth_hl2",
+    "path": "assets/resonance/candidates/continuation_20261127_p/hl2/archive_combine_guard_synth_hl2_guard_p.png",
+    "prompt": "Use case: style-transfer. Asset type: one high-resolution 2D boss archival sprite key pose. Input image 2 is the ONLY identity reference: original cut Half-Life 2 Combine Guard SYNTH model. Image 1 is a DIFFERENT character and must not influence this image. Reproduce the SECOND reference in crisp detailed painted 2D game-sprite rendering while keeping the original model design and visible pose with maximum fidelity. Keep the enormous broad lopsided olive-green organic mechanical armor, rounded shoulder carapaces, tiny exposed human male head recessed deep into the collar with a dark mouth respirator, the dark red angular inner collar, the metal top support bars and thin antenna, four small blue indicators near upper shoulder, dark hose details and massive feet with divided blocky toes. Its two arms cradle the huge chunky angular golden-olive energy cannon at chest/waist, exactly the reference silhouette. Keep the low thick torso, bowed heavy legs spread planted, irregular spotted green-brown surface and black mechanical recesses. Same front three-quarter view toward screen left, same standing pose; no invented back details. NOT an ordinary masked soldier, not a trenchcoat, no military rifle, no Hunter limbs, no extra eyes. Full body and entire weapon, antenna and toes in frame, 8 percent transparent margins. ONE subject, ONE pose only. True transparent background, no ground, no scene, no floor shadow plane, no text, no UI, no diagram or sheet. Neutral lighting, do not introduce glossy new plating or emissive trims. This is a static archival candidate, not a final animated boss or certified 1:1.",
+    "refIndex": 1,
+    "source_reference": {
+      "source_url": "https://combineoverwiki.net/images/7/78/Combine_guard.jpg",
+      "provenance_url": "https://combineoverwiki.net/wiki/File:Combine_guard.jpg",
+      "sha256": "779e7c1419af05ea6995fcf0c8c70f413c7c695db4fa11196162be2165ae80d1",
+      "visually_inspected": true,
+      "provided_to_generation": true,
+      "provenance": "Valve historical model capture hosted by community",
+      "inspection_method": "original media downloaded and visually inspected"
+    },
+    "generation_status": "généré",
+    "generator": "image_gen built-in",
+    "runtime_enabled": false,
+    "certified_one_to_one": false,
+    "integrated_in_game": false
+  },
+  {
+    "asset_id": "archive_bullsquid_hl2_cut_idle_p",
+    "target_id": "archive_bullsquid_hl2_cut",
+    "path": "assets/resonance/candidates/continuation_20261127_p/hl2/archive_bullsquid_hl2_cut_idle_p.png",
+    "prompt": "Use case: style-transfer. One high-resolution 2D game sprite key pose of the CUT Half-Life 2 Bullsquid. Image1, the dark rust-red creature with black mottling, is the ONLY source identity reference. Image2 is a different animal and must not influence this image. Reproduce the exact observed subject of image1 with maximum model fidelity, in polished crisp painted 2D sprite style. Keep the same low squat two-legged body, long broad projecting head, cluster of fleshy long thin oral tentacles projecting toward screen LEFT, the same visible tentacle count and positions, one clearly visible yellow-ringed small sideways eye with dark pupil, deep rust-brown/red hide with irregular dark green/black spots concentrated over back, squat stout muscular rear leg, both visible angular black clawed feet, short pointed dark dorsal/rear spines. Preserve proportions and apparent silhouette of the original low-poly model; smooth shading can be improved but no new anatomy or texture pattern inventions. Same pose and angle as the source: near-side three-quarter profile facing left, all tentacles and feet visible. This is the cut HL2 model, not yellow/orange HL1 Bullsquid, not a fan redesign. Full creature framed centered with generous transparent margins. ONE creature, ONE pose, true transparent background, no scene, no floor/shadow plane, no extra eyes, no appendage additions, no labels or UI, no effects or spit yet. This remains a static archival adaptation, not certified final art.",
+    "refIndex": 2,
+    "source_reference": {
+      "source_url": "https://combineoverwiki.net/images/1/18/Bullsquid_leak.jpg",
+      "provenance_url": "https://combineoverwiki.net/wiki/File:Bullsquid_leak.jpg",
+      "sha256": "714275f4eff007d522681168946deca8a2324a66083cc1161eb7b0f783c34154",
+      "visually_inspected": true,
+      "provided_to_generation": true,
+      "provenance": "Valve historical model capture hosted by community",
+      "inspection_method": "original media downloaded and visually inspected"
+    },
+    "generation_status": "généré",
+    "generator": "image_gen built-in",
+    "runtime_enabled": false,
+    "certified_one_to_one": false,
+    "integrated_in_game": false
+  },
+  {
+    "asset_id": "archive_houndeye_hl2_cut_front_p",
+    "target_id": "archive_houndeye_hl2_cut",
+    "path": "assets/resonance/candidates/continuation_20261127_p/hl2/archive_houndeye_hl2_cut_front_p.png",
+    "prompt": "Use case: style-transfer. One high-resolution 2D archival reference sprite of the cut Half-Life 2 Houndeye. Use ONLY image2: the small original full-body front preview on a cyan background. Image1 is a completely different creature and must not influence this output. Enlarge and carefully interpret the observed model without redesigning it. Preserve the original almost symmetrical FRONTAL viewing angle and the whole visible animal: huge circular forward-facing compound eye occupying almost the entire head/front, many dark burgundy-purple small facets dotted with dull yellow-olive highlights inside, thick pale yellow-olive fleshy rim, ochre yellow/olive short rounded body tapering back, dark upper dorsal fold, THREE legs total: two stout outer legs to left and right with dark claws, plus the long narrow center/front leg pointing straight down. Preserve the reference's relative leg positions and proportions; retain the unusual tripod structure. No mouth, no fangs, no ears, no single eyeball, no mammal facial features. Crisp hand-painted game-sprite treatment with restrained detail based only on what is visible in the original; do not invent the back or a side projection from this front-only reference. One full-body subject, centered, original frontal orientation, broad transparent margins. Remove the cyan backdrop entirely; true alpha transparency; no ground, no shadow plane, no sonic ring or FX, no text, no UI, no sheets. This is a frontal archival study from a small historical reference, not a side-view combat animation or a certified 1:1 asset.",
+    "refIndex": 3,
+    "source_reference": {
+      "source_url": "https://www.combineoverwiki.net/images/c/c3/Leak_houndeye_mdl_preview.jpg",
+      "provenance_url": "https://combineoverwiki.net/wiki/File:Leak_houndeye_mdl_preview.jpg",
+      "sha256": "750664796ef13c1435ca18301fe45ee1f182ea79d585bcc806d31dec55ad0c25",
+      "visually_inspected": true,
+      "provided_to_generation": true,
+      "provenance": "Valve historical model capture hosted by community",
+      "inspection_method": "original media downloaded and visually inspected"
+    },
+    "generation_status": "généré",
+    "generator": "image_gen built-in",
+    "runtime_enabled": false,
+    "certified_one_to_one": false,
+    "integrated_in_game": false
+  }
+]

@@ -1,0 +1,1448 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-11-27",
+  "base_commit": "4ae2ee9dcf1a2acedff4b628c70ee70a736553a0",
+  "scope": "Read-only audit of current catalogues and registers; scratch report only; no generation, source mutation or global registry update.",
+  "input_sha256": {
+    "docs/resonance/data/production_queue.json": "a4794ab3b8ab2b8de3484e291a23eb714f4c6d55a9c12668c46269a6bfa19dd7",
+    "docs/resonance/data/generated_art_register.json": "c6316e9dde6bbf2ea015bcc7036f64d2073729333b331f891d7f37192b97007d",
+    "docs/resonance/production/continuation_20261125_l/target_review.json": "3ed438d4c197a9815fd408abbea6ec05cd6e4bd0f5ab1a5cf6db431036596d2e",
+    "docs/resonance/production/MISSING_TARGETS.md": "42340e4db719ae081b82efe6c18d512f1e5ee3eea86eb22f4531c66db0bd4711",
+    "docs/resonance/data/stages.json": "f3d1fb7432494bcd846354dcbb2ae612069e5c9a064a93702481bd59900e9504",
+    "docs/resonance/data/projectile_catalog_20261124.json": "a87f06a0090893bb4a739887ba58608c96d718f4ff0dc96fe9eade97aab513b3"
+  },
+  "baseline_counts": {
+    "targets": 259,
+    "by_source_bucket": {
+      "boss_battle_catalog.bosses": 25,
+      "catalogue_extension_20261120.targets": 102,
+      "catalogue_extension_20261124.targets": 6,
+      "projectile_catalog_20261124.targets": 66,
+      "roster.fighters": 24,
+      "roster.reserves": 12,
+      "stages.stages": 24
+    },
+    "by_category": {
+      "archive": 11,
+      "boss": 28,
+      "character": 86,
+      "costume": 18,
+      "projectile": 66,
+      "stage": 50
+    },
+    "by_content_class": {
+      "cut_content_archive": 1,
+      "documented_cut_content": 10,
+      "official_alternate_continuity": 7,
+      "official_demo_reference": 2,
+      "original_encounter_from_released_identity": 1,
+      "released_multiplayer_variant": 4,
+      "released_reference": 174,
+      "unspecified": 60
+    },
+    "targets_with_files": 241,
+    "targets_without_files": 18,
+    "targets_with_refusals": 29,
+    "selected_candidate_files": 248,
+    "costume_targets_with_exactly_associated_files": 18,
+    "generation_requests": 345,
+    "generated_requests": 293,
+    "refused_requests": 36,
+    "tool_error_requests": 4,
+    "output_unavailable_requests": 12,
+    "requests_without_files": 52,
+    "distinct_registered_png_files_present": 293,
+    "requests_outside_target_queue": 1,
+    "stage_layer_candidate_files": 21,
+    "stage_layer_candidate_ids": 19,
+    "stage_layer_files_without_id": 1,
+    "stage_layer_missing_ids_in_known_contracts": 131,
+    "stages_without_layer_contract": 25,
+    "projectile_targets": 66,
+    "projectile_targets_with_files": 57,
+    "projectile_targets_without_files": 9,
+    "projectile_targets_by_effect_kind": {
+      "area": 4,
+      "beam": 10,
+      "device": 1,
+      "impact": 1,
+      "instant_trace": 5,
+      "portal": 4,
+      "projectile": 32,
+      "throwable": 8,
+      "weapon_fire": 1
+    },
+    "projectile_visual_state_candidate_ids": 61,
+    "projectile_visual_state_missing_ids": 134,
+    "projectile_files_without_visual_state_id": 1,
+    "archives": 11,
+    "archives_runtime_enabled": 0,
+    "targets_automatically_completed": 0
+  },
+  "missing_without_png": [
+    {
+      "target_id": "wheatley_portal2",
+      "name": "Wheatley dans le corps central",
+      "category": "boss",
+      "source_game": "Portal 2",
+      "source_file": "docs/resonance/data/boss_battle_catalog.json",
+      "actual_png_count": 0,
+      "disposition": "blocked_prior_explicit_refusal_no_retry",
+      "reason": "Refus de génération antérieur conservé. La cause précise n’est pas fournie par le registre, hormis other / moderation_blocked lorsque cité. Aucun changement de pose, nom, costume ou outil pour redemander ce sujet.",
+      "prior_refusals": [
+        {
+          "asset_id": "wheatley_portal2_idle_k",
+          "owner_id": "wheatley_portal2",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": null
+        }
+      ],
+      "prior_tool_errors": [],
+      "prior_lost_outputs": [],
+      "required_visual_states": [],
+      "next_evidence_required": null,
+      "prior_research_urls": [],
+      "prior_research_evidence": [],
+      "prior_review_record": {
+        "path": "docs/resonance/production/continuation_20261125_l/target_review.json",
+        "target_id": "wheatley_portal2"
+      },
+      "new_generation_attempted": false
+    },
+    {
+      "target_id": "fisherman_lostcoast",
+      "name": "Le Pêcheur",
+      "category": "character",
+      "source_game": "Half-Life 2: Lost Coast",
+      "source_file": "docs/resonance/data/catalogue_extension_20261120.json",
+      "actual_png_count": 0,
+      "disposition": "blocked_prior_explicit_refusal_no_retry",
+      "reason": "Refus de génération antérieur conservé. La cause précise n’est pas fournie par le registre, hormis other / moderation_blocked lorsque cité. Aucun changement de pose, nom, costume ou outil pour redemander ce sujet.",
+      "prior_refusals": [
+        {
+          "asset_id": "fisherman_lostcoast_idle_k",
+          "owner_id": "fisherman_lostcoast",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": null
+        }
+      ],
+      "prior_tool_errors": [],
+      "prior_lost_outputs": [],
+      "required_visual_states": [],
+      "next_evidence_required": null,
+      "prior_research_urls": [],
+      "prior_research_evidence": [],
+      "prior_review_record": {
+        "path": "docs/resonance/production/continuation_20261125_l/target_review.json",
+        "target_id": "fisherman_lostcoast"
+      },
+      "new_generation_attempted": false
+    },
+    {
+      "target_id": "atlas_portal2",
+      "name": "ATLAS",
+      "category": "character",
+      "source_game": "Portal 2 — coopération",
+      "source_file": "docs/resonance/data/catalogue_extension_20261120.json",
+      "actual_png_count": 0,
+      "disposition": "blocked_prior_explicit_refusal_no_retry",
+      "reason": "Refus de génération antérieur conservé. La cause précise n’est pas fournie par le registre, hormis other / moderation_blocked lorsque cité. Aucun changement de pose, nom, costume ou outil pour redemander ce sujet.",
+      "prior_refusals": [
+        {
+          "asset_id": "atlas_portal2_idle_c",
+          "owner_id": "atlas_portal2",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": "Aucun fichier candidat produit. Le refus automatique ne fournit pas de justification plus précise que « other ». Aucune relance, conversion, retouche ou certification n'a été effectuée; la cible reste à produire."
+        },
+        {
+          "asset_id": "atlas_portal2_idle_k",
+          "owner_id": "atlas_portal2",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": null
+        }
+      ],
+      "prior_tool_errors": [],
+      "prior_lost_outputs": [],
+      "required_visual_states": [],
+      "next_evidence_required": null,
+      "prior_research_urls": [],
+      "prior_research_evidence": [],
+      "prior_review_record": {
+        "path": "docs/resonance/production/continuation_20261125_l/target_review.json",
+        "target_id": "atlas_portal2"
+      },
+      "new_generation_attempted": false
+    },
+    {
+      "target_id": "pbody_portal2",
+      "name": "P-body",
+      "category": "character",
+      "source_game": "Portal 2 — coopération",
+      "source_file": "docs/resonance/data/catalogue_extension_20261120.json",
+      "actual_png_count": 0,
+      "disposition": "blocked_prior_explicit_refusal_no_retry",
+      "reason": "Refus de génération antérieur conservé. La cause précise n’est pas fournie par le registre, hormis other / moderation_blocked lorsque cité. Aucun changement de pose, nom, costume ou outil pour redemander ce sujet.",
+      "prior_refusals": [
+        {
+          "asset_id": "pbody_portal2_idle_c",
+          "owner_id": "pbody_portal2",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": "Aucun fichier candidat produit. Le refus automatique ne fournit pas de justification plus précise que « other ». Aucune relance, conversion, retouche ou certification n'a été effectuée; la cible reste à produire."
+        },
+        {
+          "asset_id": "pbody_portal2_idle_k",
+          "owner_id": "pbody_portal2",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": null
+        }
+      ],
+      "prior_tool_errors": [],
+      "prior_lost_outputs": [],
+      "required_visual_states": [],
+      "next_evidence_required": null,
+      "prior_research_urls": [],
+      "prior_research_evidence": [],
+      "prior_review_record": {
+        "path": "docs/resonance/production/continuation_20261125_l/target_review.json",
+        "target_id": "pbody_portal2"
+      },
+      "new_generation_attempted": false
+    },
+    {
+      "target_id": "wheatley_core_portal2",
+      "name": "Wheatley — noyau mobile",
+      "category": "character",
+      "source_game": "Portal 2",
+      "source_file": "docs/resonance/data/catalogue_extension_20261120.json",
+      "actual_png_count": 0,
+      "disposition": "blocked_prior_explicit_refusal_no_retry",
+      "reason": "Refus de génération antérieur conservé. La cause précise n’est pas fournie par le registre, hormis other / moderation_blocked lorsque cité. Aucun changement de pose, nom, costume ou outil pour redemander ce sujet.",
+      "prior_refusals": [
+        {
+          "asset_id": "wheatley_core_portal2_idle_c",
+          "owner_id": "wheatley_core_portal2",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": "Refus automatique à la sortie (moderation_blocked); aucun PNG produit et aucune relance."
+        },
+        {
+          "asset_id": "wheatley_core_portal2_idle_k",
+          "owner_id": "wheatley_core_portal2",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": null
+        }
+      ],
+      "prior_tool_errors": [],
+      "prior_lost_outputs": [],
+      "required_visual_states": [],
+      "next_evidence_required": null,
+      "prior_research_urls": [],
+      "prior_research_evidence": [],
+      "prior_review_record": {
+        "path": "docs/resonance/production/continuation_20261125_l/target_review.json",
+        "target_id": "wheatley_core_portal2"
+      },
+      "new_generation_attempted": false
+    },
+    {
+      "target_id": "armored_headcrab_hla",
+      "name": "Crabe de tête cuirassé",
+      "category": "character",
+      "source_game": "Half-Life: Alyx",
+      "source_file": "docs/resonance/data/catalogue_extension_20261120.json",
+      "actual_png_count": 0,
+      "disposition": "blocked_prior_explicit_refusal_no_retry",
+      "reason": "Refus de génération antérieur conservé. La cause précise n’est pas fournie par le registre, hormis other / moderation_blocked lorsque cité. Aucun changement de pose, nom, costume ou outil pour redemander ce sujet.",
+      "prior_refusals": [
+        {
+          "asset_id": "armored_headcrab_hla_idle_k",
+          "owner_id": "armored_headcrab_hla",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": null
+        }
+      ],
+      "prior_tool_errors": [],
+      "prior_lost_outputs": [],
+      "required_visual_states": [],
+      "next_evidence_required": null,
+      "prior_research_urls": [],
+      "prior_research_evidence": [],
+      "prior_review_record": {
+        "path": "docs/resonance/production/continuation_20261125_l/target_review.json",
+        "target_id": "armored_headcrab_hla"
+      },
+      "new_generation_attempted": false
+    },
+    {
+      "target_id": "space_core_portal2",
+      "name": "Space Core",
+      "category": "character",
+      "source_game": "Portal 2",
+      "source_file": "docs/resonance/data/catalogue_extension_20261120.json",
+      "actual_png_count": 0,
+      "disposition": "blocked_prior_explicit_refusal_no_retry",
+      "reason": "Refus de génération antérieur conservé. La cause précise n’est pas fournie par le registre, hormis other / moderation_blocked lorsque cité. Aucun changement de pose, nom, costume ou outil pour redemander ce sujet.",
+      "prior_refusals": [
+        {
+          "asset_id": "space_core_portal2_idle_k",
+          "owner_id": "space_core_portal2",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": null
+        }
+      ],
+      "prior_tool_errors": [],
+      "prior_lost_outputs": [],
+      "required_visual_states": [],
+      "next_evidence_required": null,
+      "prior_research_urls": [],
+      "prior_research_evidence": [],
+      "prior_review_record": {
+        "path": "docs/resonance/production/continuation_20261125_l/target_review.json",
+        "target_id": "space_core_portal2"
+      },
+      "new_generation_attempted": false
+    },
+    {
+      "target_id": "fact_core_portal2",
+      "name": "Fact Core",
+      "category": "character",
+      "source_game": "Portal 2",
+      "source_file": "docs/resonance/data/catalogue_extension_20261120.json",
+      "actual_png_count": 0,
+      "disposition": "blocked_prior_explicit_refusal_no_retry",
+      "reason": "Refus de génération antérieur conservé. La cause précise n’est pas fournie par le registre, hormis other / moderation_blocked lorsque cité. Aucun changement de pose, nom, costume ou outil pour redemander ce sujet.",
+      "prior_refusals": [
+        {
+          "asset_id": "fact_core_portal2_idle_k",
+          "owner_id": "fact_core_portal2",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": null
+        }
+      ],
+      "prior_tool_errors": [],
+      "prior_lost_outputs": [],
+      "required_visual_states": [],
+      "next_evidence_required": null,
+      "prior_research_urls": [],
+      "prior_research_evidence": [],
+      "prior_review_record": {
+        "path": "docs/resonance/production/continuation_20261125_l/target_review.json",
+        "target_id": "fact_core_portal2"
+      },
+      "new_generation_attempted": false
+    },
+    {
+      "target_id": "cave_head_deskjob",
+      "name": "Cave Johnson — tête informatique",
+      "category": "boss",
+      "source_game": "Aperture Desk Job",
+      "source_file": "docs/resonance/data/catalogue_extension_20261120.json",
+      "actual_png_count": 0,
+      "disposition": "blocked_prior_explicit_refusal_no_retry",
+      "reason": "Refus de génération antérieur conservé. La cause précise n’est pas fournie par le registre, hormis other / moderation_blocked lorsque cité. Aucun changement de pose, nom, costume ou outil pour redemander ce sujet.",
+      "prior_refusals": [
+        {
+          "asset_id": "cave_head_deskjob_idle_k",
+          "owner_id": "cave_head_deskjob",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": null
+        }
+      ],
+      "prior_tool_errors": [],
+      "prior_lost_outputs": [],
+      "required_visual_states": [],
+      "next_evidence_required": null,
+      "prior_research_urls": [],
+      "prior_research_evidence": [],
+      "prior_review_record": {
+        "path": "docs/resonance/production/continuation_20261125_l/target_review.json",
+        "target_id": "cave_head_deskjob"
+      },
+      "new_generation_attempted": false
+    },
+    {
+      "target_id": "proj_satchel_hl1",
+      "name": "Charge télécommandée lancée",
+      "category": "projectile",
+      "source_game": "Half-Life (1998)",
+      "source_file": "docs/resonance/data/projectile_catalog_20261124.json",
+      "actual_png_count": 0,
+      "disposition": "blocked_prior_explicit_refusal_no_retry",
+      "reason": "Refus de génération antérieur conservé. La cause précise n’est pas fournie par le registre, hormis other / moderation_blocked lorsque cité. Aucun changement de pose, nom, costume ou outil pour redemander ce sujet.",
+      "prior_refusals": [
+        {
+          "asset_id": "proj_satchel_hl1_h_refused",
+          "owner_id": "proj_satchel_hl1",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": "Refus historique récupéré; aucun fichier associé et aucune nouvelle tentative pendant la récupération."
+        },
+        {
+          "asset_id": "proj_satchel_hl1_landed_k",
+          "owner_id": "proj_satchel_hl1",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": "Refus explicite de sortie par le système de sécurité; aucune nouvelle tentative de cette cible dans ce lot."
+        }
+      ],
+      "prior_tool_errors": [],
+      "prior_lost_outputs": [],
+      "required_visual_states": [
+        "thrown",
+        "landed",
+        "detonation"
+      ],
+      "next_evidence_required": null,
+      "prior_research_urls": [],
+      "prior_research_evidence": [],
+      "prior_review_record": {
+        "path": "docs/resonance/production/continuation_20261125_l/target_review.json",
+        "target_id": "proj_satchel_hl1"
+      },
+      "new_generation_attempted": false
+    },
+    {
+      "target_id": "fx_bullet_tracer_hl1",
+      "name": "Traceur balistique GoldSrc",
+      "category": "projectile",
+      "source_game": "Half-Life (1998)",
+      "source_file": "docs/resonance/data/projectile_catalog_20261124.json",
+      "actual_png_count": 0,
+      "disposition": "deferred_exact_phase_reference_missing",
+      "reason": "La distinction entre tir instantané et traceur visuel optionnel est documentée, mais aucun bitmap du traceur GoldSrc retail n’a été inspecté avec une résolution suffisante pour fixer couleur, épaisseur et état. Les métadonnées du showcase Classic/HD ont été obtenues; aucune frame de ce showcase n’est déclarée inspectée. Une forme générique ou issue d’un mod ne constituerait pas une référence fidèle.",
+      "prior_refusals": [],
+      "prior_tool_errors": [],
+      "prior_lost_outputs": [],
+      "required_visual_states": [
+        "trace",
+        "wall_impact"
+      ],
+      "next_evidence_required": "Frame et court segment d’un tir de la version GoldSrc retail, avec version, configuration visuelle et phase du traceur identifiées. Ne pas représenter une balle lente.",
+      "prior_research_urls": [
+        "https://www.youtube.com/watch?v=obS5RitWxoY"
+      ],
+      "prior_research_evidence": [
+        {
+          "source_kind": "prior_production_review",
+          "repository_path": "docs/resonance/production/continuation_20261125_k/effects_reference_review.md",
+          "scope": "Exclusion K conservée : aucun bitmap de tracer retail inspecté."
+        },
+        {
+          "source_kind": "video_metadata_only",
+          "source_url": "https://www.youtube.com/watch?v=obS5RitWxoY",
+          "title": "Half Life | Weapons Showcase (Classic and HD Models)",
+          "uploader": "Dat Mental Gamer",
+          "metadata_sha256": "b24cabfae10a14c0dccf0e93fdc07c81dcb8b12b5f5ae8e12103e35f9036d0af",
+          "visually_inspected": false,
+          "scope": "Métadonnées obtenues seulement. Sections Classic et HD distinctes; aucune capture de tracer admissible retenue."
+        }
+      ],
+      "prior_review_record": {
+        "path": "docs/resonance/production/continuation_20261125_l/target_review.json",
+        "target_id": "fx_bullet_tracer_hl1"
+      },
+      "new_generation_attempted": false
+    },
+    {
+      "target_id": "proj_gonome_gut_opfor",
+      "name": "Projectile organique Gonome",
+      "category": "projectile",
+      "source_game": "Half-Life: Opposing Force",
+      "source_file": "docs/resonance/data/projectile_catalog_20261124.json",
+      "actual_png_count": 0,
+      "disposition": "deferred_exact_phase_reference_missing",
+      "reason": "La ressource bigspit.spr est identifiée dans l’implémentation communautaire, et sa frame Uplink a été inspectée. Elle ne résout pas le rendu retail du gut : le code consulté écrit trois fois rendercolor.x, avec un TODO explicite, donc la séquence 128,32,128 ne prouve pas une teinte RGB violette. Les sept storyboards du gameplay consulté restent trop petits/sombres pour isoler sûrement le projectile. Le texte du vidéaste évoquant du vert ne remplace pas une capture nette.",
+      "prior_refusals": [],
+      "prior_tool_errors": [],
+      "prior_lost_outputs": [],
+      "required_visual_states": [
+        "body",
+        "impact"
+      ],
+      "next_evidence_required": "Capture retail Opposing Force nette du gut en main puis en vol, configuration/locale précisées, avec confirmation de palette et de compositing. Écarter modèle du monstre, sang, explosions et projectiles du joueur.",
+      "prior_research_urls": [
+        "https://github.com/twhl-community/halflife-op4-updated/blob/master/dlls/gonome.cpp",
+        "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+        "https://www.youtube.com/watch?v=nxD66_quaA8"
+      ],
+      "prior_research_evidence": [
+        {
+          "source_kind": "community_reference_implementation",
+          "source_url": "https://github.com/twhl-community/halflife-op4-updated/blob/master/dlls/gonome.cpp",
+          "sha256": "dacea3ddd5031902c2aa6a35bec08a210e6774c96c41c8fde48ca1b63dd7d292",
+          "visually_inspected": false,
+          "text_inspected": true,
+          "scope": "COFGonomeGuts::Spawn utilise bigspit.spr; affectations de couleur ambiguës, référence communautaire et non source officielle Gearbox."
+        },
+        {
+          "source_kind": "uplink_demo_resource_from_community_mirror",
+          "source_url": "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+          "source_resource": "valve/sprites/bigspit.spr",
+          "source_resource_sha256": "33c06d26d3af340b5211320e817d2227091df5930b1fa45e764e7b7d24d7231e",
+          "reference_filename": "uplink_bigspit_frame0.png",
+          "filename": "references/uplink_bigspit_frame0.png",
+          "sha256": "574c5ebb1b150168e19d0888b0736987ff18bfa6d89459088f42833799283b9e",
+          "byte_size": 854,
+          "width": 32,
+          "height": 32,
+          "visually_inspected": true,
+          "scope": "Composant Uplink, palette RGB 123,138,1; ne fixe pas le rendu retail du gut OP4."
+        },
+        {
+          "filename": "references/gonome_storyboard_0.jpg",
+          "sha256": "01c826fd826203be4fa96ee49b609b1e5c92122ea5de7763c1b36ba25871d63b",
+          "byte_size": 16184,
+          "width": 800,
+          "height": 450,
+          "source_kind": "public_gameplay_storyboard",
+          "source_url": "https://www.youtube.com/watch?v=nxD66_quaA8",
+          "title": "Half Life:Opposing Force Ep.4-WTF IS A GONOME!",
+          "uploader": "Gameraiders101",
+          "visually_inspected": true,
+          "scope": "Storyboard réellement inspecté; résolution et scènes insuffisantes pour une identité visuelle du projectile."
+        },
+        {
+          "filename": "references/gonome_storyboard_1.jpg",
+          "sha256": "5cf874e4cac327ef8a95f9cc514620a8b16316d9f2b6df10de890233f2a59111",
+          "byte_size": 16156,
+          "width": 800,
+          "height": 450,
+          "source_kind": "public_gameplay_storyboard",
+          "source_url": "https://www.youtube.com/watch?v=nxD66_quaA8",
+          "title": "Half Life:Opposing Force Ep.4-WTF IS A GONOME!",
+          "uploader": "Gameraiders101",
+          "visually_inspected": true,
+          "scope": "Storyboard réellement inspecté; résolution et scènes insuffisantes pour une identité visuelle du projectile."
+        },
+        {
+          "filename": "references/gonome_storyboard_2.jpg",
+          "sha256": "e1532eac6b3e859a0682be11934b90a94dee0fc43657cc2649950ede7722eda9",
+          "byte_size": 13506,
+          "width": 800,
+          "height": 450,
+          "source_kind": "public_gameplay_storyboard",
+          "source_url": "https://www.youtube.com/watch?v=nxD66_quaA8",
+          "title": "Half Life:Opposing Force Ep.4-WTF IS A GONOME!",
+          "uploader": "Gameraiders101",
+          "visually_inspected": true,
+          "scope": "Storyboard réellement inspecté; résolution et scènes insuffisantes pour une identité visuelle du projectile."
+        },
+        {
+          "filename": "references/gonome_storyboard_3.jpg",
+          "sha256": "caff2f719300334687928b1fa72e00e954c0e80558b896ede26b3279e1685111",
+          "byte_size": 20140,
+          "width": 800,
+          "height": 450,
+          "source_kind": "public_gameplay_storyboard",
+          "source_url": "https://www.youtube.com/watch?v=nxD66_quaA8",
+          "title": "Half Life:Opposing Force Ep.4-WTF IS A GONOME!",
+          "uploader": "Gameraiders101",
+          "visually_inspected": true,
+          "scope": "Storyboard réellement inspecté; résolution et scènes insuffisantes pour une identité visuelle du projectile."
+        },
+        {
+          "filename": "references/gonome_storyboard_4.jpg",
+          "sha256": "eddec79b63730fd4cb556934f60698311e216a9687be7e480fecebb68161044c",
+          "byte_size": 17270,
+          "width": 800,
+          "height": 450,
+          "source_kind": "public_gameplay_storyboard",
+          "source_url": "https://www.youtube.com/watch?v=nxD66_quaA8",
+          "title": "Half Life:Opposing Force Ep.4-WTF IS A GONOME!",
+          "uploader": "Gameraiders101",
+          "visually_inspected": true,
+          "scope": "Storyboard réellement inspecté; résolution et scènes insuffisantes pour une identité visuelle du projectile."
+        },
+        {
+          "filename": "references/gonome_storyboard_5.jpg",
+          "sha256": "fac59e38a181a3f1fe6d93e0d56285ab8392ad1bb148b2ac214c7cabcdfc0710",
+          "byte_size": 17310,
+          "width": 800,
+          "height": 450,
+          "source_kind": "public_gameplay_storyboard",
+          "source_url": "https://www.youtube.com/watch?v=nxD66_quaA8",
+          "title": "Half Life:Opposing Force Ep.4-WTF IS A GONOME!",
+          "uploader": "Gameraiders101",
+          "visually_inspected": true,
+          "scope": "Storyboard réellement inspecté; résolution et scènes insuffisantes pour une identité visuelle du projectile."
+        },
+        {
+          "filename": "references/gonome_storyboard_6.jpg",
+          "sha256": "d368d55a535ee31fe66db833e4ca656fa240a5b11be697ddc85edb740978093b",
+          "byte_size": 11046,
+          "width": 800,
+          "height": 270,
+          "source_kind": "public_gameplay_storyboard",
+          "source_url": "https://www.youtube.com/watch?v=nxD66_quaA8",
+          "title": "Half Life:Opposing Force Ep.4-WTF IS A GONOME!",
+          "uploader": "Gameraiders101",
+          "visually_inspected": true,
+          "scope": "Storyboard réellement inspecté; résolution et scènes insuffisantes pour une identité visuelle du projectile."
+        }
+      ],
+      "prior_review_record": {
+        "path": "docs/resonance/production/continuation_20261125_l/target_review.json",
+        "target_id": "proj_gonome_gut_opfor"
+      },
+      "new_generation_attempted": false
+    },
+    {
+      "target_id": "proj_rpg_rocket_hl2",
+      "name": "Missile RPG — modèle HL2",
+      "category": "projectile",
+      "source_game": "Half-Life 2",
+      "source_file": "docs/resonance/data/projectile_catalog_20261124.json",
+      "actual_png_count": 0,
+      "disposition": "blocked_prior_explicit_refusal_no_retry",
+      "reason": "Refus de génération antérieur conservé. La cause précise n’est pas fournie par le registre, hormis other / moderation_blocked lorsque cité. Aucun changement de pose, nom, costume ou outil pour redemander ce sujet.",
+      "prior_refusals": [
+        {
+          "asset_id": "projectile_rpg_hl2_f",
+          "owner_id": "proj_rpg_rocket_hl2",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": "Génération refusée; aucun fichier et aucune relance."
+        },
+        {
+          "asset_id": "proj_rpg_rocket_hl2_flight_k",
+          "owner_id": "proj_rpg_rocket_hl2",
+          "generation_status": "refus automatique",
+          "outcome": "blocked",
+          "notes": "Refus explicite de sortie par le système de sécurité; aucune nouvelle tentative de cette cible dans ce lot."
+        }
+      ],
+      "prior_tool_errors": [],
+      "prior_lost_outputs": [],
+      "required_visual_states": [
+        "launch",
+        "flight",
+        "trail",
+        "impact"
+      ],
+      "next_evidence_required": null,
+      "prior_research_urls": [],
+      "prior_research_evidence": [],
+      "prior_review_record": {
+        "path": "docs/resonance/production/continuation_20261125_l/target_review.json",
+        "target_id": "proj_rpg_rocket_hl2"
+      },
+      "new_generation_attempted": false
+    },
+    {
+      "target_id": "proj_apc_missile_hl2",
+      "name": "Missile APC",
+      "category": "projectile",
+      "source_game": "Half-Life 2",
+      "source_file": "docs/resonance/data/projectile_catalog_20261124.json",
+      "actual_png_count": 0,
+      "disposition": "blocked_shared_refused_model_no_retry",
+      "reason": "Report conservé : le modèle de vol du missile APC est le même w_missile.mdl que le RPG refusé au lot K; aucun nouvel appel sous une autre étiquette.",
+      "prior_refusals": [],
+      "prior_tool_errors": [],
+      "prior_lost_outputs": [],
+      "required_visual_states": [
+        "body",
+        "trail",
+        "impact"
+      ],
+      "next_evidence_required": "Conserver le blocage; une référence distincte ne doit pas servir à contourner le refus du même sujet.",
+      "prior_research_urls": [
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/weapon_rpg.cpp",
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/vehicle_apc.cpp",
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/weapon_rpg.cpp"
+      ],
+      "prior_research_evidence": [],
+      "prior_review_record": {
+        "path": "docs/resonance/production/continuation_20261125_l/target_review.json",
+        "target_id": "proj_apc_missile_hl2"
+      },
+      "new_generation_attempted": false
+    },
+    {
+      "target_id": "proj_antlion_worker_spit_ep2",
+      "name": "Crachat de Fourmilion ouvrier",
+      "category": "projectile",
+      "source_game": "Half-Life 2: Episode Two",
+      "source_file": "docs/resonance/data/projectile_catalog_20261124.json",
+      "actual_png_count": 0,
+      "disposition": "deferred_exact_phase_reference_missing",
+      "reason": "Le modèle et la famille grenade_spit du Worker Episode Two sont identifiés par le SDK. La capture retail Ep2_outland_01a0023.jpg déjà inspectée en K ne distingue pas grand/moyen/petit, traînée ou impact. Les nouvelles pages de gameplay ne fournissent pas de bitmap inspectable d’une phase isolée : images du guide Portforward HTTP 403, guide IGN PDF inaccessible. Aucun visuel d’Antlion standard, de HLA ou de HL1 ne remplace cette référence.",
+      "prior_refusals": [],
+      "prior_tool_errors": [],
+      "prior_lost_outputs": [],
+      "required_visual_states": [
+        "large",
+        "medium",
+        "small",
+        "trail",
+        "impact"
+      ],
+      "next_evidence_required": "Obtenir une capture retail Episode Two identifiant séparément models/spitball_large.mdl, spitball_medium.mdl, spitball_small.mdl et antlion_spit_trail, avec état et instant documentés.",
+      "prior_research_urls": [
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/grenade_spit.cpp",
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_antlion.cpp",
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/grenade_spit.cpp",
+        "https://portforward.com/games/walkthroughs/Half-Life-2-Episode-Two/This-Vortal-Coil.htm",
+        "https://valvearchive.com/Games/Half-Life%202%20Episode%202/Documents/mb-ign_half_life_2_episode_2_pc.pdf",
+        "https://www.youtube.com/watch?v=oiWAkSqdupo"
+      ],
+      "prior_research_evidence": [],
+      "prior_review_record": {
+        "path": "docs/resonance/production/continuation_20261125_l/target_review.json",
+        "target_id": "proj_antlion_worker_spit_ep2"
+      },
+      "new_generation_attempted": false
+    },
+    {
+      "target_id": "fx_strider_warp_hl2",
+      "name": "Canon lourd Strider",
+      "category": "projectile",
+      "source_game": "Half-Life 2",
+      "source_file": "docs/resonance/data/projectile_catalog_20261124.json",
+      "actual_png_count": 0,
+      "disposition": "deferred_exact_phase_reference_missing",
+      "reason": "Les captures déjà exclues en K restent exclues : Strider_fire.jpg = minigun; Warp_Cannon et Strider_Firing_Pulse_Cannon = Alyx; Strider_Immolator_Firing = restauration d’un contenu coupé. Une vidéo intitulée Half Life 2 - Strider Warp Cannon Tutorial a été identifiée, mais ses médias publics retournent HTTP 403 et aucune frame n’a été vue. Les captures de canon sans décharge et les images de versions prerelease ne fixent pas le tir retail.",
+      "prior_refusals": [],
+      "prior_tool_errors": [],
+      "prior_lost_outputs": [],
+      "required_visual_states": [
+        "charge",
+        "shot",
+        "impact"
+      ],
+      "next_evidence_required": "Obtenir une frame publiquement accessible du canon lourd dans Half-Life 2 retail, avec charge, shot ou impact explicitement localisé; documenter map, séquence et timecode. Ne pas substituer minigun, Alyx, bêta ou MMod.",
+      "prior_research_urls": [
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/npc_strider.cpp",
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_strider.cpp",
+        "https://www.youtube.com/watch?v=NlppLarRErA",
+        "https://combineoverwiki.net/wiki/Strider",
+        "https://combineoverwiki.net/wiki/Category:Strider_images"
+      ],
+      "prior_research_evidence": [],
+      "prior_review_record": {
+        "path": "docs/resonance/production/continuation_20261125_l/target_review.json",
+        "target_id": "fx_strider_warp_hl2"
+      },
+      "new_generation_attempted": false
+    },
+    {
+      "target_id": "fx_vortigaunt_zap_hl2",
+      "name": "Décharge Vortigaunt — épisodes",
+      "category": "projectile",
+      "source_game": "Half-Life 2: épisodes",
+      "source_file": "docs/resonance/data/projectile_catalog_20261124.json",
+      "actual_png_count": 0,
+      "disposition": "deferred_exact_phase_reference_missing",
+      "reason": "Griggs_support.jpg (Episode Two retail) a été téléchargé et inspecté : combat avec armes et antlions, mais aucun faisceau attribuable sans ambiguïté au Vortigaunt; le nuage vert peut être sang/impact. Vortigaunt_mines.jpg montre le personnage sans charge ni décharge. Worker_vort_in_the_mines.jpg est classé prerelease. Les captures de soin d’Alyx et de larve déjà exclues en K ne sont pas des zaps offensifs. Les frames offensives signalées par des guides restent inaccessibles (HTTP 403), donc non inspectées.",
+      "prior_refusals": [],
+      "prior_tool_errors": [],
+      "prior_lost_outputs": [],
+      "required_visual_states": [
+        "charge",
+        "beam",
+        "impact"
+      ],
+      "next_evidence_required": "Obtenir dans Episode One ou Episode Two retail une capture lisible du Vortigaunt émettant un rayon vers un ennemi; attribuer ensuite une seule phase charge, beam ou impact.",
+      "prior_research_urls": [
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/npc_vortigaunt_episodic.cpp",
+        "https://combineoverwiki.net/wiki/File:Griggs_support.jpg",
+        "https://combineoverwiki.net/wiki/File:Vortigaunt_mines.jpg",
+        "https://combineoverwiki.net/wiki/File:Worker_vort_in_the_mines.jpg",
+        "https://portforward.com/games/walkthroughs/Half-Life-2-Episode-Two/This-Vortal-Coil.htm",
+        "https://valvearchive.com/Games/Half-Life%202%20Episode%202/Documents/mb-ign_half_life_2_episode_2_pc.pdf"
+      ],
+      "prior_research_evidence": [],
+      "prior_review_record": {
+        "path": "docs/resonance/production/continuation_20261125_l/target_review.json",
+        "target_id": "fx_vortigaunt_zap_hl2"
+      },
+      "new_generation_attempted": false
+    },
+    {
+      "target_id": "proj_antlion_spit_hla",
+      "name": "Projectile de Fourmilion HLA",
+      "category": "projectile",
+      "source_game": "Half-Life: Alyx",
+      "source_file": "docs/resonance/data/projectile_catalog_20261124.json",
+      "actual_png_count": 0,
+      "disposition": "deferred_exact_phase_reference_missing",
+      "reason": "La variante Antlion Spitter HLA et son contexte sont identifiés, mais les sources consultées n’offrent aucune frame du corps de projectile, de sa traînée ou de son impact qui ait pu être inspectée. Le repère 11:10 d’une vidéo de Revelations identifie un chapitre Leggy Spitters, pas l’instant vérifié d’un tir. Les modèles, descriptions de bile bleue, conversions GMod/HL2 et rendus communautaires ne fixent pas l’effet retail.",
+      "prior_refusals": [],
+      "prior_tool_errors": [],
+      "prior_lost_outputs": [],
+      "required_visual_states": [
+        "body",
+        "trail",
+        "impact"
+      ],
+      "next_evidence_required": "Obtenir une frame HLA retail de la variante Spitter dans Revelations ou Breaking and Entering, en notant le timecode exact du tir, puis choisir séparément body, trail ou impact. Aucune copie du crachat Episode Two.",
+      "prior_research_urls": [
+        "https://www.half-life.com/en/alyx",
+        "https://combineoverwiki.net/wiki/Antlion_Spitter",
+        "https://www.youtube.com/watch?v=kKDsmlV9tdg",
+        "https://www.jeuxvideo.com/wikis-soluce-astuces/1205408/chapitre-9-revelations.htm"
+      ],
+      "prior_research_evidence": [],
+      "prior_review_record": {
+        "path": "docs/resonance/production/continuation_20261125_l/target_review.json",
+        "target_id": "proj_antlion_spit_hla"
+      },
+      "new_generation_attempted": false
+    }
+  ],
+  "classification_counts": {
+    "prior_explicit_refusal_targets": 11,
+    "shared_refused_model_targets": 1,
+    "phase_reference_deferred_targets": 6
+  },
+  "recommendations": [
+    {
+      "opportunity_id": "gina_decay_selected",
+      "category": "character",
+      "target_id": "gina_decay",
+      "gap_kind": "missing_individual_menu_or_taunt_pose",
+      "requested_file": "gina_decay_selected_o.png",
+      "state": "selected",
+      "existing_asset_ids": [
+        "gina_decay_guard_f"
+      ],
+      "prior_refusal_count": 0,
+      "no_prior_refusal_for_subject": true,
+      "generation_readiness": "identity_references_inspected_pose_is_original_adaptation",
+      "reference_evidence": [
+        {
+          "reference_filename": "gina_decay_ps2.png",
+          "provenance": "official retail game model capture hosted by secondary community wiki",
+          "source_page": "https://combineoverwiki.net/wiki/File:Ps2_gina_decay.png",
+          "source_image_url": "https://combineoverwiki.net/images/5/5f/Ps2_gina_decay.png",
+          "visually_inspected": true,
+          "sha256": "abab920286f4116f2893d0984811154e1b1569a4483d5cee60368ea5bc918a33",
+          "width": 1100,
+          "height": 1100,
+          "color_mode": "RGB"
+        },
+        {
+          "reference_filename": "gina_decay_retail.jpg",
+          "provenance": "official retail game model capture hosted by secondary community wiki",
+          "source_page": "https://combineoverwiki.net/wiki/File:Gina_Cross.jpg",
+          "source_image_url": "https://combineoverwiki.net/images/3/31/Gina_Cross.jpg",
+          "visually_inspected": true,
+          "sha256": "2d4b42955027039113d239b5b73cc17bbbf4d0f10686cbb8030d5fe9ac5ba9e9",
+          "width": 471,
+          "height": 716,
+          "color_mode": "RGB"
+        }
+      ],
+      "contract_paths": [
+        "docs/resonance/data/combat_extensions_20261127.json",
+        "docs/resonance/chapters/guide_extension_01_20261127.md"
+      ],
+      "instructions": "Une pose par PNG, vrai alpha, silhouette entière et marges; modèle campaign PS2 comme autorité. Les gestes de menu sont adaptations Resonance, pas animations canoniques. Colette B est historique non fiable pour l’armure; ne pas copier sa géométrie.",
+      "counts_as_new_catalogue_target": false,
+      "counts_as_complete_animation": false,
+      "certified_one_to_one": false
+    },
+    {
+      "opportunity_id": "gina_decay_deselected",
+      "category": "character",
+      "target_id": "gina_decay",
+      "gap_kind": "missing_individual_menu_or_taunt_pose",
+      "requested_file": "gina_decay_deselected_o.png",
+      "state": "deselected",
+      "existing_asset_ids": [
+        "gina_decay_guard_f"
+      ],
+      "prior_refusal_count": 0,
+      "no_prior_refusal_for_subject": true,
+      "generation_readiness": "identity_references_inspected_pose_is_original_adaptation",
+      "reference_evidence": [
+        {
+          "reference_filename": "gina_decay_ps2.png",
+          "provenance": "official retail game model capture hosted by secondary community wiki",
+          "source_page": "https://combineoverwiki.net/wiki/File:Ps2_gina_decay.png",
+          "source_image_url": "https://combineoverwiki.net/images/5/5f/Ps2_gina_decay.png",
+          "visually_inspected": true,
+          "sha256": "abab920286f4116f2893d0984811154e1b1569a4483d5cee60368ea5bc918a33",
+          "width": 1100,
+          "height": 1100,
+          "color_mode": "RGB"
+        },
+        {
+          "reference_filename": "gina_decay_retail.jpg",
+          "provenance": "official retail game model capture hosted by secondary community wiki",
+          "source_page": "https://combineoverwiki.net/wiki/File:Gina_Cross.jpg",
+          "source_image_url": "https://combineoverwiki.net/images/3/31/Gina_Cross.jpg",
+          "visually_inspected": true,
+          "sha256": "2d4b42955027039113d239b5b73cc17bbbf4d0f10686cbb8030d5fe9ac5ba9e9",
+          "width": 471,
+          "height": 716,
+          "color_mode": "RGB"
+        }
+      ],
+      "contract_paths": [
+        "docs/resonance/data/combat_extensions_20261127.json",
+        "docs/resonance/chapters/guide_extension_01_20261127.md"
+      ],
+      "instructions": "Une pose par PNG, vrai alpha, silhouette entière et marges; modèle campaign PS2 comme autorité. Les gestes de menu sont adaptations Resonance, pas animations canoniques. Colette B est historique non fiable pour l’armure; ne pas copier sa géométrie.",
+      "counts_as_new_catalogue_target": false,
+      "counts_as_complete_animation": false,
+      "certified_one_to_one": false
+    },
+    {
+      "opportunity_id": "gina_decay_taunt",
+      "category": "character",
+      "target_id": "gina_decay",
+      "gap_kind": "missing_individual_menu_or_taunt_pose",
+      "requested_file": "gina_decay_taunt_o.png",
+      "state": "taunt",
+      "existing_asset_ids": [
+        "gina_decay_guard_f"
+      ],
+      "prior_refusal_count": 0,
+      "no_prior_refusal_for_subject": true,
+      "generation_readiness": "identity_references_inspected_pose_is_original_adaptation",
+      "reference_evidence": [
+        {
+          "reference_filename": "gina_decay_ps2.png",
+          "provenance": "official retail game model capture hosted by secondary community wiki",
+          "source_page": "https://combineoverwiki.net/wiki/File:Ps2_gina_decay.png",
+          "source_image_url": "https://combineoverwiki.net/images/5/5f/Ps2_gina_decay.png",
+          "visually_inspected": true,
+          "sha256": "abab920286f4116f2893d0984811154e1b1569a4483d5cee60368ea5bc918a33",
+          "width": 1100,
+          "height": 1100,
+          "color_mode": "RGB"
+        },
+        {
+          "reference_filename": "gina_decay_retail.jpg",
+          "provenance": "official retail game model capture hosted by secondary community wiki",
+          "source_page": "https://combineoverwiki.net/wiki/File:Gina_Cross.jpg",
+          "source_image_url": "https://combineoverwiki.net/images/3/31/Gina_Cross.jpg",
+          "visually_inspected": true,
+          "sha256": "2d4b42955027039113d239b5b73cc17bbbf4d0f10686cbb8030d5fe9ac5ba9e9",
+          "width": 471,
+          "height": 716,
+          "color_mode": "RGB"
+        }
+      ],
+      "contract_paths": [
+        "docs/resonance/data/combat_extensions_20261127.json",
+        "docs/resonance/chapters/guide_extension_01_20261127.md"
+      ],
+      "instructions": "Une pose par PNG, vrai alpha, silhouette entière et marges; modèle campaign PS2 comme autorité. Les gestes de menu sont adaptations Resonance, pas animations canoniques. Colette B est historique non fiable pour l’armure; ne pas copier sa géométrie.",
+      "counts_as_new_catalogue_target": false,
+      "counts_as_complete_animation": false,
+      "certified_one_to_one": false
+    },
+    {
+      "opportunity_id": "colette_decay_selected",
+      "category": "character",
+      "target_id": "colette_decay",
+      "gap_kind": "missing_individual_menu_or_taunt_pose",
+      "requested_file": "colette_decay_selected_o.png",
+      "state": "selected",
+      "existing_asset_ids": [
+        "colette_decay_idle_right_b"
+      ],
+      "prior_refusal_count": 0,
+      "no_prior_refusal_for_subject": true,
+      "generation_readiness": "identity_references_inspected_pose_is_original_adaptation",
+      "reference_evidence": [
+        {
+          "path": "/workspace/scratch/892354ae3802/continuation_o/references/colette_decay_ps2.png",
+          "exists": true,
+          "sha256": "76d043ab9a2646fd19d6adab188827a110d80c666fee54fd30e11480df87e1a5",
+          "source_url": "https://combineoverwiki.net/images/1/18/Ps2_colette_decay.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:Ps2_colette_decay.png",
+          "visual_inspection": "root verified current turn; audit verifies bytes only",
+          "source_variant": "retail PlayStation 2 campaign; not Head-to-Head"
+        }
+      ],
+      "contract_paths": [
+        "docs/resonance/data/combat_extensions_20261127.json",
+        "docs/resonance/chapters/guide_extension_01_20261127.md"
+      ],
+      "instructions": "Une pose par PNG, vrai alpha, silhouette entière et marges; modèle campaign PS2 comme autorité. Les gestes de menu sont adaptations Resonance, pas animations canoniques. Colette B est historique non fiable pour l’armure; ne pas copier sa géométrie.",
+      "counts_as_new_catalogue_target": false,
+      "counts_as_complete_animation": false,
+      "certified_one_to_one": false
+    },
+    {
+      "opportunity_id": "colette_decay_deselected",
+      "category": "character",
+      "target_id": "colette_decay",
+      "gap_kind": "missing_individual_menu_or_taunt_pose",
+      "requested_file": "colette_decay_deselected_o.png",
+      "state": "deselected",
+      "existing_asset_ids": [
+        "colette_decay_idle_right_b"
+      ],
+      "prior_refusal_count": 0,
+      "no_prior_refusal_for_subject": true,
+      "generation_readiness": "identity_references_inspected_pose_is_original_adaptation",
+      "reference_evidence": [
+        {
+          "path": "/workspace/scratch/892354ae3802/continuation_o/references/colette_decay_ps2.png",
+          "exists": true,
+          "sha256": "76d043ab9a2646fd19d6adab188827a110d80c666fee54fd30e11480df87e1a5",
+          "source_url": "https://combineoverwiki.net/images/1/18/Ps2_colette_decay.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:Ps2_colette_decay.png",
+          "visual_inspection": "root verified current turn; audit verifies bytes only",
+          "source_variant": "retail PlayStation 2 campaign; not Head-to-Head"
+        }
+      ],
+      "contract_paths": [
+        "docs/resonance/data/combat_extensions_20261127.json",
+        "docs/resonance/chapters/guide_extension_01_20261127.md"
+      ],
+      "instructions": "Une pose par PNG, vrai alpha, silhouette entière et marges; modèle campaign PS2 comme autorité. Les gestes de menu sont adaptations Resonance, pas animations canoniques. Colette B est historique non fiable pour l’armure; ne pas copier sa géométrie.",
+      "counts_as_new_catalogue_target": false,
+      "counts_as_complete_animation": false,
+      "certified_one_to_one": false
+    },
+    {
+      "opportunity_id": "colette_decay_taunt",
+      "category": "character",
+      "target_id": "colette_decay",
+      "gap_kind": "missing_individual_menu_or_taunt_pose",
+      "requested_file": "colette_decay_taunt_o.png",
+      "state": "taunt",
+      "existing_asset_ids": [
+        "colette_decay_idle_right_b"
+      ],
+      "prior_refusal_count": 0,
+      "no_prior_refusal_for_subject": true,
+      "generation_readiness": "identity_references_inspected_pose_is_original_adaptation",
+      "reference_evidence": [
+        {
+          "path": "/workspace/scratch/892354ae3802/continuation_o/references/colette_decay_ps2.png",
+          "exists": true,
+          "sha256": "76d043ab9a2646fd19d6adab188827a110d80c666fee54fd30e11480df87e1a5",
+          "source_url": "https://combineoverwiki.net/images/1/18/Ps2_colette_decay.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:Ps2_colette_decay.png",
+          "visual_inspection": "root verified current turn; audit verifies bytes only",
+          "source_variant": "retail PlayStation 2 campaign; not Head-to-Head"
+        }
+      ],
+      "contract_paths": [
+        "docs/resonance/data/combat_extensions_20261127.json",
+        "docs/resonance/chapters/guide_extension_01_20261127.md"
+      ],
+      "instructions": "Une pose par PNG, vrai alpha, silhouette entière et marges; modèle campaign PS2 comme autorité. Les gestes de menu sont adaptations Resonance, pas animations canoniques. Colette B est historique non fiable pour l’armure; ne pas copier sa géométrie.",
+      "counts_as_new_catalogue_target": false,
+      "counts_as_complete_animation": false,
+      "certified_one_to_one": false
+    },
+    {
+      "opportunity_id": "contamination_L00_ambience",
+      "category": "stage",
+      "target_id": "STG_EXT_HLDM_CONTAMINATION",
+      "gap_kind": "missing_parallax_file_new_contract_required",
+      "proposed_layer_id": "L00_ambience",
+      "layer_id_authority": "Root/agent stage must publish and validate the exact six IDs; these are proposals, not existing baseline contract IDs.",
+      "requested_file": "layer_contamination_l00_ambience_o.png",
+      "prior_refusal_count": 0,
+      "existing_layer_ids": [],
+      "existing_master": "assets/resonance/candidates/continuation_20261124_h/stages/stage_contamination_hl25_master_h.png",
+      "reference_evidence": [
+        {
+          "path": "/workspace/scratch/892354ae3802/continuation_o_references/map_contamination_official.jpg",
+          "exists": true,
+          "sha256": "ff57e6909e48c9e4f2e403c6ed4ed2827b6e4fb5348d790bbbc8064675a79167"
+        },
+        {
+          "source_url": "https://www.half-life.com/en/halflife/25th",
+          "scope": "Carte officielle Contamination; bitmap inspecté par root dans ce tour"
+        }
+      ],
+      "generation_readiness": "root_authorized_six_layer_contract_and_reference_gate",
+      "contract_paths": [
+        "docs/resonance/data/catalogue_extension_20261120.json"
+      ],
+      "instructions": "Séparation dans un seul canevas avec même caméra et horizon; couches distinctes, alpha hors géométrie; contrôle de superposition puis parallaxe. La géométrie de combat 2D est originale. Pas de personnages ni de VFX figés dans les plans.",
+      "counts_against_baseline_131_missing_layers": false,
+      "baseline_contract_absent": true,
+      "counts_as_new_catalogue_target": false,
+      "counts_as_complete_stage": false,
+      "certified_one_to_one": false
+    },
+    {
+      "opportunity_id": "contamination_L01_far",
+      "category": "stage",
+      "target_id": "STG_EXT_HLDM_CONTAMINATION",
+      "gap_kind": "missing_parallax_file_new_contract_required",
+      "proposed_layer_id": "L01_far",
+      "layer_id_authority": "Root/agent stage must publish and validate the exact six IDs; these are proposals, not existing baseline contract IDs.",
+      "requested_file": "layer_contamination_l01_far_o.png",
+      "prior_refusal_count": 0,
+      "existing_layer_ids": [],
+      "existing_master": "assets/resonance/candidates/continuation_20261124_h/stages/stage_contamination_hl25_master_h.png",
+      "reference_evidence": [
+        {
+          "path": "/workspace/scratch/892354ae3802/continuation_o_references/map_contamination_official.jpg",
+          "exists": true,
+          "sha256": "ff57e6909e48c9e4f2e403c6ed4ed2827b6e4fb5348d790bbbc8064675a79167"
+        },
+        {
+          "source_url": "https://www.half-life.com/en/halflife/25th",
+          "scope": "Carte officielle Contamination; bitmap inspecté par root dans ce tour"
+        }
+      ],
+      "generation_readiness": "root_authorized_six_layer_contract_and_reference_gate",
+      "contract_paths": [
+        "docs/resonance/data/catalogue_extension_20261120.json"
+      ],
+      "instructions": "Séparation dans un seul canevas avec même caméra et horizon; couches distinctes, alpha hors géométrie; contrôle de superposition puis parallaxe. La géométrie de combat 2D est originale. Pas de personnages ni de VFX figés dans les plans.",
+      "counts_against_baseline_131_missing_layers": false,
+      "baseline_contract_absent": true,
+      "counts_as_new_catalogue_target": false,
+      "counts_as_complete_stage": false,
+      "certified_one_to_one": false
+    },
+    {
+      "opportunity_id": "contamination_L02_mid",
+      "category": "stage",
+      "target_id": "STG_EXT_HLDM_CONTAMINATION",
+      "gap_kind": "missing_parallax_file_new_contract_required",
+      "proposed_layer_id": "L02_mid",
+      "layer_id_authority": "Root/agent stage must publish and validate the exact six IDs; these are proposals, not existing baseline contract IDs.",
+      "requested_file": "layer_contamination_l02_mid_o.png",
+      "prior_refusal_count": 0,
+      "existing_layer_ids": [],
+      "existing_master": "assets/resonance/candidates/continuation_20261124_h/stages/stage_contamination_hl25_master_h.png",
+      "reference_evidence": [
+        {
+          "path": "/workspace/scratch/892354ae3802/continuation_o_references/map_contamination_official.jpg",
+          "exists": true,
+          "sha256": "ff57e6909e48c9e4f2e403c6ed4ed2827b6e4fb5348d790bbbc8064675a79167"
+        },
+        {
+          "source_url": "https://www.half-life.com/en/halflife/25th",
+          "scope": "Carte officielle Contamination; bitmap inspecté par root dans ce tour"
+        }
+      ],
+      "generation_readiness": "root_authorized_six_layer_contract_and_reference_gate",
+      "contract_paths": [
+        "docs/resonance/data/catalogue_extension_20261120.json"
+      ],
+      "instructions": "Séparation dans un seul canevas avec même caméra et horizon; couches distinctes, alpha hors géométrie; contrôle de superposition puis parallaxe. La géométrie de combat 2D est originale. Pas de personnages ni de VFX figés dans les plans.",
+      "counts_against_baseline_131_missing_layers": false,
+      "baseline_contract_absent": true,
+      "counts_as_new_catalogue_target": false,
+      "counts_as_complete_stage": false,
+      "certified_one_to_one": false
+    },
+    {
+      "opportunity_id": "contamination_L03_near",
+      "category": "stage",
+      "target_id": "STG_EXT_HLDM_CONTAMINATION",
+      "gap_kind": "missing_parallax_file_new_contract_required",
+      "proposed_layer_id": "L03_near",
+      "layer_id_authority": "Root/agent stage must publish and validate the exact six IDs; these are proposals, not existing baseline contract IDs.",
+      "requested_file": "layer_contamination_l03_near_o.png",
+      "prior_refusal_count": 0,
+      "existing_layer_ids": [],
+      "existing_master": "assets/resonance/candidates/continuation_20261124_h/stages/stage_contamination_hl25_master_h.png",
+      "reference_evidence": [
+        {
+          "path": "/workspace/scratch/892354ae3802/continuation_o_references/map_contamination_official.jpg",
+          "exists": true,
+          "sha256": "ff57e6909e48c9e4f2e403c6ed4ed2827b6e4fb5348d790bbbc8064675a79167"
+        },
+        {
+          "source_url": "https://www.half-life.com/en/halflife/25th",
+          "scope": "Carte officielle Contamination; bitmap inspecté par root dans ce tour"
+        }
+      ],
+      "generation_readiness": "root_authorized_six_layer_contract_and_reference_gate",
+      "contract_paths": [
+        "docs/resonance/data/catalogue_extension_20261120.json"
+      ],
+      "instructions": "Séparation dans un seul canevas avec même caméra et horizon; couches distinctes, alpha hors géométrie; contrôle de superposition puis parallaxe. La géométrie de combat 2D est originale. Pas de personnages ni de VFX figés dans les plans.",
+      "counts_against_baseline_131_missing_layers": false,
+      "baseline_contract_absent": true,
+      "counts_as_new_catalogue_target": false,
+      "counts_as_complete_stage": false,
+      "certified_one_to_one": false
+    },
+    {
+      "opportunity_id": "contamination_L04_ground",
+      "category": "stage",
+      "target_id": "STG_EXT_HLDM_CONTAMINATION",
+      "gap_kind": "missing_parallax_file_new_contract_required",
+      "proposed_layer_id": "L04_ground",
+      "layer_id_authority": "Root/agent stage must publish and validate the exact six IDs; these are proposals, not existing baseline contract IDs.",
+      "requested_file": "layer_contamination_l04_ground_o.png",
+      "prior_refusal_count": 0,
+      "existing_layer_ids": [],
+      "existing_master": "assets/resonance/candidates/continuation_20261124_h/stages/stage_contamination_hl25_master_h.png",
+      "reference_evidence": [
+        {
+          "path": "/workspace/scratch/892354ae3802/continuation_o_references/map_contamination_official.jpg",
+          "exists": true,
+          "sha256": "ff57e6909e48c9e4f2e403c6ed4ed2827b6e4fb5348d790bbbc8064675a79167"
+        },
+        {
+          "source_url": "https://www.half-life.com/en/halflife/25th",
+          "scope": "Carte officielle Contamination; bitmap inspecté par root dans ce tour"
+        }
+      ],
+      "generation_readiness": "root_authorized_six_layer_contract_and_reference_gate",
+      "contract_paths": [
+        "docs/resonance/data/catalogue_extension_20261120.json"
+      ],
+      "instructions": "Séparation dans un seul canevas avec même caméra et horizon; couches distinctes, alpha hors géométrie; contrôle de superposition puis parallaxe. La géométrie de combat 2D est originale. Pas de personnages ni de VFX figés dans les plans.",
+      "counts_against_baseline_131_missing_layers": false,
+      "baseline_contract_absent": true,
+      "counts_as_new_catalogue_target": false,
+      "counts_as_complete_stage": false,
+      "certified_one_to_one": false
+    },
+    {
+      "opportunity_id": "contamination_L05_foreground",
+      "category": "stage",
+      "target_id": "STG_EXT_HLDM_CONTAMINATION",
+      "gap_kind": "missing_parallax_file_new_contract_required",
+      "proposed_layer_id": "L05_foreground",
+      "layer_id_authority": "Root/agent stage must publish and validate the exact six IDs; these are proposals, not existing baseline contract IDs.",
+      "requested_file": "layer_contamination_l05_foreground_o.png",
+      "prior_refusal_count": 0,
+      "existing_layer_ids": [],
+      "existing_master": "assets/resonance/candidates/continuation_20261124_h/stages/stage_contamination_hl25_master_h.png",
+      "reference_evidence": [
+        {
+          "path": "/workspace/scratch/892354ae3802/continuation_o_references/map_contamination_official.jpg",
+          "exists": true,
+          "sha256": "ff57e6909e48c9e4f2e403c6ed4ed2827b6e4fb5348d790bbbc8064675a79167"
+        },
+        {
+          "source_url": "https://www.half-life.com/en/halflife/25th",
+          "scope": "Carte officielle Contamination; bitmap inspecté par root dans ce tour"
+        }
+      ],
+      "generation_readiness": "root_authorized_six_layer_contract_and_reference_gate",
+      "contract_paths": [
+        "docs/resonance/data/catalogue_extension_20261120.json"
+      ],
+      "instructions": "Séparation dans un seul canevas avec même caméra et horizon; couches distinctes, alpha hors géométrie; contrôle de superposition puis parallaxe. La géométrie de combat 2D est originale. Pas de personnages ni de VFX figés dans les plans.",
+      "counts_against_baseline_131_missing_layers": false,
+      "baseline_contract_absent": true,
+      "counts_as_new_catalogue_target": false,
+      "counts_as_complete_stage": false,
+      "certified_one_to_one": false
+    },
+    {
+      "opportunity_id": "grady_deskjob_articulated_arm",
+      "category": "machine",
+      "target_id": "grady_deskjob",
+      "gap_kind": "missing_separate_rig_component",
+      "requested_file": "grady_deskjob_articulated_arm_o.png",
+      "component": "articulated_arm",
+      "existing_asset_ids": [
+        "grady_deskjob_core_idle_c"
+      ],
+      "prior_refusal_count": 0,
+      "no_prior_refusal_for_subject": true,
+      "reference_evidence": [
+        {
+          "reference_filename": "steam_1902490_01.jpg",
+          "sha256": "dc6222601c0a30347e306f15865de293f68c5c7e2040f3642d54115cbb95ef8f",
+          "width": 1920,
+          "height": 1080,
+          "visually_inspected": true,
+          "source_id": "deskjob_grady_capture01_c",
+          "title": "Valve / Steam — Grady, capture 01",
+          "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1902490/ss_4b8b8d6ab04d3c42584abb31b5b4d7d534478d1d.1920x1080.jpg?t=1745368564",
+          "provenance": "primary_official_screenshot",
+          "role": "visual_identity_reference"
+        }
+      ],
+      "evidence_of_gap": {
+        "path": "docs/resonance/data/generated_art_register.json",
+        "asset_id": "grady_deskjob_core_idle_c",
+        "note": "Noyau turquoise et iris radial orange/rouge reconnaissables d’après la capture officielle. Assemblage limité au noyau, supports latéraux et attache supérieure. Le bras complet, la main, le câble et les animations restent à produire. Franges colorées et extrémité haute de l’attache à reprendre."
+      },
+      "generation_readiness": "reacquire_and_inspect_primary_screenshot_for_visible_component_extent_before_call",
+      "instructions": "Créer seulement le composant effectivement visible dans la capture officielle Desk Job. Conserver les articulations, matériaux et orientation; ne pas inventer la mécanique cachée/hors champ. Noyau déjà produit conservé séparément; ne pas annoncer le rig complet.",
+      "counts_as_new_catalogue_target": false,
+      "counts_as_complete_rig": false,
+      "certified_one_to_one": false
+    },
+    {
+      "opportunity_id": "grady_deskjob_manipulator_hand",
+      "category": "machine",
+      "target_id": "grady_deskjob",
+      "gap_kind": "missing_separate_rig_component",
+      "requested_file": "grady_deskjob_manipulator_hand_o.png",
+      "component": "manipulator_hand",
+      "existing_asset_ids": [
+        "grady_deskjob_core_idle_c"
+      ],
+      "prior_refusal_count": 0,
+      "no_prior_refusal_for_subject": true,
+      "reference_evidence": [
+        {
+          "reference_filename": "steam_1902490_01.jpg",
+          "sha256": "dc6222601c0a30347e306f15865de293f68c5c7e2040f3642d54115cbb95ef8f",
+          "width": 1920,
+          "height": 1080,
+          "visually_inspected": true,
+          "source_id": "deskjob_grady_capture01_c",
+          "title": "Valve / Steam — Grady, capture 01",
+          "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1902490/ss_4b8b8d6ab04d3c42584abb31b5b4d7d534478d1d.1920x1080.jpg?t=1745368564",
+          "provenance": "primary_official_screenshot",
+          "role": "visual_identity_reference"
+        }
+      ],
+      "evidence_of_gap": {
+        "path": "docs/resonance/data/generated_art_register.json",
+        "asset_id": "grady_deskjob_core_idle_c",
+        "note": "Noyau turquoise et iris radial orange/rouge reconnaissables d’après la capture officielle. Assemblage limité au noyau, supports latéraux et attache supérieure. Le bras complet, la main, le câble et les animations restent à produire. Franges colorées et extrémité haute de l’attache à reprendre."
+      },
+      "generation_readiness": "reacquire_and_inspect_primary_screenshot_for_visible_component_extent_before_call",
+      "instructions": "Créer seulement le composant effectivement visible dans la capture officielle Desk Job. Conserver les articulations, matériaux et orientation; ne pas inventer la mécanique cachée/hors champ. Noyau déjà produit conservé séparément; ne pas annoncer le rig complet.",
+      "counts_as_new_catalogue_target": false,
+      "counts_as_complete_rig": false,
+      "certified_one_to_one": false
+    },
+    {
+      "opportunity_id": "fx_thermal_beam_portal2_source",
+      "category": "vfx",
+      "target_id": "fx_thermal_beam_portal2",
+      "gap_kind": "missing_required_visual_state",
+      "requested_file": "fx_thermal_beam_portal2_source_o.png",
+      "visual_state_id": "source",
+      "required_visual_state_ids": [
+        "beam",
+        "source",
+        "impact"
+      ],
+      "existing_visual_states": [
+        "beam"
+      ],
+      "prior_refusal_count": 0,
+      "no_prior_refusal_for_subject": true,
+      "reference_evidence": [
+        {
+          "id": "legacy_f__PJ_PORTAL2_LASER_SCREENSHOT",
+          "title": "Valve — capture Portal 2, faisceaux",
+          "url": "https://store.steampowered.com/api/appdetails?appids=620&l=english",
+          "kind": "primary_official_screenshot",
+          "checked_on": "2026-11-24",
+          "checked_scope": "Capture officielle screenshot id 4, ss_3d13161104a04603a0524536770c5f74626db4c0: faisceaux fins à cœur clair et halo rouge entre émetteur et récepteur. Image 1920 × 1080 examinée.",
+          "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_3d13161104a04603a0524536770c5f74626db4c0.1920x1080.jpg?t=1790187113",
+          "legacy_source_id": "PJ_PORTAL2_LASER_SCREENSHOT",
+          "recovered_from_catalogue": "continuation_20261124_f/projectile_catalog_original.json"
+        }
+      ],
+      "contract_paths": [
+        "docs/resonance/data/projectile_catalog_20261124.json"
+      ],
+      "generation_readiness": "reinspect_official_bitmap_and_identify_endpoint_pixels_before_call",
+      "instructions": "Un effet au départ ou au point de contact exactement localisé sur capture officielle. Conserver faisceau continu, halo rouge/cœur clair; aucune orbe ni explosion ajoutée. Si le point source/contact n’est pas suffisamment visible, reporter sans appel. Ne pas copier le sprite H comme preuve primaire; son premier appel n’avait pas de bitmap.",
+      "counts_against_baseline_134_missing_visual_states": true,
+      "counts_as_new_catalogue_target": false,
+      "counts_as_complete_animation": false,
+      "certified_one_to_one": false
+    },
+    {
+      "opportunity_id": "fx_thermal_beam_portal2_impact",
+      "category": "vfx",
+      "target_id": "fx_thermal_beam_portal2",
+      "gap_kind": "missing_required_visual_state",
+      "requested_file": "fx_thermal_beam_portal2_impact_o.png",
+      "visual_state_id": "impact",
+      "required_visual_state_ids": [
+        "beam",
+        "source",
+        "impact"
+      ],
+      "existing_visual_states": [
+        "beam"
+      ],
+      "prior_refusal_count": 0,
+      "no_prior_refusal_for_subject": true,
+      "reference_evidence": [
+        {
+          "id": "legacy_f__PJ_PORTAL2_LASER_SCREENSHOT",
+          "title": "Valve — capture Portal 2, faisceaux",
+          "url": "https://store.steampowered.com/api/appdetails?appids=620&l=english",
+          "kind": "primary_official_screenshot",
+          "checked_on": "2026-11-24",
+          "checked_scope": "Capture officielle screenshot id 4, ss_3d13161104a04603a0524536770c5f74626db4c0: faisceaux fins à cœur clair et halo rouge entre émetteur et récepteur. Image 1920 × 1080 examinée.",
+          "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_3d13161104a04603a0524536770c5f74626db4c0.1920x1080.jpg?t=1790187113",
+          "legacy_source_id": "PJ_PORTAL2_LASER_SCREENSHOT",
+          "recovered_from_catalogue": "continuation_20261124_f/projectile_catalog_original.json"
+        }
+      ],
+      "contract_paths": [
+        "docs/resonance/data/projectile_catalog_20261124.json"
+      ],
+      "generation_readiness": "reinspect_official_bitmap_and_identify_endpoint_pixels_before_call",
+      "instructions": "Un effet au départ ou au point de contact exactement localisé sur capture officielle. Conserver faisceau continu, halo rouge/cœur clair; aucune orbe ni explosion ajoutée. Si le point source/contact n’est pas suffisamment visible, reporter sans appel. Ne pas copier le sprite H comme preuve primaire; son premier appel n’avait pas de bitmap.",
+      "counts_against_baseline_134_missing_visual_states": true,
+      "counts_as_new_catalogue_target": false,
+      "counts_as_complete_animation": false,
+      "certified_one_to_one": false
+    }
+  ],
+  "recommendation_counts": {
+    "total_new_file_opportunities": 16,
+    "character": 6,
+    "stage": 6,
+    "machine": 2,
+    "vfx": 2
+  },
+  "recommendation_limits": [
+    "Aucune recommandation ne relance une cible refusée. Les 16 occasions correspondent à des poses, plans, composants ou états manquants, pas à 16 nouvelles identités.",
+    "Non bloqué veut dire sans refus historique sur le sujet. Les quatre composants/états machine/VFX exigent encore un contrôle bitmap de leur portion exacte avant l’appel.",
+    "Les six plans Contamination ne sont pas inclus dans les 131 identifiants de plan manquants au checkpoint: la cible n’avait pas de contrat multicouche. Publier le contrat avant de décompter.",
+    "Les poses Gina/Colette ne sont pas des animations Decay retrouvées : ce sont des gestes de présentation originaux respectant les modèles PS2.",
+    "Aucun nouveau PNG n’est produit par cet audit; root et agents de production exécutent les appels séparément. Fidélité 1:1, animation complète et parallaxe fonctionnelle restent des validations distinctes."
+  ],
+  "priority_research_targets": [
+    "fx_vortigaunt_zap_hl2",
+    "fx_strider_warp_hl2"
+  ],
+  "do_not_retry_target_ids": [
+    "wheatley_portal2",
+    "fisherman_lostcoast",
+    "atlas_portal2",
+    "pbody_portal2",
+    "wheatley_core_portal2",
+    "armored_headcrab_hla",
+    "space_core_portal2",
+    "fact_core_portal2",
+    "cave_head_deskjob",
+    "proj_satchel_hl1",
+    "proj_rpg_rocket_hl2",
+    "proj_apc_missile_hl2"
+  ],
+  "new_reference_evidence": [
+    {
+      "path": "/workspace/scratch/892354ae3802/continuation_o/references/colette_decay_ps2.png",
+      "exists": true,
+      "sha256": "76d043ab9a2646fd19d6adab188827a110d80c666fee54fd30e11480df87e1a5",
+      "source_url": "https://combineoverwiki.net/images/1/18/Ps2_colette_decay.png",
+      "source_page": "https://combineoverwiki.net/wiki/File:Ps2_colette_decay.png",
+      "visual_inspection": "root verified current turn; audit verifies bytes only",
+      "source_variant": "retail PlayStation 2 campaign; not Head-to-Head"
+    },
+    {
+      "path": "/workspace/scratch/892354ae3802/continuation_o_references/map_contamination_official.jpg",
+      "exists": true,
+      "sha256": "ff57e6909e48c9e4f2e403c6ed4ed2827b6e4fb5348d790bbbc8064675a79167"
+    }
+  ]
+}

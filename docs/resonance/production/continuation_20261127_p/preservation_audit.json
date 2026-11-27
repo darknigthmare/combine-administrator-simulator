@@ -1,0 +1,29 @@
+{
+  "baseline_commit": "5fc4ad1236846754f2c69dd45584b12d06b16617",
+  "baseline_registered_png_files": 318,
+  "preserved_png_files": 318,
+  "changed_png_files": [],
+  "baseline_register_entries": 370,
+  "changed_historical_entry_ids": [],
+  "guide_sources": [
+    {
+      "path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "identical": true,
+      "sha256": "4844584616072ac0d52d37c2fab4365e1ec489240f17a721ee216e223b0355b7"
+    },
+    {
+      "path": "docs/resonance/guides/Combat_Games_Extension_01_Tag_Taunts_Bonus_v1.0.txt",
+      "identical": true,
+      "sha256": "330fb7485a7a52b2a20f855646c940aaac0fcd9510032bc84b2e17c518edd25f"
+    },
+    {
+      "path": "docs/resonance/guides/Combat_Games_Extension_02_Slots_Verrouilles_Deblocages_Abonnes_v1.0.txt",
+      "identical": true,
+      "sha256": "08b57ea542e83c487fef3276997a612d4657f2ee9ed4f8e46b0bf65a2778038b"
+    }
+  ],
+  "status": "passed",
+  "baseline_local_commit": "b43f3c60c3455d4f704ced819344831120d61309",
+  "baseline_remote_tree": "4eb46bd17a0198da41d1f864f6b0aaf428e0e708",
+  "remote_tree_matches_local_baseline": true
+}

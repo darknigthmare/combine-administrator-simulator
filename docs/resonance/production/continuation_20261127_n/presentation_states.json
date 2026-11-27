@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "status": "candidate_static_key_poses",
+  "runtime_enabled": false,
+  "guide_sections": [
+    "31",
+    "32"
+  ],
+  "clips_complete": 0,
+  "states": [
+    {
+      "owner_id": "grigori_hl2",
+      "event": "deselected",
+      "selected_asset_id": "grigori_hl2_deselected_n",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_n/characters/grigori_hl2_deselected_n.png",
+      "next_work": [
+        "reference_fidelity_review",
+        "consistent_pivot_and_scale",
+        "entry_and_exit_drawings",
+        "timing_and_cancel_windows",
+        "in_game_validation"
+      ]
+    },
+    {
+      "owner_id": "grigori_hl2",
+      "event": "selected",
+      "selected_asset_id": "grigori_hl2_selected_n_v2",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_n/characters/grigori_hl2_selected_n_v2.png",
+      "next_work": [
+        "reference_fidelity_review",
+        "consistent_pivot_and_scale",
+        "entry_and_exit_drawings",
+        "timing_and_cancel_windows",
+        "in_game_validation"
+      ]
+    },
+    {
+      "owner_id": "grigori_hl2",
+      "event": "taunt",
+      "selected_asset_id": "grigori_hl2_taunt_n",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_n/characters/grigori_hl2_taunt_n.png",
+      "next_work": [
+        "reference_fidelity_review",
+        "consistent_pivot_and_scale",
+        "entry_and_exit_drawings",
+        "timing_and_cancel_windows",
+        "in_game_validation"
+      ]
+    },
+    {
+      "owner_id": "shephard_op4",
+      "event": "deselected",
+      "selected_asset_id": "shephard_op4_deselected_n",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_n/characters/shephard_op4_deselected_n.png",
+      "next_work": [
+        "reference_fidelity_review",
+        "consistent_pivot_and_scale",
+        "entry_and_exit_drawings",
+        "timing_and_cancel_windows",
+        "in_game_validation"
+      ]
+    },
+    {
+      "owner_id": "shephard_op4",
+      "event": "selected",
+      "selected_asset_id": "shephard_op4_selected_n",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_n/characters/shephard_op4_selected_n.png",
+      "next_work": [
+        "reference_fidelity_review",
+        "consistent_pivot_and_scale",
+        "entry_and_exit_drawings",
+        "timing_and_cancel_windows",
+        "in_game_validation"
+      ]
+    },
+    {
+      "owner_id": "shephard_op4",
+      "event": "taunt",
+      "selected_asset_id": "shephard_op4_taunt_n",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_n/characters/shephard_op4_taunt_n.png",
+      "next_work": [
+        "reference_fidelity_review",
+        "consistent_pivot_and_scale",
+        "entry_and_exit_drawings",
+        "timing_and_cancel_windows",
+        "in_game_validation"
+      ]
+    }
+  ]
+}

@@ -20,10 +20,24 @@ const backlog = read('asset_backlog.json').rows;
 const animation = read('animation_budget.json');
 const art = read('generated_art_register.json');
 const extension = read('catalogue_extension_20261120.json');
-const extensionIds = new Set(extension.targets.map(target => target.id));
+const extension20261124 = read('catalogue_extension_20261124.json');
+const extensionTargets = [...extension.targets, ...extension20261124.targets];
+const extensionIds = new Set(extensionTargets.map(target => target.id));
+const cutContent = read('cut_content_catalog_20261127.json');
+const cutTargets = cutContent.targets;
+check(Array.isArray(cutTargets), 'Cut-content catalogue must expose targets[]');
+if (!Array.isArray(cutTargets)) throw new Error(errors.join('\n'));
+const cutIds = new Set(cutTargets.map(target => target.id));
+const cutSourceIds = new Set(cutContent.sources.map(source => source.id));
+const projectileCatalog = read('projectile_catalog_20261124.json');
+const projectileTargets = projectileCatalog.targets;
+check(Array.isArray(projectileTargets), 'Projectile catalogue must expose targets[]');
+if (!Array.isArray(projectileTargets)) throw new Error(errors.join('\n'));
+const projectileIds = new Set(projectileTargets.map(target => target.id));
+const projectileSourceIds = new Set(projectileCatalog.sources.map(source => source.id));
 const bossIds = new Set([
   ...read('boss_battle_catalog.json').bosses.map(boss => boss.id),
-  ...extension.targets.filter(target => target.category === 'boss').map(target => target.id),
+  ...extensionTargets.filter(target => target.category === 'boss').map(target => target.id),
 ]);
 const frameData = read('frame_data_pilote.json');
 const fighters = roster.fighters;
@@ -36,8 +50,47 @@ const stageIds = new Set(stages.map(stage => stage.id));
 // 24-stage production budget below remains scoped to the original catalogue.
 const assetStageIds = new Set([
   ...stageIds,
-  ...extension.targets.filter(target => target.category === 'stage').map(target => target.id),
+  ...extensionTargets.filter(target => target.category === 'stage').map(target => target.id),
 ]);
+unique(extensionTargets.map(target => target.id), 'extension targets');
+unique(cutTargets.map(target => target.id), 'cut-content targets');
+unique(cutContent.sources.map(source => source.id), 'cut-content sources');
+check(cutContent.counts.new_targets === cutTargets.length && cutContent.counts.source_records === cutContent.sources.length, 'Cut-content catalogue count mismatch');
+check(cutContent.runtime_enabled === false && cutContent.certified_one_to_one === false, 'Cut-content catalogue must remain an uncertified archive');
+for (const target of cutTargets) {
+  check(!extensionIds.has(target.id) && !fighterIds.has(target.id) && !reserveIds.has(target.id) && !assetStageIds.has(target.id) && !bossIds.has(target.id) && !projectileIds.has(target.id), `${target.id}: cut-content target collides with another catalogue`);
+  check(target.category === 'archive' && target.runtime_enabled === false && target.certified_one_to_one === false, `${target.id}: cut-content target must remain an uncertified archive`);
+  check(cutIds.has(target.owner_id), `${target.id}: unresolved cut-content owner`);
+  check(['character', 'creature', 'boss', 'machine', 'weapon', 'vehicle', 'stage', 'mechanic', 'prop'].includes(target.archive_kind), `${target.id}: unknown archive kind`);
+  check(Array.isArray(target.source_ids) && target.source_ids.length > 0 && target.source_ids.every(id => cutSourceIds.has(id)), `${target.id}: unresolved cut-content reference`);
+  const tasks = target.required_tasks;
+  check(Array.isArray(tasks) && tasks.length > 0, `${target.id}: missing cut-content tasks`);
+  if (Array.isArray(tasks)) {
+    unique(tasks.map(task => task.id), `${target.id} tasks`);
+    const taskIds = new Set(tasks.map(task => task.id));
+    for (const task of tasks) {
+      check(Object.hasOwn(cutContent.task_templates, task.template_id), `${task.id}: unresolved task template`);
+      check(Array.isArray(task.depends_on) && task.depends_on.every(id => taskIds.has(id)), `${task.id}: unresolved task dependency`);
+    }
+  }
+}
+check(cutContent.counts.required_task_records === cutTargets.reduce((sum, target) => sum + (target.required_tasks?.length ?? 0), 0), 'Cut-content task count mismatch');
+unique(projectileTargets.map(target => target.id), 'projectile/FX targets');
+unique(projectileCatalog.sources.map(source => source.id), 'projectile/FX sources');
+check(projectileCatalog.counts.targets === projectileTargets.length, 'Projectile catalogue target count mismatch');
+for (const [field, key] of [['by_effect_kind', 'effect_kind'], ['by_source_game', 'source_game']]) {
+  const actual = Object.fromEntries([...new Set(projectileTargets.map(target => target[key]))].sort().map(value => [value, projectileTargets.filter(target => target[key] === value).length]));
+  const declared = projectileCatalog.counts[field];
+  check(declared && Object.keys(declared).length === Object.keys(actual).length && Object.entries(actual).every(([value, count]) => declared[value] === count), `Projectile catalogue ${field} mismatch`);
+}
+for (const target of projectileTargets) {
+  check(!extensionIds.has(target.id) && !fighterIds.has(target.id) && !reserveIds.has(target.id) && !assetStageIds.has(target.id) && !bossIds.has(target.id), `${target.id}: projectile/FX target collides with another catalogue`);
+  check(target.category === 'projectile' && target.runtime_enabled === false, `${target.id}: projectile/FX catalogue must remain documentary`);
+  check(target.owner_id === target.id && target.certified_one_to_one === false, `${target.id}: invalid projectile identity or fidelity claim`);
+  check(Array.isArray(target.source_ids) && target.source_ids.length > 0 && target.source_ids.every(id => projectileSourceIds.has(id)), `${target.id}: unresolved projectile reference`);
+  check(['projectile', 'throwable', 'instant_trace', 'beam', 'impact', 'area', 'portal', 'device', 'weapon_fire'].includes(target.effect_kind), `${target.id}: unknown projectile/FX behavior`);
+  check(Array.isArray(target.variants_required) && target.variants_required.length > 0 && target.variants_required.every(id => typeof id === 'string' && id.trim()) && new Set(target.variants_required).size === target.variants_required.length, `${target.id}: invalid visual state contract`);
+}
 unique([...fighters.map(fighter => fighter.id)], 'fighters');
 unique(stages.map(stage => stage.id), 'stages');
 unique(backlog.map(asset => asset.asset_id), 'production groups');
@@ -119,19 +172,99 @@ for (const move of moves) {
   }
 }
 
+const prototypeBackgroundIds = new Set(['stage_black_mesa_testchamber_master', 'stage_city17_station_master']);
+const prototypeSpriteScope = 'boss_battle_static_candidate_sprite';
+const prototypeSpriteAssets = new Map([
+  ['gordon_hl2_idle_h', { ownerId: 'gordon_hl2', ownerType: 'fighter', path: 'assets/resonance/candidates/continuation_20261124_h/heroes/gordon_hl2_idle_h.png' }],
+  ['alyx_hl2_idle_h', { ownerId: 'alyx_hl2', ownerType: 'fighter', path: 'assets/resonance/candidates/continuation_20261124_h/heroes/alyx_hl2_idle_h.png' }],
+  ['barney_hl2_idle_h', { ownerId: 'barney_hl2', ownerType: 'fighter', path: 'assets/resonance/candidates/continuation_20261124_h/heroes/barney_hl2_idle_h.png' }],
+  ['shephard_op4_idle_h', { ownerId: 'shephard_op4', ownerType: 'fighter', path: 'assets/resonance/candidates/continuation_20261124_h/heroes/shephard_op4_idle_h.png' }],
+  ['vortigaunt_hl2_idle_h', { ownerId: 'vortigaunt_hl2', ownerType: 'fighter', path: 'assets/resonance/candidates/continuation_20261124_h/heroes/vortigaunt_hl2_idle_h.png' }],
+  ['combine_elite_hl2_idle_left', { ownerId: 'combine_elite_hl2', ownerType: 'fighter', path: 'assets/resonance/candidates/combine_elite_hl2_idle_left.png' }],
+  ['gunship_hl2_hover_left_f', { ownerId: 'gunship_hl2', ownerType: 'boss', path: 'assets/resonance/candidates/continuation_20261124_f/gunship_hl2_hover_left_f.png' }],
+]);
+const spriteModulePath = resolve(root, 'src/features/resonance/bossBattle/spriteAssets.ts');
+const spriteModule = readFileSync(spriteModulePath, 'utf8');
+const rendererModule = readFileSync(resolve(root, 'src/features/resonance/bossBattle/renderer.ts'), 'utf8');
+const spriteImports = new Map([...spriteModule.matchAll(/import\s+(\w+)\s+from\s+'([^']+\.png)'/g)]
+  .map(match => [match[1], resolve(dirname(spriteModulePath), match[2])]));
+const spriteBindings = [...spriteModule.matchAll(/^  (\w+): \{\r?\n([\s\S]*?)^  \},?$/gm)].map(match => ({
+  runtimeId: match[1],
+  assetId: match[2].match(/assetId:\s*'([^']+)'/)?.[1],
+  repositoryPath: match[2].match(/repositoryPath:\s*'([^']+)'/)?.[1],
+  importName: match[2].match(/\burl:\s*(\w+)/)?.[1],
+}));
+unique(spriteBindings.map(binding => binding.assetId), 'prototype sprite bindings');
+check(spriteBindings.length === prototypeSpriteAssets.size && spriteImports.size === prototypeSpriteAssets.size, 'Prototype sprite imports must remain the seven audited static poses');
+check(/drawSprite\(ctx,\s*FIGHTER_SPRITES\[state\.fighterId\]/.test(rendererModule), 'Fighter sprite bindings are not consumed by the renderer');
+check(/drawSprite\(ctx,\s*BOSS_SPRITES\.gunship_hl2/.test(rendererModule), 'Gunship sprite binding is not consumed by the renderer');
+for (const binding of spriteBindings) {
+  const expected = prototypeSpriteAssets.get(binding.assetId);
+  check(Boolean(expected), `${binding.assetId}: unaudited runtime sprite binding`);
+  if (!expected) continue;
+  check(binding.runtimeId === expected.ownerId && binding.repositoryPath === expected.path, `${binding.assetId}: runtime sprite owner/path mismatch`);
+  check(spriteImports.get(binding.importName) === resolve(root, expected.path), `${binding.assetId}: runtime import differs from the registered image`);
+}
+for (const [assetId, expected] of prototypeSpriteAssets) {
+  const asset = art.assets.find(candidate => candidate.asset_id === assetId);
+  check(Boolean(asset), `${assetId}: missing static runtime sprite registration`);
+  if (!asset) continue;
+  check(asset.integrated_in_game === true && asset.runtime_enabled === true && asset.integration_scope === prototypeSpriteScope, `${assetId}: incomplete static prototype integration scope`);
+  check(asset.repository_path === expected.path && asset.owner_id === expected.ownerId && asset.owner_type === expected.ownerType, `${assetId}: static prototype image identity mismatch`);
+  check(asset.generation_status === 'généré' && asset.animation_clip_complete === false, `${assetId}: static candidate integration cannot claim an animation clip`);
+}
+
+// The collection reuses four existing candidates independently of combat rendering.
+const dossierScope = 'boss_battle_unlock_dossier_gallery';
+const dossierAssets = new Map([
+  ['strider_hl2_idle_k', { ownerId: 'strider_hl2', importName: 'striderUrl', path: 'assets/resonance/candidates/continuation_20261125_k/machines/strider_hl2_idle_k.png' }],
+  ['dropship_container_hl2_hover_right_f', { ownerId: 'dropship_hl2', importName: 'dropshipUrl', path: 'assets/resonance/candidates/continuation_20261124_f/dropship_container_hl2_hover_right_f.png' }],
+  ['gunship_hl2_hover_left_f', { ownerId: 'gunship_hl2', importName: 'gunshipUrl', path: 'assets/resonance/candidates/continuation_20261124_f/gunship_hl2_hover_left_f.png' }],
+  ['boss_gargantua_hl1_rear_threequarter_e', { ownerId: 'gargantua_hl1', importName: 'gargantuaUrl', path: 'assets/resonance/candidates/continuation_20261120_e/boss_gargantua_hl1_rear_threequarter_e.png' }],
+]);
+const dossierModulePath = resolve(root, 'src/features/resonance/progression/FieldDossiers.tsx');
+const dossierModule = readFileSync(dossierModulePath, 'utf8');
+const dossierImports = new Map([...dossierModule.matchAll(/import\s+(\w+)\s+from\s+'([^']+\.png)'/g)]
+  .map(match => [match[1], resolve(dirname(dossierModulePath), match[2])]));
+check(dossierImports.size === dossierAssets.size, 'Dossier gallery must use the four audited illustrations');
+for (const [assetId, expected] of dossierAssets) {
+  const asset = art.assets.find(candidate => candidate.asset_id === assetId);
+  check(Boolean(asset), `${assetId}: missing dossier illustration registration`);
+  if (!asset) continue;
+  check(asset.integrated_in_game === true && asset.runtime_enabled === true && asset.runtime_usages?.includes(dossierScope), `${assetId}: missing dossier usage`);
+  check(asset.repository_path === expected.path && asset.owner_id === expected.ownerId && asset.owner_type === 'boss', `${assetId}: dossier identity mismatch`);
+  check(dossierImports.get(expected.importName) === resolve(root, expected.path), `${assetId}: dossier import differs from registered image`);
+  check(dossierModule.includes(`${expected.ownerId}: ${expected.importName}`), `${assetId}: dossier binding missing`);
+  check(asset.animation_clip_complete === false, `${assetId}: a gallery illustration cannot declare an animation`);
+}
+
 let generated = 0;
 for (const asset of art.assets) {
   check(asset.certified_one_to_one === false, `${asset.asset_id}: unsupported fidelity claim`);
   if (asset.integrated_in_game) {
-    check(['stage_black_mesa_testchamber_master', 'stage_city17_station_master'].includes(asset.asset_id), `${asset.asset_id}: unexpected prototype integration`);
-    check(asset.integration_scope === 'boss_battle_prototype_background', `${asset.asset_id}: unspecified prototype integration scope`);
+    const isBackground = prototypeBackgroundIds.has(asset.asset_id);
+    const isBattleSprite = prototypeSpriteAssets.has(asset.asset_id);
+    const isDossier = dossierAssets.has(asset.asset_id);
+    check(isBackground || isBattleSprite || isDossier, `${asset.asset_id}: unexpected prototype integration`);
+    const expectedScope = isBackground ? 'boss_battle_prototype_background' : isBattleSprite ? prototypeSpriteScope : dossierScope;
+    check(asset.integration_scope === expectedScope, `${asset.asset_id}: unspecified prototype integration scope`);
   }
+  if (asset.runtime_enabled === true) check(asset.integrated_in_game === true, `${asset.asset_id}: runtime-enabled artwork must declare its precise integration`);
   if (asset.owner_type === 'fighter') check(fighterIds.has(asset.owner_id), `${asset.asset_id}: unknown fighter owner`);
   if (asset.owner_type === 'reserve_character') check(reserveIds.has(asset.owner_id), `${asset.asset_id}: unknown reserve owner`);
   if (asset.owner_type === 'stage') check(assetStageIds.has(asset.owner_id), `${asset.asset_id}: unknown stage owner`);
   if (asset.owner_type === 'boss') check(bossIds.has(asset.owner_id), `${asset.asset_id}: unknown boss owner`);
-  if (['support_character', 'support_machine'].includes(asset.owner_type)) check(extensionIds.has(asset.owner_id), `${asset.asset_id}: unknown extension owner`);
-  check(['fighter', 'reserve_character', 'stage', 'boss', 'support_character', 'support_machine', 'shared_collection'].includes(asset.owner_type), `${asset.asset_id}: unknown owner type`);
+  if (['support_character', 'support_machine'].includes(asset.owner_type)) check(extensionIds.has(asset.owner_id) || cutIds.has(asset.owner_id), `${asset.asset_id}: unknown extension owner`);
+  if (asset.owner_type === 'archive') check(cutIds.has(asset.owner_id), `${asset.asset_id}: unknown cut-content archive owner`);
+  if (cutIds.has(asset.owner_id)) check(asset.runtime_enabled === false && asset.integrated_in_game === false, `${asset.asset_id}: cut-content artwork must remain outside runtime`);
+  if (asset.owner_type === 'projectile_effect') {
+    check(projectileIds.has(asset.owner_id), `${asset.asset_id}: unknown projectile/FX owner`);
+    const targets = asset.target_ids ?? (asset.target_id != null ? [asset.target_id] : []);
+    check(Array.isArray(targets) && targets.includes(asset.owner_id), `${asset.asset_id}: projectile/FX artwork needs an explicit owner target`);
+    if (asset.target_id != null) check(asset.target_id === asset.owner_id, `${asset.asset_id}: conflicting projectile target alias`);
+  }
+  if (projectileIds.has(asset.owner_id)) check(asset.owner_type === 'projectile_effect', `${asset.asset_id}: wrong projectile/FX owner type`);
+  check(['fighter', 'reserve_character', 'stage', 'boss', 'support_character', 'support_machine', 'projectile_effect', 'shared_collection', 'archive'].includes(asset.owner_type), `${asset.asset_id}: unknown owner type`);
   if (asset.generation_status !== 'généré') {
     check(asset.file_path === null && asset.repository_path === null, `${asset.asset_id}: failed request has an asset path`);
     continue;
@@ -147,11 +280,11 @@ for (const asset of art.assets) {
   if (asset.alpha_check === 'présent') check(bytes[25] === 6 || bytes[25] === 4, `${asset.asset_id}: alpha channel missing`);
 }
 check(generated === art.counts.generated && art.assets.length === art.counts.requests, 'Image generation journal count mismatch');
-check(art.assets.filter(asset => asset.generation_status === 'refus automatique').length === art.counts.blocked, 'Blocked generation journal count mismatch');
+check(art.assets.filter(asset => ['refus automatique', 'refus confirmé outil'].includes(asset.generation_status)).length === art.counts.blocked, 'Blocked generation journal count mismatch');
 check(art.assets.filter(asset => asset.integrated_in_game).length === art.counts.integrated_in_game, 'Prototype integration journal count mismatch');
 if (errors.length) {
   console.error(errors.map(error => `FAIL ${error}`).join('\n'));
   process.exitCode = 1;
 } else {
-  console.log(JSON.stringify({ status: 'passed', fighters: fighters.length, storyChapters: roster.story_chapters.length, specialTechniques: specials.length, exVariants: exVariants.length, stages: stages.length, productionGroups: backlog.length, animationSequencesPerPilot: animation.sequences.length, drawingsPerPilotOneFacing: 547, pilotMoves: moves.length, generatedImages: generated, prototypeBackgrounds: art.assets.filter(asset => asset.integrated_in_game).length, certifiedOneToOne: 0, note: 'Design data and image provenance validated. The Boss Battle simulation has its own tests; no network implementation or final visual fidelity is asserted.' }, null, 2));
+  console.log(JSON.stringify({ status: 'passed', fighters: fighters.length, storyChapters: roster.story_chapters.length, specialTechniques: specials.length, exVariants: exVariants.length, stages: stages.length, productionGroups: backlog.length, animationSequencesPerPilot: animation.sequences.length, drawingsPerPilotOneFacing: 547, pilotMoves: moves.length, generatedImages: generated, prototypeBackgrounds: art.assets.filter(asset => asset.integrated_in_game && prototypeBackgroundIds.has(asset.asset_id)).length, prototypeStaticSprites: art.assets.filter(asset => asset.integrated_in_game && prototypeSpriteAssets.has(asset.asset_id)).length, dossierIllustrations: dossierAssets.size, distinctRuntimeImages: art.counts.integrated_in_game, certifiedOneToOne: 0, note: 'Design data, image provenance, seven static combat sprites and four dossier illustrations validated. Gunship is shared between scopes. The Boss Battle simulation has its own tests; no animation clip, network implementation or final visual fidelity is asserted.' }, null, 2));
 }

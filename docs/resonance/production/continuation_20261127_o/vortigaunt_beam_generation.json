@@ -1,0 +1,252 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "continuation_20261127_o",
+  "created_at": "2026-11-27",
+  "base_commit": "4ae2ee9dcf1a2acedff4b628c70ee70a736553a0",
+  "status": "completed_candidate_generation",
+  "counts": {
+    "assigned_targets": 1,
+    "assessed_targets": 1,
+    "generated_png": 1,
+    "targets_with_new_png": 1,
+    "confirmed_refusals": 0,
+    "tool_errors": 0,
+    "parameter_validation_errors": 0,
+    "actual_generation_calls": 1,
+    "completed_targets": 0,
+    "certified_one_to_one": 0,
+    "completed_animations": 0,
+    "runtime_integrations": 0
+  },
+  "limits": [
+    "Un seul état beam candidat. Charge et impact restent reportés.",
+    "Aucun catalogue ou registre global modifié par cette tâche."
+  ],
+  "assets": [
+    {
+      "asset_id": "fx_vortigaunt_zap_episodic_beam_o",
+      "target_id": "fx_vortigaunt_zap_hl2",
+      "target_ids": [
+        "fx_vortigaunt_zap_hl2"
+      ],
+      "owner_id": "fx_vortigaunt_zap_hl2",
+      "owner_type": "projectile_effect",
+      "category": "projectile_key_frame",
+      "effect_kind": "beam",
+      "name_fr": "Décharge offensive Vortigaunt des épisodes — segment de faisceau",
+      "batch_id": "continuation_20261127_o",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life 2: Episode Two",
+      "content_class": "released_reference",
+      "visual_state_id": "beam",
+      "generator": "image_gen built-in",
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat inspecté, fidélité à valider",
+      "selected_for_next_review": true,
+      "reference_paths": [
+        "/workspace/scratch/892354ae3802/continuation_o_phase_refs/asthalis_p5_15.png"
+      ],
+      "source_urls": [
+        "https://asthalis.fr/fichiers/pc/hl2e2/hl2e2_solution.pdf",
+        "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/npc_vortigaunt_episodic.cpp"
+      ],
+      "source_references": [
+        {
+          "id": "asthalis_ep2_offensive_beam_p5_xref381",
+          "source_page": "https://asthalis.fr/fichiers/pc/hl2e2/hl2e2_solution.pdf",
+          "source_url": "https://asthalis.fr/fichiers/pc/hl2e2/hl2e2_solution.pdf",
+          "local_reference_path": "/workspace/scratch/892354ae3802/continuation_o_phase_refs/asthalis_p5_15.png",
+          "kind": "secondary_hosted_retail_gameplay_capture",
+          "provenance": "Capture de gameplay publiée dans le guide personnel Asthalis, Half-Life 2: Episode Two, révision du 30/12/2017. L’auteur dit p.2 avoir construit son guide à partir de son expérience personnelle. Hébergement non Valve; version binaire et réglages exacts non certifiés.",
+          "source_game": "Half-Life 2: Episode Two",
+          "chapter": "This Vortal Coil / La condition vortelle, 02-01 Base souterraine",
+          "map": "ep2_outland_02",
+          "map_identification": "Identification contextuelle par la salle de défense, les tunnels 12/36 et la table d’Alyx; le PDF ne donne pas l’ID de map.",
+          "pdf_printed_page": 5,
+          "pdf_zero_based_page": 4,
+          "pdf_image_xref": 381,
+          "pdf_sha256": "67c3338f417dbb0e830e0a49619fd4391b5e6506996d4d6ce9ebee9f6548b61f",
+          "sha256": "5e78886d4deef3f149ab0491bc46e0405f8fc4f88493bcb08ac663c4c5c48f43",
+          "width": 320,
+          "height": 240,
+          "byte_size": 51553,
+          "extraction": "PyMuPDF extract_image(381), pixels natifs sans redimensionnement ni correction.",
+          "visually_inspected": true,
+          "provided_to_generation": true,
+          "role": "visual_identity_reference",
+          "inspection_notes": "Le Vortigaunt de droite, penché vers la gauche, émet un faisceau blanc/vert pâle de ses mains vers un flash jaune-vert au-dessus de la table. Le Vortigaunt à gauche soigne Alyx: cet effet est exclu. Le flash terminal chevauche le combat; il n’autorise pas un impact autonome. Cette référence atteste seulement un instant offensif; aucun cycle complet ni framebuffer brut certifié."
+        },
+        {
+          "id": "hl2_npc_vortigaunt_episodic",
+          "source_page": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/npc_vortigaunt_episodic.cpp",
+          "source_url": "https://raw.githubusercontent.com/ValveSoftware/source-sdk-2013/master/src/game/server/hl2/npc_vortigaunt_episodic.cpp",
+          "local_reference_path": "/workspace/scratch/892354ae3802/continuation_o_phase_refs/npc_vortigaunt_episodic.cpp",
+          "kind": "official_source_code",
+          "provenance": "ValveSoftware/source-sdk-2013, code primaire officiel; source à la même empreinte que le catalogue de projectiles contrôlé le 24/11.",
+          "sha256": "595fa1e92f868529e128a9be99fd0bf0c7da41fc9e96703a2089f08d68c8c5ed",
+          "byte_size": 102679,
+          "checked_on": "2026-11-27",
+          "role": "state_identity_contract",
+          "provided_to_generation_as": "Textual constraints and source hash, not as a reference image.",
+          "evidence_scope": "AE_VORTIGAUNT_ZAP_SHOOT appelle ZapBeam(HAND_LEFT/HAND_RIGHT); les ressources vortigaunt_beam, vortigaunt_beam_charge et les événements de soin sont distincts. Le code établit l’identité de l’état; il ne valide pas la palette ni les pixels.",
+          "relevant_symbols": [
+            "AE_VORTIGAUNT_ZAP_SHOOT",
+            "ZapBeam",
+            "vortigaunt_beam",
+            "vortigaunt_beam_charge",
+            "AE_VORTIGAUNT_HEAL_STARTGLOW"
+          ]
+        }
+      ],
+      "reference_scope": "Un instant du faisceau offensif émis par le Vortigaunt de droite dans la défense souterraine d’Episode Two. Exclut charge, halo des mains, flash terminal, soin, extraction de larve et variante Half-Life 2 de base.",
+      "prompt": "Use case: stylized-concept.\nAsset type: one transparent-background 2D game VFX raster candidate for Half-Life Resonance; a single static offensive beam state, not an animation or sprite sheet.\nPrimary request: Create a faithful reference-guided new rendition of ONLY the narrow white / pale green offensive Vortigaunt beam visible in the supplied Half-Life 2: Episode Two retail gameplay screenshot. This is a fresh candidate based on a low-resolution screenshot, not a pixel-exact extraction or a claim of 1:1 certification.\nInput image 1 is a reference image, not an edit target. Locate the crouched Vortigaunt at the foreground RIGHT of the screenshot. Its hands are extended towards the LEFT. The desired beam is the short luminous connection from those hands up and left towards the yellow-green flash above the table. The OTHER Vortigaunt at the LEFT is healing Alyx; absolutely exclude that separate healing effect.\nSubject: isolate the beam segment itself only, with the close slender near-white filaments and restrained pale green luminous fringe seen in the reference. Preserve its gently irregular, slightly branching path and its direction from lower right towards upper left. Do not invent large lightning forks, ornamental curls, an energy sphere, projectile body, or additional phases.\nComposition: one beam segment, comfortably centered in a landscape frame with generous fully transparent margins on all sides. Keep the slight upward-left slope from the source image. Both endpoints are plain narrow cutoffs of the ray: no hand or charge glow at the right endpoint, and no explosion or impact flash at the left endpoint.\nColor and rendering: luminous near-white core with a narrow pale desaturated green fringe. The visible reference beam guides proportions and palette; preserve a restrained game-effect appearance without introducing a broad cloud or neon-green tube.\nPrimary code contract (Valve Source SDK 2013, npc_vortigaunt_episodic.cpp, SHA256 595fa1e92f868529e128a9be99fd0bf0c7da41fc9e96703a2089f08d68c8c5ed): AE_VORTIGAUNT_ZAP_SHOOT calls ZapBeam for a hand; vortigaunt_beam is separate from vortigaunt_beam_charge and from healing. This code constrains the state identity only and does not substitute for the screenshot's pixels.\nConstraints: ONLY the offensive beam state. No Vortigaunt, hands, people, monsters, body parts, table, cave, environment, gun, crowbar, UI, HUD, text, labels, watermark, panels, comparison layout, arrows, cast shadow, ground or backdrop. No yellow terminal flash, yellow particles, green blood, healing effect, hand aura, muzzle flash or separate impact. No decorative sparks outside the beam. Genuine transparent alpha everywhere except the beam and its very narrow luminous fringe. Do not paint a checkerboard background.",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_vortigaunt_zap_episodic_beam_o.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_vortigaunt_zap_episodic_beam_o.png",
+      "local_generated_source_path": "/workspace/scratch/892354ae3802/generated_images/exec-98b88b37-6a2c-4232-a117-08f9183e4eaa.png",
+      "width": 1774,
+      "height": 887,
+      "color_mode": "RGBA",
+      "byte_size": 237235,
+      "sha256": "045d699893a3c0b8eaa12b27de3010115f4b360a9ea1c38d33ce8aa75b686a5c",
+      "local_git_blob_sha": "d73f5d0b371fe2d7b07f9ec982e0afc6ee568c2b",
+      "original_png_bytes_preserved": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "save_method": "Copie binaire du PNG built-in vers le dépôt; octets et SHA comparés. Aucun recadrage, nettoyage alpha, redimensionnement ou réencodage.",
+      "transparent_background_requested": true,
+      "transparent_background": true,
+      "reference_bitmap_loaded": true,
+      "source_partial_register": "docs/resonance/production/continuation_20261127_o/vortigaunt_beam_generation.json",
+      "visual_qa": {
+        "inspected": true,
+        "compared_against_reference_bitmap": true,
+        "single_subject": true,
+        "alpha_channel_present": true,
+        "alpha_zero_pixels": 1472018,
+        "alpha_fully_opaque_pixels": 0,
+        "alpha_partial_pixels": 101520,
+        "alpha_nonzero_bbox": [
+          33,
+          69,
+          1738,
+          863
+        ],
+        "alpha_threshold_bbox": {
+          "1": [
+            33,
+            69,
+            1738,
+            863
+          ],
+          "2": [
+            245,
+            305,
+            1470,
+            615
+          ],
+          "8": [
+            249,
+            309,
+            1466,
+            611
+          ],
+          "16": [
+            251,
+            312,
+            1463,
+            609
+          ],
+          "32": [
+            253,
+            315,
+            1461,
+            606
+          ],
+          "64": [
+            255,
+            319,
+            1458,
+            601
+          ],
+          "128": [
+            259,
+            322,
+            1455,
+            596
+          ],
+          "192": [
+            265,
+            323,
+            1452,
+            595
+          ]
+        },
+        "alpha_1_to_7_pixels": 34664,
+        "alpha_max": 253,
+        "edge_alpha_nonzero": 0,
+        "edge_alpha_max": 0,
+        "composited_on_light_and_dark": true,
+        "diagnostic_composites_are_not_deliverable_edits": true,
+        "backgrounds": [
+          "#181c1e",
+          "#f2f2f2"
+        ],
+        "diagnostic_composite_paths": [
+          "/workspace/scratch/892354ae3802/continuation_o_phase_refs/vort_beam_o_QA_dark.png",
+          "/workspace/scratch/892354ae3802/continuation_o_phase_refs/vort_beam_o_QA_light.png"
+        ],
+        "notes": "Un seul segment oblique blanc à frange vert pâle, avec deux filaments proches par endroits. Aucun personnage, main, décor, soin, texte, orbe ou flash jaune terminal observé. Lisible sur fonds sombre et clair. La forme est reconstruite et plus propre que les 320×240 de la capture. Les bornes et le halo ne sont pas une extraction pixel par pixel. Les bords du canevas ont alpha=0; de faibles résidus alpha=1 existent loin du corps utile (bbox alpha>=2: [245,305,1470,615]). Original conservé sans nettoyage."
+      },
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "target_completed": false,
+      "remaining_required_visual_states": [
+        "charge",
+        "impact"
+      ],
+      "limits": [
+        "Première image candidate de cette famille au checkpoint 4ae2ee9, pas une famille achevée.",
+        "Capture source secondaire 320×240 et réglages exacts du retail non certifiés; fidélité absolue non attestée.",
+        "Rayon reconstruit par génération; aucun pixel de la capture n’est prétendu extrait 1:1.",
+        "Charge non observée; impact terminal composite et non isolé: ces deux états restent reportés.",
+        "Aucune animation, timing, hitbox, blend shader ou intégration moteur créée.",
+        "Faibles résidus alpha conservés à l’identique; contrôle moteur ultérieur encore nécessaire."
+      ]
+    }
+  ],
+  "deferred_states": [
+    {
+      "target_id": "fx_vortigaunt_zap_hl2",
+      "visual_state_id": "charge",
+      "status": "deferred_without_generation",
+      "reason": "Aucune capture de charge offensive distincte inspectée."
+    },
+    {
+      "target_id": "fx_vortigaunt_zap_hl2",
+      "visual_state_id": "impact",
+      "status": "deferred_without_generation",
+      "reason": "Le flash terminal de la capture est superposé au combat et au soin voisin; il ne valide pas un impact isolé."
+    }
+  ],
+  "verification": {
+    "file_exists": true,
+    "png_decoded": true,
+    "byte_exact_copy": true,
+    "sha256_verified": true,
+    "alpha_review": true,
+    "light_and_dark_visual_review": true,
+    "primary_sdk_hash_matches_catalogue": true,
+    "global_registers_modified": false
+  },
+  "research_evidence": {
+    "audit_file": "/workspace/scratch/892354ae3802/continuation_o_audit.json",
+    "phase_review_file": "/workspace/scratch/892354ae3802/continuation_o_phase_refs/phase_reference_review.json"
+  }
+}

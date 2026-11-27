@@ -1,0 +1,1252 @@
+{
+  "schema_version": 1,
+  "batch_id": "continuation_20261125_l",
+  "created_at": "2026-11-25T06:56:09Z",
+  "base_pr_head": "8bf790147fad9a7af987526759fe165195a40455",
+  "scope": "Four previously deferred archival targets: one candidate image each. Documentary/source correspondence improved; no fidelity certification, archive gate completion, animation or runtime integration.",
+  "counts": {
+    "assigned_targets": 4,
+    "assessed_targets": 4,
+    "generated_png": 4,
+    "targets_with_new_png": 4,
+    "actual_generation_calls": 4,
+    "tool_invocation_count": 4,
+    "confirmed_refusals": 0,
+    "parameter_validation_errors": 0,
+    "deferred_targets": 0,
+    "candidate_stage_masters": 2,
+    "candidate_actor_poses": 1,
+    "candidate_effect_frames": 1,
+    "certified_one_to_one": 0,
+    "completed_animation_clips": 0,
+    "completed_six_layer_stages": 0,
+    "runtime_assets_added": 0,
+    "material_transparency_reproduction_complete": 0,
+    "total_png_bytes": 7016419
+  },
+  "assets": [
+    {
+      "asset_id": "archive_air_exchange_hl2_concept_rtb2004_master_l",
+      "target_id": "archive_air_exchange_hl2",
+      "name_fr": "Air Exchange — concept du réacteur, publication Raising the Bar 2004",
+      "source_game": "Half-Life 2 — développement",
+      "category": "stage_master",
+      "owner_type": "support_character",
+      "owner_id": "archive_air_exchange_hl2",
+      "asset_kind": "stage_master",
+      "content_class": "documented_cut_content",
+      "reference_paths": [
+        "/workspace/scratch/d4619ad792f3/resonance-k-work/stages/refs/Airex_reactor.jpg"
+      ],
+      "prompt": "Use case: stylized-concept.\nAsset type: one opaque panoramic 2D fighting-background candidate, archival concept adaptation, not an animation or separated parallax layers.\nPrimary request: Translate ONLY the supplied Viktor Antonov Air Exchange reactor concept reproduced as Airex_reactor.jpg from Half-Life 2: Raising the Bar, publication version 2004, into a detailed wide side-view game background. The creation date and hidden geometry of the original concept remain unknown. Do not merge the 2002 development maps, leaked builds, fan recreations, or retail Citadel into this design.\nReference image role: the supplied single archival concept is the sole architecture, material, lighting and palette reference.\nComposition: a wide continuous panorama, approximately 16:9, side-on readable for a 2D fight. Keep the massive tall rust-brown cylindrical reactor rising in the center-right, its broad tapering buttresses and sloped support legs, dense low blocky dark industrial buildings behind it, and tiny sparse cyan-green window lights. Preserve the murky brown and charcoal atmosphere, ochre glow through heavy polluted clouds at the far left, and the dominant looming silhouette. Preserve the isolated single concept's design and do not introduce additional major towers or invented machinery.\nThe lower fifth is a continuous simple industrial stone/concrete floor crossing the full width at one level, with the walkable baseline at about 79 percent image height. This modest level strip is the explicit functional 2D adaptation, not a claim that the source depicts a playable map. Keep large structures behind the fight plane; no fence across the foreground, no jumping platforms, no stair steps, no gaps. Retain the dark archival mood while making large shapes legible.\nStyle: detailed hand-painted game background, crisp structural silhouette, restrained material textures faithful to the limited source rather than adding ornate fantasy detail.\nNo people, enemies, vehicles, weapons, HUD, words, captions, logos, watermarks, borders, comparison panels or contact sheet. Deliver one complete original opaque panorama.",
+      "source_version": "Airex_reactor.jpg, concept attribué à Viktor Antonov et publié dans Half-Life 2: Raising the Bar (2004); date de création inconnue",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_l/archives/archive_air_exchange_hl2_concept_rtb2004_master_l.png",
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/File:Airex_reactor.jpg",
+        "https://combineoverwiki.net/images/6/6a/Airex_reactor.jpg",
+        "https://www.half-life.com/en/halflife2/20th"
+      ],
+      "reference_scope": "Single whole concept image; 2004 is publication date supported by Valve, not asserted drawing date. Wiki points to p.174 for Air Exchange generally; actual printed page not inspected. Native concept file provenance remains secondary-hosted. Level floor is an original 2D adaptation.",
+      "width": 1672,
+      "height": 941,
+      "color_mode": "RGB",
+      "byte_size": 1871736,
+      "sha256": "1e50bd7c4fe8c86c8877a119a4e2b63361abb310afca24bfea2220deeddf0905",
+      "git_blob_sha": "b5dc72983114ea0df72b7e25698ff0189357ce20",
+      "generator_original_path": "/workspace/scratch/d4619ad792f3/generated_images/exec-cc1f7984-bf81-429f-9c78-780b0524d84f.png",
+      "copy_identical_to_generator": true,
+      "visual_qa": {
+        "reviewed": true,
+        "observations": "Un panorama opaque : réacteur cylindrique dominant, contreforts, bâtiments bas sombres, petites lumières cyan et ciel ocre à gauche. Aucun personnage, HUD ou texte. Sol continu, mais sa ligne supérieure se situe vers 85,7 % de la hauteur, plus bas que les 79 % demandés. Le rendu accentue la lumière orange, la netteté des plaques et certains volumes; le sol en dalles est une adaptation explicitement ajoutée. Silhouette globale lisible, pas de fidélité 1:1 ni de géométrie jouable validée.",
+        "walkable_baseline_y_estimate": 806,
+        "walkable_baseline_normalized_estimate": 0.8565,
+        "limitations": [
+          "Date de création du concept inconnue; 2004 désigne sa publication.",
+          "Page imprimée exacte non inspectée; p.174 est une piste secondaire sur Air Exchange.",
+          "Vue en perspective source réinterprétée pour combat 2D; surfaces cachées et floor ajoutés non canoniques.",
+          "Maître unique sans couches séparées ni intégration."
+        ]
+      },
+      "target_category": "archive",
+      "target_ids": [
+        "archive_air_exchange_hl2"
+      ],
+      "catalogue": "catalogue_extension_20261120.targets",
+      "batch_id": "continuation_20261125_l",
+      "created_at": "2026-11-25T06:56:09Z",
+      "generator": "image_gen.imagegen",
+      "generation_mode": "built_in_one_asset_per_call",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "selected_for_next_review": true,
+      "new_generation_call": true,
+      "generation_call_count": 1,
+      "tool_invocation_count": 1,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "target_completed": false,
+      "material_transparency_reproduction_complete": false,
+      "original_png_bytes_preserved": true,
+      "original_bytes_preserved": true,
+      "pixel_modification_after_generation": false,
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "source_reference_not_edit_target",
+      "github_blob_sha": "b5dc72983114ea0df72b7e25698ff0189357ce20",
+      "local_git_blob_sha": "b5dc72983114ea0df72b7e25698ff0189357ce20",
+      "github_blob_sha_verified_before_local_copy": true,
+      "save_method": "Original built-in image data stored immediately in functions store; uploaded unchanged as GitHub base64 blob; local Git object SHA verified against remote result before byte-identical repository copy.",
+      "file_path": "assets/resonance/candidates/continuation_20261125_l/archives/archive_air_exchange_hl2_concept_rtb2004_master_l.png",
+      "local_path": "/workspace/scratch/d4619ad792f3/resonance-k/assets/resonance/candidates/continuation_20261125_l/archives/archive_air_exchange_hl2_concept_rtb2004_master_l.png",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_l/archive_generation.json",
+      "bit_depth": 8,
+      "png_color_type": 2,
+      "has_alpha": false,
+      "transparent_background": false,
+      "transparent_background_requested": false,
+      "source_references": [
+        {
+          "id": "airex_reactor_rtb2004",
+          "url": "https://combineoverwiki.net/images/6/6a/Airex_reactor.jpg",
+          "source_url": "https://combineoverwiki.net/images/6/6a/Airex_reactor.jpg",
+          "kind": "secondary_hosted_concept_image",
+          "reference_role": "Single complete Air Exchange reactor concept. Publication version fixed to Raising the Bar 2004, not a development-map screenshot.",
+          "local_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/stages/refs/Airex_reactor.jpg",
+          "byte_size": 571748,
+          "sha256": "415fdc27851be730308368bb583a369ffb3a7da8bdbfbc053ccafaa17f190cf3",
+          "visually_inspected": true,
+          "width": 800,
+          "height": 517,
+          "color_mode": "RGB",
+          "source_page": "https://combineoverwiki.net/wiki/File:Airex_reactor.jpg",
+          "attribution": "Viktor Antonov, as recorded on the image page",
+          "publication_year": 2004,
+          "creation_date": null,
+          "printed_page_directly_inspected": false,
+          "printed_page_note": "Air Exchange article cites p.174 generally; exact placement of this illustration not directly checked.",
+          "reused_from_batch": "continuation_20261125_k"
+        },
+        {
+          "id": "airex_reactor_metadata",
+          "url": "https://combineoverwiki.net/wiki/File:Airex_reactor.jpg",
+          "source_url": "https://combineoverwiki.net/wiki/File:Airex_reactor.jpg",
+          "kind": "secondary_image_metadata",
+          "reference_role": "Attribution to Viktor Antonov and Raising the Bar; retained K page snapshot.",
+          "local_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/stages/refs/Airex_reactor.jpg.html",
+          "byte_size": 29281,
+          "sha256": "19fc6c4a00b05996dd140995ceabecfa3267736e7392a89f87f8dd65af3d0a32",
+          "visually_inspected": false
+        },
+        {
+          "id": "valve_hl2_20th",
+          "url": "https://www.half-life.com/en/halflife2/20th",
+          "source_url": "https://www.half-life.com/en/halflife2/20th",
+          "kind": "primary_official_page",
+          "reference_role": "Identifies documentary and original Raising the Bar publication in 2004; does not date creation of the Air Exchange drawing.",
+          "local_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/valve_hl2_20th.html",
+          "byte_size": 72187,
+          "sha256": "2f07034cac9355c94adebd1636fdf9bfb95a56da32994c3a025b314854eb674e",
+          "visually_inspected": false
+        }
+      ],
+      "alpha": {
+        "present": false,
+        "opaque": true
+      },
+      "notes": "Un panorama opaque : réacteur cylindrique dominant, contreforts, bâtiments bas sombres, petites lumières cyan et ciel ocre à gauche. Aucun personnage, HUD ou texte. Sol continu, mais sa ligne supérieure se situe vers 85,7 % de la hauteur, plus bas que les 79 % demandés. Le rendu accentue la lumière orange, la netteté des plaques et certains volumes; le sol en dalles est une adaptation explicitement ajoutée. Silhouette globale lisible, pas de fidélité 1:1 ni de géométrie jouable validée.",
+      "fidelity_limitations": [
+        "Date de création du concept inconnue; 2004 désigne sa publication.",
+        "Page imprimée exacte non inspectée; p.174 est une piste secondaire sur Air Exchange.",
+        "Vue en perspective source réinterprétée pour combat 2D; surfaces cachées et floor ajoutés non canoniques.",
+        "Maître unique sans couches séparées ni intégration."
+      ]
+    },
+    {
+      "asset_id": "archive_arctic_ep3_concept05_master_l",
+      "target_id": "archive_arctic_ep3",
+      "name_fr": "Arctique Episode Three — concept navire et glacier",
+      "source_game": "Half-Life 2: Episode Three — prototype",
+      "asset_kind": "stage_master",
+      "reference_paths": [
+        "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/HL2Doc_Ep3_Concept05.jpg"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=YCjNT9qGjh4&t=6800s",
+        "https://combineoverwiki.net/wiki/File:HL2Doc_Ep3_Concept05.jpg",
+        "https://combineoverwiki.net/images/4/46/HL2Doc_Ep3_Concept05.jpg"
+      ],
+      "source_version": "One concept shown in the official Valve documentary; official storyboard sample 6800 s (10 s sampling, not exact start or extraction time); full concept image HL2Doc_Ep3_Concept05.jpg. The signature is visible; wiki transcribes GBabbar 08.17.05 and attributes Gautam Babbar, separated as secondary metadata.",
+      "reference_scope": "Full displayed concept crop 2669x1674 compared to official sample tile at 6800 s. No full motion reviewed, no exact frame extraction time established. This is a concept illustration, not a playable map.",
+      "prompt": "Use case: stylized-concept.\nAsset type: one opaque wide 2D fighting-background archival candidate.\nPrimary request: Repaint ONLY the supplied single Episode Three concept of the stranded dark ship against immense blue ice, identified as HL2Doc_Ep3_Concept05.jpg and shown in Valve's Half-Life 2 20th Anniversary Documentary near the 1:53:20 storyboard sample. This is an archival concept adaptation, not the final appearance of Half-Life 3 and not a screenshot of a released map. Do not merge any other Arctic illustration, the 2002 Borealis design, or the Ice Gun grey test rooms.\nReference role: the supplied full concept is the sole environment and architectural reference.\nPreserve the composition's defining forms: a huge dark maroon-grey ship hull rising diagonally from the lower-left middle toward the upper right, wedged into a towering sculpted blue glacier on the right; an intricate but restrained multi-level ship superstructure on the left-middle; thin long rigging cables; tall narrow dark technological uprights near the middle. Retain the blue-white icy canyon fading into bright mist at far left, large glazed ice curtains draped against the hull, and muted cold light. Preserve the overall direction and relative balance of the single concept, without adding new major buildings or vessels.\nAdapt into an approximately 16:9 panorama with side-on readability. Place a simple continuous snow-and-ice foreground ledge across the full width, flat at one height, with its upper walkable line near 79 percent image height and clear room for a 2D fight. Keep ship and glacier behind that plane. This flat foreground strip and the adjustment to the side view are original layout adaptations; do not depict a confirmed playable map. No foreground barrier, gaps, stair steps or jump platforms. Maintain the mass and mood of the concept instead of over-inventing hidden geometry.\nDetailed hand-painted game environment with readable large forms, restrained texture, cold indigo/cyan/white palette. No characters, enemies, weapons, HUD, names, logos, captions, reproduced artist signature, watermark, border, panels or labels. One finished original opaque image, not separated layers.",
+      "category": "stage_master",
+      "owner_type": "support_character",
+      "owner_id": "archive_arctic_ep3",
+      "content_class": "documented_cut_content",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_l/archives/archive_arctic_ep3_concept05_master_l.png",
+      "width": 1672,
+      "height": 941,
+      "color_mode": "RGB",
+      "byte_size": 2148810,
+      "sha256": "35569d7003047fb9a83df9e632b4ed367fda650e2e57fd95d51d50129667aa4c",
+      "git_blob_sha": "4dfab80a02b02ac5d24ab2c3f4cd8998a1d9d0cd",
+      "generator_original_path": "/workspace/scratch/d4619ad792f3/generated_images/exec-fc079ee1-18db-4090-befd-4437fad95695.png",
+      "copy_identical_to_generator": true,
+      "alpha": {
+        "present": false,
+        "opaque": true
+      },
+      "target_category": "archive",
+      "target_ids": [
+        "archive_arctic_ep3"
+      ],
+      "catalogue": "catalogue_extension_20261120.targets",
+      "batch_id": "continuation_20261125_l",
+      "created_at": "2026-11-25T06:56:09Z",
+      "generator": "image_gen.imagegen",
+      "generation_mode": "built_in_one_asset_per_call",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "selected_for_next_review": true,
+      "new_generation_call": true,
+      "generation_call_count": 1,
+      "tool_invocation_count": 1,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "target_completed": false,
+      "material_transparency_reproduction_complete": false,
+      "original_png_bytes_preserved": true,
+      "original_bytes_preserved": true,
+      "pixel_modification_after_generation": false,
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "source_reference_not_edit_target",
+      "github_blob_sha": "4dfab80a02b02ac5d24ab2c3f4cd8998a1d9d0cd",
+      "local_git_blob_sha": "4dfab80a02b02ac5d24ab2c3f4cd8998a1d9d0cd",
+      "github_blob_sha_verified_before_local_copy": true,
+      "save_method": "Original built-in image data stored immediately in functions store; uploaded unchanged as GitHub base64 blob; local Git object SHA verified against remote result before byte-identical repository copy.",
+      "file_path": "assets/resonance/candidates/continuation_20261125_l/archives/archive_arctic_ep3_concept05_master_l.png",
+      "local_path": "/workspace/scratch/d4619ad792f3/resonance-k/assets/resonance/candidates/continuation_20261125_l/archives/archive_arctic_ep3_concept05_master_l.png",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_l/archive_generation.json",
+      "bit_depth": 8,
+      "png_color_type": 2,
+      "has_alpha": false,
+      "transparent_background": false,
+      "transparent_background_requested": false,
+      "source_references": [
+        {
+          "id": "arctic_concept05",
+          "url": "https://combineoverwiki.net/images/4/46/HL2Doc_Ep3_Concept05.jpg",
+          "source_url": "https://combineoverwiki.net/images/4/46/HL2Doc_Ep3_Concept05.jpg",
+          "kind": "secondary_hosted_concept_image",
+          "reference_role": "Entire visible concept crop, matched to official storyboard sample 6800 s; not the whole encoded documentary frame.",
+          "local_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/HL2Doc_Ep3_Concept05.jpg",
+          "byte_size": 857509,
+          "sha256": "ce3be1d021d4613276952561fe30a0939e3a543b5b6172a09ffc779e13e42517",
+          "visually_inspected": true,
+          "width": 2669,
+          "height": 1674,
+          "color_mode": "RGB",
+          "source_page": "https://combineoverwiki.net/wiki/File:HL2Doc_Ep3_Concept05.jpg",
+          "concept_signature_visible": true,
+          "secondary_signature_transcription": "GBabbar 08.17.05",
+          "secondary_author_attribution": "Gautam Babbar",
+          "secondary_page_revision": 477708,
+          "whole_documentary_frame": false,
+          "full_concept_content_visible": true,
+          "primary_original_bytes_verified": false,
+          "exact_frame_extraction_time_verified": false,
+          "storyboard_sample_seconds": 6800,
+          "storyboard_sample_precision_seconds": 10,
+          "scene_context_window_seconds": [
+            6790,
+            6810
+          ]
+        },
+        {
+          "id": "arctic_concept05_metadata",
+          "url": "https://combineoverwiki.net/wiki/File:HL2Doc_Ep3_Concept05.jpg",
+          "source_url": "https://combineoverwiki.net/wiki/File:HL2Doc_Ep3_Concept05.jpg",
+          "kind": "secondary_image_metadata",
+          "reference_role": "Source documentary, author attribution and signature transcription; obtained by ordinary public HTTP 200.",
+          "local_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/arctic_concept05_page.html",
+          "byte_size": 30205,
+          "sha256": "283b4f4fc0064f90493cd2ff3eda26b26351ba2b7baa196a21c75d1b049b8566",
+          "visually_inspected": false
+        },
+        {
+          "id": "official_storyboard_75",
+          "url": "https://i.ytimg.com/sb/YCjNT9qGjh4/storyboard3_L3/M75.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCJLb3rkG&sigh=rs$AOn4CLA_Lh59Vw_RYGWmTop34CZjIuiEJg",
+          "source_url": "https://i.ytimg.com/sb/YCjNT9qGjh4/storyboard3_L3/M75.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCJLb3rkG&sigh=rs$AOn4CLA_Lh59Vw_RYGWmTop34CZjIuiEJg",
+          "kind": "primary_official_storyboard",
+          "reference_role": "Visual scene correspondence and 10-second navigation samples only.",
+          "local_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/YCjNT9qGjh4_storyboard_75.jpg",
+          "byte_size": 51380,
+          "sha256": "c409169b14a125eed5758045a52e53ecc426ea5918a8508dcea5091ce8956005",
+          "visually_inspected": true,
+          "width": 960,
+          "height": 540,
+          "color_mode": "RGB",
+          "sheet_number": 75,
+          "grid": [
+            3,
+            3
+          ],
+          "tile_pixels": [
+            320,
+            180
+          ],
+          "sampling_interval_seconds": 10,
+          "same_sha256_as_20261120_contract": true,
+          "exact_frame_extraction_time_verified": false
+        },
+        {
+          "id": "official_documentary_player",
+          "url": "https://www.youtube.com/watch?v=YCjNT9qGjh4",
+          "source_url": "https://www.youtube.com/watch?v=YCjNT9qGjh4",
+          "kind": "primary_official_player_metadata",
+          "reference_role": "Fresh public player response: playability OK, title/channel/length and storyboard grid; not a full video playback.",
+          "local_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/YCjNT9qGjh4_player.json",
+          "byte_size": 68197,
+          "sha256": "ee1ce7d9ed4d9b66d90ff72e49589a9b210603b52c11c5a82ae572734f84d9ef",
+          "visually_inspected": false,
+          "video_details": {
+            "videoId": "YCjNT9qGjh4",
+            "title": "Half-Life 2: 20th Anniversary Documentary",
+            "author": "Valve",
+            "lengthSeconds": "7278"
+          }
+        },
+        {
+          "id": "valve_hl2_20th",
+          "url": "https://www.half-life.com/en/halflife2/20th",
+          "source_url": "https://www.half-life.com/en/halflife2/20th",
+          "kind": "primary_official_page",
+          "reference_role": "Identifies documentary and original Raising the Bar publication in 2004; does not date creation of the Air Exchange drawing.",
+          "local_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/valve_hl2_20th.html",
+          "byte_size": 72187,
+          "sha256": "2f07034cac9355c94adebd1636fdf9bfb95a56da32994c3a025b314854eb674e",
+          "visually_inspected": false
+        }
+      ],
+      "visual_qa": {
+        "reviewed": true,
+        "observations": "Navire sombre oblique, superstructure à gauche, parois de glace bleue à droite et montants verticaux conservés. Panorama opaque sans personnage, HUD ni signature. L’avant-plan est une bande de neige continue; sa ligne supérieure est vers 83,5 % de la hauteur, plus bas que les 79 % demandés. La perspective, les câbles, les détails de coque et la glace sont réinterprétés; le sol dégagé est une adaptation de composition.",
+        "walkable_baseline_y_estimate": 786,
+        "walkable_baseline_normalized_estimate": 0.8353,
+        "limitations": [
+          "Concept uniquement; pas une carte jouable ni une apparence finale HL3.",
+          "Échantillon documentaire à 6800 s, pas un timecode exact de la copie haute résolution.",
+          "Peinture complète visible dans la copie recadrée, mais cadre vidéo natif non extrait localement.",
+          "Date et auteur transcrits par le wiki séparés de l’observation visuelle de la signature.",
+          "Surfaces et sol adaptés; aucun plan de parallaxe séparé."
+        ]
+      },
+      "documentary_anchor": {
+        "video_url": "https://www.youtube.com/watch?v=YCjNT9qGjh4",
+        "sample_times_seconds": [
+          6800
+        ],
+        "sampling_interval_seconds": 10,
+        "exact_source_frame_timecode_verified": false,
+        "full_motion_reviewed": false,
+        "audio_or_transcript_reviewed": false,
+        "meaning": "Scene correspondence and approximate navigation window only; not a claim that the high-resolution copy was extracted at any listed second."
+      },
+      "notes": "Navire sombre oblique, superstructure à gauche, parois de glace bleue à droite et montants verticaux conservés. Panorama opaque sans personnage, HUD ni signature. L’avant-plan est une bande de neige continue; sa ligne supérieure est vers 83,5 % de la hauteur, plus bas que les 79 % demandés. La perspective, les câbles, les détails de coque et la glace sont réinterprétés; le sol dégagé est une adaptation de composition.",
+      "fidelity_limitations": [
+        "Concept uniquement; pas une carte jouable ni une apparence finale HL3.",
+        "Échantillon documentaire à 6800 s, pas un timecode exact de la copie haute résolution.",
+        "Peinture complète visible dans la copie recadrée, mais cadre vidéo natif non extrait localement.",
+        "Date et auteur transcrits par le wiki séparés de l’observation visuelle de la signature.",
+        "Surfaces et sol adaptés; aucun plan de parallaxe séparé."
+      ]
+    },
+    {
+      "asset_id": "archive_blob_ep3_envelope_pose_l",
+      "target_id": "archive_blob_ep3",
+      "name_fr": "Blob Episode Three — étude de volume translucide",
+      "source_game": "Half-Life 2: Episode Three — prototype",
+      "asset_kind": "sprite",
+      "reference_paths": [
+        "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_blob_ep3_grate.jpg",
+        "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_blob_ep3.jpg"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=YCjNT9qGjh4&t=6900s",
+        "https://combineoverwiki.net/wiki/File:BlobGratePass.jpg",
+        "https://combineoverwiki.net/images/1/16/BlobGratePass.jpg",
+        "https://combineoverwiki.net/wiki/File:BlobCinderNom.jpg",
+        "https://combineoverwiki.net/images/7/79/BlobCinderNom.jpg"
+      ],
+      "source_version": "Translucent Blob Tech Demo sequence shown by Valve, contextual sample interval 1:55:00–1:55:10 (6900–6910 s; official storyboards sampled every 10 s). Full wiki-hosted documentary captures compared visually; their exact extraction timestamps remain unknown.",
+      "reference_scope": "One translucent volume pose study, anchored by the full-body grate capture and near view of envelope/interior. Both show the same industrial demo setting, not SDK npc_blob/headcrab or Portal gels. No animation, grille passage or consumption sequence is validated.",
+      "prompt": "Use case: stylized-concept.\nAsset type: one isolated translucent archival creature sprite on a real transparent background.\nPrimary request: Create a single still 2D game-art study of the Blob volume from the Episode Three experimental footage in Valve's Half-Life 2 20th Anniversary Documentary, using ONLY the two supplied documentary frames. This is an archival candidate pose, not a certified official sprite or complete animation.\nReference roles: image 1 shows the complete rounded translucent envelope in the industrial grate scene; use its silhouette and material as the primary reference. Image 2 is a nearer view of the same demonstrated creature, used only for the limited visible dark/red interior and warm translucent skin. Do not copy any background object through the body.\nOne whole solitary near-round irregular ovoid gelatinous volume, resting with a softly compressed lower curve, almost spherical but subtly sagging. Silhouette large and completely contained with generous transparent margins, camera approximately level with its middle for side-view readability. Preserve a clear amber-beige translucent envelope with subtle cool tones and small soft wet highlights, not an opaque stone or shiny hard glass sphere. Through the body show only the subdued dark and muted reddish diffuse internal shapes and fine branching structures visible in the reference. Keep uncertain internal detail indistinct; do not invent anatomy, a mouth, face, eyes, teeth, organs or expressive features. Preserve gentle irregularity of the envelope, no rigid segmentation, no limbs or extra tentacles outside it.\nUse a genuine alpha channel: the body itself must remain partly transparent while visible inner shapes and rim highlights provide readability on both black and white. Background fully transparent, not a checkerboard painting. Do not retain any floor, grating, planks, barrels, held weapon, reticle, yellow HUD or text from the references. No shadow rectangle or decorative glow. No Headcrab, Snark, humanoid, Portal gel or SDK test-model substitution. No other objects, labels, captions, watermark, frames, multiple poses or animation sheet.",
+      "category": "archive_character_key_pose",
+      "owner_type": "support_character",
+      "owner_id": "archive_blob_ep3",
+      "content_class": "documented_cut_content",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_l/archives/archive_blob_ep3_envelope_pose_l.png",
+      "width": 1448,
+      "height": 1086,
+      "color_mode": "RGBA",
+      "byte_size": 1443047,
+      "sha256": "ff9a0c4196b43cd69ea6edfa3a2a6ecee5ce41bdd93fde42f4bc4a9b84b9bd2c",
+      "git_blob_sha": "9ae04b4e005891a7323652b4fa552e5ddfed907b",
+      "generator_original_path": "/workspace/scratch/d4619ad792f3/generated_images/exec-0c4183b0-bd14-4c6d-8fc4-315a3f7a408e.png",
+      "copy_identical_to_generator": true,
+      "alpha": {
+        "present": true,
+        "extrema": [
+          0,
+          255
+        ],
+        "nonzero_bbox": [
+          0,
+          19,
+          1434,
+          1086
+        ],
+        "pixels_transparent": 569264,
+        "pixels_partial": 1002413,
+        "pixels_opaque": 851,
+        "fraction_partial_total": 0.637453,
+        "center_alpha": 253,
+        "bbox_alpha_greater_8": [
+          107,
+          48,
+          1341,
+          1072
+        ],
+        "bbox_alpha_greater_128": [
+          108,
+          49,
+          1340,
+          1071
+        ],
+        "alpha_quantiles_body_gt8": {
+          "p10": 252,
+          "p50": 253,
+          "p90": 253
+        },
+        "mean_alpha_body_gt8": 251.763033,
+        "residue_pixels_alpha_1_to_8": 11254
+      },
+      "target_category": "archive",
+      "target_ids": [
+        "archive_blob_ep3"
+      ],
+      "catalogue": "catalogue_extension_20261120.targets",
+      "batch_id": "continuation_20261125_l",
+      "created_at": "2026-11-25T06:56:09Z",
+      "generator": "image_gen.imagegen",
+      "generation_mode": "built_in_one_asset_per_call",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "selected_for_next_review": true,
+      "new_generation_call": true,
+      "generation_call_count": 1,
+      "tool_invocation_count": 1,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "target_completed": false,
+      "material_transparency_reproduction_complete": false,
+      "original_png_bytes_preserved": true,
+      "original_bytes_preserved": true,
+      "pixel_modification_after_generation": false,
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "source_reference_not_edit_target",
+      "github_blob_sha": "9ae04b4e005891a7323652b4fa552e5ddfed907b",
+      "local_git_blob_sha": "9ae04b4e005891a7323652b4fa552e5ddfed907b",
+      "github_blob_sha_verified_before_local_copy": true,
+      "save_method": "Original built-in image data stored immediately in functions store; uploaded unchanged as GitHub base64 blob; local Git object SHA verified against remote result before byte-identical repository copy.",
+      "file_path": "assets/resonance/candidates/continuation_20261125_l/archives/archive_blob_ep3_envelope_pose_l.png",
+      "local_path": "/workspace/scratch/d4619ad792f3/resonance-k/assets/resonance/candidates/continuation_20261125_l/archives/archive_blob_ep3_envelope_pose_l.png",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_l/archive_generation.json",
+      "bit_depth": 8,
+      "png_color_type": 6,
+      "has_alpha": true,
+      "transparent_background": true,
+      "transparent_background_requested": true,
+      "source_references": [
+        {
+          "id": "blob_grate_documentary_frame",
+          "url": "https://combineoverwiki.net/images/1/16/BlobGratePass.jpg",
+          "source_url": "https://combineoverwiki.net/images/1/16/BlobGratePass.jpg",
+          "kind": "secondary_hosted_documentary_frame",
+          "reference_role": "Full published 16:9 documentary-frame copy, source HUD retained in reference. Inspected against official storyboard scene; not an exact frame match.",
+          "local_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_blob_ep3_grate.jpg",
+          "byte_size": 958744,
+          "sha256": "847ad4a5848688323b31c02a7b70d0593c26c3e9b47116556f90015cd3a3c9c5",
+          "visually_inspected": true,
+          "width": 3840,
+          "height": 2160,
+          "color_mode": "RGB",
+          "source_page": "https://combineoverwiki.net/wiki/File:BlobGratePass.jpg",
+          "frame_correspondence": "same_demo_scene_not_exact_frame",
+          "exact_frame_extraction_time_verified": false,
+          "native_game_resolution_verified": false,
+          "primary_original_bytes_verified": false,
+          "reused_from_batch": "continuation_20261125_k"
+        },
+        {
+          "id": "blob_documentary_frame",
+          "url": "https://combineoverwiki.net/images/7/79/BlobCinderNom.jpg",
+          "source_url": "https://combineoverwiki.net/images/7/79/BlobCinderNom.jpg",
+          "kind": "secondary_hosted_documentary_frame",
+          "reference_role": "Full published 16:9 documentary-frame copy, source HUD retained in reference. Inspected against official storyboard scene; not an exact frame match.",
+          "local_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_blob_ep3.jpg",
+          "byte_size": 970400,
+          "sha256": "f1d3da5f71c39a0b08b75cca238124a3c6155afda660089661e31455e75b3fc8",
+          "visually_inspected": true,
+          "width": 3840,
+          "height": 2160,
+          "color_mode": "RGB",
+          "source_page": "https://combineoverwiki.net/wiki/File:BlobCinderNom.jpg",
+          "frame_correspondence": "same_demo_scene_not_exact_frame",
+          "exact_frame_extraction_time_verified": false,
+          "native_game_resolution_verified": false,
+          "primary_original_bytes_verified": false,
+          "reused_from_batch": "continuation_20261125_k"
+        },
+        {
+          "id": "blob_grate_documentary_frame_metadata",
+          "url": "https://combineoverwiki.net/wiki/File:BlobGratePass.jpg",
+          "source_url": "https://combineoverwiki.net/wiki/File:BlobGratePass.jpg",
+          "kind": "secondary_image_metadata",
+          "reference_role": "Image source metadata preserved from K; no exact extraction timestamp in page.",
+          "local_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_blob_ep3_grate_page.html",
+          "byte_size": 30620,
+          "sha256": "351d316a671bd535c92bd77fb02a9b7444e864effe5cd36fb4633ab80da896cc",
+          "visually_inspected": false
+        },
+        {
+          "id": "blob_documentary_frame_metadata",
+          "url": "https://combineoverwiki.net/wiki/File:BlobCinderNom.jpg",
+          "source_url": "https://combineoverwiki.net/wiki/File:BlobCinderNom.jpg",
+          "kind": "secondary_image_metadata",
+          "reference_role": "Image source metadata preserved from K; no exact extraction timestamp in page.",
+          "local_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_blob_ep3_page.html",
+          "byte_size": 30624,
+          "sha256": "5e9bd621791d388b00a03d4e0d7465e9a69500b2d68b40c7db1bccf42675da6d",
+          "visually_inspected": false
+        },
+        {
+          "id": "official_storyboard_76",
+          "url": "https://i.ytimg.com/sb/YCjNT9qGjh4/storyboard3_L3/M76.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCJLb3rkG&sigh=rs$AOn4CLA_Lh59Vw_RYGWmTop34CZjIuiEJg",
+          "source_url": "https://i.ytimg.com/sb/YCjNT9qGjh4/storyboard3_L3/M76.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCJLb3rkG&sigh=rs$AOn4CLA_Lh59Vw_RYGWmTop34CZjIuiEJg",
+          "kind": "primary_official_storyboard",
+          "reference_role": "Visual scene correspondence and 10-second navigation samples only.",
+          "local_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/YCjNT9qGjh4_storyboard_76.jpg",
+          "byte_size": 48884,
+          "sha256": "2fff2f65446579aa5f1841156a3cf91fd103fd1c8052456af4a475b715c012f3",
+          "visually_inspected": true,
+          "width": 960,
+          "height": 540,
+          "color_mode": "RGB",
+          "sheet_number": 76,
+          "grid": [
+            3,
+            3
+          ],
+          "tile_pixels": [
+            320,
+            180
+          ],
+          "sampling_interval_seconds": 10,
+          "same_sha256_as_20261120_contract": true,
+          "exact_frame_extraction_time_verified": false
+        },
+        {
+          "id": "official_documentary_player",
+          "url": "https://www.youtube.com/watch?v=YCjNT9qGjh4",
+          "source_url": "https://www.youtube.com/watch?v=YCjNT9qGjh4",
+          "kind": "primary_official_player_metadata",
+          "reference_role": "Fresh public player response: playability OK, title/channel/length and storyboard grid; not a full video playback.",
+          "local_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/YCjNT9qGjh4_player.json",
+          "byte_size": 68197,
+          "sha256": "ee1ce7d9ed4d9b66d90ff72e49589a9b210603b52c11c5a82ae572734f84d9ef",
+          "visually_inspected": false,
+          "video_details": {
+            "videoId": "YCjNT9qGjh4",
+            "title": "Half-Life 2: 20th Anniversary Documentary",
+            "author": "Valve",
+            "lengthSeconds": "7278"
+          }
+        }
+      ],
+      "visual_qa": {
+        "reviewed": true,
+        "observations": "Une masse arrondie ambrée, sans yeux, visage, membre ou accessoire; structures rouges et sombres diffuses à l’intérieur. Fond transparent confirmé et deux compositions inspectées. Le volume reste pratiquement opaque : alpha médian du corps 253/255 et alpha central 253, contre la translucidité démontrée par les cadres source. L’aspect translucide peint ne constitue pas une reproduction de la réfraction ou de la transparence. La base et les courbes sont réinterprétées; petite marge inférieure.",
+        "alpha_composite_review": {
+          "performed": true,
+          "backgrounds": [
+            "black",
+            "white"
+          ],
+          "conclusion": "Pas de rectangle opaque extérieur. Les fins résidus visibles dans l’aperçu RGB brut ne produisent pas de grand halo en composition. En revanche, le corps masque presque entièrement les fonds : limitation matérielle substantielle.",
+          "working_previews": [
+            "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/blob_black.jpg",
+            "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/blob_white.jpg"
+          ]
+        },
+        "limitations": [
+          "Transparence matérielle du prototype non reproduite; alpha médian 253/255.",
+          "11 254 pixels de résidus alpha 1 à 8, jusque près des limites du canevas; aucune retouche effectuée.",
+          "Vue opposée et détails internes cachés inconnus; courbes adaptées à une pose isolée.",
+          "Pas de preuve de déformation, division, absorption ou franchissement de grille en séquence."
+        ]
+      },
+      "documentary_anchor": {
+        "video_url": "https://www.youtube.com/watch?v=YCjNT9qGjh4",
+        "sample_times_seconds": [
+          6870,
+          6880,
+          6900,
+          6910
+        ],
+        "sampling_interval_seconds": 10,
+        "exact_source_frame_timecode_verified": false,
+        "full_motion_reviewed": false,
+        "audio_or_transcript_reviewed": false,
+        "meaning": "Scene correspondence and approximate navigation window only; not a claim that the high-resolution copy was extracted at any listed second."
+      },
+      "notes": "Une masse arrondie ambrée, sans yeux, visage, membre ou accessoire; structures rouges et sombres diffuses à l’intérieur. Fond transparent confirmé et deux compositions inspectées. Le volume reste pratiquement opaque : alpha médian du corps 253/255 et alpha central 253, contre la translucidité démontrée par les cadres source. L’aspect translucide peint ne constitue pas une reproduction de la réfraction ou de la transparence. La base et les courbes sont réinterprétées; petite marge inférieure.",
+      "fidelity_limitations": [
+        "Transparence matérielle du prototype non reproduite; alpha médian 253/255.",
+        "11 254 pixels de résidus alpha 1 à 8, jusque près des limites du canevas; aucune retouche effectuée.",
+        "Vue opposée et détails internes cachés inconnus; courbes adaptées à une pose isolée.",
+        "Pas de preuve de déformation, division, absorption ou franchissement de grille en séquence."
+      ]
+    },
+    {
+      "asset_id": "archive_icegun_ep3_ice_mass_l",
+      "target_id": "archive_icegun_ep3",
+      "name_fr": "Ice Gun Episode Three — masse de glace observée",
+      "source_game": "Half-Life 2: Episode Three — prototype",
+      "asset_kind": "projectile",
+      "visual_state_id": "ice_mass",
+      "reference_paths": [
+        "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_icegun_ep3.jpg",
+        "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_icegun_ep3_ramp.jpg"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=YCjNT9qGjh4&t=6820s",
+        "https://combineoverwiki.net/wiki/File:IceGunInAction.jpg",
+        "https://combineoverwiki.net/images/c/cd/IceGunInAction.jpg",
+        "https://combineoverwiki.net/wiki/File:IceGunRamp.jpg",
+        "https://combineoverwiki.net/images/b/ba/IceGunRamp.jpg"
+      ],
+      "source_version": "Grey Ice Gun test environment in Valve documentary, contextual official storyboard samples 6820–6850 s (1:53:40–1:54:10), sampled every 10 s. Full wiki captures have no verified exact extraction timestamp.",
+      "reference_scope": "One isolated irregular ice formation only. Native publication screenshot inspected, with source frame/HUD preserved in reference file. No final weapon body or attack mechanics inferred; no claim about growth, freezing, duration or collision.",
+      "prompt": "Use case: stylized-concept.\nAsset type: one isolated archival ice-effect sprite with a real transparent background.\nPrimary request: A single static irregular mass of pale translucent ice as shown in the supplied Episode Three Ice Gun experimental footage from Valve's Half-Life 2 20th Anniversary Documentary. Depict the observed ice formation only, not a weapon, a beam, a shot or an entire environment.\nReference roles: image 1 is the main source for the lumpy joined ice wall/ledge and frosted material. Image 2 provides a second close view of the same test effect's surface, to confirm its milky cyan transparency and irregular rounded contour. These are grey prototype test scenes; do not import the separate painted Arctic concept into this effect.\nCompose one compact connected uneven ice mass in a clear side view with a shallow view of its top, broad enough to read as a low obstacle, a visibly flat grounded lower edge, rising and sloping unevenly with soft fractured edges. Preserve pale icy blue translucent material with milky white frost patches, thin cracks and restrained wet glints. The silhouette should be made of joined rough rounded ice chunks as in the test, not a collection of tall pointed crystal needles, a magic shield or decorative fantasy gems. Keep the object fully in frame with generous transparent margins and no arbitrary platform or surrounding snow floor.\nThe output has real alpha outside the object and natural partial transparency within its clear parts. No solid white background and no painted checkerboard. Remove all context from the new sprite: no gun or hands, no laser, no smoke trail, no buildings, soldiers, stairs, railings, HUD, text, logos, watermark, panels or animation sheet. Do not invent an official final Ice Gun model. This is one archival still-effect study, with no animation, collision or game timing implied.",
+      "category": "archive_effect_key_frame",
+      "owner_type": "support_character",
+      "owner_id": "archive_icegun_ep3",
+      "content_class": "documented_cut_content",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_l/archives/archive_icegun_ep3_ice_mass_l.png",
+      "width": 1774,
+      "height": 887,
+      "color_mode": "RGBA",
+      "byte_size": 1552826,
+      "sha256": "d5d66f5bf085f98592668f6403f045ce66e485de26904ed5b36f804d5f46611a",
+      "git_blob_sha": "92fd1574c8f2ef7e41bfbc153fab4e990195c2fe",
+      "generator_original_path": "/workspace/scratch/d4619ad792f3/generated_images/exec-e1b21844-2fe6-4005-885a-7329d157820f.png",
+      "copy_identical_to_generator": true,
+      "alpha": {
+        "present": true,
+        "extrema": [
+          0,
+          255
+        ],
+        "nonzero_bbox": [
+          0,
+          0,
+          1760,
+          887
+        ],
+        "pixels_transparent": 651839,
+        "pixels_partial": 921372,
+        "pixels_opaque": 327,
+        "fraction_partial_total": 0.585542,
+        "center_alpha": 252,
+        "bbox_alpha_greater_8": [
+          35,
+          85,
+          1739,
+          804
+        ],
+        "bbox_alpha_greater_128": [
+          38,
+          86,
+          1738,
+          803
+        ],
+        "alpha_quantiles_body_gt8": {
+          "p10": 252,
+          "p50": 253,
+          "p90": 253
+        },
+        "mean_alpha_body_gt8": 251.134829,
+        "residue_pixels_alpha_1_to_8": 26096
+      },
+      "target_category": "archive",
+      "target_ids": [
+        "archive_icegun_ep3"
+      ],
+      "catalogue": "catalogue_extension_20261120.targets",
+      "batch_id": "continuation_20261125_l",
+      "created_at": "2026-11-25T06:56:09Z",
+      "generator": "image_gen.imagegen",
+      "generation_mode": "built_in_one_asset_per_call",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "selected_for_next_review": true,
+      "new_generation_call": true,
+      "generation_call_count": 1,
+      "tool_invocation_count": 1,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "target_completed": false,
+      "material_transparency_reproduction_complete": false,
+      "original_png_bytes_preserved": true,
+      "original_bytes_preserved": true,
+      "pixel_modification_after_generation": false,
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "source_reference_not_edit_target",
+      "github_blob_sha": "92fd1574c8f2ef7e41bfbc153fab4e990195c2fe",
+      "local_git_blob_sha": "92fd1574c8f2ef7e41bfbc153fab4e990195c2fe",
+      "github_blob_sha_verified_before_local_copy": true,
+      "save_method": "Original built-in image data stored immediately in functions store; uploaded unchanged as GitHub base64 blob; local Git object SHA verified against remote result before byte-identical repository copy.",
+      "file_path": "assets/resonance/candidates/continuation_20261125_l/archives/archive_icegun_ep3_ice_mass_l.png",
+      "local_path": "/workspace/scratch/d4619ad792f3/resonance-k/assets/resonance/candidates/continuation_20261125_l/archives/archive_icegun_ep3_ice_mass_l.png",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_l/archive_generation.json",
+      "bit_depth": 8,
+      "png_color_type": 6,
+      "has_alpha": true,
+      "transparent_background": true,
+      "transparent_background_requested": true,
+      "source_references": [
+        {
+          "id": "ice_documentary_frame",
+          "url": "https://combineoverwiki.net/images/c/cd/IceGunInAction.jpg",
+          "source_url": "https://combineoverwiki.net/images/c/cd/IceGunInAction.jpg",
+          "kind": "secondary_hosted_documentary_frame",
+          "reference_role": "Full published 16:9 documentary-frame copy, source HUD retained in reference. Inspected against official storyboard scene; not an exact frame match.",
+          "local_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_icegun_ep3.jpg",
+          "byte_size": 926378,
+          "sha256": "33497d19e7e1b17714598ff693c6bf972db36604f898f0c09aeb383c0f0cc5eb",
+          "visually_inspected": true,
+          "width": 3840,
+          "height": 2160,
+          "color_mode": "RGB",
+          "source_page": "https://combineoverwiki.net/wiki/File:IceGunInAction.jpg",
+          "frame_correspondence": "same_demo_scene_not_exact_frame",
+          "exact_frame_extraction_time_verified": false,
+          "native_game_resolution_verified": false,
+          "primary_original_bytes_verified": false,
+          "reused_from_batch": "continuation_20261125_k"
+        },
+        {
+          "id": "ice_ramp_documentary_frame",
+          "url": "https://combineoverwiki.net/images/b/ba/IceGunRamp.jpg",
+          "source_url": "https://combineoverwiki.net/images/b/ba/IceGunRamp.jpg",
+          "kind": "secondary_hosted_documentary_frame",
+          "reference_role": "Full published 16:9 documentary-frame copy, source HUD retained in reference. Inspected against official storyboard scene; not an exact frame match.",
+          "local_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_icegun_ep3_ramp.jpg",
+          "byte_size": 1012928,
+          "sha256": "45e2d7b8744b81e4a01a46e30617d5408edd4fe44d571b56f727f3e496a107e5",
+          "visually_inspected": true,
+          "width": 3840,
+          "height": 2160,
+          "color_mode": "RGB",
+          "source_page": "https://combineoverwiki.net/wiki/File:IceGunRamp.jpg",
+          "frame_correspondence": "same_demo_scene_not_exact_frame",
+          "exact_frame_extraction_time_verified": false,
+          "native_game_resolution_verified": false,
+          "primary_original_bytes_verified": false,
+          "reused_from_batch": "continuation_20261125_k"
+        },
+        {
+          "id": "ice_documentary_frame_metadata",
+          "url": "https://combineoverwiki.net/wiki/File:IceGunInAction.jpg",
+          "source_url": "https://combineoverwiki.net/wiki/File:IceGunInAction.jpg",
+          "kind": "secondary_image_metadata",
+          "reference_role": "Image source metadata preserved from K; no exact extraction timestamp in page.",
+          "local_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_icegun_ep3_page.html",
+          "byte_size": 29792,
+          "sha256": "2d1e560e199d0f19fdca033eed4b38913e2f84d1a8298e91c7d6446f91bf8954",
+          "visually_inspected": false
+        },
+        {
+          "id": "ice_ramp_documentary_frame_metadata",
+          "url": "https://combineoverwiki.net/wiki/File:IceGunRamp.jpg",
+          "source_url": "https://combineoverwiki.net/wiki/File:IceGunRamp.jpg",
+          "kind": "secondary_image_metadata",
+          "reference_role": "Image source metadata preserved from K; no exact extraction timestamp in page.",
+          "local_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_icegun_ep3_ramp_page.html",
+          "byte_size": 29806,
+          "sha256": "a5e07881f9f88c85324dcb98f52087f71fd3aaa91ccb1abb3483ed2128f45a79",
+          "visually_inspected": false
+        },
+        {
+          "id": "official_storyboard_75",
+          "url": "https://i.ytimg.com/sb/YCjNT9qGjh4/storyboard3_L3/M75.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCJLb3rkG&sigh=rs$AOn4CLA_Lh59Vw_RYGWmTop34CZjIuiEJg",
+          "source_url": "https://i.ytimg.com/sb/YCjNT9qGjh4/storyboard3_L3/M75.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCJLb3rkG&sigh=rs$AOn4CLA_Lh59Vw_RYGWmTop34CZjIuiEJg",
+          "kind": "primary_official_storyboard",
+          "reference_role": "Visual scene correspondence and 10-second navigation samples only.",
+          "local_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/YCjNT9qGjh4_storyboard_75.jpg",
+          "byte_size": 51380,
+          "sha256": "c409169b14a125eed5758045a52e53ecc426ea5918a8508dcea5091ce8956005",
+          "visually_inspected": true,
+          "width": 960,
+          "height": 540,
+          "color_mode": "RGB",
+          "sheet_number": 75,
+          "grid": [
+            3,
+            3
+          ],
+          "tile_pixels": [
+            320,
+            180
+          ],
+          "sampling_interval_seconds": 10,
+          "same_sha256_as_20261120_contract": true,
+          "exact_frame_extraction_time_verified": false
+        },
+        {
+          "id": "official_storyboard_76",
+          "url": "https://i.ytimg.com/sb/YCjNT9qGjh4/storyboard3_L3/M76.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCJLb3rkG&sigh=rs$AOn4CLA_Lh59Vw_RYGWmTop34CZjIuiEJg",
+          "source_url": "https://i.ytimg.com/sb/YCjNT9qGjh4/storyboard3_L3/M76.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCJLb3rkG&sigh=rs$AOn4CLA_Lh59Vw_RYGWmTop34CZjIuiEJg",
+          "kind": "primary_official_storyboard",
+          "reference_role": "Visual scene correspondence and 10-second navigation samples only.",
+          "local_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/YCjNT9qGjh4_storyboard_76.jpg",
+          "byte_size": 48884,
+          "sha256": "2fff2f65446579aa5f1841156a3cf91fd103fd1c8052456af4a475b715c012f3",
+          "visually_inspected": true,
+          "width": 960,
+          "height": 540,
+          "color_mode": "RGB",
+          "sheet_number": 76,
+          "grid": [
+            3,
+            3
+          ],
+          "tile_pixels": [
+            320,
+            180
+          ],
+          "sampling_interval_seconds": 10,
+          "same_sha256_as_20261120_contract": true,
+          "exact_frame_extraction_time_verified": false
+        },
+        {
+          "id": "official_documentary_player",
+          "url": "https://www.youtube.com/watch?v=YCjNT9qGjh4",
+          "source_url": "https://www.youtube.com/watch?v=YCjNT9qGjh4",
+          "kind": "primary_official_player_metadata",
+          "reference_role": "Fresh public player response: playability OK, title/channel/length and storyboard grid; not a full video playback.",
+          "local_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/YCjNT9qGjh4_player.json",
+          "byte_size": 68197,
+          "sha256": "ee1ce7d9ed4d9b66d90ff72e49589a9b210603b52c11c5a82ae572734f84d9ef",
+          "visually_inspected": false,
+          "video_details": {
+            "videoId": "YCjNT9qGjh4",
+            "title": "Half-Life 2: 20th Anniversary Documentary",
+            "author": "Valve",
+            "lengthSeconds": "7278"
+          }
+        }
+      ],
+      "visual_qa": {
+        "reviewed": true,
+        "observations": "Une seule masse de glace bleu pâle avec sommets arrondis irréguliers, gel blanc, fissures et base plate. Pas de fusil inventé, rayon, soldat, décor ou HUD. Alpha extérieur réel confirmé sur noir/blanc, mais corps presque opaque : alpha médian 253/255 et central 252. Relief plus lisse et composition en obstacle frontal que les formations perspectives des captures; cette adaptation ne fixe pas collision ou création temporelle.",
+        "alpha_composite_review": {
+          "performed": true,
+          "backgrounds": [
+            "black",
+            "white"
+          ],
+          "conclusion": "Fond transparent, pas de large halo en composition; quelques résidus alpha très faibles. Le matériau est presque opaque sur les deux fonds, donc la translucidité de l’effet n’est pas validée.",
+          "working_previews": [
+            "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/ice_black.jpg",
+            "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/ice_white.jpg"
+          ]
+        },
+        "limitations": [
+          "Transparence matérielle à corriger; alpha médian 253/255.",
+          "26 096 pixels de résidus alpha 1 à 8; aucune retouche des originaux.",
+          "Un état fixe de masse, pas un projectile animé ni une séquence de croissance/fonte.",
+          "Silhouette et base adaptées; échelle et collision non mesurées."
+        ]
+      },
+      "documentary_anchor": {
+        "video_url": "https://www.youtube.com/watch?v=YCjNT9qGjh4",
+        "sample_times_seconds": [
+          6820,
+          6830,
+          6840,
+          6850
+        ],
+        "sampling_interval_seconds": 10,
+        "exact_source_frame_timecode_verified": false,
+        "full_motion_reviewed": false,
+        "audio_or_transcript_reviewed": false,
+        "meaning": "Scene correspondence and approximate navigation window only; not a claim that the high-resolution copy was extracted at any listed second."
+      },
+      "notes": "Une seule masse de glace bleu pâle avec sommets arrondis irréguliers, gel blanc, fissures et base plate. Pas de fusil inventé, rayon, soldat, décor ou HUD. Alpha extérieur réel confirmé sur noir/blanc, mais corps presque opaque : alpha médian 253/255 et central 252. Relief plus lisse et composition en obstacle frontal que les formations perspectives des captures; cette adaptation ne fixe pas collision ou création temporelle.",
+      "fidelity_limitations": [
+        "Transparence matérielle à corriger; alpha médian 253/255.",
+        "26 096 pixels de résidus alpha 1 à 8; aucune retouche des originaux.",
+        "Un état fixe de masse, pas un projectile animé ni une séquence de croissance/fonte.",
+        "Silhouette et base adaptées; échelle et collision non mesurées."
+      ]
+    }
+  ],
+  "deferred_targets": [],
+  "unproduced_requests": [],
+  "source_review": {
+    "reference_sources": [
+      {
+        "id": "valve_hl2_20th",
+        "url": "https://www.half-life.com/en/halflife2/20th",
+        "source_url": "https://www.half-life.com/en/halflife2/20th",
+        "kind": "primary_official_page",
+        "reference_role": "Identifies documentary and original Raising the Bar publication in 2004; does not date creation of the Air Exchange drawing.",
+        "local_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/valve_hl2_20th.html",
+        "byte_size": 72187,
+        "sha256": "2f07034cac9355c94adebd1636fdf9bfb95a56da32994c3a025b314854eb674e",
+        "visually_inspected": false
+      },
+      {
+        "id": "official_documentary_player",
+        "url": "https://www.youtube.com/watch?v=YCjNT9qGjh4",
+        "source_url": "https://www.youtube.com/watch?v=YCjNT9qGjh4",
+        "kind": "primary_official_player_metadata",
+        "reference_role": "Fresh public player response: playability OK, title/channel/length and storyboard grid; not a full video playback.",
+        "local_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/YCjNT9qGjh4_player.json",
+        "byte_size": 68197,
+        "sha256": "ee1ce7d9ed4d9b66d90ff72e49589a9b210603b52c11c5a82ae572734f84d9ef",
+        "visually_inspected": false,
+        "video_details": {
+          "videoId": "YCjNT9qGjh4",
+          "title": "Half-Life 2: 20th Anniversary Documentary",
+          "author": "Valve",
+          "lengthSeconds": "7278"
+        }
+      },
+      {
+        "id": "official_storyboard_75",
+        "url": "https://i.ytimg.com/sb/YCjNT9qGjh4/storyboard3_L3/M75.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCJLb3rkG&sigh=rs$AOn4CLA_Lh59Vw_RYGWmTop34CZjIuiEJg",
+        "source_url": "https://i.ytimg.com/sb/YCjNT9qGjh4/storyboard3_L3/M75.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCJLb3rkG&sigh=rs$AOn4CLA_Lh59Vw_RYGWmTop34CZjIuiEJg",
+        "kind": "primary_official_storyboard",
+        "reference_role": "Visual scene correspondence and 10-second navigation samples only.",
+        "local_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/YCjNT9qGjh4_storyboard_75.jpg",
+        "byte_size": 51380,
+        "sha256": "c409169b14a125eed5758045a52e53ecc426ea5918a8508dcea5091ce8956005",
+        "visually_inspected": true,
+        "width": 960,
+        "height": 540,
+        "color_mode": "RGB",
+        "sheet_number": 75,
+        "grid": [
+          3,
+          3
+        ],
+        "tile_pixels": [
+          320,
+          180
+        ],
+        "sampling_interval_seconds": 10,
+        "same_sha256_as_20261120_contract": true,
+        "exact_frame_extraction_time_verified": false
+      },
+      {
+        "id": "official_storyboard_76",
+        "url": "https://i.ytimg.com/sb/YCjNT9qGjh4/storyboard3_L3/M76.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCJLb3rkG&sigh=rs$AOn4CLA_Lh59Vw_RYGWmTop34CZjIuiEJg",
+        "source_url": "https://i.ytimg.com/sb/YCjNT9qGjh4/storyboard3_L3/M76.jpg?sqp=-oaymwGhAUg48quKqQOYAYgBAZUBAAAEQpgBMqABPKgBBLIBQBANDBAVHyYtDg4PEhcrLCkPDhAVHyoyKQ8RFBgmPTgtERQeKjFLRzYVHCkuOUdNPyUuNz1HUlFFM0BCQ0xERkO6AUARERUjRENDQxETFi9DQ0NDFRYpQ0NDQ0MjL0NDQ0NDQ0RDQ0NDQ0JCQ0NDQ0NCQkJDQ0NDQkJCQkNDQ0JCQkJCovOX_wMGCJLb3rkG&sigh=rs$AOn4CLA_Lh59Vw_RYGWmTop34CZjIuiEJg",
+        "kind": "primary_official_storyboard",
+        "reference_role": "Visual scene correspondence and 10-second navigation samples only.",
+        "local_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/YCjNT9qGjh4_storyboard_76.jpg",
+        "byte_size": 48884,
+        "sha256": "2fff2f65446579aa5f1841156a3cf91fd103fd1c8052456af4a475b715c012f3",
+        "visually_inspected": true,
+        "width": 960,
+        "height": 540,
+        "color_mode": "RGB",
+        "sheet_number": 76,
+        "grid": [
+          3,
+          3
+        ],
+        "tile_pixels": [
+          320,
+          180
+        ],
+        "sampling_interval_seconds": 10,
+        "same_sha256_as_20261120_contract": true,
+        "exact_frame_extraction_time_verified": false
+      },
+      {
+        "id": "airex_reactor_rtb2004",
+        "url": "https://combineoverwiki.net/images/6/6a/Airex_reactor.jpg",
+        "source_url": "https://combineoverwiki.net/images/6/6a/Airex_reactor.jpg",
+        "kind": "secondary_hosted_concept_image",
+        "reference_role": "Single complete Air Exchange reactor concept. Publication version fixed to Raising the Bar 2004, not a development-map screenshot.",
+        "local_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/stages/refs/Airex_reactor.jpg",
+        "byte_size": 571748,
+        "sha256": "415fdc27851be730308368bb583a369ffb3a7da8bdbfbc053ccafaa17f190cf3",
+        "visually_inspected": true,
+        "width": 800,
+        "height": 517,
+        "color_mode": "RGB",
+        "source_page": "https://combineoverwiki.net/wiki/File:Airex_reactor.jpg",
+        "attribution": "Viktor Antonov, as recorded on the image page",
+        "publication_year": 2004,
+        "creation_date": null,
+        "printed_page_directly_inspected": false,
+        "printed_page_note": "Air Exchange article cites p.174 generally; exact placement of this illustration not directly checked.",
+        "reused_from_batch": "continuation_20261125_k"
+      },
+      {
+        "id": "airex_reactor_metadata",
+        "url": "https://combineoverwiki.net/wiki/File:Airex_reactor.jpg",
+        "source_url": "https://combineoverwiki.net/wiki/File:Airex_reactor.jpg",
+        "kind": "secondary_image_metadata",
+        "reference_role": "Attribution to Viktor Antonov and Raising the Bar; retained K page snapshot.",
+        "local_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/stages/refs/Airex_reactor.jpg.html",
+        "byte_size": 29281,
+        "sha256": "19fc6c4a00b05996dd140995ceabecfa3267736e7392a89f87f8dd65af3d0a32",
+        "visually_inspected": false
+      },
+      {
+        "id": "arctic_concept05",
+        "url": "https://combineoverwiki.net/images/4/46/HL2Doc_Ep3_Concept05.jpg",
+        "source_url": "https://combineoverwiki.net/images/4/46/HL2Doc_Ep3_Concept05.jpg",
+        "kind": "secondary_hosted_concept_image",
+        "reference_role": "Entire visible concept crop, matched to official storyboard sample 6800 s; not the whole encoded documentary frame.",
+        "local_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/HL2Doc_Ep3_Concept05.jpg",
+        "byte_size": 857509,
+        "sha256": "ce3be1d021d4613276952561fe30a0939e3a543b5b6172a09ffc779e13e42517",
+        "visually_inspected": true,
+        "width": 2669,
+        "height": 1674,
+        "color_mode": "RGB",
+        "source_page": "https://combineoverwiki.net/wiki/File:HL2Doc_Ep3_Concept05.jpg",
+        "concept_signature_visible": true,
+        "secondary_signature_transcription": "GBabbar 08.17.05",
+        "secondary_author_attribution": "Gautam Babbar",
+        "secondary_page_revision": 477708,
+        "whole_documentary_frame": false,
+        "full_concept_content_visible": true,
+        "primary_original_bytes_verified": false,
+        "exact_frame_extraction_time_verified": false,
+        "storyboard_sample_seconds": 6800,
+        "storyboard_sample_precision_seconds": 10,
+        "scene_context_window_seconds": [
+          6790,
+          6810
+        ]
+      },
+      {
+        "id": "arctic_concept05_metadata",
+        "url": "https://combineoverwiki.net/wiki/File:HL2Doc_Ep3_Concept05.jpg",
+        "source_url": "https://combineoverwiki.net/wiki/File:HL2Doc_Ep3_Concept05.jpg",
+        "kind": "secondary_image_metadata",
+        "reference_role": "Source documentary, author attribution and signature transcription; obtained by ordinary public HTTP 200.",
+        "local_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/archives/arctic_concept05_page.html",
+        "byte_size": 30205,
+        "sha256": "283b4f4fc0064f90493cd2ff3eda26b26351ba2b7baa196a21c75d1b049b8566",
+        "visually_inspected": false
+      },
+      {
+        "id": "blob_documentary_frame",
+        "url": "https://combineoverwiki.net/images/7/79/BlobCinderNom.jpg",
+        "source_url": "https://combineoverwiki.net/images/7/79/BlobCinderNom.jpg",
+        "kind": "secondary_hosted_documentary_frame",
+        "reference_role": "Full published 16:9 documentary-frame copy, source HUD retained in reference. Inspected against official storyboard scene; not an exact frame match.",
+        "local_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_blob_ep3.jpg",
+        "byte_size": 970400,
+        "sha256": "f1d3da5f71c39a0b08b75cca238124a3c6155afda660089661e31455e75b3fc8",
+        "visually_inspected": true,
+        "width": 3840,
+        "height": 2160,
+        "color_mode": "RGB",
+        "source_page": "https://combineoverwiki.net/wiki/File:BlobCinderNom.jpg",
+        "frame_correspondence": "same_demo_scene_not_exact_frame",
+        "exact_frame_extraction_time_verified": false,
+        "native_game_resolution_verified": false,
+        "primary_original_bytes_verified": false,
+        "reused_from_batch": "continuation_20261125_k"
+      },
+      {
+        "id": "blob_grate_documentary_frame",
+        "url": "https://combineoverwiki.net/images/1/16/BlobGratePass.jpg",
+        "source_url": "https://combineoverwiki.net/images/1/16/BlobGratePass.jpg",
+        "kind": "secondary_hosted_documentary_frame",
+        "reference_role": "Full published 16:9 documentary-frame copy, source HUD retained in reference. Inspected against official storyboard scene; not an exact frame match.",
+        "local_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_blob_ep3_grate.jpg",
+        "byte_size": 958744,
+        "sha256": "847ad4a5848688323b31c02a7b70d0593c26c3e9b47116556f90015cd3a3c9c5",
+        "visually_inspected": true,
+        "width": 3840,
+        "height": 2160,
+        "color_mode": "RGB",
+        "source_page": "https://combineoverwiki.net/wiki/File:BlobGratePass.jpg",
+        "frame_correspondence": "same_demo_scene_not_exact_frame",
+        "exact_frame_extraction_time_verified": false,
+        "native_game_resolution_verified": false,
+        "primary_original_bytes_verified": false,
+        "reused_from_batch": "continuation_20261125_k"
+      },
+      {
+        "id": "ice_documentary_frame",
+        "url": "https://combineoverwiki.net/images/c/cd/IceGunInAction.jpg",
+        "source_url": "https://combineoverwiki.net/images/c/cd/IceGunInAction.jpg",
+        "kind": "secondary_hosted_documentary_frame",
+        "reference_role": "Full published 16:9 documentary-frame copy, source HUD retained in reference. Inspected against official storyboard scene; not an exact frame match.",
+        "local_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_icegun_ep3.jpg",
+        "byte_size": 926378,
+        "sha256": "33497d19e7e1b17714598ff693c6bf972db36604f898f0c09aeb383c0f0cc5eb",
+        "visually_inspected": true,
+        "width": 3840,
+        "height": 2160,
+        "color_mode": "RGB",
+        "source_page": "https://combineoverwiki.net/wiki/File:IceGunInAction.jpg",
+        "frame_correspondence": "same_demo_scene_not_exact_frame",
+        "exact_frame_extraction_time_verified": false,
+        "native_game_resolution_verified": false,
+        "primary_original_bytes_verified": false,
+        "reused_from_batch": "continuation_20261125_k"
+      },
+      {
+        "id": "ice_ramp_documentary_frame",
+        "url": "https://combineoverwiki.net/images/b/ba/IceGunRamp.jpg",
+        "source_url": "https://combineoverwiki.net/images/b/ba/IceGunRamp.jpg",
+        "kind": "secondary_hosted_documentary_frame",
+        "reference_role": "Full published 16:9 documentary-frame copy, source HUD retained in reference. Inspected against official storyboard scene; not an exact frame match.",
+        "local_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_icegun_ep3_ramp.jpg",
+        "byte_size": 1012928,
+        "sha256": "45e2d7b8744b81e4a01a46e30617d5408edd4fe44d571b56f727f3e496a107e5",
+        "visually_inspected": true,
+        "width": 3840,
+        "height": 2160,
+        "color_mode": "RGB",
+        "source_page": "https://combineoverwiki.net/wiki/File:IceGunRamp.jpg",
+        "frame_correspondence": "same_demo_scene_not_exact_frame",
+        "exact_frame_extraction_time_verified": false,
+        "native_game_resolution_verified": false,
+        "primary_original_bytes_verified": false,
+        "reused_from_batch": "continuation_20261125_k"
+      },
+      {
+        "id": "blob_documentary_frame_metadata",
+        "url": "https://combineoverwiki.net/wiki/File:BlobCinderNom.jpg",
+        "source_url": "https://combineoverwiki.net/wiki/File:BlobCinderNom.jpg",
+        "kind": "secondary_image_metadata",
+        "reference_role": "Image source metadata preserved from K; no exact extraction timestamp in page.",
+        "local_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_blob_ep3_page.html",
+        "byte_size": 30624,
+        "sha256": "5e9bd621791d388b00a03d4e0d7465e9a69500b2d68b40c7db1bccf42675da6d",
+        "visually_inspected": false
+      },
+      {
+        "id": "blob_grate_documentary_frame_metadata",
+        "url": "https://combineoverwiki.net/wiki/File:BlobGratePass.jpg",
+        "source_url": "https://combineoverwiki.net/wiki/File:BlobGratePass.jpg",
+        "kind": "secondary_image_metadata",
+        "reference_role": "Image source metadata preserved from K; no exact extraction timestamp in page.",
+        "local_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_blob_ep3_grate_page.html",
+        "byte_size": 30620,
+        "sha256": "351d316a671bd535c92bd77fb02a9b7444e864effe5cd36fb4633ab80da896cc",
+        "visually_inspected": false
+      },
+      {
+        "id": "ice_documentary_frame_metadata",
+        "url": "https://combineoverwiki.net/wiki/File:IceGunInAction.jpg",
+        "source_url": "https://combineoverwiki.net/wiki/File:IceGunInAction.jpg",
+        "kind": "secondary_image_metadata",
+        "reference_role": "Image source metadata preserved from K; no exact extraction timestamp in page.",
+        "local_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_icegun_ep3_page.html",
+        "byte_size": 29792,
+        "sha256": "2d1e560e199d0f19fdca033eed4b38913e2f84d1a8298e91c7d6446f91bf8954",
+        "visually_inspected": false
+      },
+      {
+        "id": "ice_ramp_documentary_frame_metadata",
+        "url": "https://combineoverwiki.net/wiki/File:IceGunRamp.jpg",
+        "source_url": "https://combineoverwiki.net/wiki/File:IceGunRamp.jpg",
+        "kind": "secondary_image_metadata",
+        "reference_role": "Image source metadata preserved from K; no exact extraction timestamp in page.",
+        "local_path": "/workspace/scratch/d4619ad792f3/resonance-k-work/machines/refs/archive_icegun_ep3_ramp_page.html",
+        "byte_size": 29806,
+        "sha256": "a5e07881f9f88c85324dcb98f52087f71fd3aaa91ccb1abb3483ed2128f45a79",
+        "visually_inspected": false
+      }
+    ],
+    "new_evidence": [
+      "Official public YouTube watch/player response acquired, playability OK; the two official storyboard sheets were re-acquired and visually inspected with hashes identical to the 20261120 contract.",
+      "The full Arctic concept image was acquired and matched visually to the official 6800-second sample; composition and visible signature are now inspectable beyond the thumbnail.",
+      "K Blob and Ice Gun publication frames were re-inspected and tied to the corresponding official storyboard scenes, without assigning unverified exact timestamps.",
+      "Air Exchange is fixed to the single reactor concept as published in Raising the Bar 2004, with unknown drawing date; no fan-modified map screenshot used."
+    ],
+    "acquisition_limits": [
+      {
+        "url": "https://valvearchive.com/Publications/Half-Life%202%20-%20Raising%20the%20Bar/",
+        "result": "HTTP 403 from web retrieval; no retry or alternate endpoint at that host.",
+        "consequence": "No printed book page inspected; p.174 remains a secondary bibliographic lead."
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=YCjNT9qGjh4",
+        "method": "yt-dlp 2026.11.23, public web player, no authentication, retries 0, metadata extraction only",
+        "result": "Only images are available for download; Requested format is not available.",
+        "consequence": "No video segment downloaded, no continuous playback or exact source-frame timestamp verified. No alternate clients or access workaround attempted."
+      },
+      {
+        "url": "https://combineoverwiki.net/wiki/File:HL2Doc_Ep3_Concept05.jpg",
+        "result": "Ordinary direct HTTP returned 200 and page/image preserved; later web retrieval returned 500.",
+        "consequence": "Retained inspected snapshot and hash; no continuous-availability claim."
+      }
+    ],
+    "contract_gate_status": "The six archival gates remain open as completion/certification gates. These outputs are review candidates after scene/version narrowing; original native game data, exact extraction timestamps and hidden geometry are not claimed acquired."
+  },
+  "verification": {
+    "png_header_size_sha256_and_git_sha_checked": true,
+    "github_blob_before_repository_copy": true,
+    "original_png_bytes_preserved": true,
+    "delivered_png_modified_after_generation": false,
+    "alpha_composites_inspected": [
+      "blob_black",
+      "blob_white",
+      "ice_black",
+      "ice_white"
+    ],
+    "background_opacity_checked": true,
+    "calls_retried_after_refusal": 0
+  },
+  "limitations": [
+    "All four are candidate adaptations, not certified 1:1 assets or complete archive dossiers.",
+    "Official storyboard samples provide ten-second navigation context, not exact timestamps of secondary high-resolution copies.",
+    "Blob and ice have real exterior alpha but almost opaque material (median 253/255); translucency remains a substantive quality issue.",
+    "Opaque stage masters each contain an original level fight-floor adaptation; neither supplies six separated planes.",
+    "No runtime behavior, roster, hitbox, health or animation data is added."
+  ]
+}

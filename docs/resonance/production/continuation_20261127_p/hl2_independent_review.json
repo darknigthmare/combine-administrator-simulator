@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "created_on": "2026-11-27",
+  "reviewer": "hl1_cut_art independent review of root-produced outputs",
+  "scope": "Cinq PNG racine du lot P; vérification statique silhouette/révision/cadrage par confrontation directe aux cinq références originales inspectées. Mesures d'alpha et vérifications moteur hors de cette relecture.",
+  "reviewed_asset_count": 5,
+  "summary": "Aucun échange majeur de version ou recadrage majeur observé. Les cinq sorties restent candidates. Houndeye reste limité à une étude frontale issue d’une petite source. Les liserés clairs initialement soupçonnés dans l’aperçu RGBA ne se reproduisent pas après composition alpha correcte sur fonds opaques.",
+  "reviews": [
+    {
+      "asset_id": "archive_combine_assassin_hl2_guard_p",
+      "path": "assets/resonance/candidates/continuation_20261127_p/hl2/archive_combine_assassin_hl2_guard_p.png",
+      "source_url": "https://combineoverwiki.net/images/c/c6/CombineAssassinLeak_Idle.png",
+      "source_media_path": "/home/user/hl_cut_refs_p_root/assassin.png",
+      "observations": [
+        "Casque blanc/gris fermé, optique rouge unique, respirateur et deux pistolets cohérents avec la référence.",
+        "Posture fléchie, longues jambes claires et ressorts de talon conservés; silhouette entière visible."
+      ],
+      "open_findings": [
+        "Détails du camouflage, plis, mains et surface du casque enrichis par génération; ils ne peuvent pas être validés pixel par pixel sur cette source.",
+        "Liserés clairs initialement soupçonnés dans l’aperçu RGBA non reproduits après composition sur fond noir et clair. Les faibles résidus alpha et le rendu moteur restent à contrôler sans déclarer un alpha parfait."
+      ],
+      "source_bitmap_inspected": true,
+      "output_bitmap_inspected": true,
+      "comparison_method": "Affichage natif du fichier source distant et du PNG local, comparaison visuelle directe sans modifier les images.",
+      "single_subject": true,
+      "major_visible_crop_observed": false,
+      "version_mix_observed": false,
+      "decision": "retain_as_candidate_with_open_findings",
+      "certified_one_to_one": false,
+      "runtime_verified": false,
+      "animation_verified": false,
+      "alpha_recheck": {
+        "method": "Pillow RGBA alpha_composite sur fond opaque, puis conversion RGB et export JPEG diagnostic; aucune modification du PNG source.",
+        "backgrounds_rgb": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            242,
+            242,
+            242
+          ]
+        ],
+        "white_fringe_reproduced": false,
+        "initial_observation_revised": true,
+        "alpha_perfection_certified": false
+      }
+    },
+    {
+      "asset_id": "archive_combine_guard_synth_hl2_guard_p",
+      "path": "assets/resonance/candidates/continuation_20261127_p/hl2/archive_combine_guard_synth_hl2_guard_p.png",
+      "source_url": "https://combineoverwiki.net/images/7/78/Combine_guard.jpg",
+      "source_media_path": "/home/user/hl_cut_refs_p_root/guard.jpg",
+      "observations": [
+        "Synth massif olive, épaules dissymétriques, tête humaine enfoncée dans le collier, structure supérieure et antenne conservés.",
+        "Cannon doré/olive porté, grands pieds fendus et quatre points bleus correspondent à l'image source; aucun remplacement par un soldat Combine classique.",
+        "Antenne, pieds et arme apparaissent entiers."
+      ],
+      "open_findings": [
+        "Le visage et l'usure sont reconstruits avec une précision supérieure à la petite image source; identité faciale et surfaces exactes non certifiables.",
+        "Le canon intégré à cette silhouette n'est pas automatiquement identique au modèle séparé non texturé étudié dans une autre image."
+      ],
+      "source_bitmap_inspected": true,
+      "output_bitmap_inspected": true,
+      "comparison_method": "Affichage natif du fichier source distant et du PNG local, comparaison visuelle directe sans modifier les images.",
+      "single_subject": true,
+      "major_visible_crop_observed": false,
+      "version_mix_observed": false,
+      "decision": "retain_as_candidate_with_open_findings",
+      "certified_one_to_one": false,
+      "runtime_verified": false,
+      "animation_verified": false
+    },
+    {
+      "asset_id": "archive_bullsquid_hl2_cut_idle_p",
+      "path": "assets/resonance/candidates/continuation_20261127_p/hl2/archive_bullsquid_hl2_cut_idle_p.png",
+      "source_url": "https://combineoverwiki.net/images/1/18/Bullsquid_leak.jpg",
+      "source_media_path": "/home/user/hl_cut_refs_p_root/bullsquid.jpg",
+      "observations": [
+        "Version sombre rouille/noire HL2 conservée, distincte du Bullsquid HL1.",
+        "Cinq tentacules oraux visibles dans la pose de référence et dans le candidat; œil jaune latéral, deux pattes griffues et pointes arrière conservés.",
+        "Extrémités des tentacules et pieds visibles, pas de recadrage majeur observé."
+      ],
+      "open_findings": [
+        "Relief de la peau, pores, ventouses et saturation reconstruits; la microtexture n'est pas une extraction de la source.",
+        "Aucune séquence d'attaque ou de projection n'est couverte par cette pose."
+      ],
+      "source_bitmap_inspected": true,
+      "output_bitmap_inspected": true,
+      "comparison_method": "Affichage natif du fichier source distant et du PNG local, comparaison visuelle directe sans modifier les images.",
+      "single_subject": true,
+      "major_visible_crop_observed": false,
+      "version_mix_observed": false,
+      "decision": "retain_as_candidate_with_open_findings",
+      "certified_one_to_one": false,
+      "runtime_verified": false,
+      "animation_verified": false
+    },
+    {
+      "asset_id": "archive_houndeye_hl2_cut_front_p",
+      "path": "assets/resonance/candidates/continuation_20261127_p/hl2/archive_houndeye_hl2_cut_front_p.png",
+      "source_url": "https://www.combineoverwiki.net/images/c/c3/Leak_houndeye_mdl_preview.jpg",
+      "source_media_path": "/home/user/hl_cut_refs_p_root/houndeye.jpg",
+      "observations": [
+        "Point de vue frontal correctement conservé; grand œil composé violet/bordeaux et bord olive/ocre cohérents avec la petite prévisualisation source.",
+        "Trois membres visibles, dont le membre central étiré, conservés; pas d'œil mammalien ni de bouche ajoutés.",
+        "Fond cyan retiré; silhouette entière visible."
+      ],
+      "open_findings": [
+        "Le sujet occupe une petite portion de l'image de référence: le relief et l'espacement des facettes de l'œil restent interprétés.",
+        "Image valable comme étude frontale d'archive; elle ne valide ni profil de combat, dos, proportions latérales ni animation."
+      ],
+      "source_bitmap_inspected": true,
+      "output_bitmap_inspected": true,
+      "comparison_method": "Affichage natif du fichier source distant et du PNG local, comparaison visuelle directe sans modifier les images.",
+      "single_subject": true,
+      "major_visible_crop_observed": false,
+      "version_mix_observed": false,
+      "decision": "retain_as_candidate_with_open_findings",
+      "certified_one_to_one": false,
+      "runtime_verified": false,
+      "animation_verified": false
+    },
+    {
+      "asset_id": "archive_combine_guard_gun_hl2_untextured_p",
+      "path": "assets/resonance/candidates/continuation_20261127_p/weapons/archive_combine_guard_gun_hl2_untextured_p.png",
+      "source_url": "https://combineoverwiki.net/images/a/a4/Combine_Guard_Gun_leak.png",
+      "source_media_path": "/home/user/hl_cut_refs_p_root/cguardgun.png",
+      "observations": [
+        "Modèle entièrement gris non texturé, géométrie facettée, boucle arrière, panneau rond latéral et éléments tubulaires vers la gauche conservés.",
+        "Aucune coloration dorée/olive ni fusion avec le canon porté par le Guard; le caractère inachevé de la référence reste lisible.",
+        "Arme et extrémités visibles; les marges aux extrémités sont étroites mais sans coupe majeure observée."
+      ],
+      "open_findings": [
+        "Faibles résidus alpha conservés dans les mesures du lot; pas de frange blanche discernable dans les composites RGB correctement calculés sur fond noir, clair, gris sombre ou violet. Comportement moteur, réduction et bords animés encore à contrôler.",
+        "Arme agrandie en étude statique; nombre exact de faces, emboîtements masqués et textures absentes non certifiés."
+      ],
+      "source_bitmap_inspected": true,
+      "output_bitmap_inspected": true,
+      "comparison_method": "Affichage natif du fichier source distant et du PNG local, comparaison visuelle directe sans modifier les images.",
+      "single_subject": true,
+      "major_visible_crop_observed": false,
+      "version_mix_observed": false,
+      "decision": "retain_as_candidate_with_open_findings",
+      "certified_one_to_one": false,
+      "runtime_verified": false,
+      "animation_verified": false,
+      "alpha_recheck": {
+        "method": "Pillow RGBA alpha_composite sur fond opaque, puis conversion RGB et export JPEG diagnostic; aucune modification du PNG source.",
+        "backgrounds_rgb": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            242,
+            242,
+            242
+          ],
+          [
+            36,
+            40,
+            45
+          ],
+          [
+            100,
+            80,
+            120
+          ]
+        ],
+        "white_fringe_reproduced": false,
+        "initial_observation_revised": true,
+        "verdict": "Le défaut apparent de l’aperçu RGBA est un faux positif de visualisation; aucune nouvelle génération ni correction du PNG n’est demandée sur ce motif.",
+        "alpha_perfection_certified": false
+      }
+    }
+  ],
+  "revision_history": [
+    {
+      "date": "2026-11-27",
+      "change": "Réinspection du canon gris et de l’Assassin après signalement d’un artefact d’aperçu RGBA. Faux positif de frange blanche corrigé après inspection des composites RGB opaques; limites de fidélité, résidus alpha et intégration moteur conservées."
+    }
+  ]
+}

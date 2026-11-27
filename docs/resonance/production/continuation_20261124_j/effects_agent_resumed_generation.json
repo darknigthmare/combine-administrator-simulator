@@ -1,0 +1,374 @@
+{
+  "batch_id": "continuation_20261124_j",
+  "recovery_reason": "Fresh generation calls replacing unrecoverable original J effects after environment loss; original source specifications and references retained.",
+  "generation_tool": "image_gen.imagegen",
+  "counts": {
+    "requests": 4,
+    "generated": 4,
+    "blocked": 0,
+    "selected_for_next_review": 4,
+    "unique_targets": 3,
+    "integrated_in_game": 0
+  },
+  "assets": [
+    {
+      "asset_id": "fx_excursion_funnel_portal2_normal_resumed_j",
+      "target_id": "fx_excursion_funnel_portal2",
+      "name_fr": "Tunnel d’excursion — sens normal",
+      "category": "vfx_key_frame",
+      "source_game": "Portal 2",
+      "content_class": "released_reference",
+      "visual_state_id": "normal",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/effects/fx_excursion_funnel_portal2_normal_resumed_j.png",
+      "source_urls": [
+        "https://theportalwiki.com/wiki/Excursion_Funnel",
+        "https://i1.theportalwiki.net/img/c/ce/Excursion_Funnel_Forward.png",
+        "https://www.thinkwithportals.com/media.php"
+      ],
+      "reference_paths": [
+        "/tmp/effects-j-recovery/Excursion_Funnel_Forward.png"
+      ],
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE isolated alpha-transparent high-resolution 2D VFX layer of the NORMAL BLUE EXCURSION FUNNEL from released Portal 2, exactly guided by the provided game screenshot. Show ONLY the translucent tubular transport-field volume, horizontally side-on left to right, without its emitter. Faithfully retain several thin electric blue and pale cyan sinusoidal/helix filaments crossing gently in and out of phase around one horizontal cylindrical volume, sparse tiny electric blue and pale cyan light specks inside, and an extremely faint transparent field wash. Match the delicate lines and weak glow of the game screenshot: no thick laser core, no rings standing perpendicular to the tube, no electric lightning, no flame, no new symbols. Tube has constant diameter, no perspective funnel widening. A single field segment centered on a landscape 3:1 canvas occupying 80 percent width and 35 percent height; all trails and specks inside empty transparent margins. Only one active normal state in this image, no diagram, no labels, no floor, no portal rim, no wall, no device, no sphere, no dark/grey backing. Clean game VFX frame with true transparent alpha and subtle luminescent lines. Do not draw any object from the reference room. VERY IMPORTANT sparsity: render only four to six hair-thin overlapping sinusoidal strands, a narrow subtle local glow hugging each strand, and around twelve tiny motes. Make the broad interior wash almost entirely absent, with no visible blue or orange filled tube, no smoky fog, no luminous central stripe, no broad cloudy bloom. Most pixels within the cylindrical field must be fully transparent. Keep line thickness and brightness as restrained as in the supplied gameplay screenshot.",
+      "replaces_lost_asset_id": "fx_excursion_funnel_portal2_normal_j",
+      "recovered_after_environment_loss": true,
+      "new_generation_call": true,
+      "target_ids": [
+        "fx_excursion_funnel_portal2"
+      ],
+      "owner_id": "fx_excursion_funnel_portal2",
+      "owner_type": "projectile_effect",
+      "file_path": "assets/resonance/candidates/continuation_20261124_j/effects/fx_excursion_funnel_portal2_normal_resumed_j.png",
+      "generation_status": "généré",
+      "generation_tool": "image_gen.imagegen",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "selected_for_next_review": true,
+      "qa_status": "candidate_a_verifier",
+      "notes": "Nouvel appel après perte de l'environnement; le fichier perdu n'a pas été restauré. Capture retail source inspectée avant génération. PNG original conservé intact. Composition alpha sur noir et blanc inspectée: filaments bleus très fins, tube constant, wash quasi absent, aucun fond opaque; motes peu ou non visibles et luminosité assez faible à comparer en jeu. Lignes statiques: aucune animation ni fidélité 1:1 certifiée.",
+      "source_references": [
+        {
+          "url": "https://i1.theportalwiki.net/img/c/ce/Excursion_Funnel_Forward.png",
+          "kind": "retail_gameplay_screenshot_community_hosted",
+          "inspected": true,
+          "local_reference_path": "/tmp/effects-j-recovery/Excursion_Funnel_Forward.png"
+        },
+        {
+          "url": "https://theportalwiki.com/wiki/Excursion_Funnel",
+          "kind": "community_context_page",
+          "inspected": true
+        },
+        {
+          "url": "https://www.thinkwithportals.com/media.php",
+          "kind": "official_context_page",
+          "inspected": false
+        }
+      ],
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 1018797,
+      "sha256": "24cb32c42c34b95afadb9340769b93bf448a526d5a80f2e3656ffd2b39e55892",
+      "git_blob_sha": "484a83539ac5b030a7344ee46ed0a95de6b8e17f",
+      "alpha": {
+        "minimum": 0,
+        "maximum": 190,
+        "transparent_pixels": 1026452,
+        "opaque_pixels": 0,
+        "partial_pixels": 546076,
+        "nonzero_bbox": [
+          0,
+          9,
+          2171,
+          724
+        ],
+        "mean": 3.2920431305515705
+      },
+      "source_partial_register": "docs/resonance/production/continuation_20261124_j/effects_agent_resumed_generation.json",
+      "generation_call_count": 1,
+      "batch_id": "continuation_20261124_j"
+    },
+    {
+      "asset_id": "fx_excursion_funnel_portal2_reverse_resumed_j",
+      "target_id": "fx_excursion_funnel_portal2",
+      "name_fr": "Tunnel d’excursion — sens inversé",
+      "category": "vfx_key_frame",
+      "source_game": "Portal 2",
+      "content_class": "released_reference",
+      "visual_state_id": "reverse",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/effects/fx_excursion_funnel_portal2_reverse_resumed_j.png",
+      "source_urls": [
+        "https://theportalwiki.com/wiki/Excursion_Funnel",
+        "https://i1.theportalwiki.net/img/5/52/Excursion_Funnel_Reverse.png",
+        "https://www.thinkwithportals.com/media.php"
+      ],
+      "reference_paths": [
+        "/tmp/effects-j-recovery/Excursion_Funnel_Reverse.png"
+      ],
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE isolated alpha-transparent high-resolution 2D VFX layer of the REVERSED ORANGE EXCURSION FUNNEL from released Portal 2, exactly guided by the provided game screenshot. Show ONLY the translucent tubular transport-field volume, horizontally side-on left to right, without its emitter. Faithfully retain several thin warm orange and amber sinusoidal/helix filaments crossing gently in and out of phase around one horizontal cylindrical volume, sparse tiny warm orange and amber light specks inside, and an extremely faint transparent field wash. Match the delicate lines and weak glow of the game screenshot: no thick laser core, no rings standing perpendicular to the tube, no electric lightning, no flame, no new symbols. Tube has constant diameter, no perspective funnel widening. A single field segment centered on a landscape 3:1 canvas occupying 80 percent width and 35 percent height; all trails and specks inside empty transparent margins. Only one active reverse state in this image, no diagram, no labels, no floor, no portal rim, no wall, no device, no sphere, no dark/grey backing. Clean game VFX frame with true transparent alpha and subtle luminescent lines. Do not draw any object from the reference room. VERY IMPORTANT sparsity: render only four to six hair-thin overlapping sinusoidal strands, a narrow subtle local glow hugging each strand, and around twelve tiny motes. Make the broad interior wash almost entirely absent, with no visible blue or orange filled tube, no smoky fog, no luminous central stripe, no broad cloudy bloom. Most pixels within the cylindrical field must be fully transparent. Keep line thickness and brightness as restrained as in the supplied gameplay screenshot.",
+      "replaces_lost_asset_id": "fx_excursion_funnel_portal2_reverse_j",
+      "recovered_after_environment_loss": true,
+      "new_generation_call": true,
+      "target_ids": [
+        "fx_excursion_funnel_portal2"
+      ],
+      "owner_id": "fx_excursion_funnel_portal2",
+      "owner_type": "projectile_effect",
+      "file_path": "assets/resonance/candidates/continuation_20261124_j/effects/fx_excursion_funnel_portal2_reverse_resumed_j.png",
+      "generation_status": "généré",
+      "generation_tool": "image_gen.imagegen",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "selected_for_next_review": true,
+      "qa_status": "candidate_a_verifier",
+      "notes": "Nouvel appel après perte de l'environnement; le fichier perdu n'a pas été restauré. Capture retail source inspectée avant génération. PNG original conservé intact. Composition alpha sur noir et blanc inspectée: filaments orange/ambre fins, quelques motes, tube constant et wash très faible, aucun fond opaque. Une aura locale douce reste visible; saturation et luminosité plus faibles que la capture à comparer en jeu. Frame statique: sens de déplacement et animation non validés, fidélité 1:1 non certifiée.",
+      "source_references": [
+        {
+          "url": "https://i1.theportalwiki.net/img/5/52/Excursion_Funnel_Reverse.png",
+          "kind": "retail_gameplay_screenshot_community_hosted",
+          "inspected": true,
+          "local_reference_path": "/tmp/effects-j-recovery/Excursion_Funnel_Reverse.png"
+        },
+        {
+          "url": "https://theportalwiki.com/wiki/Excursion_Funnel",
+          "kind": "community_context_page",
+          "inspected": true
+        },
+        {
+          "url": "https://www.thinkwithportals.com/media.php",
+          "kind": "official_context_page",
+          "inspected": false
+        }
+      ],
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 1048746,
+      "sha256": "e9b6198007f7f831c215c6d3886b8471f393d58851e04fdc2feb1af633df0151",
+      "git_blob_sha": "9eb3c844b8872662603e48682e82098edb0dea85",
+      "alpha": {
+        "minimum": 0,
+        "maximum": 213,
+        "transparent_pixels": 1034323,
+        "opaque_pixels": 0,
+        "partial_pixels": 538205,
+        "nonzero_bbox": [
+          0,
+          0,
+          2166,
+          724
+        ],
+        "mean": 9.899886679283295,
+        "bbox_alpha_gt_8": [
+          190,
+          238,
+          2011,
+          496
+        ],
+        "bbox_alpha_gt_32": [
+          210,
+          246,
+          1991,
+          486
+        ]
+      },
+      "source_partial_register": "docs/resonance/production/continuation_20261124_j/effects_agent_resumed_generation.json",
+      "generation_call_count": 1,
+      "batch_id": "continuation_20261124_j"
+    },
+    {
+      "asset_id": "fx_gluon_beam_hl1_beam_resumed_j",
+      "target_id": "fx_gluon_beam_hl1",
+      "name_fr": "Faisceau Gluon — référence retail originale",
+      "category": "vfx_key_frame",
+      "source_game": "Half-Life (1998)",
+      "content_class": "released_reference",
+      "visual_state_id": "beam",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/effects/fx_gluon_beam_hl1_beam_resumed_j.png",
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/Gluon_Gun",
+        "https://combineoverwiki.net/images/9/9d/Egon_color01.png",
+        "https://github.com/ValveSoftware/halflife/blob/master/dlls/egon.cpp"
+      ],
+      "reference_paths": [
+        "/tmp/effects-j-recovery/Egon_color01.png"
+      ],
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Create ONE isolated horizontal alpha-transparent 2D VFX frame for the continuous GLUON / EGON BEAM from original Half-Life (GoldSrc), following the BLUE-VIOLET energy ribbon visible in the supplied original retail screenshot. Use that screenshot strictly for the effect's color and texture; exclude the weapon, hands and scene. Translate the observed slightly irregular oscillating blue-violet/lavender ribbon into a side-on horizontal strip running left to right across the middle. A narrow softly glowing blue-violet strand with modest wavy displacement, faint translucent violet aura close to it, subtle angular original-game electric noise. Continuous beam connects left to right; no detached ball, no rocket shape, no orange fire, no green lightning, no photoreal smoke. Do not invent multiple branching bolts or a large spiral magic ring. ONE neutral active beam frame only, no impact explosion or separate contact flare. Landscape 3:1 canvas, beam occupies central 70 percent width and 15 percent height with generous fully transparent margins. Soft glow fades naturally into genuine transparency, no black or grey opaque backing, no floor, no text, no labels, no HUD, no collage.",
+      "replaces_lost_asset_id": "fx_gluon_beam_hl1_beam_j",
+      "recovered_after_environment_loss": true,
+      "new_generation_call": true,
+      "target_ids": [
+        "fx_gluon_beam_hl1"
+      ],
+      "owner_id": "fx_gluon_beam_hl1",
+      "owner_type": "projectile_effect",
+      "file_path": "assets/resonance/candidates/continuation_20261124_j/effects/fx_gluon_beam_hl1_beam_resumed_j.png",
+      "generation_status": "généré",
+      "generation_tool": "image_gen.imagegen",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "selected_for_next_review": true,
+      "qa_status": "candidate_a_verifier",
+      "notes": "Nouvel appel après perte de l'environnement; le fichier perdu n'a pas été restauré. Capture Egon_color01 inspectée et code Valve egon.cpp (CreateEffect/UpdateEffect) consulté. PNG original intact. Alpha sur noir/blanc: ruban continu bleu-violet ondulé, faible aura et bruit anguleux local, aucun fond opaque. Transposition latérale depuis une capture en perspective: tracé, amplitude, largeur et dynamique ne sont pas certifiés 1:1. Pas de flare terminal ou contact dans cette frame beam; aucune animation intégrée.",
+      "source_references": [
+        {
+          "url": "https://combineoverwiki.net/images/9/9d/Egon_color01.png",
+          "kind": "retail_gameplay_screenshot_community_hosted",
+          "inspected": true,
+          "local_reference_path": "/tmp/effects-j-recovery/Egon_color01.png"
+        },
+        {
+          "url": "https://combineoverwiki.net/wiki/Gluon_Gun",
+          "kind": "community_context_page",
+          "inspected": false
+        },
+        {
+          "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/egon.cpp",
+          "kind": "official_source_code",
+          "inspected": true,
+          "scope": "CreateEffect/UpdateEffect: beam sine flag, noise, width/color changes; not a visual fidelity certificate."
+        }
+      ],
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 403286,
+      "sha256": "668ce596953fa578230ddfd6890f999f3fc57e0d0e41d187e08d6c4809782e7b",
+      "git_blob_sha": "d7f99e6f2ad8071244dcb3a808f51a78a3ff57c0",
+      "alpha": {
+        "minimum": 0,
+        "maximum": 252,
+        "transparent_pixels": 1361878,
+        "opaque_pixels": 0,
+        "partial_pixels": 210650,
+        "nonzero_bbox": [
+          87,
+          73,
+          2136,
+          680
+        ],
+        "mean": 11.810142013369555,
+        "bbox_alpha_gt_8": [
+          172,
+          289,
+          2006,
+          416
+        ],
+        "bbox_alpha_gt_32": [
+          186,
+          303,
+          1993,
+          406
+        ]
+      },
+      "source_partial_register": "docs/resonance/production/continuation_20261124_j/effects_agent_resumed_generation.json",
+      "generation_call_count": 1,
+      "batch_id": "continuation_20261124_j"
+    },
+    {
+      "asset_id": "proj_shock_bolt_opfor_body_resumed_j",
+      "target_id": "proj_shock_bolt_opfor",
+      "name_fr": "Décharge Shock Roach — première frame candidate",
+      "category": "projectile_key_frame",
+      "source_game": "Half-Life: Opposing Force",
+      "content_class": "released_reference",
+      "visual_state_id": "body",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/effects/proj_shock_bolt_opfor_body_resumed_j.png",
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/Shock_Roach",
+        "https://combineoverwiki.net/images/2/2a/Shock_Trooper_first.jpg",
+        "https://store.steampowered.com/app/50/HalfLife_Opposing_Force/"
+      ],
+      "reference_paths": [
+        "/tmp/effects-j-recovery/Shock_Trooper_first.jpg"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_scope": "Capture shows cyan electric discharge at a target; precise isolated retail travel sprite remains to be verified.",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. ONE isolated transparent 2D VFX sprite representing one traveling electric SHOCK ROACH bolt from Half-Life Opposing Force. The supplied actual game screenshot is the source for its characteristic pale CYAN/TURQUOISE-white glow and irregular thin luminous contour visible horizontally on the left. Reproduce that small effect as one short horizontal electric streak traveling toward screen right, hot pale cyan-white center, tightly contained turquoise-green aura, a few local angular wavy threads around the main connected streak. Preserve the restrained original GoldSrc feel. Not a continuous weapon-to-target beam, not a Vortigaunt green lightning fork, not a blue energy ball, not a yellow laser, not a rocket; no separate impact flash or body outline. Side-on horizontal view, one connected bolt only, occupying the middle half of a landscape canvas with generous transparent margins. Nothing from the screenshot scene, no people, no gun, no wall, no blood, no labels. True transparent RGBA, soft cyan glow fades to alpha zero with no black or grey backing. Clean hand-painted game VFX frame, no additional ornamental sparks or fantasy symbols.",
+      "replaces_lost_asset_id": "proj_shock_bolt_opfor_body_j",
+      "recovered_after_environment_loss": true,
+      "new_generation_call": true,
+      "target_ids": [
+        "proj_shock_bolt_opfor"
+      ],
+      "owner_id": "proj_shock_bolt_opfor",
+      "owner_type": "projectile_effect",
+      "file_path": "assets/resonance/candidates/continuation_20261124_j/effects/proj_shock_bolt_opfor_body_resumed_j.png",
+      "generation_status": "généré",
+      "generation_tool": "image_gen.imagegen",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "selected_for_next_review": true,
+      "qa_status": "candidate_a_verifier",
+      "notes": "Nouvel appel après perte de l'environnement; le fichier perdu n'a pas été restauré. Capture Shock_Trooper_first inspectée; elle documente une décharge cyan au contact d'une cible et ne suffit pas à certifier le sprite de trajet isolé. PNG original intact. Alpha sur noir/blanc: court trait cyan/turquoise horizontal, cœur lumineux à droite, quelques fils locaux reliés, sans fond opaque. Pointe plus concentrée et forme isolée à vérifier contre une capture du projectile en vol; aucune fidélité 1:1, animation ou intégration runtime déclarée.",
+      "source_references": [
+        {
+          "url": "https://combineoverwiki.net/images/2/2a/Shock_Trooper_first.jpg",
+          "kind": "retail_gameplay_screenshot_community_hosted",
+          "inspected": true,
+          "local_reference_path": "/tmp/effects-j-recovery/Shock_Trooper_first.jpg",
+          "scope": "Capture shows cyan electric discharge at a target; precise isolated retail travel sprite remains to be verified."
+        },
+        {
+          "url": "https://combineoverwiki.net/wiki/Shock_Roach",
+          "kind": "community_context_page",
+          "inspected": true
+        },
+        {
+          "url": "https://store.steampowered.com/app/50/HalfLife_Opposing_Force/",
+          "kind": "official_product_page",
+          "inspected": false
+        }
+      ],
+      "width": 1774,
+      "height": 887,
+      "color_mode": "RGBA",
+      "byte_size": 266795,
+      "sha256": "0e96473d15b2e730da0bb20035aa27346251c4c7cedbb3977dbcb133681ee76a",
+      "git_blob_sha": "64b6624a894ca5f2137e65448980534c2238f917",
+      "alpha": {
+        "minimum": 0,
+        "maximum": 252,
+        "transparent_pixels": 1450354,
+        "opaque_pixels": 0,
+        "partial_pixels": 123184,
+        "nonzero_bbox": [
+          0,
+          23,
+          1740,
+          855
+        ],
+        "mean": 4.955171085795195,
+        "bbox_alpha_gt_8": [
+          378,
+          377,
+          1355,
+          508
+        ],
+        "bbox_alpha_gt_32": [
+          436,
+          386,
+          1342,
+          500
+        ]
+      },
+      "source_partial_register": "docs/resonance/production/continuation_20261124_j/effects_agent_resumed_generation.json",
+      "generation_call_count": 1,
+      "batch_id": "continuation_20261124_j"
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "continuation_20261127_o",
+  "reviewed_on": "2026-11-27",
+  "reviewer": "independent_agent_recover_lot_m",
+  "scope": "Independent read-only review of FX catalog mapping, provenance, completion claims, visual revisions and Vortigaunt beam attribution. No global registry or asset modified.",
+  "status": "review_complete_no_blocking_metadata_finding",
+  "reviewed_registers": [
+    {
+      "repository_path": "docs/resonance/production/continuation_20261127_o/fx_generation.json",
+      "sha256_at_review": "42e55e5e647c61c553afd2c401e332e91c24bb99ed51af9e79293e14a2006454",
+      "png_count": 8
+    },
+    {
+      "repository_path": "docs/resonance/production/continuation_20261127_o/vortigaunt_beam_generation.json",
+      "sha256_at_review": "9a05f2c0776769b5249d5cda167865a85711060be0370f264f242f705b553be0",
+      "png_count": 1
+    }
+  ],
+  "catalogue_path": "docs/resonance/data/projectile_catalog_20261124.json",
+  "counts": {
+    "physical_pngs": 9,
+    "gauss_gluon_houndeye_pngs": 8,
+    "vortigaunt_pngs": 1,
+    "distinct_target_state_pairs": 6,
+    "distinct_targets": 4,
+    "selected_candidates": 7,
+    "superseded_originals_preserved": 2,
+    "certified_one_to_one_pngs": 0,
+    "completed_effect_states": 0,
+    "completed_animation_clips": 0
+  },
+  "catalogue_mapping": [
+    {
+      "target_id": "fx_houndeye_sonic_ring_hl1",
+      "visual_state_id": "pack_color_variants",
+      "catalogue_source_game": "Half-Life (1998)",
+      "asset_ids": [
+        "fx_houndeye_sonic_ring_hl1_pack2_o",
+        "fx_houndeye_sonic_ring_hl1_pack4_o",
+        "fx_houndeye_sonic_ring_hl1_pack4_v2_o"
+      ],
+      "catalogue_match": true
+    },
+    {
+      "target_id": "fx_gauss_beam_hl1",
+      "visual_state_id": "charged",
+      "catalogue_source_game": "Half-Life (1998)",
+      "asset_ids": [
+        "fx_gauss_beam_hl1_charged_o",
+        "fx_gauss_beam_hl1_charged_v2_o"
+      ],
+      "catalogue_match": true
+    },
+    {
+      "target_id": "fx_gauss_beam_hl1",
+      "visual_state_id": "impact",
+      "catalogue_source_game": "Half-Life (1998)",
+      "asset_ids": [
+        "fx_gauss_beam_hl1_impact_hotglow_o"
+      ],
+      "catalogue_match": true
+    },
+    {
+      "target_id": "fx_gluon_beam_hl1",
+      "visual_state_id": "tip",
+      "catalogue_source_game": "Half-Life (1998)",
+      "asset_ids": [
+        "fx_gluon_beam_hl1_tip_xspark1_o"
+      ],
+      "catalogue_match": true
+    },
+    {
+      "target_id": "fx_gluon_beam_hl1",
+      "visual_state_id": "fade",
+      "catalogue_source_game": "Half-Life (1998)",
+      "asset_ids": [
+        "fx_gluon_beam_hl1_fade_flare_o"
+      ],
+      "catalogue_match": true
+    },
+    {
+      "target_id": "fx_vortigaunt_zap_hl2",
+      "visual_state_id": "beam",
+      "catalogue_source_game": "Half-Life 2: épisodes",
+      "asset_ids": [
+        "fx_vortigaunt_zap_episodic_beam_o"
+      ],
+      "catalogue_match": true
+    }
+  ],
+  "assets": [
+    {
+      "asset_id": "fx_houndeye_sonic_ring_hl1_pack2_o",
+      "target_id": "fx_houndeye_sonic_ring_hl1",
+      "visual_state_id": "pack_color_variants",
+      "component_id": "two_concentric_sonic_rings",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_houndeye_sonic_ring_hl1_pack2_o.png",
+      "sha256": "e3967b569841912781b7861d9680a9386dc69a4b5fc12e631525faa43a95656d",
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "visual_state_complete": false,
+      "animation_clip_complete": false,
+      "revision_of": null
+    },
+    {
+      "asset_id": "fx_houndeye_sonic_ring_hl1_pack4_o",
+      "target_id": "fx_houndeye_sonic_ring_hl1",
+      "visual_state_id": "pack_color_variants",
+      "component_id": "two_concentric_sonic_rings",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_houndeye_sonic_ring_hl1_pack4_o.png",
+      "sha256": "9bc611604df3a6b3dd73495cca62ae5530b3303ae399fe06ea1f466329cbb00b",
+      "selected_for_next_review": false,
+      "certified_one_to_one": false,
+      "visual_state_complete": false,
+      "animation_clip_complete": false,
+      "revision_of": null
+    },
+    {
+      "asset_id": "fx_gauss_beam_hl1_charged_o",
+      "target_id": "fx_gauss_beam_hl1",
+      "visual_state_id": "charged",
+      "component_id": "charged_straight_beam",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_gauss_beam_hl1_charged_o.png",
+      "sha256": "e3f995d1474ef81c4ee1bb43987e90023cad5afd59a9093706f8d5ec93e322a0",
+      "selected_for_next_review": false,
+      "certified_one_to_one": false,
+      "visual_state_complete": false,
+      "animation_clip_complete": false,
+      "revision_of": null
+    },
+    {
+      "asset_id": "fx_gauss_beam_hl1_impact_hotglow_o",
+      "target_id": "fx_gauss_beam_hl1",
+      "visual_state_id": "impact",
+      "component_id": "hotglow_contact_component",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_gauss_beam_hl1_impact_hotglow_o.png",
+      "sha256": "65e9379a57176bb7a636015d4161eab3ca7a5071846e26f848254efa607ac08b",
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "visual_state_complete": false,
+      "animation_clip_complete": false,
+      "revision_of": null
+    },
+    {
+      "asset_id": "fx_gluon_beam_hl1_tip_xspark1_o",
+      "target_id": "fx_gluon_beam_hl1",
+      "visual_state_id": "tip",
+      "component_id": "xspark1_contact_flare",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_gluon_beam_hl1_tip_xspark1_o.png",
+      "sha256": "72d4dd188b2b59c67852c6cf83b20ddc63b491e09fa689c4ceecabc7dcb94e52",
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "visual_state_complete": false,
+      "animation_clip_complete": false,
+      "revision_of": null
+    },
+    {
+      "asset_id": "fx_gluon_beam_hl1_fade_flare_o",
+      "target_id": "fx_gluon_beam_hl1",
+      "visual_state_id": "fade",
+      "component_id": "wide_fire_contact_flare_expansion",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_gluon_beam_hl1_fade_flare_o.png",
+      "sha256": "ad498f8781acd523d74e7abad90ed097158f0c7257b8d4f0f31c82b26e95ef88",
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "visual_state_complete": false,
+      "animation_clip_complete": false,
+      "revision_of": null
+    },
+    {
+      "asset_id": "fx_houndeye_sonic_ring_hl1_pack4_v2_o",
+      "target_id": "fx_houndeye_sonic_ring_hl1",
+      "visual_state_id": "pack_color_variants",
+      "component_id": "two_concentric_sonic_rings",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_houndeye_sonic_ring_hl1_pack4_v2_o.png",
+      "sha256": "4bc6f87e5e400b3320740fbbb682d5796e4c4a607fbd9e71d1f8aa082b867aa9",
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "visual_state_complete": false,
+      "animation_clip_complete": false,
+      "revision_of": "fx_houndeye_sonic_ring_hl1_pack4_o"
+    },
+    {
+      "asset_id": "fx_gauss_beam_hl1_charged_v2_o",
+      "target_id": "fx_gauss_beam_hl1",
+      "visual_state_id": "charged",
+      "component_id": "charged_straight_beam",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_gauss_beam_hl1_charged_v2_o.png",
+      "sha256": "52d6809d0df80014fbc9711422fee546cefd53de4d7045001c19ba1702ffba51",
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "visual_state_complete": false,
+      "animation_clip_complete": false,
+      "revision_of": "fx_gauss_beam_hl1_charged_o"
+    },
+    {
+      "asset_id": "fx_vortigaunt_zap_episodic_beam_o",
+      "target_id": "fx_vortigaunt_zap_hl2",
+      "visual_state_id": "beam",
+      "component_id": null,
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_vortigaunt_zap_episodic_beam_o.png",
+      "sha256": "045d699893a3c0b8eaa12b27de3010115f4b360a9ea1c38d33ce8aa75b686a5c",
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "visual_state_complete": false,
+      "animation_clip_complete": false,
+      "revision_of": null
+    }
+  ],
+  "checks": {
+    "every_target_id_exists": true,
+    "every_visual_state_id_in_variants_required": true,
+    "all_png_sha256_match_register": true,
+    "all_png_decode": true,
+    "all_complete_and_certification_flags_false": true,
+    "gauss_impact_component_not_full_impact": true,
+    "gluon_tip_fade_components_not_full_effect_or_clip": true,
+    "houndeye_variants_share_one_contract_state": true,
+    "old_pack4_and_charged_versions_counted_not_selected": true,
+    "v2_versions_selected_without_certification": true,
+    "official_code_community_preview_and_third_party_capture_distinct": true,
+    "vort_catalogue_is_episodic_not_base_hl2_assertion": true
+  },
+  "source_review": {
+    "official_code": "ValveSoftware source snapshots identify resources, parameters and state logic. The manifests do not call this pixel or retail-binary certification.",
+    "community_previews": "hotglow, XSpark1 and smoke are explicitly identified as small community named-resource previews, not official Valve screenshots. Their converted PNG references keep the original small dimensions.",
+    "vort_capture": "Asthalis Episode Two guide, printed page5, xref381, native320×240. Independently viewed the extracted image and the rendered full page. The hosting and exact retail binary/settings are qualified rather than treated as official Valve publication.",
+    "vort_reference_sha256": "5e78886d4deef3f149ab0491bc46e0405f8fc4f88493bcb08ac663c4c5c48f43"
+  },
+  "independent_visual_observations": [
+    {
+      "subject": "houndeye_pack4_v1_vs_v2",
+      "finding": "The v1 has a strong colored veil between the rings. The v2 shows clear negative space between the two concentric rings and at the center on light and dark backgrounds. Band width, inner/outer proportions and halo changed; this supports preferring v2 for review, not a geometric or palette certification.",
+      "severity": "documented_candidate_limit",
+      "agrees_with_manifest": true
+    },
+    {
+      "subject": "gauss_charged_v1_vs_v2",
+      "finding": "The first charged beam appears much thicker than the intended restrained segment. The v2 is visibly thinner, horizontal and transparent around the beam. The recorded PNG width comparison is not conflated with the engine beam-width parameter. No exact2.5 visual-ratio claim is justified.",
+      "severity": "documented_candidate_limit",
+      "agrees_with_manifest": true
+    },
+    {
+      "subject": "gauss_impact_hotglow",
+      "finding": "Compact warm contact flare only. The enlarged radial rays are interpreted from a tiny community preview; other impact particles are absent. Metadata correctly leaves the full impact state incomplete.",
+      "severity": "documented_candidate_limit",
+      "agrees_with_manifest": true
+    },
+    {
+      "subject": "gluon_tip_and_fade",
+      "finding": "Both show a contact flare without a residual long beam. The fade is an enlarged blue/cyan sample, not an animation. Its silhouette and intensity are not an exact time sample from retail. FIRE_WIDE scope and renderamt-versus-PNG-alpha distinction are preserved.",
+      "severity": "documented_candidate_limit",
+      "agrees_with_manifest": true
+    },
+    {
+      "subject": "vortigaunt_offensive_beam_attribution",
+      "finding": "In Asthalis image, the right-hand Vortigaunt faces left and emits white/pale-green filaments toward the bright yellow-green flash above the table. The left-hand Vortigaunt is tending Alyx. The generated isolated oblique segment follows the right-hand emission and excludes the healer, people, scenery, hand aura and terminal yellow flash. Its high-resolution geometry is reconstructed.",
+      "severity": "scope_confirmed_candidate_not_certified",
+      "agrees_with_manifest": true
+    }
+  ],
+  "remaining_limits": [
+    "No complete effect state, animation, attachment, collision or runtime integration has been verified.",
+    "Houndeye ring geometry and exact base-palette rendering remain unverified against a fixed retail capture.",
+    "Gauss charged thickness, Gluon flare timing/intensity and high-resolution sprite details remain candidate interpretations.",
+    "Vortigaunt source is one low-resolution gameplay instant. Charge and impact remain deferred; this review does not validate them."
+  ],
+  "blocking_findings": [],
+  "advisory_findings": [],
+  "global_registry_modified": false,
+  "publication_performed": false
+}

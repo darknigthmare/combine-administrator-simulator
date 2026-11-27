@@ -1,0 +1,1787 @@
+{
+  "schema_version": "1.0",
+  "module": "Half Life Resonance",
+  "batch_id": "continuation_20261127_o",
+  "created_at": "2026-11-27",
+  "scope": "Six initial generated PNG candidates plus two authorized targeted revisions (Houndeye pack4 negative space; Gauss charged thickness). Eight original files; five distinct target/state pairs across three existing targets. Components and static frames do not complete effect states or animation clips.",
+  "base_commit": "4ae2ee9dcf1a2acedff4b628c70ee70a736553a0",
+  "generator": "image_gen built-in",
+  "source_manifest": "docs/resonance/production/continuation_20261127_o/fx_references/manifest.json",
+  "counts": {
+    "requested_png": 6,
+    "actual_png": 8,
+    "distinct_contract_states_with_png": 5,
+    "existing_targets_with_new_png": 3,
+    "generation_calls": 8,
+    "refusals": 0,
+    "tool_errors": 0,
+    "completed_animation_clips": 0,
+    "authorized_additional_correction_png": 2,
+    "requested_total_including_correction": 8,
+    "selected_candidates_for_next_review": 6,
+    "superseded_originals_preserved": 2,
+    "certified_one_to_one_png": 0,
+    "completed_effect_states": 0,
+    "runtime_integrated_png": 0
+  },
+  "planned_jobs": [
+    {
+      "id": "fx_gauss_beam_hl1_charged_o",
+      "target_id": "fx_gauss_beam_hl1",
+      "visual_state_id": "charged",
+      "component_id": "charged_straight_beam",
+      "variant_id": "charged_white",
+      "source_ids": [
+        "valve_ev_hldm",
+        "preview_smoke"
+      ],
+      "input_paths": [
+        "assets/resonance/candidates/continuation_20261124_i/effects/fx_gauss_primary_hl1_i.png",
+        "docs/resonance/production/continuation_20261127_o/fx_references/smoke_community_preview.png"
+      ],
+      "name_fr": "Tau/Gauss HL1 — rayon chargé blanc",
+      "prompt": "Use case: precise-object-edit.\nAsset type: ONE alpha-transparent 2D game-effect candidate.\nInput images: Image 1 is the existing generated orange primary Gauss beam, the edit target and project framing reference; it is NOT a retail capture. Image 2 is a small community preview identified as smoke.spr, a texture reference only, NOT an official capture.\nPrimary request: turn only the primary beam into the charged firing beam of the original GoldSrc Half-Life Tau/Gauss Cannon. Preserve the same canvas, beam length, central pivot and straight horizontal direction. Change the base tint to pure white RGB 255,255,255 and make the luminous thickness 2.5 times the primary width, guided by official EV_FireGauss (charged width 2.5 versus primary width 1, geometric noise zero). Keep subtle cloudy translucent smoke.spr texture and restrained glow.\nConstraints: one continuous instantaneous beam segment, not a traveling projectile. Keep generous truly empty transparent margins at every edge. No orange primary tint, blue Gluon coils, lightning branches, ball, weapon, hand, muzzle flare, contact burst, scene, letters or panels. Do not copy the source preview's black backing. Preserve true alpha transparency. One static charged-beam candidate; high-resolution texture is interpretation, not retail pixel certification.",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_gauss_beam_hl1_charged_o.png",
+      "reference_paths": [
+        "/workspace/scratch/892354ae3802/repo/assets/resonance/candidates/continuation_20261124_i/effects/fx_gauss_primary_hl1_i.png",
+        "/workspace/scratch/892354ae3802/repo/docs/resonance/production/continuation_20261127_o/fx_references/smoke_community_preview.png"
+      ],
+      "status": "generated_original_saved_qa_reviewed",
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "visual_state_complete": false,
+      "animation_clip_complete": false
+    },
+    {
+      "id": "fx_gauss_beam_hl1_impact_hotglow_o",
+      "target_id": "fx_gauss_beam_hl1",
+      "visual_state_id": "impact",
+      "component_id": "hotglow_contact_component",
+      "variant_id": "contact_flare_only",
+      "source_ids": [
+        "valve_ev_hldm",
+        "preview_hotglow"
+      ],
+      "input_paths": [
+        "docs/resonance/production/continuation_20261127_o/fx_references/hotglow_community_preview.png",
+        "assets/resonance/candidates/continuation_20261124_i/effects/fx_gauss_primary_hl1_i.png"
+      ],
+      "name_fr": "Tau/Gauss HL1 — composant hotglow de contact",
+      "prompt": "Use case: stylized-concept.\nAsset type: ONE alpha-transparent 2D contact-glow COMPONENT, not a complete impact effect.\nInput images: Image 1 is a 54x54 community preview identified as hotglow.spr, the strict shape and palette reference; it is not a retail capture or official Valve publication. Image 2 is an existing generated Gauss beam, used only for restrained project rendering style.\nPrimary request: reproduce one compact hotglow contact component associated with the GoldSrc Half-Life Tau/Gauss effect in official EV_FireGauss. Follow the small preview: compact irregular warm yellow-orange luminous center, softer darker-orange radial halo and short restrained radial rays. Preserve its simple low-detail appearance instead of inventing detailed flames.\nComposition: square canvas; a single centered small glow occupying about one third of the width, with broad completely transparent margins.\nConstraints: this represents only the hotglow contact component; the code's additional impact particles and timing are not included. No beam, weapon, wall, crater, debris, particle spray, traveling orb, explosive cloud, caption, panel or background. The black behind the source preview is compositing backing and must not be copied. Genuine alpha transparency, no opaque black rectangle. One candidate frame, no fidelity certification or animation claim.",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_gauss_beam_hl1_impact_hotglow_o.png",
+      "reference_paths": [
+        "/workspace/scratch/892354ae3802/repo/docs/resonance/production/continuation_20261127_o/fx_references/hotglow_community_preview.png",
+        "/workspace/scratch/892354ae3802/repo/assets/resonance/candidates/continuation_20261124_i/effects/fx_gauss_primary_hl1_i.png"
+      ],
+      "status": "generated_original_saved_qa_reviewed",
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "visual_state_complete": false,
+      "animation_clip_complete": false
+    },
+    {
+      "id": "fx_gluon_beam_hl1_tip_xspark1_o",
+      "target_id": "fx_gluon_beam_hl1",
+      "visual_state_id": "tip",
+      "component_id": "xspark1_contact_flare",
+      "variant_id": "wide_fire_contact",
+      "source_ids": [
+        "valve_egon",
+        "preview_xspark1"
+      ],
+      "input_paths": [
+        "docs/resonance/production/continuation_20261127_o/fx_references/xspark1_community_preview.png",
+        "assets/resonance/candidates/continuation_20261124_j/effects/fx_gluon_beam_hl1_beam_resumed_j.png"
+      ],
+      "name_fr": "Gluon HL1 — composant XSpark1 de contact",
+      "prompt": "Use case: stylized-concept.\nAsset type: ONE isolated alpha-transparent contact-flare COMPONENT for a 2D game, not an entire beam or impact.\nInput images: Image 1 is a tiny 21x27 community preview identified as XSpark1.spr, the strict shape and color reference; it is not a retail capture or an official Valve image. Image 2 is the project's existing generated Gluon beam, used only for restrained effect rendering style.\nPrimary request: create the GoldSrc Half-Life Gluon contact flare assigned by official CEgon code to the beam's contact point. Keep the source's irregular white luminous cluster, cyan and deep blue translucent edges, slight vertical elongation and asymmetric lobes. Preserve a simple source-like silhouette; high-resolution detail must stay modest.\nComposition: a square canvas, centered pivot; the entire useful flare occupies roughly one fifth of canvas width and one quarter of canvas height. Keep very broad transparent margins for a later expansion on the same canvas.\nConstraints: no long beam, weapon, target, surface, flying projectile, portal ring, invented radial spikes, letters, panels or other effects. Do not tint the entire flare violet to match the beam; retain the source white/cyan. Do not copy its black preview backing. True transparent alpha. One static candidate tip component only, not an animation or a 1:1 certification.",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_gluon_beam_hl1_tip_xspark1_o.png",
+      "reference_paths": [
+        "/workspace/scratch/892354ae3802/repo/docs/resonance/production/continuation_20261127_o/fx_references/xspark1_community_preview.png",
+        "/workspace/scratch/892354ae3802/repo/assets/resonance/candidates/continuation_20261124_j/effects/fx_gluon_beam_hl1_beam_resumed_j.png"
+      ],
+      "status": "generated_original_saved_qa_reviewed",
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "visual_state_complete": false,
+      "animation_clip_complete": false
+    },
+    {
+      "id": "fx_gluon_beam_hl1_fade_flare_o",
+      "target_id": "fx_gluon_beam_hl1",
+      "visual_state_id": "fade",
+      "component_id": "wide_fire_contact_flare_expansion",
+      "variant_id": "wide_fire_shutdown_t020_candidate",
+      "source_ids": [
+        "valve_egon",
+        "valve_effects",
+        "preview_xspark1"
+      ],
+      "input_paths": [
+        "assets/resonance/candidates/continuation_20261127_o/fx/fx_gluon_beam_hl1_tip_xspark1_o.png"
+      ],
+      "depends_on": "fx_gluon_beam_hl1_tip_xspark1_o",
+      "name_fr": "Gluon HL1 — expansion et dissipation du flare de contact",
+      "prompt": "Use case: precise-object-edit.\nAsset type: ONE later alpha-transparent shutdown key frame of a contact-flare COMPONENT.\nInput image: the supplied generated Gluon XSpark1 tip candidate is the edit target. It is a project candidate derived from a small community resource preview, NOT a retail capture.\nPrimary request: preserve exactly the same square canvas and center pivot, the same irregular asymmetric lobe structure and white/cyan palette. Increase the flare's linear scale to approximately three times the initial flare and reduce its luminous intensity visibly. This follows official CEgon FIRE_WIDE shutdown and CSprite::Expand at about 0.2 seconds: scale 3 and render amount 155 from initial scale 1 and render amount 255. These engine values are visual guidance, not a claim that PNG alpha equals engine render amount.\nConstraints: both Gluon beam entities have already been removed. Draw only the larger, dimmer contact flare; no fading beam, streak, lightning, smoke, particles, shock ring, extra lobes or new elements. Preserve broad truly transparent margins, with the useful flare still completely within the canvas. No caption, panel or backdrop. Preserve genuine alpha transparency. One sampled candidate frame, not a completed shutdown animation or a certification of exact retail timing/pixels.",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_gluon_beam_hl1_fade_flare_o.png",
+      "reference_paths": [
+        "/workspace/scratch/892354ae3802/repo/assets/resonance/candidates/continuation_20261127_o/fx/fx_gluon_beam_hl1_tip_xspark1_o.png"
+      ],
+      "status": "generated_original_saved_qa_reviewed",
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "visual_state_complete": false,
+      "animation_clip_complete": false
+    },
+    {
+      "id": "fx_houndeye_sonic_ring_hl1_pack2_o",
+      "target_id": "fx_houndeye_sonic_ring_hl1",
+      "visual_state_id": "pack_color_variants",
+      "component_id": "two_concentric_sonic_rings",
+      "variant_id": "pack_2",
+      "pack_size": 2,
+      "source_base_rgb": [
+        101,
+        133,
+        221
+      ],
+      "source_ids": [
+        "valve_houndeye"
+      ],
+      "input_paths": [
+        "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_houndeye_sonic_ring_hl1_h.png"
+      ],
+      "name_fr": "Houndeye HL1 — anneaux de meute de 2",
+      "prompt": "Use case: precise-object-edit.\nAsset type: ONE alpha-transparent combined two-ring sonic area-effect frame.\nInput image: the existing generated Houndeye solo-ring candidate is the edit target and project framing reference. It was guided by source code, not a retail bitmap, and is not a certified source capture.\nPrimary request: change only the ring color into the 2-member pack variant of original GoldSrc Half-Life. Official CHoundeye::WriteBeamColor assigns base RGB 101,133,221 to a pack of 2. Recolor BOTH rings consistently to that exact darker saturated base tint with restrained luminous highlights; do not retain the pale solo RGB 188,220,255. Preserve the same canvas, center pivot, horizontal ground-plane perspective, two concentric rings and outer-to-inner radius ratio of two to one.\nConstraints: the pack size changes color, not the number of rings. No extra rings, creatures, vertical portals, lightning between creatures, orb, ground surface, geometric noise, captions, labels or multiple panels. Preserve simple translucent bands and real alpha, empty transparent ring interiors, exterior and generous margins. One static combined frame representing one pack-color variant, not a full dissipation animation or a claim of exact retail pixels.",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_houndeye_sonic_ring_hl1_pack2_o.png",
+      "reference_paths": [
+        "/workspace/scratch/892354ae3802/repo/assets/resonance/candidates/continuation_20261124_h/projectiles/fx_houndeye_sonic_ring_hl1_h.png"
+      ],
+      "status": "generated_original_saved_qa_reviewed",
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "visual_state_complete": false,
+      "animation_clip_complete": false
+    },
+    {
+      "id": "fx_houndeye_sonic_ring_hl1_pack4_o",
+      "target_id": "fx_houndeye_sonic_ring_hl1",
+      "visual_state_id": "pack_color_variants",
+      "component_id": "two_concentric_sonic_rings",
+      "variant_id": "pack_4",
+      "pack_size": 4,
+      "source_base_rgb": [
+        62,
+        33,
+        211
+      ],
+      "source_ids": [
+        "valve_houndeye"
+      ],
+      "input_paths": [
+        "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_houndeye_sonic_ring_hl1_h.png"
+      ],
+      "name_fr": "Houndeye HL1 — anneaux de meute de 4",
+      "prompt": "Use case: precise-object-edit.\nAsset type: ONE alpha-transparent combined two-ring sonic area-effect frame.\nInput image: the existing generated Houndeye solo-ring candidate is the edit target and project framing reference. It was guided by source code, not a retail bitmap, and is not a certified source capture.\nPrimary request: change only the ring color into the 4-member pack variant of original GoldSrc Half-Life. Official CHoundeye::WriteBeamColor assigns base RGB 62,33,211 to a pack of 4. Recolor BOTH rings consistently to that exact darker saturated base tint with restrained luminous highlights; do not retain the pale solo RGB 188,220,255. Preserve the same canvas, center pivot, horizontal ground-plane perspective, two concentric rings and outer-to-inner radius ratio of two to one.\nConstraints: the pack size changes color, not the number of rings. No extra rings, creatures, vertical portals, lightning between creatures, orb, ground surface, geometric noise, captions, labels or multiple panels. Preserve simple translucent bands and real alpha, empty transparent ring interiors, exterior and generous margins. One static combined frame representing one pack-color variant, not a full dissipation animation or a claim of exact retail pixels.",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_houndeye_sonic_ring_hl1_pack4_o.png",
+      "reference_paths": [
+        "/workspace/scratch/892354ae3802/repo/assets/resonance/candidates/continuation_20261124_h/projectiles/fx_houndeye_sonic_ring_hl1_h.png"
+      ],
+      "status": "generated_original_saved_qa_reviewed",
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "visual_state_complete": false,
+      "animation_clip_complete": false
+    },
+    {
+      "id": "fx_houndeye_sonic_ring_hl1_pack4_v2_o",
+      "target_id": "fx_houndeye_sonic_ring_hl1",
+      "visual_state_id": "pack_color_variants",
+      "component_id": "two_concentric_sonic_rings",
+      "variant_id": "pack_4",
+      "pack_size": 4,
+      "source_base_rgb": [
+        62,
+        33,
+        211
+      ],
+      "source_ids": [
+        "valve_houndeye"
+      ],
+      "input_paths": [
+        "assets/resonance/candidates/continuation_20261127_o/fx/fx_houndeye_sonic_ring_hl1_pack4_o.png",
+        "assets/resonance/candidates/continuation_20261127_o/fx/fx_houndeye_sonic_ring_hl1_pack2_o.png"
+      ],
+      "name_fr": "Houndeye HL1 — meute de quatre, espaces transparents v2",
+      "prompt": "Use case: precise-object-edit.\nAsset type: ONE corrected alpha-transparent two-ring Houndeye effect, revision 2.\nInput images: Image 1 is the FOUR-member purple-blue pack candidate to edit. Image 2 is the TWO-member candidate used only to demonstrate clear transparent negative space; do not copy its blue color.\nPrimary request: fix ONLY the unwanted diffuse colored veil between and inside the two concentric ellipse bands in Image 1. Keep exactly the same canvas, center, perspective, ring centerlines, radii, outlines and the four-member base tint RGB 62,33,211. Keep both ring bands visible and continuous. Remove the broad cloudy filling between the ring bands and inside the inner ellipse so these negative spaces are genuinely transparent, like the clear open spaces in Image 2. Retain only a narrow restrained glow immediately adjacent to the two bands, without a cloudy bridge between them. Keep the four-member color distinct from the two-member palette.\nConstraints: one combined two-ring area-effect frame, not two examples or a sprite sheet. Do not add elements or change the number of rings, source version, geometry, hue or camera. No background-colored patch or black paint to fake transparency; use actual alpha-zero empty space between rings and inside the central ellipse. No creature, portal, orb, ground, lightning, dust, particles, labels or panels. Keep all margins genuinely transparent. These input images are generated project candidates based on official SDK color rules, not retail captures. This correction makes no exact-pixel or completed-state claim.",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_houndeye_sonic_ring_hl1_pack4_v2_o.png",
+      "reference_paths": [
+        "/workspace/scratch/892354ae3802/repo/assets/resonance/candidates/continuation_20261127_o/fx/fx_houndeye_sonic_ring_hl1_pack4_o.png",
+        "/workspace/scratch/892354ae3802/repo/assets/resonance/candidates/continuation_20261127_o/fx/fx_houndeye_sonic_ring_hl1_pack2_o.png"
+      ],
+      "status": "generated_original_saved_qa_reviewed",
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "visual_state_complete": false,
+      "animation_clip_complete": false,
+      "revision": 2,
+      "supersedes_asset_id": "fx_houndeye_sonic_ring_hl1_pack4_o"
+    },
+    {
+      "target_id": "fx_gauss_beam_hl1",
+      "visual_state_id": "charged",
+      "component_id": "charged_straight_beam",
+      "variant_id": "charged_white",
+      "name_fr": "Gauss HL1 — faisceau chargé blanc, épaisseur modérée v2",
+      "source_ids": [
+        "valve_ev_hldm",
+        "preview_smoke"
+      ],
+      "source_base_rgb": [
+        255,
+        255,
+        255
+      ],
+      "prompt": "Use case: precise-object-edit.\nAsset type: ONE corrected alpha-transparent charged Gauss beam candidate, revision 2.\nInput images: Image 1 is the white charged-beam candidate to edit. Image 2 is the original project's orange primary-beam candidate as a width/framing comparison only; do NOT copy its orange hue.\nPrimary request: REDUCE ONLY the visible vertical thickness of the white horizontal beam in Image 1. Preserve Image 1's canvas size, center axis, white-neutral palette, horizontal length, exact endpoints, straight direction and restrained irregular smoke-based longitudinal texture. The first charged result is visibly too thick: approximately 165 pixels tall at a useful alpha threshold versus approximately 39 pixels for the project primary. Reduce the charged thickness to about 60 percent of the current Image 1 thickness, so it looks only moderately thicker than the primary comparison. This target is a visual approximation to the official Half-Life GoldSrc Gauss code: primary width parameter 1, charged width parameter 2.5; rendered PNG alpha bounding boxes are not automatically equal to engine beam width.\nKeep the main luminous strip narrow, straight and neutral white, with a restrained soft edge. Do not merely dim the surrounding haze while leaving the main strip equally thick: actually reduce the visible vertical thickness. No brighter explosion at either end, no projectile orb, no expanding shockwave, no vertical halo, no weapon, no scene, no floor, no caption, no panel, no extra beam, no new branches, no sparks or extra coils. Genuine transparent background with generous margins, not a background-colored rectangle. This is a static generated project candidate whose sources are official SDK code and a small community smoke-sprite preview; do not present it as a retail capture or certified 1:1 asset. Produce one image, not a comparison sheet.",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_gauss_beam_hl1_charged_v2_o.png",
+      "reference_paths": [
+        "/workspace/scratch/892354ae3802/repo/assets/resonance/candidates/continuation_20261127_o/fx/fx_gauss_beam_hl1_charged_o.png",
+        "/workspace/scratch/892354ae3802/repo/assets/resonance/candidates/continuation_20261124_i/effects/fx_gauss_primary_hl1_i.png"
+      ],
+      "revision": 2,
+      "supersedes_asset_id": "fx_gauss_beam_hl1_charged_o",
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "visual_state_complete": false,
+      "animation_clip_complete": false,
+      "id": "fx_gauss_beam_hl1_charged_v2_o",
+      "input_paths": [
+        "assets/resonance/candidates/continuation_20261127_o/fx/fx_gauss_beam_hl1_charged_o.png",
+        "assets/resonance/candidates/continuation_20261124_i/effects/fx_gauss_primary_hl1_i.png"
+      ],
+      "status": "generated_original_saved_qa_reviewed"
+    }
+  ],
+  "assets": [
+    {
+      "target_id": "fx_houndeye_sonic_ring_hl1",
+      "visual_state_id": "pack_color_variants",
+      "component_id": "two_concentric_sonic_rings",
+      "variant_id": "pack_2",
+      "pack_size": 2,
+      "source_base_rgb": [
+        101,
+        133,
+        221
+      ],
+      "source_ids": [
+        "valve_houndeye"
+      ],
+      "name_fr": "Houndeye HL1 — anneaux de meute de 2",
+      "prompt": "Use case: precise-object-edit.\nAsset type: ONE alpha-transparent combined two-ring sonic area-effect frame.\nInput image: the existing generated Houndeye solo-ring candidate is the edit target and project framing reference. It was guided by source code, not a retail bitmap, and is not a certified source capture.\nPrimary request: change only the ring color into the 2-member pack variant of original GoldSrc Half-Life. Official CHoundeye::WriteBeamColor assigns base RGB 101,133,221 to a pack of 2. Recolor BOTH rings consistently to that exact darker saturated base tint with restrained luminous highlights; do not retain the pale solo RGB 188,220,255. Preserve the same canvas, center pivot, horizontal ground-plane perspective, two concentric rings and outer-to-inner radius ratio of two to one.\nConstraints: the pack size changes color, not the number of rings. No extra rings, creatures, vertical portals, lightning between creatures, orb, ground surface, geometric noise, captions, labels or multiple panels. Preserve simple translucent bands and real alpha, empty transparent ring interiors, exterior and generous margins. One static combined frame representing one pack-color variant, not a full dissipation animation or a claim of exact retail pixels.",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_houndeye_sonic_ring_hl1_pack2_o.png",
+      "reference_paths": [
+        "/workspace/scratch/892354ae3802/repo/assets/resonance/candidates/continuation_20261124_h/projectiles/fx_houndeye_sonic_ring_hl1_h.png"
+      ],
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "visual_state_complete": false,
+      "animation_clip_complete": false,
+      "asset_id": "fx_houndeye_sonic_ring_hl1_pack2_o",
+      "target_ids": [
+        "fx_houndeye_sonic_ring_hl1"
+      ],
+      "owner_id": "fx_houndeye_sonic_ring_hl1",
+      "owner_type": "projectile_effect",
+      "category": "vfx_key_frame",
+      "batch_id": "continuation_20261127_o",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life (GoldSrc)",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidate_reviewed_not_certified",
+      "source_path": "/workspace/scratch/892354ae3802/generated_images/exec-a1183f17-773f-4a12-8489-5fa902b6fead.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_houndeye_sonic_ring_hl1_pack2_o.png",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 1367514,
+      "sha256": "e3967b569841912781b7861d9680a9386dc69a4b5fc12e631525faa43a95656d",
+      "git_blob_sha1": "2b2c24e6e829893100a8cc41e07c6aa3bf3febc1",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "transparent_background": true,
+      "alpha_stats": {
+        "mode": "RGBA",
+        "alpha_range": [
+          0,
+          241
+        ],
+        "transparent_pixels": 666538,
+        "partial_pixels": 905990,
+        "opaque_pixels": 0,
+        "transparent_fraction": 0.4238639947905538,
+        "bbox_alpha_nonzero": [
+          0,
+          0,
+          2156,
+          724
+        ],
+        "bbox_alpha_at_least_8": [
+          143,
+          184,
+          2026,
+          545
+        ],
+        "bbox_alpha_at_least_16": [
+          148,
+          188,
+          2019,
+          541
+        ],
+        "bbox_alpha_at_least_64": [
+          170,
+          200,
+          2003,
+          532
+        ],
+        "border_max_alpha": 1,
+        "border_pixels_alpha_gt0": 972,
+        "border_pixels_alpha_at_least_16": 0,
+        "border_pixels_alpha_at_least_64": 0,
+        "center_alpha": 0,
+        "rgb_median_alpha_at_least_128": [
+          89.0,
+          120.0,
+          202.0
+        ],
+        "rgb_mean_alpha_at_least_128": [
+          89.67,
+          121.1,
+          201.76
+        ]
+      },
+      "qa_composite_path": "/workspace/scratch/892354ae3802/continuation_o_fx_work/qa/fx_houndeye_sonic_ring_hl1_pack2_o_light_dark.png",
+      "source_manifest": "docs/resonance/production/continuation_20261127_o/fx_references/manifest.json",
+      "reference_files": [
+        {
+          "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_houndeye_sonic_ring_hl1_h.png",
+          "sha256": "f444405cd2e96e34e0f7f2b3c402439090b7750976df2ee68643e6e1909d2785",
+          "byte_size": 972735,
+          "visually_inspected_before_generation": true
+        }
+      ],
+      "reference_bitmap_loaded": true,
+      "local_player_capture_claimed": false,
+      "retail_binary_equivalence_verified": false,
+      "integrated_in_game": false,
+      "selected_for_next_review": true,
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#f2f2f2",
+          "#121820"
+        ],
+        "original_pixels_modified": false
+      },
+      "qa_notes": "Deux anneaux concentriques bleu désaturé lisibles sur clair et sombre ; centre alpha 0. Palette orientée par RGB SDK 101/133/221, médiane des pixels alpha ≥128 : 89/120/202. Ni palette pixel exacte, ni géométrie moteur certifiées. Géométrie et halo encore à comparer à une version retail fixée. Traces alpha 1 aux bords ; aucun pixel de bord alpha ≥16.",
+      "source_urls": [
+        "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/houndeye.cpp"
+      ],
+      "source_references": [
+        {
+          "id": "valve_houndeye",
+          "source_url": "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/houndeye.cpp",
+          "download_url": "https://raw.githubusercontent.com/ValveSoftware/halflife/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/houndeye.cpp",
+          "source_kind": "primary_official_source_code",
+          "commit": "b1b5cf5892918535619b2937bb927e46cb097ba1",
+          "path": "dlls/houndeye.cpp",
+          "sha256": "079b33d280d869c9bf87268e2de988cb5e31f721639e42119411196c161f3951",
+          "byte_size": 31727,
+          "local_review_copy": "/workspace/scratch/892354ae3802/continuation_o_fx_work/official_sources/dlls__houndeye.cpp",
+          "text_inspected": true,
+          "visual_capture_claimed": false
+        }
+      ],
+      "source_contract": {
+        "code_symbol": "CHoundeye::SonicAttack / CHoundeye::WriteBeamColor",
+        "source_rules": [
+          "Two concentric TE_BEAMCYLINDER effects with nominal outer/inner radius2:1, width16, noise0.",
+          "Pack size changes color, not ring count. Pack2 RGB101,133,221; pack4 RGB62,33,211."
+        ],
+        "coverage_limit": "One static combined ring candidate per pack color. Exact perspective, radii, animation, material and engine compositing remain unverified."
+      },
+      "generation_call_count": 1,
+      "generation_refusal_observed": false,
+      "retried_after_rejection": false,
+      "qa_visual_review_performed": true,
+      "selection_semantics": "Preferred candidate for subsequent source/game comparison; not production approval or completed-state status.",
+      "visual_capture_status": "No verified retail capture used. Existing candidates and named community sprite previews are distinguished in the reference manifest.",
+      "exact_palette_verified": false,
+      "exact_geometry_verified": false,
+      "exact_temporal_phase_verified": false,
+      "background_qa": "No opaque rectangular backing or visibly clipped effect at canvas edges. Some originals retain alpha1 traces; detailed measurements are in alpha_stats."
+    },
+    {
+      "target_id": "fx_houndeye_sonic_ring_hl1",
+      "visual_state_id": "pack_color_variants",
+      "component_id": "two_concentric_sonic_rings",
+      "variant_id": "pack_4",
+      "pack_size": 4,
+      "source_base_rgb": [
+        62,
+        33,
+        211
+      ],
+      "source_ids": [
+        "valve_houndeye"
+      ],
+      "name_fr": "Houndeye HL1 — anneaux de meute de 4",
+      "prompt": "Use case: precise-object-edit.\nAsset type: ONE alpha-transparent combined two-ring sonic area-effect frame.\nInput image: the existing generated Houndeye solo-ring candidate is the edit target and project framing reference. It was guided by source code, not a retail bitmap, and is not a certified source capture.\nPrimary request: change only the ring color into the 4-member pack variant of original GoldSrc Half-Life. Official CHoundeye::WriteBeamColor assigns base RGB 62,33,211 to a pack of 4. Recolor BOTH rings consistently to that exact darker saturated base tint with restrained luminous highlights; do not retain the pale solo RGB 188,220,255. Preserve the same canvas, center pivot, horizontal ground-plane perspective, two concentric rings and outer-to-inner radius ratio of two to one.\nConstraints: the pack size changes color, not the number of rings. No extra rings, creatures, vertical portals, lightning between creatures, orb, ground surface, geometric noise, captions, labels or multiple panels. Preserve simple translucent bands and real alpha, empty transparent ring interiors, exterior and generous margins. One static combined frame representing one pack-color variant, not a full dissipation animation or a claim of exact retail pixels.",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_houndeye_sonic_ring_hl1_pack4_o.png",
+      "reference_paths": [
+        "/workspace/scratch/892354ae3802/repo/assets/resonance/candidates/continuation_20261124_h/projectiles/fx_houndeye_sonic_ring_hl1_h.png"
+      ],
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "visual_state_complete": false,
+      "animation_clip_complete": false,
+      "asset_id": "fx_houndeye_sonic_ring_hl1_pack4_o",
+      "target_ids": [
+        "fx_houndeye_sonic_ring_hl1"
+      ],
+      "owner_id": "fx_houndeye_sonic_ring_hl1",
+      "owner_type": "projectile_effect",
+      "category": "vfx_key_frame",
+      "batch_id": "continuation_20261127_o",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life (GoldSrc)",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "superseded_candidate_preserved",
+      "source_path": "/workspace/scratch/892354ae3802/generated_images/exec-21c87851-fffe-41ec-92cf-1cfac644a2fd.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_houndeye_sonic_ring_hl1_pack4_o.png",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 1224043,
+      "sha256": "9bc611604df3a6b3dd73495cca62ae5530b3303ae399fe06ea1f466329cbb00b",
+      "git_blob_sha1": "bf635bd48248a9ebab6b7d0477e693256333883c",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "transparent_background": true,
+      "alpha_stats": {
+        "mode": "RGBA",
+        "alpha_range": [
+          0,
+          252
+        ],
+        "transparent_pixels": 595631,
+        "partial_pixels": 976897,
+        "opaque_pixels": 0,
+        "transparent_fraction": 0.3787729057924565,
+        "bbox_alpha_nonzero": [
+          0,
+          0,
+          2172,
+          724
+        ],
+        "bbox_alpha_at_least_8": [
+          135,
+          161,
+          2042,
+          563
+        ],
+        "bbox_alpha_at_least_16": [
+          138,
+          165,
+          2039,
+          560
+        ],
+        "bbox_alpha_at_least_64": [
+          147,
+          173,
+          2029,
+          552
+        ],
+        "border_max_alpha": 1,
+        "border_pixels_alpha_gt0": 1534,
+        "border_pixels_alpha_at_least_16": 0,
+        "border_pixels_alpha_at_least_64": 0,
+        "center_alpha": 2,
+        "rgb_median_alpha_at_least_128": [
+          53.0,
+          29.0,
+          184.0
+        ],
+        "rgb_mean_alpha_at_least_128": [
+          56.73,
+          31.38,
+          194.42
+        ]
+      },
+      "qa_composite_path": "/workspace/scratch/892354ae3802/continuation_o_fx_work/qa/fx_houndeye_sonic_ring_hl1_pack4_o_light_dark.png",
+      "source_manifest": "docs/resonance/production/continuation_20261127_o/fx_references/manifest.json",
+      "reference_files": [
+        {
+          "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_houndeye_sonic_ring_hl1_h.png",
+          "sha256": "f444405cd2e96e34e0f7f2b3c402439090b7750976df2ee68643e6e1909d2785",
+          "byte_size": 972735,
+          "visually_inspected_before_generation": true
+        }
+      ],
+      "reference_bitmap_loaded": true,
+      "local_player_capture_claimed": false,
+      "retail_binary_equivalence_verified": false,
+      "integrated_in_game": false,
+      "selected_for_next_review": false,
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#f2f2f2",
+          "#121820"
+        ],
+        "original_pixels_modified": false
+      },
+      "qa_notes": "Version initiale conservée intégralement mais écartée au profit de v2 : voile coloré trop dense entre les anneaux. Deux anneaux présents ; leur texture et leur épaisseur dérivent au-delà de la simple recoloration demandée. Ne pas utiliser comme état validé.",
+      "source_urls": [
+        "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/houndeye.cpp"
+      ],
+      "source_references": [
+        {
+          "id": "valve_houndeye",
+          "source_url": "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/houndeye.cpp",
+          "download_url": "https://raw.githubusercontent.com/ValveSoftware/halflife/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/houndeye.cpp",
+          "source_kind": "primary_official_source_code",
+          "commit": "b1b5cf5892918535619b2937bb927e46cb097ba1",
+          "path": "dlls/houndeye.cpp",
+          "sha256": "079b33d280d869c9bf87268e2de988cb5e31f721639e42119411196c161f3951",
+          "byte_size": 31727,
+          "local_review_copy": "/workspace/scratch/892354ae3802/continuation_o_fx_work/official_sources/dlls__houndeye.cpp",
+          "text_inspected": true,
+          "visual_capture_claimed": false
+        }
+      ],
+      "source_contract": {
+        "code_symbol": "CHoundeye::SonicAttack / CHoundeye::WriteBeamColor",
+        "source_rules": [
+          "Two concentric TE_BEAMCYLINDER effects with nominal outer/inner radius2:1, width16, noise0.",
+          "Pack size changes color, not ring count. Pack2 RGB101,133,221; pack4 RGB62,33,211."
+        ],
+        "coverage_limit": "One static combined ring candidate per pack color. Exact perspective, radii, animation, material and engine compositing remain unverified."
+      },
+      "generation_call_count": 1,
+      "generation_refusal_observed": false,
+      "retried_after_rejection": false,
+      "qa_visual_review_performed": true,
+      "selection_semantics": "Preferred candidate for subsequent source/game comparison; not production approval or completed-state status.",
+      "visual_capture_status": "No verified retail capture used. Existing candidates and named community sprite previews are distinguished in the reference manifest.",
+      "exact_palette_verified": false,
+      "exact_geometry_verified": false,
+      "exact_temporal_phase_verified": false,
+      "background_qa": "No opaque rectangular backing or visibly clipped effect at canvas edges. Some originals retain alpha1 traces; detailed measurements are in alpha_stats.",
+      "superseded_by_asset_id": "fx_houndeye_sonic_ring_hl1_pack4_v2_o",
+      "preserved_as_generation_history": true
+    },
+    {
+      "target_id": "fx_gauss_beam_hl1",
+      "visual_state_id": "charged",
+      "component_id": "charged_straight_beam",
+      "variant_id": "charged_white",
+      "source_ids": [
+        "valve_ev_hldm",
+        "preview_smoke"
+      ],
+      "name_fr": "Tau/Gauss HL1 — rayon chargé blanc",
+      "prompt": "Use case: precise-object-edit.\nAsset type: ONE alpha-transparent 2D game-effect candidate.\nInput images: Image 1 is the existing generated orange primary Gauss beam, the edit target and project framing reference; it is NOT a retail capture. Image 2 is a small community preview identified as smoke.spr, a texture reference only, NOT an official capture.\nPrimary request: turn only the primary beam into the charged firing beam of the original GoldSrc Half-Life Tau/Gauss Cannon. Preserve the same canvas, beam length, central pivot and straight horizontal direction. Change the base tint to pure white RGB 255,255,255 and make the luminous thickness 2.5 times the primary width, guided by official EV_FireGauss (charged width 2.5 versus primary width 1, geometric noise zero). Keep subtle cloudy translucent smoke.spr texture and restrained glow.\nConstraints: one continuous instantaneous beam segment, not a traveling projectile. Keep generous truly empty transparent margins at every edge. No orange primary tint, blue Gluon coils, lightning branches, ball, weapon, hand, muzzle flare, contact burst, scene, letters or panels. Do not copy the source preview's black backing. Preserve true alpha transparency. One static charged-beam candidate; high-resolution texture is interpretation, not retail pixel certification.",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_gauss_beam_hl1_charged_o.png",
+      "reference_paths": [
+        "/workspace/scratch/892354ae3802/repo/assets/resonance/candidates/continuation_20261124_i/effects/fx_gauss_primary_hl1_i.png",
+        "/workspace/scratch/892354ae3802/repo/docs/resonance/production/continuation_20261127_o/fx_references/smoke_community_preview.png"
+      ],
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "visual_state_complete": false,
+      "animation_clip_complete": false,
+      "asset_id": "fx_gauss_beam_hl1_charged_o",
+      "target_ids": [
+        "fx_gauss_beam_hl1"
+      ],
+      "owner_id": "fx_gauss_beam_hl1",
+      "owner_type": "projectile_effect",
+      "category": "vfx_key_frame",
+      "batch_id": "continuation_20261127_o",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life (GoldSrc)",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "superseded_candidate_preserved",
+      "source_path": "/workspace/scratch/892354ae3802/generated_images/exec-f717ae38-38d7-47fb-bce7-c215e06d5c3e.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_gauss_beam_hl1_charged_o.png",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 626649,
+      "sha256": "e3f995d1474ef81c4ee1bb43987e90023cad5afd59a9093706f8d5ec93e322a0",
+      "git_blob_sha1": "99cd7be6fd2bb9aff12aa21dcceaea1f82935504",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "transparent_background": true,
+      "alpha_stats": {
+        "mode": "RGBA",
+        "alpha_range": [
+          0,
+          254
+        ],
+        "transparent_pixels": 1239862,
+        "partial_pixels": 332666,
+        "opaque_pixels": 0,
+        "transparent_fraction": 0.7884514615955964,
+        "bbox_alpha_nonzero": [
+          0,
+          71,
+          2160,
+          698
+        ],
+        "bbox_alpha_at_least_8": [
+          147,
+          275,
+          2023,
+          447
+        ],
+        "bbox_alpha_at_least_16": [
+          152,
+          278,
+          2017,
+          443
+        ],
+        "bbox_alpha_at_least_64": [
+          166,
+          289,
+          2005,
+          434
+        ],
+        "border_max_alpha": 1,
+        "border_pixels_alpha_gt0": 33,
+        "border_pixels_alpha_at_least_16": 0,
+        "border_pixels_alpha_at_least_64": 0,
+        "center_alpha": 253,
+        "rgb_median_alpha_at_least_128": [
+          216.0,
+          215.0,
+          216.0
+        ],
+        "rgb_mean_alpha_at_least_128": [
+          214.62,
+          213.95,
+          214.12
+        ]
+      },
+      "qa_composite_path": "/workspace/scratch/892354ae3802/continuation_o_fx_work/qa/fx_gauss_beam_hl1_charged_o_light_dark.png",
+      "source_manifest": "docs/resonance/production/continuation_20261127_o/fx_references/manifest.json",
+      "reference_files": [
+        {
+          "repository_path": "assets/resonance/candidates/continuation_20261124_i/effects/fx_gauss_primary_hl1_i.png",
+          "sha256": "7beed7e39242fd7079a3655dc32953fcb07861e70386026a62730f28b414cc77",
+          "byte_size": 182623,
+          "visually_inspected_before_generation": true
+        },
+        {
+          "repository_path": "docs/resonance/production/continuation_20261127_o/fx_references/smoke_community_preview.png",
+          "sha256": "e0c04fe2605439dd439fe86116b94afd45f0984fdd3fb9fb3ebb47c95f074121",
+          "byte_size": 1322,
+          "visually_inspected_before_generation": true
+        }
+      ],
+      "reference_bitmap_loaded": true,
+      "local_player_capture_claimed": false,
+      "retail_binary_equivalence_verified": false,
+      "integrated_in_game": false,
+      "selected_for_next_review": false,
+      "source_urls": [
+        "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/cl_dll/ev_hldm.cpp",
+        "https://arquivo.mataleone.com/tut/sprites/smoke.gif"
+      ],
+      "source_references": [
+        {
+          "id": "valve_ev_hldm",
+          "source_url": "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/cl_dll/ev_hldm.cpp",
+          "download_url": "https://raw.githubusercontent.com/ValveSoftware/halflife/b1b5cf5892918535619b2937bb927e46cb097ba1/cl_dll/ev_hldm.cpp",
+          "source_kind": "primary_official_source_code",
+          "commit": "b1b5cf5892918535619b2937bb927e46cb097ba1",
+          "path": "cl_dll/ev_hldm.cpp",
+          "sha256": "c85ab7d6c2a0e913e7e94d89ae0a76513f12db7241866abf93e9e6b7cfd5bba0",
+          "byte_size": 47117,
+          "local_review_copy": "/workspace/scratch/892354ae3802/continuation_o_fx_work/official_sources/cl_dll__ev_hldm.cpp",
+          "text_inspected": true,
+          "visual_capture_claimed": false
+        },
+        {
+          "id": "preview_smoke",
+          "source_url": "https://arquivo.mataleone.com/tut/sprites/smoke.gif",
+          "source_page": "https://arquivo.mataleone.com/php/main.php?cat=ref&id=7&lang=en&page=tut",
+          "source_kind": "community_sprite_preview_named_resource_not_retail_capture",
+          "original_path": "docs/resonance/production/continuation_20261127_o/fx_references/smoke_community_preview.gif",
+          "sha256": "0db251661fd8251494db828dff6b1f729a6f0bdd55bbb54e29cf39c073e2f1cb",
+          "byte_size": 2101,
+          "width": 28,
+          "height": 64,
+          "frame_count": 1,
+          "input_image_path": "docs/resonance/production/continuation_20261127_o/fx_references/smoke_community_preview.png",
+          "input_png_sha256": "e0c04fe2605439dd439fe86116b94afd45f0984fdd3fb9fb3ebb47c95f074121",
+          "conversion": "Single GIF frame decoded to same-size RGB PNG only; no resize, crop, recoloring or inferred alpha. Source black is preview/compositing backing.",
+          "visually_inspected": true
+        }
+      ],
+      "source_contract": {
+        "code_symbol": "EV_FireGauss",
+        "source_rules": [
+          "smoke.spr beam texture; primary RGB255,128,0 width1; charged RGB255,255,255 width2.5; noise0.",
+          "hotglow.spr is a contact component. Full impact cases include additional effect calls not represented by this isolated flare."
+        ],
+        "coverage_limit": "Charged beam still a static generated texture candidate; impact image covers only its named flare component."
+      },
+      "generation_call_count": 1,
+      "generation_refusal_observed": false,
+      "retried_after_rejection": false,
+      "qa_visual_review_performed": true,
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#f2f2f2",
+          "#121820"
+        ],
+        "original_pixels_modified": false
+      },
+      "qa_notes": "Version initiale blanche, rectiligne, conservée mais écartée au profit de v2 : silhouette trop épaisse par rapport au candidat primaire. Boîte utile alpha ≥16 : hauteur 165 px, primaire 39 px, soit 4,23×. Le paramètre de largeur du SDK passe de 1 à 2,5 ; ce ratio moteur ne se confond pas avec une boîte de pixels au seuil alpha, mais la dérive visible justifie la correction.",
+      "selection_semantics": "Preferred candidate for subsequent source/game comparison; not production approval or completed-state status.",
+      "visual_capture_status": "No verified retail capture used. Existing candidates and named community sprite previews are distinguished in the reference manifest.",
+      "exact_palette_verified": false,
+      "exact_geometry_verified": false,
+      "exact_temporal_phase_verified": false,
+      "background_qa": "No opaque rectangular backing or visibly clipped effect at canvas edges. Some originals retain alpha1 traces; detailed measurements are in alpha_stats.",
+      "superseded_by_asset_id": "fx_gauss_beam_hl1_charged_v2_o",
+      "preserved_as_generation_history": true
+    },
+    {
+      "target_id": "fx_gauss_beam_hl1",
+      "visual_state_id": "impact",
+      "component_id": "hotglow_contact_component",
+      "variant_id": "contact_flare_only",
+      "source_ids": [
+        "valve_ev_hldm",
+        "preview_hotglow"
+      ],
+      "name_fr": "Tau/Gauss HL1 — composant hotglow de contact",
+      "prompt": "Use case: stylized-concept.\nAsset type: ONE alpha-transparent 2D contact-glow COMPONENT, not a complete impact effect.\nInput images: Image 1 is a 54x54 community preview identified as hotglow.spr, the strict shape and palette reference; it is not a retail capture or official Valve publication. Image 2 is an existing generated Gauss beam, used only for restrained project rendering style.\nPrimary request: reproduce one compact hotglow contact component associated with the GoldSrc Half-Life Tau/Gauss effect in official EV_FireGauss. Follow the small preview: compact irregular warm yellow-orange luminous center, softer darker-orange radial halo and short restrained radial rays. Preserve its simple low-detail appearance instead of inventing detailed flames.\nComposition: square canvas; a single centered small glow occupying about one third of the width, with broad completely transparent margins.\nConstraints: this represents only the hotglow contact component; the code's additional impact particles and timing are not included. No beam, weapon, wall, crater, debris, particle spray, traveling orb, explosive cloud, caption, panel or background. The black behind the source preview is compositing backing and must not be copied. Genuine alpha transparency, no opaque black rectangle. One candidate frame, no fidelity certification or animation claim.",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_gauss_beam_hl1_impact_hotglow_o.png",
+      "reference_paths": [
+        "/workspace/scratch/892354ae3802/repo/docs/resonance/production/continuation_20261127_o/fx_references/hotglow_community_preview.png",
+        "/workspace/scratch/892354ae3802/repo/assets/resonance/candidates/continuation_20261124_i/effects/fx_gauss_primary_hl1_i.png"
+      ],
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "visual_state_complete": false,
+      "animation_clip_complete": false,
+      "asset_id": "fx_gauss_beam_hl1_impact_hotglow_o",
+      "target_ids": [
+        "fx_gauss_beam_hl1"
+      ],
+      "owner_id": "fx_gauss_beam_hl1",
+      "owner_type": "projectile_effect",
+      "category": "vfx_key_frame",
+      "batch_id": "continuation_20261127_o",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life (GoldSrc)",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidate_reviewed_not_certified",
+      "source_path": "/workspace/scratch/892354ae3802/generated_images/exec-5076a358-2f50-4702-add5-63142507f1e0.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_gauss_beam_hl1_impact_hotglow_o.png",
+      "width": 1254,
+      "height": 1254,
+      "color_mode": "RGBA",
+      "byte_size": 575750,
+      "sha256": "65e9379a57176bb7a636015d4161eab3ca7a5071846e26f848254efa607ac08b",
+      "git_blob_sha1": "87120aa444a43cce1aff41bc4e4cde8e77cd3a09",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "transparent_background": true,
+      "alpha_stats": {
+        "mode": "RGBA",
+        "alpha_range": [
+          0,
+          253
+        ],
+        "transparent_pixels": 1074938,
+        "partial_pixels": 497578,
+        "opaque_pixels": 0,
+        "transparent_fraction": 0.6835784182800048,
+        "bbox_alpha_nonzero": [
+          0,
+          21,
+          1242,
+          1238
+        ],
+        "bbox_alpha_at_least_8": [
+          371,
+          351,
+          877,
+          880
+        ],
+        "bbox_alpha_at_least_16": [
+          393,
+          374,
+          842,
+          858
+        ],
+        "bbox_alpha_at_least_64": [
+          444,
+          424,
+          795,
+          798
+        ],
+        "border_max_alpha": 1,
+        "border_pixels_alpha_gt0": 5,
+        "border_pixels_alpha_at_least_16": 0,
+        "border_pixels_alpha_at_least_64": 0,
+        "center_alpha": 253,
+        "rgb_median_alpha_at_least_128": [
+          232.0,
+          101.0,
+          3.0
+        ],
+        "rgb_mean_alpha_at_least_128": [
+          235.07,
+          111.01,
+          3.05
+        ]
+      },
+      "qa_composite_path": "/workspace/scratch/892354ae3802/continuation_o_fx_work/qa/fx_gauss_beam_hl1_impact_hotglow_o_light_dark.png",
+      "source_manifest": "docs/resonance/production/continuation_20261127_o/fx_references/manifest.json",
+      "reference_files": [
+        {
+          "repository_path": "docs/resonance/production/continuation_20261127_o/fx_references/hotglow_community_preview.png",
+          "sha256": "2ec0c735f6ad47fca6ea1805068ac3490f42519dddc69349c96ce0a9a6914cea",
+          "byte_size": 1894,
+          "visually_inspected_before_generation": true
+        },
+        {
+          "repository_path": "assets/resonance/candidates/continuation_20261124_i/effects/fx_gauss_primary_hl1_i.png",
+          "sha256": "7beed7e39242fd7079a3655dc32953fcb07861e70386026a62730f28b414cc77",
+          "byte_size": 182623,
+          "visually_inspected_before_generation": true
+        }
+      ],
+      "reference_bitmap_loaded": true,
+      "local_player_capture_claimed": false,
+      "retail_binary_equivalence_verified": false,
+      "integrated_in_game": false,
+      "selected_for_next_review": true,
+      "source_urls": [
+        "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/cl_dll/ev_hldm.cpp",
+        "https://arquivo.mataleone.com/tut/sprites/hotglow.gif"
+      ],
+      "source_references": [
+        {
+          "id": "valve_ev_hldm",
+          "source_url": "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/cl_dll/ev_hldm.cpp",
+          "download_url": "https://raw.githubusercontent.com/ValveSoftware/halflife/b1b5cf5892918535619b2937bb927e46cb097ba1/cl_dll/ev_hldm.cpp",
+          "source_kind": "primary_official_source_code",
+          "commit": "b1b5cf5892918535619b2937bb927e46cb097ba1",
+          "path": "cl_dll/ev_hldm.cpp",
+          "sha256": "c85ab7d6c2a0e913e7e94d89ae0a76513f12db7241866abf93e9e6b7cfd5bba0",
+          "byte_size": 47117,
+          "local_review_copy": "/workspace/scratch/892354ae3802/continuation_o_fx_work/official_sources/cl_dll__ev_hldm.cpp",
+          "text_inspected": true,
+          "visual_capture_claimed": false
+        },
+        {
+          "id": "preview_hotglow",
+          "source_url": "https://arquivo.mataleone.com/tut/sprites/hotglow.gif",
+          "source_page": "https://arquivo.mataleone.com/php/main.php?cat=ref&id=7&lang=en&page=tut",
+          "source_kind": "community_sprite_preview_named_resource_not_retail_capture",
+          "original_path": "docs/resonance/production/continuation_20261127_o/fx_references/hotglow_community_preview.gif",
+          "sha256": "1053cb06630e4a82c2b1ca4e37f65bd6312e5019e33257606aa1668e56eab4e0",
+          "byte_size": 2275,
+          "width": 54,
+          "height": 54,
+          "frame_count": 1,
+          "input_image_path": "docs/resonance/production/continuation_20261127_o/fx_references/hotglow_community_preview.png",
+          "input_png_sha256": "2ec0c735f6ad47fca6ea1805068ac3490f42519dddc69349c96ce0a9a6914cea",
+          "conversion": "Single GIF frame decoded to same-size RGB PNG only; no resize, crop, recoloring or inferred alpha. Source black is preview/compositing backing.",
+          "visually_inspected": true
+        }
+      ],
+      "source_contract": {
+        "code_symbol": "EV_FireGauss",
+        "source_rules": [
+          "smoke.spr beam texture; primary RGB255,128,0 width1; charged RGB255,255,255 width2.5; noise0.",
+          "hotglow.spr is a contact component. Full impact cases include additional effect calls not represented by this isolated flare."
+        ],
+        "coverage_limit": "Charged beam still a static generated texture candidate; impact image covers only its named flare component."
+      },
+      "generation_call_count": 1,
+      "generation_refusal_observed": false,
+      "retried_after_rejection": false,
+      "qa_visual_review_performed": true,
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#f2f2f2",
+          "#121820"
+        ],
+        "original_pixels_modified": false
+      },
+      "qa_notes": "Flare radial compact jaune/orange observé sur fonds clair et sombre. Palette et répartition générale orientées par le preview communautaire hotglow 54×54 ; petites pointes/rayons et diffusion à haute résolution réinterprétés. Il s’agit du composant de contact hotglow uniquement : le SDK peut ajouter d’autres traînées/particules selon le cas d’impact. Ni effet d’impact complet ni clip complet.",
+      "selection_semantics": "Preferred candidate for subsequent source/game comparison; not production approval or completed-state status.",
+      "visual_capture_status": "No verified retail capture used. Existing candidates and named community sprite previews are distinguished in the reference manifest.",
+      "exact_palette_verified": false,
+      "exact_geometry_verified": false,
+      "exact_temporal_phase_verified": false,
+      "background_qa": "No opaque rectangular backing or visibly clipped effect at canvas edges. Some originals retain alpha1 traces; detailed measurements are in alpha_stats."
+    },
+    {
+      "target_id": "fx_gluon_beam_hl1",
+      "visual_state_id": "tip",
+      "component_id": "xspark1_contact_flare",
+      "variant_id": "wide_fire_contact",
+      "source_ids": [
+        "valve_egon",
+        "preview_xspark1"
+      ],
+      "name_fr": "Gluon HL1 — composant XSpark1 de contact",
+      "prompt": "Use case: stylized-concept.\nAsset type: ONE isolated alpha-transparent contact-flare COMPONENT for a 2D game, not an entire beam or impact.\nInput images: Image 1 is a tiny 21x27 community preview identified as XSpark1.spr, the strict shape and color reference; it is not a retail capture or an official Valve image. Image 2 is the project's existing generated Gluon beam, used only for restrained effect rendering style.\nPrimary request: create the GoldSrc Half-Life Gluon contact flare assigned by official CEgon code to the beam's contact point. Keep the source's irregular white luminous cluster, cyan and deep blue translucent edges, slight vertical elongation and asymmetric lobes. Preserve a simple source-like silhouette; high-resolution detail must stay modest.\nComposition: a square canvas, centered pivot; the entire useful flare occupies roughly one fifth of canvas width and one quarter of canvas height. Keep very broad transparent margins for a later expansion on the same canvas.\nConstraints: no long beam, weapon, target, surface, flying projectile, portal ring, invented radial spikes, letters, panels or other effects. Do not tint the entire flare violet to match the beam; retain the source white/cyan. Do not copy its black preview backing. True transparent alpha. One static candidate tip component only, not an animation or a 1:1 certification.",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_gluon_beam_hl1_tip_xspark1_o.png",
+      "reference_paths": [
+        "/workspace/scratch/892354ae3802/repo/docs/resonance/production/continuation_20261127_o/fx_references/xspark1_community_preview.png",
+        "/workspace/scratch/892354ae3802/repo/assets/resonance/candidates/continuation_20261124_j/effects/fx_gluon_beam_hl1_beam_resumed_j.png"
+      ],
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "visual_state_complete": false,
+      "animation_clip_complete": false,
+      "asset_id": "fx_gluon_beam_hl1_tip_xspark1_o",
+      "target_ids": [
+        "fx_gluon_beam_hl1"
+      ],
+      "owner_id": "fx_gluon_beam_hl1",
+      "owner_type": "projectile_effect",
+      "category": "vfx_key_frame",
+      "batch_id": "continuation_20261127_o",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life (GoldSrc)",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidate_reviewed_not_certified",
+      "source_path": "/workspace/scratch/892354ae3802/generated_images/exec-bf833e5d-a442-4488-9b7e-545a9e7de7ba.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_gluon_beam_hl1_tip_xspark1_o.png",
+      "width": 1254,
+      "height": 1254,
+      "color_mode": "RGBA",
+      "byte_size": 147863,
+      "sha256": "72d4dd188b2b59c67852c6cf83b20ddc63b491e09fa689c4ceecabc7dcb94e52",
+      "git_blob_sha1": "3e5b26b13101e04caf3da8aa02ff0043280bc75c",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "transparent_background": true,
+      "alpha_stats": {
+        "mode": "RGBA",
+        "alpha_range": [
+          0,
+          254
+        ],
+        "transparent_pixels": 1523515,
+        "partial_pixels": 49001,
+        "opaque_pixels": 0,
+        "transparent_fraction": 0.9688391087912619,
+        "bbox_alpha_nonzero": [
+          124,
+          21,
+          1208,
+          1180
+        ],
+        "bbox_alpha_at_least_8": [
+          510,
+          493,
+          735,
+          757
+        ],
+        "bbox_alpha_at_least_16": [
+          514,
+          496,
+          731,
+          752
+        ],
+        "bbox_alpha_at_least_64": [
+          522,
+          505,
+          721,
+          735
+        ],
+        "border_max_alpha": 0,
+        "border_pixels_alpha_gt0": 0,
+        "border_pixels_alpha_at_least_16": 0,
+        "border_pixels_alpha_at_least_64": 0,
+        "center_alpha": 253,
+        "rgb_median_alpha_at_least_128": [
+          36.0,
+          172.0,
+          214.0
+        ],
+        "rgb_mean_alpha_at_least_128": [
+          80.09,
+          184.54,
+          215.26
+        ]
+      },
+      "qa_composite_path": "/workspace/scratch/892354ae3802/continuation_o_fx_work/qa/fx_gluon_beam_hl1_tip_xspark1_o_light_dark.png",
+      "source_manifest": "docs/resonance/production/continuation_20261127_o/fx_references/manifest.json",
+      "reference_files": [
+        {
+          "repository_path": "docs/resonance/production/continuation_20261127_o/fx_references/xspark1_community_preview.png",
+          "sha256": "959b3843d8ed78e62c4f77e9b1b789af7bb695559204fc198bfed027ee1df9bf",
+          "byte_size": 726,
+          "visually_inspected_before_generation": true
+        },
+        {
+          "repository_path": "assets/resonance/candidates/continuation_20261124_j/effects/fx_gluon_beam_hl1_beam_resumed_j.png",
+          "sha256": "668ce596953fa578230ddfd6890f999f3fc57e0d0e41d187e08d6c4809782e7b",
+          "byte_size": 403286,
+          "visually_inspected_before_generation": true
+        }
+      ],
+      "reference_bitmap_loaded": true,
+      "local_player_capture_claimed": false,
+      "retail_binary_equivalence_verified": false,
+      "integrated_in_game": false,
+      "selected_for_next_review": true,
+      "source_urls": [
+        "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/egon.cpp",
+        "https://arquivo.mataleone.com/tut/sprites/xspark1.gif"
+      ],
+      "source_references": [
+        {
+          "id": "valve_egon",
+          "source_url": "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/egon.cpp",
+          "download_url": "https://raw.githubusercontent.com/ValveSoftware/halflife/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/egon.cpp",
+          "source_kind": "primary_official_source_code",
+          "commit": "b1b5cf5892918535619b2937bb927e46cb097ba1",
+          "path": "dlls/egon.cpp",
+          "sha256": "d167453195eb18ece75ec535edeccae10763684061d1bc684cdaa59c374fca6f",
+          "byte_size": 13148,
+          "local_review_copy": "/workspace/scratch/892354ae3802/continuation_o_fx_work/official_sources/dlls__egon.cpp",
+          "text_inspected": true,
+          "visual_capture_claimed": false
+        },
+        {
+          "id": "preview_xspark1",
+          "source_url": "https://arquivo.mataleone.com/tut/sprites/xspark1.gif",
+          "source_page": "https://arquivo.mataleone.com/php/main.php?cat=ref&id=7&lang=en&page=tut",
+          "source_kind": "community_sprite_preview_named_resource_not_retail_capture",
+          "original_path": "docs/resonance/production/continuation_20261127_o/fx_references/xspark1_community_preview.gif",
+          "sha256": "8f7468e34dab30ac0dcb391b3b6e832419f9ede1b88d9db76b8fc000edde3c9c",
+          "byte_size": 1525,
+          "width": 21,
+          "height": 27,
+          "frame_count": 1,
+          "input_image_path": "docs/resonance/production/continuation_20261127_o/fx_references/xspark1_community_preview.png",
+          "input_png_sha256": "959b3843d8ed78e62c4f77e9b1b789af7bb695559204fc198bfed027ee1df9bf",
+          "conversion": "Single GIF frame decoded to same-size RGB PNG only; no resize, crop, recoloring or inferred alpha. Source black is preview/compositing backing.",
+          "visually_inspected": true
+        }
+      ],
+      "source_contract": {
+        "code_symbol": "CEgon::CreateEffect / CEgon::DestroyEffect / CSprite::ExpandThink",
+        "source_rules": [
+          "Contact sprite XSpark1.spr uses white tint and initial scale1.",
+          "Shutdown removes main/noise beams. Only FIRE_WIDE contact flare expands with scale rate10 and renderamt loss500 per second.",
+          "Illustrative0.2s parameters from start scale1/renderamt255 would be scale3/renderamt155. These are engine parameters, not proof of PNG scale/alpha or retail timing."
+        ],
+        "coverage_limit": "Only the contact flare and a representative expanding flare component are supplied. No beam travel state, persistent fading beam, completed animation or retail-client behavior claim."
+      },
+      "generation_call_count": 1,
+      "generation_refusal_observed": false,
+      "retried_after_rejection": false,
+      "qa_visual_review_performed": true,
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#f2f2f2",
+          "#121820"
+        ],
+        "original_pixels_modified": false
+      },
+      "qa_notes": "Petit amas lumineux blanc/cyan irrégulier, lobes verticaux lisibles, observé sur fonds clair et sombre. Le preview communautaire XSpark1 fait 21×27 px : la texture et les lobes à haute résolution ne sont pas une extraction exacte. Composant flare de contact seulement ; absence de faisceau voyageur inventé. Le comportement dépend de la version et de la prédiction client, non vérifiées dans une capture retail locale. Tous les pixels du bord ont alpha 0.",
+      "selection_semantics": "Preferred candidate for subsequent source/game comparison; not production approval or completed-state status.",
+      "visual_capture_status": "No verified retail capture used. Existing candidates and named community sprite previews are distinguished in the reference manifest.",
+      "exact_palette_verified": false,
+      "exact_geometry_verified": false,
+      "exact_temporal_phase_verified": false,
+      "background_qa": "No opaque rectangular backing or visibly clipped effect at canvas edges. Some originals retain alpha1 traces; detailed measurements are in alpha_stats."
+    },
+    {
+      "target_id": "fx_gluon_beam_hl1",
+      "visual_state_id": "fade",
+      "component_id": "wide_fire_contact_flare_expansion",
+      "variant_id": "wide_fire_shutdown_t020_candidate",
+      "source_ids": [
+        "valve_egon",
+        "valve_effects",
+        "preview_xspark1"
+      ],
+      "depends_on": "fx_gluon_beam_hl1_tip_xspark1_o",
+      "name_fr": "Gluon HL1 — expansion et dissipation du flare de contact",
+      "prompt": "Use case: precise-object-edit.\nAsset type: ONE later alpha-transparent shutdown key frame of a contact-flare COMPONENT.\nInput image: the supplied generated Gluon XSpark1 tip candidate is the edit target. It is a project candidate derived from a small community resource preview, NOT a retail capture.\nPrimary request: preserve exactly the same square canvas and center pivot, the same irregular asymmetric lobe structure and white/cyan palette. Increase the flare's linear scale to approximately three times the initial flare and reduce its luminous intensity visibly. This follows official CEgon FIRE_WIDE shutdown and CSprite::Expand at about 0.2 seconds: scale 3 and render amount 155 from initial scale 1 and render amount 255. These engine values are visual guidance, not a claim that PNG alpha equals engine render amount.\nConstraints: both Gluon beam entities have already been removed. Draw only the larger, dimmer contact flare; no fading beam, streak, lightning, smoke, particles, shock ring, extra lobes or new elements. Preserve broad truly transparent margins, with the useful flare still completely within the canvas. No caption, panel or backdrop. Preserve genuine alpha transparency. One sampled candidate frame, not a completed shutdown animation or a certification of exact retail timing/pixels.",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_gluon_beam_hl1_fade_flare_o.png",
+      "reference_paths": [
+        "/workspace/scratch/892354ae3802/repo/assets/resonance/candidates/continuation_20261127_o/fx/fx_gluon_beam_hl1_tip_xspark1_o.png"
+      ],
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "visual_state_complete": false,
+      "animation_clip_complete": false,
+      "asset_id": "fx_gluon_beam_hl1_fade_flare_o",
+      "target_ids": [
+        "fx_gluon_beam_hl1"
+      ],
+      "owner_id": "fx_gluon_beam_hl1",
+      "owner_type": "projectile_effect",
+      "category": "vfx_key_frame",
+      "batch_id": "continuation_20261127_o",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life (GoldSrc)",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidate_reviewed_not_certified",
+      "source_path": "/workspace/scratch/892354ae3802/generated_images/exec-6c92cd82-382e-4f93-9093-1c9bc8612fc5.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_gluon_beam_hl1_fade_flare_o.png",
+      "width": 1254,
+      "height": 1254,
+      "color_mode": "RGBA",
+      "byte_size": 549752,
+      "sha256": "ad498f8781acd523d74e7abad90ed097158f0c7257b8d4f0f31c82b26e95ef88",
+      "git_blob_sha1": "a87154c859f6f84863f5ded95261c102af32ec57",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "transparent_background": true,
+      "alpha_stats": {
+        "mode": "RGBA",
+        "alpha_range": [
+          0,
+          253
+        ],
+        "transparent_pixels": 1226740,
+        "partial_pixels": 345776,
+        "opaque_pixels": 0,
+        "transparent_fraction": 0.7801128891534331,
+        "bbox_alpha_nonzero": [
+          0,
+          0,
+          1232,
+          1230
+        ],
+        "bbox_alpha_at_least_8": [
+          325,
+          276,
+          927,
+          977
+        ],
+        "bbox_alpha_at_least_16": [
+          330,
+          282,
+          923,
+          973
+        ],
+        "bbox_alpha_at_least_64": [
+          339,
+          295,
+          914,
+          961
+        ],
+        "border_max_alpha": 1,
+        "border_pixels_alpha_gt0": 42,
+        "border_pixels_alpha_at_least_16": 0,
+        "border_pixels_alpha_at_least_64": 0,
+        "center_alpha": 253,
+        "rgb_median_alpha_at_least_128": [
+          44.0,
+          126.0,
+          165.0
+        ],
+        "rgb_mean_alpha_at_least_128": [
+          57.76,
+          143.27,
+          177.98
+        ]
+      },
+      "qa_composite_path": "/workspace/scratch/892354ae3802/continuation_o_fx_work/qa/fx_gluon_beam_hl1_fade_flare_o_light_dark.png",
+      "source_manifest": "docs/resonance/production/continuation_20261127_o/fx_references/manifest.json",
+      "reference_files": [
+        {
+          "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_gluon_beam_hl1_tip_xspark1_o.png",
+          "sha256": "72d4dd188b2b59c67852c6cf83b20ddc63b491e09fa689c4ceecabc7dcb94e52",
+          "byte_size": 147863,
+          "visually_inspected_before_generation": true
+        }
+      ],
+      "reference_bitmap_loaded": true,
+      "local_player_capture_claimed": false,
+      "retail_binary_equivalence_verified": false,
+      "integrated_in_game": false,
+      "selected_for_next_review": true,
+      "source_urls": [
+        "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/egon.cpp",
+        "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/effects.cpp",
+        "https://arquivo.mataleone.com/tut/sprites/xspark1.gif"
+      ],
+      "source_references": [
+        {
+          "id": "valve_egon",
+          "source_url": "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/egon.cpp",
+          "download_url": "https://raw.githubusercontent.com/ValveSoftware/halflife/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/egon.cpp",
+          "source_kind": "primary_official_source_code",
+          "commit": "b1b5cf5892918535619b2937bb927e46cb097ba1",
+          "path": "dlls/egon.cpp",
+          "sha256": "d167453195eb18ece75ec535edeccae10763684061d1bc684cdaa59c374fca6f",
+          "byte_size": 13148,
+          "local_review_copy": "/workspace/scratch/892354ae3802/continuation_o_fx_work/official_sources/dlls__egon.cpp",
+          "text_inspected": true,
+          "visual_capture_claimed": false
+        },
+        {
+          "id": "valve_effects",
+          "source_url": "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/effects.cpp",
+          "download_url": "https://raw.githubusercontent.com/ValveSoftware/halflife/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/effects.cpp",
+          "source_kind": "primary_official_source_code",
+          "commit": "b1b5cf5892918535619b2937bb927e46cb097ba1",
+          "path": "dlls/effects.cpp",
+          "sha256": "30891e6e657956029fefb072abd66e345e026118373c85dabd1df5db763cd4c5",
+          "byte_size": 50750,
+          "local_review_copy": "/workspace/scratch/892354ae3802/continuation_o_fx_work/official_sources/dlls__effects.cpp",
+          "text_inspected": true,
+          "visual_capture_claimed": false
+        },
+        {
+          "id": "preview_xspark1",
+          "source_url": "https://arquivo.mataleone.com/tut/sprites/xspark1.gif",
+          "source_page": "https://arquivo.mataleone.com/php/main.php?cat=ref&id=7&lang=en&page=tut",
+          "source_kind": "community_sprite_preview_named_resource_not_retail_capture",
+          "original_path": "docs/resonance/production/continuation_20261127_o/fx_references/xspark1_community_preview.gif",
+          "sha256": "8f7468e34dab30ac0dcb391b3b6e832419f9ede1b88d9db76b8fc000edde3c9c",
+          "byte_size": 1525,
+          "width": 21,
+          "height": 27,
+          "frame_count": 1,
+          "input_image_path": "docs/resonance/production/continuation_20261127_o/fx_references/xspark1_community_preview.png",
+          "input_png_sha256": "959b3843d8ed78e62c4f77e9b1b789af7bb695559204fc198bfed027ee1df9bf",
+          "conversion": "Single GIF frame decoded to same-size RGB PNG only; no resize, crop, recoloring or inferred alpha. Source black is preview/compositing backing.",
+          "visually_inspected": true
+        }
+      ],
+      "source_contract": {
+        "code_symbol": "CEgon::CreateEffect / CEgon::DestroyEffect / CSprite::ExpandThink",
+        "source_rules": [
+          "Contact sprite XSpark1.spr uses white tint and initial scale1.",
+          "Shutdown removes main/noise beams. Only FIRE_WIDE contact flare expands with scale rate10 and renderamt loss500 per second.",
+          "Illustrative0.2s parameters from start scale1/renderamt255 would be scale3/renderamt155. These are engine parameters, not proof of PNG scale/alpha or retail timing."
+        ],
+        "coverage_limit": "Only the contact flare and a representative expanding flare component are supplied. No beam travel state, persistent fading beam, completed animation or retail-client behavior claim."
+      },
+      "generation_call_count": 1,
+      "generation_refusal_observed": false,
+      "retried_after_rejection": false,
+      "qa_visual_review_performed": true,
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#f2f2f2",
+          "#121820"
+        ],
+        "original_pixels_modified": false
+      },
+      "qa_notes": "Même famille de flare blanc/cyan agrandie et visuellement assombrie, sans faisceau résiduel ni projectile de voyage. Référence comportementale limitée à FIRE_WIDE : les faisceaux sont supprimés, seul le flare reçoit Expand(10,500). Boîte alpha ≥16 élargie de 217×256 à 593×691 px, soit 2,73× horizontalement et 2,70× verticalement ; intention de scale 1→3 à 0,2 s non atteinte exactement. Le cœur reste alpha 253 mais son RGB diminue. Le paramètre moteur renderamt 155 à 0,2 s ne se confond pas avec alpha PNG. Instant représentatif candidat, aucune correspondance temporelle exacte ni animation complète.",
+      "selection_semantics": "Preferred candidate for subsequent source/game comparison; not production approval or completed-state status.",
+      "visual_capture_status": "No verified retail capture used. Existing candidates and named community sprite previews are distinguished in the reference manifest.",
+      "exact_palette_verified": false,
+      "exact_geometry_verified": false,
+      "exact_temporal_phase_verified": false,
+      "background_qa": "No opaque rectangular backing or visibly clipped effect at canvas edges. Some originals retain alpha1 traces; detailed measurements are in alpha_stats.",
+      "timing_qualification": {
+        "mode": "FIRE_WIDE contact flare only",
+        "illustrative_source_time_seconds": 0.2,
+        "theoretical_source_scale": 3,
+        "theoretical_source_renderamt": 155,
+        "output_matches_exact_time": false,
+        "tip_bbox_alpha_at_least16": {
+          "box": [
+            514,
+            496,
+            731,
+            752
+          ],
+          "width": 217,
+          "height": 256
+        },
+        "fade_bbox_alpha_at_least16": {
+          "box": [
+            330,
+            282,
+            923,
+            973
+          ],
+          "width": 593,
+          "height": 691
+        },
+        "png_alpha_equated_to_engine_renderamt": false,
+        "claim": "Representative expanded contact-flare candidate only; source formula does not certify output pixels."
+      }
+    },
+    {
+      "target_id": "fx_houndeye_sonic_ring_hl1",
+      "visual_state_id": "pack_color_variants",
+      "component_id": "two_concentric_sonic_rings",
+      "variant_id": "pack_4",
+      "pack_size": 4,
+      "source_base_rgb": [
+        62,
+        33,
+        211
+      ],
+      "source_ids": [
+        "valve_houndeye"
+      ],
+      "name_fr": "Houndeye HL1 — meute de quatre, espaces transparents v2",
+      "prompt": "Use case: precise-object-edit.\nAsset type: ONE corrected alpha-transparent two-ring Houndeye effect, revision 2.\nInput images: Image 1 is the FOUR-member purple-blue pack candidate to edit. Image 2 is the TWO-member candidate used only to demonstrate clear transparent negative space; do not copy its blue color.\nPrimary request: fix ONLY the unwanted diffuse colored veil between and inside the two concentric ellipse bands in Image 1. Keep exactly the same canvas, center, perspective, ring centerlines, radii, outlines and the four-member base tint RGB 62,33,211. Keep both ring bands visible and continuous. Remove the broad cloudy filling between the ring bands and inside the inner ellipse so these negative spaces are genuinely transparent, like the clear open spaces in Image 2. Retain only a narrow restrained glow immediately adjacent to the two bands, without a cloudy bridge between them. Keep the four-member color distinct from the two-member palette.\nConstraints: one combined two-ring area-effect frame, not two examples or a sprite sheet. Do not add elements or change the number of rings, source version, geometry, hue or camera. No background-colored patch or black paint to fake transparency; use actual alpha-zero empty space between rings and inside the central ellipse. No creature, portal, orb, ground, lightning, dust, particles, labels or panels. Keep all margins genuinely transparent. These input images are generated project candidates based on official SDK color rules, not retail captures. This correction makes no exact-pixel or completed-state claim.",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_houndeye_sonic_ring_hl1_pack4_v2_o.png",
+      "reference_paths": [
+        "/workspace/scratch/892354ae3802/repo/assets/resonance/candidates/continuation_20261127_o/fx/fx_houndeye_sonic_ring_hl1_pack4_o.png",
+        "/workspace/scratch/892354ae3802/repo/assets/resonance/candidates/continuation_20261127_o/fx/fx_houndeye_sonic_ring_hl1_pack2_o.png"
+      ],
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "visual_state_complete": false,
+      "animation_clip_complete": false,
+      "revision": 2,
+      "supersedes_asset_id": "fx_houndeye_sonic_ring_hl1_pack4_o",
+      "asset_id": "fx_houndeye_sonic_ring_hl1_pack4_v2_o",
+      "target_ids": [
+        "fx_houndeye_sonic_ring_hl1"
+      ],
+      "owner_id": "fx_houndeye_sonic_ring_hl1",
+      "owner_type": "projectile_effect",
+      "category": "vfx_key_frame",
+      "batch_id": "continuation_20261127_o",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life (GoldSrc)",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidate_reviewed_not_certified",
+      "source_path": "/workspace/scratch/892354ae3802/generated_images/exec-9318887b-9314-47a7-b6c5-ad810e9c9817.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_houndeye_sonic_ring_hl1_pack4_v2_o.png",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 1130987,
+      "sha256": "4bc6f87e5e400b3320740fbbb682d5796e4c4a607fbd9e71d1f8aa082b867aa9",
+      "git_blob_sha1": "6a5061ea596a945607fcf7d088e6a4f5cb76fc0c",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "transparent_background": true,
+      "alpha_stats": {
+        "mode": "RGBA",
+        "alpha_range": [
+          0,
+          254
+        ],
+        "transparent_pixels": 911394,
+        "partial_pixels": 661134,
+        "opaque_pixels": 0,
+        "transparent_fraction": 0.5795725099966423,
+        "bbox_alpha_nonzero": [
+          0,
+          0,
+          2150,
+          724
+        ],
+        "bbox_alpha_at_least_8": [
+          119,
+          127,
+          2056,
+          592
+        ],
+        "bbox_alpha_at_least_16": [
+          121,
+          129,
+          2053,
+          589
+        ],
+        "bbox_alpha_at_least_64": [
+          127,
+          138,
+          2046,
+          579
+        ],
+        "border_max_alpha": 1,
+        "border_pixels_alpha_gt0": 228,
+        "border_pixels_alpha_at_least_16": 0,
+        "border_pixels_alpha_at_least_64": 0,
+        "center_alpha": 0,
+        "rgb_median_alpha_at_least_128": [
+          57.0,
+          33.0,
+          193.0
+        ],
+        "rgb_mean_alpha_at_least_128": [
+          60.24,
+          35.15,
+          199.35
+        ]
+      },
+      "qa_composite_path": "/workspace/scratch/892354ae3802/continuation_o_fx_work/qa/fx_houndeye_sonic_ring_hl1_pack4_v2_o_light_dark.png",
+      "source_manifest": "docs/resonance/production/continuation_20261127_o/fx_references/manifest.json",
+      "reference_files": [
+        {
+          "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_houndeye_sonic_ring_hl1_pack4_o.png",
+          "sha256": "9bc611604df3a6b3dd73495cca62ae5530b3303ae399fe06ea1f466329cbb00b",
+          "byte_size": 1224043,
+          "visually_inspected_before_generation": true
+        },
+        {
+          "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_houndeye_sonic_ring_hl1_pack2_o.png",
+          "sha256": "e3967b569841912781b7861d9680a9386dc69a4b5fc12e631525faa43a95656d",
+          "byte_size": 1367514,
+          "visually_inspected_before_generation": true
+        }
+      ],
+      "reference_bitmap_loaded": true,
+      "local_player_capture_claimed": false,
+      "retail_binary_equivalence_verified": false,
+      "integrated_in_game": false,
+      "selected_for_next_review": true,
+      "source_urls": [
+        "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/houndeye.cpp"
+      ],
+      "source_references": [
+        {
+          "id": "valve_houndeye",
+          "source_url": "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/houndeye.cpp",
+          "download_url": "https://raw.githubusercontent.com/ValveSoftware/halflife/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/houndeye.cpp",
+          "source_kind": "primary_official_source_code",
+          "commit": "b1b5cf5892918535619b2937bb927e46cb097ba1",
+          "path": "dlls/houndeye.cpp",
+          "sha256": "079b33d280d869c9bf87268e2de988cb5e31f721639e42119411196c161f3951",
+          "byte_size": 31727,
+          "local_review_copy": "/workspace/scratch/892354ae3802/continuation_o_fx_work/official_sources/dlls__houndeye.cpp",
+          "text_inspected": true,
+          "visual_capture_claimed": false
+        }
+      ],
+      "source_contract": {
+        "code_symbol": "CHoundeye::SonicAttack / CHoundeye::WriteBeamColor",
+        "source_rules": [
+          "Two concentric TE_BEAMCYLINDER effects with nominal outer/inner radius2:1, width16, noise0.",
+          "Pack size changes color, not ring count. Pack2 RGB101,133,221; pack4 RGB62,33,211."
+        ],
+        "coverage_limit": "One static combined ring candidate per pack color. Exact perspective, radii, animation, material and engine compositing remain unverified."
+      },
+      "generation_call_count": 1,
+      "generation_refusal_observed": false,
+      "retried_after_rejection": false,
+      "qa_visual_review_performed": true,
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#f2f2f2",
+          "#121820"
+        ],
+        "original_pixels_modified": false
+      },
+      "qa_notes": "Amélioration observée sur fonds clair et sombre : espaces entre anneaux et centre ouverts, voile inter-anneaux très réduit. Dans le rectangle témoin (x22–28%, y48–52%), alpha moyen passe de 42,0068 à 0,0021 et pixels alpha ≥16 de 2550 à 0 sur 3799. Le contour et les épaisseurs ont aussi dérivé : la conservation exacte de la géométrie et le ratio des rayons 2:1 ne sont pas certifiés. Teinte cohérente avec la meute de quatre, médiane 57/33/193 contre base SDK 62/33/211. Candidat v2 préférable ; aucune fidélité 1:1 revendiquée.",
+      "selection_semantics": "Preferred candidate for subsequent source/game comparison; not production approval or completed-state status.",
+      "visual_capture_status": "No verified retail capture used. Existing candidates and named community sprite previews are distinguished in the reference manifest.",
+      "exact_palette_verified": false,
+      "exact_geometry_verified": false,
+      "exact_temporal_phase_verified": false,
+      "background_qa": "No opaque rectangular backing or visibly clipped effect at canvas edges. Some originals retain alpha1 traces; detailed measurements are in alpha_stats.",
+      "revision_comparison": {
+        "revision_reason": "Dense unwanted inter-ring haze.",
+        "sample_rectangle_canvas_fraction": [
+          0.22,
+          0.48,
+          0.28,
+          0.52
+        ],
+        "sample_pixels": 3799,
+        "mean_alpha_before": 42.00684390629113,
+        "mean_alpha_after": 0.0021058173203474598,
+        "pixels_alpha_at_least16_before": 2550,
+        "pixels_alpha_at_least16_after": 0,
+        "improvement_observed": true,
+        "remaining_limit": "Ellipse outlines/thickness changed during editing. Exact2:1 projected geometry and exact RGB material remain unverified."
+      }
+    },
+    {
+      "target_id": "fx_gauss_beam_hl1",
+      "visual_state_id": "charged",
+      "component_id": "charged_straight_beam",
+      "variant_id": "charged_white",
+      "name_fr": "Gauss HL1 — faisceau chargé blanc, épaisseur modérée v2",
+      "source_ids": [
+        "valve_ev_hldm",
+        "preview_smoke"
+      ],
+      "source_base_rgb": [
+        255,
+        255,
+        255
+      ],
+      "prompt": "Use case: precise-object-edit.\nAsset type: ONE corrected alpha-transparent charged Gauss beam candidate, revision 2.\nInput images: Image 1 is the white charged-beam candidate to edit. Image 2 is the original project's orange primary-beam candidate as a width/framing comparison only; do NOT copy its orange hue.\nPrimary request: REDUCE ONLY the visible vertical thickness of the white horizontal beam in Image 1. Preserve Image 1's canvas size, center axis, white-neutral palette, horizontal length, exact endpoints, straight direction and restrained irregular smoke-based longitudinal texture. The first charged result is visibly too thick: approximately 165 pixels tall at a useful alpha threshold versus approximately 39 pixels for the project primary. Reduce the charged thickness to about 60 percent of the current Image 1 thickness, so it looks only moderately thicker than the primary comparison. This target is a visual approximation to the official Half-Life GoldSrc Gauss code: primary width parameter 1, charged width parameter 2.5; rendered PNG alpha bounding boxes are not automatically equal to engine beam width.\nKeep the main luminous strip narrow, straight and neutral white, with a restrained soft edge. Do not merely dim the surrounding haze while leaving the main strip equally thick: actually reduce the visible vertical thickness. No brighter explosion at either end, no projectile orb, no expanding shockwave, no vertical halo, no weapon, no scene, no floor, no caption, no panel, no extra beam, no new branches, no sparks or extra coils. Genuine transparent background with generous margins, not a background-colored rectangle. This is a static generated project candidate whose sources are official SDK code and a small community smoke-sprite preview; do not present it as a retail capture or certified 1:1 asset. Produce one image, not a comparison sheet.",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_gauss_beam_hl1_charged_v2_o.png",
+      "reference_paths": [
+        "/workspace/scratch/892354ae3802/repo/assets/resonance/candidates/continuation_20261127_o/fx/fx_gauss_beam_hl1_charged_o.png",
+        "/workspace/scratch/892354ae3802/repo/assets/resonance/candidates/continuation_20261124_i/effects/fx_gauss_primary_hl1_i.png"
+      ],
+      "revision": 2,
+      "supersedes_asset_id": "fx_gauss_beam_hl1_charged_o",
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "visual_state_complete": false,
+      "animation_clip_complete": false,
+      "asset_id": "fx_gauss_beam_hl1_charged_v2_o",
+      "target_ids": [
+        "fx_gauss_beam_hl1"
+      ],
+      "owner_id": "fx_gauss_beam_hl1",
+      "owner_type": "projectile_effect",
+      "category": "vfx_key_frame",
+      "batch_id": "continuation_20261127_o",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life (GoldSrc)",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidate_reviewed_not_certified",
+      "source_path": "/workspace/scratch/892354ae3802/generated_images/exec-6a078b3a-463d-4bd0-bc44-56b3b1011ef4.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_gauss_beam_hl1_charged_v2_o.png",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 338760,
+      "sha256": "52d6809d0df80014fbc9711422fee546cefd53de4d7045001c19ba1702ffba51",
+      "git_blob_sha1": "9873488a21741455f0ba7d9ccec1f89129a812a6",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "transparent_background": true,
+      "alpha_stats": {
+        "mode": "RGBA",
+        "alpha_range": [
+          0,
+          250
+        ],
+        "transparent_pixels": 1422059,
+        "partial_pixels": 150469,
+        "opaque_pixels": 0,
+        "transparent_fraction": 0.9043139454432608,
+        "bbox_alpha_nonzero": [
+          31,
+          21,
+          2140,
+          668
+        ],
+        "bbox_alpha_at_least_8": [
+          156,
+          324,
+          2017,
+          401
+        ],
+        "bbox_alpha_at_least_16": [
+          162,
+          327,
+          2008,
+          397
+        ],
+        "bbox_alpha_at_least_64": [
+          180,
+          334,
+          1991,
+          389
+        ],
+        "border_max_alpha": 0,
+        "border_pixels_alpha_gt0": 0,
+        "border_pixels_alpha_at_least_16": 0,
+        "border_pixels_alpha_at_least_64": 0,
+        "center_alpha": 247,
+        "rgb_median_alpha_at_least_128": [
+          223.0,
+          222.0,
+          222.0
+        ],
+        "rgb_mean_alpha_at_least_128": [
+          223.69,
+          222.97,
+          223.04
+        ]
+      },
+      "qa_composite_path": "/workspace/scratch/892354ae3802/continuation_o_fx_work/qa/fx_gauss_beam_hl1_charged_v2_o_light_dark.png",
+      "source_manifest": "docs/resonance/production/continuation_20261127_o/fx_references/manifest.json",
+      "reference_files": [
+        {
+          "repository_path": "assets/resonance/candidates/continuation_20261127_o/fx/fx_gauss_beam_hl1_charged_o.png",
+          "sha256": "e3f995d1474ef81c4ee1bb43987e90023cad5afd59a9093706f8d5ec93e322a0",
+          "byte_size": 626649,
+          "visually_inspected_before_generation": true
+        },
+        {
+          "repository_path": "assets/resonance/candidates/continuation_20261124_i/effects/fx_gauss_primary_hl1_i.png",
+          "sha256": "7beed7e39242fd7079a3655dc32953fcb07861e70386026a62730f28b414cc77",
+          "byte_size": 182623,
+          "visually_inspected_before_generation": true
+        }
+      ],
+      "reference_bitmap_loaded": true,
+      "local_player_capture_claimed": false,
+      "retail_binary_equivalence_verified": false,
+      "integrated_in_game": false,
+      "selected_for_next_review": true,
+      "source_urls": [
+        "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/cl_dll/ev_hldm.cpp",
+        "https://arquivo.mataleone.com/tut/sprites/smoke.gif"
+      ],
+      "source_references": [
+        {
+          "id": "valve_ev_hldm",
+          "source_url": "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/cl_dll/ev_hldm.cpp",
+          "download_url": "https://raw.githubusercontent.com/ValveSoftware/halflife/b1b5cf5892918535619b2937bb927e46cb097ba1/cl_dll/ev_hldm.cpp",
+          "source_kind": "primary_official_source_code",
+          "commit": "b1b5cf5892918535619b2937bb927e46cb097ba1",
+          "path": "cl_dll/ev_hldm.cpp",
+          "sha256": "c85ab7d6c2a0e913e7e94d89ae0a76513f12db7241866abf93e9e6b7cfd5bba0",
+          "byte_size": 47117,
+          "local_review_copy": "/workspace/scratch/892354ae3802/continuation_o_fx_work/official_sources/cl_dll__ev_hldm.cpp",
+          "text_inspected": true,
+          "visual_capture_claimed": false
+        },
+        {
+          "id": "preview_smoke",
+          "source_url": "https://arquivo.mataleone.com/tut/sprites/smoke.gif",
+          "source_page": "https://arquivo.mataleone.com/php/main.php?cat=ref&id=7&lang=en&page=tut",
+          "source_kind": "community_sprite_preview_named_resource_not_retail_capture",
+          "original_path": "docs/resonance/production/continuation_20261127_o/fx_references/smoke_community_preview.gif",
+          "sha256": "0db251661fd8251494db828dff6b1f729a6f0bdd55bbb54e29cf39c073e2f1cb",
+          "byte_size": 2101,
+          "width": 28,
+          "height": 64,
+          "frame_count": 1,
+          "input_image_path": "docs/resonance/production/continuation_20261127_o/fx_references/smoke_community_preview.png",
+          "input_png_sha256": "e0c04fe2605439dd439fe86116b94afd45f0984fdd3fb9fb3ebb47c95f074121",
+          "conversion": "Single GIF frame decoded to same-size RGB PNG only; no resize, crop, recoloring or inferred alpha. Source black is preview/compositing backing.",
+          "visually_inspected": true
+        }
+      ],
+      "source_contract": {
+        "code_symbol": "EV_FireGauss",
+        "source_rules": [
+          "smoke.spr beam texture; primary RGB255,128,0 width1; charged RGB255,255,255 width2.5; noise0.",
+          "hotglow.spr is a contact component. Full impact cases include additional effect calls not represented by this isolated flare."
+        ],
+        "coverage_limit": "Charged beam still a static generated texture candidate; impact image covers only its named flare component."
+      },
+      "generation_call_count": 1,
+      "generation_refusal_observed": false,
+      "retried_after_rejection": false,
+      "qa_visual_review_performed": true,
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#f2f2f2",
+          "#121820"
+        ],
+        "original_pixels_modified": false
+      },
+      "qa_notes": "Faisceau blanc rectiligne, axe et longueur proches conservés ; épaisseur visiblement réduite sur fonds clair et sombre. Boîte utile alpha ≥16 : hauteur 70 px contre 165 px avant correction et 39 px pour le primaire (1,79×). Largeur utile 1846 px contre 1865 px avant correction ; déplacement vertical du centre de boîte de 1,5 px. La correction dépasse la réduction demandée : le ratio PNG ne certifie pas la largeur moteur 2,5. Texture irrégulière et transparence lumineuse restent candidates. Tous les pixels du bord ont alpha 0.",
+      "selection_semantics": "Preferred candidate for subsequent source/game comparison; not production approval or completed-state status.",
+      "visual_capture_status": "No verified retail capture used. Existing candidates and named community sprite previews are distinguished in the reference manifest.",
+      "exact_palette_verified": false,
+      "exact_geometry_verified": false,
+      "exact_temporal_phase_verified": false,
+      "background_qa": "No opaque rectangular backing or visibly clipped effect at canvas edges. Some originals retain alpha1 traces; detailed measurements are in alpha_stats.",
+      "revision_comparison": {
+        "revision_reason": "Visible charged beam too thick relative to primary candidate.",
+        "same_canvas": true,
+        "alpha_threshold": 16,
+        "prior": {
+          "box": [
+            152,
+            278,
+            2017,
+            443
+          ],
+          "width": 1865,
+          "height": 165
+        },
+        "revised": {
+          "box": [
+            162,
+            327,
+            2008,
+            397
+          ],
+          "width": 1846,
+          "height": 70
+        },
+        "primary_reference_useful_height": 39,
+        "primary_reference_useful_width": 1696,
+        "height_ratio_to_primary_before": 4.230769230769231,
+        "height_ratio_to_primary_after": 1.794871794871795,
+        "engine_width_parameter_ratio": 2.5,
+        "engine_parameter_equivalence_claimed": false,
+        "improvement_observed": true,
+        "remaining_limit": "Revision is visibly thinner, but the measured PNG ratio undershoots2.5; no exact width/palette/engine-material certification."
+      }
+    }
+  ],
+  "failures": [],
+  "policy": {
+    "one_asset_per_call": true,
+    "no_retry_after_refusal": true,
+    "no_global_registry_changes": true,
+    "no_catalogue_changes": true,
+    "no_publish": true,
+    "preserve_original_generated_bytes": true
+  },
+  "fidelity_limits": [
+    "Small community named-resource previews are not official captures or proof of retail binary equivalence.",
+    "Official SDK code pins resource association, colors and behavior, not generated output pixels or a specific retail-client configuration.",
+    "High-resolution effect textures, geometry, palette and alpha remain interpretations until compared against a fixed retail version and exact sprite data.",
+    "Gauss impact hotglow and Gluon tip/fade cover only named contact components; neither completes a full effect state.",
+    "Gluon shutdown expansion applies only to FIRE_WIDE contact flare. Main/noise beams are removed; no travelling or slowly fading beam is claimed.",
+    "SDK beam width/renderamt and PNG alpha bounding boxes are different quantities. Their measurements are reported without asserting equivalence.",
+    "Houndeye v2 corrects negative space while retaining some geometric drift; Gauss v2 reduces excessive thickness without certifying the2.5 engine width ratio.",
+    "Alpha1 traces remain in several originals. No visible opaque backing or clipped alpha≥16 border was observed.",
+    "Static candidates do not complete animation. All completed-state,1:1-certification and runtime-integration flags remain false."
+  ],
+  "count_semantics": "Eight actual PNG originals from eight calls: six initial images and two revisions. Six candidates preferred for further review, two originals preserved as superseded history. Five distinct target_id/visual_state_id pairs across three existing targets. Houndeye pack2/pack4 are variants of one state. No state, animation clip or 1:1 fidelity gate is complete.",
+  "qa_completed_on": "2026-11-27",
+  "verification": {
+    "byte_identical_original_copies": true,
+    "png_metadata_and_alpha_measured": true,
+    "all_sources_and_input_files_hashed": true,
+    "visual_review_on_light_and_dark": true,
+    "all_contract_ids_verified": true,
+    "global_registry_changed_by_this_task": false,
+    "catalogues_changed_by_this_task": false,
+    "published_by_this_task": false,
+    "completed_integrity_check": "8 owned originals, dimensions/RGBA/alpha, SHA256/git blob SHA1, reference file hashes,7 source hashes,5 exact catalog target/state pairs,6 candidate selections and false completion flags verified.",
+    "parallel_task_files_excluded_from_this_report_counts": [
+      "assets/resonance/candidates/continuation_20261127_o/fx/fx_vortigaunt_zap_episodic_beam_o.png"
+    ]
+  }
+}

@@ -1,0 +1,466 @@
+{
+  "schema_version": "1.1",
+  "batch_id": "continuation_20261124_i",
+  "date": "2026-11-24",
+  "counts": {
+    "requests": 7,
+    "generated": 6,
+    "blocked": 1
+  },
+  "assets": [
+    {
+      "asset_id": "rollermine_hl2_active_i",
+      "name_fr": "Rollermine HL2 — état déployé",
+      "owner_id": "rollermine_hl2",
+      "owner_type": "support_machine",
+      "target_ids": [
+        "rollermine_hl2"
+      ],
+      "category": "character_key_pose",
+      "batch_id": "continuation_20261124_i",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: stylized-concept. Produce ONE individual game sprite for Half-Life Resonance. Subject: the original Half-Life 2 Rollermine in the extended-electrode active configuration from the attached retail model reference. Faithfully translate the exact model into polished detailed 2D painted game art: the same roughly spherical faceted dark blue-grey metal shell, same large pentagonal armor panels, recessed ribbed mechanical seams, cyan illuminated rings and triangular cyan connectors, and blunt pentagonal-ended protruding electrode pistons in exactly the reference arrangement. This is an authentic game prop, not a redesigned sci-fi grenade. Preserve overall proportions and surface layout. One object centered in a square image, same 3/4 orientation as reference, entire silhouette visible with 10% empty margin on every side. True transparent alpha background, no floor, no environment, no drop shadow, no text, no border, no second view, no collage. No invented sharp spikes, no weapon attachments, no red light. Crisp silhouette, high-resolution textured 2D sprite, individual unanimated base pose.",
+      "source_game": "Half-Life 2",
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/File:Rollermine_spikes_model.jpg"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "Rollermine_spikes_model.jpg",
+          "local_reference_path": "/workspace/scratch/684967c2474e/references-h/Rollermine_spikes_model.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/File:Rollermine_spikes_model.jpg",
+          "role": "original_retail_game_model_or_capture",
+          "visually_inspected": true,
+          "sha256": "f3a9fd54d5ecd4f990820635a45572433797a3a808a753ec89166a4a25aa8a2c"
+        }
+      ],
+      "reference_bitmap_loaded": true,
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "transparent_background": true,
+      "target_completed": false,
+      "file_path": "assets/resonance/candidates/continuation_20261124_i/machines/rollermine_hl2_active_i.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_i/machines/rollermine_hl2_active_i.png",
+      "width": 1254,
+      "height": 1254,
+      "color_mode": "RGBA",
+      "byte_size": 1831779,
+      "sha256": "bcd0ad5c9c7873dedb7a9d4b6962a8be587d5724277fd55f1a0e92870a0a3a56",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "visual_qa": {
+        "inspected": true,
+        "single_subject": true,
+        "alpha_channel_present": true,
+        "alpha_zero_pixels": 830750,
+        "alpha_128_bbox": [
+          38,
+          50,
+          1222,
+          1175
+        ],
+        "composited_on_light_and_dark": true,
+        "visible_halo_on_qa_composites": false,
+        "notes": "Silhouette individuelle complète, détails du modèle source conservés; proportions, textures et détails fins à valider. Marges mesurées plutôt que supposées conformes au prompt."
+      },
+      "notes": "Silhouette individuelle complète, détails du modèle source conservés; proportions, textures et détails fins à valider. Marges mesurées plutôt que supposées conformes au prompt.",
+      "source_partial_register": "docs/resonance/production/continuation_20261124_i/root_generation.json"
+    },
+    {
+      "asset_id": "city_scanner_hl2_idle_i",
+      "name_fr": "City Scanner HL2",
+      "owner_id": "city_scanner_hl2",
+      "owner_type": "support_machine",
+      "target_ids": [
+        "city_scanner_hl2"
+      ],
+      "category": "character_key_pose",
+      "batch_id": "continuation_20261124_i",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "prompt": "Produce ONE polished detailed 2D game sprite for Half-Life Resonance: the Half-Life 2 retail City Scanner shown in the reference, hovering in precisely the same three-quarter orientation. This reference is the strict anatomy and material guide. Preserve four dark bluish metal shutter/armor plates around the round orange-red central camera, the brown inner ring, upper white lamp and triangular bracket, exposed side mechanisms and thin antenna/projections, tiny lower sensor. Keep the exact recognizable proportions, plate corners and mechanical silhouette. HD hand-painted raster game art with crisp textured surfaces. One scanner only. Complete object with every antenna inside frame, 12% transparent safe margin. Square composition, true alpha background, no shadow, no scenery, no characters, no beam, no captions, no collage. Base pose, no animation. Do not replace it with a spherical robot or Shield Scanner.",
+      "source_game": "Half-Life 2",
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/File:City_Scanner_model.jpg"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "City_Scanner_model.jpg",
+          "local_reference_path": "/workspace/scratch/684967c2474e/references-h/City_Scanner_model.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/File:City_Scanner_model.jpg",
+          "role": "original_retail_game_model_or_capture",
+          "visually_inspected": true,
+          "sha256": "eb54719d306a1eda79eb748b185634cf8659bc43cb5599b98f61319c93817c69"
+        }
+      ],
+      "reference_bitmap_loaded": true,
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "transparent_background": true,
+      "target_completed": false,
+      "file_path": "assets/resonance/candidates/continuation_20261124_i/machines/city_scanner_hl2_idle_i.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_i/machines/city_scanner_hl2_idle_i.png",
+      "width": 1254,
+      "height": 1254,
+      "color_mode": "RGBA",
+      "byte_size": 1700926,
+      "sha256": "594856e236122e7de6f4a3308d0c2d5b40a23034e99dcfe712bfd9b3e9aede15",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "visual_qa": {
+        "inspected": true,
+        "single_subject": true,
+        "alpha_channel_present": true,
+        "alpha_zero_pixels": 858985,
+        "alpha_128_bbox": [
+          148,
+          97,
+          1117,
+          1167
+        ],
+        "composited_on_light_and_dark": true,
+        "visible_halo_on_qa_composites": false,
+        "notes": "Silhouette individuelle complète, détails du modèle source conservés; proportions, textures et détails fins à valider. Marges mesurées plutôt que supposées conformes au prompt."
+      },
+      "notes": "Silhouette individuelle complète, détails du modèle source conservés; proportions, textures et détails fins à valider. Marges mesurées plutôt que supposées conformes au prompt.",
+      "source_partial_register": "docs/resonance/production/continuation_20261124_i/root_generation.json"
+    },
+    {
+      "asset_id": "pit_worm_op4_idle_i",
+      "name_fr": "Pit Worm — partie émergée",
+      "owner_id": "pit_worm_op4",
+      "owner_type": "boss",
+      "target_ids": [
+        "pit_worm_op4"
+      ],
+      "category": "boss_key_pose",
+      "batch_id": "continuation_20261124_i",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "prompt": "Create ONE detailed 2D boss sprite for Half-Life Resonance using the attached original Half-Life Opposing Force retail Pit Worm model as strict visual reference. Match its exact tall vertical segmented worm body, mottled ochre/olive/orange skin, armored dark head surrounding ONE enormous luminous green eye with black circular pupil, short head spikes, exactly the visible paired scythe-like forelimbs and abdominal plates/spikes. Preserve the same left-facing three-quarter view and reference proportions. This asset depicts the EMERGED upper-body portion as shown in the reference: lower stem continues downward behind the arena floor; do not invent legs, a humanoid body, a tail tip or the unseen underground anatomy. Frame the whole visible reference portion inside a portrait canvas, leaving 10% transparent margins including below the straight masked stem base. Rich hand-painted 2D sprite texture, anatomically faithful, not a redesign. One boss alone on genuine transparent alpha, no floor, environment, victims, effects, beam, text, diagram or collage. No additional eyes or limbs. A single static base pose.",
+      "source_game": "Half-Life: Opposing Force",
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/File:Pit_Worm_model.jpg"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "Pit_Worm_model.jpg",
+          "local_reference_path": "/workspace/scratch/684967c2474e/references-h/Pit_Worm_model.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/File:Pit_Worm_model.jpg",
+          "role": "original_retail_game_model_or_capture",
+          "visually_inspected": true,
+          "sha256": "17e6e9d481b94967591b95458ed61e1140c8ad65b5b441abb9f1e8c2c23f9938"
+        }
+      ],
+      "reference_bitmap_loaded": true,
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "transparent_background": true,
+      "target_completed": false,
+      "file_path": "assets/resonance/candidates/continuation_20261124_i/bosses/pit_worm_op4_idle_i.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_i/bosses/pit_worm_op4_idle_i.png",
+      "width": 1064,
+      "height": 1478,
+      "color_mode": "RGBA",
+      "byte_size": 1427445,
+      "sha256": "7e7175af5c8d4759d05c7d9bd003dfe41c14e06ba9a8b4717a23df5c9a92e566",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "visual_qa": {
+        "inspected": true,
+        "single_subject": true,
+        "alpha_channel_present": true,
+        "alpha_zero_pixels": 981635,
+        "alpha_128_bbox": [
+          51,
+          43,
+          1011,
+          1447
+        ],
+        "composited_on_light_and_dark": true,
+        "visible_halo_on_qa_composites": false,
+        "notes": "Silhouette individuelle complète, détails du modèle source conservés; proportions, textures et détails fins à valider. Marges mesurées plutôt que supposées conformes au prompt. Portion émergée seulement, pied du segment droit destiné à être masqué sous le sol; aucune anatomie cachée inventée."
+      },
+      "notes": "Silhouette individuelle complète, détails du modèle source conservés; proportions, textures et détails fins à valider. Marges mesurées plutôt que supposées conformes au prompt. Portion émergée seulement, pied du segment droit destiné à être masqué sous le sol; aucune anatomie cachée inventée.",
+      "source_partial_register": "docs/resonance/production/continuation_20261124_i/root_generation.json"
+    },
+    {
+      "asset_id": "gene_worm_op4_idle_i",
+      "name_fr": "Gene Worm — partie émergée",
+      "owner_id": "gene_worm_op4",
+      "owner_type": "boss",
+      "target_ids": [
+        "gene_worm_op4"
+      ],
+      "category": "boss_key_pose",
+      "batch_id": "continuation_20261124_i",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "prompt": "Create ONE individual high-detail 2D boss sprite of the original retail Half-Life Opposing Force Gene Worm, faithful to the attached game model screenshot. Preserve this exact crouched left-facing three-quarter silhouette and head arrangement: massive green-and-ochre alien worm head and torso, huge hooked dark upper beak structures, orange glowing visible eye, multiple long green mouth tentacles and curving appendages in the reference arrangement, black pointed hooks at the tips. Match the angular organic plates, lengths, eye position, and exact original color pattern. The reference shows the emerged combat portion; do not invent a humanoid torso, legs, an unseen full body or new tentacles. Polished richly textured hand-painted 2D fighting-game boss art, faithful proportions. One boss only, no portal or background, no ground shadow, no beam, no victim, no additional creatures, no panels or text. Landscape canvas, entire shown creature including every tentacle tip fits inside with 12% empty margins. Genuine transparent alpha background. Single base pose.",
+      "source_game": "Half-Life: Opposing Force",
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/File:Gene_worm_model.jpg"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "Gene_worm_model.jpg",
+          "local_reference_path": "/workspace/scratch/684967c2474e/references-h/Gene_worm_model.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/File:Gene_worm_model.jpg",
+          "role": "original_retail_game_model_or_capture",
+          "visually_inspected": true,
+          "sha256": "dad88e6a8c61bfcfedfe38a60e9146e67e1116072a3bcd7ec1183b08d1dca946"
+        }
+      ],
+      "reference_bitmap_loaded": true,
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "transparent_background": true,
+      "target_completed": false,
+      "file_path": "assets/resonance/candidates/continuation_20261124_i/bosses/gene_worm_op4_idle_i.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_i/bosses/gene_worm_op4_idle_i.png",
+      "width": 1506,
+      "height": 1045,
+      "color_mode": "RGBA",
+      "byte_size": 1848219,
+      "sha256": "b87efec804dbf66c2facd42c0344be723a6fd6130d2e5f2edfb67d7f1e9b5b0d",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "visual_qa": {
+        "inspected": true,
+        "single_subject": true,
+        "alpha_channel_present": true,
+        "alpha_zero_pixels": 811503,
+        "alpha_128_bbox": [
+          37,
+          25,
+          1482,
+          1024
+        ],
+        "composited_on_light_and_dark": true,
+        "visible_halo_on_qa_composites": false,
+        "notes": "Silhouette individuelle complète, détails du modèle source conservés; proportions, textures et détails fins à valider. Marges mesurées plutôt que supposées conformes au prompt. Portion de combat émergée; disposition fine des tentacules à comparer à la référence."
+      },
+      "notes": "Silhouette individuelle complète, détails du modèle source conservés; proportions, textures et détails fins à valider. Marges mesurées plutôt que supposées conformes au prompt. Portion de combat émergée; disposition fine des tentacules à comparer à la référence.",
+      "source_partial_register": "docs/resonance/production/continuation_20261124_i/root_generation.json"
+    },
+    {
+      "asset_id": "costume_gman_hl1_idle_i",
+      "name_fr": "G-Man — costume Half-Life original",
+      "owner_id": "gman_hl2",
+      "owner_type": "support_character",
+      "target_ids": [
+        "costume_gman_hl1"
+      ],
+      "category": "costume_key_pose",
+      "batch_id": "continuation_20261124_i",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: stylized-concept. Create one single full-body detailed 2D sprite of the G-Man appearance from the ORIGINAL Half-Life retail GoldSrc model, following the attached reference exactly. Preserve this game's gaunt pale angular face, swept-back very dark short hair, blue eyes with no glow, unusually long face, long slim neck, narrow blue-navy two-button suit, white shirt, plain black tie, dark dress shoes and square black briefcase with the round yellow Black Mesa emblem from the reference. Keep the original HL1 costume silhouette and simple construction, do not substitute the Half-Life 2 or Alyx face or costume. Full figure facing left in a composed neutral base stance, one arm holding the closed briefcase by its handle alongside the leg, other arm relaxed. Detailed hand-painted 2D game art; subtly resolve the original textures without changing proportions or adding ornament. One man only, one pose, no replicas, no collage, no text, no backdrop or ground shadow. Genuine transparent background, portrait framing, entire head, feet and briefcase visible, at least 10 percent empty margins. No weapon, no green eye glow, no extra accessories.",
+      "source_game": "Half-Life",
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/File:Gman_hl.png"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "gman_hl1.png",
+          "local_reference_path": "/tmp/resonance-reference-i/gman_hl1.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:Gman_hl.png",
+          "role": "original_retail_game_model_or_capture",
+          "visually_inspected": true,
+          "sha256": "1c72ce03859a3a6b1ac54d20666e26742290e389df5fc5a2123177f220586a3f",
+          "source_url": "https://combineoverwiki.net/images/9/93/Gman_hl.png"
+        }
+      ],
+      "reference_bitmap_loaded": true,
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "transparent_background": true,
+      "target_completed": false,
+      "file_path": "assets/resonance/candidates/continuation_20261124_i/costumes/costume_gman_hl1_idle_i.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_i/costumes/costume_gman_hl1_idle_i.png",
+      "width": 1024,
+      "height": 1536,
+      "color_mode": "RGBA",
+      "byte_size": 1263090,
+      "sha256": "1febc0a2328ec19f7f148e656618660d305d6009d6178e413d2e2f45a83fd72f",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "visual_qa": {
+        "inspected": true,
+        "single_subject": true,
+        "alpha_channel_present": true,
+        "alpha_zero_pixels": 1169393,
+        "alpha_128_bbox": [
+          269,
+          25,
+          701,
+          1518
+        ],
+        "composited_on_light_and_dark": true,
+        "visible_halo_on_qa_composites": false,
+        "notes": "Silhouette individuelle complète, détails du modèle source conservés; proportions, textures et détails fins à valider. Marges mesurées plutôt que supposées conformes au prompt."
+      },
+      "notes": "Silhouette individuelle complète, détails du modèle source conservés; proportions, textures et détails fins à valider. Marges mesurées plutôt que supposées conformes au prompt.",
+      "source_partial_register": "docs/resonance/production/continuation_20261124_i/root_generation.json"
+    },
+    {
+      "asset_id": "civil_protection_hl2_guard_i",
+      "name_fr": "Protection Civile — garde au bâton",
+      "owner_id": "civil_protection_hl2",
+      "owner_type": "reserve_character",
+      "target_ids": [
+        "civil_protection_hl2"
+      ],
+      "category": "character_key_pose",
+      "batch_id": "continuation_20261124_i",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "prompt": "Create ONE individual detailed 2D base combat-stance sprite of a standard Civil Protection officer from HALF-LIFE 2 retail, exactly matching the attached model. Preserve the off-white respirator mask with two oval black eye lenses and two round vertically arranged filter units, dark blue-gray padded flak vest with white rectangular chest strip and white shoulders, dark textured jacket, black gloves, two distinct belt lines with silver buckles and green pouches, olive green trousers and high black leather boots. Carry the original simple black/copper stun baton from the reference in the right hand, unpowered, no electricity. Same human proportions as reference. Pose full body facing LEFT in restrained ready guard, knees slightly bent, baton diagonally down with entire tip visible; slight three-quarter torso for readability. Faithful polished hand-painted 2D sprite with high detail and clean edges. One officer only, no copies, no victim, no scenery, no cast shadow, no glow, no text or UI. True transparent alpha background. Portrait image with every hand, boot, baton end inside frame and 12% empty margins all around. No giant armor, no Alyx helmet, no gas tank.",
+      "source_game": "Half-Life 2",
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/File:HL2_Model_Metrocop.png"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "civil_protection_hl2.png",
+          "local_reference_path": "/tmp/resonance-reference-i/civil_protection_hl2.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:HL2_Model_Metrocop.png",
+          "role": "original_retail_game_model_or_capture",
+          "visually_inspected": true,
+          "sha256": "a2feb50375ef7ae736a4037e133b22ef06f448d4c40793f6384a970896ddb367",
+          "source_url": "https://combineoverwiki.net/images/5/50/HL2_Model_Metrocop.png"
+        }
+      ],
+      "reference_bitmap_loaded": true,
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "transparent_background": true,
+      "target_completed": false,
+      "file_path": "assets/resonance/candidates/continuation_20261124_i/characters/civil_protection_hl2_guard_i.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_i/characters/civil_protection_hl2_guard_i.png",
+      "width": 1039,
+      "height": 1514,
+      "color_mode": "RGBA",
+      "byte_size": 998525,
+      "sha256": "4f28415ecd6beecfc38fd307314b9cd636184d9bb12600d5d380edcda78543b4",
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "visual_qa": {
+        "inspected": true,
+        "single_subject": true,
+        "alpha_channel_present": true,
+        "alpha_zero_pixels": 1117671,
+        "alpha_128_bbox": [
+          88,
+          104,
+          958,
+          1445
+        ],
+        "composited_on_light_and_dark": true,
+        "visible_halo_on_qa_composites": false,
+        "notes": "Silhouette individuelle complète, détails du modèle source conservés; proportions, textures et détails fins à valider. Marges mesurées plutôt que supposées conformes au prompt. Le masque est orienté trois-quarts vers la droite malgré la consigne gauche; cette orientation est enregistrée sans miroir automatique des insignes."
+      },
+      "notes": "Silhouette individuelle complète, détails du modèle source conservés; proportions, textures et détails fins à valider. Marges mesurées plutôt que supposées conformes au prompt. Le masque est orienté trois-quarts vers la droite malgré la consigne gauche; cette orientation est enregistrée sans miroir automatique des insignes.",
+      "source_partial_register": "docs/resonance/production/continuation_20261124_i/root_generation.json"
+    },
+    {
+      "asset_id": "costume_barney_cp_helmet_i",
+      "name_fr": "Barney — déguisement Protection Civile avec casque",
+      "owner_id": "barney_hl2",
+      "owner_type": "fighter",
+      "target_ids": [
+        "costume_barney_cp_helmet"
+      ],
+      "category": "costume_key_pose",
+      "batch_id": "continuation_20261124_i",
+      "created_at": "2026-11-24",
+      "generator": "image_gen built-in",
+      "prompt": "Create ONE detailed full-body 2D sprite of BARNEY CALHOUN in his masked Civil Protection disguise at the beginning of HALF-LIFE 2. Reference 1 is the specific canonical disguised Barney screenshot, strict upper-body identity, mask and gesture; reference 2 supplies the matching retail Civil Protection full costume lower-body construction. Preserve the off-white mask with oval black eye lenses, two vertical filter circles, navy-gray quilted vest and white chest patch/shoulders, dark jacket, two black belt rows with silver buckle, green pouches, olive trousers, tall plain black boots, black gloves. Pose the single whole figure facing LEFT, 3/4 body, with one arm extending and pointing slightly forward to summon someone, as in the screenshot; other hand relaxed, NO weapon. Slightly relaxed unthreatening station stance, not an attacking combat pose. Preserve the same retail proportions without exaggeration. Detailed hand-painted 2D raster game sprite with clean material texture and readable silhouette. True transparent alpha background, one figure only, no room, no floor or shadow, no other character, no text, no collage. Portrait, complete head and both boots visible, every finger inside with at least 10% empty margin. This is one specific costume asset, not an unmasked Barney portrait.",
+      "source_game": "Half-Life 2",
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/File:Disguised_Metrocop_Barney.jpg"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "barney_helmet.jpg",
+          "local_reference_path": "/tmp/resonance-reference-i/barney_helmet.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/File:Disguised_Metrocop_Barney.jpg",
+          "role": "original_retail_game_model_or_capture",
+          "visually_inspected": true,
+          "sha256": "658baad5da6306ef5783e11f1dbc0d24a0b258d2f5e3a3b1ba037189d72837f9",
+          "source_url": "https://combineoverwiki.net/images/a/a6/Disguised_Metrocop_Barney.jpg"
+        },
+        {
+          "reference_filename": "civil_protection_hl2.png",
+          "local_reference_path": "/tmp/resonance-reference-i/civil_protection_hl2.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:HL2_Model_Metrocop.png",
+          "role": "original_retail_game_model_or_capture",
+          "visually_inspected": true,
+          "sha256": "a2feb50375ef7ae736a4037e133b22ef06f448d4c40793f6384a970896ddb367",
+          "source_url": "https://combineoverwiki.net/images/5/50/HL2_Model_Metrocop.png"
+        }
+      ],
+      "reference_bitmap_loaded": true,
+      "generation_status": "refus automatique",
+      "status": "refus automatique",
+      "qa_status": "aucun fichier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": false,
+      "transparent_background": true,
+      "target_completed": false,
+      "file_path": null,
+      "repository_path": null,
+      "request_id": "5e071d24-8028-4f30-a5d1-c4e13cda0198",
+      "refusal_reason": "Refus du système de génération, catégorie other au stade output; aucun fichier produit, aucune relance.",
+      "original_generation_status": "refusé",
+      "source_partial_register": "docs/resonance/production/continuation_20261124_i/root_generation.json"
+    }
+  ]
+}

@@ -1,0 +1,333 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-11-24",
+  "original_f_targets": 45,
+  "original_h_targets": 62,
+  "canonical_targets": 66,
+  "canonical_catalogue": "docs/resonance/data/projectile_catalog_20261124.json",
+  "source_catalogues": [
+    "docs/resonance/production/continuation_20261124_f/projectile_catalog_original.json",
+    "docs/resonance/production/continuation_20261124_h/projectile_catalog_original.json"
+  ],
+  "semantics": "Mappings relate production contracts. They do not produce assets, validate fidelity or enable runtime behavior.",
+  "mappings": [
+    {
+      "legacy_target_id": "PRJ_HL1_CROSSBOW_BOLT",
+      "canonical_target_ids": [
+        "proj_crossbow_bolt_hl1"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_HL1_RPG_ROCKET",
+      "canonical_target_ids": [
+        "proj_rpg_rocket_hl1"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_HL1_MP5_GRENADE",
+      "canonical_target_ids": [
+        "proj_mp5_grenade_hl1"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_HL1_FRAG_GRENADE",
+      "canonical_target_ids": [
+        "proj_hand_grenade_hl1"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_HL1_SATCHEL_CHARGE",
+      "canonical_target_ids": [
+        "proj_satchel_hl1"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_HL1_TRIPMINE",
+      "canonical_target_ids": [
+        "device_tripmine_hl1",
+        "fx_tripmine_laser_hl1"
+      ],
+      "relation": "split_by_visual_role_or_version"
+    },
+    {
+      "legacy_target_id": "PRJ_HL1_HORNET",
+      "canonical_target_ids": [
+        "proj_hornet_hl1"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_HL1_GAUSS_BEAM",
+      "canonical_target_ids": [
+        "fx_gauss_beam_hl1"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_HL1_GLUON_BEAM",
+      "canonical_target_ids": [
+        "fx_gluon_beam_hl1"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_HL1_VORTIGAUNT_ZAP",
+      "canonical_target_ids": [
+        "fx_vortigaunt_zap_hl1"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_HL1_BULLSQUID_SPIT",
+      "canonical_target_ids": [
+        "proj_bullsquid_spit_hl1"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_HL1_CONTROLLER_ENERGY_BALL",
+      "canonical_target_ids": [
+        "proj_controller_orb_hl1"
+      ],
+      "relation": "variant_within_existing_family"
+    },
+    {
+      "legacy_target_id": "PRJ_HL1_CONTROLLER_HEAD_BALL",
+      "canonical_target_ids": [
+        "proj_controller_orb_hl1"
+      ],
+      "relation": "variant_within_existing_family"
+    },
+    {
+      "legacy_target_id": "PRJ_HL1_NIHILANTH_ZAP",
+      "canonical_target_ids": [
+        "proj_nihilanth_energy_hl1"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_HL1_NIHILANTH_TELEPORT",
+      "canonical_target_ids": [
+        "proj_nihilanth_teleport_hl1"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_HL2_RPG_MISSILE",
+      "canonical_target_ids": [
+        "proj_rpg_rocket_hl2"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_HL2_AR2_COMBINE_BALL",
+      "canonical_target_ids": [
+        "proj_ar2_energy_ball_hl2"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_HL2_CROSSBOW_BOLT",
+      "canonical_target_ids": [
+        "proj_crossbow_bolt_hl2"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_HL2_SMG1_GRENADE",
+      "canonical_target_ids": [
+        "proj_smg_grenade_hl2"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_HL2_FRAG_GRENADE",
+      "canonical_target_ids": [
+        "proj_hand_grenade_hl2"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_HL2_BUGBAIT_POD",
+      "canonical_target_ids": [
+        "proj_bugbait_hl2"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_HL2_APC_MISSILE",
+      "canonical_target_ids": [
+        "proj_apc_missile_hl2"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_HL2_HUNTER_CHOPPER_BOMB",
+      "canonical_target_ids": [
+        "proj_helicopter_bomb_hl2"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_EP2_HUNTER_FLECHETTE",
+      "canonical_target_ids": [
+        "proj_hunter_flechette_ep2"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_EP2_ANTLION_WORKER_SPIT",
+      "canonical_target_ids": [
+        "proj_antlion_worker_spit_ep2"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_EP2_MAGNUSSON_DEVICE",
+      "canonical_target_ids": [
+        "proj_magnusson_device_ep2"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_HL2_HEADCRAB_CANISTER",
+      "canonical_target_ids": [
+        "proj_headcrab_canister_hl2"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_HL2_STRIDER_CANNON",
+      "canonical_target_ids": [
+        "fx_strider_warp_hl2"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_HL2_AR2_PRIMARY_TRACE",
+      "canonical_target_ids": [
+        "fx_ar2_tracer_hl2"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_HL2_PISTOL_FIRE_EFFECT",
+      "canonical_target_ids": [
+        "fx_pistol_fire_hl2"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_OP4_SPORE",
+      "canonical_target_ids": [
+        "proj_spore_opfor"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_OP4_SHOCK_BOLT",
+      "canonical_target_ids": [
+        "proj_shock_bolt_opfor"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_OP4_DISPLACER_ORB",
+      "canonical_target_ids": [
+        "proj_displacer_orb_opfor"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_ALYX_FRAG_GRENADE",
+      "canonical_target_ids": [
+        "proj_combine_grenade_hla"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_ALYX_XEN_GRENADE",
+      "canonical_target_ids": [
+        "proj_xen_grenade_hla"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_PORTAL1_HIGH_ENERGY_PELLET",
+      "canonical_target_ids": [
+        "proj_energy_pellet_portal1"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_PORTAL1_ROCKET_TURRET_MISSILE",
+      "canonical_target_ids": [
+        "proj_rocket_turret_missile_portal1"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_PORTAL1_PORTAL_EFFECT",
+      "canonical_target_ids": [
+        "fx_portal_blue_portal1",
+        "fx_portal_orange_portal1"
+      ],
+      "relation": "split_by_visual_role_or_version"
+    },
+    {
+      "legacy_target_id": "PRJ_PORTAL2_PORTAL_EFFECT",
+      "canonical_target_ids": [
+        "fx_portals_solo_portal2",
+        "fx_portals_coop_portal2"
+      ],
+      "relation": "split_by_visual_role_or_version"
+    },
+    {
+      "legacy_target_id": "PRJ_PORTAL2_THERMAL_BEAM",
+      "canonical_target_ids": [
+        "fx_thermal_beam_portal2"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_PORTAL2_REPULSION_GEL",
+      "canonical_target_ids": [
+        "proj_repulsion_gel_portal2"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_PORTAL2_PROPULSION_GEL",
+      "canonical_target_ids": [
+        "proj_propulsion_gel_portal2"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_PORTAL2_CONVERSION_GEL",
+      "canonical_target_ids": [
+        "proj_conversion_gel_portal2"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_PORTAL2_WHEATLEY_BOMB",
+      "canonical_target_ids": [
+        "proj_aperture_bomb_portal2"
+      ],
+      "relation": "same_family"
+    },
+    {
+      "legacy_target_id": "PRJ_DESKJOB_TURRET_FIRE",
+      "canonical_target_ids": [
+        "fx_deskjob_turret_tracer"
+      ],
+      "relation": "same_family"
+    }
+  ]
+}

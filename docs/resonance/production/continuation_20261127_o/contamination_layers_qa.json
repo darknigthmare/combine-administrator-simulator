@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "diagnostics_only": true,
+  "source_pngs_unchanged_sha256_verified": true,
+  "six_selected_images_same_canvas": [
+    2172,
+    724
+  ],
+  "floor_top_alpha128_central_80percent": {
+    "min": 639,
+    "median": 639.0,
+    "max": 639
+  },
+  "floor_front_edge_overlap_before": {
+    "threshold": 16,
+    "pixels": 23899,
+    "rows": [
+      703,
+      714
+    ]
+  },
+  "floor_front_edge_overlap_after": {
+    "alpha_threshold": 16,
+    "pixels": 17434,
+    "y_min": 705,
+    "y_max": 714,
+    "revision_reduced_overlap": true
+  },
+  "hatch_duplication_corrected": true,
+  "small_rear_industrial_volume_missing_from_selected_stack": true,
+  "source_identity_rehosted": false,
+  "official_reference_sha256": "ff57e6909e48c9e4f2e403c6ed4ed2827b6e4fb5348d790bbbc8064675a79167",
+  "completed_six_layer_stage": false,
+  "runtime_or_motion_tested": false,
+  "renderer_clipping_proposal": {
+    "status": "proposed_configuration_not_integrated",
+    "runtime_enabled": false,
+    "source_pngs_modified": false,
+    "initial_proposed_cut_y": 714,
+    "selected_cut_y": 713,
+    "reason_for_one_pixel_adjustment": "L04 row713 has alpha min74/median130; use L05 row713 alpha min251 to prevent a faint seam.",
+    "L04_ground": {
+      "source_rect": {
+        "x": 0,
+        "y": 0,
+        "width": 2172,
+        "height": 713
+      },
+      "destination_rect": {
+        "x": 0,
+        "y": 0,
+        "width": 2172,
+        "height": 713
+      }
+    },
+    "L05_foreground": {
+      "source_rect": {
+        "x": 0,
+        "y": 713,
+        "width": 2172,
+        "height": 11
+      },
+      "destination_rect": {
+        "x": 0,
+        "y": 713,
+        "width": 2172,
+        "height": 11
+      }
+    },
+    "transform_order": "Read the stated source rectangle at the same canvas coordinates, then apply each layer camera transform. No texture rescale.",
+    "horizontal_margins": "The original canvas has no overscan; horizontal camera motion remains unverified."
+  },
+  "ground_scan_with_proposed_clipping": {
+    "visible_band_y": [
+      650,
+      723
+    ],
+    "pixels_below_alpha16": 0,
+    "overlap_pixels_by_rectangles": 0,
+    "critical_boundary_rows": {
+      "712_floor": {
+        "minimum_alpha": 227,
+        "median_alpha": 245
+      },
+      "713_edge": {
+        "minimum_alpha": 251,
+        "median_alpha": 252
+      },
+      "714_edge": {
+        "minimum_alpha": 252,
+        "median_alpha": 252
+      }
+    },
+    "fully_transparent_horizontal_seam": false,
+    "source_png_bytes_unchanged": true,
+    "not_runtime_validation": true
+  }
+}

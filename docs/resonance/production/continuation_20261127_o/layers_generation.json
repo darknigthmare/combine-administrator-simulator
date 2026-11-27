@@ -1,0 +1,927 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "continuation_20261127_o",
+  "generator": "image_gen built-in",
+  "source_commit": "4ae2ee9dcf1a2acedff4b628c70ee70a736553a0",
+  "contract_path": "docs/resonance/production/continuation_20261127_o/contamination_layer_contract.json",
+  "planned_count": 6,
+  "counts": {
+    "generated": 8,
+    "refusals": 0,
+    "tool_errors": 0,
+    "selected_layer_candidates": 6,
+    "historical_revision_candidates": 2,
+    "distinct_layer_ids": 6,
+    "generation_calls": 8
+  },
+  "assets": [
+    {
+      "asset_id": "layer_contamination_hl25_sky_o",
+      "target_id": "STG_EXT_HLDM_CONTAMINATION",
+      "target_ids": [
+        "STG_EXT_HLDM_CONTAMINATION"
+      ],
+      "owner_id": "STG_EXT_HLDM_CONTAMINATION",
+      "owner_type": "stage",
+      "category": "stage_layer_candidate",
+      "name_fr": "Contamination — Ciel mauve et pêche",
+      "layer_id": "L00_ambience",
+      "parallax_factor": 0,
+      "parent_asset_id": "stage_contamination_hl25_master_h",
+      "batch_id": "continuation_20261127_o",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life Deathmatch — 25th Anniversary",
+      "content_class": "released_reference",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: background-extraction. Asset type: ONE individual parallax plane for the Contamination stage, Half-Life Deathmatch 25th Anniversary, in Half-Life Resonance. Input image 1 is the existing GENERATED master panorama: it is the exact edit target for camera, canvas, geometry, object locations, scale, lighting and painted texture. Input image 2 is Valve’s official released-map screenshot: use it only to check materials and visual identity; never replace the master camera with the screenshot camera. Keep the entire 2172 x 724 canvas of input 1, approximately 3:1, without cropping, zooming, recentring, changing perspective or moving any retained object. Deliver one layer only, not a sheet or complete rebuilt scene. Keep the same subdued peach/mauve sky light, weathered gray concrete, rust-orange metal and red guardrails wherever the requested layer contains them. Preserve original design; no people, creatures, pickups, HUD, text, labels, invented signs or added machinery. This is a generative layer candidate, not a claim of pixel-exact extraction or source-game geometry. Retain only the mauve, lavender and soft peach clouded sky from the master. Remove every cliff, tower, wall, railing, platform and floor. Seamlessly continue the existing sky through all now-uncovered areas to create a fully opaque sky-only plate over the complete canvas. Keep the existing cloud scale, soft brush texture and lighting direction, without stars, sun disk or new weather. No silhouettes or ground remain.",
+      "source_references": [
+        {
+          "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_contamination_hl25_master_h.png",
+          "sha256": "891062e6c7aa98bf8e5086f7deb8774f215709467d13cb9f7003ebeeda65c4c5",
+          "width": 2172,
+          "height": 724,
+          "provenance": "generated_project_candidate",
+          "role": "edit_target_composition_and_coordinates",
+          "visually_inspected": true
+        },
+        {
+          "source_page": "https://www.half-life.com/en/halflife/25th/",
+          "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/map_contamination.jpg",
+          "sha256": "ff57e6909e48c9e4f2e403c6ed4ed2827b6e4fb5348d790bbbc8064675a79167",
+          "width": 2560,
+          "height": 1600,
+          "provenance": "primary_official_released_map_screenshot",
+          "role": "visual_identity_only_not_camera",
+          "visually_inspected": true,
+          "reference_filename": "map_contamination_official.jpg"
+        }
+      ],
+      "source_urls": [
+        "https://www.half-life.com/en/halflife/25th/",
+        "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/map_contamination.jpg"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "edit_target_and_visual_identity_reference",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_sky_o.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_sky_o.png",
+      "transparent_background": false,
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "qa_status": "candidat à vérifier",
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "generation_status": "généré",
+      "status": "généré",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGB",
+      "byte_size": 1627295,
+      "sha256": "3534d1655accf246a02bde5c0a1c39cdb622fa92013324826314f399f549e912",
+      "git_blob_sha": "b527418c09693a46c9bd7b97cd7a51f0e50f6010",
+      "original_png_bytes_preserved": true,
+      "original_generated_file": "/workspace/scratch/892354ae3802/generated_images/exec-d6c555ca-c7d7-4bb0-a96c-93cefef27c4d.png",
+      "alpha_check": "sans objet",
+      "alpha_stats": {
+        "alpha_present": false
+      },
+      "visual_qa": {
+        "inspected": true,
+        "canvas_matches_parent_dimensions": true,
+        "no_runtime_or_camera_motion_validation": true,
+        "single_layer_canvas": true,
+        "composited_on_light_and_dark": false,
+        "nominal_six_plane_composite_inspected": true,
+        "visible_findings": "Ciel seul opaque au bon canevas; nuages étendus derrière les anciens objets. Nuances et texture réinterprétées, non extraites pixel à pixel.",
+        "diagnostic_documents": [
+          "docs/resonance/production/continuation_20261127_o/contamination_comparison.jpg",
+          "docs/resonance/production/continuation_20261127_o/contamination_alpha_diagnostic.jpg"
+        ],
+        "diagnostic_composites_are_not_deliverable_edits": true
+      },
+      "notes": "Ciel seul opaque au bon canevas; nuages étendus derrière les anciens objets. Nuances et texture réinterprétées, non extraites pixel à pixel."
+    },
+    {
+      "asset_id": "layer_contamination_hl25_canyon_o",
+      "target_id": "STG_EXT_HLDM_CONTAMINATION",
+      "target_ids": [
+        "STG_EXT_HLDM_CONTAMINATION"
+      ],
+      "owner_id": "STG_EXT_HLDM_CONTAMINATION",
+      "owner_type": "stage",
+      "category": "stage_layer_candidate",
+      "name_fr": "Contamination — Falaises du canyon",
+      "layer_id": "L01_far",
+      "parallax_factor": 0.12,
+      "parent_asset_id": "stage_contamination_hl25_master_h",
+      "batch_id": "continuation_20261127_o",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life Deathmatch — 25th Anniversary",
+      "content_class": "released_reference",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: background-extraction. Asset type: ONE individual parallax plane for the Contamination stage, Half-Life Deathmatch 25th Anniversary, in Half-Life Resonance. Input image 1 is the existing GENERATED master panorama: it is the exact edit target for camera, canvas, geometry, object locations, scale, lighting and painted texture. Input image 2 is Valve’s official released-map screenshot: use it only to check materials and visual identity; never replace the master camera with the screenshot camera. Keep the entire 2172 x 724 canvas of input 1, approximately 3:1, without cropping, zooming, recentring, changing perspective or moving any retained object. Deliver one layer only, not a sheet or complete rebuilt scene. Keep the same subdued peach/mauve sky light, weathered gray concrete, rust-orange metal and red guardrails wherever the requested layer contains them. Preserve original design; no people, creatures, pickups, HUD, text, labels, invented signs or added machinery. This is a generative layer candidate, not a claim of pixel-exact extraction or source-game geometry. Retain only the reddish-purple canyon rock silhouettes visible behind the industrial buildings: the low rock ridge at the far left, the rocks seen through the central bridge opening, and the large cragged rock face at the right. Preserve the top ridge outlines and the rock texture locations. Continue the same rock mass behind the removed building occlusions only where necessary for a usable rear plate; do not invent another landmark or building. Remove the sky, all architecture, metalwork, rails, lamps, stairs and every floor surface to true alpha transparency. Preserve the original canvas positions; the sky above the cliff silhouette and the foreground floor band must be transparent.",
+      "source_references": [
+        {
+          "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_contamination_hl25_master_h.png",
+          "sha256": "891062e6c7aa98bf8e5086f7deb8774f215709467d13cb9f7003ebeeda65c4c5",
+          "width": 2172,
+          "height": 724,
+          "provenance": "generated_project_candidate",
+          "role": "edit_target_composition_and_coordinates",
+          "visually_inspected": true
+        },
+        {
+          "source_page": "https://www.half-life.com/en/halflife/25th/",
+          "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/map_contamination.jpg",
+          "sha256": "ff57e6909e48c9e4f2e403c6ed4ed2827b6e4fb5348d790bbbc8064675a79167",
+          "width": 2560,
+          "height": 1600,
+          "provenance": "primary_official_released_map_screenshot",
+          "role": "visual_identity_only_not_camera",
+          "visually_inspected": true,
+          "reference_filename": "map_contamination_official.jpg"
+        }
+      ],
+      "source_urls": [
+        "https://www.half-life.com/en/halflife/25th/",
+        "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/map_contamination.jpg"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "edit_target_and_visual_identity_reference",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_canyon_o.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_canyon_o.png",
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "qa_status": "candidat à vérifier",
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "generation_status": "généré",
+      "status": "généré",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 834007,
+      "sha256": "db394184d6cc8a453e0240613a112c442a1613467f1498f215ca58bd1e64a25b",
+      "git_blob_sha": "66362fd849739dcddecf7e18391dc45330f47224",
+      "original_png_bytes_preserved": true,
+      "original_generated_file": "/workspace/scratch/892354ae3802/generated_images/exec-82aa5714-0ae4-45d6-b1bb-b37eabb9b41d.png",
+      "alpha_check": "présent",
+      "alpha_stats": {
+        "alpha_present": true,
+        "transparent_pixels": 1268265,
+        "opaque_pixels": 1214,
+        "partial_pixels": 303049,
+        "nonzero_bbox": [
+          0,
+          67,
+          2172,
+          659
+        ],
+        "bbox_alpha_at_least_16": [
+          0,
+          71,
+          2172,
+          478
+        ]
+      },
+      "visual_qa": {
+        "inspected": true,
+        "canvas_matches_parent_dimensions": true,
+        "no_runtime_or_camera_motion_validation": true,
+        "single_layer_canvas": true,
+        "composited_on_light_and_dark": true,
+        "nominal_six_plane_composite_inspected": true,
+        "visible_findings": "Falaises seules sur alpha; contours principaux retenus. Le remplissage des occlusions est génératif. Pas de structure ajoutée. Le petit volume industriel derrière le pont du maître ne figure dans aucun plan.",
+        "diagnostic_documents": [
+          "docs/resonance/production/continuation_20261127_o/contamination_comparison.jpg",
+          "docs/resonance/production/continuation_20261127_o/contamination_alpha_diagnostic.jpg"
+        ],
+        "diagnostic_composites_are_not_deliverable_edits": true
+      },
+      "notes": "Falaises seules sur alpha; contours principaux retenus. Le remplissage des occlusions est génératif. Pas de structure ajoutée. Le petit volume industriel derrière le pont du maître ne figure dans aucun plan."
+    },
+    {
+      "asset_id": "layer_contamination_hl25_buildings_o",
+      "target_id": "STG_EXT_HLDM_CONTAMINATION",
+      "target_ids": [
+        "STG_EXT_HLDM_CONTAMINATION"
+      ],
+      "owner_id": "STG_EXT_HLDM_CONTAMINATION",
+      "owner_type": "stage",
+      "category": "stage_layer_candidate",
+      "name_fr": "Contamination — Bâtiments industriels principaux",
+      "layer_id": "L02_mid",
+      "parallax_factor": 0.3,
+      "parent_asset_id": "stage_contamination_hl25_master_h",
+      "batch_id": "continuation_20261127_o",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life Deathmatch — 25th Anniversary",
+      "content_class": "released_reference",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: background-extraction. Asset type: ONE individual parallax plane for the Contamination stage, Half-Life Deathmatch 25th Anniversary, in Half-Life Resonance. Input image 1 is the existing GENERATED master panorama: it is the exact edit target for camera, canvas, geometry, object locations, scale, lighting and painted texture. Input image 2 is Valve’s official released-map screenshot: use it only to check materials and visual identity; never replace the master camera with the screenshot camera. Keep the entire 2172 x 724 canvas of input 1, approximately 3:1, without cropping, zooming, recentring, changing perspective or moving any retained object. Deliver one layer only, not a sheet or complete rebuilt scene. Keep the same subdued peach/mauve sky light, weathered gray concrete, rust-orange metal and red guardrails wherever the requested layer contains them. Preserve original design; no people, creatures, pickups, HUD, text, labels, invented signs or added machinery. This is a generative layer candidate, not a claim of pixel-exact extraction or source-game geometry. Retain the principal solid industrial building bodies in their original positions: left concrete building with grilles and orange bands; the tall buttressed central-left concrete block with three horizontal openings and rust trusses; the riveted ochre metal upper cabin; the fixed upper connecting bridge and its attached dark guardrail; the rounded tall concrete tower at center-right with stacked orange-and-black metal hatch panels; and the lower background wall with its cyan doorway. Keep their attached warm square lamps and local light on the retained surfaces. Remove the sky and all canyon rock, the separate front red safety-rail runs, the nearer right-hand catwalk/deck and its front support columns, the left lower stair flight, the low central red fence and all foreground ground. Do not keep floating colored light patches on transparent sky. Areas that were sky, rock or open gaps must be real alpha. Complete only small surfaces exposed by removing the foreground railings. The future ground begins at about y=644, so all pixels below this source ground boundary are transparent.",
+      "source_references": [
+        {
+          "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_contamination_hl25_master_h.png",
+          "sha256": "891062e6c7aa98bf8e5086f7deb8774f215709467d13cb9f7003ebeeda65c4c5",
+          "width": 2172,
+          "height": 724,
+          "provenance": "generated_project_candidate",
+          "role": "edit_target_composition_and_coordinates",
+          "visually_inspected": true
+        },
+        {
+          "source_page": "https://www.half-life.com/en/halflife/25th/",
+          "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/map_contamination.jpg",
+          "sha256": "ff57e6909e48c9e4f2e403c6ed4ed2827b6e4fb5348d790bbbc8064675a79167",
+          "width": 2560,
+          "height": 1600,
+          "provenance": "primary_official_released_map_screenshot",
+          "role": "visual_identity_only_not_camera",
+          "visually_inspected": true,
+          "reference_filename": "map_contamination_official.jpg"
+        }
+      ],
+      "source_urls": [
+        "https://www.half-life.com/en/halflife/25th/",
+        "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/map_contamination.jpg"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "edit_target_and_visual_identity_reference",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_buildings_o.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_buildings_o.png",
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "qa_status": "candidat à vérifier",
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "generation_status": "généré",
+      "status": "généré",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 1813039,
+      "sha256": "2137e1733bace95d52b4b738f27776ca89e9c6dba6bc88ac2c5aad12ef1158f1",
+      "git_blob_sha": "88511b0451658883d4162d6f708e48978fed75c6",
+      "original_png_bytes_preserved": true,
+      "original_generated_file": "/workspace/scratch/892354ae3802/generated_images/layer_contamination_hl25_buildings_o_original_bytes.png",
+      "alpha_check": "présent",
+      "alpha_stats": {
+        "alpha_present": true,
+        "transparent_pixels": 689702,
+        "opaque_pixels": 1333,
+        "partial_pixels": 881493,
+        "nonzero_bbox": [
+          0,
+          0,
+          2172,
+          724
+        ],
+        "bbox_alpha_at_least_16": [
+          11,
+          7,
+          2163,
+          646
+        ]
+      },
+      "visual_qa": {
+        "inspected": true,
+        "canvas_matches_parent_dimensions": true,
+        "no_runtime_or_camera_motion_validation": true,
+        "single_layer_canvas": true,
+        "composited_on_light_and_dark": true,
+        "nominal_six_plane_composite_inspected": true,
+        "visible_findings": "Volumes industriels et porte orange murale conservés. Plusieurs panneaux, hauteurs apparentes, détails et lampes sont réinterprétés; comparaison au maître montre une dérive de texture et de proportions. Des lampes de mur et passerelle restent à attribuer précisément avant parallaxe.",
+        "diagnostic_documents": [
+          "docs/resonance/production/continuation_20261127_o/contamination_comparison.jpg",
+          "docs/resonance/production/continuation_20261127_o/contamination_alpha_diagnostic.jpg"
+        ],
+        "diagnostic_composites_are_not_deliverable_edits": true
+      },
+      "notes": "Volumes industriels et porte orange murale conservés. Plusieurs panneaux, hauteurs apparentes, détails et lampes sont réinterprétés; comparaison au maître montre une dérive de texture et de proportions. Des lampes de mur et passerelle restent à attribuer précisément avant parallaxe.",
+      "transport_note": "Generation returned full PNG bytes but no automatic save hint. The original 1813039 bytes were decoded once from the returned data URL into a source PNG, then copied byte-for-byte. No image edit, re-encode or additional generation."
+    },
+    {
+      "asset_id": "layer_contamination_hl25_catwalks_rails_o",
+      "target_id": "STG_EXT_HLDM_CONTAMINATION",
+      "target_ids": [
+        "STG_EXT_HLDM_CONTAMINATION"
+      ],
+      "owner_id": "STG_EXT_HLDM_CONTAMINATION",
+      "owner_type": "stage",
+      "category": "stage_layer_candidate",
+      "name_fr": "Contamination — Passerelles proches et garde-corps",
+      "layer_id": "L03_near",
+      "parallax_factor": 0.55,
+      "parent_asset_id": "stage_contamination_hl25_master_h",
+      "batch_id": "continuation_20261127_o",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life Deathmatch — 25th Anniversary",
+      "content_class": "released_reference",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: background-extraction. Asset type: ONE individual parallax plane for the Contamination stage, Half-Life Deathmatch 25th Anniversary, in Half-Life Resonance. Input image 1 is the existing GENERATED master panorama: it is the exact edit target for camera, canvas, geometry, object locations, scale, lighting and painted texture. Input image 2 is Valve’s official released-map screenshot: use it only to check materials and visual identity; never replace the master camera with the screenshot camera. Keep the entire 2172 x 724 canvas of input 1, approximately 3:1, without cropping, zooming, recentring, changing perspective or moving any retained object. Deliver one layer only, not a sheet or complete rebuilt scene. Keep the same subdued peach/mauve sky light, weathered gray concrete, rust-orange metal and red guardrails wherever the requested layer contains them. Preserve original design; no people, creatures, pickups, HUD, text, labels, invented signs or added machinery. This is a generative layer candidate, not a claim of pixel-exact extraction or source-game geometry. Retain only the nearer catwalk assembly and safety rails from the master: the red rail along the left lower platform, the left stair flight with its dark steps and yellow step edges, the long front catwalk that spans toward the right edge with its red tubular rail and concrete/steel fascia and front support posts, and the low central red fence in front of the orange equipment hatch. Keep these components at their exact original locations; this is one spatial layer, not a rearranged asset sheet. Preserve the holes between rails, rail bars and support columns as real transparent openings. Remove all principal building walls, upper ochre cabin, round tower, sky, cliffs, background doors, and the flat fighting strip. Do not duplicate the main upper bridge or the dark railing attached to that upper bridge. Do not invent a replacement stair, fence or obstruction. Nothing from this layer may extend into the uninterrupted combat floor below approximately y=644.",
+      "source_references": [
+        {
+          "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_contamination_hl25_master_h.png",
+          "sha256": "891062e6c7aa98bf8e5086f7deb8774f215709467d13cb9f7003ebeeda65c4c5",
+          "width": 2172,
+          "height": 724,
+          "provenance": "generated_project_candidate",
+          "role": "edit_target_composition_and_coordinates",
+          "visually_inspected": true
+        },
+        {
+          "source_page": "https://www.half-life.com/en/halflife/25th/",
+          "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/map_contamination.jpg",
+          "sha256": "ff57e6909e48c9e4f2e403c6ed4ed2827b6e4fb5348d790bbbc8064675a79167",
+          "width": 2560,
+          "height": 1600,
+          "provenance": "primary_official_released_map_screenshot",
+          "role": "visual_identity_only_not_camera",
+          "visually_inspected": true,
+          "reference_filename": "map_contamination_official.jpg"
+        }
+      ],
+      "source_urls": [
+        "https://www.half-life.com/en/halflife/25th/",
+        "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/map_contamination.jpg"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "edit_target_and_visual_identity_reference",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_catwalks_rails_o.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_catwalks_rails_o.png",
+      "transparent_background": true,
+      "selected_for_next_review": false,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "qa_status": "historique remplacé par une révision candidate",
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "generation_status": "généré",
+      "status": "généré",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 655650,
+      "sha256": "726730b1cf9524bf5e700fbec780e78ddbb11db4afa09bebdf2ceedfb81feda3",
+      "git_blob_sha": "c15e4c6fe2aeea05ffdee9f0872b95ab1a13cc37",
+      "original_png_bytes_preserved": true,
+      "original_generated_file": "/workspace/scratch/892354ae3802/generated_images/exec-605ad9d3-c8d1-4202-9147-89091bdb14a8.png",
+      "alpha_check": "présent",
+      "alpha_stats": {
+        "alpha_present": true,
+        "transparent_pixels": 1249821,
+        "opaque_pixels": 549,
+        "partial_pixels": 322158,
+        "nonzero_bbox": [
+          0,
+          68,
+          2172,
+          724
+        ],
+        "bbox_alpha_at_least_16": [
+          0,
+          338,
+          2172,
+          643
+        ]
+      },
+      "visual_qa": {
+        "inspected": true,
+        "canvas_matches_parent_dimensions": true,
+        "no_runtime_or_camera_motion_validation": true,
+        "single_layer_canvas": true,
+        "composited_on_light_and_dark": true,
+        "nominal_six_plane_composite_inspected": false,
+        "visible_findings": "Première sortie historique: la porte orange murale était reproduite derrière le garde-corps proche et doublonnait L02. Non sélectionnée; conservée sans altération.",
+        "diagnostic_documents": [
+          "docs/resonance/production/continuation_20261127_o/contamination_comparison.jpg",
+          "docs/resonance/production/continuation_20261127_o/contamination_alpha_diagnostic.jpg"
+        ],
+        "diagnostic_composites_are_not_deliverable_edits": true
+      },
+      "notes": "Première sortie historique: la porte orange murale était reproduite derrière le garde-corps proche et doublonnait L02. Non sélectionnée; conservée sans altération.",
+      "superseded_by": "layer_contamination_hl25_catwalks_rails_v2_o"
+    },
+    {
+      "asset_id": "layer_contamination_hl25_catwalks_rails_v2_o",
+      "target_id": "STG_EXT_HLDM_CONTAMINATION",
+      "target_ids": [
+        "STG_EXT_HLDM_CONTAMINATION"
+      ],
+      "owner_id": "STG_EXT_HLDM_CONTAMINATION",
+      "owner_type": "stage",
+      "category": "stage_layer_candidate",
+      "name_fr": "Contamination — Passerelles proches et garde-corps",
+      "layer_id": "L03_near",
+      "parallax_factor": 0.55,
+      "parent_asset_id": "stage_contamination_hl25_master_h",
+      "batch_id": "continuation_20261127_o",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life Deathmatch — 25th Anniversary",
+      "content_class": "released_reference",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: precise-object-edit. Input 1 is the transparent Contamination catwalk/rail layer to edit. Input 2 is the original complete master, used only to verify the position and depth of the lower orange utility hatch. Make ONE localized correction to input 1: REMOVE the orange-and-gray rectangular utility hatch and its black/yellow striped panel behind the low red foreground fence, approximately x=1310–1490, y=523–637 in the 2172 x 724 canvas. That hatch belongs to the separate rear building layer and MUST NOT remain anywhere in this foreground layer. Replace all hatch pixels with genuine transparency, including every opening between the red fence bars. Preserve or cleanly reconstruct only the red fence rails and thin rail posts where they passed in front of the removed hatch. Do not replace the removed hatch with a wall, a blank box or a flat colored rectangle. Keep the EXACT whole canvas, positions, scale, perspective, all other rails, lamps, catwalk decks, support columns, left stair and alpha unchanged. No cropping or recentering. No other objects added, removed, recolored or redesigned. Output one original PNG layer on true transparent background, not a composite, comparison or sheet.",
+      "source_references": [
+        {
+          "repository_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_catwalks_rails_o.png",
+          "sha256": "726730b1cf9524bf5e700fbec780e78ddbb11db4afa09bebdf2ceedfb81feda3",
+          "width": 2172,
+          "height": 724,
+          "provenance": "generated_project_candidate",
+          "role": "edit_target",
+          "visually_inspected": true
+        },
+        {
+          "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_contamination_hl25_master_h.png",
+          "sha256": "891062e6c7aa98bf8e5086f7deb8774f215709467d13cb9f7003ebeeda65c4c5",
+          "width": 2172,
+          "height": 724,
+          "provenance": "generated_project_candidate",
+          "role": "composition_reference",
+          "visually_inspected": true
+        },
+        {
+          "source_page": "https://www.half-life.com/en/halflife/25th/",
+          "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/map_contamination.jpg",
+          "sha256": "ff57e6909e48c9e4f2e403c6ed4ed2827b6e4fb5348d790bbbc8064675a79167",
+          "width": 2560,
+          "height": 1600,
+          "provenance": "primary_official_released_map_screenshot",
+          "role": "visual_identity_only_not_camera",
+          "visually_inspected": true,
+          "reference_filename": "map_contamination_official.jpg"
+        }
+      ],
+      "source_urls": [
+        "https://www.half-life.com/en/halflife/25th/",
+        "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/map_contamination.jpg"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "edit_target_and_visual_identity_reference",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_catwalks_rails_v2_o.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_catwalks_rails_v2_o.png",
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "qa_status": "candidat à vérifier",
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "generation_status": "généré",
+      "status": "généré",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 607018,
+      "sha256": "9a2a71c68649db8e1b251bb5d202c17185892350b8622a5404c6562599439c9d",
+      "git_blob_sha": "19f472d98b6d3b47641966479705424adbc45560",
+      "original_png_bytes_preserved": true,
+      "original_generated_file": "/workspace/scratch/892354ae3802/generated_images/exec-2b6e870d-f08b-47b6-a2e2-1c301fc93756.png",
+      "alpha_check": "présent",
+      "alpha_stats": {
+        "alpha_present": true,
+        "transparent_pixels": 1270273,
+        "opaque_pixels": 2759,
+        "partial_pixels": 299496,
+        "nonzero_bbox": [
+          0,
+          184,
+          2172,
+          674
+        ],
+        "bbox_alpha_at_least_16": [
+          0,
+          339,
+          2172,
+          644
+        ]
+      },
+      "visual_qa": {
+        "inspected": true,
+        "canvas_matches_parent_dimensions": true,
+        "no_runtime_or_camera_motion_validation": true,
+        "single_layer_canvas": true,
+        "composited_on_light_and_dark": true,
+        "nominal_six_plane_composite_inspected": true,
+        "visible_findings": "Édition ciblée réussie: porte orange supprimée, ouvertures entre barreaux transparentes, murs visibles seulement via L02. Garde-corps et passerelles restent dans leurs zones initiales. Quelques textures, lampes et détails de marches diffèrent de la première sortie.",
+        "diagnostic_documents": [
+          "docs/resonance/production/continuation_20261127_o/contamination_comparison.jpg",
+          "docs/resonance/production/continuation_20261127_o/contamination_alpha_diagnostic.jpg"
+        ],
+        "diagnostic_composites_are_not_deliverable_edits": true
+      },
+      "notes": "Édition ciblée réussie: porte orange supprimée, ouvertures entre barreaux transparentes, murs visibles seulement via L02. Garde-corps et passerelles restent dans leurs zones initiales. Quelques textures, lampes et détails de marches diffèrent de la première sortie.",
+      "revision_of": "layer_contamination_hl25_catwalks_rails_o",
+      "supersedes": "layer_contamination_hl25_catwalks_rails_o",
+      "supersedes_repository_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_catwalks_rails_o.png"
+    },
+    {
+      "asset_id": "layer_contamination_hl25_floor_o",
+      "target_id": "STG_EXT_HLDM_CONTAMINATION",
+      "target_ids": [
+        "STG_EXT_HLDM_CONTAMINATION"
+      ],
+      "owner_id": "STG_EXT_HLDM_CONTAMINATION",
+      "owner_type": "stage",
+      "category": "stage_layer_candidate",
+      "name_fr": "Contamination — Sol de combat",
+      "layer_id": "L04_ground",
+      "parallax_factor": 1.0,
+      "parent_asset_id": "stage_contamination_hl25_master_h",
+      "batch_id": "continuation_20261127_o",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life Deathmatch — 25th Anniversary",
+      "content_class": "released_reference",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: background-extraction. Asset type: ONE individual parallax plane for the Contamination stage, Half-Life Deathmatch 25th Anniversary, in Half-Life Resonance. Input image 1 is the existing GENERATED master panorama: it is the exact edit target for camera, canvas, geometry, object locations, scale, lighting and painted texture. Input image 2 is Valve’s official released-map screenshot: use it only to check materials and visual identity; never replace the master camera with the screenshot camera. Keep the entire 2172 x 724 canvas of input 1, approximately 3:1, without cropping, zooming, recentring, changing perspective or moving any retained object. Deliver one layer only, not a sheet or complete rebuilt scene. Keep the same subdued peach/mauve sky light, weathered gray concrete, rust-orange metal and red guardrails wherever the requested layer contains them. Preserve original design; no people, creatures, pickups, HUD, text, labels, invented signs or added machinery. This is a generative layer candidate, not a claim of pixel-exact extraction or source-game geometry. Retain only the flat gray concrete fighting floor at the bottom of the master, including its thin yellow rear safety line near y=640-645 and its original broad slab seams. Preserve the ground boundary, perspective, width, illumination and all exact canvas coordinates. Remove all scenery above the yellow line to true transparency. This layer owns the top concrete surface down through y=713; the narrow frontmost lower edge at y=714-723 belongs to another layer and must be transparent here. Do not extend, thicken, raise, slope or redesign the floor. No railing, cliff, wall, stairs or props. Keep the complete 2172 x 724 canvas with the isolated floor band in its original bottom location.",
+      "source_references": [
+        {
+          "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_contamination_hl25_master_h.png",
+          "sha256": "891062e6c7aa98bf8e5086f7deb8774f215709467d13cb9f7003ebeeda65c4c5",
+          "width": 2172,
+          "height": 724,
+          "provenance": "generated_project_candidate",
+          "role": "edit_target_composition_and_coordinates",
+          "visually_inspected": true
+        },
+        {
+          "source_page": "https://www.half-life.com/en/halflife/25th/",
+          "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/map_contamination.jpg",
+          "sha256": "ff57e6909e48c9e4f2e403c6ed4ed2827b6e4fb5348d790bbbc8064675a79167",
+          "width": 2560,
+          "height": 1600,
+          "provenance": "primary_official_released_map_screenshot",
+          "role": "visual_identity_only_not_camera",
+          "visually_inspected": true,
+          "reference_filename": "map_contamination_official.jpg"
+        }
+      ],
+      "source_urls": [
+        "https://www.half-life.com/en/halflife/25th/",
+        "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/map_contamination.jpg"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "edit_target_and_visual_identity_reference",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_floor_o.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_floor_o.png",
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "qa_status": "candidat à vérifier",
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "generation_status": "généré",
+      "status": "généré",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 383036,
+      "sha256": "569e5fc787e0beaa9caa4db198b00df4297a871ba0776326552fcbaca901e892",
+      "git_blob_sha": "4aca9eac2a6a2730b78c9ef54e2c93731d6458d1",
+      "original_png_bytes_preserved": true,
+      "original_generated_file": "/workspace/scratch/892354ae3802/generated_images/exec-f707b14d-f6ce-4c3b-a69f-1f41cf471870.png",
+      "alpha_check": "présent",
+      "alpha_stats": {
+        "alpha_present": true,
+        "transparent_pixels": 1369030,
+        "opaque_pixels": 432,
+        "partial_pixels": 203066,
+        "nonzero_bbox": [
+          0,
+          118,
+          2172,
+          724
+        ],
+        "bbox_alpha_at_least_16": [
+          0,
+          638,
+          2172,
+          715
+        ]
+      },
+      "visual_qa": {
+        "inspected": true,
+        "canvas_matches_parent_dimensions": true,
+        "no_runtime_or_camera_motion_validation": true,
+        "single_layer_canvas": true,
+        "composited_on_light_and_dark": true,
+        "nominal_six_plane_composite_inspected": true,
+        "visible_findings": "Bande de sol continue et ligne jaune au bon bas de cadre. L’alpha significatif commence y638; la ligne opaque est autour de y640. La surface finit y714 inclus. Les valeurs et joints de dalle sont génératifs.",
+        "diagnostic_documents": [
+          "docs/resonance/production/continuation_20261127_o/contamination_comparison.jpg",
+          "docs/resonance/production/continuation_20261127_o/contamination_alpha_diagnostic.jpg"
+        ],
+        "diagnostic_composites_are_not_deliverable_edits": true
+      },
+      "notes": "Bande de sol continue et ligne jaune au bon bas de cadre. L’alpha significatif commence y638; la ligne opaque est autour de y640. La surface finit y714 inclus. Les valeurs et joints de dalle sont génératifs."
+    },
+    {
+      "asset_id": "layer_contamination_hl25_front_edge_o",
+      "target_id": "STG_EXT_HLDM_CONTAMINATION",
+      "target_ids": [
+        "STG_EXT_HLDM_CONTAMINATION"
+      ],
+      "owner_id": "STG_EXT_HLDM_CONTAMINATION",
+      "owner_type": "stage",
+      "category": "stage_layer_candidate",
+      "name_fr": "Contamination — Liseré inférieur du premier plan",
+      "layer_id": "L05_foreground",
+      "parallax_factor": 1.1,
+      "parent_asset_id": "stage_contamination_hl25_master_h",
+      "batch_id": "continuation_20261127_o",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life Deathmatch — 25th Anniversary",
+      "content_class": "released_reference",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: background-extraction. Asset type: ONE individual parallax plane for the Contamination stage, Half-Life Deathmatch 25th Anniversary, in Half-Life Resonance. Input image 1 is the existing GENERATED master panorama: it is the exact edit target for camera, canvas, geometry, object locations, scale, lighting and painted texture. Input image 2 is Valve’s official released-map screenshot: use it only to check materials and visual identity; never replace the master camera with the screenshot camera. Keep the entire 2172 x 724 canvas of input 1, approximately 3:1, without cropping, zooming, recentring, changing perspective or moving any retained object. Deliver one layer only, not a sheet or complete rebuilt scene. Keep the same subdued peach/mauve sky light, weathered gray concrete, rust-orange metal and red guardrails wherever the requested layer contains them. Preserve original design; no people, creatures, pickups, HUD, text, labels, invented signs or added machinery. This is a generative layer candidate, not a claim of pixel-exact extraction or source-game geometry. Retain only the narrow frontmost lower-edge band of the original concrete floor at the very bottom of the master, source rows approximately y=714-723. Preserve the existing dark bottom-edge shading and the few slab-seam continuations that actually intersect this thin band. All of the upper approximately 98.5 percent of the 2172 x 724 canvas must be genuinely transparent. Do not move or enlarge this strip, and do not synthesize railings, weeds, rubble, cables, a second floor or a vertical retaining wall. This is a deliberately minimal edge overlay derived from the existing master, kept separate from the upper concrete surface; it does not add a new prop to the source scene.",
+      "source_references": [
+        {
+          "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_contamination_hl25_master_h.png",
+          "sha256": "891062e6c7aa98bf8e5086f7deb8774f215709467d13cb9f7003ebeeda65c4c5",
+          "width": 2172,
+          "height": 724,
+          "provenance": "generated_project_candidate",
+          "role": "edit_target_composition_and_coordinates",
+          "visually_inspected": true
+        },
+        {
+          "source_page": "https://www.half-life.com/en/halflife/25th/",
+          "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/map_contamination.jpg",
+          "sha256": "ff57e6909e48c9e4f2e403c6ed4ed2827b6e4fb5348d790bbbc8064675a79167",
+          "width": 2560,
+          "height": 1600,
+          "provenance": "primary_official_released_map_screenshot",
+          "role": "visual_identity_only_not_camera",
+          "visually_inspected": true,
+          "reference_filename": "map_contamination_official.jpg"
+        }
+      ],
+      "source_urls": [
+        "https://www.half-life.com/en/halflife/25th/",
+        "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/map_contamination.jpg"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "edit_target_and_visual_identity_reference",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_front_edge_o.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_front_edge_o.png",
+      "transparent_background": true,
+      "selected_for_next_review": false,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "qa_status": "historique remplacé par une révision candidate",
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "generation_status": "généré",
+      "status": "généré",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 140532,
+      "sha256": "eaa2ac0f55808971f7630700b72e78c2fb2632da101ef5cd9f12958203634e00",
+      "git_blob_sha": "5e52a1b29a68db09246a44f24fad89c9eb8fdb45",
+      "original_png_bytes_preserved": true,
+      "original_generated_file": "/workspace/scratch/892354ae3802/generated_images/exec-03ab15b9-4603-4101-8c56-bfbe393669de.png",
+      "alpha_check": "présent",
+      "alpha_stats": {
+        "alpha_present": true,
+        "transparent_pixels": 1519690,
+        "opaque_pixels": 13,
+        "partial_pixels": 52825,
+        "nonzero_bbox": [
+          0,
+          538,
+          2172,
+          724
+        ],
+        "bbox_alpha_at_least_16": [
+          0,
+          703,
+          2172,
+          724
+        ]
+      },
+      "visual_qa": {
+        "inspected": true,
+        "canvas_matches_parent_dimensions": true,
+        "no_runtime_or_camera_motion_validation": true,
+        "single_layer_canvas": true,
+        "composited_on_light_and_dark": true,
+        "nominal_six_plane_composite_inspected": false,
+        "visible_findings": "Première bande trop haute: alpha significatif dès y703, chevauchement de 23899 pixels avec L04 (alpha des deux ≥16). Version historique non sélectionnée.",
+        "diagnostic_documents": [
+          "docs/resonance/production/continuation_20261127_o/contamination_comparison.jpg",
+          "docs/resonance/production/continuation_20261127_o/contamination_alpha_diagnostic.jpg"
+        ],
+        "diagnostic_composites_are_not_deliverable_edits": true
+      },
+      "notes": "Première bande trop haute: alpha significatif dès y703, chevauchement de 23899 pixels avec L04 (alpha des deux ≥16). Version historique non sélectionnée.",
+      "superseded_by": "layer_contamination_hl25_front_edge_v2_o"
+    },
+    {
+      "asset_id": "layer_contamination_hl25_front_edge_v2_o",
+      "target_id": "STG_EXT_HLDM_CONTAMINATION",
+      "target_ids": [
+        "STG_EXT_HLDM_CONTAMINATION"
+      ],
+      "owner_id": "STG_EXT_HLDM_CONTAMINATION",
+      "owner_type": "stage",
+      "category": "stage_layer_candidate",
+      "name_fr": "Contamination — Liseré inférieur du premier plan",
+      "layer_id": "L05_foreground",
+      "parallax_factor": 1.1,
+      "parent_asset_id": "stage_contamination_hl25_master_h",
+      "batch_id": "continuation_20261127_o",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life Deathmatch — 25th Anniversary",
+      "content_class": "released_reference",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: precise-object-edit. Edit only the alpha boundary of the supplied thin floor-edge layer. Keep the exact 2172 x 724 canvas. Its existing opaque strip is too tall and begins around row 703. REMOVE its upper half by making every pixel ABOVE row 714 fully transparent, so ONLY the original bottom ten pixel rows (y=714 through y=723) of the source image retain their existing concrete texture, slab seams, dark lower shading and alpha. Do not move, stretch, scale up or recenter the retained strip. This must be an extremely thin line sitting flush against the very bottom edge of a large otherwise transparent canvas. The retained band must remain the same width and stay at its original bottom coordinates. No upper concrete surface, yellow line, new ground, new object, letters or border. Preserve true transparency. One layer only; do not return an enlarged crop of the strip.",
+      "source_references": [
+        {
+          "repository_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_front_edge_o.png",
+          "sha256": "eaa2ac0f55808971f7630700b72e78c2fb2632da101ef5cd9f12958203634e00",
+          "width": 2172,
+          "height": 724,
+          "provenance": "generated_project_candidate",
+          "role": "edit_target",
+          "visually_inspected": true
+        },
+        {
+          "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_contamination_hl25_master_h.png",
+          "sha256": "891062e6c7aa98bf8e5086f7deb8774f215709467d13cb9f7003ebeeda65c4c5",
+          "width": 2172,
+          "height": 724,
+          "provenance": "generated_project_candidate",
+          "role": "composition_reference",
+          "visually_inspected": true
+        },
+        {
+          "source_page": "https://www.half-life.com/en/halflife/25th/",
+          "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/map_contamination.jpg",
+          "sha256": "ff57e6909e48c9e4f2e403c6ed4ed2827b6e4fb5348d790bbbc8064675a79167",
+          "width": 2560,
+          "height": 1600,
+          "provenance": "primary_official_released_map_screenshot",
+          "role": "visual_identity_only_not_camera",
+          "visually_inspected": true,
+          "reference_filename": "map_contamination_official.jpg"
+        }
+      ],
+      "source_urls": [
+        "https://www.half-life.com/en/halflife/25th/",
+        "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/map_contamination.jpg"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "edit_target_and_visual_identity_reference",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_front_edge_v2_o.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_front_edge_v2_o.png",
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "qa_status": "candidat à vérifier",
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "generation_status": "généré",
+      "status": "généré",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 124514,
+      "sha256": "2d5bc365f891a1a9e419c68d4944323c34edf04953f19454248261a676164760",
+      "git_blob_sha": "0a18af323b974e14f6525abaab38963eeb8b19bb",
+      "original_png_bytes_preserved": true,
+      "original_generated_file": "/workspace/scratch/892354ae3802/generated_images/exec-f7b46e9b-4981-4a7b-9b03-35c979838602.png",
+      "alpha_check": "présent",
+      "alpha_stats": {
+        "alpha_present": true,
+        "transparent_pixels": 1529257,
+        "opaque_pixels": 0,
+        "partial_pixels": 43271,
+        "nonzero_bbox": [
+          0,
+          184,
+          2172,
+          724
+        ],
+        "bbox_alpha_at_least_16": [
+          0,
+          705,
+          2172,
+          724
+        ]
+      },
+      "visual_qa": {
+        "inspected": true,
+        "canvas_matches_parent_dimensions": true,
+        "no_runtime_or_camera_motion_validation": true,
+        "single_layer_canvas": true,
+        "composited_on_light_and_dark": true,
+        "nominal_six_plane_composite_inspected": true,
+        "visible_findings": "Correction réduit le chevauchement à 17434 pixels, mais alpha significatif dès y705 et non y714 demandé. La jonction est propre à décalage nul; dix lignes y705–714 de recouvrement restent à résoudre avant mouvement relatif. Aucun recadrage ou déplacement du fichier appliqué.",
+        "diagnostic_documents": [
+          "docs/resonance/production/continuation_20261127_o/contamination_comparison.jpg",
+          "docs/resonance/production/continuation_20261127_o/contamination_alpha_diagnostic.jpg"
+        ],
+        "diagnostic_composites_are_not_deliverable_edits": true
+      },
+      "notes": "Correction réduit le chevauchement à 17434 pixels, mais alpha significatif dès y705 et non y714 demandé. La jonction est propre à décalage nul; dix lignes y705–714 de recouvrement restent à résoudre avant mouvement relatif. Aucun recadrage ou déplacement du fichier appliqué.",
+      "revision_of": "layer_contamination_hl25_front_edge_o",
+      "supersedes": "layer_contamination_hl25_front_edge_o",
+      "supersedes_repository_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_front_edge_o.png"
+    }
+  ],
+  "deferred_targets": [],
+  "completed_six_layer_stage": false,
+  "actual_png_count": 8,
+  "selected_stack": [
+    "layer_contamination_hl25_sky_o",
+    "layer_contamination_hl25_canyon_o",
+    "layer_contamination_hl25_buildings_o",
+    "layer_contamination_hl25_catwalks_rails_v2_o",
+    "layer_contamination_hl25_floor_o",
+    "layer_contamination_hl25_front_edge_v2_o"
+  ],
+  "no_python_image_editing": true,
+  "diagnostic_method": "Canvas drawImage using original PNGs, without modifying source bytes; JPEG diagnostics do not count as generated production PNGs.",
+  "known_remaining_requirements": [
+    "Raw floor/front-edge overlap remains; a proposed source-rectangle configuration at row713 removes overlap in Canvas without changing PNGs. Integrate and verify this explicit draw contract before relative parallax.",
+    "Define foot anchor and world-to-image transform; do not map 880/1080 blindly to master.",
+    "Verify light ownership between structural wall and nearer catwalk to avoid drift/doubling.",
+    "Review missing small rear cylindrical volume and texture/proportion differences against master.",
+    "Inspect overscan and camera motion; no margin outside the 2172×724 canvas has been provided."
+  ],
+  "proposed_renderer_read_rectangles": {
+    "status": "proposed_configuration_not_integrated",
+    "runtime_enabled": false,
+    "source_pngs_modified": false,
+    "initial_proposed_cut_y": 714,
+    "selected_cut_y": 713,
+    "reason_for_one_pixel_adjustment": "L04 row713 has alpha min74/median130; use L05 row713 alpha min251 to prevent a faint seam.",
+    "L04_ground": {
+      "source_rect": {
+        "x": 0,
+        "y": 0,
+        "width": 2172,
+        "height": 713
+      },
+      "destination_rect": {
+        "x": 0,
+        "y": 0,
+        "width": 2172,
+        "height": 713
+      }
+    },
+    "L05_foreground": {
+      "source_rect": {
+        "x": 0,
+        "y": 713,
+        "width": 2172,
+        "height": 11
+      },
+      "destination_rect": {
+        "x": 0,
+        "y": 713,
+        "width": 2172,
+        "height": 11
+      }
+    },
+    "transform_order": "Read the stated source rectangle at the same canvas coordinates, then apply each layer camera transform. No texture rescale.",
+    "horizontal_margins": "The original canvas has no overscan; horizontal camera motion remains unverified."
+  },
+  "diagnostic_documents": [
+    "docs/resonance/production/continuation_20261127_o/contamination_comparison.jpg",
+    "docs/resonance/production/continuation_20261127_o/contamination_alpha_diagnostic.jpg",
+    "docs/resonance/production/continuation_20261127_o/contamination_raw_vs_clipped.jpg",
+    "docs/resonance/production/continuation_20261127_o/contamination_ground_seam_diagnostic.jpg"
+  ]
+}

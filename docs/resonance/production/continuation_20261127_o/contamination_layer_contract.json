@@ -1,0 +1,183 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "continuation_20261127_o",
+  "target_id": "STG_EXT_HLDM_CONTAMINATION",
+  "source_game": "Half-Life Deathmatch — 25th Anniversary",
+  "official_map_name": "contamination",
+  "contract_status": "new_explicit_six_plane_candidate_contract_not_implemented",
+  "source_commit": "4ae2ee9dcf1a2acedff4b628c70ee70a736553a0",
+  "source_manifest_path": "docs/resonance/data/catalogue_extension_20261120.json",
+  "prior_required_layer_ids": [],
+  "baseline_missing_existing_layer_ids": 131,
+  "new_layer_ids_were_in_baseline_131": false,
+  "baseline_131_reduction_from_this_stage": 0,
+  "count_semantics": "These six owner-qualified layer IDs extend the known contract. Their generation cannot subtract six from the pre-existing 131 missing IDs. A complete candidate stack is not a verified or integrated stage.",
+  "canvas": [
+    2172,
+    724
+  ],
+  "parent_asset_id": "stage_contamination_hl25_master_h",
+  "parent_repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_contamination_hl25_master_h.png",
+  "source_references": [
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_contamination_hl25_master_h.png",
+      "sha256": "891062e6c7aa98bf8e5086f7deb8774f215709467d13cb9f7003ebeeda65c4c5",
+      "width": 2172,
+      "height": 724,
+      "provenance": "generated_project_candidate",
+      "role": "edit_target_composition_and_coordinates",
+      "visually_inspected": true
+    },
+    {
+      "source_page": "https://www.half-life.com/en/halflife/25th/",
+      "source_url": "https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/map_contamination.jpg",
+      "sha256": "ff57e6909e48c9e4f2e403c6ed4ed2827b6e4fb5348d790bbbc8064675a79167",
+      "width": 2560,
+      "height": 1600,
+      "provenance": "primary_official_released_map_screenshot",
+      "role": "visual_identity_only_not_camera",
+      "visually_inspected": true,
+      "reference_filename": "map_contamination_official.jpg"
+    }
+  ],
+  "layer_ids": [
+    "L00_ambience",
+    "L01_far",
+    "L02_mid",
+    "L03_near",
+    "L04_ground",
+    "L05_foreground"
+  ],
+  "layers": [
+    {
+      "asset_id": "layer_contamination_hl25_sky_o",
+      "layer_id": "L00_ambience",
+      "name_fr": "Ciel mauve et pêche",
+      "parallax_factor": 0,
+      "transparent_background": false,
+      "planned_repository_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_sky_o.png",
+      "selected_asset_id": "layer_contamination_hl25_sky_o",
+      "selected_repository_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_sky_o.png"
+    },
+    {
+      "asset_id": "layer_contamination_hl25_canyon_o",
+      "layer_id": "L01_far",
+      "name_fr": "Falaises du canyon",
+      "parallax_factor": 0.12,
+      "transparent_background": true,
+      "planned_repository_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_canyon_o.png",
+      "selected_asset_id": "layer_contamination_hl25_canyon_o",
+      "selected_repository_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_canyon_o.png"
+    },
+    {
+      "asset_id": "layer_contamination_hl25_buildings_o",
+      "layer_id": "L02_mid",
+      "name_fr": "Bâtiments industriels principaux",
+      "parallax_factor": 0.3,
+      "transparent_background": true,
+      "planned_repository_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_buildings_o.png",
+      "selected_asset_id": "layer_contamination_hl25_buildings_o",
+      "selected_repository_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_buildings_o.png"
+    },
+    {
+      "asset_id": "layer_contamination_hl25_catwalks_rails_o",
+      "layer_id": "L03_near",
+      "name_fr": "Passerelles proches et garde-corps",
+      "parallax_factor": 0.55,
+      "transparent_background": true,
+      "planned_repository_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_catwalks_rails_o.png",
+      "selected_asset_id": "layer_contamination_hl25_catwalks_rails_v2_o",
+      "selected_repository_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_catwalks_rails_v2_o.png"
+    },
+    {
+      "asset_id": "layer_contamination_hl25_floor_o",
+      "layer_id": "L04_ground",
+      "name_fr": "Sol de combat",
+      "parallax_factor": 1.0,
+      "transparent_background": true,
+      "planned_repository_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_floor_o.png",
+      "selected_asset_id": "layer_contamination_hl25_floor_o",
+      "selected_repository_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_floor_o.png"
+    },
+    {
+      "asset_id": "layer_contamination_hl25_front_edge_o",
+      "layer_id": "L05_foreground",
+      "name_fr": "Liseré inférieur du premier plan",
+      "parallax_factor": 1.1,
+      "transparent_background": true,
+      "planned_repository_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_front_edge_o.png",
+      "selected_asset_id": "layer_contamination_hl25_front_edge_v2_o",
+      "selected_repository_path": "assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_front_edge_v2_o.png"
+    }
+  ],
+  "ground_anchor_candidate": {
+    "source_top_y_approx": 644,
+    "runtime_transform_defined": false,
+    "must_not_assume_logical_880_mapping": true,
+    "observed_selected_floor_alpha16_top_y": 638
+  },
+  "partition_note": "L02 owns main structures and upper dark-railed bridge. L03 owns nearer catwalk, red rails and left stair. L04 owns concrete top/yellow rear line through row713. L05 owns only rows714-723 lower edge; no invented foreground props. Boundary and motion must be reviewed.",
+  "qa_gates": [
+    "all canvases match the master",
+    "sky opaque and other planes genuinely transparent",
+    "static alpha composite inspected",
+    "no scenery duplicated between planes",
+    "foreground floor seam and anchor inspected",
+    "camera motion margins and parallax tested before runtime",
+    "identity and source-game version reviewed separately from 2D geometry"
+  ],
+  "runtime_enabled": false,
+  "completed_six_layer_stage": false,
+  "certified_one_to_one": false,
+  "historical_refusals_for_target": 0,
+  "candidate_stack_available": true,
+  "generated_png_count_including_revisions": 8,
+  "selected_layer_candidate_count": 6,
+  "partition_status": "nominal_candidate_stack; hatch duplication corrected; floor/front-edge partition still requires exact cutoff review",
+  "parallax_ready": false,
+  "floor_front_edge_remaining_overlap": {
+    "alpha_threshold": 16,
+    "pixels": 17434,
+    "y_min": 705,
+    "y_max": 714,
+    "revision_reduced_overlap": true
+  },
+  "proposed_renderer_read_rectangles": {
+    "status": "proposed_configuration_not_integrated",
+    "runtime_enabled": false,
+    "source_pngs_modified": false,
+    "initial_proposed_cut_y": 714,
+    "selected_cut_y": 713,
+    "reason_for_one_pixel_adjustment": "L04 row713 has alpha min74/median130; use L05 row713 alpha min251 to prevent a faint seam.",
+    "L04_ground": {
+      "source_rect": {
+        "x": 0,
+        "y": 0,
+        "width": 2172,
+        "height": 713
+      },
+      "destination_rect": {
+        "x": 0,
+        "y": 0,
+        "width": 2172,
+        "height": 713
+      }
+    },
+    "L05_foreground": {
+      "source_rect": {
+        "x": 0,
+        "y": 713,
+        "width": 2172,
+        "height": 11
+      },
+      "destination_rect": {
+        "x": 0,
+        "y": 713,
+        "width": 2172,
+        "height": 11
+      }
+    },
+    "transform_order": "Read the stated source rectangle at the same canvas coordinates, then apply each layer camera transform. No texture rescale.",
+    "horizontal_margins": "The original canvas has no overscan; horizontal camera motion remains unverified."
+  }
+}

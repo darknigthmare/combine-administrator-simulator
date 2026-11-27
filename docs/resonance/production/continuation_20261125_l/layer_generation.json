@@ -1,0 +1,566 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "continuation_20261125_l",
+  "date": "2026-11-25",
+  "scope": "Cinq plans statiques candidats pour une cible qui avait déjà un maître et L5; aucune nouvelle cible avec premier PNG.",
+  "counts": {
+    "generated_png": 5,
+    "actual_generation_calls": 5,
+    "refusals": 0,
+    "tool_errors": 0,
+    "new_targets_with_first_png": 0,
+    "new_layer_ids": 5,
+    "runtime_added": 0,
+    "completed_six_layer_stages": 0
+  },
+  "assets": [
+    {
+      "asset_id": "layer_portal2_turret_factory_atmosphere_l",
+      "target_id": "STG_EXT_PORTAL2_TURRET_FACTORY",
+      "target_ids": [
+        "STG_EXT_PORTAL2_TURRET_FACTORY"
+      ],
+      "owner_id": "STG_EXT_PORTAL2_TURRET_FACTORY",
+      "owner_type": "stage",
+      "category": "stage_layer_candidate",
+      "name_fr": "Portal 2 — usine à tourelles, Atmosphère du puits L1",
+      "layer_id": "L1",
+      "parallax_factor": 0,
+      "parent_asset_id": "stage_portal2_turret_factory_master_c",
+      "batch_id": "continuation_20261125_l",
+      "created_at": "2026-11-25",
+      "source_game": "Portal 2",
+      "content_class": "released_reference",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: background-extraction. Create ONE static parallax layer for the Portal 2 turret factory stage. Input 1 is the existing GENERATED stage master and is the exact editing target for canvas, camera, scale, object placement and composition. Input 2 is an official Valve Portal 2 screenshot and is a materials and identity reference only: DO NOT switch to its camera or composition. Preserve the complete wide 2172 x 724 canvas of input 1, about 3:1, no cropping, zoom, recentring or perspective change. Deliver just the requested single depth plane, not a combined scene or a layer sheet. It is a candidate generative separation, not a pixel-exact replica. No text, labels, HUD, figures, extra machinery or additional views. Produce the farthest BACKGROUND ATMOSPHERE plane only. Keep the master's dim blue-grey industrial shaft haze, deep dark gradients, restrained diffuse vertical illumination and blue-black depth. Remove ALL solid structures: every beam, wall, panel, railing, walkway, pipe, cable, conveyor, shell, robot arm, welding point and floor. Fill those former occlusions naturally with continuous distant empty industrial haze; no visible landscape, sky or invented structures. The result must be a fully opaque subtle atmospheric field spanning the entire canvas, preserving the master's broad values so the structural layers can later sit above it.",
+      "source_references": [
+        {
+          "reference_filename": "stage_portal2_turret_factory_master_c.png",
+          "repository_path": "assets/resonance/candidates/continuation_20261120_c/stage_portal2_turret_factory_master_c.png",
+          "sha256": "002de2836d1c3ad7b0ce35f59a6bc4f9c1443504bb48098b48a6f5fcf3d6512d",
+          "width": 2172,
+          "height": 724,
+          "visually_inspected": true,
+          "provenance": "generated_project_candidate",
+          "role": "edit_target_composition_and_coordinates"
+        },
+        {
+          "reference_filename": "steam_620_08.jpg",
+          "sha256": "557a184ce2292a2b3821c48ac0090d9e7573c16b229cca86dab8e99dfac16ba1",
+          "width": 1920,
+          "height": 1080,
+          "visually_inspected": true,
+          "source_id": "portal2_factory_capture08_c",
+          "title": "Valve / Steam — chaîne de fabrication, capture 08",
+          "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0e16bceacb6616a5ca4bc4ba4d28c7a0d06b671c.1920x1080.jpg?t=1790187113",
+          "provenance": "primary_official_screenshot",
+          "role": "visual_identity_reference_only_not_camera_or_composition"
+        }
+      ],
+      "source_urls": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0e16bceacb6616a5ca4bc4ba4d28c7a0d06b671c.1920x1080.jpg?t=1790187113"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "edit_target_and_visual_identity_reference",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_l/layers/layer_portal2_turret_factory_atmosphere_l.png",
+      "transparent_background": false,
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "qa_status": "candidat à vérifier",
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "file_path": "assets/resonance/candidates/continuation_20261125_l/layers/layer_portal2_turret_factory_atmosphere_l.png",
+      "generation_status": "généré",
+      "status": "généré",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGB",
+      "byte_size": 1400304,
+      "sha256": "1021d00028365ee333e9bc878e9a8927e94c24e81258ed1e5f4a58b0045a9c47",
+      "git_blob_sha": "33b09ecc966be3b1c6d0ac31f65dfc116f505e4a",
+      "original_png_bytes_preserved": true,
+      "alpha_check": "sans objet",
+      "alpha_stats": {
+        "alpha_present": false,
+        "transparent_pixels": 0,
+        "opaque_pixels": 1572528,
+        "partial_pixels": 0,
+        "nonzero_bbox": null,
+        "bbox_alpha_at_least_16": null
+      },
+      "visual_qa": {
+        "inspected": true,
+        "composited_on_light_and_dark": false,
+        "diagnostic_composites_are_not_deliverable_edits": true,
+        "single_layer_canvas": true,
+        "nominal_six_plane_composite_inspected": true,
+        "canvas_matches_parent_dimensions": true,
+        "no_runtime_or_camera_motion_validation": true,
+        "visible_findings": "Champ atmosphérique opaque bleu gris au canevas 2172 × 724, sans structure visible. Les valeurs et volumes de brume sont recomposés, non extraits pixel par pixel du maître.",
+        "diagnostic_documents": [
+          "docs/resonance/production/continuation_20261125_l/factory_alpha_diagnostic.jpg",
+          "docs/resonance/production/continuation_20261125_l/factory_comparison.jpg"
+        ]
+      },
+      "notes": "Champ atmosphérique opaque bleu gris au canevas 2172 × 724, sans structure visible. Les valeurs et volumes de brume sont recomposés, non extraits pixel par pixel du maître."
+    },
+    {
+      "asset_id": "layer_portal2_turret_factory_distant_trusses_l",
+      "target_id": "STG_EXT_PORTAL2_TURRET_FACTORY",
+      "target_ids": [
+        "STG_EXT_PORTAL2_TURRET_FACTORY"
+      ],
+      "owner_id": "STG_EXT_PORTAL2_TURRET_FACTORY",
+      "owner_type": "stage",
+      "category": "stage_layer_candidate",
+      "name_fr": "Portal 2 — usine à tourelles, Charpentes et passerelles lointaines L2",
+      "layer_id": "L2",
+      "parallax_factor": 0.12,
+      "parent_asset_id": "stage_portal2_turret_factory_master_c",
+      "batch_id": "continuation_20261125_l",
+      "created_at": "2026-11-25",
+      "source_game": "Portal 2",
+      "content_class": "released_reference",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: background-extraction. Create ONE static parallax layer for the Portal 2 turret factory stage. Input 1 is the existing GENERATED stage master and is the exact editing target for canvas, camera, scale, object placement and composition. Input 2 is an official Valve Portal 2 screenshot and is a materials and identity reference only: DO NOT switch to its camera or composition. Preserve the complete wide 2172 x 724 canvas of input 1, about 3:1, no cropping, zoom, recentring or perspective change. Deliver just the requested single depth plane, not a combined scene or a layer sheet. It is a candidate generative separation, not a pixel-exact replica. No text, labels, HUD, figures, extra machinery or additional views. Retain ONLY the farthest blue-grey steel shaft trusses, faint remote vertical supports and distant catwalk rails visible behind the orange factory apparatus. Keep them at their original master-image coordinates and small scale, notably the low-contrast distant network through the left-middle opening and the deep shaft at far right. Exclude the prominent rust-orange overhead gantry, its front cables, large rust wall panels, all machines and conveyor, near orange railing, floor, and foreground fascia. Reconstruct small hidden continuations only where a continuous distant truss logically passes behind a removed near object. Make ALL haze, background and excluded objects true transparent alpha, including between lattice bars. Do not put a solid coloured backdrop behind the trusses. Preserve the large empty transparent foreground and lower fifth.",
+      "source_references": [
+        {
+          "reference_filename": "stage_portal2_turret_factory_master_c.png",
+          "repository_path": "assets/resonance/candidates/continuation_20261120_c/stage_portal2_turret_factory_master_c.png",
+          "sha256": "002de2836d1c3ad7b0ce35f59a6bc4f9c1443504bb48098b48a6f5fcf3d6512d",
+          "width": 2172,
+          "height": 724,
+          "visually_inspected": true,
+          "provenance": "generated_project_candidate",
+          "role": "edit_target_composition_and_coordinates"
+        },
+        {
+          "reference_filename": "steam_620_08.jpg",
+          "sha256": "557a184ce2292a2b3821c48ac0090d9e7573c16b229cca86dab8e99dfac16ba1",
+          "width": 1920,
+          "height": 1080,
+          "visually_inspected": true,
+          "source_id": "portal2_factory_capture08_c",
+          "title": "Valve / Steam — chaîne de fabrication, capture 08",
+          "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0e16bceacb6616a5ca4bc4ba4d28c7a0d06b671c.1920x1080.jpg?t=1790187113",
+          "provenance": "primary_official_screenshot",
+          "role": "visual_identity_reference_only_not_camera_or_composition"
+        }
+      ],
+      "source_urls": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0e16bceacb6616a5ca4bc4ba4d28c7a0d06b671c.1920x1080.jpg?t=1790187113"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "edit_target_and_visual_identity_reference",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_l/layers/layer_portal2_turret_factory_distant_trusses_l.png",
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "qa_status": "candidat à vérifier",
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "file_path": "assets/resonance/candidates/continuation_20261125_l/layers/layer_portal2_turret_factory_distant_trusses_l.png",
+      "generation_status": "généré",
+      "status": "généré",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 384175,
+      "sha256": "7d5b685854cbbfab8678dc965d02858c5609351c6928390b3937c1ec7e5b2c44",
+      "git_blob_sha": "813ada0c3213147bce11ddf8a6fd06cc58593230",
+      "original_png_bytes_preserved": true,
+      "alpha_check": "présent",
+      "alpha_stats": {
+        "alpha_present": true,
+        "transparent_pixels": 1398331,
+        "opaque_pixels": 169,
+        "partial_pixels": 174028,
+        "nonzero_bbox": [
+          33,
+          0,
+          2172,
+          623
+        ],
+        "bbox_alpha_at_least_16": [
+          46,
+          0,
+          2172,
+          459
+        ]
+      },
+      "visual_qa": {
+        "inspected": true,
+        "composited_on_light_and_dark": true,
+        "diagnostic_composites_are_not_deliverable_edits": true,
+        "single_layer_canvas": true,
+        "nominal_six_plane_composite_inspected": true,
+        "canvas_matches_parent_dimensions": true,
+        "no_runtime_or_camera_motion_validation": true,
+        "visible_findings": "Treillis et passerelles isolés sur alpha réel. Extrémités basses adoucies; structure lointaine simplifiée et plus claire que dans le maître. Le puits mécanique, l’escalier et les détails lumineux à droite du maître ne sont pas reconstruits par ce plan. Les repères lumineux bleus/cyan à droite disparaissent également; le vide bleu plus grand change la lecture de profondeur.",
+        "alpha_observation": "Les compositions sur blanc et noir ne montrent pas le grand bruit coloré des pixels RGB quasi transparents. Des résidus d’alpha faible existent; les statistiques sont conservées et les contours restent à valider à l’échelle de jeu.",
+        "diagnostic_documents": [
+          "docs/resonance/production/continuation_20261125_l/factory_alpha_diagnostic.jpg",
+          "docs/resonance/production/continuation_20261125_l/factory_comparison.jpg"
+        ]
+      },
+      "notes": "Treillis et passerelles isolés sur alpha réel. Extrémités basses adoucies; structure lointaine simplifiée et plus claire que dans le maître. Le puits mécanique, l’escalier et les détails lumineux à droite du maître ne sont pas reconstruits par ce plan. Les repères lumineux bleus/cyan à droite disparaissent également; le vide bleu plus grand change la lecture de profondeur."
+    },
+    {
+      "asset_id": "layer_portal2_turret_factory_industrial_walls_l",
+      "target_id": "STG_EXT_PORTAL2_TURRET_FACTORY",
+      "target_ids": [
+        "STG_EXT_PORTAL2_TURRET_FACTORY"
+      ],
+      "owner_id": "STG_EXT_PORTAL2_TURRET_FACTORY",
+      "owner_type": "stage",
+      "category": "stage_layer_candidate",
+      "name_fr": "Portal 2 — usine à tourelles, Parois industrielles L3",
+      "layer_id": "L3",
+      "parallax_factor": 0.3,
+      "parent_asset_id": "stage_portal2_turret_factory_master_c",
+      "batch_id": "continuation_20261125_l",
+      "created_at": "2026-11-25",
+      "source_game": "Portal 2",
+      "content_class": "released_reference",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: background-extraction. Create ONE static parallax layer for the Portal 2 turret factory stage. Input 1 is the existing GENERATED stage master and is the exact editing target for canvas, camera, scale, object placement and composition. Input 2 is an official Valve Portal 2 screenshot and is a materials and identity reference only: DO NOT switch to its camera or composition. Preserve the complete wide 2172 x 724 canvas of input 1, about 3:1, no cropping, zoom, recentring or perspective change. Deliver just the requested single depth plane, not a combined scene or a layer sheet. It is a candidate generative separation, not a pixel-exact replica. No text, labels, HUD, figures, extra machinery or additional views. Retain ONLY the middle-depth dark rust-brown ribbed industrial wall sections, tall solid structural piers, attached rigid service pipes and wall grilles visible in the master, especially the large central-right block between roughly 48% and 77% of canvas width. Preserve their silhouettes, scale and positions. Remove the blue haze and distant trusses, the orange overhead gantry, suspended front cables, all articulated arms, welding lights, shell pieces, conveyor, orange low rail, floor and front fascia. Where a removed arm or conveyor previously covered one of these wall sections, naturally continue the same ribbed wall material behind it without inventing panels. Keep shaft openings true transparent rather than filling them with wall. All excluded areas and entire bottom floor region are true transparent alpha. Do not recenter the remaining wall mass.",
+      "source_references": [
+        {
+          "reference_filename": "stage_portal2_turret_factory_master_c.png",
+          "repository_path": "assets/resonance/candidates/continuation_20261120_c/stage_portal2_turret_factory_master_c.png",
+          "sha256": "002de2836d1c3ad7b0ce35f59a6bc4f9c1443504bb48098b48a6f5fcf3d6512d",
+          "width": 2172,
+          "height": 724,
+          "visually_inspected": true,
+          "provenance": "generated_project_candidate",
+          "role": "edit_target_composition_and_coordinates"
+        },
+        {
+          "reference_filename": "steam_620_08.jpg",
+          "sha256": "557a184ce2292a2b3821c48ac0090d9e7573c16b229cca86dab8e99dfac16ba1",
+          "width": 1920,
+          "height": 1080,
+          "visually_inspected": true,
+          "source_id": "portal2_factory_capture08_c",
+          "title": "Valve / Steam — chaîne de fabrication, capture 08",
+          "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0e16bceacb6616a5ca4bc4ba4d28c7a0d06b671c.1920x1080.jpg?t=1790187113",
+          "provenance": "primary_official_screenshot",
+          "role": "visual_identity_reference_only_not_camera_or_composition"
+        }
+      ],
+      "source_urls": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0e16bceacb6616a5ca4bc4ba4d28c7a0d06b671c.1920x1080.jpg?t=1790187113"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "edit_target_and_visual_identity_reference",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_l/layers/layer_portal2_turret_factory_industrial_walls_l.png",
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "qa_status": "candidat à vérifier",
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "file_path": "assets/resonance/candidates/continuation_20261125_l/layers/layer_portal2_turret_factory_industrial_walls_l.png",
+      "generation_status": "généré",
+      "status": "généré",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 1213381,
+      "sha256": "ab3050b1afbfe4a87e9a9494ee64f130fcda465dceb4fa11740abf2aad841d20",
+      "git_blob_sha": "147fb81f9ce24d00b8e13b9cd14da75064599667",
+      "original_png_bytes_preserved": true,
+      "alpha_check": "présent",
+      "alpha_stats": {
+        "alpha_present": true,
+        "transparent_pixels": 792291,
+        "opaque_pixels": 1042,
+        "partial_pixels": 779195,
+        "nonzero_bbox": [
+          0,
+          0,
+          2157,
+          724
+        ],
+        "bbox_alpha_at_least_16": [
+          15,
+          0,
+          2153,
+          575
+        ]
+      },
+      "visual_qa": {
+        "inspected": true,
+        "composited_on_light_and_dark": true,
+        "diagnostic_composites_are_not_deliverable_edits": true,
+        "single_layer_canvas": true,
+        "nominal_six_plane_composite_inspected": true,
+        "canvas_matches_parent_dimensions": true,
+        "no_runtime_or_camera_motion_validation": true,
+        "visible_findings": "Panneaux nervurés et piliers isolés sur alpha réel; ouvertures conservées. Les occlusions des bras sont complétées générativement, avec segmentation et valeurs réinterprétées. Bord inférieur visible jusqu’à y=575, recouvert partiellement par le sol historique qui commence vers y=566.",
+        "alpha_observation": "Les compositions sur blanc et noir ne montrent pas le grand bruit coloré des pixels RGB quasi transparents. Des résidus d’alpha faible existent; les statistiques sont conservées et les contours restent à valider à l’échelle de jeu.",
+        "diagnostic_documents": [
+          "docs/resonance/production/continuation_20261125_l/factory_alpha_diagnostic.jpg",
+          "docs/resonance/production/continuation_20261125_l/factory_comparison.jpg"
+        ]
+      },
+      "notes": "Panneaux nervurés et piliers isolés sur alpha réel; ouvertures conservées. Les occlusions des bras sont complétées générativement, avec segmentation et valeurs réinterprétées. Bord inférieur visible jusqu’à y=575, recouvert partiellement par le sol historique qui commence vers y=566."
+    },
+    {
+      "asset_id": "layer_portal2_turret_factory_assembly_line_l",
+      "target_id": "STG_EXT_PORTAL2_TURRET_FACTORY",
+      "target_ids": [
+        "STG_EXT_PORTAL2_TURRET_FACTORY"
+      ],
+      "owner_id": "STG_EXT_PORTAL2_TURRET_FACTORY",
+      "owner_type": "stage",
+      "category": "stage_layer_candidate",
+      "name_fr": "Portal 2 — usine à tourelles, Chaîne et bras en arrière-plan L4",
+      "layer_id": "L4",
+      "parallax_factor": 0.55,
+      "parent_asset_id": "stage_portal2_turret_factory_master_c",
+      "batch_id": "continuation_20261125_l",
+      "created_at": "2026-11-25",
+      "source_game": "Portal 2",
+      "content_class": "released_reference",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: background-extraction. Create ONE static parallax layer for the Portal 2 turret factory stage. Input 1 is the existing GENERATED stage master and is the exact editing target for canvas, camera, scale, object placement and composition. Input 2 is an official Valve Portal 2 screenshot and is a materials and identity reference only: DO NOT switch to its camera or composition. Preserve the complete wide 2172 x 724 canvas of input 1, about 3:1, no cropping, zoom, recentring or perspective change. Deliver just the requested single depth plane, not a combined scene or a layer sheet. It is a candidate generative separation, not a pixel-exact replica. No text, labels, HUD, figures, extra machinery or additional views. Retain ONLY the foreground-of-background factory assembly apparatus from the master: the rust-orange overhead rail gantry and its hanging cables, the two orange and off-white articulated welding arms at their original horizontal positions, their tiny restrained red welding points, the horizontal conveyor and sparse incomplete white shell pieces, plus the low orange rear safety railing along the back of the combat lane. Keep the exact master-image placements and side-on layout. Remove ALL dark factory walls, blue haze, remote trusses, solid background columns, the fighting floor plates and lower front fascia. Areas between gantry lattice bars, between cables, between arms, and behind the conveyor/rail must be genuine alpha transparency. The plane ends at the walkway rear boundary around y=568/724; preserve the lower fifth as transparent. Do not create any extra assembly arm or turret. Preserve one apparatus layer as one image, not individual cutouts rearranged into a sheet.",
+      "source_references": [
+        {
+          "reference_filename": "stage_portal2_turret_factory_master_c.png",
+          "repository_path": "assets/resonance/candidates/continuation_20261120_c/stage_portal2_turret_factory_master_c.png",
+          "sha256": "002de2836d1c3ad7b0ce35f59a6bc4f9c1443504bb48098b48a6f5fcf3d6512d",
+          "width": 2172,
+          "height": 724,
+          "visually_inspected": true,
+          "provenance": "generated_project_candidate",
+          "role": "edit_target_composition_and_coordinates"
+        },
+        {
+          "reference_filename": "steam_620_08.jpg",
+          "sha256": "557a184ce2292a2b3821c48ac0090d9e7573c16b229cca86dab8e99dfac16ba1",
+          "width": 1920,
+          "height": 1080,
+          "visually_inspected": true,
+          "source_id": "portal2_factory_capture08_c",
+          "title": "Valve / Steam — chaîne de fabrication, capture 08",
+          "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0e16bceacb6616a5ca4bc4ba4d28c7a0d06b671c.1920x1080.jpg?t=1790187113",
+          "provenance": "primary_official_screenshot",
+          "role": "visual_identity_reference_only_not_camera_or_composition"
+        }
+      ],
+      "source_urls": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0e16bceacb6616a5ca4bc4ba4d28c7a0d06b671c.1920x1080.jpg?t=1790187113"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "edit_target_and_visual_identity_reference",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_l/layers/layer_portal2_turret_factory_assembly_line_l.png",
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "qa_status": "candidat à vérifier",
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "file_path": "assets/resonance/candidates/continuation_20261125_l/layers/layer_portal2_turret_factory_assembly_line_l.png",
+      "generation_status": "généré",
+      "status": "généré",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 972654,
+      "sha256": "9279138d03894cbd9b4943e69a00fdf7d1cba766d2869bc28331316c437283a2",
+      "git_blob_sha": "7eb404b66c3655d8429b05309bd2b8eb253c44dd",
+      "original_png_bytes_preserved": true,
+      "alpha_check": "présent",
+      "alpha_stats": {
+        "alpha_present": true,
+        "transparent_pixels": 1110136,
+        "opaque_pixels": 768,
+        "partial_pixels": 461624,
+        "nonzero_bbox": [
+          0,
+          0,
+          2172,
+          724
+        ],
+        "bbox_alpha_at_least_16": [
+          0,
+          0,
+          2172,
+          577
+        ]
+      },
+      "visual_qa": {
+        "inspected": true,
+        "composited_on_light_and_dark": true,
+        "diagnostic_composites_are_not_deliverable_edits": true,
+        "single_layer_canvas": true,
+        "nominal_six_plane_composite_inspected": true,
+        "canvas_matches_parent_dimensions": true,
+        "no_runtime_or_camera_motion_validation": true,
+        "visible_findings": "Portique, bras, chaîne, coques et garde-corps isolés sur alpha réel. Les grands motifs restent lisibles, mais géométrie, éclairage et étincelles diffèrent du maître. Le bord inférieur atteint y=577; raccord au sol non homologué. Le petit escalier et les détails du puits droit du maître sont absents. Les repères lumineux bleus/cyan à droite disparaissent également; le vide bleu plus grand change la lecture de profondeur.",
+        "alpha_observation": "Les compositions sur blanc et noir ne montrent pas le grand bruit coloré des pixels RGB quasi transparents. Des résidus d’alpha faible existent; les statistiques sont conservées et les contours restent à valider à l’échelle de jeu.",
+        "diagnostic_documents": [
+          "docs/resonance/production/continuation_20261125_l/factory_alpha_diagnostic.jpg",
+          "docs/resonance/production/continuation_20261125_l/factory_comparison.jpg"
+        ]
+      },
+      "notes": "Portique, bras, chaîne, coques et garde-corps isolés sur alpha réel. Les grands motifs restent lisibles, mais géométrie, éclairage et étincelles diffèrent du maître. Le bord inférieur atteint y=577; raccord au sol non homologué. Le petit escalier et les détails du puits droit du maître sont absents. Les repères lumineux bleus/cyan à droite disparaissent également; le vide bleu plus grand change la lecture de profondeur."
+    },
+    {
+      "asset_id": "layer_portal2_turret_factory_foreground_edge_l",
+      "target_id": "STG_EXT_PORTAL2_TURRET_FACTORY",
+      "target_ids": [
+        "STG_EXT_PORTAL2_TURRET_FACTORY"
+      ],
+      "owner_id": "STG_EXT_PORTAL2_TURRET_FACTORY",
+      "owner_type": "stage",
+      "category": "stage_layer_candidate",
+      "name_fr": "Portal 2 — usine à tourelles, Bordure de premier plan L6",
+      "layer_id": "L6",
+      "parallax_factor": 1.1,
+      "parent_asset_id": "stage_portal2_turret_factory_master_c",
+      "batch_id": "continuation_20261125_l",
+      "created_at": "2026-11-25",
+      "source_game": "Portal 2",
+      "content_class": "released_reference",
+      "generator": "image_gen built-in",
+      "prompt": "Use case: background-extraction. Create ONE static parallax layer for the Portal 2 turret factory stage. Input 1 is the existing GENERATED stage master and is the exact editing target for canvas, camera, scale, object placement and composition. Input 2 is an official Valve Portal 2 screenshot and is a materials and identity reference only: DO NOT switch to its camera or composition. Preserve the complete wide 2172 x 724 canvas of input 1, about 3:1, no cropping, zoom, recentring or perspective change. Deliver just the requested single depth plane, not a combined scene or a layer sheet. It is a candidate generative separation, not a pixel-exact replica. No text, labels, HUD, figures, extra machinery or additional views. Produce ONLY a very thin foreground edge overlay from the master: the dark front metal lip at the front of the combat walkway near y=650/724 and the sparse front-facing bracket/cable details immediately below that lip. Preserve their original horizontal alignment, left-to-right scale and full canvas coordinates. Remove the illuminated top surface of the walkway, every rear railing and factory structure, all atmosphere and all upper scene. The upper 88% of the canvas must remain transparent. Keep only the narrow dark rim and visible frontmost brackets/cables in the bottom band; remove the dark filled void behind them to true transparency. Do not add a second floor, fence, large obstruction, new cable system, glow, shadow backdrop or bottom solid panel. This overlay may overlap details already baked into the historical L5 floor candidate; preserve the reference geometry for later separation review, do not claim a final compositing-ready stage.",
+      "source_references": [
+        {
+          "reference_filename": "stage_portal2_turret_factory_master_c.png",
+          "repository_path": "assets/resonance/candidates/continuation_20261120_c/stage_portal2_turret_factory_master_c.png",
+          "sha256": "002de2836d1c3ad7b0ce35f59a6bc4f9c1443504bb48098b48a6f5fcf3d6512d",
+          "width": 2172,
+          "height": 724,
+          "visually_inspected": true,
+          "provenance": "generated_project_candidate",
+          "role": "edit_target_composition_and_coordinates"
+        },
+        {
+          "reference_filename": "steam_620_08.jpg",
+          "sha256": "557a184ce2292a2b3821c48ac0090d9e7573c16b229cca86dab8e99dfac16ba1",
+          "width": 1920,
+          "height": 1080,
+          "visually_inspected": true,
+          "source_id": "portal2_factory_capture08_c",
+          "title": "Valve / Steam — chaîne de fabrication, capture 08",
+          "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0e16bceacb6616a5ca4bc4ba4d28c7a0d06b671c.1920x1080.jpg?t=1790187113",
+          "provenance": "primary_official_screenshot",
+          "role": "visual_identity_reference_only_not_camera_or_composition"
+        }
+      ],
+      "source_urls": [
+        "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0e16bceacb6616a5ca4bc4ba4d28c7a0d06b671c.1920x1080.jpg?t=1790187113"
+      ],
+      "reference_bitmap_loaded": true,
+      "reference_bitmap_role": "edit_target_and_visual_identity_reference",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_l/layers/layer_portal2_turret_factory_foreground_edge_l.png",
+      "transparent_background": true,
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "qa_status": "candidat à vérifier",
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "file_path": "assets/resonance/candidates/continuation_20261125_l/layers/layer_portal2_turret_factory_foreground_edge_l.png",
+      "generation_status": "généré",
+      "status": "généré",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGBA",
+      "byte_size": 269201,
+      "sha256": "385254e4046cca85a3fbc37a30a8390d3ed988833a5bd3ca921e8d195f011243",
+      "git_blob_sha": "287ae39880ad1fcd63a3f4f62eb8ded395681665",
+      "original_png_bytes_preserved": true,
+      "alpha_check": "présent",
+      "alpha_stats": {
+        "alpha_present": true,
+        "transparent_pixels": 1434692,
+        "opaque_pixels": 144,
+        "partial_pixels": 137692,
+        "nonzero_bbox": [
+          0,
+          168,
+          2172,
+          724
+        ],
+        "bbox_alpha_at_least_16": [
+          0,
+          645,
+          2172,
+          723
+        ]
+      },
+      "visual_qa": {
+        "inspected": true,
+        "composited_on_light_and_dark": true,
+        "diagnostic_composites_are_not_deliverable_edits": true,
+        "single_layer_canvas": true,
+        "nominal_six_plane_composite_inspected": true,
+        "canvas_matches_parent_dimensions": true,
+        "no_runtime_or_camera_motion_validation": true,
+        "visible_findings": "Bordure étroite, équerres et câbles au bas du canevas, haut transparent. L’alpha significatif commence à y=645. Le sol historique L5 contient déjà façade et câbles : superposition nominale possible, mais ces objets seraient dédoublés avec des facteurs de parallaxe différents. Séparation L5/L6 à corriger avant intégration.",
+        "alpha_observation": "Les compositions sur blanc et noir ne montrent pas le grand bruit coloré des pixels RGB quasi transparents. Des résidus d’alpha faible existent; les statistiques sont conservées et les contours restent à valider à l’échelle de jeu.",
+        "diagnostic_documents": [
+          "docs/resonance/production/continuation_20261125_l/factory_alpha_diagnostic.jpg",
+          "docs/resonance/production/continuation_20261125_l/factory_comparison.jpg"
+        ]
+      },
+      "notes": "Bordure étroite, équerres et câbles au bas du canevas, haut transparent. L’alpha significatif commence à y=645. Le sol historique L5 contient déjà façade et câbles : superposition nominale possible, mais ces objets seraient dédoublés avec des facteurs de parallaxe différents. Séparation L5/L6 à corriger avant intégration."
+    }
+  ],
+  "deferred_targets": [],
+  "six_layer_coverage": {
+    "target_id": "STG_EXT_PORTAL2_TURRET_FACTORY",
+    "new_layer_ids": [
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L6"
+    ],
+    "existing_layer_id": "L5",
+    "existing_floor_asset_id": "layer_portal2_turret_factory_floor_c",
+    "all_six_candidate_ids_present": true,
+    "completed_six_layer_stage": false,
+    "remaining_requirements": [
+      "Réconcilier les motifs du puits et de l’escalier de droite absents du composite.",
+      "Séparer façade/câbles entre L5 et L6 avant tout déplacement relatif.",
+      "Harmoniser les valeurs, le détail des treillis et les occlusions avec le maître.",
+      "Vérifier bords de cadre, réserves de parallaxe et raccords dans le moteur."
+    ]
+  },
+  "independent_visual_review": {
+    "performed": true,
+    "scope": "Maître, L1–L6 et diagnostics de composition, lecture seule; aucun test de mouvement.",
+    "confirmed_findings": [
+      "Treillis lointains simplifiés et éclaircis.",
+      "Puits, escalier droit et repères lumineux bleus/cyan absents; grand vide bleu qui modifie la profondeur.",
+      "Découpage et largeur des panneaux nervurés et jonctions des piliers réinterprétés.",
+      "Portique plus net/lumineux, bras, câbles, étincelles et garde-corps modifiés.",
+      "Façade, équerres et câbles en double dans L5 et L6.",
+      "Pas de grand halo gris/rouge sur les composites fournis; voie et grandes masses lisibles à décalage nul."
+    ],
+    "certification_granted": false
+  }
+}

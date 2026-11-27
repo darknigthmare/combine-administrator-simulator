@@ -1,0 +1,130 @@
+{
+  "batch_id": "continuation_20261124_j",
+  "baseline_head": "8891c3cd2e9fa3c11b45e28de1ebfac83d978296",
+  "before_counts": {
+    "requests": 172,
+    "generated": 147,
+    "blocked": 25,
+    "certified_one_to_one": 0,
+    "integrated_in_game": 2,
+    "completed_animation_clips": 0,
+    "completed_six_layer_stages": 0,
+    "discarded_generated_iterations": 13,
+    "generation_calls_including_discarded_iterations": 185
+  },
+  "after_counts": {
+    "requests": 229,
+    "generated": 191,
+    "blocked": 25,
+    "certified_one_to_one": 0,
+    "integrated_in_game": 9,
+    "completed_animation_clips": 0,
+    "completed_six_layer_stages": 0,
+    "discarded_generated_iterations": 13,
+    "generation_calls_including_discarded_iterations": 241,
+    "tool_error_requests": 1,
+    "output_unavailable_requests": 12
+  },
+  "new_registry_entries": 57,
+  "new_generation_calls": 56,
+  "new_generated_png_files": 43,
+  "historical_png_recovered": 1,
+  "lost_output_records": 12,
+  "tool_errors": 1,
+  "owner_type_normalizations": [
+    {
+      "asset_id": "hecu_medic_op4_idle_j",
+      "from": "fighter",
+      "to": "support_character"
+    },
+    {
+      "asset_id": "hecu_engineer_op4_idle_j",
+      "from": "fighter",
+      "to": "support_character"
+    },
+    {
+      "asset_id": "otis_op4_idle_j",
+      "from": "fighter",
+      "to": "support_character"
+    },
+    {
+      "asset_id": "rosenberg_blueshift_idle_j",
+      "from": "fighter",
+      "to": "support_character"
+    },
+    {
+      "asset_id": "uriah_ep2_idle_j",
+      "from": "fighter",
+      "to": "support_character"
+    },
+    {
+      "asset_id": "griggs_ep2_idle_j",
+      "from": "fighter",
+      "to": "support_character"
+    },
+    {
+      "asset_id": "sheckley_ep2_idle_j",
+      "from": "fighter",
+      "to": "support_character"
+    },
+    {
+      "asset_id": "costume_eli_hla_idle_j",
+      "from": "costume",
+      "to": "support_character"
+    },
+    {
+      "asset_id": "uriah_ep2_idle_framed_j",
+      "from": "fighter",
+      "to": "support_character"
+    },
+    {
+      "asset_id": "baby_voltigore_op4_idle_j",
+      "from": "creature",
+      "to": "support_character"
+    },
+    {
+      "asset_id": "ichthyosaur_hl1_idle_j",
+      "from": "creature",
+      "to": "support_character"
+    },
+    {
+      "asset_id": "stalker_hl2_idle_j",
+      "from": "creature",
+      "to": "support_character"
+    },
+    {
+      "asset_id": "voltigore_op4_idle_j",
+      "from": "creature",
+      "to": "support_character"
+    },
+    {
+      "asset_id": "barnacle_hl1_idle_j",
+      "from": "creature",
+      "to": "support_character"
+    },
+    {
+      "asset_id": "shield_scanner_hl2_idle_j",
+      "from": "machine",
+      "to": "support_machine"
+    },
+    {
+      "asset_id": "frankenturret_portal2_idle_j",
+      "from": "machine",
+      "to": "support_machine"
+    }
+  ],
+  "runtime_integrated_asset_ids": [
+    "alyx_hl2_idle_h",
+    "barney_hl2_idle_h",
+    "combine_elite_hl2_idle_left",
+    "gordon_hl2_idle_h",
+    "gunship_hl2_hover_left_f",
+    "shephard_op4_idle_h",
+    "vortigaunt_hl2_idle_h"
+  ],
+  "completion_claims": {
+    "certified_one_to_one": 0,
+    "completed_animation_clips": 0,
+    "completed_six_layer_stages": 0
+  }
+}

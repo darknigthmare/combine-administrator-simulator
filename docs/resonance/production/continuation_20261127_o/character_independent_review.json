@@ -1,0 +1,414 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "continuation_20261127_o",
+  "review_date": "2026-11-27",
+  "reviewer": "independent_agent_guide_sources",
+  "scope": "Revue visuelle indépendante des huit PNG personnages du manifeste O, comparés aux deux modèles campagne PS2, à Gina F et à l’ancienne base Colette B. Aucun asset retouché ou régénéré.",
+  "snapshot": {
+    "manifest_path": "docs/resonance/production/continuation_20261127_o/characters_generation.json",
+    "manifest_sha256": "826ad8b7f4e037e60fa59177c726d0bf24bfd920dcc18a05ae8b6e4615316421",
+    "global_register_path": "docs/resonance/data/generated_art_register.json",
+    "global_register_sha256": "c6316e9dde6bbf2ea015bcc7036f64d2073729333b331f891d7f37192b97007d",
+    "png_count": 8,
+    "selected_count": 7,
+    "selected_presentation_poses": 6,
+    "selected_guard_bases": 1,
+    "historical_unselected_count": 1
+  },
+  "outcome": "candidate_review_pass_with_limits_and_metadata_handoff",
+  "visual_blockers_confirmed": [],
+  "hand_continuity": {
+    "result": "pass_for_all_six_selected_presentation_poses_and_colette_guard",
+    "retained_screen_side": "right",
+    "anatomical_reading": "Bras gauche anatomique dans ces vues de trois-quarts orientées vers la gauche de l’image.",
+    "source_scope": "Les deux rendus PS2 fournis sont sans arme. Ils ne prouvent pas une main canonique pour le pied-de-biche; la conclusion porte sur la continuité interne des poses du projet.",
+    "historical_exception": {
+      "asset_id": "gina_decay_deselected_o",
+      "screen_side": "left",
+      "selected_for_next_review": false,
+      "replaced_for_review_by": "gina_decay_deselected_o_v2"
+    }
+  },
+  "identity_comparison": {
+    "gina": "Les trois poses retenues conservent la combinaison beige, le haut vert sombre, les articulations/épaules noires nervurées, le module thoracique asymétrique et le chignon roux avec baguettes. Aucune nouvelle armure HL2 identifiée dans cette comparaison.",
+    "colette": "La garde O et ses trois poses retrouvent les grands blocs campagne PS2: rouge rouille, haut vert sombre, épaules/abdomen noirs nervurés, module thoracique asymétrique, cheveux courts et plaques frontales de genou brunes. L’ancien plastron bordeaux symétrique B n’est pas repris.",
+    "fine_geometry_limit": "Cette conformité des principaux marqueurs ne certifie pas le visage, les volumes, les reliefs de texture, les mains ou les proportions 1:1. Les nouveaux rendus détaillés reconstruisent un modèle de faible définition."
+  },
+  "corrected_observation": {
+    "initial_claim": "Les quatre nouveaux sprites Colette auraient des genouillères beige/brun non conformes et la source PS2 aurait des plaques frontales rouges.",
+    "disposition": "withdrawn_after_native_pixel_review",
+    "correct_observation": "La source Colette PS2 montre des plaques frontales brunes/taupe, distinctes des éléments d’armure rouges situés au-dessus et au-dessous et des joints noirs latéraux. Les quatre sprites O respectent cette séparation générale. Aucune recoloration rouge de la plaque frontale n’est justifiée.",
+    "correction_reason": "L’inspection globale avait confondu la plaque frontale et son pourtour. Le détail a été recontrôlé dans les pixels natifs et sur un grossissement NEAREST sans interpolation.",
+    "source_path": "/workspace/scratch/892354ae3802/continuation_o/references/colette_decay_ps2.png",
+    "source_sha256": "76d043ab9a2646fd19d6adab188827a110d80c666fee54fd30e11480df87e1a5",
+    "source_dimensions": [
+      1100,
+      1100
+    ],
+    "coordinate_system": "Pixels natifs, origine (0,0) en haut à gauche.",
+    "native_crop_xyxy": [
+      440,
+      710,
+      650,
+      850
+    ],
+    "diagnostic_path": "/workspace/scratch/892354ae3802/character_review/colette_knees_nearest4.png",
+    "diagnostic_scope": "Recadrage d’inspection x4 NEAREST; non produit de génération, non asset du jeu, aucun original modifié.",
+    "native_samples": [
+      {
+        "region": "Plaque frontale du genou à gauche de l’image",
+        "xy": [
+          478,
+          770
+        ],
+        "rgb": [
+          93,
+          63,
+          46
+        ]
+      },
+      {
+        "region": "Même plaque frontale",
+        "xy": [
+          480,
+          780
+        ],
+        "rgb": [
+          103,
+          69,
+          51
+        ]
+      },
+      {
+        "region": "Plaque frontale du genou à droite de l’image",
+        "xy": [
+          565,
+          770
+        ],
+        "rgb": [
+          128,
+          90,
+          67
+        ]
+      },
+      {
+        "region": "Armure rouge au-dessus du genou gauche",
+        "xy": [
+          480,
+          730
+        ],
+        "rgb": [
+          119,
+          42,
+          32
+        ]
+      },
+      {
+        "region": "Armure rouge au-dessus du genou droit",
+        "xy": [
+          578,
+          725
+        ],
+        "rgb": [
+          120,
+          42,
+          32
+        ]
+      },
+      {
+        "region": "Bord rouge de jambière sous le genou",
+        "xy": [
+          490,
+          825
+        ],
+        "rgb": [
+          116,
+          40,
+          31
+        ]
+      },
+      {
+        "region": "Joint noir",
+        "xy": [
+          588,
+          800
+        ],
+        "rgb": [
+          5,
+          7,
+          7
+        ]
+      }
+    ],
+    "corrective_generation_required": false
+  },
+  "metadata_handoff": {
+    "old_asset_id": "colette_decay_idle_right_b",
+    "old_asset_path": "assets/resonance/candidates/continuation_20261120_b/colette_decay_idle_right.png",
+    "old_asset_sha256": "f9b702b0a174dd75d82c93894e8af4aa23a2d8ca526b1c796edb7413217d1c17",
+    "observed_at_snapshot": {
+      "selected_for_next_review": true,
+      "reference_bitmap_loaded": false,
+      "certified_one_to_one": false
+    },
+    "required_merge_disposition": {
+      "selected_for_next_review": false,
+      "superseded_by": "colette_decay_guard_o",
+      "preserve_original_png_bytes": true
+    },
+    "parent_response": "Le parent a confirmé que cette modification de métadonnées est prévue dans sa fusion et sera explicitée dans preservation_audit.",
+    "status": "planned_by_parent_not_mutated_by_this_review",
+    "evidence": "Les entrées Colette O utilisent le modèle PS2 et la nouvelle garde O; aucune entrée de source visuelle Colette O n’utilise la base B non conforme.",
+    "recommendation": "Conserver B comme historique; ne pas la mélanger aux sept candidats O retenus."
+  },
+  "remaining_limits": [
+    {
+      "id": "face_and_fine_details",
+      "severity": "limitation_to_one_to_one_certification",
+      "scope": "Tous les sprites retenus",
+      "description": "Visages détaillés, plis, volumes et reliefs des protections reconstruits; une revue de reconnaissance et de géométrie fine reste nécessaire. Les références PS2 ne certifient pas ces détails nouveaux."
+    },
+    {
+      "id": "scale_and_pivots",
+      "severity": "before_animation_or_runtime_integration",
+      "scope": "Les six poses de présentation",
+      "description": "Les canevas et les emprises utiles ne sont pas harmonisés: Gina 1024x1536; Colette selected 1024x1536, garde/deselected/taunt 1060x1484. Définir les pivots de pieds et l’échelle dans le moteur avant de relier les poses."
+    },
+    {
+      "id": "gina_taunt_top_margin",
+      "severity": "before_animation_or_runtime_integration",
+      "scope": "gina_decay_taunt_o",
+      "description": "L’emprise à alpha>=16 commence à y=15, contre y=63 pour selected et y=84 pour deselected_v2; pas de coupe de cheveux/baguettes observée, mais marge réduite à prendre en compte dans le cadrage."
+    },
+    {
+      "id": "original_static_poses",
+      "severity": "classification_limit",
+      "scope": "Les six poses de présentation",
+      "description": "Les gestes selected/deselected/taunt sont des adaptations de présentation du projet. Aucune animation officielle, interpolation, timing, boucle, hitbox ou transition complète n’est démontrée."
+    }
+  ],
+  "status_validation": {
+    "all_eight_png_hashes_match_manifest": true,
+    "all_eight_certified_one_to_one_false": true,
+    "all_eight_animation_clip_complete_false": true,
+    "all_eight_integrated_in_game_false": true,
+    "all_eight_runtime_enabled_false": true,
+    "top_level_status": "candidate_images_generated_not_animation_complete",
+    "no_pose_announced_as_finished_animation_or_one_to_one": true,
+    "initial_gina_deselection_is_historical_and_unselected": true,
+    "target_completed_field": "Absent des huit entrées; aucune déclaration true trouvée.",
+    "no_global_register_or_image_mutation_by_reviewer": true
+  },
+  "source_references": [
+    {
+      "id": "gina_campaign_ps2",
+      "source_url": "https://combineoverwiki.net/images/5/5f/Ps2_gina_decay.png",
+      "local_path": "/workspace/scratch/892354ae3802/continuation_o/references/gina_decay_ps2.png",
+      "sha256": "abab920286f4116f2893d0984811154e1b1569a4483d5cee60368ea5bc918a33",
+      "kind": "retail_model_capture_on_secondary_community_host",
+      "visually_inspected": true
+    },
+    {
+      "id": "colette_campaign_ps2",
+      "source_url": "https://combineoverwiki.net/images/1/18/Ps2_colette_decay.png",
+      "local_path": "/workspace/scratch/892354ae3802/continuation_o/references/colette_decay_ps2.png",
+      "sha256": "76d043ab9a2646fd19d6adab188827a110d80c666fee54fd30e11480df87e1a5",
+      "kind": "retail_model_capture_on_secondary_community_host",
+      "visually_inspected": true
+    },
+    {
+      "id": "gina_style_f",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/gina_decay_guard_f.png",
+      "sha256": "03f3f72779f5b7bd20d4d71d83be578ff4e53e79cc8fd260d51f0a7c82295999",
+      "kind": "generated_project_candidate",
+      "visually_inspected": true,
+      "role": "style_lineage_comparison"
+    },
+    {
+      "id": "colette_historical_b",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_b/colette_decay_idle_right.png",
+      "sha256": "f9b702b0a174dd75d82c93894e8af4aa23a2d8ca526b1c796edb7413217d1c17",
+      "kind": "generated_project_candidate_without_bitmap_reference",
+      "visually_inspected": true,
+      "role": "excluded_historical_identity_comparison"
+    }
+  ],
+  "reviewed_assets": [
+    {
+      "asset_id": "colette_decay_guard_o",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/characters/colette_decay_guard_o.png",
+      "sha256": "6ffdb5c05376b2888356ca83b7fce9c5a0ecd35c0a14cb570c8897032be73c1d",
+      "width": 1060,
+      "height": 1484,
+      "selected_for_next_review": true,
+      "visually_inspected": true,
+      "carrying_hand_screen_side": "right",
+      "hand_continuity_pass": true,
+      "disposition": "candidate_reviewed_not_finally_certified",
+      "notes": "Nouvelle base cohérente avec le modèle campagne: plastron rouge rouille asymétrique, haut vert sombre, épaules/abdomen nervurés noirs, genouillères frontales brunes. Pied-de-biche dans la main du côté droit de l’image. La base B n’est pas une entrée de cette génération.",
+      "alpha_ge_16_bbox": [
+        211,
+        64,
+        839,
+        1423
+      ],
+      "certified_one_to_one": false,
+      "animation_clip_complete": false,
+      "runtime_enabled": false
+    },
+    {
+      "asset_id": "gina_decay_selected_o",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/characters/gina_decay_selected_o.png",
+      "sha256": "f9b1e09311fa517aa11e2eb2be99c4a3e75022d0ed24693983bb96768dcce019",
+      "width": 1024,
+      "height": 1536,
+      "selected_for_next_review": true,
+      "visually_inspected": true,
+      "carrying_hand_screen_side": "right",
+      "hand_continuity_pass": true,
+      "disposition": "candidate_reviewed_not_finally_certified",
+      "notes": "Main du côté droit de l’image porte l’outil bas; main opposée touche le module thoracique. Beige, vert sombre, nervures noires, chignon et baguettes correspondent aux marqueurs de la référence. Geste de menu original.",
+      "alpha_ge_16_bbox": [
+        261,
+        63,
+        799,
+        1470
+      ],
+      "certified_one_to_one": false,
+      "animation_clip_complete": false,
+      "runtime_enabled": false
+    },
+    {
+      "asset_id": "gina_decay_deselected_o",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/characters/gina_decay_deselected_o.png",
+      "sha256": "a48915d5e8679ad4cf642bf2562640e180d8bdaff935b6aafae7fddd6c6b7599",
+      "width": 1024,
+      "height": 1536,
+      "selected_for_next_review": false,
+      "visually_inspected": true,
+      "carrying_hand_screen_side": "left",
+      "hand_continuity_pass": false,
+      "disposition": "historical_do_not_select",
+      "notes": "Itération historique: l’outil se trouve dans la main du côté gauche de l’image, contrairement aux poses retenues. selected_for_next_review=false confirmé; ne pas réintroduire dans la série.",
+      "alpha_ge_16_bbox": [
+        120,
+        85,
+        850,
+        1454
+      ],
+      "certified_one_to_one": false,
+      "animation_clip_complete": false,
+      "runtime_enabled": false
+    },
+    {
+      "asset_id": "gina_decay_taunt_o",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/characters/gina_decay_taunt_o.png",
+      "sha256": "15802b5feeb0f743883e1dd19cc7a81086e8117fc3ccc9cb2cfa78f590de5dff",
+      "width": 1024,
+      "height": 1536,
+      "selected_for_next_review": true,
+      "visually_inspected": true,
+      "carrying_hand_screen_side": "right",
+      "hand_continuity_pass": true,
+      "disposition": "candidate_reviewed_not_finally_certified",
+      "notes": "Outil dans la même main du côté droit de l’image; main opposée ouverte avec cinq doigts visibles. Identité et blocs de tenue cohérents. La marge haute utile n’est que de 15 px à alpha>=16.",
+      "alpha_ge_16_bbox": [
+        182,
+        15,
+        873,
+        1488
+      ],
+      "certified_one_to_one": false,
+      "animation_clip_complete": false,
+      "runtime_enabled": false
+    },
+    {
+      "asset_id": "colette_decay_selected_o",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/characters/colette_decay_selected_o.png",
+      "sha256": "8c90b58109a541e07b06d694d79744119b693b0d470e465cfb1eb21bd5919d4c",
+      "width": 1024,
+      "height": 1536,
+      "selected_for_next_review": true,
+      "visually_inspected": true,
+      "carrying_hand_screen_side": "right",
+      "hand_continuity_pass": true,
+      "disposition": "candidate_reviewed_not_finally_certified",
+      "notes": "Outil diagonal sous le thorax, tenu par le bras venant du côté droit de l’image. La main n’est pas inversée par la position centrale de la prise. Les genouillères brunes sont présentes dans la source PS2 et ne doivent pas être recolorées en rouge.",
+      "alpha_ge_16_bbox": [
+        219,
+        66,
+        786,
+        1466
+      ],
+      "certified_one_to_one": false,
+      "animation_clip_complete": false,
+      "runtime_enabled": false
+    },
+    {
+      "asset_id": "colette_decay_deselected_o",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/characters/colette_decay_deselected_o.png",
+      "sha256": "c710bb821a34d3e6f057303017ad01265703d7670952c336a8c7050de2bf7a7a",
+      "width": 1060,
+      "height": 1484,
+      "selected_for_next_review": true,
+      "visually_inspected": true,
+      "carrying_hand_screen_side": "right",
+      "hand_continuity_pass": true,
+      "disposition": "candidate_reviewed_not_finally_certified",
+      "notes": "Main porteuse du côté droit de l’image conservée pendant le pas arrière; main opposée libre. Tenue rouge/vert/noir avec plaques frontales de genou brunes cohérente avec la nouvelle garde.",
+      "alpha_ge_16_bbox": [
+        252,
+        66,
+        788,
+        1407
+      ],
+      "certified_one_to_one": false,
+      "animation_clip_complete": false,
+      "runtime_enabled": false
+    },
+    {
+      "asset_id": "colette_decay_taunt_o",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/characters/colette_decay_taunt_o.png",
+      "sha256": "6c67807679b2c7a0b8a18d928aad72fa897925dd55971b1c3b8f9fe9904f7bd3",
+      "width": 1060,
+      "height": 1484,
+      "selected_for_next_review": true,
+      "visually_inspected": true,
+      "carrying_hand_screen_side": "right",
+      "hand_continuity_pass": true,
+      "disposition": "candidate_reviewed_not_finally_certified",
+      "notes": "Outil conservé du côté droit de l’image; signal du pouce avec l’autre main. Même nouvelle base de tenue, sans reprise de l’ancien plastron bordeaux B.",
+      "alpha_ge_16_bbox": [
+        231,
+        61,
+        833,
+        1423
+      ],
+      "certified_one_to_one": false,
+      "animation_clip_complete": false,
+      "runtime_enabled": false
+    },
+    {
+      "asset_id": "gina_decay_deselected_o_v2",
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/characters/gina_decay_deselected_o_v2.png",
+      "sha256": "b8b36f9ad3357617c58583e422716010dd369c7f3daf890fdfb1cd4acfe76ef0",
+      "width": 1024,
+      "height": 1536,
+      "selected_for_next_review": true,
+      "visually_inspected": true,
+      "carrying_hand_screen_side": "right",
+      "hand_continuity_pass": true,
+      "disposition": "candidate_reviewed_not_finally_certified",
+      "notes": "Changement de main corrigé: outil désormais du côté droit de l’image, main opposée libre. Posture de retrait maintenue. La correction ne prétend pas préserver le corps pixel par pixel.",
+      "alpha_ge_16_bbox": [
+        272,
+        84,
+        853,
+        1454
+      ],
+      "certified_one_to_one": false,
+      "animation_clip_complete": false,
+      "runtime_enabled": false
+    }
+  ]
+}

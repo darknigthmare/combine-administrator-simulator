@@ -1,0 +1,3401 @@
+{
+  "schema_version": "1.0",
+  "module": "Half Life Resonance",
+  "created_on": "2026-11-24",
+  "scope": "Catalogue reconstruit des familles nommées de projectiles, faisceaux, traces et effets demandés. Il étend le catalogue publié et ne prétend pas récupérer le catalogue historique non retrouvé de 45 entrées. Les objets physiques arbitraires lancés par le Gravity Gun restent des props distincts, non dénombrables dans cette liste.",
+  "count_semantics": "Une ligne = une famille de production propre à un jeu. Une famille peut exiger plusieurs variantes et étapes; aucune ligne ne compte comme PNG produit, animation terminée ou validation visuelle.",
+  "counts": {
+    "targets": 62,
+    "by_effect_kind": {
+      "projectile": 31,
+      "throwable": 8,
+      "impact": 1,
+      "beam": 10,
+      "area": 4,
+      "instant_trace": 5,
+      "portal": 3
+    },
+    "by_source_game": {
+      "Half-Life (1998)": 21,
+      "Half-Life: Opposing Force": 8,
+      "Half-Life 2": 12,
+      "Half-Life 2: Episode Two": 3,
+      "Half-Life 2: épisodes": 1,
+      "Portal": 4,
+      "Portal 2 — coopération": 1,
+      "Portal 2": 7,
+      "Half-Life: Alyx": 4,
+      "Aperture Desk Job": 1
+    },
+    "generated_at_creation": 0,
+    "certified_one_to_one": 0
+  },
+  "sources": [
+    {
+      "id": "hl1_rpg",
+      "title": "rpg.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/rpg.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "7a416e47e836b247852b2afde49b8e494013dc6418cc48291d5abfb03ad69de1"
+    },
+    {
+      "id": "hl1_mp5",
+      "title": "mp5.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/mp5.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "9306375ddb6dd2e0da5066d56c50520fca6ab54cca3b9f1a036fb5798ba48c51"
+    },
+    {
+      "id": "hl1_handgrenade",
+      "title": "handgrenade.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/handgrenade.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "e657eac1a6f8f58351d5f9b668d6cef4eef681bd41a93ae7fe1b1c8123edfe4e"
+    },
+    {
+      "id": "hl1_crossbow",
+      "title": "crossbow.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/crossbow.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "8bec842877799b5aaaf3699e913e64832e7670ea02174a2a1e0681f068e06339"
+    },
+    {
+      "id": "hl1_hornet",
+      "title": "hornet.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/hornet.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "25d5d745e93029ade1ee799d85fd39f6aab3e89c7725ddbde914b7d96c8814c2"
+    },
+    {
+      "id": "hl1_bullsquid",
+      "title": "bullsquid.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/bullsquid.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "6b570a37c6dc81e241496d26cc5847737bdfa6c088fbbf678d2299088ac5efaa"
+    },
+    {
+      "id": "hl1_controller",
+      "title": "controller.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/controller.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "61f639c2fb90ef6242f3b09b595ab206fe5458f7e81c1af378e27001fde82a3c"
+    },
+    {
+      "id": "hl1_nihilanth",
+      "title": "nihilanth.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/nihilanth.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "0ef1b9685beadb20ac71e88bb52a0ea7d977a7ae4135ad2362b11e283688f375"
+    },
+    {
+      "id": "hl1_bigmomma",
+      "title": "bigmomma.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/bigmomma.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "79332fd04a30810defed93f9a0d4db417bab696e96a631dfab053d496b5986b5"
+    },
+    {
+      "id": "hl1_squeakgrenade",
+      "title": "squeakgrenade.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/squeakgrenade.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "5f01d19675e818c427b26d54bdaa808e59d84dc71ea5f5a3317a71b07e71c701"
+    },
+    {
+      "id": "hl1_gauss",
+      "title": "gauss.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/gauss.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "fd5ebfb39cc041dfe8a6771fdc32da0eac198456d2e839def808b489b284218c"
+    },
+    {
+      "id": "hl1_egon",
+      "title": "egon.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/egon.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "d167453195eb18ece75ec535edeccae10763684061d1bc684cdaa59c374fca6f"
+    },
+    {
+      "id": "hl1_islave",
+      "title": "islave.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/islave.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "65c41547d40e9d245b20122eda6b60555d8e75b9d16457d1ff25b07c536a74c9"
+    },
+    {
+      "id": "hl1_houndeye",
+      "title": "houndeye.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/houndeye.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "079b33d280d869c9bf87268e2de988cb5e31f721639e42119411196c161f3951"
+    },
+    {
+      "id": "hl1_gargantua",
+      "title": "gargantua.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/gargantua.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "caa34a2b3345d1fe59eceeb43e4a3e5fa66b79f3f699d8e30b115efe5f184553"
+    },
+    {
+      "id": "hl1_combat",
+      "title": "combat.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/combat.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "e07383b31dbacd4af469f160cfccfc3ed494dc6f19853035aef0dea274037a93"
+    },
+    {
+      "id": "hl1_tripmine",
+      "title": "tripmine.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/tripmine.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "c2ee418601b8439e9ef7dfb9837f6f04c2b6a7958522ff04005793fad82aad8d"
+    },
+    {
+      "id": "hl1_satchel",
+      "title": "satchel.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/satchel.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "9811f5c7a21921fa5316f001470b1b1c23abdcd5125c7943bc7783ed63f855d3"
+    },
+    {
+      "id": "hl2_weapon_rpg",
+      "title": "weapon_rpg.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/weapon_rpg.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "ecc59a36170497ea175ba2d9bf30463d52c9d80a2e78fb060c91c10eb7917f95"
+    },
+    {
+      "id": "hl2_grenade_ar2",
+      "title": "grenade_ar2.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/grenade_ar2.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "5a050b16d7c28f5ddcab850784e86352c8bba195bf3ca29df73ed85ea49e9405"
+    },
+    {
+      "id": "hl2_grenade_frag",
+      "title": "grenade_frag.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/grenade_frag.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "2706ff8b96122b40eff9e18376cef57ca14cfb5ceb55a228923e25301616dd55"
+    },
+    {
+      "id": "hl2_weapon_crossbow",
+      "title": "weapon_crossbow.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/weapon_crossbow.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "dc848efb7adf073d17a8909cbeea6a2a736fb4139274b7cfc4830a5b4d4e1d1c"
+    },
+    {
+      "id": "hl2_prop_combine_ball",
+      "title": "prop_combine_ball.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/prop_combine_ball.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "acfbcbffe9d16e00a8fb4a43969ee11acda6160cf08ac4657c1a5d8cbc334de2"
+    },
+    {
+      "id": "hl2_grenade_bugbait",
+      "title": "grenade_bugbait.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/grenade_bugbait.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "8a94963d8e33c6519580418fd3d77332c2fb20f3184109eba009e081bee44f25"
+    },
+    {
+      "id": "hl2_npc_attackchopper",
+      "title": "npc_attackchopper.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/npc_attackchopper.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "c96e383790090bdab4c87a99699836c8db92a35b291e1452e907b685a5831b0c"
+    },
+    {
+      "id": "hl2_grenade_spit",
+      "title": "grenade_spit.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/grenade_spit.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "cbe9f603e1c0490e9157fe98145253ee15faab9897934573c345872607e27e0a"
+    },
+    {
+      "id": "hl2_weapon_ar2",
+      "title": "weapon_ar2.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/weapon_ar2.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "b0b9ad5be1fb6b07c4f32974c5f718c7a37fdd197c6503b3f20be2e587749d4f"
+    },
+    {
+      "id": "hl2_npc_strider",
+      "title": "npc_strider.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/npc_strider.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "7d95fb47b3e3f2dd88d2f6a27127e32ed768ba6eb98e392af4cb4d8835b1f721"
+    },
+    {
+      "id": "hl2_npc_combinegunship",
+      "title": "npc_combinegunship.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/npc_combinegunship.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "09b5a6a53a1fd1570e6855f4f90010f08ecc91bb88442bab18648cdb848e0966"
+    },
+    {
+      "id": "hl2_npc_vortigaunt_episodic",
+      "title": "npc_vortigaunt_episodic.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/npc_vortigaunt_episodic.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "595fa1e92f868529e128a9be99fd0bf0c7da41fc9e96703a2089f08d68c8c5ed"
+    },
+    {
+      "id": "hl2_npc_hunter",
+      "title": "npc_hunter.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/episodic/npc_hunter.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "6ca0fb1b78b14ccb632c018202f5591217e8b7f99d1e9a6e0e137b71e891a6fa"
+    },
+    {
+      "id": "hl2_weapon_striderbuster",
+      "title": "weapon_striderbuster.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/episodic/weapon_striderbuster.cpp",
+      "kind": "official_source_code",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+      "reference_status": "code_resource_verified",
+      "download_sha256": "1846356838f9f9664d2e9f4f1362d724b4a53a884d46ffffef387f00ea1dd5e9"
+    },
+    {
+      "id": "portal_media",
+      "title": "Valve — Portal 2 media",
+      "url": "https://www.thinkwithportals.com/media.php",
+      "kind": "official_game_media_or_product",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Page officielle consultée : vidéos de tourelles, gel répulsif, gel propulsif, faisceau thermique, excursion funnel. Le catalogue de liens ne remplace pas une capture annotée.",
+      "reference_status": "context_only_visual_capture_required",
+      "download_sha256": null
+    },
+    {
+      "id": "portal_thermal",
+      "title": "Valve — Thermal Discouragement Beam",
+      "url": "https://www.thinkwithportals.com/media_04.html",
+      "kind": "official_game_media_or_product",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Page vidéo officielle consultée : faisceau thermique. Échantillon de frames et largeur de faisceau encore requis.",
+      "reference_status": "context_only_visual_capture_required",
+      "download_sha256": null
+    },
+    {
+      "id": "portal_release",
+      "title": "Valve — Portal",
+      "url": "https://store.steampowered.com/app/400/Portal/",
+      "kind": "official_game_media_or_product",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Jeu officiel identifié. La fiche produit ne certifie pas les modèles d’orbes, roquettes ou portails; capture en jeu requise.",
+      "reference_status": "context_only_visual_capture_required",
+      "download_sha256": null
+    },
+    {
+      "id": "portal2_release",
+      "title": "Valve — Portal 2",
+      "url": "https://store.steampowered.com/app/620/Portal_2/",
+      "kind": "official_game_media_or_product",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Jeu officiel identifié. Captures exactes nécessaires pour bombe, gel de conversion, pont et couleurs de coopération.",
+      "reference_status": "context_only_visual_capture_required",
+      "download_sha256": null
+    },
+    {
+      "id": "opfor_release",
+      "title": "Valve/Gearbox — Opposing Force",
+      "url": "https://store.steampowered.com/app/50/HalfLife_Opposing_Force/",
+      "kind": "official_game_media_or_product",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Contexte du jeu seulement. Le code de Half-Life 1 ne prouve pas les attaques ajoutées par Gearbox; références d’armes et de monstres à capturer dans Opposing Force.",
+      "reference_status": "context_only_visual_capture_required",
+      "download_sha256": null
+    },
+    {
+      "id": "alyx_release",
+      "title": "Valve — Half-Life: Alyx",
+      "url": "https://www.half-life.com/en/alyx",
+      "kind": "official_game_media_or_product",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Jeu et contexte officiels. Captures de grenades et de leurs effets nécessaires; ne pas substituer les modèles HL2.",
+      "reference_status": "context_only_visual_capture_required",
+      "download_sha256": null
+    },
+    {
+      "id": "deskjob_release",
+      "title": "Valve — Aperture Desk Job",
+      "url": "https://store.steampowered.com/app/1902490/Aperture_Desk_Job/",
+      "kind": "official_game_media_or_product",
+      "checked_on": "2026-11-24",
+      "evidence_scope": "Jeu officiel distinct. La mitrailleuse d’électroménager exige une capture du jeu; aucune boule d’énergie inventée.",
+      "reference_status": "context_only_visual_capture_required",
+      "download_sha256": null
+    }
+  ],
+  "targets": [
+    {
+      "id": "proj_rpg_rocket_hl1",
+      "target_id": "proj_rpg_rocket_hl1",
+      "owner_id": "proj_rpg_rocket_hl1",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Roquette RPG — modèle HL1",
+      "source_game": "Half-Life (1998)",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Corps rpgrocket.mdl; fumée séparée; ne pas utiliser le missile HL2.",
+      "variants_required": [
+        "body",
+        "trail",
+        "impact"
+      ],
+      "source_ids": [
+        "hl1_rpg"
+      ],
+      "source_refs": [
+        {
+          "id": "hl1_rpg",
+          "title": "rpg.cpp",
+          "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/rpg.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "7a416e47e836b247852b2afde49b8e494013dc6418cc48291d5abfb03ad69de1"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "proj_mp5_grenade_hl1",
+      "target_id": "proj_mp5_grenade_hl1",
+      "owner_id": "proj_mp5_grenade_hl1",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Grenade secondaire MP5",
+      "source_game": "Half-Life (1998)",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Grenade lancée par le MP5; modèle grenade.mdl distinct du paquet de munitions w_ARgrenade.mdl.",
+      "variants_required": [
+        "body",
+        "impact"
+      ],
+      "source_ids": [
+        "hl1_mp5"
+      ],
+      "source_refs": [
+        {
+          "id": "hl1_mp5",
+          "title": "mp5.cpp",
+          "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/mp5.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "9306375ddb6dd2e0da5066d56c50520fca6ab54cca3b9f1a036fb5798ba48c51"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "proj_hand_grenade_hl1",
+      "target_id": "proj_hand_grenade_hl1",
+      "owner_id": "proj_hand_grenade_hl1",
+      "category": "projectile",
+      "effect_kind": "throwable",
+      "name": "Grenade à main HL1",
+      "source_game": "Half-Life (1998)",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Version originale HL1, pas la grenade Combine de HL2.",
+      "variants_required": [
+        "thrown",
+        "impact"
+      ],
+      "source_ids": [
+        "hl1_handgrenade"
+      ],
+      "source_refs": [
+        {
+          "id": "hl1_handgrenade",
+          "title": "handgrenade.cpp",
+          "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/handgrenade.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "e657eac1a6f8f58351d5f9b668d6cef4eef681bd41a93ae7fe1b1c8123edfe4e"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "proj_crossbow_bolt_hl1",
+      "target_id": "proj_crossbow_bolt_hl1",
+      "owner_id": "proj_crossbow_bolt_hl1",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Carreau d’arbalète HL1",
+      "source_game": "Half-Life (1998)",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Corps crossbow_bolt.mdl GoldSrc; conserver le carreau original, pas le fer incandescent HL2.",
+      "variants_required": [
+        "body",
+        "embedded"
+      ],
+      "source_ids": [
+        "hl1_crossbow"
+      ],
+      "source_refs": [
+        {
+          "id": "hl1_crossbow",
+          "title": "crossbow.cpp",
+          "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/crossbow.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "8bec842877799b5aaaf3699e913e64832e7670ea02174a2a1e0681f068e06339"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "proj_hornet_hl1",
+      "target_id": "proj_hornet_hl1",
+      "owner_id": "proj_hornet_hl1",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Frelon biologique Hivehand / Alien Grunt",
+      "source_game": "Half-Life (1998)",
+      "content_class": "released_reference",
+      "priority": "P0",
+      "identity_lock": "Insecte hornet.mdl; types rouge et orange; traînée distincte. Une munition vivante, pas un missile mécanique.",
+      "variants_required": [
+        "red_type",
+        "orange_type",
+        "trail",
+        "impact"
+      ],
+      "source_ids": [
+        "hl1_hornet"
+      ],
+      "source_refs": [
+        {
+          "id": "hl1_hornet",
+          "title": "hornet.cpp",
+          "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/hornet.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "25d5d745e93029ade1ee799d85fd39f6aab3e89c7725ddbde914b7d96c8814c2"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "proj_bullsquid_spit_hl1",
+      "target_id": "proj_bullsquid_spit_hl1",
+      "owner_id": "proj_bullsquid_spit_hl1",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Crachat du Bullsquid",
+      "source_game": "Half-Life (1998)",
+      "content_class": "released_reference",
+      "priority": "P0",
+      "identity_lock": "Sprite bigspit.spr; éclaboussures tinyspit.spr à produire séparément.",
+      "variants_required": [
+        "body",
+        "trail"
+      ],
+      "source_ids": [
+        "hl1_bullsquid"
+      ],
+      "source_refs": [
+        {
+          "id": "hl1_bullsquid",
+          "title": "bullsquid.cpp",
+          "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/bullsquid.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "6b570a37c6dc81e241496d26cc5847737bdfa6c088fbbf678d2299088ac5efaa"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "fx_bullsquid_spit_impact_hl1",
+      "target_id": "fx_bullsquid_spit_impact_hl1",
+      "owner_id": "fx_bullsquid_spit_impact_hl1",
+      "category": "projectile",
+      "effect_kind": "impact",
+      "name": "Impact du crachat Bullsquid",
+      "source_game": "Half-Life (1998)",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Éclaboussures tinyspit.spr et marque de contact; pas une explosion de feu.",
+      "variants_required": [
+        "impact_start",
+        "impact_end"
+      ],
+      "source_ids": [
+        "hl1_bullsquid"
+      ],
+      "source_refs": [
+        {
+          "id": "hl1_bullsquid",
+          "title": "bullsquid.cpp",
+          "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/bullsquid.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "6b570a37c6dc81e241496d26cc5847737bdfa6c088fbbf678d2299088ac5efaa"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "proj_controller_orb_hl1",
+      "target_id": "proj_controller_orb_hl1",
+      "owner_id": "proj_controller_orb_hl1",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Orbes de l’Alien Controller",
+      "source_game": "Half-Life (1998)",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "controller_energy_ball et controller_head_ball utilisent xspark4.spr; distinguer leurs comportements.",
+      "variants_required": [
+        "energy_ball",
+        "head_ball",
+        "impact"
+      ],
+      "source_ids": [
+        "hl1_controller"
+      ],
+      "source_refs": [
+        {
+          "id": "hl1_controller",
+          "title": "controller.cpp",
+          "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/controller.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "61f639c2fb90ef6242f3b09b595ab206fe5458f7e81c1af378e27001fde82a3c"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "proj_nihilanth_energy_hl1",
+      "target_id": "proj_nihilanth_energy_hl1",
+      "owner_id": "proj_nihilanth_energy_hl1",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Décharge du Nihilanth",
+      "source_game": "Half-Life (1998)",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "nihilanth_energy_ball et effets électriques; ne pas fusionner avec la téléportation.",
+      "variants_required": [
+        "body",
+        "impact"
+      ],
+      "source_ids": [
+        "hl1_nihilanth"
+      ],
+      "source_refs": [
+        {
+          "id": "hl1_nihilanth",
+          "title": "nihilanth.cpp",
+          "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/nihilanth.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "0ef1b9685beadb20ac71e88bb52a0ea7d977a7ae4135ad2362b11e283688f375"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "proj_nihilanth_teleport_hl1",
+      "target_id": "proj_nihilanth_teleport_hl1",
+      "owner_id": "proj_nihilanth_teleport_hl1",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Orbe de téléportation Nihilanth",
+      "source_game": "Half-Life (1998)",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Mode de téléportation du boss; effets tele1/exit1 associés à vérifier sur séquence de jeu.",
+      "variants_required": [
+        "body",
+        "teleport_arrival"
+      ],
+      "source_ids": [
+        "hl1_nihilanth"
+      ],
+      "source_refs": [
+        {
+          "id": "hl1_nihilanth",
+          "title": "nihilanth.cpp",
+          "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/nihilanth.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "0ef1b9685beadb20ac71e88bb52a0ea7d977a7ae4135ad2362b11e283688f375"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "proj_gonarch_mortar_hl1",
+      "target_id": "proj_gonarch_mortar_hl1",
+      "owner_id": "proj_gonarch_mortar_hl1",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Mortier organique Gonarch",
+      "source_game": "Half-Life (1998)",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "bmortar, mommaspit.spr; éclaboussures mommaspout.spr et débris mommablob.spr.",
+      "variants_required": [
+        "body",
+        "impact",
+        "debris"
+      ],
+      "source_ids": [
+        "hl1_bigmomma"
+      ],
+      "source_refs": [
+        {
+          "id": "hl1_bigmomma",
+          "title": "bigmomma.cpp",
+          "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/bigmomma.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "79332fd04a30810defed93f9a0d4db417bab696e96a631dfab053d496b5986b5"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "proj_snark_hl1",
+      "target_id": "proj_snark_hl1",
+      "owner_id": "proj_snark_hl1",
+      "category": "projectile",
+      "effect_kind": "throwable",
+      "name": "Snark lancé",
+      "source_game": "Half-Life (1998)",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Modèle w_squeak.mdl; réutiliser l’identité du personnage Snark et dessiner sa pose en vol.",
+      "variants_required": [
+        "thrown",
+        "landing"
+      ],
+      "source_ids": [
+        "hl1_squeakgrenade"
+      ],
+      "source_refs": [
+        {
+          "id": "hl1_squeakgrenade",
+          "title": "squeakgrenade.cpp",
+          "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/squeakgrenade.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "5f01d19675e818c427b26d54bdaa808e59d84dc71ea5f5a3317a71b07e71c701"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "proj_satchel_hl1",
+      "target_id": "proj_satchel_hl1",
+      "owner_id": "proj_satchel_hl1",
+      "category": "projectile",
+      "effect_kind": "throwable",
+      "name": "Charge télécommandée lancée",
+      "source_game": "Half-Life (1998)",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Charge w_satchel.mdl; ne pas dessiner la télécommande comme projectile.",
+      "variants_required": [
+        "thrown",
+        "landed",
+        "detonation"
+      ],
+      "source_ids": [
+        "hl1_satchel"
+      ],
+      "source_refs": [
+        {
+          "id": "hl1_satchel",
+          "title": "satchel.cpp",
+          "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/satchel.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "9811f5c7a21921fa5316f001470b1b1c23abdcd5125c7943bc7783ed63f855d3"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "fx_tripmine_laser_hl1",
+      "target_id": "fx_tripmine_laser_hl1",
+      "owner_id": "fx_tripmine_laser_hl1",
+      "category": "projectile",
+      "effect_kind": "beam",
+      "name": "Rayon de mine laser HL1",
+      "source_game": "Half-Life (1998)",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Faisceau fixe cyan, couleur code 0,214,198; mine séparée.",
+      "variants_required": [
+        "beam",
+        "broken"
+      ],
+      "source_ids": [
+        "hl1_tripmine"
+      ],
+      "source_refs": [
+        {
+          "id": "hl1_tripmine",
+          "title": "tripmine.cpp",
+          "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/tripmine.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "c2ee418601b8439e9ef7dfb9837f6f04c2b6a7958522ff04005793fad82aad8d"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "fx_gauss_beam_hl1",
+      "target_id": "fx_gauss_beam_hl1",
+      "owner_id": "fx_gauss_beam_hl1",
+      "category": "projectile",
+      "effect_kind": "beam",
+      "name": "Rayon Tau / Gauss",
+      "source_game": "Half-Life (1998)",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Rayon instantané et lueur hotglow; tir simple et chargé distincts; pas une boule lente.",
+      "variants_required": [
+        "primary",
+        "charged",
+        "impact"
+      ],
+      "source_ids": [
+        "hl1_gauss"
+      ],
+      "source_refs": [
+        {
+          "id": "hl1_gauss",
+          "title": "gauss.cpp",
+          "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/gauss.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "fd5ebfb39cc041dfe8a6771fdc32da0eac198456d2e839def808b489b284218c"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "fx_gluon_beam_hl1",
+      "target_id": "fx_gluon_beam_hl1",
+      "owner_id": "fx_gluon_beam_hl1",
+      "category": "projectile",
+      "effect_kind": "beam",
+      "name": "Faisceau Gluon / Egon",
+      "source_game": "Half-Life (1998)",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Faisceau continu xbeam1 avec bruit et flare XSpark1; pas un projectile discret.",
+      "variants_required": [
+        "beam",
+        "tip",
+        "fade"
+      ],
+      "source_ids": [
+        "hl1_egon"
+      ],
+      "source_refs": [
+        {
+          "id": "hl1_egon",
+          "title": "egon.cpp",
+          "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/egon.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "d167453195eb18ece75ec535edeccae10763684061d1bc684cdaa59c374fca6f"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "fx_vortigaunt_zap_hl1",
+      "target_id": "fx_vortigaunt_zap_hl1",
+      "owner_id": "fx_vortigaunt_zap_hl1",
+      "category": "projectile",
+      "effect_kind": "beam",
+      "name": "Décharge Vortigaunt HL1",
+      "source_game": "Half-Life (1998)",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "lgtning.spr; arcs de charge et décharge vert-jaune séparés.",
+      "variants_required": [
+        "charge",
+        "zap",
+        "impact"
+      ],
+      "source_ids": [
+        "hl1_islave"
+      ],
+      "source_refs": [
+        {
+          "id": "hl1_islave",
+          "title": "islave.cpp",
+          "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/islave.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "65c41547d40e9d245b20122eda6b60555d8e75b9d16457d1ff25b07c536a74c9"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "fx_houndeye_sonic_ring_hl1",
+      "target_id": "fx_houndeye_sonic_ring_hl1",
+      "owner_id": "fx_houndeye_sonic_ring_hl1",
+      "category": "projectile",
+      "effect_kind": "area",
+      "name": "Double anneau sonique Houndeye",
+      "source_game": "Half-Life (1998)",
+      "content_class": "released_reference",
+      "priority": "P0",
+      "identity_lock": "Deux TE_BEAMCYLINDER concentriques; couleur solo 188,220,255; ne pas transformer en boule.",
+      "variants_required": [
+        "solo_ring",
+        "pack_color_variants",
+        "dissipation"
+      ],
+      "source_ids": [
+        "hl1_houndeye"
+      ],
+      "source_refs": [
+        {
+          "id": "hl1_houndeye",
+          "title": "houndeye.cpp",
+          "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/houndeye.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "079b33d280d869c9bf87268e2de988cb5e31f721639e42119411196c161f3951"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "fx_gargantua_flame_hl1",
+      "target_id": "fx_gargantua_flame_hl1",
+      "owner_id": "fx_gargantua_flame_hl1",
+      "category": "projectile",
+      "effect_kind": "beam",
+      "name": "Jets de flamme Gargantua",
+      "source_game": "Half-Life (1998)",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Jets des deux mains avec cœur bleu et enveloppe chaude; rendu xbeam3.",
+      "variants_required": [
+        "flame_start",
+        "flame_sustain",
+        "flame_end"
+      ],
+      "source_ids": [
+        "hl1_gargantua"
+      ],
+      "source_refs": [
+        {
+          "id": "hl1_gargantua",
+          "title": "gargantua.cpp",
+          "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/gargantua.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "caa34a2b3345d1fe59eceeb43e4a3e5fa66b79f3f699d8e30b115efe5f184553"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "fx_gargantua_stomp_hl1",
+      "target_id": "fx_gargantua_stomp_hl1",
+      "owner_id": "fx_gargantua_stomp_hl1",
+      "category": "projectile",
+      "effect_kind": "area",
+      "name": "Onde au sol Gargantua",
+      "source_game": "Half-Life (1998)",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Trajet rasant du garg_stomp; ne pas remplacer par l’anneau Houndeye.",
+      "variants_required": [
+        "ground_wave",
+        "ground_impact"
+      ],
+      "source_ids": [
+        "hl1_gargantua"
+      ],
+      "source_refs": [
+        {
+          "id": "hl1_gargantua",
+          "title": "gargantua.cpp",
+          "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/gargantua.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "caa34a2b3345d1fe59eceeb43e4a3e5fa66b79f3f699d8e30b115efe5f184553"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "fx_bullet_tracer_hl1",
+      "target_id": "fx_bullet_tracer_hl1",
+      "owner_id": "fx_bullet_tracer_hl1",
+      "category": "projectile",
+      "effect_kind": "instant_trace",
+      "name": "Traceur balistique GoldSrc",
+      "source_game": "Half-Life (1998)",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Le tir de balle se résout par trace; tracer optionnel visuel, aucune lente ogive physique.",
+      "variants_required": [
+        "trace",
+        "wall_impact"
+      ],
+      "source_ids": [
+        "hl1_combat"
+      ],
+      "source_refs": [
+        {
+          "id": "hl1_combat",
+          "title": "combat.cpp",
+          "url": "https://github.com/ValveSoftware/halflife/blob/master/dlls/combat.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "e07383b31dbacd4af469f160cfccfc3ed494dc6f19853035aef0dea274037a93"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "proj_shock_bolt_opfor",
+      "target_id": "proj_shock_bolt_opfor",
+      "owner_id": "proj_shock_bolt_opfor",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Décharge Shock Roach / Shock Trooper",
+      "source_game": "Half-Life: Opposing Force",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Référence exacte de la décharge électrique Gearbox à capturer; ne pas emprunter le Vortigaunt HL1.",
+      "variants_required": [
+        "body",
+        "impact"
+      ],
+      "source_ids": [
+        "opfor_release"
+      ],
+      "source_refs": [
+        {
+          "id": "opfor_release",
+          "title": "Valve/Gearbox — Opposing Force",
+          "url": "https://store.steampowered.com/app/50/HalfLife_Opposing_Force/",
+          "kind": "official_game_media_or_product",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Contexte du jeu seulement. Le code de Half-Life 1 ne prouve pas les attaques ajoutées par Gearbox; références d’armes et de monstres à capturer dans Opposing Force.",
+          "reference_status": "context_only_visual_capture_required",
+          "download_sha256": null
+        }
+      ],
+      "reference_status": "exact_visual_reference_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": true
+    },
+    {
+      "id": "proj_spore_opfor",
+      "target_id": "proj_spore_opfor",
+      "owner_id": "proj_spore_opfor",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Spore du Spore Launcher",
+      "source_game": "Half-Life: Opposing Force",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Spore organique; séparer tir direct et mode rebond dans les séquences.",
+      "variants_required": [
+        "direct",
+        "bounce",
+        "impact"
+      ],
+      "source_ids": [
+        "opfor_release"
+      ],
+      "source_refs": [
+        {
+          "id": "opfor_release",
+          "title": "Valve/Gearbox — Opposing Force",
+          "url": "https://store.steampowered.com/app/50/HalfLife_Opposing_Force/",
+          "kind": "official_game_media_or_product",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Contexte du jeu seulement. Le code de Half-Life 1 ne prouve pas les attaques ajoutées par Gearbox; références d’armes et de monstres à capturer dans Opposing Force.",
+          "reference_status": "context_only_visual_capture_required",
+          "download_sha256": null
+        }
+      ],
+      "reference_status": "exact_visual_reference_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": true
+    },
+    {
+      "id": "proj_displacer_orb_opfor",
+      "target_id": "proj_displacer_orb_opfor",
+      "owner_id": "proj_displacer_orb_opfor",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Orbe Displacer",
+      "source_game": "Half-Life: Opposing Force",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Orbe de déplacement et arrivée à capturer dans le jeu; pas un portail Aperture.",
+      "variants_required": [
+        "body",
+        "displacement"
+      ],
+      "source_ids": [
+        "opfor_release"
+      ],
+      "source_refs": [
+        {
+          "id": "opfor_release",
+          "title": "Valve/Gearbox — Opposing Force",
+          "url": "https://store.steampowered.com/app/50/HalfLife_Opposing_Force/",
+          "kind": "official_game_media_or_product",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Contexte du jeu seulement. Le code de Half-Life 1 ne prouve pas les attaques ajoutées par Gearbox; références d’armes et de monstres à capturer dans Opposing Force.",
+          "reference_status": "context_only_visual_capture_required",
+          "download_sha256": null
+        }
+      ],
+      "reference_status": "exact_visual_reference_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": true
+    },
+    {
+      "id": "proj_pit_drone_spine_opfor",
+      "target_id": "proj_pit_drone_spine_opfor",
+      "owner_id": "proj_pit_drone_spine_opfor",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Épine Pit Drone",
+      "source_game": "Half-Life: Opposing Force",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Dard organique crânien propre au Pit Drone; silhouette à verrouiller sur modèle.",
+      "variants_required": [
+        "body",
+        "embedded"
+      ],
+      "source_ids": [
+        "opfor_release"
+      ],
+      "source_refs": [
+        {
+          "id": "opfor_release",
+          "title": "Valve/Gearbox — Opposing Force",
+          "url": "https://store.steampowered.com/app/50/HalfLife_Opposing_Force/",
+          "kind": "official_game_media_or_product",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Contexte du jeu seulement. Le code de Half-Life 1 ne prouve pas les attaques ajoutées par Gearbox; références d’armes et de monstres à capturer dans Opposing Force.",
+          "reference_status": "context_only_visual_capture_required",
+          "download_sha256": null
+        }
+      ],
+      "reference_status": "exact_visual_reference_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": true
+    },
+    {
+      "id": "proj_voltigore_orb_opfor",
+      "target_id": "proj_voltigore_orb_opfor",
+      "owner_id": "proj_voltigore_orb_opfor",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Décharge Voltigore",
+      "source_game": "Half-Life: Opposing Force",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Attaque électrique du Voltigore; couleur et enveloppe à capturer.",
+      "variants_required": [
+        "charge",
+        "body",
+        "impact"
+      ],
+      "source_ids": [
+        "opfor_release"
+      ],
+      "source_refs": [
+        {
+          "id": "opfor_release",
+          "title": "Valve/Gearbox — Opposing Force",
+          "url": "https://store.steampowered.com/app/50/HalfLife_Opposing_Force/",
+          "kind": "official_game_media_or_product",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Contexte du jeu seulement. Le code de Half-Life 1 ne prouve pas les attaques ajoutées par Gearbox; références d’armes et de monstres à capturer dans Opposing Force.",
+          "reference_status": "context_only_visual_capture_required",
+          "download_sha256": null
+        }
+      ],
+      "reference_status": "exact_visual_reference_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": true
+    },
+    {
+      "id": "fx_pit_worm_beam_opfor",
+      "target_id": "fx_pit_worm_beam_opfor",
+      "owner_id": "fx_pit_worm_beam_opfor",
+      "category": "projectile",
+      "effect_kind": "beam",
+      "name": "Faisceau oculaire Pit Worm",
+      "source_game": "Half-Life: Opposing Force",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Émission depuis l’œil et balayage à vérifier dans la séquence du boss.",
+      "variants_required": [
+        "charge",
+        "beam",
+        "impact"
+      ],
+      "source_ids": [
+        "opfor_release"
+      ],
+      "source_refs": [
+        {
+          "id": "opfor_release",
+          "title": "Valve/Gearbox — Opposing Force",
+          "url": "https://store.steampowered.com/app/50/HalfLife_Opposing_Force/",
+          "kind": "official_game_media_or_product",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Contexte du jeu seulement. Le code de Half-Life 1 ne prouve pas les attaques ajoutées par Gearbox; références d’armes et de monstres à capturer dans Opposing Force.",
+          "reference_status": "context_only_visual_capture_required",
+          "download_sha256": null
+        }
+      ],
+      "reference_status": "exact_visual_reference_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": true
+    },
+    {
+      "id": "proj_gene_worm_spit_opfor",
+      "target_id": "proj_gene_worm_spit_opfor",
+      "owner_id": "proj_gene_worm_spit_opfor",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Projection Gene Worm",
+      "source_game": "Half-Life: Opposing Force",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Attaque de la rencontre finale; référence primaire de séquence requise avant génération certifiable.",
+      "variants_required": [
+        "body",
+        "impact"
+      ],
+      "source_ids": [
+        "opfor_release"
+      ],
+      "source_refs": [
+        {
+          "id": "opfor_release",
+          "title": "Valve/Gearbox — Opposing Force",
+          "url": "https://store.steampowered.com/app/50/HalfLife_Opposing_Force/",
+          "kind": "official_game_media_or_product",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Contexte du jeu seulement. Le code de Half-Life 1 ne prouve pas les attaques ajoutées par Gearbox; références d’armes et de monstres à capturer dans Opposing Force.",
+          "reference_status": "context_only_visual_capture_required",
+          "download_sha256": null
+        }
+      ],
+      "reference_status": "exact_visual_reference_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": true
+    },
+    {
+      "id": "proj_gonome_gut_opfor",
+      "target_id": "proj_gonome_gut_opfor",
+      "owner_id": "proj_gonome_gut_opfor",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Projectile organique Gonome",
+      "source_game": "Half-Life: Opposing Force",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Projectile lancé par le Gonome, distinct du crachat Bullsquid.",
+      "variants_required": [
+        "body",
+        "impact"
+      ],
+      "source_ids": [
+        "opfor_release"
+      ],
+      "source_refs": [
+        {
+          "id": "opfor_release",
+          "title": "Valve/Gearbox — Opposing Force",
+          "url": "https://store.steampowered.com/app/50/HalfLife_Opposing_Force/",
+          "kind": "official_game_media_or_product",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Contexte du jeu seulement. Le code de Half-Life 1 ne prouve pas les attaques ajoutées par Gearbox; références d’armes et de monstres à capturer dans Opposing Force.",
+          "reference_status": "context_only_visual_capture_required",
+          "download_sha256": null
+        }
+      ],
+      "reference_status": "exact_visual_reference_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": true
+    },
+    {
+      "id": "proj_rpg_rocket_hl2",
+      "target_id": "proj_rpg_rocket_hl2",
+      "owner_id": "proj_rpg_rocket_hl2",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Missile RPG — modèle HL2",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "w_missile_launch puis w_missile en vol; fumée et moteur séparés.",
+      "variants_required": [
+        "launch",
+        "flight",
+        "trail",
+        "impact"
+      ],
+      "source_ids": [
+        "hl2_weapon_rpg"
+      ],
+      "source_refs": [
+        {
+          "id": "hl2_weapon_rpg",
+          "title": "weapon_rpg.cpp",
+          "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/weapon_rpg.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "ecc59a36170497ea175ba2d9bf30463d52c9d80a2e78fb060c91c10eb7917f95"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "proj_smg_grenade_hl2",
+      "target_id": "proj_smg_grenade_hl2",
+      "owner_id": "proj_smg_grenade_hl2",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Grenade secondaire SMG1",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Entité grenade_ar2, modèle Weapons/ar2_grenade.mdl; le nom du fichier ne signifie pas munition secondaire AR2.",
+      "variants_required": [
+        "body",
+        "impact"
+      ],
+      "source_ids": [
+        "hl2_grenade_ar2"
+      ],
+      "source_refs": [
+        {
+          "id": "hl2_grenade_ar2",
+          "title": "grenade_ar2.cpp",
+          "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/grenade_ar2.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "5a050b16d7c28f5ddcab850784e86352c8bba195bf3ca29df73ed85ea49e9405"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "proj_hand_grenade_hl2",
+      "target_id": "proj_hand_grenade_hl2",
+      "owner_id": "proj_hand_grenade_hl2",
+      "category": "projectile",
+      "effect_kind": "throwable",
+      "name": "Grenade à fragmentation HL2",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Grenade HL2 et témoin de minuterie; pas la version HL1.",
+      "variants_required": [
+        "body",
+        "armed",
+        "detonation"
+      ],
+      "source_ids": [
+        "hl2_grenade_frag"
+      ],
+      "source_refs": [
+        {
+          "id": "hl2_grenade_frag",
+          "title": "grenade_frag.cpp",
+          "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/grenade_frag.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "2706ff8b96122b40eff9e18376cef57ca14cfb5ceb55a228923e25301616dd55"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "proj_crossbow_bolt_hl2",
+      "target_id": "proj_crossbow_bolt_hl2",
+      "owner_id": "proj_crossbow_bolt_hl2",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Carreau incandescent HL2",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "crossbow_bolt.mdl; cœur métallique et incandescent lisibles séparément de la traînée.",
+      "variants_required": [
+        "body",
+        "trail",
+        "embedded"
+      ],
+      "source_ids": [
+        "hl2_weapon_crossbow"
+      ],
+      "source_refs": [
+        {
+          "id": "hl2_weapon_crossbow",
+          "title": "weapon_crossbow.cpp",
+          "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/weapon_crossbow.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "dc848efb7adf073d17a8909cbeea6a2a736fb4139274b7cfc4830a5b4d4e1d1c"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "proj_ar2_energy_ball_hl2",
+      "target_id": "proj_ar2_energy_ball_hl2",
+      "owner_id": "proj_ar2_energy_ball_hl2",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Orbe d’énergie secondaire AR2",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "priority": "P0",
+      "identity_lock": "combineball.mdl et traînée dédiée; sphère d’énergie rebondissante, pas balle de tir primaire.",
+      "variants_required": [
+        "body",
+        "trail",
+        "bounce",
+        "dissolve"
+      ],
+      "source_ids": [
+        "hl2_prop_combine_ball"
+      ],
+      "source_refs": [
+        {
+          "id": "hl2_prop_combine_ball",
+          "title": "prop_combine_ball.cpp",
+          "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/prop_combine_ball.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "acfbcbffe9d16e00a8fb4a43969ee11acda6160cf08ac4657c1a5d8cbc334de2"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "proj_bugbait_hl2",
+      "target_id": "proj_bugbait_hl2",
+      "owner_id": "proj_bugbait_hl2",
+      "category": "projectile",
+      "effect_kind": "throwable",
+      "name": "Phéropode lancé",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "w_bugbait.mdl; lancement, rupture et nuage signal distincts.",
+      "variants_required": [
+        "body",
+        "rupture",
+        "signal"
+      ],
+      "source_ids": [
+        "hl2_grenade_bugbait"
+      ],
+      "source_refs": [
+        {
+          "id": "hl2_grenade_bugbait",
+          "title": "grenade_bugbait.cpp",
+          "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/grenade_bugbait.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "8a94963d8e33c6519580418fd3d77332c2fb20f3184109eba009e081bee44f25"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "proj_apc_missile_hl2",
+      "target_id": "proj_apc_missile_hl2",
+      "owner_id": "proj_apc_missile_hl2",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Missile APC",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Classe CAPCMissile du code RPG; trajectoire guidée et fumée; pas une orbe AR2.",
+      "variants_required": [
+        "body",
+        "trail",
+        "impact"
+      ],
+      "source_ids": [
+        "hl2_weapon_rpg"
+      ],
+      "source_refs": [
+        {
+          "id": "hl2_weapon_rpg",
+          "title": "weapon_rpg.cpp",
+          "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/weapon_rpg.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "ecc59a36170497ea175ba2d9bf30463d52c9d80a2e78fb060c91c10eb7917f95"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "proj_helicopter_bomb_hl2",
+      "target_id": "proj_helicopter_bomb_hl2",
+      "owner_id": "proj_helicopter_bomb_hl2",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Bombe Hunter-Chopper",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Grenade d’hélicoptère issue du code AttackChopper; corps et clignotement à vérifier au modèle.",
+      "variants_required": [
+        "body",
+        "armed",
+        "detonation"
+      ],
+      "source_ids": [
+        "hl2_npc_attackchopper"
+      ],
+      "source_refs": [
+        {
+          "id": "hl2_npc_attackchopper",
+          "title": "npc_attackchopper.cpp",
+          "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/npc_attackchopper.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "c96e383790090bdab4c87a99699836c8db92a35b291e1452e907b685a5831b0c"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "proj_hunter_flechette_ep2",
+      "target_id": "proj_hunter_flechette_ep2",
+      "owner_id": "proj_hunter_flechette_ep2",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Fléchette explosive Hunter",
+      "source_game": "Half-Life 2: Episode Two",
+      "content_class": "released_reference",
+      "priority": "P0",
+      "identity_lock": "weapons/hunter_flechette.mdl; trail spécifique, fixation et explosion retardée.",
+      "variants_required": [
+        "body",
+        "trail",
+        "stuck",
+        "explosion"
+      ],
+      "source_ids": [
+        "hl2_npc_hunter"
+      ],
+      "source_refs": [
+        {
+          "id": "hl2_npc_hunter",
+          "title": "npc_hunter.cpp",
+          "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/episodic/npc_hunter.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "6ca0fb1b78b14ccb632c018202f5591217e8b7f99d1e9a6e0e137b71e891a6fa"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "proj_antlion_worker_spit_ep2",
+      "target_id": "proj_antlion_worker_spit_ep2",
+      "owner_id": "proj_antlion_worker_spit_ep2",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Crachat de Fourmilion ouvrier",
+      "source_game": "Half-Life 2: Episode Two",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "spitball_large/medium/small.mdl et antlion_spit_trail; pas le bigspit HL1.",
+      "variants_required": [
+        "large",
+        "medium",
+        "small",
+        "trail",
+        "impact"
+      ],
+      "source_ids": [
+        "hl2_grenade_spit"
+      ],
+      "source_refs": [
+        {
+          "id": "hl2_grenade_spit",
+          "title": "grenade_spit.cpp",
+          "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/grenade_spit.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "cbe9f603e1c0490e9157fe98145253ee15faab9897934573c345872607e27e0a"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "proj_magnusson_device_ep2",
+      "target_id": "proj_magnusson_device_ep2",
+      "owner_id": "proj_magnusson_device_ep2",
+      "category": "projectile",
+      "effect_kind": "throwable",
+      "name": "Dispositif Magnusson",
+      "source_game": "Half-Life 2: Episode Two",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "magnusson_device.mdl; transport, lancement et fixation sur Strider distincts.",
+      "variants_required": [
+        "held",
+        "thrown",
+        "attached",
+        "detonation"
+      ],
+      "source_ids": [
+        "hl2_weapon_striderbuster"
+      ],
+      "source_refs": [
+        {
+          "id": "hl2_weapon_striderbuster",
+          "title": "weapon_striderbuster.cpp",
+          "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/episodic/weapon_striderbuster.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "1846356838f9f9664d2e9f4f1362d724b4a53a884d46ffffef387f00ea1dd5e9"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "fx_ar2_tracer_hl2",
+      "target_id": "fx_ar2_tracer_hl2",
+      "owner_id": "fx_ar2_tracer_hl2",
+      "category": "projectile",
+      "effect_kind": "instant_trace",
+      "name": "Traceur de tir primaire AR2",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Tir primaire de l’AR2 par balle/trace; distinguer de la boule secondaire.",
+      "variants_required": [
+        "trace",
+        "muzzle",
+        "impact"
+      ],
+      "source_ids": [
+        "hl2_weapon_ar2"
+      ],
+      "source_refs": [
+        {
+          "id": "hl2_weapon_ar2",
+          "title": "weapon_ar2.cpp",
+          "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/weapon_ar2.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "b0b9ad5be1fb6b07c4f32974c5f718c7a37fdd197c6503b3f20be2e587749d4f"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "fx_strider_warp_hl2",
+      "target_id": "fx_strider_warp_hl2",
+      "owner_id": "fx_strider_warp_hl2",
+      "category": "projectile",
+      "effect_kind": "beam",
+      "name": "Canon lourd Strider",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Charge, distorsion, tir lourd et blast de contact; pas l’orbe AR2.",
+      "variants_required": [
+        "charge",
+        "shot",
+        "impact"
+      ],
+      "source_ids": [
+        "hl2_npc_strider"
+      ],
+      "source_refs": [
+        {
+          "id": "hl2_npc_strider",
+          "title": "npc_strider.cpp",
+          "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/npc_strider.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "7d95fb47b3e3f2dd88d2f6a27127e32ed768ba6eb98e392af4cb4d8835b1f721"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "fx_gunship_tracer_hl2",
+      "target_id": "fx_gunship_tracer_hl2",
+      "owner_id": "fx_gunship_tracer_hl2",
+      "category": "projectile",
+      "effect_kind": "instant_trace",
+      "name": "Traceur bleu Gunship",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Tir de canon avec traceur bleu signé Gunship; ne pas utiliser un projectile energy_orb générique.",
+      "variants_required": [
+        "trace",
+        "muzzle",
+        "impact"
+      ],
+      "source_ids": [
+        "hl2_npc_combinegunship"
+      ],
+      "source_refs": [
+        {
+          "id": "hl2_npc_combinegunship",
+          "title": "npc_combinegunship.cpp",
+          "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/npc_combinegunship.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "09b5a6a53a1fd1570e6855f4f90010f08ecc91bb88442bab18648cdb848e0966"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "fx_vortigaunt_zap_hl2",
+      "target_id": "fx_vortigaunt_zap_hl2",
+      "owner_id": "fx_vortigaunt_zap_hl2",
+      "category": "projectile",
+      "effect_kind": "beam",
+      "name": "Décharge Vortigaunt — épisodes",
+      "source_game": "Half-Life 2: épisodes",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Référence du code Vortigaunt des épisodes; charge, rayon et impact séparés; vérifier variante HL2 de base.",
+      "variants_required": [
+        "charge",
+        "beam",
+        "impact"
+      ],
+      "source_ids": [
+        "hl2_npc_vortigaunt_episodic"
+      ],
+      "source_refs": [
+        {
+          "id": "hl2_npc_vortigaunt_episodic",
+          "title": "npc_vortigaunt_episodic.cpp",
+          "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/npc_vortigaunt_episodic.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "595fa1e92f868529e128a9be99fd0bf0c7da41fc9e96703a2089f08d68c8c5ed"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "fx_strider_tracer_hl2",
+      "target_id": "fx_strider_tracer_hl2",
+      "owner_id": "fx_strider_tracer_hl2",
+      "category": "projectile",
+      "effect_kind": "instant_trace",
+      "name": "Traceur de canon léger Strider",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "StriderTracer produit par le tir léger; distinct du canon lourd.",
+      "variants_required": [
+        "trace",
+        "impact"
+      ],
+      "source_ids": [
+        "hl2_npc_strider"
+      ],
+      "source_refs": [
+        {
+          "id": "hl2_npc_strider",
+          "title": "npc_strider.cpp",
+          "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/master/src/game/server/hl2/npc_strider.cpp",
+          "kind": "official_source_code",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Code officiel consulté : type, association et ressources. La couleur exacte et les détails visuels exigent encore les sprites/modèles du jeu.",
+          "reference_status": "code_resource_verified",
+          "download_sha256": "7d95fb47b3e3f2dd88d2f6a27127e32ed768ba6eb98e392af4cb4d8835b1f721"
+        }
+      ],
+      "reference_status": "code_contract_visual_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": false
+    },
+    {
+      "id": "proj_energy_pellet_portal1",
+      "target_id": "proj_energy_pellet_portal1",
+      "owner_id": "proj_energy_pellet_portal1",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Boulette d’énergie haute puissance",
+      "source_game": "Portal",
+      "content_class": "released_reference",
+      "priority": "P0",
+      "identity_lock": "Orbe énergétique de test Portal 1; capture exacte pour lumière et traînée; ne pas copier aveuglément AR2.",
+      "variants_required": [
+        "body",
+        "trail",
+        "bounce",
+        "dissipation"
+      ],
+      "source_ids": [
+        "portal_release"
+      ],
+      "source_refs": [
+        {
+          "id": "portal_release",
+          "title": "Valve — Portal",
+          "url": "https://store.steampowered.com/app/400/Portal/",
+          "kind": "official_game_media_or_product",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Jeu officiel identifié. La fiche produit ne certifie pas les modèles d’orbes, roquettes ou portails; capture en jeu requise.",
+          "reference_status": "context_only_visual_capture_required",
+          "download_sha256": null
+        }
+      ],
+      "reference_status": "exact_visual_reference_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": true
+    },
+    {
+      "id": "proj_rocket_turret_missile_portal1",
+      "target_id": "proj_rocket_turret_missile_portal1",
+      "owner_id": "proj_rocket_turret_missile_portal1",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Roquette Rocket Turret",
+      "source_game": "Portal",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Roquette redirigeable de la Rocket Turret; verrouiller le modèle original.",
+      "variants_required": [
+        "body",
+        "trail",
+        "impact"
+      ],
+      "source_ids": [
+        "portal_release"
+      ],
+      "source_refs": [
+        {
+          "id": "portal_release",
+          "title": "Valve — Portal",
+          "url": "https://store.steampowered.com/app/400/Portal/",
+          "kind": "official_game_media_or_product",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Jeu officiel identifié. La fiche produit ne certifie pas les modèles d’orbes, roquettes ou portails; capture en jeu requise.",
+          "reference_status": "context_only_visual_capture_required",
+          "download_sha256": null
+        }
+      ],
+      "reference_status": "exact_visual_reference_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": true
+    },
+    {
+      "id": "fx_portal_blue_portal1",
+      "target_id": "fx_portal_blue_portal1",
+      "owner_id": "fx_portal_blue_portal1",
+      "category": "projectile",
+      "effect_kind": "portal",
+      "name": "Portail bleu Portal 1",
+      "source_game": "Portal",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Contour bleu et surface transparente pour composition dynamique; aucun décor de destination baked-in.",
+      "variants_required": [
+        "opening",
+        "active_rim",
+        "closing"
+      ],
+      "source_ids": [
+        "portal_release"
+      ],
+      "source_refs": [
+        {
+          "id": "portal_release",
+          "title": "Valve — Portal",
+          "url": "https://store.steampowered.com/app/400/Portal/",
+          "kind": "official_game_media_or_product",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Jeu officiel identifié. La fiche produit ne certifie pas les modèles d’orbes, roquettes ou portails; capture en jeu requise.",
+          "reference_status": "context_only_visual_capture_required",
+          "download_sha256": null
+        }
+      ],
+      "reference_status": "exact_visual_reference_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": true
+    },
+    {
+      "id": "fx_portal_orange_portal1",
+      "target_id": "fx_portal_orange_portal1",
+      "owner_id": "fx_portal_orange_portal1",
+      "category": "projectile",
+      "effect_kind": "portal",
+      "name": "Portail orange Portal 1",
+      "source_game": "Portal",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Contour orange distinct; destination dessinée par le moteur.",
+      "variants_required": [
+        "opening",
+        "active_rim",
+        "closing"
+      ],
+      "source_ids": [
+        "portal_release"
+      ],
+      "source_refs": [
+        {
+          "id": "portal_release",
+          "title": "Valve — Portal",
+          "url": "https://store.steampowered.com/app/400/Portal/",
+          "kind": "official_game_media_or_product",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Jeu officiel identifié. La fiche produit ne certifie pas les modèles d’orbes, roquettes ou portails; capture en jeu requise.",
+          "reference_status": "context_only_visual_capture_required",
+          "download_sha256": null
+        }
+      ],
+      "reference_status": "exact_visual_reference_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": true
+    },
+    {
+      "id": "fx_portals_coop_portal2",
+      "target_id": "fx_portals_coop_portal2",
+      "owner_id": "fx_portals_coop_portal2",
+      "category": "projectile",
+      "effect_kind": "portal",
+      "name": "Portails de coopération ATLAS / P-body",
+      "source_game": "Portal 2 — coopération",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Famille de quatre couleurs à capturer séparément; ne pas compter une planche comme quatre assets.",
+      "variants_required": [
+        "atlas_blue",
+        "atlas_purple",
+        "pbody_yellow",
+        "pbody_red"
+      ],
+      "source_ids": [
+        "portal2_release"
+      ],
+      "source_refs": [
+        {
+          "id": "portal2_release",
+          "title": "Valve — Portal 2",
+          "url": "https://store.steampowered.com/app/620/Portal_2/",
+          "kind": "official_game_media_or_product",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Jeu officiel identifié. Captures exactes nécessaires pour bombe, gel de conversion, pont et couleurs de coopération.",
+          "reference_status": "context_only_visual_capture_required",
+          "download_sha256": null
+        }
+      ],
+      "reference_status": "exact_visual_reference_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": true
+    },
+    {
+      "id": "fx_thermal_beam_portal2",
+      "target_id": "fx_thermal_beam_portal2",
+      "owner_id": "fx_thermal_beam_portal2",
+      "category": "projectile",
+      "effect_kind": "beam",
+      "name": "Faisceau de découragement thermique",
+      "source_game": "Portal 2",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Faisceau continu de test rouge; source, tronçon et impact distincts.",
+      "variants_required": [
+        "beam",
+        "source",
+        "impact"
+      ],
+      "source_ids": [
+        "portal_thermal"
+      ],
+      "source_refs": [
+        {
+          "id": "portal_thermal",
+          "title": "Valve — Thermal Discouragement Beam",
+          "url": "https://www.thinkwithportals.com/media_04.html",
+          "kind": "official_game_media_or_product",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Page vidéo officielle consultée : faisceau thermique. Échantillon de frames et largeur de faisceau encore requis.",
+          "reference_status": "context_only_visual_capture_required",
+          "download_sha256": null
+        }
+      ],
+      "reference_status": "exact_visual_reference_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": true
+    },
+    {
+      "id": "fx_hard_light_bridge_portal2",
+      "target_id": "fx_hard_light_bridge_portal2",
+      "owner_id": "fx_hard_light_bridge_portal2",
+      "category": "projectile",
+      "effect_kind": "area",
+      "name": "Pont de lumière solide",
+      "source_game": "Portal 2",
+      "content_class": "released_reference",
+      "priority": "P0",
+      "identity_lock": "Surface lumineuse bleue stable et bords propres; zone solide persistante, pas un projectile.",
+      "variants_required": [
+        "surface",
+        "leading_edge",
+        "ending_edge"
+      ],
+      "source_ids": [
+        "portal2_release"
+      ],
+      "source_refs": [
+        {
+          "id": "portal2_release",
+          "title": "Valve — Portal 2",
+          "url": "https://store.steampowered.com/app/620/Portal_2/",
+          "kind": "official_game_media_or_product",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Jeu officiel identifié. Captures exactes nécessaires pour bombe, gel de conversion, pont et couleurs de coopération.",
+          "reference_status": "context_only_visual_capture_required",
+          "download_sha256": null
+        }
+      ],
+      "reference_status": "exact_visual_reference_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": true
+    },
+    {
+      "id": "fx_excursion_funnel_portal2",
+      "target_id": "fx_excursion_funnel_portal2",
+      "owner_id": "fx_excursion_funnel_portal2",
+      "category": "projectile",
+      "effect_kind": "area",
+      "name": "Tunnel d’excursion",
+      "source_game": "Portal 2",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Volume d’acheminement; séparer sens normal et inversé, texture animable.",
+      "variants_required": [
+        "normal",
+        "reverse"
+      ],
+      "source_ids": [
+        "portal_media"
+      ],
+      "source_refs": [
+        {
+          "id": "portal_media",
+          "title": "Valve — Portal 2 media",
+          "url": "https://www.thinkwithportals.com/media.php",
+          "kind": "official_game_media_or_product",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Page officielle consultée : vidéos de tourelles, gel répulsif, gel propulsif, faisceau thermique, excursion funnel. Le catalogue de liens ne remplace pas une capture annotée.",
+          "reference_status": "context_only_visual_capture_required",
+          "download_sha256": null
+        }
+      ],
+      "reference_status": "exact_visual_reference_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": true
+    },
+    {
+      "id": "proj_repulsion_gel_portal2",
+      "target_id": "proj_repulsion_gel_portal2",
+      "owner_id": "proj_repulsion_gel_portal2",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Goutte de gel répulsif",
+      "source_game": "Portal 2",
+      "content_class": "released_reference",
+      "priority": "P0",
+      "identity_lock": "Gel répulsif bleu; goutte et éclaboussure distinctes.",
+      "variants_required": [
+        "droplet",
+        "splash",
+        "puddle"
+      ],
+      "source_ids": [
+        "portal_media"
+      ],
+      "source_refs": [
+        {
+          "id": "portal_media",
+          "title": "Valve — Portal 2 media",
+          "url": "https://www.thinkwithportals.com/media.php",
+          "kind": "official_game_media_or_product",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Page officielle consultée : vidéos de tourelles, gel répulsif, gel propulsif, faisceau thermique, excursion funnel. Le catalogue de liens ne remplace pas une capture annotée.",
+          "reference_status": "context_only_visual_capture_required",
+          "download_sha256": null
+        }
+      ],
+      "reference_status": "exact_visual_reference_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": true
+    },
+    {
+      "id": "proj_propulsion_gel_portal2",
+      "target_id": "proj_propulsion_gel_portal2",
+      "owner_id": "proj_propulsion_gel_portal2",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Goutte de gel propulsif",
+      "source_game": "Portal 2",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Gel propulsif orange; ne pas remplacer par gel répulsif recoloré sans comparaison de matière.",
+      "variants_required": [
+        "droplet",
+        "splash",
+        "puddle"
+      ],
+      "source_ids": [
+        "portal_media"
+      ],
+      "source_refs": [
+        {
+          "id": "portal_media",
+          "title": "Valve — Portal 2 media",
+          "url": "https://www.thinkwithportals.com/media.php",
+          "kind": "official_game_media_or_product",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Page officielle consultée : vidéos de tourelles, gel répulsif, gel propulsif, faisceau thermique, excursion funnel. Le catalogue de liens ne remplace pas une capture annotée.",
+          "reference_status": "context_only_visual_capture_required",
+          "download_sha256": null
+        }
+      ],
+      "reference_status": "exact_visual_reference_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": true
+    },
+    {
+      "id": "proj_conversion_gel_portal2",
+      "target_id": "proj_conversion_gel_portal2",
+      "owner_id": "proj_conversion_gel_portal2",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Goutte de gel de conversion",
+      "source_game": "Portal 2",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Gel blanc de conversion; référence du chapitre exact requise.",
+      "variants_required": [
+        "droplet",
+        "splash",
+        "puddle"
+      ],
+      "source_ids": [
+        "portal2_release"
+      ],
+      "source_refs": [
+        {
+          "id": "portal2_release",
+          "title": "Valve — Portal 2",
+          "url": "https://store.steampowered.com/app/620/Portal_2/",
+          "kind": "official_game_media_or_product",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Jeu officiel identifié. Captures exactes nécessaires pour bombe, gel de conversion, pont et couleurs de coopération.",
+          "reference_status": "context_only_visual_capture_required",
+          "download_sha256": null
+        }
+      ],
+      "reference_status": "exact_visual_reference_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": true
+    },
+    {
+      "id": "proj_aperture_bomb_portal2",
+      "target_id": "proj_aperture_bomb_portal2",
+      "owner_id": "proj_aperture_bomb_portal2",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Bombe Aperture de Wheatley",
+      "source_game": "Portal 2",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Bombe de la rencontre finale; pas le futbol coupé en verre.",
+      "variants_required": [
+        "body",
+        "flight",
+        "explosion"
+      ],
+      "source_ids": [
+        "portal2_release"
+      ],
+      "source_refs": [
+        {
+          "id": "portal2_release",
+          "title": "Valve — Portal 2",
+          "url": "https://store.steampowered.com/app/620/Portal_2/",
+          "kind": "official_game_media_or_product",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Jeu officiel identifié. Captures exactes nécessaires pour bombe, gel de conversion, pont et couleurs de coopération.",
+          "reference_status": "context_only_visual_capture_required",
+          "download_sha256": null
+        }
+      ],
+      "reference_status": "exact_visual_reference_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": true
+    },
+    {
+      "id": "proj_combine_grenade_hla",
+      "target_id": "proj_combine_grenade_hla",
+      "owner_id": "proj_combine_grenade_hla",
+      "category": "projectile",
+      "effect_kind": "throwable",
+      "name": "Grenade Combine HLA",
+      "source_game": "Half-Life: Alyx",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Modèle HLA et mécanisme d’armement à capturer; ne pas substituer la grenade HL2.",
+      "variants_required": [
+        "body",
+        "armed",
+        "detonation"
+      ],
+      "source_ids": [
+        "alyx_release"
+      ],
+      "source_refs": [
+        {
+          "id": "alyx_release",
+          "title": "Valve — Half-Life: Alyx",
+          "url": "https://www.half-life.com/en/alyx",
+          "kind": "official_game_media_or_product",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Jeu et contexte officiels. Captures de grenades et de leurs effets nécessaires; ne pas substituer les modèles HL2.",
+          "reference_status": "context_only_visual_capture_required",
+          "download_sha256": null
+        }
+      ],
+      "reference_status": "exact_visual_reference_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": true
+    },
+    {
+      "id": "proj_xen_grenade_hla",
+      "target_id": "proj_xen_grenade_hla",
+      "owner_id": "proj_xen_grenade_hla",
+      "category": "projectile",
+      "effect_kind": "throwable",
+      "name": "Grenade Xen HLA",
+      "source_game": "Half-Life: Alyx",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Organisme explosif de Xen; référence du modèle HLA requise.",
+      "variants_required": [
+        "body",
+        "armed",
+        "detonation"
+      ],
+      "source_ids": [
+        "alyx_release"
+      ],
+      "source_refs": [
+        {
+          "id": "alyx_release",
+          "title": "Valve — Half-Life: Alyx",
+          "url": "https://www.half-life.com/en/alyx",
+          "kind": "official_game_media_or_product",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Jeu et contexte officiels. Captures de grenades et de leurs effets nécessaires; ne pas substituer les modèles HL2.",
+          "reference_status": "context_only_visual_capture_required",
+          "download_sha256": null
+        }
+      ],
+      "reference_status": "exact_visual_reference_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": true
+    },
+    {
+      "id": "fx_reviver_discharge_hla",
+      "target_id": "fx_reviver_discharge_hla",
+      "owner_id": "fx_reviver_discharge_hla",
+      "category": "projectile",
+      "effect_kind": "beam",
+      "name": "Décharge du Reviver / Lightning Dog",
+      "source_game": "Half-Life: Alyx",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Charge et arcs propres au Reviver, vérifier la séquence exacte.",
+      "variants_required": [
+        "charge",
+        "discharge",
+        "impact"
+      ],
+      "source_ids": [
+        "alyx_release"
+      ],
+      "source_refs": [
+        {
+          "id": "alyx_release",
+          "title": "Valve — Half-Life: Alyx",
+          "url": "https://www.half-life.com/en/alyx",
+          "kind": "official_game_media_or_product",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Jeu et contexte officiels. Captures de grenades et de leurs effets nécessaires; ne pas substituer les modèles HL2.",
+          "reference_status": "context_only_visual_capture_required",
+          "download_sha256": null
+        }
+      ],
+      "reference_status": "exact_visual_reference_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": true
+    },
+    {
+      "id": "proj_antlion_spit_hla",
+      "target_id": "proj_antlion_spit_hla",
+      "owner_id": "proj_antlion_spit_hla",
+      "category": "projectile",
+      "effect_kind": "projectile",
+      "name": "Projectile de Fourmilion HLA",
+      "source_game": "Half-Life: Alyx",
+      "content_class": "released_reference",
+      "priority": "P1",
+      "identity_lock": "Variante biologique HLA à identifier sur capture avant production; pas de copie automatique Episode Two.",
+      "variants_required": [
+        "body",
+        "trail",
+        "impact"
+      ],
+      "source_ids": [
+        "alyx_release"
+      ],
+      "source_refs": [
+        {
+          "id": "alyx_release",
+          "title": "Valve — Half-Life: Alyx",
+          "url": "https://www.half-life.com/en/alyx",
+          "kind": "official_game_media_or_product",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Jeu et contexte officiels. Captures de grenades et de leurs effets nécessaires; ne pas substituer les modèles HL2.",
+          "reference_status": "context_only_visual_capture_required",
+          "download_sha256": null
+        }
+      ],
+      "reference_status": "exact_visual_reference_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": true
+    },
+    {
+      "id": "fx_deskjob_turret_tracer",
+      "target_id": "fx_deskjob_turret_tracer",
+      "owner_id": "fx_deskjob_turret_tracer",
+      "category": "projectile",
+      "effect_kind": "instant_trace",
+      "name": "Tir de tourelle électroménagère",
+      "source_game": "Aperture Desk Job",
+      "content_class": "official_alternate_continuity",
+      "priority": "P1",
+      "identity_lock": "Traceurs et flashs du jeu; continuité alternative officielle conservée.",
+      "variants_required": [
+        "muzzle",
+        "trace",
+        "impact"
+      ],
+      "source_ids": [
+        "deskjob_release"
+      ],
+      "source_refs": [
+        {
+          "id": "deskjob_release",
+          "title": "Valve — Aperture Desk Job",
+          "url": "https://store.steampowered.com/app/1902490/Aperture_Desk_Job/",
+          "kind": "official_game_media_or_product",
+          "checked_on": "2026-11-24",
+          "evidence_scope": "Jeu officiel distinct. La mitrailleuse d’électroménager exige une capture du jeu; aucune boule d’énergie inventée.",
+          "reference_status": "context_only_visual_capture_required",
+          "download_sha256": null
+        }
+      ],
+      "reference_status": "exact_visual_reference_pending",
+      "reference_capture": null,
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "generation_status": "not_generated_at_catalog_creation",
+      "actual_assets": [],
+      "production_contract": {
+        "one_asset_per_image": true,
+        "transparent_background": true,
+        "no_sprite_sheet": true,
+        "separate_body_trail_impact": true,
+        "single_master_does_not_complete_animation": true,
+        "allowed_artifact_status": "candidate_until_visual_review"
+      },
+      "notes": "Famille de production; les variantes et étapes demandent des fichiers distincts. Aucun fichier n’est présumé présent.",
+      "effect_kind_provisional": true
+    }
+  ],
+  "integration_notes": [
+    "Importer category projectile comme nouvelle classe dans le synchroniseur, sans modifier les 187 identités existantes.",
+    "Les owner_id sont les target_id; les nouveaux PNG doivent les citer explicitement.",
+    "Les cibles de référence contextuelle restent exact_visual_reference_pending même après une première image candidate.",
+    "Ne pas partager le même PNG entre les variantes dont la géométrie ou la couleur diffère.",
+    "Les portails exigent une surface moteur dynamique; seul le contour peut être un sprite fixe.",
+    "Les flux continus et hitscan exigent une logique adaptée; un PNG ne les rend pas jouables."
+  ]
+}

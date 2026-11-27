@@ -1,0 +1,167 @@
+[
+  {
+    "asset_id": "archive_combine_assassin_hl2_guard_p",
+    "repository_path": "assets/resonance/candidates/continuation_20261127_p/hl2/archive_combine_assassin_hl2_guard_p.png",
+    "dimensions": [
+      1026,
+      1532
+    ],
+    "alpha": {
+      "minimum": 0,
+      "maximum": 255,
+      "transparent_pixels": 1153101,
+      "opaque_pixels": 518,
+      "partial_pixels": 418213,
+      "bbox_alpha_1": [
+        0,
+        21,
+        1017,
+        1502
+      ],
+      "bbox_alpha_16": [
+        126,
+        77,
+        887,
+        1483
+      ],
+      "bbox_alpha_128": [
+        127,
+        78,
+        886,
+        1482
+      ]
+    }
+  },
+  {
+    "asset_id": "archive_combine_guard_synth_hl2_guard_p",
+    "repository_path": "assets/resonance/candidates/continuation_20261127_p/hl2/archive_combine_guard_synth_hl2_guard_p.png",
+    "dimensions": [
+      952,
+      1652
+    ],
+    "alpha": {
+      "minimum": 0,
+      "maximum": 255,
+      "transparent_pixels": 836336,
+      "opaque_pixels": 834,
+      "partial_pixels": 735534,
+      "bbox_alpha_1": [
+        0,
+        13,
+        942,
+        1644
+      ],
+      "bbox_alpha_16": [
+        40,
+        15,
+        920,
+        1613
+      ],
+      "bbox_alpha_128": [
+        41,
+        16,
+        920,
+        1612
+      ]
+    }
+  },
+  {
+    "asset_id": "archive_bullsquid_hl2_cut_idle_p",
+    "repository_path": "assets/resonance/candidates/continuation_20261127_p/hl2/archive_bullsquid_hl2_cut_idle_p.png",
+    "dimensions": [
+      1668,
+      943
+    ],
+    "alpha": {
+      "minimum": 0,
+      "maximum": 255,
+      "transparent_pixels": 994024,
+      "opaque_pixels": 1028,
+      "partial_pixels": 577872,
+      "bbox_alpha_1": [
+        0,
+        9,
+        1662,
+        927
+      ],
+      "bbox_alpha_16": [
+        49,
+        42,
+        1620,
+        917
+      ],
+      "bbox_alpha_128": [
+        50,
+        43,
+        1619,
+        916
+      ]
+    }
+  },
+  {
+    "asset_id": "archive_houndeye_hl2_cut_front_p",
+    "repository_path": "assets/resonance/candidates/continuation_20261127_p/hl2/archive_houndeye_hl2_cut_front_p.png",
+    "dimensions": [
+      1060,
+      1484
+    ],
+    "alpha": {
+      "minimum": 0,
+      "maximum": 255,
+      "transparent_pixels": 1149185,
+      "opaque_pixels": 105,
+      "partial_pixels": 423750,
+      "bbox_alpha_1": [
+        19,
+        20,
+        1004,
+        1484
+      ],
+      "bbox_alpha_16": [
+        192,
+        40,
+        865,
+        1446
+      ],
+      "bbox_alpha_128": [
+        193,
+        41,
+        864,
+        1445
+      ]
+    }
+  },
+  {
+    "asset_id": "archive_combine_guard_gun_hl2_untextured_p",
+    "repository_path": "assets/resonance/candidates/continuation_20261127_p/weapons/archive_combine_guard_gun_hl2_untextured_p.png",
+    "dimensions": [
+      1960,
+      802
+    ],
+    "alpha": {
+      "minimum": 0,
+      "maximum": 255,
+      "transparent_pixels": 665539,
+      "opaque_pixels": 1127,
+      "partial_pixels": 905254,
+      "bbox_alpha_1": [
+        0,
+        21,
+        1942,
+        790
+      ],
+      "bbox_alpha_16": [
+        27,
+        29,
+        1932,
+        779
+      ],
+      "bbox_alpha_128": [
+        28,
+        30,
+        1931,
+        778
+      ]
+    }
+  }
+]

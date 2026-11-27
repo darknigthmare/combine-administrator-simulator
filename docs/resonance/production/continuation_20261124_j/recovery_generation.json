@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "continuation_20261124_j",
+  "date": "2026-11-24",
+  "recovery_only": true,
+  "counts": {
+    "new_generation_requests": 0,
+    "recovered_png": 1
+  },
+  "record_reconstruction": {
+    "reason": "Original lot J register was lost when executor disconnected",
+    "source": "Retained audit observations and hashes, reverified against original historical PNG after executor restoration",
+    "png_bytes_preserved": true
+  },
+  "assets": [
+    {
+      "asset_id": "stage_questionable_ethics_hl1_master_h_recovered",
+      "owner_id": "STG_EXT_HL1_QUESTIONABLE_ETHICS",
+      "owner_type": "stage",
+      "target_ids": [
+        "STG_EXT_HL1_QUESTIONABLE_ETHICS"
+      ],
+      "name_fr": "Questionable Ethics — salle laser c2a4f",
+      "source_game": "Half-Life (1998)",
+      "category": "stage_master",
+      "batch_id": "continuation_20261124_j",
+      "original_batch_id": "continuation_20261124_h",
+      "created_at": "2026-11-24",
+      "generator": "historical generated PNG; original call unavailable",
+      "prompt": null,
+      "prompt_recovery_status": "original_prompt_not_found_do_not_reconstruct",
+      "new_generation_call": false,
+      "generation_call_count": 0,
+      "recovered_historical_output": true,
+      "source_generated_filename": "exec-86f841e8-9abb-47ed-84f9-ccbffd7f38e2.png",
+      "original_source_path": "/workspace/scratch/684967c2474e/generated_images/exec-86f841e8-9abb-47ed-84f9-ccbffd7f38e2.png",
+      "original_source_mtime_utc": "2026-11-24T14:34:16.844412Z",
+      "mtime_is_not_proof_of_generation_timestamp": true,
+      "original_generation_timestamp": null,
+      "source_urls": [
+        "https://combineoverwiki.net/wiki/File:C2a4f_laser.jpg",
+        "https://combineoverwiki.net/images/2/22/C2a4f_laser.jpg"
+      ],
+      "source_references": [
+        {
+          "reference_filename": "C2a4f_laser.jpg",
+          "local_reference_path": "/workspace/scratch/684967c2474e/references-h/C2a4f_laser.jpg",
+          "source_page": "https://combineoverwiki.net/wiki/File:C2a4f_laser.jpg",
+          "source_url": "https://combineoverwiki.net/images/2/22/C2a4f_laser.jpg",
+          "role": "original_game_screenshot_used_for_recovery_identification",
+          "visually_inspected": true,
+          "sha256": "066a707838d082c51f400dd5a7fc7d29cbd751d93b370940a7934d2b84bb932e"
+        }
+      ],
+      "reference_bitmap_loaded": true,
+      "identity_evidence": "Direct visual comparison of the blue-walled laboratory, laser console, broken wall, control room and OBSTRUCT LASER SHIELD sign with the c2a4f screenshot. Inferred identity; original prompt unavailable.",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat récupéré à vérifier",
+      "selected_for_next_review": true,
+      "file_path": "assets/resonance/candidates/continuation_20261124_j/recovered/stage_questionable_ethics_hl1_master_h_recovered.png",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/recovered/stage_questionable_ethics_hl1_master_h_recovered.png",
+      "width": 2172,
+      "height": 724,
+      "color_mode": "RGB",
+      "byte_size": 2306767,
+      "sha256": "737e8141218ae7b20c171b1f0f03b475232f1192d4ae229f78cfce413af3302e",
+      "github_blob_sha": "6d40eb6a4b174dcfd7b84cdc21713cc90a68e2c0",
+      "copy_identical_to_recovered_source": true,
+      "copy_identical_to_generator": null,
+      "pixel_modification_after_recovery": false,
+      "transparent_background": false,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "completed_six_layer_stage": false,
+      "target_completed": false,
+      "visual_qa": {
+        "inspected": true,
+        "identity_confidence": "visual inference from exact room screenshot",
+        "floor_y_approx": 642,
+        "floor_ratio_approx": 0.887,
+        "requested_floor_ratio_context": 0.84,
+        "six_layers_present": false,
+        "notes": "Master opaque conservé tel quel. Salle adaptée en élévation latérale; effets du faisceau laser absents; ligne du sol proche de 642/724 (88,7 %) plutôt que 84 %, voie avant étroite. Six couches de scène, calibration, fidélité des petits détails et intégration restent à produire."
+      },
+      "notes": "Unique sortie historique valide non enregistrée trouvée par audit; prompt inconnu laissé null. PNG récupéré sans nouvel appel, sans retouche, sans certification 1:1.",
+      "source_partial_register": "docs/resonance/production/continuation_20261124_j/recovery_generation.json"
+    }
+  ]
+}

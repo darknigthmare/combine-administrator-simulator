@@ -4,6 +4,8 @@ import { ARENA_WIDTH, BOSS_CATALOG, BOSS_ORDER, FIGHTER_CATALOG, getBoss, getFig
 import { createBattle, nextEncounter, restartBattle, stepBattle } from './engine';
 import { renderBattle, SCENE_HEIGHT } from './renderer';
 import type { BattleInput, BattleMode, BattleState, BossId, Difficulty, FighterId } from './types';
+import { FieldDossiers } from '../progression/FieldDossiers';
+import { useFieldDossiers } from '../progression/useFieldDossiers';
 import './BossBattleScreen.css';
 
 const RECORD_KEY = 'resonance.bossBattle.records.v1';
@@ -93,6 +95,7 @@ export function BossBattleScreen({ onExit }: { onExit: () => void }) {
   const [difficulty, setDifficulty] = useState<Difficulty>('normal');
   const [snapshot, setSnapshot] = useState<BattleState | null>(null);
   const [records, setRecords] = useState<LocalRecords>(readRecords);
+  const dossierCollection = useFieldDossiers(records, snapshot);
   const [recordSavingUnavailable, setRecordSavingUnavailable] = useState(false);
   const [reducedMotion, setReducedMotion] = useState(() => typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches);
   const stateRef = useRef<BattleState | null>(null);
@@ -347,6 +350,16 @@ export function BossBattleScreen({ onExit }: { onExit: () => void }) {
         </div>
         <div className="bb-controls-help"><p>Flèches ou ZQSD / WASD · R : cible · Échap : pause. Approchez d’un poste puis appuyez sur E.</p><p>{visibleFighter.specialName} — {visibleFighter.specialHint}</p></div>
       </>}
+      {snapshot && resultStates.includes(snapshot.status) && dossierCollection.newlyAwarded.length > 0 && <p className="bb-dossiers-result" role="status">{dossierCollection.newlyAwarded.length === 1 ? 'Un dossier de terrain est ouvert' : `${dossierCollection.newlyAwarded.length} dossiers de terrain sont ouverts`}. Consultez votre collection en revenant à la sélection.</p>}
+      <FieldDossiers
+        progress={dossierCollection.progress}
+        visible={!isPlaying}
+        reducedMotion={reducedMotion}
+        newlyAwarded={dossierCollection.newlyAwarded}
+        warning={dossierCollection.warning}
+        onRevealComplete={dossierCollection.acknowledge}
+        onSelectOperation={(id) => { setBossId(id); setMode('single'); headingRef.current?.focus(); }}
+      />
       <footer className="bb-footer"><span>Prototype jouable • visuels de travail</span><span>Assets définitifs 1:1 à produire · Progression du mode indépendante</span></footer>
     </div>
   </main>;

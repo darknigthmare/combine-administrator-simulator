@@ -122,9 +122,14 @@ for (const [index, asset] of assets.entries()) {
   else ids.add(assetId);
 
   const status = normalizeStatus(asset.generation_status ?? asset.status);
-  const generated = asset.generated === true || /^(genere|generated|produit|produced|success|succeeded|completed)(\b|$)/.test(status);
-  const blocked = /\b(refus|refuse|refused|blocked|bloque|rejected|echec|failed|failure)\b/.test(status);
-  const explicitlyUnproduced = blocked || /\b(non produit|not produced|not generated|non genere|pending|planned|planifie|queued|specifie|a generer|a produire)\b/.test(status);
+  // An unavailable historical output or explicit tool error must override a stale generated flag.
+  const outputUnavailable = /\b(sortie indisponible apres interruption|output unavailable)\b/.test(status);
+  const explicitToolError = /\b(erreur outil|tool error)\b/.test(status) || asset.error_classification === 'tool_call_rejected_reason_unavailable';
+  const blocked = !outputUnavailable && !explicitToolError && /\b(refus|refuse|refused|blocked|bloque)\b/.test(status);
+  const toolError = !outputUnavailable && !blocked && (explicitToolError || /\b(echec|failed|failure|rejected|erreur)\b/.test(status));
+  const generated = !outputUnavailable && !toolError && !blocked && (asset.generated === true || /^(genere|generated|produit|produced|success|succeeded|completed)(\b|$)/.test(status));
+  const explicitlyUnproduced = blocked || toolError || /\b(non produit|not produced|not generated|non genere|pending|planned|planifie|queued|specifie|a generer|a produire)\b/.test(status);
+  const expectsNoFile = explicitlyUnproduced || outputUnavailable;
   const errorCountBefore = errors.length;
   const pathFields = ['repository_path', 'file_path', 'path'].filter(field => asset[field] != null && asset[field] !== '');
   const resolvedPaths = pathFields.map(field => resolveCandidatePath(asset[field], assetId, field)).filter(Boolean);
@@ -135,7 +140,7 @@ for (const [index, asset] of assets.entries()) {
   if (repositoryPath) referencedPaths.set(repositoryPath, [...(referencedPaths.get(repositoryPath) ?? []), assetId ?? `request_${index}`]);
   if (pathFields.length && !file) issue(errors, 'missing_asset_file', 'The referenced PNG is absent from the scanned inventory.', { asset_id: assetId, repository_path: repositoryPath });
   if (generated && !file) issue(errors, 'generated_without_file', 'A generated request must have an actual PNG file.', { asset_id: assetId });
-  if (explicitlyUnproduced && pathFields.length) issue(errors, 'unproduced_with_file_path', 'An unproduced request must not claim an output PNG.', { asset_id: assetId });
+  if (expectsNoFile && pathFields.length) issue(errors, 'unproduced_with_file_path', 'A refused, failed, unavailable or planned request must not claim an available output PNG.', { asset_id: assetId });
   if ((asset.certified_one_to_one === true || asset.integrated_in_game === true || asset.animation_clip_complete === true) && !file) issue(errors, 'completion_without_file', 'Certification, integration and completed-animation claims need a file.', { asset_id: assetId });
 
   if (file) {
@@ -151,12 +156,12 @@ for (const [index, asset] of assets.entries()) {
       const normalized = field === 'sha256' && typeof value === 'string' ? value.toLowerCase() : value;
       if (normalized !== file[field]) issue(errors, 'asset_metadata_mismatch', `Declared ${field} differs from the actual PNG.`, { asset_id: assetId, field, declared: value, actual: file[field] });
     }
-    if (!generated && !explicitlyUnproduced) issue(warnings, 'unclassified_file_request', 'A PNG exists but the request has no recognized generation outcome.', { asset_id: assetId, generation_status: asset.generation_status ?? asset.status ?? null });
+    if (!generated && !expectsNoFile) issue(warnings, 'unclassified_file_request', 'A PNG exists but the request has no recognized generation outcome.', { asset_id: assetId, generation_status: asset.generation_status ?? asset.status ?? null });
   }
   requests.push({
     asset_id: assetId ?? null,
     generation_status: asset.generation_status ?? asset.status ?? null,
-    outcome: generated ? 'generated' : blocked ? 'blocked' : explicitlyUnproduced ? 'unproduced' : 'unclassified',
+    outcome: outputUnavailable ? 'output_unavailable' : toolError ? 'tool_error' : blocked ? 'blocked' : generated ? 'generated' : explicitlyUnproduced ? 'unproduced' : 'unclassified',
     repository_path: repositoryPath,
     file_present: Boolean(file),
     file_metadata_verified: Boolean(file?.png_header_valid) && errors.length === errorCountBefore,
@@ -181,9 +186,12 @@ const counts = {
   generated_requests: requests.filter(request => request.outcome === 'generated').length,
   generated_requests_with_verified_file: requests.filter(request => request.outcome === 'generated' && request.file_metadata_verified).length,
   blocked_requests: requests.filter(request => request.outcome === 'blocked').length,
-  unproduced_requests: requests.filter(request => ['blocked', 'unproduced'].includes(request.outcome)).length,
+  tool_error_requests: requests.filter(request => request.outcome === 'tool_error').length,
+  output_unavailable_requests: requests.filter(request => request.outcome === 'output_unavailable').length,
+  unproduced_requests: requests.filter(request => ['blocked', 'tool_error', 'unproduced'].includes(request.outcome)).length,
   unclassified_requests: requests.filter(request => request.outcome === 'unclassified').length,
   requests_with_files: requests.filter(request => request.file_present).length,
+  requests_without_files: requests.filter(request => !request.file_present).length,
   registered_png_files: [...inventory.keys()].filter(path => referencedPaths.has(path)).length,
   unregistered_png_files: unregistered.length,
   certified_one_to_one_declared: requests.filter(request => request.certified_one_to_one_declared).length,
@@ -191,7 +199,7 @@ const counts = {
   integrated_in_game_declared: requests.filter(request => request.integrated_in_game_declared).length,
   completed_animation_clips_declared: requests.filter(request => request.animation_clip_complete_declared).length,
 };
-const comparableCounts = { requests: counts.requests, generated: counts.generated_requests, blocked: counts.blocked_requests, certified_one_to_one: counts.certified_one_to_one_declared, integrated_in_game: counts.integrated_in_game_declared, completed_animation_clips: counts.completed_animation_clips_declared };
+const comparableCounts = { requests: counts.requests, generated: counts.generated_requests, blocked: counts.blocked_requests, tool_error_requests: counts.tool_error_requests, output_unavailable_requests: counts.output_unavailable_requests, tool_errors: counts.tool_error_requests, output_unavailable: counts.output_unavailable_requests, certified_one_to_one: counts.certified_one_to_one_declared, integrated_in_game: counts.integrated_in_game_declared, completed_animation_clips: counts.completed_animation_clips_declared };
 for (const [field, actual] of Object.entries(comparableCounts)) {
   if (register.counts?.[field] != null && register.counts[field] !== actual) issue(warnings, 'declared_count_mismatch', 'Stored summary differs from the actual request entries; the audit uses computed values.', { field, declared: register.counts[field], actual });
 }

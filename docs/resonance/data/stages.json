@@ -252,14 +252,14 @@
       "source_code": "HL1",
       "priority": "P1",
       "reference_location": "Installation industrielle autour du silo de Blast Pit",
-      "reference_status": "à vérifier sur captures du jeu source",
+      "reference_status": "captures retail consultées; adaptation latérale candidate, non certifiée1:1",
       "evidence": {
         "title": "Half-Life",
         "url": "https://www.half-life.com/en/halflife",
         "checked_scope": "Incident de Black Mesa, expérience et invasion; les détails de chaque salle exigent des captures en jeu."
       },
       "creative_status": "adaptation 2D originale non canonique",
-      "asset_status": "spécifié",
+      "asset_status": "panorama maître candidat présent; six couches et validation à produire",
       "competitive": {
         "flat_ground": true,
         "ground_y_logical_px": 880,
@@ -360,7 +360,23 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "generated_asset_ids": [
+        "stage_blastpit_hl1_master_f"
+      ],
+      "reference_capture": {
+        "reference_filename": "cow-Tentacle_pit.jpg",
+        "sha256": "f64f83b260dcdea78590dd6f6caadb5bef913a36bbbf82f624842cba82a7949d",
+        "width": 900,
+        "height": 720,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/d/de/Tentacle_pit.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Tentacle_pit.jpg",
+        "source_game": "Half-Life",
+        "provenance": "game_screenshot_mirrored_by_wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      }
     },
     {
       "id": "STG_04_HL1_LAMBDA",
@@ -488,14 +504,14 @@
       "source_code": "HL1",
       "priority": "P0",
       "reference_location": "Îles rocheuses flottantes et biologie de Xen selon Half-Life original",
-      "reference_status": "à vérifier sur captures du jeu source",
+      "reference_status": "captures retail consultées; adaptation latérale candidate, non certifiée1:1",
       "evidence": {
         "title": "Half-Life",
         "url": "https://www.half-life.com/en/halflife",
         "checked_scope": "Incident de Black Mesa, expérience et invasion; les détails de chaque salle exigent des captures en jeu."
       },
       "creative_status": "adaptation 2D originale non canonique",
-      "asset_status": "spécifié",
+      "asset_status": "panorama maître candidat présent; six couches et validation à produire",
       "competitive": {
         "flat_ground": true,
         "ground_y_logical_px": 880,
@@ -596,7 +612,23 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "generated_asset_ids": [
+        "stage_xen_hl1_master_f"
+      ],
+      "reference_capture": {
+        "reference_filename": "cow-Xen_first_island.jpg",
+        "sha256": "97114aa36638717e42ff7459cf443840d53081b5481874ba247b28e5016f7c5c",
+        "width": 1280,
+        "height": 1024,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/e/e9/Xen_first_island.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Xen_first_island.jpg",
+        "source_game": "Half-Life",
+        "provenance": "game_screenshot_mirrored_by_wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      }
     },
     {
       "id": "STG_06_OP4_CARGO",
@@ -714,7 +746,45 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "production_review_20261125_k": {
+        "target_id": "STG_06_OP4_CARGO",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "stage_op4_cargo_master_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/stages/stage_op4_cargo_master_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "Friendly_Fire4.jpg",
+            "source_page": "https://combineoverwiki.net/wiki/File:Friendly_Fire4.jpg",
+            "source_url": "https://combineoverwiki.net/images/b/b3/Friendly_Fire4.jpg",
+            "sha256": "ffd2b6df502409f1b98a8ada11388ff4e8c1288b78dcbd5e0eece04883938dc9",
+            "role": "original_game_capture_reference",
+            "visually_inspected": true,
+            "source_metadata_excerpt": "Description A nuclear missile. Source Half-Life: Opposing Force Licensing This is a screenshot of a copyrighted video game graphic. It is believed that screenshots may be exhibited on the Combine OverWiki under the fair use provision of United States copyright law . File history Click on a date/time to view the file as it appeared at that time. Date/Time Thumbnail Dimensions User Comment current 15:20, 13 November 2015 1,280 × 960 (136 KB) Barnz ( talk | contribs ) 13:04, 27 December 2011 1,000 × 546 (407 KB) Klow ( talk | contribs ) You cannot"
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated",
+      "generation_status": "candidate_pngs_present"
     },
     {
       "id": "STG_07_OP4_GENE_WORM",
@@ -832,7 +902,54 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "production_review_20261125_k": {
+        "target_id": "STG_07_OP4_GENE_WORM",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "stage_op4_gene_worm_chamber_master_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/stages/stage_op4_gene_worm_chamber_master_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "Gene_Worm_defeated.jpg",
+            "source_page": "https://combineoverwiki.net/wiki/File:Gene_Worm_defeated.jpg",
+            "source_url": "https://combineoverwiki.net/images/9/9b/Gene_Worm_defeated.jpg",
+            "sha256": "af91b1776317b20d6cf566ed11cd0b743e74556b9ea444f37bedc96e3c490175",
+            "role": "original_game_capture_reference",
+            "visually_inspected": true,
+            "source_metadata_excerpt": "Description The Gene Worm is defeated. Source Half-Life: Opposing Force Licensing This is a screenshot of a copyrighted video game graphic. It is believed that screenshots may be exhibited on the Combine OverWiki under the fair use provision of United States copyright law . File history Click on a date/time to view the file as it appeared at that time. Date/Time Thumbnail Dimensions User Comment current 13:23, 27 December 2011 1,041 × 800 (717 KB) Klow ( talk | contribs ) You cannot overwrite this file. File usage The following 7 pages use this"
+          },
+          {
+            "reference_filename": "Gene_Worm_enters.jpg",
+            "source_page": "https://combineoverwiki.net/wiki/File:Gene_Worm_enters.jpg",
+            "source_url": "https://combineoverwiki.net/images/4/4a/Gene_Worm_enters.jpg",
+            "sha256": "4f1b622f2d1bce3a562cbc64ec9901cc5a05a30465e2674567087269ee0942f8",
+            "role": "original_game_capture_reference",
+            "visually_inspected": true,
+            "source_metadata_excerpt": "Description The Gene Worm emerging from its portal. Source Half-Life: Opposing Force Licensing This is a screenshot of a copyrighted video game graphic. It is believed that screenshots may be exhibited on the Combine OverWiki under the fair use provision of United States copyright law . File history Click on a date/time to view the file as it appeared at that time. Date/Time Thumbnail Dimensions User Comment current 13:14, 27 December 2011 1,045 × 800 (627 KB) Klow ( talk | contribs ) You cannot overwrite this file. File usage The following 7 p"
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated",
+      "generation_status": "candidate_pngs_present"
     },
     {
       "id": "STG_08_BS_FREIGHT",
@@ -950,7 +1067,24 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "reference_capture": {
+        "reference_filename": "BS_FreightYard04.jpg",
+        "source_url": "https://combineoverwiki.net/images/b/b0/BS_FreightYard04.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:BS_FreightYard04.jpg",
+        "sha256": "4fc94f5356f451848715b573db605ae82802bfbf045f7ce9b8d46450211ea9bc",
+        "source_game": "Half-Life: Blue Shift",
+        "provenance": "original_game_imagery_hosted_on_community_wiki",
+        "hosting": "community_wiki_not_official_Valve_hosting",
+        "role": "original_game_capture_reference",
+        "visually_inspected": true,
+        "checked_on": "2026-11-24",
+        "inspection_record": "docs/resonance/production/continuation_20261124_j/stage_generation.json",
+        "review_record": "docs/resonance/production/continuation_20261124_j/stage_source_review.md",
+        "scope_note": "Capture BS_FreightYard04 de Blue Shift. Cour, plaque tournante et voies adaptées à une vue latérale; agencement exact et couches restent à comparer.",
+        "certifies_generated_asset_one_to_one": false
+      },
+      "visual_reference_status": "community_bitmap_inspected_layout_adaptation_not_certified"
     },
     {
       "id": "STG_09_BS_ROSENBERG",
@@ -1068,7 +1202,24 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "reference_capture": {
+        "reference_filename": "Rosenberg_is_pleased.jpg",
+        "source_url": "https://combineoverwiki.net/images/8/85/Rosenberg_is_pleased.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Rosenberg_is_pleased.jpg",
+        "sha256": "037ea61388378e3ea97cba8b043330be05ba33fb0e031d0c2132d0926f9a5da6",
+        "source_game": "Half-Life: Blue Shift",
+        "provenance": "original_game_imagery_hosted_on_community_wiki",
+        "hosting": "community_wiki_not_official_Valve_hosting",
+        "role": "original_game_capture_reference",
+        "visually_inspected": true,
+        "checked_on": "2026-11-24",
+        "inspection_record": "docs/resonance/production/continuation_20261124_j/stage_generation.json",
+        "review_record": "docs/resonance/production/continuation_20261124_j/stage_source_review.md",
+        "scope_note": "Capture Rosenberg_is_pleased du laboratoire Blue Shift. Téléporteur inactif dans le candidat; agencement latéral et proportions de ba_teleport1 à vérifier.",
+        "certifies_generated_asset_one_to_one": false
+      },
+      "visual_reference_status": "community_bitmap_inspected_layout_adaptation_not_certified"
     },
     {
       "id": "STG_10_DECAY_GAMMA",
@@ -1186,7 +1337,45 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "production_review_20261125_k": {
+        "target_id": "STG_10_DECAY_GAMMA",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "stage_decay_gamma_ps2_master_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/stages/stage_decay_gamma_ps2_master_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "Decay_PS2_blog_24.jpg",
+            "source_page": "https://ticketdorado.blogspot.com/2021/11/el-dr-freeman-esta-llegando-tardede.html",
+            "source_url": "https://blogger.googleusercontent.com/img/a/AVvXsEis6URoyTnxCyAdNMs4TGx0817wgiIOggDpWtqCOtF34oy9CeMj1sR4yk3Mfu0EJsSAQW91vY221mhrEYSMt4ZVY6BkSRHKSF4vqRMUMYZah57BU4rI2HNivxz7xqHXB4eaK8Z6Ygu-73vNkKdd0zbdsXFtUhTW73Xib_Mhyq9ZrHWPy6R8_1kYcfhSPw=w640-h350",
+            "sha256": "15af7d8811ccb1969e95734d3698bd8e3db6383fa17be3ac3f1a65ac7355be45",
+            "role": "original_game_capture_reference",
+            "visually_inspected": true,
+            "source_metadata_excerpt": "Original PlayStation 2 captures expressly identified by Ticket Dorado review (2021-11); white HUD for Cross / orange for Green. Gamma Labs displacement beacon exterior; captions: El faro de desplazamiento / El faro activado y liberando energía."
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated",
+      "generation_status": "candidate_pngs_present"
     },
     {
       "id": "STG_11_HL2_STATION",
@@ -1321,7 +1510,7 @@
         "checked_scope": "Référence visuelle effectivement chargée. Projection latérale recomposée pour le combat; ni topologie ni fichiers générés certifiés 1:1."
       },
       "creative_status": "adaptation 2D originale non canonique",
-      "asset_status": "maître et cinq plans candidats présents; L05, raccords et parallaxe à terminer",
+      "asset_status": "maître et six plans candidats présents; raccords, calage et parallaxe à valider",
       "competitive": {
         "flat_ground": true,
         "ground_y_logical_px": 880,
@@ -1406,7 +1595,12 @@
           "content": "herbes et tuyaux aux bords",
           "separate_image": true,
           "generated": false,
-          "verified": false
+          "verified": false,
+          "candidate_asset_ids": [
+            "layer_canals_foreground_f"
+          ],
+          "selected_candidate_asset_id": "layer_canals_foreground_f",
+          "candidate_note": "Fichier candidat présent et composition statique contrôlée; raccords, calage et parallaxe restent à valider."
         }
       ],
       "separate_props": [
@@ -1465,13 +1659,14 @@
       "generated_asset_ids": [
         "layer_canals_far_city_e",
         "layer_canals_floor_d",
+        "layer_canals_foreground_f",
         "layer_canals_mid_structure_e",
         "layer_canals_mid_structure_v2_e",
         "layer_canals_near_water_e",
         "layer_canals_sky_e",
         "stage_canals_master_d"
       ],
-      "layer_review_report": "docs/resonance/production/continuation_20261120_e/stage_layer_review.json"
+      "layer_review_report": "docs/resonance/production/continuation_20261124_f/stage_layer_review.json"
     },
     {
       "id": "STG_13_HL2_BME",
@@ -1606,7 +1801,7 @@
         "checked_scope": "Référence visuelle effectivement chargée. Projection latérale recomposée pour le combat; ni topologie ni fichiers générés certifiés 1:1."
       },
       "creative_status": "adaptation 2D originale non canonique",
-      "asset_status": "maître, ciel et sol candidats présents; quatre plans et raccords à terminer",
+      "asset_status": "maître et six plans candidats présents; raccords, calage et parallaxe à valider",
       "competitive": {
         "flat_ground": true,
         "ground_y_logical_px": 880,
@@ -1639,7 +1834,12 @@
           "content": "silhouettes de toits et cheminée",
           "separate_image": true,
           "generated": false,
-          "verified": false
+          "verified": false,
+          "candidate_asset_ids": [
+            "layer_ravenholm_far_f"
+          ],
+          "selected_candidate_asset_id": "layer_ravenholm_far_f",
+          "candidate_note": "Fichier candidat présent et composition statique contrôlée; raccords, calage et parallaxe restent à valider."
         },
         {
           "id": "L02_mid",
@@ -1647,7 +1847,12 @@
           "content": "façades lointaines",
           "separate_image": true,
           "generated": false,
-          "verified": false
+          "verified": false,
+          "candidate_asset_ids": [
+            "layer_ravenholm_mid_f"
+          ],
+          "selected_candidate_asset_id": "layer_ravenholm_mid_f",
+          "candidate_note": "Fichier candidat présent et composition statique contrôlée; raccords, calage et parallaxe restent à valider."
         },
         {
           "id": "L03_near",
@@ -1655,7 +1860,12 @@
           "content": "façades proches et atelier",
           "separate_image": true,
           "generated": false,
-          "verified": false
+          "verified": false,
+          "candidate_asset_ids": [
+            "layer_ravenholm_near_f"
+          ],
+          "selected_candidate_asset_id": "layer_ravenholm_near_f",
+          "candidate_note": "Fichier candidat présent et composition statique contrôlée; raccords, calage et parallaxe restent à valider."
         },
         {
           "id": "L04_ground",
@@ -1676,7 +1886,12 @@
           "content": "grillage brisé et débris aux coins",
           "separate_image": true,
           "generated": false,
-          "verified": false
+          "verified": false,
+          "candidate_asset_ids": [
+            "layer_ravenholm_foreground_f"
+          ],
+          "selected_candidate_asset_id": "layer_ravenholm_foreground_f",
+          "candidate_note": "Fichier candidat présent et composition statique contrôlée; raccords, calage et parallaxe restent à valider."
         }
       ],
       "separate_props": [
@@ -1733,11 +1948,16 @@
         "role": "visual_identity_reference"
       },
       "generated_asset_ids": [
+        "layer_ravenholm_far_f",
         "layer_ravenholm_floor_e",
+        "layer_ravenholm_foreground_f",
+        "layer_ravenholm_mid_f",
+        "layer_ravenholm_near_f",
         "layer_ravenholm_sky_e",
         "stage_ravenholm_master_d"
       ],
-      "layer_review_report": "docs/resonance/production/continuation_20261120_e/stage_layer_review.json"
+      "layer_review_report": "docs/resonance/production/continuation_20261124_f/stage_layer_review.json",
+      "candidate_alignment_note": "Le sol visuel est estimé à y622–624/724, contre environ590/724 pour le contrat logique880/1080. Décalage d’environ32–34px source (48–51px logiques) à résoudre avant intégration; contrat moteur inchangé."
     },
     {
       "id": "STG_15_HL2_NOVA",
@@ -1747,14 +1967,14 @@
       "source_code": "HL2",
       "priority": "P0",
       "reference_location": "Prison de Nova Prospekt et greffe architecturale Combine",
-      "reference_status": "à vérifier sur captures du jeu source",
+      "reference_status": "captures retail consultées; adaptation latérale candidate, non certifiée1:1",
       "evidence": {
         "title": "Half-Life 2",
         "url": "https://www.half-life.com/en/halflife2",
         "checked_scope": "Cité 17, occupation et résistance, Gordon et Alyx; détails architecturaux à vérifier en jeu."
       },
       "creative_status": "adaptation 2D originale non canonique",
-      "asset_status": "spécifié",
+      "asset_status": "panorama maître candidat présent; six couches et validation à produire",
       "competitive": {
         "flat_ground": true,
         "ground_y_logical_px": 880,
@@ -1855,7 +2075,23 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "generated_asset_ids": [
+        "stage_nova_courtyard_hl2_master_f"
+      ],
+      "reference_capture": {
+        "reference_filename": "cow-Nova_Prospekt_first.jpg",
+        "sha256": "9c2c718b2095c6f85b33c30d8a5572106c99e4f7b4ffaa6c2e2168ebf13d54c4",
+        "width": 1280,
+        "height": 720,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/1/18/Nova_Prospekt_first.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Nova_Prospekt_first.jpg",
+        "source_game": "Half-Life 2",
+        "provenance": "game_screenshot_mirrored_by_wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      }
     },
     {
       "id": "STG_16_HL2_CITADEL",
@@ -1973,7 +2209,24 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "reference_capture": {
+        "reference_filename": "Citadel_menu_background.jpg",
+        "source_url": "https://combineoverwiki.net/images/b/b7/Citadel_menu_background.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Citadel_menu_background.jpg",
+        "sha256": "b3e91f40b57c67c3bb26e14e94b28330c7a002b956adcea8f570ad6e8bd7d2d9",
+        "source_game": "Half-Life 2",
+        "provenance": "original_game_imagery_hosted_on_community_wiki",
+        "hosting": "community_wiki_not_official_Valve_hosting",
+        "role": "original_game_capture_reference",
+        "visually_inspected": true,
+        "checked_on": "2026-11-24",
+        "inspection_record": "docs/resonance/production/continuation_20261124_j/stage_generation.json",
+        "review_record": "docs/resonance/production/continuation_20261124_j/stage_source_review.md",
+        "scope_note": "Capture Citadel_menu_background du jeu source. Point de vue tourné vers le haut adapté latéralement; emplacement de plateforme et raccords ne sont pas une reproduction 1:1 du niveau.",
+        "certifies_generated_asset_one_to_one": false
+      },
+      "visual_reference_status": "community_bitmap_inspected_layout_adaptation_not_certified"
     },
     {
       "id": "STG_17_EP1_CORE",
@@ -2091,7 +2344,40 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "reference_capture": {
+        "reference_filename": "Ep1_citadel_030004.JPG",
+        "source_url": "https://combineoverwiki.net/images/7/7a/Ep1_citadel_030004.JPG",
+        "source_page": "https://combineoverwiki.net/wiki/File:Ep1_citadel_030004.JPG",
+        "sha256": "4731bd147cfed416e929955f14d836c0d0886398dd94084483691e89b079101c",
+        "source_game": "Half-Life 2: Episode One",
+        "provenance": "original_game_imagery_hosted_on_community_wiki",
+        "hosting": "community_wiki_not_official_Valve_hosting",
+        "role": "original_game_capture_reference",
+        "visually_inspected": true,
+        "checked_on": "2026-11-24",
+        "inspection_record": "docs/resonance/production/continuation_20261124_j/stage_generation.json",
+        "review_record": "docs/resonance/production/continuation_20261124_j/stage_source_review.md",
+        "scope_note": "Deux captures Episode One du cœur de la Citadelle; lumière et machinerie servent de références. Vue latérale, détails extrapolés et animation du cœur ne sont pas certifiés.",
+        "certifies_generated_asset_one_to_one": false,
+        "additional_captures": [
+          {
+            "reference_filename": "Citadel_core_drop.jpg",
+            "source_url": "https://combineoverwiki.net/images/1/18/Citadel_core_drop.jpg",
+            "source_page": "https://combineoverwiki.net/wiki/File:Citadel_core_drop.jpg",
+            "sha256": "ddef650335d3f74bf3a68dddab980fbe9008dbc475a35810cd19115d1aaa1568",
+            "source_game": "Half-Life 2: Episode One",
+            "provenance": "original_game_imagery_hosted_on_community_wiki",
+            "hosting": "community_wiki_not_official_Valve_hosting",
+            "role": "original_game_capture_reference",
+            "visually_inspected": true,
+            "checked_on": "2026-11-24",
+            "inspection_record": "docs/resonance/production/continuation_20261124_j/stage_generation.json",
+            "review_record": "docs/resonance/production/continuation_20261124_j/stage_source_review.md"
+          }
+        ]
+      },
+      "visual_reference_status": "community_bitmap_inspected_layout_adaptation_not_certified"
     },
     {
       "id": "STG_18_EP1_EVAC",
@@ -2209,7 +2495,45 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "production_review_20261125_k": {
+        "target_id": "STG_18_EP1_EVAC",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "stage_ep1_evac_platform_master_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/stages/stage_ep1_evac_platform_master_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "Ep1_trainstation2.jpg",
+            "source_page": "https://combineoverwiki.net/wiki/File:Ep1_trainstation2.jpg",
+            "source_url": "https://combineoverwiki.net/images/b/b7/Ep1_trainstation2.jpg",
+            "sha256": "49c1489b6bd86a14ab8fdc62987fa1e3838ec2815da3a6402cebd43c197f07b3",
+            "role": "original_game_capture_reference",
+            "visually_inspected": true,
+            "source_metadata_excerpt": "Description Trains and platforms in the Technical Trainstation. Location ep1_c17_06 , Technical Trainstation Source Half-Life 2: Episode One , Exit 17 Licensing This is a screenshot of a copyrighted video game graphic. It is believed that screenshots may be exhibited on the Combine OverWiki under the fair use provision of United States copyright law . File history Click on a date/time to view the file as it appeared at that time. Date/Time Thumbnail Dimensions User Comment current 12:58, 27 December 2011 900 × 720 (346 KB) Klow ( talk | contrib"
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated",
+      "generation_status": "candidate_pngs_present"
     },
     {
       "id": "STG_19_EP2_ANTLION",
@@ -2327,7 +2651,24 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "reference_capture": {
+        "reference_filename": "Antlionnest.jpg",
+        "source_url": "https://combineoverwiki.net/images/8/87/Antlionnest.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Antlionnest.jpg",
+        "sha256": "83b151ebb13967ddf002c9c381aa5d36f3c8f596e5e9c6f9569e2c428f66c17a",
+        "source_game": "Half-Life 2: Episode Two",
+        "provenance": "original_game_imagery_hosted_on_community_wiki",
+        "hosting": "community_wiki_not_official_Valve_hosting",
+        "role": "original_game_capture_reference",
+        "visually_inspected": true,
+        "checked_on": "2026-11-24",
+        "inspection_record": "docs/resonance/production/continuation_20261124_j/stage_generation.json",
+        "review_record": "docs/resonance/production/continuation_20261124_j/stage_source_review.md",
+        "scope_note": "Capture Antlionnest d’Episode Two. Distribution des nids, rochers et passage frontal extrapolée dans la vue latérale; échelle et couches non validées.",
+        "certifies_generated_asset_one_to_one": false
+      },
+      "visual_reference_status": "community_bitmap_inspected_layout_adaptation_not_certified"
     },
     {
       "id": "STG_20_EP2_WHITEFOREST",
@@ -2563,7 +2904,24 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "reference_capture": {
+        "reference_filename": "HLA_AlyxHideout01.jpg",
+        "source_url": "https://combineoverwiki.net/images/5/5c/HLA_AlyxHideout01.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:HLA_AlyxHideout01.jpg",
+        "sha256": "c3c2891343b81f5a6d3d837b0f993519db13d9c7ba08cb044315b96d1fc1f1d8",
+        "source_game": "Half-Life: Alyx",
+        "provenance": "original_game_imagery_hosted_on_community_wiki",
+        "hosting": "community_wiki_not_official_Valve_hosting",
+        "role": "original_game_capture_reference",
+        "visually_inspected": true,
+        "checked_on": "2026-11-24",
+        "inspection_record": "docs/resonance/production/continuation_20261124_j/stage_generation.json",
+        "review_record": "docs/resonance/production/continuation_20261124_j/stage_source_review.md",
+        "scope_note": "Capture HLA_AlyxHideout01. Le balcon du candidat est élargi et le garde-corps déplacé derrière la ligne de combat; cette géométrie reste une adaptation.",
+        "certifies_generated_asset_one_to_one": false
+      },
+      "visual_reference_status": "community_bitmap_inspected_layout_adaptation_not_certified"
     },
     {
       "id": "STG_22_HLA_QUARANTINE",
@@ -2681,7 +3039,45 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "production_review_20261125_k": {
+        "target_id": "STG_22_HLA_QUARANTINE",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "stage_hla_quarantine_street_master_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/stages/stage_hla_quarantine_street_master_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "QuarantineZone.jpg",
+            "source_page": "https://combineoverwiki.net/wiki/File:QuarantineZone.jpg",
+            "source_url": "https://combineoverwiki.net/images/c/ca/QuarantineZone.jpg",
+            "sha256": "6175a4b56862895e77152ec1563fe6bf69f8b894282bf97648d7fe3439639490",
+            "role": "original_game_capture_reference",
+            "visually_inspected": true,
+            "source_metadata_excerpt": "Description Entrance to the Quarantine Zone . Location a2_quarantine_entrance , Quarantine Zone Source Half-Life: Alyx , The Quarantine Zone Licensing This is a screenshot of a copyrighted video game graphic. It is believed that screenshots may be exhibited on the Combine OverWiki under the fair use provision of United States copyright law . File h"
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated",
+      "generation_status": "candidate_pngs_present"
     },
     {
       "id": "STG_23_HLA_DISTILLERY",
@@ -2799,7 +3195,45 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "production_review_20261125_k": {
+        "target_id": "STG_23_HLA_DISTILLERY",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "stage_hla_distillery_master_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/stages/stage_hla_distillery_master_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "HLA_Distillery03.jpg",
+            "source_page": "https://combineoverwiki.net/wiki/File:HLA_Distillery03.jpg",
+            "source_url": "https://combineoverwiki.net/images/a/a9/HLA_Distillery03.jpg",
+            "sha256": "9b1507f781c0270d44f66924c385d0217afbb4c3b9b274a3c5f6d8b9c33b7f85",
+            "role": "original_game_capture_reference",
+            "visually_inspected": true,
+            "source_metadata_excerpt": "Description The stills in the Golden Lion Distillery . Location a3_distillery , Golden Lion Distillery] Source Half-Life: Alyx , Jeff Licensing This is a screenshot of a copyrighted video game graphic. It is believed that screenshots may be exhibited on the Combine OverWiki under the fair use provision of United States copyright law . File history "
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated",
+      "generation_status": "candidate_pngs_present"
     },
     {
       "id": "STG_24_HLA_VAULT",
@@ -2917,7 +3351,46 @@
         "lisibilité des deux côtés",
         "aucun danger actif en classé",
         "cadence et flashs testés"
-      ]
+      ],
+      "production_review_20261125_k": {
+        "target_id": "STG_24_HLA_VAULT",
+        "outcome": "new_candidate_png",
+        "new_png_count": 1,
+        "new_asset_ids": [
+          "stage_hla_vault_apartment_master_k"
+        ],
+        "new_repository_paths": [
+          "assets/resonance/candidates/continuation_20261125_k/stages/stage_hla_vault_apartment_master_k.png"
+        ],
+        "refusal_asset_ids": [],
+        "tool_error_asset_ids": [],
+        "deferred": null,
+        "certified_one_to_one": false,
+        "completed_animation": false,
+        "runtime_added": false
+      },
+      "reference_capture": {
+        "batch_id": "continuation_20261125_k",
+        "checked_on": "2026-11-25",
+        "source_type": "externally_hosted_game_media_or_archival_reference",
+        "reference_images": [
+          {
+            "reference_filename": "Vault_Apartment_Hallway.jpg",
+            "source_page": "https://combineoverwiki.net/wiki/File:Vault_Apartment_Hallway.jpg",
+            "source_url": "https://combineoverwiki.net/images/2/2d/Vault_Apartment_Hallway.jpg",
+            "sha256": "9003904bafa1024b606ca1e9813490cbc52db955f5d48d73f5f5894ca56d8a4d",
+            "role": "original_game_capture_reference",
+            "visually_inspected": true,
+            "source_metadata_excerpt": "Description A hallway in the contained apartment inside the Vault . Location a5_vault Source Half-Life: Alyx Licensing This is a screenshot of a copyrighted video game graphic. It is believed that screenshots may be exhibited on the Combine OverWiki under the fair use provision of United States copyright law . File history Click on a date/time to view the file as it appeared at that time. Date/Time Thumbnail Dimensions User Comment current 03:54, 9 May 2020 1,920 × 1,080 (875 KB) Hawke ( talk | contribs ) {{Information |attention= |description="
+          }
+        ],
+        "scope": "Images inspectées avant génération; provenance et limites propres à chaque référence. Une adaptation candidate ne certifie pas la fidélité 1:1.",
+        "certified_one_to_one": false,
+        "local_player_capture_claimed": false
+      },
+      "visual_reference_status": "reference_images_inspected_candidate_unvalidated",
+      "generation_status": "candidate_pngs_present"
     }
-  ]
+  ],
+  "updated_on": "2026-11-25"
 }

@@ -1,0 +1,1183 @@
+{
+  "base_commit": "f77c4a797cc4201a2b52921e44fd1a5b767a6b5b",
+  "baseline_registry_entries": 338,
+  "baseline_png_verified_unchanged": 286,
+  "baseline_preserved": true,
+  "gallery_metadata_changes": [
+    {
+      "asset_id": "boss_gargantua_hl1_rear_threequarter_e",
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/boss_gargantua_hl1_rear_threequarter_e.png",
+      "previously_integrated": false,
+      "scope": "boss_battle_unlock_dossier_gallery"
+    },
+    {
+      "asset_id": "gunship_hl2_hover_left_f",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/gunship_hl2_hover_left_f.png",
+      "previously_integrated": true,
+      "scope": "boss_battle_unlock_dossier_gallery"
+    },
+    {
+      "asset_id": "dropship_container_hl2_hover_right_f",
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/dropship_container_hl2_hover_right_f.png",
+      "previously_integrated": false,
+      "scope": "boss_battle_unlock_dossier_gallery"
+    },
+    {
+      "asset_id": "strider_hl2_idle_k",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/machines/strider_hl2_idle_k.png",
+      "previously_integrated": false,
+      "scope": "boss_battle_unlock_dossier_gallery"
+    }
+  ],
+  "new_png_count": 7,
+  "new_registry_entries": 7,
+  "result_png_count": 293,
+  "result_registry_entries": 345,
+  "reported_lot_m_png_not_recovered": 24,
+  "files": [
+    {
+      "repository_path": "assets/resonance/candidates/combine_elite_hl2_idle_left.png",
+      "sha256": "f8c7e0d6350f3d0cca55fbaf3848efb2a941e077390749fa3d443d29b97ba31a"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/stage_black_mesa_testchamber_master.png",
+      "sha256": "2043431d54840038b51bcc2f0f08e16fcd0907c6b7ef9e772e1d6db6f5d2982b"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/stage_city17_station_master.png",
+      "sha256": "cf8098ad5ff20a9fde880a449b1c6d2c16bc930cb95ae7560a95ea24f69ab970"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/layer_black_mesa_floor.png",
+      "sha256": "ab623ac98e7633fe842960eb1357a6b7a604bbd4c137b845c713f22bdc77fc8a"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/layer_city17_distant_skyline.png",
+      "sha256": "8460302dc38195b4b362819166ff4ce572b7bfe6d8b19659810eba88a70966d2"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/prop_hev_suit_charger.png",
+      "sha256": "e73cab10721fc017895811601b27802374ec6b549bfe742568d844273831bf18"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_b/colette_decay_idle_right.png",
+      "sha256": "f9b702b0a174dd75d82c93894e8af4aa23a2d8ca526b1c796edb7413217d1c17"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_b/gman_hl2_idle_right.png",
+      "sha256": "ec757a7bc655292484ab172a7098094321576b2646c0d2cec2616eef6e7840b7"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_b/apache_hecu_hl1_hover_left.png",
+      "sha256": "baff2f1ab11df8fec17d6b23944043a7c15118a457fa1a65329ad24c5b58dc01"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_b/stage_whiteforest_ep2_hangar_master.png",
+      "sha256": "3a696d169dc647eca91548e7328a61858a9e24aa8e6599e0daff8bcf5caa6915"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_b/abrams_hl1_idle_left.png",
+      "sha256": "8cc0aa1af8e8eacd1e4a4a27f7bdc0560080d7de874d840fa6a975a8d286b609"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_b/stage_whiteforest_ep2_hangar_master_v2.png",
+      "sha256": "00057158802322b5d8cbd190da08c9c6cf9942b0067157c991933d12a24b503c"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_c/rocket_turret_portal1_idle_left_c.png",
+      "sha256": "5d8fdb8863639b4f4aeca8f5a909df93bf94fd3eacb59fe4b7e8c3b3a2efc61a"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_c/costume_chell_portal2_idle_c.png",
+      "sha256": "1c897482d3eb8f37625e5d9b4eface11f04374b7686b65cb4fe90304a48f8a63"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_c/stage_portal2_turret_factory_master_c.png",
+      "sha256": "002de2836d1c3ad7b0ce35f59a6bc4f9c1443504bb48098b48a6f5fcf3d6512d"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_c/rocket_turret_portal1_idle_left_v2_c.png",
+      "sha256": "5dc0129132bda84098e021c76a93676930f5339d9536d9d1b075378d1cdec648"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_c/grady_deskjob_core_idle_c.png",
+      "sha256": "8e47d7bd766f23c8476ff6509981aa1790d50fe952735fab29e2cb562b1de5cb"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_c/layer_portal2_turret_factory_floor_c.png",
+      "sha256": "4ac08390bd7ab534f32a561f8bf9ac92febe0e8fbb45c8c632cfb4fe56aad55a"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_c/chell_portal1_idle_c.png",
+      "sha256": "ff9a3b10f4da533359af55d9e3e3512e1185afe2b2d05cb1b26f21654c073688"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_d/stage_ravenholm_master_d.png",
+      "sha256": "4e29d7d47f284422bff83e01d774f77ac40682f8569f03a608b6012567b0cb7e"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_d/stage_canals_master_d.png",
+      "sha256": "5766b37fbd175db30f6b95971e8012eeaff64475a45fea25d77ff3ffc65e8a2a"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_d/strider_whiteforest_ep2_idle_left_d.png",
+      "sha256": "acbfbc6cfbbea3d4e9f4aba8254bdc84b1a2e207b529e9f89e18ac9f03d8ae85"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_d/advisor_extraction_ep2_idle_right_d.png",
+      "sha256": "1da20dda89a21ac7642344fecd2b3993af26ab94508b1838764bc7989bb57aed"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_d/layer_canals_floor_d.png",
+      "sha256": "d48de1d3bcb68c7c56c1afd35e844dd4254db7015f76260722a3c049e8a32d8f"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_d/overwatch_soldier_hl2_idle_left_d.png",
+      "sha256": "c2fd3510c125fbc53ae714e0edc68f6efe4cabaade77fcc6651e6c03f3f6edb3"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_d/antlion_hl2_idle_d.png",
+      "sha256": "568cf4bf7d303072bac028442999e1876b067ce4c1776db8b7ae5e7f92161809"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_d/zombine_ep1_idle_d.png",
+      "sha256": "0cc2a7aa9b194421eb0c6707ba01637a3a2388577bfffa9cfafa3af655b26b4c"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/hunter_ep2_idle_e.png",
+      "sha256": "b798364fdc80fa864d473bd26f7b29e9b655190321e6fb3e23e9a5801e4a99c9"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/dog_hl2_idle_e.png",
+      "sha256": "a7ff08064314e322f5e3d9a1296591a9c6da9359d6536ba1d239f8148b9aaf8e"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/antlion_worker_ep2_idle_e.png",
+      "sha256": "a981694bd2ca128a09509d6ac1884d6390a70853eb1438ed6c540dccbdbeaf60"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/costume_hecu_beret_hl1_guard_right_e.png",
+      "sha256": "78daa658d35921bd242e98361d94044895e5c11a57ba7908f826043ac0e0d29d"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/boss_gargantua_hl1_rear_threequarter_e.png",
+      "sha256": "3e4edb5ef2fc5a847304210facc6098d752a1575719362f9b4d933d16cd85c1f"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_sky_e.png",
+      "sha256": "cf8dc89190cdba44cb2967cd33b7331ce080ebc69755839bae9bb9748996b7f7"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_far_city_e.png",
+      "sha256": "9fee06185646e6b65c8d04022f05b04bf8a1590d6340fa46bc629981a6a26a4e"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_mid_structure_e.png",
+      "sha256": "6c8ed08825999198ad8fe83cc4dd11afefc6a6f943657da27dd0b0f052ec0309"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_near_water_e.png",
+      "sha256": "8033c8cd67f79772f8d90c97be81565294b3af1a5d46d4aaab638966c6cd59c2"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/layer_ravenholm_sky_e.png",
+      "sha256": "a4ca6a5806bf54b9ec983af1c1e2bd884498e5d9dd346a45d72c2c1ca90b5a2b"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/layer_ravenholm_floor_e.png",
+      "sha256": "b0ad3db0ec698377f8d2e7d34499ab3ef977b09860399e4ae7a4b89b178ef5ae"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261120_e/layer_canals_mid_structure_v2_e.png",
+      "sha256": "e43c4be54cbb2b0c8510a103d9d5603480405c62fc0311d52785d08a5dacc680"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/alien_controller_hl1_hover_h.png",
+      "sha256": "eb19d9cf2fba38f0aeb6ef805beb65fb23407c3db1c9efc8b1e2d657611c56f1"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/houndeye_hl1_idle_v2_h.png",
+      "sha256": "b5f4bb4aa8874aa82a19aaecc832b97873cff1abe1aeff56f3b882c21311a634"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/headcrab_hl1_idle_v2_h.png",
+      "sha256": "db34a5954c67faa4315a3455a1eade13962643e3370d94d7ee07695611e3a64f"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/manhack_hl2_hover_v2_h.png",
+      "sha256": "0a903fd143e03cb8f7af080c9307af31e0db07233558237006e91df1793f5a97"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/costumes/costume_scientist_glasses_hl1_idle_h.png",
+      "sha256": "eff876fb627851322c2e30e83843a16fd920b6dce203b8e264ff38e0ccee87e6"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/costumes/costume_scientist_einstein_hl1_idle_h.png",
+      "sha256": "f5591f2d4feaa44414e6523f4b54b4934cb951b79c058ed1fcc2a22b417bfd2c"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/costumes/costume_scientist_luther_hl1_idle_h.png",
+      "sha256": "109fd3a75b8a2df717b5b52d4dadac677f8ea08ac2ceb222ca165210544e3f03"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/costumes/ivan_hl25_multiplayer_idle_h.png",
+      "sha256": "200850e1810f6b8e920960db5758dafdf351c99fea53a78d67d85a27a784f2ce"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/scientist_slick_hl1_idle_h.png",
+      "sha256": "4ddf7b285927243dc11c7eba43384e28cc36eff619f9ec0c7656b7f4b6565dac"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/costumes/proto_barney_hl25_multiplayer_idle_h.png",
+      "sha256": "c6d59a8b560d35b0a3cf4908273022e53304ee8428f4f2f16ec1a40865e8a8b9"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/machines/osprey_hl1_hover_h.png",
+      "sha256": "9217b6fab3886180dcd33cfa2051f664241297afe768bd6f5e88d30bb8033250"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/machines/bradley_hl1_idle_h.png",
+      "sha256": "8be5ab3223c923de53fed6b1866e2e0204c6119a0271aaae1530b8d8632c7965"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/alien_grunt_hl1_idle_h.png",
+      "sha256": "eac50869b8254787306641d2c43938d867adbf623591c36bf486b9e9a8ca4404"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/bullsquid_hl1_idle_h.png",
+      "sha256": "d29d1aac129490d053153d78a609fbb72e787284ee1bae49d802a1ae57156213"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/shock_trooper_op4_idle_h.png",
+      "sha256": "017bfe3f11317b34e0736c1d0ef7711cba85180bc6981a2022221db64d378778"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/characters/gonome_op4_idle_h.png",
+      "sha256": "8cafc1a13666cae5c399b530c286cc5af2824603097705f77e44295db43fe952"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/bosses/nihilanth_hl1_idle_h.png",
+      "sha256": "eb541ac4b69eff45fbe3f6ba859efc315c5a1481ac88b773762e9a1f2543089c"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/bosses/tentacle_blastpit_hl1_idle_h.png",
+      "sha256": "5ec6a37e5a8f8e8201870610403ce0dcb1717900febf9ae5353ae58ff0d235c8"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/bosses/gonarch_hl1_idle_h.png",
+      "sha256": "520f62c976517cf9514d79fcaff5a25ebd282557610dc62cc5fa88fd7174bca1"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/bosses/gonarch_hl1_idle_h_v2.png",
+      "sha256": "5c546b78eccadf53d995ae9a1e18578bb2201935bb4a79be1e87fa9d9a95c6aa"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/heroes/gordon_hl2_idle_h.png",
+      "sha256": "b953888a750fdc654e395b5ee7b3c7fde2b63c5651fb8e8d86cca435dfa961da"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/heroes/alyx_hl2_idle_h.png",
+      "sha256": "0a2736364f99c616e3a13c35b41e362f87c768b2ad56e8899a2a0683e46b961d"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/heroes/barney_hl2_idle_h.png",
+      "sha256": "7b580e4dd4335355709a55bef28173ffa9c6843c858c1a9d17bc7e3bca0dc11f"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/heroes/shephard_op4_idle_h.png",
+      "sha256": "05cdb05214cba5b3a40db5814f9cc5ed0b1f47f4a21bbd6ca3d30a5139ca0e90"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/heroes/vortigaunt_hl2_idle_h.png",
+      "sha256": "bd35117839975685f0666ec39cdf10c0fb49809926996aa23a28a1850358a3f2"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/heroes/grigori_hl2_idle_h.png",
+      "sha256": "4f8964b977b6a814003c6cecfb8091418152c41f37fbd5427533421ad5090008"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/heroes/breen_hl2_idle_h.png",
+      "sha256": "e15914f8ca91a865549643f812f4e6b23255a36c5791d1b3658afff0d8efd307"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_xen_hl1_master_h.png",
+      "sha256": "ba158e22ee6b79247f16a642b0b52128787d6576c4c96ba1d5339e007efc27b4"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_lambda_hl1_master_h.png",
+      "sha256": "03db906a52aeca31ada7821533e18c5f2a0792648f396b926f0a7f6acfc9ba5e"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_blastpit_hl1_master_h.png",
+      "sha256": "e3c985cbf37fbff967377a4cca62116e3e014cdf4a9487f0fd657d910cebe19a"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_disposal_hl25_master_h.png",
+      "sha256": "628d3ba1021c149bf0264bca0c1a3cfa4abc00a0b735c4bf2347ce924cf1e97e"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_contamination_hl25_master_h.png",
+      "sha256": "891062e6c7aa98bf8e5086f7deb8774f215709467d13cb9f7003ebeeda65c4c5"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_pool_party_hl25_master_h.png",
+      "sha256": "ca5285fb96889dc651908412fa136a4255bfc3491401d3bd2ae524490402674f"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_rocket_frenzy_hl25_master_h.png",
+      "sha256": "3858269c3a00be9b65f97b7442338919b9a5760d023c0200ae998e0f32125b0b"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_ar2_energy_ball_hl2_h.png",
+      "sha256": "67178509681e40f75e0e8b2e80b35a8d1bd0f73595c6f141c29edaf7c78e2bbc"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_hunter_flechette_ep2_h.png",
+      "sha256": "840e3a72b75ef8d025d147a0c6a20025a094a61ccebe2eeb0a81da003d6852e3"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_bullsquid_spit_hl1_h.png",
+      "sha256": "638f99a10f1278683bd5fa705bdd93909c5110edeba455c3b1c0ed54306d3535"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_houndeye_sonic_ring_hl1_h.png",
+      "sha256": "f444405cd2e96e34e0f7f2b3c402439090b7750976df2ee68643e6e1909d2785"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_energy_pellet_portal1_h.png",
+      "sha256": "985bc557be4182f714757fa86668edd2804240aa41099be9433038357720f500"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_hard_light_bridge_portal2_h.png",
+      "sha256": "b3f69d030bb1f76d6e4ff5c663eb120ac7bfa79c1314de61833820a5ac2c4bd7"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_repulsion_gel_portal2_h.png",
+      "sha256": "1886aa48a6a77dae01d4c435a1f1c94a2487ded1d25b6b5ff38ebcaae38360a6"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_hornet_hl1_h.png",
+      "sha256": "118096d6f2a580d9753911f4bb0c1650b6650ae229b9d8630478d6385993cff6"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_propulsion_gel_portal2_h.png",
+      "sha256": "eeac30a80a63301919799121940db26b96746b536d22e008074d8e7a5951b574"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_conversion_gel_portal2_h.png",
+      "sha256": "6c141ae2cd951cf90ab7d380c6d26a96cfd89ce169e6e0799f7f9d235a91ebb3"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_thermal_beam_portal2_h.png",
+      "sha256": "3f8755bf236d668eeef9f84e575b50cc1fac75166e84db97c3e0f43494b99199"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_portal_blue_portal1_h.png",
+      "sha256": "a2dc71bc11f9c1299d5fc3957af4d38a6a13ae967878a944863503ab5783f04a"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_controller_orb_hl1_h.png",
+      "sha256": "6e48e3d12435ebf7a4678c09bd8a5f19e5eb1376b8dde03644a82a60f9fef84c"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_gonarch_mortar_hl1_h.png",
+      "sha256": "36e0bedd4f514cb6e6e14d2dc6e8b51ac960c4e697e55137fa018dec429c83ee"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_vortigaunt_zap_hl1_h.png",
+      "sha256": "47b14ddb62707a3d64ef7c153259c0b52a9a9c45a3562c2b3366a3c8e621c988"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/fx_thermal_beam_portal2_v2_h.png",
+      "sha256": "3cb5269a7625b4a3b81dbe06f3e13083f6f4942b6b07610a298f9038f56cc463"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_rpg_rocket_hl1_h.png",
+      "sha256": "94ec0b83ab0bca394e54033eb0f980403dc4a5a92b4dc2fd69e37298e17cf0c1"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_hand_grenade_hl2_h.png",
+      "sha256": "64e4bac916d867a931b67ac9bc5f48c8aa919260146e4d6c674428d9d3b6e032"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_crossbow_bolt_hl2_h.png",
+      "sha256": "287776bf4442e1b6e41cb63fa041d09a737ef7378679be119dc79d217fad1aa5"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_helicopter_bomb_hl2_h.png",
+      "sha256": "9c823b8334730ff837b8358b2f27515134d64efba205892f54cae80a244c255c"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_hand_grenade_hl1_h.png",
+      "sha256": "0becb4df074013b0cdef8325ef72a654800cab677af924cdf5163b8f1d209e6d"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_crossbow_bolt_hl1_h.png",
+      "sha256": "ab445bfac9c8b3112209b0991ee4f677487c192c43549a9ff2f8f91bb94c7786"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_snark_hl1_h.png",
+      "sha256": "400b220625f2693c927ce54a21b621d3460879ce29867aa4186c8aa67777c20a"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/stage_hldm_rocket_frenzy_master_f.png",
+      "sha256": "38450610b6e0747260c39147a75e26635c2aef5d65d34b77e868c001b8cc449b"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/stage_hldm_pool_party_master_f.png",
+      "sha256": "36768d2b1c9b9a45abfe4140f708f49169a647c44087b9f02a23f8965af8f6a2"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/layer_canals_foreground_f.png",
+      "sha256": "7ff48ddd34392443b6bb5f87034f88cc7c153942fa1472c0b669d635b2def583"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/layer_ravenholm_far_f.png",
+      "sha256": "17f38239af7b52faecab3142fe7d53d7c6816add65c4669db9f6d593f06ca7b1"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/layer_ravenholm_mid_f.png",
+      "sha256": "36042bb373e5f17aba295bc82df39fc168a9b15b0e8764559af89180a3f04389"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/layer_ravenholm_near_f.png",
+      "sha256": "2ade5f3faf104c99ed5c1da8a9cfbe0865a2a50ff5112d2e94c3e3607afffd4b"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/layer_ravenholm_foreground_f.png",
+      "sha256": "10e62178a1d15df0fe12967a8cf331e8b8337a78af59b7913ed57d18c5cdbd76"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/bullsquid_hl1_idle_left_f.png",
+      "sha256": "ae68624d0d57cef2b3bbaefad28df6f411c3ce340324b73fc889eb5808964f53"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/houndeye_hl1_idle_left_f.png",
+      "sha256": "3728b95c7703a9ea9b47e3d719f2d2af406c231d049dfe27dd5f574a9da67f1c"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/costume_hecu_gasmask_hl1_guard_left_f.png",
+      "sha256": "c746453dd340715c2112290c98e26a806cb1d7b39544025065b8eb0844b3a061"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/costume_nova_guard_hl2_guard_left_f.png",
+      "sha256": "d47198a3e2c6f3dcf0d5254efc2ff5f570a0bbda5981a63b77d31ef9ef89f98f"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/costume_shotgun_soldier_ep2_guard_left_f.png",
+      "sha256": "33a2c1a831775da895252cd275b042b386cf8b98559ce0a8a3c24f9d72bb3b90"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/antlion_guard_hl2_idle_left_f.png",
+      "sha256": "e3cc5168676138c00cd12be0ede7faf293a135e8da2831a25e740943d6d60368"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/apc_hl2_idle_left_f.png",
+      "sha256": "c4bc021cd0e480f5c1c165febb9b992cace8e66d3dfce2981e8336699ce08775"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/hunter_chopper_hl2_hover_left_f.png",
+      "sha256": "70110700325881014987914050efa779eea05adb6f3e0e91365d561badcc24aa"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/gunship_hl2_hover_left_f.png",
+      "sha256": "b617c1b1127a7f959e053ad4cc24237cce55e563e8d047b499e55672c8b32573"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/dropship_container_hl2_hover_right_f.png",
+      "sha256": "ecd9f4aa3c81e0f15c7c8b188111933c111c7ee9a67bb5a8e95ae050f4a17781"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/stage_xen_hl1_master_f.png",
+      "sha256": "cf337db6ed9c0a5f1ef97127a96dad28204d0a646ad3f022500c84884a3400f3"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/stage_blastpit_hl1_master_f.png",
+      "sha256": "1de96dc54e873e01e8a3766f3ccf0265855f80d8b58b8d46529585883ed75009"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/stage_nova_courtyard_hl2_master_f.png",
+      "sha256": "da4962ad39609db1e9b8b1152aa4e4bf33b84c74ed482a42176c9cafd1a0cb15"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/stage_old_aperture_portal2_master_f.png",
+      "sha256": "f585aa42bfbf865cf9ccd89ea277a77ebe91b2e62bd07f1054007631ed7bef11"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/stage_lostcoast_monastery_master_f.png",
+      "sha256": "b03c046b612ebe24e8ef85a3ea6d16c334b902df13ef076c215935874a7f8d1a"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/shephard_op4_guard_f.png",
+      "sha256": "5618e0141d418676f3c0dcc1a4eba99586bffe6898ba08506f7465759a874a71"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/gina_decay_guard_f.png",
+      "sha256": "03f3f72779f5b7bd20d4d71d83be578ff4e53e79cc8fd260d51f0a7c82295999"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/grigori_hl2_guard_f.png",
+      "sha256": "ae332c9df071104a4f14db00548ade093b3d871957d06518bab29417a0d28e56"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/shock_trooper_op4_guard_f.png",
+      "sha256": "7fc895ad4c5e5ef87cb4c7ea85d726a0cb1047f7bed836bdecb0475a854ff6b9"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/pit_drone_op4_guard_f.png",
+      "sha256": "817211be3d2f2d5d5bc739d794ea907dbbabf4d3c666752bf8b6aa5d74d63cd3"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/projectile_ar2_ball_f.png",
+      "sha256": "0555b394f0a58a5f7c5a03302ed2f0b3e5241f7b9deee8d9316de2bccb47b957"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/projectile_hunter_flechette_f.png",
+      "sha256": "a04ffef889196ecd74cf5b8878c24f7070786ac4ee43110c3bec8dd93d4b775b"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/projectile_crossbow_bolt_hl2_f.png",
+      "sha256": "a13eb0444f6c86de3ac174add957828e8567533ecf8d2d77868063ba4f7fa3fa"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_f/projectile_smg1_grenade_hl2_f.png",
+      "sha256": "81dd26fc604f9d988305243300f5a0744956fff972c7085498c50901963f86f7"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/heroes/eli_hl2_idle_h.png",
+      "sha256": "ec759eeb3a692a399e8098efd62a4ae17b52698430e23afd5b91f85ef6bc3061"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_spore_opfor_h.png",
+      "sha256": "8b9ca53568e5ca2bc0fa0396e6d0a593bac1d92f217aa19e34fd285613312d64"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/projectiles/proj_pit_drone_spine_opfor_h.png",
+      "sha256": "cc65b1a1aae6cde4635bcce978ade78600265078345ce97c6c402f3be9916d4c"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_double_cross_hl25_master_h.png",
+      "sha256": "03d5db925c2274054441ab52bd1a6c40f745490d7424d8492b9e9a306936b9f0"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_rust_mill_hl25_master_h.png",
+      "sha256": "bde15893f5feada03607031b697c332e04f00ca118f7b09781d86a01d9edc5c6"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_h/stages/stage_xen_dm_hl25_master_h.png",
+      "sha256": "9cd86477b555d917ea901edfb2d2de384ea043b61920a1422b83a138b7ac702c"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_i/machines/rollermine_hl2_active_i.png",
+      "sha256": "bcd0ad5c9c7873dedb7a9d4b6962a8be587d5724277fd55f1a0e92870a0a3a56"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_i/machines/city_scanner_hl2_idle_i.png",
+      "sha256": "594856e236122e7de6f4a3308d0c2d5b40a23034e99dcfe712bfd9b3e9aede15"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_i/bosses/pit_worm_op4_idle_i.png",
+      "sha256": "7e7175af5c8d4759d05c7d9bd003dfe41c14e06ba9a8b4717a23df5c9a92e566"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_i/bosses/gene_worm_op4_idle_i.png",
+      "sha256": "b87efec804dbf66c2facd42c0344be723a6fd6130d2e5f2edfb67d7f1e9b5b0d"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_i/costumes/costume_gman_hl1_idle_i.png",
+      "sha256": "1febc0a2328ec19f7f148e656618660d305d6009d6178e413d2e2f45a83fd72f"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_i/characters/civil_protection_hl2_guard_i.png",
+      "sha256": "4f28415ecd6beecfc38fd307314b9cd636184d9bb12600d5d380edcda78543b4"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_i/supplement/combine_grunt_hla_idle_i.png",
+      "sha256": "06a05b21f94bcaa20e0b668be8cf39d75a8028efc9c2a8cd526ce68f7bfa36ee"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_i/supplement/combine_charger_hla_idle_i.png",
+      "sha256": "801d80fa373c6875694d6f05e67fcbfc1e7be7ac7b9be6b70aecef7c7e4f71fb"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_i/supplement/combine_suppressor_hla_idle_i.png",
+      "sha256": "28cc9f165aac79c850760f52d22ca342f589c55a78941aa47a5fd0e576fa383f"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_i/stages/stage_tram_hl1_master_i.png",
+      "sha256": "8b72d5cd487eb66e3699adc451c171500f82c374f16df43b1587b3c907552ed7"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_i/stages/stage_black_mesa_east_hl2_master_i.png",
+      "sha256": "9755a4ecb4edf5cab917aae9863d0bc7d07bcaa8b6f6356fe95ba67c174f9117"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_i/stages/stage_relaxation_vault_portal1_master_i.png",
+      "sha256": "1e81472e83aa40b29ca3501bac4d61e6d3ddaefe2b708f4a30d04ee4dd0a47f6"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_i/effects/fx_gauss_primary_hl1_i.png",
+      "sha256": "7beed7e39242fd7079a3655dc32953fcb07861e70386026a62730f28b414cc77"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_i/effects/fx_portal_orange_active_rim_portal1_i.png",
+      "sha256": "eb8c9910a8e85fbd0b6e0404a7248b4d7b9a83125abf37b22bb02d5d61fe45a8"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/characters/gordon_hl1_idle_j.png",
+      "sha256": "cb39fd438cc79be64e4123fba56a6221a6f9f1f48c172632aa0975f486818bf9"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/characters/hecu_hl1_idle_j.png",
+      "sha256": "cee747693c795da80a921091d41c63513d14c9d88bb89d67b0a68685a9a5fa07"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/characters/black_ops_hl1_idle_j.png",
+      "sha256": "70d65822b83aa715b6fabe75452e16c988a5a20e304b15fb34f58a82ee82570f"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/characters/hecu_medic_op4_idle_j.png",
+      "sha256": "b22a7926795854c5e713438071198147c5297c1946382f48bf020d5b63841f52"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/characters/hecu_engineer_op4_idle_j.png",
+      "sha256": "071a8f54cf8ba5439c2f672b6b832da6a4ddc0121f589071dcc11d497da1a5f9"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/characters/otis_op4_idle_j.png",
+      "sha256": "bbe84ff2838d1c246b2f21fc88cf11fb52d75d6582505990f8067597e172c163"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/characters/barney_blueshift_idle_j.png",
+      "sha256": "ae1e6bc8853fe76d6001e67fc8cf590b0e7cd1b0d76922dbc8ea43f45c2d9f4c"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/characters/rosenberg_blueshift_idle_j.png",
+      "sha256": "1006bbad156e2e4e59f1aeb5569e394ac0f851512f4f8092bc2e95a5b40f73a3"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/characters/uriah_ep2_idle_j.png",
+      "sha256": "7ab527da2361baa235179721a13f5d1082f160b3d188571e7f32b7ce15814095"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/characters/griggs_ep2_idle_j.png",
+      "sha256": "d7767757978d943f4b7f72fb575177496e254e64034e7d808b3132024653d284"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/characters/sheckley_ep2_idle_j.png",
+      "sha256": "de97858427a8499322977944502a62d6667ee226327b0c18206936b17c846162"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/characters/costume_eli_hla_idle_j.png",
+      "sha256": "dd1c43e104cd30d4ab621fea3ee101fe497bfd94741635cf751a18b2116c6b11"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/characters/uriah_ep2_idle_framed_j.png",
+      "sha256": "b00633f1e6684d872dc68a1daf83b4a3bced8713dc8c20ce4d835aa552d9935a"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/stages/stage_surface_dam_hl1_master_j.png",
+      "sha256": "74de7e44aeee4551efc6ed50be5385050b354a6878c6cc1388e01dd01d0f7dd8"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/stages/stage_surface_dam_hl1_master_j_v2.png",
+      "sha256": "43e2cfef12b1c12a42cb15bfdd32bbf34ba98dee906013f5fb1e0632980a41ff"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/stages/stage_citadel_hl2_master_j.png",
+      "sha256": "c053599b3e3ab3e70bc826006e8bb07e5636737b45996d40e9752e48753ebac6"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/stages/stage_freight_blueshift_master_j.png",
+      "sha256": "91911d9411afb1556157fce63d2bbe2243708e532735c313bf11e283dd2b6cd5"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/stages/stage_rosenberg_blueshift_master_j.png",
+      "sha256": "a42149f1d19837d65cfea698523ebcbcfd2795c014de0b33bad42d8ebe4c738c"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/stages/stage_core_ep1_master_j.png",
+      "sha256": "65ecf106eafad02029f3d173f552eb73dc30d39ffed8fae03dad1c6e6c09126c"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/stages/stage_antlion_gallery_ep2_master_j.png",
+      "sha256": "f9e3888172acd6164040bc919480fc36377f4a214b1c50496582a952e0f22043"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/stages/stage_balcony_hla_master_j.png",
+      "sha256": "7e43b8c729edd79cfc968d54da1f1364f8bf626608360c094aa8f2ee00a23c64"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/stages/stage_northern_star_hla_master_j.png",
+      "sha256": "279acb0ef877758ad7342f928e398dac31f81a0a79c9ec3722f85e157e814f9c"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/stages/stage_test17_portal1_master_j.png",
+      "sha256": "011681ef1554cf7ae9e4814f5878c2edfd0dc4b71db928047620eac8aba267de"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/stages/stage_relaxation_portal2_master_j.png",
+      "sha256": "5c7d6660332b39da073ba96292829e29af34c27489d7e8605ab8d4d78968c9cb"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/machines/baby_voltigore_op4_idle_j.png",
+      "sha256": "f8ad82a61e36c09ff5114e12c3d24ff37d35d809a94858ba3f6da82f157e8b24"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/machines/ichthyosaur_hl1_idle_j.png",
+      "sha256": "78840bb9dbbffda05fe0d39da61efdcfc6b253bcd22dcb9806e6bcdafb4b40a0"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/machines/stalker_hl2_idle_j.png",
+      "sha256": "33a2f12d32bf31844b4d84506c06ec0f174098558aa6774324b6ea4769c4fd9c"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/machines/guardian_tunnels_ep2_idle_j.png",
+      "sha256": "6eed1088dee7ed78a380ae5dcbbad25060986ba7d8e839260211e841b3b477af"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/machines/jeff_hla_idle_j.png",
+      "sha256": "b81b34786bd42f679f75c1d1ef930db6670c3bed73122b8ee5ec354216b52f33"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/machines/voltigore_op4_idle_j.png",
+      "sha256": "f98e646906b94225f65909e43ddc999c70ba45573d1c938b7459479c5f04bfcd"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/machines/barnacle_hl1_idle_j.png",
+      "sha256": "a6ff6b55eacf5cb6cd8e47162005edfc5350a9edda487a77571ca6a8eb2102bc"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/machines/shield_scanner_hl2_idle_j.png",
+      "sha256": "4638e896612093d37ee9936605e8b2e82703bad02fa606ecd618dc1528c4c6a8"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/machines/frankenturret_portal2_idle_j.png",
+      "sha256": "6b08b6eb988b660cfe199ff91be92af3ff8e2612944ace70efc849383cdcd7c3"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/recovered/stage_questionable_ethics_hl1_master_h_recovered.png",
+      "sha256": "737e8141218ae7b20c171b1f0f03b475232f1192d4ae229f78cfce413af3302e"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/effects/proj_magnusson_device_ep2_held_resumed_j.png",
+      "sha256": "a0904c9fb037b86760a1fa69fd6d23dd5f5ebbf4a1385dde89db6d160c6e360a"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/effects/proj_bugbait_hl2_body_resumed_j.png",
+      "sha256": "5b343e1a12b2b1c5f2ea56c75bf8120e9eb9f090f7eec7802a26356c84779347"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/effects/proj_aperture_bomb_portal2_body_resumed_j.png",
+      "sha256": "949079c729a00e3010ab1a92276741b4031d77869a386a5d039234d7e4e3fe08"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/effects/proj_headcrab_canister_hl2_opening_resumed_j.png",
+      "sha256": "a9c37ad56378f4dbb297f0b486093ad097df92a5cd7ec3044df99a2f5439b506"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/effects/device_tripmine_hl1_body_resumed_j.png",
+      "sha256": "268d49325f3d18050147ec480edb63bc65086f15c7314225b19e057003f82b98"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/effects/fx_tripmine_laser_hl1_beam_resumed_j.png",
+      "sha256": "acbcc332876a46a5e9cde21c4427b2b3aaafe3e87ae87d286256d81d1ff32fae"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/effects/fx_excursion_funnel_portal2_normal_resumed_j.png",
+      "sha256": "24cb32c42c34b95afadb9340769b93bf448a526d5a80f2e3656ffd2b39e55892"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/effects/fx_excursion_funnel_portal2_reverse_resumed_j.png",
+      "sha256": "e9b6198007f7f831c215c6d3886b8471f393d58851e04fdc2feb1af633df0151"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/effects/fx_gluon_beam_hl1_beam_resumed_j.png",
+      "sha256": "668ce596953fa578230ddfd6890f999f3fc57e0d0e41d187e08d6c4809782e7b"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261124_j/effects/proj_shock_bolt_opfor_body_resumed_j.png",
+      "sha256": "0e96473d15b2e730da0bb20035aa27346251c4c7cedbb3977dbcb133681ee76a"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/machines/adventure_core_portal2_idle_k.png",
+      "sha256": "db21ebffaa6f70c1d1dfa23968ea367d15bc8fbfc8ba43f13aeb7a6d91cc5dfe"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/characters/alyx_hla_idle_k.png",
+      "sha256": "00be33a4a6ee8fca5258bcd302b1e894d4a92d06d83921f59f07c8b08bc96055"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/machines/appliance_turret_deskjob_idle_k.png",
+      "sha256": "b4a16e3e2b10d79ade5f12b6c1968d25bf87972b595858481b92163bc55c828a"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/archives/archive_alien_assassin_hl2_2002_idle_k.png",
+      "sha256": "cf29ce4fc77b4082ebed3e19d2f8775d6fb2fda4961a3a35bd874526c98bc044"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/archive_stages/archive_borealis_hl2_e3_2002_master_k.png",
+      "sha256": "2b8ddf34d26f5df2bffe28a2c95e0de64ac3c44d49b8a879d2a74357e4412942"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/archives/archive_cremator_hl2_2002_idle_k.png",
+      "sha256": "03d658bff69170cc5ff8597a35b6f00d11556255104780ee9123eee5299ba32c"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/archives/archive_kingpin_hl1_idle_k.png",
+      "sha256": "1de0ed45b2492f5d3380af314af4fe2c7fd11d8ece4a79ad081311cb88095fc2"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/archives/archive_mr_friendly_hl1_idle_k.png",
+      "sha256": "f7a58904eadc5a9837a930f26355bf46f0f973553be524324085a811c6316738"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/archives/archive_odell_hl2_idle_k.png",
+      "sha256": "3560505305e74d6c95f35e6aa70f8a41935c0e4de273aaf772644f62a15417c7"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/characters/bendy_peti_idle_k.png",
+      "sha256": "220da162a13e81fb8e722b8cec5c292fc49d6e7492e253afd9583d5b321e0904"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/characters/black_ops_male_op4_idle_k.png",
+      "sha256": "325c9c7916cebb439ecfe699ced9d26f9935b1b9d204056673522fd2f9998a44"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/characters/combine_ordinal_hla_idle_k.png",
+      "sha256": "ccf50e7b2dd112b3afaf82de40202e7d1f7ca47fc574f178c179652c54e764e3"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/costumes/costume_barney_cp_helmet_idle_k.png",
+      "sha256": "0e81f2690a5641211f5e7d796b2ff510430abf8abaff09f1c65ef556fb1e5681"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/costumes/costume_colette_headtohead_ps2_idle_k.png",
+      "sha256": "2c1373bf27affceef7bf8c7ac2087d4389d14bc180ad00ab0892f140a489f9c9"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/costumes/costume_gman_hla_idle_k.png",
+      "sha256": "c6ab95a821f3a9c7341f3d9fe1b29c4c0e55193e73c8fc1efa5248295f7b9617"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/costumes/costume_mossman_arctic_idle_k.png",
+      "sha256": "6c4fc8f1c1fb97427d77ef4bd9002878ffbe7b516b101f669d5eb2d2a60d904c"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/machines/defective_turret_portal2_idle_k.png",
+      "sha256": "c122ae8d61d3b7a92928c74bfe29bc66756186a69c370864467844bdbabd1af3"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/characters/doug_rattmann_labrat_idle_k.png",
+      "sha256": "19b4b92fe6845adbd98aa8ade94ea84d6fd264cc1ceaff762e0a8391f7097a0c"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/characters/fast_zombie_hl2_idle_k.png",
+      "sha256": "b9925f499324a3fba559425a4a1fa36fb2301cb175c3b38c68d7ca686a1eb891"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_ar2_tracer_hl2_trace_k.png",
+      "sha256": "1e65eb279216e1d90b7619ba55bce607b56908b9ee81aa6a4f7e6be2c39a2cdd"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_deskjob_turret_tracer_muzzle_k.png",
+      "sha256": "5362533a9d61f99a9545b6322b43680a54f76a1c87634fefaee0c6a5891f01a2"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_gargantua_flame_hl1_flame_sustain_k.png",
+      "sha256": "fdd63db096d5ce6f317ac735c181b0f3a301dd246a691c3120b58416ac98a634"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_gargantua_stomp_hl1_ground_wave_particle_k.png",
+      "sha256": "d27136b91c914616a75ecd56d2032189941ac7abccd8bbc19d05e26f3a022be6"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_gunship_tracer_hl2_trace_k.png",
+      "sha256": "9b3c0c389719df8bc6955b21b3f7fb429ae1a9a425bce20df0cc127e9a8e4e13"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_pit_worm_beam_opfor_beam_k.png",
+      "sha256": "4bdf9f2f5ba26b3f11e7d04ca392893b80d4b6a2d7131bdbb493a0c5294c5206"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_portals_coop_portal2_atlas_blue_k.png",
+      "sha256": "dabf7c65c3dad09f366ed3e6be9b1f35ec968311739511c18eca4088505e79a6"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_portals_coop_portal2_atlas_purple_k.png",
+      "sha256": "9bd53691acd012cf351263bf857a47b2d4a99c8c232e5bda8942dfa9f0cc06c0"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_portals_coop_portal2_pbody_red_k.png",
+      "sha256": "19f6e4f7bc91b54554669fbb83c29149b1b34c1cae469cd7f988ac9ba7c23bfa"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_portals_coop_portal2_pbody_yellow_k.png",
+      "sha256": "33d7d9d23ee8d74de3df57d4f168ce4bebc0443ac104322eb4606915b80ab3dd"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_portals_solo_portal2_blue_k.png",
+      "sha256": "5a96fea2614fc1b1b5b1f6fdde450791c20f2736ff36bbc4efc2bc6040ff1d9a"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_portals_solo_portal2_orange_k.png",
+      "sha256": "02bd9c09e56cdde79ca023993cb4bbd60cf9950de3af734196dc9675ccc26719"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/fx_strider_tracer_hl2_trace_k.png",
+      "sha256": "e3ebc4c6e2c5748ed5c3f19dea5bca288a99131f369922bd77ff3fa42d884abd"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/characters/gary_hla_idle_k.png",
+      "sha256": "f150873fb997f972d35c99094acc0aa139804c3550e5d44b571a87f4c6502bf1"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/machines/glados_portal1_idle_k.png",
+      "sha256": "c7c859a84d610e07bdb4aaf46ddffece89b1d1c5d7bfd08d50f1cc06bd9b05fa"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/machines/guardian_surface_ep2_idle_k.png",
+      "sha256": "e3632e2cc52a269b02ecf146927f589fd5fb7b3c9ddc833af20cdc9706f8753d"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/machines/hunter_chopper_ep2_idle_k.png",
+      "sha256": "f3d89e6cbf2ecf95b4856abb3277b2da2d674f0760cc5c908ac176ef0eeb7035"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/archives/hydra_hl2_cut_idle_k.png",
+      "sha256": "c9857225d9a75a470f4c826b2fec65f2876d20496de63a29dfae1829af4c08fc"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/characters/kleiner_hl2_idle_k.png",
+      "sha256": "2c849ac1b4c86d2d5992b0ecca699f88563ead3a454a92a8ba75441ed090c957"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/characters/lamarr_hl2_idle_k.png",
+      "sha256": "17859e82c633749ca1607c747b248cf87c66a5c156151dff80b8d1d0368285f3"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/characters/larry_hla_idle_k.png",
+      "sha256": "83ad8cb98a2a31f63196366fe65a58996b3151a6ef4ab8a4fb0e00bae2f3654d"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/characters/magnusson_ep2_idle_k.png",
+      "sha256": "57085e727d1cfc4a936dd6c897bb04f2ce9cb9f0502822f9ca1bdb0dd64c7881"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/characters/mossman_hl2_idle_k.png",
+      "sha256": "04844c8a343bfc92d5acc26d8da7f58a7f7dd7979af571afcf8f486a78e50e91"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/characters/odessa_hl2_idle_k.png",
+      "sha256": "2e38d5e4438b1e9b8c56cc0791f346072a5e5c9154c7f724d74475c111fa6a54"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/characters/poison_zombie_hl2_idle_k.png",
+      "sha256": "39c38f8a573539f03ed92f69b69fb30f4659001173ce77e4ec1a7a53b84dc022"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/proj_combine_grenade_hla_body_k.png",
+      "sha256": "5a351d837099dac03a1465fb7bbcba33edeeb9797aced1256876770c8c38afc4"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/proj_nihilanth_energy_hl1_body_k.png",
+      "sha256": "4a4f164d9f775756ecaee610f63cd9e218c99548522eb94102b36a121cbc5250"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/proj_nihilanth_teleport_hl1_body_k.png",
+      "sha256": "52881350821bf40f27194fffe0524a411f33502dd724e9a4885095a9f9274552"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/proj_rocket_turret_missile_portal1_body_k.png",
+      "sha256": "fc644315cc94a55747b2186482f64b8fdd7c31307b784c8d5b8f986f794e82b9"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/proj_voltigore_orb_opfor_charge_k.png",
+      "sha256": "f4cf77ba0b4132932cbbc6ea4cb4846927a8d8749bd373a5e742b7a223821cd5"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/effects/proj_xen_grenade_hla_body_k.png",
+      "sha256": "52b944cced192c633a49610806b98b028d6c81ec9dc1420dfedf237b6972fb90"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/machines/reviver_hla_idle_k.png",
+      "sha256": "09fa3b16e070afc52b3b24c59c2e9f35bf569166e4abb54ad31ce33ed9bf5b49"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/characters/richard_keller_decay_idle_k.png",
+      "sha256": "67b5554684a0f6578b950fa906107cf54b92eb4412ac68bd81d12615bff9d23c"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/characters/russell_hla_idle_k.png",
+      "sha256": "65f2d42454fb59c132acef7b8c3a154c50624661968a0d1ec27b88ccf59b9744"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/machines/sentry_turret_portal2_idle_k.png",
+      "sha256": "077e9de49506c06ed5dd107a29c59d3b9fc4d6879d862c0eab097084708b3804"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/characters/shock_roach_op4_idle_k.png",
+      "sha256": "184a8a5358c18267ddf6321751eb528efe6c996f8db8bbca0714fe52fe4720c6"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/characters/simmons_blueshift_idle_k.png",
+      "sha256": "0b630a860248762a1b3c8a16348b0e1645ddf3fff6bfb590d3d710b70d80d806"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/costumes/skeleton_hl25_multiplayer_idle_k.png",
+      "sha256": "58bdf09010fcfd91c4784758597dd9879e7b3efa5c9eabe378b35ab23622a7cb"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/characters/snark_hl1_idle_k.png",
+      "sha256": "bf55b2471560a1e9ca90a4650795953be3b2aae6266ab984015108e09ea486ae"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/stages/stage_bs_xen_focal_point_master_k.png",
+      "sha256": "c0c187562eb806b292952bb257bda521cb4ec3bd6d8a0d04c67b0423e8d43976"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/stages/stage_decay_dormitories_ps2_master_k.png",
+      "sha256": "9b16ed471ab434b7ba05bc48f0be09142bb3ae9b85365a594374c23b65aea1ae"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/stages/stage_decay_gamma_ps2_master_k.png",
+      "sha256": "3acee4fc892681864b735a05f6211aba6478ad0160e62abc3ed3165e8097f374"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/stages/stage_deskjob_cave_office_master_k.png",
+      "sha256": "e478d42a7df0f3f74b8a561fb76b950dbc8dd9630a3fe9f1481d1e9515694b5b"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/stages/stage_deskjob_factory_master_k.png",
+      "sha256": "e95d35a819eeeee66ce656331fdfc36618de6e65edcaa7251295ef0a734b0e61"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/stages/stage_ep1_evac_platform_master_k.png",
+      "sha256": "b8ca0195ca63a45ef0a2edd14d876bb2fa16f493f2dffff21e687e0a65fbdcf1"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/stages/stage_hla_distillery_master_k.png",
+      "sha256": "34c0ebfb6c483cf887c5fcedea31f7dc0af06dd4961123aeb6dac11a4df149fe"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/stages/stage_hla_quarantine_street_master_k.png",
+      "sha256": "44fb2c00f19a756b416bf9bc583cc97e346a7a5a75ac5d5ebbd12cbaa0a7c905"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/stages/stage_hla_vault_apartment_master_k.png",
+      "sha256": "f36f4c58831c3d90799af52fec56a723dc9bac29b2c2977fe9300a1c14f8e79b"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/stages/stage_hla_zoo_captivity_master_k.png",
+      "sha256": "d843b305318b805a4409cd1cd5fd049be3b2e91ccb248a37117c79cfda850c7b"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/stages/stage_op4_cargo_master_k.png",
+      "sha256": "432b10e0231caed31b32c8b641d1df7f82f8950cd4857fc4a75da9e518ebd5d2"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/stages/stage_op4_gene_worm_chamber_master_k.png",
+      "sha256": "20ab28e3a94c978cafd7ba654c025d3a4ee22485b69438cbef3bc97596eaf8bb"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/stages/stage_portal1_maintenance_master_k.png",
+      "sha256": "f31ea2cdd8805bdde1ca37dba22e9ba0a3e1d53055e541eaadf671af0b7d1524"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/stages/stage_portal2_coop_hub_master_k.png",
+      "sha256": "dc1361222208be07360c75d94ffb5d0436a27b33548687f32d9b0c4381239b18"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/stages/stage_portal2_human_vault_master_k.png",
+      "sha256": "719ac4b05bab3ca195ebb89fee99da58bad8a10e1fbf176a733c37d33bbb6b41"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/stages/stage_portal2_peer_review_chamber4_master_k.png",
+      "sha256": "f5a283654724edf3cb2375473a5dc013ab0a76a40b1c141eeb9d354126201b37"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/stages/stage_uplink_communications_master_k.png",
+      "sha256": "f9150ca4b26c3378c0b84347583d76a4e8ae36a5490b7704b6dc9d75ca661f4a"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/machines/strider_hl2_idle_k.png",
+      "sha256": "3d477220bd2dbfb96cf307e13ae615cd8e2f432b007525df64239a8ffd3ba170"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/machines/strider_hla_idle_k.png",
+      "sha256": "2dc5116bed7fe63b4acc64640c51d15df39c5ba8095d852393ad94126201b52d"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/costumes/too_much_coffee_man_hl25_multiplayer_idle_k.png",
+      "sha256": "fce7476e4ab1dbcebf189af81e9cf93cf01b3c3c57c6edfb22445e13e9dc6ce4"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/characters/walter_bennet_blueshift_idle_k.png",
+      "sha256": "ddb072606ef7e5a8df3969845b60c3d3ce2410a9bf6a767f44f86b6053eb8d76"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_k/characters/zombie_hl2_idle_k.png",
+      "sha256": "6c30e2bf2c5275faeaafedddcf4d730795eb093db332e13f7639da350a4da09c"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_l/archives/archive_air_exchange_hl2_concept_rtb2004_master_l.png",
+      "sha256": "1e50bd7c4fe8c86c8877a119a4e2b63361abb310afca24bfea2220deeddf0905"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_l/archives/archive_arctic_ep3_concept05_master_l.png",
+      "sha256": "35569d7003047fb9a83df9e632b4ed367fda650e2e57fd95d51d50129667aa4c"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_l/archives/archive_blob_ep3_envelope_pose_l.png",
+      "sha256": "ff9a0c4196b43cd69ea6edfa3a2a6ecee5ce41bdd93fde42f4bc4a9b84b9bd2c"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_l/archives/archive_icegun_ep3_ice_mass_l.png",
+      "sha256": "d5d66f5bf085f98592668f6403f045ce66e485de26904ed5b36f804d5f46611a"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_l/goldsrc/fx_bullsquid_spit_impact_hl1_impact_decal_spit1_l.png",
+      "sha256": "62c03db84cefacf585f4e2b24ed02b927700b72f4637dec9fdef224b670067c4"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_l/source_fx/fx_pistol_fire_hl2_muzzle_l.png",
+      "sha256": "59ccd995b78661f20acc31c3ed11bc3bd7f64a4ec10f41ef031d0b1b68c2d558"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_l/source_fx/fx_reviver_discharge_hla_discharge_l.png",
+      "sha256": "ee5abd9f4b6a2c7788f099e523588cc50a1db2c46369a63382203119687328d5"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_l/layers/layer_portal2_turret_factory_assembly_line_l.png",
+      "sha256": "9279138d03894cbd9b4943e69a00fdf7d1cba766d2869bc28331316c437283a2"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_l/layers/layer_portal2_turret_factory_atmosphere_l.png",
+      "sha256": "1021d00028365ee333e9bc878e9a8927e94c24e81258ed1e5f4a58b0045a9c47"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_l/layers/layer_portal2_turret_factory_distant_trusses_l.png",
+      "sha256": "7d5b685854cbbfab8678dc965d02858c5609351c6928390b3937c1ec7e5b2c44"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_l/layers/layer_portal2_turret_factory_foreground_edge_l.png",
+      "sha256": "385254e4046cca85a3fbc37a30a8390d3ed988833a5bd3ca921e8d195f011243"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_l/layers/layer_portal2_turret_factory_industrial_walls_l.png",
+      "sha256": "ab3050b1afbfe4a87e9a9494ee64f130fcda465dceb4fa11740abf2aad841d20"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_l/goldsrc/proj_displacer_orb_opfor_body_resource_study_l.png",
+      "sha256": "19406f0fbd0993afe926007b19ce109e1c30d693c084a06f3f48b4f7757a6e09"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_l/goldsrc/proj_gene_worm_spit_opfor_cloud_resource_study_l.png",
+      "sha256": "7c53573ddbdd9ac25425873f3f0a92ceb255c7df12ccf260221b8b25103bfe16"
+    },
+    {
+      "repository_path": "assets/resonance/candidates/continuation_20261125_l/goldsrc/proj_mp5_grenade_hl1_body_l.png",
+      "sha256": "f2bb7ab092efbdbb2dd4543b606491695a429f374533b3c607ab5deb42493941"
+    }
+  ]
+}

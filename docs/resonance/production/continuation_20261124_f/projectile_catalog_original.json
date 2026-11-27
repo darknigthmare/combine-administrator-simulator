@@ -1,0 +1,2288 @@
+{
+  "schema_version": "1.0",
+  "module": "Half Life Resonance",
+  "created_on": "2026-11-24",
+  "status": "catalogue_documentaire_a_produire",
+  "scope": {
+    "description": "Premier inventaire explicite des projectiles, dispositifs lancés et effets de tir. Ces 45 groupes viennent compléter les 187 cibles historiques; ils ne sont pas 45 armes nouvelles ni 45 images livrées.",
+    "coverage": "HL1 GoldSrc, HL2/Episodes, Opposing Force, Alyx, Portal, Portal 2 solo/coop, Aperture Desk Job.",
+    "exhaustivity": "Périmètre des 45 identités ci-dessous. Les variantes de modèles, tous les VFX environnementaux et les autres attaques de monstres ne sont pas déclarés exhaustifs.",
+    "not_recounted": "Les grenades partagées avec Blue Shift/Decay et les états de vol/impact ne sont pas créés comme nouvelles identités sans preuve d’une variante distincte."
+  },
+  "count_semantics": {
+    "target": "Une identité ou famille d’effet avec variantes explicitement nommées; les fichiers, animations et états se comptent dans le registre de production.",
+    "projectile_category": "Groupe de production comprenant aussi rayons, traces et effets de portails; projectile_class précise leur nature.",
+    "evidence": "Un fichier SDK identifie une entité et des ressources; une page produit ne suffit pas à valider une forme. Les niveaux de preuve restent distincts.",
+    "delivery": "Aucun compteur de livraison statique dans ce catalogue; exécuter sync-resonance-production.mjs sur le registre et les PNG réellement présents."
+  },
+  "projectile_classes": {
+    "moving_projectile": {
+      "label_fr": "Projectile mobile",
+      "requires_travel_sprite": true,
+      "rule": "Objet ou volume suivi pendant son déplacement; sa trajectoire et ses collisions restent propres au jeu source."
+    },
+    "thrown_device": {
+      "label_fr": "Objet lancé ou largué",
+      "requires_travel_sprite": true,
+      "rule": "Dispositif physique avec états de vol, contact et éventuelle activation; ne pas le compter comme une balle."
+    },
+    "placed_device": {
+      "label_fr": "Dispositif posé",
+      "requires_travel_sprite": false,
+      "rule": "Objet placé et indicateur ou faisceau associé; aucun état de vol de balle."
+    },
+    "instant_beam": {
+      "label_fr": "Décharge ou rayon impulsionnel",
+      "requires_travel_sprite": false,
+      "rule": "Effet reliant origine et point visé pendant l’attaque; le délai éventuel reste propre au jeu et ne crée pas un projectile lent."
+    },
+    "continuous_beam": {
+      "label_fr": "Rayon continu",
+      "requires_travel_sprite": false,
+      "rule": "Émission, segment et contact continus; la collision n’est pas déterminée par la longueur d’une image seule."
+    },
+    "hitscan_trace": {
+      "label_fr": "Effet de tir hitscan",
+      "requires_travel_sprite": false,
+      "rule": "Flash, éventuelle trace et contact illustrent un tir instantané établi par la source; aucun objet de gameplay mobile n’est créé par le catalogue."
+    },
+    "portal_effect": {
+      "label_fr": "Effet de portails",
+      "requires_travel_sprite": false,
+      "rule": "Émission, arrivée et ouverture d’un portail; n’est pas classé comme munition infligeant des dégâts."
+    },
+    "environmental_blob": {
+      "label_fr": "Volume de gel",
+      "requires_travel_sprite": true,
+      "rule": "Volume environnemental en mouvement et dépôt sur une surface; ne pas transformer le gel en munition explosive."
+    },
+    "weapon_fire_effect": {
+      "label_fr": "Effet de tir à caractériser",
+      "requires_travel_sprite": false,
+      "rule": "Réserver départ et contact en attendant de vérifier la simulation du jeu; aucune affirmation hitscan/ballistique."
+    }
+  },
+  "production_contract": {
+    "image_format": "PNG RGBA, fond réellement transparent pour objets et effets isolés; un objet/état par fichier.",
+    "projection": "Profil utilisable en combat 2D, axe et pivot explicites; garder les proportions de la version source.",
+    "naming": "ID de cible stable + état + orientation + révision; target_ids explicites dans le registre, owner_id identique à la cible pour ces groupes autonomes.",
+    "states": "required_states est un contrat à produire, pas une liste de fichiers existants. Les effets facultatifs ne se produisent que si la référence les montre.",
+    "animation": "Une image de vol ne clôt ni une boucle ni les transitions. Aucune interpolation ou durée n’est présentée comme donnée officielle.",
+    "physics": "La classification ne modifie aucun comportement moteur. Hitscan, rayon continu, portail et projectile mobile conservent des contrats distincts.",
+    "source_gate": "Une entrée avec preuve de contexte uniquement demande une capture primaire spécifique avant de prétendre reproduire le sujet en 1:1.",
+    "quality_gate": "Comparer silhouette, matériaux, couleurs, proportions, orientation, transparence et raccords sur le jeu/build enregistré avant certification.",
+    "runtime_gate": "runtime_enabled=false sur toutes les entrées de ce catalogue; aucun effet n’est intégré automatiquement."
+  },
+  "exclusions_and_gates": [
+    "Le code SDK public et le build retail peuvent différer; ne pas présenter des chemins de ressources comme des captures de pixels.",
+    "Aucun projectile de Half-Life 3 n’est inventé. Les archives beta/cut content et Episode Three conservent leur catalogue distinct et leur état désactivé.",
+    "Les trous de preuve Opposing Force/Alyx/Portal/Desk Job restent explicitement ouverts; le manuel OP4 indexé n’a pas été récupéré (HTTP 403).",
+    "Les reprises de modèles ou conventions issues de Black Mesa, de mods, de remakes ou de contenus communautaires ne valent pas références du jeu original.",
+    "La couleur d’un effet ne se déduit pas du nom de son fichier. La palette de chaque variante coop reste à relever."
+  ],
+  "sources": [
+    {
+      "id": "PJ_HL1_CROSSBOW",
+      "title": "Valve — crossbow.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/crossbow.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/halflife",
+      "commit_sha": "b1b5cf5892918535619b2937bb927e46cb097ba1",
+      "path": "dlls/crossbow.cpp",
+      "sha256": "8bec842877799b5aaaf3699e913e64832e7670ea02174a2a1e0681f068e06339",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "CCrossbowBolt, crossbow_bolt et models/crossbow_bolt.mdl; projectile distinct du modèle porté.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL1_RPG",
+      "title": "Valve — rpg.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/rpg.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/halflife",
+      "commit_sha": "b1b5cf5892918535619b2937bb927e46cb097ba1",
+      "path": "dlls/rpg.cpp",
+      "sha256": "7a416e47e836b247852b2afde49b8e494013dc6418cc48291d5abfb03ad69de1",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "CRpgRocket, rpg_rocket, laser_spot et models/rpgrocket.mdl; missile et point de guidage séparés.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL1_MP5",
+      "title": "Valve — mp5.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/mp5.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/halflife",
+      "commit_sha": "b1b5cf5892918535619b2937bb927e46cb097ba1",
+      "path": "dlls/mp5.cpp",
+      "sha256": "9306375ddb6dd2e0da5066d56c50520fca6ab54cca3b9f1a036fb5798ba48c51",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "CMP5::SecondaryAttack appelle ShootContact; le tir principal utilise FireBulletsPlayer. Ne pas confondre les deux modes.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL1_HANDGRENADE",
+      "title": "Valve — handgrenade.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/handgrenade.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/halflife",
+      "commit_sha": "b1b5cf5892918535619b2937bb927e46cb097ba1",
+      "path": "dlls/handgrenade.cpp",
+      "sha256": "e657eac1a6f8f58351d5f9b668d6cef4eef681bd41a93ae7fe1b1c8123edfe4e",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "CHandGrenade appelle CGrenade::ShootTimed; modèles de grenade GoldSrc référencés.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL1_SATCHEL",
+      "title": "Valve — satchel.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/satchel.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/halflife",
+      "commit_sha": "b1b5cf5892918535619b2937bb927e46cb097ba1",
+      "path": "dlls/satchel.cpp",
+      "sha256": "9811f5c7a21921fa5316f001470b1b1c23abdcd5125c7943bc7783ed63f855d3",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "CSatchelCharge et monster_satchel; charge physique lancée et déclenchement séparé.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL1_TRIPMINE",
+      "title": "Valve — tripmine.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/tripmine.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/halflife",
+      "commit_sha": "b1b5cf5892918535619b2937bb927e46cb097ba1",
+      "path": "dlls/tripmine.cpp",
+      "sha256": "c2ee418601b8439e9ef7dfb9837f6f04c2b6a7958522ff04005793fad82aad8d",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "CTripmineGrenade et monster_tripmine; mine posée et faisceau de détection, pas balle mobile.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL1_HORNET",
+      "title": "Valve — hornet.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/hornet.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/halflife",
+      "commit_sha": "b1b5cf5892918535619b2937bb927e46cb097ba1",
+      "path": "dlls/hornet.cpp",
+      "sha256": "25d5d745e93029ade1ee799d85fd39f6aab3e89c7725ddbde914b7d96c8814c2",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "CHornet et entité hornet; models/hornet.mdl et traînée sont référencés.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL1_HORNETGUN",
+      "title": "Valve — hornetgun.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/hornetgun.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/halflife",
+      "commit_sha": "b1b5cf5892918535619b2937bb927e46cb097ba1",
+      "path": "dlls/hornetgun.cpp",
+      "sha256": "979109f4e335a685ed44a9b02c87bdbe7b6c9857f5749db5ef85e8890f791d65",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "Modes de tir de Hivehand; l’objet hornet est réutilisé sans inventer une munition mécanique.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL1_GAUSS",
+      "title": "Valve — gauss.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/gauss.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/halflife",
+      "commit_sha": "b1b5cf5892918535619b2937bb927e46cb097ba1",
+      "path": "dlls/gauss.cpp",
+      "sha256": "fd5ebfb39cc041dfe8a6771fdc32da0eac198456d2e839def808b489b284218c",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "CGauss et logique de rayon; conserver charge, émission et impact séparés sans inventer un missile lent.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL1_EGON",
+      "title": "Valve — egon.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/egon.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/halflife",
+      "commit_sha": "b1b5cf5892918535619b2937bb927e46cb097ba1",
+      "path": "dlls/egon.cpp",
+      "sha256": "d167453195eb18ece75ec535edeccae10763684061d1bc684cdaa59c374fca6f",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "CEgon et effet de rayon continu; ressources de faisceau et contact distinctes.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL1_ISLAVE",
+      "title": "Valve — islave.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/islave.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/halflife",
+      "commit_sha": "b1b5cf5892918535619b2937bb927e46cb097ba1",
+      "path": "dlls/islave.cpp",
+      "sha256": "65c41547d40e9d245b20122eda6b60555d8e75b9d16457d1ff25b07c536a74c9",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "CISlave et effet de décharge lié au lancer d’attaque; sprites/lgtning.spr référencé.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL1_BULLSQUID",
+      "title": "Valve — bullsquid.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/bullsquid.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/halflife",
+      "commit_sha": "b1b5cf5892918535619b2937bb927e46cb097ba1",
+      "path": "dlls/bullsquid.cpp",
+      "sha256": "6b570a37c6dc81e241496d26cc5847737bdfa6c088fbbf678d2299088ac5efaa",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "CSquidSpit, squidspit, sprites/bigspit.spr et tinyspit.spr; le crachat est un projectile.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL1_CONTROLLER",
+      "title": "Valve — controller.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/controller.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/halflife",
+      "commit_sha": "b1b5cf5892918535619b2937bb927e46cb097ba1",
+      "path": "dlls/controller.cpp",
+      "sha256": "61f639c2fb90ef6242f3b09b595ab206fe5458f7e81c1af378e27001fde82a3c",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "CControllerZapBall/controller_energy_ball et CControllerHeadBall/controller_head_ball sont deux entités distinctes.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL1_NIHILANTH",
+      "title": "Valve — nihilanth.cpp",
+      "url": "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/nihilanth.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/halflife",
+      "commit_sha": "b1b5cf5892918535619b2937bb927e46cb097ba1",
+      "path": "dlls/nihilanth.cpp",
+      "sha256": "0ef1b9685beadb20ac71e88bb52a0ea7d977a7ae4135ad2362b11e283688f375",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "CNihilanthHVR::ZapInit et TeleportInit utilisent respectivement nhth1.spr et exit1.spr; deux fonctions à distinguer.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL2_WEAPON_RPG",
+      "title": "Valve — weapon_rpg.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/weapon_rpg.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/source-sdk-2013",
+      "commit_sha": "3e957b70b167929f120360115d359d1ecb4c1699",
+      "path": "src/game/server/hl2/weapon_rpg.cpp",
+      "sha256": "ecc59a36170497ea175ba2d9bf30463d52c9d80a2e78fb060c91c10eb7917f95",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "CMissile/rpg_missile et CAPCMissile/apc_missile sont séparés; variantes w_missile_launch, w_missile et w_missile_closed référencées.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL2_WEAPON_AR2",
+      "title": "Valve — weapon_ar2.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/weapon_ar2.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/source-sdk-2013",
+      "commit_sha": "3e957b70b167929f120360115d359d1ecb4c1699",
+      "path": "src/game/server/hl2/weapon_ar2.cpp",
+      "sha256": "b0b9ad5be1fb6b07c4f32974c5f718c7a37fdd197c6503b3f20be2e587749d4f",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "Le tir secondaire crée CreateCombineBall; le tir primaire utilise FireBullets. Une balle d’énergie ne représente pas le tir principal.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL2_PROP_COMBINE_BALL",
+      "title": "Valve — prop_combine_ball.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/prop_combine_ball.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/source-sdk-2013",
+      "commit_sha": "3e957b70b167929f120360115d359d1ecb4c1699",
+      "path": "src/game/server/hl2/prop_combine_ball.cpp",
+      "sha256": "acfbcbffe9d16e00a8fb4a43969ee11acda6160cf08ac4657c1a5d8cbc334de2",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "CPropCombineBall/prop_combine_ball, modèle combineball et logique de contact/rebond/dissolution.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL2_C_PROP_COMBINE_BALL",
+      "title": "Valve — c_prop_combine_ball.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/client/hl2/c_prop_combine_ball.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/source-sdk-2013",
+      "commit_sha": "3e957b70b167929f120360115d359d1ecb4c1699",
+      "path": "src/game/client/hl2/c_prop_combine_ball.cpp",
+      "sha256": "2ff0489d3c33eb61860dcf58e7179ead3e5a6535c37a6d65364d0d77359c3251",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "Rendu client: matériaux effects/ar2_altfire1, effects/ar2_altfire1b et effets de traînée. Le nom d’un matériau ne prouve pas sa couleur finale.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL2_WEAPON_CROSSBOW",
+      "title": "Valve — weapon_crossbow.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/weapon_crossbow.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/source-sdk-2013",
+      "commit_sha": "3e957b70b167929f120360115d359d1ecb4c1699",
+      "path": "src/game/server/hl2/weapon_crossbow.cpp",
+      "sha256": "dc848efb7adf073d17a8909cbeea6a2a736fb4139274b7cfc4830a5b4d4e1d1c",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "CCrossbowBolt::Spawn affecte models/crossbow_bolt.mdl; ne pas prendre la macro BOLT_MODEL comme modèle retail universel.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL2_WEAPON_SMG1",
+      "title": "Valve — weapon_smg1.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/weapon_smg1.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/source-sdk-2013",
+      "commit_sha": "3e957b70b167929f120360115d359d1ecb4c1699",
+      "path": "src/game/server/hl2/weapon_smg1.cpp",
+      "sha256": "5575af29489b4d2822653bb6fdc103f9187160804e0803de835197fbda8b3083",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "CWeaponSMG1::SecondaryAttack crée grenade_ar2; ce nom historique appartient au lance-grenades du SMG1.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL2_GRENADE_AR2",
+      "title": "Valve — grenade_ar2.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/grenade_ar2.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/source-sdk-2013",
+      "commit_sha": "3e957b70b167929f120360115d359d1ecb4c1699",
+      "path": "src/game/server/hl2/grenade_ar2.cpp",
+      "sha256": "5a050b16d7c28f5ddcab850784e86352c8bba195bf3ca29df73ed85ea49e9405",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "CGrenadeAR2/grenade_ar2 et models/Weapons/ar2_grenade.mdl; cible visuelle associée au SMG1 par weapon_smg1.cpp.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL2_GRENADE_FRAG",
+      "title": "Valve — grenade_frag.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/grenade_frag.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/source-sdk-2013",
+      "commit_sha": "3e957b70b167929f120360115d359d1ecb4c1699",
+      "path": "src/game/server/hl2/grenade_frag.cpp",
+      "sha256": "2706ff8b96122b40eff9e18376cef57ca14cfb5ceb55a228923e25301616dd55",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "CGrenadeFrag/npc_grenade_frag et models/Weapons/w_grenade.mdl; grenade physique et effets lumineux distincts.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL2_WEAPON_BUGBAIT",
+      "title": "Valve — weapon_bugbait.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/weapon_bugbait.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/source-sdk-2013",
+      "commit_sha": "3e957b70b167929f120360115d359d1ecb4c1699",
+      "path": "src/game/server/hl2/weapon_bugbait.cpp",
+      "sha256": "bb9a5d2b2ddb08264e3d8941b0f22480541c62dc6a7424171529698b08f95ddd",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "CWeaponBugBait et création de grenade_bugbait; la phéropode est un dispositif lancé.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL2_GRENADE_BUGBAIT",
+      "title": "Valve — grenade_bugbait.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/grenade_bugbait.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/source-sdk-2013",
+      "commit_sha": "3e957b70b167929f120360115d359d1ecb4c1699",
+      "path": "src/game/server/hl2/grenade_bugbait.cpp",
+      "sha256": "8a94963d8e33c6519580418fd3d77332c2fb20f3184109eba009e081bee44f25",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "CGrenadeBugBait/grenade_bugbait; objet physique et effets de phéromones.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL2_VEHICLE_APC",
+      "title": "Valve — vehicle_apc.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/vehicle_apc.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/source-sdk-2013",
+      "commit_sha": "3e957b70b167929f120360115d359d1ecb4c1699",
+      "path": "src/game/server/hl2/vehicle_apc.cpp",
+      "sha256": "68b1d91fa9f2508bf6895e809323e41f8fba9997ca27fddd4515f3baa22ff5db",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "CPropAPC::FireRocket utilise CAPCMissile; le canon de bord utilise un autre chemin FireBullets.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL2_NPC_ATTACKCHOPPER",
+      "title": "Valve — npc_attackchopper.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_attackchopper.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/source-sdk-2013",
+      "commit_sha": "3e957b70b167929f120360115d359d1ecb4c1699",
+      "path": "src/game/server/hl2/npc_attackchopper.cpp",
+      "sha256": "c96e383790090bdab4c87a99699836c8db92a35b291e1452e907b685a5831b0c",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "CGrenadeHelicopter/grenade_helicopter et models/combine_helicopter/helicopter_bomb01.mdl; distinct du canon hitscan.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL2_NPC_HUNTER",
+      "title": "Valve — npc_hunter.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/episodic/npc_hunter.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/source-sdk-2013",
+      "commit_sha": "3e957b70b167929f120360115d359d1ecb4c1699",
+      "path": "src/game/server/episodic/npc_hunter.cpp",
+      "sha256": "6ca0fb1b78b14ccb632c018202f5591217e8b7f99d1e9a6e0e137b71e891a6fa",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "CHunterFlechette/hunter_flechette, models/weapons/hunter_flechette.mdl, états vol/adhésion/explosion et effet hunter_flechette_trail.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL2_NPC_ANTLION",
+      "title": "Valve — npc_antlion.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_antlion.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/source-sdk-2013",
+      "commit_sha": "3e957b70b167929f120360115d359d1ecb4c1699",
+      "path": "src/game/server/hl2/npc_antlion.cpp",
+      "sha256": "3b9dfc4c3034dca82e0cc8483713c1f01f31a0f8c39c6b5ade18b3846b2b4327",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "La branche ouvrier crée grenade_spit; ne pas attribuer ce tir au fourmilion standard.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL2_GRENADE_SPIT",
+      "title": "Valve — grenade_spit.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/grenade_spit.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/source-sdk-2013",
+      "commit_sha": "3e957b70b167929f120360115d359d1ecb4c1699",
+      "path": "src/game/server/hl2/grenade_spit.cpp",
+      "sha256": "cbe9f603e1c0490e9157fe98145253ee15faab9897934573c345872607e27e0a",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "CGrenadeSpit/grenade_spit et modèles spitball_large/medium/small; contact et effet acide distincts.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL2_WEAPON_STRIDERBUSTER",
+      "title": "Valve — weapon_striderbuster.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/episodic/weapon_striderbuster.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/source-sdk-2013",
+      "commit_sha": "3e957b70b167929f120360115d359d1ecb4c1699",
+      "path": "src/game/server/episodic/weapon_striderbuster.cpp",
+      "sha256": "1846356838f9f9664d2e9f4f1362d724b4a53a884d46ffffef387f00ea1dd5e9",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "CWeaponStriderBuster, weapon_striderbuster/prop_stickybomb, models/magnusson_device.mdl; objet physique et attache au Strider.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL2_ENV_HEADCRABCANISTER",
+      "title": "Valve — env_headcrabcanister.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/env_headcrabcanister.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/source-sdk-2013",
+      "commit_sha": "3e957b70b167929f120360115d359d1ecb4c1699",
+      "path": "src/game/server/hl2/env_headcrabcanister.cpp",
+      "sha256": "40b37d47266879ce48d3a46b3fc12df0cbfb581c81355920998577a45b513f60",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "CEnvHeadcrabCanister/env_headcrabcanister; modèles headcrabcannister01a/01b, vol, impact et ouverture de capsule.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL2_NPC_STRIDER",
+      "title": "Valve — npc_strider.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/npc_strider.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/source-sdk-2013",
+      "commit_sha": "3e957b70b167929f120360115d359d1ecb4c1699",
+      "path": "src/game/server/hl2/npc_strider.cpp",
+      "sha256": "7d95fb47b3e3f2dd88d2f6a27127e32ed768ba6eb98e392af4cb4d8835b1f721",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "CNPC_Strider::FireCannon/CannonHitThink et matériaux de canon; ne pas confondre le rayon du canon avec les balles de MiniGun.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_HL2_WEAPON_PISTOL",
+      "title": "Valve — weapon_pistol.cpp",
+      "url": "https://github.com/ValveSoftware/source-sdk-2013/blob/3e957b70b167929f120360115d359d1ecb4c1699/src/game/server/hl2/weapon_pistol.cpp",
+      "kind": "primary_official_source_code",
+      "repository": "ValveSoftware/source-sdk-2013",
+      "commit_sha": "3e957b70b167929f120360115d359d1ecb4c1699",
+      "path": "src/game/server/hl2/weapon_pistol.cpp",
+      "sha256": "61e67d66c5c6c375efd4c04c04fe086222fd9a16ebaeb91f7ffdebe16751b002",
+      "checked_on": "2026-11-24",
+      "read_method": "official_raw_source_at_fixed_commit",
+      "checked_scope": "CWeaponPistol emploie FireBullets pour le tir; la future représentation est un effet de départ/contact, pas une balle lente.",
+      "does_not_certify": "Le code identifie des entités, ressources ou chemins de tir. Il ne prouve ni les pixels du modèle retail, ni les couleurs des textures, ni la fidélité du sprite produit."
+    },
+    {
+      "id": "PJ_OP4_STORE",
+      "title": "Valve / Gearbox — Half-Life: Opposing Force",
+      "url": "https://store.steampowered.com/app/50/HalfLife_Opposing_Force/",
+      "kind": "primary_official_product",
+      "checked_on": "2026-11-24",
+      "checked_scope": "Confirme l’identité et l’éditeur du jeu. Les captures officielles inspectées pendant la recherche ne montrent pas les trois projectiles ci-dessous de manière exploitable; elles ne valident donc pas leur forme."
+    },
+    {
+      "id": "PJ_ALYX_OFFICIAL",
+      "title": "Valve — Half-Life: Alyx",
+      "url": "https://www.half-life.com/en/alyx",
+      "kind": "primary_official_product",
+      "checked_on": "2026-11-24",
+      "checked_scope": "Page officielle du jeu et accès aux outils Source 2. Les détails de chaque grenade ci-dessous attendent une capture du modèle retail et sa variante."
+    },
+    {
+      "id": "PJ_PORTAL_STORE",
+      "title": "Valve — Portal",
+      "url": "https://store.steampowered.com/app/400/Portal/",
+      "kind": "primary_official_product",
+      "checked_on": "2026-11-24",
+      "checked_scope": "Confirme le jeu et l’usage de portails. Ne sert pas de preuve de forme ou de comportement détaillé pour la roquette et la boule d’énergie."
+    },
+    {
+      "id": "PJ_PORTAL2_STORE",
+      "title": "Valve — Portal 2",
+      "url": "https://store.steampowered.com/app/620/Portal_2/",
+      "kind": "primary_official_product",
+      "checked_on": "2026-11-24",
+      "checked_scope": "Confirme le jeu, la campagne coopérative et les médias officiels. Aucun détail non observé du combat final ou du gel blanc n’est déduit du texte produit."
+    },
+    {
+      "id": "PJ_PORTAL2_MEDIA",
+      "title": "Valve — Portal 2, médias officiels",
+      "url": "https://www.thinkwithportals.com/media.php",
+      "kind": "primary_official_media",
+      "checked_on": "2026-11-24",
+      "checked_scope": "Index officiel nommant Thermal Discouragement Beam, Repulsion Gel et Propulsion Gel. Les vidéos E3 identifient des références de démonstration; une capture retail est encore nécessaire avant certification."
+    },
+    {
+      "id": "PJ_DESKJOB_STORE",
+      "title": "Valve — Aperture Desk Job",
+      "url": "https://store.steampowered.com/app/1902490/Aperture_Desk_Job/",
+      "kind": "primary_official_product",
+      "checked_on": "2026-11-24",
+      "checked_scope": "Page officielle du jeu. Les sources consultées ne documentent pas le modèle de collision des tirs; le catalogue ne les déclare pas hitscan ni projectiles physiques."
+    },
+    {
+      "id": "PJ_DESKJOB_TRAILER",
+      "title": "Valve — Aperture Desk Job Trailer",
+      "url": "https://www.youtube.com/watch?v=mVDFJRM6F9k",
+      "kind": "primary_official_media",
+      "checked_on": "2026-11-24",
+      "checked_scope": "Bande-annonce publiée par Valve. Référence du titre et de son univers; les silhouettes individuelles des tirs restent à relever."
+    },
+    {
+      "id": "PJ_PORTAL2_LASER_SCREENSHOT",
+      "title": "Valve — capture Portal 2, faisceaux",
+      "url": "https://store.steampowered.com/api/appdetails?appids=620&l=english",
+      "kind": "primary_official_screenshot",
+      "checked_on": "2026-11-24",
+      "checked_scope": "Capture officielle screenshot id 4, ss_3d13161104a04603a0524536770c5f74626db4c0: faisceaux fins à cœur clair et halo rouge entre émetteur et récepteur. Image 1920 × 1080 examinée.",
+      "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_3d13161104a04603a0524536770c5f74626db4c0.1920x1080.jpg?t=1790187113"
+    },
+    {
+      "id": "PJ_PORTAL2_GEL_SCREENSHOT",
+      "title": "Valve — capture Portal 2, gel répulsif",
+      "url": "https://store.steampowered.com/api/appdetails?appids=620&l=english",
+      "kind": "primary_official_screenshot",
+      "checked_on": "2026-11-24",
+      "checked_scope": "Capture officielle screenshot id 6, ss_358127df30a766a1516ad139083c2bcec3fe0975: globules bleus brillants, volumes fusionnés et séparés sortant d’un conduit. Image 1920 × 1080 examinée.",
+      "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_358127df30a766a1516ad139083c2bcec3fe0975.1920x1080.jpg?t=1790187113"
+    }
+  ],
+  "counts": {
+    "targets": 45,
+    "by_projectile_class": {
+      "continuous_beam": 2,
+      "environmental_blob": 3,
+      "hitscan_trace": 2,
+      "instant_beam": 3,
+      "moving_projectile": 23,
+      "placed_device": 1,
+      "portal_effect": 2,
+      "thrown_device": 8,
+      "weapon_fire_effect": 1
+    },
+    "by_source_game": {
+      "Aperture Desk Job": 1,
+      "Half-Life (1998, GoldSrc)": 15,
+      "Half-Life 2": 12,
+      "Half-Life 2: Episode Two": 3,
+      "Half-Life: Alyx": 2,
+      "Half-Life: Opposing Force": 3,
+      "Portal": 3,
+      "Portal 2": 6
+    },
+    "by_primary_evidence_status": {
+      "official_media_named_visual_capture_required": 1,
+      "official_screenshot_observed": 2,
+      "primary_context_only_specific_capture_required": 12,
+      "sdk_entities_verified_visual_capture_pending": 30
+    },
+    "runtime_enabled": 0,
+    "certified_one_to_one": 0
+  },
+  "targets": [
+    {
+      "id": "PRJ_HL1_CROSSBOW_BOLT",
+      "owner_id": "PRJ_HL1_CROSSBOW_BOLT",
+      "name_fr": "Carreau d’arbalète — HL1",
+      "category": "projectile",
+      "source_game": "Half-Life (1998, GoldSrc)",
+      "content_class": "released_reference",
+      "projectile_class": "moving_projectile",
+      "requires_travel_sprite": true,
+      "priority": "P1",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_HL1_CROSSBOW"
+      ],
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Conserver le petit carreau GoldSrc; ne pas reprendre la tige chauffée de HL2. Profil et proportions à mesurer sur le modèle.",
+      "source_entities": [
+        "crossbow_bolt"
+      ],
+      "source_resource_names": [
+        "models/crossbow_bolt.mdl"
+      ],
+      "required_states": [
+        "flight_key",
+        "flight_loop",
+        "trail_if_present_in_source",
+        "contact",
+        "expiry_or_detonation_if_present_in_source"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_HL1_RPG_ROCKET",
+      "owner_id": "PRJ_HL1_RPG_ROCKET",
+      "name_fr": "Roquette RPG — HL1",
+      "category": "projectile",
+      "source_game": "Half-Life (1998, GoldSrc)",
+      "content_class": "released_reference",
+      "projectile_class": "moving_projectile",
+      "requires_travel_sprite": true,
+      "priority": "P1",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_HL1_RPG"
+      ],
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Modèle GoldSrc; distinguer la roquette, sa fumée et le point laser de guidage. Ne pas importer la silhouette RPG de HL2.",
+      "source_entities": [
+        "rpg_rocket",
+        "laser_spot"
+      ],
+      "source_resource_names": [
+        "models/rpgrocket.mdl"
+      ],
+      "required_states": [
+        "flight_key",
+        "flight_loop",
+        "trail_if_present_in_source",
+        "contact",
+        "expiry_or_detonation_if_present_in_source"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_HL1_MP5_GRENADE",
+      "owner_id": "PRJ_HL1_MP5_GRENADE",
+      "name_fr": "Grenade du MP5 — HL1",
+      "category": "projectile",
+      "source_game": "Half-Life (1998, GoldSrc)",
+      "content_class": "released_reference",
+      "projectile_class": "moving_projectile",
+      "requires_travel_sprite": true,
+      "priority": "P1",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_HL1_MP5"
+      ],
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Tir secondaire du MP5/9mmAR; la grenade et les balles du tir principal ne partagent pas leur représentation.",
+      "source_entities": [
+        "CGrenade::ShootContact"
+      ],
+      "source_resource_names": [
+        "models/grenade.mdl"
+      ],
+      "required_states": [
+        "flight_key",
+        "flight_loop",
+        "trail_if_present_in_source",
+        "contact",
+        "expiry_or_detonation_if_present_in_source"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_HL1_FRAG_GRENADE",
+      "owner_id": "PRJ_HL1_FRAG_GRENADE",
+      "name_fr": "Grenade à main — HL1",
+      "category": "projectile",
+      "source_game": "Half-Life (1998, GoldSrc)",
+      "content_class": "released_reference",
+      "projectile_class": "thrown_device",
+      "requires_travel_sprite": true,
+      "priority": "P1",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_HL1_HANDGRENADE"
+      ],
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Grenade GoldSrc avec lancer et déclenchement; relever séparément l’objet en main et l’objet lancé.",
+      "source_entities": [
+        "CGrenade::ShootTimed"
+      ],
+      "source_resource_names": [
+        "models/w_grenade.mdl"
+      ],
+      "required_states": [
+        "held_or_resting",
+        "in_flight",
+        "contact_or_bounce",
+        "armed_if_applicable",
+        "detonation_or_activation"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_HL1_SATCHEL_CHARGE",
+      "owner_id": "PRJ_HL1_SATCHEL_CHARGE",
+      "name_fr": "Charge télécommandée — HL1",
+      "category": "projectile",
+      "source_game": "Half-Life (1998, GoldSrc)",
+      "content_class": "released_reference",
+      "projectile_class": "thrown_device",
+      "requires_travel_sprite": true,
+      "priority": "P1",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_HL1_SATCHEL"
+      ],
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Charge physique et radiocommande sont deux objets différents; ne pas dessiner la radio comme projectile.",
+      "source_entities": [
+        "monster_satchel"
+      ],
+      "source_resource_names": [
+        "models/w_satchel.mdl"
+      ],
+      "required_states": [
+        "held_or_resting",
+        "in_flight",
+        "contact_or_bounce",
+        "armed_if_applicable",
+        "detonation_or_activation"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_HL1_TRIPMINE",
+      "owner_id": "PRJ_HL1_TRIPMINE",
+      "name_fr": "Mine laser et faisceau — HL1",
+      "category": "projectile",
+      "source_game": "Half-Life (1998, GoldSrc)",
+      "content_class": "released_reference",
+      "projectile_class": "placed_device",
+      "requires_travel_sprite": false,
+      "priority": "P1",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_HL1_TRIPMINE"
+      ],
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Mine posée sur une surface; séparer boîtier, armement et rayon de détection. Le rayon n’est pas une balle mobile.",
+      "source_entities": [
+        "monster_tripmine"
+      ],
+      "source_resource_names": [],
+      "required_states": [
+        "unarmed",
+        "placement",
+        "armed",
+        "trigger_or_deactivation",
+        "detonation_if_applicable"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_HL1_HORNET",
+      "owner_id": "PRJ_HL1_HORNET",
+      "name_fr": "Frelon de Hivehand — HL1",
+      "category": "projectile",
+      "source_game": "Half-Life (1998, GoldSrc)",
+      "content_class": "released_reference",
+      "projectile_class": "moving_projectile",
+      "requires_travel_sprite": true,
+      "priority": "P1",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_HL1_HORNET",
+        "PJ_HL1_HORNETGUN"
+      ],
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Organisme projectile du modèle GoldSrc, avec variantes des deux modes de tir documentées séparément; ne pas fabriquer une balle mécanique.",
+      "source_entities": [
+        "hornet"
+      ],
+      "source_resource_names": [
+        "models/hornet.mdl"
+      ],
+      "required_states": [
+        "flight_key",
+        "flight_loop",
+        "trail_if_present_in_source",
+        "contact",
+        "expiry_or_detonation_if_present_in_source"
+      ],
+      "required_variants": [
+        "mode primaire",
+        "mode secondaire"
+      ],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_HL1_GAUSS_BEAM",
+      "owner_id": "PRJ_HL1_GAUSS_BEAM",
+      "name_fr": "Rayon du canon Tau/Gauss — HL1",
+      "category": "projectile",
+      "source_game": "Half-Life (1998, GoldSrc)",
+      "content_class": "released_reference",
+      "projectile_class": "instant_beam",
+      "requires_travel_sprite": false,
+      "priority": "P1",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_HL1_GAUSS"
+      ],
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Respecter charge, émission et contact du canon Tau. La traduction en 2D ne doit pas introduire un temps de vol de roquette.",
+      "source_entities": [
+        "CGauss"
+      ],
+      "source_resource_names": [],
+      "required_states": [
+        "charge_if_present",
+        "emission",
+        "origin_to_contact",
+        "contact",
+        "fade"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_HL1_GLUON_BEAM",
+      "owner_id": "PRJ_HL1_GLUON_BEAM",
+      "name_fr": "Rayon du canon à gluons — HL1",
+      "category": "projectile",
+      "source_game": "Half-Life (1998, GoldSrc)",
+      "content_class": "released_reference",
+      "projectile_class": "continuous_beam",
+      "requires_travel_sprite": false,
+      "priority": "P1",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_HL1_EGON"
+      ],
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Rayon continu du Gluon Gun GoldSrc; les segments et la lueur de contact se composent entre arme et cible.",
+      "source_entities": [
+        "CEgon"
+      ],
+      "source_resource_names": [
+        "sprites/xbeam1.spr"
+      ],
+      "required_states": [
+        "startup",
+        "origin",
+        "beam_body",
+        "contact",
+        "shutdown"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_HL1_VORTIGAUNT_ZAP",
+      "owner_id": "PRJ_HL1_VORTIGAUNT_ZAP",
+      "name_fr": "Décharge du Vortigaunt — HL1",
+      "category": "projectile",
+      "source_game": "Half-Life (1998, GoldSrc)",
+      "content_class": "released_reference",
+      "projectile_class": "instant_beam",
+      "requires_travel_sprite": false,
+      "priority": "P1",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_HL1_ISLAVE"
+      ],
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Décharge de la version GoldSrc, reliée aux bras et au contact. Séparer les arcs d’armement des arcs offensifs.",
+      "source_entities": [
+        "CISlave"
+      ],
+      "source_resource_names": [
+        "sprites/lgtning.spr"
+      ],
+      "required_states": [
+        "charge_if_present",
+        "emission",
+        "origin_to_contact",
+        "contact",
+        "fade"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_HL1_BULLSQUID_SPIT",
+      "owner_id": "PRJ_HL1_BULLSQUID_SPIT",
+      "name_fr": "Crachat de Bullsquid — HL1",
+      "category": "projectile",
+      "source_game": "Half-Life (1998, GoldSrc)",
+      "content_class": "released_reference",
+      "projectile_class": "moving_projectile",
+      "requires_travel_sprite": true,
+      "priority": "P1",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_HL1_BULLSQUID"
+      ],
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Reprendre le sprite de crachat GoldSrc et ses éclaboussures; aucun transfert de l’acide du fourmilion d’Episode Two.",
+      "source_entities": [
+        "squidspit"
+      ],
+      "source_resource_names": [
+        "sprites/bigspit.spr",
+        "sprites/tinyspit.spr"
+      ],
+      "required_states": [
+        "flight_key",
+        "flight_loop",
+        "trail_if_present_in_source",
+        "contact",
+        "expiry_or_detonation_if_present_in_source"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_HL1_CONTROLLER_ENERGY_BALL",
+      "owner_id": "PRJ_HL1_CONTROLLER_ENERGY_BALL",
+      "name_fr": "Petite boule d’énergie du Controller — HL1",
+      "category": "projectile",
+      "source_game": "Half-Life (1998, GoldSrc)",
+      "content_class": "released_reference",
+      "projectile_class": "moving_projectile",
+      "requires_travel_sprite": true,
+      "priority": "P1",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_HL1_CONTROLLER"
+      ],
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Entité controller_energy_ball distincte de controller_head_ball; ne pas fusionner leurs silhouettes et trajectoires.",
+      "source_entities": [
+        "controller_energy_ball"
+      ],
+      "source_resource_names": [
+        "sprites/xspark4.spr"
+      ],
+      "required_states": [
+        "flight_key",
+        "flight_loop",
+        "trail_if_present_in_source",
+        "contact",
+        "expiry_or_detonation_if_present_in_source"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_HL1_CONTROLLER_HEAD_BALL",
+      "owner_id": "PRJ_HL1_CONTROLLER_HEAD_BALL",
+      "name_fr": "Boule émise par la tête du Controller — HL1",
+      "category": "projectile",
+      "source_game": "Half-Life (1998, GoldSrc)",
+      "content_class": "released_reference",
+      "projectile_class": "moving_projectile",
+      "requires_travel_sprite": true,
+      "priority": "P1",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_HL1_CONTROLLER"
+      ],
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Entité controller_head_ball; conserver son effet propre et relever sa taille par rapport au Controller.",
+      "source_entities": [
+        "controller_head_ball"
+      ],
+      "source_resource_names": [
+        "sprites/xspark4.spr"
+      ],
+      "required_states": [
+        "flight_key",
+        "flight_loop",
+        "trail_if_present_in_source",
+        "contact",
+        "expiry_or_detonation_if_present_in_source"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_HL1_NIHILANTH_ZAP",
+      "owner_id": "PRJ_HL1_NIHILANTH_ZAP",
+      "name_fr": "Orbe offensif du Nihilanth — HL1",
+      "category": "projectile",
+      "source_game": "Half-Life (1998, GoldSrc)",
+      "content_class": "released_reference",
+      "projectile_class": "moving_projectile",
+      "requires_travel_sprite": true,
+      "priority": "P1",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_HL1_NIHILANTH"
+      ],
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "État ZapInit du Nihilanth; ne pas employer le sprite de téléportation pour l’attaque électrique.",
+      "source_entities": [
+        "nihilanth_energy_ball",
+        "CNihilanthHVR::ZapInit"
+      ],
+      "source_resource_names": [
+        "sprites/nhth1.spr"
+      ],
+      "required_states": [
+        "flight_key",
+        "flight_loop",
+        "trail_if_present_in_source",
+        "contact",
+        "expiry_or_detonation_if_present_in_source"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_HL1_NIHILANTH_TELEPORT",
+      "owner_id": "PRJ_HL1_NIHILANTH_TELEPORT",
+      "name_fr": "Orbe de téléportation du Nihilanth — HL1",
+      "category": "projectile",
+      "source_game": "Half-Life (1998, GoldSrc)",
+      "content_class": "released_reference",
+      "projectile_class": "moving_projectile",
+      "requires_travel_sprite": true,
+      "priority": "P1",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_HL1_NIHILANTH"
+      ],
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "État TeleportInit; fonction de téléportation distincte de ZapInit et de l’énergie de recharge du boss.",
+      "source_entities": [
+        "nihilanth_energy_ball",
+        "CNihilanthHVR::TeleportInit"
+      ],
+      "source_resource_names": [
+        "sprites/exit1.spr"
+      ],
+      "required_states": [
+        "flight_key",
+        "flight_loop",
+        "trail_if_present_in_source",
+        "contact",
+        "expiry_or_detonation_if_present_in_source"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_HL2_RPG_MISSILE",
+      "owner_id": "PRJ_HL2_RPG_MISSILE",
+      "name_fr": "Missile RPG — HL2",
+      "category": "projectile",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "projectile_class": "moving_projectile",
+      "requires_travel_sprite": true,
+      "priority": "P0",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_HL2_WEAPON_RPG"
+      ],
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": {
+        "reference_filename": "cow-RPG_rocket_fly.jpg",
+        "sha256": "d8419e4af3bbf70f9a0db2fdb4d82a919619187b6416d9d55f4836e22a3c89f2",
+        "width": 1054,
+        "height": 341,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/6/6b/RPG_rocket_fly.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:RPG_rocket_fly.jpg",
+        "source_game": "Half-Life 2",
+        "provenance": "game_model_capture_mirrored_by_wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      },
+      "identity_lock": "RPG HL2: états de sortie du tube et de vol à distinguer; conserver le modèle retail de chaque état et le guidage laser séparé.",
+      "source_entities": [
+        "rpg_missile"
+      ],
+      "source_resource_names": [
+        "models/weapons/w_missile_launch.mdl",
+        "models/weapons/w_missile.mdl"
+      ],
+      "required_states": [
+        "flight_key",
+        "flight_loop",
+        "trail_if_present_in_source",
+        "contact",
+        "expiry_or_detonation_if_present_in_source"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_HL2_AR2_COMBINE_BALL",
+      "owner_id": "PRJ_HL2_AR2_COMBINE_BALL",
+      "name_fr": "Boule d’énergie AR2 — HL2",
+      "category": "projectile",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "projectile_class": "moving_projectile",
+      "requires_travel_sprite": true,
+      "priority": "P0",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_HL2_WEAPON_AR2",
+        "PJ_HL2_PROP_COMBINE_BALL",
+        "PJ_HL2_C_PROP_COMBINE_BALL"
+      ],
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": {
+        "reference_filename": "cow-Darkenergy.jpg",
+        "sha256": "2ec31026797a3d3a3f4c48e1252a3f5860a81cb0a4a1c6ec70692710924eb362",
+        "width": 900,
+        "height": 720,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/1/10/Darkenergy.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Darkenergy.jpg",
+        "source_game": "Half-Life 2",
+        "provenance": "game_screenshot_mirrored_by_wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      },
+      "identity_lock": "Orbe du tir secondaire AR2; noyau, enveloppe et traînée séparés. Aucun remplacement des tirs de Gunship ou Dropship par cet orbe.",
+      "source_entities": [
+        "prop_combine_ball"
+      ],
+      "source_resource_names": [
+        "models/effects/combineball.mdl",
+        "effects/ar2_altfire1",
+        "effects/ar2_altfire1b"
+      ],
+      "required_states": [
+        "flight_key",
+        "flight_loop",
+        "trail_if_present_in_source",
+        "contact",
+        "expiry_or_detonation_if_present_in_source"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_HL2_CROSSBOW_BOLT",
+      "owner_id": "PRJ_HL2_CROSSBOW_BOLT",
+      "name_fr": "Carreau chauffé d’arbalète — HL2",
+      "category": "projectile",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "projectile_class": "moving_projectile",
+      "requires_travel_sprite": true,
+      "priority": "P0",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_HL2_WEAPON_CROSSBOW"
+      ],
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": {
+        "reference_filename": "cow-Crossbow_bolt.jpg",
+        "sha256": "dc0ff787c08d6e5193265de19f01efc3a947c6cdaccceb618e49cf27335c39dd",
+        "width": 425,
+        "height": 248,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/2/20/Crossbow_bolt.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Crossbow_bolt.jpg",
+        "source_game": "Half-Life 2",
+        "provenance": "game_model_capture_mirrored_by_wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      },
+      "identity_lock": "Version HL2 du carreau. Vérifier silhouette, extrémité chauffée et effets sur modèle/capture; ne pas employer la roquette seulement parce qu’une macro source la mentionne.",
+      "source_entities": [
+        "crossbow_bolt"
+      ],
+      "source_resource_names": [
+        "models/crossbow_bolt.mdl"
+      ],
+      "required_states": [
+        "flight_key",
+        "flight_loop",
+        "trail_if_present_in_source",
+        "contact",
+        "expiry_or_detonation_if_present_in_source"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_HL2_SMG1_GRENADE",
+      "owner_id": "PRJ_HL2_SMG1_GRENADE",
+      "name_fr": "Grenade secondaire du SMG1 — HL2",
+      "category": "projectile",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "projectile_class": "moving_projectile",
+      "requires_travel_sprite": true,
+      "priority": "P0",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_HL2_WEAPON_SMG1",
+        "PJ_HL2_GRENADE_AR2"
+      ],
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": {
+        "reference_filename": "cow-Ar2_grenade.jpg",
+        "sha256": "fe28f9316e600b2e9490fb22850966d9eafffaccf2b3a747b40c7bd785ef3933",
+        "width": 286,
+        "height": 140,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/a/ab/Ar2_grenade.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Ar2_grenade.jpg",
+        "source_game": "Half-Life 2",
+        "provenance": "game_model_capture_mirrored_by_wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      },
+      "identity_lock": "La ressource nommée ar2_grenade est utilisée ici par le SMG1. Elle n’est ni la boule d’énergie AR2 ni une grenade à main.",
+      "source_entities": [
+        "grenade_ar2"
+      ],
+      "source_resource_names": [
+        "models/Weapons/ar2_grenade.mdl"
+      ],
+      "required_states": [
+        "flight_key",
+        "flight_loop",
+        "trail_if_present_in_source",
+        "contact",
+        "expiry_or_detonation_if_present_in_source"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_HL2_FRAG_GRENADE",
+      "owner_id": "PRJ_HL2_FRAG_GRENADE",
+      "name_fr": "Grenade à fragmentation — HL2",
+      "category": "projectile",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "projectile_class": "thrown_device",
+      "requires_travel_sprite": true,
+      "priority": "P0",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_HL2_GRENADE_FRAG"
+      ],
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": {
+        "reference_filename": "cow-MK3A2_Grenade.jpg",
+        "sha256": "56d05e31731344bb11c4f817f989fb80eb5ada94b0c8d9c29bf5e01910666de9",
+        "width": 330,
+        "height": 411,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/e/eb/MK3A2_Grenade.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:MK3A2_Grenade.jpg",
+        "source_game": "Half-Life 2",
+        "provenance": "game_model_capture_mirrored_by_wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      },
+      "identity_lock": "Version HL2 de la grenade à main; séparer corps, armement lumineux, roulade et explosion. Comparer la texture retail et non les seuls noms des matériaux.",
+      "source_entities": [
+        "npc_grenade_frag"
+      ],
+      "source_resource_names": [
+        "models/Weapons/w_grenade.mdl"
+      ],
+      "required_states": [
+        "held_or_resting",
+        "in_flight",
+        "contact_or_bounce",
+        "armed_if_applicable",
+        "detonation_or_activation"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_HL2_BUGBAIT_POD",
+      "owner_id": "PRJ_HL2_BUGBAIT_POD",
+      "name_fr": "Phéropode lancé — HL2",
+      "category": "projectile",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "projectile_class": "thrown_device",
+      "requires_travel_sprite": true,
+      "priority": "P1",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_HL2_WEAPON_BUGBAIT",
+        "PJ_HL2_GRENADE_BUGBAIT"
+      ],
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Phéropode et dispersion de phéromones; conserver la fonction d’appât. Aucun impact explosif ou pouvoir d’acide ne lui est attribué.",
+      "source_entities": [
+        "grenade_bugbait"
+      ],
+      "source_resource_names": [],
+      "required_states": [
+        "held_or_resting",
+        "in_flight",
+        "contact_or_bounce",
+        "armed_if_applicable",
+        "detonation_or_activation"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_HL2_APC_MISSILE",
+      "owner_id": "PRJ_HL2_APC_MISSILE",
+      "name_fr": "Missile de l’APC — HL2",
+      "category": "projectile",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "projectile_class": "moving_projectile",
+      "requires_travel_sprite": true,
+      "priority": "P1",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_HL2_VEHICLE_APC",
+        "PJ_HL2_WEAPON_RPG"
+      ],
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Missile lancé par le blindé; cible distincte du RPG du joueur et du tir du canon de bord.",
+      "source_entities": [
+        "apc_missile"
+      ],
+      "source_resource_names": [
+        "models/weapons/w_missile.mdl"
+      ],
+      "required_states": [
+        "flight_key",
+        "flight_loop",
+        "trail_if_present_in_source",
+        "contact",
+        "expiry_or_detonation_if_present_in_source"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_HL2_HUNTER_CHOPPER_BOMB",
+      "owner_id": "PRJ_HL2_HUNTER_CHOPPER_BOMB",
+      "name_fr": "Bombe du Hunter-Chopper — HL2",
+      "category": "projectile",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "projectile_class": "thrown_device",
+      "requires_travel_sprite": true,
+      "priority": "P1",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_HL2_NPC_ATTACKCHOPPER"
+      ],
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Bombe larguée par l’hélicoptère; conserver état au sol, rebond/activation et attaque distincts du canon.",
+      "source_entities": [
+        "grenade_helicopter"
+      ],
+      "source_resource_names": [
+        "models/combine_helicopter/helicopter_bomb01.mdl"
+      ],
+      "required_states": [
+        "held_or_resting",
+        "in_flight",
+        "contact_or_bounce",
+        "armed_if_applicable",
+        "detonation_or_activation"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_EP2_HUNTER_FLECHETTE",
+      "owner_id": "PRJ_EP2_HUNTER_FLECHETTE",
+      "name_fr": "Fléchette du Hunter — Episode Two",
+      "category": "projectile",
+      "source_game": "Half-Life 2: Episode Two",
+      "content_class": "released_reference",
+      "projectile_class": "moving_projectile",
+      "requires_travel_sprite": true,
+      "priority": "P0",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_HL2_NPC_HUNTER"
+      ],
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": {
+        "reference_filename": "cow-Hunter_flechette.jpg",
+        "sha256": "9a404a36e9b266a59c38c9b7626dd38c8c0d079024c3f56d95df5aebb2ef9551",
+        "width": 931,
+        "height": 533,
+        "visually_inspected": true,
+        "source_url": "https://combineoverwiki.net/images/4/4e/Hunter_flechette.jpg",
+        "source_page": "https://combineoverwiki.net/wiki/File:Hunter_flechette.jpg",
+        "source_game": "Half-Life 2: Episode Two",
+        "provenance": "game_model_capture_mirrored_by_wiki",
+        "role": "visual_identity_reference",
+        "context_note": "Capture effectivement consultée pour le lot F. Ne valide ni tous les côtés ni les états animés, et ne certifie pas1:1 les fichiers générés."
+      },
+      "identity_lock": "Fléchette biomécanique du Hunter; pointe, corps, traînée et état planté sont séparés. Contrôler le modèle avant de fixer le détail 1:1.",
+      "source_entities": [
+        "hunter_flechette"
+      ],
+      "source_resource_names": [
+        "models/weapons/hunter_flechette.mdl",
+        "hunter_flechette_trail"
+      ],
+      "required_states": [
+        "flight_key",
+        "flight_loop",
+        "trail_if_present_in_source",
+        "contact",
+        "expiry_or_detonation_if_present_in_source"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_EP2_ANTLION_WORKER_SPIT",
+      "owner_id": "PRJ_EP2_ANTLION_WORKER_SPIT",
+      "name_fr": "Acide du fourmilion ouvrier — Episode Two",
+      "category": "projectile",
+      "source_game": "Half-Life 2: Episode Two",
+      "content_class": "released_reference",
+      "projectile_class": "moving_projectile",
+      "requires_travel_sprite": true,
+      "priority": "P1",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_HL2_NPC_ANTLION",
+        "PJ_HL2_GRENADE_SPIT"
+      ],
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Attaque du modèle ouvrier; conserver les volumes grand/moyen/petit comme variantes du crachat. Ne pas la donner au fourmilion standard.",
+      "source_entities": [
+        "grenade_spit"
+      ],
+      "source_resource_names": [
+        "models/spitball_large.mdl",
+        "models/spitball_medium.mdl",
+        "models/spitball_small.mdl"
+      ],
+      "required_states": [
+        "flight_key",
+        "flight_loop",
+        "trail_if_present_in_source",
+        "contact",
+        "expiry_or_detonation_if_present_in_source"
+      ],
+      "required_variants": [
+        "grand",
+        "moyen",
+        "petit"
+      ],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_EP2_MAGNUSSON_DEVICE",
+      "owner_id": "PRJ_EP2_MAGNUSSON_DEVICE",
+      "name_fr": "Dispositif Magnusson — Episode Two",
+      "category": "projectile",
+      "source_game": "Half-Life 2: Episode Two",
+      "content_class": "released_reference",
+      "projectile_class": "thrown_device",
+      "requires_travel_sprite": true,
+      "priority": "P1",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_HL2_WEAPON_STRIDERBUSTER"
+      ],
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Dispositif physique manipulé au Gravity Gun, avec attache au Strider. Le projectile et les effets d’attache/explosion demandent des états propres.",
+      "source_entities": [
+        "weapon_striderbuster",
+        "prop_stickybomb"
+      ],
+      "source_resource_names": [
+        "models/magnusson_device.mdl"
+      ],
+      "required_states": [
+        "held_or_resting",
+        "in_flight",
+        "contact_or_bounce",
+        "armed_if_applicable",
+        "detonation_or_activation"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_HL2_HEADCRAB_CANISTER",
+      "owner_id": "PRJ_HL2_HEADCRAB_CANISTER",
+      "name_fr": "Capsule de headcrabs — HL2",
+      "category": "projectile",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "projectile_class": "moving_projectile",
+      "requires_travel_sprite": true,
+      "priority": "P1",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_HL2_ENV_HEADCRABCANISTER"
+      ],
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Capsule de déploiement du Cartel: vol, impact, ouverture; les créatures déployées sont des cibles d’ennemis séparées.",
+      "source_entities": [
+        "env_headcrabcanister"
+      ],
+      "source_resource_names": [
+        "models/props_combine/headcrabcannister01a.mdl",
+        "models/props_combine/headcrabcannister01b.mdl"
+      ],
+      "required_states": [
+        "flight_key",
+        "flight_loop",
+        "trail_if_present_in_source",
+        "contact",
+        "expiry_or_detonation_if_present_in_source"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_HL2_STRIDER_CANNON",
+      "owner_id": "PRJ_HL2_STRIDER_CANNON",
+      "name_fr": "Canon du Strider — HL2",
+      "category": "projectile",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "projectile_class": "instant_beam",
+      "requires_travel_sprite": false,
+      "priority": "P1",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_HL2_NPC_STRIDER"
+      ],
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Grand canon et effet de distorsion; séparer préparation, rayon et impact. Le MiniGun utilise un autre chemin de tir.",
+      "source_entities": [
+        "CNPC_Strider::FireCannon",
+        "CNPC_Strider::CannonHitThink"
+      ],
+      "source_resource_names": [
+        "effects/blueblacklargebeam",
+        "effects/strider_muzzle"
+      ],
+      "required_states": [
+        "charge_if_present",
+        "emission",
+        "origin_to_contact",
+        "contact",
+        "fade"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_HL2_AR2_PRIMARY_TRACE",
+      "owner_id": "PRJ_HL2_AR2_PRIMARY_TRACE",
+      "name_fr": "Trace du tir primaire AR2 — HL2",
+      "category": "projectile",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "projectile_class": "hitscan_trace",
+      "requires_travel_sprite": false,
+      "priority": "P1",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_HL2_WEAPON_AR2"
+      ],
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Le tir primaire utilise FireBullets. Produire flash, éventuelle trace et impact observés; aucun orbe ni missile de substitution.",
+      "source_entities": [
+        "CWeaponAR2"
+      ],
+      "source_resource_names": [],
+      "required_states": [
+        "muzzle_flash",
+        "trace_if_visible_in_reference",
+        "surface_impact",
+        "fade"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_HL2_PISTOL_FIRE_EFFECT",
+      "owner_id": "PRJ_HL2_PISTOL_FIRE_EFFECT",
+      "name_fr": "Effets du tir de pistolet — HL2",
+      "category": "projectile",
+      "source_game": "Half-Life 2",
+      "content_class": "released_reference",
+      "projectile_class": "hitscan_trace",
+      "requires_travel_sprite": false,
+      "priority": "P1",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_HL2_WEAPON_PISTOL"
+      ],
+      "primary_evidence_status": "sdk_entities_verified_visual_capture_pending",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Tir instantané du pistolet HL2. La présence d’une traînée visible doit être confirmée pour chaque contexte; aucune balle lente ajoutée.",
+      "source_entities": [
+        "CWeaponPistol"
+      ],
+      "source_resource_names": [],
+      "required_states": [
+        "muzzle_flash",
+        "trace_if_visible_in_reference",
+        "surface_impact",
+        "fade"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_OP4_SPORE",
+      "owner_id": "PRJ_OP4_SPORE",
+      "name_fr": "Spore du Spore Launcher — Opposing Force",
+      "category": "projectile",
+      "source_game": "Half-Life: Opposing Force",
+      "content_class": "released_reference",
+      "projectile_class": "moving_projectile",
+      "requires_travel_sprite": true,
+      "priority": "P2",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_OP4_STORE"
+      ],
+      "primary_evidence_status": "primary_context_only_specific_capture_required",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Réserver le projectile propre à Opposing Force. Sa forme, ses couleurs et les états des deux modes doivent être relevés dans le jeu avant génération fidèle.",
+      "source_entities": [],
+      "source_resource_names": [],
+      "required_states": [
+        "flight_key",
+        "flight_loop",
+        "trail_if_present_in_source",
+        "contact",
+        "expiry_or_detonation_if_present_in_source"
+      ],
+      "required_variants": [
+        "mode primaire à relever",
+        "mode secondaire à relever"
+      ],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_OP4_SHOCK_BOLT",
+      "owner_id": "PRJ_OP4_SHOCK_BOLT",
+      "name_fr": "Décharge du Shock Roach — Opposing Force",
+      "category": "projectile",
+      "source_game": "Half-Life: Opposing Force",
+      "content_class": "released_reference",
+      "projectile_class": "moving_projectile",
+      "requires_travel_sprite": true,
+      "priority": "P2",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_OP4_STORE"
+      ],
+      "primary_evidence_status": "primary_context_only_specific_capture_required",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Réserver la décharge propre au Shock Roach; références visuelles et trajectoire exactes à collecter. Aucun détail extrait du remake ou d’un mod.",
+      "source_entities": [],
+      "source_resource_names": [],
+      "required_states": [
+        "flight_key",
+        "flight_loop",
+        "trail_if_present_in_source",
+        "contact",
+        "expiry_or_detonation_if_present_in_source"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_OP4_DISPLACER_ORB",
+      "owner_id": "PRJ_OP4_DISPLACER_ORB",
+      "name_fr": "Orbe du Displacer — Opposing Force",
+      "category": "projectile",
+      "source_game": "Half-Life: Opposing Force",
+      "content_class": "released_reference",
+      "projectile_class": "moving_projectile",
+      "requires_travel_sprite": true,
+      "priority": "P2",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_OP4_STORE"
+      ],
+      "primary_evidence_status": "primary_context_only_specific_capture_required",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Réserver l’effet du Displacer; documenter le tir offensif et le déplacement du porteur séparément. Les pixels et comportements précis restent à vérifier.",
+      "source_entities": [],
+      "source_resource_names": [],
+      "required_states": [
+        "flight_key",
+        "flight_loop",
+        "trail_if_present_in_source",
+        "contact",
+        "expiry_or_detonation_if_present_in_source"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_ALYX_FRAG_GRENADE",
+      "owner_id": "PRJ_ALYX_FRAG_GRENADE",
+      "name_fr": "Grenade à fragmentation — Alyx",
+      "category": "projectile",
+      "source_game": "Half-Life: Alyx",
+      "content_class": "released_reference",
+      "projectile_class": "thrown_device",
+      "requires_travel_sprite": true,
+      "priority": "P2",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_ALYX_OFFICIAL"
+      ],
+      "primary_evidence_status": "primary_context_only_specific_capture_required",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Utiliser une capture de la grenade retail Alyx. Ne pas réutiliser le modèle HL2 par simple parenté d’univers; distinguer saisie, armement et éventuel lancement par l’arme.",
+      "source_entities": [],
+      "source_resource_names": [],
+      "required_states": [
+        "held_or_resting",
+        "in_flight",
+        "contact_or_bounce",
+        "armed_if_applicable",
+        "detonation_or_activation"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_ALYX_XEN_GRENADE",
+      "owner_id": "PRJ_ALYX_XEN_GRENADE",
+      "name_fr": "Grenade Xen — Alyx",
+      "category": "projectile",
+      "source_game": "Half-Life: Alyx",
+      "content_class": "released_reference",
+      "projectile_class": "thrown_device",
+      "requires_travel_sprite": true,
+      "priority": "P2",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_ALYX_OFFICIAL"
+      ],
+      "primary_evidence_status": "primary_context_only_specific_capture_required",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Objet organique de la version Alyx à capturer, avec état cueilli/armé distinct de la plante porteuse. Aucun modèle ou effet précis n’est validé dans ce catalogue.",
+      "source_entities": [],
+      "source_resource_names": [],
+      "required_states": [
+        "held_or_resting",
+        "in_flight",
+        "contact_or_bounce",
+        "armed_if_applicable",
+        "detonation_or_activation"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_PORTAL1_HIGH_ENERGY_PELLET",
+      "owner_id": "PRJ_PORTAL1_HIGH_ENERGY_PELLET",
+      "name_fr": "Boule d’énergie haute intensité — Portal",
+      "category": "projectile",
+      "source_game": "Portal",
+      "content_class": "released_reference",
+      "projectile_class": "moving_projectile",
+      "requires_travel_sprite": true,
+      "priority": "P2",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_PORTAL_STORE"
+      ],
+      "primary_evidence_status": "primary_context_only_specific_capture_required",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Fixer la capture du projectile Portal et de son émetteur/récepteur. Ne pas certifier sa texture en réutilisant la boule AR2 de HL2.",
+      "source_entities": [],
+      "source_resource_names": [],
+      "required_states": [
+        "flight_key",
+        "flight_loop",
+        "trail_if_present_in_source",
+        "contact",
+        "expiry_or_detonation_if_present_in_source"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_PORTAL1_ROCKET_TURRET_MISSILE",
+      "owner_id": "PRJ_PORTAL1_ROCKET_TURRET_MISSILE",
+      "name_fr": "Roquette de la Rocket Turret — Portal",
+      "category": "projectile",
+      "source_game": "Portal",
+      "content_class": "released_reference",
+      "projectile_class": "moving_projectile",
+      "requires_travel_sprite": true,
+      "priority": "P2",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_PORTAL_STORE"
+      ],
+      "primary_evidence_status": "primary_context_only_specific_capture_required",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Projectile de la tourelle à roquettes de Portal; ne pas confondre avec les tourelles à balles. Silhouette et vol à relever sur une scène exacte.",
+      "source_entities": [],
+      "source_resource_names": [],
+      "required_states": [
+        "flight_key",
+        "flight_loop",
+        "trail_if_present_in_source",
+        "contact",
+        "expiry_or_detonation_if_present_in_source"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_PORTAL1_PORTAL_EFFECT",
+      "owner_id": "PRJ_PORTAL1_PORTAL_EFFECT",
+      "name_fr": "Émission et ouverture de portails — Portal",
+      "category": "projectile",
+      "source_game": "Portal",
+      "content_class": "released_reference",
+      "projectile_class": "portal_effect",
+      "requires_travel_sprite": false,
+      "priority": "P2",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_PORTAL_STORE"
+      ],
+      "primary_evidence_status": "primary_context_only_specific_capture_required",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Version Portal du dispositif; aucun dégât de balle attribué aux portails. Relever séparément couleurs, arrivée et bordure des deux portails.",
+      "source_entities": [],
+      "source_resource_names": [],
+      "required_states": [
+        "emission",
+        "arrival",
+        "opening",
+        "open_loop",
+        "closing"
+      ],
+      "required_variants": [
+        "portail primaire",
+        "portail secondaire"
+      ],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_PORTAL2_PORTAL_EFFECT",
+      "owner_id": "PRJ_PORTAL2_PORTAL_EFFECT",
+      "name_fr": "Effets de portails solo et coop — Portal 2",
+      "category": "projectile",
+      "source_game": "Portal 2",
+      "content_class": "released_reference",
+      "projectile_class": "portal_effect",
+      "requires_travel_sprite": false,
+      "priority": "P2",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_PORTAL2_STORE"
+      ],
+      "primary_evidence_status": "primary_context_only_specific_capture_required",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Version Portal 2: palettes de Chell, ATLAS et P-body à comparer séparément à une capture de chaque porteur. Une variante de couleur n’est pas un nouveau personnage.",
+      "source_entities": [],
+      "source_resource_names": [],
+      "required_states": [
+        "emission",
+        "arrival",
+        "opening",
+        "open_loop",
+        "closing"
+      ],
+      "required_variants": [
+        "Chell primaire",
+        "Chell secondaire",
+        "ATLAS primaire",
+        "ATLAS secondaire",
+        "P-body primaire",
+        "P-body secondaire"
+      ],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_PORTAL2_THERMAL_BEAM",
+      "owner_id": "PRJ_PORTAL2_THERMAL_BEAM",
+      "name_fr": "Thermal Discouragement Beam — Portal 2",
+      "category": "projectile",
+      "source_game": "Portal 2",
+      "content_class": "released_reference",
+      "projectile_class": "continuous_beam",
+      "requires_travel_sprite": false,
+      "priority": "P1",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_PORTAL2_STORE",
+        "PJ_PORTAL2_MEDIA",
+        "PJ_PORTAL2_LASER_SCREENSHOT"
+      ],
+      "primary_evidence_status": "official_screenshot_observed",
+      "visual_reference_status": "official_screenshot_reviewed_detail_validation_pending",
+      "reference_capture": {
+        "source_id": "PJ_PORTAL2_LASER_SCREENSHOT",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_3d13161104a04603a0524536770c5f74626db4c0.1920x1080.jpg?t=1790187113",
+        "observed_on": "2026-11-24",
+        "width": 1920,
+        "height": 1080,
+        "scope": "Cœur clair, halo rouge, lignes fines entre dispositifs; pas de validation de toutes les configurations de réflexion."
+      },
+      "identity_lock": "Faisceau à cœur clair et halo rouge observé sur capture officielle. Séparer origine, segment et contact; relever le rendu retail et les reflets avant validation.",
+      "source_entities": [],
+      "source_resource_names": [],
+      "required_states": [
+        "startup",
+        "origin",
+        "beam_body",
+        "contact",
+        "shutdown"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_PORTAL2_REPULSION_GEL",
+      "owner_id": "PRJ_PORTAL2_REPULSION_GEL",
+      "name_fr": "Gel répulsif — Portal 2",
+      "category": "projectile",
+      "source_game": "Portal 2",
+      "content_class": "released_reference",
+      "projectile_class": "environmental_blob",
+      "requires_travel_sprite": true,
+      "priority": "P1",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_PORTAL2_STORE",
+        "PJ_PORTAL2_MEDIA",
+        "PJ_PORTAL2_GEL_SCREENSHOT"
+      ],
+      "primary_evidence_status": "official_screenshot_observed",
+      "visual_reference_status": "official_screenshot_reviewed_detail_validation_pending",
+      "reference_capture": {
+        "source_id": "PJ_PORTAL2_GEL_SCREENSHOT",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_358127df30a766a1516ad139083c2bcec3fe0975.1920x1080.jpg?t=1790187113",
+        "observed_on": "2026-11-24",
+        "width": 1920,
+        "height": 1080,
+        "scope": "Globules bleus brillants sortant d’un conduit; animation et état de surface encore à relever."
+      },
+      "identity_lock": "Volumes bleus brillants et globules fusionnés/séparés observés sur capture officielle. Respecter le dépôt de gel; aucun comportement explosif ajouté.",
+      "source_entities": [],
+      "source_resource_names": [],
+      "required_states": [
+        "separate_blob",
+        "merged_flow",
+        "flight_deformation",
+        "splash",
+        "surface_deposit"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_PORTAL2_PROPULSION_GEL",
+      "owner_id": "PRJ_PORTAL2_PROPULSION_GEL",
+      "name_fr": "Gel propulsif — Portal 2",
+      "category": "projectile",
+      "source_game": "Portal 2",
+      "content_class": "released_reference",
+      "projectile_class": "environmental_blob",
+      "requires_travel_sprite": true,
+      "priority": "P2",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_PORTAL2_STORE",
+        "PJ_PORTAL2_MEDIA"
+      ],
+      "primary_evidence_status": "official_media_named_visual_capture_required",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "L’index vidéo officiel confirme cette référence; relever une capture retail du volume et de son dépôt avant de fixer couleur, reflets et déformation.",
+      "source_entities": [],
+      "source_resource_names": [],
+      "required_states": [
+        "separate_blob",
+        "merged_flow",
+        "flight_deformation",
+        "splash",
+        "surface_deposit"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_PORTAL2_CONVERSION_GEL",
+      "owner_id": "PRJ_PORTAL2_CONVERSION_GEL",
+      "name_fr": "Gel de conversion — Portal 2",
+      "category": "projectile",
+      "source_game": "Portal 2",
+      "content_class": "released_reference",
+      "projectile_class": "environmental_blob",
+      "requires_travel_sprite": true,
+      "priority": "P2",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_PORTAL2_STORE"
+      ],
+      "primary_evidence_status": "primary_context_only_specific_capture_required",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Réserver le gel de conversion et ses éclaboussures; capture primaire propre à ce gel encore requise. Les autres gels ne valident pas cette apparence.",
+      "source_entities": [],
+      "source_resource_names": [],
+      "required_states": [
+        "separate_blob",
+        "merged_flow",
+        "flight_deformation",
+        "splash",
+        "surface_deposit"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_PORTAL2_WHEATLEY_BOMB",
+      "owner_id": "PRJ_PORTAL2_WHEATLEY_BOMB",
+      "name_fr": "Bombe du combat final — Portal 2",
+      "category": "projectile",
+      "source_game": "Portal 2",
+      "content_class": "released_reference",
+      "projectile_class": "moving_projectile",
+      "requires_travel_sprite": true,
+      "priority": "P2",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_PORTAL2_STORE"
+      ],
+      "primary_evidence_status": "primary_context_only_specific_capture_required",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Bombes du combat final à relever sur la scène retail: sortie du dispositif, vol, contact et explosion. Ne pas réutiliser la roquette de Portal 1.",
+      "source_entities": [],
+      "source_resource_names": [],
+      "required_states": [
+        "flight_key",
+        "flight_loop",
+        "trail_if_present_in_source",
+        "contact",
+        "expiry_or_detonation_if_present_in_source"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    },
+    {
+      "id": "PRJ_DESKJOB_TURRET_FIRE",
+      "owner_id": "PRJ_DESKJOB_TURRET_FIRE",
+      "name_fr": "Effets de tir des tourelles — Aperture Desk Job",
+      "category": "projectile",
+      "source_game": "Aperture Desk Job",
+      "content_class": "released_reference",
+      "projectile_class": "weapon_fire_effect",
+      "requires_travel_sprite": false,
+      "priority": "P2",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "source_ids": [
+        "PJ_DESKJOB_STORE",
+        "PJ_DESKJOB_TRAILER"
+      ],
+      "primary_evidence_status": "primary_context_only_specific_capture_required",
+      "visual_reference_status": "exact_visual_capture_required",
+      "reference_capture": null,
+      "identity_lock": "Relever la tourelle, le flash et les impacts du jeu. Le modèle de collision demeure à documenter; aucune balle lente ni qualification hitscan inventée.",
+      "source_entities": [],
+      "source_resource_names": [],
+      "required_states": [
+        "muzzle_flash_to_reference",
+        "contact_to_reference"
+      ],
+      "required_variants": [],
+      "production_note": "États et variantes à produire; leur présence dans ce catalogue ne déclare aucun fichier livré, aucune animation achevée et aucune intégration moteur. Le registre generated_art_register.json fait foi pour les fichiers."
+    }
+  ]
+}

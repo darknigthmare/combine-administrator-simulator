@@ -1,5 +1,21 @@
 # Candidats graphiques de Half Life Resonance
 
+## État courant — 27 novembre, lot P
+
+**327 PNG vérifiés et 381 demandes enregistrées.** Le lot P fournit neuf PNG de contenu coupé pour huit cibles, dont une première version bleue conservée mais écartée. Les 318 fichiers antérieurs gardent leur SHA-256.
+
+- [Rapport du lot P](../../docs/resonance/production/continuation_20261127_p/README.md)
+- [Galerie P](../../docs/resonance/production/continuation_20261127_p/GALLERY.md)
+- [Registre courant](../../docs/resonance/data/generated_art_register.json)
+- [Audit physique](../../docs/resonance/production/asset_audit.md)
+- [Catalogue des archives](../../docs/resonance/data/cut_content_catalog_20261127.json)
+
+Les 92 archives restent désactivées. Les douze images précédemment utilisées dans le jeu sont les seules intégrations déclarées. Une pose fixe ne termine pas un clip et aucune fidélité 1:1 n’est certifiée. Les images nouvelles gardent leurs dimensions natives, sans prétendre constituer des exports 4K.
+
+---
+
+# Historique du lot E — 20 novembre 2026
+
 Le dépôt contient **39 PNG vérifiés**, dont **12 nouveaux fichiers pour 7 cibles** dans le lot E du 20 novembre : trois poses de combattants, un costume HECU au béret, une vue arrière du Gargantua et sept fichiers de couches. Les fichiers sont rangés par lot sous `candidates/` et aucun n’est certifié 1:1.
 
 - [Galerie, références et contrôle du lot E](../../docs/resonance/production/continuation_20261120_e/README.md).

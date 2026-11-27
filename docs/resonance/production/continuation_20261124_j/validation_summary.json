@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-24",
+  "source_base_head": "8891c3cd2e9fa3c11b45e28de1ebfac83d978296",
+  "status": "passed_with_browser_limit",
+  "checks": [
+    {
+      "command": "node scripts/validate-resonance-design.mjs",
+      "status": "passed"
+    },
+    {
+      "command": "node scripts/validate-resonance-boss-design.mjs",
+      "status": "passed"
+    },
+    {
+      "command": "node scripts/audit-resonance-production.mjs --write-report",
+      "status": "passed",
+      "counts": {
+        "actual_png_files": 191,
+        "valid_png_headers": 191,
+        "distinct_png_contents": 191,
+        "requests": 229,
+        "generated_requests": 191,
+        "generated_requests_with_verified_file": 191,
+        "blocked_requests": 25,
+        "tool_error_requests": 1,
+        "output_unavailable_requests": 12,
+        "unproduced_requests": 26,
+        "unclassified_requests": 0,
+        "requests_with_files": 191,
+        "requests_without_files": 38,
+        "registered_png_files": 191,
+        "unregistered_png_files": 0,
+        "certified_one_to_one_declared": 0,
+        "certified_one_to_one_with_verified_file": 0,
+        "integrated_in_game_declared": 9,
+        "completed_animation_clips_declared": 0
+      },
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "command": "node scripts/sync-resonance-production.mjs --write",
+      "status": "passed",
+      "targets": 259,
+      "targets_with_files": 155,
+      "targets_without_files": 104,
+      "warnings": [
+        {
+          "code": "layer_id_missing",
+          "message": "A legacy layer file has no declared layer_id; it counts as a file, not an identified stage plane.",
+          "asset_id": "layer_city17_distant_skyline",
+          "target_id": "STG_11_HL2_STATION",
+          "repository_path": "assets/resonance/candidates/layer_city17_distant_skyline.png"
+        }
+      ]
+    },
+    {
+      "command": "node scripts/test-resonance-production-status.mjs",
+      "status": "passed"
+    },
+    {
+      "command": "npx vitest run src/features/resonance --exclude 'e2e/**'",
+      "status": "passed",
+      "test_files": 2,
+      "tests": 19,
+      "renderer_tests": 6,
+      "engine_tests": 13
+    },
+    {
+      "command": "npx oxlint (seven modified code/test scripts)",
+      "status": "passed"
+    },
+    {
+      "command": "npm run build",
+      "status": "passed",
+      "details": "TypeScript project build and Vite production bundle."
+    },
+    {
+      "command": "git diff --cached --check",
+      "status": "passed"
+    }
+  ],
+  "native_canvas_check": {
+    "status": "passed",
+    "actual_renderer_executed": true,
+    "browser": false,
+    "images_decoded": 7,
+    "captures_reviewed": 6,
+    "source_checksums": {
+      "renderer.ts": "b2292bbabb0685a619f9f43d294a1bff435a91741b834f54f08b924a28dc263b",
+      "spriteAssets.ts": "4aa2199b746297c016350f791044d1c624fa411452a569537585dcf8c792198d"
+    },
+    "scope": "Gordon and Elite both directions, stable anchors, Gunship, combat cues, dodge; native Canvas only."
+  },
+  "browser_validation": {
+    "status": "blocked_by_execution_environment",
+    "success_claimed": false,
+    "reason": "Playwright Chromium binary absent; installed system Chromium exits before opening page: socket() failed: Operation not permitted.",
+    "remaining_scope": "React/CSS layout, actual browser input and HTTP image loading."
+  },
+  "visual_certification": false,
+  "animation_complete": false
+}

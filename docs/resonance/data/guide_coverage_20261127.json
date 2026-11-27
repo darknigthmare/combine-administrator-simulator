@@ -1,0 +1,1014 @@
+{
+  "schema_version": "1.0",
+  "document_id": "guide_coverage_20261127",
+  "created_on": "2026-11-27",
+  "bible_version": "1.11",
+  "scope": "Couverture documentaire exhaustive, pas pourcentage de jeu terminé.",
+  "section_count": 68,
+  "decision_vocabulary": [
+    "retained",
+    "adapted",
+    "deferred",
+    "not_retained"
+  ],
+  "status_vocabulary": [
+    "documentation_applied",
+    "documented_not_implemented",
+    "partial_existing_runtime",
+    "partial_assets_unvalidated",
+    "partial_access_runtime_pending_validation",
+    "partial_access_runtime_verified"
+  ],
+  "sections": [
+    {
+      "section": "00",
+      "title": "UTILISATION DU GUIDE ET PRIORITÉS",
+      "source_id": "CG-GENERAL-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documentation_applied",
+      "application_paths": [
+        "docs/resonance/chapters/guide_integration_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "P0/P1/P2 et distinction conception/production/moteur fixés; aucun taux global trompeur.",
+      "next_gate": "Maintenir les liens et les preuves quand le périmètre évolue."
+    },
+    {
+      "section": "01",
+      "title": "IDENTITÉ DU PROJET ET PÉRIMÈTRE",
+      "source_id": "CG-GENERAL-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documentation_applied",
+      "application_paths": [
+        "docs/resonance/chapters/vision_editoriale.md",
+        "docs/resonance/chapters/guide_integration_20261127.md"
+      ],
+      "justification": "Mode latéral annexe, périmètre des versions et simulation fan explicités.",
+      "next_gate": "Maintenir les liens et les preuves quand le périmètre évolue."
+    },
+    {
+      "section": "02",
+      "title": "FIDÉLITÉ AU LORE ET SOURCES",
+      "source_id": "CG-GENERAL-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documentation_applied",
+      "application_paths": [
+        "docs/resonance/chapters/audit_et_sources.md",
+        "docs/resonance/chapters/guide_integration_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Statut du lore et sources par fiche; la cible 1:1 reste à démontrer.",
+      "next_gate": "Maintenir les liens et les preuves quand le périmètre évolue."
+    },
+    {
+      "section": "03",
+      "title": "ROSTER, PERSONNAGES, VARIANTES ET COSTUMES",
+      "source_id": "CG-GENERAL-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documentation_applied",
+      "application_paths": [
+        "docs/resonance/data/roster.json",
+        "docs/resonance/chapters/guide_extension_02_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "24 combattants de base et extensions existantes; profil mécanique ne vaut pas moveset complet.",
+      "next_gate": "Maintenir les liens et les preuves quand le périmètre évolue."
+    },
+    {
+      "section": "04",
+      "title": "FONDATIONS DU SYSTÈME DE COMBAT",
+      "source_id": "CG-GENERAL-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "partial_existing_runtime",
+      "application_paths": [
+        "docs/resonance/data/combat_rules.json",
+        "docs/resonance/chapters/systemes_combat.md",
+        "src/features/resonance/bossBattle/engine.ts"
+      ],
+      "justification": "Duel spécifié; Boss Battle possède sa simulation, sans duel versus livré.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "05",
+      "title": "MOVESETS, COUPS SPÉCIAUX ET RESSOURCES",
+      "source_id": "CG-GENERAL-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "partial_existing_runtime",
+      "application_paths": [
+        "docs/resonance/data/roster.json",
+        "docs/resonance/data/frame_data_pilote.json",
+        "src/features/resonance/bossBattle/engine.ts"
+      ],
+      "justification": "Kits documentés; six profils limités en Boss Battle, pas 24 movesets jouables.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "06",
+      "title": "ULTIMES, FINISHERS ET CONCLUSIONS DE COMBAT",
+      "source_id": "CG-GENERAL-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "decision": "adapted",
+      "actual_status": "documented_not_implemented",
+      "application_paths": [
+        "docs/resonance/data/roster.json",
+        "docs/resonance/chapters/guide_extension_01_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Finishers compatibles avec personnalités et anatomie; aucun clip ni activation finale nouvelle.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "07",
+      "title": "PRÉSENTATION ET RELATIONS ENTRE PERSONNAGES",
+      "source_id": "CG-GENERAL-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documented_not_implemented",
+      "application_paths": [
+        "docs/resonance/chapters/roster_narration.md",
+        "docs/resonance/chapters/guide_extension_01_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Relations, six taunts et six cycles de sélection conçus.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "08",
+      "title": "HISTOIRE INDIVIDUELLE DE CHAQUE PERSONNAGE",
+      "source_id": "CG-GENERAL-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documented_not_implemented",
+      "application_paths": [
+        "docs/resonance/data/roster.json",
+        "docs/resonance/chapters/roster_narration.md"
+      ],
+      "justification": "Routes individuelles déjà spécifiées; scènes et transitions restent à produire.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "09",
+      "title": "CAMPAGNE GLOBALE DISTINCTE",
+      "source_id": "CG-GENERAL-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documented_not_implemented",
+      "application_paths": [
+        "docs/resonance/data/roster.json",
+        "docs/resonance/chapters/guide_integration_20261127.md"
+      ],
+      "justification": "Douze chapitres fan distincts des routes; aucun ajout rétrospectif au canon.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "10",
+      "title": "ILLUSTRATIONS ET CINÉMATIQUES NARRATIVES",
+      "source_id": "CG-GENERAL-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documented_not_implemented",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_01_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Découpage des neuf scènes collectives; zéro film/voix/clip déclaré produit.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "11",
+      "title": "BOSS, MACHINES ET BOSS RUSH",
+      "source_id": "CG-GENERAL-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "partial_existing_runtime",
+      "application_paths": [
+        "docs/resonance/BOSS_BATTLE.md",
+        "docs/resonance/data/boss_battle_catalog.json",
+        "src/features/resonance/bossBattle/engine.ts"
+      ],
+      "justification": "Quatre opérations jouables sur 24 rencontres conçues et une archive; capacités source préservées.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "12",
+      "title": "MODES DE JEU",
+      "source_id": "CG-GENERAL-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "decision": "adapted",
+      "actual_status": "partial_existing_runtime",
+      "application_paths": [
+        "docs/resonance/data/combat_rules.json",
+        "docs/resonance/BOSS_BATTLE.md",
+        "docs/resonance/chapters/guide_extension_02_20261127.md"
+      ],
+      "justification": "single/rush/training existent; autres modes spécifiés et accessibles selon futur périmètre.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "13",
+      "title": "ARÈNES : LIEUX, COMPOSITION ET LISIBILITÉ",
+      "source_id": "CG-GENERAL-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "partial_assets_unvalidated",
+      "application_paths": [
+        "docs/resonance/data/stages.json",
+        "docs/resonance/chapters/arenes_production.md"
+      ],
+      "justification": "Masters/couches candidats; perspective, sol, raccords et collisions ne sont pas certifiés.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "14",
+      "title": "ARÈNES VIVANTES, STATIQUES ET ÉVÉNEMENTS",
+      "source_id": "CG-GENERAL-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documented_not_implemented",
+      "application_paths": [
+        "docs/resonance/data/stages.json",
+        "docs/resonance/chapters/guide_extension_02_20261127.md"
+      ],
+      "justification": "Contrats vivant/statique avec même gameplay et confort sans abonnement.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "15",
+      "title": "ARÈNES CONNECTÉES, TRANSITIONS ET INTERACTIONS",
+      "source_id": "CG-GENERAL-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "decision": "adapted",
+      "actual_status": "documented_not_implemented",
+      "application_paths": [
+        "docs/resonance/data/stages.json",
+        "docs/resonance/chapters/guide_extension_01_20261127.md",
+        "docs/resonance/chapters/guide_extension_02_20261127.md"
+      ],
+      "justification": "Connexions et transitions réelles exigent destinations chargées; hub documentaire ne crée aucune porte canonique.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "16",
+      "title": "ENNEMIS, SOUTIENS, VÉHICULES ET PROJECTILES",
+      "source_id": "CG-GENERAL-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "partial_existing_runtime",
+      "application_paths": [
+        "docs/resonance/data/projectile_catalog_20261124.json",
+        "docs/resonance/chapters/guide_extension_01_20261127.md",
+        "src/features/resonance/bossBattle/engine.ts"
+      ],
+      "justification": "66 familles de projectile/FX documentées; formes de secours du prototype distinctes des assets intégrés.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "17",
+      "title": "DIRECTION ARTISTIQUE ET PRODUCTION DES ASSETS",
+      "source_id": "CG-GENERAL-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "partial_assets_unvalidated",
+      "application_paths": [
+        "docs/resonance/data/production_queue.json",
+        "docs/resonance/chapters/guide_integration_20261127.md"
+      ],
+      "justification": "Un sujet par image, échelle et pivot; 286 PNG au checkpoint L, zéro issu du guide.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "18",
+      "title": "ANIMATIONS, VFX, SON ET CAMÉRA",
+      "source_id": "CG-GENERAL-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "partial_existing_runtime",
+      "application_paths": [
+        "docs/resonance/data/animation_inventory.json",
+        "docs/resonance/chapters/guide_extension_01_20261127.md",
+        "src/features/resonance/bossBattle/engine.ts"
+      ],
+      "justification": "Mouvement du prototype et VFX de travail ne certifient aucun clip dessiné complet.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "19",
+      "title": "INTERFACE ET EXPÉRIENCE UTILISATEUR",
+      "source_id": "CG-GENERAL-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "partial_existing_runtime",
+      "application_paths": [
+        "src/features/resonance/bossBattle/BossBattleScreen.tsx",
+        "docs/resonance/chapters/guide_extension_02_20261127.md"
+      ],
+      "justification": "Écran pilote déjà livré; états de collection étendus seulement aux dossiers de terrain.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "20",
+      "title": "TUTORIELS, ENTRAÎNEMENT ET APPRENTISSAGE",
+      "source_id": "CG-GENERAL-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "partial_existing_runtime",
+      "application_paths": [
+        "docs/resonance/data/combat_rules.json",
+        "docs/resonance/BOSS_BATTLE.md",
+        "docs/resonance/chapters/guide_extension_01_20261127.md"
+      ],
+      "justification": "Entraînement pilote présent; exercices tag/entités/bonus restent conçus.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "21",
+      "title": "IA ET DIFFICULTÉ",
+      "source_id": "CG-GENERAL-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "partial_existing_runtime",
+      "application_paths": [
+        "docs/resonance/data/combat_rules.json",
+        "src/features/resonance/bossBattle/engine.ts"
+      ],
+      "justification": "Comportements boss et difficultés réels; IA de duel complet et partenaires non implémentés.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "22",
+      "title": "ÉQUILIBRAGE ET ACCESSIBILITÉ",
+      "source_id": "CG-GENERAL-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "partial_existing_runtime",
+      "application_paths": [
+        "docs/resonance/data/combat_rules.json",
+        "docs/resonance/chapters/guide_extension_01_20261127.md",
+        "docs/resonance/chapters/guide_extension_02_20261127.md"
+      ],
+      "justification": "Réglages initiaux, options de lisibilité et commandes existantes; équilibrage des nouvelles règles non établi.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "23",
+      "title": "MULTIJOUEUR, RÉSEAU ET REPLAYS",
+      "source_id": "CG-GENERAL-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "decision": "deferred",
+      "actual_status": "documented_not_implemented",
+      "application_paths": [
+        "docs/resonance/data/combat_rules.json",
+        "docs/resonance/chapters/guide_extension_01_20261127.md",
+        "docs/resonance/chapters/guide_extension_02_20261127.md"
+      ],
+      "justification": "Netcode, coopération en ligne et replays complets non livrés; contrats et besoins déterministes conservés.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "24",
+      "title": "PROGRESSION, SAUVEGARDES ET REJOUABILITÉ",
+      "source_id": "CG-GENERAL-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "partial_access_runtime_verified",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_02_20261127.md",
+        "src/features/resonance/progression/access.ts"
+      ],
+      "justification": "Records existants plus dossiers permanents en lot adjacent; reste du catalogue en conception.",
+      "next_gate": "Modèle et dossiers vérifiés par smoke tests Node; observation du panneau dans le navigateur et exécution Vitest/build restent à faire. Le reste du catalogue est conçu."
+    },
+    {
+      "section": "25",
+      "title": "ORGANISATION, INVENTAIRES ET STATISTIQUES",
+      "source_id": "CG-GENERAL-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documentation_applied",
+      "application_paths": [
+        "docs/resonance/chapters/guide_integration_20261127.md",
+        "docs/resonance/guides/COVERAGE_68.md",
+        "docs/resonance/data/guide_coverage_20261127.json"
+      ],
+      "justification": "68 sections suivies individuellement; conception, images, animations, runtime et tests comptés séparément.",
+      "next_gate": "Maintenir les liens et les preuves quand le périmètre évolue."
+    },
+    {
+      "section": "26",
+      "title": "CRITÈRES DE VALIDATION ET ORDRE DE PRODUCTION",
+      "source_id": "CG-GENERAL-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documentation_applied",
+      "application_paths": [
+        "docs/resonance/chapters/guide_integration_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json",
+        "scripts/validate-resonance-guides.mjs"
+      ],
+      "justification": "Validateur documentaire et gates de production; sa réussite ne certifie ni rendu ni gameplay.",
+      "next_gate": "Maintenir les liens et les preuves quand le périmètre évolue."
+    },
+    {
+      "section": "27",
+      "title": "FICHES TYPES À REMPLIR",
+      "source_id": "CG-GENERAL-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "decision": "adapted",
+      "actual_status": "documentation_applied",
+      "application_paths": [
+        "docs/resonance/data/roster.json",
+        "docs/resonance/data/stages.json",
+        "docs/resonance/chapters/guide_extension_01_20261127.md",
+        "docs/resonance/chapters/guide_extension_02_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Fiches générales liées aux données existantes; nouvelles fiches structurées complétées, sans fermer les anciennes.",
+      "next_gate": "Maintenir les liens et les preuves quand le périmètre évolue."
+    },
+    {
+      "section": "28",
+      "title": "INSTRUCTION PRÊTE À TRANSMETTRE À UN PROJET",
+      "source_id": "CG-GENERAL-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documentation_applied",
+      "application_paths": [
+        "docs/resonance/chapters/guide_integration_20261127.md",
+        "docs/resonance/guides/SOURCE_MANIFEST.json"
+      ],
+      "justification": "Instruction appliquée avec état et limites datés; original intégral préservé.",
+      "next_gate": "Maintenir les liens et les preuves quand le périmètre évolue."
+    },
+    {
+      "section": "29",
+      "title": "RÉFÉRENCES VÉRIFIÉES ET VOCABULAIRE",
+      "source_id": "CG-GENERAL-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Guide_General_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documentation_applied",
+      "application_paths": [
+        "docs/resonance/chapters/guide_integration_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Références du guide préservées; références Half-Life/Portal séparées des inspirations de combat.",
+      "next_gate": "Maintenir les liens et les preuves quand le périmètre évolue."
+    },
+    {
+      "section": "30",
+      "title": "PORTÉE ET RATTACHEMENT AU GUIDE GÉNÉRAL",
+      "source_id": "CG-EXT01-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_01_Tag_Taunts_Bonus_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documentation_applied",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_01_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Rattachement aux contrats existants; aucun changement implicite du Boss Battle.",
+      "next_gate": "Maintenir les liens et les preuves quand le périmètre évolue."
+    },
+    {
+      "section": "31",
+      "title": "TAUNTS : PROVOCATIONS ET RÉACTIONS DE PERSONNALITÉ",
+      "source_id": "CG-EXT01-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_01_Tag_Taunts_Bonus_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documented_not_implemented",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_01_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Six taunts complets entrée/maintien/sortie/interruption; animations non produites.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "32",
+      "title": "ANIMATIONS DE SÉLECTION, CONFIRMATION ET DÉSÉLECTION",
+      "source_id": "CG-EXT01-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_01_Tag_Taunts_Bonus_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documented_not_implemented",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_01_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Six profils avec neuf états, désélection dédiée, version abrégée et nettoyage.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "33",
+      "title": "PROFILS D'ÉQUIPE ET CATÉGORIES DE PARTENAIRES",
+      "source_id": "CG-EXT01-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_01_Tag_Taunts_Bonus_v1.0.txt",
+      "decision": "adapted",
+      "actual_status": "documented_not_implemented",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_01_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Trois duos, profil hybride à deux; règle Decay récit distincte du versus.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "34",
+      "title": "COMMANDES, JAUGES ET DISPONIBILITÉ",
+      "source_id": "CG-EXT01-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_01_Tag_Taunts_Bonus_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documented_not_implemented",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_01_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Actions remappables, jauge coordination, coûts et disponibilité atomique conçus.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "35",
+      "title": "ASSISTANCES PONCTUELLES",
+      "source_id": "CG-EXT01-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_01_Tag_Taunts_Bonus_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documented_not_implemented",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_01_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Six assistances reliées aux kits; ressources, vulnérabilité et sortie documentées.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "36",
+      "title": "TAG : CHANGEMENT RÉEL DE COMBATTANT",
+      "source_id": "CG-EXT01-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_01_Tag_Taunts_Bonus_v1.0.txt",
+      "decision": "adapted",
+      "actual_status": "documented_not_implemented",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_01_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Tag véritable conçu; relais de secours différé; aucune promesse de tag runtime.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "37",
+      "title": "TECHNIQUES COMBINÉES ET SUPERS D'ÉQUIPE",
+      "source_id": "CG-EXT01-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_01_Tag_Taunts_Bonus_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documented_not_implemented",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_01_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Trois supers de duo, hit confirm et résolution courte en garde/échec.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "38",
+      "title": "FINISHERS D'ÉQUIPE ET FINS DRAMATIQUES CONDITIONNELLES",
+      "source_id": "CG-EXT01-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_01_Tag_Taunts_Bonus_v1.0.txt",
+      "decision": "adapted",
+      "actual_status": "documented_not_implemented",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_01_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Trois finishers et trois fins contextuelles; toutes scènes fan, résultat de combat conservé.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "39",
+      "title": "CLASHES ET CONFRONTATIONS AVEC QTE",
+      "source_id": "CG-EXT01-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_01_Tag_Taunts_Bonus_v1.0.txt",
+      "decision": "adapted",
+      "actual_status": "documented_not_implemented",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_01_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Clash physique, objet et famille énergétique différée; QTE optionnel solo, jamais pouvoir source présumé.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "40",
+      "title": "MOVESETS À ENTITÉS INDÉPENDANTES ET OBJETS PLACÉS",
+      "source_id": "CG-EXT01-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_01_Tag_Taunts_Bonus_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documented_not_implemented",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_01_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Quatre contrats d’entités; balise Alyx marquée invention, pas canon.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "41",
+      "title": "PROJECTILES PERSISTANTS ET RÈGLES COMMUNES AUX ENTITÉS",
+      "source_id": "CG-EXT01-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_01_Tag_Taunts_Bonus_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documented_not_implemented",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_01_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Propriétaire, tag/KO, réflexion, transition et budgets explicites.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "42",
+      "title": "STAGES BONUS ET ÉPREUVES INTÉGRÉES AUX HISTOIRES",
+      "source_id": "CG-EXT01-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_01_Tag_Taunts_Bonus_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documented_not_implemented",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_01_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Cinq bonus reliés aux stages/chapitres; épreuves complètes à réaliser.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "43",
+      "title": "ESPACE D'EXPLORATION ET DE DÉBLOCAGE INSPIRÉ DE LA KRYPT",
+      "source_id": "CG-EXT01-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_01_Tag_Taunts_Bonus_v1.0.txt",
+      "decision": "adapted",
+      "actual_status": "documented_not_implemented",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_01_20261127.md",
+        "docs/resonance/chapters/guide_extension_02_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Terminal des traces, quatre espaces et trois liaisons de navigation; aucune pièce jouable créée.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "44",
+      "title": "COHÉRENCE NARRATIVE, RELATIONS ET COMPATIBILITÉS",
+      "source_id": "CG-EXT01-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_01_Tag_Taunts_Bonus_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documentation_applied",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_01_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Périodes, alliances et variantes vérifiées dans les fiches; rencontres fan signalées.",
+      "next_gate": "Maintenir les liens et les preuves quand le périmètre évolue."
+    },
+    {
+      "section": "45",
+      "title": "ASSETS, ANIMATIONS, SONS ET MISE EN SCÈNE",
+      "source_id": "CG-EXT01-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_01_Tag_Taunts_Bonus_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documented_not_implemented",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_01_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Clips et séquences listés comme besoins; zéro nouvel asset et zéro certification.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "46",
+      "title": "INTERFACE, APPRENTISSAGE, ACCESSIBILITÉ ET RÉSEAU",
+      "source_id": "CG-EXT01-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_01_Tag_Taunts_Bonus_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "partial_existing_runtime",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_01_20261127.md",
+        "docs/resonance/chapters/guide_extension_02_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "UI et entraînement de base existent; équipe/QTE/réseau seulement spécifiés.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "47",
+      "title": "VALIDATION, STATISTIQUES ET ORDRE D'INTÉGRATION",
+      "source_id": "CG-EXT01-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_01_Tag_Taunts_Bonus_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documentation_applied",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_01_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json",
+        "scripts/validate-resonance-guides.mjs"
+      ],
+      "justification": "26 scénarios d’acceptation documentaire; preuves runtime du module voisin séparées.",
+      "next_gate": "Maintenir les liens et les preuves quand le périmètre évolue."
+    },
+    {
+      "section": "48",
+      "title": "DIX FICHES DE PRODUCTION COMPLÉMENTAIRES",
+      "source_id": "CG-EXT01-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_01_Tag_Taunts_Bonus_v1.0.txt",
+      "decision": "adapted",
+      "actual_status": "documentation_applied",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_01_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Dix familles de fiches couvertes par profils structurés propres au projet.",
+      "next_gate": "Maintenir les liens et les preuves quand le périmètre évolue."
+    },
+    {
+      "section": "49",
+      "title": "INSTRUCTION D'INTÉGRATION ET RÉFÉRENCES",
+      "source_id": "CG-EXT01-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_01_Tag_Taunts_Bonus_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documentation_applied",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_01_20261127.md",
+        "docs/resonance/guides/SOURCE_MANIFEST.json"
+      ],
+      "justification": "Extension intégrale importée, références et limites visibles.",
+      "next_gate": "Maintenir les liens et les preuves quand le périmètre évolue."
+    },
+    {
+      "section": "50",
+      "title": "PORTÉE, PRINCIPES ET RACCORDEMENT AUX GUIDES",
+      "source_id": "CG-EXT02-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_02_Slots_Verrouilles_Deblocages_Abonnes_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documentation_applied",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_02_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Présentation des catégories et statuts explicites; aucune rubrique effacée par manque de runtime.",
+      "next_gate": "Maintenir les liens et les preuves quand le périmètre évolue."
+    },
+    {
+      "section": "51",
+      "title": "ÉTATS DE DÉCOUVERTE, DE DROIT ET DE DISPONIBILITÉ",
+      "source_id": "CG-EXT02-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_02_Slots_Verrouilles_Deblocages_Abonnes_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "partial_access_runtime_verified",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_02_20261127.md",
+        "src/features/resonance/progression/access.ts"
+      ],
+      "justification": "Quatre dimensions; application effective limitée à quatre dossiers de terrain.",
+      "next_gate": "Modèle et dossiers vérifiés par smoke tests Node; observation du panneau dans le navigateur et exécution Vitest/build restent à faire. Le reste du catalogue est conçu."
+    },
+    {
+      "section": "52",
+      "title": "LANGAGE VISUEL ADAPTÉ AU LORE",
+      "source_id": "CG-EXT02-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_02_Slots_Verrouilles_Deblocages_Abonnes_v1.0.txt",
+      "decision": "adapted",
+      "actual_status": "partial_access_runtime_verified",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_02_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Dossier masqué/scan comme métaphore UI; silhouettes des personnages restent à produire.",
+      "next_gate": "Modèle et dossiers vérifiés par smoke tests Node; observation du panneau dans le navigateur et exécution Vitest/build restent à faire. Le reste du catalogue est conçu."
+    },
+    {
+      "section": "53",
+      "title": "EMPLACEMENTS DE PERSONNAGES ET PARTENAIRES",
+      "source_id": "CG-EXT02-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_02_Slots_Verrouilles_Deblocages_Abonnes_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documented_not_implemented",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_02_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Six profils de slots personnage conçus; six combattants pilotes toujours libres.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "54",
+      "title": "COSTUMES, PALETTES ET ACCESSOIRES",
+      "source_id": "CG-EXT02-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_02_Slots_Verrouilles_Deblocages_Abonnes_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documented_not_implemented",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_02_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Deux costumes réels du catalogue avec dépendances et conservation des acquisitions.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "55",
+      "title": "STAGES, VARIANTES ET DESTINATIONS",
+      "source_id": "CG-EXT02-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_02_Slots_Verrouilles_Deblocages_Abonnes_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documented_not_implemented",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_02_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Deux stages reliés au catalogue; droits de sélection, participation et chargement distingués.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "56",
+      "title": "MODES DE JEU ET PARCOURS VERROUILLÉS",
+      "source_id": "CG-EXT02-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_02_Slots_Verrouilles_Deblocages_Abonnes_v1.0.txt",
+      "decision": "adapted",
+      "actual_status": "documentation_applied",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_02_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Trois modes pilotes laissés libres; verrouillage de nouveaux parcours différé pour éviter impasses.",
+      "next_gate": "Maintenir les liens et les preuves quand le périmètre évolue."
+    },
+    {
+      "section": "57",
+      "title": "CONDITIONS DE DÉBLOCAGE ET PROGRESSION",
+      "source_id": "CG-EXT02-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_02_Slots_Verrouilles_Deblocages_Abonnes_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "partial_access_runtime_verified",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_02_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json",
+        "src/features/resonance/progression/conditions.ts"
+      ],
+      "justification": "Six règles futures ET/OU conçues; quatre dossiers avec conditions de victoires réelles dans le module adjacent.",
+      "next_gate": "Modèle et dossiers vérifiés par smoke tests Node; observation du panneau dans le navigateur et exécution Vitest/build restent à faire. Le reste du catalogue est conçu."
+    },
+    {
+      "section": "58",
+      "title": "EXPLORATION, RÉCOMPENSES ET SCÈNE DE RÉVÉLATION",
+      "source_id": "CG-EXT02-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_02_Slots_Verrouilles_Deblocages_Abonnes_v1.0.txt",
+      "decision": "adapted",
+      "actual_status": "documented_not_implemented",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_02_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Attribution avant révélation, coût non répété; exploration complète et scènes non livrées.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "59",
+      "title": "CONTENUS DÉDIÉS AUX ABONNÉS ET MODÈLES D'ACQUISITION",
+      "source_id": "CG-EXT02-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_02_Slots_Verrouilles_Deblocages_Abonnes_v1.0.txt",
+      "decision": "deferred",
+      "actual_status": "documented_not_implemented",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_02_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Trois modèles d’acquisition décrits; aucun avantage, prix ou abonnement créé.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "60",
+      "title": "LIAISON AVEC PATREON OU UN SERVICE ÉQUIVALENT",
+      "source_id": "CG-EXT02-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_02_Slots_Verrouilles_Deblocages_Abonnes_v1.0.txt",
+      "decision": "deferred",
+      "actual_status": "documented_not_implemented",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_02_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Aucune liaison Patreon, aucun jeton ni backend; vérifier documentation fournisseur avant implémentation.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "61",
+      "title": "EXPIRATION, CHANGEMENTS D'ACCÈS ET FONCTIONNEMENT HORS LIGNE",
+      "source_id": "CG-EXT02-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_02_Slots_Verrouilles_Deblocages_Abonnes_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "partial_access_runtime_verified",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_02_20261127.md",
+        "src/features/resonance/progression/access.ts"
+      ],
+      "justification": "Modèle d’accès gère sources permanentes/temp; aucun droit externe réel connecté.",
+      "next_gate": "Modèle et dossiers vérifiés par smoke tests Node; observation du panneau dans le navigateur et exécution Vitest/build restent à faire. Le reste du catalogue est conçu."
+    },
+    {
+      "section": "62",
+      "title": "SÉLECTION LOCALE, MULTIJOUEUR, ENTRAÎNEMENT ET REPLAYS",
+      "source_id": "CG-EXT02-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_02_Slots_Verrouilles_Deblocages_Abonnes_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documented_not_implemented",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_02_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Politique de participation/replay définie; réseau et partage externe non livrés.",
+      "next_gate": "Validation documentaire puis tests de la fonction concernée; pas de certification visuelle implicite."
+    },
+    {
+      "section": "63",
+      "title": "INTERFACE, TEXTES, ACCESSIBILITÉ ET PROTECTION DES SURPRISES",
+      "source_id": "CG-EXT02-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_02_Slots_Verrouilles_Deblocages_Abonnes_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "partial_access_runtime_verified",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_02_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Textes et anti-spoiler définis; panneau dossiers seulement implémenté dans ce lot adjacent.",
+      "next_gate": "Modèle et dossiers vérifiés par smoke tests Node; observation du panneau dans le navigateur et exécution Vitest/build restent à faire. Le reste du catalogue est conçu."
+    },
+    {
+      "section": "64",
+      "title": "PRODUCTION, SAUVEGARDE ET CRITÈRES DE VALIDATION",
+      "source_id": "CG-EXT02-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_02_Slots_Verrouilles_Deblocages_Abonnes_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "partial_access_runtime_verified",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_02_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json",
+        "scripts/validate-resonance-guides.mjs"
+      ],
+      "justification": "Sauvegarde/idempotence des dossiers testées séparément; tests des futurs verrous restent ouverts.",
+      "next_gate": "Modèle et dossiers vérifiés par smoke tests Node; observation du panneau dans le navigateur et exécution Vitest/build restent à faire. Le reste du catalogue est conçu."
+    },
+    {
+      "section": "65",
+      "title": "SIX FICHES DE PRODUCTION À REMPLIR",
+      "source_id": "CG-EXT02-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_02_Slots_Verrouilles_Deblocages_Abonnes_v1.0.txt",
+      "decision": "adapted",
+      "actual_status": "documentation_applied",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_02_20261127.md",
+        "docs/resonance/data/combat_extensions_20261127.json"
+      ],
+      "justification": "Six familles de fiches : contenus, règles, soutien, charte, stages et matrice de droits.",
+      "next_gate": "Maintenir les liens et les preuves quand le périmètre évolue."
+    },
+    {
+      "section": "66",
+      "title": "INSTRUCTION PRÊTE À TRANSMETTRE À UN PROJET",
+      "source_id": "CG-EXT02-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_02_Slots_Verrouilles_Deblocages_Abonnes_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documentation_applied",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_02_20261127.md",
+        "docs/resonance/chapters/guide_integration_20261127.md"
+      ],
+      "justification": "Instruction appliquée sans annoncer une offre ni une intégration distante opérationnelle.",
+      "next_gate": "Maintenir les liens et les preuves quand le périmètre évolue."
+    },
+    {
+      "section": "67",
+      "title": "RÉFÉRENCES VÉRIFIÉES ET VOCABULAIRE",
+      "source_id": "CG-EXT02-1.0",
+      "source_path": "docs/resonance/guides/Combat_Games_Extension_02_Slots_Verrouilles_Deblocages_Abonnes_v1.0.txt",
+      "decision": "retained",
+      "actual_status": "documentation_applied",
+      "application_paths": [
+        "docs/resonance/chapters/guide_extension_02_20261127.md",
+        "docs/resonance/guides/SOURCE_MANIFEST.json"
+      ],
+      "justification": "Sources de l’extension préservées; revue fournisseur à refaire au moment du raccordement.",
+      "next_gate": "Maintenir les liens et les preuves quand le périmètre évolue."
+    }
+  ],
+  "counts": {
+    "by_decision": {
+      "retained": 51,
+      "adapted": 14,
+      "deferred": 3
+    },
+    "by_status": {
+      "documentation_applied": 19,
+      "partial_existing_runtime": 11,
+      "documented_not_implemented": 29,
+      "partial_assets_unvalidated": 2,
+      "partial_access_runtime_verified": 7
+    }
+  }
+}

@@ -1,0 +1,3142 @@
+{
+  "schema_version": "1.0",
+  "document_id": "combat_extensions_20261127",
+  "module": "Half Life Resonance",
+  "bible_version": "1.11",
+  "created_on": "2026-11-27",
+  "status": "specified_not_implemented",
+  "runtime_enabled": false,
+  "scope": "Conception des extensions 01/02, reliée aux catalogues réels. Le moteur adjacent de dossiers de terrain garde ses propres données et preuves.",
+  "source_guides": [
+    "CG-GENERAL-1.0",
+    "CG-EXT01-1.0",
+    "CG-EXT02-1.0"
+  ],
+  "sources": [
+    {
+      "id": "GE-S01",
+      "title": "Valve — Half-Life 2",
+      "url": "https://www.half-life.com/en/halflife2",
+      "kind": "primary_official",
+      "checked_on": "2026-11-27",
+      "verified_scope": "Gordon et Alyx associés à la résistance au Cartel; ne prouve aucun taunt ni super de Resonance.",
+      "repository_evidence": "docs/resonance/chapters/audit_et_sources.md"
+    },
+    {
+      "id": "GE-S02",
+      "title": "Sierra / Gearbox / Valve — Half-Life PlayStation 2, manuel officiel archivé",
+      "url": "https://valvearchive.com/Games/Half-Life%20%28PlayStation%202%29/Documents/Manual.pdf",
+      "kind": "primary_published_manual_archived",
+      "checked_on": "2026-11-27",
+      "verified_scope": "Texte indexé consulté, page imprimée 26 : Gina et Colette, coopération, changement de contrôle en solo, échec si une meurt. Page 29 : identités. Le fichier PDF direct a répondu 403; aucune certification des pixels de modèles.",
+      "repository_evidence": "docs/resonance/chapters/audit_et_sources.md",
+      "previous_repository_status": "S6 previously identified but unread; textual scope above newly verified"
+    },
+    {
+      "id": "GE-S03",
+      "title": "Valve — Portal 2, présentation officielle",
+      "url": "https://www.thinkwithportals.com/about.php",
+      "kind": "primary_official",
+      "checked_on": "2026-11-27",
+      "verified_scope": "Univers Aperture, dispositif à portails, réflexion et coopération; aucune arme létale déduite du rayon de placement.",
+      "repository_evidence": "docs/resonance/data/aperture_combat_design_20261120.json",
+      "repository_source_ids": [
+        "AP01",
+        "AP02",
+        "AP05"
+      ]
+    },
+    {
+      "id": "GE-S04",
+      "title": "Contrats Aperture déjà documentés dans Resonance",
+      "kind": "repository_design",
+      "repository_path": "docs/resonance/data/aperture_combat_design_20261120.json",
+      "verified_scope": "Kits et sockets proposés, identités ATLAS/P-body, séparation des versions et des portails; règles de duel non canoniques."
+    },
+    {
+      "id": "GE-S05",
+      "title": "Kits, versions et récits existants du roster",
+      "kind": "repository_design",
+      "repository_path": "docs/resonance/data/roster.json",
+      "verified_scope": "Identifiants et actions de conception; scènes originales de Resonance, pas des scènes attestées dans les jeux."
+    },
+    {
+      "id": "GE-S06",
+      "title": "Valve Half-Life SDK — satchel.cpp à révision fixe",
+      "url": "https://github.com/ValveSoftware/halflife/blob/b1b5cf5892918535619b2937bb927e46cb097ba1/dlls/satchel.cpp",
+      "kind": "primary_source_code_verified_in_repository",
+      "checked_on": "2026-11-24",
+      "repository_evidence": "docs/resonance/data/projectile_catalog_20261124.json",
+      "repository_source_ids": [
+        "legacy_f__PJ_HL1_SATCHEL"
+      ],
+      "verified_scope": "Charge physique et déclenchement séparé; ni visuel 1:1 ni paramètres 2D certifiés."
+    },
+    {
+      "id": "GE-S07",
+      "title": "Catalogue d’extensions — identifiants, versions et état de production",
+      "kind": "repository_production_evidence",
+      "repository_path": "docs/resonance/data/catalogue_extension_20261120.json",
+      "verified_scope": "ATLAS/P-body : refus historiques et absence de PNG. Costumes Chell Portal 2 / Colette Head-to-Head et stages référencés : identifiants et version de catalogue vérifiés. Aucun dessin ni costume n’est certifié 1:1 par ce relevé."
+    },
+    {
+      "id": "GE-S08",
+      "title": "Archives et versions abandonnées",
+      "kind": "repository_design",
+      "repository_path": "docs/resonance/data/archive_reference_contracts_20261120.json",
+      "verified_scope": "Versions et preuves propres aux archives; aucune invention estampillée Half-Life 3 ni apparence finale déduite des prototypes."
+    },
+    {
+      "id": "GE-S09",
+      "title": "Boss Battle — catalogue, contrats et résultats existants",
+      "kind": "repository_runtime",
+      "repository_path": "src/features/resonance/bossBattle/catalog.ts",
+      "verified_scope": "Six profils mécaniques, quatre rencontres et trois modes distincts des kits de duel; dossiers de terrain liés aux identifiants existants."
+    }
+  ],
+  "production_baseline": {
+    "observed_checkpoint": "continuation_20261125_l",
+    "existing_png_count": 286,
+    "catalogue_target_count": 259,
+    "targets_with_png": 241,
+    "targets_without_png": 18,
+    "new_png_from_this_document": 0,
+    "new_completed_animation_clips": 0,
+    "version_1_10_status": "historical_mention_not_recovered_no_content_claim",
+    "parallel_production_report": "docs/resonance/production/continuation_20261127_n/README.md"
+  },
+  "fidelity_policy": {
+    "allowed": [
+      "attested_canon",
+      "playable_adaptation",
+      "original_compatible",
+      "original_compatible_ui",
+      "original_fan_scenario",
+      "alternative_crossover",
+      "to_confirm"
+    ],
+    "one_to_one_certification_claimed": false,
+    "source_identity_does_not_certify_new_scene": true,
+    "single_subject_per_source_image": true,
+    "separate_visual_and_runtime_validation": true,
+    "unreleased_content": "Conserver contrat d’archive et révision; ne pas inventer apparence finale ou récit HL3 canonique."
+  },
+  "team_system": {
+    "status": "specified_not_implemented",
+    "runtime_enabled": false,
+    "ticks_per_second": 60,
+    "scope": "Extension optionnelle des futurs duels; ne remplace ni le relais historique à trois ni le Boss Battle solo.",
+    "actions": [
+      "TAUNT",
+      "ASSIST",
+      "TAG",
+      "DUO_SUPER",
+      "TEAM_FINISHER",
+      "ENTITY_ORDER"
+    ],
+    "inputs": "Actions logiques remappables; aucune touche existante du Boss Battle réaffectée.",
+    "meter": {
+      "id": "coordination",
+      "max": 1000,
+      "initial": 250,
+      "passive_gain_per_60_actionable_ticks": 2,
+      "gain_per_confirmed_meterless_hit": 4,
+      "max_gain_per_combo": 12,
+      "assist_cost": 200,
+      "voluntary_tag_cost": 150,
+      "combo_tag_cost": 300,
+      "duo_super_cost": 700,
+      "post_victory_finisher_cost": 0,
+      "reset": "début de partie; conservation entre manches seulement dans le profil annoncé",
+      "clock": "Pas de gain pendant pause, hitstop, cinématique, QTE, intermission ou état de résultat.",
+      "atomic_spend": true,
+      "reserve_ko_auto_tag_cost": 0
+    },
+    "partner_states": [
+      "available",
+      "calling",
+      "entering",
+      "assisting",
+      "leaving",
+      "cooldown",
+      "active",
+      "hitstun",
+      "ko"
+    ],
+    "exclusive_engagement": "Un membre ne participe qu’à une intervention; réserver atomiquement membre et jauge avant le premier événement.",
+    "tag": {
+      "neutral_startup_ticks": 20,
+      "transfer_tick": 21,
+      "entrant_recovery_ticks": 18,
+      "default_cooldown_ticks": 240,
+      "allowed_states": [
+        "neutral_grounded"
+      ],
+      "defensive_rescue": "différé; aucun appel pendant hitstun ou garde sans contrat distinct",
+      "combo_tags_per_combo": 1,
+      "life_recovery_in_reserve": false,
+      "character_resources_persist": true,
+      "shared_combo_history": true,
+      "invalid_request_cost": 0,
+      "interrupted_after_commit_refund": false,
+      "incoming_position": "Même bord d’équipe, point libre et annoncé; pas de téléportation physique accordée aux humains."
+    },
+    "budgets": {
+      "temporary_roster_partner_per_team": 1,
+      "persistent_kit_objects_per_actor": 1,
+      "persistent_projectiles_per_actor": 2,
+      "portal_anchor_pairs_per_portal_actor": 1
+    },
+    "failure_policy": "Refus avant engagement : aucune dépense; interruption après engagement : coût conservé. Après KO, entrée gratuite du survivant lorsque le profil l’autorise.",
+    "value_status": "Hypothèses de design non équilibrées, non simulées dans ce lot."
+  },
+  "taunts": [
+    {
+      "id": "GUIDE_TAUNT_gordon_hl2",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "actor_id": "gordon_hl2",
+      "target_ids": [
+        "gordon_hl2"
+      ],
+      "version": "HEV Mark V / Half-Life 2",
+      "source_ids": [
+        "GE-S01",
+        "GE-S05"
+      ],
+      "lore_status": "playable_adaptation",
+      "name_fr": "Gordon Freeman — HL2 — provocation de présentation",
+      "action": "TAUNT",
+      "kind": "presentation_no_gameplay_bonus",
+      "direction": "facing_opponent",
+      "entry_ticks": 12,
+      "hold_ticks": 28,
+      "exit_ticks": 16,
+      "total_ticks": 56,
+      "gesture": "Vérifie la prise du pied-de-biche, le relève brièvement puis reprend sa garde; aucun dialogue inventé.",
+      "identity_invariants": "Conserver Mark V, lunettes, barbe, prise et latéralité du dossier HL2. Ne pas utiliser Mark IV ou le Gravity Gun amélioré comme tenue par défaut.",
+      "audio": "Aucune réplique vocale; son bref de vêtement et d’outil, à produire.",
+      "damage": 0,
+      "meter_gain": 0,
+      "invulnerable": false,
+      "cancellable_from_tick": 40,
+      "interruption": "Un impact applique immédiatement l’état de réaction normal; aucun coût de coup subi effacé. Annulation volontaire seulement au début de sortie.",
+      "replay_voice_cooldown_ticks": 600,
+      "asset_status": "no_animation_clip_produced",
+      "required_clips": [
+        "taunt_enter",
+        "taunt_hold",
+        "taunt_exit",
+        "taunt_hit_interrupt"
+      ],
+      "acceptance": [
+        "Retour exact à la garde et au pivot.",
+        "Aucun gain de jauge ni annulation du hitstun.",
+        "Contrôle des deux orientations sur références propres."
+      ]
+    },
+    {
+      "id": "GUIDE_TAUNT_alyx_hl2",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "actor_id": "alyx_hl2",
+      "target_ids": [
+        "alyx_hl2"
+      ],
+      "version": "Alyx de Half-Life 2, équipement de la même période",
+      "source_ids": [
+        "GE-S01",
+        "GE-S05"
+      ],
+      "lore_status": "playable_adaptation",
+      "name_fr": "Alyx Vance — HL2 — provocation de présentation",
+      "action": "TAUNT",
+      "kind": "presentation_no_gameplay_bonus",
+      "direction": "facing_opponent",
+      "entry_ticks": 10,
+      "hold_ticks": 30,
+      "exit_ticks": 14,
+      "total_ticks": 54,
+      "gesture": "Petit signe de tête de défi, arme tenue en sécurité; revient au regard sur l’adversaire.",
+      "identity_invariants": "Tenue et Alyx Gun du dossier HL2; aucun Gravity Glove de Half-Life: Alyx ajouté à cette version.",
+      "audio": "Pas de citation officielle recopiée; éventuelle ligne originale signalée comme adaptation, non enregistrée.",
+      "damage": 0,
+      "meter_gain": 0,
+      "invulnerable": false,
+      "cancellable_from_tick": 40,
+      "interruption": "Un impact applique immédiatement l’état de réaction normal; aucun coût de coup subi effacé. Annulation volontaire seulement au début de sortie.",
+      "replay_voice_cooldown_ticks": 600,
+      "asset_status": "no_animation_clip_produced",
+      "required_clips": [
+        "taunt_enter",
+        "taunt_hold",
+        "taunt_exit",
+        "taunt_hit_interrupt"
+      ],
+      "acceptance": [
+        "Retour exact à la garde et au pivot.",
+        "Aucun gain de jauge ni annulation du hitstun.",
+        "Contrôle des deux orientations sur références propres."
+      ]
+    },
+    {
+      "id": "GUIDE_TAUNT_gina_decay",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "actor_id": "gina_decay",
+      "target_ids": [
+        "gina_decay"
+      ],
+      "version": "Campagne Decay PlayStation 2",
+      "source_ids": [
+        "GE-S02",
+        "GE-S05"
+      ],
+      "lore_status": "playable_adaptation",
+      "name_fr": "Gina Cross — Decay — provocation de présentation",
+      "action": "TAUNT",
+      "kind": "presentation_no_gameplay_bonus",
+      "direction": "facing_opponent",
+      "entry_ticks": 14,
+      "hold_ticks": 24,
+      "exit_ticks": 18,
+      "total_ticks": 56,
+      "gesture": "Contrôle bref de l’équipement HEV puis geste de disponibilité à sa partenaire; pas de pouvoir scientifique surnaturel.",
+      "identity_invariants": "Modèle et palette Decay à comparer aux captures approuvées; ne pas substituer une tenue de multijoueur ou l’hologramme du Hazard Course.",
+      "audio": "Geste prioritaire; aucune personnalité nouvelle déduite du seul métier.",
+      "damage": 0,
+      "meter_gain": 0,
+      "invulnerable": false,
+      "cancellable_from_tick": 38,
+      "interruption": "Un impact applique immédiatement l’état de réaction normal; aucun coût de coup subi effacé. Annulation volontaire seulement au début de sortie.",
+      "replay_voice_cooldown_ticks": 600,
+      "asset_status": "no_animation_clip_produced",
+      "required_clips": [
+        "taunt_enter",
+        "taunt_hold",
+        "taunt_exit",
+        "taunt_hit_interrupt"
+      ],
+      "acceptance": [
+        "Retour exact à la garde et au pivot.",
+        "Aucun gain de jauge ni annulation du hitstun.",
+        "Contrôle des deux orientations sur références propres."
+      ]
+    },
+    {
+      "id": "GUIDE_TAUNT_colette_decay",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "actor_id": "colette_decay",
+      "target_ids": [
+        "colette_decay"
+      ],
+      "version": "Campagne Decay PlayStation 2",
+      "source_ids": [
+        "GE-S02",
+        "GE-S05"
+      ],
+      "lore_status": "playable_adaptation",
+      "name_fr": "Colette Green — Decay — provocation de présentation",
+      "action": "TAUNT",
+      "kind": "presentation_no_gameplay_bonus",
+      "direction": "facing_opponent",
+      "entry_ticks": 14,
+      "hold_ticks": 26,
+      "exit_ticks": 18,
+      "total_ticks": 58,
+      "gesture": "Observe l’indicateur de sa combinaison, confirme d’un geste bref puis revient à sa garde.",
+      "identity_invariants": "Modèle campagne séparé de costume_colette_headtohead_ps2; couleurs et attaches exigent une comparaison de référence.",
+      "audio": "Aucune citation ni performance vocale disponible dans ce lot.",
+      "damage": 0,
+      "meter_gain": 0,
+      "invulnerable": false,
+      "cancellable_from_tick": 40,
+      "interruption": "Un impact applique immédiatement l’état de réaction normal; aucun coût de coup subi effacé. Annulation volontaire seulement au début de sortie.",
+      "replay_voice_cooldown_ticks": 600,
+      "asset_status": "no_animation_clip_produced",
+      "required_clips": [
+        "taunt_enter",
+        "taunt_hold",
+        "taunt_exit",
+        "taunt_hit_interrupt"
+      ],
+      "acceptance": [
+        "Retour exact à la garde et au pivot.",
+        "Aucun gain de jauge ni annulation du hitstun.",
+        "Contrôle des deux orientations sur références propres."
+      ]
+    },
+    {
+      "id": "GUIDE_TAUNT_atlas_portal2",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "actor_id": "atlas_portal2",
+      "target_ids": [
+        "atlas_portal2"
+      ],
+      "version": "ATLAS, campagne coopérative Portal 2",
+      "source_ids": [
+        "GE-S03",
+        "GE-S04",
+        "GE-S07"
+      ],
+      "lore_status": "playable_adaptation",
+      "name_fr": "ATLAS — Portal 2 coop — provocation de présentation",
+      "action": "TAUNT",
+      "kind": "presentation_no_gameplay_bonus",
+      "direction": "facing_opponent",
+      "entry_ticks": 14,
+      "hold_ticks": 26,
+      "exit_ticks": 16,
+      "total_ticks": 56,
+      "gesture": "Incline son châssis compact et resserre l’iris, appareil pointé hors cible; pas de tir offensif fictif.",
+      "identity_invariants": "Corps compact et œil bleu; ne pas reprendre le châssis élancé ou l’œil orange de P-body.",
+      "audio": "Bruits mécaniques à produire; aucune parole humaine attribuée.",
+      "damage": 0,
+      "meter_gain": 0,
+      "invulnerable": false,
+      "cancellable_from_tick": 40,
+      "interruption": "Un impact applique immédiatement l’état de réaction normal; aucun coût de coup subi effacé. Annulation volontaire seulement au début de sortie.",
+      "replay_voice_cooldown_ticks": 600,
+      "asset_status": "historical_generation_refusal_no_png",
+      "required_clips": [
+        "taunt_enter",
+        "taunt_hold",
+        "taunt_exit",
+        "taunt_hit_interrupt"
+      ],
+      "acceptance": [
+        "Retour exact à la garde et au pivot.",
+        "Aucun gain de jauge ni annulation du hitstun.",
+        "Contrôle des deux orientations sur références propres."
+      ]
+    },
+    {
+      "id": "GUIDE_TAUNT_pbody_portal2",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "actor_id": "pbody_portal2",
+      "target_ids": [
+        "pbody_portal2"
+      ],
+      "version": "P-body, campagne coopérative Portal 2",
+      "source_ids": [
+        "GE-S03",
+        "GE-S04",
+        "GE-S07"
+      ],
+      "lore_status": "playable_adaptation",
+      "name_fr": "P-body — Portal 2 coop — provocation de présentation",
+      "action": "TAUNT",
+      "kind": "presentation_no_gameplay_bonus",
+      "direction": "facing_opponent",
+      "entry_ticks": 16,
+      "hold_ticks": 28,
+      "exit_ticks": 18,
+      "total_ticks": 62,
+      "gesture": "Se penche légèrement, marque une pause expressive de l’œil et se redresse; aucune déformation comique qui change le modèle.",
+      "identity_invariants": "Œil orange et grandes jambes; articulation, câble et appareil à vérifier indépendamment pour chaque orientation.",
+      "audio": "Bruits mécaniques à produire; aucune parole humaine attribuée.",
+      "damage": 0,
+      "meter_gain": 0,
+      "invulnerable": false,
+      "cancellable_from_tick": 44,
+      "interruption": "Un impact applique immédiatement l’état de réaction normal; aucun coût de coup subi effacé. Annulation volontaire seulement au début de sortie.",
+      "replay_voice_cooldown_ticks": 600,
+      "asset_status": "historical_generation_refusal_no_png",
+      "required_clips": [
+        "taunt_enter",
+        "taunt_hold",
+        "taunt_exit",
+        "taunt_hit_interrupt"
+      ],
+      "acceptance": [
+        "Retour exact à la garde et au pivot.",
+        "Aucun gain de jauge ni annulation du hitstun.",
+        "Contrôle des deux orientations sur références propres."
+      ]
+    }
+  ],
+  "selection_profiles": [
+    {
+      "id": "GUIDE_SELECT_gordon_hl2",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "actor_id": "gordon_hl2",
+      "target_ids": [
+        "gordon_hl2"
+      ],
+      "source_ids": [
+        "GE-S01",
+        "GE-S05"
+      ],
+      "lore_status": "original_compatible_ui",
+      "name_fr": "Gordon Freeman — HL2 — cycle de sélection",
+      "states": [
+        {
+          "id": "hover",
+          "ticks": 0,
+          "behavior": "Focus et nom autorisé par le niveau de découverte, aucune attribution de sélection."
+        },
+        {
+          "id": "preview",
+          "ticks": 24,
+          "behavior": "Relève le regard puis pose le pied-de-biche à hauteur de garde."
+        },
+        {
+          "id": "confirm",
+          "ticks": 30,
+          "behavior": "Valider immédiatement le choix, puis jouer la réaction sans bloquer les commandes."
+        },
+        {
+          "id": "confirmed_idle",
+          "ticks": 60,
+          "behavior": "Boucle de maintien; pas de nouvelle voix à chaque tour."
+        },
+        {
+          "id": "costume_change",
+          "ticks": 12,
+          "behavior": "Vérifier la version avant de changer le visuel; ne pas recopier un kit d’une autre période."
+        },
+        {
+          "id": "deselect",
+          "ticks": 36,
+          "behavior": "Abaisse son outil, recule hors du cadre; aucun fondu de téléportation."
+        },
+        {
+          "id": "deselect_short",
+          "ticks": 6,
+          "behavior": "Sortie abrégée propre en navigation rapide, même résultat logique."
+        },
+        {
+          "id": "team_confirm",
+          "ticks": 48,
+          "behavior": "Présenter les rôles actif/réserve, uniquement pour un profil d’équipe livré."
+        },
+        {
+          "id": "versus_departure",
+          "ticks": 18,
+          "behavior": "Retirer l’aperçu et charger le contenu autorisé."
+        }
+      ],
+      "cleanup": [
+        "voice_owner",
+        "preview_particles",
+        "preview_companion",
+        "preview_shadow",
+        "temporary_lights",
+        "portal_preview"
+      ],
+      "reduced_motion": "Pose statique, changement immédiat du focus et du texte; aucune information perdue.",
+      "asset_status": "no_selection_animation_produced",
+      "acceptance": [
+        "Deux curseurs et sélections identiques indépendants.",
+        "Désélection complète observable et sortie rapide propre.",
+        "Aucun effet résiduel après changement de costume ou fermeture."
+      ]
+    },
+    {
+      "id": "GUIDE_SELECT_alyx_hl2",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "actor_id": "alyx_hl2",
+      "target_ids": [
+        "alyx_hl2"
+      ],
+      "source_ids": [
+        "GE-S01",
+        "GE-S05"
+      ],
+      "lore_status": "original_compatible_ui",
+      "name_fr": "Alyx Vance — HL2 — cycle de sélection",
+      "states": [
+        {
+          "id": "hover",
+          "ticks": 0,
+          "behavior": "Focus et nom autorisé par le niveau de découverte, aucune attribution de sélection."
+        },
+        {
+          "id": "preview",
+          "ticks": 24,
+          "behavior": "Se tourne vers la menace avec son arme abaissée puis la ramène en position de départ."
+        },
+        {
+          "id": "confirm",
+          "ticks": 30,
+          "behavior": "Valider immédiatement le choix, puis jouer la réaction sans bloquer les commandes."
+        },
+        {
+          "id": "confirmed_idle",
+          "ticks": 60,
+          "behavior": "Boucle de maintien; pas de nouvelle voix à chaque tour."
+        },
+        {
+          "id": "costume_change",
+          "ticks": 12,
+          "behavior": "Vérifier la version avant de changer le visuel; ne pas recopier un kit d’une autre période."
+        },
+        {
+          "id": "deselect",
+          "ticks": 36,
+          "behavior": "Range ou abaisse l’arme suivant la référence d’animation, puis quitte le cadre par le côté."
+        },
+        {
+          "id": "deselect_short",
+          "ticks": 6,
+          "behavior": "Sortie abrégée propre en navigation rapide, même résultat logique."
+        },
+        {
+          "id": "team_confirm",
+          "ticks": 48,
+          "behavior": "Présenter les rôles actif/réserve, uniquement pour un profil d’équipe livré."
+        },
+        {
+          "id": "versus_departure",
+          "ticks": 18,
+          "behavior": "Retirer l’aperçu et charger le contenu autorisé."
+        }
+      ],
+      "cleanup": [
+        "voice_owner",
+        "preview_particles",
+        "preview_companion",
+        "preview_shadow",
+        "temporary_lights",
+        "portal_preview"
+      ],
+      "reduced_motion": "Pose statique, changement immédiat du focus et du texte; aucune information perdue.",
+      "asset_status": "no_selection_animation_produced",
+      "acceptance": [
+        "Deux curseurs et sélections identiques indépendants.",
+        "Désélection complète observable et sortie rapide propre.",
+        "Aucun effet résiduel après changement de costume ou fermeture."
+      ]
+    },
+    {
+      "id": "GUIDE_SELECT_gina_decay",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "actor_id": "gina_decay",
+      "target_ids": [
+        "gina_decay"
+      ],
+      "source_ids": [
+        "GE-S02",
+        "GE-S05"
+      ],
+      "lore_status": "original_compatible_ui",
+      "name_fr": "Gina Cross — Decay — cycle de sélection",
+      "states": [
+        {
+          "id": "hover",
+          "ticks": 0,
+          "behavior": "Focus et nom autorisé par le niveau de découverte, aucune attribution de sélection."
+        },
+        {
+          "id": "preview",
+          "ticks": 24,
+          "behavior": "Vérifie son équipement puis présente son outil de travail en position basse."
+        },
+        {
+          "id": "confirm",
+          "ticks": 30,
+          "behavior": "Valider immédiatement le choix, puis jouer la réaction sans bloquer les commandes."
+        },
+        {
+          "id": "confirmed_idle",
+          "ticks": 60,
+          "behavior": "Boucle de maintien; pas de nouvelle voix à chaque tour."
+        },
+        {
+          "id": "costume_change",
+          "ticks": 12,
+          "behavior": "Vérifier la version avant de changer le visuel; ne pas recopier un kit d’une autre période."
+        },
+        {
+          "id": "deselect",
+          "ticks": 36,
+          "behavior": "Ferme le geste de vérification, remet l’outil en sécurité et recule."
+        },
+        {
+          "id": "deselect_short",
+          "ticks": 6,
+          "behavior": "Sortie abrégée propre en navigation rapide, même résultat logique."
+        },
+        {
+          "id": "team_confirm",
+          "ticks": 48,
+          "behavior": "Présenter les rôles actif/réserve, uniquement pour un profil d’équipe livré."
+        },
+        {
+          "id": "versus_departure",
+          "ticks": 18,
+          "behavior": "Retirer l’aperçu et charger le contenu autorisé."
+        }
+      ],
+      "cleanup": [
+        "voice_owner",
+        "preview_particles",
+        "preview_companion",
+        "preview_shadow",
+        "temporary_lights",
+        "portal_preview"
+      ],
+      "reduced_motion": "Pose statique, changement immédiat du focus et du texte; aucune information perdue.",
+      "asset_status": "no_selection_animation_produced",
+      "acceptance": [
+        "Deux curseurs et sélections identiques indépendants.",
+        "Désélection complète observable et sortie rapide propre.",
+        "Aucun effet résiduel après changement de costume ou fermeture."
+      ]
+    },
+    {
+      "id": "GUIDE_SELECT_colette_decay",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "actor_id": "colette_decay",
+      "target_ids": [
+        "colette_decay"
+      ],
+      "source_ids": [
+        "GE-S02",
+        "GE-S05"
+      ],
+      "lore_status": "original_compatible_ui",
+      "name_fr": "Colette Green — Decay — cycle de sélection",
+      "states": [
+        {
+          "id": "hover",
+          "ticks": 0,
+          "behavior": "Focus et nom autorisé par le niveau de découverte, aucune attribution de sélection."
+        },
+        {
+          "id": "preview",
+          "ticks": 24,
+          "behavior": "Relève sa posture avec l’arme de son kit; la présentation reste distincte de celle de Gina."
+        },
+        {
+          "id": "confirm",
+          "ticks": 30,
+          "behavior": "Valider immédiatement le choix, puis jouer la réaction sans bloquer les commandes."
+        },
+        {
+          "id": "confirmed_idle",
+          "ticks": 60,
+          "behavior": "Boucle de maintien; pas de nouvelle voix à chaque tour."
+        },
+        {
+          "id": "costume_change",
+          "ticks": 12,
+          "behavior": "Vérifier la version avant de changer le visuel; ne pas recopier un kit d’une autre période."
+        },
+        {
+          "id": "deselect",
+          "ticks": 36,
+          "behavior": "Abaisse son arme, pivote et sort; l’indicateur visuel de menu s’éteint avec le personnage."
+        },
+        {
+          "id": "deselect_short",
+          "ticks": 6,
+          "behavior": "Sortie abrégée propre en navigation rapide, même résultat logique."
+        },
+        {
+          "id": "team_confirm",
+          "ticks": 48,
+          "behavior": "Présenter les rôles actif/réserve, uniquement pour un profil d’équipe livré."
+        },
+        {
+          "id": "versus_departure",
+          "ticks": 18,
+          "behavior": "Retirer l’aperçu et charger le contenu autorisé."
+        }
+      ],
+      "cleanup": [
+        "voice_owner",
+        "preview_particles",
+        "preview_companion",
+        "preview_shadow",
+        "temporary_lights",
+        "portal_preview"
+      ],
+      "reduced_motion": "Pose statique, changement immédiat du focus et du texte; aucune information perdue.",
+      "asset_status": "no_selection_animation_produced",
+      "acceptance": [
+        "Deux curseurs et sélections identiques indépendants.",
+        "Désélection complète observable et sortie rapide propre.",
+        "Aucun effet résiduel après changement de costume ou fermeture."
+      ]
+    },
+    {
+      "id": "GUIDE_SELECT_atlas_portal2",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "actor_id": "atlas_portal2",
+      "target_ids": [
+        "atlas_portal2"
+      ],
+      "source_ids": [
+        "GE-S03",
+        "GE-S04",
+        "GE-S07"
+      ],
+      "lore_status": "original_compatible_ui",
+      "name_fr": "ATLAS — Portal 2 coop — cycle de sélection",
+      "states": [
+        {
+          "id": "hover",
+          "ticks": 0,
+          "behavior": "Focus et nom autorisé par le niveau de découverte, aucune attribution de sélection."
+        },
+        {
+          "id": "preview",
+          "ticks": 24,
+          "behavior": "Redresse son châssis, fait converger son regard puis stabilise l’appareil."
+        },
+        {
+          "id": "confirm",
+          "ticks": 30,
+          "behavior": "Valider immédiatement le choix, puis jouer la réaction sans bloquer les commandes."
+        },
+        {
+          "id": "confirmed_idle",
+          "ticks": 60,
+          "behavior": "Boucle de maintien; pas de nouvelle voix à chaque tour."
+        },
+        {
+          "id": "costume_change",
+          "ticks": 12,
+          "behavior": "Vérifier la version avant de changer le visuel; ne pas recopier un kit d’une autre période."
+        },
+        {
+          "id": "deselect",
+          "ticks": 36,
+          "behavior": "Baisse l’appareil et recule; aucun portail de menu laissé actif."
+        },
+        {
+          "id": "deselect_short",
+          "ticks": 6,
+          "behavior": "Sortie abrégée propre en navigation rapide, même résultat logique."
+        },
+        {
+          "id": "team_confirm",
+          "ticks": 48,
+          "behavior": "Présenter les rôles actif/réserve, uniquement pour un profil d’équipe livré."
+        },
+        {
+          "id": "versus_departure",
+          "ticks": 18,
+          "behavior": "Retirer l’aperçu et charger le contenu autorisé."
+        }
+      ],
+      "cleanup": [
+        "voice_owner",
+        "preview_particles",
+        "preview_companion",
+        "preview_shadow",
+        "temporary_lights",
+        "portal_preview"
+      ],
+      "reduced_motion": "Pose statique, changement immédiat du focus et du texte; aucune information perdue.",
+      "asset_status": "historical_generation_refusal_no_png",
+      "acceptance": [
+        "Deux curseurs et sélections identiques indépendants.",
+        "Désélection complète observable et sortie rapide propre.",
+        "Aucun effet résiduel après changement de costume ou fermeture."
+      ]
+    },
+    {
+      "id": "GUIDE_SELECT_pbody_portal2",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "actor_id": "pbody_portal2",
+      "target_ids": [
+        "pbody_portal2"
+      ],
+      "source_ids": [
+        "GE-S03",
+        "GE-S04",
+        "GE-S07"
+      ],
+      "lore_status": "original_compatible_ui",
+      "name_fr": "P-body — Portal 2 coop — cycle de sélection",
+      "states": [
+        {
+          "id": "hover",
+          "ticks": 0,
+          "behavior": "Focus et nom autorisé par le niveau de découverte, aucune attribution de sélection."
+        },
+        {
+          "id": "preview",
+          "ticks": 24,
+          "behavior": "Déplie sa posture élancée, fixe la caméra puis revient vers son partenaire."
+        },
+        {
+          "id": "confirm",
+          "ticks": 30,
+          "behavior": "Valider immédiatement le choix, puis jouer la réaction sans bloquer les commandes."
+        },
+        {
+          "id": "confirmed_idle",
+          "ticks": 60,
+          "behavior": "Boucle de maintien; pas de nouvelle voix à chaque tour."
+        },
+        {
+          "id": "costume_change",
+          "ticks": 12,
+          "behavior": "Vérifier la version avant de changer le visuel; ne pas recopier un kit d’une autre période."
+        },
+        {
+          "id": "deselect",
+          "ticks": 36,
+          "behavior": "Ramène les bras vers le châssis et quitte le cadre avec des appuis lisibles."
+        },
+        {
+          "id": "deselect_short",
+          "ticks": 6,
+          "behavior": "Sortie abrégée propre en navigation rapide, même résultat logique."
+        },
+        {
+          "id": "team_confirm",
+          "ticks": 48,
+          "behavior": "Présenter les rôles actif/réserve, uniquement pour un profil d’équipe livré."
+        },
+        {
+          "id": "versus_departure",
+          "ticks": 18,
+          "behavior": "Retirer l’aperçu et charger le contenu autorisé."
+        }
+      ],
+      "cleanup": [
+        "voice_owner",
+        "preview_particles",
+        "preview_companion",
+        "preview_shadow",
+        "temporary_lights",
+        "portal_preview"
+      ],
+      "reduced_motion": "Pose statique, changement immédiat du focus et du texte; aucune information perdue.",
+      "asset_status": "historical_generation_refusal_no_png",
+      "acceptance": [
+        "Deux curseurs et sélections identiques indépendants.",
+        "Désélection complète observable et sortie rapide propre.",
+        "Aucun effet résiduel après changement de costume ou fermeture."
+      ]
+    }
+  ],
+  "team_profiles": [
+    {
+      "id": "GUIDE_TEAM_GORDON_ALYX",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "name_fr": "Gordon / Alyx — couverture coordonnée",
+      "actor_ids": [
+        "gordon_hl2",
+        "alyx_hl2"
+      ],
+      "target_ids": [
+        "gordon_hl2",
+        "alyx_hl2"
+      ],
+      "source_ids": [
+        "GE-S01",
+        "GE-S05"
+      ],
+      "lore_status": "playable_adaptation",
+      "profile": "hybrid_two",
+      "story_refs": [
+        "story_06",
+        "story_11"
+      ],
+      "allowed_contexts": [
+        "versus_fan_simulation",
+        "authored_story_variant"
+      ],
+      "life_policy": "individual_hp_eliminate_both",
+      "source_relation": "Alliance de HL2 attestée; chorégraphie créée pour Resonance.",
+      "restrictions": [
+        "Versions HL2 cohérentes dans le récit; pas de mélange Alyx HLA.",
+        "Aucune parole ajoutée à Gordon.",
+        "Dog reste une entité/personnage distinct; aucune présence implicite dans le duo."
+      ],
+      "narrative_override": "Les chapitres existants restent inchangés tant que la variante équipe n’est pas implémentée."
+    },
+    {
+      "id": "GUIDE_TEAM_GINA_COLETTE",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "name_fr": "Gina / Colette — double procédure",
+      "actor_ids": [
+        "gina_decay",
+        "colette_decay"
+      ],
+      "target_ids": [
+        "gina_decay",
+        "colette_decay"
+      ],
+      "source_ids": [
+        "GE-S02",
+        "GE-S05"
+      ],
+      "lore_status": "playable_adaptation",
+      "profile": "hybrid_two",
+      "story_refs": [
+        "story_04"
+      ],
+      "allowed_contexts": [
+        "versus_fan_simulation",
+        "authored_story_variant"
+      ],
+      "life_policy": "individual_hp_eliminate_both_in_versus",
+      "source_relation": "Duo de Decay attesté. Le changement SELECT en solo ne constitue pas la preuve d’un tag de jeu de combat.",
+      "restrictions": [
+        "Dans une restitution stricte des conditions Decay : une mort met fin à la mission.",
+        "Le versus conserve le profil à deux survivants, explicitement différent.",
+        "Aucun Gravity Gun ni pouvoir énergétique personnel inventé."
+      ],
+      "narrative_override": "story_04 reste en duels alternés. La variante tag est conçue séparément, désactivée."
+    },
+    {
+      "id": "GUIDE_TEAM_ATLAS_PBODY",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "name_fr": "ATLAS / P-body — coordination de tests",
+      "actor_ids": [
+        "atlas_portal2",
+        "pbody_portal2"
+      ],
+      "target_ids": [
+        "atlas_portal2",
+        "pbody_portal2"
+      ],
+      "source_ids": [
+        "GE-S03",
+        "GE-S04",
+        "GE-S07"
+      ],
+      "lore_status": "playable_adaptation",
+      "profile": "hybrid_two",
+      "story_refs": [],
+      "allowed_contexts": [
+        "versus_fan_simulation",
+        "aperture_bonus_design"
+      ],
+      "life_policy": "individual_hp_eliminate_both_in_versus",
+      "source_relation": "Coopération Portal 2 de référence; duel et dégâts de cubes sont des adaptations.",
+      "restrictions": [
+        "Portails de chaque robot distincts et propriétaire conservé.",
+        "Rayon de placement sans dégâts.",
+        "Référence de couleur et variante coop conservées.",
+        "Aucun nouvel appel image pour contourner les refus historiques."
+      ],
+      "narrative_override": "Conception uniquement : assets de base refusés, simulateur de portails non implémenté; aucune entrée jouable annoncée."
+    }
+  ],
+  "assists": [
+    {
+      "id": "GUIDE_ASSIST_gordon_hl2",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "actor_id": "gordon_hl2",
+      "team_id": "GUIDE_TEAM_GORDON_ALYX",
+      "target_ids": [
+        "gordon_hl2"
+      ],
+      "base_action_id": "gordon_hl2.special_1",
+      "name_fr": "Débris de couverture",
+      "source_ids": [
+        "GE-S01",
+        "GE-S05"
+      ],
+      "lore_status": "playable_adaptation",
+      "behavior": "Projette le débris de son propre kit sur une trajectoire annoncée; ne saisit ni adversaire ni synth géant.",
+      "startup_ticks": 18,
+      "active_ticks": 6,
+      "recovery_ticks": 26,
+      "total_ticks": 49,
+      "damage": 420,
+      "meter_cost": 200,
+      "cooldown_ticks": 360,
+      "guard": "mid",
+      "vulnerable": true,
+      "source_hp": "reserve_fighter_hp",
+      "interruption": "Touché avant action : annuler la frappe, conserver le coût et commencer récupération après sortie; KO interdit les appels suivants.",
+      "entry": "Point libre près du bord allié; collision et télégraphe avant l’attaque.",
+      "owner_policy": "Le partenaire conserve son identité pour dégâts, objets et ressources.",
+      "boss_fallback": "Aucune saisie générique sur grand boss; appliquer sa résistance et son objectif, ou refuser le contrat."
+    },
+    {
+      "id": "GUIDE_ASSIST_alyx_hl2",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "actor_id": "alyx_hl2",
+      "team_id": "GUIDE_TEAM_GORDON_ALYX",
+      "target_ids": [
+        "alyx_hl2"
+      ],
+      "base_action_id": "alyx_hl2.special_1",
+      "name_fr": "Deux tirs de couverture",
+      "source_ids": [
+        "GE-S01",
+        "GE-S05"
+      ],
+      "lore_status": "playable_adaptation",
+      "behavior": "Deux tirs de son kit, séparés et gardables; pas de visée automatique à travers le décor.",
+      "startup_ticks": 16,
+      "active_ticks": 10,
+      "recovery_ticks": 24,
+      "total_ticks": 49,
+      "damage": 360,
+      "meter_cost": 200,
+      "cooldown_ticks": 360,
+      "guard": "mid",
+      "vulnerable": true,
+      "source_hp": "reserve_fighter_hp",
+      "interruption": "Touché avant action : annuler la frappe, conserver le coût et commencer récupération après sortie; KO interdit les appels suivants.",
+      "entry": "Point libre près du bord allié; collision et télégraphe avant l’attaque.",
+      "owner_policy": "Le partenaire conserve son identité pour dégâts, objets et ressources.",
+      "boss_fallback": "Aucune saisie générique sur grand boss; appliquer sa résistance et son objectif, ou refuser le contrat."
+    },
+    {
+      "id": "GUIDE_ASSIST_gina_decay",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "actor_id": "gina_decay",
+      "team_id": "GUIDE_TEAM_GINA_COLETTE",
+      "target_ids": [
+        "gina_decay"
+      ],
+      "base_action_id": "gina_decay.special_1",
+      "name_fr": "Tir de sécurité partagé",
+      "source_ids": [
+        "GE-S02",
+        "GE-S05"
+      ],
+      "lore_status": "playable_adaptation",
+      "behavior": "Un tir de pistolet du kit existant, puis retrait vers son bord d’équipe.",
+      "startup_ticks": 18,
+      "active_ticks": 3,
+      "recovery_ticks": 27,
+      "total_ticks": 47,
+      "damage": 320,
+      "meter_cost": 200,
+      "cooldown_ticks": 360,
+      "guard": "mid",
+      "vulnerable": true,
+      "source_hp": "reserve_fighter_hp",
+      "interruption": "Touché avant action : annuler la frappe, conserver le coût et commencer récupération après sortie; KO interdit les appels suivants.",
+      "entry": "Point libre près du bord allié; collision et télégraphe avant l’attaque.",
+      "owner_policy": "Le partenaire conserve son identité pour dégâts, objets et ressources.",
+      "boss_fallback": "Aucune saisie générique sur grand boss; appliquer sa résistance et son objectif, ou refuser le contrat."
+    },
+    {
+      "id": "GUIDE_ASSIST_colette_decay",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "actor_id": "colette_decay",
+      "team_id": "GUIDE_TEAM_GINA_COLETTE",
+      "target_ids": [
+        "colette_decay"
+      ],
+      "base_action_id": "colette_decay.special_1",
+      "name_fr": "Tir mesuré partagé",
+      "source_ids": [
+        "GE-S02",
+        "GE-S05"
+      ],
+      "lore_status": "playable_adaptation",
+      "behavior": "Un tir placé pour couvrir la récupération de Gina; ne transforme pas sa formation en pouvoir.",
+      "startup_ticks": 20,
+      "active_ticks": 3,
+      "recovery_ticks": 25,
+      "total_ticks": 47,
+      "damage": 340,
+      "meter_cost": 200,
+      "cooldown_ticks": 360,
+      "guard": "mid",
+      "vulnerable": true,
+      "source_hp": "reserve_fighter_hp",
+      "interruption": "Touché avant action : annuler la frappe, conserver le coût et commencer récupération après sortie; KO interdit les appels suivants.",
+      "entry": "Point libre près du bord allié; collision et télégraphe avant l’attaque.",
+      "owner_policy": "Le partenaire conserve son identité pour dégâts, objets et ressources.",
+      "boss_fallback": "Aucune saisie générique sur grand boss; appliquer sa résistance et son objectif, ou refuser le contrat."
+    },
+    {
+      "id": "GUIDE_ASSIST_atlas_portal2",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "actor_id": "atlas_portal2",
+      "team_id": "GUIDE_TEAM_ATLAS_PBODY",
+      "target_ids": [
+        "atlas_portal2"
+      ],
+      "base_action_id": null,
+      "name_fr": "Passage du cube",
+      "source_ids": [
+        "GE-S03",
+        "GE-S04",
+        "GE-S07"
+      ],
+      "lore_status": "playable_adaptation",
+      "behavior": "Met le cube de son kit en mouvement depuis un socket valide; refus propre si aucun passage sûr.",
+      "startup_ticks": 24,
+      "active_ticks": 8,
+      "recovery_ticks": 30,
+      "total_ticks": 61,
+      "damage": 280,
+      "meter_cost": 200,
+      "cooldown_ticks": 360,
+      "guard": "mid",
+      "vulnerable": true,
+      "source_hp": "reserve_fighter_hp",
+      "interruption": "Touché avant action : annuler la frappe, conserver le coût et commencer récupération après sortie; KO interdit les appels suivants.",
+      "entry": "Point libre près du bord allié; collision et télégraphe avant l’attaque.",
+      "owner_policy": "Le partenaire conserve son identité pour dégâts, objets et ressources.",
+      "boss_fallback": "Aucune saisie générique sur grand boss; appliquer sa résistance et son objectif, ou refuser le contrat."
+    },
+    {
+      "id": "GUIDE_ASSIST_pbody_portal2",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "actor_id": "pbody_portal2",
+      "team_id": "GUIDE_TEAM_ATLAS_PBODY",
+      "target_ids": [
+        "pbody_portal2"
+      ],
+      "base_action_id": null,
+      "name_fr": "Relais du cube",
+      "source_ids": [
+        "GE-S03",
+        "GE-S04",
+        "GE-S07"
+      ],
+      "lore_status": "playable_adaptation",
+      "behavior": "Redirige un objet autorisé par une paire existante; ne crée pas de projectile énergétique offensif.",
+      "startup_ticks": 26,
+      "active_ticks": 8,
+      "recovery_ticks": 30,
+      "total_ticks": 63,
+      "damage": 280,
+      "meter_cost": 200,
+      "cooldown_ticks": 360,
+      "guard": "mid",
+      "vulnerable": true,
+      "source_hp": "reserve_fighter_hp",
+      "interruption": "Touché avant action : annuler la frappe, conserver le coût et commencer récupération après sortie; KO interdit les appels suivants.",
+      "entry": "Point libre près du bord allié; collision et télégraphe avant l’attaque.",
+      "owner_policy": "Le partenaire conserve son identité pour dégâts, objets et ressources.",
+      "boss_fallback": "Aucune saisie générique sur grand boss; appliquer sa résistance et son objectif, ou refuser le contrat."
+    }
+  ],
+  "duo_techniques": [
+    {
+      "id": "GUIDE_DUO_GORDON_ALYX_SUPER",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "team_id": "GUIDE_TEAM_GORDON_ALYX",
+      "actor_ids": [
+        "gordon_hl2",
+        "alyx_hl2"
+      ],
+      "target_ids": [
+        "gordon_hl2",
+        "alyx_hl2"
+      ],
+      "stage_ids": [
+        "STG_13_HL2_BME"
+      ],
+      "story_refs": [
+        "story_06"
+      ],
+      "opponent_ids": [
+        "combine_elite_hl2"
+      ],
+      "source_ids": [
+        "GE-S01",
+        "GE-S05"
+      ],
+      "lore_status": "playable_adaptation",
+      "name_fr": "Couloir dégagé",
+      "name_origin": "original_for_resonance",
+      "kind": "super",
+      "meter_cost": 700,
+      "command": "DUO_SUPER",
+      "initial_attack": {
+        "startup_ticks": 24,
+        "active_ticks": 4,
+        "recovery_ticks_on_whiff": 42,
+        "block_damage": 0,
+        "guard": "mid"
+      },
+      "cinematic_on_confirmed_hit_only": true,
+      "cinematic_max_ticks": 180,
+      "damage": 1800,
+      "can_change_confirmed_match_winner": false,
+      "participants_must_be_alive_and_available": true,
+      "sequence": [
+        {
+          "phase": "entry",
+          "text": "Valider versions, ressources, état partenaire et morphologie avant toute scène."
+        },
+        {
+          "phase": "cooperation",
+          "text": "Gordon engage un débris physique de kit; Alyx couvre sa trajectoire par deux tirs gardables. Le débris, et non un corps humain aspiré, prépare le contact."
+        },
+        {
+          "phase": "exit",
+          "text": "Rendre le contrôle au meneur initial; réserve retourne à son état de récupération, positions légales et coûts conservés."
+        }
+      ],
+      "conditions": "Deux membres autorisés, disponibles, présents dans le profil retenu; aucune résurrection de réserve KO.",
+      "fallback": "Super : résultat court si garde/échec/cible incompatible. Conclusion : victoire brève sans toucher au résultat déjà acquis.",
+      "priority": 0,
+      "reduced_motion": "Découpage abrégé avec mêmes événements, compteurs et résultat; aucun flash imposé.",
+      "asset_status": "storyboard_specified_no_frames_or_audio",
+      "runtime_gate": "Fonctions équipe et portails, si concernés, à implémenter; films et sons manquants."
+    },
+    {
+      "id": "GUIDE_DUO_GORDON_ALYX_FINISHER",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "team_id": "GUIDE_TEAM_GORDON_ALYX",
+      "actor_ids": [
+        "gordon_hl2",
+        "alyx_hl2"
+      ],
+      "target_ids": [
+        "gordon_hl2",
+        "alyx_hl2"
+      ],
+      "stage_ids": [
+        "STG_13_HL2_BME"
+      ],
+      "story_refs": [
+        "story_06"
+      ],
+      "opponent_ids": [
+        "combine_elite_hl2"
+      ],
+      "source_ids": [
+        "GE-S01",
+        "GE-S05"
+      ],
+      "lore_status": "original_fan_scenario",
+      "name_fr": "Interception conjointe",
+      "name_origin": "original_for_resonance",
+      "kind": "finisher",
+      "meter_cost": 0,
+      "command": "TEAM_FINISHER",
+      "initial_attack": null,
+      "cinematic_on_confirmed_hit_only": false,
+      "cinematic_max_ticks": 150,
+      "damage": 0,
+      "can_change_confirmed_match_winner": false,
+      "participants_must_be_alive_and_available": true,
+      "sequence": [
+        {
+          "phase": "entry",
+          "text": "Valider versions, ressources, état partenaire et morphologie avant toute scène."
+        },
+        {
+          "phase": "cooperation",
+          "text": "Après victoire, Gordon détourne l’arme ou l’objet de la cible compatible, Alyx contrôle la sortie. Une cible géante reçoit une pose de victoire sans prise corporelle."
+        },
+        {
+          "phase": "exit",
+          "text": "Rendre le contrôle au meneur initial; réserve retourne à son état de récupération, positions légales et coûts conservés."
+        }
+      ],
+      "conditions": "Deux membres autorisés, disponibles, présents dans le profil retenu; aucune résurrection de réserve KO.",
+      "fallback": "Super : résultat court si garde/échec/cible incompatible. Conclusion : victoire brève sans toucher au résultat déjà acquis.",
+      "priority": 200,
+      "reduced_motion": "Découpage abrégé avec mêmes événements, compteurs et résultat; aucun flash imposé.",
+      "asset_status": "storyboard_specified_no_frames_or_audio",
+      "runtime_gate": "Fonctions équipe et portails, si concernés, à implémenter; films et sons manquants."
+    },
+    {
+      "id": "GUIDE_DUO_GORDON_ALYX_DRAMATIC",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "team_id": "GUIDE_TEAM_GORDON_ALYX",
+      "actor_ids": [
+        "gordon_hl2",
+        "alyx_hl2"
+      ],
+      "target_ids": [
+        "gordon_hl2",
+        "alyx_hl2"
+      ],
+      "stage_ids": [
+        "STG_13_HL2_BME"
+      ],
+      "story_refs": [
+        "story_06"
+      ],
+      "opponent_ids": [
+        "combine_elite_hl2"
+      ],
+      "source_ids": [
+        "GE-S01",
+        "GE-S05"
+      ],
+      "lore_status": "original_fan_scenario",
+      "name_fr": "Sortie du relais",
+      "name_origin": "original_for_resonance",
+      "kind": "dramatic",
+      "meter_cost": 0,
+      "command": "automatic_post_victory_conditions",
+      "initial_attack": null,
+      "cinematic_on_confirmed_hit_only": false,
+      "cinematic_max_ticks": 150,
+      "damage": 0,
+      "can_change_confirmed_match_winner": false,
+      "participants_must_be_alive_and_available": true,
+      "sequence": [
+        {
+          "phase": "entry",
+          "text": "Valider versions, ressources, état partenaire et morphologie avant toute scène."
+        },
+        {
+          "phase": "cooperation",
+          "text": "Après victoire, Gordon détourne l’arme ou l’objet de la cible compatible, Alyx contrôle la sortie. Une cible géante reçoit une pose de victoire sans prise corporelle. Dernière action : frappe physique du kit. La scène concerne la simulation fan et n’affirme pas une rencontre supplémentaire du jeu Valve."
+        },
+        {
+          "phase": "exit",
+          "text": "Rendre le contrôle au meneur initial; réserve retourne à son état de récupération, positions légales et coûts conservés."
+        }
+      ],
+      "conditions": "Dernière action : frappe physique du kit. La scène concerne la simulation fan et n’affirme pas une rencontre supplémentaire du jeu Valve.",
+      "fallback": "Super : résultat court si garde/échec/cible incompatible. Conclusion : victoire brève sans toucher au résultat déjà acquis.",
+      "priority": 300,
+      "reduced_motion": "Découpage abrégé avec mêmes événements, compteurs et résultat; aucun flash imposé.",
+      "asset_status": "storyboard_specified_no_frames_or_audio",
+      "runtime_gate": "Fonctions équipe et portails, si concernés, à implémenter; films et sons manquants."
+    },
+    {
+      "id": "GUIDE_DUO_GINA_COLETTE_SUPER",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "team_id": "GUIDE_TEAM_GINA_COLETTE",
+      "actor_ids": [
+        "gina_decay",
+        "colette_decay"
+      ],
+      "target_ids": [
+        "gina_decay",
+        "colette_decay"
+      ],
+      "stage_ids": [
+        "STG_10_DECAY_GAMMA"
+      ],
+      "story_refs": [
+        "story_04"
+      ],
+      "opponent_ids": [],
+      "source_ids": [
+        "GE-S02",
+        "GE-S05"
+      ],
+      "lore_status": "playable_adaptation",
+      "name_fr": "Double contrôle",
+      "name_origin": "original_for_resonance",
+      "kind": "super",
+      "meter_cost": 700,
+      "command": "DUO_SUPER",
+      "initial_attack": {
+        "startup_ticks": 24,
+        "active_ticks": 4,
+        "recovery_ticks_on_whiff": 42,
+        "block_damage": 0,
+        "guard": "mid"
+      },
+      "cinematic_on_confirmed_hit_only": true,
+      "cinematic_max_ticks": 180,
+      "damage": 1800,
+      "can_change_confirmed_match_winner": false,
+      "participants_must_be_alive_and_available": true,
+      "sequence": [
+        {
+          "phase": "entry",
+          "text": "Valider versions, ressources, état partenaire et morphologie avant toute scène."
+        },
+        {
+          "phase": "cooperation",
+          "text": "Gina repousse un débris de laboratoire prédéfini; Colette couvre l’ouverture avec un tir de pistolet. Aucun appareil futur ou rayon personnel ajouté."
+        },
+        {
+          "phase": "exit",
+          "text": "Rendre le contrôle au meneur initial; réserve retourne à son état de récupération, positions légales et coûts conservés."
+        }
+      ],
+      "conditions": "Deux membres autorisés, disponibles, présents dans le profil retenu; aucune résurrection de réserve KO.",
+      "fallback": "Super : résultat court si garde/échec/cible incompatible. Conclusion : victoire brève sans toucher au résultat déjà acquis.",
+      "priority": 0,
+      "reduced_motion": "Découpage abrégé avec mêmes événements, compteurs et résultat; aucun flash imposé.",
+      "asset_status": "storyboard_specified_no_frames_or_audio",
+      "runtime_gate": "Fonctions équipe et portails, si concernés, à implémenter; films et sons manquants."
+    },
+    {
+      "id": "GUIDE_DUO_GINA_COLETTE_FINISHER",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "team_id": "GUIDE_TEAM_GINA_COLETTE",
+      "actor_ids": [
+        "gina_decay",
+        "colette_decay"
+      ],
+      "target_ids": [
+        "gina_decay",
+        "colette_decay"
+      ],
+      "stage_ids": [
+        "STG_10_DECAY_GAMMA"
+      ],
+      "story_refs": [
+        "story_04"
+      ],
+      "opponent_ids": [],
+      "source_ids": [
+        "GE-S02",
+        "GE-S05"
+      ],
+      "lore_status": "original_fan_scenario",
+      "name_fr": "Confinement du banc",
+      "name_origin": "original_for_resonance",
+      "kind": "finisher",
+      "meter_cost": 0,
+      "command": "TEAM_FINISHER",
+      "initial_attack": null,
+      "cinematic_on_confirmed_hit_only": false,
+      "cinematic_max_ticks": 150,
+      "damage": 0,
+      "can_change_confirmed_match_winner": false,
+      "participants_must_be_alive_and_available": true,
+      "sequence": [
+        {
+          "phase": "entry",
+          "text": "Valider versions, ressources, état partenaire et morphologie avant toute scène."
+        },
+        {
+          "phase": "cooperation",
+          "text": "La conclusion neutralise l’équipement de simulation puis laisse les deux scientifiques reprendre leurs relevés; aucune exécution d’une alliée."
+        },
+        {
+          "phase": "exit",
+          "text": "Rendre le contrôle au meneur initial; réserve retourne à son état de récupération, positions légales et coûts conservés."
+        }
+      ],
+      "conditions": "Deux membres autorisés, disponibles, présents dans le profil retenu; aucune résurrection de réserve KO.",
+      "fallback": "Super : résultat court si garde/échec/cible incompatible. Conclusion : victoire brève sans toucher au résultat déjà acquis.",
+      "priority": 200,
+      "reduced_motion": "Découpage abrégé avec mêmes événements, compteurs et résultat; aucun flash imposé.",
+      "asset_status": "storyboard_specified_no_frames_or_audio",
+      "runtime_gate": "Fonctions équipe et portails, si concernés, à implémenter; films et sons manquants."
+    },
+    {
+      "id": "GUIDE_DUO_GINA_COLETTE_DRAMATIC",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "team_id": "GUIDE_TEAM_GINA_COLETTE",
+      "actor_ids": [
+        "gina_decay",
+        "colette_decay"
+      ],
+      "target_ids": [
+        "gina_decay",
+        "colette_decay"
+      ],
+      "stage_ids": [
+        "STG_10_DECAY_GAMMA"
+      ],
+      "story_refs": [
+        "story_04"
+      ],
+      "opponent_ids": [],
+      "source_ids": [
+        "GE-S02",
+        "GE-S05"
+      ],
+      "lore_status": "original_fan_scenario",
+      "name_fr": "Mesures stabilisées",
+      "name_origin": "original_for_resonance",
+      "kind": "dramatic",
+      "meter_cost": 0,
+      "command": "automatic_post_victory_conditions",
+      "initial_attack": null,
+      "cinematic_on_confirmed_hit_only": false,
+      "cinematic_max_ticks": 150,
+      "damage": 0,
+      "can_change_confirmed_match_winner": false,
+      "participants_must_be_alive_and_available": true,
+      "sequence": [
+        {
+          "phase": "entry",
+          "text": "Valider versions, ressources, état partenaire et morphologie avant toute scène."
+        },
+        {
+          "phase": "cooperation",
+          "text": "La conclusion neutralise l’équipement de simulation puis laisse les deux scientifiques reprendre leurs relevés; aucune exécution d’une alliée. Chapitre fan terminé avec les deux personnages disponibles; action finale sur le relais fictif, pas une réécriture de la fin de Decay."
+        },
+        {
+          "phase": "exit",
+          "text": "Rendre le contrôle au meneur initial; réserve retourne à son état de récupération, positions légales et coûts conservés."
+        }
+      ],
+      "conditions": "Chapitre fan terminé avec les deux personnages disponibles; action finale sur le relais fictif, pas une réécriture de la fin de Decay.",
+      "fallback": "Super : résultat court si garde/échec/cible incompatible. Conclusion : victoire brève sans toucher au résultat déjà acquis.",
+      "priority": 300,
+      "reduced_motion": "Découpage abrégé avec mêmes événements, compteurs et résultat; aucun flash imposé.",
+      "asset_status": "storyboard_specified_no_frames_or_audio",
+      "runtime_gate": "Fonctions équipe et portails, si concernés, à implémenter; films et sons manquants."
+    },
+    {
+      "id": "GUIDE_DUO_ATLAS_PBODY_SUPER",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "team_id": "GUIDE_TEAM_ATLAS_PBODY",
+      "actor_ids": [
+        "atlas_portal2",
+        "pbody_portal2"
+      ],
+      "target_ids": [
+        "atlas_portal2",
+        "pbody_portal2"
+      ],
+      "stage_ids": [
+        "STG_EXT_PORTAL2_COOP_HUB"
+      ],
+      "story_refs": [],
+      "opponent_ids": [],
+      "source_ids": [
+        "GE-S03",
+        "GE-S04",
+        "GE-S07"
+      ],
+      "lore_status": "playable_adaptation",
+      "name_fr": "Trajet concerté",
+      "name_origin": "original_for_resonance",
+      "kind": "super",
+      "meter_cost": 700,
+      "command": "DUO_SUPER",
+      "initial_attack": {
+        "startup_ticks": 24,
+        "active_ticks": 4,
+        "recovery_ticks_on_whiff": 42,
+        "block_damage": 0,
+        "guard": "mid"
+      },
+      "cinematic_on_confirmed_hit_only": true,
+      "cinematic_max_ticks": 180,
+      "damage": 1800,
+      "can_change_confirmed_match_winner": false,
+      "participants_must_be_alive_and_available": true,
+      "sequence": [
+        {
+          "phase": "entry",
+          "text": "Valider versions, ressources, état partenaire et morphologie avant toute scène."
+        },
+        {
+          "phase": "cooperation",
+          "text": "Un cube autorisé traverse au plus une paire de chaque robot puis produit un impact borné. Les rayons d’ouverture font zéro dégât; sortie libre obligatoire."
+        },
+        {
+          "phase": "exit",
+          "text": "Rendre le contrôle au meneur initial; réserve retourne à son état de récupération, positions légales et coûts conservés."
+        }
+      ],
+      "conditions": "Deux membres autorisés, disponibles, présents dans le profil retenu; aucune résurrection de réserve KO.",
+      "fallback": "Super : résultat court si garde/échec/cible incompatible. Conclusion : victoire brève sans toucher au résultat déjà acquis.",
+      "priority": 0,
+      "reduced_motion": "Découpage abrégé avec mêmes événements, compteurs et résultat; aucun flash imposé.",
+      "asset_status": "storyboard_specified_no_frames_or_audio",
+      "runtime_gate": "Fonctions équipe et portails, si concernés, à implémenter; films et sons manquants."
+    },
+    {
+      "id": "GUIDE_DUO_ATLAS_PBODY_FINISHER",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "team_id": "GUIDE_TEAM_ATLAS_PBODY",
+      "actor_ids": [
+        "atlas_portal2",
+        "pbody_portal2"
+      ],
+      "target_ids": [
+        "atlas_portal2",
+        "pbody_portal2"
+      ],
+      "stage_ids": [
+        "STG_EXT_PORTAL2_COOP_HUB"
+      ],
+      "story_refs": [],
+      "opponent_ids": [],
+      "source_ids": [
+        "GE-S03",
+        "GE-S04",
+        "GE-S07"
+      ],
+      "lore_status": "original_fan_scenario",
+      "name_fr": "Test terminé",
+      "name_origin": "original_for_resonance",
+      "kind": "finisher",
+      "meter_cost": 0,
+      "command": "TEAM_FINISHER",
+      "initial_attack": null,
+      "cinematic_on_confirmed_hit_only": false,
+      "cinematic_max_ticks": 150,
+      "damage": 0,
+      "can_change_confirmed_match_winner": false,
+      "participants_must_be_alive_and_available": true,
+      "sequence": [
+        {
+          "phase": "entry",
+          "text": "Valider versions, ressources, état partenaire et morphologie avant toute scène."
+        },
+        {
+          "phase": "cooperation",
+          "text": "Le cube rejoint une zone de réception fictive, les robots se saluent. Aucune désintégration inventée d’une personne par un Portal Gun."
+        },
+        {
+          "phase": "exit",
+          "text": "Rendre le contrôle au meneur initial; réserve retourne à son état de récupération, positions légales et coûts conservés."
+        }
+      ],
+      "conditions": "Deux membres autorisés, disponibles, présents dans le profil retenu; aucune résurrection de réserve KO.",
+      "fallback": "Super : résultat court si garde/échec/cible incompatible. Conclusion : victoire brève sans toucher au résultat déjà acquis.",
+      "priority": 200,
+      "reduced_motion": "Découpage abrégé avec mêmes événements, compteurs et résultat; aucun flash imposé.",
+      "asset_status": "storyboard_specified_no_frames_or_audio",
+      "runtime_gate": "Fonctions équipe et portails, si concernés, à implémenter; films et sons manquants."
+    },
+    {
+      "id": "GUIDE_DUO_ATLAS_PBODY_DRAMATIC",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "team_id": "GUIDE_TEAM_ATLAS_PBODY",
+      "actor_ids": [
+        "atlas_portal2",
+        "pbody_portal2"
+      ],
+      "target_ids": [
+        "atlas_portal2",
+        "pbody_portal2"
+      ],
+      "stage_ids": [
+        "STG_EXT_PORTAL2_COOP_HUB"
+      ],
+      "story_refs": [],
+      "opponent_ids": [],
+      "source_ids": [
+        "GE-S03",
+        "GE-S04",
+        "GE-S07"
+      ],
+      "lore_status": "original_fan_scenario",
+      "name_fr": "Compte rendu coopératif",
+      "name_origin": "original_for_resonance",
+      "kind": "dramatic",
+      "meter_cost": 0,
+      "command": "automatic_post_victory_conditions",
+      "initial_attack": null,
+      "cinematic_on_confirmed_hit_only": false,
+      "cinematic_max_ticks": 150,
+      "damage": 0,
+      "can_change_confirmed_match_winner": false,
+      "participants_must_be_alive_and_available": true,
+      "sequence": [
+        {
+          "phase": "entry",
+          "text": "Valider versions, ressources, état partenaire et morphologie avant toute scène."
+        },
+        {
+          "phase": "cooperation",
+          "text": "Le cube rejoint une zone de réception fictive, les robots se saluent. Aucune désintégration inventée d’une personne par un Portal Gun. Seulement dans le bonus Aperture conçu, après objectifs de coopération; conclusion originale de simulation, aucune suite canonique inventée."
+        },
+        {
+          "phase": "exit",
+          "text": "Rendre le contrôle au meneur initial; réserve retourne à son état de récupération, positions légales et coûts conservés."
+        }
+      ],
+      "conditions": "Seulement dans le bonus Aperture conçu, après objectifs de coopération; conclusion originale de simulation, aucune suite canonique inventée.",
+      "fallback": "Super : résultat court si garde/échec/cible incompatible. Conclusion : victoire brève sans toucher au résultat déjà acquis.",
+      "priority": 300,
+      "reduced_motion": "Découpage abrégé avec mêmes événements, compteurs et résultat; aucun flash imposé.",
+      "asset_status": "storyboard_specified_no_frames_or_audio",
+      "runtime_gate": "Fonctions équipe et portails, si concernés, à implémenter; films et sons manquants."
+    }
+  ],
+  "clashes": [
+    {
+      "id": "GUIDE_CLASH_CROWBAR",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "name_fr": "Contact d’outils",
+      "actor_ids": [
+        "gordon_hl2",
+        "gordon_hl1"
+      ],
+      "target_ids": [
+        "gordon_hl2",
+        "gordon_hl1"
+      ],
+      "source_ids": [
+        "GE-S05"
+      ],
+      "lore_status": "playable_adaptation",
+      "compatibility": "Deux frappes physiques autorisées, actives et en contact; le simple même nom de personnage ne déclenche rien.",
+      "window_ticks": 2,
+      "cooldown_ticks": 600,
+      "story_qte": {
+        "duration_ticks": 72,
+        "input": "CONFIRM",
+        "success_window_ticks": 18,
+        "tie": "séparation sans dégâts",
+        "no_input": "recul défavorable borné, sans inversion d’une victoire déjà validée"
+      },
+      "competitive_resolution": "Annulation mécanique et recul symétrique, sans QTE.",
+      "third_party": "Résoudre les impacts antérieurs puis ceux du même tick par identifiants stables; pas de priorité implicite au joueur gauche.",
+      "maximum_damage": 250
+    },
+    {
+      "id": "GUIDE_CLASH_PORTAL_OBJECT",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "name_fr": "Collision de cubes",
+      "actor_ids": [
+        "atlas_portal2",
+        "pbody_portal2"
+      ],
+      "target_ids": [
+        "atlas_portal2",
+        "pbody_portal2"
+      ],
+      "source_ids": [
+        "GE-S03",
+        "GE-S04"
+      ],
+      "lore_status": "playable_adaptation",
+      "compatibility": "Objets physiques compatibles uniquement; les rayons de placement de portail ne deviennent pas des faisceaux de duel.",
+      "window_ticks": 2,
+      "cooldown_ticks": 600,
+      "story_qte": null,
+      "competitive_resolution": "Rebond déterministe borné; aucune boucle de traversées ni multiplication de dégâts.",
+      "third_party": "Conserver propriétaire et historique de chaque objet après collision.",
+      "maximum_damage": 0
+    },
+    {
+      "id": "GUIDE_CLASH_ENERGY_DEFERRED",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "name_fr": "Confrontation énergétique — non retenue en P0",
+      "actor_ids": [
+        "vortigaunt_hl2",
+        "combine_elite_hl2"
+      ],
+      "target_ids": [
+        "vortigaunt_hl2",
+        "combine_elite_hl2"
+      ],
+      "source_ids": [
+        "GE-S05"
+      ],
+      "lore_status": "to_confirm",
+      "compatibility": "Aucune équivalence universelle entre Vortessence et AR2 affirmée; groupe cinématique non activé sans contrat de capacités documenté.",
+      "window_ticks": 0,
+      "cooldown_ticks": 0,
+      "story_qte": null,
+      "competitive_resolution": "Résolution habituelle des projectiles de leurs kits; aucune scène automatique.",
+      "third_party": "Conserver les règles ordinaires tant que cette famille est différée.",
+      "maximum_damage": 0
+    }
+  ],
+  "entities": [
+    {
+      "id": "GUIDE_ENTITY_GORDON_DEBRIS",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "owner_id": "gordon_hl2",
+      "target_ids": [
+        "gordon_hl2"
+      ],
+      "source_ids": [
+        "GE-S01",
+        "GE-S05"
+      ],
+      "name_fr": "Débris physique du kit",
+      "base_action_id": "gordon_hl2.trait",
+      "lore_status": "playable_adaptation",
+      "behavior": "Objet prédéfini de simulation, un seul; lancer et rappel gardent propriétaire et historique de combo.",
+      "max_instances": 1,
+      "lifetime_ticks": 600,
+      "owner_hit": "Arrêter les ordres préparés; les impacts déjà engagés suivent l’ordre déterministe de collision.",
+      "owner_reserved": "return_or_drop_no_new_damage",
+      "owner_ko": "remove_after_committed_hits",
+      "stage_transition": "Retirer sans dégâts les objets non transférables; ne pas laisser de hitbox invisible dans la destination.",
+      "round_end": "Retirer et réinitialiser sans remboursement gratuit.",
+      "cinematic": "Geler tous les acteurs selon la même horloge; pas de recharge passive.",
+      "reflection": "Seulement si autorisée par le type; nouveau propriétaire enregistré pour dégâts, combo et récompense.",
+      "opponent_responses": [
+        "garde selon type",
+        "esquive du trajet annoncé",
+        "destruction si la fiche du kit l’autorise"
+      ],
+      "rollback": "État entièrement sérialisable; aucun doublon d’entité ou de dommage.",
+      "acceptance": [
+        "Propriétaire conservé au tag.",
+        "Retrait propre au KO et en fin de manche.",
+        "Un budget ne dépasse jamais le plafond du profil."
+      ]
+    },
+    {
+      "id": "GUIDE_ENTITY_ALYX_BEACON",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "owner_id": "alyx_hl2",
+      "target_ids": [
+        "alyx_hl2"
+      ],
+      "source_ids": [
+        "GE-S05"
+      ],
+      "name_fr": "Balise fictive de duel",
+      "base_action_id": "alyx_hl2.trait",
+      "lore_status": "original_compatible",
+      "behavior": "Dispositif inventé déjà décrit par le roster; ne pirate pas la manette, les organiques ou tous les systèmes Cartel par défaut.",
+      "max_instances": 1,
+      "lifetime_ticks": 480,
+      "owner_hit": "Arrêter les ordres préparés; les impacts déjà engagés suivent l’ordre déterministe de collision.",
+      "owner_reserved": "deactivate_and_expire",
+      "owner_ko": "remove_after_committed_hits",
+      "stage_transition": "Retirer sans dégâts les objets non transférables; ne pas laisser de hitbox invisible dans la destination.",
+      "round_end": "Retirer et réinitialiser sans remboursement gratuit.",
+      "cinematic": "Geler tous les acteurs selon la même horloge; pas de recharge passive.",
+      "reflection": "Seulement si autorisée par le type; nouveau propriétaire enregistré pour dégâts, combo et récompense.",
+      "opponent_responses": [
+        "garde selon type",
+        "esquive du trajet annoncé",
+        "destruction si la fiche du kit l’autorise"
+      ],
+      "rollback": "État entièrement sérialisable; aucun doublon d’entité ou de dommage.",
+      "acceptance": [
+        "Propriétaire conservé au tag.",
+        "Retrait propre au KO et en fin de manche.",
+        "Un budget ne dépasse jamais le plafond du profil."
+      ]
+    },
+    {
+      "id": "GUIDE_ENTITY_SATCHEL",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "owner_id": "gordon_hl1",
+      "target_ids": [
+        "proj_satchel_hl1"
+      ],
+      "source_ids": [
+        "GE-S06"
+      ],
+      "name_fr": "Charge télécommandée HL1",
+      "base_action_id": null,
+      "lore_status": "playable_adaptation",
+      "behavior": "Charge physique et télécommande sont distinctes; coût et portée 2D proposés sans certifier le modèle.",
+      "max_instances": 1,
+      "lifetime_ticks": 600,
+      "owner_hit": "Arrêter les ordres préparés; les impacts déjà engagés suivent l’ordre déterministe de collision.",
+      "owner_reserved": "remain_armed_no_orders_in_reserve",
+      "owner_ko": "remove_after_committed_hits",
+      "stage_transition": "Retirer sans dégâts les objets non transférables; ne pas laisser de hitbox invisible dans la destination.",
+      "round_end": "Retirer et réinitialiser sans remboursement gratuit.",
+      "cinematic": "Geler tous les acteurs selon la même horloge; pas de recharge passive.",
+      "reflection": "Seulement si autorisée par le type; nouveau propriétaire enregistré pour dégâts, combo et récompense.",
+      "opponent_responses": [
+        "garde selon type",
+        "esquive du trajet annoncé",
+        "destruction si la fiche du kit l’autorise"
+      ],
+      "rollback": "État entièrement sérialisable; aucun doublon d’entité ou de dommage.",
+      "acceptance": [
+        "Propriétaire conservé au tag.",
+        "Retrait propre au KO et en fin de manche.",
+        "Un budget ne dépasse jamais le plafond du profil."
+      ]
+    },
+    {
+      "id": "GUIDE_ENTITY_APERTURE_CUBE",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "owner_id": "atlas_portal2",
+      "target_ids": [
+        "atlas_portal2",
+        "pbody_portal2",
+        "fx_portals_coop_portal2"
+      ],
+      "source_ids": [
+        "GE-S03",
+        "GE-S04"
+      ],
+      "name_fr": "Cube et passages coop",
+      "base_action_id": null,
+      "lore_status": "playable_adaptation",
+      "behavior": "Un cube de kit, deux paires possédées séparément; une traversée par paire et par lancement, sortie bloquée = refus annoncé.",
+      "max_instances": 1,
+      "lifetime_ticks": 600,
+      "owner_hit": "Arrêter les ordres préparés; les impacts déjà engagés suivent l’ordre déterministe de collision.",
+      "owner_reserved": "return_no_new_portal_orders",
+      "owner_ko": "remove_after_committed_hits",
+      "stage_transition": "Retirer sans dégâts les objets non transférables; ne pas laisser de hitbox invisible dans la destination.",
+      "round_end": "Retirer et réinitialiser sans remboursement gratuit.",
+      "cinematic": "Geler tous les acteurs selon la même horloge; pas de recharge passive.",
+      "reflection": "Seulement si autorisée par le type; nouveau propriétaire enregistré pour dégâts, combo et récompense.",
+      "opponent_responses": [
+        "garde selon type",
+        "esquive du trajet annoncé",
+        "destruction si la fiche du kit l’autorise"
+      ],
+      "rollback": "État entièrement sérialisable; aucun doublon d’entité ou de dommage.",
+      "acceptance": [
+        "Propriétaire conservé au tag.",
+        "Retrait propre au KO et en fin de manche.",
+        "Un budget ne dépasse jamais le plafond du profil."
+      ]
+    }
+  ],
+  "bonus_stages": [
+    {
+      "id": "GUIDE_BONUS_BME_CLEARANCE",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "name_fr": "Dégagement du banc",
+      "actor_ids": [
+        "gordon_hl2"
+      ],
+      "target_ids": [
+        "gordon_hl2"
+      ],
+      "stage_id": "STG_13_HL2_BME",
+      "story_refs": [
+        "story_06"
+      ],
+      "source_ids": [
+        "GE-S01",
+        "GE-S05"
+      ],
+      "lore_status": "original_fan_scenario",
+      "family": "controlled_destruction",
+      "objective": "Dégager six obstacles de simulation avec des objets du kit, sans toucher les deux zones de matériel fragile.",
+      "duration_ticks": 3600,
+      "success": {
+        "cleared": 6,
+        "protected_zones_damaged": 0
+      },
+      "failure": "Temps dépassé ou zone protégée touchée; reprise immédiate sans dépense de progression.",
+      "enemy_ids": [],
+      "presence_limit": 0,
+      "reward_rule_id": "GUIDE_UNLOCK_BME_REPORT",
+      "exit_state": "Vie et ressources du chapitre restaurées; aucun bonus de puissance en versus.",
+      "narrative_scope": "Exercice original au sein de la simulation Resonance, pas scène manquante officielle de Black Mesa East."
+    },
+    {
+      "id": "GUIDE_BONUS_RAVENHOLM_ROUTE",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "name_fr": "Maintenir une issue",
+      "actor_ids": [
+        "grigori_hl2"
+      ],
+      "target_ids": [
+        "grigori_hl2",
+        "zombie_hl2"
+      ],
+      "stage_id": "STG_14_HL2_RAVENHOLM",
+      "story_refs": [
+        "story_05"
+      ],
+      "source_ids": [
+        "GE-S05"
+      ],
+      "lore_status": "original_fan_scenario",
+      "family": "bounded_horde",
+      "objective": "Tenir une issue pendant trois vagues de six zombies standard; jamais plus de six présents.",
+      "duration_ticks": 5400,
+      "success": {
+        "waves_completed": 3,
+        "exit_integrity_min": 1
+      },
+      "failure": "Issue perdue ou KO; reprise au début de l’épreuve, aucun décès canon ajouté.",
+      "enemy_ids": [
+        "zombie_hl2"
+      ],
+      "presence_limit": 6,
+      "reward_rule_id": "GUIDE_UNLOCK_RAVENHOLM_REPORT",
+      "exit_state": "Progression de la route conservée; les ennemis utilisent une endurance propre au bonus, annoncée.",
+      "narrative_scope": "Les faibles PV sont un réglage de bonus. Ils ne redéfinissent pas la résistance canonique des zombies ni l’état officiel de Ravenholm."
+    },
+    {
+      "id": "GUIDE_BONUS_DECAY_INTERLOCK",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "name_fr": "Double consignation",
+      "actor_ids": [
+        "gina_decay",
+        "colette_decay"
+      ],
+      "target_ids": [
+        "gina_decay",
+        "colette_decay"
+      ],
+      "stage_id": "STG_10_DECAY_GAMMA",
+      "story_refs": [
+        "story_04"
+      ],
+      "source_ids": [
+        "GE-S02",
+        "GE-S05"
+      ],
+      "lore_status": "original_fan_scenario",
+      "family": "cooperative_switches",
+      "objective": "Actionner deux consoles dans la fenêtre affichée, puis rejoindre ensemble la sortie de simulation.",
+      "duration_ticks": 5400,
+      "success": {
+        "paired_switches": 3,
+        "both_at_exit": true
+      },
+      "failure": "Une scientifique KO ou temps dépassé; reset des consoles, pas des récompenses déjà gagnées.",
+      "enemy_ids": [],
+      "presence_limit": 0,
+      "reward_rule_id": "GUIDE_UNLOCK_DECAY_PAIR",
+      "exit_state": "Prêt scénarisé des deux profils pour éviter un cycle de déblocage; retour aux duels alternés du chapitre actuel.",
+      "narrative_scope": "Coopération Decay comme référence; consoles, temps et séquence créés pour Resonance. Le décor Gamma n’est pas reconstruit 1:1 par cette fiche."
+    },
+    {
+      "id": "GUIDE_BONUS_APERTURE_ROUTE",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "name_fr": "Acheminement réciproque",
+      "actor_ids": [
+        "atlas_portal2",
+        "pbody_portal2"
+      ],
+      "target_ids": [
+        "atlas_portal2",
+        "pbody_portal2",
+        "fx_portals_coop_portal2"
+      ],
+      "stage_id": "STG_EXT_PORTAL2_COOP_HUB",
+      "story_refs": [],
+      "source_ids": [
+        "GE-S03",
+        "GE-S04",
+        "GE-S07"
+      ],
+      "lore_status": "original_fan_scenario",
+      "family": "portal_cooperation_puzzle",
+      "objective": "Acheminer un cube entre deux stations de test, avec un passage valide fourni par chaque robot; l’arme de portail ne blesse personne.",
+      "duration_ticks": 7200,
+      "success": {
+        "receivers_activated": 2,
+        "both_at_exit": true
+      },
+      "failure": "Cube perdu : un reset gratuit sans duplication; dépassement : recommencer la chambre de simulation.",
+      "enemy_ids": [],
+      "presence_limit": 0,
+      "reward_rule_id": "GUIDE_UNLOCK_APERTURE_PAIR",
+      "exit_state": "Prêt des deux profils durant l’épreuve; accès de collection séparé, aucune suite canonique de Portal 2.",
+      "narrative_scope": "Épreuve conçue seulement : robots sans PNG validé et simulateur non livré."
+    },
+    {
+      "id": "GUIDE_BONUS_COAST_TARGETS",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "name_fr": "Réserve et visée",
+      "actor_ids": [
+        "gordon_hl2",
+        "alyx_hl2",
+        "barney_hl2",
+        "shephard_op4",
+        "vortigaunt_hl2",
+        "combine_elite_hl2"
+      ],
+      "target_ids": [
+        "strider_hl2",
+        "gunship_hl2",
+        "proj_rpg_rocket_hl2"
+      ],
+      "stage_id": "STG_12_HL2_CANALS",
+      "story_refs": [],
+      "source_ids": [
+        "GE-S09"
+      ],
+      "lore_status": "playable_adaptation",
+      "family": "target_drill",
+      "objective": "Atteindre quatre cibles mécaniques d’exercice en choisissant la récupération du poste RPG; aucune nouvelle rencontre boss déclarée.",
+      "duration_ticks": 3600,
+      "success": {
+        "training_targets_hit": 4,
+        "civilian_target_hits": 0
+      },
+      "failure": "Fin de session d’entraînement sans record ni dossier de terrain accordé.",
+      "enemy_ids": [],
+      "presence_limit": 0,
+      "reward_rule_id": null,
+      "exit_state": "Retour à l’entraînement; aucun événement de victoire enregistrable.",
+      "narrative_scope": "Extension de tutoriel conçue; les interactions RPG du Boss Battle existant ne prouvent pas que cette épreuve est implémentée."
+    }
+  ],
+  "archive_hub": {
+    "id": "GUIDE_ARCHIVE_HUB",
+    "status": "specified_not_implemented",
+    "runtime_enabled": false,
+    "certified_one_to_one": false,
+    "name_fr": "Terminal des traces",
+    "source_ids": [
+      "GE-S05",
+      "GE-S08"
+    ],
+    "lore_status": "original_compatible_ui",
+    "presentation": "Métaphore d’interface de Resonance. Les rubriques d’archives ne prouvent aucune connexion physique entre Black Mesa, Cité 17 et Aperture.",
+    "exploration_status": "navigation_graph_designed_not_playable",
+    "entry_area": "GUIDE_HUB_RECEPTION",
+    "areas": [
+      {
+        "id": "GUIDE_HUB_RECEPTION",
+        "name_fr": "Accueil du terminal",
+        "target_ids": [],
+        "available_from_start": true,
+        "function": "Choisir une collection, consulter provenance et statuts, revenir au mode de départ."
+      },
+      {
+        "id": "GUIDE_HUB_FIELD",
+        "name_fr": "Dossiers de terrain",
+        "target_ids": [
+          "strider_hl2",
+          "dropship_hl2",
+          "gunship_hl2",
+          "gargantua_hl1"
+        ],
+        "available_from_start": true,
+        "function": "Consulter les quatre fiches liées au prototype; leur panneau réel est distinct de ce futur espace exploratoire."
+      },
+      {
+        "id": "GUIDE_HUB_BLACK_MESA",
+        "name_fr": "Archives Black Mesa",
+        "target_ids": [
+          "gina_decay",
+          "colette_decay",
+          "STG_10_DECAY_GAMMA"
+        ],
+        "available_from_start": true,
+        "function": "Présenter éditions, modèles et récompenses de recherche; ne pas transformer un badge UI en secret officiel du scénario."
+      },
+      {
+        "id": "GUIDE_HUB_APERTURE",
+        "name_fr": "Archives Aperture",
+        "target_ids": [
+          "atlas_portal2",
+          "pbody_portal2",
+          "STG_EXT_PORTAL2_COOP_HUB"
+        ],
+        "available_from_start": true,
+        "function": "Lister sources coop et statuts de production; image refusée reste indisponibilité de production, jamais paiement requis."
+      }
+    ],
+    "connections": [
+      {
+        "from": "GUIDE_HUB_RECEPTION",
+        "to": "GUIDE_HUB_FIELD",
+        "bidirectional": true,
+        "kind": "ui_navigation",
+        "gate": "none",
+        "world_door_claim": false
+      },
+      {
+        "from": "GUIDE_HUB_RECEPTION",
+        "to": "GUIDE_HUB_BLACK_MESA",
+        "bidirectional": true,
+        "kind": "ui_navigation",
+        "gate": "none",
+        "world_door_claim": false
+      },
+      {
+        "from": "GUIDE_HUB_RECEPTION",
+        "to": "GUIDE_HUB_APERTURE",
+        "bidirectional": true,
+        "kind": "ui_navigation",
+        "gate": "none",
+        "world_door_claim": false
+      }
+    ],
+    "reward_policy": "Catalogue unique; acquisition avant animation, transaction idempotente; retour arrière sans achat doublé.",
+    "physical_exploration_gate": "Si ce graph devient une pièce jouable : mesurer pièces et seuils, portes attachées aux murs, connexions réciproques et sorties sans impasse avant toute intégration.",
+    "anti_spoiler": "Dossier neutre pour une identité secrète; silhouette seulement après indice autorisé. Les noms accessibles et sons suivent le même niveau.",
+    "save_policy": "Identifiants stables; aucun reset de progression à la fermeture du terminal."
+  },
+  "unlock_slots": [
+    {
+      "id": "GUIDE_SLOT_gordon_hl2",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "content_id": "gordon_hl2",
+      "content_kind": "fighter",
+      "target_ids": [
+        "gordon_hl2"
+      ],
+      "dependency_ids": [],
+      "rule_id": null,
+      "initial_discovery": "identified",
+      "source_ids": [
+        "GE-S05"
+      ],
+      "lore_status": "original_compatible_ui",
+      "presentation": "Dossier masqué avec autorisation de consultation; emblème neutre au niveau secret, silhouette au niveau indice.",
+      "focus_action": "Afficher condition, progression, dépendances et prochaine action; ne pas ajouter un contenu interdit à l’équipe.",
+      "availability_note": "Base du prototype libre; aucune condition nouvelle.",
+      "cosmetic_gameplay_change": false,
+      "unlock_animation": "Reconstruction courte du portrait, 24 ticks proposés; mouvement réduit = changement immédiat.",
+      "technical_state": "not_ready_for_full_duel",
+      "note": "Contrat documentaire; ces slots ne sont pas ajoutés à la sélection runtime par ce JSON."
+    },
+    {
+      "id": "GUIDE_SLOT_alyx_hl2",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "content_id": "alyx_hl2",
+      "content_kind": "fighter",
+      "target_ids": [
+        "alyx_hl2"
+      ],
+      "dependency_ids": [],
+      "rule_id": null,
+      "initial_discovery": "identified",
+      "source_ids": [
+        "GE-S05"
+      ],
+      "lore_status": "original_compatible_ui",
+      "presentation": "Dossier masqué avec autorisation de consultation; emblème neutre au niveau secret, silhouette au niveau indice.",
+      "focus_action": "Afficher condition, progression, dépendances et prochaine action; ne pas ajouter un contenu interdit à l’équipe.",
+      "availability_note": "Base du prototype libre; aucune condition nouvelle.",
+      "cosmetic_gameplay_change": false,
+      "unlock_animation": "Reconstruction courte du portrait, 24 ticks proposés; mouvement réduit = changement immédiat.",
+      "technical_state": "not_ready_for_full_duel",
+      "note": "Contrat documentaire; ces slots ne sont pas ajoutés à la sélection runtime par ce JSON."
+    },
+    {
+      "id": "GUIDE_SLOT_gina_decay",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "content_id": "gina_decay",
+      "content_kind": "fighter",
+      "target_ids": [
+        "gina_decay"
+      ],
+      "dependency_ids": [],
+      "rule_id": "GUIDE_UNLOCK_DECAY_PAIR",
+      "initial_discovery": "identified",
+      "source_ids": [
+        "GE-S05"
+      ],
+      "lore_status": "original_compatible_ui",
+      "presentation": "Dossier masqué avec autorisation de consultation; emblème neutre au niveau secret, silhouette au niveau indice.",
+      "focus_action": "Afficher condition, progression, dépendances et prochaine action; ne pas ajouter un contenu interdit à l’équipe.",
+      "availability_note": "Portrait et condition consultables; profil de duel encore non implémenté.",
+      "cosmetic_gameplay_change": false,
+      "unlock_animation": "Reconstruction courte du portrait, 24 ticks proposés; mouvement réduit = changement immédiat.",
+      "technical_state": "not_ready_for_full_duel",
+      "note": "Contrat documentaire; ces slots ne sont pas ajoutés à la sélection runtime par ce JSON."
+    },
+    {
+      "id": "GUIDE_SLOT_colette_decay",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "content_id": "colette_decay",
+      "content_kind": "fighter",
+      "target_ids": [
+        "colette_decay"
+      ],
+      "dependency_ids": [],
+      "rule_id": "GUIDE_UNLOCK_DECAY_PAIR",
+      "initial_discovery": "identified",
+      "source_ids": [
+        "GE-S05"
+      ],
+      "lore_status": "original_compatible_ui",
+      "presentation": "Dossier masqué avec autorisation de consultation; emblème neutre au niveau secret, silhouette au niveau indice.",
+      "focus_action": "Afficher condition, progression, dépendances et prochaine action; ne pas ajouter un contenu interdit à l’équipe.",
+      "availability_note": "Même règle que Gina, états et acquisition enregistrés séparément.",
+      "cosmetic_gameplay_change": false,
+      "unlock_animation": "Reconstruction courte du portrait, 24 ticks proposés; mouvement réduit = changement immédiat.",
+      "technical_state": "not_ready_for_full_duel",
+      "note": "Contrat documentaire; ces slots ne sont pas ajoutés à la sélection runtime par ce JSON."
+    },
+    {
+      "id": "GUIDE_SLOT_atlas_portal2",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "content_id": "atlas_portal2",
+      "content_kind": "fighter",
+      "target_ids": [
+        "atlas_portal2"
+      ],
+      "dependency_ids": [],
+      "rule_id": "GUIDE_UNLOCK_APERTURE_PAIR",
+      "initial_discovery": "hint",
+      "source_ids": [
+        "GE-S07"
+      ],
+      "lore_status": "original_compatible_ui",
+      "presentation": "Dossier masqué avec autorisation de consultation; emblème neutre au niveau secret, silhouette au niveau indice.",
+      "focus_action": "Afficher condition, progression, dépendances et prochaine action; ne pas ajouter un contenu interdit à l’équipe.",
+      "availability_note": "Silhouette seulement après indice; absence d’asset indiquée comme technique.",
+      "cosmetic_gameplay_change": false,
+      "unlock_animation": "Reconstruction courte du portrait, 24 ticks proposés; mouvement réduit = changement immédiat.",
+      "technical_state": "not_ready_for_full_duel",
+      "note": "Contrat documentaire; ces slots ne sont pas ajoutés à la sélection runtime par ce JSON."
+    },
+    {
+      "id": "GUIDE_SLOT_pbody_portal2",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "content_id": "pbody_portal2",
+      "content_kind": "fighter",
+      "target_ids": [
+        "pbody_portal2"
+      ],
+      "dependency_ids": [],
+      "rule_id": "GUIDE_UNLOCK_APERTURE_PAIR",
+      "initial_discovery": "hint",
+      "source_ids": [
+        "GE-S07"
+      ],
+      "lore_status": "original_compatible_ui",
+      "presentation": "Dossier masqué avec autorisation de consultation; emblème neutre au niveau secret, silhouette au niveau indice.",
+      "focus_action": "Afficher condition, progression, dépendances et prochaine action; ne pas ajouter un contenu interdit à l’équipe.",
+      "availability_note": "Ne pas remplacer l’absence de sprite par un faux verrou de progression.",
+      "cosmetic_gameplay_change": false,
+      "unlock_animation": "Reconstruction courte du portrait, 24 ticks proposés; mouvement réduit = changement immédiat.",
+      "technical_state": "not_ready_for_full_duel",
+      "note": "Contrat documentaire; ces slots ne sont pas ajoutés à la sélection runtime par ce JSON."
+    },
+    {
+      "id": "GUIDE_SLOT_costume_chell_portal2",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "content_id": "costume_chell_portal2",
+      "content_kind": "costume",
+      "target_ids": [
+        "costume_chell_portal2"
+      ],
+      "dependency_ids": [
+        "chell_portal1"
+      ],
+      "rule_id": "GUIDE_UNLOCK_CHELL_COSTUME",
+      "initial_discovery": "identified",
+      "source_ids": [
+        "GE-S07"
+      ],
+      "lore_status": "original_compatible_ui",
+      "presentation": "Dossier masqué avec autorisation de consultation; emblème neutre au niveau secret, silhouette au niveau indice.",
+      "focus_action": "Afficher condition, progression, dépendances et prochaine action; ne pas ajouter un contenu interdit à l’équipe.",
+      "availability_note": "Acquisition possible avant le personnage; conservation des collisions prévues.",
+      "cosmetic_gameplay_change": false,
+      "unlock_animation": "Reconstruction courte du portrait, 24 ticks proposés; mouvement réduit = changement immédiat.",
+      "technical_state": "not_ready_for_full_duel",
+      "note": "Contrat documentaire; ces slots ne sont pas ajoutés à la sélection runtime par ce JSON."
+    },
+    {
+      "id": "GUIDE_SLOT_costume_colette_headtohead_ps2",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "content_id": "costume_colette_headtohead_ps2",
+      "content_kind": "costume",
+      "target_ids": [
+        "costume_colette_headtohead_ps2"
+      ],
+      "dependency_ids": [
+        "colette_decay"
+      ],
+      "rule_id": "GUIDE_UNLOCK_COLETTE_COSTUME",
+      "initial_discovery": "hint",
+      "source_ids": [
+        "GE-S07"
+      ],
+      "lore_status": "original_compatible_ui",
+      "presentation": "Dossier masqué avec autorisation de consultation; emblème neutre au niveau secret, silhouette au niveau indice.",
+      "focus_action": "Afficher condition, progression, dépendances et prochaine action; ne pas ajouter un contenu interdit à l’équipe.",
+      "availability_note": "Version Head-to-Head identifiée; ne pas la présenter comme tenue campagne.",
+      "cosmetic_gameplay_change": false,
+      "unlock_animation": "Reconstruction courte du portrait, 24 ticks proposés; mouvement réduit = changement immédiat.",
+      "technical_state": "not_ready_for_full_duel",
+      "note": "Contrat documentaire; ces slots ne sont pas ajoutés à la sélection runtime par ce JSON."
+    },
+    {
+      "id": "GUIDE_SLOT_STG_10_DECAY_GAMMA",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "content_id": "STG_10_DECAY_GAMMA",
+      "content_kind": "stage",
+      "target_ids": [
+        "STG_10_DECAY_GAMMA"
+      ],
+      "dependency_ids": [],
+      "rule_id": "GUIDE_UNLOCK_DECAY_PAIR",
+      "initial_discovery": "hint",
+      "source_ids": [
+        "GE-S07"
+      ],
+      "lore_status": "original_compatible_ui",
+      "presentation": "Dossier masqué avec autorisation de consultation; emblème neutre au niveau secret, silhouette au niveau indice.",
+      "focus_action": "Afficher condition, progression, dépendances et prochaine action; ne pas ajouter un contenu interdit à l’équipe.",
+      "availability_note": "Débloquer une destination ne valide pas ses couches et collisions.",
+      "cosmetic_gameplay_change": false,
+      "unlock_animation": "Reconstruction courte du portrait, 24 ticks proposés; mouvement réduit = changement immédiat.",
+      "technical_state": "not_ready_for_full_duel",
+      "note": "Contrat documentaire; ces slots ne sont pas ajoutés à la sélection runtime par ce JSON."
+    },
+    {
+      "id": "GUIDE_SLOT_STG_EXT_PORTAL2_COOP_HUB",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "content_id": "STG_EXT_PORTAL2_COOP_HUB",
+      "content_kind": "stage",
+      "target_ids": [
+        "STG_EXT_PORTAL2_COOP_HUB"
+      ],
+      "dependency_ids": [],
+      "rule_id": "GUIDE_UNLOCK_APERTURE_PAIR",
+      "initial_discovery": "hint",
+      "source_ids": [
+        "GE-S07"
+      ],
+      "lore_status": "original_compatible_ui",
+      "presentation": "Dossier masqué avec autorisation de consultation; emblème neutre au niveau secret, silhouette au niveau indice.",
+      "focus_action": "Afficher condition, progression, dépendances et prochaine action; ne pas ajouter un contenu interdit à l’équipe.",
+      "availability_note": "Variante statique de confort comprise lorsque le stage est livré.",
+      "cosmetic_gameplay_change": false,
+      "unlock_animation": "Reconstruction courte du portrait, 24 ticks proposés; mouvement réduit = changement immédiat.",
+      "technical_state": "not_ready_for_full_duel",
+      "note": "Contrat documentaire; ces slots ne sont pas ajoutés à la sélection runtime par ce JSON."
+    },
+    {
+      "id": "GUIDE_SLOT_MODE_single",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "content_id": "single",
+      "content_kind": "existing_runtime_mode",
+      "target_ids": [],
+      "dependency_ids": [],
+      "rule_id": null,
+      "initial_discovery": "identified",
+      "source_ids": [
+        "GE-S09"
+      ],
+      "lore_status": "original_compatible_ui",
+      "presentation": "Tuile libre du prototype existant.",
+      "focus_action": "Choisir le mode existant.",
+      "availability_note": "Aucune nouvelle barrière; entraînement et options restent accessibles.",
+      "cosmetic_gameplay_change": false,
+      "unlock_animation": null,
+      "technical_state": "existing_runtime_available",
+      "note": "Le mode fonctionne déjà; son éventuel verrou avancé est non retenu pour ce lot."
+    },
+    {
+      "id": "GUIDE_SLOT_MODE_rush",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "content_id": "rush",
+      "content_kind": "existing_runtime_mode",
+      "target_ids": [],
+      "dependency_ids": [],
+      "rule_id": null,
+      "initial_discovery": "identified",
+      "source_ids": [
+        "GE-S09"
+      ],
+      "lore_status": "original_compatible_ui",
+      "presentation": "Tuile libre du prototype existant.",
+      "focus_action": "Choisir le mode existant.",
+      "availability_note": "Aucune nouvelle barrière; entraînement et options restent accessibles.",
+      "cosmetic_gameplay_change": false,
+      "unlock_animation": null,
+      "technical_state": "existing_runtime_available",
+      "note": "Le mode fonctionne déjà; son éventuel verrou avancé est non retenu pour ce lot."
+    },
+    {
+      "id": "GUIDE_SLOT_MODE_training",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "content_id": "training",
+      "content_kind": "existing_runtime_mode",
+      "target_ids": [],
+      "dependency_ids": [],
+      "rule_id": null,
+      "initial_discovery": "identified",
+      "source_ids": [
+        "GE-S09"
+      ],
+      "lore_status": "original_compatible_ui",
+      "presentation": "Tuile libre du prototype existant.",
+      "focus_action": "Choisir le mode existant.",
+      "availability_note": "Aucune nouvelle barrière; entraînement et options restent accessibles.",
+      "cosmetic_gameplay_change": false,
+      "unlock_animation": null,
+      "technical_state": "existing_runtime_available",
+      "note": "Le mode fonctionne déjà; son éventuel verrou avancé est non retenu pour ce lot."
+    }
+  ],
+  "unlock_rules": [
+    {
+      "id": "GUIDE_UNLOCK_DECAY_PAIR",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "name_fr": "Coopération étudiée",
+      "grants": [
+        "gina_decay",
+        "colette_decay",
+        "STG_10_DECAY_GAMMA"
+      ],
+      "expression": {
+        "op": "any",
+        "children": [
+          {
+            "op": "event",
+            "event_id": "story_04_completed_with_loaned_pair"
+          },
+          {
+            "op": "event",
+            "event_id": "GUIDE_BONUS_DECAY_INTERLOCK_completed"
+          }
+        ]
+      },
+      "source_ids": [
+        "GE-S02",
+        "GE-S05"
+      ],
+      "lore_status": "original_compatible_ui",
+      "acquisition": "permanent",
+      "delivery": "automatic",
+      "scope": "local_resonance_profile",
+      "progress": "1 route ou 1 bonus; voie de prêt scénarisé disponible avant l’acquisition.",
+      "dependency_note": "Ne jamais exiger les personnages acquis pour lancer leur unique épreuve de déblocage.",
+      "runtime_event_wired": false
+    },
+    {
+      "id": "GUIDE_UNLOCK_APERTURE_PAIR",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "name_fr": "Validation du parcours coop",
+      "grants": [
+        "atlas_portal2",
+        "pbody_portal2",
+        "STG_EXT_PORTAL2_COOP_HUB"
+      ],
+      "expression": {
+        "op": "event",
+        "event_id": "GUIDE_BONUS_APERTURE_ROUTE_completed_with_loaned_pair"
+      },
+      "source_ids": [
+        "GE-S03",
+        "GE-S04",
+        "GE-S07"
+      ],
+      "lore_status": "original_compatible_ui",
+      "acquisition": "permanent",
+      "delivery": "automatic",
+      "scope": "local_resonance_profile",
+      "progress": "1 bonus coop terminé; aucune route effective tant que profils et portails ne sont pas livrés.",
+      "dependency_note": "Prêt de simulation des deux robots, sans exiger leur déblocage préalable; disponibilité technique reste distincte.",
+      "runtime_event_wired": false
+    },
+    {
+      "id": "GUIDE_UNLOCK_CHELL_COSTUME",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "name_fr": "Étude d’une autre période",
+      "grants": [
+        "costume_chell_portal2"
+      ],
+      "expression": {
+        "op": "any",
+        "children": [
+          {
+            "op": "event",
+            "event_id": "GUIDE_BONUS_APERTURE_ROUTE_completed"
+          },
+          {
+            "op": "event",
+            "event_id": "archive_portal2_references_reviewed"
+          }
+        ]
+      },
+      "source_ids": [
+        "GE-S03",
+        "GE-S04"
+      ],
+      "lore_status": "original_compatible_ui",
+      "acquisition": "permanent",
+      "delivery": "automatic",
+      "scope": "local_resonance_profile",
+      "progress": "Une voie au choix; événement d’archive seulement après fonctionnalité livrée.",
+      "dependency_note": "Conserver le costume acquis même si chell_portal1 reste inaccessible; restriction de période en récit.",
+      "runtime_event_wired": false
+    },
+    {
+      "id": "GUIDE_UNLOCK_COLETTE_COSTUME",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "name_fr": "Dossier Head-to-Head",
+      "grants": [
+        "costume_colette_headtohead_ps2"
+      ],
+      "expression": {
+        "op": "all",
+        "children": [
+          {
+            "op": "event",
+            "event_id": "story_04_completed_with_loaned_pair"
+          },
+          {
+            "op": "event",
+            "event_id": "archive_ps2_version_identified"
+          }
+        ]
+      },
+      "source_ids": [
+        "GE-S02",
+        "GE-S07"
+      ],
+      "lore_status": "original_compatible_ui",
+      "acquisition": "permanent",
+      "delivery": "automatic",
+      "scope": "local_resonance_profile",
+      "progress": "Deux conditions distinctes visibles; aucune identification de version implicite.",
+      "dependency_note": "Acquisition conservée avant celle du personnage; n’altère pas le kit.",
+      "runtime_event_wired": false
+    },
+    {
+      "id": "GUIDE_UNLOCK_BME_REPORT",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "name_fr": "Rapport de dégagement",
+      "grants": [],
+      "expression": {
+        "op": "event",
+        "event_id": "GUIDE_BONUS_BME_CLEARANCE_completed"
+      },
+      "source_ids": [
+        "GE-S05"
+      ],
+      "lore_status": "original_compatible_ui",
+      "acquisition": "permanent",
+      "delivery": "automatic",
+      "scope": "local_resonance_profile",
+      "progress": "Une réussite; journal de bonus seulement, sans nouveau personnage ni bonus de dégâts.",
+      "dependency_note": "Aucun objet nouveau de catalogue revendiqué.",
+      "runtime_event_wired": false
+    },
+    {
+      "id": "GUIDE_UNLOCK_RAVENHOLM_REPORT",
+      "status": "specified_not_implemented",
+      "runtime_enabled": false,
+      "certified_one_to_one": false,
+      "name_fr": "Rapport de maintien",
+      "grants": [],
+      "expression": {
+        "op": "event",
+        "event_id": "GUIDE_BONUS_RAVENHOLM_ROUTE_completed"
+      },
+      "source_ids": [
+        "GE-S05"
+      ],
+      "lore_status": "original_compatible_ui",
+      "acquisition": "permanent",
+      "delivery": "automatic",
+      "scope": "local_resonance_profile",
+      "progress": "Trois vagues dans la même épreuve; sauvegarder accomplissement au résultat.",
+      "dependency_note": "Rejouer ne duplique ni coût ni rapport.",
+      "runtime_event_wired": false
+    }
+  ],
+  "support_policy": {
+    "id": "GUIDE_SUPPORT_POLICY",
+    "status": "specified_not_implemented",
+    "runtime_enabled": false,
+    "certified_one_to_one": false,
+    "name_fr": "Soutiens — architecture différée",
+    "source_ids": [
+      "CG-EXT02-1.0"
+    ],
+    "lore_status": "original_compatible_ui",
+    "decision": "deferred",
+    "provider": null,
+    "live_campaign_id": null,
+    "active_benefits": [],
+    "subscription_offer_published": false,
+    "server_integration_operational": false,
+    "models": [
+      "permanent_reward",
+      "temporary_catalogue",
+      "period_delivery"
+    ],
+    "scope": "Prévoir uniquement cosmétiques, cadres d’archives ou ambiances compatibles; aucun gain de statistiques ni lot commercial fictif publié.",
+    "grant_authority": "Service de confiance à réaliser; aucune bascule abonné locale ne crée un droit externe réel.",
+    "account_link": "Consentement et OAuth du fournisseur à étudier lors de la réalisation; aucun mot de passe externe saisi dans le jeu.",
+    "offline": "Droits permanents conservés; panne = vérification inconnue. Tolérance temporaire à définir avant publication, jamais inventée.",
+    "expiry": "Retirer seulement la source temporaire confirmée expirée. Une acquisition permanente ou une autre source valide reste active.",
+    "match_snapshot": "Appliquer l’expiration après la partie autorisée, avant nouvelle sélection; préférences et progression conservées.",
+    "stage_participation": "Sélection du lieu et participation adversaire distinctes; livrer les assets de toutes destinations du match, ou choisir un stage commun avant lancement.",
+    "rights_review": "Toute offre réelle nécessite vérification des droits d’utilisation des contenus proposés; aucune autorisation commerciale déduite de ces guides."
+  },
+  "runtime_crosswalk": {
+    "scope": "État documenté du module adjacent; ce JSON ne pilote pas son exécution.",
+    "authority_paths": [
+      "src/features/resonance/progression/access.ts",
+      "src/features/resonance/progression/conditions.ts",
+      "src/features/resonance/progression/fieldDossiers.ts",
+      "src/features/resonance/progression/FieldDossiers.tsx"
+    ],
+    "validation_status": "state_model_smoke_verified_browser_pending",
+    "collection_scope": "four_field_dossiers_only",
+    "unlocked_playable_content_changed": false,
+    "dossiers": [
+      {
+        "id": "dossier_strider_hl2",
+        "boss_id": "strider_hl2",
+        "target_ids": [
+          "strider_hl2"
+        ],
+        "kind": "collectible",
+        "rule_summary": "Victoire single éligible aux records sur ce boss OU parcours rush complet éligible; jamais training, défaite ou rush incomplet.",
+        "access": "permanent_auto_award",
+        "save_key": "resonance.progression.dossiers.v1",
+        "legacy_source": "records.v1 existants, interprétation par le module autoritatif",
+        "runtime_proof_path": "src/features/resonance/progression/fieldDossiers.ts"
+      },
+      {
+        "id": "dossier_dropship_hl2",
+        "boss_id": "dropship_hl2",
+        "target_ids": [
+          "dropship_hl2"
+        ],
+        "kind": "collectible",
+        "rule_summary": "Victoire single éligible aux records sur ce boss OU parcours rush complet éligible; jamais training, défaite ou rush incomplet.",
+        "access": "permanent_auto_award",
+        "save_key": "resonance.progression.dossiers.v1",
+        "legacy_source": "records.v1 existants, interprétation par le module autoritatif",
+        "runtime_proof_path": "src/features/resonance/progression/fieldDossiers.ts"
+      },
+      {
+        "id": "dossier_gunship_hl2",
+        "boss_id": "gunship_hl2",
+        "target_ids": [
+          "gunship_hl2"
+        ],
+        "kind": "collectible",
+        "rule_summary": "Victoire single éligible aux records sur ce boss OU parcours rush complet éligible; jamais training, défaite ou rush incomplet.",
+        "access": "permanent_auto_award",
+        "save_key": "resonance.progression.dossiers.v1",
+        "legacy_source": "records.v1 existants, interprétation par le module autoritatif",
+        "runtime_proof_path": "src/features/resonance/progression/fieldDossiers.ts"
+      },
+      {
+        "id": "dossier_gargantua_hl1",
+        "boss_id": "gargantua_hl1",
+        "target_ids": [
+          "gargantua_hl1"
+        ],
+        "kind": "collectible",
+        "rule_summary": "Victoire single éligible aux records sur ce boss OU parcours rush complet éligible; jamais training, défaite ou rush incomplet.",
+        "access": "permanent_auto_award",
+        "save_key": "resonance.progression.dossiers.v1",
+        "legacy_source": "records.v1 existants, interprétation par le module autoritatif",
+        "runtime_proof_path": "src/features/resonance/progression/fieldDossiers.ts"
+      }
+    ],
+    "explicitly_not_implemented": [
+      "fighter_lock_ui",
+      "costume_lock_ui",
+      "stage_lock_ui",
+      "mode_lock_ui",
+      "tag",
+      "assist",
+      "duo_super",
+      "team_finisher",
+      "qte",
+      "explorable_hub",
+      "patreon_oauth",
+      "remote_entitlement_validation"
+    ],
+    "visual_fidelity": "Le code d’accès ne certifie ni sprite ni animation.",
+    "validation_scope": "Modèle d’accès, conditions, migration et attributions vérifiés sur 19 scénarios Node par le lot runtime. Vitest/build non exécutés faute de dépendances; panneau navigateur non observé à ce checkpoint.",
+    "test_paths": [
+      "src/features/resonance/progression/access.test.ts",
+      "src/features/resonance/progression/fieldDossiers.test.ts"
+    ],
+    "test_execution_note": "Les fichiers Vitest rendent les cas reproductibles en CI. Le smoke Node du lot adjacent est une preuve d’exécution distincte, sans exécution Vitest locale revendiquée."
+  },
+  "acceptance_scenarios": [
+    {
+      "id": "GUIDE_QA_01",
+      "name_fr": "Changement rapide de sélection",
+      "expected": "Aucun compagnon, son, particule ou ombre d’un aperçu quitté.",
+      "status": "planned_not_executed",
+      "runtime_test_claim": false
+    },
+    {
+      "id": "GUIDE_QA_02",
+      "name_fr": "Taunt interrompu",
+      "expected": "Hitstun normal, retour au contrôle prévu, aucun bonus gratuit.",
+      "status": "planned_not_executed",
+      "runtime_test_claim": false
+    },
+    {
+      "id": "GUIDE_QA_03",
+      "name_fr": "Appels concurrents",
+      "expected": "Assistance et tag simultanés ne mobilisent pas deux fois le partenaire.",
+      "status": "planned_not_executed",
+      "runtime_test_claim": false
+    },
+    {
+      "id": "GUIDE_QA_04",
+      "name_fr": "Dépense concurrente",
+      "expected": "La dernière portion de jauge n’est dépensée qu’une fois.",
+      "status": "planned_not_executed",
+      "runtime_test_claim": false
+    },
+    {
+      "id": "GUIDE_QA_05",
+      "name_fr": "Soutien mis KO",
+      "expected": "Aucun tag ou super qui ressuscite la réserve.",
+      "status": "planned_not_executed",
+      "runtime_test_claim": false
+    },
+    {
+      "id": "GUIDE_QA_06",
+      "name_fr": "Super gardée ou ratée",
+      "expected": "Pas de longue chorégraphie sans hit confirm; coût et récupération annoncés.",
+      "status": "planned_not_executed",
+      "runtime_test_claim": false
+    },
+    {
+      "id": "GUIDE_QA_07",
+      "name_fr": "Version incompatible",
+      "expected": "Alyx HLA ne remplace pas Alyx HL2 dans une scène ciblée sans variante dédiée.",
+      "status": "planned_not_executed",
+      "runtime_test_claim": false
+    },
+    {
+      "id": "GUIDE_QA_08",
+      "name_fr": "Fin dramatique inéligible",
+      "expected": "Victoire de remplacement avec même résultat.",
+      "status": "planned_not_executed",
+      "runtime_test_claim": false
+    },
+    {
+      "id": "GUIDE_QA_09",
+      "name_fr": "Clash et troisième impact",
+      "expected": "Résultat déterministe sans priorité gauche/droite.",
+      "status": "planned_not_executed",
+      "runtime_test_claim": false
+    },
+    {
+      "id": "GUIDE_QA_10",
+      "name_fr": "QTE absent ou égalité",
+      "expected": "Durée bornée et résolution explicitement définie.",
+      "status": "planned_not_executed",
+      "runtime_test_claim": false
+    },
+    {
+      "id": "GUIDE_QA_11",
+      "name_fr": "Entité après tag",
+      "expected": "Propriétaire stable, pas de renouvellement gratuit de durée.",
+      "status": "planned_not_executed",
+      "runtime_test_claim": false
+    },
+    {
+      "id": "GUIDE_QA_12",
+      "name_fr": "Projectile réfléchi",
+      "expected": "Nouvelle attribution correcte et historique de combo conservé.",
+      "status": "planned_not_executed",
+      "runtime_test_claim": false
+    },
+    {
+      "id": "GUIDE_QA_13",
+      "name_fr": "Transition de stage",
+      "expected": "Aucun objet dangereux invisible dans la destination.",
+      "status": "planned_not_executed",
+      "runtime_test_claim": false
+    },
+    {
+      "id": "GUIDE_QA_14",
+      "name_fr": "Limite de horde",
+      "expected": "Six ennemis maximum, entrée et sortie toujours praticables.",
+      "status": "planned_not_executed",
+      "runtime_test_claim": false
+    },
+    {
+      "id": "GUIDE_QA_15",
+      "name_fr": "Bonus repris",
+      "expected": "Pas de récompense double après fermeture au résultat.",
+      "status": "planned_not_executed",
+      "runtime_test_claim": false
+    },
+    {
+      "id": "GUIDE_QA_16",
+      "name_fr": "Secret réel",
+      "expected": "Nom, silhouette, voix et texte accessible ne révèlent pas l’identité.",
+      "status": "planned_not_executed",
+      "runtime_test_claim": false
+    },
+    {
+      "id": "GUIDE_QA_17",
+      "name_fr": "Costume avant personnage",
+      "expected": "Acquisition conservée, dépendance lisible.",
+      "status": "planned_not_executed",
+      "runtime_test_claim": false
+    },
+    {
+      "id": "GUIDE_QA_18",
+      "name_fr": "Droit sans asset",
+      "expected": "Installation ou production indisponible, jamais faux paiement requis.",
+      "status": "planned_not_executed",
+      "runtime_test_claim": false
+    },
+    {
+      "id": "GUIDE_QA_19",
+      "name_fr": "Conditions ET et OU",
+      "expected": "Alternatives visibles, aucun cumul forcé d’une voie gratuite et d’un abonnement.",
+      "status": "planned_not_executed",
+      "runtime_test_claim": false
+    },
+    {
+      "id": "GUIDE_QA_20",
+      "name_fr": "Permanent plus temporaire",
+      "expected": "Expiration temporaire ne supprime pas acquisition permanente.",
+      "status": "planned_not_executed",
+      "runtime_test_claim": false
+    },
+    {
+      "id": "GUIDE_QA_21",
+      "name_fr": "Source externe indisponible",
+      "expected": "État inconnu affiché, pas fausse expiration.",
+      "status": "planned_not_executed",
+      "runtime_test_claim": false
+    },
+    {
+      "id": "GUIDE_QA_22",
+      "name_fr": "Stage de soutien",
+      "expected": "Adversaire autorisé à participer sans acquérir le droit de choisir.",
+      "status": "planned_not_executed",
+      "runtime_test_claim": false
+    },
+    {
+      "id": "GUIDE_QA_23",
+      "name_fr": "Expiration en cours de partie",
+      "expected": "Partie terminée avec configuration autorisée, pas de changement de décor à mi-combat.",
+      "status": "planned_not_executed",
+      "runtime_test_claim": false
+    },
+    {
+      "id": "GUIDE_QA_24",
+      "name_fr": "Migration et restitution",
+      "expected": "Sauvegarde idempotente, refus propre de données corrompues, aucun effacement des records.",
+      "status": "planned_not_executed",
+      "runtime_test_claim": false
+    },
+    {
+      "id": "GUIDE_QA_25",
+      "name_fr": "Accessibilité",
+      "expected": "Focus clavier/manette, contraste, texte et mouvement réduit conservent les états.",
+      "status": "planned_not_executed",
+      "runtime_test_claim": false
+    },
+    {
+      "id": "GUIDE_QA_26",
+      "name_fr": "Versions et replays",
+      "expected": "Règles et IDs enregistrés; aucun doublon de récompense lors d’un replay.",
+      "status": "planned_not_executed",
+      "runtime_test_claim": false
+    }
+  ],
+  "counts": {
+    "taunt_profiles": 6,
+    "selection_profiles": 6,
+    "team_profiles": 3,
+    "assist_profiles": 6,
+    "duo_techniques": 9,
+    "duo_supers": 3,
+    "team_finishers": 3,
+    "dramatic_endings": 3,
+    "clash_profiles": 3,
+    "entity_profiles": 4,
+    "bonus_profiles": 5,
+    "hub_profiles": 1,
+    "hub_areas": 4,
+    "hub_connections": 3,
+    "unlock_slot_profiles": 13,
+    "unlock_rules": 6,
+    "support_policies": 1,
+    "runtime_dossier_crosswalks": 4,
+    "acceptance_scenarios": 26,
+    "new_catalogue_targets": 0,
+    "new_png": 0,
+    "completed_animations": 0,
+    "authored_production_profiles": 63
+  }
+}

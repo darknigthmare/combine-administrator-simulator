@@ -1,0 +1,949 @@
+{
+  "schema_version": 1,
+  "batch_id": "continuation_20261125_l",
+  "created_at": "2026-11-25",
+  "status": "completed",
+  "scope": "Six GoldSrc/OP4 targets; component studies from inspected Uplink demo resources where explicitly documented.",
+  "counts": {
+    "planned_targets": 6,
+    "explicit_target_outcomes": 6,
+    "generated_pngs": 4,
+    "generated_target_count": 4,
+    "generation_calls": 4,
+    "refusals": 0,
+    "deferred": 2
+  },
+  "assets": [
+    {
+      "batch_id": "continuation_20261125_l",
+      "created_at": "2026-11-25",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "original_png_bytes_preserved": true,
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "save_method": "Original image_url PNG bytes saved in memory, then GitHub blob, then decoded locally only after Git SHA verification. No pixel changes.",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_l/goldsrc_generation.json",
+      "asset_id": "proj_mp5_grenade_hl1_body_l",
+      "target_id": "proj_mp5_grenade_hl1",
+      "target_ids": [
+        "proj_mp5_grenade_hl1"
+      ],
+      "owner_id": "proj_mp5_grenade_hl1",
+      "owner_type": "projectile_effect",
+      "category": "projectile_key_frame",
+      "source_game": "Half-Life (1998)",
+      "reference_game": "Half-Life: Uplink demo",
+      "visual_state_id": "body",
+      "variant": "body",
+      "content_class": "released_reference",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_l/goldsrc/proj_mp5_grenade_hl1_body_l.png",
+      "reference_scope": "Candidate study based on the actual grenade.mdl mesh extracted from a community mirror of the Uplink demo, matched by resource name to CGrenade::ShootContact in the official Valve SDK. The pickup w_ARgrenade.mdl is excluded. Same-name retail file binary equality not verified.",
+      "source_references": [
+        {
+          "reference_filename": "uplink_grenade_side_preview.png",
+          "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/goldsrc/references/uplink_grenade_side_preview.png",
+          "source_url": "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+          "source_page": "https://github.com/x8BitRain/webXash",
+          "source_kind": "uplink_demo_resource_from_community_mirror",
+          "source_resource": "valve/models/grenade.mdl",
+          "source_resource_sha256": "bc6126523037ed6442fdd44c0ed9f69e2b024bdcc8e2a60dbcc39f97bd847ec9",
+          "reference_conversion": "Inspection-only orthographic software rasterization of the actual MDL rigid mesh and original indexed texture palettes using Valve studio.h format. Triangle strips/fans decoded, original UVs sampled nearest, simple directional shading. Bind-space viewing orientation; not an in-game capture or retail binary equivalence proof.",
+          "sha256": "6214173dbf62701277088f9f18e90dc214018d43187a7581d8546cfda331192b",
+          "width": 512,
+          "height": 512,
+          "visually_inspected": true,
+          "scope": "Actual MDL geometry and texture UV preview. Uplink demo file; retail HL1 binary equivalence unverified."
+        },
+        {
+          "reference_filename": "uplink_grenade_threequarter_preview.png",
+          "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/goldsrc/references/uplink_grenade_threequarter_preview.png",
+          "source_url": "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+          "source_page": "https://github.com/x8BitRain/webXash",
+          "source_kind": "uplink_demo_resource_from_community_mirror",
+          "source_resource": "valve/models/grenade.mdl",
+          "source_resource_sha256": "bc6126523037ed6442fdd44c0ed9f69e2b024bdcc8e2a60dbcc39f97bd847ec9",
+          "reference_conversion": "Inspection-only orthographic software rasterization of the actual MDL rigid mesh and original indexed texture palettes using Valve studio.h format. Triangle strips/fans decoded, original UVs sampled nearest, simple directional shading. Bind-space viewing orientation; not an in-game capture or retail binary equivalence proof.",
+          "sha256": "43be36015043f9b3572c058435ed4ec00d880ee089c36901bd161a36c17c750a",
+          "width": 512,
+          "height": 512,
+          "visually_inspected": true,
+          "scope": "Actual MDL geometry and texture UV preview. Uplink demo file; retail HL1 binary equivalence unverified."
+        }
+      ],
+      "source_urls": [
+        "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+        "https://github.com/ValveSoftware/halflife/blob/master/dlls/ggrenade.cpp",
+        "https://github.com/ValveSoftware/halflife/blob/master/dlls/mp5.cpp",
+        "https://github.com/ValveSoftware/halflife/blob/master/engine/studio.h"
+      ],
+      "prompt": "Create one isolated high-resolution 2D game projectile sprite, a faithful base-body candidate for the original Half-Life MP5-launched grenade. Use the attached two orthographic inspection views of the actual Uplink grenade.mdl mesh as the visual authority. Preserve its simple squat low-poly cylindrical shape, olive-grey weathered body, wide red band near the flat rear, a tapered shoulder at the front ending in a smaller red band, and the small dark grey concentric metal front cap. Preserve these unusual original game proportions, about two lengths per one diameter; do not substitute a generic modern round or the pickup ammo bundle. One horizontal grenade body pointing right, in the slight three-quarter view of the second reference so its small front cap is visible. Render as a crisp game cutout with source-faithful faceted volume and restrained refined texture, no new labels or added mechanical pieces. Entire object centered with generous transparent margins on every side. True alpha-transparent background, no floor, shadow, smoke, flame, motion trail, impact or scene. One body only, one static state, no sprite sheet or multiple views.",
+      "width": 1774,
+      "height": 887,
+      "color_mode": "RGBA",
+      "byte_size": 848234,
+      "sha256": "f2bb7ab092efbdbb2dd4543b606491695a429f374533b3c607ab5deb42493941",
+      "git_blob_sha": "bb3b783864361ea1e7a1c04f192ea7e2ed54482e",
+      "alpha": {
+        "minimum": 0,
+        "maximum": 255,
+        "transparent_pixels": 948896,
+        "opaque_pixels": 372,
+        "partial_pixels": 624270,
+        "nonzero_bbox": [
+          45,
+          8,
+          1641,
+          887
+        ],
+        "mean": 98.15064523386152,
+        "bbox_alpha_gt_8": [
+          181,
+          206,
+          1545,
+          699
+        ]
+      },
+      "file_path": "assets/resonance/candidates/continuation_20261125_l/goldsrc/proj_mp5_grenade_hl1_body_l.png",
+      "qa_notes": "Géométrie facettée, bandes rouges, corps olive-gris et capuchon concentrique correspondent à la vue calculée du modèle Uplink. Le rendu agrandit/réinterprète la texture et le relief du capuchon; les proportions semblent légèrement allongées par la perspective. Détourage lisible sur blanc/noir, marges amples autour de la silhouette utile; très faibles résidus alpha hors silhouette. Candidate d’étude Uplink : aucune identité binaire retail ni fidélité 1:1 déclarée.",
+      "notes": "Géométrie facettée, bandes rouges, corps olive-gris et capuchon concentrique correspondent à la vue calculée du modèle Uplink. Le rendu agrandit/réinterprète la texture et le relief du capuchon; les proportions semblent légèrement allongées par la perspective. Détourage lisible sur blanc/noir, marges amples autour de la silhouette utile; très faibles résidus alpha hors silhouette. Candidate d’étude Uplink : aucune identité binaire retail ni fidélité 1:1 déclarée.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "result": "Géométrie facettée, bandes rouges, corps olive-gris et capuchon concentrique correspondent à la vue calculée du modèle Uplink. Le rendu agrandit/réinterprète la texture et le relief du capuchon; les proportions semblent légèrement allongées par la perspective. Détourage lisible sur blanc/noir, marges amples autour de la silhouette utile; très faibles résidus alpha hors silhouette. Candidate d’étude Uplink : aucune identité binaire retail ni fidélité 1:1 déclarée."
+      },
+      "reference_provenance_label": "ressource de la démo Uplink, miroir communautaire",
+      "reference_is_retail_capture": false,
+      "retail_binary_equivalence_verified": false,
+      "study_only": true,
+      "source_refs": [
+        {
+          "reference_filename": "uplink_grenade_side_preview.png",
+          "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/goldsrc/references/uplink_grenade_side_preview.png",
+          "source_url": "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+          "source_page": "https://github.com/x8BitRain/webXash",
+          "source_kind": "uplink_demo_resource_from_community_mirror",
+          "source_resource": "valve/models/grenade.mdl",
+          "source_resource_sha256": "bc6126523037ed6442fdd44c0ed9f69e2b024bdcc8e2a60dbcc39f97bd847ec9",
+          "reference_conversion": "Inspection-only orthographic software rasterization of the actual MDL rigid mesh and original indexed texture palettes using Valve studio.h format. Triangle strips/fans decoded, original UVs sampled nearest, simple directional shading. Bind-space viewing orientation; not an in-game capture or retail binary equivalence proof.",
+          "sha256": "6214173dbf62701277088f9f18e90dc214018d43187a7581d8546cfda331192b",
+          "width": 512,
+          "height": 512,
+          "visually_inspected": true,
+          "scope": "Actual MDL geometry and texture UV preview. Uplink demo file; retail HL1 binary equivalence unverified."
+        },
+        {
+          "reference_filename": "uplink_grenade_threequarter_preview.png",
+          "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/goldsrc/references/uplink_grenade_threequarter_preview.png",
+          "source_url": "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+          "source_page": "https://github.com/x8BitRain/webXash",
+          "source_kind": "uplink_demo_resource_from_community_mirror",
+          "source_resource": "valve/models/grenade.mdl",
+          "source_resource_sha256": "bc6126523037ed6442fdd44c0ed9f69e2b024bdcc8e2a60dbcc39f97bd847ec9",
+          "reference_conversion": "Inspection-only orthographic software rasterization of the actual MDL rigid mesh and original indexed texture palettes using Valve studio.h format. Triangle strips/fans decoded, original UVs sampled nearest, simple directional shading. Bind-space viewing orientation; not an in-game capture or retail binary equivalence proof.",
+          "sha256": "43be36015043f9b3572c058435ed4ec00d880ee089c36901bd161a36c17c750a",
+          "width": 512,
+          "height": 512,
+          "visually_inspected": true,
+          "scope": "Actual MDL geometry and texture UV preview. Uplink demo file; retail HL1 binary equivalence unverified."
+        }
+      ]
+    },
+    {
+      "batch_id": "continuation_20261125_l",
+      "created_at": "2026-11-25",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "original_png_bytes_preserved": true,
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "save_method": "Original image_url PNG bytes saved in memory, then GitHub blob, then decoded locally only after Git SHA verification. No pixel changes.",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_l/goldsrc_generation.json",
+      "asset_id": "fx_bullsquid_spit_impact_hl1_impact_decal_spit1_l",
+      "target_id": "fx_bullsquid_spit_impact_hl1",
+      "target_ids": [
+        "fx_bullsquid_spit_impact_hl1"
+      ],
+      "owner_id": "fx_bullsquid_spit_impact_hl1",
+      "owner_type": "projectile_effect",
+      "category": "projectile_key_frame",
+      "source_game": "Half-Life (1998)",
+      "reference_game": "Half-Life: Uplink demo resource; target mapping independently documented",
+      "visual_state_id": null,
+      "variant": "impact_decal_spit1",
+      "content_class": "released_reference",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_l/goldsrc/fx_bullsquid_spit_impact_hl1_impact_decal_spit1_l.png",
+      "component_only": true,
+      "component_of_visual_state": "impact",
+      "reference_scope": "Persistent {SPIT1 contact decal only. Official CSquidSpit::Touch chooses SPIT1/2 and separately emits five tinyspit particles. This candidate represents neither the projectile bigspit nor the five-particle temporal spray. Decal extracted from Uplink demo mirror; retail binary equality unverified.",
+      "source_references": [
+        {
+          "reference_filename": "uplink_spit1_gradient_preview.png",
+          "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/goldsrc/references/uplink_spit1_gradient_preview.png",
+          "source_url": "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+          "source_page": "https://github.com/x8BitRain/webXash",
+          "source_kind": "uplink_demo_resource_from_community_mirror",
+          "source_resource": "valve/decals.wad::{SPIT1",
+          "source_resource_sha256": "17726e8174729011c7ea4e1e37b4ccfe7a9aa4abb82c2aaca87872cbe0c106d0",
+          "sha256": "e0cd060fdd68b60c4e9d1589182509c3e618ec257e74a3aa346374f2e2afbc2c",
+          "width": 32,
+          "height": 32,
+          "reference_conversion": "Gradient decal inspection: palette entry 255 supplies RGB, pixel index supplies alpha; index 255 cleared. Follows community Xash img_wad.c and img_utils.c; not an in-game retail screenshot.",
+          "visually_inspected": true,
+          "scope": "One persistent impact decal; palette RGB 204,228,40, indexed alpha."
+        }
+      ],
+      "source_urls": [
+        "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+        "https://github.com/ValveSoftware/halflife/blob/master/dlls/bullsquid.cpp",
+        "https://github.com/FWGS/xash3d-fwgs/blob/master/engine/common/imagelib/img_wad.c",
+        "https://github.com/FWGS/xash3d-fwgs/blob/master/engine/common/imagelib/img_utils.c"
+      ],
+      "prompt": "Create one isolated 2D game impact-decal candidate faithfully based on the supplied original Half-Life Uplink {SPIT1 texture preview. Reproduce just this one flat yellow-green Bullsquid contact stain: the irregular central blot, its broad rightward arm, diagonal lower-left streak, broader lower-right lobe, small upper-left round lobe and the few detached tiny droplets exactly where the reference shows them. Use the original yellow-green hue near RGB 204,228,40 with varying translucency; the dark-looking parts of the reference are lower alpha, not black paint. Preserve the distinctive asymmetric silhouette and diffuse opacity pattern. Translate the 32x32 reference into a clean higher-resolution game decal with gently smoothed edges, restrained detail and no glossy invented liquid beads. Front-facing flat decal, centered with wide fully transparent margins. True alpha-transparent background; all empty spaces must be transparent. No wall, floor, crack, smoke, flying projectile, airborne spray cloud, flash, glow halo, radial blast, creature or text. One persistent stain only, one state, not a sheet.",
+      "width": 1536,
+      "height": 1024,
+      "color_mode": "RGBA",
+      "byte_size": 1355347,
+      "sha256": "62c03db84cefacf585f4e2b24ed02b927700b72f4637dec9fdef224b670067c4",
+      "git_blob_sha": "972355e385fa6721200f68c4699fcea5acb195c6",
+      "alpha": {
+        "minimum": 0,
+        "maximum": 254,
+        "transparent_pixels": 1121017,
+        "opaque_pixels": 0,
+        "partial_pixels": 451847,
+        "nonzero_bbox": [
+          25,
+          23,
+          1456,
+          960
+        ],
+        "mean": 67.41284052530925,
+        "bbox_alpha_gt_8": [
+          261,
+          74,
+          1272,
+          959
+        ]
+      },
+      "file_path": "assets/resonance/candidates/continuation_20261125_l/goldsrc/fx_bullsquid_spit_impact_hl1_impact_decal_spit1_l.png",
+      "qa_notes": "La silhouette asymétrique de {SPIT1 est reconnaissable : lobe supérieur gauche, branche droite et longue pointe inférieure gauche. Le générateur lisse et épaissit certaines zones, ajoute une texture nuageuse et un bord clair : ce n’est pas une reproduction pixel pour pixel. Les compositions blanc/noir montrent un decal détaché sans rectangle opaque; les très faibles pixels alpha autour de la forme ne doivent pas être confondus avec le RGB caché. Étude du dépôt persistant uniquement; spray de contact et chronologie exclus.",
+      "notes": "La silhouette asymétrique de {SPIT1 est reconnaissable : lobe supérieur gauche, branche droite et longue pointe inférieure gauche. Le générateur lisse et épaissit certaines zones, ajoute une texture nuageuse et un bord clair : ce n’est pas une reproduction pixel pour pixel. Les compositions blanc/noir montrent un decal détaché sans rectangle opaque; les très faibles pixels alpha autour de la forme ne doivent pas être confondus avec le RGB caché. Étude du dépôt persistant uniquement; spray de contact et chronologie exclus. Marque persistante de contact uniquement. Aucune chronologie inspectée ne permet de classer ce composant dans impact_start ou impact_end; le fichier compte pour la famille mais pour aucun état contractuel.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "result": "La silhouette asymétrique de {SPIT1 est reconnaissable : lobe supérieur gauche, branche droite et longue pointe inférieure gauche. Le générateur lisse et épaissit certaines zones, ajoute une texture nuageuse et un bord clair : ce n’est pas une reproduction pixel pour pixel. Les compositions blanc/noir montrent un decal détaché sans rectangle opaque; les très faibles pixels alpha autour de la forme ne doivent pas être confondus avec le RGB caché. Étude du dépôt persistant uniquement; spray de contact et chronologie exclus."
+      },
+      "reference_provenance_label": "ressource de la démo Uplink, miroir communautaire",
+      "reference_is_retail_capture": false,
+      "retail_binary_equivalence_verified": false,
+      "study_only": true,
+      "source_refs": [
+        {
+          "reference_filename": "uplink_spit1_gradient_preview.png",
+          "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/goldsrc/references/uplink_spit1_gradient_preview.png",
+          "source_url": "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+          "source_page": "https://github.com/x8BitRain/webXash",
+          "source_kind": "uplink_demo_resource_from_community_mirror",
+          "source_resource": "valve/decals.wad::{SPIT1",
+          "source_resource_sha256": "17726e8174729011c7ea4e1e37b4ccfe7a9aa4abb82c2aaca87872cbe0c106d0",
+          "sha256": "e0cd060fdd68b60c4e9d1589182509c3e618ec257e74a3aa346374f2e2afbc2c",
+          "width": 32,
+          "height": 32,
+          "reference_conversion": "Gradient decal inspection: palette entry 255 supplies RGB, pixel index supplies alpha; index 255 cleared. Follows community Xash img_wad.c and img_utils.c; not an in-game retail screenshot.",
+          "visually_inspected": true,
+          "scope": "One persistent impact decal; palette RGB 204,228,40, indexed alpha."
+        }
+      ],
+      "original_generation_state_label": "impact_decal_spit1",
+      "visual_state_component": "persistent_decal_spit1",
+      "state_contract_association": {
+        "reviewed": true,
+        "state_id": null,
+        "reason": "Marque persistante de contact uniquement. Aucune chronologie inspectée ne permet de classer ce composant dans impact_start ou impact_end; le fichier compte pour la famille mais pour aucun état contractuel.",
+        "visual_state_complete": false
+      }
+    },
+    {
+      "batch_id": "continuation_20261125_l",
+      "created_at": "2026-11-25",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "original_png_bytes_preserved": true,
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "save_method": "Original image_url PNG bytes saved in memory, then GitHub blob, then decoded locally only after Git SHA verification. No pixel changes.",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_l/goldsrc_generation.json",
+      "asset_id": "proj_displacer_orb_opfor_body_resource_study_l",
+      "target_id": "proj_displacer_orb_opfor",
+      "target_ids": [
+        "proj_displacer_orb_opfor"
+      ],
+      "owner_id": "proj_displacer_orb_opfor",
+      "owner_type": "projectile_effect",
+      "category": "projectile_key_frame",
+      "source_game": "Half-Life: Opposing Force",
+      "reference_game": "Half-Life: Uplink demo resource; target mapping independently documented",
+      "visual_state_id": "body",
+      "variant": "body_resource_study",
+      "content_class": "released_reference",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_l/goldsrc/proj_displacer_orb_opfor_body_resource_study_l.png",
+      "component_only": true,
+      "component_of_visual_state": "body",
+      "reference_scope": "Isolated exit1 sprite body component mapped to CDisplacerBall::Spawn in a community reference implementation of OP4. Excludes lgtning beams, disp_ring contact ring and self-teleport. The supplied bytes come from Uplink via a community mirror; not a retail OP4 capture or binary-equivalence certification.",
+      "source_references": [
+        {
+          "reference_filename": "uplink_exit1_frame0.png",
+          "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/goldsrc/references/uplink_exit1_frame0.png",
+          "source_url": "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+          "source_page": "https://github.com/x8BitRain/webXash",
+          "source_kind": "uplink_demo_resource_from_community_mirror",
+          "source_resource": "sprites/exit1.spr",
+          "source_resource_sha256": "057e9ed2a9fcef4c9b71b56614ec172402771012440472a9551332bdc796538f",
+          "sha256": "7d28e90f2db1ae8b6cd1271c8dcdd215f22813ed6026cb7a412b72af52420bca",
+          "width": 80,
+          "height": 80,
+          "visually_inspected": true,
+          "reference_conversion": "Frame 0 decoded from IDSP version 2 sprite. Original palette retained. Index-alpha uses palette entry 255 RGB and pixel index alpha; additive sprites are previewed on their original black background, not mistaken for a gameplay backdrop.",
+          "scope": "Original demo resource preview; community reference implementation maps the same resource name to the OP4 target. Retail binary identity, exact tint/compositing and temporal state not certified."
+        }
+      ],
+      "source_urls": [
+        "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+        "https://github.com/twhl-community/halflife-op4-updated/blob/master/dlls/weapons/CDisplacerBall.cpp",
+        "https://github.com/twhl-community/halflife-op4-updated/blob/master/README.md"
+      ],
+      "prompt": "Create one isolated high-resolution 2D energy-sprite body candidate matching the supplied exit1.spr frame used as the Displacer ball's underlying body resource in Half-Life: Opposing Force. Preserve the reference's compact irregular near-circular fuzzy silhouette: small pale-yellow luminous center, close orange-yellow inner glow, irregular saturated green granular outer corona with dark transparent gaps. Match the actual visible arrangement and restrained compact extent of the source frame. This is only the underlying sprite body; do not invent external lightning arms, a shockwave ring, a long trail or a self-teleport portal. Smooth the enlarged original texture just enough to be a usable 2D VFX candidate, without adding a glass sphere, hard shell, circuitry or decorative details. One static frame centered with generous fully transparent margin, true alpha-transparent background. Convert all black backing and empty gaps to transparency with soft translucent edges. No scene, floor, weapon, creature, lettering, sheet or multiple sprites.",
+      "width": 1254,
+      "height": 1254,
+      "color_mode": "RGBA",
+      "byte_size": 933764,
+      "sha256": "19406f0fbd0993afe926007b19ce109e1c30d693c084a06f3f48b4f7757a6e09",
+      "git_blob_sha": "7936abc6277a84411b14628defa8e9064a777c3a",
+      "alpha": {
+        "minimum": 0,
+        "maximum": 254,
+        "transparent_pixels": 983869,
+        "opaque_pixels": 0,
+        "partial_pixels": 588647,
+        "nonzero_bbox": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "mean": 67.33274510402438,
+        "bbox_alpha_gt_8": [
+          202,
+          172,
+          1047,
+          1035
+        ]
+      },
+      "file_path": "assets/resonance/candidates/continuation_20261125_l/goldsrc/proj_displacer_orb_opfor_body_resource_study_l.png",
+      "qa_notes": "Centre jaune pâle, zone orange et couronne verte irrégulière retrouvés. La granulation et la forme des lobes sont réinterprétées; la couronne est plus texturée que la petite frame inspectée. Transparence réelle lisible sur blanc/noir, sans fond noir conservé. Quelques pixels alpha très faibles atteignent les bords du canvas, tandis que la silhouette utile garde des marges. Étude du seul composant exit1 provenant d’Uplink, associé au Displacer par une implémentation communautaire; aucun rayon lgtning, anneau disp_ring, rendu retail OP4 ou correspondance binaire certifiée.",
+      "notes": "Centre jaune pâle, zone orange et couronne verte irrégulière retrouvés. La granulation et la forme des lobes sont réinterprétées; la couronne est plus texturée que la petite frame inspectée. Transparence réelle lisible sur blanc/noir, sans fond noir conservé. Quelques pixels alpha très faibles atteignent les bords du canvas, tandis que la silhouette utile garde des marges. Étude du seul composant exit1 provenant d’Uplink, associé au Displacer par une implémentation communautaire; aucun rayon lgtning, anneau disp_ring, rendu retail OP4 ou correspondance binaire certifiée. Étude du composant de corps exit1, associée à body; aucune complétion de l’état, displacement, rayon ou anneau de contact.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "result": "Centre jaune pâle, zone orange et couronne verte irrégulière retrouvés. La granulation et la forme des lobes sont réinterprétées; la couronne est plus texturée que la petite frame inspectée. Transparence réelle lisible sur blanc/noir, sans fond noir conservé. Quelques pixels alpha très faibles atteignent les bords du canvas, tandis que la silhouette utile garde des marges. Étude du seul composant exit1 provenant d’Uplink, associé au Displacer par une implémentation communautaire; aucun rayon lgtning, anneau disp_ring, rendu retail OP4 ou correspondance binaire certifiée."
+      },
+      "reference_provenance_label": "ressource de la démo Uplink, miroir communautaire",
+      "reference_is_retail_capture": false,
+      "retail_binary_equivalence_verified": false,
+      "study_only": true,
+      "source_refs": [
+        {
+          "reference_filename": "uplink_exit1_frame0.png",
+          "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/goldsrc/references/uplink_exit1_frame0.png",
+          "source_url": "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+          "source_page": "https://github.com/x8BitRain/webXash",
+          "source_kind": "uplink_demo_resource_from_community_mirror",
+          "source_resource": "sprites/exit1.spr",
+          "source_resource_sha256": "057e9ed2a9fcef4c9b71b56614ec172402771012440472a9551332bdc796538f",
+          "sha256": "7d28e90f2db1ae8b6cd1271c8dcdd215f22813ed6026cb7a412b72af52420bca",
+          "width": 80,
+          "height": 80,
+          "visually_inspected": true,
+          "reference_conversion": "Frame 0 decoded from IDSP version 2 sprite. Original palette retained. Index-alpha uses palette entry 255 RGB and pixel index alpha; additive sprites are previewed on their original black background, not mistaken for a gameplay backdrop.",
+          "scope": "Original demo resource preview; community reference implementation maps the same resource name to the OP4 target. Retail binary identity, exact tint/compositing and temporal state not certified."
+        }
+      ],
+      "original_generation_state_label": "body_resource_study",
+      "visual_state_component": "exit1_resource_study",
+      "state_contract_association": {
+        "reviewed": true,
+        "state_id": "body",
+        "reason": "Étude du composant de corps exit1, associée à body; aucune complétion de l’état, displacement, rayon ou anneau de contact.",
+        "visual_state_complete": false
+      }
+    },
+    {
+      "batch_id": "continuation_20261125_l",
+      "created_at": "2026-11-25",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "visual_state_complete": false,
+      "completed_six_layer_stage": false,
+      "selected_for_next_review": true,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "copy_identical_to_generator": true,
+      "pixel_modification_after_generation": false,
+      "original_png_bytes_preserved": true,
+      "reference_bitmap_loaded": true,
+      "transparent_background": true,
+      "save_method": "Original image_url PNG bytes saved in memory, then GitHub blob, then decoded locally only after Git SHA verification. No pixel changes.",
+      "source_partial_register": "docs/resonance/production/continuation_20261125_l/goldsrc_generation.json",
+      "asset_id": "proj_gene_worm_spit_opfor_cloud_resource_study_l",
+      "target_id": "proj_gene_worm_spit_opfor",
+      "target_ids": [
+        "proj_gene_worm_spit_opfor"
+      ],
+      "owner_id": "proj_gene_worm_spit_opfor",
+      "owner_type": "projectile_effect",
+      "category": "projectile_key_frame",
+      "source_game": "Half-Life: Opposing Force",
+      "reference_game": "Half-Life: Uplink demo resource; target mapping independently documented",
+      "visual_state_id": "body",
+      "variant": "cloud_resource_study",
+      "content_class": "released_reference",
+      "repository_path": "assets/resonance/candidates/continuation_20261125_l/goldsrc/proj_gene_worm_spit_opfor_cloud_resource_study_l.png",
+      "component_only": true,
+      "component_of_visual_state": "body",
+      "reference_scope": "One ballsmoke frame rendered as a green cloud component. The community OP4 reference implementation creates env_genewormcloud from ballsmoke.spr and applies RGB 0,255,0. Source bytes are Uplink demo via community mirror, not a captured retail OP4 spitting sequence. Boss portal and spawn glow excluded.",
+      "source_references": [
+        {
+          "reference_filename": "uplink_ballsmoke_frame0.png",
+          "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/goldsrc/references/uplink_ballsmoke_frame0.png",
+          "source_url": "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+          "source_page": "https://github.com/x8BitRain/webXash",
+          "source_kind": "uplink_demo_resource_from_community_mirror",
+          "source_resource": "sprites/ballsmoke.spr",
+          "source_resource_sha256": "5a3df03849babcf7cb0eee2f94d9981f32709c096c2515597ab7f9ef78dfaec7",
+          "sha256": "1effe171e6452d474110a148317d9ba4c6803a0c6400224870d495e82acc21b0",
+          "width": 64,
+          "height": 64,
+          "visually_inspected": true,
+          "reference_conversion": "Frame 0 decoded from IDSP version 2 sprite. Original palette retained. Index-alpha uses palette entry 255 RGB and pixel index alpha; additive sprites are previewed on their original black background, not mistaken for a gameplay backdrop.",
+          "scope": "Original demo resource preview; community reference implementation maps the same resource name to the OP4 target. Retail binary identity, exact tint/compositing and temporal state not certified."
+        }
+      ],
+      "source_urls": [
+        "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+        "https://github.com/twhl-community/halflife-op4-updated/blob/master/dlls/geneworm.cpp",
+        "https://github.com/twhl-community/halflife-op4-updated/blob/master/README.md"
+      ],
+      "prompt": "Create one isolated 2D game VFX cloud component based closely on the attached original ballsmoke.spr first frame. This is a static candidate for one green cloud of the Gene Worm spit in Half-Life: Opposing Force. Preserve the source frame's small irregular roughly round billowing smoke shape, broken into a few soft uneven lobes, with the brighter curled billow at the upper left/top and a dimmer fragmented lower area with dark openings. Apply the documented green render tint RGB 0,255,0 to the original grayscale intensity pattern; retain its dim soft translucency and do not add white or yellow lighting. This must remain a compact diffuse green smoke puff, not a solid acid ball, tentacle, portal, laser beam, sparkling orb or explosion. Faithfully refine only the visible soft smoke texture without inventing new structures or a broad surrounding fog wash. Convert the original black backing and gaps into true transparency, with soft semitransparent smoke edges. One single static cloud, centered with generous transparent padding; no background, creature, weapon, scenery, text, sheet or extra objects.",
+      "width": 1254,
+      "height": 1254,
+      "color_mode": "RGBA",
+      "byte_size": 523615,
+      "sha256": "7c53573ddbdd9ac25425873f3f0a92ceb255c7df12ccf260221b8b25103bfe16",
+      "git_blob_sha": "1615a6b297d23c6a87bab58103b17123fb16052e",
+      "alpha": {
+        "minimum": 0,
+        "maximum": 254,
+        "transparent_pixels": 1261108,
+        "opaque_pixels": 0,
+        "partial_pixels": 311408,
+        "nonzero_bbox": [
+          0,
+          25,
+          1226,
+          1230
+        ],
+        "mean": 23.294162984669153,
+        "bbox_alpha_gt_8": [
+          334,
+          315,
+          902,
+          903
+        ]
+      },
+      "file_path": "assets/resonance/candidates/continuation_20261125_l/goldsrc/proj_gene_worm_spit_opfor_cloud_resource_study_l.png",
+      "qa_notes": "Petit nuage vert diffus, partie supérieure plus lumineuse et ouvertures dans la partie basse; la disposition générale suit la frame ballsmoke inspectée, avec des volumes et des détails réinterprétés. Sur blanc/noir, les lobes restent translucides et aucun rectangle noir n’est conservé. Très faibles résidus alpha hors de la silhouette utile. Étude d’un seul composant ballsmoke d’Uplink auquel la teinte verte de l’implémentation communautaire OP4 est appliquée; le trajet, l’échelle, la durée et le rendu retail exact restent à vérifier.",
+      "notes": "Petit nuage vert diffus, partie supérieure plus lumineuse et ouvertures dans la partie basse; la disposition générale suit la frame ballsmoke inspectée, avec des volumes et des détails réinterprétés. Sur blanc/noir, les lobes restent translucides et aucun rectangle noir n’est conservé. Très faibles résidus alpha hors de la silhouette utile. Étude d’un seul composant ballsmoke d’Uplink auquel la teinte verte de l’implémentation communautaire OP4 est appliquée; le trajet, l’échelle, la durée et le rendu retail exact restent à vérifier. Étude du composant de corps ballsmoke, associée à body; aucune complétion de l’état ni impact.",
+      "alpha_composite_review": {
+        "performed": true,
+        "backgrounds": [
+          "#ffffff",
+          "#000000"
+        ],
+        "original_pixels_modified": false,
+        "result": "Petit nuage vert diffus, partie supérieure plus lumineuse et ouvertures dans la partie basse; la disposition générale suit la frame ballsmoke inspectée, avec des volumes et des détails réinterprétés. Sur blanc/noir, les lobes restent translucides et aucun rectangle noir n’est conservé. Très faibles résidus alpha hors de la silhouette utile. Étude d’un seul composant ballsmoke d’Uplink auquel la teinte verte de l’implémentation communautaire OP4 est appliquée; le trajet, l’échelle, la durée et le rendu retail exact restent à vérifier."
+      },
+      "reference_provenance_label": "ressource de la démo Uplink, miroir communautaire",
+      "reference_is_retail_capture": false,
+      "retail_binary_equivalence_verified": false,
+      "study_only": true,
+      "source_refs": [
+        {
+          "reference_filename": "uplink_ballsmoke_frame0.png",
+          "local_reference_path": "/workspace/scratch/d4619ad792f3/resonance-l-work/goldsrc/references/uplink_ballsmoke_frame0.png",
+          "source_url": "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+          "source_page": "https://github.com/x8BitRain/webXash",
+          "source_kind": "uplink_demo_resource_from_community_mirror",
+          "source_resource": "sprites/ballsmoke.spr",
+          "source_resource_sha256": "5a3df03849babcf7cb0eee2f94d9981f32709c096c2515597ab7f9ef78dfaec7",
+          "sha256": "1effe171e6452d474110a148317d9ba4c6803a0c6400224870d495e82acc21b0",
+          "width": 64,
+          "height": 64,
+          "visually_inspected": true,
+          "reference_conversion": "Frame 0 decoded from IDSP version 2 sprite. Original palette retained. Index-alpha uses palette entry 255 RGB and pixel index alpha; additive sprites are previewed on their original black background, not mistaken for a gameplay backdrop.",
+          "scope": "Original demo resource preview; community reference implementation maps the same resource name to the OP4 target. Retail binary identity, exact tint/compositing and temporal state not certified."
+        }
+      ],
+      "original_generation_state_label": "cloud_resource_study",
+      "visual_state_component": "ballsmoke_cloud_resource_study",
+      "state_contract_association": {
+        "reviewed": true,
+        "state_id": "body",
+        "reason": "Étude du composant de corps ballsmoke, associée à body; aucune complétion de l’état ni impact.",
+        "visual_state_complete": false
+      }
+    }
+  ],
+  "refusals": [],
+  "deferred_targets": [
+    {
+      "batch_id": "continuation_20261125_l",
+      "created_at": "2026-11-25",
+      "owner_type": "projectile_effect",
+      "category": "projectile_key_frame",
+      "status": "différé",
+      "generation_status": "différé — référence insuffisante",
+      "generation_call_count": 0,
+      "image_generation_attempted": false,
+      "repository_path": null,
+      "asset_id": null,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "selected_for_next_review": false,
+      "source_partial_register": "docs/resonance/production/continuation_20261125_l/goldsrc_generation.json",
+      "target_id": "fx_bullet_tracer_hl1",
+      "target_ids": [
+        "fx_bullet_tracer_hl1"
+      ],
+      "owner_id": "fx_bullet_tracer_hl1",
+      "source_game": "Half-Life (1998)",
+      "reason": "La distinction entre tir instantané et traceur visuel optionnel est documentée, mais aucun bitmap du traceur GoldSrc retail n’a été inspecté avec une résolution suffisante pour fixer couleur, épaisseur et état. Les métadonnées du showcase Classic/HD ont été obtenues; aucune frame de ce showcase n’est déclarée inspectée. Une forme générique ou issue d’un mod ne constituerait pas une référence fidèle.",
+      "needed_evidence": "Frame et court segment d’un tir de la version GoldSrc retail, avec version, configuration visuelle et phase du traceur identifiées. Ne pas représenter une balle lente.",
+      "source_references": [
+        {
+          "source_kind": "prior_production_review",
+          "repository_path": "docs/resonance/production/continuation_20261125_k/effects_reference_review.md",
+          "scope": "Exclusion K conservée : aucun bitmap de tracer retail inspecté."
+        },
+        {
+          "source_kind": "video_metadata_only",
+          "source_url": "https://www.youtube.com/watch?v=obS5RitWxoY",
+          "title": "Half Life | Weapons Showcase (Classic and HD Models)",
+          "uploader": "Dat Mental Gamer",
+          "metadata_sha256": "b24cabfae10a14c0dccf0e93fdc07c81dcb8b12b5f5ae8e12103e35f9036d0af",
+          "visually_inspected": false,
+          "scope": "Métadonnées obtenues seulement. Sections Classic et HD distinctes; aucune capture de tracer admissible retenue."
+        }
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=obS5RitWxoY"
+      ]
+    },
+    {
+      "batch_id": "continuation_20261125_l",
+      "created_at": "2026-11-25",
+      "owner_type": "projectile_effect",
+      "category": "projectile_key_frame",
+      "status": "différé",
+      "generation_status": "différé — référence insuffisante",
+      "generation_call_count": 0,
+      "image_generation_attempted": false,
+      "repository_path": null,
+      "asset_id": null,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "selected_for_next_review": false,
+      "source_partial_register": "docs/resonance/production/continuation_20261125_l/goldsrc_generation.json",
+      "target_id": "proj_gonome_gut_opfor",
+      "target_ids": [
+        "proj_gonome_gut_opfor"
+      ],
+      "owner_id": "proj_gonome_gut_opfor",
+      "source_game": "Half-Life: Opposing Force",
+      "reason": "La ressource bigspit.spr est identifiée dans l’implémentation communautaire, et sa frame Uplink a été inspectée. Elle ne résout pas le rendu retail du gut : le code consulté écrit trois fois rendercolor.x, avec un TODO explicite, donc la séquence 128,32,128 ne prouve pas une teinte RGB violette. Les sept storyboards du gameplay consulté restent trop petits/sombres pour isoler sûrement le projectile. Le texte du vidéaste évoquant du vert ne remplace pas une capture nette.",
+      "needed_evidence": "Capture retail Opposing Force nette du gut en main puis en vol, configuration/locale précisées, avec confirmation de palette et de compositing. Écarter modèle du monstre, sang, explosions et projectiles du joueur.",
+      "source_references": [
+        {
+          "source_kind": "community_reference_implementation",
+          "source_url": "https://github.com/twhl-community/halflife-op4-updated/blob/master/dlls/gonome.cpp",
+          "sha256": "dacea3ddd5031902c2aa6a35bec08a210e6774c96c41c8fde48ca1b63dd7d292",
+          "visually_inspected": false,
+          "text_inspected": true,
+          "scope": "COFGonomeGuts::Spawn utilise bigspit.spr; affectations de couleur ambiguës, référence communautaire et non source officielle Gearbox."
+        },
+        {
+          "source_kind": "uplink_demo_resource_from_community_mirror",
+          "source_url": "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+          "source_resource": "valve/sprites/bigspit.spr",
+          "source_resource_sha256": "33c06d26d3af340b5211320e817d2227091df5930b1fa45e764e7b7d24d7231e",
+          "reference_filename": "uplink_bigspit_frame0.png",
+          "filename": "references/uplink_bigspit_frame0.png",
+          "sha256": "574c5ebb1b150168e19d0888b0736987ff18bfa6d89459088f42833799283b9e",
+          "byte_size": 854,
+          "width": 32,
+          "height": 32,
+          "visually_inspected": true,
+          "scope": "Composant Uplink, palette RGB 123,138,1; ne fixe pas le rendu retail du gut OP4."
+        },
+        {
+          "filename": "references/gonome_storyboard_0.jpg",
+          "sha256": "01c826fd826203be4fa96ee49b609b1e5c92122ea5de7763c1b36ba25871d63b",
+          "byte_size": 16184,
+          "width": 800,
+          "height": 450,
+          "source_kind": "public_gameplay_storyboard",
+          "source_url": "https://www.youtube.com/watch?v=nxD66_quaA8",
+          "title": "Half Life:Opposing Force Ep.4-WTF IS A GONOME!",
+          "uploader": "Gameraiders101",
+          "visually_inspected": true,
+          "scope": "Storyboard réellement inspecté; résolution et scènes insuffisantes pour une identité visuelle du projectile."
+        },
+        {
+          "filename": "references/gonome_storyboard_1.jpg",
+          "sha256": "5cf874e4cac327ef8a95f9cc514620a8b16316d9f2b6df10de890233f2a59111",
+          "byte_size": 16156,
+          "width": 800,
+          "height": 450,
+          "source_kind": "public_gameplay_storyboard",
+          "source_url": "https://www.youtube.com/watch?v=nxD66_quaA8",
+          "title": "Half Life:Opposing Force Ep.4-WTF IS A GONOME!",
+          "uploader": "Gameraiders101",
+          "visually_inspected": true,
+          "scope": "Storyboard réellement inspecté; résolution et scènes insuffisantes pour une identité visuelle du projectile."
+        },
+        {
+          "filename": "references/gonome_storyboard_2.jpg",
+          "sha256": "e1532eac6b3e859a0682be11934b90a94dee0fc43657cc2649950ede7722eda9",
+          "byte_size": 13506,
+          "width": 800,
+          "height": 450,
+          "source_kind": "public_gameplay_storyboard",
+          "source_url": "https://www.youtube.com/watch?v=nxD66_quaA8",
+          "title": "Half Life:Opposing Force Ep.4-WTF IS A GONOME!",
+          "uploader": "Gameraiders101",
+          "visually_inspected": true,
+          "scope": "Storyboard réellement inspecté; résolution et scènes insuffisantes pour une identité visuelle du projectile."
+        },
+        {
+          "filename": "references/gonome_storyboard_3.jpg",
+          "sha256": "caff2f719300334687928b1fa72e00e954c0e80558b896ede26b3279e1685111",
+          "byte_size": 20140,
+          "width": 800,
+          "height": 450,
+          "source_kind": "public_gameplay_storyboard",
+          "source_url": "https://www.youtube.com/watch?v=nxD66_quaA8",
+          "title": "Half Life:Opposing Force Ep.4-WTF IS A GONOME!",
+          "uploader": "Gameraiders101",
+          "visually_inspected": true,
+          "scope": "Storyboard réellement inspecté; résolution et scènes insuffisantes pour une identité visuelle du projectile."
+        },
+        {
+          "filename": "references/gonome_storyboard_4.jpg",
+          "sha256": "eddec79b63730fd4cb556934f60698311e216a9687be7e480fecebb68161044c",
+          "byte_size": 17270,
+          "width": 800,
+          "height": 450,
+          "source_kind": "public_gameplay_storyboard",
+          "source_url": "https://www.youtube.com/watch?v=nxD66_quaA8",
+          "title": "Half Life:Opposing Force Ep.4-WTF IS A GONOME!",
+          "uploader": "Gameraiders101",
+          "visually_inspected": true,
+          "scope": "Storyboard réellement inspecté; résolution et scènes insuffisantes pour une identité visuelle du projectile."
+        },
+        {
+          "filename": "references/gonome_storyboard_5.jpg",
+          "sha256": "fac59e38a181a3f1fe6d93e0d56285ab8392ad1bb148b2ac214c7cabcdfc0710",
+          "byte_size": 17310,
+          "width": 800,
+          "height": 450,
+          "source_kind": "public_gameplay_storyboard",
+          "source_url": "https://www.youtube.com/watch?v=nxD66_quaA8",
+          "title": "Half Life:Opposing Force Ep.4-WTF IS A GONOME!",
+          "uploader": "Gameraiders101",
+          "visually_inspected": true,
+          "scope": "Storyboard réellement inspecté; résolution et scènes insuffisantes pour une identité visuelle du projectile."
+        },
+        {
+          "filename": "references/gonome_storyboard_6.jpg",
+          "sha256": "d368d55a535ee31fe66db833e4ca656fa240a5b11be697ddc85edb740978093b",
+          "byte_size": 11046,
+          "width": 800,
+          "height": 270,
+          "source_kind": "public_gameplay_storyboard",
+          "source_url": "https://www.youtube.com/watch?v=nxD66_quaA8",
+          "title": "Half Life:Opposing Force Ep.4-WTF IS A GONOME!",
+          "uploader": "Gameraiders101",
+          "visually_inspected": true,
+          "scope": "Storyboard réellement inspecté; résolution et scènes insuffisantes pour une identité visuelle du projectile."
+        }
+      ],
+      "source_urls": [
+        "https://github.com/twhl-community/halflife-op4-updated/blob/master/dlls/gonome.cpp",
+        "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+        "https://www.youtube.com/watch?v=nxD66_quaA8"
+      ]
+    }
+  ],
+  "target_outcomes": [
+    {
+      "target_id": "proj_mp5_grenade_hl1",
+      "outcome": "generated_candidate_study",
+      "asset_ids": [
+        "proj_mp5_grenade_hl1_body_l"
+      ],
+      "generation_call_count": 1,
+      "visual_state_complete": false
+    },
+    {
+      "target_id": "fx_bullsquid_spit_impact_hl1",
+      "outcome": "generated_candidate_study",
+      "asset_ids": [
+        "fx_bullsquid_spit_impact_hl1_impact_decal_spit1_l"
+      ],
+      "generation_call_count": 1,
+      "visual_state_complete": false
+    },
+    {
+      "target_id": "proj_displacer_orb_opfor",
+      "outcome": "generated_candidate_study",
+      "asset_ids": [
+        "proj_displacer_orb_opfor_body_resource_study_l"
+      ],
+      "generation_call_count": 1,
+      "visual_state_complete": false
+    },
+    {
+      "target_id": "proj_gene_worm_spit_opfor",
+      "outcome": "generated_candidate_study",
+      "asset_ids": [
+        "proj_gene_worm_spit_opfor_cloud_resource_study_l"
+      ],
+      "generation_call_count": 1,
+      "visual_state_complete": false
+    },
+    {
+      "target_id": "fx_bullet_tracer_hl1",
+      "outcome": "deferred_insufficient_reference",
+      "asset_ids": [],
+      "generation_call_count": 0
+    },
+    {
+      "target_id": "proj_gonome_gut_opfor",
+      "outcome": "deferred_insufficient_reference",
+      "asset_ids": [],
+      "generation_call_count": 0
+    }
+  ],
+  "reference_archive": {
+    "source_url": "https://raw.githubusercontent.com/x8BitRain/webXash/main/public/hl/uplink.zip",
+    "source_page": "https://github.com/x8BitRain/webXash",
+    "provenance": "ressource de la démo Uplink, miroir communautaire",
+    "sha256": "3ac735117a99b9a17d3d3a133b86a9f7b48b5ca82ff96ad6f7f764fa327d1088",
+    "byte_size": 30578171,
+    "retail_binary_equivalence_verified": false
+  },
+  "evidence_snapshot_hashes": [
+    {
+      "filename": "bullsquid_cpp.txt",
+      "sha256": "6b570a37c6dc81e241496d26cc5847737bdfa6c088fbbf678d2299088ac5efaa",
+      "byte_size": 35055
+    },
+    {
+      "filename": "grenade_cpp.txt",
+      "sha256": "2cd1e57462c341ec0ff1411cf2a15bf5309b2f895d04fc6e7b9a80f0820094db",
+      "byte_size": 12773
+    },
+    {
+      "filename": "studio.h",
+      "sha256": "46eadf886bb301637a1289576f71cd45eab7593044eef29b7f080cc02af2edb5",
+      "byte_size": 8052
+    },
+    {
+      "filename": "CDisplacerBall.cpp",
+      "sha256": "3d7a84b547e9f529cd167dcc71238ac23ce9849d653c284dd503ce08e13ba640",
+      "byte_size": 10683
+    },
+    {
+      "filename": "CDisplacer.cpp",
+      "sha256": "08096a9c205f15ee636b6c97c95a79b030b7671bf351faa0c9e0cf5a4ea4473c",
+      "byte_size": 10734
+    },
+    {
+      "filename": "geneworm.cpp",
+      "sha256": "e81411c31ebe22095dea8476d157c6f8905e2c9130e35cba2f573bd242a7ea51",
+      "byte_size": 38441
+    },
+    {
+      "filename": "gonome.cpp",
+      "sha256": "dacea3ddd5031902c2aa6a35bec08a210e6774c96c41c8fde48ca1b63dd7d292",
+      "byte_size": 24000
+    },
+    {
+      "filename": "video_hl1_weapons.json",
+      "sha256": "b24cabfae10a14c0dccf0e93fdc07c81dcb8b12b5f5ae8e12103e35f9036d0af",
+      "byte_size": 536900
+    },
+    {
+      "filename": "references/uplink_bigspit_frame0.png",
+      "sha256": "574c5ebb1b150168e19d0888b0736987ff18bfa6d89459088f42833799283b9e",
+      "byte_size": 854,
+      "width": 32,
+      "height": 32
+    },
+    {
+      "filename": "references/gonome_storyboard_0.jpg",
+      "sha256": "01c826fd826203be4fa96ee49b609b1e5c92122ea5de7763c1b36ba25871d63b",
+      "byte_size": 16184,
+      "width": 800,
+      "height": 450
+    },
+    {
+      "filename": "references/gonome_storyboard_1.jpg",
+      "sha256": "5cf874e4cac327ef8a95f9cc514620a8b16316d9f2b6df10de890233f2a59111",
+      "byte_size": 16156,
+      "width": 800,
+      "height": 450
+    },
+    {
+      "filename": "references/gonome_storyboard_2.jpg",
+      "sha256": "e1532eac6b3e859a0682be11934b90a94dee0fc43657cc2649950ede7722eda9",
+      "byte_size": 13506,
+      "width": 800,
+      "height": 450
+    },
+    {
+      "filename": "references/gonome_storyboard_3.jpg",
+      "sha256": "caff2f719300334687928b1fa72e00e954c0e80558b896ede26b3279e1685111",
+      "byte_size": 20140,
+      "width": 800,
+      "height": 450
+    },
+    {
+      "filename": "references/gonome_storyboard_4.jpg",
+      "sha256": "eddec79b63730fd4cb556934f60698311e216a9687be7e480fecebb68161044c",
+      "byte_size": 17270,
+      "width": 800,
+      "height": 450
+    },
+    {
+      "filename": "references/gonome_storyboard_5.jpg",
+      "sha256": "fac59e38a181a3f1fe6d93e0d56285ab8392ad1bb148b2ac214c7cabcdfc0710",
+      "byte_size": 17310,
+      "width": 800,
+      "height": 450
+    },
+    {
+      "filename": "references/gonome_storyboard_6.jpg",
+      "sha256": "d368d55a535ee31fe66db833e4ca656fa240a5b11be697ddc85edb740978093b",
+      "byte_size": 11046,
+      "width": 800,
+      "height": 270
+    }
+  ],
+  "limits": [
+    "Images candidates uniquement; aucune certification 1:1, intégration, animation complète ou activation runtime.",
+    "Uplink via miroir communautaire ne prouve aucune égalité binaire avec Half-Life retail ou Opposing Force retail.",
+    "Les associations OP4 exit1 et ballsmoke viennent d’une implémentation communautaire, pas d’un code officiel Gearbox ni d’une capture retail.",
+    "Les deux reports n’ont fait l’objet d’aucun appel imagegen; aucun refus de sécurité n’est survenu dans ce sous-lot."
+  ],
+  "state_contract_review": {
+    "performed": true,
+    "contracts_changed": false,
+    "png_bytes_changed": false,
+    "new_generation_calls": 0,
+    "corrections": [
+      {
+        "asset_id": "fx_bullsquid_spit_impact_hl1_impact_decal_spit1_l",
+        "previous_label": "impact_decal_spit1",
+        "canonical_visual_state_id": null,
+        "component": "persistent_decal_spit1",
+        "reason": "Marque persistante de contact uniquement. Aucune chronologie inspectée ne permet de classer ce composant dans impact_start ou impact_end; le fichier compte pour la famille mais pour aucun état contractuel."
+      },
+      {
+        "asset_id": "proj_displacer_orb_opfor_body_resource_study_l",
+        "previous_label": "body_resource_study",
+        "canonical_visual_state_id": "body",
+        "component": "exit1_resource_study",
+        "reason": "Étude du composant de corps exit1, associée à body; aucune complétion de l’état, displacement, rayon ou anneau de contact."
+      },
+      {
+        "asset_id": "proj_gene_worm_spit_opfor_cloud_resource_study_l",
+        "previous_label": "cloud_resource_study",
+        "canonical_visual_state_id": "body",
+        "component": "ballsmoke_cloud_resource_study",
+        "reason": "Étude du composant de corps ballsmoke, associée à body; aucune complétion de l’état ni impact."
+      }
+    ],
+    "candidate_files_without_contract_state_id": 1,
+    "note": "Les libellés descriptifs d’étude sont séparés des identifiants d’état contractuels. Une attribution body ne certifie pas un état complet."
+  }
+}

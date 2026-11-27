@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "continuation_20261125_l",
+  "base_commit": "8bf790147fad9a7af987526759fe165195a40455",
+  "status": "passed",
+  "commands": [
+    {
+      "command": "node scripts/validate-resonance-design.mjs",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"passed\",\n  \"fighters\": 24,\n  \"storyChapters\": 12,\n  \"specialTechniques\": 102,\n  \"exVariants\": 18,\n  \"stages\": 24,\n  \"productionGroups\": 558,\n  \"animationSequencesPerPilot\": 53,\n  \"drawingsPerPilotOneFacing\": 547,\n  \"pilotMoves\": 66,\n  \"generatedImages\": 286,\n  \"prototypeBackgrounds\": 2,\n  \"prototypeStaticSprites\": 7,\n  \"certifiedOneToOne\": 0,\n  \"note\": \"Design data, image provenance and seven static candidate sprite bindings validated. The Boss Battle simulation has its own tests; no animation clip, network implementation or final visual fidelity is asserted.\"\n}",
+      "stderr": ""
+    },
+    {
+      "command": "node scripts/audit-resonance-production.mjs --write-report",
+      "exit_code": 0,
+      "stdout": "{\"status\":\"passed\",\"actual_png_files\":286,\"valid_png_headers\":286,\"distinct_png_contents\":286,\"requests\":338,\"generated_requests\":286,\"generated_requests_with_verified_file\":286,\"blocked_requests\":36,\"tool_error_requests\":4,\"output_unavailable_requests\":12,\"unproduced_requests\":40,\"unclassified_requests\":0,\"requests_with_files\":286,\"requests_without_files\":52,\"registered_png_files\":286,\"unregistered_png_files\":0,\"certified_one_to_one_declared\":0,\"certified_one_to_one_with_verified_file\":0,\"integrated_in_game_declared\":9,\"completed_animation_clips_declared\":0,\"errors\":0,\"warnings\":0,\"report_written\":true}",
+      "stderr": ""
+    },
+    {
+      "command": "node scripts/sync-resonance-production.mjs --write",
+      "exit_code": 0,
+      "stdout": "{\"status\":\"passed\",\"counts\":{\"targets\":259,\"by_source_bucket\":{\"boss_battle_catalog.bosses\":25,\"catalogue_extension_20261120.targets\":102,\"catalogue_extension_20261124.targets\":6,\"projectile_catalog_20261124.targets\":66,\"roster.fighters\":24,\"roster.reserves\":12,\"stages.stages\":24},\"by_category\":{\"archive\":11,\"boss\":28,\"character\":86,\"costume\":18,\"projectile\":66,\"stage\":50},\"by_content_class\":{\"cut_content_archive\":1,\"documented_cut_content\":10,\"official_alternate_continuity\":7,\"official_demo_reference\":2,\"original_encounter_from_released_identity\":1,\"released_multiplayer_variant\":4,\"released_reference\":174,\"unspecified\":60},\"targets_with_files\":241,\"targets_without_files\":18,\"targets_with_refusals\":29,\"selected_candidate_files\":242,\"costume_targets_with_exactly_associated_files\":18,\"generation_requests\":338,\"generated_requests\":286,\"refused_requests\":36,\"tool_error_requests\":4,\"output_unavailable_requests\":12,\"requests_without_files\":52,\"distinct_registered_png_files_present\":286,\"requests_outside_target_queue\":1,\"stage_layer_candidate_files\":21,\"stage_layer_candidate_ids\":19,\"stage_layer_files_without_id\":1,\"stage_layer_missing_ids_in_known_contracts\":131,\"stages_without_layer_contract\":25,\"projectile_targets\":66,\"projectile_targets_with_files\":57,\"projectile_targets_without_files\":9,\"projectile_targets_by_effect_kind\":{\"area\":4,\"beam\":10,\"device\":1,\"impact\":1,\"instant_trace\":5,\"portal\":4,\"projectile\":32,\"throwable\":8,\"weapon_fire\":1},\"projectile_visual_state_candidate_ids\":61,\"projectile_visual_state_missing_ids\":134,\"projectile_files_without_visual_state_id\":1,\"archives\":11,\"archives_runtime_enabled\":0,\"targets_automatically_completed\":0},\"errors\":0,\"warnings\":1,\"written\":true}",
+      "stderr": "WARN layer_id_missing: layer_city17_distant_skyline A legacy layer file has no declared layer_id; it counts as a file, not an identified stage plane."
+    }
+  ],
+  "preservation": {
+    "historical_png_files_verified": 271,
+    "historical_registry_entries_unchanged": 323,
+    "discarded_iteration_history_unchanged": true,
+    "application_sources_scripts_dependencies_and_workflows_unchanged": true,
+    "runtime_asset_declarations_unchanged": 9
+  },
+  "counts": {
+    "registry": {
+      "requests": 338,
+      "generated": 286,
+      "blocked": 36,
+      "certified_one_to_one": 0,
+      "integrated_in_game": 9,
+      "completed_animation_clips": 0,
+      "completed_six_layer_stages": 0,
+      "discarded_generated_iterations": 13,
+      "generation_calls_including_discarded_iterations": 347,
+      "tool_error_requests": 4,
+      "output_unavailable_requests": 12
+    },
+    "audit": {
+      "actual_png_files": 286,
+      "valid_png_headers": 286,
+      "distinct_png_contents": 286,
+      "requests": 338,
+      "generated_requests": 286,
+      "generated_requests_with_verified_file": 286,
+      "blocked_requests": 36,
+      "tool_error_requests": 4,
+      "output_unavailable_requests": 12,
+      "unproduced_requests": 40,
+      "unclassified_requests": 0,
+      "requests_with_files": 286,
+      "requests_without_files": 52,
+      "registered_png_files": 286,
+      "unregistered_png_files": 0,
+      "certified_one_to_one_declared": 0,
+      "certified_one_to_one_with_verified_file": 0,
+      "integrated_in_game_declared": 9,
+      "completed_animation_clips_declared": 0
+    },
+    "queue": {
+      "targets": 259,
+      "by_source_bucket": {
+        "boss_battle_catalog.bosses": 25,
+        "catalogue_extension_20261120.targets": 102,
+        "catalogue_extension_20261124.targets": 6,
+        "projectile_catalog_20261124.targets": 66,
+        "roster.fighters": 24,
+        "roster.reserves": 12,
+        "stages.stages": 24
+      },
+      "by_category": {
+        "archive": 11,
+        "boss": 28,
+        "character": 86,
+        "costume": 18,
+        "projectile": 66,
+        "stage": 50
+      },
+      "by_content_class": {
+        "cut_content_archive": 1,
+        "documented_cut_content": 10,
+        "official_alternate_continuity": 7,
+        "official_demo_reference": 2,
+        "original_encounter_from_released_identity": 1,
+        "released_multiplayer_variant": 4,
+        "released_reference": 174,
+        "unspecified": 60
+      },
+      "targets_with_files": 241,
+      "targets_without_files": 18,
+      "targets_with_refusals": 29,
+      "selected_candidate_files": 242,
+      "costume_targets_with_exactly_associated_files": 18,
+      "generation_requests": 338,
+      "generated_requests": 286,
+      "refused_requests": 36,
+      "tool_error_requests": 4,
+      "output_unavailable_requests": 12,
+      "requests_without_files": 52,
+      "distinct_registered_png_files_present": 286,
+      "requests_outside_target_queue": 1,
+      "stage_layer_candidate_files": 21,
+      "stage_layer_candidate_ids": 19,
+      "stage_layer_files_without_id": 1,
+      "stage_layer_missing_ids_in_known_contracts": 131,
+      "stages_without_layer_contract": 25,
+      "projectile_targets": 66,
+      "projectile_targets_with_files": 57,
+      "projectile_targets_without_files": 9,
+      "projectile_targets_by_effect_kind": {
+        "area": 4,
+        "beam": 10,
+        "device": 1,
+        "impact": 1,
+        "instant_trace": 5,
+        "portal": 4,
+        "projectile": 32,
+        "throwable": 8,
+        "weapon_fire": 1
+      },
+      "projectile_visual_state_candidate_ids": 61,
+      "projectile_visual_state_missing_ids": 134,
+      "projectile_files_without_visual_state_id": 1,
+      "archives": 11,
+      "archives_runtime_enabled": 0,
+      "targets_automatically_completed": 0
+    }
+  },
+  "warnings": [
+    {
+      "code": "layer_id_missing",
+      "message": "A legacy layer file has no declared layer_id; it counts as a file, not an identified stage plane.",
+      "asset_id": "layer_city17_distant_skyline",
+      "target_id": "STG_11_HL2_STATION",
+      "repository_path": "assets/resonance/candidates/layer_city17_distant_skyline.png"
+    }
+  ],
+  "new_asset_flags": {
+    "certified_one_to_one": 0,
+    "runtime_added": 0,
+    "completed_animation_clips": 0,
+    "completed_six_layer_stages": 0
+  },
+  "resolved_before_publication": {
+    "initial_queue_errors": 3,
+    "reason": "Trois libellés descriptifs GoldSrc n’étaient pas des visual_state_id contractuels.",
+    "correction": "Displacer et Gene Worm rattachés à body avec composant explicite; decal Bullsquid laissé sans état temporel (null). Les contrats, PNG et nombres de générations sont inchangés.",
+    "candidate_projectile_files_without_state_id": 1
+  },
+  "visual_review_scope": "Images originales et références inspectées; transparence sur fonds clair/sombre quand applicable. Composition nominale Factory examinée et relue indépendamment. Aucune fidélité finale, animation, parallaxe en mouvement ou validation navigateur.",
+  "remote_ci": "À vérifier sur le commit publié; résultats consignés dans la description de la PR pour éviter de revendiquer un test avant son exécution."
+}

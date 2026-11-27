@@ -125,6 +125,7 @@
 .bb-overlay-actions .bb-small-button { flex: 0 1 auto; }
 .bb-telegraph { position: absolute; top: 18px; left: 50%; transform: translateX(-50%); max-width: 90%; white-space: normal; text-align: center; border: 1px solid #ebb26899; padding: 9px 17px; color: #ffca70; background: #221b10e6; font: 11px/1.4 ui-monospace, monospace; letter-spacing: .07em; pointer-events: none; }
 .bb-live-message { min-height: 1.5em; }
+.bb-screen .bb-dossiers-result { margin-top: 18px; padding: 13px 16px; border-left: 2px solid var(--bb-amber); background: #242e20; color: #d4e2c1; font-size: 13px; line-height: 1.6; }
 @media (min-width: 1600px) { .bb-hero { min-height: 385px; } }
 @media (max-width: 1000px) {
   .bb-screen { padding: 22px; }

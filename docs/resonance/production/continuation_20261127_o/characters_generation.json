@@ -1,0 +1,666 @@
+{
+  "schema_version": 1,
+  "batch_id": "continuation_20261127_o",
+  "status": "candidate_images_generated_not_animation_complete",
+  "generation_calls": 8,
+  "generated_pngs": 8,
+  "selected_candidates": 7,
+  "historical_iterations": 1,
+  "refusals": 0,
+  "tool_errors": 0,
+  "assets": [
+    {
+      "asset_id": "colette_decay_guard_o",
+      "name_fr": "Colette Green — guard",
+      "target_id": "colette_decay",
+      "target_ids": [
+        "colette_decay"
+      ],
+      "owner_id": "colette_decay",
+      "owner_type": "fighter",
+      "category": "fighter_key_pose",
+      "batch_id": "continuation_20261127_o",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life: Decay — campagne PlayStation 2",
+      "content_class": "released_reference",
+      "pose_class": "original_playable_adaptation",
+      "presentation_state_id": "guard",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "prompt": "Use case: identity-preserve. Asset type: ONE standalone full-body 2D fighting-game sprite, one character and one static key pose. Input 1 is the retail PlayStation 2 Half-Life: Decay game-model capture and is the strict authority for costume construction, palette, proportions and identity. Input 2 is an existing generated Gina sprite, used ONLY for crisp detailed hand-painted 2D rendering style and neutral lighting. Preserve the retail model's adult natural proportions and its exact armour silhouette and seams; do not invent extra armour panels, webbing, wrist computers or accessories. Face toward screen LEFT with a slight three-quarter torso view comparable to input 1. Whole character including every hair accessory, fingers, tool and both boot soles must be visible with at least 10% completely transparent empty margin on all sides. Original low-poly shapes may receive carefully restrained painted surface detail, not a redesign. True transparent alpha, clean cutout, no smoke or diffuse glow around the body, no floor, ground shadow, scenery, text labels, watermark, portrait frame, duplicates or sprite sheet. The pose is an original fan-game presentation adaptation, not a claimed animation from Decay.\nCharacter: Dr Colette Green, retail Decay CAMPAIGN version shown in input 1. Short dark-brown chin-length bob, light skin and face based on that model. Preserve the actual rust-red hard plates and the contrasting very dark green shoulder/upper-torso backing. Shoulder caps and neck/abdomen are BLACK RIBBED material, not red shoulder armour. The chest is the source's asymmetric simple red plate with a small lambda panel at top and a narrow button-console below; preserve the sweeping lower chest seam, source thigh vent strips, red forearm and shin plates, black gloves and black toe caps. Do not use the old generated purple/burgundy Colette design, HL2 Mark V construction, extra upper-arm pauldrons, or added metal frame strips. Do not copy Gina's beige palette or hairstyle. This is the normal campaign skin, not a Head-to-Head recolour.\nThe only handheld item is one classic Half-Life red-painted steel crowbar with worn silver steel at the hooked end; a simple real crowbar, no futuristic redesign. Keep it low and clearly within the safe frame.\nPose: corrected calm combat-ready standing guard, knees lightly flexed, feet naturally separated on one horizontal ground baseline. One hand holds the crowbar down beside the rear thigh with the hook below hip height, the free gloved hand relaxed and raised at lower chest height. Body looking left, focused neutral expression. This is a new corrected base pose based on the actual retail model.",
+      "source_references": [
+        {
+          "input_index": 1,
+          "sha256": "76d043ab9a2646fd19d6adab188827a110d80c666fee54fd30e11480df87e1a5",
+          "visually_inspected": true,
+          "provided_to_generation": true,
+          "source_url": "https://combineoverwiki.net/images/1/18/Ps2_colette_decay.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:Ps2_colette_decay.png",
+          "provenance": "retail_game_model_capture_on_secondary_community_host",
+          "role": "canonical_campaign_identity_reference",
+          "width": 1100,
+          "height": 1100
+        },
+        {
+          "input_index": 2,
+          "sha256": "03f3f72779f5b7bd20d4d71d83be578ff4e53e79cc8fd260d51f0a7c82295999",
+          "visually_inspected": true,
+          "provided_to_generation": true,
+          "repository_path": "assets/resonance/candidates/continuation_20261124_f/gina_decay_guard_f.png",
+          "provenance": "generated_project_candidate",
+          "role": "render_style_and_pose_continuity_reference"
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/images/1/18/Ps2_colette_decay.png"
+      ],
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/characters/colette_decay_guard_o.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_o/characters/colette_decay_guard_o.png",
+      "width": 1060,
+      "height": 1484,
+      "color_mode": "RGBA",
+      "byte_size": 810263,
+      "sha256": "6ffdb5c05376b2888356ca83b7fce9c5a0ecd35c0a14cb570c8897032be73c1d",
+      "original_png_bytes_preserved": true,
+      "pixel_modification_after_generation": false,
+      "transparent_background": true,
+      "alpha_check": "alpha réel mesuré; pixels RGB invisibles et franges faibles conservés",
+      "alpha_stats": {
+        "minimum": 0,
+        "maximum": 255,
+        "transparent_pixels": 1198107,
+        "opaque_pixels": 976,
+        "partial_pixels": 373957,
+        "bbox_alpha_16": [
+          211,
+          64,
+          839,
+          1423
+        ]
+      },
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "notes": "La nouvelle base suit les blocs rouge rouille, vert sombre et noir du modèle campagne PS2, les épaules nervurées et la plaque thoracique asymétrique. Elle remplace pour revue la base B réinterprétée. Visage, volumes fins et plis restent à vérifier.",
+      "source_partial_register": "docs/resonance/production/continuation_20261127_o/characters_generation.json",
+      "revision_of": "colette_decay_idle_right_b"
+    },
+    {
+      "asset_id": "gina_decay_selected_o",
+      "name_fr": "Gina Cross — selected",
+      "target_id": "gina_decay",
+      "target_ids": [
+        "gina_decay"
+      ],
+      "owner_id": "gina_decay",
+      "owner_type": "fighter",
+      "category": "fighter_key_pose",
+      "batch_id": "continuation_20261127_o",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life: Decay — campagne PlayStation 2",
+      "content_class": "released_reference",
+      "pose_class": "original_playable_adaptation",
+      "presentation_state_id": "selected",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "prompt": "Use case: identity-preserve. Asset type: ONE standalone full-body 2D fighting-game sprite, one character and one static key pose. Input 1 is the retail PlayStation 2 Half-Life: Decay game-model capture and is the strict authority for costume construction, palette, proportions and identity. Input 2 is an existing generated Gina sprite, used ONLY for crisp detailed hand-painted 2D rendering style and neutral lighting. Preserve the retail model's adult natural proportions and its exact armour silhouette and seams; do not invent extra armour panels, webbing, wrist computers or accessories. Face toward screen LEFT with a slight three-quarter torso view comparable to input 1. Whole character including every hair accessory, fingers, tool and both boot soles must be visible with at least 10% completely transparent empty margin on all sides. Original low-poly shapes may receive carefully restrained painted surface detail, not a redesign. True transparent alpha, clean cutout, no smoke or diffuse glow around the body, no floor, ground shadow, scenery, text labels, watermark, portrait frame, duplicates or sprite sheet. The pose is an original fan-game presentation adaptation, not a claimed animation from Decay.\nCharacter: Dr Gina Cross, retail Decay campaign version. Auburn/red-brown hair in a compact bun with two crossed dark hair sticks; pale skin; face matched to input 1. Her HEV hard plates are muted beige/taupe, with dark green-black shoulder backing, black ribbed shoulder caps, neck and abdomen, short beige upper-arm plates, large beige forearm plates, original chest lambda plate above the small rectangular button console, horizontal asymmetric lower chest seam, original vented thigh plates, angular beige greaves and black boot toe caps. Both hands in black gloves. Keep those exact distinctive details. No orange HEV and no holographic transparency.\nThe only handheld item is one classic Half-Life red-painted steel crowbar with worn silver steel at the hooked end; a simple real crowbar, no futuristic redesign. Keep it low and clearly within the safe frame.\nPose: the held key pose of confirming character selection. Gina stands poised with feet on one baseline. One gloved hand holds the crowbar low beside the rear thigh, while two fingers of her free hand briefly check the SMALL EXISTING BUTTON CONSOLE at the centre of her chest armour. The console remains visible enough to identify its shape. Head angled slightly down toward the console but still mostly facing left. No new display or projected interface. Calm equipment check, restrained readable gesture.",
+      "source_references": [
+        {
+          "input_index": 1,
+          "sha256": "abab920286f4116f2893d0984811154e1b1569a4483d5cee60368ea5bc918a33",
+          "visually_inspected": true,
+          "provided_to_generation": true,
+          "source_url": "https://combineoverwiki.net/images/5/5f/Ps2_gina_decay.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:Ps2_gina_decay.png",
+          "provenance": "retail_game_model_capture_on_secondary_community_host",
+          "role": "canonical_campaign_identity_reference",
+          "width": 1100,
+          "height": 1100
+        },
+        {
+          "input_index": 2,
+          "sha256": "03f3f72779f5b7bd20d4d71d83be578ff4e53e79cc8fd260d51f0a7c82295999",
+          "visually_inspected": true,
+          "provided_to_generation": true,
+          "repository_path": "assets/resonance/candidates/continuation_20261124_f/gina_decay_guard_f.png",
+          "provenance": "generated_project_candidate",
+          "role": "render_style_and_pose_continuity_reference"
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/images/5/5f/Ps2_gina_decay.png"
+      ],
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/characters/gina_decay_selected_o.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_o/characters/gina_decay_selected_o.png",
+      "width": 1024,
+      "height": 1536,
+      "color_mode": "RGBA",
+      "byte_size": 1648341,
+      "sha256": "f9b1e09311fa517aa11e2eb2be99c4a3e75022d0ed24693983bb96768dcce019",
+      "original_png_bytes_preserved": true,
+      "pixel_modification_after_generation": false,
+      "transparent_background": true,
+      "alpha_check": "alpha réel mesuré; pixels RGB invisibles et franges faibles conservés",
+      "alpha_stats": {
+        "minimum": 0,
+        "maximum": 254,
+        "transparent_pixels": 1194980,
+        "opaque_pixels": 0,
+        "partial_pixels": 377884,
+        "bbox_alpha_16": [
+          261,
+          63,
+          799,
+          1470
+        ]
+      },
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "notes": "Deux doigts sur le petit module thoracique existant; outil en position basse. Tenue Decay, chignon et baguettes préservés comme identité. Pose originale de menu, pas une animation officielle.",
+      "source_partial_register": "docs/resonance/production/continuation_20261127_o/characters_generation.json"
+    },
+    {
+      "asset_id": "gina_decay_deselected_o",
+      "name_fr": "Gina Cross — deselected",
+      "target_id": "gina_decay",
+      "target_ids": [
+        "gina_decay"
+      ],
+      "owner_id": "gina_decay",
+      "owner_type": "fighter",
+      "category": "fighter_key_pose",
+      "batch_id": "continuation_20261127_o",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life: Decay — campagne PlayStation 2",
+      "content_class": "released_reference",
+      "pose_class": "original_playable_adaptation",
+      "presentation_state_id": "deselected",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "prompt": "Use case: identity-preserve. Asset type: ONE standalone full-body 2D fighting-game sprite, one character and one static key pose. Input 1 is the retail PlayStation 2 Half-Life: Decay game-model capture and is the strict authority for costume construction, palette, proportions and identity. Input 2 is an existing generated Gina sprite, used ONLY for crisp detailed hand-painted 2D rendering style and neutral lighting. Preserve the retail model's adult natural proportions and its exact armour silhouette and seams; do not invent extra armour panels, webbing, wrist computers or accessories. Face toward screen LEFT with a slight three-quarter torso view comparable to input 1. Whole character including every hair accessory, fingers, tool and both boot soles must be visible with at least 10% completely transparent empty margin on all sides. Original low-poly shapes may receive carefully restrained painted surface detail, not a redesign. True transparent alpha, clean cutout, no smoke or diffuse glow around the body, no floor, ground shadow, scenery, text labels, watermark, portrait frame, duplicates or sprite sheet. The pose is an original fan-game presentation adaptation, not a claimed animation from Decay.\nCharacter: Dr Gina Cross, retail Decay campaign version. Auburn/red-brown hair in a compact bun with two crossed dark hair sticks; pale skin; face matched to input 1. Her HEV hard plates are muted beige/taupe, with dark green-black shoulder backing, black ribbed shoulder caps, neck and abdomen, short beige upper-arm plates, large beige forearm plates, original chest lambda plate above the small rectangular button console, horizontal asymmetric lower chest seam, original vented thigh plates, angular beige greaves and black boot toe caps. Both hands in black gloves. Keep those exact distinctive details. No orange HEV and no holographic transparency.\nThe only handheld item is one classic Half-Life red-painted steel crowbar with worn silver steel at the hooked end; a simple real crowbar, no futuristic redesign. Keep it low and clearly within the safe frame.\nPose: a single clean key pose of leaving character selection after an equipment check. Gina lowers her free open hand beside her own belt, keeps the crowbar pointing diagonally down in the other hand, and makes a small controlled backward step toward screen RIGHT while still watching screen LEFT. Rear boot slightly lifted, front boot planted; modest weight shift, no running, no lunge, no dramatic twisting. The tool stays safely below chest height and far from her legs. Keep the original suit visible.",
+      "source_references": [
+        {
+          "input_index": 1,
+          "sha256": "abab920286f4116f2893d0984811154e1b1569a4483d5cee60368ea5bc918a33",
+          "visually_inspected": true,
+          "provided_to_generation": true,
+          "source_url": "https://combineoverwiki.net/images/5/5f/Ps2_gina_decay.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:Ps2_gina_decay.png",
+          "provenance": "retail_game_model_capture_on_secondary_community_host",
+          "role": "canonical_campaign_identity_reference",
+          "width": 1100,
+          "height": 1100
+        },
+        {
+          "input_index": 2,
+          "sha256": "03f3f72779f5b7bd20d4d71d83be578ff4e53e79cc8fd260d51f0a7c82295999",
+          "visually_inspected": true,
+          "provided_to_generation": true,
+          "repository_path": "assets/resonance/candidates/continuation_20261124_f/gina_decay_guard_f.png",
+          "provenance": "generated_project_candidate",
+          "role": "render_style_and_pose_continuity_reference"
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/images/5/5f/Ps2_gina_decay.png"
+      ],
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/characters/gina_decay_deselected_o.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_o/characters/gina_decay_deselected_o.png",
+      "width": 1024,
+      "height": 1536,
+      "color_mode": "RGBA",
+      "byte_size": 1647969,
+      "sha256": "a48915d5e8679ad4cf642bf2562640e180d8bdaff935b6aafae7fddd6c6b7599",
+      "original_png_bytes_preserved": true,
+      "pixel_modification_after_generation": false,
+      "transparent_background": true,
+      "alpha_check": "alpha réel mesuré; pixels RGB invisibles et franges faibles conservés",
+      "alpha_stats": {
+        "minimum": 0,
+        "maximum": 254,
+        "transparent_pixels": 1198137,
+        "opaque_pixels": 0,
+        "partial_pixels": 374727,
+        "bbox_alpha_16": [
+          120,
+          85,
+          850,
+          1454
+        ]
+      },
+      "selected_for_next_review": false,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "notes": "Première sortie historique : le pied-de-biche a changé de main par rapport à la sélection. Non retenue; remplacée par la v2. Aucun fichier supprimé.",
+      "source_partial_register": "docs/resonance/production/continuation_20261127_o/characters_generation.json",
+      "superseded_by": "gina_decay_deselected_o_v2"
+    },
+    {
+      "asset_id": "gina_decay_taunt_o",
+      "name_fr": "Gina Cross — taunt",
+      "target_id": "gina_decay",
+      "target_ids": [
+        "gina_decay"
+      ],
+      "owner_id": "gina_decay",
+      "owner_type": "fighter",
+      "category": "fighter_key_pose",
+      "batch_id": "continuation_20261127_o",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life: Decay — campagne PlayStation 2",
+      "content_class": "released_reference",
+      "pose_class": "original_playable_adaptation",
+      "presentation_state_id": "taunt",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "prompt": "Use case: identity-preserve. Asset type: ONE standalone full-body 2D fighting-game sprite, one character and one static key pose. Input 1 is the retail PlayStation 2 Half-Life: Decay game-model capture and is the strict authority for costume construction, palette, proportions and identity. Input 2 is an existing generated Gina sprite, used ONLY for crisp detailed hand-painted 2D rendering style and neutral lighting. Preserve the retail model's adult natural proportions and its exact armour silhouette and seams; do not invent extra armour panels, webbing, wrist computers or accessories. Face toward screen LEFT with a slight three-quarter torso view comparable to input 1. Whole character including every hair accessory, fingers, tool and both boot soles must be visible with at least 10% completely transparent empty margin on all sides. Original low-poly shapes may receive carefully restrained painted surface detail, not a redesign. True transparent alpha, clean cutout, no smoke or diffuse glow around the body, no floor, ground shadow, scenery, text labels, watermark, portrait frame, duplicates or sprite sheet. The pose is an original fan-game presentation adaptation, not a claimed animation from Decay.\nCharacter: Dr Gina Cross, retail Decay campaign version. Auburn/red-brown hair in a compact bun with two crossed dark hair sticks; pale skin; face matched to input 1. Her HEV hard plates are muted beige/taupe, with dark green-black shoulder backing, black ribbed shoulder caps, neck and abdomen, short beige upper-arm plates, large beige forearm plates, original chest lambda plate above the small rectangular button console, horizontal asymmetric lower chest seam, original vented thigh plates, angular beige greaves and black boot toe caps. Both hands in black gloves. Keep those exact distinctive details. No orange HEV and no holographic transparency.\nThe only handheld item is one classic Half-Life red-painted steel crowbar with worn silver steel at the hooked end; a simple real crowbar, no futuristic redesign. Keep it low and clearly within the safe frame.\nPose: the held key pose of a short readiness signal to her partner. Gina stands solidly, crowbar held lowered in the rear hand, and raises her free hand to chest height with palm facing outward and fingers together in a small restrained 'ready' signal toward screen LEFT. Calm determined face; no speech, no supernatural effect, no attack and no exaggerated celebratory gesture. The chest console and original chest plate remain unobscured as far as possible.",
+      "source_references": [
+        {
+          "input_index": 1,
+          "sha256": "abab920286f4116f2893d0984811154e1b1569a4483d5cee60368ea5bc918a33",
+          "visually_inspected": true,
+          "provided_to_generation": true,
+          "source_url": "https://combineoverwiki.net/images/5/5f/Ps2_gina_decay.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:Ps2_gina_decay.png",
+          "provenance": "retail_game_model_capture_on_secondary_community_host",
+          "role": "canonical_campaign_identity_reference",
+          "width": 1100,
+          "height": 1100
+        },
+        {
+          "input_index": 2,
+          "sha256": "03f3f72779f5b7bd20d4d71d83be578ff4e53e79cc8fd260d51f0a7c82295999",
+          "visually_inspected": true,
+          "provided_to_generation": true,
+          "repository_path": "assets/resonance/candidates/continuation_20261124_f/gina_decay_guard_f.png",
+          "provenance": "generated_project_candidate",
+          "role": "render_style_and_pose_continuity_reference"
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/images/5/5f/Ps2_gina_decay.png"
+      ],
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/characters/gina_decay_taunt_o.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_o/characters/gina_decay_taunt_o.png",
+      "width": 1024,
+      "height": 1536,
+      "color_mode": "RGBA",
+      "byte_size": 1742214,
+      "sha256": "15802b5feeb0f743883e1dd19cc7a81086e8117fc3ccc9cb2cfa78f590de5dff",
+      "original_png_bytes_preserved": true,
+      "pixel_modification_after_generation": false,
+      "transparent_background": true,
+      "alpha_check": "alpha réel mesuré; pixels RGB invisibles et franges faibles conservés",
+      "alpha_stats": {
+        "minimum": 0,
+        "maximum": 254,
+        "transparent_pixels": 1156622,
+        "opaque_pixels": 0,
+        "partial_pixels": 416242,
+        "bbox_alpha_16": [
+          182,
+          15,
+          873,
+          1488
+        ]
+      },
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "notes": "Signal de disponibilité paume ouverte, cinq doigts lisibles, outil bas. La marge supérieure visible est réduite (15 px à alpha>=16); pas de coupe observée, mais cadrage/pivot à harmoniser avant animation.",
+      "source_partial_register": "docs/resonance/production/continuation_20261127_o/characters_generation.json"
+    },
+    {
+      "asset_id": "colette_decay_selected_o",
+      "name_fr": "Colette Green — selected",
+      "target_id": "colette_decay",
+      "target_ids": [
+        "colette_decay"
+      ],
+      "owner_id": "colette_decay",
+      "owner_type": "fighter",
+      "category": "fighter_key_pose",
+      "batch_id": "continuation_20261127_o",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life: Decay — campagne PlayStation 2",
+      "content_class": "released_reference",
+      "pose_class": "original_playable_adaptation",
+      "presentation_state_id": "selected",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "prompt": "Use case: identity-preserve. Asset type: ONE standalone full-body 2D fighting-game sprite, one character and one static key pose. Input 1 is the retail PlayStation 2 Half-Life: Decay game-model capture and is the strict authority for costume construction, palette, proportions and identity. Input 2 is the newly corrected generated Colette base sprite, used ONLY for crisp detailed hand-painted 2D rendering style and neutral lighting. Preserve the retail model's adult natural proportions and its exact armour silhouette and seams; do not invent extra armour panels, webbing, wrist computers or accessories. Face toward screen LEFT with a slight three-quarter torso view comparable to input 1. Whole character including every hair accessory, fingers, tool and both boot soles must be visible with at least 10% completely transparent empty margin on all sides. Original low-poly shapes may receive carefully restrained painted surface detail, not a redesign. True transparent alpha, clean cutout, no smoke or diffuse glow around the body, no floor, ground shadow, scenery, text labels, watermark, portrait frame, duplicates or sprite sheet. The pose is an original fan-game presentation adaptation, not a claimed animation from Decay.\nCharacter: Dr Colette Green, retail Decay CAMPAIGN version shown in input 1. Short dark-brown chin-length bob, light skin and face based on that model. Preserve the actual rust-red hard plates and the contrasting very dark green shoulder/upper-torso backing. Shoulder caps and neck/abdomen are BLACK RIBBED material, not red shoulder armour. The chest is the source's asymmetric simple red plate with a small lambda panel at top and a narrow button-console below; preserve the sweeping lower chest seam, source thigh vent strips, red forearm and shin plates, black gloves and black toe caps. Do not use the old generated purple/burgundy Colette design, HL2 Mark V construction, extra upper-arm pauldrons, or added metal frame strips. Do not copy Gina's beige palette or hairstyle. This is the normal campaign skin, not a Head-to-Head recolour.\nThe only handheld item is one classic Half-Life red-painted steel crowbar with worn silver steel at the hooked end; a simple real crowbar, no futuristic redesign. Keep it low and clearly within the safe frame.\nPose: confirmation of character selection. Colette straightens into a ready stance facing left, one gloved hand raising her crowbar diagonally across the LOWER torso, below the chest console, without blocking her face; her other hand is a relaxed fist near the side of her waist. A subtle forward shift of weight, feet naturally spaced. Keep her reaction visually distinct from Gina's equipment-check pose while preserving the exact campaign outfit.",
+      "source_references": [
+        {
+          "input_index": 1,
+          "sha256": "76d043ab9a2646fd19d6adab188827a110d80c666fee54fd30e11480df87e1a5",
+          "visually_inspected": true,
+          "provided_to_generation": true,
+          "source_url": "https://combineoverwiki.net/images/1/18/Ps2_colette_decay.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:Ps2_colette_decay.png",
+          "provenance": "retail_game_model_capture_on_secondary_community_host",
+          "role": "canonical_campaign_identity_reference",
+          "width": 1100,
+          "height": 1100
+        },
+        {
+          "input_index": 2,
+          "sha256": "6ffdb5c05376b2888356ca83b7fce9c5a0ecd35c0a14cb570c8897032be73c1d",
+          "visually_inspected": true,
+          "provided_to_generation": true,
+          "repository_path": "assets/resonance/candidates/continuation_20261127_o/characters/colette_decay_guard_o.png",
+          "provenance": "generated_project_candidate",
+          "role": "render_style_and_pose_continuity_reference"
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/images/1/18/Ps2_colette_decay.png"
+      ],
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/characters/colette_decay_selected_o.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_o/characters/colette_decay_selected_o.png",
+      "width": 1024,
+      "height": 1536,
+      "color_mode": "RGBA",
+      "byte_size": 1638671,
+      "sha256": "8c90b58109a541e07b06d694d79744119b693b0d470e465cfb1eb21bd5919d4c",
+      "original_png_bytes_preserved": true,
+      "pixel_modification_after_generation": false,
+      "transparent_background": true,
+      "alpha_check": "alpha réel mesuré; pixels RGB invisibles et franges faibles conservés",
+      "alpha_stats": {
+        "minimum": 0,
+        "maximum": 254,
+        "transparent_pixels": 1182187,
+        "opaque_pixels": 0,
+        "partial_pixels": 390677,
+        "bbox_alpha_16": [
+          219,
+          66,
+          786,
+          1466
+        ]
+      },
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "notes": "Réaction de sélection, outil diagonal sous le thorax. Palette et construction corrigées à partir du modèle campagne et du nouveau sprite de base.",
+      "source_partial_register": "docs/resonance/production/continuation_20261127_o/characters_generation.json"
+    },
+    {
+      "asset_id": "colette_decay_deselected_o",
+      "name_fr": "Colette Green — deselected",
+      "target_id": "colette_decay",
+      "target_ids": [
+        "colette_decay"
+      ],
+      "owner_id": "colette_decay",
+      "owner_type": "fighter",
+      "category": "fighter_key_pose",
+      "batch_id": "continuation_20261127_o",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life: Decay — campagne PlayStation 2",
+      "content_class": "released_reference",
+      "pose_class": "original_playable_adaptation",
+      "presentation_state_id": "deselected",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "prompt": "Use case: identity-preserve. Asset type: ONE standalone full-body 2D fighting-game sprite, one character and one static key pose. Input 1 is the retail PlayStation 2 Half-Life: Decay game-model capture and is the strict authority for costume construction, palette, proportions and identity. Input 2 is the newly corrected generated Colette base sprite, used ONLY for crisp detailed hand-painted 2D rendering style and neutral lighting. Preserve the retail model's adult natural proportions and its exact armour silhouette and seams; do not invent extra armour panels, webbing, wrist computers or accessories. Face toward screen LEFT with a slight three-quarter torso view comparable to input 1. Whole character including every hair accessory, fingers, tool and both boot soles must be visible with at least 10% completely transparent empty margin on all sides. Original low-poly shapes may receive carefully restrained painted surface detail, not a redesign. True transparent alpha, clean cutout, no smoke or diffuse glow around the body, no floor, ground shadow, scenery, text labels, watermark, portrait frame, duplicates or sprite sheet. The pose is an original fan-game presentation adaptation, not a claimed animation from Decay.\nCharacter: Dr Colette Green, retail Decay CAMPAIGN version shown in input 1. Short dark-brown chin-length bob, light skin and face based on that model. Preserve the actual rust-red hard plates and the contrasting very dark green shoulder/upper-torso backing. Shoulder caps and neck/abdomen are BLACK RIBBED material, not red shoulder armour. The chest is the source's asymmetric simple red plate with a small lambda panel at top and a narrow button-console below; preserve the sweeping lower chest seam, source thigh vent strips, red forearm and shin plates, black gloves and black toe caps. Do not use the old generated purple/burgundy Colette design, HL2 Mark V construction, extra upper-arm pauldrons, or added metal frame strips. Do not copy Gina's beige palette or hairstyle. This is the normal campaign skin, not a Head-to-Head recolour.\nThe only handheld item is one classic Half-Life red-painted steel crowbar with worn silver steel at the hooked end; a simple real crowbar, no futuristic redesign. Keep it low and clearly within the safe frame.\nPose: a static exit key pose from character selection. Colette lowers the crowbar to her side, free hand relaxed near her own hip, and pivots her torso only slightly away while taking a controlled backward step toward screen RIGHT. Head remains turned toward screen LEFT. One boot planted and the other just lifted, full silhouette readable, no crossed legs and no dramatic running. Keep the original suit construction and exact red/green/black colour blocks.\nContinuity lock: keep the crowbar in the hand on the SCREEN-RIGHT side of her body, exactly as in input 2. The hand on the screen-left side stays free. Do not switch tool hands between poses.",
+      "source_references": [
+        {
+          "input_index": 1,
+          "sha256": "76d043ab9a2646fd19d6adab188827a110d80c666fee54fd30e11480df87e1a5",
+          "visually_inspected": true,
+          "provided_to_generation": true,
+          "source_url": "https://combineoverwiki.net/images/1/18/Ps2_colette_decay.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:Ps2_colette_decay.png",
+          "provenance": "retail_game_model_capture_on_secondary_community_host",
+          "role": "canonical_campaign_identity_reference",
+          "width": 1100,
+          "height": 1100
+        },
+        {
+          "input_index": 2,
+          "sha256": "6ffdb5c05376b2888356ca83b7fce9c5a0ecd35c0a14cb570c8897032be73c1d",
+          "visually_inspected": true,
+          "provided_to_generation": true,
+          "repository_path": "assets/resonance/candidates/continuation_20261127_o/characters/colette_decay_guard_o.png",
+          "provenance": "generated_project_candidate",
+          "role": "render_style_and_pose_continuity_reference"
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/images/1/18/Ps2_colette_decay.png"
+      ],
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/characters/colette_decay_deselected_o.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_o/characters/colette_decay_deselected_o.png",
+      "width": 1060,
+      "height": 1484,
+      "color_mode": "RGBA",
+      "byte_size": 812145,
+      "sha256": "c710bb821a34d3e6f057303017ad01265703d7670952c336a8c7050de2bf7a7a",
+      "original_png_bytes_preserved": true,
+      "pixel_modification_after_generation": false,
+      "transparent_background": true,
+      "alpha_check": "alpha réel mesuré; pixels RGB invisibles et franges faibles conservés",
+      "alpha_stats": {
+        "minimum": 0,
+        "maximum": 255,
+        "transparent_pixels": 1223910,
+        "opaque_pixels": 1759,
+        "partial_pixels": 347371,
+        "bbox_alpha_16": [
+          252,
+          66,
+          788,
+          1407
+        ]
+      },
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "notes": "Pas arrière contrôlé, outil conservé dans la main du côté droit de l’image comme dans la sélection; la transition intermédiaire reste à produire.",
+      "source_partial_register": "docs/resonance/production/continuation_20261127_o/characters_generation.json"
+    },
+    {
+      "asset_id": "colette_decay_taunt_o",
+      "name_fr": "Colette Green — taunt",
+      "target_id": "colette_decay",
+      "target_ids": [
+        "colette_decay"
+      ],
+      "owner_id": "colette_decay",
+      "owner_type": "fighter",
+      "category": "fighter_key_pose",
+      "batch_id": "continuation_20261127_o",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life: Decay — campagne PlayStation 2",
+      "content_class": "released_reference",
+      "pose_class": "original_playable_adaptation",
+      "presentation_state_id": "taunt",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "prompt": "Use case: identity-preserve. Asset type: ONE standalone full-body 2D fighting-game sprite, one character and one static key pose. Input 1 is the retail PlayStation 2 Half-Life: Decay game-model capture and is the strict authority for costume construction, palette, proportions and identity. Input 2 is the newly corrected generated Colette base sprite, used ONLY for crisp detailed hand-painted 2D rendering style and neutral lighting. Preserve the retail model's adult natural proportions and its exact armour silhouette and seams; do not invent extra armour panels, webbing, wrist computers or accessories. Face toward screen LEFT with a slight three-quarter torso view comparable to input 1. Whole character including every hair accessory, fingers, tool and both boot soles must be visible with at least 10% completely transparent empty margin on all sides. Original low-poly shapes may receive carefully restrained painted surface detail, not a redesign. True transparent alpha, clean cutout, no smoke or diffuse glow around the body, no floor, ground shadow, scenery, text labels, watermark, portrait frame, duplicates or sprite sheet. The pose is an original fan-game presentation adaptation, not a claimed animation from Decay.\nCharacter: Dr Colette Green, retail Decay CAMPAIGN version shown in input 1. Short dark-brown chin-length bob, light skin and face based on that model. Preserve the actual rust-red hard plates and the contrasting very dark green shoulder/upper-torso backing. Shoulder caps and neck/abdomen are BLACK RIBBED material, not red shoulder armour. The chest is the source's asymmetric simple red plate with a small lambda panel at top and a narrow button-console below; preserve the sweeping lower chest seam, source thigh vent strips, red forearm and shin plates, black gloves and black toe caps. Do not use the old generated purple/burgundy Colette design, HL2 Mark V construction, extra upper-arm pauldrons, or added metal frame strips. Do not copy Gina's beige palette or hairstyle. This is the normal campaign skin, not a Head-to-Head recolour.\nThe only handheld item is one classic Half-Life red-painted steel crowbar with worn silver steel at the hooked end; a simple real crowbar, no futuristic redesign. Keep it low and clearly within the safe frame.\nPose: after checking the existing chest-console indicator, Colette gives a brief compact thumbs-up with her free gloved hand just beside the upper chest, directed toward her teammate on screen LEFT. The other hand holds the crowbar safely down beside her thigh. Chin slightly raised, restrained focused expression, no grin or new personality exaggeration. Feet planted in an easy ready stance. No added wrist display, light effects, captions or damage.\nContinuity lock: keep the crowbar in the hand on the SCREEN-RIGHT side of her body, exactly as in input 2. The hand on the screen-left side stays free. Do not switch tool hands between poses.",
+      "source_references": [
+        {
+          "input_index": 1,
+          "sha256": "76d043ab9a2646fd19d6adab188827a110d80c666fee54fd30e11480df87e1a5",
+          "visually_inspected": true,
+          "provided_to_generation": true,
+          "source_url": "https://combineoverwiki.net/images/1/18/Ps2_colette_decay.png",
+          "source_page": "https://combineoverwiki.net/wiki/File:Ps2_colette_decay.png",
+          "provenance": "retail_game_model_capture_on_secondary_community_host",
+          "role": "canonical_campaign_identity_reference",
+          "width": 1100,
+          "height": 1100
+        },
+        {
+          "input_index": 2,
+          "sha256": "6ffdb5c05376b2888356ca83b7fce9c5a0ecd35c0a14cb570c8897032be73c1d",
+          "visually_inspected": true,
+          "provided_to_generation": true,
+          "repository_path": "assets/resonance/candidates/continuation_20261127_o/characters/colette_decay_guard_o.png",
+          "provenance": "generated_project_candidate",
+          "role": "render_style_and_pose_continuity_reference"
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/images/1/18/Ps2_colette_decay.png"
+      ],
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/characters/colette_decay_taunt_o.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_o/characters/colette_decay_taunt_o.png",
+      "width": 1060,
+      "height": 1484,
+      "color_mode": "RGBA",
+      "byte_size": 904116,
+      "sha256": "6c67807679b2c7a0b8a18d928aad72fa897925dd55971b1c3b8f9fe9904f7bd3",
+      "original_png_bytes_preserved": true,
+      "pixel_modification_after_generation": false,
+      "transparent_background": true,
+      "alpha_check": "alpha réel mesuré; pixels RGB invisibles et franges faibles conservés",
+      "alpha_stats": {
+        "minimum": 0,
+        "maximum": 255,
+        "transparent_pixels": 1188849,
+        "opaque_pixels": 1015,
+        "partial_pixels": 383176,
+        "bbox_alpha_16": [
+          231,
+          61,
+          833,
+          1423
+        ]
+      },
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "notes": "Signal bref du pouce, outil abaissé dans la même main que la sélection. Aucun pouvoir, texte ou bonus de gameplay inventé.",
+      "source_partial_register": "docs/resonance/production/continuation_20261127_o/characters_generation.json"
+    },
+    {
+      "asset_id": "gina_decay_deselected_o_v2",
+      "name_fr": "Gina Cross — deselected",
+      "target_id": "gina_decay",
+      "target_ids": [
+        "gina_decay"
+      ],
+      "owner_id": "gina_decay",
+      "owner_type": "fighter",
+      "category": "fighter_key_pose",
+      "batch_id": "continuation_20261127_o",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life: Decay — campagne PlayStation 2",
+      "content_class": "released_reference",
+      "pose_class": "original_playable_adaptation",
+      "presentation_state_id": "deselected",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "qa_status": "candidat à vérifier",
+      "prompt": "Use case: precise-object-edit. Input1 is the exact edit target: the newly generated full-body Gina Cross deselection sprite. Input2 is her selection sprite, provided ONLY to fix which hand owns the crowbar. Correct ONE continuity defect in input1. Keep her entire body pose, back-stepping legs, face, auburn bun and hair sticks, exact beige/green/black Decay HEV suit, camera, canvas, scale, placement and lighting unchanged. REMOVE the crowbar from the hand on the SCREEN-LEFT side of her body and let that hand relax empty beside her belt. Put the SAME red-painted Half-Life steel crowbar into the lowered hand on the SCREEN-RIGHT side of her body, matching the holding side of input2. The hook points downward, stays clear of the rear boot and is fully visible inside the transparent margin. Do not mirror the figure, swap suit details, add a second crowbar or change the step. One full-body adult character, one pose, one crowbar total. Preserve true alpha transparency, no background glow, floor, shadow, text, cropped extremities or other object. This targeted correction keeps the tool hand consistent across the planned selection/deselection cycle; it does not constitute a completed animation.",
+      "source_references": [
+        {
+          "input_index": 1,
+          "sha256": "a48915d5e8679ad4cf642bf2562640e180d8bdaff935b6aafae7fddd6c6b7599",
+          "visually_inspected": true,
+          "provided_to_generation": true,
+          "repository_path": "assets/resonance/candidates/continuation_20261127_o/characters/gina_decay_deselected_o.png",
+          "provenance": "generated_project_candidate",
+          "role": "edit_target"
+        },
+        {
+          "input_index": 2,
+          "sha256": "f9b1e09311fa517aa11e2eb2be99c4a3e75022d0ed24693983bb96768dcce019",
+          "visually_inspected": true,
+          "provided_to_generation": true,
+          "repository_path": "assets/resonance/candidates/continuation_20261127_o/characters/gina_decay_selected_o.png",
+          "provenance": "generated_project_candidate",
+          "role": "render_style_and_pose_continuity_reference"
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/images/5/5f/Ps2_gina_decay.png"
+      ],
+      "repository_path": "assets/resonance/candidates/continuation_20261127_o/characters/gina_decay_deselected_o_v2.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_o/characters/gina_decay_deselected_o_v2.png",
+      "width": 1024,
+      "height": 1536,
+      "color_mode": "RGBA",
+      "byte_size": 1669142,
+      "sha256": "b8b36f9ad3357617c58583e422716010dd369c7f3daf890fdfb1cd4acfe76ef0",
+      "original_png_bytes_preserved": true,
+      "pixel_modification_after_generation": false,
+      "transparent_background": true,
+      "alpha_check": "alpha réel mesuré; pixels RGB invisibles et franges faibles conservés",
+      "alpha_stats": {
+        "minimum": 0,
+        "maximum": 254,
+        "transparent_pixels": 1199247,
+        "opaque_pixels": 0,
+        "partial_pixels": 373617,
+        "bbox_alpha_16": [
+          272,
+          84,
+          853,
+          1454
+        ]
+      },
+      "selected_for_next_review": true,
+      "certified_one_to_one": false,
+      "integrated_in_game": false,
+      "runtime_enabled": false,
+      "animation_clip_complete": false,
+      "generation_call_count": 1,
+      "new_generation_call": true,
+      "notes": "Correction ciblée du changement de main : outil maintenant du même côté que la sélection, main opposée libre; pas arrière conservé globalement. Pas de certification de conservation pixel par pixel du corps.",
+      "source_partial_register": "docs/resonance/production/continuation_20261127_o/characters_generation.json",
+      "revision_of": "gina_decay_deselected_o"
+    }
+  ],
+  "fidelity_limitations": [
+    "Original static presentation poses; no official selection animation is claimed.",
+    "Face, hands, fine armour geometry, per-pose scale and pivots require in-game review.",
+    "Pixel alpha and original output bytes are preserved without post-processing."
+  ]
+}
