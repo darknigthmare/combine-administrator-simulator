@@ -1,25 +1,25 @@
 # Audit des fichiers de production — Half Life Resonance
 
-Exécuté le 2026-11-27T08:35:59.879Z. Résultat : **réussi**.
+Exécuté le 2026-11-27T09:18:25.190Z. Résultat : **réussi**.
 
 Le comptage porte sur les fichiers présents dans le dépôt au moment du contrôle. Les déclarations des anciennes conversations ne créent aucune entrée ni aucun fichier.
 
 | Mesure | Nombre |
 |---|---:|
-| actual_png_files | 318 |
-| valid_png_headers | 318 |
-| distinct_png_contents | 318 |
-| requests | 370 |
-| generated_requests | 318 |
-| generated_requests_with_verified_file | 318 |
-| blocked_requests | 36 |
+| actual_png_files | 327 |
+| valid_png_headers | 327 |
+| distinct_png_contents | 327 |
+| requests | 381 |
+| generated_requests | 327 |
+| generated_requests_with_verified_file | 327 |
+| blocked_requests | 38 |
 | tool_error_requests | 4 |
 | output_unavailable_requests | 12 |
-| unproduced_requests | 40 |
+| unproduced_requests | 42 |
 | unclassified_requests | 0 |
-| requests_with_files | 318 |
-| requests_without_files | 52 |
-| registered_png_files | 318 |
+| requests_with_files | 327 |
+| requests_without_files | 54 |
+| registered_png_files | 327 |
 | unregistered_png_files | 0 |
 | certified_one_to_one_declared | 0 |
 | certified_one_to_one_with_verified_file | 0 |
@@ -347,6 +347,15 @@ Présence, SHA-256, taille et en-tête PNG sont vérifiés. Le script ne décode
 | assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_front_edge_o.png | 2172 × 724 | 140532 | oui |
 | assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_front_edge_v2_o.png | 2172 × 724 | 124514 | oui |
 | assets/resonance/candidates/continuation_20261127_o/layers/layer_contamination_hl25_sky_o.png | 2172 × 724 | 1627295 | oui |
+| assets/resonance/candidates/continuation_20261127_p/hl1/archive_archer_hl1_legacy_swim_p.png | 1448 × 1086 | 674500 | oui |
+| assets/resonance/candidates/continuation_20261127_p/hl1/archive_panther_eye_hl1_alpha_blue_pose_p.png | 1254 × 1254 | 1763646 | oui |
+| assets/resonance/candidates/continuation_20261127_p/hl1/archive_panther_eye_hl1_alpha_blue_pose_v2_p.png | 1254 × 1254 | 939270 | oui |
+| assets/resonance/candidates/continuation_20261127_p/hl1/archive_panther_eye_hl1_red_diablo_idle_p.png | 1448 × 1086 | 1370938 | oui |
+| assets/resonance/candidates/continuation_20261127_p/hl2/archive_bullsquid_hl2_cut_idle_p.png | 1668 × 943 | 1156245 | oui |
+| assets/resonance/candidates/continuation_20261127_p/hl2/archive_combine_assassin_hl2_guard_p.png | 1026 × 1532 | 1086559 | oui |
+| assets/resonance/candidates/continuation_20261127_p/hl2/archive_combine_guard_synth_hl2_guard_p.png | 952 × 1652 | 1548452 | oui |
+| assets/resonance/candidates/continuation_20261127_p/hl2/archive_houndeye_hl2_cut_front_p.png | 1060 × 1484 | 879084 | oui |
+| assets/resonance/candidates/continuation_20261127_p/weapons/archive_combine_guard_gun_hl2_untextured_p.png | 1960 × 802 | 1293543 | oui |
 | assets/resonance/candidates/layer_black_mesa_floor.png | 2172 × 724 | 641901 | oui |
 | assets/resonance/candidates/layer_city17_distant_skyline.png | 1774 × 887 | 1545440 | oui |
 | assets/resonance/candidates/prop_hev_suit_charger.png | 1024 × 1536 | 2691794 | oui |

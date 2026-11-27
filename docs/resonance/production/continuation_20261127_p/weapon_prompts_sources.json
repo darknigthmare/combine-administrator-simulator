@@ -1,0 +1,32 @@
+[
+  {
+    "asset_id": "archive_sniper_rifle_hl2_worldmodel_p",
+    "target_id": "archive_sniper_rifle_hl2",
+    "path": "assets/resonance/candidates/continuation_20261127_p/weapons/archive_sniper_rifle_hl2_worldmodel_p.png",
+    "prompt": "Use case: style-transfer. One standalone high-resolution 2D video-game weapon sprite for an archive catalogue. Input image1 is the ONLY reference: original Half-Life 2 CUT playable Sniper Rifle WORLD model. Input2 is a different weapon and must be ignored. Reproduce the exact silhouette and design of image1, horizontally pointing LEFT with the same very slight three-quarter view: very long dark grey cylindrical barrel, squared chunky ported muzzle brake on far left, long rectangular dark receiver with the same visible vent slots, integrated angular thumbhole stock and small separate rectangular trigger opening underneath near the rear, short black scope on top with two brackets and muted dark-red lens on its left end, plain flat angular black buttplate far right. Preserve dimensions and spacing of all parts relative to each other. Painted 2D game asset finish with sharp readable edges and restrained wear, no redesign or new components. Do not substitute an M40A1 from Opposing Force, do not use the retail NPC Overwatch Sniper Rifle or Survivor model. No hands, no person, no ammunition, no shots or muzzle flash, no extra magazine or added bipod. Entire weapon within frame, broad transparent margins, landscape image. True alpha transparent background; remove the white reference backdrop, no floor or shadows, no diagram, no labels, no text, no UI. One weapon only. No operational schematics, only the visual collectible sprite. Historical archive candidate, no certification claimed.",
+    "source_url": "https://combineoverwiki.net/images/5/5e/Sniperw.png",
+    "source_page": "https://combineoverwiki.net/wiki/File:Sniperw.png",
+    "source_sha256": "fe00a14b8f804e998e5754b89823ffbe188c0329e2d7408e5ced7b4ac9f49a21",
+    "generation_status": "refus automatique",
+    "error": "image generation failed: http 400 Bad Request: Some(\"{\\n  \\\"error\\\": {\\n    \\\"message\\\": \\\"Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID eee012f3-dd55-4721-a7b1-7bbecbff1d9e. safety_violations=[illicit].\\\",\\n    \\\"type\\\": \\\"image_generation_user_error\\\",\\n    \\\"param\\\": null,\\n    \\\"code\\\": \\\"moderation_blocked\\\",\\n    \\\"moderation_details\\\": {\\n      \\\"moderation_stage\\\": \\\"output\\\",\\n      \\\"categories\\\": [\\n        \\\"illicit\\\"\\n      ]\\n    }\\n  }\\n}\")",
+    "generator": "image_gen built-in",
+    "runtime_enabled": false,
+    "certified_one_to_one": false,
+    "integrated_in_game": false
+  },
+  {
+    "asset_id": "archive_combine_guard_gun_hl2_untextured_p",
+    "target_id": "archive_cguard_gun_hl2",
+    "path": "assets/resonance/candidates/continuation_20261127_p/weapons/archive_combine_guard_gun_hl2_untextured_p.png",
+    "prompt": "Use case: style-transfer. ONE standalone archival weapon sprite based ONLY on input image2, the untextured light-grey Half-Life 2 cut Combine Guard Gun world-model reference. Input1 is a different weapon and must not influence this output. Reproduce the exact observed low-poly UNTEXTURED object with NO invented materials: grey faceted polygon surfaces, large hollow rear handle loop at RIGHT, central boxy body and round raised side panel, the lower angular forward loop/handle and the small bent tube visible left of center, multiple simple barrel/prong rods protruding LEFT with exactly the same differing lengths and layout as in reference. Match the same slightly elevated side-three-quarter view, same silhouette and proportions, keep all extremities in frame. Keep neutral light-grey clay-like shading and untextured look; preserve planar faces. Do not invent gold or olive colors, paint, decals, metal engraving, emitters, moving mechanisms, plasma effects, sharp new details or realistic firearm machinery. This is a faithful study of an unfinished historical model, not the colored hand cannon in another Combine Guard character model and not a finalized Immolator. Do not infer missing textures. True transparent background, no white rectangle, no floor, no pedestal, no shadows, no hands, no person, no text, no border or interface. One whole object only centered in wide landscape framing with empty margins. Preserve the reference incompleteness explicitly by keeping the object entirely untextured.",
+    "source_url": "https://combineoverwiki.net/images/a/a4/Combine_Guard_Gun_leak.png",
+    "source_page": "https://combineoverwiki.net/wiki/File:Combine_Guard_Gun_leak.png",
+    "source_sha256": "e597747523c38a80cc13997983ee35e5a9dd3a7ec7ba2417240d72ae7fd5480d",
+    "generation_status": "généré",
+    "error": null,
+    "generator": "image_gen built-in",
+    "runtime_enabled": false,
+    "certified_one_to_one": false,
+    "integrated_in_game": false
+  }
+]

@@ -1,0 +1,234 @@
+{
+  "date": "2026-11-27",
+  "batch_id": "continuation_20261127_p",
+  "source_base_head": "b43f3c60c3455d4f704ced819344831120d61309",
+  "status": "passed_with_known_documentary_warning",
+  "scope": "Native repository checks of the cut-content catalogue, actual candidate PNG files, generation outcomes and production queue. No new gameplay integration or visual 1:1 certification is asserted.",
+  "batch_counts": {
+    "new_catalogue_targets": 81,
+    "new_source_records": 80,
+    "new_required_task_records": 694,
+    "generation_requests": 11,
+    "produced_png_files": 9,
+    "distinct_new_targets_with_png": 8,
+    "selected_candidate_files": 8,
+    "retained_unselected_iterations": 1,
+    "confirmed_refusals": 2,
+    "new_runtime_images": 0,
+    "certified_one_to_one": 0,
+    "completed_animation_clips": 0
+  },
+  "checks": [
+    {
+      "command": "node scripts/sync-resonance-production.mjs --write",
+      "status": "passed",
+      "counts": {
+        "targets": 340,
+        "by_source_bucket": {
+          "boss_battle_catalog.bosses": 25,
+          "catalogue_extension_20261120.targets": 102,
+          "catalogue_extension_20261124.targets": 6,
+          "cut_content_catalog_20261127.targets": 81,
+          "projectile_catalog_20261124.targets": 66,
+          "roster.fighters": 24,
+          "roster.reserves": 12,
+          "stages.stages": 24
+        },
+        "by_category": {
+          "archive": 92,
+          "boss": 28,
+          "character": 86,
+          "costume": 18,
+          "projectile": 66,
+          "stage": 50
+        },
+        "by_content_class": {
+          "cut_content_archive": 1,
+          "documented_cut_content": 30,
+          "official_alternate_continuity": 7,
+          "official_demo_reference": 2,
+          "original_encounter_from_released_identity": 1,
+          "released_multiplayer_variant": 4,
+          "released_reference": 174,
+          "reported_cut_content_research": 61,
+          "unspecified": 60
+        },
+        "targets_with_files": 250,
+        "targets_without_files": 90,
+        "targets_with_refusals": 31,
+        "selected_candidate_files": 275,
+        "costume_targets_with_exactly_associated_files": 18,
+        "generation_requests": 381,
+        "generated_requests": 327,
+        "refused_requests": 38,
+        "tool_error_requests": 4,
+        "output_unavailable_requests": 12,
+        "requests_without_files": 54,
+        "distinct_registered_png_files_present": 327,
+        "requests_outside_target_queue": 1,
+        "stage_layer_candidate_files": 29,
+        "stage_layer_candidate_ids": 25,
+        "stage_layer_files_without_id": 1,
+        "stage_layer_missing_ids_in_known_contracts": 131,
+        "stages_without_layer_contract": 24,
+        "projectile_targets": 66,
+        "projectile_targets_with_files": 58,
+        "projectile_targets_without_files": 8,
+        "projectile_targets_by_effect_kind": {
+          "area": 4,
+          "beam": 10,
+          "device": 1,
+          "impact": 1,
+          "instant_trace": 5,
+          "portal": 4,
+          "projectile": 32,
+          "throwable": 8,
+          "weapon_fire": 1
+        },
+        "projectile_visual_state_candidate_ids": 67,
+        "projectile_visual_state_missing_ids": 128,
+        "projectile_files_without_visual_state_id": 1,
+        "archives": 92,
+        "archives_runtime_enabled": 0,
+        "targets_automatically_completed": 0
+      },
+      "errors": 0,
+      "warnings": 1,
+      "written": true
+    },
+    {
+      "command": "node scripts/audit-resonance-production.mjs --write-report",
+      "status": "passed",
+      "counts": {
+        "actual_png_files": 327,
+        "valid_png_headers": 327,
+        "distinct_png_contents": 327,
+        "requests": 381,
+        "generated_requests": 327,
+        "generated_requests_with_verified_file": 327,
+        "blocked_requests": 38,
+        "tool_error_requests": 4,
+        "output_unavailable_requests": 12,
+        "unproduced_requests": 42,
+        "unclassified_requests": 0,
+        "requests_with_files": 327,
+        "requests_without_files": 54,
+        "registered_png_files": 327,
+        "unregistered_png_files": 0,
+        "certified_one_to_one_declared": 0,
+        "certified_one_to_one_with_verified_file": 0,
+        "integrated_in_game_declared": 12,
+        "completed_animation_clips_declared": 0
+      },
+      "errors": 0,
+      "warnings": 0,
+      "report_written": true
+    },
+    {
+      "command": "node scripts/validate-resonance-design.mjs",
+      "status": "passed",
+      "result": {
+        "status": "passed",
+        "fighters": 24,
+        "storyChapters": 12,
+        "specialTechniques": 102,
+        "exVariants": 18,
+        "stages": 24,
+        "productionGroups": 558,
+        "animationSequencesPerPilot": 53,
+        "drawingsPerPilotOneFacing": 547,
+        "pilotMoves": 66,
+        "generatedImages": 327,
+        "prototypeBackgrounds": 2,
+        "prototypeStaticSprites": 7,
+        "dossierIllustrations": 4,
+        "distinctRuntimeImages": 12,
+        "certifiedOneToOne": 0,
+        "note": "Design data, image provenance, seven static combat sprites and four dossier illustrations validated. Gunship is shared between scopes. The Boss Battle simulation has its own tests; no animation clip, network implementation or final visual fidelity is asserted."
+      }
+    },
+    {
+      "command": "node scripts/validate-resonance-boss-design.mjs",
+      "status": "passed",
+      "result": {
+        "status": "passed",
+        "encounters": 24,
+        "archives": 1,
+        "playableBosses": 4,
+        "pilots": 6,
+        "sources": 34,
+        "plannedArtGroups": 72,
+        "finishedArtGroups": 0,
+        "certifiedOneToOne": 0
+      }
+    },
+    {
+      "command": "node scripts/validate-resonance-guides.mjs",
+      "status": "passed",
+      "result": {
+        "result": "passed",
+        "source_files": 3,
+        "original_sha256_verified": 3,
+        "guide_sections": 68,
+        "production_profiles": 63,
+        "planned_acceptance_scenarios": 26,
+        "runtime_dossier_references": 4,
+        "new_png_from_guides": 0,
+        "new_animation_clips_from_guides": 0,
+        "scope": "Static integrity and documentary contracts only; gameplay, browser, visual fidelity and external services are not certified."
+      }
+    },
+    {
+      "command": "node scripts/test-resonance-production-status.mjs",
+      "status": "passed",
+      "checks": [
+        "outcome separation",
+        "stale generated flag priority",
+        "per-target outcome separation",
+        "cut-content archive runtime guard",
+        "declared error/unavailable counters",
+        "missing and existing invalid output paths",
+        "missing generated PNG remains an error"
+      ]
+    },
+    {
+      "command": "git diff --check",
+      "status": "passed",
+      "scope": "Unstaged changes present during this validation pass."
+    }
+  ],
+  "resolved_validation_findings": [
+    "The production synchronizer now loads the cut-content catalogue and preserves archive_kind and source references.",
+    "The cut-content source bucket forces archive classification, including when a row is accidentally relabelled; the status fixture verifies that runtime activation is rejected.",
+    "The design validator now resolves cut-content owners and archive owner_type; it validates target/source uniqueness, cross-catalogue collisions, archive/runtime/fidelity constraints, and task templates/dependencies.",
+    "The design journal count recognizes the preserved confirmed-tool-refusal status used by the Stukabat request."
+  ],
+  "known_warnings": [
+    {
+      "code": "layer_id_missing",
+      "asset_id": "layer_city17_distant_skyline",
+      "target_id": "STG_11_HL2_STATION",
+      "repository_path": "assets/resonance/candidates/layer_city17_distant_skyline.png",
+      "scope": "Historical candidate with no declared layer_id; counts as a physical PNG, not as an identified completed stage plane."
+    }
+  ],
+  "evidence_files": [
+    "docs/resonance/data/production_queue.json",
+    "docs/resonance/production/MISSING_TARGETS.md",
+    "docs/resonance/production/asset_audit.json",
+    "docs/resonance/production/asset_audit.md",
+    "docs/resonance/production/continuation_20261127_p/generation_register.json",
+    "docs/resonance/production/continuation_20261127_p/hl1_alpha_measurements.json",
+    "docs/resonance/production/continuation_20261127_p/hl2_alpha_measurements.json",
+    "docs/resonance/production/continuation_20261127_p/hl1_REVIEW.md"
+  ],
+  "limits": [
+    "The global asset audit checks presence, byte size, SHA-256 and PNG headers; it does not certify pixel decoding or visual fidelity.",
+    "Separate alpha measurements and visual review records describe the new generated candidates. The first blue Panther Eye iteration remains archived and unselected; the second iteration is the review candidate.",
+    "All 92 archive targets remain runtime_enabled=false. None is automatically completed when a PNG is present.",
+    "No new browser, runtime, animation, balance, network or external-service validation was run for this documentary and candidate-art batch."
+  ],
+  "visual_certification": false,
+  "animation_complete": false,
+  "runtime_added": false
+}

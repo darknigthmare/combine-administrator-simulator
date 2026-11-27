@@ -2,8 +2,20 @@
 
 Bible, production graphique et premier module Boss Battle jouable du mode annexe de combat 2D de Half Life Administrator.
 
+<!-- CURRENT_CUT_CONTENT_20261127_P -->
+## Reprise du 27 novembre — bible 1.13, focus contenu coupé
+
+**81 nouvelles fiches d’archives, 80 notices sources, 694 tâches de production et neuf PNG pour huit cibles.** Les onze archives antérieures sont reliées sans doublon : le catalogue comprend désormais **92 archives**, toutes désactivées dans le jeu.
+
+Le lot P ajoute Panther Eye rouge et bleu, Archer, Combine Assassin, Combine Guard Synth, Bullsquid HL2, Houndeye HL2 frontal et l’étude non texturée du Combine Guard Gun. La première version bleue est conservée avec sa correction ; Stukabat et le Sniper Rifle ont un refus tracé sans fichier. Les références de versions et les limites de détail sont explicites.
+
+L’inventaire consolidé atteint **327 PNG, 381 demandes et 340 cibles : 250 avec une image, 90 sans PNG**. Les 318 images du checkpoint O et les trois sources du guide/extensions restent intactes. L’augmentation des manquants traduit 81 omissions recensées, dont 73 encore sans image. Une pose ne termine ni une animation ni un kit de combat ; aucune fidélité 1:1 n’est certifiée.
+
+[Rapport et contrôles du lot P](production/continuation_20261127_p/README.md) · [Galerie](production/continuation_20261127_p/GALLERY.md) · [Chapitre contenu coupé](chapters/cut_content_20261127.md) · [81 fiches et tâches](data/cut_content_catalog_20261127.json) · [File des archives](production/continuation_20261127_p/CUT_CONTENT_QUEUE.md)
+<!-- END_CURRENT_CUT_CONTENT_20261127_P -->
+
 <!-- CURRENT_CONTINUATION_20261127_O -->
-## Reprise du 27 novembre — bible 1.12 et lot O
+## Historique du 27 novembre — bible 1.12 et lot O
 
 **25 nouveaux PNG : sept candidats de personnages retenus, six plans candidats de Contamination et sept candidats FX, avec cinq premières versions conservées.** Les six poses de sélection, désélection et taunt de Gina/Colette sont reliées aux fiches du guide. La base Colette a été corrigée d’après le modèle campagne Decay PS2 ; l’ancien candidat reste disponible et n’est plus sélectionné.
 

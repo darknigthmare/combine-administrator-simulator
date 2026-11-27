@@ -23,6 +23,12 @@ const extension = read('catalogue_extension_20261120.json');
 const extension20261124 = read('catalogue_extension_20261124.json');
 const extensionTargets = [...extension.targets, ...extension20261124.targets];
 const extensionIds = new Set(extensionTargets.map(target => target.id));
+const cutContent = read('cut_content_catalog_20261127.json');
+const cutTargets = cutContent.targets;
+check(Array.isArray(cutTargets), 'Cut-content catalogue must expose targets[]');
+if (!Array.isArray(cutTargets)) throw new Error(errors.join('\n'));
+const cutIds = new Set(cutTargets.map(target => target.id));
+const cutSourceIds = new Set(cutContent.sources.map(source => source.id));
 const projectileCatalog = read('projectile_catalog_20261124.json');
 const projectileTargets = projectileCatalog.targets;
 check(Array.isArray(projectileTargets), 'Projectile catalogue must expose targets[]');
@@ -47,6 +53,28 @@ const assetStageIds = new Set([
   ...extensionTargets.filter(target => target.category === 'stage').map(target => target.id),
 ]);
 unique(extensionTargets.map(target => target.id), 'extension targets');
+unique(cutTargets.map(target => target.id), 'cut-content targets');
+unique(cutContent.sources.map(source => source.id), 'cut-content sources');
+check(cutContent.counts.new_targets === cutTargets.length && cutContent.counts.source_records === cutContent.sources.length, 'Cut-content catalogue count mismatch');
+check(cutContent.runtime_enabled === false && cutContent.certified_one_to_one === false, 'Cut-content catalogue must remain an uncertified archive');
+for (const target of cutTargets) {
+  check(!extensionIds.has(target.id) && !fighterIds.has(target.id) && !reserveIds.has(target.id) && !assetStageIds.has(target.id) && !bossIds.has(target.id) && !projectileIds.has(target.id), `${target.id}: cut-content target collides with another catalogue`);
+  check(target.category === 'archive' && target.runtime_enabled === false && target.certified_one_to_one === false, `${target.id}: cut-content target must remain an uncertified archive`);
+  check(cutIds.has(target.owner_id), `${target.id}: unresolved cut-content owner`);
+  check(['character', 'creature', 'boss', 'machine', 'weapon', 'vehicle', 'stage', 'mechanic', 'prop'].includes(target.archive_kind), `${target.id}: unknown archive kind`);
+  check(Array.isArray(target.source_ids) && target.source_ids.length > 0 && target.source_ids.every(id => cutSourceIds.has(id)), `${target.id}: unresolved cut-content reference`);
+  const tasks = target.required_tasks;
+  check(Array.isArray(tasks) && tasks.length > 0, `${target.id}: missing cut-content tasks`);
+  if (Array.isArray(tasks)) {
+    unique(tasks.map(task => task.id), `${target.id} tasks`);
+    const taskIds = new Set(tasks.map(task => task.id));
+    for (const task of tasks) {
+      check(Object.hasOwn(cutContent.task_templates, task.template_id), `${task.id}: unresolved task template`);
+      check(Array.isArray(task.depends_on) && task.depends_on.every(id => taskIds.has(id)), `${task.id}: unresolved task dependency`);
+    }
+  }
+}
+check(cutContent.counts.required_task_records === cutTargets.reduce((sum, target) => sum + (target.required_tasks?.length ?? 0), 0), 'Cut-content task count mismatch');
 unique(projectileTargets.map(target => target.id), 'projectile/FX targets');
 unique(projectileCatalog.sources.map(source => source.id), 'projectile/FX sources');
 check(projectileCatalog.counts.targets === projectileTargets.length, 'Projectile catalogue target count mismatch');
@@ -226,7 +254,9 @@ for (const asset of art.assets) {
   if (asset.owner_type === 'reserve_character') check(reserveIds.has(asset.owner_id), `${asset.asset_id}: unknown reserve owner`);
   if (asset.owner_type === 'stage') check(assetStageIds.has(asset.owner_id), `${asset.asset_id}: unknown stage owner`);
   if (asset.owner_type === 'boss') check(bossIds.has(asset.owner_id), `${asset.asset_id}: unknown boss owner`);
-  if (['support_character', 'support_machine'].includes(asset.owner_type)) check(extensionIds.has(asset.owner_id), `${asset.asset_id}: unknown extension owner`);
+  if (['support_character', 'support_machine'].includes(asset.owner_type)) check(extensionIds.has(asset.owner_id) || cutIds.has(asset.owner_id), `${asset.asset_id}: unknown extension owner`);
+  if (asset.owner_type === 'archive') check(cutIds.has(asset.owner_id), `${asset.asset_id}: unknown cut-content archive owner`);
+  if (cutIds.has(asset.owner_id)) check(asset.runtime_enabled === false && asset.integrated_in_game === false, `${asset.asset_id}: cut-content artwork must remain outside runtime`);
   if (asset.owner_type === 'projectile_effect') {
     check(projectileIds.has(asset.owner_id), `${asset.asset_id}: unknown projectile/FX owner`);
     const targets = asset.target_ids ?? (asset.target_id != null ? [asset.target_id] : []);
@@ -234,7 +264,7 @@ for (const asset of art.assets) {
     if (asset.target_id != null) check(asset.target_id === asset.owner_id, `${asset.asset_id}: conflicting projectile target alias`);
   }
   if (projectileIds.has(asset.owner_id)) check(asset.owner_type === 'projectile_effect', `${asset.asset_id}: wrong projectile/FX owner type`);
-  check(['fighter', 'reserve_character', 'stage', 'boss', 'support_character', 'support_machine', 'projectile_effect', 'shared_collection'].includes(asset.owner_type), `${asset.asset_id}: unknown owner type`);
+  check(['fighter', 'reserve_character', 'stage', 'boss', 'support_character', 'support_machine', 'projectile_effect', 'shared_collection', 'archive'].includes(asset.owner_type), `${asset.asset_id}: unknown owner type`);
   if (asset.generation_status !== 'généré') {
     check(asset.file_path === null && asset.repository_path === null, `${asset.asset_id}: failed request has an asset path`);
     continue;
@@ -250,7 +280,7 @@ for (const asset of art.assets) {
   if (asset.alpha_check === 'présent') check(bytes[25] === 6 || bytes[25] === 4, `${asset.asset_id}: alpha channel missing`);
 }
 check(generated === art.counts.generated && art.assets.length === art.counts.requests, 'Image generation journal count mismatch');
-check(art.assets.filter(asset => asset.generation_status === 'refus automatique').length === art.counts.blocked, 'Blocked generation journal count mismatch');
+check(art.assets.filter(asset => ['refus automatique', 'refus confirmé outil'].includes(asset.generation_status)).length === art.counts.blocked, 'Blocked generation journal count mismatch');
 check(art.assets.filter(asset => asset.integrated_in_game).length === art.counts.integrated_in_game, 'Prototype integration journal count mismatch');
 if (errors.length) {
   console.error(errors.map(error => `FAIL ${error}`).join('\n'));

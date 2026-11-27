@@ -31,6 +31,7 @@ const bosses = read('boss_battle_catalog.json');
 const extension = read('catalogue_extension_20261120.json');
 const extension20261124 = read('catalogue_extension_20261124.json');
 const projectiles = read('projectile_catalog_20261124.json');
+const cutContent20261127 = read('cut_content_catalog_20261127.json');
 const register = read('generated_art_register.json');
 const projectileClasses = new Set(['moving_projectile', 'thrown_device', 'placed_device', 'instant_beam', 'continuous_beam', 'hitscan_trace', 'portal_effect', 'environmental_blob', 'weapon_fire_effect']);
 const travelSpriteClasses = new Set(['moving_projectile', 'thrown_device', 'environmental_blob']);
@@ -49,6 +50,7 @@ const bossSources = sourceMap(bosses.sources, 'boss_battle_catalog');
 const extensionSources = sourceMap(extension.sources, 'catalogue_extension_20261120');
 const extension20261124Sources = sourceMap(extension20261124.sources, 'catalogue_extension_20261124');
 const projectileSources = sourceMap(projectiles.sources, 'projectile_catalog_20261124');
+const cutContent20261127Sources = sourceMap(cutContent20261127.sources, 'cut_content_catalog_20261127');
 const rosterReferences = array(roster.source_notes, 'roster.source_notes').map((source, index) => ({ namespace: 'roster', source_id: `source_note_${index + 1}`, title: source.title ?? null, url: source.url ?? null, kind: 'catalogue_context_only', checked_scope: source.verification ?? null }));
 const targetMap = new Map();
 const sourceEntries = [
@@ -59,13 +61,14 @@ const sourceEntries = [
   ['catalogue_extension_20261120.targets', 'catalogue_extension_20261120.json', null, array(extension.targets, 'catalogue_extension_20261120.targets'), extensionSources],
   ['catalogue_extension_20261124.targets', 'catalogue_extension_20261124.json', null, array(extension20261124.targets, 'catalogue_extension_20261124.targets'), extension20261124Sources],
   ['projectile_catalog_20261124.targets', 'projectile_catalog_20261124.json', 'projectile', array(projectiles.targets, 'projectile_catalog_20261124.targets'), projectileSources],
+  ['cut_content_catalog_20261127.targets', 'cut_content_catalog_20261127.json', 'archive', array(cutContent20261127.targets, 'cut_content_catalog_20261127.targets'), cutContent20261127Sources],
 ];
 
 for (const [bucket, filename, defaultCategory, rows, sources] of sourceEntries) {
   for (const row of rows) {
     if (!row || typeof row.id !== 'string' || !row.id.trim()) { fail('missing_target_id', 'Every catalogue target needs an ID.', { source_bucket: bucket }); continue; }
     if (targetMap.has(row.id)) { fail('target_id_collision', 'An ID appears more than once across the input catalogues.', { target_id: row.id, source_bucket: bucket, previous_bucket: targetMap.get(row.id).source_bucket }); continue; }
-    const archive = row.category === 'archive' || /archive|cut.content/.test(row.content_class ?? '') || row.category === 'archive_creature';
+    const archive = defaultCategory === 'archive' || row.category === 'archive' || /archive|cut.content/.test(row.content_class ?? '') || row.category === 'archive_creature';
     const category = archive ? 'archive' : defaultCategory ?? row.category;
     if (!['character', 'costume', 'stage', 'boss', 'archive', 'projectile'].includes(category)) fail('unknown_category', 'Unknown production category.', { target_id: row.id, category });
     if (archive && row.runtime_enabled !== false) fail('archive_runtime_enabled', 'Archives must explicitly remain runtime_enabled=false.', { target_id: row.id });
@@ -90,6 +93,7 @@ for (const [bucket, filename, defaultCategory, rows, sources] of sourceEntries) 
     targetMap.set(row.id, {
       target_id: row.id, source_bucket: bucket, source_file: `${dataDirectory}/${filename}`,
       category, source_category: row.category ?? null, owner_id: row.owner_id ?? row.id,
+      ...(category === 'archive' && row.archive_kind ? { archive_kind: row.archive_kind } : {}),
       name: row.name_fr ?? row.name ?? row.id, source_game: row.source_game ?? null,
       content_class: row.content_class ?? null, priority: row.priority ?? null,
       identity_lock: row.identity_lock ?? row.visual_invariants ?? null,
@@ -307,7 +311,7 @@ if (args.includes('--write') && !errors.length) {
   ];
   for (const [bucket] of sourceEntries) {
     markdown.push(`### ${bucket}`, '', '| ID / nom | Catégorie / jeu / classe | PNG / refus | Prochaine étape |', '|---|---|---|---|');
-    for (const target of targets.filter(item => item.source_bucket === bucket)) markdown.push(`| \`${cell(target.target_id)}\` — ${cell(target.name)} | ${cell(target.category)} · ${cell(target.source_game)} · ${cell(target.content_class)} | ${target.actual_file_count} / ${target.refused_requests.length} | ${cell(target.next_work.join(' '))} |`);
+    for (const target of targets.filter(item => item.source_bucket === bucket)) markdown.push(`| \`${cell(target.target_id)}\` — ${cell(target.name)} | ${cell(target.category)}${target.archive_kind ? ` / ${cell(target.archive_kind)}` : ''} · ${cell(target.source_game)} · ${cell(target.content_class)} | ${target.actual_file_count} / ${target.refused_requests.length} | ${cell(target.next_work.join(' '))} |`);
     markdown.push('');
   }
   markdown.push('## Fichiers réellement associés', '', '| Cible | Fichier | État / sélection | État QA déclaré |', '|---|---|---|---|');

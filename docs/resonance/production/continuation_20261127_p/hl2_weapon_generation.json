@@ -1,0 +1,431 @@
+{
+  "schema_version": 1,
+  "batch_id": "continuation_20261127_p",
+  "generation_call_count": 6,
+  "assets": [
+    {
+      "asset_id": "archive_combine_assassin_hl2_guard_p",
+      "target_id": "archive_combine_assassin_hl2",
+      "target_ids": [
+        "archive_combine_assassin_hl2"
+      ],
+      "owner_id": "archive_combine_assassin_hl2",
+      "owner_type": "archive",
+      "category": "archive_key_pose",
+      "batch_id": "continuation_20261127_p",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life 2 — développement",
+      "content_class": "documented_cut_content",
+      "pose_class": "archival_reference_interpretation",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "prompt": "Use case: style-transfer. Asset type: one high-resolution 2D fighting-game archival character key pose. Input image 1 is the ONLY identity and costume reference: the original Half-Life 2 cut Combine Assassin fassassin.mdl model render. Image 2 is a DIFFERENT enemy and must not influence this image. Reproduce the first reference as faithfully as possible in crisp detailed hand-painted 2D sprite rendering, with no redesign. Keep exactly her lean narrow proportions, light grey smooth full helmet, single RED circular optic, round front respirator under it, pale white-grey camouflage torso vest, dark grey fitted sleeves and gloves, very pale trousers with thigh seam/strap pattern, black hip utility pouch, white boots and long curved heel springs. Preserve the two compact dark pistols held low in separate hands. The same crouched guard stance, same head angle, same front-left three-quarter view facing toward screen left; both complete feet and heel springs visible. Do not invent a rear view, do not make the optic blue, do not use the alternate repository texture or Survivor model, no exposed face or hair, no high heels. Full body centered with modest empty margins, no cropping, no duplicate, exactly one character and one pose. True transparent background, no white field, no floor or shadow plane, no border, no text, no UI, no effects. Neutral readable lighting, preserve original restrained grey/white/black palette with one red optic. This is an archival sprite interpretation of a historical model, not an official shipped character or certified reconstruction.",
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "generation_call_count": 1,
+      "notes": "Vue trois-quarts et garde de la référence; proportions fines, manches, mains, géométrie des pistolets et ressorts de talons à comparer. Aucune animation officielle déduite.",
+      "source_references": [
+        {
+          "source_url": "https://combineoverwiki.net/images/c/c6/CombineAssassinLeak_Idle.png",
+          "provenance_url": "https://combineoverwiki.net/wiki/File:CombineAssassinLeak_Idle.png",
+          "sha256": "fa983caca43485beaa6d5914bf8fa8b296fb0b7ad3792667e13ec9a9fb507255",
+          "visually_inspected": true,
+          "provided_to_generation": true,
+          "provenance": "Valve historical model capture hosted by community",
+          "inspection_method": "original media downloaded and visually inspected"
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/images/c/c6/CombineAssassinLeak_Idle.png"
+      ],
+      "repository_path": "assets/resonance/candidates/continuation_20261127_p/hl2/archive_combine_assassin_hl2_guard_p.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_p/hl2/archive_combine_assassin_hl2_guard_p.png",
+      "width": 1026,
+      "height": 1532,
+      "color_mode": "RGBA",
+      "byte_size": 1086559,
+      "sha256": "bc60f6b42cadeee03b9ab6fa0d5c930e32815894c8881c265b392fcb2def0b67",
+      "original_png_bytes_preserved": true,
+      "transparent_background": true,
+      "alpha_check": "présent; résidus extérieurs à contrôler au compositing",
+      "alpha_stats": {
+        "minimum": 0,
+        "maximum": 255,
+        "transparent_pixels": 1153101,
+        "opaque_pixels": 518,
+        "partial_pixels": 418213,
+        "bbox_alpha_1": [
+          0,
+          21,
+          1017,
+          1502
+        ],
+        "bbox_alpha_16": [
+          126,
+          77,
+          887,
+          1483
+        ],
+        "bbox_alpha_128": [
+          127,
+          78,
+          886,
+          1482
+        ]
+      },
+      "qa_status": "candidat à vérifier",
+      "selected_for_next_review": true
+    },
+    {
+      "asset_id": "archive_combine_guard_synth_hl2_guard_p",
+      "target_id": "archive_combine_guard_synth_hl2",
+      "target_ids": [
+        "archive_combine_guard_synth_hl2"
+      ],
+      "owner_id": "archive_combine_guard_synth_hl2",
+      "owner_type": "archive",
+      "category": "archive_key_pose",
+      "batch_id": "continuation_20261127_p",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life 2 — développement",
+      "content_class": "documented_cut_content",
+      "pose_class": "archival_reference_interpretation",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "prompt": "Use case: style-transfer. Asset type: one high-resolution 2D boss archival sprite key pose. Input image 2 is the ONLY identity reference: original cut Half-Life 2 Combine Guard SYNTH model. Image 1 is a DIFFERENT character and must not influence this image. Reproduce the SECOND reference in crisp detailed painted 2D game-sprite rendering while keeping the original model design and visible pose with maximum fidelity. Keep the enormous broad lopsided olive-green organic mechanical armor, rounded shoulder carapaces, tiny exposed human male head recessed deep into the collar with a dark mouth respirator, the dark red angular inner collar, the metal top support bars and thin antenna, four small blue indicators near upper shoulder, dark hose details and massive feet with divided blocky toes. Its two arms cradle the huge chunky angular golden-olive energy cannon at chest/waist, exactly the reference silhouette. Keep the low thick torso, bowed heavy legs spread planted, irregular spotted green-brown surface and black mechanical recesses. Same front three-quarter view toward screen left, same standing pose; no invented back details. NOT an ordinary masked soldier, not a trenchcoat, no military rifle, no Hunter limbs, no extra eyes. Full body and entire weapon, antenna and toes in frame, 8 percent transparent margins. ONE subject, ONE pose only. True transparent background, no ground, no scene, no floor shadow plane, no text, no UI, no diagram or sheet. Neutral lighting, do not introduce glossy new plating or emissive trims. This is a static archival candidate, not a final animated boss or certified 1:1.",
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "generation_call_count": 1,
+      "notes": "Silhouette et palette du modèle Synth conservées; interpolation des traits humains, des mains et de la texture. Vue de référence, pas profil latéral validé. Ne pas confondre le canon porté ici avec le modèle séparé non texturé.",
+      "source_references": [
+        {
+          "source_url": "https://combineoverwiki.net/images/7/78/Combine_guard.jpg",
+          "provenance_url": "https://combineoverwiki.net/wiki/File:Combine_guard.jpg",
+          "sha256": "779e7c1419af05ea6995fcf0c8c70f413c7c695db4fa11196162be2165ae80d1",
+          "visually_inspected": true,
+          "provided_to_generation": true,
+          "provenance": "Valve historical model capture hosted by community",
+          "inspection_method": "original media downloaded and visually inspected"
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/images/7/78/Combine_guard.jpg"
+      ],
+      "repository_path": "assets/resonance/candidates/continuation_20261127_p/hl2/archive_combine_guard_synth_hl2_guard_p.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_p/hl2/archive_combine_guard_synth_hl2_guard_p.png",
+      "width": 952,
+      "height": 1652,
+      "color_mode": "RGBA",
+      "byte_size": 1548452,
+      "sha256": "5b96990ccc94767fd3a6eb0219ed91ed5b9cbde3875c9835ece1d2e80db0ab57",
+      "original_png_bytes_preserved": true,
+      "transparent_background": true,
+      "alpha_check": "présent; résidus extérieurs à contrôler au compositing",
+      "alpha_stats": {
+        "minimum": 0,
+        "maximum": 255,
+        "transparent_pixels": 836336,
+        "opaque_pixels": 834,
+        "partial_pixels": 735534,
+        "bbox_alpha_1": [
+          0,
+          13,
+          942,
+          1644
+        ],
+        "bbox_alpha_16": [
+          40,
+          15,
+          920,
+          1613
+        ],
+        "bbox_alpha_128": [
+          41,
+          16,
+          920,
+          1612
+        ]
+      },
+      "qa_status": "candidat à vérifier",
+      "selected_for_next_review": true
+    },
+    {
+      "asset_id": "archive_bullsquid_hl2_cut_idle_p",
+      "target_id": "archive_bullsquid_hl2_cut",
+      "target_ids": [
+        "archive_bullsquid_hl2_cut"
+      ],
+      "owner_id": "archive_bullsquid_hl2_cut",
+      "owner_type": "archive",
+      "category": "archive_key_pose",
+      "batch_id": "continuation_20261127_p",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life 2 — développement",
+      "content_class": "documented_cut_content",
+      "pose_class": "archival_reference_interpretation",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "prompt": "Use case: style-transfer. One high-resolution 2D game sprite key pose of the CUT Half-Life 2 Bullsquid. Image1, the dark rust-red creature with black mottling, is the ONLY source identity reference. Image2 is a different animal and must not influence this image. Reproduce the exact observed subject of image1 with maximum model fidelity, in polished crisp painted 2D sprite style. Keep the same low squat two-legged body, long broad projecting head, cluster of fleshy long thin oral tentacles projecting toward screen LEFT, the same visible tentacle count and positions, one clearly visible yellow-ringed small sideways eye with dark pupil, deep rust-brown/red hide with irregular dark green/black spots concentrated over back, squat stout muscular rear leg, both visible angular black clawed feet, short pointed dark dorsal/rear spines. Preserve proportions and apparent silhouette of the original low-poly model; smooth shading can be improved but no new anatomy or texture pattern inventions. Same pose and angle as the source: near-side three-quarter profile facing left, all tentacles and feet visible. This is the cut HL2 model, not yellow/orange HL1 Bullsquid, not a fan redesign. Full creature framed centered with generous transparent margins. ONE creature, ONE pose, true transparent background, no scene, no floor/shadow plane, no extra eyes, no appendage additions, no labels or UI, no effects or spit yet. This remains a static archival adaptation, not certified final art.",
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "generation_call_count": 1,
+      "notes": "Révision HL2 sombre rouille/noir, indépendante du Bullsquid HL1. Tentacules, griffes, yeux et surface réinterprétés en 2D à contrôler au modèle.",
+      "source_references": [
+        {
+          "source_url": "https://combineoverwiki.net/images/1/18/Bullsquid_leak.jpg",
+          "provenance_url": "https://combineoverwiki.net/wiki/File:Bullsquid_leak.jpg",
+          "sha256": "714275f4eff007d522681168946deca8a2324a66083cc1161eb7b0f783c34154",
+          "visually_inspected": true,
+          "provided_to_generation": true,
+          "provenance": "Valve historical model capture hosted by community",
+          "inspection_method": "original media downloaded and visually inspected"
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/images/1/18/Bullsquid_leak.jpg"
+      ],
+      "repository_path": "assets/resonance/candidates/continuation_20261127_p/hl2/archive_bullsquid_hl2_cut_idle_p.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_p/hl2/archive_bullsquid_hl2_cut_idle_p.png",
+      "width": 1668,
+      "height": 943,
+      "color_mode": "RGBA",
+      "byte_size": 1156245,
+      "sha256": "2c8d3964889a2f27be802a2d28982e0395a6235754bfd2582a16f426f15836f9",
+      "original_png_bytes_preserved": true,
+      "transparent_background": true,
+      "alpha_check": "présent; résidus extérieurs à contrôler au compositing",
+      "alpha_stats": {
+        "minimum": 0,
+        "maximum": 255,
+        "transparent_pixels": 994024,
+        "opaque_pixels": 1028,
+        "partial_pixels": 577872,
+        "bbox_alpha_1": [
+          0,
+          9,
+          1662,
+          927
+        ],
+        "bbox_alpha_16": [
+          49,
+          42,
+          1620,
+          917
+        ],
+        "bbox_alpha_128": [
+          50,
+          43,
+          1619,
+          916
+        ]
+      },
+      "qa_status": "candidat à vérifier",
+      "selected_for_next_review": true
+    },
+    {
+      "asset_id": "archive_houndeye_hl2_cut_front_p",
+      "target_id": "archive_houndeye_hl2_cut",
+      "target_ids": [
+        "archive_houndeye_hl2_cut"
+      ],
+      "owner_id": "archive_houndeye_hl2_cut",
+      "owner_type": "archive",
+      "category": "archive_key_pose",
+      "batch_id": "continuation_20261127_p",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life 2 — développement",
+      "content_class": "documented_cut_content",
+      "pose_class": "archival_reference_interpretation",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "prompt": "Use case: style-transfer. One high-resolution 2D archival reference sprite of the cut Half-Life 2 Houndeye. Use ONLY image2: the small original full-body front preview on a cyan background. Image1 is a completely different creature and must not influence this output. Enlarge and carefully interpret the observed model without redesigning it. Preserve the original almost symmetrical FRONTAL viewing angle and the whole visible animal: huge circular forward-facing compound eye occupying almost the entire head/front, many dark burgundy-purple small facets dotted with dull yellow-olive highlights inside, thick pale yellow-olive fleshy rim, ochre yellow/olive short rounded body tapering back, dark upper dorsal fold, THREE legs total: two stout outer legs to left and right with dark claws, plus the long narrow center/front leg pointing straight down. Preserve the reference's relative leg positions and proportions; retain the unusual tripod structure. No mouth, no fangs, no ears, no single eyeball, no mammal facial features. Crisp hand-painted game-sprite treatment with restrained detail based only on what is visible in the original; do not invent the back or a side projection from this front-only reference. One full-body subject, centered, original frontal orientation, broad transparent margins. Remove the cyan backdrop entirely; true alpha transparency; no ground, no shadow plane, no sonic ring or FX, no text, no UI, no sheets. This is a frontal archival study from a small historical reference, not a side-view combat animation or a certified 1:1 asset.",
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "generation_call_count": 1,
+      "notes": "Étude frontale fondée sur un petit aperçu original. Détail des facettes interpolé; trois pattes conservées. Ne couvre pas profil combat, dos ou attaque sonique.",
+      "source_references": [
+        {
+          "source_url": "https://www.combineoverwiki.net/images/c/c3/Leak_houndeye_mdl_preview.jpg",
+          "provenance_url": "https://combineoverwiki.net/wiki/File:Leak_houndeye_mdl_preview.jpg",
+          "sha256": "750664796ef13c1435ca18301fe45ee1f182ea79d585bcc806d31dec55ad0c25",
+          "visually_inspected": true,
+          "provided_to_generation": true,
+          "provenance": "Valve historical model capture hosted by community",
+          "inspection_method": "original media downloaded and visually inspected"
+        }
+      ],
+      "source_urls": [
+        "https://www.combineoverwiki.net/images/c/c3/Leak_houndeye_mdl_preview.jpg"
+      ],
+      "repository_path": "assets/resonance/candidates/continuation_20261127_p/hl2/archive_houndeye_hl2_cut_front_p.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_p/hl2/archive_houndeye_hl2_cut_front_p.png",
+      "width": 1060,
+      "height": 1484,
+      "color_mode": "RGBA",
+      "byte_size": 879084,
+      "sha256": "9c4419e1d516caa1cd3f932ab3ea79af43ef251e5d99be2d4d6e0ace6a60751a",
+      "original_png_bytes_preserved": true,
+      "transparent_background": true,
+      "alpha_check": "présent; résidus extérieurs à contrôler au compositing",
+      "alpha_stats": {
+        "minimum": 0,
+        "maximum": 255,
+        "transparent_pixels": 1149185,
+        "opaque_pixels": 105,
+        "partial_pixels": 423750,
+        "bbox_alpha_1": [
+          19,
+          20,
+          1004,
+          1484
+        ],
+        "bbox_alpha_16": [
+          192,
+          40,
+          865,
+          1446
+        ],
+        "bbox_alpha_128": [
+          193,
+          41,
+          864,
+          1445
+        ]
+      },
+      "qa_status": "candidat à vérifier",
+      "selected_for_next_review": true
+    },
+    {
+      "asset_id": "archive_sniper_rifle_hl2_worldmodel_p",
+      "target_id": "archive_sniper_rifle_hl2",
+      "target_ids": [
+        "archive_sniper_rifle_hl2"
+      ],
+      "owner_id": "archive_sniper_rifle_hl2",
+      "owner_type": "archive",
+      "category": "archive_weapon_study",
+      "batch_id": "continuation_20261127_p",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life 2 — développement",
+      "content_class": "documented_cut_content",
+      "pose_class": "archival_reference_interpretation",
+      "generator": "image_gen built-in",
+      "generation_status": "refus automatique",
+      "status": "non produit",
+      "prompt": "Use case: style-transfer. One standalone high-resolution 2D video-game weapon sprite for an archive catalogue. Input image1 is the ONLY reference: original Half-Life 2 CUT playable Sniper Rifle WORLD model. Input2 is a different weapon and must be ignored. Reproduce the exact silhouette and design of image1, horizontally pointing LEFT with the same very slight three-quarter view: very long dark grey cylindrical barrel, squared chunky ported muzzle brake on far left, long rectangular dark receiver with the same visible vent slots, integrated angular thumbhole stock and small separate rectangular trigger opening underneath near the rear, short black scope on top with two brackets and muted dark-red lens on its left end, plain flat angular black buttplate far right. Preserve dimensions and spacing of all parts relative to each other. Painted 2D game asset finish with sharp readable edges and restrained wear, no redesign or new components. Do not substitute an M40A1 from Opposing Force, do not use the retail NPC Overwatch Sniper Rifle or Survivor model. No hands, no person, no ammunition, no shots or muzzle flash, no extra magazine or added bipod. Entire weapon within frame, broad transparent margins, landscape image. True alpha transparent background; remove the white reference backdrop, no floor or shadows, no diagram, no labels, no text, no UI. One weapon only. No operational schematics, only the visual collectible sprite. Historical archive candidate, no certification claimed.",
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "generation_call_count": 1,
+      "notes": "Référence worldmodel identifiée et inspectée; appel refusé à la sortie, aucun fichier, aucun nouvel appel sous une autre désignation.",
+      "source_references": [
+        {
+          "source_url": "https://combineoverwiki.net/images/5/5e/Sniperw.png",
+          "provenance_url": "https://combineoverwiki.net/wiki/File:Sniperw.png",
+          "sha256": "fe00a14b8f804e998e5754b89823ffbe188c0329e2d7408e5ced7b4ac9f49a21",
+          "visually_inspected": true,
+          "provided_to_generation": true,
+          "provenance": "historical Valve model image hosted by community"
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/images/5/5e/Sniperw.png"
+      ],
+      "qa_status": "non produit",
+      "selected_for_next_review": false,
+      "repository_path": null,
+      "file_path": null,
+      "error": "image generation failed: http 400 Bad Request: Some(\"{\\n  \\\"error\\\": {\\n    \\\"message\\\": \\\"Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID eee012f3-dd55-4721-a7b1-7bbecbff1d9e. safety_violations=[illicit].\\\",\\n    \\\"type\\\": \\\"image_generation_user_error\\\",\\n    \\\"param\\\": null,\\n    \\\"code\\\": \\\"moderation_blocked\\\",\\n    \\\"moderation_details\\\": {\\n      \\\"moderation_stage\\\": \\\"output\\\",\\n      \\\"categories\\\": [\\n        \\\"illicit\\\"\\n      ]\\n    }\\n  }\\n}\")",
+      "refusal_classification": "moderation_blocked_output",
+      "alpha_check": "non applicable"
+    },
+    {
+      "asset_id": "archive_combine_guard_gun_hl2_untextured_p",
+      "target_id": "archive_cguard_gun_hl2",
+      "target_ids": [
+        "archive_cguard_gun_hl2"
+      ],
+      "owner_id": "archive_cguard_gun_hl2",
+      "owner_type": "archive",
+      "category": "archive_weapon_study",
+      "batch_id": "continuation_20261127_p",
+      "created_at": "2026-11-27",
+      "source_game": "Half-Life 2 — développement",
+      "content_class": "documented_cut_content",
+      "pose_class": "archival_reference_interpretation",
+      "generator": "image_gen built-in",
+      "generation_status": "généré",
+      "status": "généré",
+      "prompt": "Use case: style-transfer. ONE standalone archival weapon sprite based ONLY on input image2, the untextured light-grey Half-Life 2 cut Combine Guard Gun world-model reference. Input1 is a different weapon and must not influence this output. Reproduce the exact observed low-poly UNTEXTURED object with NO invented materials: grey faceted polygon surfaces, large hollow rear handle loop at RIGHT, central boxy body and round raised side panel, the lower angular forward loop/handle and the small bent tube visible left of center, multiple simple barrel/prong rods protruding LEFT with exactly the same differing lengths and layout as in reference. Match the same slightly elevated side-three-quarter view, same silhouette and proportions, keep all extremities in frame. Keep neutral light-grey clay-like shading and untextured look; preserve planar faces. Do not invent gold or olive colors, paint, decals, metal engraving, emitters, moving mechanisms, plasma effects, sharp new details or realistic firearm machinery. This is a faithful study of an unfinished historical model, not the colored hand cannon in another Combine Guard character model and not a finalized Immolator. Do not infer missing textures. True transparent background, no white rectangle, no floor, no pedestal, no shadows, no hands, no person, no text, no border or interface. One whole object only centered in wide landscape framing with empty margins. Preserve the reference incompleteness explicitly by keeping the object entirely untextured.",
+      "certified_one_to_one": false,
+      "runtime_enabled": false,
+      "integrated_in_game": false,
+      "animation_clip_complete": false,
+      "generation_call_count": 1,
+      "notes": "Étude du worldmodel non texturé, conservé gris; pas de texture ou couleur finale inventée. Modèle distinct du canon coloré porté dans la capture de Combine Guard Synth.",
+      "source_references": [
+        {
+          "source_url": "https://combineoverwiki.net/images/a/a4/Combine_Guard_Gun_leak.png",
+          "provenance_url": "https://combineoverwiki.net/wiki/File:Combine_Guard_Gun_leak.png",
+          "sha256": "e597747523c38a80cc13997983ee35e5a9dd3a7ec7ba2417240d72ae7fd5480d",
+          "visually_inspected": true,
+          "provided_to_generation": true,
+          "provenance": "historical Valve model image hosted by community"
+        }
+      ],
+      "source_urls": [
+        "https://combineoverwiki.net/images/a/a4/Combine_Guard_Gun_leak.png"
+      ],
+      "repository_path": "assets/resonance/candidates/continuation_20261127_p/weapons/archive_combine_guard_gun_hl2_untextured_p.png",
+      "file_path": "assets/resonance/candidates/continuation_20261127_p/weapons/archive_combine_guard_gun_hl2_untextured_p.png",
+      "width": 1960,
+      "height": 802,
+      "color_mode": "RGBA",
+      "byte_size": 1293543,
+      "sha256": "ff12abd7e8bd695d172e4f69d2c7d29fd2fca1303aa7aae7e66f5be6914571ba",
+      "original_png_bytes_preserved": true,
+      "transparent_background": true,
+      "alpha_check": "présent; résidus extérieurs à contrôler au compositing",
+      "alpha_stats": {
+        "minimum": 0,
+        "maximum": 255,
+        "transparent_pixels": 665539,
+        "opaque_pixels": 1127,
+        "partial_pixels": 905254,
+        "bbox_alpha_1": [
+          0,
+          21,
+          1942,
+          790
+        ],
+        "bbox_alpha_16": [
+          27,
+          29,
+          1932,
+          779
+        ],
+        "bbox_alpha_128": [
+          28,
+          30,
+          1931,
+          778
+        ]
+      },
+      "qa_status": "candidat à vérifier",
+      "selected_for_next_review": true
+    }
+  ]
+}

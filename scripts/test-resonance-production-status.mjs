@@ -10,7 +10,7 @@ import { fileURLToPath } from 'node:url';
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const fixture = mkdtempSync(join(tmpdir(), 'resonance-status-check-'));
 const scripts = ['audit-resonance-production.mjs', 'sync-resonance-production.mjs'];
-const dataFiles = ['roster.json', 'stages.json', 'boss_battle_catalog.json', 'catalogue_extension_20261120.json', 'catalogue_extension_20261124.json', 'projectile_catalog_20261124.json'];
+const dataFiles = ['roster.json', 'stages.json', 'boss_battle_catalog.json', 'catalogue_extension_20261120.json', 'catalogue_extension_20261124.json', 'projectile_catalog_20261124.json', 'cut_content_catalog_20261127.json'];
 const dataPath = join(fixture, 'docs/resonance/data');
 const candidatePath = 'assets/resonance/candidates/status_fixture.png';
 const readJson = path => JSON.parse(readFileSync(path, 'utf8'));
@@ -69,6 +69,22 @@ try {
   assert.equal(target.output_unavailable_requests.length, 2);
   assert.equal(target.other_unproduced_requests.length, 0);
 
+  // Every target from the cut-content catalogue stays an archive, even if its
+  // individual metadata is accidentally relabelled as released content.
+  const cutCataloguePath = join(dataPath, 'cut_content_catalog_20261127.json');
+  const cutCatalogue = readJson(cutCataloguePath);
+  assert.ok(cutCatalogue.targets.length > 0, 'The cut-content fixture must contain a target.');
+  const cutTarget = queue.targets.find(row => row.target_id === cutCatalogue.targets[0].id);
+  assert.equal(cutTarget?.category, 'archive');
+  assert.equal(cutTarget.runtime_enabled_declared, false);
+  const invalidCutCatalogue = structuredClone(cutCatalogue);
+  Object.assign(invalidCutCatalogue.targets[0], { category: 'character', content_class: 'official_released', runtime_enabled: true });
+  writeFileSync(cutCataloguePath, JSON.stringify(invalidCutCatalogue));
+  const archiveRuntimeLeak = run(scripts[1]);
+  assert.equal(archiveRuntimeLeak.status, 1);
+  assert.match(archiveRuntimeLeak.stderr, /archive_runtime_enabled/);
+  writeFileSync(cutCataloguePath, JSON.stringify(cutCatalogue));
+
   // Declared counter checks use the canonical keys actually written by the register.
   save(assets, { tool_error_requests: 99, output_unavailable_requests: 99 });
   const incorrectCounts = run(scripts[0], ['--write-report']);
@@ -95,7 +111,7 @@ try {
     assert.match(failed.stderr, /missing_asset_file/);
     assert.match(failed.stderr, /generated_without_file/);
   }
-  console.log(JSON.stringify({ status: 'passed', checks: ['outcome separation', 'stale generated flag priority', 'per-target outcome separation', 'declared error/unavailable counters', 'missing and existing invalid output paths', 'missing generated PNG remains an error'], scripts }));
+  console.log(JSON.stringify({ status: 'passed', checks: ['outcome separation', 'stale generated flag priority', 'per-target outcome separation', 'cut-content archive runtime guard', 'declared error/unavailable counters', 'missing and existing invalid output paths', 'missing generated PNG remains an error'], scripts }));
 } finally {
   rmSync(fixture, { recursive: true, force: true });
 }
